@@ -2,7 +2,8 @@
 
 import React, { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ArrowUpRight, ArrowRight, CheckCircle2, Activity, FileCheck2, ShieldCheck, Sparkles } from 'lucide-react'
+import { ArrowUpRight, CheckCircle2, Activity, FileCheck2, ShieldCheck, Sparkles } from 'lucide-react'
+import { HeroButton } from '@/components/ui/hero-button'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -109,27 +110,9 @@ export function WhyChooseUs() {
             </p>
 
             {/* Signature Luxury Pill Button */}
-            <Link 
-              href="/certificates"
-              className="relative group inline-flex items-center gap-2.5 sm:gap-4 bg-[#20221c] hover:bg-[#a5a58d] text-[#fff1e6] pl-5 sm:pl-7 pr-1.5 sm:pr-2 py-2 sm:py-2.5 rounded-full font-semibold text-[12px] sm:text-[14px] border border-neutral-800/80 hover:border-[#a5a58d] transition-colors duration-300 shadow-[0_4px_14px_rgba(0,0,0,0.12)] cursor-pointer overflow-hidden"
-            >
-              <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-1000 ease-out pointer-events-none" />
-              <span className="tracking-tight transition-transform duration-300 group-hover:translate-x-0.5 select-none font-heading font-medium whitespace-nowrap">
-                VIEW COA ARCHIVE
-              </span>
-              <span className="w-7 sm:w-8 h-7 sm:h-8 rounded-full bg-white text-black flex items-center justify-center relative overflow-hidden shrink-0">
-                <ArrowRight 
-                  size={14} 
-                  strokeWidth={2.5} 
-                  className="transition-all duration-300 ease-out group-hover:translate-x-6 group-hover:opacity-0" 
-                />
-                <ArrowRight 
-                  size={14} 
-                  strokeWidth={2.5} 
-                  className="absolute -translate-x-6 opacity-0 transition-all duration-300 ease-out group-hover:translate-x-0 group-hover:opacity-100" 
-                />
-              </span>
-            </Link>
+            <HeroButton href="/certificates">
+              View COA Archive
+            </HeroButton>
           </div>
         </div>
 

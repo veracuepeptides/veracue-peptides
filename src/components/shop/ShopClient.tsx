@@ -1,24 +1,37 @@
 'use client'
 
-import React, { useState, useEffect, Suspense } from 'react'
+import React, { useState, useEffect, useMemo, useRef, Suspense } from 'react'
 import { useRouter, useSearchParams, usePathname } from 'next/navigation'
-import { Container } from '@/components/ui/container'
-import { FilterSidebar } from '@/components/shop/FilterSidebar'
+import { ShopHero } from '@/components/shop/ShopHero'
 import { ProductCard } from '@/components/shared/ProductCard'
-import { Product } from '@/components/shop/PrimaryProductCard' // Re-use interface for now
-import { motion, useInView, useScroll, useMotionValueEvent } from 'framer-motion'
-import { X, Filter, Search, ShieldCheck, FlaskConical, Award, ArrowRight, Flag, ArrowUpRight } from 'lucide-react'
-import Image from 'next/image'
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import { Product } from '@/components/shop/PrimaryProductCard'
+import { motion, useInView, useScroll, useMotionValueEvent, AnimatePresence } from 'framer-motion'
+import {
+  Search,
+  SlidersHorizontal,
+  X,
+  Sparkles,
+  ShieldCheck,
+  Snowflake,
+  FileCheck2,
+  Truck,
+  RotateCcw,
+  Check,
+} from 'lucide-react'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select'
 import { Spinner } from '@/components/ui/spinner'
 import { EmptyState } from '@/components/shared/EmptyState'
 import { Button } from '@/components/ui/button'
-import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent } from '@/components/ui/dropdown-menu'
-import { FluidButton } from '@/components/ui/fluid-button'
 import { Category } from '@/components/shop/FilterSidebar'
 import { getShopProducts } from '@/app/(frontend)/(shop)/actions'
 import { useTranslations } from 'next-intl'
-
+import { getCategoryDisplayName } from '@/lib/categoryDisplay'
 import { SharedFaqSection } from '@/components/shared/SharedFaqSection'
 
 const SHOP_FAQ_KEYS = [
@@ -42,7 +55,7 @@ const SHOP_FAQ_KEYS = [
   'specialHandling',
   'nonResearchUse',
   'fdaApproval',
-];
+]
 
 interface ShopClientProps {
   initialProducts: Product[]
@@ -56,23 +69,26 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
     question: t(`faqs.${key}.question`),
     answer: t(`faqs.${key}.answer`),
   }))
+
   const router = useRouter()
   const pathname = usePathname()
   const searchParams = useSearchParams()
-  
+
   const [products, setProducts] = useState<Product[]>(initialProducts)
   const [currentPage, setCurrentPage] = useState(1)
   const [isLoadingMore, setIsLoadingMore] = useState(false)
   const [hasMore, setHasMore] = useState(totalPages > 1)
   const [isScrollingDown, setIsScrollingDown] = useState(false)
-  const lastScrollYRef = React.useRef(0)
+  const [searchQuery, setSearchQuery] = useState('')
+  const [showFiltersDrawer, setShowFiltersDrawer] = useState(false)
+  const lastScrollYRef = useRef(0)
 
   const { scrollY } = useScroll()
 
-  useMotionValueEvent(scrollY, "change", (latest) => {
+  useMotionValueEvent(scrollY, 'change', (latest) => {
     if (typeof window !== 'undefined') {
       const currentScrollY = latest
-      if (currentScrollY > lastScrollYRef.current && currentScrollY > 100) {
+      if (currentScrollY > lastScrollYRef.current && currentScrollY > 120) {
         if (!isScrollingDown) setIsScrollingDown(true)
       } else if (currentScrollY < lastScrollYRef.current) {
         if (isScrollingDown) setIsScrollingDown(false)
@@ -80,45 +96,25 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
       lastScrollYRef.current = currentScrollY
     }
   })
-  
-  const loadMoreRef = React.useRef<HTMLDivElement>(null)
-  const isInView = useInView(loadMoreRef, { margin: "400px" })
 
-  const categoriesScrollRef = React.useRef<HTMLDivElement>(null)
-  const isCategoriesInView = useInView(categoriesScrollRef, { once: true, amount: 0.5 })
+  const loadMoreRef = useRef<HTMLDivElement>(null)
+  const isInView = useInView(loadMoreRef, { margin: '400px' })
+  const categoriesScrollRef = useRef<HTMLDivElement>(null)
 
-  useEffect(() => {
-    if (isCategoriesInView) {
-      const timer = setTimeout(() => {
-        if (categoriesScrollRef.current) {
-          if (categoriesScrollRef.current.scrollWidth > categoriesScrollRef.current.clientWidth) {
-            categoriesScrollRef.current.scrollTo({ left: 40, behavior: 'smooth' })
-            setTimeout(() => {
-              if (categoriesScrollRef.current) {
-                categoriesScrollRef.current.scrollTo({ left: 0, behavior: 'smooth' })
-              }
-            }, 350)
-          }
-        }
-      }, 500)
-      return () => clearTimeout(timer)
-    }
-  }, [isCategoriesInView])
-
-  // Filter update trigger
+  // Fetch filtered products whenever search params change
   useEffect(() => {
     const fetchFiltered = async () => {
       const categoriesParam = searchParams.getAll('category')
       const minP = searchParams.get('minPrice')
       const maxP = searchParams.get('maxPrice')
-      
+
       const res = await getShopProducts({
         page: 1,
         categories: categoriesParam.length > 0 ? categoriesParam : undefined,
         inStock: searchParams.get('inStock') === 'true',
         onSale: searchParams.get('onSale') === 'true',
-        minPrice: minP ? parseInt(minP) : undefined,
-        maxPrice: maxP ? parseInt(maxP) : undefined,
+        minPrice: minP ? parseInt(minP, 10) : undefined,
+        maxPrice: maxP ? parseInt(maxP, 10) : undefined,
         sort: searchParams.get('sort') || undefined,
       })
 
@@ -131,8 +127,9 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
     fetchFiltered()
   }, [searchParams])
 
+  // Load more pages
   const handleLoadMore = async () => {
-    if (!hasMore || isLoadingMore) return;
+    if (!hasMore || isLoadingMore) return
     setIsLoadingMore(true)
     const nextPage = currentPage + 1
     const categoriesParam = searchParams.getAll('category')
@@ -144,14 +141,14 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
       categories: categoriesParam.length > 0 ? categoriesParam : undefined,
       inStock: searchParams.get('inStock') === 'true',
       onSale: searchParams.get('onSale') === 'true',
-      minPrice: minP ? parseInt(minP) : undefined,
-      maxPrice: maxP ? parseInt(maxP) : undefined,
+      minPrice: minP ? parseInt(minP, 10) : undefined,
+      maxPrice: maxP ? parseInt(maxP, 10) : undefined,
       sort: searchParams.get('sort') || undefined,
     })
 
     if (res.success && res.products) {
-      setProducts(prev => {
-        const newProducts = (res.products as Product[]).filter(np => !prev.some(p => p.id === np.id))
+      setProducts((prev) => {
+        const newProducts = (res.products as Product[]).filter((np) => !prev.some((p) => p.id === np.id))
         return [...prev, ...newProducts]
       })
       setCurrentPage(nextPage)
@@ -164,264 +161,499 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
 
   // Infinite scroll trigger
   useEffect(() => {
-    if (isInView && hasMore && !isLoadingMore) {
+    if (isInView && hasMore && !isLoadingMore && !searchQuery.trim()) {
       handleLoadMore()
     }
-  }, [isInView, hasMore, isLoadingMore, currentPage, searchParams])
+  }, [isInView, hasMore, isLoadingMore, currentPage, searchParams, searchQuery])
 
-  const getActiveChips = () => {
-    const chips: { key: string, label: string, value: string }[] = []
-    searchParams.getAll('category').forEach(cat => chips.push({ key: `category-${cat}`, label: cat, value: cat }))
-    if (searchParams.get('inStock') === 'true') chips.push({ key: 'inStock', label: t('inStock'), value: 'true' })
-    if (searchParams.get('onSale') === 'true') chips.push({ key: 'onSale', label: t('onSale'), value: 'true' })
-    return chips
-  }
+  // Client-side search filtering over loaded products
+  const displayProducts = useMemo(() => {
+    if (!searchQuery.trim()) return products
+    const q = searchQuery.toLowerCase().trim()
+    return products.filter((p: any) => {
+      const name = (p.name || '').toLowerCase()
+      const desc = (p.shortDescription || p.description || '').toLowerCase()
+      const sku = (p.sku || p.slug || '').toLowerCase()
+      return name.includes(q) || desc.includes(q) || sku.includes(q)
+    })
+  }, [products, searchQuery])
 
-  const removeFilter = (key: string, value: string) => {
+  // Active filter helper
+  const activeCategories = searchParams.getAll('category')
+  const isInStockActive = searchParams.get('inStock') === 'true'
+  const isOnSaleActive = searchParams.get('onSale') === 'true'
+  const currentSort = searchParams.get('sort') || 'newest'
+
+  const activeFiltersCount =
+    activeCategories.length +
+    (isInStockActive ? 1 : 0) +
+    (isOnSaleActive ? 1 : 0) +
+    (searchQuery.trim() ? 1 : 0)
+
+  const toggleCategoryFilter = (catIdentifier: string) => {
     const params = new URLSearchParams(searchParams.toString())
-    if (key.startsWith('category-')) {
-      const currentCats = params.getAll('category').filter(c => c !== value)
+    const existing = params.getAll('category')
+    if (existing.includes(catIdentifier)) {
       params.delete('category')
-      currentCats.forEach(c => params.append('category', c))
+      existing.filter((c) => c !== catIdentifier).forEach((c) => params.append('category', c))
     } else {
-      params.delete(key)
+      params.delete('category')
+      params.append('category', catIdentifier)
     }
     router.push(`${pathname}?${params.toString()}`, { scroll: false })
   }
 
-  const activeChips = getActiveChips()
+  const clearAllCategories = () => {
+    const params = new URLSearchParams(searchParams.toString())
+    params.delete('category')
+    router.push(`${pathname}?${params.toString()}`, { scroll: false })
+  }
+
+  const toggleStockFilter = () => {
+    const params = new URLSearchParams(searchParams.toString())
+    if (isInStockActive) {
+      params.delete('inStock')
+    } else {
+      params.set('inStock', 'true')
+    }
+    router.push(`${pathname}?${params.toString()}`, { scroll: false })
+  }
+
+  const toggleSaleFilter = () => {
+    const params = new URLSearchParams(searchParams.toString())
+    if (isOnSaleActive) {
+      params.delete('onSale')
+    } else {
+      params.set('onSale', 'true')
+    }
+    router.push(`${pathname}?${params.toString()}`, { scroll: false })
+  }
+
+  const resetAllFilters = () => {
+    setSearchQuery('')
+    router.push(pathname, { scroll: false })
+  }
 
   return (
-    <div className="w-full bg-[#FAFAFA] min-h-screen font-sans">
-      
-      {/* Editorial Grid Hero Section */}
-      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10 pt-32 sm:pt-36 md:pt-44 pb-8 mx-auto max-w-[1920px]">
+    <div style={{ backgroundColor: '#f0efeb' }} className="w-full text-[#20221c] min-h-screen font-sans">
+      {/* 1. Hero Section matching Homepage architecture */}
+      <ShopHero />
+
+      {/* 2. Catalog Anchor & Main Browser Section */}
+      <div id="catalog-browser" className="w-full max-w-[1400px] mx-auto px-3 sm:px-6 md:px-10 pt-10 sm:pt-14 md:pt-18 pb-16 sm:pb-24">
         
-        {/* Header Row */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 md:mb-10">
-          <div>
-            <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-ink uppercase tracking-tighter leading-[0.9] mb-2 sm:mb-4">
-              Shop Research Peptides
-            </h1>
-            <p className="text-ink/50 text-sm md:text-base tracking-wide font-medium">
-              Browse Helix Bio&apos;s full catalog of research-use-only peptides. Every batch is third-party tested for purity, shipped from the USA, and backed by a certificate of analysis you can review before you order.
-            </p>
-          </div>
-        </div>
-
-        {/* Banner Row */}
-        <div className="relative w-full h-[350px] sm:h-[450px] md:h-[550px] rounded-[2rem] md:rounded-[3rem] overflow-hidden mb-4 sm:mb-6 shadow-2xl group cursor-pointer bg-zinc-900">
-          <Image
-            src="/HelixBio Images/mutiple-vial-1.webp"
-            alt="Helix Bio research peptide vials with certificate of analysis, USA laboratory supply"
-            fill
-            className="object-cover opacity-90 transition-transform duration-1000 group-hover:scale-105"
-          />
-          
-          {/* Frosted Info Bar */}
-          <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 bg-black/40 backdrop-blur-xl border border-white/10 rounded-[1.5rem] p-4 sm:p-6 flex items-center justify-between transition-transform duration-500 group-hover:-translate-y-1">
-            <div className="flex flex-col gap-2">
-               <span className="bg-white/20 backdrop-blur-sm text-white text-[9px] sm:text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full w-max">
-                 NEW BATCHES
-               </span>
-               <h3 className="text-white text-lg sm:text-2xl font-bold tracking-tight">
-                 Leaders in high-purity synthesis
-               </h3>
-               <p className="text-white/60 text-[10px] sm:text-sm font-medium line-clamp-1">
-                 Our products: research peptides, amino acids, and laboratory compounds.
-               </p>
-            </div>
-            <button className="w-10 h-10 sm:w-14 sm:h-14 rounded-full bg-white flex items-center justify-center shrink-0 shadow-lg group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-              <ArrowUpRight className="w-5 h-5 sm:w-6 sm:h-6" strokeWidth={2.5} />
-            </button>
-          </div>
-        </div>
-
-        {/* Stats Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
-          <div className="bg-white rounded-[1.5rem] p-6 sm:p-8 flex items-end justify-between hover:shadow-lg transition-all duration-300 cursor-default border border-black/5 shadow-[0_4px_20px_rgb(0,0,0,0.03)]">
-            <div className="flex flex-col">
-              <span className="text-4xl sm:text-5xl font-black text-ink font-heading tracking-tighter">
-                99%
-              </span>
-              <span className="text-[10px] sm:text-xs font-bold text-ink/50 uppercase tracking-widest mt-1">
-                PURITY GUARANTEE
-              </span>
-            </div>
-            <button className="w-8 h-8 rounded-full bg-ink text-white flex items-center justify-center mb-1 hover:bg-primary transition-colors">
-              <ArrowUpRight className="w-4 h-4" />
-            </button>
-          </div>
-          
-          <div className="bg-white rounded-[1.5rem] p-6 sm:p-8 flex justify-between relative hover:shadow-lg transition-all duration-300 cursor-default border border-black/5 shadow-[0_4px_20px_rgb(0,0,0,0.03)]">
-            <div className="flex flex-col justify-end h-full">
-              <span className="text-4xl sm:text-5xl font-black text-ink font-heading tracking-tighter">
-                30K+
-              </span>
-              <span className="text-[10px] sm:text-xs font-bold text-ink/50 uppercase tracking-widest mt-1">
-                VIALS SHIPPED TO U.S. LABS
-              </span>
-            </div>
-            <span className="absolute top-6 right-6 border border-ink/10 text-ink/60 text-[9px] font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-ink/5">
-              RELIABLE
-            </span>
-          </div>
-
-          <div className="bg-ink rounded-[1.5rem] p-6 sm:p-8 flex items-end relative hover:bg-black transition-all duration-300 cursor-default shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
-            <div className="flex flex-col">
-              <span className="text-4xl sm:text-5xl font-black text-white font-heading tracking-tighter">
-                100%
-              </span>
-              <span className="text-[10px] sm:text-xs font-bold text-white/50 uppercase tracking-widest mt-1">
-                BATCHES COA-VERIFIED
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <Container size="page" className="pb-12" id="products-grid">
-        {/* Modern Minimal Category Pills */}
-        <div className={`flex flex-col gap-3 sm:gap-4 mb-8 sm:mb-12 py-4 sticky z-40 transition-all duration-300 ${isScrollingDown ? 'top-4 sm:top-6 opacity-100 translate-y-0' : 'top-[130px] sm:top-[140px] md:top-[150px] opacity-100 translate-y-0'}`}>
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between w-full bg-white/95 backdrop-blur-3xl rounded-2xl p-2 sm:p-3 border border-black/5 shadow-[0_4px_25px_rgb(0,0,0,0.04)] gap-2 sm:gap-0">
+        {/* Sticky Controls & Filter Capsule */}
+        <div
+          className={`sticky z-30 transition-all duration-300 mb-6 sm:mb-8 ${
+            isScrollingDown
+              ? 'top-3 sm:top-5'
+              : 'top-[76px] sm:top-[88px] md:top-[100px]'
+          }`}
+        >
+          <div className="bg-[#f0efeb]/90 backdrop-blur-2xl border border-[#eddcd2] rounded-2xl sm:rounded-[22px] p-2 sm:p-2.5 shadow-[0_8px_30px_rgba(32,34,28,0.06)] flex flex-col gap-2">
             
-            {/* Scrollable Categories */}
-            <div className="relative w-full sm:flex-1">
-              {/* Fade Indicator for scroll */}
-              <div className="absolute right-0 top-0 bottom-0 w-8 sm:w-16 bg-gradient-to-l from-white to-transparent pointer-events-none z-10 rounded-r-xl" />
+            {/* Top Row: Categories Strip + Search & Sort */}
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 sm:gap-3">
               
-              <div ref={categoriesScrollRef} className="w-full overflow-x-auto no-scrollbar scroll-smooth flex items-center gap-2 px-1 relative z-0 pb-1 sm:pb-0">
+              {/* Horizontal Scrollable Category Pills */}
+              <div className="relative flex-1 min-w-0 overflow-hidden">
+                {/* Left Fade Edge */}
+                <div className="absolute left-0 top-0 bottom-0 w-4 bg-gradient-to-r from-[#f0efeb] to-transparent pointer-events-none z-10 hidden sm:block" />
+                {/* Right Fade Edge */}
+                <div className="absolute right-0 top-0 bottom-0 w-8 sm:w-12 bg-gradient-to-l from-[#f0efeb] to-transparent pointer-events-none z-10" />
+
+                <div
+                  ref={categoriesScrollRef}
+                  className="w-full overflow-x-auto no-scrollbar scroll-smooth flex items-center gap-1.5 sm:gap-2 px-1 py-1"
+                >
+                  <button
+                    onClick={clearAllCategories}
+                    className={`px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-wider transition-all duration-200 shrink-0 cursor-pointer ${
+                      activeCategories.length === 0
+                        ? 'bg-[#20221c] text-[#fff1e6] shadow-sm'
+                        : 'bg-white/80 hover:bg-white text-neutral-600 hover:text-neutral-900 border border-[#eddcd2]/70'
+                    }`}
+                  >
+                    All Peptides
+                  </button>
+
+                  {categories.map((cat) => {
+                    const isActive =
+                      activeCategories.includes(cat.name) ||
+                      (cat.slug && activeCategories.includes(cat.slug))
+                    const displayName = getCategoryDisplayName(cat.name)
+
+                    return (
+                      <button
+                        key={cat.id}
+                        onClick={() => toggleCategoryFilter(cat.name)}
+                        className={`px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-wider transition-all duration-200 shrink-0 cursor-pointer ${
+                          isActive
+                            ? 'bg-[#20221c] text-[#fff1e6] shadow-sm'
+                            : 'bg-white/80 hover:bg-white text-neutral-600 hover:text-neutral-900 border border-[#eddcd2]/70'
+                        }`}
+                      >
+                        {displayName}
+                      </button>
+                    )
+                  })}
+                </div>
+              </div>
+
+              {/* Controls Group: Search, Quick Filters & Sort */}
+              <div className="flex items-center gap-2 shrink-0 pt-1 md:pt-0 border-t border-[#eddcd2]/50 md:border-t-0 px-1">
+                
+                {/* Live Search Input */}
+                <div className="relative flex-1 sm:w-48 md:w-56 lg:w-64">
+                  <Search
+                    size={15}
+                    className="absolute left-3 top-1/2 -translate-y-1/2 text-neutral-400 pointer-events-none"
+                  />
+                  <input
+                    type="text"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    placeholder="Search compounds..."
+                    className="w-full pl-9 pr-7 py-2 sm:py-2.5 text-xs sm:text-[13px] bg-white/90 focus:bg-white border border-[#eddcd2] rounded-full text-[#20221c] placeholder:text-neutral-400 focus:outline-none focus:border-[#cb997e] transition-colors"
+                  />
+                  {searchQuery && (
+                    <button
+                      onClick={() => setSearchQuery('')}
+                      className="absolute right-2.5 top-1/2 -translate-y-1/2 text-neutral-400 hover:text-neutral-800 p-0.5 rounded-full"
+                    >
+                      <X size={13} />
+                    </button>
+                  )}
+                </div>
+
+                {/* Filter Drawer / Quick Toggle Button */}
                 <button
-                  onClick={() => {
-                    const params = new URLSearchParams(searchParams.toString())
-                    params.delete('category')
-                    router.push(`${pathname}?${params.toString()}`, { scroll: false })
-                  }}
-                  className={`px-5 sm:px-8 py-2.5 sm:py-3 rounded-xl text-[10px] sm:text-xs font-bold uppercase tracking-widest transition-all shrink-0 ${
-                    activeChips.filter(c => c.key.startsWith('category-')).length === 0 
-                      ? 'bg-ink text-white shadow-md' 
-                      : 'bg-transparent text-ink/60 hover:bg-ink/5 hover:text-ink'
+                  onClick={() => setShowFiltersDrawer((prev) => !prev)}
+                  className={`inline-flex items-center gap-1.5 px-3 sm:px-4 py-2 sm:py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 shrink-0 cursor-pointer border ${
+                    showFiltersDrawer || activeFiltersCount > 0
+                      ? 'bg-[#20221c] text-[#fff1e6] border-[#20221c]'
+                      : 'bg-white/90 hover:bg-white text-neutral-700 border-[#eddcd2]'
                   }`}
                 >
-                  ALL
+                  <SlidersHorizontal size={14} />
+                  <span className="hidden sm:inline">Filters</span>
+                  {activeFiltersCount > 0 && (
+                    <span className="w-4 h-4 rounded-full bg-[#cb997e] text-white text-[10px] flex items-center justify-center font-bold">
+                      {activeFiltersCount}
+                    </span>
+                  )}
                 </button>
-                
-                {categories.map((cat) => {
-                  const isActive = activeChips.some(c => c.value === cat.slug)
-                  return (
-                    <button
-                      key={cat.id}
-                      onClick={() => {
-                        const params = new URLSearchParams(searchParams.toString())
-                        params.delete('category')
-                        if (!isActive) {
-                          params.set('category', cat.slug)
-                        }
-                        router.push(`${pathname}?${params.toString()}`, { scroll: false })
-                      }}
-                      className={`px-5 sm:px-8 py-2.5 sm:py-3 rounded-xl text-[10px] sm:text-xs font-bold uppercase tracking-widest transition-all shrink-0 ${
-                        isActive 
-                          ? 'bg-primary text-white shadow-[0_4px_15px_rgba(14,165,233,0.3)]' 
-                          : 'bg-transparent text-ink/60 hover:bg-ink/5 hover:text-ink'
-                      }`}
-                    >
-                      {cat.name}
-                    </button>
-                  )
-                })}
+
+                {/* Sort Dropdown */}
+                <Select
+                  defaultValue={currentSort}
+                  onValueChange={(val) => {
+                    const params = new URLSearchParams(searchParams.toString())
+                    params.set('sort', val)
+                    router.push(`${pathname}?${params.toString()}`, { scroll: false })
+                  }}
+                >
+                  <SelectTrigger className="w-auto min-w-[125px] sm:min-w-[145px] bg-white/90 hover:bg-white border border-[#eddcd2] rounded-full px-3 sm:px-4 h-9 sm:h-10 text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-[#20221c] gap-2 transition-all">
+                    <SelectValue placeholder="Sort By" />
+                  </SelectTrigger>
+                  <SelectContent
+                    align="end"
+                    className="bg-[#f0efeb] border border-[#eddcd2] rounded-2xl shadow-[0_12px_32px_rgba(0,0,0,0.1)] p-1.5 min-w-[180px] z-50"
+                  >
+                    <SelectItem value="newest" className="rounded-xl cursor-pointer text-xs uppercase tracking-wider font-semibold focus:bg-[#eddcd2]/60 focus:text-neutral-900 py-2.5 px-3">
+                      Newest Arrivals
+                    </SelectItem>
+                    <SelectItem value="price-asc" className="rounded-xl cursor-pointer text-xs uppercase tracking-wider font-semibold focus:bg-[#eddcd2]/60 focus:text-neutral-900 py-2.5 px-3">
+                      Price: Low to High
+                    </SelectItem>
+                    <SelectItem value="price-desc" className="rounded-xl cursor-pointer text-xs uppercase tracking-wider font-semibold focus:bg-[#eddcd2]/60 focus:text-neutral-900 py-2.5 px-3">
+                      Price: High to Low
+                    </SelectItem>
+                    <SelectItem value="name-asc" className="rounded-xl cursor-pointer text-xs uppercase tracking-wider font-semibold focus:bg-[#eddcd2]/60 focus:text-neutral-900 py-2.5 px-3">
+                      Alphabetical A-Z
+                    </SelectItem>
+                  </SelectContent>
+                </Select>
+
               </div>
             </div>
 
-            <div className="hidden sm:block w-px h-8 bg-ink/10 mx-2 sm:mx-4 shrink-0" />
+            {/* Expandable Filter Row (Stock & Sale Toggles) */}
+            <AnimatePresence>
+              {showFiltersDrawer && (
+                <motion.div
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: 'auto', opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  transition={{ duration: 0.25, ease: 'easeInOut' }}
+                  className="overflow-hidden border-t border-[#eddcd2]/70 pt-2 px-1"
+                >
+                  <div className="flex flex-wrap items-center gap-2 py-1">
+                    <span className="text-xs font-mono uppercase text-neutral-500 mr-1 tracking-wider">
+                      Quick Filters:
+                    </span>
 
-            <div className="w-full sm:w-auto border-t border-ink/5 pt-2 sm:pt-0 sm:border-0 px-1 sm:px-0">
-              <Select 
-                defaultValue={searchParams.get('sort') || 'newest'}
-                onValueChange={(val) => {
-                  const params = new URLSearchParams(searchParams.toString())
-                  params.set('sort', val)
-                  router.push(`${pathname}?${params.toString()}`, { scroll: false })
-                }}
-              >
-                <SelectTrigger className="w-full sm:w-auto min-w-0 sm:min-w-[140px] bg-transparent border-0 focus:ring-0 shadow-none hover:bg-ink/5 rounded-xl px-2 sm:px-4 h-10 text-[10px] md:text-xs font-semibold uppercase tracking-widest text-ink gap-2 transition-all shrink">
-                  <SelectValue placeholder={t('sortByPlaceholder')} />
-                </SelectTrigger>
-                <SelectContent align="end" className="bg-white/95 backdrop-blur-3xl border-ink/10 rounded-[1.5rem] shadow-[0_10px_40px_-10px_rgba(0,0,0,0.15)] p-2 min-w-[180px] sm:min-w-[200px] w-[90vw] max-w-[280px] sm:w-auto sm:max-w-none">
-                <SelectItem value="newest" className="rounded-xl cursor-pointer text-[10px] sm:text-xs uppercase tracking-widest font-bold focus:bg-primary/5 focus:text-primary py-3 px-4 transition-colors">{t('sortNewest')}</SelectItem>
-                <SelectItem value="price-asc" className="rounded-xl cursor-pointer text-[10px] sm:text-xs uppercase tracking-widest font-bold focus:bg-primary/5 focus:text-primary py-3 px-4 transition-colors">{t('sortPriceAsc')}</SelectItem>
-                <SelectItem value="price-desc" className="rounded-xl cursor-pointer text-[10px] sm:text-xs uppercase tracking-widest font-bold focus:bg-primary/5 focus:text-primary py-3 px-4 transition-colors">{t('sortPriceDesc')}</SelectItem>
-                <SelectItem value="name-asc" className="rounded-xl cursor-pointer text-[10px] sm:text-xs uppercase tracking-widest font-bold focus:bg-primary/5 focus:text-primary py-3 px-4 transition-colors">{t('sortNameAsc')}</SelectItem>
-              </SelectContent>
-            </Select>
+                    {/* In Stock Pill */}
+                    <button
+                      onClick={toggleStockFilter}
+                      className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all cursor-pointer border ${
+                        isInStockActive
+                          ? 'bg-[#6B8E5E] text-white border-[#6B8E5E]'
+                          : 'bg-white text-neutral-700 border-[#eddcd2] hover:border-neutral-400'
+                      }`}
+                    >
+                      {isInStockActive && <Check size={12} strokeWidth={3} />}
+                      In Stock Only
+                    </button>
+
+                    {/* On Sale Pill */}
+                    <button
+                      onClick={toggleSaleFilter}
+                      className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all cursor-pointer border ${
+                        isOnSaleActive
+                          ? 'bg-[#cb997e] text-white border-[#cb997e]'
+                          : 'bg-white text-neutral-700 border-[#eddcd2] hover:border-neutral-400'
+                      }`}
+                    >
+                      {isOnSaleActive && <Check size={12} strokeWidth={3} />}
+                      On Sale
+                    </button>
+
+                    {/* Clear all active filters if count > 0 */}
+                    {activeFiltersCount > 0 && (
+                      <button
+                        onClick={resetAllFilters}
+                        className="inline-flex items-center gap-1 px-3 py-1.5 text-xs text-neutral-500 hover:text-neutral-900 font-medium ml-auto transition-colors cursor-pointer"
+                      >
+                        <RotateCcw size={12} />
+                        Reset All
+                      </button>
+                    )}
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+
           </div>
         </div>
 
-        {/* Active Chips Row removed as requested */}
-      </div>
+        {/* Active Chips & Product Count Bar */}
+        <div className="flex flex-wrap items-center justify-between gap-3 mb-6 px-1 text-neutral-600">
+          <div className="flex items-center gap-2">
+            <span className="text-xs sm:text-[13px] font-heading font-medium tracking-tight text-neutral-800">
+              Showing <strong className="text-neutral-950 font-bold">{displayProducts.length}</strong> Research Compounds
+            </span>
+            {searchQuery && (
+              <span className="text-xs text-neutral-500 font-mono">
+                matching &ldquo;{searchQuery}&rdquo;
+              </span>
+            )}
+          </div>
 
-      {/* Results Area */}
-        {products.length > 0 ? (
+          {/* Active Chips Badges */}
+          {activeFiltersCount > 0 && (
+            <div className="flex flex-wrap items-center gap-1.5">
+              {activeCategories.map((cat) => (
+                <span
+                  key={cat}
+                  className="inline-flex items-center gap-1 bg-[#eddcd2] text-[#20221c] text-[11px] font-medium px-2.5 py-1 rounded-full border border-[#ddbea9]"
+                >
+                  {getCategoryDisplayName(cat)}
+                  <button
+                    onClick={() => toggleCategoryFilter(cat)}
+                    className="hover:text-red-700 ml-0.5 cursor-pointer"
+                  >
+                    <X size={11} />
+                  </button>
+                </span>
+              ))}
+
+              {isInStockActive && (
+                <span className="inline-flex items-center gap-1 bg-[#E8EFE3] text-[#6B8E5E] text-[11px] font-semibold px-2.5 py-1 rounded-full border border-[#6B8E5E]/30">
+                  In Stock
+                  <button onClick={toggleStockFilter} className="hover:opacity-80 ml-0.5 cursor-pointer">
+                    <X size={11} />
+                  </button>
+                </span>
+              )}
+
+              {isOnSaleActive && (
+                <span className="inline-flex items-center gap-1 bg-[#fff1e6] text-[#cb997e] text-[11px] font-semibold px-2.5 py-1 rounded-full border border-[#cb997e]/30">
+                  On Sale
+                  <button onClick={toggleSaleFilter} className="hover:opacity-80 ml-0.5 cursor-pointer">
+                    <X size={11} />
+                  </button>
+                </span>
+              )}
+
+              {searchQuery && (
+                <span className="inline-flex items-center gap-1 bg-white text-neutral-700 text-[11px] font-medium px-2.5 py-1 rounded-full border border-[#eddcd2]">
+                  &ldquo;{searchQuery}&rdquo;
+                  <button onClick={() => setSearchQuery('')} className="hover:text-red-700 ml-0.5 cursor-pointer">
+                    <X size={11} />
+                  </button>
+                </span>
+              )}
+
+              <button
+                onClick={resetAllFilters}
+                className="text-[11px] font-semibold text-[#cb997e] hover:underline ml-1 cursor-pointer"
+              >
+                Clear all
+              </button>
+            </div>
+          )}
+        </div>
+
+        {/* 3. Products Grid Area */}
+        {displayProducts.length > 0 ? (
           <>
-            {/* Product Grid */}
-            <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 sm:gap-6 xl:gap-8">
-              {products.map((product, index) => (
-                <motion.div 
-                  key={product.slug} 
+            <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 xs:gap-4 sm:gap-6 xl:gap-7">
+              {displayProducts.map((product, index) => (
+                <motion.div
+                  key={product.slug || product.id}
                   className="flex h-full w-full"
-                  initial={{ opacity: 0, y: 24 }}
+                  initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: '0px 0px -50px 0px' }}
-                  transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1], delay: (index % 12) * 0.05 }}
+                  viewport={{ once: true, margin: '0px 0px -40px 0px' }}
+                  transition={{
+                    duration: 0.5,
+                    ease: [0.16, 1, 0.3, 1],
+                    delay: (index % 8) * 0.04,
+                  }}
                 >
                   <ProductCard product={product} />
                 </motion.div>
               ))}
             </div>
 
-            {/* Infinite Scroll Trigger & Loader */}
-            {hasMore && (
-              <div ref={loadMoreRef} className="w-full flex justify-center pt-24 pb-12">
+            {/* Infinite Scroll Trigger & Load More */}
+            {hasMore && !searchQuery.trim() && (
+              <div ref={loadMoreRef} className="w-full flex justify-center pt-16 sm:pt-20 pb-8">
                 {isLoadingMore ? (
-                  <div className="flex flex-col items-center gap-4">
-                    <Spinner className="w-8 h-8 text-ink" />
-                    <span className="text-[10px] sm:text-xs font-bold text-ink/50 uppercase tracking-widest">{t('loadingMore')}</span>
+                  <div className="flex flex-col items-center gap-3">
+                    <Spinner className="w-7 h-7 text-[#20221c]" />
+                    <span className="text-[11px] font-bold text-neutral-500 uppercase tracking-widest font-mono">
+                      Loading Additional Compounds...
+                    </span>
                   </div>
                 ) : (
-                  <Button 
-                    variant="outline" 
+                  <Button
+                    variant="outline"
                     onClick={handleLoadMore}
-                    className="border-gray-200 text-gray-500 hover:text-ink hover:border-ink px-8 py-6 rounded-full font-bold uppercase tracking-widest text-[10px] sm:text-xs"
+                    className="border-[#20221c]/30 hover:border-[#cb997e] hover:bg-[#cb997e] hover:text-white px-8 py-5 rounded-full font-heading text-xs font-bold uppercase tracking-widest transition-all duration-300 shadow-xs cursor-pointer"
                   >
-                    Load More
+                    Load More Peptides
                   </Button>
                 )}
               </div>
             )}
-            {!hasMore && (
-              <div className="w-full text-center pt-24 pb-12 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-ink/30">
-                {t('reachedEndOfCatalog')}
+
+            {!hasMore && !searchQuery.trim() && (
+              <div className="w-full text-center pt-16 sm:pt-20 pb-8 text-xs font-mono uppercase tracking-widest text-neutral-400">
+                — End of Catalog ({products.length} Compounds Total) —
               </div>
             )}
           </>
         ) : (
-          <EmptyState
-            icon={Search}
-            title={t('noProductsFound')}
-            description={t('noProductsFoundDescription')}
-            action={
-              <FluidButton
-                onClick={() => router.push('/shop')}
-                text={t('clearAllFilters')}
-                variant="dark"
-              />
-            }
-          />
+          <div className="bg-white/80 border border-[#eddcd2] rounded-3xl p-8 sm:p-14 text-center my-8 shadow-xs">
+            <EmptyState
+              icon={Search}
+              title="No Research Peptides Found"
+              description="No peptide compounds match your currently active filters or query. Try resetting your search or clearing selected categories."
+              action={
+                <Button
+                  onClick={resetAllFilters}
+                  className="mt-4 bg-[#20221c] hover:bg-[#cb997e] text-[#fff1e6] rounded-full px-6 py-2.5 font-semibold text-xs transition-colors cursor-pointer"
+                >
+                  Clear All Filters
+                </Button>
+              }
+            />
+          </div>
         )}
-      </Container>
-      <div className="-mt-16">
+
+        {/* 4. Analytical Quality Assurance Strip */}
+        <div className="mt-16 sm:mt-24 mb-12 sm:mb-16 bg-[#b7b7a4]/25 border border-[#b7b7a4]/60 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 shadow-[0_8px_30px_rgba(0,0,0,0.02)]">
+          <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
+            <p className="font-serif tracking-[0.2em] text-xs uppercase text-neutral-700 font-normal mb-2">
+              Laboratory Assurance
+            </p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-[#20221c] font-heading">
+              Veracue Analytical Standards
+            </h2>
+            <p className="text-neutral-600 text-xs sm:text-sm mt-2 leading-relaxed">
+              Every compound is synthesized to the highest scientific purity levels, strictly designated for analytical evaluation and in vitro cellular research.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+            {/* Standard 1 */}
+            <div className="bg-white/90 rounded-2xl p-5 sm:p-6 border border-[#eddcd2] shadow-xs flex flex-col items-start">
+              <div className="w-10 h-10 rounded-full bg-[#f0efeb] flex items-center justify-center text-[#20221c] mb-3.5 border border-[#eddcd2]">
+                <ShieldCheck size={20} />
+              </div>
+              <h3 className="font-heading font-bold text-sm sm:text-base text-[#20221c] mb-1">
+                ≥99% HPLC Purity
+              </h3>
+              <p className="text-neutral-500 text-xs leading-relaxed">
+                Quantitative High-Performance Liquid Chromatography verification on every batch lot.
+              </p>
+            </div>
+
+            {/* Standard 2 */}
+            <div className="bg-white/90 rounded-2xl p-5 sm:p-6 border border-[#eddcd2] shadow-xs flex flex-col items-start">
+              <div className="w-10 h-10 rounded-full bg-[#f0efeb] flex items-center justify-center text-[#20221c] mb-3.5 border border-[#eddcd2]">
+                <Snowflake size={20} />
+              </div>
+              <h3 className="font-heading font-bold text-sm sm:text-base text-[#20221c] mb-1">
+                Cold-Chain Packaged
+              </h3>
+              <p className="text-neutral-500 text-xs leading-relaxed">
+                Thermal insulated packaging protecting lyophilized cake integrity from temperature fluctuation.
+              </p>
+            </div>
+
+            {/* Standard 3 */}
+            <div className="bg-white/90 rounded-2xl p-5 sm:p-6 border border-[#eddcd2] shadow-xs flex flex-col items-start">
+              <div className="w-10 h-10 rounded-full bg-[#f0efeb] flex items-center justify-center text-[#20221c] mb-3.5 border border-[#eddcd2]">
+                <FileCheck2 size={20} />
+              </div>
+              <h3 className="font-heading font-bold text-sm sm:text-base text-[#20221c] mb-1">
+                Lot-Specific COA
+              </h3>
+              <p className="text-neutral-500 text-xs leading-relaxed">
+                Independent certificates of analysis documenting mass spectrometry data available with every order.
+              </p>
+            </div>
+
+            {/* Standard 4 */}
+            <div className="bg-white/90 rounded-2xl p-5 sm:p-6 border border-[#eddcd2] shadow-xs flex flex-col items-start">
+              <div className="w-10 h-10 rounded-full bg-[#f0efeb] flex items-center justify-center text-[#20221c] mb-3.5 border border-[#eddcd2]">
+                <Truck size={20} />
+              </div>
+              <h3 className="font-heading font-bold text-sm sm:text-base text-[#20221c] mb-1">
+                Rapid U.S. Dispatch
+              </h3>
+              <p className="text-neutral-500 text-xs leading-relaxed">
+                Domestic fulfillment from climate-controlled research logistics hubs across the United States.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      {/* 5. Shared FAQ Section */}
+      <div className="-mt-10 sm:-mt-14 relative z-20">
         <SharedFaqSection
-          title={t('faqTitle')}
-          description={t('faqDescription')}
+          title={
+            <>
+              Research<br />Catalog FAQs
+            </>
+          }
+          subtitle="Support & Documentation"
+          description="Common technical questions regarding our synthetic peptides, storage, COA verification, and laboratory supply standards."
           faqs={shopFaqs}
         />
       </div>
@@ -431,7 +663,7 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
 
 export function ShopClient(props: ShopClientProps) {
   return (
-    <Suspense fallback={<div className="min-h-screen bg-cream w-full" />}>
+    <Suspense fallback={<div style={{ backgroundColor: '#f0efeb' }} className="min-h-screen w-full" />}>
       <ShopClientInner {...props} />
     </Suspense>
   )

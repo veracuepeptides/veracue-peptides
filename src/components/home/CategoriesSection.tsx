@@ -6,6 +6,7 @@ import { Link } from '@/i18n/navigation'
 import Image from 'next/image'
 import { getCategoryDisplayName } from '@/lib/categoryDisplay'
 import { ArrowRight } from 'lucide-react'
+import { HeroButton } from '@/components/ui/hero-button'
 
 export interface HomeCategory {
   id: string | number
@@ -180,30 +181,9 @@ export function CategoriesSection({ categories = [] }: CategoriesSectionProps) {
 
         {/* Bottom CTA: Explore Full Catalog */}
         <div className="mt-12 sm:mt-16 text-center">
-          <Link
-            href="/shop"
-            className="relative group inline-flex items-center gap-3 sm:gap-4 bg-[#20221c] hover:bg-[#cb997e] text-[#fff1e6] pl-6 sm:pl-8 pr-1.5 sm:pr-2 py-2.5 sm:py-3 rounded-full font-semibold text-[13px] sm:text-[14px] border border-neutral-800 hover:border-[#cb997e] transition-colors duration-300 shadow-[0_4px_16px_rgba(0,0,0,0.1)] cursor-pointer overflow-hidden"
-          >
-            {/* Specular Light Sheen Reflection */}
-            <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-1000 ease-out pointer-events-none" />
-
-            <span className="tracking-tight transition-transform duration-300 group-hover:translate-x-0.5 select-none font-heading font-medium">
-              Explore Complete Research Catalog
-            </span>
-
-            <span className="w-7 sm:w-8 h-7 sm:h-8 rounded-full bg-white text-black flex items-center justify-center relative overflow-hidden shrink-0">
-              <ArrowRight 
-                size={14} 
-                strokeWidth={2.5} 
-                className="transition-all duration-300 ease-out group-hover:translate-x-6 group-hover:opacity-0" 
-              />
-              <ArrowRight 
-                size={14} 
-                strokeWidth={2.5} 
-                className="absolute -translate-x-6 opacity-0 transition-all duration-300 ease-out group-hover:translate-x-0 group-hover:opacity-100" 
-              />
-            </span>
-          </Link>
+          <HeroButton href="/shop" size="lg">
+            Explore Complete Research Catalog
+          </HeroButton>
         </div>
 
       </div>

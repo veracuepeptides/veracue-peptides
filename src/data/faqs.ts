@@ -14,7 +14,7 @@ export const faqData: FaqCategoryType[] = [
     "items": [
       {
         "question": "What is a research peptide?",
-        "answer": "<p><span style=\"font-weight: 400;\">A research peptide is a short chain of amino acids manufactured for laboratory study rather than human or veterinary use.</span></p>\r\n<p><span style=\"font-weight: 400;\"></span></p>\r\n<p><span style=\"font-weight: 400;\">Helix Bio's catalog is synthesized and tested to a documented purity standard and sold exclusively for scientific research.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">A research peptide is a short chain of amino acids manufactured for laboratory study rather than human or veterinary use.</span></p>\r\n<p><span style=\"font-weight: 400;\"></span></p>\r\n<p><span style=\"font-weight: 400;\">Veracue's catalog is synthesized and tested to a documented purity standard and sold exclusively for scientific research.</span></p>"
       },
       {
         "question": "What are research peptides used for in laboratory research?",
@@ -22,15 +22,15 @@ export const faqData: FaqCategoryType[] = [
       },
       {
         "question": "How are research peptides classified for human use?",
-        "answer": "<p><span style=\"font-weight: 400;\">They are not classified for human use at all.</span></p>\r\n<p><span style=\"font-weight: 400;\"></span></p>\r\n<p><span style=\"font-weight: 400;\">Every compound in the Helix Bio catalog is labeled Research Use Only (RUO), meaning it is not evaluated, approved, or intended for human or veterinary consumption.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">They are not classified for human use at all.</span></p>\r\n<p><span style=\"font-weight: 400;\"></span></p>\r\n<p><span style=\"font-weight: 400;\">Every compound in the Veracue catalog is labeled Research Use Only (RUO), meaning it is not evaluated, approved, or intended for human or veterinary consumption.</span></p>"
       },
       {
-        "question": "What quality standards does Helix Bio apply to research peptides?",
-        "answer": "<p><span style=\"font-weight: 400;\">Every batch in the Helix Bio catalog is synthesized and analytically tested before it is offered for sale, with purity and identity confirmed through HPLC and mass spectrometry.</span></p>\r\n<p><span style=\"font-weight: 400;\"></span></p>\r\n<p><span style=\"font-weight: 400;\">Results are documented on a batch-specific certificate of analysis so researchers can verify specifications independently.</span></p>"
+        "question": "What quality standards does Veracue apply to research peptides?",
+        "answer": "<p><span style=\"font-weight: 400;\">Every batch in the Veracue catalog is synthesized and analytically tested before it is offered for sale, with purity and identity confirmed through HPLC and mass spectrometry.</span></p>\r\n<p><span style=\"font-weight: 400;\"></span></p>\r\n<p><span style=\"font-weight: 400;\">Results are documented on a batch-specific certificate of analysis so researchers can verify specifications independently.</span></p>"
       },
       {
-        "question": "Who typically purchases research peptides from Helix Bio?",
-        "answer": "<p><span style=\"font-weight: 400;\">Academic labs, private research organizations, and institutional researchers use Helix Bio's catalog to source purity-verified compounds for laboratory study.</span></p>\r\n<p><span style=\"font-weight: 400;\"></span></p>\r\n<p><span style=\"font-weight: 400;\">All purchases are made on the understanding that materials are supplied strictly for research use only.</span></p>"
+        "question": "Who typically purchases research peptides from Veracue?",
+        "answer": "<p><span style=\"font-weight: 400;\">Academic labs, private research organizations, and institutional researchers use Veracue's catalog to source purity-verified compounds for laboratory study.</span></p>\r\n<p><span style=\"font-weight: 400;\"></span></p>\r\n<p><span style=\"font-weight: 400;\">All purchases are made on the understanding that materials are supplied strictly for research use only.</span></p>"
       }
     ]
   },

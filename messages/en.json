@@ -843,14 +843,14 @@
       "statusProcessing": "Processing",
       "statusShipped": "Shipped",
       "statusDelivered": "Delivered",
-      "metaTitle": "Account Overview | Helix Bio",
-      "metaDescription": "View your recent orders, wishlist, purity points, and account details in one place."
+      "metaTitle": "Account Overview | Veracue Peptides",
+      "metaDescription": "View your recent orders, research wishlist, reward points, and account details in one place."
     },
     "addresses": {
       "title": "Saved Addresses",
       "subtitle": "Manage where your lab equipment and peptides are shipped.",
-      "metaTitle": "Saved Addresses | Helix Bio",
-      "metaDescription": "Manage the shipping addresses saved to your Helix Bio account.",
+      "metaTitle": "Saved Addresses | Veracue Peptides",
+      "metaDescription": "Manage laboratory shipping and delivery addresses for your Veracue account.",
       "addNewAddress": "Add New Address",
       "editAddressTitle": "Edit Address",
       "addAddressTitle": "Add a New Address",
@@ -888,14 +888,14 @@
     },
     "layout": {
       "title": "My Account",
-      "metaTitle": "My Account | Helix Bio",
-      "metaDescription": "Manage your Helix Bio account, orders, addresses, and preferences."
+      "metaTitle": "My Account | Veracue Peptides",
+      "metaDescription": "Manage your Veracue Peptides account, orders, lab addresses, and research preferences."
     },
     "orders": {
       "title": "Order History",
       "subtitle": "Track, manage, and return your recent purchases.",
-      "metaTitle": "Order History | Helix Bio",
-      "metaDescription": "Track, manage, and review your recent Helix Bio orders.",
+      "metaTitle": "Order History | Veracue Peptides",
+      "metaDescription": "Track, review, and manage your recent Veracue Peptides research orders.",
       "filterStatus": "Filter Status",
       "filterAll": "All Orders",
       "filterProcessing": "Processing",
@@ -944,8 +944,8 @@
       "paymentSuccessful": "Payment Successful",
       "paymentRefunded": "Refunded",
       "paymentProcessing": "Payment Processing",
-      "metaTitle": "Order Details | Helix Bio",
-      "metaDescription": "View the details, items, and shipping status of your Helix Bio order."
+      "metaTitle": "Order Details | Veracue Peptides",
+      "metaDescription": "View batch details, certificate of analysis records, and shipping status of your Veracue order."
     },
     "settings": {
       "toastUpdateFailed": "Failed to update profile",
@@ -981,8 +981,8 @@
       "orderSmsUpdatesDescription": "Get real-time text messages about your order shipments and deliveries.",
       "errorUnauthorized": "Unauthorized",
       "errorUnexpected": "An unexpected error occurred",
-      "metaTitle": "Account Settings | Helix Bio",
-      "metaDescription": "Manage your personal information, security preferences, and notification settings."
+      "metaTitle": "Account Settings | Veracue Peptides",
+      "metaDescription": "Manage your personal credentials, laboratory security settings, and notifications."
     },
     "wishlist": {
       "title": "My Wishlist",
@@ -993,8 +993,8 @@
       "emptyTitle": "Your wishlist is empty",
       "emptyDescription": "Save items you want to buy later by clicking the heart icon on any product page.",
       "startBrowsing": "Start Browsing",
-      "metaTitle": "My Wishlist | Helix Bio",
-      "metaDescription": "View and manage the research peptides you've saved to your wishlist.",
+      "metaTitle": "My Wishlist | Veracue Peptides",
+      "metaDescription": "Review and manage the research peptide standards saved to your wishlist.",
       "selectVariantRequired": "Please select a variant on the product page."
     },
     "sidebar": {
@@ -2086,8 +2086,8 @@
       "submit": "Submit Request"
     },
     "faqPage": {
-      "metaTitle": "Research Peptides FAQ | Purity & Compliance | Helix Bio",
-      "metaDescription": "Answers to common research peptide questions: purity testing, COA documentation, storage, and research-use-only compliance. Read the Helix Bio FAQ."
+      "metaTitle": "Research Peptides FAQ | Purity & Compliance | Veracue",
+      "metaDescription": "Answers to common research peptide questions: purity testing, COA documentation, storage, and research-use-only compliance. Read the Veracue FAQ."
     },
     "aboutHero": {
       "viewPeptidesShort": "View Peptides",
@@ -2581,6 +2581,74 @@
     "loadMore": "Load More Posts",
     "shareArticle": "Share article",
     "linkCopied": "Link copied to clipboard!"
+  },
+  "content": {
+    "faqPage": {
+      "metaTitle": "Frequently Asked Questions | Veracue Peptides",
+      "metaDescription": "Explore detailed guidance on peptide storage, reconstitution, analytical testing, and research protocols at Veracue Peptides."
+    },
+    "contactPage": {
+      "metaTitle": "Contact Us | Veracue Peptides",
+      "metaDescription": "Contact Veracue Peptides. Get in touch with our team for questions about research compounds, orders, or batch certificates of analysis."
+    },
+    "contactHero": {
+      "eyebrow": "CUSTOMER SUPPORT & RESEARCH INQUIRIES · US-BASED TEAM",
+      "title": "Get in Touch with Our Team",
+      "subtitle": "Have questions about our peptides, batch testing, an order, or bulk pricing? We're here to help."
+    },
+    "contactClient": {
+      "supportEmailTitle": "Customer & Product Support",
+      "supportEmailDescription": "Questions regarding research peptides, storage, reconstitution, or batch testing.",
+      "supportEmailMicrocopy": "Average response time < 2 hours during business hours.",
+      "bulkEmailTitle": "Bulk & Institutional Orders",
+      "bulkEmailDescription": "Inquiries for academic laboratories, high-volume orders, and invoice billing.",
+      "bulkEmailMicrocopy": "Custom volume pricing available upon request.",
+      "logisticsTitle": "Shipping & Order Help",
+      "logisticsDescription": "Questions about shipping, tracking, or your recent delivery.",
+      "logisticsMicrocopy": "Orders before 2:00 PM EST ship same day.",
+      "faqTitle": "Frequently Asked Questions",
+      "faqSubtitle": "Quick answers to common questions about orders, testing, and shipping.",
+      "faqs": {
+        "contactInfo": {
+          "question": "What is the best way to contact Veracue?",
+          "answer": "You can email us at support@veracuepeptides.com or use the contact form below. We typically respond within 2 hours on business days."
+        },
+        "usLabsContact": {
+          "question": "Where are Veracue peptides tested?",
+          "answer": "All peptides are tested by accredited third-party laboratories in the United States using HPLC and mass spectrometry to verify purity and identity."
+        },
+        "locationShipping": {
+          "question": "How are orders packaged and shipped?",
+          "answer": "Peptides are shipped in vacuum-sealed vials inside insulated mailers with cold packs to ensure they arrive in optimal condition."
+        },
+        "serviceHours": {
+          "question": "What are your customer service hours?",
+          "answer": "Our team is available Monday through Friday from 8:00 AM to 6:00 PM EST. Emails sent outside these hours are answered the following morning."
+        }
+      },
+      "disclaimerLabel": "RESEARCH USE ONLY NOTICE",
+      "disclaimerText": "All peptide compounds sold by Veracue are intended strictly for in-vitro laboratory research and analytical evaluation. Products are not intended for human or veterinary use, medical diagnosis, or therapeutic applications."
+    },
+    "contactForm": {
+      "heading": "Send Us a Message",
+      "subheading": "Fill out the form below and our team will get back to you as soon as possible.",
+      "departmentLabel": "What can we help you with?",
+      "nameLabel": "Your Name",
+      "namePlaceholder": "Your full name",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "name@example.com",
+      "organizationLabel": "Company or Institution (Optional)",
+      "organizationPlaceholder": "Company or institution name",
+      "subjectLabel": "Subject",
+      "subjectPlaceholder": "e.g. Question about BPC-157 5mg",
+      "messageLabel": "Your Message",
+      "messagePlaceholder": "Tell us how we can help...",
+      "submit": "Send Message",
+      "sending": "Sending Message...",
+      "sent": "Thank you! Your message has been sent. We'll get back to you shortly.",
+      "errorRequiredFields": "Please complete all required fields (Name, Email, Subject, and Message).",
+      "errorUnexpected": "Something went wrong while sending your message. Please email support@veracuepeptides.com directly."
+    }
   },
   "notFound": {
     "title": "Whoops! Looks like this page evaporated during our latest experiment. Don't worry, no researchers were harmed in the making of this 404 error. Let's get you back to the lab!",

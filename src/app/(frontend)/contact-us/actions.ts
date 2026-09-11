@@ -32,10 +32,10 @@ export async function submitContactForm(formData: FormData) {
     const html = generateContactFormEmail(name, email, department, subject, message)
 
     await sendTrackedEmail(payload, {
-      from: `"${name}" <forms@helixbiochem.com>`,
-      to: 'support@helixbiochem.com',
+      from: `"${name}" <forms@veracuepeptides.com>`,
+      to: 'support@veracuepeptides.com',
       replyTo: email,
-      subject: `[Contact Form] ${subject}`,
+      subject: `[Veracue Research Inquiry] ${subject}`,
       html: html,
     })
 

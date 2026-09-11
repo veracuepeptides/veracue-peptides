@@ -1,121 +1,320 @@
 'use client'
 
-import React from 'react'
-import { motion } from 'framer-motion'
-import { ArrowUpRight, ArrowRight } from 'lucide-react'
+import React, { useRef, useState, useEffect } from 'react'
 import Image from 'next/image'
-import { useTranslations } from 'next-intl'
-import { Link } from '@/i18n/navigation'
+import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion'
+import { HeroButton } from '@/components/ui/hero-button'
+
+const CONTACT_HERO_IMAGES = [
+  {
+    src: '/veracue-images/veracue-military-researcher-lab.jpg',
+    alt: 'Veracue Customer & Laboratory Support',
+    topic: 'Customer & Laboratory Support',
+  },
+  {
+    src: '/veracue-images/veracue-research-grade-50mg-gloved-hand.png',
+    alt: 'Veracue Research Peptide Handling',
+    topic: 'Product & Batch Testing',
+  },
+  {
+    src: '/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp',
+    alt: 'Veracue Research Peptides Collection',
+    topic: 'Bulk Orders & Quotes',
+  },
+]
 
 export function ContactHero() {
-  const t = useTranslations('content.contactHero')
-  
+  const containerRef = useRef<HTMLDivElement>(null)
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const shouldReduceMotion = useReducedMotion()
+
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ['start start', 'end start'],
+  })
+
+  // Subtle Parallax & Zoom matching Homepage Hero & ShopHero
+  const imageY = useTransform(
+    scrollYProgress,
+    [0, 1],
+    shouldReduceMotion ? ['0%', '0%'] : ['0%', '16%']
+  )
+  const imageScale = useTransform(
+    scrollYProgress,
+    [0, 1],
+    shouldReduceMotion ? [1, 1] : [1, 1.06]
+  )
+
+  // Automatic Subtle Carousel Rotation every 5.5s
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % CONTACT_HERO_IMAGES.length)
+    }, 5500)
+    return () => clearInterval(timer)
+  }, [])
+
+  const handleScrollToForm = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault()
+    const target = document.getElementById('inquiry-form')
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   return (
-    <div className="w-full bg-[#FAFAFA] font-sans">
-      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10 pt-32 sm:pt-36 md:pt-44 pb-4 mx-auto max-w-[1920px]">
-        
-        {/* Header Row */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 md:mb-10">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-ink uppercase tracking-tighter leading-[0.9] mb-2 sm:mb-4">
-              {t('title')}
-            </h1>
-            <p className="text-ink/50 text-sm md:text-base tracking-wide font-medium max-w-xl">
-              {t('subtitle')}
-            </p>
-          </motion.div>
-        </div>
+    <section
+      ref={containerRef}
+      style={{ backgroundColor: '#f0efeb' }}
+      className="w-full pt-[78px] sm:pt-[94px] md:pt-[128px] pb-2.5 sm:pb-4 md:pb-5 font-sans min-h-[100dvh] md:h-screen md:min-h-[620px] flex flex-col items-center justify-between overflow-hidden select-none"
+    >
+      {/* Top Header & Intro Block */}
+      <div className="flex flex-col items-center text-center shrink-0 w-full max-w-5xl px-3">
+        {/* 1. Eyebrow Tagline */}
+        <p className="font-serif tracking-[0.16em] sm:tracking-[0.24em] text-[9.5px] sm:text-[11.5px] md:text-[12px] uppercase text-neutral-700 font-normal mb-1.5 sm:mb-2">
+          Customer Support &amp; Research Inquiries · US-Based Team
+        </p>
 
-        {/* Banner Row */}
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative w-full h-[400px] sm:h-[450px] md:h-[550px] rounded-[2rem] md:rounded-[3rem] overflow-hidden mb-4 sm:mb-6 shadow-2xl group cursor-pointer bg-zinc-900"
-        >
-          <Image
-            src="/HelixBio Images/helixbio-as-routine.webp"
-            alt="Contact HelixBio"
-            fill
-            className="object-cover opacity-90 transition-transform duration-1000 group-hover:scale-105"
-            priority
-          />
-          
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent pointer-events-none" />
-          
-          {/* Bottom Info Pill */}
-          <div className="absolute bottom-4 left-4 right-4 sm:bottom-10 sm:left-10 sm:right-28 z-20 pointer-events-none">
-            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 sm:p-6 shadow-2xl transition-transform duration-500 group-hover:-translate-y-2">
-              <span className="bg-white/20 text-white text-[10px] sm:text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-2 sm:mb-3 inline-block shadow-sm">
-                CONTACT US
-              </span>
-              <p className="text-white text-xs sm:text-base md:text-lg font-medium tracking-wide mb-1 leading-relaxed line-clamp-3 sm:line-clamp-none">
-                Our dedicated support team is available to assist you with order inquiries, product information, and research guidance.
-              </p>
-            </div>
-          </div>
-          
-          {/* Floating Icon */}
-          <div className="absolute bottom-10 right-10 z-20 w-12 h-12 bg-white/20 backdrop-blur-md rounded-full items-center justify-center border border-white/30 text-white transition-transform duration-500 group-hover:scale-110 group-hover:bg-white group-hover:text-ink hidden sm:flex">
-            <ArrowUpRight className="w-5 h-5" />
-          </div>
-        </motion.div>
+        {/* 2. Main Headline (H1) */}
+        <h1 className="text-[22px] xs:text-2xl sm:text-3xl md:text-4xl lg:text-[46px] xl:text-[52px] font-bold tracking-[-0.03em] text-neutral-900 leading-tight mb-1.5 sm:mb-2.5 sm:whitespace-nowrap font-heading">
+          Get in Touch with Our Team
+        </h1>
 
-        {/* Stats Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="bg-white rounded-[1.5rem] p-6 sm:p-8 flex items-end justify-between hover:shadow-lg transition-all duration-300 cursor-default border border-black/5 shadow-[0_4px_20px_rgb(0,0,0,0.03)]"
-          >
-            <div className="flex flex-col">
-              <span className="text-4xl sm:text-5xl font-black text-ink font-heading tracking-tighter">
-                &lt; 24H
-              </span>
-              <span className="text-[10px] sm:text-xs font-bold text-ink/50 uppercase tracking-widest mt-1">
-                RESPONSE TIME
-              </span>
-            </div>
-          </motion.div>
-          
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="bg-white rounded-[1.5rem] p-6 sm:p-8 flex justify-between relative hover:shadow-lg transition-all duration-300 cursor-default border border-black/5 shadow-[0_4px_20px_rgb(0,0,0,0.03)]"
-          >
-            <div className="flex flex-col justify-end h-full">
-              <span className="text-4xl sm:text-5xl font-black text-ink font-heading tracking-tighter">
-                100%
-              </span>
-              <span className="text-[10px] sm:text-xs font-bold text-ink/50 uppercase tracking-widest mt-1">
-                US-BASED SUPPORT
-              </span>
-            </div>
-          </motion.div>
+        {/* 3. Sub-headline / Supporting Description */}
+        <p className="text-neutral-500 text-[11.5px] sm:text-[13px] md:text-[14.5px] max-w-2xl leading-relaxed mb-2.5 sm:mb-4 font-normal px-1 line-clamp-3 sm:line-clamp-none">
+          Have a question about our research peptides, need a batch certificate of analysis, or inquiring about a bulk order? We&apos;re here to help.
+        </p>
 
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            className="bg-ink rounded-[1.5rem] p-6 sm:p-8 flex items-end relative hover:bg-black transition-all duration-300 cursor-default shadow-[0_8px_30px_rgb(0,0,0,0.12)]"
+        {/* 4. CTA Pill Button */}
+        <div className="flex justify-center mb-2.5 sm:mb-4">
+          <HeroButton
+            href="#inquiry-form"
+            onClick={handleScrollToForm}
+            direction="down"
           >
-            <div className="flex flex-col">
-              <span className="text-4xl sm:text-5xl font-black text-white font-heading tracking-tighter">
-                SECURE
-              </span>
-              <span className="text-[10px] sm:text-xs font-bold text-white/50 uppercase tracking-widest mt-1">
-                COMMUNICATIONS
-              </span>
-            </div>
-          </motion.div>
+            Send a Message
+          </HeroButton>
         </div>
       </div>
-    </div>
+
+      {/* 5. The Visual Feature Card Container - Exactly matches Homepage Hero & ShopHero */}
+      <div className="w-full mx-auto px-3 sm:px-6 md:px-10 flex-1 min-h-[300px] sm:min-h-[360px] md:min-h-[250px] flex flex-col">
+        <div className="relative w-full h-full flex-1 rounded-2xl md:rounded-[18px] overflow-hidden bg-zinc-900">
+          {/* Background Hero Images with Crossfade & Parallax */}
+          <motion.div
+            className="absolute inset-x-0 -top-[12%] h-[125%] w-full will-change-transform"
+            style={{ y: imageY, scale: imageScale }}
+          >
+            {CONTACT_HERO_IMAGES.map((img, idx) => {
+              const isActive = idx === currentImageIndex
+              return (
+                <motion.div
+                  key={img.src}
+                  className="absolute inset-0 w-full h-full"
+                  initial={false}
+                  animate={{
+                    opacity: isActive ? 1 : 0,
+                    scale: isActive ? 1.025 : 1,
+                  }}
+                  transition={{
+                    opacity: { duration: 1.2, ease: 'easeInOut' },
+                    scale: { duration: 5.5, ease: 'easeOut' },
+                  }}
+                >
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    fill
+                    priority={idx === 0}
+                    sizes="100vw"
+                    className="object-cover object-center"
+                  />
+                </motion.div>
+              )
+            })}
+          </motion.div>
+
+          {/* Cinematic Vignette Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-black/35 pointer-events-none z-10" />
+
+          {/* Top-Right Overlay: Slide Indicators & Active Topic */}
+          <div className="absolute top-3.5 sm:top-7 md:top-9 right-3.5 sm:right-7 md:right-9 z-20 flex items-center gap-2 sm:gap-2.5 bg-black/40 backdrop-blur-md px-2.5 sm:px-3.5 py-1.5 rounded-full border border-white/15 shadow-sm">
+            <span className="text-[10px] sm:text-[11px] font-mono uppercase text-white/85 tracking-wider hidden xs:inline-block">
+              {CONTACT_HERO_IMAGES[currentImageIndex].topic}
+            </span>
+            <div className="flex items-center gap-1.5">
+              {CONTACT_HERO_IMAGES.map((img, idx) => (
+                <button
+                  key={img.src}
+                  onClick={() => setCurrentImageIndex(idx)}
+                  className="cursor-pointer py-1 group flex items-center"
+                  aria-label={`Go to slide ${idx + 1}: ${img.topic}`}
+                >
+                  <span
+                    className={`block h-1 sm:h-1.5 rounded-full transition-all duration-500 ${
+                      idx === currentImageIndex
+                        ? 'w-5 sm:w-6 bg-white'
+                        : 'w-1.5 sm:w-2 bg-white/40 group-hover:bg-white/70'
+                    }`}
+                  />
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Top-Left Overlay (Key Stat & Purity) */}
+          <div className="absolute top-3.5 sm:top-7 md:top-9 left-3.5 sm:left-7 md:left-9 z-20 text-white text-left">
+            <div className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-[68px] font-black tracking-[-0.03em] text-white leading-none drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] font-heading">
+              &lt; 2h
+            </div>
+            <p className="text-white/95 text-[10.5px] xs:text-xs sm:text-[13.5px] md:text-[15px] font-medium leading-snug mt-1 sm:mt-2.5 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)] max-w-[150px] sm:max-w-[240px]">
+              Average Response,<br />During Business Hours
+            </p>
+          </div>
+
+          {/* Bottom-Right Overlay */}
+          <div className="absolute bottom-12 xs:bottom-14 sm:bottom-12 md:bottom-14 right-3 sm:right-7 md:right-10 z-20 text-white text-right sm:text-left max-w-[135px] xs:max-w-[170px] sm:max-w-[300px] md:max-w-[360px]">
+            <h3 className="text-xs xs:text-sm sm:text-xl md:text-2xl lg:text-[26px] font-extrabold tracking-tight text-white leading-tight mb-0.5 sm:mb-2 drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] font-heading">
+              Dedicated<br className="sm:hidden" /> Support
+            </h3>
+            <p className="hidden xs:block sm:hidden text-[9px] text-white/85 leading-snug line-clamp-2 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
+              Real support from our US-based team.
+            </p>
+            <p className="hidden sm:block text-white/90 text-xs sm:text-[13px] md:text-[14.5px] font-normal leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
+              Our team is available Monday through Friday to answer product questions, provide batch COAs, and assist with orders.
+            </p>
+          </div>
+
+          {/* Bottom-Center Inverted Scooped-Out Docked Pill with Moving Marquee */}
+          <div
+            style={{ bottom: '-3px' }}
+            className="absolute left-1/2 -translate-x-1/2 z-20 flex items-end"
+          >
+            {/* Left Scooped S-Curve Ear */}
+            <svg
+              style={{ color: '#f0efeb' }}
+              className="w-7 xs:w-8 sm:w-11 md:w-14 h-8 xs:h-9 sm:h-11 md:h-14 shrink-0 pointer-events-none -mr-[1px]"
+              viewBox="0 0 58 58"
+              preserveAspectRatio="none"
+              fill="currentColor"
+              shapeRendering="geometricPrecision"
+              aria-hidden="true"
+            >
+              <path d="M 0 58 L 2 58 C 29 58, 29 0, 56 0 L 58 0 L 58 58 Z" />
+            </svg>
+
+            {/* Center Dock with Infinite Marquee */}
+            <div
+              style={{ backgroundColor: '#f0efeb' }}
+              className="h-8 xs:h-9 sm:h-11 md:h-14 w-[210px] xs:w-[260px] sm:w-[500px] md:w-[680px] lg:w-[840px] max-w-[calc(100vw-80px)] overflow-hidden relative z-10 flex items-center"
+            >
+              {/* Left edge fade overlay */}
+              <div
+                style={{ background: 'linear-gradient(to right, #f0efeb, transparent)' }}
+                className="absolute left-0 top-0 bottom-0 w-3.5 xs:w-5 sm:w-8 md:w-10 pointer-events-none z-20"
+              />
+
+              {/* Right edge fade overlay */}
+              <div
+                style={{ background: 'linear-gradient(to left, #f0efeb, transparent)' }}
+                className="absolute right-0 top-0 bottom-0 w-3.5 xs:w-5 sm:w-8 md:w-10 pointer-events-none z-20"
+              />
+
+              <div className="flex w-max animate-marquee items-center [animation-duration:22s] hover:[animation-play-state:paused] font-heading select-none">
+                {/* Set 1 */}
+                <div className="flex items-center gap-3 sm:gap-8 md:gap-12 shrink-0 pr-3 sm:pr-8 md:pr-12">
+                  <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
+                    <span className="text-neutral-950 font-bold text-[9px] xs:text-[10px] sm:text-base leading-none">✦</span>
+                    <span className="font-extrabold text-neutral-950">&lt; 2h</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Response Time</span>
+                  </div>
+
+                  <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
+                    <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full border-[1.5px] sm:border-[2px] border-neutral-950 inline-block shrink-0" />
+                    <span className="font-extrabold text-neutral-950">100%</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">US-Based Team</span>
+                  </div>
+
+                  <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
+                    <span className="text-neutral-950 font-bold text-[9px] xs:text-[10px] sm:text-base leading-none">✦</span>
+                    <span className="font-extrabold text-neutral-950">Batch COAs</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">On Demand</span>
+                  </div>
+
+                  <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
+                    <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full border border-neutral-950 bg-neutral-950 inline-block shrink-0" />
+                    <span className="font-extrabold text-neutral-950">Same-Day</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Dispatch</span>
+                  </div>
+
+                  <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
+                    <span className="text-neutral-950 font-bold text-[9px] xs:text-[10px] sm:text-base leading-none">✦</span>
+                    <span className="font-extrabold text-neutral-950">Bulk Pricing</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Available</span>
+                  </div>
+
+                  <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
+                    <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full bg-gradient-to-r from-neutral-950 to-transparent border border-neutral-950 inline-block shrink-0" />
+                    <span className="font-extrabold text-neutral-950">Cold-Chain</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Packaged</span>
+                  </div>
+                </div>
+
+                {/* Set 2 (Duplicate for Seamless Loop) */}
+                <div className="flex items-center gap-3 sm:gap-8 md:gap-12 shrink-0 pr-3 sm:pr-8 md:pr-12" aria-hidden="true">
+                  <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
+                    <span className="text-neutral-950 font-bold text-[9px] xs:text-[10px] sm:text-base leading-none">✦</span>
+                    <span className="font-extrabold text-neutral-950">&lt; 2h</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Response Time</span>
+                  </div>
+
+                  <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
+                    <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full border-[1.5px] sm:border-[2px] border-neutral-950 inline-block shrink-0" />
+                    <span className="font-extrabold text-neutral-950">100%</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">US-Based Team</span>
+                  </div>
+
+                  <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
+                    <span className="text-neutral-950 font-bold text-[9px] xs:text-[10px] sm:text-base leading-none">✦</span>
+                    <span className="font-extrabold text-neutral-950">Batch COAs</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">On Demand</span>
+                  </div>
+
+                  <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
+                    <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full border border-neutral-950 bg-neutral-950 inline-block shrink-0" />
+                    <span className="font-extrabold text-neutral-950">Same-Day</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Dispatch</span>
+                  </div>
+
+                  <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
+                    <span className="text-neutral-950 font-bold text-[9px] xs:text-[10px] sm:text-base leading-none">✦</span>
+                    <span className="font-extrabold text-neutral-950">Bulk Pricing</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Available</span>
+                  </div>
+
+                  <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
+                    <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full bg-gradient-to-r from-neutral-950 to-transparent border border-neutral-950 inline-block shrink-0" />
+                    <span className="font-extrabold text-neutral-950">Cold-Chain</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Packaged</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Scooped S-Curve Ear */}
+            <svg
+              style={{ color: '#f0efeb' }}
+              className="w-7 xs:w-8 sm:w-11 md:w-14 h-8 xs:h-9 sm:h-11 md:h-14 shrink-0 pointer-events-none -ml-[1px]"
+              viewBox="0 0 58 58"
+              preserveAspectRatio="none"
+              fill="currentColor"
+              shapeRendering="geometricPrecision"
+              aria-hidden="true"
+            >
+              <path d="M 0 0 L 2 0 C 29 0, 29 58, 56 58 L 58 58 L 0 58 Z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
   )
 }

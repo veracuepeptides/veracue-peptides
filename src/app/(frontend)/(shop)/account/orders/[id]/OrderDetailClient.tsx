@@ -46,7 +46,7 @@ export function OrderDetailClient({ order }: OrderDetailProps) {
       const product = item.product || item.productSnapshot || {}
       if (product.id) {
         const title = product.title || product.name || t('unknownProduct')
-        const imageUrl = (product.images?.[0]?.image?.url || product.images?.[0]?.url || '/HelixBio Images/featured-research-2.webp').replace(/ /g, '%20')
+        const imageUrl = (product.images?.[0]?.image?.url || product.images?.[0]?.url || '/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp').replace(/ /g, '%20')
         const price = typeof item.price === 'number' ? item.price : (product.basePrice || product.price || 0)
         addItem(
           { id: product.id, name: title, imageUrl, slug: product.slug },

@@ -50,18 +50,15 @@ export default async function ContactPage({
   const tClient = await getTranslations({ locale, namespace: 'content.contactClient' })
   const title = t('metaTitle')
   const description = t('metaDescription')
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
   const path = true ? `/${slug}` : `/${locale}/${slug}`
   const url = `${baseUrl}${path}`
 
   const faqKeys = ['usLabsContact', 'locationShipping', 'serviceHours'] as const
-  // contactInfo's answer contains <phone>/<email> rich-text tags for the on-page link rendering
-  // (via t.rich in ContactClient), so it's composed here in plain text rather than read with
-  // plain t(), which requires tag-value functions for messages containing those tags.
   const contactInfoFaq = {
     question: tClient('faqs.contactInfo.question'),
     answer:
-      'Reach us via email at support@helixbiochem.com for lab inquiries.',
+      'Reach our scientific support team via email at support@veracuepeptides.com for lab and batch inquiries.',
   }
 
   const schema = {
@@ -86,20 +83,19 @@ export default async function ContactPage({
       {
         '@type': 'Organization',
         '@id': `${baseUrl}/#organization`,
-        name: 'Helix Bio',
+        name: 'Veracue Peptides',
         url: baseUrl,
-        email: 'support@helixbiochem.com',
+        email: 'support@veracuepeptides.com',
 
         contactPoint: [
           {
             '@type': 'ContactPoint',
-            contactType: 'customer support',
-            email: 'support@helixbiochem.com',
+            contactType: 'scientific support',
+            email: 'support@veracuepeptides.com',
             areaServed: 'US',
-            availableLanguage: ['English', 'Spanish'],
-            hoursAvailable: 'Mo-Fr 09:00-17:00',
+            availableLanguage: ['English'],
+            hoursAvailable: 'Mo-Fr 08:00-18:00',
           },
-
         ],
       },
       {

@@ -30,8 +30,8 @@ const SHOP_FAQ_KEYS = [
   'fdaApproval',
 ]
 
-const title = 'Research Peptides Shop | Lab-Verified Purity | Helix Bio'
-const description = 'Shop research peptides online with verified COA on every batch, 99% purity, and fast USA shipping. Browse the Helix Bio catalog and order today.'
+const title = 'Research Peptides Catalog | Lab-Verified ≥99% Purity | Veracue'
+const description = 'Shop analytical-grade research peptides with third-party verified COA on every batch, ≥99% HPLC purity, and cold-chain USA shipping. Explore the Veracue catalog.'
 
 export async function generateMetadata({
   params,
@@ -156,14 +156,14 @@ export default async function ShopPage() {
                 '@type': 'WebSite',
                 '@id': `${siteUrl}/#website`,
                 url: siteUrl,
-                name: 'Helix Bio',
+                name: 'Veracue',
               },
               {
                 '@type': 'Organization',
                 '@id': `${siteUrl}/#organization`,
-                name: 'Helix Bio',
+                name: 'Veracue',
                 url: siteUrl,
-                description: 'USA-based supplier of research-use-only synthetic peptides for laboratory research.',
+                description: 'USA-based supplier of analytical-grade research peptides for laboratory research.',
               },
               {
                 '@type': 'FAQPage',

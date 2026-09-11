@@ -421,7 +421,12 @@ export async function getShopProducts(params: {
     if (params.categories && params.categories.length > 0) {
       const cats = await payload.find({
         collection: 'categories',
-        where: { name: { in: params.categories } }, // In FilterSidebar we filter by Category Name
+        where: {
+          or: [
+            { name: { in: params.categories } },
+            { slug: { in: params.categories } },
+          ],
+        },
         depth: 0,
         overrideAccess: true,
       })
@@ -476,7 +481,7 @@ export async function getShopProducts(params: {
     })
 
     const uiProducts = results.docs.map(doc => {
-      let imageUrl = '/HelixBio Images/featured-research-2.webp'
+      let imageUrl = '/veracue-images/vp-product-vial.jpeg'
       let hoverImageUrl: string | undefined = undefined
 
       if (doc.images && doc.images.length > 0) {
@@ -505,7 +510,7 @@ export async function getShopProducts(params: {
       }
       
       // Fallback to variant images if no global image exists
-      if (imageUrl === '/HelixBio Images/featured-research-2.webp' && doc.hasVariants && doc.variants && doc.variants.length > 0) {
+      if (imageUrl === '/veracue-images/vp-product-vial.jpeg' && doc.hasVariants && doc.variants && doc.variants.length > 0) {
         for (const variant of doc.variants) {
           if (variant.images && variant.images.length > 0 && typeof variant.images[0].image === 'object' && variant.images[0].image !== null) {
             const encodeUrl = (url: string) => {

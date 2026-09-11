@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
+import { HeroButton } from '@/components/ui/hero-button'
 
 const HERO_IMAGES = [
   {
@@ -80,37 +81,9 @@ export function Hero() {
 
         {/* 4. CTA Pill Button */}
         <div className="flex justify-center mb-2.5 sm:mb-4">
-          <div className="relative group inline-block">
-            <Link
-              href="/shop"
-              className="relative inline-flex items-center gap-3 sm:gap-4 bg-neutral-950 hover:bg-[#cb997e] text-white pl-5 sm:pl-7 pr-1.5 sm:pr-2 py-1.5 sm:py-2.5 rounded-full font-semibold text-[13px] sm:text-[15px] border border-neutral-800/80 hover:border-[#cb997e] transition-colors duration-300 shadow-[0_2px_8px_rgba(0,0,0,0.06)] cursor-pointer overflow-hidden"
-            >
-              {/* Specular Light Sheen Reflection across button */}
-              <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-1000 ease-out pointer-events-none" />
-
-              {/* Label Text with Subtle Forward Glide */}
-              <span className="tracking-tight transition-transform duration-300 group-hover:translate-x-0.5 select-none font-heading font-medium">
-                Shop All Peptides
-              </span>
-
-              {/* Circular Arrow Badge with Dual-Arrow Slide Effect */}
-              <span className="w-7 sm:w-9 h-7 sm:h-9 rounded-full bg-white text-black flex items-center justify-center relative overflow-hidden shrink-0">
-                {/* Arrow 1: Slides out to the right on hover */}
-                <ArrowRight 
-                  size={15} 
-                  strokeWidth={2.5} 
-                  className="transition-all duration-300 ease-out group-hover:translate-x-6 group-hover:opacity-0" 
-                />
-                
-                {/* Arrow 2: Slides in from the left on hover */}
-                <ArrowRight 
-                  size={15} 
-                  strokeWidth={2.5} 
-                  className="absolute -translate-x-6 opacity-0 transition-all duration-300 ease-out group-hover:translate-x-0 group-hover:opacity-100" 
-                />
-              </span>
-            </Link>
-          </div>
+          <HeroButton href="/shop">
+            Shop All Peptides
+          </HeroButton>
         </div>
       </div>
 

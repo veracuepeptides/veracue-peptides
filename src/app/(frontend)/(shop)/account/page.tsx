@@ -29,7 +29,7 @@ export default async function AccountOverviewPage() {
     collection: 'orders',
     where: { owner: { equals: user.id } },
     sort: '-createdAt',
-    limit: 3, // Recent orders
+    limit: 5, // Recent orders
     overrideAccess: true,
   })
 
@@ -94,7 +94,9 @@ export default async function AccountOverviewPage() {
   }
 
   const totalSpent = yearOrders.reduce((sum, o) => sum + (o.total || 0), 0)
-  const PALETTE = ['#112a2e', '#1e5661', '#84d0d9', '#d1e8eb', '#9ca3af']
+  
+  // Veracue Signature Brand Color Palette for Donut / Category Analytics
+  const PALETTE = ['#20221c', '#cb997e', '#a5a58d', '#ddbea9', '#b7b7a4']
   const sortedCategories = [...categoryTotals.entries()].sort((a, b) => b[1] - a[1])
   const topCategories = sortedCategories.slice(0, 4)
   const otherTotal = sortedCategories.slice(4).reduce((sum, [, val]) => sum + val, 0)
@@ -118,15 +120,16 @@ export default async function AccountOverviewPage() {
     memberSince: user.createdAt ? new Date(user.createdAt).getFullYear().toString() : new Date().getFullYear().toString()
   }
 
-  const userName = user?.firstName || user?.email?.split('@')[0] || 'User'
+  const userName = user?.firstName || user?.email?.split('@')[0] || 'Researcher'
 
   // Map to simple types for client component to keep it clean
   const recentOrders = orders.map(order => ({
     id: String(order.id),
     orderNumber: order.orderNumber || String(order.id),
-    date: order.createdAt ? new Date(order.createdAt).toLocaleDateString(false ? 'es-US' : 'en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : 'Unknown Date',
+    date: order.createdAt ? new Date(order.createdAt).toLocaleDateString(locale === 'es' ? 'es-US' : 'en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : 'Unknown Date',
     status: order.status,
     total: order.total || 0,
+    itemCount: order.items?.reduce((sum, item) => sum + (item.quantity || 1), 0) || order.items?.length || 0,
   }))
 
   const defaultAddress = defaultAddressDoc ? {
@@ -138,6 +141,8 @@ export default async function AccountOverviewPage() {
     country: defaultAddressDoc.country,
   } : null
 
+  const userEmail = user?.email || ''
+
   return (
     <AccountOverviewClient
       stats={stats}
@@ -145,6 +150,7 @@ export default async function AccountOverviewPage() {
       defaultAddress={defaultAddress}
       affiliateStatus={affiliateStatus as any}
       userName={userName}
+      userEmail={userEmail}
       spending={spending}
     />
   )

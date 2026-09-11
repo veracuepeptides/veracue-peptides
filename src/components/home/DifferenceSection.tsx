@@ -4,7 +4,8 @@ import React, { useRef } from 'react'
 import Image from 'next/image'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { Link } from '@/i18n/navigation'
-import { ArrowRight, ShieldCheck, Award, PackageCheck, Sparkles, CheckCircle2 } from 'lucide-react'
+import { ShieldCheck, Award, PackageCheck, Sparkles, CheckCircle2 } from 'lucide-react'
+import { HeroButton } from '@/components/ui/hero-button'
 
 const RESEARCH_PILLARS = [
   {
@@ -167,34 +168,9 @@ export function DifferenceSection() {
           {/* BOTTOM: Center Pill Button (Matching Reference Image) */}
           {/* ==================================================================== */}
           <div className="mt-8 sm:mt-12 md:mt-14 flex justify-center">
-            <div className="relative group inline-block">
-              <Link 
-                href="/shop" 
-                className="relative inline-flex items-center gap-3 sm:gap-4 bg-[#20221c] hover:bg-[#cb997e] text-[#fff1e6] pl-6 sm:pl-8 pr-2 sm:pr-2.5 py-2.5 sm:py-3 rounded-full font-semibold text-[13px] sm:text-[15px] border border-neutral-800/80 hover:border-[#cb997e] transition-colors duration-300 shadow-[0_8px_24px_rgba(0,0,0,0.2)] cursor-pointer overflow-hidden"
-              >
-                {/* Specular Sheen Reflection Shimmer */}
-                <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-1000 ease-out pointer-events-none" />
-
-                {/* Button Label */}
-                <span className="tracking-tight transition-transform duration-300 group-hover:translate-x-0.5 select-none font-heading font-medium uppercase text-xs sm:text-sm">
-                  Explore Research Standards
-                </span>
-
-                {/* Circular White Arrow Badge */}
-                <span className="w-7 sm:w-8 h-7 sm:h-8 rounded-full bg-white text-black flex items-center justify-center relative overflow-hidden shrink-0">
-                  <ArrowRight 
-                    size={14} 
-                    strokeWidth={2.5} 
-                    className="transition-all duration-300 ease-out group-hover:translate-x-6 group-hover:opacity-0" 
-                  />
-                  <ArrowRight 
-                    size={14} 
-                    strokeWidth={2.5} 
-                    className="absolute -translate-x-6 opacity-0 transition-all duration-300 ease-out group-hover:translate-x-0 group-hover:opacity-100" 
-                  />
-                </span>
-              </Link>
-            </div>
+            <HeroButton href="/shop" size="lg">
+              Explore Research Standards
+            </HeroButton>
           </div>
 
         </div>

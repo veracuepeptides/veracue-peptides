@@ -2,10 +2,10 @@
 
 import React, { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
 import { useTranslations } from 'next-intl'
-import { ArrowRight, CheckCircle2, Snowflake, Activity, FileCheck2, Sparkles } from 'lucide-react'
+import { CheckCircle2, Snowflake, Activity, FileCheck2, Sparkles } from 'lucide-react'
 import { motion, useScroll, useTransform } from 'framer-motion'
+import { HeroButton } from '@/components/ui/hero-button'
 
 export function TrustBadges() {
   const t = useTranslations('home.trustBadges')
@@ -172,29 +172,9 @@ export function TrustBadges() {
             </p>
 
             {/* Signature Luxury Pill Button */}
-            <div className="relative group inline-block">
-              <Link 
-                href="/about-us"
-                className="relative inline-flex items-center gap-2.5 sm:gap-4 bg-[#20221c] hover:bg-[#cb997e] text-[#fff1e6] pl-5 sm:pl-7 pr-1.5 sm:pr-2 py-2 sm:py-2.5 rounded-full font-semibold text-[12px] sm:text-[14px] border border-neutral-800/80 hover:border-[#cb997e] transition-colors duration-300 shadow-[0_4px_14px_rgba(0,0,0,0.12)] cursor-pointer overflow-hidden"
-              >
-                <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-1000 ease-out pointer-events-none" />
-                <span className="tracking-tight transition-transform duration-300 group-hover:translate-x-0.5 select-none font-heading font-medium whitespace-nowrap">
-                  {t('ctaText')}
-                </span>
-                <span className="w-7 sm:w-8 h-7 sm:h-8 rounded-full bg-white text-black flex items-center justify-center relative overflow-hidden shrink-0">
-                  <ArrowRight 
-                    size={14} 
-                    strokeWidth={2.5} 
-                    className="transition-all duration-300 ease-out group-hover:translate-x-6 group-hover:opacity-0" 
-                  />
-                  <ArrowRight 
-                    size={14} 
-                    strokeWidth={2.5} 
-                    className="absolute -translate-x-6 opacity-0 transition-all duration-300 ease-out group-hover:translate-x-0 group-hover:opacity-100" 
-                  />
-                </span>
-              </Link>
-            </div>
+            <HeroButton href="/about-us">
+              {t('ctaText')}
+            </HeroButton>
           </div>
         </div>
 

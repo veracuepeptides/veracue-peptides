@@ -1,8 +1,9 @@
 'use client'
 
-import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 import React, { useRef, useEffect } from 'react'
 import { Link } from '@/i18n/navigation'
+import { HeroButton } from '@/components/ui/hero-button'
 import { useTranslations } from 'next-intl'
 import { ProductCard } from '@/components/shared/ProductCard'
 
@@ -223,37 +224,10 @@ export function BestSellerSection({ products = [] }: { products?: any[] }) {
 
         {/* Footer actions - Mobile & Tablet Responsive */}
         <div className="mt-6 sm:mt-8 flex flex-row justify-between items-center gap-3 sm:gap-5 w-full">
-          {/* CTA Button - Matches Hero button sizing, padding, and responsive behavior */}
-          <div className="relative group inline-block shrink-0">
-            <Link 
-              href="/shop" 
-              className="relative inline-flex items-center gap-2.5 sm:gap-4 bg-[#20221c] hover:bg-[#cb997e] text-[#fff1e6] pl-4 sm:pl-7 pr-1.5 sm:pr-2 py-1.5 sm:py-2.5 rounded-full font-semibold text-[12px] sm:text-[15px] border border-neutral-800/80 hover:border-[#cb997e] transition-colors duration-300 shadow-[0_2px_8px_rgba(0,0,0,0.06)] cursor-pointer overflow-hidden"
-            >
-              {/* Specular Light Sheen Reflection across button */}
-              <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-1000 ease-out pointer-events-none" />
-
-              {/* Label Text with Subtle Forward Glide */}
-              <span className="tracking-tight transition-transform duration-300 group-hover:translate-x-0.5 select-none font-heading font-medium whitespace-nowrap">
-                {t('ctaText')}
-              </span>
-
-              {/* Circular Arrow Badge with Dual-Arrow Slide Effect */}
-              <span className="w-7 sm:w-9 h-7 sm:h-9 rounded-full bg-white text-black flex items-center justify-center relative overflow-hidden shrink-0">
-                {/* Arrow 1: Slides out to the right on hover */}
-                <ArrowRight 
-                  size={15} 
-                  strokeWidth={2.5} 
-                  className="transition-all duration-300 ease-out group-hover:translate-x-6 group-hover:opacity-0" 
-                />
-                {/* Arrow 2: Slides in from the left on hover */}
-                <ArrowRight 
-                  size={15} 
-                  strokeWidth={2.5} 
-                  className="absolute -translate-x-6 opacity-0 transition-all duration-300 ease-out group-hover:translate-x-0 group-hover:opacity-100" 
-                />
-              </span>
-            </Link>
-          </div>
+          {/* CTA Button - Matches Hero button sizing and responsive behavior */}
+          <HeroButton href="/shop">
+            {t('ctaText')}
+          </HeroButton>
           
           <div className="flex items-center gap-2 sm:gap-3 shrink-0">
             <button 
