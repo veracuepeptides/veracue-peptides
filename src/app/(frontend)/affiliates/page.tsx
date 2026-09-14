@@ -5,6 +5,7 @@ import type { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
 import { AffiliatesLandingClient, UserAffiliateStatus } from './AffiliatesLandingClient'
 import { getOgImageUrl } from '@/lib/utils'
+import { AFFILIATE_FALLBACKS } from '@/lib/affiliates/landingFallbacks'
 
 const slug = 'affiliates'
 
@@ -18,7 +19,17 @@ export async function generateMetadata({
   params?: Promise<any>
 }): Promise<Metadata> {
   const locale = 'en'
-  const t = await getTranslations('affiliate.landing')
+  const tRaw = await getTranslations('affiliate.landing')
+  const t = (key: string): string => {
+    try {
+      if (tRaw.has(key as any)) {
+        return tRaw(key as any)
+      }
+    } catch {
+      // ignore
+    }
+    return AFFILIATE_FALLBACKS[key] || key
+  }
   const title = t('metaTitle')
   const description = t('metaDescription')
   const path = true ? `/${slug}` : `/${locale}/${slug}`
@@ -52,10 +63,20 @@ export default async function AffiliatesLandingPage({
   params?: Promise<any>
 }) {
   const locale = 'en'
-  const t = await getTranslations('affiliate.landing')
+  const tRaw = await getTranslations('affiliate.landing')
+  const t = (key: string): string => {
+    try {
+      if (tRaw.has(key as any)) {
+        return tRaw(key as any)
+      }
+    } catch {
+      // ignore
+    }
+    return AFFILIATE_FALLBACKS[key] || key
+  }
   const title = t('metaTitle')
   const description = t('metaDescription')
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
   const path = true ? `/${slug}` : `/${locale}/${slug}`
   const url = `${baseUrl}${path}`
 
@@ -137,7 +158,16 @@ export default async function AffiliatesLandingPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <AffiliatesLandingClient userStatus={status} />
+      <AffiliatesLandingClient
+        userStatus={status}
+        initialPhone={user?.phone || ''}
+        initialDisplayName={
+          user
+            ? [user.firstName, user.lastName].filter(Boolean).join(' ')
+            : ''
+        }
+        userEmail={user?.email || ''}
+      />
     </>
   )
 }

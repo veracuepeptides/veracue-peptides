@@ -10,7 +10,7 @@ import { reserveStock, releaseStock, reserveCouponUsage, releaseCouponUsage, res
 import { sendTrackedEmail } from '@/lib/emails/sendTrackedEmail'
 import { escapeHtml } from '@/lib/emails/escapeHtml'
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || 'sk_test_placeholder_for_build', {
   apiVersion: '2024-04-10' as any,
 })
 

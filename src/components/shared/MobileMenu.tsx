@@ -356,7 +356,7 @@ export function MobileMenu({
                       Search compounds, CAS, or research tags...
                     </span>
                   </div>
-                  <span className="text-[10px] font-mono font-semibold uppercase tracking-wider px-2 py-0.5 rounded-md bg-[#f0efeb] text-[#282a21]/75 border border-[#282a21]/8 shrink-0 ml-2">
+                  <span className="text-[10px] font-sans font-semibold uppercase tracking-wider px-2 py-0.5 rounded-md bg-[#f0efeb] text-[#282a21]/75 border border-[#282a21]/8 shrink-0 ml-2">
                     ⌘K
                   </span>
                 </button>
@@ -468,7 +468,7 @@ export function MobileMenu({
               {/* 3. Research Categories Carousel (Curated Veracue Photography) */}
               <motion.div variants={itemVariants} className="space-y-3">
                 <div className="flex items-center justify-between px-1">
-                  <h3 className="text-[11px] font-mono font-bold uppercase tracking-[0.2em] text-[#282a21]/50">
+                  <h3 className="text-[11px] font-sans font-bold uppercase tracking-[0.2em] text-[#282a21]/50">
                     {t('exploreCategories')}
                   </h3>
                   <Link
@@ -502,7 +502,7 @@ export function MobileMenu({
 
                         <div className="absolute inset-0 p-3.5 sm:p-4 flex flex-col justify-between">
                           <div className="flex items-center justify-start">
-                            <span className="text-[9px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-white/20 backdrop-blur-md text-white border border-white/30">
+                            <span className="text-[9px] font-sans font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-white/20 backdrop-blur-md text-white border border-white/30">
                               {visual.tag}
                             </span>
                           </div>
@@ -557,7 +557,7 @@ export function MobileMenu({
 
               {/* 5. Support & Researcher Assistance */}
               <motion.div variants={itemVariants} className="space-y-2.5">
-                <h3 className="px-1 text-[11px] font-mono font-bold uppercase tracking-[0.2em] text-[#282a21]/50">
+                <h3 className="px-1 text-[11px] font-sans font-bold uppercase tracking-[0.2em] text-[#282a21]/50">
                   {t('support')}
                 </h3>
                 <div className="bg-white rounded-3xl p-1.5 border border-[#282a21]/8 shadow-[0_2px_12px_rgba(40,42,33,0.02)] divide-y divide-[#282a21]/5">
@@ -628,7 +628,7 @@ export function MobileMenu({
                           <span className="text-[14px] font-semibold text-[#282a21] group-hover:text-[#cb997e] transition-colors leading-snug">
                             Military &amp; Veteran Program
                           </span>
-                          <span className="text-[9px] font-mono font-bold uppercase px-1.5 py-0.5 rounded bg-[#cb997e]/20 text-[#cb997e]">
+                          <span className="text-[9px] font-sans font-bold uppercase px-1.5 py-0.5 rounded bg-[#cb997e]/20 text-[#cb997e]">
                             15% OFF
                           </span>
                         </div>

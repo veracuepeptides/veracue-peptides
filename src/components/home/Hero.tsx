@@ -130,7 +130,7 @@ export function Hero() {
 
           {/* Top-Right Overlay: Slide Indicators & Active Compound */}
           <div className="absolute top-3.5 sm:top-7 md:top-9 right-3.5 sm:right-7 md:right-9 z-20 flex items-center gap-2 sm:gap-2.5 bg-black/40 backdrop-blur-md px-2.5 sm:px-3.5 py-1.5 rounded-full border border-white/15 shadow-sm">
-            <span className="text-[10px] sm:text-[11px] font-mono uppercase text-white/85 tracking-wider hidden xs:inline-block">
+            <span className="text-[10px] sm:text-[11px] font-sans font-medium uppercase text-white/85 tracking-[0.16em] hidden xs:inline-block">
               {HERO_IMAGES[currentImageIndex].compound}
             </span>
             <div className="flex items-center gap-1.5">

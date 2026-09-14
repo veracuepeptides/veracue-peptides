@@ -60,7 +60,7 @@ export function SharedFaqSection({
             {/* ================================================================ */}
             {/* LEFT COLUMN: Pinned / Sticky on Desktop while Scrolling Questions */}
             {/* ================================================================ */}
-            <div className="w-full lg:w-[35%] xl:w-[32%] lg:sticky lg:top-32 lg:self-start flex flex-col justify-between shrink-0 lg:h-[500px]">
+            <div className="w-full lg:w-[35%] xl:w-[32%] lg:sticky lg:top-28 xl:top-32 lg:self-start flex flex-col justify-between shrink-0 lg:h-[500px]">
               
               {/* Top Block: Title & Optional Eyebrow / Description */}
               <div>

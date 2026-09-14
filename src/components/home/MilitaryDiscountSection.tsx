@@ -172,7 +172,7 @@ export function MilitaryDiscountSection() {
               <div className="relative z-20 flex items-center justify-between gap-3">
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#20221c]/85 backdrop-blur-md border border-white/20 text-[#fff1e6] shadow-sm">
                   <span className="w-2 h-2 rounded-full bg-[#cb997e] animate-pulse" />
-                  <span className="text-[10px] sm:text-xs font-bold tracking-[0.15em] uppercase font-mono">
+                  <span className="text-[10px] sm:text-xs font-bold tracking-[0.15em] uppercase font-sans">
                     HONORING DEFENSE & SERVICE
                   </span>
                 </div>
@@ -186,7 +186,7 @@ export function MilitaryDiscountSection() {
               {/* Middle Subtle Quote / Watermark Badge (Shown on tablet/desktop for breathing room) */}
               <div className="hidden sm:block relative z-20 my-auto py-4">
                 <div className="inline-block bg-black/40 backdrop-blur-sm px-4 py-2 rounded-2xl border border-white/10 max-w-sm">
-                  <div className="text-[11px] font-mono font-bold tracking-widest text-[#fff1e6]/70 uppercase mb-0.5">
+                  <div className="text-[11px] font-sans font-bold tracking-widest text-[#fff1e6]/70 uppercase mb-0.5">
                     VERACUE PEPTIDES
                   </div>
                   <div className="text-xs sm:text-sm font-bold text-[#fff1e6] leading-snug">
@@ -206,7 +206,7 @@ export function MilitaryDiscountSection() {
                       <h4 className="text-xs sm:text-sm font-black text-[#20221c] tracking-wider uppercase font-heading">
                         {t('privacyNoticeTitle')}
                       </h4>
-                      <span className="text-[9px] sm:text-[10px] font-mono font-bold tracking-widest text-[#a5a58d] uppercase px-2 py-0.5 rounded bg-[#f0efeb]">
+                      <span className="text-[9px] sm:text-[10px] font-sans font-bold tracking-widest text-[#a5a58d] uppercase px-2 py-0.5 rounded bg-[#f0efeb]">
                         AES-256
                       </span>
                     </div>
@@ -258,12 +258,12 @@ export function MilitaryDiscountSection() {
                       <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#f0efeb] border border-[#20221c]/10">
                           <Sparkles className="w-3 h-3 text-[#cb997e]" />
-                          <span className="text-[#a5a58d] text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase font-mono">
+                          <span className="text-[#a5a58d] text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase font-sans">
                             {t('eyebrow')}
                           </span>
                         </div>
 
-                        <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[10px] font-bold uppercase tracking-wider font-mono">
+                        <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200/60 text-[10px] font-bold uppercase tracking-wider font-sans">
                           <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
                           SSL Secured Session
                         </div>
@@ -465,7 +465,7 @@ export function MilitaryDiscountSection() {
                                   <div className="text-xs font-bold text-[#20221c] truncate max-w-[130px] sm:max-w-[150px]">
                                     {selectedFile.name}
                                   </div>
-                                  <div className="text-[10px] text-[#20221c]/50 font-mono">
+                                  <div className="text-[10px] text-[#20221c]/50 font-sans font-medium">
                                     {(selectedFile.size / (1024 * 1024)).toFixed(2)} MB
                                   </div>
                                 </div>
@@ -556,7 +556,7 @@ export function MilitaryDiscountSection() {
                       </div>
                     </div>
 
-                    <div className="inline-block px-3 py-0.5 rounded-full bg-[#eddcd2]/50 text-[#cb997e] text-[10px] font-bold font-mono uppercase tracking-widest mb-2">
+                    <div className="inline-block px-3 py-0.5 rounded-full bg-[#eddcd2]/50 text-[#cb997e] text-[10px] font-bold font-sans uppercase tracking-widest mb-2">
                       TRANSMISSION SECURED
                     </div>
 

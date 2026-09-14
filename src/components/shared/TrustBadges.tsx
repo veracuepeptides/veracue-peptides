@@ -244,7 +244,7 @@ export function TrustBadges() {
                     }`}>
                       {item.number}
                     </span>
-                    <span className={`text-[10px] font-mono tracking-widest uppercase transition-colors duration-300 ${
+                    <span className={`text-[10px] font-sans font-bold tracking-[0.16em] uppercase transition-colors duration-300 ${
                       isActive ? 'text-[#f0efeb]/90 font-semibold' : 'text-neutral-400 group-hover:text-[#f0efeb]/90'
                     }`}>
                       {item.tag}
@@ -281,7 +281,7 @@ export function TrustBadges() {
                         <item.icon size={13} className={isActive ? 'text-[#fff1e6]' : `${item.iconColor} group-hover:text-[#fff1e6]`} />
                         <span className="whitespace-nowrap">{item.spec}</span>
                       </span>
-                      <span className={`text-[10px] uppercase font-mono tracking-wider transition-colors duration-300 ${
+                      <span className={`text-[10px] uppercase font-sans font-semibold tracking-wider transition-colors duration-300 ${
                         isActive ? 'text-[#f0efeb]/85 group-hover:text-white' : 'text-neutral-400 group-hover:text-[#f0efeb]'
                       }`}>
                         Protocol &rarr;

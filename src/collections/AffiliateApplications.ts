@@ -47,6 +47,10 @@ export const AffiliateApplications: CollectionConfig = {
       required: true,
     },
     {
+      name: 'phone',
+      type: 'text',
+    },
+    {
       name: 'websiteUrl',
       type: 'text',
     },

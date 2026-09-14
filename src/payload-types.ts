@@ -227,7 +227,7 @@ export interface User {
    * Send SMS notifications for order status updates.
    */
   orderSmsUpdates?: boolean | null;
-  preferredLocale?: ('en' | 'es') | null;
+  preferredLocale?: 'en' | null;
   dateOfBirth?: string | null;
   stripeCustomerId?: string | null;
   defaultShippingAddress?: (number | null) | Address;
@@ -1097,6 +1097,7 @@ export interface AffiliateApplication {
   user: number | User;
   status?: ('pending' | 'approved' | 'rejected') | null;
   displayName: string;
+  phone?: string | null;
   websiteUrl?: string | null;
   socialLinks?:
     | {
@@ -2156,6 +2157,7 @@ export interface AffiliateApplicationsSelect<T extends boolean = true> {
   user?: T;
   status?: T;
   displayName?: T;
+  phone?: T;
   websiteUrl?: T;
   socialLinks?:
     | T

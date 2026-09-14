@@ -254,7 +254,7 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
               )}
 
               {/* Keyboard Shortcuts Hint */}
-              <div className="hidden md:flex items-center gap-1.5 text-[11px] font-mono font-medium text-[#20221c]/50">
+              <div className="hidden md:flex items-center gap-1.5 text-[11px] font-sans font-medium text-[#20221c]/50">
                 <span className="px-2 py-0.5 rounded-md bg-[#20221c]/5 border border-[#20221c]/10">ESC</span>
               </div>
 
@@ -386,7 +386,7 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
                 {query && isLoading && results.length === 0 && (
                   <div className="flex flex-col items-center justify-center py-16 text-[#20221c]/50 gap-3">
                     <Loader2 className="w-7 h-7 animate-spin text-[#a5a58d]" />
-                    <span className="text-xs uppercase tracking-widest font-mono">Querying Veracue Compound Database...</span>
+                    <span className="text-xs uppercase tracking-widest font-sans font-semibold">Querying Veracue Compound Database...</span>
                   </div>
                 )}
 
@@ -417,7 +417,7 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
                   <div className="space-y-2">
                     <div className="flex items-center justify-between pb-1 text-[11px] font-bold uppercase tracking-[0.15em] text-[#20221c]/50">
                       <span>{filteredResults.length} Syntheses Found</span>
-                      <span className="hidden sm:inline font-mono font-normal">Use ↑ ↓ to navigate</span>
+                      <span className="hidden sm:inline font-sans font-normal">Use ↑ ↓ to navigate</span>
                     </div>
 
                     <div className="space-y-2">
@@ -455,7 +455,7 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
                                 <h4 className="text-xs sm:text-sm font-bold text-[#20221c] uppercase tracking-wider truncate">
                                   {product.name}
                                 </h4>
-                                <span className="px-2 py-0.5 rounded-full bg-[#a5a58d]/25 text-[#20221c] text-[10px] font-mono font-semibold shrink-0">
+                                <span className="px-2 py-0.5 rounded-full bg-[#a5a58d]/25 text-[#20221c] text-[10px] font-sans font-semibold shrink-0">
                                   {purityTag}
                                 </span>
                               </div>
@@ -465,11 +465,11 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
                               </p>
 
                               <div className="flex items-center gap-2 mt-1.5">
-                                <span className="text-xs font-bold text-[#20221c] font-mono">
+                                <span className="text-xs font-bold text-[#20221c] font-sans">
                                   ${displayPrice.toFixed(2)}
                                 </span>
                                 {product.salePrice && (
-                                  <span className="text-[10px] text-[#20221c]/40 line-through font-mono">
+                                  <span className="text-[10px] text-[#20221c]/40 line-through font-sans">
                                     ${product.price.toFixed(2)}
                                   </span>
                                 )}
@@ -507,7 +507,7 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
                         <span className="px-2.5 py-1 rounded-full bg-[#20221c] text-[#f0efeb] text-[10px] font-bold uppercase tracking-[0.15em]">
                           Live Inspector
                         </span>
-                        <div className="flex items-center gap-1 text-[11px] font-mono font-semibold text-[#588157]">
+                        <div className="flex items-center gap-1 text-[11px] font-sans font-semibold text-[#588157]">
                           <CheckCircle2 className="w-3.5 h-3.5" />
                           <span>RP-HPLC Tested</span>
                         </div>
@@ -538,13 +538,13 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
                       <div className="bg-white/80 rounded-xl p-3 border border-[#20221c]/10 space-y-2 text-[11px]">
                         <div className="flex justify-between py-0.5 border-b border-[#20221c]/5">
                           <span className="text-[#20221c]/60">Purity Rating</span>
-                          <span className="font-mono font-bold text-[#20221c]">
+                          <span className="font-sans font-bold text-[#20221c]">
                             {activeProduct.coaPurity ? `${activeProduct.coaPurity}%` : '≥99.0%'} (HPLC)
                           </span>
                         </div>
                         <div className="flex justify-between py-0.5 border-b border-[#20221c]/5">
                           <span className="text-[#20221c]/60">Batch Reference</span>
-                          <span className="font-mono font-semibold text-[#20221c]">
+                          <span className="font-sans font-semibold text-[#20221c]">
                             {activeProduct.coaBatchNumber || 'VER-2026-HQ'}
                           </span>
                         </div>
@@ -587,7 +587,7 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
                         <span className="px-2.5 py-1 rounded-full bg-[#20221c] text-[#f0efeb] text-[10px] font-bold uppercase tracking-[0.15em]">
                           Analytical Standard
                         </span>
-                        <span className="text-[10px] font-mono text-[#20221c]/50">ISO 17025 Compliant</span>
+                        <span className="text-[10px] font-sans text-[#20221c]/50 font-medium">ISO 17025 Compliant</span>
                       </div>
 
                       <div className="relative w-full h-48 rounded-2xl overflow-hidden border border-[#20221c]/10 shadow-sm">
@@ -600,7 +600,7 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                         <div className="absolute bottom-3 left-3 right-3 text-white">
-                          <p className="text-[10px] font-mono uppercase tracking-widest text-[#f0efeb]/80">Synthesis Integrity</p>
+                          <p className="text-[10px] font-sans uppercase tracking-widest text-[#f0efeb]/80 font-medium">Synthesis Integrity</p>
                           <h4 className="text-sm font-serif font-bold text-white leading-tight">Zero Degradation Packaging</h4>
                         </div>
                       </div>
@@ -633,14 +633,14 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
               <div className="flex items-center gap-4">
                 <div className="flex items-center gap-1.5">
                   <CornerDownLeft className="w-3 h-3 text-[#20221c]/40" />
-                  <span className="font-mono text-[10px] uppercase tracking-wider">Select Compound</span>
+                  <span className="font-sans text-[10px] uppercase tracking-wider font-medium">Select Compound</span>
                 </div>
                 <div className="hidden sm:flex items-center gap-1.5">
-                  <span className="font-mono text-[10px] uppercase tracking-wider">↑ ↓ Cycle</span>
+                  <span className="font-sans text-[10px] uppercase tracking-wider font-medium">↑ ↓ Cycle</span>
                 </div>
               </div>
 
-              <div className="flex items-center gap-1.5 text-[10px] font-mono font-medium text-[#20221c]/70">
+              <div className="flex items-center gap-1.5 text-[10px] font-sans font-medium text-[#20221c]/70">
                 <ShieldCheck className="w-3.5 h-3.5 text-[#a5a58d]" />
                 <span>Veracue Peptides • ≥99% HPLC Verified Research Grade</span>
               </div>

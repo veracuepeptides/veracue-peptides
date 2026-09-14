@@ -121,12 +121,7 @@ export function CompactProductCard({ product }: { product: StandardProduct }) {
             )}
           </motion.div>
 
-          {/* DEBUG INDICATOR - Temporary */}
-          {product.hoverImage && (
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black/80 text-white px-3 py-1 rounded text-xs z-50 font-mono pointer-events-none shadow-xl border border-white/20 whitespace-nowrap">
-              DEBUG: HOVER IMAGE LOADED
-            </div>
-          )}
+
 
           {/* Optional Badge */}
           {product.badge && (

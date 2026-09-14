@@ -63,7 +63,7 @@ export default async function AboutPage({
     answer: t(`faqs.${key}.answer`),
   }))
 
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
   const path = true ? `/${slug}` : `/${locale}/${slug}`
   const url = `${baseUrl}${path}`
 
@@ -107,7 +107,7 @@ export default async function AboutPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-    <main className="bg-[#FAFAFA] min-h-screen">
+    <main className="bg-[#f0efeb] min-h-screen">
       <AboutHero />
       <MissionPhilosophyJourney />
       <WhyChooseUsGrid />

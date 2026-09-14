@@ -5,7 +5,7 @@ import configPromise from '@payload-config'
 // getPayload/configPromise are already imported above and reused across the new
 // failed-payment/refund/dispute handlers below.
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || 'sk_test_placeholder_for_build', {
   apiVersion: '2024-04-10' as any,
 })
 

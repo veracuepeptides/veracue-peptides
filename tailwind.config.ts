@@ -38,7 +38,8 @@ const config: Config = {
           subtle: '#E8E2D5',
           DEFAULT: '#D6CDB8',
           strong: '#0A0A0A',
-          gold: '#92DCE5',
+          gold: '#a5a58d',
+          focus: '#a5a58d',
         },
         aesthetic: {
           terracotta: '#cb997e',
@@ -59,6 +60,7 @@ const config: Config = {
         serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
         display: ['"Space Grotesk"', 'sans-serif'],
         script: ['"GERALDINE PERSONAL USE Italic"', '"Pinyon Script"', '"Alex Brush"', 'cursive'],
+        mono: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
       },
       fontSize: {
         // Display
@@ -91,7 +93,7 @@ const config: Config = {
         md: '0 4px 12px rgba(10, 10, 10, 0.06)',
         lg: '0 12px 32px rgba(10, 10, 10, 0.08)',
         xl: '0 24px 64px rgba(10, 10, 10, 0.12)',
-        focus: '0 0 0 3px rgba(146, 220, 229, 0.4)',
+        focus: '0 0 0 3px rgba(165, 165, 141, 0.45)',
       },
       maxWidth: {
         content: '720px',

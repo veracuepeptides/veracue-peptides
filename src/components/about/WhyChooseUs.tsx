@@ -77,7 +77,7 @@ export function WhyChooseUs() {
           <div className="flex flex-col w-full h-full z-20 order-2">
             
             <FadeUp>
-              <h2 className="text-[10px] md:text-xs font-mono uppercase tracking-[0.2em] text-[#008B8B] mb-6 lg:mb-12 font-bold mt-4 lg:mt-0">The Gold Standard</h2>
+              <h2 className="text-[10px] md:text-xs font-sans uppercase tracking-[0.2em] text-[#008B8B] mb-6 lg:mb-12 font-bold mt-4 lg:mt-0">The Gold Standard</h2>
             </FadeUp>
             
             {/* Top area: Dynamic Content */}

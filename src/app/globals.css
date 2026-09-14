@@ -26,6 +26,9 @@
   .font-script {
     font-family: 'GERALDINE PERSONAL USE Italic', 'Geraldine', 'Pinyon Script', 'Alex Brush', cursive !important;
   }
+  .font-mono {
+    font-family: 'Plus Jakarta Sans', 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  }
 }
 
 /* Custom global styles */
@@ -111,8 +114,8 @@ input:-webkit-autofill:active {
   outline: none !important;
 }
 .custom-auth-input:focus {
-  border-color: #008B8B !important;
-  box-shadow: 0 0 0 2px rgba(0, 139, 139, 0.2) !important;
+  border-color: #a5a58d !important;
+  box-shadow: 0 0 0 3px rgba(165, 165, 141, 0.45) !important;
 }
 
 /* Hide Tidio globally when mobile menu is open */

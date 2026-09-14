@@ -389,7 +389,7 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
                   className="overflow-hidden border-t border-[#eddcd2]/70 pt-2 px-1"
                 >
                   <div className="flex flex-wrap items-center gap-2 py-1">
-                    <span className="text-xs font-mono uppercase text-neutral-500 mr-1 tracking-wider">
+                    <span className="text-xs font-sans uppercase text-neutral-500 mr-1 tracking-wider font-semibold">
                       Quick Filters:
                     </span>
 
@@ -444,7 +444,7 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
               Showing <strong className="text-neutral-950 font-bold">{displayProducts.length}</strong> Research Compounds
             </span>
             {searchQuery && (
-              <span className="text-xs text-neutral-500 font-mono">
+              <span className="text-xs text-neutral-500 font-sans">
                 matching &ldquo;{searchQuery}&rdquo;
               </span>
             )}
@@ -533,7 +533,7 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
                 {isLoadingMore ? (
                   <div className="flex flex-col items-center gap-3">
                     <Spinner className="w-7 h-7 text-[#20221c]" />
-                    <span className="text-[11px] font-bold text-neutral-500 uppercase tracking-widest font-mono">
+                    <span className="text-[11px] font-bold text-neutral-500 uppercase tracking-widest font-sans">
                       Loading Additional Compounds...
                     </span>
                   </div>
@@ -550,7 +550,7 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
             )}
 
             {!hasMore && !searchQuery.trim() && (
-              <div className="w-full text-center pt-16 sm:pt-20 pb-8 text-xs font-mono uppercase tracking-widest text-neutral-400">
+              <div className="w-full text-center pt-16 sm:pt-20 pb-8 text-xs font-sans uppercase tracking-widest text-neutral-400 font-medium">
                 — End of Catalog ({products.length} Compounds Total) —
               </div>
             )}

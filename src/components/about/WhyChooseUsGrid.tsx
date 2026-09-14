@@ -1,176 +1,286 @@
 'use client'
 
-import React, { useRef } from 'react'
-import { motion, useScroll, useTransform } from 'framer-motion'
-import { Microscope, ShieldCheck, Settings, FileCheck } from 'lucide-react'
+import React, { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
+import { motion, AnimatePresence } from 'framer-motion'
+import { ArrowUpRight, CheckCircle2, Activity, Layers, FileCheck2 } from 'lucide-react'
+import { HeroButton } from '@/components/ui/hero-button'
 import { useTranslations } from 'next-intl'
 
-const FEATURE_META = [
-  {
-    key: 'analyticalEvaluation',
-    icon: Microscope,
-    image: "/HelixBio Images/category-2.webp",
-  },
-  {
-    key: 'clearClassification',
-    icon: ShieldCheck,
-    image: "/HelixBio Images/military-2.webp",
-  },
-  {
-    key: 'controlledHandling',
-    icon: Settings,
-    image: "/HelixBio Images/category-5.webp",
-  },
-  {
-    key: 'operationalTransparency',
-    icon: FileCheck,
-    image: "/HelixBio Images/category-7.webp",
-  }
-];
+interface QualityPillar {
+  key: string
+  number: string
+  tag: string
+  spec: string
+  icon: React.ElementType
+  media: string
+  alt: string
+  title: string
+  description: string
+}
 
 export function WhyChooseUsGrid() {
   const t = useTranslations('content.whyChooseUsGrid')
-  const features = FEATURE_META.map((f) => ({
-    ...f,
-    title: t(`features.${f.key}.title`),
-    description: t(`features.${f.key}.description`),
-  }))
-  
-  const containerRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end end"]
-  });
 
-  // Calculate opacities for the 4 background images based on scroll progress
-  // [0, 0.25] -> Image 1
-  // [0.25, 0.5] -> Image 2
-  // [0.5, 0.75] -> Image 3
-  // [0.75, 1.0] -> Image 4
-  const opacity1 = useTransform(scrollYProgress, [0, 0.2, 0.25, 1], [1, 1, 0, 0]);
-  const opacity2 = useTransform(scrollYProgress, [0.15, 0.25, 0.45, 0.5], [0, 1, 1, 0]);
-  const opacity3 = useTransform(scrollYProgress, [0.4, 0.5, 0.7, 0.75], [0, 1, 1, 0]);
-  const opacity4 = useTransform(scrollYProgress, [0.65, 0.75, 1, 1], [0, 1, 1, 1]);
-  
-  // Parallax scale for a subtle breathing effect on the images
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.1]);
+  const PILLARS: QualityPillar[] = [
+    {
+      key: 'analyticalEvaluation',
+      number: '01.',
+      tag: 'RP-HPLC CHROMATOGRAPHY',
+      spec: '≥99.0% Confirmed Peak',
+      icon: CheckCircle2,
+      media: '/veracue-images/veracue-klow-50mg-sunlit-water-ripples.webp',
+      alt: 'HPLC analytical purity certification of Veracue peptides',
+      title: 'Analytical Evaluation & Purity',
+      description: 'Every batch of raw material is inspected against defined purity and identity specifications before clearance. Reverse-phase chromatography ensures sharp peak resolution with zero synthesis truncated sequences.',
+    },
+    {
+      key: 'clearClassification',
+      number: '02.',
+      tag: 'MOLECULAR MASS VALIDATION',
+      spec: 'ESI-MS Molar Precision',
+      icon: Activity,
+      media: '/veracue-images/veracue-nad-plus-50mg-water-caustics.webp',
+      alt: 'Mass Spectrometry identity validation for Veracue research peptides',
+      title: 'Clear Scientific Classification',
+      description: 'Each compound is classified strictly as research use only. Electrospray Ionization Mass Spectrometry (ESI-MS) confirms exact molecular weight within ±0.5 Da, validating amino acid sequence authenticity.',
+    },
+    {
+      key: 'controlledHandling',
+      number: '03.',
+      tag: 'ISO-7 CLEANROOM MATRIX',
+      spec: 'Vacuum Lyophilized Cake',
+      icon: Layers,
+      media: '/veracue-images/veracue-research-grade-50mg-gloved-hand.png',
+      alt: 'Controlled cleanroom handling and sterile lyophilization at Veracue',
+      title: 'Controlled Cleanroom Formulation',
+      description: 'Synthesized and vialed under certified US laminar flow controls. Freeze-dried into a stable lyophilized cake under high-vacuum nitrogen to prevent moisture hydrolysis and assure batch uniformity.',
+    },
+    {
+      key: 'operationalTransparency',
+      number: '04.',
+      tag: 'PUBLIC AUDIT ARCHIVE',
+      spec: 'Lot-Specific COA Published',
+      icon: FileCheck2,
+      media: '/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp',
+      alt: 'Operational transparency and batch COA records for Veracue',
+      title: 'Operational Transparency & COAs',
+      description: 'Third-party analytical reports are published openly for researchers prior to ordering. Every vial carries a serialized QR code linking directly to verifiable lot documentation and chain-of-custody data.',
+    },
+  ]
 
-  const opacities = [opacity1, opacity2, opacity3, opacity4];
+  const [activeIndex, setActiveIndex] = useState<number>(0)
+  const [isPaused, setIsPaused] = useState<boolean>(false)
+  const resumeTimeoutRef = useRef<NodeJS.Timeout | null>(null)
+
+  // Auto-cycle through pillars every 4.2 seconds when idle
+  useEffect(() => {
+    if (isPaused) return
+
+    const timer = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % PILLARS.length)
+    }, 4200)
+
+    return () => clearInterval(timer)
+  }, [isPaused, PILLARS.length])
+
+  const handlePillarSelect = (index: number) => {
+    setActiveIndex(index)
+    setIsPaused(true)
+    if (resumeTimeoutRef.current) clearTimeout(resumeTimeoutRef.current)
+    resumeTimeoutRef.current = setTimeout(() => {
+      setIsPaused(false)
+    }, 7000)
+  }
+
+  const currentPillar = PILLARS[activeIndex]
 
   return (
-    <section ref={containerRef} className="relative h-[600vh] bg-black">
-      
-      {/* STICKY BACKGROUND CONTAINER */}
-      <div className="sticky top-0 h-screen w-full overflow-hidden">
+    <section 
+      id="analytical-standards"
+      className="w-full bg-[#f0efeb] py-16 sm:py-20 md:py-24 lg:py-32 relative font-sans overflow-hidden select-none"
+    >
+      <div className="max-w-[88rem] mx-auto px-4 sm:px-6 md:px-10 lg:px-12 relative z-10">
         
-        {/* Background Images Crossfading */}
-        {features.map((feature, idx) => (
-          <motion.div
-            key={`bg-${feature.key}`}
-            style={{ opacity: opacities[idx], scale }}
-            className="absolute inset-0 z-0 will-change-transform"
-          >
-            <Image 
-              src={feature.image} 
-              alt={feature.title} 
-              fill 
-              className="object-cover opacity-100" 
-              priority={idx === 0}
-            />
-            {/* Gradient Overlay for Text Readability */}
-            <div className="absolute inset-0 bg-black/30" />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-transparent to-black/80 md:from-black/60 md:to-black/60" />
-          </motion.div>
-        ))}
-
-        {/* Floating Typography Decoration */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full overflow-hidden pointer-events-none z-0 opacity-[0.03] flex flex-col gap-4">
-          <motion.div 
-            animate={{ x: ["0%", "-50%"] }}
-            transition={{ repeat: Infinity, duration: 40, ease: "linear" }}
-            style={{ willChange: 'transform' }}
-            className="whitespace-nowrap font-heading font-black text-[15vw] text-white uppercase leading-none tracking-tighter"
-          >
-            ANALYTICAL PURITY &bull; ANALYTICAL PURITY &bull; ANALYTICAL PURITY &bull; ANALYTICAL PURITY
-          </motion.div>
-        </div>
-
-      </div>
-
-      {/* FOREGROUND SCROLLING CONTENT */}
-      <div className="absolute top-0 left-0 w-full z-10 pointer-events-none">
-        
-        {/* Intro Header Section (Takes up first screen) */}
-        <div className="h-screen flex items-center max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-10 pointer-events-auto">
-          <div className="max-w-3xl pt-32">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="h-[2px] w-12 bg-primary" />
-              <h2 className="font-mono text-xs md:text-sm uppercase tracking-[0.3em] text-primary font-bold shadow-black drop-shadow-md">
+        {/* ==================================================================== */}
+        {/* SECTION HEADER: Split-Screen Editorial Header                        */}
+        {/* ==================================================================== */}
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 sm:mb-14 md:mb-16 gap-6 md:gap-12">
+          <div className="max-w-2xl">
+            {/* Eyebrow Pill */}
+            <div className="inline-block border border-[#eddcd2] rounded-full px-4 py-1.5 mb-4 sm:mb-5 bg-white shadow-2xs">
+              <span className="text-[#a5a58d] text-[11px] sm:text-xs font-bold tracking-[0.2em] uppercase font-editorial">
                 {t('eyebrow')}
-              </h2>
+              </span>
             </div>
-            <h3 className="text-5xl sm:text-6xl md:text-8xl font-heading font-black text-white tracking-tighter uppercase leading-[0.9] drop-shadow-2xl mb-8">
-              {t('title')}
-            </h3>
-            <p className="text-white/80 font-medium max-w-xl text-lg md:text-xl drop-shadow-md border-l-2 border-primary/50 pl-6 py-2 bg-black/40 backdrop-blur-md rounded-lg">
+
+            {/* Display Headline */}
+            <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-[#20221c] leading-[1] tracking-tight uppercase">
+              {t('titleLine1')}{' '}
+              <br className="hidden sm:inline" />
+              <span className="text-neutral-900">{t('titleLine2')}</span>
+            </h2>
+          </div>
+
+          {/* Narrative & Action */}
+          <div className="flex flex-col items-start md:items-end gap-5 max-w-md">
+            <p className="text-neutral-600 text-xs sm:text-sm md:text-base leading-relaxed text-left md:text-right font-sans font-light">
               {t('subtitle')}
             </p>
+
+            <HeroButton href="/certificates">
+              View Public COAs
+            </HeroButton>
           </div>
         </div>
 
-        {/* Feature Sections */}
-        {features.map((feature, idx) => {
-          const Icon = feature.icon;
-          const isEven = idx % 2 === 0;
+        {/* ==================================================================== */}
+        {/* MAIN STAGE: Interactive 4-Pillar Technical Cards + Visual Stage      */}
+        {/* ==================================================================== */}
+        <div 
+          className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 xl:gap-10 items-stretch"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
+          
+          {/* ------------------------------------------------------------ */}
+          {/* LEFT COLUMN: 4 Interactive Pillar Cards                      */}
+          {/* ------------------------------------------------------------ */}
+          <div className="lg:col-span-6 xl:col-span-6 flex flex-col gap-3.5 sm:gap-4 justify-between">
+            {PILLARS.map((pillar, index) => {
+              const isActive = activeIndex === index
+              const IconComponent = pillar.icon
 
-          return (
-            <div key={feature.key} className="h-screen flex items-center max-w-[1920px] mx-auto px-4 sm:px-6 md:px-10 lg:px-20 pointer-events-auto">
-              <div className={`w-full flex ${isEven ? 'justify-start' : 'justify-end'}`}>
-                
-                <motion.div 
-                  initial={{ opacity: 0, y: 100 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ margin: "-20% 0px -20% 0px" }}
-                  transition={{ duration: 0.8, ease: "easeOut" }}
-                  className="w-full max-w-xl relative group"
+              return (
+                <button
+                  key={pillar.key}
+                  type="button"
+                  onClick={() => handlePillarSelect(index)}
+                  onMouseEnter={() => handlePillarSelect(index)}
+                  className={`w-full text-left rounded-[22px] sm:rounded-[26px] p-5 sm:p-6 md:p-7 transition-all duration-400 relative overflow-hidden group cursor-pointer flex flex-col justify-between border ${
+                    isActive
+                      ? 'bg-[#a5a58d] border-[#a5a58d] shadow-[0_12px_32px_rgba(32,34,28,0.08)] scale-[1.01] z-10 text-[#fff1e6]'
+                      : 'bg-white border-[#b7b7a4]/40 hover:border-[#a5a58d]/60 hover:bg-[#fff1e6]/30 shadow-[0_4px_16px_rgba(32,34,28,0.02)]'
+                  }`}
                 >
-                  {/* Glass Panel without expensive backdrop blur to fix lag */}
-                  <div className="relative z-10 p-8 md:p-12 rounded-[2rem] md:rounded-[3rem] bg-black/60 border border-white/10 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.8)] overflow-hidden">
-                    
-                    {/* Glowing highlight orb */}
-                    <div className={`absolute -top-24 ${isEven ? '-left-24' : '-right-24'} w-48 h-48 bg-primary/20 rounded-full blur-[60px] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none`} />
-
-                    <div className="flex items-start justify-between mb-8 relative z-10">
-                      <div className="w-16 h-16 rounded-2xl flex items-center justify-center bg-white/5 border border-white/10 shadow-[0_0_30px_rgba(14,165,233,0.15)] group-hover:scale-110 transition-transform duration-500">
-                        <Icon className="w-8 h-8 text-primary" strokeWidth={1.5} />
-                      </div>
-                      <span className="text-white/10 font-serif text-6xl md:text-8xl leading-none select-none -mt-4 -mr-4 font-black">
-                        0{idx + 1}
+                  {/* Top Row: Number, Tag, and Arrow */}
+                  <div className="flex items-center justify-between w-full mb-2.5 sm:mb-3">
+                    <div className="flex items-center gap-3">
+                      <span className={`font-sans font-extrabold text-lg sm:text-xl tracking-tight transition-colors duration-300 ${
+                        isActive ? 'text-[#fff1e6]' : 'text-[#a5a58d]'
+                      }`}>
+                        {pillar.number}
+                      </span>
+                      <span className={`text-[10px] sm:text-[11px] font-sans font-bold tracking-[0.16em] uppercase transition-colors duration-300 ${
+                        isActive ? 'text-[#fff1e6]/90 font-semibold' : 'text-neutral-500'
+                      }`}>
+                        {pillar.tag}
                       </span>
                     </div>
 
-                    <h4 className="text-3xl md:text-5xl font-heading font-black tracking-tighter text-white uppercase mb-6 leading-[1.1] relative z-10">
-                      {feature.title}
-                    </h4>
-                    
-                    <p className="text-white/70 text-base md:text-lg leading-relaxed font-light relative z-10">
-                      {feature.description}
+                    <div className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full border transition-all duration-300 flex items-center justify-center shrink-0 ${
+                      isActive
+                        ? 'border-white/40 bg-white text-[#20221c]'
+                        : 'border-[#20221c]/20 text-[#20221c]/60 group-hover:border-[#20221c] group-hover:text-[#20221c]'
+                    }`}>
+                      <ArrowUpRight size={14} strokeWidth={2} className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                    </div>
+                  </div>
+
+                  {/* Middle: Pillar Title */}
+                  <h3 className={`font-heading font-extrabold text-base sm:text-lg md:text-xl uppercase tracking-tight leading-tight mb-2 transition-colors duration-300 ${
+                    isActive ? 'text-[#fff1e6]' : 'text-[#20221c]'
+                  }`}>
+                    {pillar.title}
+                  </h3>
+
+                  {/* Bottom: Description & Spec Pill */}
+                  <div className="flex flex-col gap-3">
+                    <p className={`text-xs sm:text-[13px] leading-relaxed font-sans font-light transition-colors duration-300 ${
+                      isActive ? 'text-[#f0efeb]/95' : 'text-neutral-600'
+                    }`}>
+                      {pillar.description}
                     </p>
 
-                    {/* Scanning Line Decoration */}
-                    <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-transparent via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  </div>
-                </motion.div>
+                    <div className={`pt-2.5 border-t flex items-center justify-between text-xs font-sans transition-colors duration-300 ${
+                      isActive ? 'border-white/20' : 'border-[#20221c]/10'
+                    }`}>
+                      <span className={`flex items-center gap-1.5 text-[10.5px] sm:text-[11px] font-medium ${
+                        isActive ? 'text-[#fff1e6]' : 'text-[#6b705c]'
+                      }`}>
+                        <IconComponent size={13} className={isActive ? 'text-[#fff1e6]' : 'text-[#cb997e]'} />
+                        <span>{pillar.spec}</span>
+                      </span>
 
+                      <span className={`text-[9.5px] sm:text-[10px] uppercase tracking-wider font-semibold ${
+                        isActive ? 'text-[#eddcd2]' : 'text-neutral-400'
+                      }`}>
+                        DOCUMENTED
+                      </span>
+                    </div>
+                  </div>
+                </button>
+              )
+            })}
+          </div>
+
+          {/* ------------------------------------------------------------ */}
+          {/* RIGHT COLUMN: Synchronized Visual Showcase Stage             */}
+          {/* ------------------------------------------------------------ */}
+          <div className="lg:col-span-6 xl:col-span-6 min-h-[380px] sm:min-h-[460px] lg:min-h-full rounded-[24px] sm:rounded-[32px] overflow-hidden relative bg-zinc-900 border border-[#b7b7a4]/50 shadow-[0_16px_40px_rgba(32,34,28,0.08)]">
+            
+            {/* Background Image Crossfade */}
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={currentPillar.key}
+                initial={{ opacity: 0, scale: 1.04 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+                className="absolute inset-0 w-full h-full"
+              >
+                <Image
+                  src={currentPillar.media}
+                  alt={currentPillar.alt}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover object-center"
+                />
+              </motion.div>
+            </AnimatePresence>
+
+            {/* Gradient Scrims for Readability */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-black/10 pointer-events-none" />
+
+            {/* Top Badge */}
+            <div className="absolute top-5 sm:top-7 left-5 sm:left-7 right-5 sm:right-7 flex justify-between items-center z-10 pointer-events-none">
+              <span className="bg-black/40 backdrop-blur-md border border-white/20 text-[#fff1e6] text-[10px] sm:text-xs font-sans font-semibold uppercase tracking-[0.16em] px-3.5 py-1.5 rounded-full">
+                {currentPillar.tag}
+              </span>
+              <span className="text-white/60 font-sans text-xs font-bold tracking-wider">
+                0{activeIndex + 1} / 0{PILLARS.length}
+              </span>
+            </div>
+
+            {/* Bottom Floating Spec Summary Card */}
+            <div className="absolute bottom-5 sm:bottom-7 left-5 sm:left-7 right-5 sm:right-7 z-10 pointer-events-none">
+              <div className="bg-white/15 backdrop-blur-md border border-white/20 rounded-2xl p-4 sm:p-6 text-white shadow-2xl">
+                <span className="text-[#cb997e] font-sans text-[10px] sm:text-xs font-bold tracking-[0.16em] uppercase block mb-1">
+                  SPECIFICATION STANDARD
+                </span>
+                <h4 className="text-lg sm:text-xl md:text-2xl font-heading font-extrabold uppercase tracking-tight leading-snug mb-2">
+                  {currentPillar.title}
+                </h4>
+                <p className="text-white/80 text-xs sm:text-sm font-light leading-relaxed line-clamp-2">
+                  {currentPillar.description}
+                </p>
               </div>
             </div>
-          )
-        })}
 
-        {/* Buffer space at the end so the last element scrolls normally out of view */}
-        <div className="h-[50vh]" />
-        
+          </div>
+
+        </div>
+
       </div>
     </section>
   )

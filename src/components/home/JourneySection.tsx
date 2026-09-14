@@ -117,7 +117,7 @@ export function JourneySection() {
                 PROCESS
               </span>
             </div>
-            <span className="md:hidden text-[10px] font-mono tracking-widest uppercase text-neutral-500">
+            <span className="md:hidden text-[10px] font-sans font-bold tracking-[0.16em] uppercase text-neutral-500">
               0{activeStep + 1} / 04
             </span>
 
@@ -167,7 +167,7 @@ export function JourneySection() {
                 {/* Active Step Badge Overlay */}
                 <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 z-20 flex items-center gap-2.5 bg-black/65 backdrop-blur-md px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full border border-white/20 text-[#fff1e6] shadow-sm">
                   <span className="w-2 h-2 rounded-full bg-[#cb997e] animate-pulse" />
-                  <span className="font-mono text-[10px] sm:text-[11px] font-bold tracking-widest uppercase text-[#fff1e6]">
+                  <span className="font-sans text-[10px] sm:text-[11px] font-bold tracking-[0.16em] uppercase text-[#fff1e6]">
                     {currentStep.tag}
                   </span>
                   <span className="text-white/40 text-xs">•</span>
@@ -191,7 +191,7 @@ export function JourneySection() {
                   {/* Authentic Oval Pill Badge (Faithful to Reference Image) */}
                   <Link
                     href="/about-us"
-                    className="group inline-flex items-center gap-1.5 px-4 sm:px-5 py-1.5 rounded-full border border-[#20221c]/40 hover:border-[#20221c] bg-white/60 hover:bg-[#20221c] text-[#20221c] hover:text-[#fff1e6] transition-all duration-300 font-mono text-[11px] sm:text-xs font-bold tracking-[0.16em] uppercase shadow-2xs"
+                    className="group inline-flex items-center gap-1.5 px-4 sm:px-5 py-1.5 rounded-full border border-[#20221c]/40 hover:border-[#20221c] bg-white/60 hover:bg-[#20221c] text-[#20221c] hover:text-[#fff1e6] transition-all duration-300 font-sans text-[11px] sm:text-xs font-bold tracking-[0.16em] uppercase shadow-2xs"
                   >
                     <span>ABOUT</span>
                     <ArrowUpRight size={12} className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -210,7 +210,7 @@ export function JourneySection() {
                 </div>
 
                 {/* Active Step Technical Micro-Highlight */}
-                <div className="pt-4 sm:pt-6 mt-4 border-t border-[#20221c]/10 flex items-center justify-between text-xs font-mono">
+                <div className="pt-4 sm:pt-6 mt-4 border-t border-[#20221c]/10 flex items-center justify-between text-xs font-sans">
                   <span className="text-[#6b705c] font-semibold tracking-wider uppercase text-[11px]">
                     CURRENT INSPECTION:
                   </span>
@@ -264,7 +264,7 @@ export function JourneySection() {
 
                         {/* Step Title & Subtitle */}
                         <div className="flex flex-col">
-                          <span className={`text-[10px] sm:text-[11px] font-mono tracking-widest uppercase transition-colors duration-300 ${
+                          <span className={`text-[10px] sm:text-[11px] font-sans font-bold tracking-[0.16em] uppercase transition-colors duration-300 ${
                             isActive ? 'text-[#cb997e] font-bold' : 'text-neutral-500 group-hover:text-[#cb997e]'
                           }`}>
                             {step.subtitle}
@@ -295,13 +295,13 @@ export function JourneySection() {
             {/* BOTTOM FOOTER STRIP (Matching Reference "FEELTHIS.COM" Style) */}
             {/* ------------------------------------------------------------ */}
             <div className="py-4 sm:py-5 px-6 sm:px-10 lg:px-16 flex flex-col sm:flex-row items-center justify-between gap-2 text-center bg-[#f0efeb]">
-              <span className="text-[10px] sm:text-[11px] font-mono tracking-[0.2em] uppercase text-neutral-500">
+              <span className="text-[10px] sm:text-[11px] font-sans font-medium tracking-[0.2em] uppercase text-neutral-500">
                 VERACUE ANALYTICAL WORKFLOW • ISO-7 CLEANROOM STANDARDS
               </span>
               
               <Link
                 href="/shop"
-                className="font-mono tracking-[0.3em] text-xs font-bold uppercase text-[#20221c]/80 hover:text-[#20221c] transition-colors underline decoration-[#20221c]/30 underline-offset-4"
+                className="font-sans tracking-[0.25em] text-xs font-bold uppercase text-[#20221c]/80 hover:text-[#20221c] transition-colors underline decoration-[#20221c]/30 underline-offset-4"
               >
                 VERACUEPEPTIDES.COM
               </Link>

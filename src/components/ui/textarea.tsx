@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { cn } from "@/lib/utils"
 
 const textareaVariants = cva(
-  "flex w-full rounded-sm border px-4 py-3 min-h-[120px] font-sans text-body-md transition-all duration-200 ease-out placeholder:text-ink-subtle focus-visible:outline-none focus-visible:shadow-focus focus-visible:border-gold disabled:cursor-not-allowed disabled:opacity-40",
+  "flex w-full rounded-sm border px-4 py-3 min-h-[120px] font-sans text-body-md transition-all duration-200 ease-out placeholder:text-ink-subtle focus-visible:outline-none focus-visible:shadow-focus focus-visible:border-[#a5a58d] disabled:cursor-not-allowed disabled:opacity-40",
   {
     variants: {
       variant: {

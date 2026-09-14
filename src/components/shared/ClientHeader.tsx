@@ -466,7 +466,7 @@ export function ClientHeader({
                               <span className="text-[25px] lg:text-[28px] font-editorial font-bold text-white tracking-[0.02em] block leading-none">
                                 / shop
                               </span>
-                              <span className="text-[10.5px] text-white/80 uppercase tracking-[0.18em] font-mono font-medium block mt-2.5">
+                              <span className="text-[10.5px] text-white/80 uppercase tracking-[0.18em] font-sans font-semibold block mt-2.5">
                                 Research Formulations
                               </span>
                               <Link
@@ -517,7 +517,7 @@ export function ClientHeader({
                                       <span className="text-[14px] font-editorial font-bold text-white group-hover/item:text-white tracking-[0.02em] leading-snug">
                                         Best Sellers
                                       </span>
-                                      <span className="text-[9px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-white/25 text-white border border-white/30">
+                                      <span className="text-[9px] font-sans font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-white/25 text-white border border-white/30">
                                         Hot
                                       </span>
                                     </div>
@@ -543,7 +543,7 @@ export function ClientHeader({
                                       <span className="text-[14px] font-editorial font-bold text-white group-hover/item:text-white tracking-[0.02em] leading-snug">
                                         New Syntheses
                                       </span>
-                                      <span className="text-[9px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-white/25 text-white border border-white/30">
+                                      <span className="text-[9px] font-sans font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-white/25 text-white border border-white/30">
                                         New
                                       </span>
                                     </div>
@@ -586,7 +586,7 @@ export function ClientHeader({
                               <span className="text-[25px] lg:text-[28px] font-editorial font-bold text-white tracking-[0.02em] block leading-none">
                                 / collections
                               </span>
-                              <span className="text-[10.5px] text-white/80 uppercase tracking-[0.18em] font-mono font-medium block mt-2.5">
+                              <span className="text-[10.5px] text-white/80 uppercase tracking-[0.18em] font-sans font-semibold block mt-2.5">
                                 Research Fields
                               </span>
                               <div className="mt-5 flex items-center gap-2.5 text-[11.5px] text-white/90 font-editorial">
@@ -645,7 +645,7 @@ export function ClientHeader({
                               <span className="text-[25px] lg:text-[28px] font-editorial font-bold text-white tracking-[0.02em] block leading-none">
                                 / pages
                               </span>
-                              <span className="text-[10.5px] text-white/80 uppercase tracking-[0.18em] font-mono font-medium block mt-2.5">
+                              <span className="text-[10.5px] text-white/80 uppercase tracking-[0.18em] font-sans font-semibold block mt-2.5">
                                 Sciences &amp; Support
                               </span>
                               <Link
@@ -776,7 +776,7 @@ export function ClientHeader({
                               <span className="text-[25px] lg:text-[28px] font-editorial font-bold text-white tracking-[0.02em] block leading-none">
                                 / features
                               </span>
-                              <span className="text-[10.5px] text-white/80 uppercase tracking-[0.18em] font-mono font-medium block mt-2.5">
+                              <span className="text-[10.5px] text-white/80 uppercase tracking-[0.18em] font-sans font-semibold block mt-2.5">
                                 Standards &amp; Logistics
                               </span>
                               <div className="mt-5 flex items-center gap-2.5 text-[11.5px] text-white/90 font-editorial">
@@ -804,7 +804,7 @@ export function ClientHeader({
                                       <span className="text-[14px] font-editorial font-bold text-white group-hover/item:text-white tracking-[0.02em] leading-snug">
                                         Certificates of Analysis
                                       </span>
-                                      <span className="text-[9px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-white/25 text-white border border-white/30">
+                                      <span className="text-[9px] font-sans font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-white/25 text-white border border-white/30">
                                         COA
                                       </span>
                                     </div>
