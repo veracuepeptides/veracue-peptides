@@ -4,12 +4,13 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { Heart, ShoppingBag, Loader2 } from 'lucide-react'
+import { ShoppingBag } from 'lucide-react'
 import { useSession } from 'next-auth/react'
 import { useWishlistStore } from '@/lib/wishlist/store'
 import { useCartStore } from '@/lib/cart/store'
 import { toast } from 'sonner'
 import { Product } from '@/components/shop/PrimaryProductCard'
+import { AnimatedWishlistHeart } from '@/components/shared/AnimatedWishlistHeart'
 
 export interface ProductCardProps {
   product: Product | any
@@ -56,6 +57,7 @@ export function ProductCard({ product }: ProductCardProps) {
 
   const [inWishlist, setInWishlist] = useState(isWishlistedGlobal)
   const [isPending, setIsPending] = useState(false)
+  const [showBurst, setShowBurst] = useState(false)
 
   React.useEffect(() => {
     setInWishlist(isWishlistedGlobal)
@@ -90,6 +92,8 @@ export function ProductCard({ product }: ProductCardProps) {
           priceRange: String(priceVal),
         })
         setInWishlist(true)
+        setShowBurst(true)
+        setTimeout(() => setShowBurst(false), 1000)
         toast.success('Added to wishlist', { description: `${product.name} is now in your wishlist.` })
       }
     } catch (error: any) {
@@ -177,19 +181,11 @@ export function ProductCard({ product }: ProductCardProps) {
               onClick={handleWishlistClick}
               disabled={isPending}
               aria-label={inWishlist ? 'Remove from wishlist' : 'Add to wishlist'}
-              className={`w-9 h-9 sm:w-11 sm:h-11 rounded-[14px] sm:rounded-[18px] bg-[#f0efeb] hover:bg-[#eddcd2] flex items-center justify-center transition-all duration-300 pointer-events-auto active:scale-90 ${
-                inWishlist ? 'text-rose-600 bg-rose-50' : 'text-neutral-700 hover:text-rose-600'
+              className={`relative overflow-visible w-9 h-9 sm:w-11 sm:h-11 rounded-[14px] sm:rounded-[18px] bg-[#f0efeb] hover:bg-[#eddcd2] flex items-center justify-center transition-all duration-300 pointer-events-auto active:scale-90 ${
+                inWishlist ? 'text-[#cb997e] bg-[#fff1e6]' : 'text-neutral-700 hover:text-[#cb997e]'
               }`}
             >
-              {isPending ? (
-                <Loader2 className="w-4 h-4 animate-spin text-neutral-600" />
-              ) : (
-                <Heart
-                  className="w-4 h-4 sm:w-[18px] sm:h-[18px]"
-                  strokeWidth={1.75}
-                  fill={inWishlist ? 'currentColor' : 'none'}
-                />
-              )}
+              <AnimatedWishlistHeart inWishlist={inWishlist} isPending={isPending} showBurst={showBurst} size={16} />
             </button>
 
             {/* Cart Button */}

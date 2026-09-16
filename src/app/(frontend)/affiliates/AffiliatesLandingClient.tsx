@@ -47,6 +47,7 @@ import {
   Sparkles,
   Phone,
   Lock,
+  Plus,
 } from 'lucide-react'
 
 export type UserAffiliateStatus =
@@ -1153,8 +1154,8 @@ export function AffiliatesLandingClient({
         </div>
       </section>
 
-      {/* Main Container */}
-      <main className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-10 pb-20 relative z-10">
+      {/* Container for Sections 4 & 5 */}
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-10 relative z-10">
         {/* 4. Section: Intro & Asymmetrical Bento Grid */}
         <section className="mb-24 sm:mb-32">
           <FadeUp>
@@ -1364,7 +1365,7 @@ export function AffiliatesLandingClient({
 
             {/* Interactive 4-Step Accordion with Photography */}
             <div
-              className="w-full h-[520px] sm:h-[580px] md:h-[620px] flex flex-col md:flex-row gap-3 sm:gap-4 select-none"
+              className="w-full h-[540px] sm:h-[580px] md:h-[620px] flex flex-col md:flex-row gap-2.5 sm:gap-4 select-none"
               onMouseEnter={() => setIsAccordionHovered(true)}
               onMouseLeave={() => setIsAccordionHovered(false)}
             >
@@ -1402,46 +1403,68 @@ export function AffiliatesLandingClient({
                       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/45 to-black/15 pointer-events-none" />
                     </div>
 
-                    {/* Watermark Step Number */}
+                    {/* Watermark Step Number - Hidden on mobile when collapsed to avoid text collisions */}
                     <div
-                      className={`absolute -bottom-6 md:-bottom-8 right-3 md:-right-4 font-heading font-black leading-none transition-all duration-700 pointer-events-none z-10 select-none ${
+                      className={`absolute pointer-events-none z-10 select-none transition-all duration-700 font-heading font-black leading-none ${
                         isActive
-                          ? 'text-[110px] md:text-[200px] text-white/[0.04]'
-                          : 'text-[50px] md:text-[80px] text-black/[0.03]'
+                          ? 'text-[100px] md:text-[200px] text-white/[0.04] -bottom-6 md:-bottom-8 right-3 md:-right-4 block'
+                          : 'hidden md:block text-[80px] text-black/[0.03] md:-bottom-8 md:-right-4'
                       }`}
                     >
                       0{index + 1}
                     </div>
 
                     {/* Accordion Content Container */}
-                    <div className="relative z-20 flex flex-col md:flex-row w-full h-full p-5 sm:p-7 md:p-8">
-                      {/* Left/Top Icon Column */}
+                    <div className="relative z-20 flex flex-col md:flex-row w-full h-full p-3.5 sm:p-5 md:p-8">
+                      {/* Header / Left / Inactive Bar Row */}
                       <div
-                        className={`flex md:flex-col items-center justify-between md:justify-start gap-3 md:w-14 shrink-0 transition-all duration-500 ${
-                          isActive ? '' : 'w-full'
+                        className={`flex items-center justify-between shrink-0 transition-all duration-500 ${
+                          isActive
+                            ? 'md:flex-col md:w-14 md:justify-start gap-3'
+                            : 'w-full md:w-14 md:flex-col md:justify-start gap-3'
                         }`}
                       >
-                        <div
-                          className={`w-11 h-11 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl flex items-center justify-center shrink-0 border transition-all duration-500 ${
-                            isActive
-                              ? 'bg-[#a5a58d]/30 border-white/30 text-white shadow-sm'
-                              : 'bg-neutral-100 border-neutral-200 text-neutral-700'
-                          }`}
-                        >
-                          <Icon className="w-5 h-5 sm:w-6 sm:h-6" strokeWidth={2} />
+                        {/* Mobile Left Group (Icon + Step Title) / Desktop (Icon only) */}
+                        <div className="flex items-center gap-3 md:contents min-w-0">
+                          <div
+                            className={`w-9 h-9 xs:w-10 xs:h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl flex items-center justify-center shrink-0 border transition-all duration-500 ${
+                              isActive
+                                ? 'bg-[#a5a58d]/30 border-white/30 text-white shadow-sm'
+                                : 'bg-neutral-100 border-neutral-200 text-neutral-700'
+                            }`}
+                          >
+                            <Icon className="w-4 h-4 sm:w-6 sm:h-6" strokeWidth={2} />
+                          </div>
+
+                          {/* Mobile Collapsed Label (Clean, left-aligned, stacked) */}
+                          <div className={`md:hidden flex flex-col min-w-0 ${isActive ? 'hidden' : 'block'}`}>
+                            <span className="text-[10px] font-mono text-[#a5a58d] uppercase tracking-wider font-semibold leading-none mb-1">
+                              Step 0{index + 1}
+                            </span>
+                            <h3 className="font-heading font-bold text-xs xs:text-sm text-neutral-800 tracking-tight truncate uppercase leading-tight">
+                              {step.title}
+                            </h3>
+                          </div>
                         </div>
 
-                        {/* Vertical Title when collapsed */}
+                        {/* Desktop Vertical Title when collapsed */}
                         <div
-                          className={`transition-all duration-500 flex-1 flex md:items-center justify-center md:pt-6 ${
+                          className={`hidden md:flex transition-all duration-500 flex-1 items-center justify-center pt-6 ${
                             isActive
-                              ? 'opacity-0 w-0 h-0 hidden md:block'
+                              ? 'opacity-0 w-0 h-0 pointer-events-none'
                               : 'opacity-100 w-full'
                           }`}
                         >
-                          <h3 className="font-heading font-bold uppercase tracking-widest whitespace-nowrap text-xs sm:text-sm md:text-base md:[writing-mode:vertical-rl] md:rotate-180 text-neutral-600">
+                          <h3 className="font-heading font-bold uppercase tracking-widest whitespace-nowrap text-xs sm:text-sm md:text-base [writing-mode:vertical-rl] rotate-180 text-neutral-600">
                             {step.title}
                           </h3>
+                        </div>
+
+                        {/* Mobile Expand (+) Pill when collapsed */}
+                        <div className={`md:hidden shrink-0 ${isActive ? 'hidden' : 'flex items-center pl-2'}`}>
+                          <div className="w-7 h-7 rounded-full bg-[#eddcd2]/50 border border-[#eddcd2] flex items-center justify-center text-neutral-600">
+                            <Plus className="w-3.5 h-3.5" strokeWidth={2.5} />
+                          </div>
                         </div>
                       </div>
 
@@ -1449,18 +1472,18 @@ export function AffiliatesLandingClient({
                       <div
                         className={`flex flex-col justify-end overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
                           isActive
-                            ? 'opacity-100 flex-1 ml-0 md:ml-6 mt-4 md:mt-0'
+                            ? 'opacity-100 flex-1 ml-0 md:ml-6 mt-3 md:mt-0'
                             : 'opacity-0 w-0 h-0'
                         }`}
                       >
                         <div className="min-w-[220px]">
-                          <span className="text-[#cb997e] font-mono tracking-widest text-xs font-bold uppercase mb-2 block">
+                          <span className="text-[#cb997e] font-mono tracking-widest text-[11px] sm:text-xs font-bold uppercase mb-1.5 sm:mb-2 block">
                             STEP 0{index + 1} • {step.microcopy}
                           </span>
-                          <h4 className="text-2xl sm:text-3xl md:text-4xl font-black text-white font-heading tracking-tight mb-3 leading-tight">
+                          <h4 className="text-xl sm:text-3xl md:text-4xl font-black text-white font-heading tracking-tight mb-2 sm:mb-3 leading-tight">
                             {step.title}
                           </h4>
-                          <p className="text-white/80 text-sm sm:text-base md:text-lg max-w-md font-normal leading-relaxed mb-4">
+                          <p className="text-white/80 text-xs sm:text-base md:text-lg max-w-md font-normal leading-relaxed mb-3 sm:mb-4">
                             {step.desc}
                           </p>
                           <div className="inline-flex items-center gap-2 text-xs font-semibold text-white/60 tracking-wider uppercase font-heading">
@@ -1476,236 +1499,239 @@ export function AffiliatesLandingClient({
             </div>
           </FadeUp>
         </section>
+      </div>
 
-        {/* 6. Section: Commission Structure, Live Calculation & Interactive Calculator */}
-        <section id="calculator" className="mb-24 sm:mb-32 scroll-mt-28">
-          <div className="w-full bg-[#20221c] text-white rounded-3xl sm:rounded-[36px] p-4 sm:p-8 md:p-12 lg:p-16 shadow-[0_16px_50px_rgba(0,0,0,0.2)] border border-neutral-800 relative overflow-hidden">
-            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
-              {/* Left Column: Commission Structure, Stats & Live Example (6 cols) */}
-              <div className="lg:col-span-6 flex flex-col justify-between">
-                <div>
-                  <div className="flex items-center gap-2.5 mb-4">
-                    <span className="w-8 h-px bg-[#a5a58d]" />
-                    <span className="text-xs uppercase font-serif tracking-[0.24em] text-[#a5a58d] font-semibold">
-                      {t('commissionStructureTitle')}
-                    </span>
-                  </div>
-
-                  <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#fff1e6] font-heading tracking-tight mb-4 leading-tight">
-                    Industry-Leading <br />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#eddcd2] to-white/60">
-                      Transparent Payouts.
-                    </span>
-                  </h2>
-
-                  <p className="text-white/70 text-sm sm:text-base md:text-lg leading-relaxed mb-8 max-w-lg font-normal">
-                    {t('commissionStructureDesc')}
-                  </p>
-
-                  {/* 2 Stat Cards */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                    <div className="bg-white/5 border border-white/10 rounded-2xl p-5 hover:bg-white/10 transition-colors">
-                      <span className="block text-3xl font-black text-white font-heading mb-1">
-                        {t('statCookieValue')}
-                      </span>
-                      <span className="text-xs font-bold uppercase tracking-wider text-[#a5a58d] mb-1.5 block font-heading">
-                        {t('statCookieLabel')}
-                      </span>
-                      <p className="text-xs text-white/60 leading-relaxed">
-                        {t('statCookieDesc')}
-                      </p>
-                    </div>
-
-                    <div className="bg-white/5 border border-white/10 rounded-2xl p-5 hover:bg-white/10 transition-colors">
-                      <span className="block text-3xl font-black text-white font-heading mb-1">
-                        {t('statDualValue')}
-                      </span>
-                      <span className="text-xs font-bold uppercase tracking-wider text-[#cb997e] mb-1.5 block font-heading">
-                        {t('statDualLabel')}
-                      </span>
-                      <p className="text-xs text-white/60 leading-relaxed">
-                        {t('statDualDesc')}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Example Order Breakdown Box */}
-                <div className="bg-white/5 border border-white/10 rounded-2xl p-5 sm:p-6 backdrop-blur-md">
-                  <div className="text-xs font-bold uppercase tracking-widest text-white/50 mb-4 flex justify-between items-center font-heading">
-                    <span>{t('commissionExampleTitle')}</span>
-                    <span className="px-2.5 py-0.5 rounded-full bg-white/10 text-white/80 text-[10px]">
-                      BENCHMARK
-                    </span>
-                  </div>
-
-                  <div className="space-y-3 text-sm">
-                    <div className="flex justify-between items-center border-b border-white/10 pb-2.5">
-                      <span className="text-white/60 font-medium">
-                        {t('commissionExampleOrderValueLabel')}
-                      </span>
-                      <span className="font-mono text-white font-bold">$200.00</span>
-                    </div>
-
-                    <div className="flex justify-between items-center border-b border-white/10 pb-2.5">
-                      <span className="text-white/60 font-medium">
-                        {t('commissionExampleDiscountLabel')}
-                      </span>
-                      <span className="font-mono text-[#cb997e] font-semibold">
-                        -$30.00
-                      </span>
-                    </div>
-
-                    <div className="flex justify-between items-center pt-1">
-                      <span className="text-[#a5a58d] font-bold text-xs uppercase tracking-wider font-heading">
-                        {t('commissionExampleYourCommissionLabel')}
-                      </span>
-                      <span className="font-mono text-2xl font-black text-[#fff1e6]">
-                        $30.00
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Right Column: Live Interactive Dual-Slider Calculator (6 cols) */}
-              <div className="lg:col-span-6 bg-black/40 backdrop-blur-xl border border-white/15 rounded-3xl p-4 sm:p-6 md:p-8 lg:p-10 shadow-2xl relative">
-                <div className="flex flex-wrap items-center justify-between gap-2 mb-6 sm:mb-8 pb-3.5 sm:pb-4 border-b border-white/10">
-                  <div className="flex items-center gap-2 sm:gap-2.5 min-w-0">
-                    <SlidersHorizontal className="w-4 h-4 sm:w-5 sm:h-5 text-[#cb997e] shrink-0" />
-                    <h3 className="text-sm sm:text-base md:text-lg font-bold text-white font-heading truncate">
-                      Earnings Simulator
-                    </h3>
-                  </div>
-                  <span className="px-2.5 py-1 rounded-full text-[10px] sm:text-[11px] font-bold tracking-wider uppercase bg-[#a5a58d]/20 text-[#a5a58d] border border-[#a5a58d]/30 font-heading shrink-0">
-                    {(dynamicCommissionRate * 100).toFixed(1)}% Tier
+      {/* 6. Section: Commission Structure, Live Calculation & Interactive Calculator (Matches Header Width) */}
+      <section id="calculator" className="w-full px-2 sm:px-6 md:px-10 mb-24 sm:mb-32 scroll-mt-28 relative z-10">
+        <div className="w-full bg-[#20221c] text-white rounded-3xl sm:rounded-[36px] p-6 sm:p-10 md:p-12 lg:p-14 xl:p-16 shadow-[0_16px_50px_rgba(0,0,0,0.2)] border border-neutral-800 relative overflow-hidden">
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 xl:gap-16 2xl:gap-20 items-start">
+            {/* Left Column: Commission Structure, Stats & Live Example (6 cols) */}
+            <div className="lg:col-span-6 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center gap-2.5 mb-4">
+                  <span className="w-8 h-px bg-[#a5a58d]" />
+                  <span className="text-xs uppercase font-serif tracking-[0.24em] text-[#a5a58d] font-semibold">
+                    {t('commissionStructureTitle')}
                   </span>
                 </div>
 
-                {/* Slider 1: Monthly Referred Orders */}
-                <div className="mb-6 sm:mb-7">
-                  <div className="flex justify-between items-baseline mb-2">
-                    <label className="text-xs font-semibold uppercase tracking-wider text-white/70 font-heading">
-                      Monthly Referred Orders
-                    </label>
-                    <span className="font-mono text-xl sm:text-2xl font-black text-white">
-                      {monthlyOrders}
+                <h2 className="text-3xl sm:text-4xl md:text-5xl xl:text-[54px] font-black text-[#fff1e6] font-heading tracking-tight mb-4 leading-tight">
+                  Industry-Leading <br />
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#eddcd2] to-white/60">
+                    Transparent Payouts.
+                  </span>
+                </h2>
+
+                <p className="text-white/70 text-sm sm:text-base md:text-lg leading-relaxed mb-8 max-w-xl font-normal">
+                  {t('commissionStructureDesc')}
+                </p>
+
+                {/* 2 Stat Cards */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 xl:gap-5 mb-8">
+                  <div className="bg-white/5 border border-white/10 rounded-2xl p-5 xl:p-6 hover:bg-white/10 transition-colors">
+                    <span className="block text-3xl xl:text-4xl font-black text-white font-heading mb-1">
+                      {t('statCookieValue')}
                     </span>
+                    <span className="text-xs font-bold uppercase tracking-wider text-[#a5a58d] mb-1.5 block font-heading">
+                      {t('statCookieLabel')}
+                    </span>
+                    <p className="text-xs xl:text-sm text-white/60 leading-relaxed">
+                      {t('statCookieDesc')}
+                    </p>
                   </div>
-                  <input
-                    type="range"
-                    min={1}
-                    max={200}
-                    value={monthlyOrders}
-                    onChange={(e) => setMonthlyOrders(Number(e.target.value))}
-                    className="w-full h-2 bg-neutral-800 rounded-lg appearance-none cursor-pointer accent-[#cb997e]"
-                  />
-                  <div className="flex justify-between text-[9px] sm:text-[10px] font-mono text-white/40 mt-1.5">
-                    <span>1 order</span>
-                    <span>50 (17.5% Tier)</span>
-                    <span>100+ (20% Tier)</span>
+
+                  <div className="bg-white/5 border border-white/10 rounded-2xl p-5 xl:p-6 hover:bg-white/10 transition-colors">
+                    <span className="block text-3xl xl:text-4xl font-black text-white font-heading mb-1">
+                      {t('statDualValue')}
+                    </span>
+                    <span className="text-xs font-bold uppercase tracking-wider text-[#cb997e] mb-1.5 block font-heading">
+                      {t('statDualLabel')}
+                    </span>
+                    <p className="text-xs xl:text-sm text-white/60 leading-relaxed">
+                      {t('statDualDesc')}
+                    </p>
                   </div>
                 </div>
+              </div>
 
-                {/* Slider 2: Average Cart Value */}
-                <div className="mb-6 sm:mb-8">
-                  <div className="flex justify-between items-baseline mb-2">
-                    <label className="text-xs font-semibold uppercase tracking-wider text-white/70 font-heading">
-                      Average Cart Value
-                    </label>
-                    <span className="font-mono text-xl sm:text-2xl font-black text-white">
-                      ${averageOrderValue}
-                    </span>
-                  </div>
-                  <input
-                    type="range"
-                    min={80}
-                    max={500}
-                    step={10}
-                    value={averageOrderValue}
-                    onChange={(e) => setAverageOrderValue(Number(e.target.value))}
-                    className="w-full h-2 bg-neutral-800 rounded-lg appearance-none cursor-pointer accent-[#a5a58d]"
-                  />
-                  <div className="flex justify-between text-[9px] sm:text-[10px] font-mono text-white/40 mt-1.5">
-                    <span>$80</span>
-                    <span>$220 (Catalog Avg)</span>
-                    <span>$500+</span>
-                  </div>
+              {/* Example Order Breakdown Box */}
+              <div className="bg-white/5 border border-white/10 rounded-2xl p-5 sm:p-6 xl:p-7 backdrop-blur-md">
+                <div className="text-xs font-bold uppercase tracking-widest text-white/50 mb-4 flex justify-between items-center font-heading">
+                  <span>{t('commissionExampleTitle')}</span>
+                  <span className="px-2.5 py-0.5 rounded-full bg-white/10 text-white/80 text-[10px]">
+                    BENCHMARK
+                  </span>
                 </div>
 
-                {/* Projected Earnings Output Badges */}
-                <div className="grid grid-cols-2 gap-2.5 sm:gap-4 p-3.5 sm:p-5 rounded-2xl bg-white/5 border border-white/10 mb-6 sm:mb-8">
-                  <div className="min-w-0">
-                    <span className="text-[10px] sm:text-[11px] font-semibold text-white/50 uppercase tracking-wider block font-heading mb-1 truncate">
-                      Monthly Payout
+                <div className="space-y-3.5 text-sm xl:text-base">
+                  <div className="flex justify-between items-center border-b border-white/10 pb-2.5">
+                    <span className="text-white/60 font-medium">
+                      {t('commissionExampleOrderValueLabel')}
                     </span>
-                    <span className="font-mono text-xl xs:text-2xl sm:text-3xl font-black text-[#fff1e6] block truncate">
-                      ${monthlyCommission.toLocaleString('en-US', { maximumFractionDigits: 0 })}
-                    </span>
+                    <span className="font-mono text-white font-bold">$200.00</span>
                   </div>
-                  <div className="min-w-0">
-                    <span className="text-[10px] sm:text-[11px] font-semibold text-white/50 uppercase tracking-wider block font-heading mb-1 truncate">
-                      Annual Projected
-                    </span>
-                    <span className="font-mono text-xl xs:text-2xl sm:text-3xl font-black text-[#cb997e] block truncate">
-                      ${annualCommission.toLocaleString('en-US', { maximumFractionDigits: 0 })}
-                    </span>
-                  </div>
-                </div>
 
-                {/* Benchmark Reference Milestones */}
-                <div className="pt-4 border-t border-white/10">
-                  <h4 className="text-[11px] sm:text-xs font-semibold uppercase tracking-widest text-white/40 mb-3 font-heading">
-                    {t('monthlyEarningsTitle')}
-                  </h4>
-                  <div className="grid grid-cols-3 gap-1.5 sm:gap-2.5 text-center">
-                    {[
-                      { orders: '10', payout: '$330', featured: false },
-                      { orders: '25', payout: '$825', featured: false },
-                      { orders: '50', payout: '$1,925', featured: true },
-                    ].map((item, idx) => (
-                      <div
-                        key={idx}
-                        className={`p-2 sm:p-2.5 rounded-xl border flex flex-col justify-between min-w-0 transition-all ${
-                          item.featured
-                            ? 'bg-[#cb997e]/20 border-[#cb997e]/40 shadow-xs'
-                            : 'bg-white/5 border-white/10'
-                        }`}
-                      >
-                        <div className="mb-1">
-                          <span className="font-heading font-bold text-xs sm:text-sm text-white block leading-none mb-1">
-                            {item.orders}
-                          </span>
-                          <span className="text-[9px] sm:text-[10px] text-white/50 block tracking-tight truncate leading-tight uppercase">
-                            referrals
-                          </span>
-                        </div>
-                        <div className="pt-1 border-t border-white/10">
-                          <span
-                            className={`font-mono font-bold text-[11px] xs:text-xs sm:text-sm block truncate ${
-                              item.featured ? 'text-[#fff1e6] font-black' : 'text-white'
-                            }`}
-                          >
-                            {item.payout}
-                            <span className="text-[9px] font-normal text-white/50">/mo</span>
-                          </span>
-                        </div>
-                      </div>
-                    ))}
+                  <div className="flex justify-between items-center border-b border-white/10 pb-2.5">
+                    <span className="text-white/60 font-medium">
+                      {t('commissionExampleDiscountLabel')}
+                    </span>
+                    <span className="font-mono text-[#cb997e] font-semibold">
+                      -$30.00
+                    </span>
                   </div>
-                </div>
 
-                {/* Apply CTA from calculator */}
-                <div className="mt-6 sm:mt-8 flex justify-center">
-                  <HeroButton href="#apply" direction="up" className="w-full justify-between">
-                    Apply to Start Earning
-                  </HeroButton>
+                  <div className="flex justify-between items-center pt-1">
+                    <span className="text-[#a5a58d] font-bold text-xs uppercase tracking-wider font-heading">
+                      {t('commissionExampleYourCommissionLabel')}
+                    </span>
+                    <span className="font-mono text-2xl xl:text-3xl font-black text-[#fff1e6]">
+                      $30.00
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
 
+            {/* Right Column: Live Interactive Dual-Slider Calculator (6 cols) */}
+            <div className="lg:col-span-6 bg-black/40 backdrop-blur-xl border border-white/15 rounded-3xl p-5 sm:p-7 md:p-9 lg:p-10 xl:p-12 shadow-2xl relative">
+              <div className="flex flex-wrap items-center justify-between gap-2 mb-6 sm:mb-8 pb-3.5 sm:pb-4 border-b border-white/10">
+                <div className="flex items-center gap-2 sm:gap-2.5 min-w-0">
+                  <SlidersHorizontal className="w-4 h-4 sm:w-5 sm:h-5 text-[#cb997e] shrink-0" />
+                  <h3 className="text-sm sm:text-base md:text-lg font-bold text-white font-heading truncate">
+                    Earnings Simulator
+                  </h3>
+                </div>
+                <span className="px-2.5 py-1 rounded-full text-[10px] sm:text-[11px] font-bold tracking-wider uppercase bg-[#a5a58d]/20 text-[#a5a58d] border border-[#a5a58d]/30 font-heading shrink-0">
+                  {(dynamicCommissionRate * 100).toFixed(1)}% Tier
+                </span>
+              </div>
+
+              {/* Slider 1: Monthly Referred Orders */}
+              <div className="mb-6 sm:mb-7">
+                <div className="flex justify-between items-baseline mb-2">
+                  <label className="text-xs font-semibold uppercase tracking-wider text-white/70 font-heading">
+                    Monthly Referred Orders
+                  </label>
+                  <span className="font-mono text-xl sm:text-2xl font-black text-white">
+                    {monthlyOrders}
+                  </span>
+                </div>
+                <input
+                  type="range"
+                  min={1}
+                  max={200}
+                  value={monthlyOrders}
+                  onChange={(e) => setMonthlyOrders(Number(e.target.value))}
+                  className="w-full h-2 bg-neutral-800 rounded-lg appearance-none cursor-pointer accent-[#cb997e]"
+                />
+                <div className="flex justify-between text-[9px] sm:text-[10px] font-mono text-white/40 mt-1.5">
+                  <span>1 order</span>
+                  <span>50 (17.5% Tier)</span>
+                  <span>100+ (20% Tier)</span>
+                </div>
+              </div>
+
+              {/* Slider 2: Average Cart Value */}
+              <div className="mb-6 sm:mb-8">
+                <div className="flex justify-between items-baseline mb-2">
+                  <label className="text-xs font-semibold uppercase tracking-wider text-white/70 font-heading">
+                    Average Cart Value
+                  </label>
+                  <span className="font-mono text-xl sm:text-2xl font-black text-white">
+                    ${averageOrderValue}
+                  </span>
+                </div>
+                <input
+                  type="range"
+                  min={80}
+                  max={500}
+                  step={10}
+                  value={averageOrderValue}
+                  onChange={(e) => setAverageOrderValue(Number(e.target.value))}
+                  className="w-full h-2 bg-neutral-800 rounded-lg appearance-none cursor-pointer accent-[#a5a58d]"
+                />
+                <div className="flex justify-between text-[9px] sm:text-[10px] font-mono text-white/40 mt-1.5">
+                  <span>$80</span>
+                  <span>$220 (Catalog Avg)</span>
+                  <span>$500+</span>
+                </div>
+              </div>
+
+              {/* Projected Earnings Output Badges */}
+              <div className="grid grid-cols-2 gap-2.5 sm:gap-4 p-3.5 sm:p-5 xl:p-6 rounded-2xl bg-white/5 border border-white/10 mb-6 sm:mb-8">
+                <div className="min-w-0">
+                  <span className="text-[10px] sm:text-[11px] font-semibold text-white/50 uppercase tracking-wider block font-heading mb-1 truncate">
+                    Monthly Payout
+                  </span>
+                  <span className="font-mono text-xl xs:text-2xl sm:text-3xl font-black text-[#fff1e6] block truncate">
+                    ${monthlyCommission.toLocaleString('en-US', { maximumFractionDigits: 0 })}
+                  </span>
+                </div>
+                <div className="min-w-0">
+                  <span className="text-[10px] sm:text-[11px] font-semibold text-white/50 uppercase tracking-wider block font-heading mb-1 truncate">
+                    Annual Projected
+                  </span>
+                  <span className="font-mono text-xl xs:text-2xl sm:text-3xl font-black text-[#cb997e] block truncate">
+                    ${annualCommission.toLocaleString('en-US', { maximumFractionDigits: 0 })}
+                  </span>
+                </div>
+              </div>
+
+              {/* Benchmark Reference Milestones */}
+              <div className="pt-4 border-t border-white/10">
+                <h4 className="text-[11px] sm:text-xs font-semibold uppercase tracking-widest text-white/40 mb-3 font-heading">
+                  {t('monthlyEarningsTitle')}
+                </h4>
+                <div className="grid grid-cols-3 gap-1.5 sm:gap-2.5 text-center">
+                  {[
+                    { orders: '10', payout: '$330', featured: false },
+                    { orders: '25', payout: '$825', featured: false },
+                    { orders: '50', payout: '$1,925', featured: true },
+                  ].map((item, idx) => (
+                    <div
+                      key={idx}
+                      className={`p-2.5 sm:p-3 xl:p-3.5 rounded-xl border flex flex-col justify-between min-w-0 transition-all ${
+                        item.featured
+                          ? 'bg-[#cb997e]/20 border-[#cb997e]/40 shadow-xs'
+                          : 'bg-white/5 border-white/10'
+                      }`}
+                    >
+                      <div className="mb-1">
+                        <span className="font-heading font-bold text-xs sm:text-sm text-white block leading-none mb-1">
+                          {item.orders}
+                        </span>
+                        <span className="text-[9px] sm:text-[10px] text-white/50 block tracking-tight truncate leading-tight uppercase">
+                          referrals
+                        </span>
+                      </div>
+                      <div className="pt-1 border-t border-white/10">
+                        <span
+                          className={`font-mono font-bold text-[11px] xs:text-xs sm:text-sm block truncate ${
+                            item.featured ? 'text-[#fff1e6] font-black' : 'text-white'
+                          }`}
+                        >
+                          {item.payout}
+                          <span className="text-[9px] font-normal text-white/50">/mo</span>
+                        </span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Apply CTA from calculator */}
+              <div className="mt-6 sm:mt-8 flex justify-center">
+                <HeroButton href="#apply" direction="up" className="w-full justify-between">
+                  Apply to Start Earning
+                </HeroButton>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Container for Section 7: Management Tools */}
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-10 pb-20 relative z-10">
         {/* 7. Section: Comprehensive Management Tools (4 Bento Cards) */}
         <section className="mb-24 sm:mb-32">
           <FadeUp>
@@ -2099,7 +2125,7 @@ export function AffiliatesLandingClient({
             </div>
           </FadeUp>
         </section>
-      </main>
+      </div>
 
       {/* 8. Section: Research Standards & Product Quality (Full Width, Olive Green with Interactive Kinetic Marquee Animation) */}
       <AffiliateDifferenceSection />
@@ -2180,7 +2206,7 @@ export function AffiliatesLandingClient({
       {/* 11. Section: Final CTA & Disclaimers */}
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-10 pb-20 relative z-10">
         <section className="w-full">
-          <div className="bg-[#20221c] text-white rounded-3xl sm:rounded-[36px] p-7 sm:p-10 md:p-14 lg:p-16 flex flex-col lg:flex-row gap-10 md:gap-14 relative overflow-hidden shadow-2xl border border-[#eddcd2]/15">
+          <div className="bg-[#20221c] text-white rounded-3xl sm:rounded-[36px] p-5 sm:p-9 md:p-14 lg:p-16 flex flex-col lg:flex-row gap-8 sm:gap-10 md:gap-14 relative overflow-hidden shadow-2xl border border-[#eddcd2]/15">
             {/* Left Column: Heading, Subtitle & Action */}
             <div className="w-full lg:w-1/2 relative z-10 flex flex-col justify-center">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#fff1e6] font-heading tracking-tight mb-4 leading-tight">
@@ -2198,13 +2224,14 @@ export function AffiliatesLandingClient({
                   support@veracuepeptides.com
                 </a>
               </p>
-              <div>
+              <div className="w-full sm:w-auto">
                 <HeroButton
                   onClick={() => scrollToSection('apply')}
                   direction="up"
-                  className="w-full sm:w-auto"
+                  className="w-full sm:w-auto max-w-full"
                 >
-                  {t('finalCtaButton')}
+                  <span className="hidden xs:inline">{t('finalCtaButton')}</span>
+                  <span className="xs:hidden">Apply for Partnership</span>
                 </HeroButton>
               </div>
             </div>

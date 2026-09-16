@@ -2,9 +2,10 @@
 
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Link } from '@/i18n/navigation'
-import { AlertCircle, ChevronRight, RotateCcw } from 'lucide-react'
+import { AlertCircle, RotateCcw } from 'lucide-react'
+import { TiledErrorCode } from '@/components/shared/TiledErrorCode'
 import { useReducedMotion } from '@/components/motion/useReducedMotion'
+import { HeroButton } from '@/components/ui/hero-button'
 
 // Floating particles component for luxury biotech feel
 function MolecularBackground() {
@@ -32,7 +33,7 @@ function MolecularBackground() {
       {particles.map((p) => (
         <motion.div
           key={p.id}
-          className="absolute rounded-full border border-primary/20 bg-primary/5 blur-[1px]"
+          className="absolute rounded-full border border-[#a5a58d]/20 bg-[#a5a58d]/5 blur-[1px]"
           style={{
             width: p.size,
             height: p.size,
@@ -68,18 +69,14 @@ export default function GlobalError({
   }, [error])
 
   return (
-    <main className="relative min-h-[100dvh] bg-[#FAFAFA] flex flex-col items-center justify-start overflow-y-auto overflow-x-hidden pt-[140px] pb-12 px-4 sm:px-6">
+    <main className="relative min-h-[100dvh] bg-[#f0efeb] flex flex-col items-center justify-start overflow-y-auto overflow-x-hidden pt-[140px] pb-12 px-4 sm:px-6">
       <style dangerouslySetInnerHTML={{ __html: `
         #global-footer { display: none !important; }
       `}} />
       <MolecularBackground />
 
-      {/* Massive 500 Watermark */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
-        <h1 className="text-[35vw] font-black text-black/[0.02] select-none tracking-tighter leading-none">
-          500
-        </h1>
-      </div>
+      {/* Tiled 500 Watermark */}
+      <TiledErrorCode code="500" />
 
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -88,34 +85,27 @@ export default function GlobalError({
         className="relative z-10 w-full max-w-2xl mx-auto my-auto"
       >
         {/* Glassmorphism Card */}
-        <div className="bg-white/70 backdrop-blur-2xl border border-white shadow-[0_12px_40px_rgba(0,0,0,0.06)] rounded-[32px] sm:rounded-[48px] p-8 sm:p-12 lg:p-16 flex flex-col items-center text-center">
-          
-          <div className="w-20 h-20 sm:w-24 sm:h-24 bg-red-500/5 text-red-500 rounded-full flex items-center justify-center mb-8 shadow-inner">
+        <div className="bg-white/70 backdrop-blur-2xl border border-[#eddcd2] shadow-[0_12px_40px_rgba(32,34,28,0.07)] rounded-[32px] sm:rounded-[48px] p-8 sm:p-12 lg:p-16 flex flex-col items-center text-center">
+
+          <div className="w-20 h-20 sm:w-24 sm:h-24 bg-[#a5a58d]/10 text-[#a5a58d] rounded-full flex items-center justify-center mb-8 shadow-inner">
             <AlertCircle size={32} strokeWidth={1.5} className="sm:hidden" />
             <AlertCircle size={40} strokeWidth={1.5} className="hidden sm:block" />
           </div>
 
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-light text-black tracking-tight mb-4">
-            System <span className="font-semibold">Error</span>
+          <h2 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-light text-[#20221c] tracking-tight mb-4">
+            System <span className="font-semibold text-[#cb997e]">Error</span>
           </h2>
-          
-          <p className="text-sm sm:text-base text-black/50 max-w-md mx-auto mb-10 leading-relaxed">
+
+          <p className="text-sm sm:text-base text-[#20221c]/55 max-w-md mx-auto mb-10 leading-relaxed">
             We encountered an unexpected anomaly while processing your request. Our synthesis team has been notified.
           </p>
 
           {/* Quick Links */}
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full justify-center">
-            <button 
-              onClick={() => reset()} 
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-black text-white hover:bg-black/80 transition-colors text-[10px] font-bold uppercase tracking-[0.2em] w-full sm:w-auto"
-            >
-              <RotateCcw size={14} />
+          <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full justify-center">
+            <HeroButton onClick={() => reset()} icon={<RotateCcw size={14} strokeWidth={2.5} />}>
               Try Again
-            </button>
-            <Link href="/" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-transparent border border-black/10 hover:border-black text-black transition-colors text-[10px] font-bold uppercase tracking-[0.2em] w-full sm:w-auto">
-              Return Home
-              <ChevronRight size={14} />
-            </Link>
+            </HeroButton>
+            <HeroButton href="/" variant="secondary">Return Home</HeroButton>
           </div>
           
         </div>

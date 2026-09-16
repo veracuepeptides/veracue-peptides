@@ -181,53 +181,62 @@ async function calculateCartTotals(cartItems: any[], payload: any, coupon?: any)
   for (const item of cartItems) {
     let product = item.product;
     if (typeof product !== 'object' || product === null) {
-      product = await payload.findByID({ collection: 'products', id: product as number });
+      try {
+        const prodId = Number(item.product || item.productId);
+        if (!isNaN(prodId) && prodId > 0) {
+          product = await payload.findByID({ collection: 'products', id: prodId });
+        }
+      } catch (err) {
+        product = null;
+      }
     }
     const itemPrice = typeof item.priceSnapshot === 'number' 
       ? item.priceSnapshot 
-      : (typeof product.salePrice === 'number' ? product.salePrice : (typeof product.price === 'number' ? product.price : 0));
+      : (product && typeof product.salePrice === 'number' ? product.salePrice : (product && typeof product.price === 'number' ? product.price : 0));
     const itemQuantity = item.quantity || 1;
     const itemTotal = itemPrice * itemQuantity;
     totalSubtotal += itemTotal;
 
     if (coupon) {
       let eligible = true;
-      if (coupon.excludeSaleItems && typeof product.salePrice === 'number' && product.salePrice > 0) {
-        eligible = false;
-        ineligibleReasons.add('sale_excluded');
-      }
-
-      // Check applicableProductTypes (Singles vs Kits)
-      if (coupon.applicableProductTypes && coupon.applicableProductTypes !== 'all') {
-        const matchedVariant = Array.isArray(product.variants)
-          ? product.variants.find((v: any) => v.sku === item.variantSku)
-          : null;
-
-        // A variant is a Kit if 'isKit' is true, or falls back to legacy " - " bundle check
-        const isKitBundle = (matchedVariant && matchedVariant.isKit) || (typeof item.variantSku === 'string' && item.variantSku.includes(' - '));
-
-        if (coupon.applicableProductTypes === 'normal_only' && isKitBundle) {
-          eligible = false; // Coupon is for Singles Only
-          ineligibleReasons.add('kit_not_allowed');
-        } else if (coupon.applicableProductTypes === 'bulk_only' && !isKitBundle) {
-          eligible = false; // Coupon is for Kits Only
-          ineligibleReasons.add('kit_required');
-        }
-      }
-      if (coupon.appliesTo === 'specific_products') {
-        const allowedProductIds = (coupon.products || []).map((p: any) => typeof p.product === 'object' ? p.product.id : p.product);
-        if (!allowedProductIds.includes(product.id)) {
+      if (product) {
+        if (coupon.excludeSaleItems && typeof product.salePrice === 'number' && product.salePrice > 0) {
           eligible = false;
-          ineligibleReasons.add('not_specific_product');
+          ineligibleReasons.add('sale_excluded');
         }
-      }
-      if (coupon.appliesTo === 'specific_categories') {
-        const allowedCategoryIds = (coupon.categories || []).map((c: any) => typeof c.category === 'object' ? c.category.id : c.category);
-        const productCategoryIds = (product.categories || []).map((c: any) => typeof c === 'object' ? c.id : c);
-        const hasIntersect = productCategoryIds.some((id: any) => allowedCategoryIds.includes(id));
-        if (!hasIntersect) {
-          eligible = false;
-          ineligibleReasons.add('not_specific_category');
+
+        // Check applicableProductTypes (Singles vs Kits)
+        if (coupon.applicableProductTypes && coupon.applicableProductTypes !== 'all') {
+          const matchedVariant = Array.isArray(product.variants)
+            ? product.variants.find((v: any) => v.sku === item.variantSku)
+            : null;
+
+          // A variant is a Kit if 'isKit' is true, or falls back to legacy " - " bundle check
+          const isKitBundle = (matchedVariant && matchedVariant.isKit) || (typeof item.variantSku === 'string' && item.variantSku.includes(' - '));
+
+          if (coupon.applicableProductTypes === 'normal_only' && isKitBundle) {
+            eligible = false; // Coupon is for Singles Only
+            ineligibleReasons.add('kit_not_allowed');
+          } else if (coupon.applicableProductTypes === 'bulk_only' && !isKitBundle) {
+            eligible = false; // Coupon is for Kits Only
+            ineligibleReasons.add('kit_required');
+          }
+        }
+        if (coupon.appliesTo === 'specific_products') {
+          const allowedProductIds = (coupon.products || []).map((p: any) => typeof p.product === 'object' ? p.product.id : p.product);
+          if (!allowedProductIds.includes(product.id)) {
+            eligible = false;
+            ineligibleReasons.add('not_specific_product');
+          }
+        }
+        if (coupon.appliesTo === 'specific_categories') {
+          const allowedCategoryIds = (coupon.categories || []).map((c: any) => typeof c.category === 'object' ? c.category.id : c.category);
+          const productCategoryIds = (product.categories || []).map((c: any) => typeof c === 'object' ? c.id : c);
+          const hasIntersect = productCategoryIds.some((id: any) => allowedCategoryIds.includes(id));
+          if (!hasIntersect) {
+            eligible = false;
+            ineligibleReasons.add('not_specific_category');
+          }
         }
       }
       if (eligible) eligibleSubtotal += itemTotal;

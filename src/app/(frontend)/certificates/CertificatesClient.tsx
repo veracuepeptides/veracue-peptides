@@ -1,247 +1,921 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useMemo } from 'react'
 import Image from 'next/image'
 import { Link } from '@/i18n/navigation'
-import { useTranslations } from 'next-intl'
-import { DownloadIcon, FileTextIcon, ArrowRightIcon } from 'lucide-react'
-import { FadeUp } from '@/components/motion/FadeUp'
-import { FluidButton } from '@/components/ui/fluid-button'
+import { motion, AnimatePresence } from 'framer-motion'
 import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select'
+  Search,
+  CheckCircle2,
+  FileText,
+  Download,
+  Copy,
+  Check,
+  ShieldCheck,
+  SlidersHorizontal,
+  ExternalLink,
+  X,
+  Eye,
+  Activity,
+  ArrowUpRight,
+  FlaskConical,
+  Award,
+  ChevronDown,
+  LayoutGrid,
+  Table as TableIcon,
+  HelpCircle,
+} from 'lucide-react'
+import { FadeUp } from '@/components/motion/FadeUp'
+import { HeroButton } from '@/components/ui/hero-button'
+import { CertificatesHero } from '@/components/certificates/CertificatesHero'
+import { SharedFaqSection } from '@/components/shared/SharedFaqSection'
+import { type VerifiedCOA } from '@/lib/certificates/fallbackCertificates'
 
-export type COA = {
-  id: number
-  product: string
-  category: string
-  purity: string | null
-  batch: string | null
-  analyzed: string | null
-  coaUrl: string | null
+interface CertificatesClientProps {
+  coas: VerifiedCOA[]
 }
 
-export function CertificatesClient({ coas }: { coas: COA[] }) {
-  const t = useTranslations('legal.certificates')
-  const [filter, setFilter] = useState('All')
+export function CertificatesClient({ coas }: CertificatesClientProps) {
+  const [searchQuery, setSearchQuery] = useState('')
+  const [selectedCategory, setSelectedCategory] = useState('All')
+  const [purityFilter, setPurityFilter] = useState<'all' | 'high'>('all')
+  const [viewMode, setViewMode] = useState<'table' | 'cards'>('table')
+  const [inspectingCoa, setInspectingCoa] = useState<VerifiedCOA | null>(null)
+  const [copiedBatch, setCopiedBatch] = useState<string | null>(null)
 
-  const categories = ['All', ...Array.from(new Set(coas.map(c => c.category))).sort()]
+  // Extract unique categories
+  const categories = useMemo(() => {
+    const cats = Array.from(new Set(coas.map((c) => c.category))).filter(Boolean)
+    return ['All', ...cats.sort()]
+  }, [coas])
 
-  const filteredCOAs = filter === 'All'
-    ? coas
-    : coas.filter(c => c.category === filter)
+  // Filtered COAs
+  const filteredCOAs = useMemo(() => {
+    return coas.filter((item) => {
+      // Category filter
+      if (selectedCategory !== 'All' && item.category !== selectedCategory) {
+        return false
+      }
+
+      // Purity filter: high means >= 99.5%
+      if (purityFilter === 'high') {
+        const numPurity = parseFloat(item.purity.replace('%', ''))
+        if (isNaN(numPurity) || numPurity < 99.5) {
+          return false
+        }
+      }
+
+      // Search query
+      if (searchQuery.trim()) {
+        const query = searchQuery.toLowerCase()
+        const matchProduct = item.product.toLowerCase().includes(query)
+        const matchBatch = item.batch.toLowerCase().includes(query)
+        const matchCategory = item.category.toLowerCase().includes(query)
+        const matchLab = item.lab.toLowerCase().includes(query)
+        const matchFormula = item.formula?.toLowerCase().includes(query) || false
+        if (!matchProduct && !matchBatch && !matchCategory && !matchLab && !matchFormula) {
+          return false
+        }
+      }
+
+      return true
+    })
+  }, [coas, selectedCategory, purityFilter, searchQuery])
+
+  // Copy batch number handler
+  const handleCopyBatch = (batch: string) => {
+    navigator.clipboard.writeText(batch)
+    setCopiedBatch(batch)
+    setTimeout(() => setCopiedBatch(null), 2000)
+  }
+
+  // FAQ Items
+  const FAQ_ITEMS = [
+    {
+      question: 'What analytical techniques are used to verify Veracue batches?',
+      answer:
+        'Every Veracue batch undergoes orthogonal dual-method testing: High-Performance Liquid Chromatography (RP-HPLC) with photodiode array detection for chemical purity and area normalization, coupled with Mass Spectrometry (ESI-MS or MALDI-TOF) to confirm sequence identity and exact molecular mass.',
+    },
+    {
+      question: 'How do I locate the batch number on my peptide vial?',
+      answer:
+        'Each Veracue vial features a laser-printed tamper-resistant lot tag on the base of the label (e.g. "VR-BPC-2603A"). Entering this alphanumeric string into the search bar above will immediately surface the corresponding analytical report.',
+    },
+    {
+      question: 'What is the minimum purity threshold for Veracue research compounds?',
+      answer:
+        'We enforce a strict ≥99.0% baseline purity threshold. Batches failing to reach 99.0% area resolution are rejected and never compounded or fulfilled. Overfill percentages in peptide net content are explicitly noted on the testing docket.',
+    },
+    {
+      question: 'Can academic institutions request raw chromatogram CSV or CDF files?',
+      answer:
+        'Yes. Registered academic investigators and laboratory directors may contact our quality assurance team with their lot code to receive raw chromatographic retention logs, baseline integration tables, and mass spectra data files.',
+    },
+  ]
 
   return (
-    <main className="bg-white min-h-screen">
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-[#003333] to-[#001111] pt-32 pb-20 relative overflow-hidden">
-        <div className="w-[calc(100%-2rem)] md:w-[calc(100%-6rem)] mx-auto relative z-10 flex flex-col items-center text-center">
-          <FadeUp className="flex flex-col items-center">
-            <div className="inline-block border border-white/10 rounded-full px-4 py-1.5 mb-6 bg-white/5 backdrop-blur-sm">
-              <span className="text-white/90 text-xs font-bold tracking-[0.2em] uppercase font-heading">{t('eyebrow')}</span>
-            </div>
-            <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[0.95] tracking-tighter uppercase mb-6 max-w-3xl">
-              {t('title')}
-            </h1>
-            <p className="text-white/70 text-base sm:text-lg leading-relaxed max-w-2xl mb-10">
-              {t('description')}
-            </p>
-            <Link href="/shop" className="inline-block">
-              <FluidButton text={t('shopButton')} variant="cyan" />
-            </Link>
-          </FadeUp>
+    <div className="w-full bg-[#f0efeb] text-[#20221c] font-sans selection:bg-[#a5a58d]/30 selection:text-[#20221c] overflow-x-clip">
+      {/* ==================================================================== */}
+      {/* 1. SIGNATURE HERO: Matches Homepage, Shop, & Affiliates layout       */}
+      {/* ==================================================================== */}
+      <CertificatesHero />
 
-          <FadeUp delay={0.1}>
-            <div className="grid grid-cols-3 gap-3 sm:gap-4 mt-16 max-w-xl mx-auto">
-              <div className="bg-white/10 border border-white/20 backdrop-blur-xl rounded-2xl p-4 sm:p-5 shadow-2xl">
-                <span className="block text-2xl sm:text-3xl font-heading font-black text-white tracking-tighter">{coas.length}</span>
-                <span className="block text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-white/60 mt-1 font-heading">{t('statBatchesLabel')}</span>
+      {/* ==================================================================== */}
+      {/* 1.5. VERIFICATION BENCHMARK STRIP (Fully Responsive Mobile & Tablet) */}
+      {/* ==================================================================== */}
+      <section className="w-full px-3 sm:px-6 md:px-10 py-6 xs:py-8 sm:py-10 md:py-14 relative z-10">
+        <div className="w-full max-w-[1540px] mx-auto">
+          <FadeUp>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 xs:gap-3 sm:gap-4 md:gap-5">
+              {/* Card 1: Purity Standard */}
+              <div className="bg-white rounded-2xl sm:rounded-[24px] p-3.5 xs:p-4 sm:p-5 md:p-6 border border-[#eddcd2] shadow-xs text-left group hover:border-[#a5a58d] transition-all flex flex-col justify-between overflow-hidden">
+                <div>
+                  <div className="flex items-center justify-between gap-1.5 sm:gap-2 mb-2 sm:mb-3">
+                    <span className="font-heading font-black text-lg xs:text-xl sm:text-2xl lg:text-3xl text-[#20221c] tracking-tight leading-none whitespace-nowrap">
+                      ≥99.0%
+                    </span>
+                    <div className="w-7 h-7 xs:w-8 xs:h-8 sm:w-9 sm:h-9 rounded-full bg-[#a5a58d] text-white flex items-center justify-center shrink-0 shadow-xs">
+                      <Award className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                    </div>
+                  </div>
+                  <span className="text-[10px] xs:text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#a5a58d] font-heading block mb-1 sm:mb-1.5 leading-tight">
+                    Purity Standard
+                  </span>
+                  <p className="text-[10px] xs:text-[11px] sm:text-xs text-neutral-600 leading-relaxed">
+                    Strict rejection threshold for any batch under 99.0% area resolution.
+                  </p>
+                </div>
               </div>
-              <div className="bg-white/10 border border-white/20 backdrop-blur-xl rounded-2xl p-4 sm:p-5 shadow-2xl">
-                <span className="block text-2xl sm:text-3xl font-heading font-black text-white tracking-tighter">{t('statLabsValue')}</span>
-                <span className="block text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-white/60 mt-1 font-heading">{t('statLabsLabel')}</span>
+
+              {/* Card 2: Third-Party Tested */}
+              <div className="bg-white rounded-2xl sm:rounded-[24px] p-3.5 xs:p-4 sm:p-5 md:p-6 border border-[#eddcd2] shadow-xs text-left group hover:border-[#a5a58d] transition-all flex flex-col justify-between overflow-hidden">
+                <div>
+                  <div className="flex items-center justify-between gap-1.5 sm:gap-2 mb-2 sm:mb-3">
+                    <span className="font-heading font-black text-lg xs:text-xl sm:text-2xl lg:text-3xl text-[#20221c] tracking-tight leading-none whitespace-nowrap">
+                      100%
+                    </span>
+                    <div className="w-7 h-7 xs:w-8 xs:h-8 sm:w-9 sm:h-9 rounded-full bg-[#a5a58d] text-white flex items-center justify-center shrink-0 shadow-xs">
+                      <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                    </div>
+                  </div>
+                  <span className="text-[10px] xs:text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#a5a58d] font-heading block mb-1 sm:mb-1.5 leading-tight">
+                    Third-Party Tested
+                  </span>
+                  <p className="text-[10px] xs:text-[11px] sm:text-xs text-neutral-600 leading-relaxed">
+                    Independent US analytical laboratories test every lot prior to release.
+                  </p>
+                </div>
               </div>
-              <div className="bg-white/10 border border-white/20 backdrop-blur-xl rounded-2xl p-4 sm:p-5 shadow-2xl">
-                <span className="block text-2xl sm:text-3xl font-heading font-black text-white tracking-tighter">{t('statTestedValue')}</span>
-                <span className="block text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-white/60 mt-1 font-heading">{t('statTestedLabel')}</span>
+
+              {/* Card 3: Cleanroom Synthesis */}
+              <div className="bg-white rounded-2xl sm:rounded-[24px] p-3.5 xs:p-4 sm:p-5 md:p-6 border border-[#eddcd2] shadow-xs text-left group hover:border-[#a5a58d] transition-all flex flex-col justify-between overflow-hidden">
+                <div>
+                  <div className="flex items-center justify-between gap-1.5 sm:gap-2 mb-2 sm:mb-3">
+                    <span className="font-heading font-black text-lg xs:text-xl sm:text-2xl lg:text-3xl text-[#20221c] tracking-tight leading-none whitespace-nowrap">
+                      ISO-7
+                    </span>
+                    <div className="w-7 h-7 xs:w-8 xs:h-8 sm:w-9 sm:h-9 rounded-full bg-[#a5a58d] text-white flex items-center justify-center shrink-0 shadow-xs">
+                      <FlaskConical className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                    </div>
+                  </div>
+                  <span className="text-[10px] xs:text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#a5a58d] font-heading block mb-1 sm:mb-1.5 leading-tight">
+                    Cleanroom Synthesis
+                  </span>
+                  <p className="text-[10px] xs:text-[11px] sm:text-xs text-neutral-600 leading-relaxed">
+                    Controlled atmospheric compounding and sterile nitrogen vial backfill.
+                  </p>
+                </div>
+              </div>
+
+              {/* Card 4: Dual Verification */}
+              <div className="bg-white rounded-2xl sm:rounded-[24px] p-3.5 xs:p-4 sm:p-5 md:p-6 border border-[#eddcd2] shadow-xs text-left group hover:border-[#a5a58d] transition-all flex flex-col justify-between overflow-hidden">
+                <div>
+                  <div className="flex items-center justify-between gap-1.5 sm:gap-2 mb-2 sm:mb-3">
+                    <span className="font-heading font-black text-lg xs:text-xl sm:text-2xl lg:text-3xl text-[#20221c] tracking-tight leading-none whitespace-nowrap">
+                      HPLC+MS
+                    </span>
+                    <div className="w-7 h-7 xs:w-8 xs:h-8 sm:w-9 sm:h-9 rounded-full bg-[#a5a58d] text-white flex items-center justify-center shrink-0 shadow-xs">
+                      <Activity className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                    </div>
+                  </div>
+                  <span className="text-[10px] xs:text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#a5a58d] font-heading block mb-1 sm:mb-1.5 leading-tight">
+                    Dual Verification
+                  </span>
+                  <p className="text-[10px] xs:text-[11px] sm:text-xs text-neutral-600 leading-relaxed">
+                    Liquid chromatography purity paired with mass spectrometry sequence match.
+                  </p>
+                </div>
               </div>
             </div>
           </FadeUp>
         </div>
       </section>
 
-      {/* Filter and Table */}
-      <section className="py-20 md:py-28">
-        <div className="w-[calc(100%-2rem)] md:w-[calc(100%-6rem)] mx-auto">
-          <FadeUp>
-            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4">
-              <h2 className="font-heading text-2xl sm:text-3xl font-black text-black tracking-tight uppercase">{t('libraryTitle')}</h2>
-              {coas.length > 0 && (
-                <div className="w-full sm:w-64">
-                  <Select value={filter} onValueChange={setFilter}>
-                    <SelectTrigger className="rounded-xl border-gray-200 focus:ring-[#2b646c]">
-                      <SelectValue placeholder={t('filterPlaceholder')} />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {categories.map(cat => (
-                        <SelectItem key={cat} value={cat}>{cat === 'All' ? t('allCategories') : cat}</SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
+      {/* ==================================================================== */}
+      {/* 2. COA LIBRARY EXPLORER (Search, Filters & Interactive Repository)   */}
+      {/* ==================================================================== */}
+      <section id="library" className="w-full px-2 sm:px-6 md:px-10 mb-24 sm:mb-32 scroll-mt-24 relative z-10">
+        <div className="w-full bg-white rounded-3xl sm:rounded-[36px] p-5 sm:p-8 md:p-12 lg:p-14 border border-[#eddcd2] shadow-[0_12px_44px_rgba(0,0,0,0.04)]">
+          {/* Top Control Bar: Search Input, Category Tabs, Mode Toggles */}
+          <div className="flex flex-col gap-6 mb-8 sm:mb-10 pb-6 sm:pb-8 border-b border-[#eddcd2]">
+            {/* Row 1: Search and Results Counter */}
+            <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4">
+              {/* Search Bar */}
+              <div className="relative flex-1 max-w-xl">
+                <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-400" />
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder="Search by peptide name, batch code (e.g. VR-BPC), or lab..."
+                  className="w-full pl-11 pr-10 py-3 rounded-full bg-[#f0efeb] border border-[#eddcd2] text-sm text-[#20221c] placeholder:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-[#a5a58d] focus:border-transparent transition-all"
+                />
+                {searchQuery && (
+                  <button
+                    onClick={() => setSearchQuery('')}
+                    className="absolute right-3.5 top-1/2 -translate-y-1/2 text-neutral-400 hover:text-neutral-700 p-1"
+                  >
+                    <X className="w-4 h-4" />
+                  </button>
+                )}
+              </div>
+
+              {/* Counter & View Switcher */}
+              <div className="flex items-center justify-between md:justify-end gap-3 sm:gap-4 shrink-0">
+                <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#a5a58d] bg-[#a5a58d]/15 px-3 py-1.5 rounded-full border border-[#a5a58d]/25">
+                  {filteredCOAs.length} {filteredCOAs.length === 1 ? 'Report' : 'Reports'} Available
+                </span>
+
+                {/* View Mode Toggle */}
+                <div className="flex items-center bg-[#f0efeb] p-1 rounded-full border border-[#eddcd2]">
+                  <button
+                    onClick={() => setViewMode('table')}
+                    className={`p-1.5 sm:px-3 sm:py-1 rounded-full text-xs font-heading font-semibold flex items-center gap-1.5 transition-all ${
+                      viewMode === 'table'
+                        ? 'bg-[#a5a58d] text-white shadow-xs'
+                        : 'text-neutral-600 hover:text-[#20221c]'
+                    }`}
+                    aria-label="Table View"
+                  >
+                    <TableIcon className="w-3.5 h-3.5" />
+                    <span className="hidden sm:inline">Table</span>
+                  </button>
+                  <button
+                    onClick={() => setViewMode('cards')}
+                    className={`p-1.5 sm:px-3 sm:py-1 rounded-full text-xs font-heading font-semibold flex items-center gap-1.5 transition-all ${
+                      viewMode === 'cards'
+                        ? 'bg-[#a5a58d] text-white shadow-xs'
+                        : 'text-neutral-600 hover:text-[#20221c]'
+                    }`}
+                    aria-label="Cards View"
+                  >
+                    <LayoutGrid className="w-3.5 h-3.5" />
+                    <span className="hidden sm:inline">Cards</span>
+                  </button>
                 </div>
-              )}
+              </div>
             </div>
 
-            {coas.length === 0 ? (
-              <div className="bg-white p-16 rounded-3xl border border-dashed border-gray-200 text-center text-gray-500">
-                {t('emptyLibrary')}
+            {/* Row 2: Category Filter Pills (Olive Green #a5a58d for active) & Purity Filter Toggle */}
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              {/* Category Pills with Olive Green Selected State */}
+              <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+                {categories.map((cat) => (
+                  <button
+                    key={cat}
+                    onClick={() => setSelectedCategory(cat)}
+                    className={`px-3.5 py-1.5 rounded-full text-xs font-heading font-medium tracking-tight whitespace-nowrap shrink-0 transition-all duration-200 ${
+                      selectedCategory === cat
+                        ? 'bg-[#a5a58d] text-white font-bold shadow-xs border border-[#a5a58d]'
+                        : 'bg-[#f0efeb] hover:bg-[#eddcd2]/60 text-neutral-700 border border-[#eddcd2]'
+                    }`}
+                  >
+                    {cat}
+                  </button>
+                ))}
               </div>
-            ) : (
-              <>
-                {/* Desktop Table */}
-                <div className="hidden md:block w-full bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
-                  <div className="overflow-x-auto">
-                    <table className="w-full text-left border-collapse">
-                      <thead>
-                        <tr className="bg-gray-50 border-b border-gray-100">
-                          <th className="py-4 px-6 text-[10px] font-bold uppercase tracking-[0.15em] text-gray-500 font-heading">{t('tableProduct')}</th>
-                          <th className="py-4 px-6 text-[10px] font-bold uppercase tracking-[0.15em] text-gray-500 font-heading">{t('tablePurity')}</th>
-                          <th className="py-4 px-6 text-[10px] font-bold uppercase tracking-[0.15em] text-gray-500 font-heading">{t('tableBatch')}</th>
-                          <th className="py-4 px-6 text-[10px] font-bold uppercase tracking-[0.15em] text-gray-500 font-heading">{t('tableAnalyzed')}</th>
-                          <th className="py-4 px-6 text-[10px] font-bold uppercase tracking-[0.15em] text-gray-500 font-heading text-right">{t('tableCoaDownload')}</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {filteredCOAs.map((coa) => (
-                          <tr key={coa.id} className="border-b border-gray-100 last:border-0 hover:bg-gray-50/60 transition-colors">
-                            <td className="py-5 px-6">
-                              <div className="text-sm font-semibold text-black">{coa.product}</div>
-                              <div className="text-[10px] font-bold uppercase tracking-widest text-[#2b646c] mt-1 font-heading">{coa.category}</div>
-                            </td>
-                            <td className="py-5 px-6 text-sm text-black">{coa.purity || '—'}</td>
-                            <td className="py-5 px-6 text-sm text-gray-600 font-mono">{coa.batch || '—'}</td>
-                            <td className="py-5 px-6 text-sm text-gray-500">{coa.analyzed || '—'}</td>
-                            <td className="py-5 px-6 text-right">
-                              {coa.coaUrl ? (
-                                <a
-                                  href={coa.coaUrl}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-[#2b646c] hover:text-black transition-colors font-heading"
-                                >
-                                  <FileTextIcon className="w-4 h-4" />
-                                  <span>{t('pdfLabel')}</span>
-                                </a>
-                              ) : (
-                                <Link href="/contact-us" className="text-xs text-gray-500 hover:text-black underline underline-offset-4 transition-colors">
-                                  {t('availableOnRequest')}
-                                </Link>
-                              )}
-                            </td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
+
+              {/* Purity Filter */}
+              <div className="flex items-center gap-2">
+                <span className="text-[11px] font-mono uppercase tracking-wider text-neutral-500 hidden sm:inline">
+                  Filter Purity:
+                </span>
+                <div className="inline-flex rounded-full bg-[#f0efeb] p-0.5 border border-[#eddcd2] text-[11px] font-mono">
+                  <button
+                    onClick={() => setPurityFilter('all')}
+                    className={`px-3 py-1 rounded-full transition-all ${
+                      purityFilter === 'all'
+                        ? 'bg-[#a5a58d] text-white font-bold'
+                        : 'text-neutral-600 hover:text-neutral-900'
+                    }`}
+                  >
+                    All (≥99%)
+                  </button>
+                  <button
+                    onClick={() => setPurityFilter('high')}
+                    className={`px-3 py-1 rounded-full transition-all ${
+                      purityFilter === 'high'
+                        ? 'bg-[#a5a58d] text-white font-bold'
+                        : 'text-neutral-600 hover:text-neutral-900'
+                    }`}
+                  >
+                    Ultra (≥99.5%)
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Library Content */}
+          {filteredCOAs.length === 0 ? (
+            <div className="bg-[#f0efeb] rounded-2xl p-12 sm:p-16 text-center border border-dashed border-[#eddcd2]">
+              <FileText className="w-10 h-10 text-[#a5a58d] mx-auto mb-4 stroke-1" />
+              <h3 className="font-heading font-bold text-lg sm:text-xl text-[#20221c] mb-2">
+                No matching testing certificates found
+              </h3>
+              <p className="text-sm text-neutral-600 max-w-md mx-auto mb-6">
+                Try searching for a different compound or clear your active filters. If you are looking for an archived lot, you can request it below.
+              </p>
+              <button
+                onClick={() => {
+                  setSearchQuery('')
+                  setSelectedCategory('All')
+                  setPurityFilter('all')
+                }}
+                className="px-5 py-2.5 rounded-full bg-[#a5a58d] text-white text-xs font-heading font-bold uppercase tracking-wider hover:bg-[#20221c] transition-colors"
+              >
+                Reset All Filters
+              </button>
+            </div>
+          ) : viewMode === 'table' ? (
+            /* DESKTOP / TABLET EDITORIAL TABLE */
+            <div className="overflow-x-auto -mx-2 sm:mx-0">
+              <table className="w-full text-left border-collapse min-w-[580px] sm:min-w-full">
+                <thead>
+                  <tr className="border-b border-[#eddcd2] bg-[#a5a58d]/10">
+                    <th className="py-3.5 px-4 sm:px-5 text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.16em] text-[#a5a58d] font-heading rounded-l-xl min-w-[150px]">
+                      Compound & Spec
+                    </th>
+                    <th className="py-3.5 px-4 sm:px-5 text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.16em] text-[#a5a58d] font-heading whitespace-nowrap">
+                      HPLC Purity
+                    </th>
+                    <th className="py-3.5 px-4 sm:px-5 text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.16em] text-[#a5a58d] font-heading whitespace-nowrap">
+                      Batch / Lot #
+                    </th>
+                    <th className="py-3.5 px-4 sm:px-5 text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.16em] text-[#a5a58d] font-heading whitespace-nowrap">
+                      Analytical Lab & Date
+                    </th>
+                    <th className="py-3.5 px-4 sm:px-5 text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.16em] text-[#a5a58d] font-heading text-right rounded-r-xl whitespace-nowrap">
+                      Verification Actions
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-[#eddcd2]/70">
+                  {filteredCOAs.map((coa) => (
+                    <tr
+                      key={coa.id}
+                      className="group hover:bg-[#fff1e6]/40 transition-colors"
+                    >
+                      {/* 1. Compound & Spec */}
+                      <td className="py-4 px-4 sm:px-5 min-w-[150px]">
+                        <div className="flex flex-col">
+                          <span className="text-sm sm:text-base font-bold text-[#20221c] font-heading group-hover:text-[#cb997e] transition-colors">
+                            {coa.product}
+                          </span>
+                          <div className="flex items-center gap-1.5 mt-1 flex-wrap">
+                            <span className="text-[9.5px] sm:text-[10px] font-mono px-2.5 py-0.5 rounded-full bg-[#f0efeb] text-neutral-600 border border-[#eddcd2] whitespace-nowrap inline-flex items-center shrink-0 leading-normal">
+                              {coa.category}
+                            </span>
+                            {coa.formula && (
+                              <span className="text-[9.5px] sm:text-[10px] font-mono text-neutral-500 hidden md:inline whitespace-nowrap">
+                                {coa.formula}
+                              </span>
+                            )}
+                          </div>
+                        </div>
+                      </td>
+
+                      {/* 2. Purity with High-Contrast Olive Green Badge */}
+                      <td className="py-4 px-4 sm:px-5">
+                        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#a5a58d] text-white shadow-xs">
+                          <CheckCircle2 className="w-3.5 h-3.5" />
+                          <span className="font-mono text-xs sm:text-sm font-bold">
+                            {coa.purity}
+                          </span>
+                        </div>
+                      </td>
+
+                      {/* 3. Batch / Lot # with Copy */}
+                      <td className="py-4 px-4 sm:px-5">
+                        <button
+                          onClick={() => handleCopyBatch(coa.batch)}
+                          className="inline-flex items-center gap-1.5 font-mono text-xs font-semibold text-neutral-700 hover:text-[#20221c] bg-[#f0efeb] px-2.5 py-1 rounded-md border border-[#eddcd2] group/btn transition-all"
+                          title="Click to copy lot number"
+                        >
+                          <span>{coa.batch}</span>
+                          {copiedBatch === coa.batch ? (
+                            <Check className="w-3 h-3 text-emerald-600" />
+                          ) : (
+                            <Copy className="w-3 h-3 text-neutral-400 group-hover/btn:text-neutral-700" />
+                          )}
+                        </button>
+                      </td>
+
+                      {/* 4. Lab & Date */}
+                      <td className="py-4 px-4 sm:px-5">
+                        <div className="flex flex-col text-xs">
+                          <span className="font-medium text-neutral-800">
+                            {coa.analyzed}
+                          </span>
+                          <span className="text-[11px] text-neutral-500 font-normal">
+                            {coa.lab}
+                          </span>
+                        </div>
+                      </td>
+
+                      {/* 5. Actions */}
+                      <td className="py-4 px-4 sm:px-5 text-right">
+                        <div className="flex items-center justify-end gap-2">
+                          <button
+                            onClick={() => setInspectingCoa(coa)}
+                            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#20221c] text-[#fff1e6] hover:bg-[#a5a58d] text-xs font-heading font-semibold transition-all shadow-xs"
+                          >
+                            <Eye className="w-3.5 h-3.5" />
+                            <span>Inspect</span>
+                          </button>
+
+                          {coa.coaUrl ? (
+                            <a
+                              href={coa.coaUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="p-1.5 rounded-full bg-[#f0efeb] hover:bg-[#a5a58d] hover:text-white text-[#20221c] border border-[#eddcd2] transition-colors"
+                              title="Download PDF"
+                            >
+                              <Download className="w-3.5 h-3.5" />
+                            </a>
+                          ) : (
+                            <button
+                              onClick={() => setInspectingCoa(coa)}
+                              className="p-1.5 rounded-full bg-[#f0efeb] hover:bg-[#a5a58d] hover:text-white text-[#20221c] border border-[#eddcd2] transition-colors"
+                              title="View Document"
+                            >
+                              <FileText className="w-3.5 h-3.5" />
+                            </button>
+                          )}
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          ) : (
+            /* CARD GRID VIEW */
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              {filteredCOAs.map((coa) => (
+                <div
+                  key={coa.id}
+                  className="bg-[#f0efeb]/60 rounded-2xl p-5 sm:p-6 border border-[#eddcd2] hover:border-[#a5a58d] hover:bg-white transition-all duration-300 flex flex-col justify-between group shadow-xs hover:shadow-md"
+                >
+                  <div>
+                    {/* Card Header: Category & Purity */}
+                    <div className="flex items-center justify-between gap-2 mb-3">
+                      <span className="text-[10px] font-mono px-2.5 py-0.5 rounded-full bg-white text-neutral-600 border border-[#eddcd2] whitespace-nowrap shrink-0 inline-flex items-center">
+                        {coa.category}
+                      </span>
+                      <div className="inline-flex items-center gap-1 px-3 py-0.5 rounded-full bg-[#a5a58d] text-white shadow-xs">
+                        <CheckCircle2 className="w-3 h-3" />
+                        <span className="font-mono text-xs font-bold">
+                          {coa.purity}
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Product Name */}
+                    <h3 className="font-heading font-black text-lg sm:text-xl text-[#20221c] mb-1.5 group-hover:text-[#cb997e] transition-colors">
+                      {coa.product}
+                    </h3>
+                    {coa.formula && (
+                      <span className="text-[11px] font-mono text-neutral-500 block mb-4">
+                        Formula: {coa.formula}
+                      </span>
+                    )}
+
+                    {/* Metadata Grid */}
+                    <div className="space-y-2 py-3 border-t border-b border-[#eddcd2] text-xs font-mono mb-5">
+                      <div className="flex justify-between items-center">
+                        <span className="text-neutral-500">Lot Code:</span>
+                        <button
+                          onClick={() => handleCopyBatch(coa.batch)}
+                          className="inline-flex items-center gap-1 font-bold text-[#20221c] hover:text-[#cb997e]"
+                        >
+                          <span>{coa.batch}</span>
+                          {copiedBatch === coa.batch ? (
+                            <Check className="w-3 h-3 text-emerald-600" />
+                          ) : (
+                            <Copy className="w-3 h-3 text-neutral-400" />
+                          )}
+                        </button>
+                      </div>
+
+                      <div className="flex justify-between items-center">
+                        <span className="text-neutral-500">Analyzed:</span>
+                        <span className="font-medium text-neutral-800">{coa.analyzed}</span>
+                      </div>
+
+                      <div className="flex justify-between items-center">
+                        <span className="text-neutral-500">Laboratory:</span>
+                        <span className="text-[11px] font-medium text-neutral-700 truncate max-w-[160px]">
+                          {coa.lab}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Actions */}
+                  <div className="flex items-center gap-2 pt-1">
+                    <button
+                      onClick={() => setInspectingCoa(coa)}
+                      className="flex-1 py-2.5 px-4 rounded-xl bg-[#20221c] text-[#fff1e6] hover:bg-[#a5a58d] text-xs font-heading font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 transition-all shadow-xs"
+                    >
+                      <Eye className="w-3.5 h-3.5" />
+                      <span>Inspect COA</span>
+                    </button>
+
+                    {coa.coaUrl ? (
+                      <a
+                        href={coa.coaUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2.5 rounded-xl bg-white border border-[#eddcd2] text-[#20221c] hover:bg-[#a5a58d] hover:text-white transition-colors"
+                        title="Download PDF"
+                      >
+                        <Download className="w-4 h-4" />
+                      </a>
+                    ) : (
+                      <button
+                        onClick={() => setInspectingCoa(coa)}
+                        className="p-2.5 rounded-xl bg-white border border-[#eddcd2] text-[#20221c] hover:bg-[#a5a58d] hover:text-white transition-colors"
+                        title="View Document"
+                      >
+                        <FileText className="w-4 h-4" />
+                      </button>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* ==================================================================== */}
+      {/* 3. COA INSPECTOR MODAL (Interactive Analytical Sheet in Olive Green) */}
+      {/* ==================================================================== */}
+      <AnimatePresence>
+        {inspectingCoa && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 overflow-y-auto bg-black/65 backdrop-blur-sm">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 20 }}
+              transition={{ duration: 0.25, ease: 'easeOut' }}
+              className="w-full max-w-2xl bg-white rounded-3xl overflow-hidden shadow-2xl border border-[#eddcd2] relative"
+            >
+              {/* Modal Top Header (Olive Green #a5a58d) */}
+              <div className="bg-[#a5a58d] text-white p-6 sm:p-7 relative border-b border-[#a5a58d]/40">
+                <button
+                  onClick={() => setInspectingCoa(null)}
+                  className="absolute right-5 top-5 p-2 rounded-full bg-white/15 hover:bg-white/30 text-white transition-colors"
+                  aria-label="Close modal"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
+                  <span className="text-[11px] font-mono uppercase tracking-widest text-white/90">
+                    VERACUE ANALYTICAL QUALITY CONTROL &bull; DOCKET
+                  </span>
+                </div>
+
+                <h3 className="font-heading font-black text-2xl sm:text-3xl text-white uppercase tracking-tight">
+                  {inspectingCoa.product}
+                </h3>
+                <span className="text-xs font-mono text-white/90">
+                  Batch: {inspectingCoa.batch} &bull; Analyzed {inspectingCoa.analyzed}
+                </span>
+              </div>
+
+              {/* Modal Body: Analytical Specs & Chromatogram Peak Simulation */}
+              <div className="p-6 sm:p-8 space-y-6 text-sm text-[#20221c] max-h-[75vh] overflow-y-auto">
+                {/* Status & Purity Banner */}
+                <div className="flex flex-wrap items-center justify-between gap-4 p-4 rounded-2xl bg-[#f0efeb] border border-[#eddcd2]">
+                  <div>
+                    <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#a5a58d] block">
+                      Chromatographic Purity
+                    </span>
+                    <span className="font-mono text-2xl sm:text-3xl font-black text-[#20221c]">
+                      {inspectingCoa.purity}
+                    </span>
+                  </div>
+                  <div className="text-right">
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#a5a58d] text-white text-xs font-heading font-bold uppercase tracking-wider shadow-xs">
+                      <CheckCircle2 className="w-4 h-4" />
+                      {inspectingCoa.status || 'PASS • ≥99% Verified'}
+                    </span>
+                    <span className="text-[10px] font-mono text-neutral-500 block mt-1">
+                      Target Purity Standard: ≥99.00%
+                    </span>
                   </div>
                 </div>
 
-                {/* Mobile Cards */}
-                <div className="md:hidden flex flex-col gap-4">
-                  {filteredCOAs.map((coa) => (
-                    <div key={coa.id} className="bg-white border border-gray-100 shadow-sm rounded-2xl p-6">
-                      <div className="flex justify-between items-start mb-4">
-                        <div>
-                          <h3 className="text-sm font-semibold text-black">{coa.product}</h3>
-                          <span className="text-[10px] font-bold uppercase tracking-widest text-[#2b646c] font-heading">{coa.category}</span>
-                        </div>
-                        <div className="text-right">
-                          <span className="block text-lg font-heading font-black text-black">{coa.purity || '—'}</span>
-                          <span className="text-[9px] font-bold uppercase tracking-widest text-gray-400 font-heading">{t('purityLabel')}</span>
-                        </div>
-                      </div>
-
-                      <div className="flex justify-between items-center py-3 border-t border-b border-gray-100 mb-4">
-                        <div>
-                          <span className="block text-[9px] font-bold uppercase tracking-widest text-gray-400 mb-1 font-heading">{t('batchLabel')}</span>
-                          <span className="text-sm font-mono text-black">{coa.batch || '—'}</span>
-                        </div>
-                        <div className="text-right">
-                          <span className="block text-[9px] font-bold uppercase tracking-widest text-gray-400 mb-1 font-heading">{t('analyzedLabel')}</span>
-                          <span className="text-sm text-black">{coa.analyzed || '—'}</span>
-                        </div>
-                      </div>
-
-                      <div className="flex justify-center">
-                        {coa.coaUrl ? (
-                          <a
-                            href={coa.coaUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-[#2b646c] text-[11px] font-bold uppercase tracking-widest text-white hover:bg-[#1e5661] transition-colors font-heading"
-                          >
-                            <DownloadIcon className="w-4 h-4" />
-                            <span>{t('downloadCoa')}</span>
-                          </a>
-                        ) : (
-                          <Link href="/contact-us" className="w-full flex items-center justify-center gap-2 py-3 rounded-xl border border-gray-200 text-[11px] font-bold uppercase tracking-widest text-black hover:bg-gray-50 transition-colors font-heading">
-                            {t('requestCoa')}
-                          </Link>
-                        )}
-                      </div>
+                {/* Analytical Data Table */}
+                <div>
+                  <h4 className="font-heading font-bold text-xs uppercase tracking-widest text-[#a5a58d] mb-3">
+                    Assay Specifications
+                  </h4>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-mono">
+                    <div className="p-3 rounded-xl bg-[#f0efeb] border border-[#eddcd2]">
+                      <span className="text-neutral-500 block text-[10px]">Testing Laboratory:</span>
+                      <span className="font-semibold text-neutral-900">{inspectingCoa.lab}</span>
                     </div>
-                  ))}
+
+                    <div className="p-3 rounded-xl bg-[#f0efeb] border border-[#eddcd2]">
+                      <span className="text-neutral-500 block text-[10px]">Analytical Method:</span>
+                      <span className="font-semibold text-neutral-900">
+                        {inspectingCoa.method || 'RP-HPLC & ESI-MS'}
+                      </span>
+                    </div>
+
+                    {inspectingCoa.molecularWeight && (
+                      <div className="p-3 rounded-xl bg-[#f0efeb] border border-[#eddcd2]">
+                        <span className="text-neutral-500 block text-[10px]">Theoretical Mass:</span>
+                        <span className="font-semibold text-neutral-900">
+                          {inspectingCoa.molecularWeight}
+                        </span>
+                      </div>
+                    )}
+
+                    {inspectingCoa.observedWeight && (
+                      <div className="p-3 rounded-xl bg-[#f0efeb] border border-[#eddcd2]">
+                        <span className="text-neutral-500 block text-[10px]">Observed MS Mass:</span>
+                        <span className="font-semibold text-neutral-900">
+                          {inspectingCoa.observedWeight}
+                        </span>
+                      </div>
+                    )}
+                  </div>
                 </div>
-              </>
-            )}
-          </FadeUp>
-        </div>
-      </section>
 
-      {/* Editorial Section */}
-      <section className="py-20 md:py-28 bg-gray-50">
-        <div className="w-[calc(100%-2rem)] md:w-[calc(100%-6rem)] mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <FadeUp>
-              <div className="relative w-full aspect-square md:aspect-[4/3] rounded-2xl overflow-hidden">
-                <Image
-                  src="/hplc-machine-lab.png"
-                  alt="HPLC (high-performance liquid chromatography) instrument used to verify Helix Bio peptide purity for each batch's Certificate of Analysis"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </FadeUp>
+                {/* Simulated Chromatogram Peak Visualizer */}
+                <div className="p-4 sm:p-5 rounded-2xl bg-[#20221c] text-white border border-neutral-800">
+                  <div className="flex items-center justify-between mb-3 pb-2 border-b border-neutral-800">
+                    <div className="flex items-center gap-2">
+                      <Activity className="w-4 h-4 text-[#a5a58d]" />
+                      <span className="text-xs font-heading font-bold uppercase tracking-wider text-[#fff1e6]">
+                        HPLC Peak Integration
+                      </span>
+                    </div>
+                    <span className="text-[10px] font-mono text-[#a5a58d]">
+                      Detection: UV 214nm
+                    </span>
+                  </div>
 
-            <FadeUp delay={0.1}>
-              <div className="inline-block border border-gray-200 rounded-full px-4 py-1.5 mb-6 bg-white">
-                <span className="text-[#2b646c] text-xs font-bold tracking-[0.2em] uppercase font-heading">{t('processEyebrow')}</span>
+                  {/* Visual Peak Bar */}
+                  <div className="space-y-2">
+                    <div className="flex justify-between text-xs font-mono">
+                      <span className="text-white/70">Main Compound Peak</span>
+                      <span className="font-bold text-[#a5a58d]">{inspectingCoa.purity} Area</span>
+                    </div>
+                    <div className="w-full h-3 bg-neutral-800 rounded-full overflow-hidden flex">
+                      <div
+                        style={{
+                          width: inspectingCoa.purity.includes('%')
+                            ? inspectingCoa.purity
+                            : '99.4%',
+                        }}
+                        className="bg-gradient-to-r from-[#a5a58d] to-[#ddbea9] h-full"
+                      />
+                      <div className="w-1 bg-white/20 h-full" />
+                    </div>
+                    <div className="flex justify-between text-[10px] font-mono text-white/40 pt-1">
+                      <span>0.0 min (injection)</span>
+                      <span>14.8 min (retention)</span>
+                      <span>25.0 min</span>
+                    </div>
+                  </div>
+
+                  {inspectingCoa.notes && (
+                    <p className="text-xs text-white/70 mt-3 pt-3 border-t border-neutral-800/80 leading-relaxed italic">
+                      &ldquo;{inspectingCoa.notes}&rdquo;
+                    </p>
+                  )}
+                </div>
+
+                {/* Footer Modal Actions */}
+                <div className="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-[#eddcd2]">
+                  <button
+                    onClick={() => handleCopyBatch(inspectingCoa.batch)}
+                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#f0efeb] text-[#20221c] text-xs font-heading font-semibold border border-[#eddcd2] hover:bg-[#eddcd2]/50 transition-colors"
+                  >
+                    {copiedBatch === inspectingCoa.batch ? (
+                      <>
+                        <Check className="w-3.5 h-3.5 text-emerald-600" />
+                        <span>Copied Lot Code</span>
+                      </>
+                    ) : (
+                      <>
+                        <Copy className="w-3.5 h-3.5 text-neutral-500" />
+                        <span>Copy Lot Code</span>
+                      </>
+                    )}
+                  </button>
+
+                  <div className="flex items-center gap-2">
+                    {inspectingCoa.productSlug && (
+                      <Link
+                        href={`/product/${inspectingCoa.productSlug}`}
+                        className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white text-[#20221c] border border-[#eddcd2] text-xs font-heading font-semibold hover:border-[#a5a58d] transition-colors"
+                      >
+                        <span>View Product</span>
+                        <ArrowUpRight className="w-3.5 h-3.5" />
+                      </Link>
+                    )}
+                    <button
+                      onClick={() => setInspectingCoa(null)}
+                      className="px-5 py-2 rounded-full bg-[#a5a58d] text-white hover:bg-[#20221c] text-xs font-heading font-bold uppercase tracking-wider transition-colors"
+                    >
+                      Done
+                    </button>
+                  </div>
+                </div>
               </div>
-              <h2 className="font-heading text-2xl sm:text-3xl font-black text-black tracking-tight uppercase mb-8">{t('processTitle')}</h2>
-              <div className="text-gray-600 text-base leading-relaxed space-y-6">
-                <p>{t('processText1')}</p>
-                <p>{t('processText2')}</p>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+
+      {/* ==================================================================== */}
+      {/* 4. THE 4-STAGE ANALYTICAL PIPELINE (Header-Width Card)               */}
+      {/* ==================================================================== */}
+      <section id="protocol" className="w-full px-2 sm:px-6 md:px-10 mb-24 sm:mb-32 scroll-mt-28 relative z-10">
+        <div className="w-full bg-[#20221c] text-white rounded-3xl sm:rounded-[36px] p-6 sm:p-10 md:p-12 lg:p-16 shadow-[0_16px_50px_rgba(0,0,0,0.2)] border border-neutral-800 relative overflow-hidden">
+          {/* Header Row */}
+          <div className="max-w-3xl mb-12 sm:mb-16">
+            <div className="flex items-center gap-2.5 mb-3.5">
+              <span className="w-8 h-px bg-[#a5a58d]" />
+              <span className="text-xs uppercase font-serif tracking-[0.24em] text-[#a5a58d] font-semibold">
+                Quality Assurance Architecture
+              </span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#fff1e6] font-heading tracking-tight mb-4 leading-tight">
+              The 4-Stage Verification Protocol.
+            </h2>
+            <p className="text-white/70 text-sm sm:text-base md:text-lg leading-relaxed font-normal">
+              Every batch undergoes a four-tier sequence of chemical validation before release. We document synthesis parameters, chromatography resolution, and molecular weight matching for reproducible scientific research.
+            </p>
+          </div>
+
+          {/* 4 Steps Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col justify-between hover:bg-white/10 hover:border-[#a5a58d]/50 transition-all">
+              <div>
+                <span className="text-xs font-mono font-bold text-[#a5a58d] uppercase tracking-widest block mb-3">
+                  STAGE 01 &bull; SYNTHESIS
+                </span>
+                <h3 className="text-lg sm:text-xl font-bold font-heading text-white mb-2">
+                  Solid-Phase Synthesis
+                </h3>
+                <p className="text-xs sm:text-sm text-white/70 leading-relaxed font-normal">
+                  Synthesized in ISO-7 cleanroom suites using high-grade Fmoc-protected amino acids to minimize truncated sequence fragments.
+                </p>
               </div>
-            </FadeUp>
+              <div className="mt-6 pt-4 border-t border-white/10 text-[11px] font-mono text-[#a5a58d]">
+                Standard: ISO-7 Environment
+              </div>
+            </div>
+
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col justify-between hover:bg-white/10 hover:border-[#a5a58d]/50 transition-all">
+              <div>
+                <span className="text-xs font-mono font-bold text-[#a5a58d] uppercase tracking-widest block mb-3">
+                  STAGE 02 &bull; HPLC PURITY
+                </span>
+                <h3 className="text-lg sm:text-xl font-bold font-heading text-white mb-2">
+                  Reverse-Phase HPLC
+                </h3>
+                <p className="text-xs sm:text-sm text-white/70 leading-relaxed font-normal">
+                  C18 silica column separation detects trace peptide diastereomers and counterions via peak area normalization at 214 nm.
+                </p>
+              </div>
+              <div className="mt-6 pt-4 border-t border-white/10 text-[11px] font-mono text-[#a5a58d]">
+                Threshold: ≥99.0% Baseline
+              </div>
+            </div>
+
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col justify-between hover:bg-white/10 hover:border-[#a5a58d]/50 transition-all">
+              <div>
+                <span className="text-xs font-mono font-bold text-[#a5a58d] uppercase tracking-widest block mb-3">
+                  STAGE 03 &bull; IDENTITY
+                </span>
+                <h3 className="text-lg sm:text-xl font-bold font-heading text-white mb-2">
+                  Mass Spectrometry (MS)
+                </h3>
+                <p className="text-xs sm:text-sm text-white/70 leading-relaxed font-normal">
+                  ESI-MS or MALDI-TOF confirms the molecular weight matches theoretical target mass within ±0.05 Da tolerance.
+                </p>
+              </div>
+              <div className="mt-6 pt-4 border-t border-white/10 text-[11px] font-mono text-[#a5a58d]">
+                Tolerance: ±0.05 Da Mass
+              </div>
+            </div>
+
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col justify-between hover:bg-white/10 hover:border-[#a5a58d]/50 transition-all">
+              <div>
+                <span className="text-xs font-mono font-bold text-[#a5a58d] uppercase tracking-widest block mb-3">
+                  STAGE 04 &bull; STABILITY
+                </span>
+                <h3 className="text-lg sm:text-xl font-bold font-heading text-white mb-2">
+                  Lyophilized Quarantine
+                </h3>
+                <p className="text-xs sm:text-sm text-white/70 leading-relaxed font-normal">
+                  Freeze-dried into stable lyophilized cakes under inert nitrogen backfill to ensure stability during global transit.
+                </p>
+              </div>
+              <div className="mt-6 pt-4 border-t border-white/10 text-[11px] font-mono text-[#a5a58d]">
+                Packaging: Sterile Sealed Glass
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 px-4 md:px-10 bg-black text-center">
-        <FadeUp>
-          <h2 className="font-heading text-2xl sm:text-4xl font-black text-white tracking-tight uppercase mb-6 max-w-2xl mx-auto">{t('ctaTitle')}</h2>
-          <p className="text-white/60 text-base leading-relaxed max-w-xl mx-auto mb-10">
-            {t('ctaText')}
-          </p>
-          <Link href="/science" className="inline-flex">
-            <FluidButton text={<span className="flex items-center gap-2">{t('ctaButton')} <ArrowRightIcon className="w-4 h-4" /></span>} variant="white" />
-          </Link>
-        </FadeUp>
+      {/* ==================================================================== */}
+      {/* 5. ARCHIVED BATCH LOOKUP / REQUEST SECTION                          */}
+      {/* ==================================================================== */}
+      <section className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-10 mb-24 sm:mb-32 relative z-10">
+        <div className="bg-[#fff1e6] rounded-3xl sm:rounded-[32px] p-6 sm:p-10 md:p-12 border border-[#eddcd2] shadow-sm flex flex-col lg:flex-row items-center justify-between gap-8">
+          <div className="max-w-2xl">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#a5a58d] font-heading block mb-2">
+              Historical Testing Vault
+            </span>
+            <h3 className="font-heading font-black text-2xl sm:text-3xl md:text-4xl text-[#20221c] tracking-tight mb-3">
+              Looking for an Earlier Batch Report?
+            </h3>
+            <p className="text-neutral-700 text-sm sm:text-base leading-relaxed">
+              If your vial features a legacy lot code or you need batch-specific data for published research, our quality assurance team will furnish certified analytical documentation within 24 hours.
+            </p>
+          </div>
+
+          <div className="shrink-0">
+            <HeroButton href="/contact-us" direction="right" size="lg">
+              Request Specific Lot COA
+            </HeroButton>
+          </div>
+        </div>
       </section>
-    </main>
+
+      {/* ==================================================================== */}
+      {/* 6. VERIFICATION FAQ SECTION (Full Width matching Homepage)          */}
+      {/* ==================================================================== */}
+      <SharedFaqSection
+        subtitle="SCIENTIFIC CLARIFICATIONS"
+        title={
+          <>
+            Have<br />questions?
+          </>
+        }
+        description="Comprehensive answers regarding HPLC analytical purity verification, mass spectrometry sequence matching, and third-party laboratory dockets."
+        faqs={FAQ_ITEMS}
+        contactHeading="Need custom lot documentation?"
+        contactSubtext="Reach out directly through our contact page and our analytical team will assist you."
+        contactButtonText="Contact Us"
+        contactHref="/contact"
+      />
+
+      {/* ==================================================================== */}
+      {/* 7. FINAL CONVERSION BLOCK (Olive Green Card matching Header)        */}
+      {/* ==================================================================== */}
+      <section className="w-full px-2 sm:px-6 md:px-10 pb-20 relative z-10">
+        <div 
+          style={{ backgroundColor: '#a5a58d' }}
+          className="w-full text-white rounded-3xl sm:rounded-[36px] p-6 sm:p-10 md:p-14 lg:p-16 border border-[#b7b7a4]/90 shadow-2xl relative overflow-hidden text-center flex flex-col items-center"
+        >
+          <span className="text-white/80 font-mono tracking-widest text-xs font-bold uppercase mb-3">
+            VERACUE RESEARCH REPOSITORY &bull; VERIFIED QUALITY
+          </span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white font-heading tracking-tight mb-4 uppercase max-w-3xl leading-tight">
+            Order Certified &ge;99% Purity Peptides.
+          </h2>
+          <p className="text-white/90 text-sm sm:text-base md:text-lg max-w-xl mx-auto leading-relaxed mb-8">
+            Every batch ships with its corresponding lot-verified Certificate of Analysis. Order today and study with confidence.
+          </p>
+          <HeroButton href="/shop" direction="right" size="lg">
+            Shop All Verified Peptides
+          </HeroButton>
+        </div>
+      </section>
+    </div>
   )
 }

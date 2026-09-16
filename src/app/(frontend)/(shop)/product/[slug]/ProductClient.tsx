@@ -1,12 +1,13 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import { Link } from '@/i18n/navigation'
-import { motion, AnimatePresence, useScroll, useMotionValueEvent, useMotionValue, useSpring } from 'framer-motion'
+import { motion, AnimatePresence, useScroll, useTransform, useMotionValueEvent, useMotionValue, useSpring } from 'framer-motion'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
-import { Heart, ChevronRight, ChevronLeft, Download, Check, ShieldCheck, FlaskConical, MapPin, Zap, ShoppingCart, Truck, Sparkles, Loader2, Award, Globe, Lock, RotateCcw, CheckCircle2 } from 'lucide-react'
+import { ChevronRight, ChevronLeft, ChevronDown, ZoomIn, Download, Check, ShieldCheck, FlaskConical, MapPin, Zap, ShoppingCart, Truck, Sparkles, Award, Globe, Lock, RotateCcw } from 'lucide-react'
+import { AnimatedWishlistHeart } from '@/components/shared/AnimatedWishlistHeart'
 import { Container } from '@/components/ui/container'
 import { Button } from '@/components/ui/button'
 import { PinterestGlassCard } from '@/components/home/PinterestGlassCard'
@@ -18,9 +19,9 @@ import { useSession } from 'next-auth/react'
 import { useTranslations } from 'next-intl'
 import { toast } from 'sonner'
 
-import { ImageGallery } from '@/components/shop/ImageGallery'
-import { VariantSelector, Variant } from '@/components/shop/VariantSelector'
+import { Variant } from '@/components/shop/VariantSelector'
 import { QuantityStepper } from '@/components/shop/QuantityStepper'
+import { HeroButton } from '@/components/ui/hero-button'
 import { ProductTabs, Tab } from '@/components/shop/ProductTabs'
 import { ProductAccordion } from '@/components/shop/ProductAccordion'
 import { ProductDetailTabs } from '@/components/shop/ProductDetailTabs'
@@ -29,7 +30,6 @@ import { ProductCard } from '@/components/shared/ProductCard'
 import { SharedFaqSection } from '@/components/shared/SharedFaqSection'
 import { BlogPostCard } from '@/components/editorial/BlogPostCard'
 import { FadeUp } from '@/components/motion/FadeUp'
-import { FluidButton } from '@/components/ui/fluid-button'
 
 interface ProductData {
   id: string
@@ -131,6 +131,8 @@ export function ProductClient({ product }: ProductClientProps) {
   const t = useTranslations('shop.productDetail')
   const [selectedVariantId, setSelectedVariantId] = useState(product.variants[0]?.id || '')
   const [quantity, setQuantity] = useState(1)
+  const [activeImageIndex, setActiveImageIndex] = useState(0)
+  const [isZoomOpen, setIsZoomOpen] = useState(false)
   const [descOpen, setDescOpen] = useState(true)
   const [deliveryOpen, setDeliveryOpen] = useState(true)
 
@@ -142,6 +144,26 @@ export function ProductClient({ product }: ProductClientProps) {
   // Mobile Sticky Bar Logic
   const [showMobileBar, setShowMobileBar] = useState(false)
   const { scrollY } = useScroll()
+
+  // Science section scroll-linked animation
+  const scienceSectionRef = useRef<HTMLElement>(null)
+  const { scrollYProgress: scienceScrollProgress } = useScroll({
+    target: scienceSectionRef,
+    offset: ['start end', 'end start'],
+  })
+  // Watermark drifts, grows, and intensifies continuously across the whole time the section is in view
+  const watermarkY = useTransform(scienceScrollProgress, [0, 1], ['-16%', '16%'])
+  const watermarkScale = useTransform(scienceScrollProgress, [0, 0.5, 1], [0.75, 1.05, 1.3])
+  const watermarkOpacity = useTransform(scienceScrollProgress, [0, 0.35, 0.65, 1], [0.04, 0.14, 0.14, 0.04])
+
+  // Entrance is scroll-scrubbed (tied directly to scroll position, not a fixed-duration reveal)
+  const { scrollYProgress: scienceEnterProgress } = useScroll({
+    target: scienceSectionRef,
+    offset: ['start 0.9', 'start 0.35'],
+  })
+  const headerY = useTransform(scienceEnterProgress, [0, 1], [90, 0])
+  const headerOpacity = useTransform(scienceEnterProgress, [0, 1], [0, 1])
+  const ruleScaleX = useTransform(scienceEnterProgress, [0.15, 1], [0, 1])
 
   // Swipe Cursor Logic
   const [isHoveringSlider, setIsHoveringSlider] = useState(false)
@@ -229,6 +251,16 @@ export function ProductClient({ product }: ProductClientProps) {
     ...(product.images || [])
   ]
   const galleryImages = Array.from(new Set(allImages)).filter(Boolean)
+
+  useEffect(() => {
+    setActiveImageIndex(0)
+  }, [selectedVariantId])
+
+  // Split "NAD+ (Nicotinamide Adenine Dinucleotide)" into a short display
+  // name and an italic scientific subtitle, when the name has that shape.
+  const nameMatch = product.name.match(/^(.*?)\s*\(([^)]+)\)\s*$/)
+  const shortName = nameMatch ? nameMatch[1].trim() : product.name
+  const nameSubtitle = nameMatch ? nameMatch[2].trim() : null
 
   const [justAdded, setJustAdded] = useState(false)
   const cartStore = useCartStore()
@@ -367,56 +399,95 @@ export function ProductClient({ product }: ProductClientProps) {
   }
 
   return (
-    <div className="flex flex-col w-full min-h-screen bg-[#FAFAFA] overflow-x-clip">
+    <div className="flex flex-col w-full min-h-screen bg-[#f0efeb] overflow-x-clip">
       
-      {/* 1. Vibrant 2-Column Hero Section */}
-      <section className="w-full relative z-10 flex flex-col lg:flex-row bg-[#FAFAFA] px-4 sm:px-6 md:px-12 pt-[120px] lg:pt-[140px] pb-6 md:pb-12 gap-6 lg:gap-12 max-w-[1600px] mx-auto">
-        
-        {/* Left: Sticky Image Panel */}
-        <div className="w-full lg:w-[40%] xl:w-[45%] lg:sticky lg:top-[120px] relative self-start flex items-center justify-center">
-          <div className="w-full flex flex-col items-center justify-center">
-            <ImageGallery key={selectedVariant?.id} images={galleryImages} />
+      {/* 1. Full-Bleed Hero Section */}
+      <section className="w-full relative z-10 flex flex-col lg:flex-row">
+
+        {/* Left: Full-Bleed Sticky Image Panel */}
+        <div className="w-full h-[65vh] lg:w-1/2 lg:sticky lg:top-0 lg:self-start lg:h-[100dvh] relative shrink-0 overflow-hidden bg-white">
+          {galleryImages[activeImageIndex] && (
+            <Image
+              key={galleryImages[activeImageIndex]}
+              src={galleryImages[activeImageIndex]}
+              alt={shortName}
+              fill
+              priority
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          )}
+
+          {/* Lab label sticker */}
+          <div className="absolute top-20 left-4 sm:top-28 sm:left-10 bg-[#a5a58d] text-[#fff1e6] px-2.5 py-1.5 sm:px-4 sm:py-2.5 rounded-md shadow-lg shadow-black/10">
+            <div className="text-[7px] sm:text-[9px] font-bold tracking-[0.13em] sm:tracking-[0.16em] uppercase opacity-75 mb-0.5">{t('veracueResearch')}</div>
+            <div className="font-heading text-[11px] sm:text-sm font-bold tracking-wide">{shortName} &middot; {selectedVariant?.title}</div>
           </div>
+
+          {/* Zoom / view action */}
+          <button
+            onClick={() => setIsZoomOpen(true)}
+            aria-label={t('viewLargerImage')}
+            className="absolute top-20 right-4 sm:top-28 sm:right-10 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/95 flex items-center justify-center text-[#20221c] shadow-lg shadow-black/10 hover:bg-white transition-colors"
+          >
+            <ZoomIn size={14} strokeWidth={2} className="sm:w-[17px] sm:h-[17px]" />
+          </button>
+
+          {/* Thumbnail rail on scrim */}
+          {galleryImages.length > 1 && (
+            <div className="absolute inset-x-0 bottom-0 px-6 py-6 sm:px-10 sm:py-8 flex items-end justify-between bg-gradient-to-t from-[#20221c]/35 to-transparent">
+              <div className="flex gap-2.5">
+                {galleryImages.map((img, idx) => (
+                  <button
+                    key={img}
+                    onClick={() => setActiveImageIndex(idx)}
+                    aria-label={t('viewImage', { number: idx + 1 })}
+                    className={`relative w-11 h-11 sm:w-14 sm:h-14 rounded-xl overflow-hidden border-2 transition-all shrink-0 ${
+                      activeImageIndex === idx ? 'border-[#fff1e6] opacity-100' : 'border-transparent opacity-70 hover:opacity-90'
+                    }`}
+                  >
+                    <Image src={img} alt="" fill className="object-cover" sizes="56px" />
+                  </button>
+                ))}
+              </div>
+              <span className="text-[#fff1e6] text-[11px] font-semibold tracking-wide tabular-nums">
+                {String(activeImageIndex + 1).padStart(2, '0')} / {String(galleryImages.length).padStart(2, '0')}
+              </span>
+            </div>
+          )}
         </div>
 
-        {/* Right: Editorial Product Info */}
-        <div className="w-full lg:w-[60%] xl:w-[55%] flex flex-col py-4 lg:py-8 relative z-10 lg:pl-4 xl:pl-8">
+        {/* Right: Content Panel */}
+        <div className="w-full lg:w-1/2 flex flex-col px-5 sm:px-10 lg:px-16 pt-8 lg:pt-[130px] pb-10 lg:pb-16 shrink-0">
 
           {/* Breadcrumbs */}
-          <div className="flex items-center gap-2 text-[10px] font-bold text-ink/50 uppercase tracking-widest mb-6">
-            <Link href="/" className="hover:text-ink transition-colors">{t('home')}</Link>
-            <ChevronRight size={10} className="text-ink/30" />
-            <Link href="/shop" className="hover:text-ink transition-colors">{t('shop')}</Link>
-            <ChevronRight size={10} className="text-ink/30" />
-            <span className="text-ink">{product.name}</span>
+          <div className="flex items-center flex-wrap gap-2 text-[11px] font-semibold text-[#20221c]/45 uppercase tracking-widest mb-7">
+            <Link href="/" className="hover:text-[#20221c] transition-colors">{t('home')}</Link>
+            <ChevronRight size={9} className="text-[#20221c]/30" />
+            <Link href="/shop" className="hover:text-[#20221c] transition-colors">{t('shop')}</Link>
+            <ChevronRight size={9} className="text-[#20221c]/30" />
+            <span className="text-[#20221c]">{shortName}</span>
           </div>
 
-          {/* Meta Row: Category · Badges */}
-          <div className="flex items-center flex-wrap gap-x-4 gap-y-2 mb-6">
-            {/* Vibrant Gradient Category Pill */}
-            <div className="inline-flex items-center gap-1.5 bg-gradient-to-r from-primary to-primary-dark text-white px-3.5 py-1.5 rounded-full text-[10px] font-black tracking-[0.2em] uppercase shadow-lg shadow-primary/30">
-              <FlaskConical size={12} strokeWidth={2.5} />
+          {/* Eyebrow */}
+          <div className="inline-flex items-center max-w-full w-fit rounded-full px-3 sm:px-4 py-1 sm:py-1.5 bg-[#a5a58d] mb-6">
+            <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.14em] sm:tracking-[0.16em] uppercase text-[#fff1e6]">
               {(product.category as any)?.name || product.category || t('researchPeptide')}
-            </div>
-            
-            {/* Minimal Editorial Badges */}
-            {product.badges?.slice(0, 3).map((badge) => (
-              <div key={badge} className="flex items-center gap-3">
-                <span className="w-1 h-1 rounded-full bg-ink/20" />
-                <span className="text-[10px] font-bold text-ink/40 tracking-[0.15em] uppercase">{badge}</span>
-              </div>
-            ))}
+            </span>
           </div>
 
-          {/* Product Name (Home Page Typography) */}
+          {/* Title + serif subtitle */}
           <motion.h1
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-            className="font-heading text-4xl md:text-5xl lg:text-6xl font-black text-ink leading-[1.1] tracking-tighter uppercase mb-5"
+            className="font-heading text-4xl md:text-[44px] font-extrabold text-[#20221c] leading-[1.05] tracking-tight mb-1.5"
           >
-            {product.name}
+            {shortName}
           </motion.h1>
+          {nameSubtitle && (
+            <p className="font-serif italic font-medium text-lg text-[#a5a58d] mb-6">{nameSubtitle}</p>
+          )}
 
           {/* Price */}
           <motion.div
@@ -424,15 +495,15 @@ export function ProductClient({ product }: ProductClientProps) {
             initial={{ opacity: 0.6, y: 4 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.18, ease: 'easeOut' }}
-            className="flex flex-wrap items-baseline gap-x-4 gap-y-2 mb-8"
+            className="flex flex-wrap items-baseline gap-x-3.5 gap-y-2 mb-6"
           >
-            <span className="text-3xl sm:text-4xl font-bold text-ink tracking-tight">
+            <span className="font-heading text-[28px] sm:text-[30px] font-bold text-[#20221c] tracking-tight">
               {selectedVariant?.salePrice || selectedVariant?.price}
             </span>
             {selectedVariant?.salePrice && (
               <>
-                <span className="text-lg text-ink/40 line-through font-medium">{selectedVariant.price}</span>
-                <span className="inline-flex items-center text-[10px] font-black tracking-[0.2em] uppercase bg-gradient-to-r from-primary to-primary-dark text-white px-3 py-1.5 rounded-full shadow-md shadow-primary/20">
+                <span className="text-[17px] text-[#20221c]/40 line-through font-medium">{selectedVariant.price}</span>
+                <span className="text-[11px] font-bold tracking-[0.08em] uppercase text-[#cb997e]">
                   {t('savePercent', { percent: Math.round(((parseFloat(selectedVariant.price.replace(/[^0-9.]/g, '')) - parseFloat(selectedVariant.salePrice.replace(/[^0-9.]/g, ''))) / parseFloat(selectedVariant.price.replace(/[^0-9.]/g, ''))) * 100) })}
                 </span>
               </>
@@ -440,118 +511,147 @@ export function ProductClient({ product }: ProductClientProps) {
           </motion.div>
 
           {/* Short Description */}
-          <p className="text-ink/70 text-base md:text-lg leading-relaxed mb-8">
+          <p className="text-[#20221c]/62 text-[15px] leading-relaxed max-w-[480px] mb-7">
             {product.shortDescription || product.description?.substring(0, 200) + '...'}
           </p>
 
-          {/* Variant Selector Container */}
+          {/* Spec strip — real, always-available fields (no fabricated lab claims) */}
+          <div className="flex border-y border-[#b7b7a4]/35 mb-7">
+            <div className="flex-1 min-w-0 py-4 pr-2 sm:pr-4 border-r border-[#b7b7a4]/35">
+              <div className="text-[8.5px] sm:text-[9.5px] font-bold tracking-[0.1em] sm:tracking-[0.14em] uppercase text-[#a5a58d] mb-1.5">{t('specSku')}</div>
+              <div className="text-[12px] sm:text-[15px] font-bold text-[#20221c] break-words">{selectedVariant?.sku || '—'}</div>
+            </div>
+            <div className="flex-1 min-w-0 py-4 px-2 sm:px-4 border-r border-[#b7b7a4]/35">
+              <div className="text-[8.5px] sm:text-[9.5px] font-bold tracking-[0.1em] sm:tracking-[0.14em] uppercase text-[#a5a58d] mb-1.5">{t('specWeight')}</div>
+              <div className="text-[12px] sm:text-[15px] font-bold text-[#20221c] break-words">{product.weight ? `${product.weight} kg` : '—'}</div>
+            </div>
+            <div className="flex-1 min-w-0 py-4 pl-2 sm:pl-4">
+              <div className="text-[8.5px] sm:text-[9.5px] font-bold tracking-[0.1em] sm:tracking-[0.14em] uppercase text-[#a5a58d] mb-1.5">{t('specCategory')}</div>
+              <div className="text-[12px] sm:text-[15px] font-bold text-[#20221c] break-words">{(product.category as any)?.name || product.category || '—'}</div>
+            </div>
+          </div>
+
+          {/* Variant Selector — no card wrapper */}
           {product.variants.length > 1 && (
-            <div className="mb-8 bg-white p-6 rounded-[32px] shadow-sm border border-ink/5">
-              <div className="flex items-center justify-between mb-4">
-                <span className="text-[10px] font-bold text-ink/50 uppercase tracking-widest">{t('selectSize')}</span>
-                <span className="text-[11px] text-ink/80 font-medium">{selectedVariant?.title}</span>
+            <div className="mb-7">
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-[11px] font-bold text-[#20221c]/50 uppercase tracking-widest">{t('selectSize')}</span>
+                <AnimatePresence mode="wait">
+                  <motion.span
+                    key={selectedVariantId}
+                    initial={{ opacity: 0, y: -4 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 4 }}
+                    transition={{ duration: 0.18 }}
+                    className="text-[12px] text-[#a5a58d] font-semibold"
+                  >
+                    {selectedVariant?.title} {t('selected')}
+                  </motion.span>
+                </AnimatePresence>
               </div>
-              <VariantSelector
-                variants={product.variants}
-                value={selectedVariantId}
-                onChange={setSelectedVariantId}
-              />
+              <div
+                className="grid gap-2.5"
+                style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(84px, 1fr))' }}
+              >
+                {product.variants.map((variant) => {
+                  const isSelected = selectedVariantId === variant.id
+                  return (
+                    <motion.button
+                      key={variant.id}
+                      onClick={() => variant.inStock && setSelectedVariantId(variant.id)}
+                      disabled={!variant.inStock}
+                      whileTap={variant.inStock ? { scale: 0.94 } : undefined}
+                      className={`relative min-w-0 flex flex-col items-center gap-0.5 py-3.5 px-2 rounded-2xl overflow-hidden ${
+                        isSelected
+                          ? 'text-[#fff1e6]'
+                          : 'bg-transparent text-[#20221c] border-[1.5px] border-[#b7b7a4]/45 hover:border-[#a5a58d] transition-colors'
+                      } ${!variant.inStock ? 'opacity-40 cursor-not-allowed' : ''}`}
+                    >
+                      {isSelected && (
+                        <motion.span
+                          layoutId="variant-active-pill"
+                          transition={{ type: 'spring', stiffness: 500, damping: 32 }}
+                          className="absolute inset-0 bg-[#20221c] rounded-2xl -z-10"
+                        />
+                      )}
+                      <motion.span
+                        animate={isSelected ? { scale: [1, 1.08, 1] } : { scale: 1 }}
+                        transition={{ duration: 0.35, ease: [0.34, 1.56, 0.64, 1] }}
+                        className="text-sm font-bold"
+                      >
+                        {variant.title}
+                      </motion.span>
+                      <span className={`text-[11px] ${isSelected ? 'opacity-70' : 'opacity-55'}`}>
+                        {variant.salePrice || variant.price}
+                      </span>
+                    </motion.button>
+                  )
+                })}
+              </div>
             </div>
           )}
 
-
-
-          {/* CTA Action Box */}
-          <div className="flex flex-col gap-4 mb-8 bg-white p-6 sm:p-8 rounded-[32px] md:rounded-[40px] shadow-[0_8px_48px_-12px_rgba(0,0,0,0.05)] border border-ink/5">
-            {/* Row: Quantity + Add to Cart + Wishlist */}
-            <div className="flex flex-col sm:flex-row items-stretch gap-3">
-              <div className="flex gap-3 h-[60px]">
-                <QuantityStepper
-                  value={quantity}
-                  onChange={setQuantity}
-                  className="flex-1 sm:flex-none sm:w-[120px] h-full shrink-0 rounded-full"
-                />
-                <button
-                  onClick={handleWishlistClick}
-                  disabled={isWishlistPending}
-                  className={`h-full w-[60px] flex items-center justify-center shrink-0 rounded-full border transition-colors duration-200 ${
-                    inWishlist
-                      ? 'border-red-100 bg-red-50 text-red-500'
-                      : 'border-ink/10 bg-white hover:bg-gray-50 text-ink/40'
-                  }`}
-                >
-                  {isWishlistPending
-                    ? <Loader2 className="w-5 h-5 animate-spin text-ink/30" />
-                    : <Heart className={`w-5 h-5 ${inWishlist ? "fill-current" : ""}`} strokeWidth={inWishlist ? 2.5 : 2} />
-                  }
-                </button>
-              </div>
-              
-              <button
-                className={`w-full sm:w-auto sm:flex-1 h-[60px] rounded-[24px] text-sm font-semibold tracking-wide uppercase flex items-center justify-center gap-2 transition-all duration-300 shadow-md ${
-                  !selectedVariant?.inStock
-                    ? 'bg-gray-100 text-gray-400 cursor-not-allowed shadow-none'
-                    : justAdded
-                    ? 'bg-green-600 text-white shadow-green-600/20'
-                    : 'bg-[#121212] text-white hover:bg-gray-900 hover:-translate-y-0.5'
-                }`}
-                onClick={handleAddToCart}
-                disabled={!selectedVariant?.inStock}
-              >
-                <AnimatePresence mode="wait">
-                  {justAdded ? (
-                    <motion.span key="added" initial={{ opacity: 0, y: 3 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -3 }} className="flex items-center gap-2 whitespace-nowrap">
-                      <Check className="w-5 h-5" strokeWidth={2.5} /> {t('added')}
-                    </motion.span>
-                  ) : (
-                    <motion.span key="add" initial={{ opacity: 0, y: 3 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -3 }} className="flex items-center gap-2 whitespace-nowrap">
-                      <ShoppingCart className="w-5 h-5" strokeWidth={2} />
-                      {selectedVariant?.inStock ? t('addToCart') : t('outOfStock')}
-                    </motion.span>
-                  )}
-                </AnimatePresence>
-              </button>
-            </div>
-
-            {/* Buy Now */}
-            <button
-              className="w-full h-[60px] rounded-[24px] text-sm font-semibold tracking-wide uppercase text-ink border-2 border-ink/10 bg-transparent hover:border-ink hover:bg-ink hover:text-white transition-all duration-300 disabled:opacity-30 disabled:cursor-not-allowed"
-              onClick={() => {
-                handleAddToCart()
-                setTimeout(() => window.location.href = '/checkout', 300)
-              }}
-              disabled={!selectedVariant?.inStock}
+          {/* Purchase row — Add to Cart is the site's actual HeroButton, matching the homepage hero exactly.
+              Stacks on mobile/tablet so the button always has room to show its label; inlines from lg up. */}
+          <div className="flex flex-col lg:flex-row items-stretch lg:items-center gap-3 mb-4">
+           <div className="flex items-center gap-3 self-start">
+            <QuantityStepper
+              value={quantity}
+              onChange={setQuantity}
+              className="!h-14 !w-[120px] !rounded-full shrink-0"
+            />
+            <motion.button
+              onClick={handleWishlistClick}
+              disabled={isWishlistPending}
+              aria-label={t('toggleWishlist')}
+              whileTap={{ scale: 0.85 }}
+              className={`relative w-14 h-14 rounded-full border-[1.5px] flex items-center justify-center shrink-0 overflow-visible transition-colors duration-300 ${
+                inWishlist ? 'border-[#cb997e] bg-[#fff1e6] text-[#cb997e]' : 'border-[#b7b7a4]/45 bg-white text-[#20221c]/45 hover:border-[#a5a58d]'
+              }`}
             >
-              {t('buyNow')}
-            </button>
+              <AnimatedWishlistHeart inWishlist={inWishlist} isPending={isWishlistPending} showBurst={showParticles} size={18} />
+            </motion.button>
+           </div>
+            <HeroButton
+              onClick={handleAddToCart}
+              disabled={!selectedVariant?.inStock}
+              icon={justAdded ? <Check size={14} strokeWidth={2.5} /> : <ShoppingCart size={14} strokeWidth={2} />}
+              className="w-full lg:flex-1 !h-14"
+            >
+              {justAdded ? t('added') : (selectedVariant?.inStock ? t('addToCart') : t('outOfStock'))}
+            </HeroButton>
           </div>
 
-          {/* Trust Badges (Minimalist Grid) */}
-          <div className="grid grid-cols-2 gap-y-5 gap-x-6 mb-10 pb-8 border-b border-ink/10">
-            <div className="flex items-center gap-3 group">
-              <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary-dark group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                <Globe size={14} strokeWidth={2.5} />
-              </div>
-              <span className="text-[10px] font-bold tracking-[0.15em] uppercase text-ink/70 group-hover:text-ink transition-colors">Ships Worldwide</span>
-            </div>
-            <div className="flex items-center gap-3 group">
-              <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary-dark group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                <Lock size={14} strokeWidth={2.5} />
-              </div>
-              <span className="text-[10px] font-bold tracking-[0.15em] uppercase text-ink/70 group-hover:text-ink transition-colors">Secure Checkout</span>
-            </div>
-            <div className="flex items-center gap-3 group">
-              <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary-dark group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                <FlaskConical size={14} strokeWidth={2.5} />
-              </div>
-              <span className="text-[10px] font-bold tracking-[0.15em] uppercase text-ink/70 group-hover:text-ink transition-colors">Lab Tested</span>
-            </div>
-            <div className="flex items-center gap-3 group">
-              <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary-dark group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                <CheckCircle2 size={14} strokeWidth={2.5} />
-              </div>
-              <span className="text-[10px] font-bold tracking-[0.15em] uppercase text-ink/70 group-hover:text-ink transition-colors">Quality Assured</span>
-            </div>
+          {/* Buy Now — plain link, not a competing second button */}
+          <button
+            className="flex items-center justify-center gap-1.5 text-[12px] font-bold tracking-[0.08em] uppercase text-[#20221c] hover:text-[#cb997e] transition-colors mb-7 disabled:opacity-30 disabled:cursor-not-allowed"
+            onClick={() => {
+              handleAddToCart()
+              setTimeout(() => window.location.href = '/checkout', 300)
+            }}
+            disabled={!selectedVariant?.inStock}
+          >
+            {t('buyNow')}
+            <ChevronRight size={13} />
+          </button>
+
+          {/* Trust row — plain, hairline-divided on sm+; wraps as simple centered chips on mobile */}
+          <div className="flex flex-wrap items-center justify-center gap-x-4 sm:gap-x-6 gap-y-3 mb-7">
+            {[
+              { Icon: Globe, label: t('shipsWorldwide') },
+              { Icon: Lock, label: t('secureCheckout') },
+              { Icon: FlaskConical, label: t('thirdPartyTested') },
+            ].map(({ Icon, label }, i, arr) => (
+              <React.Fragment key={label}>
+                <div className="flex items-center gap-2">
+                  <Icon size={15} strokeWidth={2.2} className="text-[#a5a58d] shrink-0" />
+                  <span className="text-[11.5px] font-semibold text-[#20221c]/65 whitespace-nowrap">{label}</span>
+                </div>
+                {i < arr.length - 1 && (
+                  <div className="hidden sm:block w-px h-4 bg-[#b7b7a4]/40" />
+                )}
+              </React.Fragment>
+            ))}
           </div>
 
           {/* COA Download (mobile / no left panel) */}
@@ -560,21 +660,21 @@ export function ProductClient({ product }: ProductClientProps) {
               href={product.coaFile}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 text-[11px] font-bold text-ink/50 uppercase tracking-[0.2em] hover:text-ink transition-colors mb-8 lg:hidden bg-white py-4 rounded-full border border-ink/10 shadow-sm"
+              className="flex items-center justify-center gap-2 text-[11px] font-bold text-[#20221c]/55 uppercase tracking-[0.2em] hover:text-[#20221c] transition-colors mb-7 lg:hidden bg-white py-4 rounded-full border border-[#b7b7a4]/30 shadow-sm"
             >
               <Download size={14} />
               {t('certificateOfAnalysis')}
             </a>
           )}
 
-          {/* Bulk Bundles */}
+          {/* Bulk Bundles — no card wrapper */}
           {product.bulkBundles && product.bulkBundles.length > 0 && (
-            <div className="mb-8 p-6 sm:p-8 bg-white rounded-[32px] shadow-sm border border-ink/5">
-              <div className="flex items-center justify-between mb-6">
-                <span className="text-xs font-bold text-ink uppercase tracking-widest">{t('bulkPricing')}</span>
-                <span className="text-[10px] text-white bg-gradient-to-r from-primary to-primary-dark px-3 py-1.5 rounded-full font-black tracking-[0.2em] uppercase shadow-md shadow-primary/20">{t('buyMoreSaveMore')}</span>
+            <div className="border-t border-[#b7b7a4]/35 pt-5">
+              <div className="flex items-center justify-between mb-3.5">
+                <span className="text-[12px] font-bold text-[#20221c] uppercase tracking-widest">{t('buyMoreSaveMore')}</span>
+                <ChevronDown size={15} className="text-[#20221c]" />
               </div>
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col">
                 {product.bulkBundles.map((bundle, idx) => {
                   let priceNum = 0;
                   let salePriceNum = 0;
@@ -615,18 +715,18 @@ export function ProductClient({ product }: ProductClientProps) {
                         toast.success(t('addedBundleToCart'), { action: { label: t('view'), onClick: cartStore.openCart } })
                         setTimeout(() => setJustAdded(false), 1500)
                       }}
-                      className="w-full flex items-center justify-between px-6 py-5 rounded-[24px] bg-[#FAFAFA] border border-transparent hover:border-ink/10 hover:bg-white hover:shadow-md transition-all duration-300 text-left group"
+                      className={`w-full flex items-center justify-between py-3.5 text-left group ${idx < product.bulkBundles!.length - 1 ? 'border-b border-[#b7b7a4]/25' : ''}`}
                     >
-                      <div className="flex flex-col gap-1.5">
-                        <span className="font-bold text-ink text-base tracking-tight group-hover:text-primary-dark transition-colors">{bundle.name}</span>
+                      <div className="flex items-baseline gap-2.5">
+                        <span className="font-bold text-[#20221c] text-[14.5px] group-hover:text-[#cb997e] transition-colors">{bundle.name}</span>
                         {discount > 0 && (
-                          <span className="text-[10px] font-bold text-green-600 uppercase tracking-widest">{t('savePercent', { percent: discount })}</span>
+                          <span className="text-[10.5px] font-bold text-[#a5a58d] uppercase tracking-widest">{t('savePercent', { percent: discount })}</span>
                         )}
                       </div>
-                      <div className="flex flex-col items-end gap-1">
-                        <span className="font-bold text-ink text-xl tracking-tight">${(salePriceNum || priceNum).toFixed(2)}</span>
+                      <div className="flex items-baseline gap-2">
+                        <span className="font-bold text-[#20221c] text-base">${(salePriceNum || priceNum).toFixed(2)}</span>
                         {salePriceNum > 0 && priceNum > 0 && salePriceNum !== priceNum && (
-                          <span className="text-[12px] text-ink/40 line-through font-medium">${priceNum.toFixed(2)}</span>
+                          <span className="text-[12px] text-[#20221c]/40 line-through font-medium">${priceNum.toFixed(2)}</span>
                         )}
                       </div>
                     </button>
@@ -639,94 +739,114 @@ export function ProductClient({ product }: ProductClientProps) {
         </div>
       </section>
 
-      {/* 2. Dark Credentials Section */}
-      <section className="relative overflow-hidden bg-[#121212] mx-4 sm:mx-6 lg:mx-8 xl:mx-12 w-[calc(100%-2rem)] sm:w-[calc(100%-3rem)] lg:w-[calc(100%-4rem)] xl:w-[calc(100%-6rem)] rounded-[32px] lg:rounded-[40px] mb-8 lg:mb-12">
-        {/* Ghost watermark */}
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 font-heading font-black text-white/[0.025] select-none pointer-events-none leading-none tracking-tighter text-[180px] sm:text-[260px] lg:text-[380px] pr-4">
+      {/* 2. Credentials Section — same olive as the header, full-bleed, flush against the hero above */}
+      <section ref={scienceSectionRef} className="relative overflow-hidden bg-[#a5a58d]">
+        {/* Ghost watermark — white, continuously scroll-scrubbed (drifts, grows, intensifies) */}
+        <motion.div
+          style={{ y: watermarkY, scale: watermarkScale, opacity: watermarkOpacity }}
+          className="absolute right-0 top-1/2 -translate-y-1/2 font-display font-bold text-white select-none pointer-events-none leading-none tracking-tighter text-[140px] sm:text-[240px] lg:text-[380px] pr-4"
+        >
           99.9
-        </div>
+        </motion.div>
 
-        <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12 py-20 lg:py-28 relative z-10">
+        <div className="max-w-[1440px] mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-20 lg:py-28 relative z-10">
 
-          {/* Header */}
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-14 lg:mb-20">
+          {/* Header — scroll-scrubbed entrance, tied directly to scroll position */}
+          <motion.div
+            style={{ y: headerY, opacity: headerOpacity }}
+            className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-10"
+          >
             <div>
-              <span className="text-white/25 text-[9px] sm:text-[10px] font-bold tracking-[0.28em] uppercase mb-4 block">{t('compoundProfile')}</span>
-              <h2 className="font-heading text-[28px] sm:text-[36px] lg:text-[48px] font-black text-white leading-[0.9] tracking-tighter uppercase break-words">
-                {t('theScienceLine1')}<br />{t('theScienceLine2')}
+              <span className="text-white/70 text-[9px] sm:text-[10px] font-bold tracking-[0.28em] uppercase mb-4 block">{t('compoundProfile')}</span>
+              <h2 className="font-heading font-black text-[32px] sm:text-[42px] lg:text-[52px] uppercase tracking-tighter text-white leading-[1.05] break-words">
+                {t('theScienceHeadline')}
               </h2>
+              <p className="font-serif italic font-medium text-lg sm:text-xl text-white/80 mt-2">
+                {t('theScienceSubtitle')}
+              </p>
             </div>
             {product.coaFile && (
-              <FluidButton
+              <HeroButton
                 href={product.coaFile}
                 target="_blank"
                 rel="noopener noreferrer"
-                text={t('downloadCertificate')}
-                variant="white"
+                variant="secondary"
                 className="self-start sm:self-auto"
-              />
+              >
+                {t('downloadCertificate')}
+              </HeroButton>
             )}
-          </div>
+          </motion.div>
 
-          <div className="flex flex-wrap lg:flex-nowrap items-start gap-12 lg:gap-0 lg:divide-x lg:divide-white/10 mt-8 sm:mt-12 lg:mt-0 border-t lg:border-t-0 border-white/10 pt-12 lg:pt-0">
+          {/* Accent rule that draws itself in as you scroll */}
+          <motion.div
+            style={{ scaleX: ruleScaleX }}
+            className="h-px w-full bg-white/25 origin-left mb-14 lg:mb-20"
+          />
+
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-6 sm:gap-x-8 gap-y-10 lg:gap-x-0 lg:divide-x lg:divide-white/20">
             {[
               { value: '≥99%',    label: t('statVerifiedPurityLabel'),  desc: t('statVerifiedPurityDesc')          },
               { value: t('statLabTestedValue'), label: t('statLabTestedLabel'),       desc: t('statLabTestedDesc')    },
               { value: t('statGradeQualityValue'),  label: t('statGradeQualityLabel'),    desc: t('statGradeQualityDesc')        },
               { value: 'COA',       label: t('statDocumentedLabel'),       desc: t('statDocumentedDesc')       },
             ].map((stat, i) => (
-              <div 
-                key={stat.label} 
-                className="w-full sm:w-[calc(50%-1.5rem)] lg:w-1/4 lg:px-6 xl:px-8 first:lg:pl-0 last:lg:pr-0 group"
+              <motion.div
+                key={stat.label}
+                initial={{ opacity: 0, y: 60, scale: 0.9, rotate: i % 2 === 0 ? -2 : 2 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1, rotate: 0 }}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.7, delay: i * 0.12, ease: [0.16, 1, 0.3, 1] }}
+                className="min-w-0 lg:px-6 xl:px-8 first:lg:pl-0 last:lg:pr-0 group"
               >
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="w-1.5 h-1.5 rounded-full bg-primary/40 group-hover:bg-primary transition-colors duration-300" />
-                  <span className="text-primary text-[10px] font-black tracking-[0.2em] uppercase">
+                <div className="flex items-center gap-2 mb-3 sm:mb-4">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#20221c]/40 group-hover:bg-[#cb997e] transition-colors duration-300 shrink-0" />
+                  <span className="text-[#20221c]/70 text-[9px] sm:text-[10px] font-black tracking-[0.16em] sm:tracking-[0.2em] uppercase">
                     {stat.label}
                   </span>
                 </div>
-                <div className="font-heading font-black text-white text-5xl sm:text-[3.5rem] tracking-tighter leading-none mb-3 group-hover:text-primary transition-colors duration-300 whitespace-nowrap">
+                <div className="font-display font-bold text-white text-[26px] sm:text-5xl lg:text-[3.5rem] tracking-tighter leading-none mb-2.5 sm:mb-3 break-words group-hover:text-[#20221c] transition-colors duration-300">
                   {stat.value}
                 </div>
-                <p className="text-white/50 text-sm font-medium tracking-wide leading-relaxed max-w-[200px]">
+                <p className="text-white/75 text-[13px] sm:text-sm font-medium tracking-wide leading-relaxed max-w-[200px]">
                   {stat.desc}
                 </p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
       </section>
 
       {/* 3. Details Tab Section */}
-      <section className="w-full relative z-10 py-20 lg:py-32 bg-[#FAFAFA]">
+      <section className="w-full relative z-10 py-20 lg:py-32 bg-[#f0efeb]">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <ProductDetailTabs tabs={product.tabs} />
         </div>
       </section>
 
       {/* 5. Related Editorial Carousel */}
-      <section className="w-full py-24 bg-[#FAFAFA] overflow-hidden relative">
+      <section className="w-full py-24 bg-[#f0efeb] overflow-hidden relative">
         <Container size="wide" className="relative z-10">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
             <div>
-              <span className="text-primary text-[9px] sm:text-label-sm uppercase tracking-[0.2em] font-bold mb-3 sm:mb-4 block">{t('continueExploring')}</span>
-              <h2 className="font-heading text-[28px] sm:text-[36px] lg:text-[48px] leading-none font-black tracking-tighter text-black uppercase break-words">
+              <span className="text-[#a5a58d] text-[9px] sm:text-[11px] uppercase tracking-[0.28em] font-bold mb-3 sm:mb-4 block">{t('continueExploring')}</span>
+              <h2 className="font-heading text-[28px] sm:text-[36px] lg:text-[48px] leading-none font-black tracking-tight text-[#20221c] uppercase break-words">
                 {t('alsoConsidered')}
               </h2>
             </div>
 
             {/* Carousel Navigation */}
-            <div className="flex gap-2 sm:gap-3">
+            <div className="flex gap-3">
               <button
                 onClick={() => relatedEmblaApi?.scrollPrev()}
-                className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-primary/30 flex items-center justify-center text-black hover:bg-primary hover:text-white hover:border-primary transition-all shadow-sm bg-white"
+                className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#20221c] text-[#fff1e6] flex items-center justify-center hover:bg-[#cb997e] transition-colors duration-300 shadow-[0_4px_14px_rgba(32,34,28,0.2)]"
                 aria-label={t('previousProducts')}
               >
                 <ChevronLeft size={18} className="sm:w-5 sm:h-5" />
               </button>
               <button
                 onClick={() => relatedEmblaApi?.scrollNext()}
-                className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-primary/30 flex items-center justify-center text-black hover:bg-primary hover:text-white hover:border-primary transition-all shadow-sm bg-white"
+                className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#20221c] text-[#fff1e6] flex items-center justify-center hover:bg-[#cb997e] transition-colors duration-300 shadow-[0_4px_14px_rgba(32,34,28,0.2)]"
                 aria-label={t('nextProducts')}
               >
                 <ChevronRight size={18} className="sm:w-5 sm:h-5" />
@@ -763,7 +883,7 @@ export function ProductClient({ product }: ProductClientProps) {
 
       {/* 3. Suggested Blogs Section */}
       {product.suggestedBlogs && product.suggestedBlogs.length > 0 && (
-        <section className="w-full py-24 bg-[#FAFAFA] border-t border-gray-100">
+        <section className="w-full py-24 bg-[#f0efeb] border-t border-gray-100">
           <Container size="wide">
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
               <div>
@@ -796,49 +916,17 @@ export function ProductClient({ product }: ProductClientProps) {
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
             className="fixed bottom-0 left-0 right-0 z-50 p-4 bg-white/90 backdrop-blur-xl border-t border-gray-200 flex items-center gap-3 lg:hidden shadow-[0_-8px_30px_rgba(0,0,0,0.05)] pb-safe"
           >
-            <motion.button 
+            <motion.button
               whileHover={isWishlistPending ? {} : { scale: 1.05 }}
               whileTap={isWishlistPending ? {} : { scale: 0.9 }}
-              className={`relative w-11 h-11 p-0 flex-shrink-0 rounded-full font-bold border transition-colors duration-300 flex items-center justify-center group outline-none disabled:opacity-70 ${
-                inWishlist ? 'border-red-500 bg-red-50 text-red-500 shadow-sm' : 'border-black/10 bg-white text-black/60 hover:text-black hover:bg-gray-50'
+              className={`relative w-11 h-11 p-0 flex-shrink-0 rounded-full font-bold border transition-colors duration-300 flex items-center justify-center group outline-none disabled:opacity-70 overflow-visible ${
+                inWishlist ? 'border-[#cb997e] bg-[#fff1e6] text-[#cb997e] shadow-sm' : 'border-black/10 bg-white text-black/60 hover:text-black hover:bg-gray-50'
               }`}
               aria-label={t('toggleWishlist')}
               onClick={handleWishlistClick}
               disabled={isWishlistPending}
             >
-              <AnimatePresence>
-                {showParticles && (
-                  <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
-                    {[...Array(8)].map((_, i) => {
-                      const angle = (i * 45 * Math.PI) / 180;
-                      return (
-                        <motion.div
-                          key={i}
-                          className="absolute w-1.5 h-1.5 bg-red-400 rounded-full"
-                          initial={{ x: 0, y: 0, scale: 0, opacity: 1 }}
-                          animate={{
-                            x: Math.cos(angle) * 35,
-                            y: Math.sin(angle) * 35,
-                            scale: [0, 1.5, 0],
-                            opacity: [1, 1, 0]
-                          }}
-                          transition={{ duration: 0.6, ease: "easeOut" }}
-                        />
-                      )
-                    })}
-                  </div>
-                )}
-              </AnimatePresence>
-              <motion.div
-                animate={inWishlist && !isWishlistPending ? { scale: [1, 1.3, 1] } : { scale: 1 }}
-                transition={{ duration: 0.4, ease: "easeInOut" }}
-              >
-                {isWishlistPending ? (
-                  <Loader2 size={18} className={`animate-spin ${inWishlist ? 'text-red-500' : 'text-black/60'}`} />
-                ) : (
-                  <Heart size={18} className={`transition-colors duration-300 ${inWishlist ? 'fill-current' : ''}`} strokeWidth={inWishlist ? 2.5 : 2} />
-                )}
-              </motion.div>
+              <AnimatedWishlistHeart inWishlist={inWishlist} isPending={isWishlistPending} showBurst={showParticles} size={18} />
             </motion.button>
 
             <Button 
@@ -907,6 +995,44 @@ export function ProductClient({ product }: ProductClientProps) {
                 {isSliderAtEnd ? t('sliderEnd') : t('swipe')}
               </motion.span>
             </AnimatePresence>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Image Zoom Lightbox */}
+      <AnimatePresence>
+        {isZoomOpen && galleryImages[activeImageIndex] && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className="fixed inset-0 z-[200] bg-[#20221c]/95 flex items-center justify-center p-4 sm:p-10"
+            onClick={() => setIsZoomOpen(false)}
+          >
+            <button
+              onClick={() => setIsZoomOpen(false)}
+              aria-label={t('closeZoom')}
+              className="absolute top-5 right-5 sm:top-8 sm:right-8 w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg>
+            </button>
+            <motion.div
+              initial={{ scale: 0.96 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0.96 }}
+              transition={{ duration: 0.2 }}
+              className="relative w-full h-full max-w-4xl max-h-[85vh]"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <Image
+                src={galleryImages[activeImageIndex]}
+                alt={shortName}
+                fill
+                className="object-contain"
+                sizes="100vw"
+              />
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>

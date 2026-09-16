@@ -2,13 +2,18 @@
 
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Plus, Minus } from 'lucide-react'
+import { Plus, FlaskConical, Microscope, ShieldCheck, ScrollText, FileText, type LucideIcon } from 'lucide-react'
 import { Tab } from './ProductTabs'
 import { cn } from '@/lib/utils'
 
 interface ProductDetailTabsProps {
   tabs: Tab[]
 }
+
+// The CMS schema always emits these 4 tabs in this order (Product Details,
+// Research Focus, Quality & Purity, Compliance) — map icons by position,
+// with a safe fallback if that ever changes.
+const TAB_ICONS: LucideIcon[] = [FlaskConical, Microscope, ShieldCheck, ScrollText]
 
 export function ProductDetailTabs({ tabs }: ProductDetailTabsProps) {
   const [activeIds, setActiveIds] = useState<string[]>([tabs[0]?.id].filter(Boolean) as string[])
@@ -20,57 +25,82 @@ export function ProductDetailTabs({ tabs }: ProductDetailTabsProps) {
   }
 
   return (
-    <div className="w-full max-w-[1440px] mx-auto border-t border-ink/10">
-      {tabs.map((tab) => {
+    <div className="w-full max-w-[1440px] mx-auto border-t border-[#b7b7a4]/30">
+      {tabs.map((tab, index) => {
         const isActive = activeIds.includes(tab.id)
-        
-        return (
-          <div key={tab.id} className="border-b border-ink/10">
-            <button
-              onClick={() => toggleTab(tab.id)}
-              className="w-full flex items-center justify-between py-8 lg:py-12 group focus:outline-none"
-            >
-              <h3 className={cn(
-                "font-heading font-black text-2xl sm:text-4xl lg:text-5xl tracking-tighter uppercase text-left transition-colors duration-500",
-                isActive ? "text-ink" : "text-ink/30 group-hover:text-ink/60"
-              )}>
-                {tab.label}
-              </h3>
-              
-              <div className={cn(
-                "w-10 h-10 lg:w-14 lg:h-14 rounded-full flex items-center justify-center shrink-0 transition-all duration-500",
-                isActive 
-                  ? "bg-primary text-white shadow-[0_0_20px_rgba(146,220,229,0.3)] scale-105" 
-                  : "bg-ink/5 text-ink/30 group-hover:bg-ink/10 group-hover:text-ink/60"
-              )}>
-                {isActive ? <Minus size={24} strokeWidth={2.5} className="w-5 h-5 lg:w-6 lg:h-6" /> : <Plus size={24} strokeWidth={2.5} className="w-5 h-5 lg:w-6 lg:h-6" />}
-              </div>
-            </button>
+        const Icon = TAB_ICONS[index] || FileText
 
-            {/* Always mounted (not conditionally rendered) so every tab's content — Product
-                Details, Research Focus & Mechanism, Quality & Purity, Compliance Notice — ships
-                in the server HTML, not just whichever tab starts open. Non-JS crawlers never
-                click a tab to reveal it, so a conditionally-mounted panel is invisible to them;
-                this is most of a product page's actual unique content. */}
-            <motion.div
-              initial={false}
-              animate={{ height: isActive ? 'auto' : 0, opacity: isActive ? 1 : 0 }}
-              transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-              className="overflow-hidden"
-            >
-              <div className="pb-12 lg:pb-16 max-w-4xl pr-8 lg:pr-16">
-                {typeof tab.content === 'string' ? (
-                  <div
-                    className="text-ink/60 leading-[1.8] text-[15px] lg:text-[18px] prose prose-lg max-w-none prose-headings:text-ink prose-headings:font-black prose-headings:tracking-tighter prose-headings:uppercase prose-a:text-ink prose-a:underline-offset-4 prose-strong:text-ink prose-li:text-ink/60"
-                    dangerouslySetInnerHTML={{ __html: tab.content }}
-                  />
-                ) : (
-                  <div className="text-ink/60 leading-[1.8] text-[15px] lg:text-[18px]">
-                    {tab.content}
-                  </div>
-                )}
-              </div>
-            </motion.div>
+        return (
+          <div
+            key={tab.id}
+            className={cn(
+              "border-b border-[#b7b7a4]/30 transition-colors duration-500 rounded-[28px]",
+              isActive && "bg-white shadow-[0_16px_48px_-16px_rgba(32,34,28,0.1)] border-b-transparent my-3 sm:my-4"
+            )}
+          >
+            <div className="px-5 sm:px-10 lg:px-14">
+              <button
+                onClick={() => toggleTab(tab.id)}
+                className="w-full flex items-center gap-4 sm:gap-6 py-7 sm:py-9 lg:py-10 group focus:outline-none text-left"
+              >
+                <span className={cn(
+                  "font-heading text-[11px] sm:text-xs font-bold tracking-[0.1em] shrink-0 transition-colors duration-500 hidden sm:block",
+                  isActive ? "text-[#cb997e]" : "text-[#20221c]/25"
+                )}>
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+
+                <span className={cn(
+                  "w-9 h-9 sm:w-11 sm:h-11 rounded-full flex items-center justify-center shrink-0 transition-all duration-500",
+                  isActive
+                    ? "bg-[#cb997e] text-[#20221c] shadow-[0_4px_14px_rgba(203,153,126,0.45)]"
+                    : "bg-[#fff1e6] text-[#a5a58d] border border-[#eddcd2] group-hover:bg-[#eddcd2] group-hover:text-[#20221c]"
+                )}>
+                  <Icon size={17} strokeWidth={2.25} className="sm:w-[19px] sm:h-[19px]" />
+                </span>
+
+                <h3 className={cn(
+                  "flex-1 min-w-0 font-heading font-black text-lg sm:text-3xl lg:text-4xl tracking-tight uppercase transition-colors duration-500",
+                  isActive ? "text-[#20221c]" : "text-[#20221c]/30 group-hover:text-[#20221c]/55"
+                )}>
+                  {tab.label}
+                </h3>
+
+                <span className={cn(
+                  "w-9 h-9 sm:w-11 sm:h-11 rounded-full flex items-center justify-center shrink-0 transition-all duration-500",
+                  isActive
+                    ? "bg-[#20221c] text-[#fff1e6] rotate-45 shadow-[0_4px_14px_rgba(32,34,28,0.25)]"
+                    : "bg-white text-[#20221c]/40 border border-[#b7b7a4]/45 group-hover:border-[#a5a58d] group-hover:text-[#20221c]/70"
+                )}>
+                  <Plus size={16} strokeWidth={2.5} />
+                </span>
+              </button>
+
+              {/* Always mounted (not conditionally rendered) so every tab's content — Product
+                  Details, Research Focus & Mechanism, Quality & Purity, Compliance Notice — ships
+                  in the server HTML, not just whichever tab starts open. Non-JS crawlers never
+                  click a tab to reveal it, so a conditionally-mounted panel is invisible to them;
+                  this is most of a product page's actual unique content. */}
+              <motion.div
+                initial={false}
+                animate={{ height: isActive ? 'auto' : 0, opacity: isActive ? 1 : 0 }}
+                transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+                className="overflow-hidden"
+              >
+                <div className="pb-9 sm:pb-12 lg:pb-14 sm:pl-[3.75rem] lg:pl-[4.75rem]">
+                  {typeof tab.content === 'string' ? (
+                    <div
+                      className="text-[#20221c]/62 leading-[1.8] text-[14px] sm:text-[15px] lg:text-[17px] prose prose-lg max-w-none prose-headings:text-[#20221c] prose-headings:font-black prose-headings:tracking-tight prose-headings:uppercase prose-a:text-[#cb997e] prose-a:underline-offset-4 prose-strong:text-[#20221c] prose-li:text-[#20221c]/62 prose-table:text-[13px] sm:prose-table:text-sm"
+                      dangerouslySetInnerHTML={{ __html: tab.content }}
+                    />
+                  ) : (
+                    <div className="text-[#20221c]/62 leading-[1.8] text-[14px] sm:text-[15px] lg:text-[17px]">
+                      {tab.content}
+                    </div>
+                  )}
+                </div>
+              </motion.div>
+            </div>
           </div>
         )
       })}

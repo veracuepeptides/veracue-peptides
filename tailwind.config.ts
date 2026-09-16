@@ -54,6 +54,7 @@ const config: Config = {
       fontFamily: {
         sans: ['"Plus Jakarta Sans"', 'Outfit', 'Inter', 'sans-serif'],
         heading: ['"Sora"', '"Plus Jakarta Sans"', 'sans-serif'],
+        price: ['"Inter"', '"Plus Jakarta Sans"', 'sans-serif'],
         sora: ['"Sora"', 'sans-serif'],
         syne: ['"Syne"', 'sans-serif'],
         editorial: ['"Tenor Sans"', '"Plus Jakarta Sans"', 'sans-serif'],

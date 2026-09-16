@@ -63,7 +63,7 @@
       "invalidToken": "This reset authorization is invalid or has expired",
       "backToLogin": "Back to sign in",
       "metaTitle": "Reset Password | Veracue Peptides",
-      "metaDescription": "Choose a new password to regain access to your Helix Bio account."
+      "metaDescription": "Choose a new password to regain access to your Veracue Peptides account."
     }
   },
   "ageGate": {
@@ -199,8 +199,8 @@
     "designedBy": "Designed & Developed by"
   },
   "home": {
-    "metaTitle": "Premium Research Peptides USA | 99% Purity | Helix Bio",
-    "metaDescription": "Shop premium research peptides in the USA with verified purity, mass-spec testing, and complete COA documentation. Explore the Helix Bio catalog now.",
+    "metaTitle": "Premium Research Peptides USA | 99% Purity | Veracue Peptides",
+    "metaDescription": "Shop premium research peptides in the USA with verified purity, mass-spec testing, and complete COA documentation. Explore the Veracue Peptides catalog now.",
     "hero": {
       "viewPeptidesShort": "View Peptides",
       "viewPeptidesLong": "View Research Peptides",
@@ -301,7 +301,7 @@
       "titleLine1": "Verified Purity.",
       "titleLine2": "Every Single Batch.",
       "description": "Third-party purity verification is the cornerstone of research-grade compounds. Every vial we ship carries an independently verified COA that proves what is inside — not what we claim is inside. Here is exactly what we test for, and why it matters.",
-      "vialAlt": "Single precision research peptide vial with Certificate of Analysis document — Helix Bio",
+      "vialAlt": "Single precision research peptide vial with Certificate of Analysis document — Veracue Peptides",
       "metric1Title": "≥99% HPLC Purity",
       "metric1Desc": "Stringent chromatographic isolation for every compound — verified before any order ships.",
       "metric1Tooltip": "HPLC separates compound mixtures by molecular polarity, confirming concentration and purity to ≥99%.",
@@ -318,7 +318,7 @@
       "titleLine2": "Collection.",
       "description": "A curated line built around longevity, recovery, and everyday research support, featuring some of our most-requested research compounds.",
       "ctaText": "View COA Library",
-      "vialAlt": "Helix Bio Vitality Collection research peptide vials.",
+      "vialAlt": "Veracue Peptides Vitality Collection research peptide vials.",
       "shakeWarningTitle": "Critical Warning",
       "shakeWarningSubtitle": "Peptide bonds agitated",
       "cards": {
@@ -350,7 +350,7 @@
       "items": {
         "ruoPeptide": {
           "question": "What does \"Research Use Only\" (RUO) mean for these peptides?",
-          "answer": "Research Use Only means a compound is intended strictly for laboratory and scientific research, not for human or veterinary consumption, diagnosis, or treatment. Helix Bio peptides are labeled and sold on this basis and are not evaluated by the FDA for safety or efficacy in those other contexts."
+          "answer": "Research Use Only means a compound is intended strictly for laboratory and scientific research, not for human or veterinary consumption, diagnosis, or treatment. Veracue Peptides peptides are labeled and sold on this basis and are not evaluated by the FDA for safety or efficacy in those other contexts."
         },
         "researchGradePurity": {
           "question": "What is considered a research-grade peptide?",
@@ -408,7 +408,7 @@
       "defaultTag": "Verified"
     },
     "merchandise": {
-      "eyebrow": "Helix Bio Gear",
+      "eyebrow": "Veracue Peptides Gear",
       "titleLine1": "Represent The",
       "titleLine2": "Research.",
       "exploreGear": "Explore Gear",
@@ -477,7 +477,7 @@
       "eyebrow": "Advantage",
       "titleLine1": "What Sets",
       "titleLine2": "Us Apart.",
-      "description": "<strong>Helix Bio</strong> specializes in high-purity synthetic peptides engineered specifically for research laboratory environments. Our commitment to analytical rigor and documentation transparency addresses the core needs of scientific research:",
+      "description": "<strong>Veracue Peptides</strong> specializes in high-purity synthetic peptides engineered specifically for research laboratory environments. Our commitment to analytical rigor and documentation transparency addresses the core needs of scientific research:",
       "clickCursorLine1": "CLICK ON",
       "clickCursorLine2": "THE NODES",
       "nodeLabel": "Node 0{number}",
@@ -500,7 +500,7 @@
         },
         "researchOnly": {
           "title": "Research-Only Positioning",
-          "description": "Helix Bio markets exclusively to the research community, with RUO and not-for-human-consumption labeling kept visible, not buried in fine print.",
+          "description": "Veracue Peptides markets exclusively to the research community, with RUO and not-for-human-consumption labeling kept visible, not buried in fine print.",
           "shortLabel": "Research-Only"
         }
       }
@@ -660,11 +660,11 @@
       "faqDescription": "Common questions about research peptides, ordering, and site standards.",
       "faqs": {
         "availablePeptides": {
-          "question": "What research peptides are available in the Helix Bio shop?",
-          "answer": "The Helix Bio shop carries a curated catalog of research-use-only peptides for laboratory study, including BPC-157, TB-500, Semaglutide, Tirzepatide, Ipamorelin, CJC-1295, PT-141, Melanotan II, GHK-Cu, Thymosin Alpha-1, Epithalon, Selank, Semax, and related compounds. Each listing shows current stock status, available vial sizes, and a linked certificate of analysis."
+          "question": "What research peptides are available in the Veracue Peptides shop?",
+          "answer": "The Veracue Peptides shop carries a curated catalog of research-use-only peptides for laboratory study, including BPC-157, TB-500, Semaglutide, Tirzepatide, Ipamorelin, CJC-1295, PT-141, Melanotan II, GHK-Cu, Thymosin Alpha-1, Epithalon, Selank, Semax, and related compounds. Each listing shows current stock status, available vial sizes, and a linked certificate of analysis."
         },
         "purityQualityTested": {
-          "question": "Are all Helix Bio products tested for purity and quality?",
+          "question": "Are all Veracue Peptides products tested for purity and quality?",
           "answer": "Yes. Every batch is verified through third-party HPLC and mass spectrometry testing before it is listed for sale, and the resulting certificate of analysis is made available at or before checkout so researchers can confirm purity and identity ahead of ordering."
         },
         "standardPurityLevels": {
@@ -693,7 +693,7 @@
         },
         "shippingDamage": {
           "question": "Can peptides be damaged during shipping or storage?",
-          "answer": "Yes. Heat exposure, repeated freeze-thaw cycles, and prolonged light exposure can all degrade peptide integrity. Helix Bio ships with cold-chain packaging appropriate to the compound, and researchers should transfer vials to proper storage promptly upon arrival."
+          "answer": "Yes. Heat exposure, repeated freeze-thaw cycles, and prolonged light exposure can all degrade peptide integrity. Veracue Peptides ships with cold-chain packaging appropriate to the compound, and researchers should transfer vials to proper storage promptly upon arrival."
         },
         "aliquotAfterReconstitution": {
           "question": "Should I aliquot peptides after reconstitution?",
@@ -721,7 +721,7 @@
         },
         "manufacturedInUsa": {
           "question": "Are all products manufactured in the USA for research compliance?",
-          "answer": "Helix Bio sources and distributes from within the USA, and each batch is tested domestically before listing. Country-of-origin and testing details for a specific compound can be confirmed on request or within the linked COA."
+          "answer": "Veracue Peptides sources and distributes from within the USA, and each batch is tested domestically before listing. Country-of-origin and testing details for a specific compound can be confirmed on request or within the linked COA."
         },
         "researchUseOnlyMeaning": {
           "question": "What does \"Research Use Only\" mean for these products?",
@@ -733,7 +733,7 @@
         },
         "nonResearchUse": {
           "question": "Can I use these peptides for any purpose outside of research?",
-          "answer": "No. Products sold through the Helix Bio shop are labeled Research Use Only and are not intended, tested, or approved for human consumption, self-administration, or any clinical use. They are sold exclusively for qualified laboratory research."
+          "answer": "No. Products sold through the Veracue Peptides shop are labeled Research Use Only and are not intended, tested, or approved for human consumption, self-administration, or any clinical use. They are sold exclusively for qualified laboratory research."
         },
         "fdaApproval": {
           "question": "Are your products approved by the FDA or other regulatory agencies?",
@@ -767,25 +767,36 @@
       "trustPurity": "99% Purity",
       "trustThirdPartyTested": "3rd Party Tested",
       "trustGuaranteed": "Guaranteed",
+      "shipsWorldwide": "Ships Worldwide",
+      "secureCheckout": "Secure Checkout",
+      "thirdPartyTested": "3rd-Party Tested",
       "certificateOfAnalysis": "Certificate of Analysis",
       "bulkPricing": "Bulk Pricing",
-      "buyMoreSaveMore": "Buy more, save more",
+      "buyMoreSaveMore": "Buy More, Save More",
       "addedBundleToCart": "Added bundle to cart",
       "variant": "Variant",
+      "veracueResearch": "Veracue Research",
+      "viewLargerImage": "View larger image",
+      "closeZoom": "Close zoomed image",
+      "viewImage": "View image {number}",
+      "specSku": "SKU",
+      "specWeight": "Weight",
+      "specCategory": "Category",
+      "selected": "selected",
       "compoundProfile": "Compound Profile",
-      "theScienceLine1": "The",
-      "theScienceLine2": "Science.",
+      "theScienceHeadline": "Proof, Not Promises.",
+      "theScienceSubtitle": "Every batch, independently verified.",
       "downloadCertificate": "Download Certificate",
       "statVerifiedPurityLabel": "Verified Purity",
-      "statVerifiedPurityDesc": "HPLC certified",
+      "statVerifiedPurityDesc": "Confirmed by independent HPLC assay",
       "statLabTestedValue": "3rd Party",
       "statLabTestedLabel": "Lab Tested",
-      "statLabTestedDesc": "Independent analysis",
+      "statLabTestedDesc": "No self-reported results, ever",
       "statGradeQualityValue": "Research",
       "statGradeQualityLabel": "Grade Quality",
-      "statGradeQualityDesc": "Highest standard",
+      "statGradeQualityDesc": "One uncompromising standard, every batch",
       "statDocumentedLabel": "Documented",
-      "statDocumentedDesc": "Full traceability",
+      "statDocumentedDesc": "On file for every lot, every time",
       "continueExploring": "Continue Exploring",
       "alsoConsidered": "Also Considered.",
       "previousProducts": "Previous Products",
@@ -1053,12 +1064,12 @@
     }
   },
   "cartPage": {
-    "metaTitle": "Your Cart | Helix Bio",
+    "metaTitle": "Your Cart | Veracue Peptides",
     "metaDescription": "Review the research peptides in your cart before proceeding to secure checkout."
   },
   "checkout": {
-    "metaTitle": "Secure Checkout | Helix Bio",
-    "metaDescription": "Complete your secure checkout for research peptides at Helix Bio.",
+    "metaTitle": "Secure Checkout | Veracue Peptides",
+    "metaDescription": "Complete your secure checkout for research peptides at Veracue Peptides.",
     "cartDrawer": {
       "title": "CART",
       "closeCartAria": "Close cart",
@@ -1222,8 +1233,8 @@
     }
   },
   "orderConfirmation": {
-    "metaTitle": "Order Confirmed | Helix Bio",
-    "metaDescription": "Your Helix Bio order has been placed. View your order confirmation and payment details.",
+    "metaTitle": "Order Confirmed | Veracue Peptides",
+    "metaDescription": "Your Veracue Peptides order has been placed. View your order confirmation and payment details.",
     "paymentSuccessful": "Payment Successful",
     "orderPlaced": "Order Placed",
     "thankYouZelle": "Thank you, {name}. Please complete your Zelle payment below.",
@@ -1265,13 +1276,13 @@
   },
   "legal": {
     "privacyPolicy": {
-      "metaTitle": "Privacy Policy | Helix Bio",
-      "metaDescription": "See how Helix Bio collects, uses, and safeguards personal data across ordering, account access, and research-use compliance on our website.",
+      "metaTitle": "Privacy Policy | Veracue Peptides",
+      "metaDescription": "See how Veracue Peptides collects, uses, and safeguards personal data across ordering, account access, and research-use compliance on our website.",
       "eyebrow": "Legal Information",
-      "titleLine1": "Helix Bio",
+      "titleLine1": "Veracue Peptides",
       "titleLine2": "Privacy Policy",
-      "effectiveDate": "Effective Date: August 2026",
-      "intro": "Helix Bio takes your privacy seriously. This Privacy Policy sets out what personal information we gather, how we put it to use, and the steps we take to keep it protected whenever you browse our site or use our services. Continuing to use the website means you're accepting the practices outlined below.",
+      "effectiveDate": "Effective Date: September 2026",
+      "intro": "Veracue Peptides takes your privacy seriously. This Privacy Policy sets out what personal information we gather, how we put it to use, and the steps we take to keep it protected whenever you browse our site or use our services. Continuing to use the website means you're accepting the practices outlined below.",
       "section1Title": "Information We Collect",
       "section1Text": "To operate securely and serve you well, we gather several categories of information, including:",
       "section1Item1Label": "Personal Details:",
@@ -1313,7 +1324,7 @@
       "section5ContactText": "To act on any of these rights, reach out to:",
       "section5EmailLabel": "Email:",
       "section6Title": "Research-Use Product Notice",
-      "section6Intro": "Every product Helix Bio sells is intended for research use only, meaning:",
+      "section6Intro": "Every product Veracue Peptides sells is intended for research use only, meaning:",
       "section6Item1": "It is not designed or approved for human or veterinary use.",
       "section6Item2": "It carries no intended diagnostic, therapeutic, or treatment purpose.",
       "section6Item3": "Buyers alone are responsible for handling products in line with applicable laws and safety standards.",
@@ -1327,17 +1338,17 @@
       "contactLabel": "Contact"
     },
     "refundPolicy": {
-      "metaTitle": "Refund Policy | Helix Bio",
-      "metaDescription": "Helix Bio's Refund Policy: all sales are final. See why returns, refunds, and exchanges aren't available for research-use products, and what to confirm before ordering.",
+      "metaTitle": "Refund Policy | Veracue Peptides",
+      "metaDescription": "Veracue's Refund Policy: all sales are final. See why returns, refunds, and exchanges aren't available for research-use products, and what to confirm before ordering.",
       "eyebrow": "Legal Information",
-      "titleLine1": "Helix Bio",
+      "titleLine1": "Veracue Peptides",
       "titleLine2": "Refund Policy",
-      "effectiveDate": "Effective Date: August 22, 2026",
-      "intro": "Helix Bio operates on an all-sales-final basis. Before placing an order, please read this policy carefully: returns, refunds, and exchanges are not available for any research-use product, for any reason, once an order has been placed.",
+      "effectiveDate": "Effective Date: September 2026",
+      "intro": "Veracue Peptides operates on an all-sales-final basis. Before placing an order, please read this policy carefully: returns, refunds, and exchanges are not available for any research-use product, for any reason, once an order has been placed.",
       "section1Title": "What This Policy Covers",
-      "section1Text": "This policy explains Helix Bio's all-sales-final position. Every item we sell is a research-use-only compound intended strictly for laboratory research — never for human or veterinary use, diagnosis, or treatment — and is sold with no right of return, refund, or exchange once an order is placed.",
+      "section1Text": "This policy explains Veracue's all-sales-final position. Every item we sell is a research-use-only compound intended strictly for laboratory research — never for human or veterinary use, diagnosis, or treatment — and is sold with no right of return, refund, or exchange once an order is placed.",
       "section2Title": "No Returns, Refunds, or Exchanges",
-      "section2Intro": "Helix Bio does not accept returns and does not issue refunds or exchanges for any order, for any reason. This holds regardless of:",
+      "section2Intro": "Veracue Peptides does not accept returns and does not issue refunds or exchanges for any order, for any reason. This holds regardless of:",
       "section2Item1": "Whether the item is unopened, sealed, and in its original packaging.",
       "section2Item2": "How soon after delivery a request is made.",
       "section2Item3": "The size of the order, including bulk or custom orders.",
@@ -1350,7 +1361,7 @@
       "section3Item4": "This keeps every unit reaching a customer for the first time to the same purity and handling standard, for every order.",
       "section4Title": "Before You Order",
       "section4Intro": "Because all sales are final, we encourage every customer to confirm the following before completing checkout:",
-      "section4Item1": "Reach out to <email>support@helixbiochem.com</email> with any pre-purchase questions about a product, its specifications, or its Certificate of Analysis.",
+      "section4Item1": "Reach out to <email>support@veracuepeptides.com</email> with any pre-purchase questions about a product, its specifications, or its Certificate of Analysis.",
       "section4Item2": "Double-check the product, variant, and quantity in your cart against what your research protocol actually requires.",
       "section4Item3": "Confirm your shipping address and contact details are correct — orders can't be modified once submitted.",
       "section4Item4": "Review our Shipping Policy for delivery timelines and handling requirements before your order arrives.",
@@ -1363,27 +1374,27 @@
       "section6Title": "Order Issues",
       "section6Intro": "If something about your delivery seems wrong, you're welcome to contact us — though please note this does not guarantee a refund, replacement, or return:",
       "section6OrderQueriesLabel": "Order-related queries:",
-      "section6Text": "We review every report for our own quality-control records, but Helix Bio's all-sales-final policy applies to every order without exception, including those affected by carrier delays or delivery issues outside our control.",
+      "section6Text": "We review every report for our own quality-control records, but Veracue's all-sales-final policy applies to every order without exception, including those affected by carrier delays or delivery issues outside our control.",
       "section7Title": "Legal Notes",
       "section7Item1": "All items are sold strictly for laboratory and research use and are not intended for human or veterinary use, diagnosis, or treatment.",
-      "section7Item2": "This all-sales-final policy applies at Helix Bio's sole discretion, consistent with applicable law.",
-      "section7Item3": "Helix Bio may revise this Refund Policy at any time without prior notice.",
+      "section7Item2": "This all-sales-final policy applies at Veracue's sole discretion, consistent with applicable law.",
+      "section7Item3": "Veracue Peptides may revise this Refund Policy at any time without prior notice.",
       "contactTitle": "Contact Us",
       "contactIntro": "Reach out to our support team with any questions about a product or an existing order:",
       "orderQueriesLabel": "Order-related queries",
       "supportIssuesLabel": "Support & questions",
       "contactLabel": "Contact",
       "closingText1": "We're glad to help with questions about products, orders, or shipments — though per this policy, that doesn't extend to returns, refunds, or exchanges.",
-      "closingText2": "Bottom line: review your order carefully before checkout — Helix Bio's all-sales-final policy means it can't be undone once submitted."
+      "closingText2": "Bottom line: review your order carefully before checkout — Veracue's all-sales-final policy means it can't be undone once submitted."
     },
     "shippingPolicy": {
-      "metaTitle": "Shipping Policy | Helix Bio",
-      "metaDescription": "See how Helix Bio handles order processing, shipping methods, delivery timelines, packaging, and international restrictions for research-use products.",
+      "metaTitle": "Shipping Policy | Veracue Peptides",
+      "metaDescription": "See how Veracue Peptides handles order processing, shipping methods, delivery timelines, packaging, and international restrictions for research-use products.",
       "eyebrow": "Legal Information",
-      "titleLine1": "Helix Bio",
+      "titleLine1": "Veracue Peptides",
       "titleLine2": "Shipping Policy",
-      "effectiveDate": "Effective Date: August 2026",
-      "intro": "Helix Bio ships research peptides, compounds, and biochemical products with the same care we put into sourcing them. This Shipping Policy walks through processing times, delivery windows, packaging, and what to expect once your order leaves our facility.",
+      "effectiveDate": "Effective Date: September 2026",
+      "intro": "Veracue Peptides ships research peptides, compounds, and biochemical products with the same care we put into sourcing them. This Shipping Policy walks through processing times, delivery windows, packaging, and what to expect once your order leaves our facility.",
       "section1Title": "Processing Your Order",
       "section1Text": "Once placed, orders go through a 1–3 business day review before shipping — our team confirms the details, checks stock, and runs a final quality check on every item.",
       "section1Note": "Note: orders placed on a weekend or holiday enter processing on the following business day.",
@@ -1420,7 +1431,7 @@
       "section7Item2": "From there we'll sort out a replacement or refund, whichever fits the situation.",
       "section8Title": "Legal & Handling Notes",
       "section8Item1": "Everything we ship is strictly research-use only — not intended for human or veterinary use, diagnosis, or treatment.",
-      "section8Item2": "Helix Bio isn't liable for misuse of a product or for carrier delays beyond our control.",
+      "section8Item2": "Veracue Peptides isn't liable for misuse of a product or for carrier delays beyond our control.",
       "section8Item3": "This policy is subject to change; check back here periodically for the current version.",
       "contactTitle": "Contact Us",
       "contactIntro": "Questions about a shipment, delivery estimate, or tracking number:",
@@ -1430,19 +1441,19 @@
       "closingText": "Our team is on hand to make sure every order gets to you safely and on schedule."
     },
     "medicalDisclaimer": {
-      "metaTitle": "Medical Disclaimer | Helix Bio Research Peptides",
-      "metaDescription": "Helix Bio's Medical Disclaimer explains that our research peptides are for laboratory use only, not medical advice, treatment, or human consumption.",
+      "metaTitle": "Medical Disclaimer | Veracue Peptides Research Peptides",
+      "metaDescription": "Veracue's Medical Disclaimer explains that our research peptides are for laboratory use only, not medical advice, treatment, or human consumption.",
       "eyebrow": "Legal Information",
-      "titleLine1": "Helix Bio",
+      "titleLine1": "Veracue Peptides",
       "titleLine2": "Medical Disclaimer",
-      "effectiveDate": "Effective Date: August 2026",
+      "effectiveDate": "Effective Date: September 2026",
       "intro": "The information provided on this website, including any product descriptions, research summaries, or educational content, is for general informational purposes only. Nothing on this site constitutes medical advice, diagnosis, or treatment recommendations, and it should never be used as a substitute for guidance from a licensed physician or qualified healthcare provider.",
       "section1Title": "Introduction & No Medical Advice",
-      "section1Text": "Helix Bio is a supplier of research compounds, not a healthcare provider, and no statement on this website should be interpreted as a claim to diagnose, treat, cure, or prevent any disease or medical condition. Always seek guidance from a licensed medical or scientific professional before acting on any information obtained from this site.",
+      "section1Text": "Veracue Peptides is a supplier of research compounds, not a healthcare provider, and no statement on this website should be interpreted as a claim to diagnose, treat, cure, or prevent any disease or medical condition. Always seek guidance from a licensed medical or scientific professional before acting on any information obtained from this site.",
       "section2Title": "Product Usage Limitation",
-      "section2Text": "All products offered by Helix Bio are intended for controlled laboratory or research environments. Any use outside of this context, including self-administration, is strictly prohibited and may violate local, state, or federal laws and regulations. Our products are not drugs, medicines, dietary supplements, or food, and they are not intended for human or veterinary use. Users are responsible for ensuring that all handling, storage, and usage comply with applicable research protocols and safety standards in their jurisdiction.",
+      "section2Text": "All products offered by Veracue Peptides are intended for controlled laboratory or research environments. Any use outside of this context, including self-administration, is strictly prohibited and may violate local, state, or federal laws and regulations. Our products are not drugs, medicines, dietary supplements, or food, and they are not intended for human or veterinary use. Users are responsible for ensuring that all handling, storage, and usage comply with applicable research protocols and safety standards in their jurisdiction.",
       "section3Title": "Liability",
-      "section3Text": "Helix Bio assumes no responsibility or liability for the misuse of products, improper handling, or any adverse effects resulting from unauthorized use. By using this website and purchasing our products, you acknowledge and agree that Helix Bio is not liable for any direct, indirect, or consequential damages arising from your actions.",
+      "section3Text": "Veracue Peptides assumes no responsibility or liability for the misuse of products, improper handling, or any adverse effects resulting from unauthorized use. By using this website and purchasing our products, you acknowledge and agree that Veracue Peptides is not liable for any direct, indirect, or consequential damages arising from your actions.",
       "section4Title": "User Responsibility",
       "section4Intro": "It is the responsibility of all users to:",
       "section4Item1": "Follow all local, state, and federal laws regarding research chemicals.",
@@ -1450,17 +1461,17 @@
       "section4Item3": "Exercise caution and adhere to proper safety protocols when handling compounds.",
       "section4Item4": "Consult a qualified professional for any questions regarding research procedures, legal compliance, or scientific interpretation.",
       "section5Title": "Regulatory Compliance",
-      "section5Text": "The statements on this website have not been evaluated by the U.S. Food and Drug Administration. Products sold by Helix Bio are offered strictly for research and laboratory purposes and are not intended to diagnose, treat, cure, or prevent any disease. Helix Bio is not a compounding pharmacy and does not operate as a chemical compounding facility as defined under Section 503A of the Federal Food, Drug, and Cosmetic Act. Helix Bio reserves the right to refuse service to any individual or organization where required to remain compliant with applicable law.",
+      "section5Text": "The statements on this website have not been evaluated by the U.S. Food and Drug Administration. Products sold by Veracue Peptides are offered strictly for research and laboratory purposes and are not intended to diagnose, treat, cure, or prevent any disease. Veracue Peptides is not a compounding pharmacy and does not operate as a chemical compounding facility as defined under Section 503A of the Federal Food, Drug, and Cosmetic Act. Veracue Peptides reserves the right to refuse service to any individual or organization where required to remain compliant with applicable law.",
       "section6Title": "Accuracy of Information",
-      "section6Text": "We make reasonable efforts to keep product descriptions, research references, and site content accurate and current. However, research literature evolves, and Helix Bio does not guarantee that every statement on this site reflects the most recent findings. Users should independently verify information relevant to their own research before relying on it.",
+      "section6Text": "We make reasonable efforts to keep product descriptions, research references, and site content accurate and current. However, research literature evolves, and Veracue Peptides does not guarantee that every statement on this site reflects the most recent findings. Users should independently verify information relevant to their own research before relying on it.",
       "section7Title": "Changes to This Disclaimer",
-      "section7Text": "Helix Bio may update this Medical Disclaimer at any time to reflect changes in our products, applicable regulations, or business practices. The effective date at the top of this page shows when the current version took effect, and continued use of the site after an update constitutes acceptance of the revised disclaimer.",
+      "section7Text": "Veracue Peptides may update this Medical Disclaimer at any time to reflect changes in our products, applicable regulations, or business practices. The effective date at the top of this page shows when the current version took effect, and continued use of the site after an update constitutes acceptance of the revised disclaimer.",
       "contactTitle": "Contact Us",
       "contactIntro": "If you have questions regarding product use, safety or compliance, please contact our support team at:",
       "orderQueriesLabel": "Order-related queries",
       "supportIssuesLabel": "Support & issues",
       "contactLabel": "Contact",
-      "closingText": "By accessing this website or purchasing our products, you agree to comply with this Medical Disclaimer and acknowledge that Helix Bio is not responsible for any misuse or unauthorized application of our research materials.",
+      "closingText": "By accessing this website or purchasing our products, you agree to comply with this Medical Disclaimer and acknowledge that Veracue Peptides is not responsible for any misuse or unauthorized application of our research materials.",
       "faqTitle": "Questions",
       "faqDescription": "Quick answers about research use, liability, and compliance, written to be pulled directly into search results.",
       "faqs": {
@@ -1469,19 +1480,19 @@
           "answer": "It means a product is sold exclusively for laboratory or scientific research and is not approved, tested, or intended for use in or on the human body."
         },
         "intendedForHumanConsumption": {
-          "question": "Are Helix Bio's products intended for human consumption?",
-          "answer": "No. Helix Bio's products are not drugs, supplements, or food, and they are not intended for human or veterinary use of any kind."
+          "question": "Are Veracue's products intended for human consumption?",
+          "answer": "No. Veracue's products are not drugs, supplements, or food, and they are not intended for human or veterinary use of any kind."
         },
         "isMedicalAdvice": {
           "question": "Is the information on this website medical advice?",
           "answer": "No. Content on this site is for general informational purposes only and should never replace guidance from a licensed physician or healthcare provider."
         },
         "whoCanPurchase": {
-          "question": "Who can purchase products from Helix Bio?",
+          "question": "Who can purchase products from Veracue Peptides?",
           "answer": "Products are intended for qualified researchers and laboratories operating in controlled research environments, and buyers must be of legal age in their jurisdiction."
         },
         "fdaRegulated": {
-          "question": "Are Helix Bio's products regulated by the FDA?",
+          "question": "Are Veracue's products regulated by the FDA?",
           "answer": "Statements on this website have not been evaluated by the FDA, and these products are not approved to diagnose, treat, cure, or prevent any disease."
         },
         "selfAdministration": {
@@ -1490,24 +1501,24 @@
         },
         "misuseResponsibility": {
           "question": "Who is responsible if a product is misused?",
-          "answer": "The end user assumes full responsibility for how a product is handled, stored, and used; Helix Bio is not liable for misuse or unauthorized application."
+          "answer": "The end user assumes full responsibility for how a product is handled, stored, and used; Veracue Peptides is not liable for misuse or unauthorized application."
         },
         "contactAboutDisclaimer": {
-          "question": "How can I contact Helix Bio about this disclaimer?",
-          "answer": "Email support@helixbio.com for general questions or orders@helixbio.com for order-specific issues."
+          "question": "How can I contact Veracue Peptides about this disclaimer?",
+          "answer": "Email support@veracuepeptides.com for general questions or orders@veracuepeptides.com for order-specific issues."
         }
       }
     },
     "termsAndConditions": {
-      "metaTitle": "Helix Bio Terms & Conditions | Research Peptides",
-      "metaDescription": "Read Helix Bio's Terms and Conditions covering orders, payments, shipping, and research-use policies for our peptide products. Clear terms, no surprises.",
+      "metaTitle": "Veracue Peptides Terms & Conditions | Research Peptides",
+      "metaDescription": "Read Veracue's Terms and Conditions covering orders, payments, shipping, and research-use policies for our peptide products. Clear terms, no surprises.",
       "eyebrow": "Legal Information",
-      "titleLine1": "Helix Bio",
+      "titleLine1": "Veracue Peptides",
       "titleLine2": "Terms and Conditions",
-      "effectiveDate": "Effective Date: August 2026",
-      "intro": "Welcome to Helix Bio. By accessing or using our website, purchasing products, or interacting with our services, you agree to be bound by the following Terms and Conditions. If you do not agree with any part of these terms, please discontinue use of the site and do not place an order. These Terms apply to every visitor, customer, and account holder on this website, and they work alongside our Privacy Policy and Shipping Policy, which are incorporated here by reference.",
+      "effectiveDate": "Effective Date: September 2026",
+      "intro": "Welcome to Veracue Peptides. By accessing or using our website, purchasing products, or interacting with our services, you agree to be bound by the following Terms and Conditions. If you do not agree with any part of these terms, please discontinue use of the site and do not place an order. These Terms apply to every visitor, customer, and account holder on this website, and they work alongside our Privacy Policy and Shipping Policy, which are incorporated here by reference.",
       "section1Title": "Acceptance of Terms",
-      "section1Text": "By accessing this website or purchasing any product from Helix Bio, you agree to be bound by these Terms and Conditions. These Terms govern your access, use, and purchase of our research-grade peptides, small molecules, and related compounds, all of which are intended strictly for laboratory and research purposes and are not for human or veterinary use, diagnosis, or treatment.",
+      "section1Text": "By accessing this website or purchasing any product from Veracue Peptides, you agree to be bound by these Terms and Conditions. These Terms govern your access, use, and purchase of our research-grade peptides, small molecules, and related compounds, all of which are intended strictly for laboratory and research purposes and are not for human or veterinary use, diagnosis, or treatment.",
       "section2Title": "Research Use & Product Disclaimer",
       "section2Intro": "All products sold through our website are strictly for research purposes and are not intended for diagnostic, therapeutic, or veterinary application. By purchasing or using our products, you confirm that:",
       "section2Item1": "You understand and accept that products are not intended for human consumption or medical use.",
@@ -1522,17 +1533,17 @@
       "section4Item1": "Orders are considered accepted once payment has been successfully processed.",
       "section4Item2": "We accept the payment methods listed on the checkout page at the time of your order.",
       "section4Item3": "All prices are listed in USD unless otherwise stated.",
-      "section4Item4": "Orders may be canceled or modified prior to shipment, subject to Helix Bio's approval. If a pricing or listing error appears on the site, we reserve the right to correct it and to cancel any order placed at the incorrect price, with a full refund issued.",
+      "section4Item4": "Orders may be canceled or modified prior to shipment, subject to Veracue's approval. If a pricing or listing error appears on the site, we reserve the right to correct it and to cancel any order placed at the incorrect price, with a full refund issued.",
       "section5Title": "Shipping & Delivery",
       "section5Item1": "We ship only to regions we are approved to serve; certain products may carry additional restrictions under local law.",
       "section5Item2": "Shipping timelines are estimates and may vary due to carrier logistics, customs processing, or regional handling delays.",
-      "section5Item3": "Helix Bio is not responsible for delays, loss, or damage that occurs once a package has been handed to the carrier, though we're happy to help you file a claim.",
+      "section5Item3": "Veracue Peptides is not responsible for delays, loss, or damage that occurs once a package has been handed to the carrier, though we're happy to help you file a claim.",
       "section6Title": "Product Liability & Safety",
       "section6Item1": "Products are not approved for human or veterinary use.",
       "section6Item2": "Users assume all risk associated with the storage, handling, and research application of any product purchased.",
-      "section6Item3": "Helix Bio is not liable for misuse, accidental ingestion, or any application outside of approved laboratory or experimental use.",
+      "section6Item3": "Veracue Peptides is not liable for misuse, accidental ingestion, or any application outside of approved laboratory or experimental use.",
       "section7Title": "Intellectual Property",
-      "section7Item1": "All website content, product descriptions, images, branding, and design elements are the property of Helix Bio and are protected under applicable copyright and trademark law. You may not copy, reproduce, distribute, or otherwise exploit this content for commercial purposes without written permission.",
+      "section7Item1": "All website content, product descriptions, images, branding, and design elements are the property of Veracue Peptides and are protected under applicable copyright and trademark law. You may not copy, reproduce, distribute, or otherwise exploit this content for commercial purposes without written permission.",
       "section7Item2": "Unauthorized use of our branding, product names, or site materials is strictly prohibited.",
       "section8Title": "User Conduct",
       "section8Intro": "By using our website, you agree not to:",
@@ -1542,58 +1553,58 @@
       "section8Note": "Violations of these conduct terms may result in order cancellation, account suspension, or legal action.",
       "section9Title": "Limitation of Liability",
       "section9Intro": "To the maximum extent permitted by law:",
-      "section9Item1": "Helix Bio is not liable for any damages resulting from misuse of our products, unauthorized applications, or errors on the website.",
+      "section9Item1": "Veracue Peptides is not liable for any damages resulting from misuse of our products, unauthorized applications, or errors on the website.",
       "section9Item2": "Where liability cannot be excluded, our total liability for any product issue is limited to the purchase price of that product.",
       "section10Title": "Indemnification",
-      "section10Intro": "You agree to indemnify and hold harmless Helix Bio, its employees, officers, and affiliates from any claims, damages, or expenses arising from:",
+      "section10Intro": "You agree to indemnify and hold harmless Veracue Peptides, its employees, officers, and affiliates from any claims, damages, or expenses arising from:",
       "section10Item1": "Improper use of our products.",
       "section10Item2": "Violation of these Terms and Conditions.",
       "section10Item3": "Breach of any local, state, or federal law related to product use.",
       "section11Title": "Governing Law",
-      "section11Text": "These Terms are governed by the laws of the jurisdiction in which Helix Bio operates, without regard to conflict-of-law principles. Any disputes arising from these Terms will be resolved under those laws.",
+      "section11Text": "These Terms are governed by the laws of the jurisdiction in which Veracue Peptides operates, without regard to conflict-of-law principles. Any disputes arising from these Terms will be resolved under those laws.",
       "section12Title": "Privacy & Data Use",
-      "section12Text": "Your use of Helix Bio is also governed by our Privacy Policy, which explains how we collect, use, and protect your personal information. By using this site, you consent to the data practices described there.",
+      "section12Text": "Your use of Veracue Peptides is also governed by our Privacy Policy, which explains how we collect, use, and protect your personal information. By using this site, you consent to the data practices described there.",
       "section13Title": "Changes to These Terms",
-      "section13Text": "Helix Bio reserves the right to update or modify these Terms at any time. Changes take effect immediately upon posting to this page, and your continued use of the website or our products after that point constitutes acceptance of the updated Terms. We recommend checking this page periodically, particularly the effective date at the top, so you're always working from the current version.",
+      "section13Text": "Veracue Peptides reserves the right to update or modify these Terms at any time. Changes take effect immediately upon posting to this page, and your continued use of the website or our products after that point constitutes acceptance of the updated Terms. We recommend checking this page periodically, particularly the effective date at the top, so you're always working from the current version.",
       "contactTitle": "Customer Support",
       "contactIntro": "If you have questions about these Terms and Conditions, please contact:",
       "orderQueriesLabel": "Order-related queries",
       "supportIssuesLabel": "Support & issues",
       "contactLabel": "Contact",
       "faqTitle": "Questions",
-      "faqDescription": "Quick answers about Helix Bio's site policies, written to be pulled directly into search results.",
+      "faqDescription": "Quick answers about Veracue's site policies, written to be pulled directly into search results.",
       "faqs": {
         "humanUseApproved": {
-          "question": "Are Helix Bio's products approved for human use?",
-          "answer": "No. Every product on Helix Bio is sold strictly for research purposes and is not approved for human consumption, medical treatment, or veterinary use."
+          "question": "Are Veracue's products approved for human use?",
+          "answer": "No. Every product on Veracue Peptides is sold strictly for research purposes and is not approved for human consumption, medical treatment, or veterinary use."
         },
         "cancelOrder": {
           "question": "Can I cancel or change my order after I've paid?",
           "answer": "Yes, as long as the order hasn't shipped yet. Reach out to our support team as soon as possible — once an order ships, it can no longer be modified or canceled."
         },
         "shipsInternationally": {
-          "question": "Does Helix Bio ship internationally?",
-          "answer": "Helix Bio ships only to regions we're approved to serve, and some products carry additional restrictions depending on local law. Availability is confirmed at checkout based on your shipping address."
+          "question": "Does Veracue Peptides ship internationally?",
+          "answer": "Veracue Peptides ships only to regions we're approved to serve, and some products carry additional restrictions depending on local law. Availability is confirmed at checkout based on your shipping address."
         },
         "damagedOrDelayed": {
           "question": "What happens if my order arrives damaged or delayed?",
-          "answer": "Contact support with your order number as soon as you notice an issue. While Helix Bio isn't liable for carrier delays or damage once a package ships, we'll help you file a claim with the carrier."
+          "answer": "Contact support with your order number as soon as you notice an issue. While Veracue Peptides isn't liable for carrier delays or damage once a package ships, we'll help you file a claim with the carrier."
         },
         "ageRequirement": {
-          "question": "Do I need to be a certain age to order from Helix Bio?",
+          "question": "Do I need to be a certain age to order from Veracue Peptides?",
           "answer": "Yes. You must be at least 18 years old, or the legal age of majority in your jurisdiction, to create an account or place an order."
         },
         "currency": {
-          "question": "What currency are Helix Bio's prices listed in?",
+          "question": "What currency are Veracue's prices listed in?",
           "answer": "All prices on the site are listed in US dollars (USD) unless a page specifically states otherwise."
         },
         "orderQuestionsContact": {
           "question": "Who do I contact with questions about an order?",
-          "answer": "For order-specific questions, email orders@helixbio.com. For general support or account issues, email support@helixbio.com."
+          "answer": "For order-specific questions, email orders@veracuepeptides.com. For general support or account issues, email support@veracuepeptides.com."
         },
         "termsChangeNotice": {
-          "question": "Can Helix Bio change these Terms without notice?",
-          "answer": "Helix Bio can update these Terms at any time, and changes take effect as soon as they're posted. Continuing to use the site or order products after an update means you accept the revised Terms — so it's worth checking the effective date occasionally."
+          "question": "Can Veracue Peptides change these Terms without notice?",
+          "answer": "Veracue Peptides can update these Terms at any time, and changes take effect as soon as they're posted. Continuing to use the site or order products after an update means you accept the revised Terms — so it's worth checking the effective date occasionally."
         }
       }
     },
@@ -2029,7 +2040,7 @@
   },
   "calculator": {
     "page": {
-      "metaTitle": "Peptide Calculator: Dosage & Reconstitution Tool | Helix Bio",
+      "metaTitle": "Peptide Calculator: Dosage & Reconstitution Tool | Veracue Peptides",
       "metaDescription": "Use our free peptide calculator to get your exact dosage in seconds. Enter vial size, BAC water volume, and desired mcg - and see exactly how many units to draw.",
       "faq": {
         "q1Question": "How much bacteriostatic water do I add to a 5mg peptide vial?",
@@ -2367,8 +2378,8 @@
     }
   },
   "blog": {
-    "metaTitle": "Peptide Research Blog | Studies & Protocols | Helix Bio",
-    "metaDescription": "Explore peptide research articles, laboratory protocols, and reconstitution guides from Helix Bio, a U.S. supplier of 99%+ pure research peptides.",
+    "metaTitle": "Peptide Research Blog | Studies & Protocols | Veracue Peptides",
+    "metaDescription": "Explore peptide research articles, laboratory protocols, and reconstitution guides from Veracue Peptides, a U.S. supplier of 99%+ pure research peptides.",
     "hero": {
       "title": "The U.S. Authority in Advanced Peptide Research & Scientific Insights",
       "description": "Explore peer-reviewed peptide research, advanced laboratory protocols, reconstitution guides, and analytical testing standards curated for American scientific professionals. Trusted educational resources for 99%+ pure research compounds—strictly for in-vitro laboratory use only.",
@@ -2377,7 +2388,7 @@
     },
     "compliance": {
       "title": "Compliance",
-      "description": "All products offered by Helix Bio are strictly intended for in-vitro laboratory research and analytical applications only. Products are not approved for human consumption, therapeutic use, or medical application."
+      "description": "All products offered by Veracue Peptides are strictly intended for in-vitro laboratory research and analytical applications only. Products are not approved for human consumption, therapeutic use, or medical application."
     },
     "latestArticle": "Latest Article",
     "readArticle": "Read article",

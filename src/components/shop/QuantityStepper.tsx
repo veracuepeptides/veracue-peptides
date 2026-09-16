@@ -1,6 +1,7 @@
 'use client'
 
-import React from 'react'
+import React, { useRef, useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import { Minus, Plus } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { cn } from '@/lib/utils'
@@ -15,25 +16,32 @@ interface QuantityStepperProps {
   size?: 'sm' | 'md' | 'responsive'
 }
 
-export function QuantityStepper({ 
-  value, 
-  onChange, 
-  min = 1, 
+export function QuantityStepper({
+  value,
+  onChange,
+  min = 1,
   max = 99,
   className,
   theme = 'light',
   size = 'md'
 }: QuantityStepperProps) {
   const t = useTranslations('shop.quantityStepper')
+  const direction = useRef(1)
 
   const handleDecrement = (e: React.MouseEvent) => {
     e.preventDefault()
-    if (value > min) onChange(value - 1)
+    if (value > min) {
+      direction.current = -1
+      onChange(value - 1)
+    }
   }
 
   const handleIncrement = (e: React.MouseEvent) => {
     e.preventDefault()
-    if (value < max) onChange(value + 1)
+    if (value < max) {
+      direction.current = 1
+      onChange(value + 1)
+    }
   }
 
   const isSm = size === 'sm'
@@ -41,14 +49,15 @@ export function QuantityStepper({
 
   return (
     <div className={cn(
-      "inline-flex items-center justify-between border rounded-xl shadow-sm transition-all px-1", 
+      "inline-flex items-center justify-between border rounded-xl shadow-sm transition-all px-1",
       theme === 'dark' ? "border-white/20 bg-white/5 hover:border-white/40" : "border-ink/10 bg-white hover:border-ink/20",
       isResponsive ? "h-8 md:h-10 w-[84px] md:w-[104px]" : isSm ? "h-8 w-[84px]" : "h-10 w-[104px]",
       className
     )}>
-      <button 
+      <motion.button
         onClick={handleDecrement}
         disabled={value <= min}
+        whileTap={value > min ? { scale: 0.75 } : undefined}
         className={cn(
           "flex items-center justify-center rounded-full transition-colors disabled:opacity-30 flex-shrink-0",
           theme === 'dark' ? "text-white/60 hover:text-white hover:bg-white/10" : "text-ink/60 hover:text-ink hover:bg-ink/5",
@@ -57,19 +66,31 @@ export function QuantityStepper({
         aria-label={t('decreaseQuantity')}
       >
         <Minus className={cn(isResponsive ? "w-3 h-3 md:w-4 md:h-4" : isSm ? "w-3 h-3" : "w-4 h-4")} strokeWidth={2} />
-      </button>
-      
+      </motion.button>
+
       <div className={cn(
-        "flex-1 flex items-center justify-center font-bold select-none",
+        "relative flex-1 flex items-center justify-center font-bold select-none overflow-hidden",
         theme === 'dark' ? "text-white" : "text-ink",
         isResponsive ? "text-xs md:text-base" : isSm ? "text-xs" : "text-base"
       )}>
-        {value}
+        <AnimatePresence mode="popLayout" initial={false}>
+          <motion.span
+            key={value}
+            initial={{ y: direction.current * 16, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: -direction.current * 16, opacity: 0 }}
+            transition={{ duration: 0.22, ease: [0.34, 1.56, 0.64, 1] }}
+            className="inline-block tabular-nums"
+          >
+            {value}
+          </motion.span>
+        </AnimatePresence>
       </div>
-      
-      <button 
+
+      <motion.button
         onClick={handleIncrement}
         disabled={value >= max}
+        whileTap={value < max ? { scale: 0.75 } : undefined}
         className={cn(
           "flex items-center justify-center rounded-full transition-colors disabled:opacity-30 flex-shrink-0",
           theme === 'dark' ? "text-white/60 hover:text-white hover:bg-white/10" : "text-ink/60 hover:text-ink hover:bg-ink/5",
@@ -78,7 +99,7 @@ export function QuantityStepper({
         aria-label={t('increaseQuantity')}
       >
         <Plus className={cn(isResponsive ? "w-3 h-3 md:w-4 md:h-4" : isSm ? "w-3 h-3" : "w-4 h-4")} strokeWidth={2} />
-      </button>
+      </motion.button>
     </div>
   )
 }

@@ -20,7 +20,7 @@ export interface HeroButtonProps {
   direction?: 'right' | 'down' | 'up'
   size?: 'sm' | 'md' | 'lg'
   icon?: React.ReactNode
-  variant?: 'primary' | 'secondary' | 'outline'
+  variant?: 'primary' | 'secondary' | 'outline' | 'olive'
 }
 
 /**
@@ -28,6 +28,7 @@ export interface HeroButtonProps {
  * Replicates the exact pill button used in the Homepage Hero section:
  * - Rounded capsule pill with deep charcoal `#20221c` base and terracotta `#cb997e` hover (primary)
  * - Or high-contrast crisp white base with charcoal badge and hover transition (secondary/outline)
+ * - Or header olive-green `#a5a58d` with charcoal hover transition (olive)
  * - Diagonal specular sheen reflection glide across the face
  * - Subtle forward text translation
  * - High-contrast circular badge with dual-arrow slide animation (horizontal or vertical)
@@ -52,11 +53,12 @@ export function HeroButton({
 }: HeroButtonProps) {
   const label = children || text
   const isSecondary = variant === 'secondary' || variant === 'outline'
+  const isOlive = variant === 'olive'
 
   const sizeClasses = {
-    sm: 'pl-3.5 sm:pl-5 pr-1.5 py-1.5 text-xs sm:text-[13px]',
-    md: 'pl-4 sm:pl-7 pr-1.5 sm:pr-2 py-1.5 sm:py-2.5 text-xs xs:text-[13px] sm:text-[15px]',
-    lg: 'pl-5 sm:pl-8 pr-2 py-2 sm:py-3 text-[13px] sm:text-[16px]',
+    sm: 'pl-3.5 sm:pl-5 pr-2 sm:pr-2.5 py-1.5 sm:py-2 text-xs sm:text-[13px]',
+    md: 'pl-4 sm:pl-7 pr-2 sm:pr-2.5 py-2 sm:py-2.5 text-xs xs:text-[13px] sm:text-[15px]',
+    lg: 'pl-5 sm:pl-8 pr-2.5 sm:pr-3 py-2.5 sm:py-3 text-[13px] sm:text-[16px]',
   }[size]
 
   const badgeSizeClasses = {
@@ -65,11 +67,15 @@ export function HeroButton({
     lg: 'w-8 sm:w-9 h-8 sm:h-9',
   }[size]
 
-  const colorClasses = isSecondary
+  const colorClasses = isOlive
+    ? 'bg-[#a5a58d] hover:bg-[#20221c] text-[#fff1e6] border border-[#a5a58d] hover:border-[#20221c]'
+    : isSecondary
     ? 'bg-white hover:bg-[#a5a58d] text-neutral-900 hover:text-white border border-[#b7b7a4]/70 hover:border-[#a5a58d]'
     : 'bg-[#20221c] hover:bg-[#cb997e] text-[#fff1e6] border border-neutral-800/80 hover:border-[#cb997e]'
 
-  const badgeColorClasses = isSecondary
+  const badgeColorClasses = isOlive
+    ? 'bg-white text-[#20221c] group-hover:bg-[#fff1e6] group-hover:text-[#20221c]'
+    : isSecondary
     ? 'bg-[#20221c] text-white group-hover:bg-white group-hover:text-[#20221c]'
     : 'bg-white text-[#20221c]'
 
@@ -142,7 +148,7 @@ export function HeroButton({
       } transition-transform duration-1000 ease-out pointer-events-none`} />
 
       {/* Label Text with Subtle Forward Glide */}
-      <span className="tracking-tight transition-transform duration-300 group-hover:translate-x-0.5 select-none font-heading font-medium inline-flex items-center gap-1.5 whitespace-nowrap">
+      <span className="tracking-tight transition-transform duration-300 group-hover:translate-x-0.5 select-none font-heading font-medium inline-flex items-center gap-1.5 min-w-0 truncate">
         {label}
       </span>
 

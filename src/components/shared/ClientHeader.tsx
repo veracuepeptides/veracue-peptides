@@ -201,7 +201,7 @@ export function ClientHeader({
 
   return (
     <>
-      <header className="fixed top-2.5 sm:top-4 inset-x-0 z-50 px-2 sm:px-6 md:px-10 w-full mx-auto pointer-events-none transition-transform duration-300">
+      <header className="fixed top-2.5 sm:top-4 inset-x-0 z-50 px-2 sm:px-6 md:px-10 w-full mx-auto pointer-events-none transition-transform duration-300 print:hidden">
         <motion.div
           variants={{
             visible: { y: 0, opacity: 1 },

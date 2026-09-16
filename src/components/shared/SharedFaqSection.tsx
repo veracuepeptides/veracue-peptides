@@ -60,7 +60,7 @@ export function SharedFaqSection({
             {/* ================================================================ */}
             {/* LEFT COLUMN: Pinned / Sticky on Desktop while Scrolling Questions */}
             {/* ================================================================ */}
-            <div className="w-full lg:w-[35%] xl:w-[32%] lg:sticky lg:top-28 xl:top-32 lg:self-start flex flex-col justify-between shrink-0 lg:h-[500px]">
+            <div className="w-full lg:w-[36%] xl:w-[33%] lg:sticky lg:top-28 xl:top-32 lg:self-start flex flex-col shrink-0">
               
               {/* Top Block: Title & Optional Eyebrow / Description */}
               <div>
@@ -72,7 +72,7 @@ export function SharedFaqSection({
                   </div>
                 )}
 
-                <h2 className="font-heading font-black text-4xl sm:text-5xl md:text-[54px] lg:text-[60px] xl:text-[66px] text-[#20221c] leading-[1.0] tracking-tight">
+                <h2 className="font-heading font-black text-3xl sm:text-4xl md:text-[46px] lg:text-[52px] xl:text-[58px] text-[#20221c] leading-[1.05] tracking-tight">
                   {title || (
                     <>
                       Have<br />questions?
@@ -88,7 +88,7 @@ export function SharedFaqSection({
               </div>
 
               {/* Bottom Block (Desktop Sticky): Avatar + Contact Inquiry Prompt + Hero Button */}
-              <div className="hidden lg:block pt-8 mt-auto">
+              <div className="hidden lg:block pt-6 sm:pt-8 mt-6 sm:mt-8 border-t border-[#a5a58d]/25">
                 {/* Support Specialist Avatar */}
                 <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-white/80 shadow-xs mb-3.5 bg-[#eddcd2] shrink-0">
                   <Image

@@ -1,23 +1,35 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
+import React from 'react'
 import { useTranslations } from 'next-intl'
-import { FadeUp } from '@/components/motion/FadeUp'
-import { SharedFaqSection } from '@/components/shared/SharedFaqSection'
+import { LegalPageLayout } from '@/components/legal/LegalPageLayout'
+import {
+  LegalSection,
+  LegalCallout,
+  LegalListItem,
+} from '@/components/legal/LegalSection'
+import { AlertOctagon, ShieldAlert, CheckCircle2 } from 'lucide-react'
 
-const FAQ_KEYS = ['researchUseOnlyMeaning', 'intendedForHumanConsumption', 'isMedicalAdvice', 'whoCanPurchase', 'fdaRegulated', 'selfAdministration', 'misuseResponsibility', 'contactAboutDisclaimer']
+const FAQ_KEYS = [
+  'researchUseOnlyMeaning',
+  'intendedForHumanConsumption',
+  'isMedicalAdvice',
+  'whoCanPurchase',
+  'fdaRegulated',
+  'selfAdministration',
+  'misuseResponsibility',
+  'contactAboutDisclaimer',
+] as const
 
 export default function MedicalDisclaimerPage() {
   const t = useTranslations('legal.medicalDisclaimer')
-  const [activeSection, setActiveSection] = useState('intro')
+
   const faqs = FAQ_KEYS.map((key) => ({
     question: t(`faqs.${key}.question`),
     answer: t(`faqs.${key}.answer`),
   }))
 
   const sections = [
-    { id: 'intro', label: 'Introduction' },
     { id: 'section1', label: t('section1Title') },
     { id: 'section2', label: t('section2Title') },
     { id: 'section3', label: t('section3Title') },
@@ -25,223 +37,87 @@ export default function MedicalDisclaimerPage() {
     { id: 'section5', label: t('section5Title') },
     { id: 'section6', label: t('section6Title') },
     { id: 'section7', label: t('section7Title') },
-    { id: 'contact', label: t('contactTitle') },
-    { id: 'faq', label: t('faqTitle') },
   ]
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        let maxVisible = 0
-        let mostVisibleId = activeSection
-        
-        entries.forEach((entry) => {
-          if (entry.isIntersecting && entry.intersectionRatio > maxVisible) {
-            maxVisible = entry.intersectionRatio
-            mostVisibleId = entry.target.id
-          }
-        })
-        
-        if (maxVisible > 0) {
-          setActiveSection(mostVisibleId)
-        }
-      },
-      { rootMargin: '-10% 0px -80% 0px', threshold: [0, 0.25, 0.5, 0.75, 1] }
-    )
-
-    sections.forEach((section) => {
-      const el = document.getElementById(section.id)
-      if (el) observer.observe(el)
-    })
-
-    return () => observer.disconnect()
-  }, [t, activeSection])
-
-  const scrollTo = (id: string) => {
-    const el = document.getElementById(id)
-    if (el) {
-      const yOffset = -100 
-      const y = el.getBoundingClientRect().top + window.scrollY + yOffset
-      window.scrollTo({ top: y, behavior: 'smooth' })
-    }
-  }
-
   return (
-    <main className="bg-[#fbfcff] min-h-screen text-ink font-sans pb-32">
-      {/* Left-Aligned Header Section */}
-      <div className="relative pt-40 pb-16 px-4 md:px-8 bg-white border-b border-black/5 shadow-sm">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent opacity-60" />
-        <div className="max-w-7xl mx-auto text-left relative z-10 flex flex-col items-start gap-6">
-          <div>
-            <motion.h2 
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="font-mono text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] text-[#1e5661] mb-4"
-            >
-              {t('eyebrow')}
-            </motion.h2>
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.1 }}
-              className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black uppercase tracking-tighter text-black"
-            >
-              {t('titleLine1')} <span className="text-[#84d0d9]">{t('titleLine2')}</span>
-            </motion.h1>
-          </div>
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="flex items-center mt-2"
-          >
-            <span className="font-mono text-[10px] md:text-xs uppercase tracking-[0.2em] text-black/40 font-bold">
-              {t('effectiveDate')}
+    <LegalPageLayout
+      slug="medical-disclaimer"
+      eyebrow={t('eyebrow')}
+      titleLine1={t('titleLine1')}
+      titleLine2={t('titleLine2')}
+      effectiveDate={t('effectiveDate')}
+      intro={t('intro')}
+      introHeading="Critical Research Notice & Regulatory Posture"
+      sections={sections}
+      contactProps={{
+        title: t('contactTitle'),
+        intro: t('contactIntro'),
+        supportLabel: t('supportIssuesLabel'),
+        closingText: t('closingText'),
+        supportEmail: 'support@veracuepeptides.com',
+        ordersEmail: 'orders@veracuepeptides.com',
+      }}
+      faqs={faqs}
+      faqTitle={t('faqTitle')}
+      faqDescription={t('faqDescription')}
+    >
+      {/* 01. Research Use Only */}
+      <LegalSection id="section1" number={1} title={t('section1Title')}>
+        <p>{t('section1Text')}</p>
+        <LegalCallout variant="warning">
+          <div className="flex items-start gap-2.5">
+            <AlertOctagon size={16} className="text-[#cb997e] shrink-0 mt-0.5" />
+            <span>
+              All compounds distributed by Veracue are strictly designated for <strong>in vitro experimentation</strong> and laboratory research purposes only. Under no circumstances are products intended for therapeutic, diagnostic, or clinical administration.
             </span>
-          </motion.div>
-        </div>
-      </div>
-
-      {/* Main Layout Grid */}
-      <div className="max-w-7xl mx-auto px-4 md:px-8 pt-12 md:pt-20 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
-        
-        {/* Left Sidebar (Desktop) */}
-        <div className="hidden lg:block lg:col-span-3 relative">
-          <div data-lenis-prevent className="sticky top-32 flex flex-col gap-2 max-h-[calc(100vh-160px)] overflow-y-auto pb-12 pr-4 custom-scrollbar">
-            <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-black/30 mb-4 px-4">Contents</h3>
-            {sections.map((section, idx) => (
-              <button
-                key={section.id}
-                onClick={() => scrollTo(section.id)}
-                className={`text-left flex items-center justify-between px-4 py-3 rounded-2xl transition-all duration-300 group ${activeSection === section.id ? 'bg-white shadow-md border border-black/5' : 'hover:bg-black/5'}`}
-              >
-                <div className="flex items-center gap-3">
-                  <span className={`text-[10px] font-bold font-mono transition-colors ${activeSection === section.id ? 'text-[#84d0d9]' : 'text-black/30'}`}>
-                    {String(idx).padStart(2, '0')}
-                  </span>
-                  <span className={`text-xs font-bold uppercase tracking-wider transition-colors ${activeSection === section.id ? 'text-[#1e5661]' : 'text-black/60 group-hover:text-black'}`}>
-                    {section.label}
-                  </span>
-                </div>
-              </button>
-            ))}
           </div>
-        </div>
+        </LegalCallout>
+      </LegalSection>
 
-        {/* Right Content */}
-        <div className="lg:col-span-9">
-          <div className="bg-white rounded-[2rem] p-8 md:p-12 lg:p-16 shadow-xl shadow-black/5 border border-black/5 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-[#84d0d9]/10 via-transparent to-transparent pointer-events-none" />
-            
-            <div className="prose prose-lg prose-headings:font-heading prose-headings:font-black prose-headings:tracking-tighter prose-headings:text-black prose-p:text-black/70 prose-p:leading-relaxed prose-li:text-black/70 prose-li:leading-relaxed prose-a:text-[#1e5661] hover:prose-a:text-[#84d0d9] max-w-none relative z-10">
-              
-              <section id="intro" className="mb-20 scroll-mt-32">
-                <p className="text-lg md:text-xl leading-relaxed text-black/80 font-medium font-sans">
-                  {t('intro')}
-                </p>
-              </section>
+      {/* 02. No Medical Advice */}
+      <LegalSection id="section2" number={2} title={t('section2Title')}>
+        <p>{t('section2Text')}</p>
+      </LegalSection>
 
-              <div className="space-y-20">
-                <section id="section1" className="scroll-mt-32">
-                  <h2 className="text-xl md:text-2xl uppercase mb-6 flex items-center gap-4">
-                    <span className="text-black/20 font-mono text-lg font-bold">01.</span> 
-                    {t('section1Title')}
-                  </h2>
-                  <p className="text-[15px] leading-relaxed">{t('section1Text')}</p>
-                </section>
+      {/* 03. Purchaser Responsibility & Compliance */}
+      <LegalSection id="section3" number={3} title={t('section3Title')}>
+        <p>{t('section3Text')}</p>
+      </LegalSection>
 
-                <section id="section2" className="scroll-mt-32">
-                  <h2 className="text-xl md:text-2xl uppercase mb-6 flex items-center gap-4">
-                    <span className="text-black/20 font-mono text-lg font-bold">02.</span> 
-                    {t('section2Title')}
-                  </h2>
-                  <p className="text-[15px] leading-relaxed">{t('section2Text')}</p>
-                </section>
+      {/* 04. Restricted Uses */}
+      <LegalSection id="section4" number={4} title={t('section4Title')}>
+        <p>{t('section4Intro')}</p>
+        <ul className="space-y-3 pt-2">
+          <LegalListItem>{t('section4Item1')}</LegalListItem>
+          <LegalListItem>{t('section4Item2')}</LegalListItem>
+          <LegalListItem>{t('section4Item3')}</LegalListItem>
+          <LegalListItem>{t('section4Item4')}</LegalListItem>
+        </ul>
+      </LegalSection>
 
-                <section id="section3" className="scroll-mt-32">
-                  <h2 className="text-xl md:text-2xl uppercase mb-6 flex items-center gap-4">
-                    <span className="text-black/20 font-mono text-lg font-bold">03.</span> 
-                    {t('section3Title')}
-                  </h2>
-                  <p className="text-[15px] leading-relaxed">{t('section3Text')}</p>
-                </section>
-
-                <section id="section4" className="scroll-mt-32">
-                  <h2 className="text-xl md:text-2xl uppercase mb-6 flex items-center gap-4">
-                    <span className="text-black/20 font-mono text-lg font-bold">04.</span> 
-                    {t('section4Title')}
-                  </h2>
-                  <p className="text-[15px] leading-relaxed">{t('section4Intro')}</p>
-                  <ul className="list-disc pl-5 space-y-2 mt-4 text-[15px] marker:text-[#1e5661]">
-                    <li>{t('section4Item1')}</li>
-                    <li>{t('section4Item2')}</li>
-                    <li>{t('section4Item3')}</li>
-                    <li>{t('section4Item4')}</li>
-                  </ul>
-                </section>
-
-                <section id="section5" className="scroll-mt-32">
-                  <h2 className="text-xl md:text-2xl uppercase mb-6 flex items-center gap-4">
-                    <span className="text-black/20 font-mono text-lg font-bold">05.</span>
-                    {t('section5Title')}
-                  </h2>
-                  <p className="text-[15px] leading-relaxed">{t('section5Text')}</p>
-                </section>
-
-                <section id="section6" className="scroll-mt-32">
-                  <h2 className="text-xl md:text-2xl uppercase mb-6 flex items-center gap-4">
-                    <span className="text-black/20 font-mono text-lg font-bold">06.</span>
-                    {t('section6Title')}
-                  </h2>
-                  <p className="text-[15px] leading-relaxed">{t('section6Text')}</p>
-                </section>
-
-                <section id="section7" className="scroll-mt-32">
-                  <h2 className="text-xl md:text-2xl uppercase mb-6 flex items-center gap-4">
-                    <span className="text-black/20 font-mono text-lg font-bold">07.</span>
-                    {t('section7Title')}
-                  </h2>
-                  <p className="text-[15px] leading-relaxed">{t('section7Text')}</p>
-                </section>
-
-                {/* Contact Section */}
-                <section id="contact" className="scroll-mt-32 mt-12 pt-12 border-t border-black/10">
-                  <h2 className="text-xl md:text-2xl uppercase mb-4 font-black font-heading tracking-tighter text-black">
-                    {t('contactTitle')}
-                  </h2>
-                  <p className="mb-8 text-black/70 text-[15px]">
-                    {t('contactIntro')}
-                  </p>
-                  
-                  <div className="flex flex-col gap-6">
-
-                    <div>
-                      <span className="font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-black/40 block mb-1">{t('supportIssuesLabel')}</span>
-                      <a href="mailto:support@helixbiochem.com" className="text-base font-medium text-black hover:text-[#1e5661] transition-colors">support@helixbiochem.com</a>
-                    </div>
-
-                  </div>
-                  
-                  <div className="mt-12 pt-8 border-t border-black/5">
-                    <p className="text-black/70 font-medium leading-relaxed italic text-[15px]">
-                      {t('closingText')}
-                    </p>
-                  </div>
-                </section>
-              </div>
-            </div>
+      {/* 05. FDA & Regulatory Status */}
+      <LegalSection id="section5" number={5} title={t('section5Title')}>
+        <p>{t('section5Text')}</p>
+        <div className="bg-[#f0efeb]/70 rounded-2xl p-4 sm:p-5 border border-[#eddcd2] mt-3">
+          <div className="flex items-center gap-2 mb-1.5 text-xs font-mono font-bold uppercase tracking-wider text-[#a5a58d]">
+            <CheckCircle2 size={14} className="text-[#cb997e]" />
+            <span>Analytical Purity &amp; Identity Documentation</span>
           </div>
+          <p className="text-xs sm:text-[13px] text-[#20221c]/75 leading-relaxed">
+            Every batch distributed by Veracue is accompanied by public, third-party HPLC and MS analytical reports. These certificates confirm identity and purity, but do not imply or constitute regulatory authorization for human or veterinary use.
+          </p>
         </div>
-      </div>
+      </LegalSection>
 
-      <div id="faq" className="scroll-mt-32">
-        <SharedFaqSection
-          title={t('faqTitle')}
-          description={t('faqDescription')}
-          faqs={faqs}
-        />
-      </div>
-    </main>
+      {/* 06. Safe Handling & Biosafety */}
+      <LegalSection id="section6" number={6} title={t('section6Title')}>
+        <p>{t('section6Text')}</p>
+      </LegalSection>
+
+      {/* 07. Indemnification & Limitation of Liability */}
+      <LegalSection id="section7" number={7} title={t('section7Title')}>
+        <p>{t('section7Text')}</p>
+      </LegalSection>
+    </LegalPageLayout>
   )
 }

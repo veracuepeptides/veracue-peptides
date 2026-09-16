@@ -14,6 +14,59 @@ export async function generateMetadata(): Promise<Metadata> {
   }
 }
 
+// Sample order shown at /order-confirmation/preview so the page's design can be checked without
+// placing a real order. Pulls the live NAD+ product for a real image/price where possible, and
+// never touches the cart, order counter, or analytics (OrderConfirmationClient skips those side
+// effects when orderId === 'preview'). Dev-only — production requests 404.
+async function buildPreviewOrder(payload: Awaited<ReturnType<typeof getPayload>>, t: Awaited<ReturnType<typeof getTranslations>>) {
+  let name = 'NAD+ (Nicotinamide Adenine Dinucleotide)'
+  let variant = '10mg'
+  let price = 19
+  let image = '/veracue-images/vp-product-vial.jpeg'
+
+  try {
+    const res = await payload.find({ collection: 'products', where: { slug: { equals: 'nad-plus' } }, depth: 2, limit: 1 })
+    const product: any = res?.docs?.[0]
+    if (product) {
+      name = product.title || product.name || name
+      const firstVariant = product.variants?.[0]
+      price = firstVariant?.price ?? product.price ?? product.basePrice ?? price
+      variant = firstVariant?.title || firstVariant?.options?.map((o: any) => o.value).join(' ') || variant
+      image = (
+        firstVariant?.images?.[0]?.image?.url ||
+        firstVariant?.images?.[0]?.url ||
+        product.images?.[0]?.image?.url ||
+        product.images?.[0]?.url ||
+        image
+      ).replace(/ /g, '%20')
+    }
+  } catch (e) {
+    console.error('Preview order: failed to load sample product', e)
+  }
+
+  const processingFee = 0.95
+
+  return {
+    id: '1000',
+    orderId: 'preview',
+    customerName: 'Alex Morgan',
+    email: 'alex.morgan@email.com',
+    shippingAddress: { line1: '221B Baker Street', city: 'Boston', state: 'MA', postalCode: '02118', country: 'US' },
+    billingAddress: { line1: '221B Baker Street', city: 'Boston', state: 'MA', postalCode: '02118', country: 'US' },
+    estimatedDeliveryType: 'standard' as const,
+    items: [{ id: 'preview-item-1', name, variant, quantity: 1, price, image }],
+    subtotal: price,
+    shipping: 0,
+    processingFee,
+    processingFeePercentage: null,
+    total: price + processingFee,
+    discountTotal: 0,
+    redeemedPoints: 0,
+    couponCode: '',
+    paymentMethod: 'stripe' as const,
+  }
+}
+
 export default async function OrderConfirmationPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
   const t = await getTranslations('orderConfirmation')
@@ -22,12 +75,23 @@ export default async function OrderConfirmationPage({ params }: { params: Promis
     return notFound()
   }
 
+  const payload = await getPayload({ config: configPromise })
+
+  if (id === 'preview') {
+    if (process.env.NODE_ENV === 'production') {
+      return notFound()
+    }
+    return (
+      <div className="pt-20">
+        <OrderConfirmationClient order={await buildPreviewOrder(payload, t)} />
+      </div>
+    )
+  }
+
   const { cookies } = await import('next/headers')
   const cookieStore = await cookies()
   const isCookieAuthorized = cookieStore.get(`order_auth_${id}`)?.value === 'true'
 
-  const payload = await getPayload({ config: configPromise })
-  
   let order;
   try {
      const numericId = parseInt(id, 10)

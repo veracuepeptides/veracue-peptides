@@ -29,6 +29,11 @@
   .font-mono {
     font-family: 'Plus Jakarta Sans', 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
   }
+  .font-price {
+    font-family: 'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    font-feature-settings: 'tnum' 1, 'cv05' 1;
+    font-variant-numeric: tabular-nums;
+  }
 }
 
 /* Custom global styles */
@@ -71,6 +76,85 @@ html {
 
   .animate-vibrate {
     animation: vibrate 0.08s linear infinite;
+  }
+
+  /* Tiled error-code background (404/500 pages): a still grid of big, low-
+     opacity digits. Every row takes one quick step scroll horizontally —
+     odd rows one way, even rows the other (a brick/weave alternation) —
+     then ~1s later every column takes one quick step scroll vertically,
+     odd columns one way, even columns the other. Repeats in a loop. Each
+     step moves exactly one tile, so — since the tile repeats — it loops
+     back to the same visual position seamlessly (no reset jump visible).
+     `translate` (row axis) and `transform` (column axis) are separate CSS
+     properties that compose, so every cell can carry both steps at once. */
+  @keyframes error-tile-row-right {
+    0%, 25% { translate: 0 0; }
+    37.5%, 100% { translate: var(--tile-w) 0; }
+  }
+
+  @keyframes error-tile-row-left {
+    0%, 25% { translate: 0 0; }
+    37.5%, 100% { translate: calc(var(--tile-w) * -1) 0; }
+  }
+
+  @keyframes error-tile-col-down {
+    0%, 12.5% { transform: translateY(0); }
+    25%, 100% { transform: translateY(var(--tile-h)); }
+  }
+
+  @keyframes error-tile-col-up {
+    0%, 12.5% { transform: translateY(0); }
+    25%, 100% { transform: translateY(calc(var(--tile-h) * -1)); }
+  }
+
+  /* A cell needs its row-axis and column-axis animation running at once.
+     Two classes each setting the `animation` shorthand would collide (the
+     later rule wins outright and drops the other's animation-name), so
+     each row/column combination gets one class listing both animations
+     together via the comma-separated longhand form. */
+  .error-tile-rd {
+    translate: 0 0;
+    animation-name: error-tile-row-right, error-tile-col-down;
+    animation-duration: 8s, 8s;
+    animation-timing-function: linear, linear;
+    animation-iteration-count: infinite, infinite;
+    animation-delay: 0s, 4s;
+  }
+
+  .error-tile-ru {
+    translate: 0 0;
+    animation-name: error-tile-row-right, error-tile-col-up;
+    animation-duration: 8s, 8s;
+    animation-timing-function: linear, linear;
+    animation-iteration-count: infinite, infinite;
+    animation-delay: 0s, 4s;
+  }
+
+  .error-tile-ld {
+    translate: 0 0;
+    animation-name: error-tile-row-left, error-tile-col-down;
+    animation-duration: 8s, 8s;
+    animation-timing-function: linear, linear;
+    animation-iteration-count: infinite, infinite;
+    animation-delay: 0s, 4s;
+  }
+
+  .error-tile-lu {
+    translate: 0 0;
+    animation-name: error-tile-row-left, error-tile-col-up;
+    animation-duration: 8s, 8s;
+    animation-timing-function: linear, linear;
+    animation-iteration-count: infinite, infinite;
+    animation-delay: 0s, 4s;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .error-tile-rd,
+    .error-tile-ru,
+    .error-tile-ld,
+    .error-tile-lu {
+      animation: none;
+    }
   }
 
   /* Hide scrollbar */

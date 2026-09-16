@@ -65,7 +65,7 @@ export default async function FrontendLayout({ children }: { children: React.Rea
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://pub-0b0f2f98407442588d161ae09cb84207.r2.dev" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Sora:wght@100..800&family=Syne:wght@500;600;700;800&family=Tenor+Sans&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Space+Grotesk:wght@300..700&family=Big+Shoulders+Display:wght@100..900&family=Alex+Brush&family=Pinyon+Script&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Sora:wght@100..800&family=Syne:wght@500;600;700;800&family=Tenor+Sans&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Space+Grotesk:wght@300..700&family=Big+Shoulders+Display:wght@100..900&family=Alex+Brush&family=Pinyon+Script&display=swap"
           rel="stylesheet"
         />
         <link 
@@ -101,7 +101,7 @@ export default async function FrontendLayout({ children }: { children: React.Rea
       <body className="min-h-screen antialiased" suppressHydrationWarning>
         <AuthSessionProvider>
           <NextIntlClientProvider messages={messages}>
-            <div className="min-h-screen bg-cream text-ink font-sans antialiased print:bg-white print:min-h-0">
+            <div className="min-h-screen bg-[#f0efeb] text-[#20221c] font-sans antialiased print:bg-white print:min-h-0">
               <AgeGate />
               <React.Suspense fallback={null}>
                 <GlobalNavigationSpinner />

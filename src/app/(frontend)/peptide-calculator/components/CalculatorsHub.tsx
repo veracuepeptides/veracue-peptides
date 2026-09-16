@@ -24,59 +24,56 @@ export function CalculatorsHub() {
   ];
 
   return (
-    <div className="w-full flex flex-col items-center pt-20 lg:pt-32 pb-16 lg:pb-24 relative z-10 px-4 sm:px-6">
+    <div className="w-full flex flex-col items-center pt-8 sm:pt-12 pb-16 sm:pb-24 relative z-10 font-sans">
       
-      <FadeUp className="w-full max-w-5xl mx-auto mb-10 lg:mb-16 flex justify-center">
-        {/* Navigation Tabs - Floating Island Design */}
-        <div className="inline-flex flex-wrap items-center justify-center gap-1 sm:gap-2 p-2 sm:p-3 bg-white/90 backdrop-blur-3xl rounded-2xl border border-black/5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] relative group transition-all duration-700 hover:shadow-xl hover:border-black/10 z-20">
+      <FadeUp className="w-full max-w-5xl mx-auto mb-8 sm:mb-12 flex justify-center px-3 sm:px-6">
+        {/* Navigation Tabs - Olive Green & Clean White Design */}
+        <div className="inline-flex flex-wrap items-center justify-center gap-1 sm:gap-2 p-1.5 sm:p-2 bg-white rounded-2xl border border-[#b7b7a4]/60 shadow-[0_4px_20px_rgba(0,0,0,0.04)] relative group z-20">
           
-          {/* Subtle inner glow */}
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-primary/5 rounded-2xl pointer-events-none" />
-
           {TABS.map(tab => {
             const isActive = activeTab === tab.id;
             return (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`relative flex items-center gap-2 sm:gap-3 px-4 py-3 sm:px-6 sm:py-3.5 rounded-xl text-xs sm:text-sm font-bold transition-all duration-500 ${
-                  isActive ? 'text-white shadow-sm' : 'text-ink/50 hover:text-ink hover:bg-black/5 hover:scale-105'
+                className={`relative flex items-center gap-2 sm:gap-2.5 px-3.5 py-2.5 sm:px-5 sm:py-3 rounded-xl text-xs sm:text-[13.5px] font-sans font-bold transition-all duration-300 cursor-pointer ${
+                  isActive ? 'text-white' : 'text-neutral-700 hover:text-neutral-950 hover:bg-[#a5a58d]/15'
                 }`}
               >
                 {isActive && (
                   <motion.div
                     layoutId="activeTabBg"
-                    className="absolute inset-0 bg-ink rounded-xl -z-10 shadow-lg"
-                    transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                    className="absolute inset-0 bg-[#a5a58d] rounded-xl -z-10 shadow-sm"
+                    transition={{ type: "spring", stiffness: 450, damping: 32 }}
                   />
                 )}
                 
-                {/* Icon Container with pop effect */}
-                <div className={`relative z-10 shrink-0 flex items-center justify-center transition-all duration-500 ${isActive ? 'scale-110 text-white' : ''}`}>
+                {/* Icon Container with subtle pop */}
+                <div className={`relative z-10 shrink-0 flex items-center justify-center transition-transform duration-300 ${isActive ? 'scale-110 text-white' : 'text-[#a5a58d]'}`}>
                   {tab.icon}
                 </div>
                 
                 {/* Label with slide effect */}
-                <span className={`relative z-10 hidden md:inline-block transition-transform duration-500 ${isActive ? 'translate-x-1' : ''}`}>
+                <span className={`relative z-10 hidden sm:inline-block transition-transform duration-300 ${isActive ? 'translate-x-0.5' : ''}`}>
                   {tab.label}
                 </span>
                 
                 {/* Active dot indicator for mobile instead of full text */}
-                {isActive && <div className="md:hidden w-1.5 h-1.5 rounded-full bg-white animate-pulse" />}
+                {isActive && <div className="sm:hidden w-1.5 h-1.5 rounded-full bg-white animate-pulse" />}
                 
                 {/* Mobile Animated Bubble Popup */}
                 <AnimatePresence>
                   {isActive && (
-                    <div className="absolute -top-12 left-1/2 -translate-x-1/2 z-50 md:hidden pointer-events-none">
+                    <div className="absolute -top-10 left-1/2 -translate-x-1/2 z-50 sm:hidden pointer-events-none">
                       <motion.div
-                        initial={{ opacity: 0, y: 10, scale: 0.8 }}
+                        initial={{ opacity: 0, y: 8, scale: 0.85 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
-                        exit={{ opacity: 0, y: 5, scale: 0.9 }}
+                        exit={{ opacity: 0, y: 4, scale: 0.9 }}
                         transition={{ type: "spring", stiffness: 500, damping: 25 }}
-                        className="bg-ink text-white px-4 py-2 rounded-xl text-xs font-bold shadow-xl whitespace-nowrap flex items-center justify-center relative"
+                        className="bg-[#a5a58d] text-white border border-[#b7b7a4]/50 px-3 py-1.5 rounded-xl text-[11px] font-bold shadow-lg whitespace-nowrap flex items-center justify-center relative"
                       >
                         {tab.label}
-                        <div className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-3 h-3 bg-ink rotate-45" />
+                        <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-[#a5a58d] rotate-45 border-r border-b border-[#b7b7a4]/50" />
                       </motion.div>
                     </div>
                   )}
@@ -87,16 +84,16 @@ export function CalculatorsHub() {
         </div>
       </FadeUp>
 
-      {/* Calculator Content Area */}
-      <div className="w-full max-w-[1400px] mx-auto min-h-[600px] relative">
+      {/* Calculator Content Area - Full Width matching Header */}
+      <div className="w-full mx-auto min-h-[520px] relative px-3 sm:px-6 md:px-10">
         <AnimatePresence mode="wait">
           {activeTab === 'reconstitution' && (
             <motion.div
               key="reconstitution"
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.3 }}
+              exit={{ opacity: 0, y: -16 }}
+              transition={{ duration: 0.25 }}
             >
               <PeptideReconstitution />
             </motion.div>
@@ -104,10 +101,10 @@ export function CalculatorsHub() {
           {activeTab === 'bmi' && (
             <motion.div
               key="bmi"
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.3 }}
+              exit={{ opacity: 0, y: -16 }}
+              transition={{ duration: 0.25 }}
             >
               <BmiBmrCalculator />
             </motion.div>
@@ -115,10 +112,10 @@ export function CalculatorsHub() {
           {activeTab === 'unit' && (
             <motion.div
               key="unit"
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.3 }}
+              exit={{ opacity: 0, y: -16 }}
+              transition={{ duration: 0.25 }}
             >
               <UnitConverter />
             </motion.div>
@@ -126,10 +123,10 @@ export function CalculatorsHub() {
           {activeTab === 'creatinine' && (
             <motion.div
               key="creatinine"
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.3 }}
+              exit={{ opacity: 0, y: -16 }}
+              transition={{ duration: 0.25 }}
             >
               <CreatinineClearance />
             </motion.div>

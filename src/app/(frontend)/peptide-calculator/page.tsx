@@ -46,7 +46,7 @@ export default async function Page({
 }) {
   const locale = 'en'
   const t = await getTranslations('calculator.page')
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
   const path = true ? `/${slug}` : `/${locale}/${slug}`
   const url = `${baseUrl}${path}`
 
@@ -96,7 +96,7 @@ export default async function Page({
     },
     "creator": {
       "@type": "Organization",
-      "name": "Helix Bio"
+      "name": "Veracue"
     }
   }
 
@@ -134,12 +134,12 @@ export default async function Page({
         '@type': 'WebSite',
         '@id': `${baseUrl}/#website`,
         url: baseUrl,
-        name: 'Helix Bio',
+        name: 'Veracue',
       },
       {
         '@type': 'Organization',
         '@id': `${baseUrl}/#organization`,
-        name: 'Helix Bio',
+        name: 'Veracue',
         url: baseUrl,
       },
     ],
