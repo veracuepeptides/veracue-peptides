@@ -33,7 +33,7 @@ export function TrustBadges() {
       tag: 'USA VERIFIED',
       eyebrow: 'Pure Chromatography',
       title: '99.1%+ Verified Purity',
-      description: 'Every batch undergoes rigorous High-Performance Liquid Chromatography (RP-HPLC) analysis to guarantee a single symmetrical peak.',
+      description: 'RP-HPLC analysis runs on every batch, and a single symmetrical peak on the chromatogram is what confirms a clean synthesis.',
       spec: 'RP-HPLC Confirmed',
       icon: CheckCircle2,
       iconColor: 'text-[#cb997e]',
@@ -57,7 +57,7 @@ export function TrustBadges() {
       tag: 'PRECISION DOSED',
       eyebrow: 'Mass Precision',
       title: 'Exact Milligram Dosing',
-      description: 'Quantitative thresholds verified via Electrospray Ionization Mass Spectrometry (ESI-MS), guaranteeing absolute molar accuracy.',
+      description: 'ESI-MS confirms exact molar concentration for every batch, keeping reconstitution math accurate down to the microgram.',
       spec: '±0.5 Da • Zero Isomers',
       icon: Activity,
       iconColor: 'text-[#cb997e]',
@@ -144,14 +144,14 @@ export function TrustBadges() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-6 sm:mb-10 md:mb-12 gap-6 md:gap-10">
           <div className="max-w-2xl">
             {/* Eyebrow Pill */}
-            <div className="inline-block border border-[#eddcd2] rounded-full px-4 py-1.5 mb-4 sm:mb-5 bg-white shadow-2xs">
-              <span className="text-[#a5a58d] text-xs font-bold tracking-[0.2em] uppercase font-editorial">
+            <div className="inline-block border border-[#eddcd2] rounded-full max-w-full px-3 sm:px-4 py-1.5 mb-4 sm:mb-5 bg-white shadow-2xs">
+              <span className="text-[#a5a58d] text-[9px] xs:text-[9.5px] sm:text-xs font-bold tracking-[0.02em] xs:tracking-[0.06em] sm:tracking-[0.2em] uppercase font-editorial whitespace-nowrap">
                 {t('eyebrow')}
               </span>
             </div>
 
             {/* Main Heading with Trademark ® Symbol Matching Reference Design */}
-            <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-[#20221c] leading-[0.95] tracking-tight uppercase">
+            <h2 className="font-heading text-3xl/[1.1] sm:text-4xl/[1.08] md:text-5xl/[1.05] lg:text-7xl/[1.02] font-black text-[#20221c] leading-[1.1] sm:leading-[1.08] md:leading-[1.05] lg:leading-[1.02] tracking-tight uppercase">
               {t('titleLine1')}{' '}
               <br className="hidden sm:inline" />
               {t('titleLine2')}

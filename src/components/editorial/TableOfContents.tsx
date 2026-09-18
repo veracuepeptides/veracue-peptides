@@ -85,8 +85,8 @@ export function TableOfContents() {
           data-lenis-prevent
           className="max-h-[calc(100vh-220px)] overflow-y-auto toc-scrollbar pr-4 pb-6"
         >
-          <h4 className="text-label-md text-gold uppercase tracking-wider mb-6">In This Article</h4>
-          <nav className="space-y-4 border-l border-ink/10 pl-4">
+          <h4 className="text-label-md text-[#a5732f] uppercase tracking-wider mb-6">In This Article</h4>
+          <nav className="space-y-4 border-l border-[#eddcd2] pl-4">
             {headings.map((heading) => (
               <a
                 key={heading.id}
@@ -96,8 +96,8 @@ export function TableOfContents() {
                   heading.level === 3 ? 'ml-4' : ''
                 } ${
                   activeId === heading.id
-                    ? 'text-ink font-medium before:content-[""] before:absolute before:-left-[17px] before:top-0 before:bottom-0 before:w-[2px] before:bg-gold'
-                    : 'text-ink-muted hover:text-ink'
+                    ? 'text-[#20221c] font-medium before:content-[""] before:absolute before:-left-[17px] before:top-0 before:bottom-0 before:w-[2px] before:bg-[#cb997e]'
+                    : 'text-[#525b4c] hover:text-[#20221c]'
                 }`}
               >
                 {heading.text}
@@ -106,7 +106,7 @@ export function TableOfContents() {
           </nav>
         </div>
         {/* Purely decorative veil over the scroll edge — sits on top of the box, doesn't consume its scrollable height */}
-        <div className="absolute bottom-0 left-0 right-4 h-10 bg-gradient-to-t from-[#FAFAFA] to-transparent pointer-events-none" />
+        <div className="absolute bottom-0 left-0 right-4 h-10 bg-gradient-to-t from-[#f0efeb] to-transparent pointer-events-none" />
       </div>
     </div>
   )

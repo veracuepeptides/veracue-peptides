@@ -151,15 +151,15 @@ export function HomePreloaderWrapper({ children }: { children: React.ReactNode }
 
              {/* Premium Orbital Dots Animation */}
              <div ref={dotsRef} className="relative w-16 h-16 flex items-center justify-center">
-               <div className="absolute w-2.5 h-2.5 rounded-full bg-[#92DCE5] shadow-[0_0_10px_rgba(146,220,229,0.5)]"></div>
-               <div className="absolute w-2.5 h-2.5 rounded-full bg-[#92DCE5] shadow-[0_0_10px_rgba(146,220,229,0.5)]"></div>
-               <div className="absolute w-2.5 h-2.5 rounded-full bg-[#92DCE5] shadow-[0_0_10px_rgba(146,220,229,0.5)]"></div>
+               <div className="absolute w-2.5 h-2.5 rounded-full bg-[#a5a58d] shadow-[0_0_10px_rgba(165,165,141,0.5)]"></div>
+               <div className="absolute w-2.5 h-2.5 rounded-full bg-[#a5a58d] shadow-[0_0_10px_rgba(165,165,141,0.5)]"></div>
+               <div className="absolute w-2.5 h-2.5 rounded-full bg-[#a5a58d] shadow-[0_0_10px_rgba(165,165,141,0.5)]"></div>
              </div>
 
              {/* Branding */}
              <div ref={brandRef} className="flex flex-col items-center opacity-0 px-6 max-w-[90vw]">
                 <div className="text-2xl sm:text-3xl md:text-4xl font-heading tracking-[0.15em] text-white font-medium text-center drop-shadow-sm">
-                  HELIX BIO
+                  VERACUE
                 </div>
                 <p className="text-white/40 text-[9px] sm:text-[10px] md:text-xs tracking-[0.3em] font-sans uppercase text-center mt-3">
                   Clinical Research Synthesis

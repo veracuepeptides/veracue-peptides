@@ -177,8 +177,8 @@ export function BestSellerSection({ products = [] }: { products?: any[] }) {
         {/* Header Split */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-8 sm:mb-12 md:mb-14 gap-5 sm:gap-6">
           <div className="max-w-2xl">
-            <div className="inline-block border border-[#eddcd2] rounded-full px-4 py-1.5 mb-4 sm:mb-5 bg-white shadow-sm">
-              <span className="text-[#a5a58d] text-xs font-bold tracking-[0.2em] uppercase font-editorial">{t('eyebrow')}</span>
+            <div className="inline-block border border-[#eddcd2] rounded-full max-w-full px-3 sm:px-4 py-1.5 mb-4 sm:mb-5 bg-white shadow-sm">
+              <span className="text-[#a5a58d] text-[9px] xs:text-[9.5px] sm:text-xs font-bold tracking-[0.02em] xs:tracking-[0.06em] sm:tracking-[0.2em] uppercase font-editorial whitespace-nowrap">{t('eyebrow')}</span>
             </div>
             <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-neutral-900 leading-[1.08] tracking-tight uppercase">
               {t('title')}

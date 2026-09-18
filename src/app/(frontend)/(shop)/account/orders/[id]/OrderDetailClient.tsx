@@ -3,15 +3,13 @@
 import React from 'react'
 import Image from 'next/image'
 import { Link } from '@/i18n/navigation'
-import { ArrowLeft, Package, RotateCcw, MapPin, CreditCard, Truck } from 'lucide-react'
-import { Space_Grotesk } from 'next/font/google'
+import { ArrowLeft, Package, MapPin, CreditCard, Truck } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { useCartStore } from '@/lib/cart/store'
 import { useRouter } from 'next/navigation'
-import { useTranslations, useLocale } from 'next-intl'
+import { useTranslations } from 'next-intl'
 import { getMappedStatus, type DisplayOrderStatus } from '@/lib/orders/statusLabel'
-
-const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], weight: ['300', '400', '500', '700'] })
+import { HeroButton } from '@/components/ui/hero-button'
 
 type OrderStatus = DisplayOrderStatus
 const STATUS_STEPS: OrderStatus[] = ['Placed', 'Processing', 'Shipped', 'Delivered']
@@ -22,7 +20,6 @@ export interface OrderDetailProps {
 
 export function OrderDetailClient({ order }: OrderDetailProps) {
   const t = useTranslations('account.orderDetail')
-  const locale = useLocale()
   const router = useRouter()
   const addItem = useCartStore(state => state.addItem)
   const openCart = useCartStore(state => state.openCart)
@@ -61,8 +58,8 @@ export function OrderDetailClient({ order }: OrderDetailProps) {
   }
 
   const currentStepIndex = STATUS_STEPS.indexOf(getMappedStatus(order.status))
-  
-  const formattedDate = new Intl.DateTimeFormat(false ? 'es-US' : 'en-US', {
+
+  const formattedDate = new Intl.DateTimeFormat('en-US', {
     month: 'long',
     day: 'numeric',
     year: 'numeric'
@@ -74,52 +71,55 @@ export function OrderDetailClient({ order }: OrderDetailProps) {
   const total = order.total || 0
 
   return (
-    <motion.div 
-      initial={{ opacity: 0, y: 20 }}
+    <motion.div
+      initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-      className="flex flex-col max-w-5xl"
+      transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+      className="flex flex-col w-full font-sans max-w-5xl"
     >
-      
-      {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-10 border-b border-gray-200 pb-6">
-        <div className="flex flex-col gap-2">
-          <Link href="/account/orders" className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.15em] text-gray-400 hover:text-black transition-colors mb-4 w-fit bg-gray-50 px-4 py-2 rounded-full">
-            <ArrowLeft size={14} />
-            {t('backToOrders')}
-          </Link>
-          <h1 className={`text-4xl text-black font-bold tracking-tighter ${spaceGrotesk.className}`}>
-            {t('orderTitle', { orderNumber: order.orderNumber })}
-          </h1>
-          <p className="text-sm text-gray-500">{t('placedOn', { date: formattedDate })}</p>
-        </div>
 
-        <div className="flex items-center gap-3">
-          <button
-            onClick={handleReorder}
-            className="flex items-center justify-center gap-2 bg-black hover:bg-gray-800 text-white rounded-full px-6 py-3.5 text-[11px] font-bold uppercase tracking-[0.1em] transition-all shadow-lg"
-          >
-            <Package size={14} />
+      {/* Header */}
+      <div className="flex flex-col gap-5 pb-3 mb-6 sm:mb-8 border-b border-[#dce0d6]/70">
+        <Link
+          href="/account/orders"
+          className="flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-[0.1em] text-[#525b4c] hover:text-[#1a1f16] transition-colors w-fit bg-white border border-[#dce0d6] px-3.5 py-1.5 rounded-full shadow-2xs"
+        >
+          <ArrowLeft size={12} />
+          {t('backToOrders')}
+        </Link>
+
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-5">
+          <div className="flex flex-col gap-1">
+            <span className="text-[11px] font-mono font-bold tracking-[0.18em] uppercase text-[#a5a58d]">
+              {t('orderDetailEyebrow', { fallback: 'Order Detail' })}
+            </span>
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-[#1a1f16] tracking-tight">
+              {t('orderTitle', { orderNumber: order.orderNumber })}
+            </h1>
+            <p className="text-sm text-[#525b4c] font-light">{t('placedOn', { date: formattedDate })}</p>
+          </div>
+
+          <HeroButton onClick={handleReorder} size="sm" icon={<Package size={14} />}>
             {t('reorderAll')}
-          </button>
+          </HeroButton>
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-8 items-start">
-        
+      <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 items-start">
+
         {/* Left Column: Items and Timeline */}
-        <div className="flex flex-col gap-8 flex-1 w-full">
-          
+        <div className="flex flex-col gap-6 sm:gap-8 flex-1 w-full min-w-0">
+
           {/* Tracking Timeline */}
-          <div className="bg-white border border-gray-100 p-4 sm:p-8 rounded-3xl shadow-sm overflow-hidden">
-            <h2 className="text-xs font-bold uppercase tracking-[0.15em] text-black mb-8 border-b border-gray-100 pb-4">{t('trackingStatus')}</h2>
+          <div className="bg-white border border-[#dce0d6] p-4 sm:p-8 rounded-[22px] sm:rounded-3xl shadow-[0_1px_4px_rgba(40,49,33,0.02)] overflow-hidden">
+            <h2 className="text-xs font-bold uppercase tracking-[0.15em] text-[#1a1f16] mb-8 border-b border-[#dce0d6]/70 pb-4">{t('trackingStatus')}</h2>
             <div className="relative flex justify-between px-1 sm:px-4">
               {/* Connecting Line (Background) */}
-              <div className="absolute top-3 sm:top-4 left-4 right-4 h-[2px] bg-gray-100 -z-10 rounded-full" />
+              <div className="absolute top-3 sm:top-4 left-4 right-4 h-[2px] bg-[#dce0d6] -z-10 rounded-full" />
 
               {/* Connecting Line (Progress) */}
               <div
-                className="absolute top-3 sm:top-4 left-4 h-[2px] bg-black -z-10 transition-all duration-1000 ease-out rounded-full"
+                className="absolute top-3 sm:top-4 left-4 h-[2px] bg-[#2c3327] -z-10 transition-all duration-1000 ease-out rounded-full"
                 style={{ width: `calc(${(Math.max(currentStepIndex, 0) / (STATUS_STEPS.length - 1)) * 100}% - 2rem)` }}
               />
 
@@ -129,15 +129,15 @@ export function OrderDetailClient({ order }: OrderDetailProps) {
 
                 return (
                   <div key={step} className="flex flex-col items-center gap-2 sm:gap-3 bg-white px-0.5 sm:px-2">
-                    <div className={`w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center transition-all duration-500 shadow-sm ${
-                      isCompleted ? 'bg-black text-white border-none' : 'bg-white border-2 border-gray-100 text-gray-300'
+                    <div className={`w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center transition-all duration-500 shadow-xs ${
+                      isCompleted ? 'bg-[#2c3327] text-white border-none' : 'bg-white border-2 border-[#dce0d6] text-[#a5a58d]'
                     }`}>
                       {isCompleted && (
                         <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-white rounded-full" />
                       )}
                     </div>
                     <span className={`text-[7px] sm:text-[10px] font-bold uppercase tracking-[0.05em] sm:tracking-[0.1em] text-center whitespace-nowrap ${
-                      isCurrent ? 'text-black' : isCompleted ? 'text-gray-500' : 'text-gray-300'
+                      isCurrent ? 'text-[#1a1f16]' : isCompleted ? 'text-[#525b4c]' : 'text-[#a5a58d]'
                     }`}>
                       {STATUS_LABELS[step]}
                     </span>
@@ -147,7 +147,7 @@ export function OrderDetailClient({ order }: OrderDetailProps) {
             </div>
 
             {order.status === 'cancelled' && (
-              <div className="mt-8 bg-red-50 text-red-600 p-4 rounded-xl text-sm font-medium border border-red-100 flex items-center gap-2">
+              <div className="mt-8 bg-rose-500/10 text-rose-700 p-4 rounded-xl text-sm font-medium border border-rose-200 flex items-center gap-2">
                 {t('orderCancelled')}
               </div>
             )}
@@ -155,35 +155,35 @@ export function OrderDetailClient({ order }: OrderDetailProps) {
 
           {/* Tracking Link Container */}
           {order.trackingLink ? (
-            <div className="bg-[#ECFDF5] border border-[#10B981]/20 p-6 md:p-8 rounded-3xl shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <div className="bg-[#edf0e8] border border-[#a5a58d]/40 p-6 md:p-8 rounded-[22px] sm:rounded-3xl shadow-[0_1px_4px_rgba(40,49,33,0.02)] flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
               <div className="flex flex-col gap-2">
-                <h2 className="text-lg font-bold text-[#065F46] tracking-tight">Track Your Package</h2>
-                <p className="text-sm text-[#065F46]/80">Your order is on its way. Use the tracking link to monitor your shipment.</p>
+                <h2 className="text-lg font-bold text-[#2c3327] tracking-tight">{t('trackPackageTitle', { fallback: 'Track Your Package' })}</h2>
+                <p className="text-sm text-[#3a442e]/80">{t('trackPackageDescription', { fallback: 'Your order is on its way. Use the tracking link to monitor your shipment.' })}</p>
               </div>
-              <a 
-                href={order.trackingLink} 
-                target="_blank" 
+              <a
+                href={order.trackingLink}
+                target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#10B981] hover:bg-[#059669] text-white px-6 py-3 rounded-full text-[11px] font-bold uppercase tracking-widest transition-colors shadow-sm whitespace-nowrap"
+                className="bg-[#2c3327] hover:bg-[#1a1f16] text-white px-6 py-3 rounded-full text-[11px] font-bold uppercase tracking-widest transition-colors shadow-xs whitespace-nowrap shrink-0"
               >
-                Track Package
+                {t('trackPackageCta', { fallback: 'Track Package' })}
               </a>
             </div>
           ) : (
-            <div className="bg-gray-50/50 border border-gray-100 border-dashed p-6 md:p-8 rounded-3xl flex flex-col items-center justify-center text-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-white border border-gray-100 flex items-center justify-center text-gray-400 shadow-sm">
+            <div className="bg-white border border-dashed border-[#dce0d6] p-6 md:p-8 rounded-[22px] sm:rounded-3xl flex flex-col items-center justify-center text-center gap-3">
+              <div className="w-10 h-10 rounded-full bg-[#f0efeb] border border-[#dce0d6] flex items-center justify-center text-[#a5a58d] shadow-2xs">
                 <Package size={16} />
               </div>
               <div className="flex flex-col gap-1">
-                <h3 className="text-sm font-bold text-gray-800">Tracking Information Pending</h3>
-                <p className="text-xs text-gray-500 max-w-sm mx-auto">Your tracking link will be available here automatically once your product has been shipped.</p>
+                <h3 className="text-sm font-bold text-[#1a1f16]">{t('trackingPendingTitle', { fallback: 'Tracking Information Pending' })}</h3>
+                <p className="text-xs text-[#525b4c] max-w-sm mx-auto">{t('trackingPendingDescription', { fallback: 'Your tracking link will be available here automatically once your product has been shipped.' })}</p>
               </div>
             </div>
           )}
 
           {/* Items List */}
-          <div className="bg-white border border-gray-100 p-4 sm:p-8 rounded-3xl shadow-sm">
-            <h2 className="text-xs font-bold uppercase tracking-[0.15em] text-black mb-6 border-b border-gray-100 pb-4">{t('itemsOrdered')}</h2>
+          <div className="bg-white border border-[#dce0d6] p-4 sm:p-8 rounded-[22px] sm:rounded-3xl shadow-[0_1px_4px_rgba(40,49,33,0.02)]">
+            <h2 className="text-xs font-bold uppercase tracking-[0.15em] text-[#1a1f16] mb-6 border-b border-[#dce0d6]/70 pb-4">{t('itemsOrdered')}</h2>
             <div className="flex flex-col gap-4 sm:gap-6">
               {order.items?.map((item: any) => {
                 // Prioritize the live populated product relation to get the actual image media objects
@@ -195,11 +195,11 @@ export function OrderDetailClient({ order }: OrderDetailProps) {
 
                 if (product?.variants?.length) {
                   const matchedVariant = product.variants.find((v: any) => v.sku === item.variant || (item.variant && item.variant.includes(v.sku)))
-                  
+
                   if (matchedVariant) {
                      const vImg = matchedVariant.images?.[0]?.image?.url || matchedVariant.images?.[0]?.url
                      if (vImg) imageUrl = vImg
-                     
+
                      const vTitle = matchedVariant.title || matchedVariant.options?.map((o:any) => o.value).join(' ') || `Variant`
                      if (displayVariant === matchedVariant.sku) {
                         displayVariant = vTitle;
@@ -221,35 +221,35 @@ export function OrderDetailClient({ order }: OrderDetailProps) {
                      }
                   }
                 }
-                
+
                 imageUrl = imageUrl.replace(/ /g, '%20')
-                
+
                 return (
                   <div key={item.id || Math.random()} className="flex items-center gap-3 sm:gap-6 group">
                     <div className="relative w-16 h-16 sm:w-20 sm:h-20 shrink-0">
-                      <Link href={`/product/${product.slug || ''}`} className="relative block w-full h-full bg-gray-50 border border-gray-100 rounded-2xl overflow-hidden shadow-sm group-hover:shadow-md transition-shadow">
+                      <Link href={`/product/${product.slug || ''}`} className="relative block w-full h-full bg-[#f0efeb] border border-[#dce0d6] rounded-2xl overflow-hidden shadow-2xs group-hover:shadow-md transition-shadow">
                         <Image src={imageUrl} alt={title} fill className="object-cover" sizes="80px" />
                       </Link>
                       {/* Kept outside the image's overflow-hidden container so it isn't clipped */}
-                      <div className="absolute -top-2 -right-2 w-6 h-6 bg-black text-white rounded-full flex items-center justify-center text-[10px] font-bold z-10 border-2 border-white shadow-sm pointer-events-none">
+                      <div className="absolute -top-2 -right-2 w-6 h-6 bg-[#2c3327] text-white rounded-full flex items-center justify-center text-[10px] font-bold z-10 border-2 border-white shadow-xs pointer-events-none">
                         {item.quantity}
                       </div>
                     </div>
 
                     <div className="flex flex-col flex-1 min-w-0">
                       <Link href={`/product/${product.slug || ''}`}>
-                        <span className={`text-sm sm:text-lg text-black font-bold tracking-tight hover:text-purple-600 transition-colors line-clamp-2 ${spaceGrotesk.className}`}>
+                        <span className="text-sm sm:text-lg text-[#1a1f16] font-semibold tracking-tight hover:text-[#3a442e] transition-colors line-clamp-2">
                           {title}
                         </span>
                       </Link>
                       {displayVariant && !['DEFAULT', 'DEFAULT TITLE'].includes(displayVariant.toUpperCase()) && (
-                        <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-gray-400 mt-1">
+                        <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#a5a58d] mt-1">
                           {displayVariant}
                         </span>
                       )}
                     </div>
 
-                    <span className={`text-base sm:text-xl font-bold text-black tracking-tighter shrink-0 whitespace-nowrap ${spaceGrotesk.className}`}>
+                    <span className="text-base sm:text-xl font-semibold text-[#1a1f16] tracking-tight shrink-0 whitespace-nowrap">
                       ${(price * item.quantity).toFixed(2)}
                     </span>
                   </div>
@@ -257,22 +257,22 @@ export function OrderDetailClient({ order }: OrderDetailProps) {
               })}
             </div>
           </div>
-          
+
         </div>
 
         {/* Right Column: Summaries */}
-        <div className="flex flex-col gap-8 w-full lg:w-[340px] shrink-0">
-          
+        <div className="flex flex-col gap-6 sm:gap-8 w-full lg:w-[340px] shrink-0">
+
           {/* Shipping Summary */}
           {order.shippingAddress && (
-            <div className="bg-white border border-gray-100 p-8 rounded-3xl shadow-sm flex flex-col gap-6">
-              <div className="flex items-center gap-3 border-b border-gray-100 pb-4 text-black">
-                <Truck size={16} />
+            <div className="bg-white border border-[#dce0d6] p-6 sm:p-8 rounded-[22px] sm:rounded-3xl shadow-[0_1px_4px_rgba(40,49,33,0.02)] flex flex-col gap-6">
+              <div className="flex items-center gap-3 border-b border-[#dce0d6]/70 pb-4 text-[#1a1f16]">
+                <Truck size={16} className="text-[#a5a58d]" />
                 <h2 className="text-xs font-bold uppercase tracking-[0.15em]">{t('shippingInfo')}</h2>
               </div>
-              
-              <div className="flex flex-col gap-1 text-sm text-gray-500 leading-relaxed">
-                <span className={`text-lg text-black font-bold tracking-tight mb-2 ${spaceGrotesk.className}`}>
+
+              <div className="flex flex-col gap-1 text-sm text-[#525b4c] leading-relaxed">
+                <span className="text-lg text-[#1a1f16] font-semibold tracking-tight mb-2">
                   {order.customerFirstName} {order.customerLastName}
                 </span>
                 <span>{order.shippingAddress.line1}</span>
@@ -285,14 +285,14 @@ export function OrderDetailClient({ order }: OrderDetailProps) {
 
           {/* Billing Summary */}
           {(order.billingAddress?.line1 || order.shippingAddress) && (
-            <div className="bg-white border border-gray-100 p-8 rounded-3xl shadow-sm flex flex-col gap-6">
-              <div className="flex items-center gap-3 border-b border-gray-100 pb-4 text-black">
-                <CreditCard size={16} />
+            <div className="bg-white border border-[#dce0d6] p-6 sm:p-8 rounded-[22px] sm:rounded-3xl shadow-[0_1px_4px_rgba(40,49,33,0.02)] flex flex-col gap-6">
+              <div className="flex items-center gap-3 border-b border-[#dce0d6]/70 pb-4 text-[#1a1f16]">
+                <MapPin size={16} className="text-[#a5a58d]" />
                 <h2 className="text-xs font-bold uppercase tracking-[0.15em]">{t('billingAddress', { fallback: 'Billing Address' })}</h2>
               </div>
-              
-              <div className="flex flex-col gap-1 text-sm text-gray-500 leading-relaxed">
-                <span className={`text-lg text-black font-bold tracking-tight mb-2 ${spaceGrotesk.className}`}>
+
+              <div className="flex flex-col gap-1 text-sm text-[#525b4c] leading-relaxed">
+                <span className="text-lg text-[#1a1f16] font-semibold tracking-tight mb-2">
                   {order.customerFirstName} {order.customerLastName}
                 </span>
                 <span>{order.billingAddress?.line1 || order.shippingAddress?.line1}</span>
@@ -302,47 +302,47 @@ export function OrderDetailClient({ order }: OrderDetailProps) {
               </div>
             </div>
           )}
-          
+
           {/* Order Summary */}
-          <div className="bg-white border border-gray-100 p-8 rounded-3xl shadow-sm flex flex-col gap-6">
-            <div className="flex items-center gap-3 border-b border-gray-100 pb-4 text-black">
-              <CreditCard size={16} />
+          <div className="bg-white border border-[#dce0d6] p-6 sm:p-8 rounded-[22px] sm:rounded-3xl shadow-[0_1px_4px_rgba(40,49,33,0.02)] flex flex-col gap-6">
+            <div className="flex items-center gap-3 border-b border-[#dce0d6]/70 pb-4 text-[#1a1f16]">
+              <CreditCard size={16} className="text-[#a5a58d]" />
               <h2 className="text-xs font-bold uppercase tracking-[0.15em]">{t('orderSummary')}</h2>
             </div>
 
             <div className="flex flex-col gap-3 text-sm">
-              <div className="flex justify-between text-gray-500">
+              <div className="flex justify-between text-[#525b4c]">
                 <span>{t('subtotal')}</span>
                 <span>${subtotal.toFixed(2)}</span>
               </div>
               {!!order.discountTotal && order.discountTotal > 0 && (
-                <div className="flex justify-between text-green-500">
+                <div className="flex justify-between text-[#55724a]">
                   <span>{order.couponCode ? t('discountWithCode', { code: order.couponCode }) : t('discount')}</span>
                   <span>-${order.discountTotal.toFixed(2)}</span>
                 </div>
               )}
-              <div className="flex justify-between text-gray-500">
+              <div className="flex justify-between text-[#525b4c]">
                 <span>{t('shipping')}</span>
                 <span>{shipping === 0 ? t('free') : `$${shipping.toFixed(2)}`}</span>
               </div>
-              <div className={`flex justify-between text-gray-500 ${!order.redeemedPoints ? 'border-b border-gray-100 pb-4' : ''}`}>
+              <div className={`flex justify-between text-[#525b4c] ${!order.redeemedPoints ? 'border-b border-[#dce0d6]/70 pb-4' : ''}`}>
                 <span>{t('processingFee')}{feePercentage ? ` (${feePercentage}%)` : ''}</span>
                 <span>${processingFee.toFixed(2)}</span>
               </div>
               {!!order.redeemedPoints && order.redeemedPoints > 0 && (
-                <div className="flex justify-between text-green-500 border-b border-gray-100 pb-4 mt-1">
-                  <span>HB Points</span>
+                <div className="flex justify-between text-[#55724a] border-b border-[#dce0d6]/70 pb-4 mt-1">
+                  <span>{t('hbPointsRedeemed', { fallback: 'HB Points' })}</span>
                   <span>-${order.redeemedPoints.toFixed(2)}</span>
                 </div>
               )}
-              <div className="flex justify-between items-center text-black font-bold mt-2">
+              <div className="flex justify-between items-center text-[#1a1f16] font-semibold mt-2">
                 <span className="text-sm">{t('total')}</span>
-                <span className={`text-3xl tracking-tighter ${spaceGrotesk.className}`}>${total.toFixed(2)}</span>
+                <span className="text-2xl sm:text-3xl tracking-tight">${total.toFixed(2)}</span>
               </div>
               <div className={`text-[10px] font-bold uppercase tracking-[0.15em] px-3 py-2 rounded-lg mt-2 text-center border ${
-                ['captured', 'paid', 'succeeded'].includes(order.paymentStatus) ? 'bg-green-50 text-green-600 border-green-100' :
-                order.paymentStatus === 'refunded' ? 'bg-red-50 text-red-600 border-red-100' :
-                'bg-amber-50 text-amber-600 border-amber-100'
+                ['captured', 'paid', 'succeeded'].includes(order.paymentStatus) ? 'bg-[#edf0e8] text-[#2c3327] border-[#a5a58d]/40' :
+                order.paymentStatus === 'refunded' ? 'bg-rose-500/10 text-rose-700 border-rose-200' :
+                'bg-amber-500/10 text-amber-800 border-amber-300/60'
               }`}>
                 {['captured', 'paid', 'succeeded'].includes(order.paymentStatus) ? t('paymentSuccessful') :
                  order.paymentStatus === 'refunded' ? t('paymentRefunded') :
@@ -350,7 +350,7 @@ export function OrderDetailClient({ order }: OrderDetailProps) {
               </div>
             </div>
           </div>
-          
+
         </div>
       </div>
     </motion.div>

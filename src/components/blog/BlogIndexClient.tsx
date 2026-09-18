@@ -8,6 +8,8 @@ import { FadeUp } from '@/components/motion/FadeUp'
 import { BlogPostCard } from '@/components/editorial/BlogPostCard'
 import { BlogHero } from '@/components/blog/BlogHero'
 import { BlogNewsletter } from '@/components/blog/BlogNewsletter'
+import { SharedFaqSection } from '@/components/shared/SharedFaqSection'
+import { BLOG_FAQS } from '@/lib/blog/blogFaqs'
 import { HeroButton } from '@/components/ui/hero-button'
 import {
   Search,
@@ -156,11 +158,11 @@ export function BlogIndexClient({ posts }: { posts: BlogIndexPost[] }) {
                 <div className="flex items-center gap-2 mb-1">
                   <ShieldAlert className="w-4 h-4 text-[#cb997e] sm:hidden shrink-0" />
                   <h3 className="font-heading font-bold text-xs uppercase tracking-wider text-[#20221c]">
-                    Laboratory Research Standards &bull; Analytical Documentation
+                    Research Use Only &bull; Educational Content
                   </h3>
                 </div>
                 <p className="text-xs sm:text-[13px] text-neutral-600 leading-relaxed font-normal">
-                  All articles, reconstitution guides, and scientific monographs published in the Veracue Research Archive are prepared exclusively for educational and laboratory investigation. Peptides referenced are distributed strictly for in-vitro analytical research.
+                  Everything published here, guides, breakdowns, and research notes, is for educational and laboratory purposes only. Any peptide referenced is sold strictly for in-vitro research, never for human or veterinary use.
                 </p>
               </div>
             </div>
@@ -283,7 +285,7 @@ export function BlogIndexClient({ posts }: { posts: BlogIndexPost[] }) {
                         {spotlightPost.category || 'Featured'}
                       </span>
                       <span className="px-3 py-1 rounded-full bg-[#20221c]/80 backdrop-blur-md text-[#fff1e6] text-xs font-bold uppercase tracking-wider border border-white/10">
-                        Peer Reviewed
+                        RUO Verified
                       </span>
                     </div>
 
@@ -366,7 +368,7 @@ export function BlogIndexClient({ posts }: { posts: BlogIndexPost[] }) {
             <p className="text-xs sm:text-sm text-neutral-500 font-normal mt-0.5">
               {searchQuery
                 ? `Matching "${searchQuery}" (${filteredPosts.length} results)`
-                : `Showing ${filteredPosts.length} verified research articles`}
+                : `Showing ${filteredPosts.length} research articles`}
             </p>
           </div>
         </div>
@@ -432,6 +434,24 @@ export function BlogIndexClient({ posts }: { posts: BlogIndexPost[] }) {
         </section>
 
       </div>
+
+      {/* 9. Blog FAQ (full width, matching the homepage FAQ section) */}
+      <FadeUp delay={0.1}>
+        <SharedFaqSection
+          subtitle="Reading This Blog"
+          title={
+            <>
+              Questions About<br />Our Content
+            </>
+          }
+          description="A few things worth knowing before you dig into the articles."
+          faqs={BLOG_FAQS}
+          contactHeading="Still have a question?"
+          contactSubtext="Reach out and our research team will get back to you directly."
+          contactButtonText="Contact Us"
+          contactHref="/contact-us"
+        />
+      </FadeUp>
     </main>
   )
 }

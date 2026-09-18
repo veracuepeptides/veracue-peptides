@@ -8,6 +8,7 @@ import { ContactForm } from './ContactForm'
 import { TrustBadges } from '@/components/shared/TrustBadges'
 import { SharedFaqSection } from '@/components/shared/SharedFaqSection'
 import { HeroButton } from '@/components/ui/hero-button'
+import { CONTACT_FAQS } from '@/lib/contact/contactFaqs'
 import {
   Mail,
   Clock,
@@ -51,7 +52,7 @@ const CHANNELS: ContactChannel[] = [
     title: 'Institutional & Bulk Procurement',
     tag: 'VOLUME & CONTRACT ORDERS',
     description: 'Custom gram-scale synthesis quotes, university purchase order (PO) billing, and academic research laboratory tier pricing.',
-    email: 'bulk@veracuepeptides.com',
+    email: 'support@veracuepeptides.com',
     status: 'Formal Invoices & Quotes',
     icon: Building2,
   },
@@ -64,34 +65,6 @@ const CHANNELS: ContactChannel[] = [
     email: 'orders@veracuepeptides.com',
     status: 'Daily 2:00 PM EST Cutoff',
     icon: Truck,
-  },
-]
-
-const CONTACT_FAQS = [
-  {
-    question: 'How quickly will a scientific specialist respond to my inquiry?',
-    answer:
-      'Inquiries submitted during active US laboratory hours (Monday through Friday, 8:00 AM – 6:00 PM EST) receive technical responses in under 2 hours. Urgent weekend requests are monitored continuously by our on-call analytical team and answered on the next business morning.',
-  },
-  {
-    question: 'Can I request lot-specific HPLC chromatograms prior to purchasing?',
-    answer:
-      'Yes. Every synthesis batch produced for Veracue is accompanied by third-party RP-HPLC and ESI Mass Spectrometry reports. You can request any lot-specific chromatogram by emailing support@veracuepeptides.com or specifying the compound in the inquiry form.',
-  },
-  {
-    question: 'Do you accommodate university purchase orders (POs) and institutional billing?',
-    answer:
-      'Yes. We actively support university biochemistry laboratories, contract research organizations (CROs), and institutional departments with formal Net-30 invoice billing, custom volume quotes, and W-9 tax documentation on request.',
-  },
-  {
-    question: 'How are research peptides packaged and shipped?',
-    answer:
-      'All peptide compounds are packaged as lyophilized powders in vacuum-sealed vials under inert argon gas to eliminate oxidation. Shipments are packed inside custom insulated thermal boxes with refrigerant gel packs to preserve compound structural integrity.',
-  },
-  {
-    question: 'Are Veracue peptide compounds approved for clinical or diagnostic use?',
-    answer:
-      'No. All compounds offered by Veracue Peptides are supplied strictly for in-vitro laboratory research and analytical chemistry evaluation. Products are strictly labeled Research Use Only (RUO) and may not be used for medical diagnosis, veterinary, or clinical applications.',
   },
 ]
 
@@ -141,8 +114,8 @@ export function ContactClient() {
             {/* Left Column: Eyebrow, Heading, Paragraph & Signature CTA */}
             <div className="lg:w-[38%] xl:w-[35%] flex flex-col justify-between p-6 sm:p-8 md:p-10 lg:p-12 xl:p-14 border-b lg:border-b-0 lg:border-r border-[#b7b7a4]/50">
               <div>
-                <div className="inline-block border border-[#eddcd2] rounded-full px-4 py-1.5 mb-5 bg-[#fff1e6] shadow-xs">
-                  <span className="text-[#a5a58d] text-xs font-bold tracking-[0.2em] uppercase font-editorial">
+                <div className="inline-block border border-[#eddcd2] rounded-full max-w-full px-3 sm:px-4 py-1.5 mb-5 bg-[#fff1e6] shadow-xs">
+                  <span className="text-[#a5a58d] text-[9px] xs:text-[9.5px] sm:text-xs font-bold tracking-[0.02em] xs:tracking-[0.06em] sm:tracking-[0.2em] uppercase font-editorial whitespace-nowrap">
                     DIRECT LIAISON DESKS
                   </span>
                 </div>
@@ -270,9 +243,9 @@ export function ContactClient() {
                       <Calendar size={14} strokeWidth={2.2} />
                     </div>
                     <div>
-                      <span className="font-bold text-[#20221c] block">Operating Hours</span>
-                      <span className="text-neutral-600 block">Monday – Friday: 8:00 AM – 6:00 PM EST</span>
-                      <span className="text-neutral-400 text-[11px] block">Weekend inquiries monitored by on-call lab staff</span>
+                      <span className="font-bold text-[#20221c] block">Response Time</span>
+                      <span className="text-neutral-600 block">Most inquiries answered within 2 hours</span>
+                      <span className="text-neutral-400 text-[11px] block">Reach us anytime by email</span>
                     </div>
                   </div>
 
@@ -282,7 +255,7 @@ export function ContactClient() {
                     </div>
                     <div>
                       <span className="font-bold text-[#20221c] block">Synthesis &amp; Testing Facility</span>
-                      <span className="text-neutral-600 block">Research Triangle Park, NC, United States</span>
+                      <span className="text-neutral-600 block">US-Based Cleanroom Facility</span>
                       <span className="text-neutral-400 text-[11px] block">Accredited ISO-7 &amp; HPLC Testing Cleanroom</span>
                     </div>
                   </div>

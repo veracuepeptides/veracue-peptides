@@ -7,24 +7,24 @@ import { HeroButton } from '@/components/ui/hero-button'
 
 const FAQ_HERO_IMAGES = [
   {
-    src: '/veracue-images/veracue-research-grade-50mg-gloved-hand.png',
+    src: '/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp',
+    alt: 'Veracue Compound Selection and Orders',
+    topic: 'Orders & Documentation',
+  },
+  {
+    src: '/veracue-images/veracue-klow-50mg-pool-water-ripples.webp',
     alt: 'Veracue Quality Assurance and Scientific Support',
     topic: 'Quality Assurance & Support',
   },
   {
-    src: '/veracue-images/veracue-research-grade-50mg-dish-leaf-droplets.png',
+    src: '/veracue-images/veracue-ghk-cu-50mg-ice-bed-white.webp',
     alt: 'Veracue Lyophilized Peptide Chemistry',
     topic: 'Lyophilized Compounds',
   },
   {
-    src: '/veracue-images/veracue-military-researcher-lab.jpg',
+    src: '/veracue-images/veracue-epithalon-50mg-water-ripples-landscape.webp',
     alt: 'Veracue Laboratory Protocols and Handling',
     topic: 'Laboratory Protocols',
-  },
-  {
-    src: '/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp',
-    alt: 'Veracue Compound Selection and Orders',
-    topic: 'Orders & Documentation',
   },
 ]
 
@@ -76,17 +76,17 @@ export function FaqHero() {
       <div className="flex flex-col items-center text-center shrink-0 w-full max-w-5xl px-3">
         {/* 1. Eyebrow Tagline */}
         <p className="font-serif tracking-[0.16em] sm:tracking-[0.24em] text-[9.5px] sm:text-[11.5px] md:text-[12px] uppercase text-neutral-700 font-normal mb-1.5 sm:mb-2">
-          Research Compliance · Scientific Documentation · 24/7 Specialist Support
+          Research Compliance · Scientific Documentation · Direct Specialist Support
         </p>
 
         {/* 2. Main Headline (H1) */}
-        <h1 className="text-[22px] xs:text-2xl sm:text-3xl md:text-4xl lg:text-[46px] xl:text-[52px] font-bold tracking-[-0.03em] text-neutral-900 leading-tight mb-1.5 sm:mb-2.5 sm:whitespace-nowrap font-heading">
-          Frequently Asked Questions
+        <h1 className="text-[22px]/[1.15] xs:text-2xl/[1.15] sm:text-3xl/[1.12] md:text-4xl/[1.1] lg:text-[44px]/[1.08] xl:text-[50px]/[1.08] font-bold tracking-[-0.03em] text-neutral-900 leading-[1.15] sm:leading-[1.12] md:leading-[1.1] lg:leading-[1.08] mb-1.5 sm:mb-2.5 font-heading text-balance max-w-4xl">
+          Research Peptide FAQs
         </h1>
 
         {/* 3. Sub-headline / Supporting Description */}
         <p className="text-neutral-500 text-[11.5px] sm:text-[13px] md:text-[14.5px] max-w-2xl leading-relaxed mb-2.5 sm:mb-4 font-normal px-1 line-clamp-3 sm:line-clamp-none">
-          Comprehensive guidance regarding research peptide handling, analytical HPLC purity verification, storage conditions, and laboratory compliance standards.
+          Purity testing, storage, legality, ordering, and compound-specific answers, indexed by category and searchable by keyword.
         </p>
 
         {/* 4. CTA Pill Button */}
@@ -179,13 +179,13 @@ export function FaqHero() {
           {/* Bottom-Right Overlay */}
           <div className="absolute bottom-12 xs:bottom-14 sm:bottom-12 md:bottom-14 right-3 sm:right-7 md:right-10 z-20 text-white text-right sm:text-left max-w-[135px] xs:max-w-[170px] sm:max-w-[300px] md:max-w-[360px]">
             <h3 className="text-xs xs:text-sm sm:text-xl md:text-2xl lg:text-[26px] font-extrabold tracking-tight text-white leading-tight mb-0.5 sm:mb-2 drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] font-heading">
-              Dedicated Support<br className="sm:hidden" /> Team
+              A Real Chemist<br className="sm:hidden" /> Answers
             </h3>
             <p className="hidden xs:block sm:hidden text-[9px] text-white/85 leading-snug line-clamp-2 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
-              Direct technical guidance from biochemists.
+              Direct technical guidance, not a script.
             </p>
             <p className="hidden sm:block text-white/90 text-xs sm:text-[13px] md:text-[14.5px] font-normal leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
-              Our scientific team is available to assist researchers with technical specifications, reconstitution parameters, and COA verification.
+              Ask about technical specifications, reconstitution math, or a specific batch's COA, and our scientific team answers directly.
             </p>
           </div>
 
@@ -247,8 +247,8 @@ export function FaqHero() {
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full border-[1.5px] sm:border-[2px] border-neutral-950 inline-block shrink-0" />
-                    <span className="font-extrabold text-neutral-950">24/7</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Specialist Support</span>
+                    <span className="font-extrabold text-neutral-950">&lt; 2HR</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Response Time</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
@@ -286,8 +286,8 @@ export function FaqHero() {
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full border-[1.5px] sm:border-[2px] border-neutral-950 inline-block shrink-0" />
-                    <span className="font-extrabold text-neutral-950">24/7</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Specialist Support</span>
+                    <span className="font-extrabold text-neutral-950">&lt; 2HR</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Response Time</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">

@@ -8,6 +8,7 @@ import { BlogSection } from '@/components/home/BlogSection'
 import { JourneySection } from '@/components/home/JourneySection'
 import { WhatSetsUsApart } from '@/components/home/WhatSetsUsApart'
 import { WhyChooseUs } from '@/components/home/WhyChooseUs'
+import { FAQ_KEYS } from '@/lib/home/faqKeys'
 import { DifferenceSection } from '@/components/home/DifferenceSection'
 import { BestSellerSection } from '@/components/home/BestSellerSection'
 import { MilitaryDiscountSection } from '@/components/home/MilitaryDiscountSection'
@@ -33,9 +34,19 @@ export async function generateMetadata({
   return {
     title,
     description,
+    keywords: [
+      'research peptides',
+      'research grade peptides USA',
+      'HPLC verified purity peptides',
+      'peptide certificate of analysis',
+      'RUO peptides',
+      'mass spectrometry tested peptides',
+      'buy research peptides online',
+      'USA peptide supplier',
+    ],
     alternates: {
       canonical: path,
-      
+
     },
     openGraph: {
       title,
@@ -60,6 +71,18 @@ export default async function Homepage() {
   const t = await getTranslations('home')
   const title = t('metaTitle')
   const description = t('metaDescription')
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+  // Single source of truth with the on-page FAQ list — pulling from the same FAQ_KEYS/t()
+  // pair FaqSection itself uses means the structured data can never drift out of sync with
+  // what's actually rendered on the page.
+  const faqJsonLd = FAQ_KEYS.map((key) => ({
+    '@type': 'Question',
+    name: t(`faqSection.items.${key}.question`),
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: t(`faqSection.items.${key}.answer`),
+    },
+  }))
   let products: any[] = []
   let categories: any[] = []
   let blogPosts: any[] = []
@@ -132,127 +155,46 @@ export default async function Homepage() {
             {
               "@context": "https://schema.org",
               "@type": "WebPage",
-              "@id": "https://helixbiochem.com/#webpage",
-              "url": "https://helixbiochem.com/",
+              "@id": `${serverUrl}/#webpage`,
+              "url": `${serverUrl}/`,
               "name": title,
               "description": description
             },
             {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
-              "@id": "https://helixbiochem.com/#breadcrumb",
+              "@id": `${serverUrl}/#breadcrumb`,
               "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://helixbiochem.com/" }
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": `${serverUrl}/` }
               ]
             },
             {
               "@context": "https://schema.org",
               "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "What does \"Research Use Only\" (RUO) mean for these peptides?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Research Use Only means a compound is intended strictly for laboratory and scientific research, not for human or veterinary consumption, diagnosis, or treatment. Helix Bio peptides are labeled and sold on this basis and are not evaluated by the FDA for safety or efficacy in those other contexts."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What is considered a research-grade peptide?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "A research-grade peptide is synthesized and tested to a documented purity standard, typically 98% or higher, with identity and concentration confirmed through HPLC and mass spectrometry rather than estimated. It is sold with supporting batch documentation for laboratory use, not formulated or labeled for clinical administration."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What should a peptide's certificate of analysis (COA) include?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "A complete COA lists the batch or lot number, purity percentage as measured by HPLC, molecular weight confirmation by mass spectrometry, and the date of testing. Matching the batch number on the COA to the vial label confirms the document corresponds to the exact vial received."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "How do you verify peptide identity beyond mass spectrometry?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Mass spectrometry confirms molecular weight, while HPLC separately verifies purity by isolating the target compound from any related impurities. Used together, the two methods cross-check both identity and purity rather than relying on a single test to carry the whole result."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What storage conditions are recommended for lyophilized peptides?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Unreconstituted (lyophilized) peptides are generally stored frozen or refrigerated, protected from light and moisture, until they're needed for a study. Once reconstituted, most peptides should stay refrigerated and be used within the window noted on the product page or COA."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "How do peptide reagents support laboratory research studies?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Research peptides serve as standardized reagents in cellular, biochemical, and pharmacological studies, giving researchers a consistent, purity-verified compound to test against a defined protocol. Batch-to-batch consistency, backed by COA documentation, is what makes results comparable across a study."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What are common impurities in synthetic peptides?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Typical impurities include truncated or deletion sequences from incomplete synthesis cycles, residual solvents, and trace amounts of related by-product peptides. HPLC purity testing is specifically designed to detect and quantify these impurities rather than assume a batch is clean."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "How do peptide reagents support receptor-binding studies?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "In receptor-binding research, a peptide's purity and exact molecular identity directly affect how reliably it interacts with a target receptor in an assay. Verified purity and confirmed molecular weight reduce the risk that an impurity, rather than the compound itself, is driving an observed result."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What questions should I ask about a peptide supplier?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Ask whether every batch is independently tested, whether the COA is available before you order, what purity threshold the supplier guarantees, and how orders are shipped and stored in transit. A supplier that answers all four clearly and documents them is easier to evaluate than one that only advertises purity claims."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "How can I tell if a research peptide supplier is legitimate?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Look for third-party batch testing rather than in-house-only claims, a COA you can review before purchase, transparent research-use labeling, and clear company information rather than an anonymous storefront. Consistency between what's advertised and what the documentation actually shows is the strongest signal."
-                  }
-                }
-              ]
+              "mainEntity": faqJsonLd
             },
             {
               "@context": "https://schema.org",
               "@type": "Organization",
-              "@id": "https://helixbiochem.com/#organization",
-              "name": "Helix Bio",
-              "url": "https://helixbiochem.com",
+              "@id": `${serverUrl}/#organization`,
+              "name": "Veracue Peptides",
+              "url": serverUrl,
               "description": "USA-based supplier of research-use-only synthetic peptides for laboratory research.",
-              "email": "support@helixbiochem.com",
+              "email": "support@veracuepeptides.com",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://helixbiochem.com/HelixBio%20Images/hb-logo.png"
+                "url": `${serverUrl}/veracue-images/logo-header.png`
               }
             },
             {
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "url": "https://helixbiochem.com",
+              "url": serverUrl,
               "potentialAction": {
                 "@type": "SearchAction",
                 "target": {
                   "@type": "EntryPoint",
-                  "urlTemplate": "https://helixbiochem.com/shop?q={search_term_string}"
+                  "urlTemplate": `${serverUrl}/shop?q={search_term_string}`
                 },
                 "query-input": "required name=search_term_string"
               }

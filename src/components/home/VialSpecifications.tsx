@@ -28,7 +28,7 @@ const SPEC_CARDS: SpecificationCard[] = [
     category: 'CHROMATOGRAPHY',
     badge: 'RP-HPLC ≥99%',
     title: '≥99% HPLC Certified Purity',
-    pointerLabel: 'Pure Lyophilized Cake (≥99.2%)',
+    pointerLabel: 'Pure Lyophilized Cake (≥99%)',
     pointerTargetY: '74%',
     description: 'Every synthesis lot undergoes high-resolution reverse-phase chromatography (RP-HPLC) testing. Peak separation verifies minimum 99.0% chemical purity with zero truncated sequences.',
     technicalSpec: 'USP Analytical Standards • Single Sharp Peak',
@@ -101,18 +101,18 @@ export function VialSpecifications() {
         {/* Top Meta Bar: Technical Category + Modern Pill Badge + Step Number */}
         <div>
           <div className="flex items-center justify-between gap-2 pb-3 mb-3 border-b border-neutral-100">
-            <div className="flex items-center gap-2">
-              <span className={`w-2 h-2 rounded-full transition-colors duration-300 ${isHovered ? 'bg-[#20221c]' : 'bg-[#cb997e]'}`} />
-              <span className="text-[11px] font-mono font-bold tracking-[0.16em] uppercase text-neutral-500">
+            <div className="flex items-center gap-2 min-w-0">
+              <span className={`w-2 h-2 rounded-full shrink-0 transition-colors duration-300 ${isHovered ? 'bg-[#20221c]' : 'bg-[#cb997e]'}`} />
+              <span className="text-[11px] font-mono font-bold tracking-[0.16em] uppercase text-neutral-500 truncate">
                 {card.category}
               </span>
             </div>
 
-            <div className="flex items-center gap-1.5">
-              <span className="text-[10px] sm:text-[10.5px] font-mono font-bold tracking-wider px-2 py-0.5 rounded-md bg-neutral-100 text-neutral-700 border border-neutral-200/70 uppercase">
+            <div className="flex items-center gap-1.5 shrink-0">
+              <span className="text-[10px] sm:text-[10.5px] font-mono font-bold tracking-wider px-2 py-0.5 rounded-md bg-neutral-100 text-neutral-700 border border-neutral-200/70 uppercase whitespace-nowrap">
                 {card.badge}
               </span>
-              <span className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-mono font-bold transition-colors duration-300 ${
+              <span className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-mono font-bold transition-colors duration-300 shrink-0 ${
                 isHovered ? 'bg-[#20221c] text-[#fff1e6]' : 'bg-neutral-100 text-neutral-900 border border-neutral-200/80'
               }`}>
                 {card.step}
@@ -137,12 +137,12 @@ export function VialSpecifications() {
         </div>
 
         {/* Bottom Technical Spec strip with verification mark */}
-        <div className="mt-5 pt-3 border-t border-neutral-100 flex items-center justify-between text-[11px] font-mono text-neutral-500">
-          <span className="flex items-center gap-1.5 font-medium text-neutral-600">
+        <div className="mt-5 pt-3 border-t border-neutral-100 flex items-center justify-between gap-2 text-[11px] font-mono text-neutral-500">
+          <span className="flex items-center gap-1.5 font-medium text-neutral-600 min-w-0">
             <CheckCircle2 size={13} className="text-[#cb997e] shrink-0" />
             <span className="truncate">{card.technicalSpec}</span>
           </span>
-          <span className="text-[10px] text-neutral-400 font-mono tracking-widest uppercase shrink-0 pl-2">
+          <span className="text-[10px] text-neutral-400 font-mono tracking-widest uppercase shrink-0">
             VALIDATED
           </span>
         </div>
@@ -171,14 +171,14 @@ export function VialSpecifications() {
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 md:mb-20 relative z-10">
           
           {/* Eyebrow Pill (Standardized to Best Seller "MOST POPULAR" style) */}
-          <div className="inline-block border border-[#eddcd2] rounded-full px-4 py-1.5 mb-4 sm:mb-5 bg-white shadow-sm">
-            <span className="text-[#a5a58d] text-xs font-bold tracking-[0.2em] uppercase font-editorial">
+          <div className="inline-block border border-[#eddcd2] rounded-full max-w-full px-3 sm:px-4 py-1.5 mb-4 sm:mb-5 bg-white shadow-sm">
+            <span className="text-[#a5a58d] text-[9px] xs:text-[9.5px] sm:text-xs font-bold tracking-[0.02em] xs:tracking-[0.06em] sm:tracking-[0.2em] uppercase font-editorial whitespace-nowrap">
               ANALYTICAL INTEGRITY &amp; VIAL ARCHITECTURE
             </span>
           </div>
 
           {/* Heading (Font Heading / Sora, Bold & Clean) */}
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-extrabold text-neutral-900 leading-[1.06] tracking-tight uppercase">
+          <h2 className="font-heading text-3xl/[1.18] sm:text-4xl/[1.15] md:text-5xl/[1.12] lg:text-[54px]/[1.12] font-extrabold text-neutral-900 leading-[1.18] sm:leading-[1.15] md:leading-[1.12] lg:leading-[1.12] tracking-tight uppercase">
             Engineered For Precision.{' '}
             <span className="text-[#fff1e6]">
               Verified By Science.
@@ -187,7 +187,7 @@ export function VialSpecifications() {
 
           {/* Subtitle */}
           <p className="text-neutral-900/85 text-sm sm:text-base md:text-lg leading-relaxed font-sans mt-3 sm:mt-4 max-w-2xl mx-auto">
-            Every Veracue peptide vial is formulated to the highest analytical research standard—incorporating high-vacuum nitrogen preservation, third-party HPLC purity certification, and full sequence confirmation.
+            Before a vial ships, it's sealed under high-vacuum nitrogen, run through third-party HPLC testing, and checked for sequence identity. Nothing skips a step.
           </p>
         </div>
 

@@ -10,7 +10,18 @@ import { ComplianceStatement } from '@/components/about/ComplianceStatement'
 import { SharedFaqSection } from '@/components/shared/SharedFaqSection'
 import { getOgImageUrl } from '@/lib/utils'
 
-const ABOUT_FAQ_KEYS = ['trustworthySupplier', 'analyticalQuality', 'laboratoryResearchOnly', 'documentationProvided']
+const ABOUT_FAQ_KEYS = [
+  'trustworthySupplier',
+  'analyticalQuality',
+  'laboratoryResearchOnly',
+  'documentationProvided',
+  'coaVerification',
+  'institutionalOrders',
+  'bulkOrders',
+  'domesticVsOverseas',
+  'batchQuestions',
+  'supplierAccountability',
+]
 
 const slug = 'about-us'
 

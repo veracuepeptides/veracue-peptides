@@ -204,11 +204,11 @@ export const afterOrderChange: CollectionAfterChangeHook = async ({ doc, previou
           const { generateOrderInvoiceHtml } = await import('@/lib/emails/generateOrderEmail')
           const html = await generateOrderInvoiceHtml(doc, req.payload, undefined, label as 'failed' | 'cancelled' | 'refunded')
           await sendTrackedEmail(req.payload, {
-            from: 'Orders | Helix Bio <support@helixbiochem.com>',
+            from: 'Veracue Orders <orders@veracuepeptides.com>',
             to: customerEmail,
             // On payment failure, admin gets the identical invoice email (same cart/totals)
             // the customer receives, rather than a separate summary-only alert.
-            ...(label === 'failed' ? { bcc: 'support@helixbiochem.com' } : {}),
+            ...(label === 'failed' ? { bcc: 'support@veracuepeptides.com' } : {}),
             subject,
             html,
           })
@@ -252,7 +252,7 @@ export const afterOrderChange: CollectionAfterChangeHook = async ({ doc, previou
           const invoiceHtml = await generateOrderInvoiceHtml(doc, req.payload, customNote)
           
           await sendTrackedEmail(req.payload, {
-            from: 'Orders | Helix Bio <support@helixbiochem.com>',
+            from: 'Veracue Orders <orders@veracuepeptides.com>',
             to: customerEmail,
             subject: `Update regarding your Order #${doc.orderNumber || doc.id}`,
             html: invoiceHtml,
@@ -288,7 +288,7 @@ export const afterOrderChange: CollectionAfterChangeHook = async ({ doc, previou
         const invoiceHtml = await generateOrderInvoiceHtml(doc, req.payload, "Great news! Your order has been shipped. You can track your package using the tracking link below.")
         
         await sendTrackedEmail(req.payload, {
-          from: 'Orders | Helix Bio <support@helixbiochem.com>',
+          from: 'Veracue Orders <orders@veracuepeptides.com>',
           to: customerEmail,
           subject: `Your Order #${doc.orderNumber || doc.id} has shipped!`,
           html: invoiceHtml,

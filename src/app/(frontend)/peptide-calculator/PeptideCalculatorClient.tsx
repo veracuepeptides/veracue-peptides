@@ -51,9 +51,9 @@ export default function PeptideCalculatorPage() {
   const STEP_DETAILS = [
     {
       num: '01',
-      title: 'Aseptic Preparation',
+      title: 'Wipe and Dry the Septa',
       sub: 'Sterilization & Air Drying',
-      desc: 'Wipe the rubber septa of both the lyophilized peptide vial and the bacteriostatic water vial using a fresh 70% isopropyl alcohol swab. Allow both stoppers to air dry completely for 30 seconds to maintain an aseptic barrier.',
+      desc: 'Swab the rubber stopper on both the peptide vial and the bacteriostatic water vial with a fresh 70% isopropyl wipe, then let each one air dry for about 30 seconds before you go near it with a needle.',
       icon: ShieldCheck,
       color: '#a5a58d',
       metric: '70% Isopropyl Swab',
@@ -61,9 +61,9 @@ export default function PeptideCalculatorPage() {
     },
     {
       num: '02',
-      title: 'Controlled Diluent Transfer',
-      sub: 'Laminar Wall Flow',
-      desc: 'Draw the exact calculated volume of bacteriostatic water. Angle the needle along the inside glass wall of the peptide vial. Release diluent slowly, letting it trickle down the glass rather than jetting directly into the delicate lyophilized cake.',
+      title: 'Add the Water Slowly',
+      sub: 'Down the Glass, Not the Powder',
+      desc: 'Draw the volume the calculator gave you, then angle the needle against the inside wall of the vial. Let the water run down the glass instead of hitting the lyophilized cake directly.',
       icon: Droplets,
       color: '#cb997e',
       metric: '0.9% Benzyl Alcohol',
@@ -71,9 +71,9 @@ export default function PeptideCalculatorPage() {
     },
     {
       num: '03',
-      title: 'Gentle Dissolution',
+      title: 'Roll, Never Shake',
       sub: 'Zero Mechanical Shaking',
-      desc: 'Never shake a peptide vial. Gently swirl or roll the vial between your palms in a slow, circular motion until the cake dissolves completely into a clear, crystalline solution with zero suspended particulates.',
+      desc: "Shaking stresses the peptide bonds. Roll the vial gently between your palms instead, in slow circles, until the cake fully dissolves into a clear solution with nothing floating in it.",
       icon: ArrowRight,
       color: '#55724a',
       metric: 'Zero Frothing',
@@ -115,12 +115,12 @@ export default function PeptideCalculatorPage() {
         <section id="reconstitution-guide" className="scroll-mt-28 w-full max-w-7xl mx-auto px-3 sm:px-6 md:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-start">
             
-            {/* Left Column: Interactive Protocol Panel */}
+            {/* Left Column: Interactive Steps Panel */}
             <div className="lg:col-span-5 lg:sticky lg:top-32 h-fit">
               <FadeUp>
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#a5a58d]/15 border border-[#a5a58d]/35 text-[#a5a58d] text-xs font-bold tracking-[0.2em] uppercase mb-4 shadow-2xs">
                   <AlertTriangle className="w-3.5 h-3.5 text-[#a5a58d]" />
-                  <span>01 &bull; Analytical Protocol</span>
+                  <span>01 &bull; Reconstitution Steps</span>
                 </div>
 
                 <h2 className="text-3xl sm:text-4xl md:text-[44px] font-heading font-extrabold text-neutral-900 tracking-tight uppercase leading-[1.08] mb-4">
@@ -129,7 +129,7 @@ export default function PeptideCalculatorPage() {
                 </h2>
 
                 <p className="text-sm sm:text-base text-neutral-600 font-normal leading-relaxed mb-6">
-                  Whether preparing a 2mg or 10mg lyophilized cake, guessing diluent math leads to compromised experimental protocols, irreversible peptide shearing, and invalid research data.
+                  Whether you're preparing a 2mg or 10mg lyophilized cake, guessing at the diluent math risks a compromised study, irreversible peptide shearing, and data you can't trust.
                 </p>
 
                 <div className="w-full h-px bg-[#b7b7a4]/40 mb-6" />
@@ -158,10 +158,10 @@ export default function PeptideCalculatorPage() {
                       </div>
                       <div>
                         <h4 className="font-heading font-bold text-sm text-neutral-900 uppercase tracking-wide">
-                          Repeatable Longitudinal Integrity
+                          Consistent Across Sessions
                         </h4>
                         <p className="text-xs text-neutral-600 mt-1 leading-relaxed font-normal">
-                          Accurate volumetric draws protect inter-assay consistency across weeks of quantitative observations.
+                          An accurate draw today gives you the same dose next week, so results stay comparable across your whole study.
                         </p>
                       </div>
                     </div>
@@ -177,8 +177,8 @@ export default function PeptideCalculatorPage() {
                   {/* Real Laboratory Photographic Header */}
                   <div className="relative w-full h-60 sm:h-72 md:h-80 lg:h-[340px] overflow-hidden group bg-neutral-100">
                     <Image 
-                      src="/veracue-images/veracue-military-researcher-lab.jpg" 
-                      alt="Veracue Analytical Laboratory Precision Protocol" 
+                      src="/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp" 
+                      alt="Veracue analytical peptide reconstitution vials and laboratory workspace"
                       fill 
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 58vw, 680px"
                       priority
@@ -196,10 +196,10 @@ export default function PeptideCalculatorPage() {
                   <div className="p-5 sm:p-7 md:p-8 flex flex-col justify-between">
                     <div>
                       <h3 className="font-heading font-bold text-lg sm:text-xl md:text-2xl text-neutral-900 uppercase tracking-tight mb-2">
-                        Zero Manual Guesswork
+                        No More Manual Math
                       </h3>
                       <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed font-normal">
-                        Our interactive calculation engine instantaneously converts mass, volume, and target micrograms into verified U-100 syringe units.
+                        Type in your vial mass, water volume, and target dose, and the calculator gives you the exact U-100 syringe reading.
                       </p>
                     </div>
                     
@@ -446,7 +446,7 @@ export default function PeptideCalculatorPage() {
                   The Mathematics of Reconstitution
                 </h2>
                 <p className="text-xs sm:text-sm md:text-base text-neutral-600 leading-relaxed font-normal">
-                  Understanding the universal concentration formula allows researchers to cross-verify all software calculations manually:
+                  This is the exact formula behind every result above, so you can check it by hand whenever you want:
                 </p>
               </div>
 
@@ -489,7 +489,7 @@ export default function PeptideCalculatorPage() {
                       <span className="font-price font-bold text-neutral-900">2.0 mL</span>
                     </li>
                     <li className="flex justify-between">
-                      <span className="font-medium text-neutral-600">Target Protocol Dose:</span>
+                      <span className="font-medium text-neutral-600">Target Dose:</span>
                       <span className="font-price font-bold text-neutral-900">250 mcg</span>
                     </li>
                   </ul>
@@ -516,12 +516,12 @@ export default function PeptideCalculatorPage() {
               </div>
 
               <p className="text-xs text-neutral-600 text-center">
-                Need conversions across all scientific units? Explore our{' '}
-                <Link 
-                  href="/peptide-dosage-calculator-mg-mcg-mL-IU-conversions" 
+                Need to convert between mg, mcg, mL, and IU? Use the{' '}
+                <Link
+                  href="#calculators-hub"
                   className="font-bold text-[#a5a58d] underline underline-offset-4 hover:text-neutral-950 transition-colors"
                 >
-                  mg, mcg, mL &amp; IU Research Conversion Guide &rarr;
+                  Unit Converter above &rarr;
                 </Link>
               </p>
             </FadeUp>
@@ -687,7 +687,7 @@ export default function PeptideCalculatorPage() {
                   <ul className="space-y-3 font-sans text-xs sm:text-sm">
                     <li className="flex items-center justify-between pb-2.5 border-b border-white/10">
                       <span className="text-neutral-300">Refrigerated (2&deg;C &ndash; 8&deg;C)</span>
-                      <span className="font-price font-bold text-[#a5a58d]">20 &ndash; 30 Days</span>
+                      <span className="font-price font-bold text-[#a5a58d]">28 &ndash; 30 Days</span>
                     </li>
                     <li className="flex items-center justify-between pb-2.5 border-b border-white/10 text-red-400">
                       <span>Post-Reconstitution Freezing</span>
@@ -721,10 +721,10 @@ export default function PeptideCalculatorPage() {
                 <span>07 &bull; Quality Control</span>
               </div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-extrabold text-neutral-900 tracking-tight uppercase mb-2">
-                The 3 Fatal Handling Mistakes
+                3 Handling Mistakes That Ruin a Batch
               </h2>
               <p className="text-xs sm:text-sm text-neutral-600">
-                Avoid these three critical laboratory errors that compromise compound viability:
+                These three errors are the most common way researchers accidentally degrade a compound before they even start.
               </p>
             </div>
 
@@ -790,23 +790,23 @@ export default function PeptideCalculatorPage() {
                   </h2>
                   
                   <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed mb-6 font-normal">
-                    Using the wrong syringe calibration is the leading cause of massive unintentional overdoses. Human research protocols standardize on U-100 syringes (100 units per 1.0 mL).
+                    Grabbing the wrong syringe is the single most common way a dose ends up way off target. Most research peptide work is standardized on U-100 syringes (100 units per 1.0 mL).
                   </p>
                   
                   <div className="space-y-3.5 text-xs sm:text-sm">
                     <div className="flex gap-3 items-start bg-[#f0efeb] p-3.5 rounded-xl border border-[#b7b7a4]/40">
                       <CheckCircle2 size={16} className="text-[#55724a] shrink-0 mt-0.5" />
                       <div>
-                        <strong className="text-neutral-900 block uppercase tracking-wide text-xs">U-100 Syringes (Human Standard)</strong>
-                        <span className="text-neutral-600 text-xs">100 units = 1.0 mL. Calibrated for all standard peptide research.</span>
+                        <strong className="text-neutral-900 block uppercase tracking-wide text-xs">U-100 Syringes (Research Standard)</strong>
+                        <span className="text-neutral-600 text-xs">100 units = 1.0 mL. The standard for most peptide research.</span>
                       </div>
                     </div>
 
                     <div className="flex gap-3 items-start bg-red-500/10 p-3.5 rounded-xl border border-red-500/20">
                       <AlertTriangle size={16} className="text-red-600 shrink-0 mt-0.5" />
                       <div>
-                        <strong className="text-red-900 block uppercase tracking-wide text-xs">U-40 Syringes (Veterinary Only)</strong>
-                        <span className="text-red-700 text-xs">40 units = 1.0 mL. Using U-40 with U-100 formulas causes an accidental 2.5x overdose.</span>
+                        <strong className="text-red-900 block uppercase tracking-wide text-xs">U-40 Syringes (Different Scale)</strong>
+                        <span className="text-red-700 text-xs">40 units = 1.0 mL. Reading a U-100 result off a U-40 syringe delivers 2.5x more volume than intended.</span>
                       </div>
                     </div>
                   </div>
@@ -893,28 +893,28 @@ export default function PeptideCalculatorPage() {
                 </div>
                 
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-heading font-extrabold text-white tracking-tight uppercase mb-3">
-                  Solution Half-Life &amp; Degradation
+                  Storage Window Guidance
                 </h2>
-                
+
                 <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed font-normal">
-                  Peptide polymers degrade non-linearly post-reconstitution. Observational stability benchmarks at 4&deg;C:
+                  How long a reconstituted vial holds up depends on temperature and time. Here's the window we work within:
                 </p>
               </div>
 
-              {/* Degradation Timeline Grid */}
+              {/* Storage Timeline Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                 {[
-                  { day: 'Day 1', purity: '100%', status: 'Peak Potency', note: 'Zero measurable breakdown', color: 'text-[#55724a]', pill: 'bg-[#55724a]/20 text-[#55724a]' },
-                  { day: 'Day 15', purity: '95%+', status: 'High Stability', note: 'Nominal hydrolytic change', color: 'text-[#a5a58d]', pill: 'bg-[#a5a58d]/20 text-[#a5a58d]' },
-                  { day: 'Day 30', purity: '~85%', status: 'Moderate Loss', note: 'Noticeable efficacy drop', color: 'text-[#cb997e]', pill: 'bg-[#cb997e]/20 text-[#cb997e]' },
-                  { day: 'Day 60+', purity: '<50%', status: 'Severely Degraded', note: 'Compound unviable', color: 'text-red-400', pill: 'bg-red-500/20 text-red-400' },
+                  { day: 'Days 1-7', purity: 'Refrigerated', status: 'Best Window', note: 'Use within this window for the most consistent results.', color: 'text-[#55724a]', pill: 'bg-[#55724a]/20 text-[#55724a]' },
+                  { day: 'Days 8-30', purity: 'Refrigerated', status: 'Still Within Guidance', note: 'Keep at 2-8°C; this is the outer edge of the standard storage window.', color: 'text-[#a5a58d]', pill: 'bg-[#a5a58d]/20 text-[#a5a58d]' },
+                  { day: 'Beyond 30 Days', purity: 'Not Recommended', status: 'No Support Data', note: "We don't have stability data supporting use past this point.", color: 'text-[#cb997e]', pill: 'bg-[#cb997e]/20 text-[#cb997e]' },
+                  { day: 'Room Temp', purity: '< 24 Hours', status: 'Time-Sensitive', note: 'Once out of the fridge, plan to use it the same day.', color: 'text-red-400', pill: 'bg-red-500/20 text-red-400' },
                 ].map((step, idx) => (
                   <div key={idx} className="bg-white/5 border border-white/10 rounded-2xl p-5 sm:p-6 text-center flex flex-col justify-between hover:bg-white/10 transition-colors">
                     <div>
                       <span className="text-xs font-sans font-bold uppercase tracking-wider text-neutral-400 block mb-2">
                         {step.day}
                       </span>
-                      <div className="text-3xl sm:text-4xl font-price font-bold text-white mb-2">
+                      <div className="text-2xl sm:text-3xl font-price font-bold text-white mb-2">
                         {step.purity}
                       </div>
                       <span className={`inline-block text-[10.5px] font-sans font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full mb-3 ${step.pill}`}>
@@ -952,10 +952,10 @@ export default function PeptideCalculatorPage() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {[
-                { term: 'Lyophilized', tag: 'biochem', def: 'A specialized freeze-drying sublimation process that removes moisture to maximize shelf-life stability.' },
-                { term: 'BAC Water', tag: 'dilution', def: 'Sterile bacteriostatic water containing 0.9% benzyl alcohol to prevent microbial multiplication.' },
-                { term: 'Subcutaneous', tag: 'dosing', def: 'A shallow research administration vector situated between epidermal skin and muscular tissue.' },
-                { term: 'mg vs mcg', tag: 'dosing', def: '1 milligram (mg) = 1,000 micrograms (mcg). Converting mass accurately avoids 1,000x dosing shifts.' }
+                { term: 'Lyophilized', tag: 'biochem', def: 'Freeze-dried into a stable powder. Removing the water this way keeps the peptide intact until you reconstitute it.' },
+                { term: 'BAC Water', tag: 'dilution', def: 'Sterile water carrying 0.9% benzyl alcohol, which keeps bacteria from growing in the vial once it is opened.' },
+                { term: 'mg vs mcg', tag: 'units', def: '1 milligram equals 1,000 micrograms. Mixing the two up is the easiest way to be off by a factor of 1,000.' },
+                { term: 'U-100', tag: 'syringes', def: 'A syringe marked so that 100 units equals 1.0 mL. It is the scale this calculator uses for every result above.' }
               ].map((item, idx) => (
                 <div key={idx} className="bg-white p-6 rounded-3xl border border-[#b7b7a4]/50 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:border-[#a5a58d] transition-all flex flex-col justify-between">
                   <div>
@@ -984,9 +984,9 @@ export default function PeptideCalculatorPage() {
           description={t('faq.description')}
           faqs={CALCULATOR_FAQS}
           contactHeading="Still have dosing questions?"
-          contactSubtext="Reach out directly through our contact page and our scientific team will assist your laboratory protocol."
+          contactSubtext="Reach out through our contact page and our team will help you work through the math."
           contactButtonText="Contact Scientific Team"
-          contactHref="/contact"
+          contactHref="/contact-us"
         />
       </div>
 
@@ -1000,7 +1000,7 @@ export default function PeptideCalculatorPage() {
             <strong className="text-neutral-900 uppercase font-bold tracking-wider block mb-1">
               Laboratory Research Disclaimer
             </strong>
-            All calculators, formulas, dilution tables, and educational content on this page are provided strictly for theoretical in-vitro laboratory research and calibration. Compounds supplied by Veracue are intended exclusively for authorized laboratory and scientific evaluation, and not for human or veterinary therapeutic application.
+            All calculators, formulas, dilution tables, and educational content on this page are provided strictly for theoretical in-vitro laboratory research and calibration. Compounds supplied by Veracue Peptides are intended exclusively for authorized laboratory and scientific evaluation, and not for human or veterinary therapeutic application.
           </div>
         </div>
       </div>

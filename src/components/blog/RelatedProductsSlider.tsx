@@ -15,7 +15,7 @@ export function RelatedProductsSlider({ products }: { products: any[] }) {
 
   return (
     <div>
-      <span className="text-label-md uppercase tracking-wider text-gold-dark mb-4 block">
+      <span className="text-label-md uppercase tracking-wider text-[#a5732f] mb-4 block">
         Featured In This Article
       </span>
 

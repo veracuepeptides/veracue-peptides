@@ -3,6 +3,7 @@ import { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
 import { ContactClient } from '@/components/contact/ContactClient'
 import { getOgImageUrl } from '@/lib/utils'
+import { CONTACT_FAQS } from '@/lib/contact/contactFaqs'
 
 const slug = 'contact-us'
 
@@ -47,19 +48,11 @@ export default async function ContactPage({
 }) {
   const locale = 'en'
   const t = await getTranslations({ locale, namespace: 'content.contactPage' })
-  const tClient = await getTranslations({ locale, namespace: 'content.contactClient' })
   const title = t('metaTitle')
   const description = t('metaDescription')
   const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
   const path = true ? `/${slug}` : `/${locale}/${slug}`
   const url = `${baseUrl}${path}`
-
-  const faqKeys = ['usLabsContact', 'locationShipping', 'serviceHours'] as const
-  const contactInfoFaq = {
-    question: tClient('faqs.contactInfo.question'),
-    answer:
-      'Reach our scientific support team via email at support@veracuepeptides.com for lab and batch inquiries.',
-  }
 
   const schema = {
     '@context': 'https://schema.org',
@@ -94,31 +87,20 @@ export default async function ContactPage({
             email: 'support@veracuepeptides.com',
             areaServed: 'US',
             availableLanguage: ['English'],
-            hoursAvailable: 'Mo-Fr 08:00-18:00',
           },
         ],
       },
       {
         '@type': 'FAQPage',
         '@id': `${url}#faq`,
-        mainEntity: [
-          {
-            '@type': 'Question',
-            name: contactInfoFaq.question,
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: contactInfoFaq.answer,
-            },
+        mainEntity: CONTACT_FAQS.map((faq) => ({
+          '@type': 'Question',
+          name: faq.question,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: faq.answer,
           },
-          ...faqKeys.map((key) => ({
-            '@type': 'Question',
-            name: tClient(`faqs.${key}.question`),
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: tClient(`faqs.${key}.answer`),
-            },
-          })),
-        ],
+        })),
       },
     ],
   }

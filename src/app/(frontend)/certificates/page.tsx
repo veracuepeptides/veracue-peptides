@@ -4,7 +4,7 @@ import { getLocale } from 'next-intl/server'
 import type { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
 import { CertificatesClient } from './CertificatesClient'
-import { FALLBACK_COAS, type VerifiedCOA } from '@/lib/certificates/fallbackCertificates'
+import { type VerifiedCOA } from '@/lib/certificates/fallbackCertificates'
 import { getOgImageUrl } from '@/lib/utils'
 
 const slug = 'certificates'
@@ -83,8 +83,8 @@ export default async function CertificatesPage() {
         purity: typeof doc.coaPurity === 'number' ? `${doc.coaPurity}%` : '99%+',
         batch: doc.coaBatchNumber || `VR-${doc.id}`,
         analyzed: doc.coaAnalyzedDate ? dateFormatter.format(new Date(doc.coaAnalyzedDate)) : 'Recent Batch',
-        lab: 'Colmar Analytical USA',
-        status: 'PASS • Confirmed ≥99%',
+        lab: 'Independent Third-Party Laboratory (USA)',
+        status: 'Verified',
         coaUrl: doc.coaFile.url,
         productSlug: doc.slug,
       }))
@@ -92,10 +92,7 @@ export default async function CertificatesPage() {
     console.error('Error querying product COAs from Payload:', err)
   }
 
-  // Merge database COAs with rich curated fallback COAs (prioritizing uploaded docs)
-  const coas: VerifiedCOA[] = dbCoas.length > 0
-    ? [...dbCoas, ...FALLBACK_COAS.filter(f => !dbCoas.some(d => d.product.toLowerCase() === f.product.toLowerCase()))]
-    : FALLBACK_COAS
+  const coas: VerifiedCOA[] = dbCoas
 
   const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
   const path = `/${slug}`
@@ -124,12 +121,12 @@ export default async function CertificatesPage() {
         '@type': 'WebSite',
         '@id': `${baseUrl}/#website`,
         url: baseUrl,
-        name: 'Veracue',
+        name: 'Veracue Peptides',
       },
       {
         '@type': 'Organization',
         '@id': `${baseUrl}/#organization`,
-        name: 'Veracue',
+        name: 'Veracue Peptides',
         url: baseUrl,
       },
     ],

@@ -106,7 +106,7 @@ export function StripeCheckoutForm({
             <>{t('payAmount', { amount: (amount).toFixed(2) })} <ArrowRight size={18} className="ml-2" /></>
           )}
         </Button>
-        <p className="text-center text-xs text-ink/40 font-medium mt-2">
+        <p className="text-center text-xs text-[#525b4c] font-medium mt-2">
           {t('termsAcknowledgement')}
         </p>
       </div>

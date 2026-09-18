@@ -28,7 +28,7 @@ export async function resendVerificationEmail(rawEmail: string) {
       const verifyUrl = `${base}/api/verify-email?token=${token}`
       const html = generateVerifyEmailEmail(user.firstName, verifyUrl)
       await sendTrackedEmail(payload, {
-        from: 'Support | Veracue Peptides <support@veracuepeptides.com>',
+        from: 'Veracue Support <support@veracuepeptides.com>',
         to: email,
         subject: 'Verify your email - Veracue Peptides',
         html,

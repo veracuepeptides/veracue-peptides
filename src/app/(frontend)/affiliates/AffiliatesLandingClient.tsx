@@ -260,7 +260,7 @@ function FormRightFlank() {
           TELEMETRY // ENGINE
         </text>
         <text x="140" y="68" fill="currentColor" opacity="0.38" fontSize="7" fontFamily="monospace">
-          DUAL-ATTRIBUTION PROTOCOL
+          DUAL-ATTRIBUTION ENGINE
         </text>
         <text x="35" y="565" fill="currentColor" opacity="0.45" fontSize="8" fontFamily="monospace" letterSpacing="0.16em">
           COMMISSION: 15% RECURRING
@@ -700,7 +700,7 @@ export function AffiliatesLandingClient({
                 {t('applyTitle')}
               </h2>
               <p className="text-sm sm:text-base text-neutral-600 mt-2 max-w-xl leading-relaxed">
-                Join the Veracue Partner Network. Submit your details below for automated onboarding and partner portal access.
+                Fill out the form below and you'll get access to your partner dashboard as soon as you're approved.
               </p>
             </div>
 
@@ -1764,14 +1764,12 @@ export function AffiliatesLandingClient({
                       </div>
                     </div>
 
-                    {/* Live Telemetry Streaming Pill */}
+                    {/* Sample Dashboard Preview Pill */}
                     <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/40 border border-[#a5a58d]/30 text-[10px] sm:text-[11px] font-mono text-[#eddcd2] shadow-inner shrink-0">
                       <span className="relative flex h-2 w-2">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#cb997e] opacity-75" />
                         <span className="relative inline-flex rounded-full h-2 w-2 bg-[#cb997e]" />
                       </span>
-                      <span className="font-semibold tracking-wide">LIVE STREAMING</span>
-                      <span className="text-[#a5a58d] hidden sm:inline">• &lt;45ms</span>
+                      <span className="font-semibold tracking-wide">SAMPLE DASHBOARD</span>
                     </div>
                   </div>
 
@@ -1931,7 +1929,7 @@ export function AffiliatesLandingClient({
                     <div className="flex items-center gap-2 min-w-0 pr-2">
                       <span className="w-2 h-2 rounded-full bg-[#cb997e] shrink-0" />
                       <span className="text-xs font-mono truncate text-neutral-600">
-                        veracue.com/ref/<span className="font-bold text-neutral-900">partner-id{activeChannel !== 'default' ? `?c=${activeChannel}` : ''}</span>
+                        veracuepeptides.com/ref/<span className="font-bold text-neutral-900">partner-id{activeChannel !== 'default' ? `?c=${activeChannel}` : ''}</span>
                       </span>
                     </div>
 
@@ -1959,7 +1957,7 @@ export function AffiliatesLandingClient({
                     <span className="flex items-center gap-1 text-[#a5a58d] font-semibold">
                       <Sparkles className="w-3 h-3" /> Auto-Applies Tracking
                     </span>
-                    <span>426 clicks logged</span>
+                    <span>Example: 426 clicks logged</span>
                   </div>
                 </div>
               </div>
@@ -2078,7 +2076,7 @@ export function AffiliatesLandingClient({
                     </div>
                     <div className="flex items-center gap-2">
                       <Check className="w-4 h-4 text-[#a5a58d]" />
-                      <span>3D Peptide Renders & Banners</span>
+                      <span>Product Photography & Banners</span>
                     </div>
                   </div>
                 </div>
@@ -2096,7 +2094,7 @@ export function AffiliatesLandingClient({
                           Creative Asset Kit
                         </span>
                         <span className="text-[11px] font-mono text-neutral-500">
-                          48+ Renders & Banners
+                          Product Renders &amp; Banners
                         </span>
                       </div>
                     </div>
@@ -2200,7 +2198,7 @@ export function AffiliatesLandingClient({
         contactHeading="Still have questions?"
         contactSubtext="Reach out directly through our contact page and our affiliate team will assist you."
         contactButtonText="Contact Us"
-        contactHref="/contact"
+        contactHref="/contact-us"
       />
 
       {/* 11. Section: Final CTA & Disclaimers */}

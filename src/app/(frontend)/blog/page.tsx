@@ -1,9 +1,38 @@
+import type { Metadata } from 'next'
 import { getPayload } from 'payload'
 import configPromise from '@payload-config'
 import { BlogIndexClient, type BlogIndexPost } from '@/components/blog/BlogIndexClient'
 import { getFeaturedImageUrl, formatPostDate } from '@/lib/blog/postDisplay'
 import { estimateReadingTime } from '@/lib/blog/readingTime'
-import { DUMMY_BLOG_POSTS } from '@/lib/blog/dummyBlogPosts'
+import { getOgImageUrl } from '@/lib/utils'
+import { BLOG_FAQS } from '@/lib/blog/blogFaqs'
+
+const title = 'Research Peptide Blog | Veracue Peptides'
+const description = 'Guides on peptide purity testing, reconstitution, storage, and lab compliance from the Veracue Peptides research team.'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const path = '/blog'
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: path,
+    },
+    openGraph: {
+      title,
+      description,
+      type: 'website',
+      url: path,
+      images: [{ url: getOgImageUrl(title, description) }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [getOgImageUrl(title, description)],
+    },
+  }
+}
 
 export default async function BlogIndexPage() {
   let payloadPosts: BlogIndexPost[] = []
@@ -32,10 +61,62 @@ export default async function BlogIndexPage() {
     console.error('Error fetching blog posts from payload:', err)
   }
 
-  // Combine payload posts with dummy posts for rich design preview and card evaluation
-  const payloadSlugs = new Set(payloadPosts.map((p) => p.slug))
-  const filteredDummyPosts = DUMMY_BLOG_POSTS.filter((dummy) => !payloadSlugs.has(dummy.slug))
-  const allPosts = [...payloadPosts, ...filteredDummyPosts]
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+  const path = '/blog'
+  const url = `${baseUrl}${path}`
 
-  return <BlogIndexClient posts={allPosts} />
+  const schema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebPage',
+        '@id': `${url}#webpage`,
+        url,
+        name: title,
+        description,
+      },
+      {
+        '@type': 'BreadcrumbList',
+        '@id': `${url}#breadcrumb`,
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: baseUrl },
+          { '@type': 'ListItem', position: 2, name: 'Blog', item: url },
+        ],
+      },
+      {
+        '@type': 'WebSite',
+        '@id': `${baseUrl}/#website`,
+        url: baseUrl,
+        name: 'Veracue Peptides',
+      },
+      {
+        '@type': 'Organization',
+        '@id': `${baseUrl}/#organization`,
+        name: 'Veracue Peptides',
+        url: baseUrl,
+      },
+      {
+        '@type': 'FAQPage',
+        '@id': `${url}#faq`,
+        mainEntity: BLOG_FAQS.map((faq) => ({
+          '@type': 'Question',
+          name: faq.question,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: faq.answer,
+          },
+        })),
+      },
+    ],
+  }
+
+  return (
+    <>
+      <BlogIndexClient posts={payloadPosts} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+    </>
+  )
 }

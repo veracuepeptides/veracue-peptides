@@ -4,6 +4,7 @@ import PeptideCalculatorPage from './PeptideCalculatorClient'
 import { getOgImageUrl } from '@/lib/utils'
 
 const slug = 'peptide-calculator'
+const FAQ_KEYS = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8', 'q9', 'q10'] as const
 
 export async function generateMetadata({
   params,
@@ -46,6 +47,7 @@ export default async function Page({
 }) {
   const locale = 'en'
   const t = await getTranslations('calculator.page')
+  const tMain = await getTranslations('calculator.main')
   const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
   const path = true ? `/${slug}` : `/${locale}/${slug}`
   const url = `${baseUrl}${path}`
@@ -53,32 +55,14 @@ export default async function Page({
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": t('faq.q1Question'),
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": t('faq.q1Answer')
-        }
-      },
-      {
-        "@type": "Question",
-        "name": t('faq.q2Question'),
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": t('faq.q2Answer')
-        }
-      },
-      {
-        "@type": "Question",
-        "name": t('faq.q3Question'),
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": t('faq.q3Answer')
-        }
+    "mainEntity": FAQ_KEYS.map((key) => ({
+      "@type": "Question",
+      "name": tMain(`faq.${key}.question`),
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": tMain(`faq.${key}.answer`)
       }
-    ]
+    }))
   }
 
   const webAppSchema = {
@@ -87,7 +71,7 @@ export default async function Page({
     "name": t('webApp.name'),
     "url": url,
     "description": t('webApp.description'),
-    "applicationCategory": "HealthApplication",
+    "applicationCategory": "UtilitiesApplication",
     "operatingSystem": "Web Browser",
     "offers": {
       "@type": "Offer",
@@ -96,7 +80,7 @@ export default async function Page({
     },
     "creator": {
       "@type": "Organization",
-      "name": "Veracue"
+      "name": "Veracue Peptides"
     }
   }
 
@@ -134,12 +118,12 @@ export default async function Page({
         '@type': 'WebSite',
         '@id': `${baseUrl}/#website`,
         url: baseUrl,
-        name: 'Veracue',
+        name: 'Veracue Peptides',
       },
       {
         '@type': 'Organization',
         '@id': `${baseUrl}/#organization`,
-        name: 'Veracue',
+        name: 'Veracue Peptides',
         url: baseUrl,
       },
     ],

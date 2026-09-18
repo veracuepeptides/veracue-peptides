@@ -8,25 +8,25 @@ import { Award, ShieldCheck, Activity, FlaskConical } from 'lucide-react'
 
 const CERT_HERO_IMAGES = [
   {
-    src: '/veracue-images/veracue-research-grade-50mg-gloved-hand.png',
-    alt: 'Veracue Cleanroom Synthesis and HPLC Quality Assurance',
-    topic: 'Cleanroom Synthesis',
-    spec: 'ISO-7 Verified',
-  },
-  {
-    src: '/veracue-images/veracue-military-researcher-lab.jpg',
-    alt: 'Veracue Analytical Chromatography and Laboratory Purity Testing',
-    topic: 'Analytical HPLC',
-    spec: 'UV-214nm Detection',
-  },
-  {
     src: '/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp',
     alt: 'Veracue Verified Lot Archive and Lyophilized Peptide Collection',
     topic: 'Verified Lot Archive',
     spec: 'Dual-Method Testing',
   },
   {
-    src: '/veracue-images/veracue-research-grade-50mg-molecular-helix.png',
+    src: '/veracue-images/veracue-ghk-cu-50mg-ice-bed-white.webp',
+    alt: 'Veracue Cleanroom Synthesis and HPLC Quality Assurance',
+    topic: 'Cleanroom Synthesis',
+    spec: 'ISO-7 Verified',
+  },
+  {
+    src: '/veracue-images/veracue-klow-50mg-pool-water-ripples.webp',
+    alt: 'Veracue Analytical Chromatography and Laboratory Purity Testing',
+    topic: 'Analytical HPLC',
+    spec: 'UV-214nm Detection',
+  },
+  {
+    src: '/veracue-images/veracue-epithalon-50mg-water-ripples-landscape.webp',
     alt: 'Veracue High-Resolution Mass Spectrometry Sequence Confirmation',
     topic: 'Mass Spectrometry',
     spec: '±0.05 Da Mass Match',
@@ -95,7 +95,7 @@ export function CertificatesHero() {
         </p>
 
         {/* 2. Main Headline (H1) */}
-        <h1 className="text-[22px] xs:text-2xl sm:text-3xl md:text-4xl lg:text-[46px] xl:text-[52px] font-bold tracking-[-0.03em] text-neutral-900 leading-tight mb-1.5 sm:mb-2.5 sm:whitespace-nowrap font-heading">
+        <h1 className="text-[22px]/[1.15] xs:text-2xl/[1.15] sm:text-3xl/[1.12] md:text-4xl/[1.1] lg:text-[44px]/[1.08] xl:text-[50px]/[1.08] font-bold tracking-[-0.03em] text-neutral-900 leading-[1.15] sm:leading-[1.12] md:leading-[1.1] lg:leading-[1.08] mb-1.5 sm:mb-2.5 font-heading text-balance max-w-4xl">
           Verified Certificates of Analysis
         </h1>
 

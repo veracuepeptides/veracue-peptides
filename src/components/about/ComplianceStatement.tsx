@@ -105,7 +105,7 @@ export function ComplianceStatement() {
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-black text-white tracking-tight uppercase leading-[1.05] mb-4 drop-shadow-xs">
+          <h2 className="text-3xl/[1.18] sm:text-4xl/[1.14] md:text-5xl/[1.12] lg:text-6xl/[1.1] font-heading font-black text-white tracking-tight uppercase leading-[1.18] sm:leading-[1.14] md:leading-[1.12] lg:leading-[1.1] mb-4 drop-shadow-xs">
             {t('titleLine1')} {t('titleLine2')}
           </h2>
 

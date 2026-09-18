@@ -26,8 +26,8 @@ const PROCESS_STEPS: ProcessStep[] = [
     phase: 'PHASE 01: PRECURSORS',
     title: 'Sourcing & Screening',
     subtitle: 'Precursor Verification',
-    description: 'Every synthesis cycle begins with the careful evaluation of protected amino acid building blocks and coupling reagents. Precursors are screened against our internal baseline specifications before entering production.',
-    detail: 'Raw precursors must meet ≥99% reagent purity standards before clearance into solid-phase synthesizer matrices.',
+    description: 'Before a synthesis cycle starts, every protected amino acid and coupling reagent gets checked against our baseline specification. Nothing enters production until it clears that screen.',
+    detail: 'A precursor batch has to test at ≥99% reagent purity before it clears for the synthesizer.',
     spec: 'Raw Precursor Inspection • Zero Batch Contamination',
     image: '/veracue-images/veracue-research-grade-50mg-dish-leaf-droplets.png',
     icon: Package,
@@ -38,8 +38,8 @@ const PROCESS_STEPS: ProcessStep[] = [
     phase: 'PHASE 02: ASSEMBLY',
     title: 'Solid-Phase Synthesis',
     subtitle: 'Stepwise Chain Elongation',
-    description: 'Peptide sequences are assembled amino acid by amino acid using solid-phase peptide synthesis (SPPS) protocols. Automated cycle telemetry controls reaction duration, temperature, and wash cycles.',
-    detail: 'Rigid stepwise monitoring prevents racemization and suppresses truncated peptide sequence formation.',
+    description: 'Each sequence is built one amino acid at a time using solid-phase peptide synthesis (SPPS). Automated telemetry tracks reaction duration, temperature, and wash cycles at every step.',
+    detail: 'That step-by-step monitoring is what keeps racemization and truncated sequences out of the finished batch.',
     spec: 'Solid-Phase Assembly • Monitored Coupling Efficiency',
     image: '/veracue-images/veracue-research-grade-50mg-molecular-helix.png',
     icon: FlaskConical,
@@ -50,8 +50,8 @@ const PROCESS_STEPS: ProcessStep[] = [
     phase: 'PHASE 03: PURIFICATION',
     title: 'Preparative Purification',
     subtitle: 'ISO-7 Sterile Cleanroom',
-    description: 'Post-cleavage crude peptides undergo multi-step preparative reverse-phase HPLC purification. The isolated compound is vacuum freeze-dried into a pristine lyophilized cake within ISO-7 certified cleanrooms.',
-    detail: 'Vialed under dry nitrogen with butyl stoppers to eliminate ambient atmospheric moisture hydrolysis.',
+    description: 'After cleavage, the crude peptide goes through multi-step preparative reverse-phase HPLC purification, then gets vacuum freeze-dried into a stable cake inside an ISO-7 certified cleanroom.',
+    detail: 'Each vial is sealed under dry nitrogen with a butyl stopper, keeping ambient moisture from hydrolyzing the compound before it ships.',
     spec: 'Prep-HPLC Fractionation • Vacuum Lyophilization Cake',
     image: '/veracue-images/veracue-research-grade-50mg-ice-dropper.png',
     icon: ShieldCheck,
@@ -62,8 +62,8 @@ const PROCESS_STEPS: ProcessStep[] = [
     phase: 'PHASE 04: RELEASE',
     title: 'Analytical Release',
     subtitle: 'Public COA Documentation',
-    description: 'Purified batches undergo double-blind analytical verification using analytical RP-HPLC and ESI-Mass Spectrometry. Only lots confirming ≥99.0% purity and theoretical sequence mass are certified for release.',
-    detail: 'Every serialized batch lot is archived and its certificate of analysis is made publicly available for research verification.',
+    description: 'Every purified batch goes through double-blind verification with RP-HPLC and ESI mass spectrometry. A lot only gets released once it confirms ≥99.0% purity and matches its theoretical sequence mass.',
+    detail: 'Each serialized lot gets archived, and its certificate of analysis goes public so researchers can check it themselves.',
     spec: 'HPLC & ESI-MS Certified • Public Audit Archive',
     image: '/veracue-images/veracue-epithalon-50mg-water-ripples-landscape.webp',
     icon: Microscope,
@@ -110,8 +110,8 @@ export function ResearchProcessTimeline() {
         {/* ==================================================================== */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 sm:mb-14 md:mb-16 gap-6">
           <div className="max-w-2xl">
-            <div className="inline-block border border-[#eddcd2] rounded-full px-4 py-1.5 mb-4 sm:mb-5 bg-white shadow-2xs">
-              <span className="text-[#a5a58d] text-[11px] sm:text-xs font-bold tracking-[0.2em] uppercase font-editorial">
+            <div className="inline-block border border-[#eddcd2] rounded-full max-w-full px-3 sm:px-4 py-1.5 mb-4 sm:mb-5 bg-white shadow-2xs">
+              <span className="text-[#a5a58d] text-[9px] xs:text-[9.5px] sm:text-xs font-bold tracking-[0.02em] xs:tracking-[0.06em] sm:tracking-[0.2em] uppercase font-editorial whitespace-nowrap">
                 LABORATORY WORKFLOW
               </span>
             </div>
@@ -124,7 +124,7 @@ export function ResearchProcessTimeline() {
 
           <div className="max-w-md">
             <p className="text-neutral-600 text-xs sm:text-sm md:text-base leading-relaxed font-sans font-light">
-              From screening amino acid precursors through multi-stage preparative purification and independent ESI-MS spectrometry, each phase is held to uncompromising analytical benchmarks.
+              From screening amino acid precursors through multi-stage preparative purification and independent ESI-MS spectrometry, every phase gets checked against a documented analytical benchmark.
             </p>
           </div>
         </div>

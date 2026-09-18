@@ -18,7 +18,8 @@ import {
   HelpCircle,
   ShieldCheck,
   ChevronRight,
-  ExternalLink
+  ExternalLink,
+  BarChart
 } from 'lucide-react'
 import { motion, Variants } from 'framer-motion'
 import { useTranslations } from 'next-intl'
@@ -490,6 +491,60 @@ export function AccountOverviewClient({
                 <ChevronRight size={13} className="text-[#a5a58d] group-hover:translate-x-0.5 transition-transform" />
               </Link>
             </div>
+          </div>
+
+          {/* Affiliate Program Card */}
+          <div className="bg-white rounded-[24px] p-6 border border-[#dce0d6] shadow-[0_1px_6px_rgba(40,49,33,0.02)]">
+            <h3 className="text-sm font-semibold text-[#1a1f16] pb-3 border-b border-[#dce0d6]/70 mb-4">
+              {t('supportAndPrograms')}
+            </h3>
+
+            {affiliateStatus === 'approved' ? (
+              <Link
+                href="/affiliates/dashboard"
+                className="flex items-center justify-between group"
+              >
+                <div className="flex items-center gap-2.5">
+                  <div className="w-9 h-9 rounded-lg bg-purple-50 text-purple-600 border border-purple-200/70 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                    <BarChart size={15} />
+                  </div>
+                  <div>
+                    <span className="text-sm font-semibold text-[#1a1f16] block">{t('affiliateDashboard')}</span>
+                    <span className="text-xs text-[#525b4c]">{t('manageLinksAndPayouts')}</span>
+                  </div>
+                </div>
+                <ChevronRight size={15} className="text-[#a5a58d] group-hover:translate-x-0.5 transition-transform shrink-0" />
+              </Link>
+            ) : affiliateStatus === 'pending' ? (
+              <div className="flex items-center gap-2.5">
+                <div className="w-9 h-9 rounded-lg bg-amber-50 text-amber-700 border border-amber-200/70 flex items-center justify-center shrink-0">
+                  <Clock size={15} />
+                </div>
+                <div>
+                  <span className="text-sm font-semibold text-[#1a1f16] block">{t('partnerProgram')}</span>
+                  <span className="text-xs text-[#525b4c]">{t('applicationUnderReview')}</span>
+                </div>
+              </div>
+            ) : (
+              <div className="flex flex-col gap-3">
+                <div className="flex items-center gap-2.5">
+                  <div className="w-9 h-9 rounded-lg bg-purple-50 text-purple-600 border border-purple-200/70 flex items-center justify-center shrink-0">
+                    <BarChart size={15} />
+                  </div>
+                  <span className="text-sm font-semibold text-[#1a1f16]">{t('earnCommission')}</span>
+                </div>
+                <p className="text-xs text-[#525b4c] leading-relaxed">
+                  Refer researchers to Veracue and earn 15% commission on every sale, plus a discount code for your audience.
+                </p>
+                <Link
+                  href="/affiliates"
+                  className="inline-flex items-center justify-center gap-1.5 mt-1 px-4 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 text-white text-xs font-semibold tracking-wide transition-colors w-full"
+                >
+                  {t('joinPartnerProgram')}
+                  <ArrowRight size={13} />
+                </Link>
+              </div>
+            )}
           </div>
 
         </motion.div>

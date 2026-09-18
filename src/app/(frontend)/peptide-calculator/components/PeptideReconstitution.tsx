@@ -85,7 +85,7 @@ const DynamicSelect = ({ value, options, onChange }: { value: string | number, o
 }
 
 export function PeptideReconstitution() {
-  const t = useTranslations('calculator.main.tabs.reconstitution')
+  const t = useTranslations('calculator.peptideReconstitution')
 
   const [peptideAmount, setPeptideAmount] = useState('5')
   const [waterMl, setWaterMl] = useState('2')

@@ -2,7 +2,7 @@ import * as React from "react"
 import { cva, type VariantProps } from "class-variance-authority"
 
 const labelVariants = cva(
-  "block text-body-sm font-medium text-ink-muted mb-2"
+  "block text-body-sm font-medium text-[#525b4c] mb-2"
 )
 
 export interface LabelProps
@@ -15,7 +15,7 @@ const Label = React.forwardRef<HTMLLabelElement, LabelProps>(
   ({ className, required, children, ...props }, ref) => (
     <label ref={ref} className={labelVariants({ className })} {...props}>
       {children}
-      {required && <span className="text-gold ml-1">*</span>}
+      {required && <span className="text-[#a5732f] ml-1">*</span>}
     </label>
   )
 )

@@ -65,14 +65,14 @@ export function SharedFaqSection({
               {/* Top Block: Title & Optional Eyebrow / Description */}
               <div>
                 {subtitle && (
-                  <div className="inline-block border border-[#eddcd2] rounded-full px-4 py-1.5 mb-5 bg-[#fff1e6] shadow-xs">
-                    <span className="text-[#a5a58d] text-xs font-bold tracking-[0.2em] uppercase font-editorial">
+                  <div className="inline-block border border-[#eddcd2] rounded-full max-w-full px-3 sm:px-4 py-1.5 mb-5 bg-[#fff1e6] shadow-xs">
+                    <span className="text-[#a5a58d] text-[9px] xs:text-[9.5px] sm:text-xs font-bold tracking-[0.02em] xs:tracking-[0.06em] sm:tracking-[0.2em] uppercase font-editorial whitespace-nowrap">
                       {subtitle}
                     </span>
                   </div>
                 )}
 
-                <h2 className="font-heading font-black text-3xl sm:text-4xl md:text-[46px] lg:text-[52px] xl:text-[58px] text-[#20221c] leading-[1.05] tracking-tight">
+                <h2 className="font-heading font-black text-3xl/[1.22] sm:text-4xl/[1.18] md:text-[44px]/[1.16] lg:text-[50px]/[1.15] xl:text-[56px]/[1.14] text-[#20221c] leading-[1.22] sm:leading-[1.18] md:leading-[1.16] lg:leading-[1.15] xl:leading-[1.14] tracking-tight">
                   {title || (
                     <>
                       Have<br />questions?
@@ -107,7 +107,7 @@ export function SharedFaqSection({
                 </div>
 
                 <HeroButton
-                  href={contactHref || "/contact"}
+                  href={contactHref || "/contact-us"}
                   text={contactButtonText || "Contact Us"}
                 />
               </div>
@@ -201,7 +201,7 @@ export function SharedFaqSection({
                 </div>
 
                 <HeroButton
-                  href={contactHref || "/contact"}
+                  href={contactHref || "/contact-us"}
                   text={contactButtonText || "Contact Us"}
                   className="w-full sm:w-auto justify-center"
                 />

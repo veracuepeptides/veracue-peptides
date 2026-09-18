@@ -481,7 +481,7 @@ export function ProductClient({ product }: ProductClientProps) {
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-            className="font-heading text-4xl md:text-[44px] font-extrabold text-[#20221c] leading-[1.05] tracking-tight mb-1.5"
+            className="font-heading text-4xl/[1.08] md:text-[44px]/[1.08] font-extrabold text-[#20221c] leading-[1.08] tracking-tight mb-1.5"
           >
             {shortName}
           </motion.h1>
@@ -758,7 +758,7 @@ export function ProductClient({ product }: ProductClientProps) {
           >
             <div>
               <span className="text-white/70 text-[9px] sm:text-[10px] font-bold tracking-[0.28em] uppercase mb-4 block">{t('compoundProfile')}</span>
-              <h2 className="font-heading font-black text-[32px] sm:text-[42px] lg:text-[52px] uppercase tracking-tighter text-white leading-[1.05] break-words">
+              <h2 className="font-heading font-black text-[32px]/[1.18] sm:text-[42px]/[1.14] lg:text-[52px]/[1.1] uppercase tracking-tighter text-white leading-[1.18] sm:leading-[1.14] lg:leading-[1.1] break-words">
                 {t('theScienceHeadline')}
               </h2>
               <p className="font-serif italic font-medium text-lg sm:text-xl text-white/80 mt-2">
@@ -887,7 +887,7 @@ export function ProductClient({ product }: ProductClientProps) {
           <Container size="wide">
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
               <div>
-                <span className="text-primary text-label-sm uppercase tracking-[0.2em] font-bold mb-4 block">{t('educationAndResearch')}</span>
+                <span className="text-[#a5732f] text-label-sm uppercase tracking-[0.2em] font-bold mb-4 block">{t('educationAndResearch')}</span>
                 <h2 className="font-heading text-[44px] sm:text-[56px] lg:text-[64px] leading-none font-black tracking-tighter text-black uppercase">
                   {t('furtherReading')}
                 </h2>

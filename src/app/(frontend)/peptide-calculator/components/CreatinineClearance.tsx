@@ -162,7 +162,7 @@ export function CreatinineClearance() {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6 sm:mb-8">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#a5a58d]/15 border border-[#a5a58d]/35 text-[#a5a58d] text-xs font-bold tracking-[0.2em] uppercase">
               <span className="w-1.5 h-1.5 rounded-full bg-[#a5a58d]" />
-              <span>Creatinine Clearance Configurator</span>
+              <span>Creatinine Clearance Calculator</span>
             </div>
 
             <div className="flex items-center gap-3">
@@ -198,19 +198,19 @@ export function CreatinineClearance() {
           </div>
 
           <div className="text-xl sm:text-2xl md:text-3xl lg:text-[34px] font-heading font-light text-neutral-900 tracking-tight leading-[1.7] md:leading-[1.75]">
-            I am a <DynamicInput value={age} onChange={setAge} /> year old 
-            <DynamicSelect 
-              value={gender} 
+            For a subject who is <DynamicInput value={age} onChange={setAge} /> years old,
+            <DynamicSelect
+              value={gender}
               onChange={(v) => setGender(v as Gender)}
-              options={[{label: 'Male', value: 'male'}, {label: 'Female', value: 'female'}]} 
-            /> 
-            weighing 
+              options={[{label: 'Male', value: 'male'}, {label: 'Female', value: 'female'}]}
+            />,
+            weighing
             {system === 'imperial' ? (
-              <> <DynamicInput value={lbs} onChange={setLbs} minWidth={3} /> lbs. </>
+              <> <DynamicInput value={lbs} onChange={setLbs} minWidth={3} /> lbs, </>
             ) : (
-              <> <DynamicInput value={kg} onChange={setKg} minWidth={3} /> kg. </>
+              <> <DynamicInput value={kg} onChange={setKg} minWidth={3} /> kg, </>
             )}
-            My serum creatinine level is <DynamicInput value={creatinine} onChange={setCreatinine} minWidth={3} /> mg/dL.
+            with a serum creatinine of <DynamicInput value={creatinine} onChange={setCreatinine} minWidth={3} /> mg/dL.
           </div>
 
           <p className="text-xs text-neutral-500 mt-6 leading-relaxed">
@@ -270,7 +270,7 @@ export function CreatinineClearance() {
 
             <div className="w-full text-center mt-auto border-t border-[#eddcd2] pt-4">
               <div className="text-[10px] uppercase font-sans font-bold text-neutral-500 mb-1 tracking-widest">
-                Renal Function Classification
+                Renal Function Reference Range
               </div>
               <span className={`inline-block text-xs font-sans font-bold uppercase tracking-wider px-3 py-1 rounded-full ${categoryBadgeBg}`}>
                 {category}

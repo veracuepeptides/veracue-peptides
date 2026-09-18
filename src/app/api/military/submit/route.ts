@@ -86,9 +86,9 @@ export async function POST(req: Request) {
 
     // Send to Support Email with Attachment
     await sendTrackedEmail(payload, {
-      from: `"${name} (Military)" <forms@helixbiochem.com>`,
+      from: `"${name} (Military)" <support@veracuepeptides.com>`,
       replyTo: email,
-      to: 'support@helixbiochem.com',
+      to: 'support@veracuepeptides.com',
       subject: `[Military Discount] Verification Request: ${name}`,
       html: emailHtml,
       attachments: [

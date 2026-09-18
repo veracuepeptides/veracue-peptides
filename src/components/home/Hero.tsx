@@ -69,14 +69,14 @@ export function Hero() {
           Synthesized for Precision. Verified for Purity. HPLC Tested.
         </p>
 
-        {/* 2. Main Headline (H1) - Single line presentation on desktop */}
-        <h1 className="text-[22px] xs:text-2xl sm:text-3xl md:text-4xl lg:text-[46px] xl:text-[52px] font-bold tracking-[-0.03em] text-neutral-900 leading-tight mb-1.5 sm:mb-2.5 sm:whitespace-nowrap">
-          Discover Premium Research Peptides
+        {/* 2. Main Headline (H1) */}
+        <h1 className="text-[22px]/[1.15] xs:text-2xl/[1.15] sm:text-3xl/[1.12] md:text-4xl/[1.1] lg:text-[44px]/[1.08] xl:text-[50px]/[1.08] font-bold tracking-[-0.03em] text-neutral-900 leading-[1.15] sm:leading-[1.12] md:leading-[1.1] lg:leading-[1.08] mb-1.5 sm:mb-2.5 font-heading text-balance max-w-4xl">
+          Peptides Built for the Bench, Not the Hype
         </h1>
 
         {/* 3. Sub-headline / Supporting Description */}
         <p className="text-neutral-500 text-[11.5px] sm:text-[13px] md:text-[14.5px] max-w-2xl leading-relaxed mb-2.5 sm:mb-4 font-normal px-1 line-clamp-3 sm:line-clamp-none">
-          Research-grade peptides, synthesized for precision and verified for purity. Every batch ships with third-party HPLC and mass spectrometry testing, so you know exactly what you're studying before it reaches your bench.
+          Each batch is checked by an independent lab using HPLC and mass spectrometry before it ever leaves our facility, so what's on the label matches what's in the vial.
         </p>
 
         {/* 4. CTA Pill Button */}
@@ -216,8 +216,8 @@ export function Hero() {
                 <div className="flex items-center gap-3 sm:gap-8 md:gap-12 shrink-0 pr-3 sm:pr-8 md:pr-12">
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full border-[1.5px] sm:border-[2px] border-neutral-950 inline-block shrink-0" />
-                    <span className="font-extrabold text-neutral-950">10K+</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Orders</span>
+                    <span className="font-extrabold text-neutral-950">ISO-7</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Cleanroom</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
@@ -255,8 +255,8 @@ export function Hero() {
                 <div className="flex items-center gap-3 sm:gap-8 md:gap-12 shrink-0 pr-3 sm:pr-8 md:pr-12" aria-hidden="true">
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full border-[1.5px] sm:border-[2px] border-neutral-950 inline-block shrink-0" />
-                    <span className="font-extrabold text-neutral-950">10K+</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Orders</span>
+                    <span className="font-extrabold text-neutral-950">ISO-7</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Cleanroom</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">

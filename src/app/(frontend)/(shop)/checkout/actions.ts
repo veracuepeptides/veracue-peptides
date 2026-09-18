@@ -505,9 +505,9 @@ export async function createPayloadOrder(
                const invoiceHtml = await generateOrderInvoiceHtml(order, payload);
 
                await sendTrackedEmail(payload, {
-                   from: 'Orders | Helix Bio <support@helixbiochem.com>',
+                   from: 'Veracue Orders <orders@veracuepeptides.com>',
                    to: customerEmail,
-                   bcc: 'support@helixbiochem.com',
+                   bcc: 'support@veracuepeptides.com',
                    subject: `Order Invoice #${order.orderNumber || order.id}`,
                    html: invoiceHtml,
                })
@@ -678,8 +678,8 @@ export async function notifyAdminFailedPayment(orderId: string, errorMessage: st
     })
 
     await sendTrackedEmail(payload, {
-      from: 'Support | Helix Bio <support@helixbiochem.com>',
-      to: 'support@helixbiochem.com',
+      from: 'Veracue Support <support@veracuepeptides.com>',
+      to: 'support@veracuepeptides.com',
       subject: `⚠️ Payment Failed - Order #${orderNumber}`,
       html: html,
     })

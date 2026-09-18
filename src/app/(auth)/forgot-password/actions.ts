@@ -44,7 +44,7 @@ export async function requestPasswordReset(input: ForgotPasswordInput) {
         const html = await generateForgotPasswordEmail(url, user)
 
         await sendTrackedEmail(payload, {
-          from: 'support@veracuepeptides.com',
+          from: 'Veracue Support <support@veracuepeptides.com>',
           to: parsed.data.email,
           subject: 'Reset Your Password - Veracue Peptides',
           html,

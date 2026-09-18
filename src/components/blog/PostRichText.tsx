@@ -21,7 +21,7 @@ const jsxConverters: JSXConvertersFunction = ({ defaultConverters }) => ({
           className="w-full h-auto"
         />
         {value.caption && (
-          <figcaption className="text-body-sm italic text-ink-muted mt-3">
+          <figcaption className="text-body-sm italic text-[#525b4c] mt-3">
             {value.caption}
           </figcaption>
         )}
@@ -34,14 +34,14 @@ const jsxConverters: JSXConvertersFunction = ({ defaultConverters }) => ({
     ),
   },
   table: ({ node, nodesToJSX }) => (
-    <div className="overflow-x-auto my-8 -mx-1 [-webkit-overflow-scrolling:touch]">
+    <div className="overflow-x-auto my-8 -mx-1 rounded-2xl border border-[#eddcd2] [-webkit-overflow-scrolling:touch]">
       <table className="min-w-full w-max border-collapse text-sm sm:text-base">
         <tbody>{nodesToJSX({ nodes: node.children })}</tbody>
       </table>
     </div>
   ),
   tablerow: ({ node, nodesToJSX }) => (
-    <tr className="border-b border-ink/10 last:border-0">
+    <tr className="border-b border-[#eddcd2] last:border-0">
       {nodesToJSX({ nodes: node.children })}
     </tr>
   ),
@@ -54,8 +54,8 @@ const jsxConverters: JSXConvertersFunction = ({ defaultConverters }) => ({
         colSpan={(node as any).colSpan > 1 ? (node as any).colSpan : undefined}
         className={
           isHeader
-            ? 'text-left font-heading font-bold text-ink uppercase tracking-wide text-xs sm:text-sm bg-ink/[0.03] px-3 sm:px-4 py-3 whitespace-nowrap'
-            : 'px-3 sm:px-4 py-3 align-top whitespace-nowrap'
+            ? 'text-left font-heading font-bold text-[#20221c] uppercase tracking-wide text-xs sm:text-sm bg-[#f0efeb] px-3 sm:px-4 py-3 whitespace-nowrap'
+            : 'px-3 sm:px-4 py-3 align-top whitespace-nowrap text-[#525b4c]'
         }
       >
         {children}

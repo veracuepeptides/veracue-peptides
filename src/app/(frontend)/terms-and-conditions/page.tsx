@@ -53,14 +53,14 @@ export default function TermsAndConditionsPage() {
       titleLine2={t('titleLine2')}
       effectiveDate={t('effectiveDate')}
       intro={t('intro')}
-      introHeading="Contractual Agreement & Research Protocols"
+      introHeading="Contractual Agreement & Research Use Terms"
       sections={sections}
       contactProps={{
         title: t('contactTitle'),
         intro: t('contactIntro'),
         supportLabel: t('supportIssuesLabel'),
         orderLabel: t('orderQueriesLabel'),
-        closingText: 'By placing an order on Veracue, you acknowledge and reaffirm your compliance with these Terms and Conditions.',
+        closingText: 'By placing an order on Veracue Peptides, you acknowledge and reaffirm your compliance with these Terms and Conditions.',
         supportEmail: 'support@veracuepeptides.com',
         ordersEmail: 'orders@veracuepeptides.com',
       }}
@@ -85,7 +85,7 @@ export default function TermsAndConditionsPage() {
           <div className="flex items-start gap-2.5">
             <AlertTriangle size={16} className="text-[#cb997e] shrink-0 mt-0.5" />
             <span>
-              Veracue maintains a zero-tolerance policy regarding human or animal consumption claims. Any accounts or orders indicating intent for non-laboratory use are subject to immediate cancellation without refund.
+              Veracue Peptides LLC has a zero-tolerance policy on human or animal consumption claims. Any account or order suggesting intent for non-laboratory use is subject to immediate cancellation, with no refund issued.
             </span>
           </div>
         </LegalCallout>

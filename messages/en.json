@@ -80,7 +80,7 @@
     "deniedTitle": "Access Denied",
     "deniedText": "Due to the strict nature of research chemicals, you must be 18 years of age or older to enter this site.",
     "goBack": "Wait, I made a mistake",
-    "purityGuaranteed": "Purity Guaranteed",
+    "purityGuaranteed": "Purity Verified",
     "hplcVerifiedLine1": "99.1% HPLC",
     "hplcVerifiedLine2": "Verified"
   },
@@ -199,8 +199,8 @@
     "designedBy": "Designed & Developed by"
   },
   "home": {
-    "metaTitle": "Premium Research Peptides USA | 99% Purity | Veracue Peptides",
-    "metaDescription": "Shop premium research peptides in the USA with verified purity, mass-spec testing, and complete COA documentation. Explore the Veracue Peptides catalog now.",
+    "metaTitle": "Buy Research Peptides USA | 99%+ Purity | Veracue Peptides",
+    "metaDescription": "USA-made research peptides, independently verified by HPLC and mass spectrometry. Every order includes a batch-specific COA. Browse the Veracue catalog.",
     "hero": {
       "viewPeptidesShort": "View Peptides",
       "viewPeptidesLong": "View Research Peptides",
@@ -227,16 +227,16 @@
       "title": "Considered Compounds for Considered Research.",
       "description": "We synthesize ultra-pure research peptides using advanced solid-phase peptide synthesis (SPPS) in US-based, ISO-certified facilities. Every compound undergoes independent third-party LC-MS and HPLC analysis to verify both molecular identity and ≥99% purity before it reaches your bench. No overseas raw powders. No shortcuts. Just verifiable science.",
       "readAboutUs": "Read About Us",
-      "proof1Title": "≥99% HPLC Purity — Every Batch, No Exceptions",
-      "proof1Text": "High-Performance Liquid Chromatography (HPLC) testing is performed on every production batch. Any sample failing to meet our strict 99% purity threshold is immediately discarded — never sold.",
+      "proof1Title": "≥99% HPLC Purity, Every Batch, No Exceptions",
+      "proof1Text": "High-Performance Liquid Chromatography (HPLC) testing is performed on every production batch. Any sample that fails to meet our strict 99% purity threshold is discarded immediately, not sold.",
       "proof2Title": "LC-MS Verified Peptide Identity",
       "proof2Text": "Mass spectrometry (LC-MS) confirms the exact molecular weight and identity of every compound we ship. You receive the peptide on the label, exactly as described.",
-      "proof3Title": "COA with Every Order — Full Transparency",
+      "proof3Title": "COA with Every Order: Full Transparency",
       "proof3Text": "Every order ships with a lot-specific Certificate of Analysis (COA) traceable to its independent test results. Our full COA library is publicly accessible at any time."
     },
     "bestSeller": {
       "eyebrow": "Most Popular",
-      "title": "Our Best Sellers.",
+      "title": "Best-Selling Research Peptides",
       "description": "A rotating selection of the most-requested compounds in the catalog, each shipped with a batch-specific certificate of analysis.",
       "ctaText": "View All Products",
       "fallbackCategory": "Research Peptide",
@@ -250,6 +250,7 @@
       }
     },
     "blogSection": {
+      "eyebrow": "Blog",
       "titleLine1": "Latest Peptide",
       "titleLine2": "Research Resources",
       "subtitle": "Guides and tools built for researchers evaluating compounds, planning studies, or preparing an order.",
@@ -268,7 +269,7 @@
       "exploreCursor": "EXPLORE",
       "titleLine1": "RESEARCH",
       "titleLine2": "CATEGORIES.",
-      "description": "Browse the catalog by research application — each category maps to a specific set of compounds with shared research use cases.",
+      "description": "Browse the catalog by research application. Each category maps to a specific set of compounds with shared research use cases.",
       "items": {
         "recovery": {
           "name": "Recovery"
@@ -300,10 +301,10 @@
       "eyebrow": "ABSOLUTE TRANSPARENCY",
       "titleLine1": "Verified Purity.",
       "titleLine2": "Every Single Batch.",
-      "description": "Third-party purity verification is the cornerstone of research-grade compounds. Every vial we ship carries an independently verified COA that proves what is inside — not what we claim is inside. Here is exactly what we test for, and why it matters.",
-      "vialAlt": "Single precision research peptide vial with Certificate of Analysis document — Veracue Peptides",
+      "description": "Third-party purity verification is the cornerstone of research-grade compounds. Every vial we ship carries an independently verified COA that proves what is inside, not what we claim is inside. Here is exactly what we test for, and why it matters.",
+      "vialAlt": "Single precision research peptide vial with Certificate of Analysis document, Veracue Peptides",
       "metric1Title": "≥99% HPLC Purity",
-      "metric1Desc": "Stringent chromatographic isolation for every compound — verified before any order ships.",
+      "metric1Desc": "Stringent chromatographic isolation for every compound, verified before any order ships.",
       "metric1Tooltip": "HPLC separates compound mixtures by molecular polarity, confirming concentration and purity to ≥99%.",
       "metric2Title": "Mass Spectrometry (LC-MS)",
       "metric2Desc": "Exact molecular weight verification confirms you are receiving the compound on the label.",
@@ -370,7 +371,7 @@
         },
         "assayDevelopment": {
           "question": "How do peptide reagents support laboratory research studies?",
-          "answer": "Research peptides serve as standardized reagents in cellular, biochemical, and pharmacological studies, giving researchers a consistent, purity-verified compound to test against a defined protocol. Batch-to-batch consistency, backed by COA documentation, is what makes results comparable across a study."
+          "answer": "Research peptides serve as standardized reagents in cellular, biochemical, and pharmacological studies, giving researchers a consistent, purity-verified compound to build a study around. Batch-to-batch consistency, backed by COA documentation, is what makes results comparable across a study."
         },
         "commonImpurities": {
           "question": "What are common impurities in synthetic peptides?",
@@ -462,7 +463,7 @@
     "newsletter": {
       "eyebrow": "STAY INFORMED",
       "title": "Quiet updates.",
-      "description": "New compounds and research notes — no marketing noise.",
+      "description": "New compounds and research notes. No marketing noise.",
       "emailPlaceholder": "your@email.com",
       "subscribeButton": "SUBSCRIBE",
       "unsubscribeNote": "Unsubscribe at any time."
@@ -510,8 +511,8 @@
       "clickToViewLine2": "To",
       "clickToViewLine3": "View",
       "eyebrow": "Why Choose Us",
-      "titleLine1": "Transparency",
-      "titleLine2": "You Can Trust.",
+      "titleLine1": "Verification,",
+      "titleLine2": "Not Assumptions.",
       "items": {
         "hplcPurity": {
           "tag": "Trusted & Verified",
@@ -532,11 +533,11 @@
     },
     "trustBadges": {
       "eyebrow": "The Veracue Analytical Standard",
-      "titleLine1": "ENGINEERED FOR",
-      "titleLine2": "ABSOLUTE PRECISION",
+      "titleLine1": "DOCUMENTED,",
+      "titleLine2": "NOT PROMISED.",
       "subtitle": "USA-Manufactured. Third-Party Verified.",
       "ctaText": "Our Scientific Approach",
-      "description": "Every compound in the Veracue catalog is synthesized to a documented purity standard and verified before it's listed — not estimated, and not left to a marketing claim.",
+      "description": "Every compound in the Veracue catalog is synthesized to a documented purity standard and verified before it's listed. Not estimated, and not left to a marketing claim.",
       "cards": {
         "purity": {
           "title": "99.1%+ Verified Purity",
@@ -654,7 +655,7 @@
       "loadingMore": "Loading more...",
       "reachedEndOfCatalog": "You've reached the end of the catalog.",
       "noProductsFound": "No peptides match your current filters",
-      "noProductsFoundDescription": "No peptides match your current filters right now. Try clearing your filters, or check back shortly — our catalog restocks regularly and every batch is COA-verified before it's listed.",
+      "noProductsFoundDescription": "No peptides match your current filters right now. Try clearing your filters, or check back shortly. Our catalog restocks regularly, and every batch is COA-verified before it's listed.",
       "clearAllFilters": "Clear All Filters",
       "faqTitle": "Questions",
       "faqDescription": "Common questions about research peptides, ordering, and site standards.",
@@ -843,8 +844,8 @@
       "affiliateDashboard": "Affiliate Dashboard",
       "manageLinksAndPayouts": "Manage links and payouts",
       "earnCommission": "Earn 15% Commission",
-      "joinPartnerProgram": "Join the Partner Program",
-      "partnerProgram": "Partner Program",
+      "joinPartnerProgram": "Join the Affiliate Program",
+      "partnerProgram": "Affiliate Program",
       "applicationUnderReview": "Application under review",
       "trackOrder": "Track Order",
       "trackOrderDescription": "Track your recent orders",
@@ -1018,7 +1019,7 @@
         "addresses": "Addresses",
         "wishlist": "Wishlist",
         "settings": "Settings",
-        "affiliateDashboard": "Affiliate Dashboard"
+        "affiliateDashboard": "Affiliate"
       },
       "affiliateDashboard": "Affiliate Dashboard",
       "signOut": "Sign out",
@@ -1277,14 +1278,14 @@
   "legal": {
     "privacyPolicy": {
       "metaTitle": "Privacy Policy | Veracue Peptides",
-      "metaDescription": "See how Veracue Peptides collects, uses, and safeguards personal data across ordering, account access, and research-use compliance on our website.",
+      "metaDescription": "How Veracue Peptides collects, uses, and protects personal data across ordering, account access, and research-use compliance on our website.",
       "eyebrow": "Legal Information",
       "titleLine1": "Veracue Peptides",
       "titleLine2": "Privacy Policy",
       "effectiveDate": "Effective Date: September 2026",
-      "intro": "Veracue Peptides takes your privacy seriously. This Privacy Policy sets out what personal information we gather, how we put it to use, and the steps we take to keep it protected whenever you browse our site or use our services. Continuing to use the website means you're accepting the practices outlined below.",
+      "intro": "Veracue Peptides LLC (\"Veracue,\" \"we,\" \"us,\" or \"our\") takes your privacy seriously. This policy sets out what personal information we collect, how we use it, and the steps we take to protect it whenever you browse our site or place an order. Continuing to use the website means you accept the practices described below.",
       "section1Title": "Information We Collect",
-      "section1Text": "To operate securely and serve you well, we gather several categories of information, including:",
+      "section1Text": "To operate securely and serve you well, we collect several categories of information, including:",
       "section1Item1Label": "Personal Details:",
       "section1Item1Text": "Full name, email address, phone number, and billing or shipping address.",
       "section1Item2Label": "Account Details:",
@@ -1299,22 +1300,22 @@
       "section2Intro": "We rely on the information collected above to:",
       "section2Item1": "Process and fulfill your orders, including shipping and payment handling.",
       "section2Item2": "Keep you informed on order status, account activity, and support requests.",
-      "section2Item3": "Refine and troubleshoot the website's functionality and overall experience.",
+      "section2Item3": "Improve and troubleshoot the website's functionality and overall experience.",
       "section2Item4": "Send marketing and promotional messages, which you can opt out of at any time.",
-      "section2Item5": "Meet our legal obligations and safeguard our business interests.",
+      "section2Item5": "Meet our legal obligations and protect our business interests.",
       "section3Title": "How Your Information Is Shared",
       "section3Intro": "Your data is never sold. We only disclose it in a narrow set of circumstances:",
       "section3Item1Label": "Trusted Vendors:",
       "section3Item1Text": "Partners who handle payment processing, order fulfillment, or technical support on our behalf.",
       "section3Item2Label": "Legal Obligations:",
-      "section3Item2Text": "Where disclosure is mandated by law, a court order, or a regulatory body.",
+      "section3Item2Text": "Where disclosure is required by law, a court order, or a regulatory body.",
       "section3Item3Label": "Safety & Enforcement:",
-      "section3Item3Text": "To investigate fraud, uphold our terms, or protect the safety of our users and business.",
+      "section3Item3Text": "To investigate fraud, enforce our terms, or protect the safety of our users and business.",
       "section3Item4Label": "Outbound Links:",
       "section3Item4Text": "Pages on our site may link elsewhere; we don't control and aren't responsible for how those third-party sites handle your data.",
       "section4Title": "Protecting Your Data",
-      "section4Text1": "We rely on encryption, access controls, and secured servers to keep your personal information safe from unauthorized access.",
-      "section4Text2": "That said, no online system offers a perfect guarantee. Using our site means accepting the inherent risk that comes with transmitting data over the internet.",
+      "section4Text1": "We use encryption, access controls, and secured servers to keep your personal information safe from unauthorized access.",
+      "section4Text2": "That said, no online system is completely risk-free. Using our site means accepting the inherent risk that comes with transmitting data over the internet.",
       "section5Title": "Your Privacy Rights",
       "section5Intro": "You're entitled to:",
       "section5Item1": "Review, update, or correct the personal data we hold about you.",
@@ -1325,12 +1326,12 @@
       "section5EmailLabel": "Email:",
       "section6Title": "Research-Use Product Notice",
       "section6Intro": "Every product Veracue Peptides sells is intended for research use only, meaning:",
-      "section6Item1": "It is not designed or approved for human or veterinary use.",
+      "section6Item1": "It's not designed or approved for human or veterinary use.",
       "section6Item2": "It carries no intended diagnostic, therapeutic, or treatment purpose.",
       "section6Item3": "Buyers alone are responsible for handling products in line with applicable laws and safety standards.",
       "section7Title": "Policy Updates",
       "section7Text1": "This Privacy Policy may be revised from time to time, with changes reflected on this page and a new effective date noted at the top.",
-      "section7Text2": "Checking back periodically helps you stay current on exactly how we handle and protect your information.",
+      "section7Text2": "Check back periodically to stay current on exactly how we handle and protect your information.",
       "contactTitle": "Customer Support",
       "contactIntro": "Questions about this Privacy Policy can be directed to:",
       "orderQueriesLabel": "Order-related queries",
@@ -1338,80 +1339,80 @@
       "contactLabel": "Contact"
     },
     "refundPolicy": {
-      "metaTitle": "Refund Policy | Veracue Peptides",
-      "metaDescription": "Veracue's Refund Policy: all sales are final. See why returns, refunds, and exchanges aren't available for research-use products, and what to confirm before ordering.",
+      "metaTitle": "Refund & Exchange Policy | Veracue Peptides",
+      "metaDescription": "Veracue Peptides sells research products as final sale, with one exception: items that arrive damaged are eligible for exchange. See the full policy here.",
       "eyebrow": "Legal Information",
       "titleLine1": "Veracue Peptides",
-      "titleLine2": "Refund Policy",
+      "titleLine2": "Refund & Exchange Policy",
       "effectiveDate": "Effective Date: September 2026",
-      "intro": "Veracue Peptides operates on an all-sales-final basis. Before placing an order, please read this policy carefully: returns, refunds, and exchanges are not available for any research-use product, for any reason, once an order has been placed.",
+      "intro": "Veracue Peptides LLC (\"Veracue,\" \"we,\" \"us,\" or \"our\") sells every research compound as a final sale. The one exception: if your order arrives physically damaged, you're eligible for a free exchange. Read on for exactly how that works, and what to confirm before you order.",
       "section1Title": "What This Policy Covers",
-      "section1Text": "This policy explains Veracue's all-sales-final position. Every item we sell is a research-use-only compound intended strictly for laboratory research — never for human or veterinary use, diagnosis, or treatment — and is sold with no right of return, refund, or exchange once an order is placed.",
-      "section2Title": "No Returns, Refunds, or Exchanges",
-      "section2Intro": "Veracue Peptides does not accept returns and does not issue refunds or exchanges for any order, for any reason. This holds regardless of:",
-      "section2Item1": "Whether the item is unopened, sealed, and in its original packaging.",
-      "section2Item2": "How soon after delivery a request is made.",
-      "section2Item3": "The size of the order, including bulk or custom orders.",
-      "section2Important": "Important: all sales are final at the time an order is placed. There is no eligibility window, and no exception is made for unopened or unused items.",
-      "section3Title": "Why We Don't Accept Returns",
-      "section3Intro": "This policy reflects the nature of the products themselves, not a judgment about any individual order:",
-      "section3Item1": "Research peptides and compounds can't be verified as unopened, unaltered, or properly stored once they leave our facility, so we can't safely return them to inventory.",
-      "section3Item2": "Many of these products are temperature-sensitive and degrade without continuous cold-chain handling — something we have no way to confirm after an item ships.",
-      "section3Item3": "As research-use-only materials, our compounds aren't intended for resale once shipped to a customer, sealed or not.",
-      "section3Item4": "This keeps every unit reaching a customer for the first time to the same purity and handling standard, for every order.",
+      "section1Text": "This policy explains how refunds, exchanges, and returns work for every product sold through veracuepeptides.com. All items are research-use compounds intended strictly for laboratory research, never for human or veterinary use, diagnosis, or treatment, and every sale is final except for the damaged-item exchange described below.",
+      "section2Title": "Items That Arrive Damaged",
+      "section2Intro": "If a product arrives physically damaged, for example a cracked vial, compromised packaging, or a visible cold-chain failure, you're eligible for a free exchange. Here's the process:",
+      "section2Item1": "Email support@veracuepeptides.com within 3 days of delivery with your order number and photos of the damaged item and its packaging.",
+      "section2Item2": "Once we confirm the damage from your photos, we ship a replacement at no charge. There's no need to send the damaged item back to us.",
+      "section2Item3": "This exchange covers items damaged on arrival only. It's separate from, and doesn't extend to, any other return, refund, or exchange request.",
+      "section2Important": "Important: requests made more than 3 days after delivery, or without an order number and photos, can't be approved. Photo evidence is what makes an exchange possible.",
+      "section3Title": "Why All Other Sales Are Final",
+      "section3Intro": "Outside of a confirmed damaged-item exchange, every order is final. This reflects the nature of the products themselves, not a judgment about any individual order:",
+      "section3Item1": "Once a compound leaves our facility, we can't verify it stayed sealed, unaltered, or properly stored, so we can't safely return it to inventory.",
+      "section3Item2": "Many of these products are temperature-sensitive and degrade without continuous cold-chain handling that we have no way to confirm after shipment.",
+      "section3Item3": "As research-use-only materials, our compounds aren't intended for resale once they've reached a customer.",
+      "section3Item4": "This keeps every unit a customer receives, for the first time, held to the same purity and handling standard.",
       "section4Title": "Before You Order",
-      "section4Intro": "Because all sales are final, we encourage every customer to confirm the following before completing checkout:",
+      "section4Intro": "Because most sales are final, we encourage every customer to confirm the following before completing checkout:",
       "section4Item1": "Reach out to <email>support@veracuepeptides.com</email> with any pre-purchase questions about a product, its specifications, or its Certificate of Analysis.",
-      "section4Item2": "Double-check the product, variant, and quantity in your cart against what your research protocol actually requires.",
-      "section4Item3": "Confirm your shipping address and contact details are correct — orders can't be modified once submitted.",
+      "section4Item2": "Double-check the product, variant, and quantity in your cart against what your research actually requires.",
+      "section4Item3": "Confirm your shipping address and contact details are correct. Orders can't be modified once submitted.",
       "section4Item4": "Review our Shipping Policy for delivery timelines and handling requirements before your order arrives.",
-      "section4Item5": "Remember that once an order ships, it cannot be returned, refunded, or exchanged for any reason.",
-      "section4Tip": "Tip: since no returns are possible after checkout, a two-minute review of your order before submitting it is the only safeguard available — take it.",
+      "section4Item5": "Inspect your order as soon as it arrives. Damage has to be reported within 3 days of delivery to qualify for an exchange.",
+      "section4Tip": "Tip: since only damaged-on-arrival items qualify for anything after checkout, a two-minute review of your order before submitting it is the best safeguard you have.",
       "section5Title": "Receiving Your Order",
       "section5Item1": "Inspect your shipment as soon as it arrives and confirm the contents match your order confirmation.",
-      "section5Item2": "Move temperature-sensitive items to appropriate storage immediately on arrival.",
-      "section5Item3": "Once an order is delivered, responsibility for its handling, storage, and use transfers to the customer.",
-      "section6Title": "Order Issues",
-      "section6Intro": "If something about your delivery seems wrong, you're welcome to contact us — though please note this does not guarantee a refund, replacement, or return:",
+      "section5Item2": "Move temperature-sensitive items to appropriate storage immediately.",
+      "section5Item3": "If anything arrived damaged, photograph it before discarding any packaging, then contact us within 3 days.",
+      "section6Title": "Other Order Questions",
+      "section6Intro": "For anything else related to an existing order:",
       "section6OrderQueriesLabel": "Order-related queries:",
-      "section6Text": "We review every report for our own quality-control records, but Veracue's all-sales-final policy applies to every order without exception, including those affected by carrier delays or delivery issues outside our control.",
+      "section6Text": "For a damaged-item exchange specifically, see Section 2 above and email support@veracuepeptides.com with your order number and photos of the damage.",
       "section7Title": "Legal Notes",
       "section7Item1": "All items are sold strictly for laboratory and research use and are not intended for human or veterinary use, diagnosis, or treatment.",
-      "section7Item2": "This all-sales-final policy applies at Veracue's sole discretion, consistent with applicable law.",
-      "section7Item3": "Veracue Peptides may revise this Refund Policy at any time without prior notice.",
+      "section7Item2": "This policy, including the damaged-item exchange process, applies at Veracue Peptides LLC's sole discretion, consistent with applicable law.",
+      "section7Item3": "Veracue Peptides LLC may revise this policy at any time without prior notice.",
       "contactTitle": "Contact Us",
-      "contactIntro": "Reach out to our support team with any questions about a product or an existing order:",
+      "contactIntro": "Reach out to our support team with any questions about a product, an order, or a damaged item:",
       "orderQueriesLabel": "Order-related queries",
       "supportIssuesLabel": "Support & questions",
       "contactLabel": "Contact",
-      "closingText1": "We're glad to help with questions about products, orders, or shipments — though per this policy, that doesn't extend to returns, refunds, or exchanges.",
-      "closingText2": "Bottom line: review your order carefully before checkout — Veracue's all-sales-final policy means it can't be undone once submitted."
+      "closingText1": "We're glad to help with questions about products, orders, or a damaged shipment.",
+      "closingText2": "Outside of a damaged-item exchange, remember that all sales are final, so review your order carefully before checkout."
     },
     "shippingPolicy": {
       "metaTitle": "Shipping Policy | Veracue Peptides",
-      "metaDescription": "See how Veracue Peptides handles order processing, shipping methods, delivery timelines, packaging, and international restrictions for research-use products.",
+      "metaDescription": "How Veracue Peptides handles order processing, shipping methods, delivery windows, packaging, and damaged-shipment exchanges for research-use products.",
       "eyebrow": "Legal Information",
       "titleLine1": "Veracue Peptides",
       "titleLine2": "Shipping Policy",
       "effectiveDate": "Effective Date: September 2026",
-      "intro": "Veracue Peptides ships research peptides, compounds, and biochemical products with the same care we put into sourcing them. This Shipping Policy walks through processing times, delivery windows, packaging, and what to expect once your order leaves our facility.",
+      "intro": "Veracue Peptides LLC ships research peptides, compounds, and biochemical products with the same care we put into sourcing them. This policy covers processing times, delivery windows, packaging, and what happens if a shipment arrives damaged.",
       "section1Title": "Processing Your Order",
-      "section1Text": "Once placed, orders go through a 1–3 business day review before shipping — our team confirms the details, checks stock, and runs a final quality check on every item.",
+      "section1Text": "Once placed, orders go through a 1–3 business day review before shipping. Our team confirms the order details, checks stock, and runs a final quality check on every item.",
       "section1Note": "Note: orders placed on a weekend or holiday enter processing on the following business day.",
       "section2Title": "Shipping Options",
       "section2Intro": "Every shipment moves through vetted, secure carriers. Depending on your order, you may see:",
       "section2Item1Label": "Standard Delivery:",
-      "section2Item1Text": "Our default option — dependable and budget-friendly.",
+      "section2Item1Text": "Our default option, dependable and budget-friendly.",
       "section2Item2Label": "Expedited Delivery:",
-      "section2Item2Text": "A quicker turnaround when your research timeline can't wait.",
+      "section2Item2Text": "A faster turnaround when your research timeline can't wait.",
       "section2Item3Label": "Temperature-Controlled Delivery:",
       "section2Item3Text": "Used for products that need protection from heat or cold in transit.",
-      "section2Note": "You'll receive tracking details by email the moment your order ships.",
-      "section3Title": "Delivery Windows",
-      "section3Intro": "Typical delivery timeframes run:",
+      "section2Note": "You'll receive tracking details by email as soon as your order ships.",
+      "section3Title": "International Shipping",
+      "section3Intro": "We ship within the USA and to select international regions we're approved to serve. Typical delivery timeframes run:",
       "section3Item1": "Within the U.S.: 3–7 business days",
-      "section3Item2": "Outside the U.S.: 7–15 business days, depending on customs and local delivery conditions",
-      "section3Note": "Weather, remote addresses, and customs processing can all push these estimates out.",
+      "section3Item2": "Approved international regions: 7–15 business days, depending on customs and local delivery conditions",
+      "section3Note": "Weather, remote addresses, and customs processing can all push these estimates out. Availability for your address is confirmed at checkout.",
       "section4Title": "Shipping Rates",
       "section4Intro": "Rates are calculated from your order's weight, the shipping method chosen, and where it's headed.",
       "section4Item1": "Domestic standard shipping may run at a flat rate, or free above a certain order total.",
@@ -1420,18 +1421,18 @@
       "section5Intro": "Each shipment is packed to lab standards to keep the contents stable in transit:",
       "section5Item1": "Insulated materials and cold packs for anything temperature-sensitive.",
       "section5Item2": "Discreet, tamper-resistant packaging for privacy and safety alike.",
-      "section5Item3": "Clear research-use-only labeling — never marketed for human or veterinary consumption.",
-      "section6Title": "Shipping Abroad & Restrictions",
-      "section6Intro": "We deliver to many countries, though a handful of destinations impose their own restrictions on research-use compounds.",
-      "section6Item1": "It's on the customer to know and follow the regulations in their own country.",
+      "section5Item3": "Clear research-use-only labeling, never marketed for human or veterinary consumption.",
+      "section6Title": "International Restrictions",
+      "section6Intro": "A handful of destinations impose their own restrictions on research-use compounds.",
+      "section6Item1": "It's on the customer to know and follow the regulations in their own country before ordering.",
       "section6Item2": "Customs holds or restrictions can add time to a delivery beyond our usual estimates.",
-      "section7Title": "If a Shipment Is Damaged or Lost",
-      "section7Intro": "Let us know within 48 hours of delivery if something arrives damaged or never shows up:",
-      "section7Item1": "Send your order number and photos of any damaged packaging.",
-      "section7Item2": "From there we'll sort out a replacement or refund, whichever fits the situation.",
+      "section7Title": "If a Shipment Arrives Damaged",
+      "section7Intro": "Email us within 3 days of delivery if your order arrives physically damaged:",
+      "section7Item1": "Send your order number and photos of the damaged item and its packaging to support@veracuepeptides.com.",
+      "section7Item2": "Once we confirm the damage, we ship a free replacement. There's no need to send the damaged item back, and this is the only case in which an exchange applies.",
       "section8Title": "Legal & Handling Notes",
-      "section8Item1": "Everything we ship is strictly research-use only — not intended for human or veterinary use, diagnosis, or treatment.",
-      "section8Item2": "Veracue Peptides isn't liable for misuse of a product or for carrier delays beyond our control.",
+      "section8Item1": "Everything we ship is strictly research-use only, not intended for human or veterinary use, diagnosis, or treatment.",
+      "section8Item2": "Veracue Peptides LLC isn't liable for misuse of a product or for carrier delays beyond our control.",
       "section8Item3": "This policy is subject to change; check back here periodically for the current version.",
       "contactTitle": "Contact Us",
       "contactIntro": "Questions about a shipment, delivery estimate, or tracking number:",
@@ -1441,37 +1442,37 @@
       "closingText": "Our team is on hand to make sure every order gets to you safely and on schedule."
     },
     "medicalDisclaimer": {
-      "metaTitle": "Medical Disclaimer | Veracue Peptides Research Peptides",
-      "metaDescription": "Veracue's Medical Disclaimer explains that our research peptides are for laboratory use only, not medical advice, treatment, or human consumption.",
+      "metaTitle": "Medical Disclaimer | Veracue Peptides",
+      "metaDescription": "Veracue Peptides' Medical Disclaimer: research peptides are for laboratory use only, not medical advice, treatment, or human consumption.",
       "eyebrow": "Legal Information",
       "titleLine1": "Veracue Peptides",
       "titleLine2": "Medical Disclaimer",
       "effectiveDate": "Effective Date: September 2026",
-      "intro": "The information provided on this website, including any product descriptions, research summaries, or educational content, is for general informational purposes only. Nothing on this site constitutes medical advice, diagnosis, or treatment recommendations, and it should never be used as a substitute for guidance from a licensed physician or qualified healthcare provider.",
+      "intro": "The information on this website, including product descriptions, research summaries, and educational content, is for general informational purposes only. Nothing here constitutes medical advice, diagnosis, or treatment, and none of it should replace guidance from a licensed physician or qualified healthcare provider.",
       "section1Title": "Introduction & No Medical Advice",
-      "section1Text": "Veracue Peptides is a supplier of research compounds, not a healthcare provider, and no statement on this website should be interpreted as a claim to diagnose, treat, cure, or prevent any disease or medical condition. Always seek guidance from a licensed medical or scientific professional before acting on any information obtained from this site.",
+      "section1Text": "Veracue Peptides LLC is a supplier of research compounds, not a healthcare provider, and nothing on this website should be read as a claim to diagnose, treat, cure, or prevent any disease or medical condition. Always seek guidance from a licensed medical or scientific professional before acting on information from this site.",
       "section2Title": "Product Usage Limitation",
-      "section2Text": "All products offered by Veracue Peptides are intended for controlled laboratory or research environments. Any use outside of this context, including self-administration, is strictly prohibited and may violate local, state, or federal laws and regulations. Our products are not drugs, medicines, dietary supplements, or food, and they are not intended for human or veterinary use. Users are responsible for ensuring that all handling, storage, and usage comply with applicable research protocols and safety standards in their jurisdiction.",
+      "section2Text": "All products offered by Veracue Peptides are intended for controlled laboratory or research environments. Any use outside that context, including self-administration, is strictly prohibited and may violate local, state, or federal law. Our products are not drugs, medicines, dietary supplements, or food, and they're not intended for human or veterinary use. Users are responsible for ensuring all handling, storage, and use comply with applicable research standards and safety practices in their jurisdiction.",
       "section3Title": "Liability",
-      "section3Text": "Veracue Peptides assumes no responsibility or liability for the misuse of products, improper handling, or any adverse effects resulting from unauthorized use. By using this website and purchasing our products, you acknowledge and agree that Veracue Peptides is not liable for any direct, indirect, or consequential damages arising from your actions.",
+      "section3Text": "Veracue Peptides LLC assumes no responsibility or liability for the misuse of products, improper handling, or any adverse effects resulting from unauthorized use. By using this website and purchasing our products, you acknowledge and agree that Veracue Peptides LLC is not liable for any direct, indirect, or consequential damages arising from your actions.",
       "section4Title": "User Responsibility",
-      "section4Intro": "It is the responsibility of all users to:",
+      "section4Intro": "It's the responsibility of every user to:",
       "section4Item1": "Follow all local, state, and federal laws regarding research chemicals.",
       "section4Item2": "Use products only in designated research or laboratory settings.",
-      "section4Item3": "Exercise caution and adhere to proper safety protocols when handling compounds.",
-      "section4Item4": "Consult a qualified professional for any questions regarding research procedures, legal compliance, or scientific interpretation.",
+      "section4Item3": "Exercise caution and follow proper laboratory safety practices when handling compounds.",
+      "section4Item4": "Consult a qualified professional for any questions about research procedures, legal compliance, or scientific interpretation.",
       "section5Title": "Regulatory Compliance",
-      "section5Text": "The statements on this website have not been evaluated by the U.S. Food and Drug Administration. Products sold by Veracue Peptides are offered strictly for research and laboratory purposes and are not intended to diagnose, treat, cure, or prevent any disease. Veracue Peptides is not a compounding pharmacy and does not operate as a chemical compounding facility as defined under Section 503A of the Federal Food, Drug, and Cosmetic Act. Veracue Peptides reserves the right to refuse service to any individual or organization where required to remain compliant with applicable law.",
+      "section5Text": "The statements on this website have not been evaluated by the U.S. Food and Drug Administration. Products sold by Veracue Peptides LLC are offered strictly for research and laboratory purposes and are not intended to diagnose, treat, cure, or prevent any disease. Veracue Peptides LLC is not a compounding pharmacy and doesn't operate as a chemical compounding facility as defined under Section 503A of the Federal Food, Drug, and Cosmetic Act. We reserve the right to refuse service to any individual or organization where required to stay compliant with applicable law.",
       "section6Title": "Accuracy of Information",
-      "section6Text": "We make reasonable efforts to keep product descriptions, research references, and site content accurate and current. However, research literature evolves, and Veracue Peptides does not guarantee that every statement on this site reflects the most recent findings. Users should independently verify information relevant to their own research before relying on it.",
+      "section6Text": "We make reasonable efforts to keep product descriptions, research references, and site content accurate and current. Research literature evolves, though, and Veracue Peptides LLC doesn't guarantee that every statement on this site reflects the most recent findings. Users should independently verify information relevant to their own research before relying on it.",
       "section7Title": "Changes to This Disclaimer",
-      "section7Text": "Veracue Peptides may update this Medical Disclaimer at any time to reflect changes in our products, applicable regulations, or business practices. The effective date at the top of this page shows when the current version took effect, and continued use of the site after an update constitutes acceptance of the revised disclaimer.",
+      "section7Text": "Veracue Peptides LLC may update this Medical Disclaimer at any time to reflect changes in our products, applicable regulations, or business practices. The effective date at the top of this page shows when the current version took effect, and continued use of the site after an update means you accept the revised disclaimer.",
       "contactTitle": "Contact Us",
-      "contactIntro": "If you have questions regarding product use, safety or compliance, please contact our support team at:",
+      "contactIntro": "If you have questions about product use, safety, or compliance, contact our support team at:",
       "orderQueriesLabel": "Order-related queries",
       "supportIssuesLabel": "Support & issues",
       "contactLabel": "Contact",
-      "closingText": "By accessing this website or purchasing our products, you agree to comply with this Medical Disclaimer and acknowledge that Veracue Peptides is not responsible for any misuse or unauthorized application of our research materials.",
+      "closingText": "By accessing this website or purchasing our products, you agree to comply with this Medical Disclaimer and acknowledge that Veracue Peptides LLC is not responsible for any misuse or unauthorized application of our research materials.",
       "faqTitle": "Questions",
       "faqDescription": "Quick answers about research use, liability, and compliance, written to be pulled directly into search results.",
       "faqs": {
@@ -1481,7 +1482,7 @@
         },
         "intendedForHumanConsumption": {
           "question": "Are Veracue's products intended for human consumption?",
-          "answer": "No. Veracue's products are not drugs, supplements, or food, and they are not intended for human or veterinary use of any kind."
+          "answer": "No. Veracue's products are not drugs, supplements, or food, and they're not intended for human or veterinary use of any kind."
         },
         "isMedicalAdvice": {
           "question": "Is the information on this website medical advice?",
@@ -1497,11 +1498,11 @@
         },
         "selfAdministration": {
           "question": "Can I use these products for treatment or self-administration?",
-          "answer": "No. Self-administration or any use outside of a controlled research setting is strictly prohibited and may violate local, state, or federal law."
+          "answer": "No. Self-administration or any use outside a controlled research setting is strictly prohibited and may violate local, state, or federal law."
         },
         "misuseResponsibility": {
           "question": "Who is responsible if a product is misused?",
-          "answer": "The end user assumes full responsibility for how a product is handled, stored, and used; Veracue Peptides is not liable for misuse or unauthorized application."
+          "answer": "The end user assumes full responsibility for how a product is handled, stored, and used. Veracue Peptides LLC is not liable for misuse or unauthorized application."
         },
         "contactAboutDisclaimer": {
           "question": "How can I contact Veracue Peptides about this disclaimer?",
@@ -1510,15 +1511,15 @@
       }
     },
     "termsAndConditions": {
-      "metaTitle": "Veracue Peptides Terms & Conditions | Research Peptides",
-      "metaDescription": "Read Veracue's Terms and Conditions covering orders, payments, shipping, and research-use policies for our peptide products. Clear terms, no surprises.",
+      "metaTitle": "Terms & Conditions | Veracue Peptides",
+      "metaDescription": "Read Veracue Peptides' Terms and Conditions covering orders, payments, shipping, and research-use policies for our peptide products.",
       "eyebrow": "Legal Information",
       "titleLine1": "Veracue Peptides",
       "titleLine2": "Terms and Conditions",
       "effectiveDate": "Effective Date: September 2026",
-      "intro": "Welcome to Veracue Peptides. By accessing or using our website, purchasing products, or interacting with our services, you agree to be bound by the following Terms and Conditions. If you do not agree with any part of these terms, please discontinue use of the site and do not place an order. These Terms apply to every visitor, customer, and account holder on this website, and they work alongside our Privacy Policy and Shipping Policy, which are incorporated here by reference.",
+      "intro": "Welcome to Veracue Peptides. By accessing this website, purchasing products, or interacting with our services, you agree to be bound by the following Terms and Conditions, offered by Veracue Peptides LLC (\"Veracue,\" \"we,\" \"us,\" or \"our\"). If you don't agree with any part of these terms, please discontinue use of the site and don't place an order. These Terms apply to every visitor, customer, and account holder on this website, and they work alongside our Privacy Policy, Shipping Policy, and Refund & Exchange Policy, all incorporated here by reference.",
       "section1Title": "Acceptance of Terms",
-      "section1Text": "By accessing this website or purchasing any product from Veracue Peptides, you agree to be bound by these Terms and Conditions. These Terms govern your access, use, and purchase of our research-grade peptides, small molecules, and related compounds, all of which are intended strictly for laboratory and research purposes and are not for human or veterinary use, diagnosis, or treatment.",
+      "section1Text": "By accessing this website or purchasing any product from Veracue Peptides LLC, you agree to be bound by these Terms and Conditions. These Terms govern your access, use, and purchase of our research-grade peptides, small molecules, and related compounds, all of which are intended strictly for laboratory and research purposes and are not for human or veterinary use, diagnosis, or treatment.",
       "section2Title": "Research Use & Product Disclaimer",
       "section2Intro": "All products sold through our website are strictly for research purposes and are not intended for diagnostic, therapeutic, or veterinary application. By purchasing or using our products, you confirm that:",
       "section2Item1": "You understand and accept that products are not intended for human consumption or medical use.",
@@ -1526,24 +1527,24 @@
       "section2Item3": "You accept full responsibility for the safe handling, storage, and disposal of products.",
       "section3Title": "Account & User Responsibilities",
       "section3Item1": "Users must be 18 years or older, or of legal age in their jurisdiction, to create an account or place an order.",
-      "section3Item2": "Accurate and up-to-date personal and billing information must be provided at checkout.",
-      "section3Item3": "You are responsible for safeguarding your account credentials and for all activity that occurs under your account.",
+      "section3Item2": "Accurate, current personal and billing information must be provided at checkout.",
+      "section3Item3": "You're responsible for safeguarding your account credentials and for all activity that occurs under your account.",
       "section3Item4": "Any misuse of your account or unauthorized purchases must be reported to our support team immediately.",
       "section4Title": "Ordering & Payment",
       "section4Item1": "Orders are considered accepted once payment has been successfully processed.",
       "section4Item2": "We accept the payment methods listed on the checkout page at the time of your order.",
       "section4Item3": "All prices are listed in USD unless otherwise stated.",
-      "section4Item4": "Orders may be canceled or modified prior to shipment, subject to Veracue's approval. If a pricing or listing error appears on the site, we reserve the right to correct it and to cancel any order placed at the incorrect price, with a full refund issued.",
+      "section4Item4": "Orders may be canceled or modified prior to shipment, subject to Veracue's approval. If a pricing or listing error appears on the site, we reserve the right to correct it and to cancel any order placed at the incorrect price, with a full refund issued for that canceled order.",
       "section5Title": "Shipping & Delivery",
-      "section5Item1": "We ship only to regions we are approved to serve; certain products may carry additional restrictions under local law.",
+      "section5Item1": "We ship within the USA and to select international regions we're approved to serve; certain products may carry additional restrictions under local law.",
       "section5Item2": "Shipping timelines are estimates and may vary due to carrier logistics, customs processing, or regional handling delays.",
-      "section5Item3": "Veracue Peptides is not responsible for delays, loss, or damage that occurs once a package has been handed to the carrier, though we're happy to help you file a claim.",
+      "section5Item3": "If your order arrives physically damaged, see our Refund & Exchange Policy for how to request a free exchange within 3 days of delivery.",
       "section6Title": "Product Liability & Safety",
       "section6Item1": "Products are not approved for human or veterinary use.",
       "section6Item2": "Users assume all risk associated with the storage, handling, and research application of any product purchased.",
-      "section6Item3": "Veracue Peptides is not liable for misuse, accidental ingestion, or any application outside of approved laboratory or experimental use.",
+      "section6Item3": "Veracue Peptides LLC is not liable for misuse, accidental ingestion, or any application outside of approved laboratory or experimental use.",
       "section7Title": "Intellectual Property",
-      "section7Item1": "All website content, product descriptions, images, branding, and design elements are the property of Veracue Peptides and are protected under applicable copyright and trademark law. You may not copy, reproduce, distribute, or otherwise exploit this content for commercial purposes without written permission.",
+      "section7Item1": "All website content, product descriptions, images, branding, and design elements are the property of Veracue Peptides LLC and are protected under applicable copyright and trademark law. You may not copy, reproduce, distribute, or otherwise exploit this content for commercial purposes without written permission.",
       "section7Item2": "Unauthorized use of our branding, product names, or site materials is strictly prohibited.",
       "section8Title": "User Conduct",
       "section8Intro": "By using our website, you agree not to:",
@@ -1553,19 +1554,19 @@
       "section8Note": "Violations of these conduct terms may result in order cancellation, account suspension, or legal action.",
       "section9Title": "Limitation of Liability",
       "section9Intro": "To the maximum extent permitted by law:",
-      "section9Item1": "Veracue Peptides is not liable for any damages resulting from misuse of our products, unauthorized applications, or errors on the website.",
-      "section9Item2": "Where liability cannot be excluded, our total liability for any product issue is limited to the purchase price of that product.",
+      "section9Item1": "Veracue Peptides LLC is not liable for any damages resulting from misuse of our products, unauthorized applications, or errors on the website.",
+      "section9Item2": "Where liability can't be excluded, our total liability for any product issue is limited to the purchase price of that product.",
       "section10Title": "Indemnification",
-      "section10Intro": "You agree to indemnify and hold harmless Veracue Peptides, its employees, officers, and affiliates from any claims, damages, or expenses arising from:",
+      "section10Intro": "You agree to indemnify and hold harmless Veracue Peptides LLC, its employees, officers, and affiliates from any claims, damages, or expenses arising from:",
       "section10Item1": "Improper use of our products.",
       "section10Item2": "Violation of these Terms and Conditions.",
       "section10Item3": "Breach of any local, state, or federal law related to product use.",
       "section11Title": "Governing Law",
-      "section11Text": "These Terms are governed by the laws of the jurisdiction in which Veracue Peptides operates, without regard to conflict-of-law principles. Any disputes arising from these Terms will be resolved under those laws.",
+      "section11Text": "These Terms are governed by the laws of the jurisdiction in which Veracue Peptides LLC operates, without regard to conflict-of-law principles. Any disputes arising from these Terms will be resolved under those laws.",
       "section12Title": "Privacy & Data Use",
       "section12Text": "Your use of Veracue Peptides is also governed by our Privacy Policy, which explains how we collect, use, and protect your personal information. By using this site, you consent to the data practices described there.",
       "section13Title": "Changes to These Terms",
-      "section13Text": "Veracue Peptides reserves the right to update or modify these Terms at any time. Changes take effect immediately upon posting to this page, and your continued use of the website or our products after that point constitutes acceptance of the updated Terms. We recommend checking this page periodically, particularly the effective date at the top, so you're always working from the current version.",
+      "section13Text": "Veracue Peptides LLC reserves the right to update or modify these Terms at any time. Changes take effect immediately upon posting to this page, and your continued use of the website or our products after that point constitutes acceptance of the updated Terms. Check this page periodically, particularly the effective date at the top, so you're always working from the current version.",
       "contactTitle": "Customer Support",
       "contactIntro": "If you have questions about these Terms and Conditions, please contact:",
       "orderQueriesLabel": "Order-related queries",
@@ -1580,15 +1581,15 @@
         },
         "cancelOrder": {
           "question": "Can I cancel or change my order after I've paid?",
-          "answer": "Yes, as long as the order hasn't shipped yet. Reach out to our support team as soon as possible — once an order ships, it can no longer be modified or canceled."
+          "answer": "Yes, as long as the order hasn't shipped yet. Reach out to our support team as soon as possible. Once an order ships, it can no longer be modified or canceled."
         },
         "shipsInternationally": {
           "question": "Does Veracue Peptides ship internationally?",
-          "answer": "Veracue Peptides ships only to regions we're approved to serve, and some products carry additional restrictions depending on local law. Availability is confirmed at checkout based on your shipping address."
+          "answer": "Yes, to select regions we're approved to serve, in addition to the USA. Some products carry additional restrictions depending on local law. Availability for your address is confirmed at checkout."
         },
         "damagedOrDelayed": {
-          "question": "What happens if my order arrives damaged or delayed?",
-          "answer": "Contact support with your order number as soon as you notice an issue. While Veracue Peptides isn't liable for carrier delays or damage once a package ships, we'll help you file a claim with the carrier."
+          "question": "What happens if my order arrives damaged?",
+          "answer": "Email support@veracuepeptides.com within 3 days of delivery with your order number and photos of the damage, and we'll send a free replacement. This is the one case where Veracue offers an exchange after an order ships."
         },
         "ageRequirement": {
           "question": "Do I need to be a certain age to order from Veracue Peptides?",
@@ -1604,13 +1605,13 @@
         },
         "termsChangeNotice": {
           "question": "Can Veracue Peptides change these Terms without notice?",
-          "answer": "Veracue Peptides can update these Terms at any time, and changes take effect as soon as they're posted. Continuing to use the site or order products after an update means you accept the revised Terms — so it's worth checking the effective date occasionally."
+          "answer": "Veracue Peptides LLC can update these Terms at any time, and changes take effect as soon as they're posted. Continuing to use the site or order products after an update means you accept the revised Terms, so it's worth checking the effective date occasionally."
         }
       }
     },
     "certificates": {
-      "metaTitle": "Certificate of 99% Purity Peptides | Lab-Tested COA Reports",
-      "metaDescription": "View certified lab reports for 99% purity peptides. Transparent COA documents ensuring quality, accuracy, and trusted research-grade standards.",
+      "metaTitle": "Peptide Certificates of Analysis | Veracue Peptides",
+      "metaDescription": "Browse batch-specific certificates of analysis for Veracue Peptides research compounds, verified by independent third-party HPLC and mass spectrometry testing.",
       "eyebrow": "Verification",
       "title": "Certificates of Analysis",
       "description": "Transparency is not optional. We verify every batch through independent, third-party US laboratories using high-performance liquid chromatography (HPLC) and mass spectrometry (MS).",
@@ -1647,30 +1648,25 @@
   },
   "affiliate": {
     "landing": {
-      "metaTitle": "Peptide Affiliate Program | Earn 15% Commission | Veracue",
+      "metaTitle": "Peptide Affiliate Program | Earn 15% Commission | Veracue Peptides",
       "metaDescription": "Earn 15% commission promoting Veracue research peptides, plus a 15% customer discount and monthly payouts. Apply to the affiliate program today.",
-      "heroJoinButtonLong": "Join the Affiliate Program Now",
-      "heroJoinButtonShort": "Join the Program",
-      "heroTitle": "Affiliates",
       "introEyebrow": "Affiliate Program",
       "introTitle": "Earn Passive Income Promoting Premium Research Peptides",
       "introDescription": "The Veracue affiliate program is built for content creators, bloggers, and scientific-community voices who want a straightforward, well-tested way to earn from an audience already interested in research-grade peptides.",
       "benefit1": "15% commission on every qualified sale",
       "benefit2": "15% discount for your referred customers",
       "benefit3": "Free, real-time commission tracking from day one",
-      "benefit4": "Monthly payouts via PayPal, Stripe, or bank transfer",
-      "benefit5": "7-day cookie duration for maximum time to convert",
+      "benefit4": "Monthly payouts via direct bank ACH, wire transfer, or crypto (USDC)",
       "howItWorksTitle": "How It Works",
       "howItWorksSubtitle": "Our affiliate program is designed with your success in mind, offering a straightforward way to earn from both sides of every referral.",
       "commissionCardTitle": "Commission for You",
-      "commissionCardDesc": "Earn 15% commission on every qualified sale you refer — paid monthly, with no cap on how much you can earn.",
+      "commissionCardDesc": "Earn 15% commission on every qualified sale you refer, paid out monthly, with no ceiling on total earnings.",
       "commissionCardMicrocopy": "REVENUE SHARE",
       "discountCardTitle": "Discount for Customers",
       "discountCardDesc": "Your referred customers get 15% off their first order, which makes sharing your link an easy, low-friction recommendation rather than a hard sell.",
       "discountCardMicrocopy": "INCREASE CONVERSIONS",
-      "stepsTitle": "Simple 4-Step Process to Start Earning",
       "step1Title": "Join the Program",
-      "step1Desc": "Apply and get approved to join the affiliate program — there's no cost and no minimum audience size required.",
+      "step1Desc": "Apply and get approved to join the affiliate program. There's no cost and no minimum audience size required.",
       "step1Tag": "Step 1",
       "step1Microcopy": "INSTANT APPROVAL",
       "step2Title": "Get Your Links",
@@ -1678,7 +1674,7 @@
       "step2Tag": "Step 2",
       "step2Microcopy": "CUSTOM CODES",
       "step3Title": "Share Your Content",
-      "step3Desc": "Promote through your blog, social media, email list, or wherever your audience already spends time — following the program's content standards.",
+      "step3Desc": "Promote through your blog, social media, email list, or wherever your audience already spends time, following the program's content standards.",
       "step3Tag": "Step 3",
       "step3Microcopy": "GROW AUDIENCE",
       "step4Title": "Earn Commissions",
@@ -1690,25 +1686,14 @@
       "commissionExampleTitle": "Commission Example",
       "commissionExampleOrderValueLabel": "Customer Order Value",
       "commissionExampleDiscountLabel": "Customer Discount (15%)",
-      "commissionExampleCustomerPaysLabel": "Customer Pays",
       "commissionExampleYourCommissionLabel": "Your Commission (15% of $200)",
       "monthlyEarningsTitle": "Realistic Monthly Earnings",
-      "monthlyEarningsAvgOrder": "@ $150 avg order",
-      "monthlyEarnings10Label": "10 referrals/mo",
-      "monthlyEarnings25Label": "25 referrals/mo",
-      "monthlyEarnings50Label": "50 referrals/mo",
       "statCookieValue": "7-Day",
       "statCookieLabel": "Cookie Duration",
       "statCookieDesc": "If a customer clicks your link but buys within 7 days, you still receive full commission credit.",
       "statDualValue": "Dual",
       "statDualLabel": "Attribution System",
       "statDualDesc": "Both referral link tracking and coupon-code tracking ensure you never miss a commission.",
-      "statRealValue": "Real-Time",
-      "statRealLabel": "Time Dashboard",
-      "statRealDesc": "See total clicks, conversion rates, pending & approved commissions, and lifetime earnings instantly.",
-      "statMonthlyValue": "Monthly",
-      "statMonthlyLabel": "Payouts",
-      "statMonthlyDesc": "Reliable payouts at the end of every month with zero minimum threshold requirements.",
       "managementToolsTitle": "Comprehensive Management Tools",
       "tool1Title": "Real-Time Analytics",
       "tool1Desc": "Track clicks, conversions, and earnings as they happen from a live affiliate dashboard, rather than waiting on a delayed report.",
@@ -1726,25 +1711,6 @@
       "tool4Desc": "Download detailed commission statements and access approved marketing resources to support your promotion.",
       "tool4Tag": "Reports",
       "tool4Microcopy": "DOWNLOADABLE",
-      "whyChooseTitle": "Why Choose the Veracue Affiliate Program",
-      "why1Title": "High Conversion Rates",
-      "why1Desc": "The built-in 15% customer discount gives your audience an immediate reason to buy, improving conversion on every link you share.",
-      "why2Title": "15% Commission",
-      "why2Desc": "One of the more competitive commission rates in the research-chemical affiliate space, paid on every qualifying referral.",
-      "why3Title": "No Technical Setup",
-      "why3Desc": "No coding, tracking pixels, or technical experience required — your dashboard, links, and codes are ready as soon as you're approved.",
-      "why4Title": "Dual Tracking System",
-      "why4Desc": "Both your referral link and your personal discount code are tracked independently, so you're credited for a sale no matter which one a customer uses.",
-      "why5Title": "Real-Time Data",
-      "why5Desc": "Monitor clicks, conversions, and pending commissions as they happen, instead of waiting for a periodic report.",
-      "why6Title": "Growing Market",
-      "why6Desc": "Research peptides and the broader life-sciences supply space are an expanding market, giving your content room to keep finding new audience interest.",
-      "why7Title": "Premium Quality",
-      "why7Desc": "You promoting a catalog backed by third-party HPLC and mass-spectrometry testing, which makes trust-based recommendations easier to stand behind.",
-      "why8Title": "Dedicated Support",
-      "why8Desc": "A dedicated affiliate support contact is available for questions about tracking, payouts, or approved content.",
-      "why9Title": "Scalable Income",
-      "why9Desc": "There's no cap on total commission — earnings can grow alongside your audience and content output, with no artificial ceiling built into the program.",
       "prohibitedTitle": "Prohibited Practices",
       "prohibited1": "No medical, dosing, or human-use claims about any research peptide in affiliate content",
       "prohibited2": "No bodybuilding, athletic-performance, or weight-loss outcome framing",
@@ -1776,11 +1742,7 @@
       "displayNamePlaceholder": "John Doe or Channel Name",
       "phoneLabel": "Phone Number",
       "phonePlaceholder": "+1 (555) 000-0000",
-      "phoneHelpText": "Direct line for partner onboarding and updates.",
       "websiteUrlLabel": "Website URL (Optional)",
-      "guestNoticeTitle": "Applying as a Guest?",
-      "guestNoticeDesc": "Have an account? Sign in to autofill and submit instantly.",
-      "signInLink": "Sign In",
       "signInToApplyTitle": "Sign In to Apply",
       "signInToApplyDesc": "Partner applications are linked directly to your Veracue account to automatically configure your referral link, custom coupon code, and commission portal.",
       "signInToApplyButton": "Sign In to Apply",
@@ -1810,10 +1772,8 @@
       "termsDesc": "I agree to the Affiliate Program Terms of Service and acknowledge that I will only promote products in accordance with legal and platform guidelines.",
       "submitting": "Submitting...",
       "submitNow": "Submit Now",
-      "faqTitle": "Have questions?",
-      "faqSubtitle": "FREQUENTLY ASKED QUESTIONS",
       "faq1Question": "How does the affiliate program work?",
-      "faq1Answer": "You apply, get approved, and receive a unique referral link and discount code from your dashboard. When someone orders using either one within the 7-day cookie window, you earn a 15% commission and they get 15% off.",
+      "faq1Answer": "You apply, get approved, and receive a unique referral link and discount code from your dashboard. When someone orders using either one within the 7-day cookie window, you earn a 15% commission and they get 15% off. Refer more than 50 orders in a month and your rate steps up to 17.5%, and past 100 orders it steps up again to 20%.",
       "faq2Question": "How do I get paid as an affiliate?",
       "faq2Answer": "Approved commissions are paid out monthly via direct bank ACH, wire, or cryptocurrency, whichever you set as your preferred payout method in the affiliate dashboard.",
       "faq3Question": "When do I receive my commissions?",
@@ -1821,13 +1781,13 @@
       "faq4Question": "Can beginners join this affiliate program?",
       "faq4Answer": "Yes. There's no minimum audience size or prior affiliate experience required to apply; the application is reviewed for fit with the program's content standards, not follower count.",
       "faq5Question": "How are referrals tracked?",
-      "faq5Answer": "Referrals are tracked two ways at once — through your unique link and through your personal discount code — so a sale is credited to you whether the customer clicks through or types the code in directly.",
+      "faq5Answer": "Referrals are tracked two ways at once, through your unique link and through your personal discount code, so a sale is credited to you whether the customer clicks through or types the code in directly.",
       "faq6Question": "What is cookie duration and why does it matter?",
       "faq6Answer": "Cookie duration is how long a referral click stays credited to you after someone visits through your link. Ours is 7 days, meaning a purchase made within that window still counts as your referral even without the code.",
       "faq7Question": "Are there any costs to join the affiliate program?",
       "faq7Answer": "No. The affiliate program is free to join, with no application fee, subscription cost, or minimum spend required to start earning commission.",
       "faq8Question": "What marketing methods can I use?",
-      "faq8Answer": "Blogs, email newsletters, and social media are all permitted, provided your content follows the program's content standards — research-focused, RUO-consistent language rather than medical or dosing claims.",
+      "faq8Answer": "Blogs, email newsletters, and social media are all permitted, as long as your content follows the program's content standards: research-focused, RUO-consistent language rather than medical or dosing claims.",
       "faq9Question": "Can I use my own discount code?",
       "faq9Answer": "Yes. Every approved affiliate receives a personal discount code that customers can apply directly at checkout, in addition to their unique referral link.",
       "faq10Question": "What products should I promote as an affiliate?",
@@ -1835,9 +1795,9 @@
       "faq11Question": "How do I maximize my affiliate earnings?",
       "faq11Answer": "Consistent, research-focused content that highlights verified purity and testing tends to convert best. Using your dashboard's real-time data to see which links and content perform helps focus effort where it earns the most.",
       "faq12Question": "What happens if someone uses another affiliate's code after clicking my link?",
-      "faq12Answer": "The dual tracking system credits the touchpoint that's actually used at checkout — if a different affiliate's code is applied at purchase, that affiliate receives the commission for that specific order.",
+      "faq12Answer": "The dual tracking system credits whichever touchpoint is actually used at checkout. If a different affiliate's code is applied at purchase, that affiliate receives the commission for that specific order.",
       "faq13Question": "Can I promote on social media?",
-      "faq13Answer": "Yes, social media is an approved marketing channel, provided posts follow the same content standards as other channels — no prohibited claims, and no bidding on Veracue's brand name in paid search.",
+      "faq13Answer": "Yes, social media is an approved marketing channel, as long as posts follow the same content standards as other channels: no prohibited claims, and no bidding on Veracue's brand name in paid search.",
       "finalCtaTitle": "Start Earning 15% Commission Today",
       "finalCtaDesc": "Join a growing network of partners earning recurring commission promoting research-grade peptides backed by verified purity and real testing data.",
       "finalCtaQuestions": "Questions? Contact us at",
@@ -1847,16 +1807,149 @@
       "finalCtaBullet3": "Commission tracking updated in real time",
       "finalCtaBullet4": "Ready-to-use marketing assets provided",
       "finalCtaBullet5": "A support team dedicated to affiliates",
-      "finalCtaBullet6": "Payouts issued monthly, from $30 up",
+      "finalCtaBullet6": "Payouts issued monthly, with zero minimum threshold",
       "footerResearchLabel": "Research Use Only:",
       "footerResearchText": "All Veracue products are manufactured and sold exclusively for laboratory research purposes. Not for human consumption, medical treatment, or athletic performance enhancement. This affiliate program is for marketing research compounds only. Affiliates must comply with all applicable laws and regulations.",
-      "footerCopyright": "© 2026 Veracue. All rights reserved."
+      "footerCopyright": "© 2026 Veracue Peptides. All rights reserved."
+    },
+    "dashboardLayout": {
+      "metaTitle": "Affiliate Dashboard | Veracue Affiliates",
+      "metaDescription": "Manage your Veracue affiliate links, track conversions, and request commission payouts."
+    },
+    "sidebar": {
+      "backToAccount": "Back to Account",
+      "signOut": "Sign Out",
+      "tierSuffix": "Tier",
+      "defaultPartnerName": "Affiliate",
+      "nav": {
+        "overview": "Overview",
+        "links": "Links",
+        "conversions": "Conversions",
+        "payouts": "Payouts",
+        "settings": "Settings"
+      }
+    },
+    "dashboard": {
+      "metaTitle": "Affiliate Dashboard | Veracue Affiliates",
+      "metaDescription": "Track your clicks, conversions, and commission earnings as a Veracue affiliate.",
+      "eyebrow": "Affiliate Dashboard",
+      "welcomeBack": "Welcome back",
+      "overviewSubtitle": "Track clicks, conversions, and commission payouts.",
+      "tierSuffix": "Tier",
+      "totalClicks": "Total Clicks",
+      "conversions": "Conversions",
+      "pendingCommission": "Pending Commission",
+      "totalPaidOut": "Total Paid Out",
+      "recentConversions": "Recent Conversions",
+      "viewAll": "View all",
+      "noConversionsYet": "No conversions yet",
+      "shareLinkToEarn": "Share your referral link to start earning commission.",
+      "orderNumber": "Order #{id}",
+      "statusPending": "Pending",
+      "statusApproved": "Approved",
+      "statusPaid": "Paid",
+      "shareTools": "Share Tools",
+      "yourReferralLink": "Your Referral Link",
+      "copy": "Copy",
+      "copied": "Copied",
+      "yourCouponCode": "Your Coupon Code",
+      "copyCode": "Copy Code"
+    },
+    "links": {
+      "metaTitle": "Referral Links & Coupon Code | Veracue Affiliates",
+      "metaDescription": "Get your unique Veracue referral link and coupon code to share with your audience.",
+      "eyebrow": "Share Tools",
+      "title": "Links & Coupon Code",
+      "subtitle": "Share your unique referral link and coupon code to start earning commission on every qualified sale.",
+      "referralLinkTitle": "Referral Link",
+      "referralLinkDesc": "Anyone who visits through this link and completes a purchase is automatically credited to you.",
+      "yourReferralLink": "URL",
+      "copy": "Copy",
+      "copied": "Copied",
+      "couponCodeTitle": "Coupon Code",
+      "couponCodeDesc": "Your audience gets <strong>{discount}% off</strong> with this code, and you earn <strong>{commission}% commission</strong> on the sale.",
+      "yourCouponCode": "CODE",
+      "editCodeTitle": "Edit coupon code",
+      "codePlaceholder": "YOURCODE",
+      "save": "Save",
+      "saving": "Saving...",
+      "copyCode": "Copy Code",
+      "errorUpdateFailed": "Failed to update coupon code.",
+      "errorUnexpected": "Something went wrong. Please try again."
+    },
+    "conversions": {
+      "metaTitle": "Conversions | Veracue Affiliates",
+      "metaDescription": "View the full history of orders converted through your Veracue affiliate referral link and coupon code.",
+      "eyebrow": "Commission Ledger",
+      "title": "Conversions",
+      "subtitle": "Every order placed through your referral link or coupon code, and the commission it earned.",
+      "orderIdLabel": "Order",
+      "dateLabel": "Date",
+      "orderValueLabel": "Order Value",
+      "commissionLabel": "Commission",
+      "statusPending": "Pending",
+      "statusApproved": "Approved",
+      "statusPaid": "Paid",
+      "statusRejected": "Rejected",
+      "emptyTitle": "No conversions yet",
+      "emptyDesc": "Once customers start purchasing through your link or coupon code, they'll show up here.",
+      "loadMore": "Load More"
+    },
+    "payouts": {
+      "metaTitle": "Payouts | Veracue Affiliates",
+      "metaDescription": "Request a commission payout and view your Veracue affiliate payout history.",
+      "eyebrow": "Commission Payouts",
+      "pageTitle": "Payouts",
+      "availableBalanceTitle": "Available Balance",
+      "availableBalanceDesc": "Approved commission ready to be requested for payout.",
+      "dayHoldTitle": "{days}-Day Hold",
+      "dayHoldDesc": "Commission from the last {days} days is held before becoming available.",
+      "requestPayoutTitle": "Request a Payout",
+      "amountLabel": "Amount",
+      "methodLabel": "Method",
+      "methodZelle": "Zelle",
+      "methodCashapp": "Cash App",
+      "methodApplePay": "Apple Pay",
+      "detailsLabel": "Payment Details",
+      "detailsPlaceholder": "Email, $Cashtag, or phone number",
+      "requestButton": "Request Payout",
+      "errorInvalidAmount": "Please enter a valid amount.",
+      "errorMinimumAmount": "Minimum payout amount is {amount}.",
+      "errorExceedsBalance": "Amount exceeds your available balance.",
+      "errorMissingDetails": "Please enter your payment details.",
+      "errorSubmitFailed": "Failed to submit payout request.",
+      "errorUnexpected": "Something went wrong. Please try again.",
+      "successRequestSubmitted": "Payout request submitted successfully.",
+      "payoutHistoryTitle": "Payout History",
+      "statusPending": "Pending",
+      "statusPaid": "Paid",
+      "statusRejected": "Rejected",
+      "statusProcessing": "Processing",
+      "emptyTitle": "No payout requests yet",
+      "emptyDesc": "Once you request a payout, its status will be tracked here."
+    },
+    "dashboardSettings": {
+      "metaTitle": "Affiliate Settings | Veracue Affiliates",
+      "metaDescription": "Manage your preferred payout currency and affiliate account preferences.",
+      "eyebrow": "Affiliate Settings",
+      "title": "Settings",
+      "subtitle": "Manage how you receive your commission payouts.",
+      "payoutMethodTitle": "Payout Currency",
+      "payoutMethodDesc": "Choose which currency or method you'd like to receive commission payouts in.",
+      "preferredCurrencyLabel": "Preferred Currency",
+      "currencyUsd": "USD — US Dollar",
+      "currencyBtc": "BTC — Bitcoin",
+      "currencyEth": "ETH — Ethereum",
+      "currencyUsdtErc20": "USDT (ERC-20)",
+      "currencyUsdtTrc20": "USDT (TRC-20)",
+      "currencyStoreCredit": "Store Credit",
+      "savePreferencesButton": "Save Preferences"
     }
   },
   "content": {
     "aboutPage": {
-      "metaTitle": "Synthetic Research Peptides & Lab Standards | Veracue",
-      "metaDescription": "Discover how Veracue manufactures synthetic research peptides with documented purity testing and strict RUO compliance. Learn our story and standards.",
+      "metaTitle": "About Veracue Peptides | USA Research Peptide Supplier",
+      "metaDescription": "Veracue Peptides supplies HPLC-verified, USA-made research peptides with a certificate of analysis on every batch. See how we test, document, and ship.",
       "faqTitle": "Questions",
       "faqDescription": "Common questions about research peptides, ordering, and lab standards",
       "faqs": {
@@ -1875,12 +1968,36 @@
         "documentationProvided": {
           "question": "What documentation is provided with products?",
           "answer": "Each order can be paired with batch-specific documentation, including a certificate of analysis outlining purity, identity, and testing methodology. Researchers are encouraged to request this documentation before use so results can be properly attributed to a verified compound and lot."
+        },
+        "coaVerification": {
+          "question": "How does Veracue Peptides verify each batch before it ships?",
+          "answer": "Every batch is tested with HPLC for purity and mass spectrometry for identity before it's cleared for sale. The resulting certificate of analysis is tied to that specific lot number, not a generic template shared across products."
+        },
+        "institutionalOrders": {
+          "question": "Can universities or research institutions order from Veracue Peptides?",
+          "answer": "Yes. Institutional and academic researchers order the same way individual researchers do, and can request a wholesale account for recurring, purchase-order-based procurement."
+        },
+        "bulkOrders": {
+          "question": "Does Veracue Peptides offer bulk or custom-quantity orders?",
+          "answer": "Most compounds come in multiple vial sizes, and select peptides offer bulk pricing for larger studies. For a quantity or sequence outside the standard catalog, contact support before ordering to confirm feasibility and lead time."
+        },
+        "domesticVsOverseas": {
+          "question": "How is Veracue Peptides different from overseas peptide sellers?",
+          "answer": "Every compound we sell is synthesized and tested domestically, with the certificate of analysis tied to a U.S. lot rather than an imported raw powder. The purity data on the label reflects testing done here, not passed along from an unverified overseas source."
+        },
+        "batchQuestions": {
+          "question": "Who do I contact with a question about a specific batch or COA?",
+          "answer": "Email support@veracuepeptides.com with your order or lot number, and our team can pull the matching certificate of analysis and answer any question about that batch's testing."
+        },
+        "supplierAccountability": {
+          "question": "What if a product doesn't match its certificate of analysis?",
+          "answer": "That shouldn't happen given our batch-by-batch testing, but if you believe a product doesn't match its COA, contact support@veracuepeptides.com with your order number so our team can look into it."
         }
       }
     },
     "contactPage": {
-      "metaTitle": "Contact Us | Veracue Peptides",
-      "metaDescription": "Contact Veracue Peptides. Get in touch with our team for questions about research compounds, orders, or batch certificates of analysis."
+      "metaTitle": "Contact Veracue Peptides | Research Support",
+      "metaDescription": "Reach the Veracue Peptides team for order questions, batch certificates of analysis, or bulk research inquiries. Average response under 2 hours."
     },
     "contactForm": {
       "heading": "Send Us a Message",
@@ -1903,15 +2020,15 @@
       "errorUnexpected": "Something went wrong while sending your message. Please email support@veracuepeptides.com directly."
     },
     "faqPage": {
-      "metaTitle": "Frequently Asked Questions | Veracue Peptides",
-      "metaDescription": "Explore detailed guidance on peptide storage, reconstitution, analytical testing, and research protocols at Veracue Peptides."
+      "metaTitle": "Research Peptide FAQs | Veracue Peptides",
+      "metaDescription": "Answers on research peptide purity, legality, storage, and ordering, plus compound-specific FAQs for BPC-157, GHK-Cu, Semaglutide, and more."
     },
     "aboutHero": {
       "viewPeptidesShort": "View Peptides",
       "viewPeptidesLong": "View Research Peptides",
-      "titleLine1": "ABOUT",
-      "titleLine2": "VERACUE",
-      "subtitle": "Veracue manufactures synthetic research peptides for laboratories and research teams across the United States. Since 2018, we've built the business around one standard: every compound we supply should come with documentation a researcher can actually verify — purity data, identity confirmation, and a clear research-use-only classification, batch after batch. We're not a pharmacy, and nothing we sell is intended for human or animal use. We're a supplier built around the idea that \"research-grade\" should describe a testing process, not just a label."
+      "titleLine1": "THE LAB BEHIND",
+      "titleLine2": "YOUR RESEARCH PEPTIDES",
+      "subtitle": "Veracue Peptides supplies synthetic research peptides to laboratories and research teams across the United States. Our standard is simple: every compound ships with documentation a researcher can actually check, purity data, identity confirmation, and a clear research-use-only label, on every batch. We're not a pharmacy, and nothing we sell is built for human or animal use. To us, \"research-grade\" describes a testing process, not a label you can print on anything."
     },
     "complianceStatement": {
       "officialNotice": "Please Read Carefully",
@@ -1929,44 +2046,44 @@
       "eyebrow": "Our Principles",
       "title": "Principles & Values",
       "card1Label": "Our Standard",
-      "card1Title": "Our Standard",
+      "card1Title": "Same Spec, No Exceptions",
       "card1Text": "Every batch is measured against the same purity and identity specification, with no exceptions for scale or speed.",
       "card2Label": "Our Approach",
-      "card2Title": "Our Approach",
+      "card2Title": "Documentation Ships With the Product",
       "card2Text": "Documentation ships with the product, not on request only, so verification never depends on asking twice.",
       "card3Label": "Research Integrity",
       "card3Title": "Research Integrity and Transparency",
-      "card3Text": "Our approach to research integrity starts with refusing to treat compliance as an afterthought. Every synthetic research peptide we supply is manufactured against defined purity and identity specifications, verified through independent analytical testing, and paired with documentation researchers can request before they ever place an order. We state our compliance position plainly rather than burying it in fine print — a supplier confident in its quality control shouldn't need to obscure how that quality control actually works. Transparency isn't a marketing claim here; it's the operating model."
+      "card3Text": "Compliance isn't an afterthought here. Every peptide we supply is manufactured to a defined purity and identity specification, checked through independent analytical testing, and paired with documentation you can request before you ever place an order. We put our compliance position in plain text instead of fine print, because a supplier confident in its quality control has nothing to hide about how that control actually works. Transparency isn't a marketing claim. It's the operating model."
     },
     "ourServices": {
       "capabilitiesLabel": "What We Supply",
       "titleLine1": "Synthetic Research",
       "titleLine2": "Peptide Supply",
-      "card1Title": "Laboratory-Grade Excellence",
-      "card1Text": "Veracue supplies chemically pure synthetic research peptides built for advanced life-science research, from early-stage compound screening to established laboratory protocols. Purity and identity are confirmed for every batch, not sampled occasionally.",
-      "card2Title": "Exclusive Application",
-      "card2Text1": "Every product we offer is intended exclusively for laboratory research. We don't market, label, or frame our peptides for human or animal use at any point in the supply chain, from product description through fulfillment.",
+      "card1Title": "Consistent Purity, Every Batch",
+      "card1Text": "Veracue Peptides supplies synthetic research peptides for laboratories running anything from early-stage compound screening to established, protocol-driven studies. Purity and identity get confirmed on every single batch. Not sampled, not occasional.",
+      "card2Title": "Laboratory Use Only",
+      "card2Text1": "Every product we offer exists for laboratory research and nothing else. We don't market, label, or frame our peptides for human or animal use anywhere in the process, from the product page to the box that ships.",
       "card2Text2": "No member of our team offers medical consultation, dosing guidance, or usage recommendations of any kind.",
       "footerLabel": "Research Commitment",
-      "footerTitle": "Supporting Controlled Scientific Environments",
-      "footerText": "Veracue functions solely as a research material supplier. Operational support includes:",
+      "footerTitle": "How We Support Research Teams",
+      "footerText": "Veracue Peptides operates strictly as a research material supplier. Our operational support covers:",
       "listItems": {
-        "orderProcessing": "Internal Processing",
-        "documentationAccess": "Documented Evaluation",
-        "productClassification": "Reserved Product Handling",
+        "orderProcessing": "Order Processing",
+        "documentationAccess": "Documentation on Request",
+        "productClassification": "Product Classification Support",
         "sourcingInquiries": "Sourcing & Supply Questions"
       }
     },
     "whyChooseUsGrid": {
       "eyebrow": "Our Standards",
-      "title": "Research Focused Supply Practices",
-      "titleLine1": "Research Focused",
-      "titleLine2": "Supply Practices",
-      "subtitle": "Delivering high-purity, laboratory-grade research peptides, rigorously tested for research and analytical applications.",
+      "title": "How We Supply Research Peptides",
+      "titleLine1": "How We Supply",
+      "titleLine2": "Research Peptides",
+      "subtitle": "Every peptide we supply is purity-tested and documented before it reaches a lab bench, not after.",
       "bgText": "ANALYTICAL PURITY",
       "features": {
         "analyticalEvaluation": {
-          "title": "Evaluation",
+          "title": "Raw Material Evaluation",
           "description": "Every batch of raw material is inspected against defined purity and identity specifications before it's cleared for production, so nothing enters our supply chain without a documented baseline."
         },
         "clearClassification": {
@@ -1986,7 +2103,7 @@
     "contactClient": {
       "supportEmailTitle": "Customer & Product Support",
       "supportEmailDescription": "Questions regarding research peptides, storage, reconstitution, or batch testing.",
-      "supportEmailMicrocopy": "Average response time < 2 hours during business hours.",
+      "supportEmailMicrocopy": "Average response time under 2 hours.",
       "bulkEmailTitle": "Bulk & Institutional Orders",
       "bulkEmailDescription": "Inquiries for academic laboratories, high-volume orders, and invoice billing.",
       "bulkEmailMicrocopy": "Custom volume pricing available upon request.",
@@ -2010,7 +2127,7 @@
         },
         "serviceHours": {
           "question": "What are your customer service hours?",
-          "answer": "Our team is available Monday through Friday from 8:00 AM to 6:00 PM EST. Emails sent outside these hours are answered the following morning."
+          "answer": "Reach out anytime by email, and our team will get back to you as soon as possible, usually within about 2 hours."
         }
       },
       "disclaimerLabel": "RESEARCH USE ONLY NOTICE",
@@ -2042,14 +2159,6 @@
     "page": {
       "metaTitle": "Peptide Calculator: Dosage & Reconstitution Tool | Veracue Peptides",
       "metaDescription": "Use our free peptide calculator to get your exact dosage in seconds. Enter vial size, BAC water volume, and desired mcg - and see exactly how many units to draw.",
-      "faq": {
-        "q1Question": "How much bacteriostatic water do I add to a 5mg peptide vial?",
-        "q1Answer": "The standard ratio for a 5mg peptide vial is 2mL of bacteriostatic water. This creates a concentration of 2.5mg/mL, where every 0.1mL (10 units on a U-100 insulin syringe) delivers exactly 250mcg.",
-        "q2Question": "How long does a reconstituted peptide last in the refrigerator?",
-        "q2Answer": "Most peptide solutions reconstituted with bacteriostatic water remain stable for 28–30 days when stored at 2–8°C (standard refrigerator temperature).",
-        "q3Question": "Do you shake or roll a peptide vial after adding bacteriostatic water?",
-        "q3Answer": "Always roll, never shake. Shaking a peptide vial creates mechanical stress that can disrupt the amino acid chains in the compound."
-      },
       "webApp": {
         "name": "Peptide Reconstitution & Research Calculators Hub",
         "description": "Free online research calculators including peptide reconstitution dosage, BMI/BMR, unit conversion, and Creatinine Clearance."
@@ -2127,216 +2236,15 @@
       "status": "Status",
       "ready": "Ready",
       "aboutCockcroftGault": "About Cockcroft-Gault",
-      "cockcroftGaultDescription": "Estimates creatinine clearance as a proxy for Glomerular Filtration Rate (GFR). Used for drug dosing adjustments in clinical settings."
-    },
-    "unitConverter": {
-      "titleUnit": "Unit",
-      "titleConverter": "Converter",
-      "researchMeasurementsDashboard": "Research Measurements Dashboard",
-      "convertedResult": "Converted Result",
-      "conversionType": "Conversion Type",
-      "mass": "Mass",
-      "volume": "Volume",
-      "swapDirection": "Swap Direction",
-      "valueToConvert": "Value to Convert",
-      "quickReference": "Quick Reference",
-      "assumesU100Syringe": "*Assumes standard U-100 syringe"
+      "cockcroftGaultDescription": "Estimates creatinine clearance as a proxy for Glomerular Filtration Rate (GFR), a standard reference calculation used in renal function research."
     },
     "main": {
-      "hero": {
-        "ctaLong": "Use the Calculators",
-        "ctaShort": "Calculate",
-        "title": "Peptide Calculator: Reconstitution, Dosage & Syringe Conversion",
-        "description1": "The most precise peptide reconstitution calculator available for research use. Enter your vial size, bacteriostatic water volume, and target dose — and get your exact syringe draw in seconds.",
-        "description2": "Whether you're working with a 2mg, 5mg, or 10mg peptide vial, accurate reconstitution math is non-negotiable. This peptide calculator eliminates dosing errors by converting your vial concentration into precise syringe units — no manual math required. Trusted by researchers, used daily, and built for precision."
-      },
-      "requiredInputs": {
-        "eyebrow": "Required Inputs",
-        "title": "Calculator Parameters",
-        "vialSize": {
-          "title": "Vial Size (mg)",
-          "desc": "Total peptide weight in your vial (e.g., 5mg, 10mg)."
-        },
-        "bacWater": {
-          "title": "BAC Water (mL)",
-          "desc": "Volume of bacteriostatic water used for reconstitution."
-        },
-        "desiredDose": {
-          "title": "Desired Dose (mcg)",
-          "desc": "Your exact target research dose in micrograms."
-        }
-      },
-      "howToUse": {
-        "title": "How to Use the Reconstitution Calculator",
-        "subtitle": "This calculator is designed for researchers working with lyophilized (freeze-dried) peptide vials. Follow these three steps:",
-        "step1": {
-          "title": "Enter Vial Size",
-          "description": "Input the total peptide content of your vial in milligrams (mg). Common sizes include 2mg, 5mg, 10mg, and 30mg.",
-          "tag": "Step 1",
-          "microcopy": "PEPTIDE MASS"
-        },
-        "step2": {
-          "title": "Enter BAC Water",
-          "description": "Input how many milliliters (mL) of BAC water you used or plan to use when reconstituting. Standard practice is 1–2mL.",
-          "tag": "Step 2",
-          "microcopy": "DILUENT VOLUME"
-        },
-        "step3": {
-          "title": "Enter Desired Dose",
-          "description": "Input your target dose in micrograms (mcg). The calculator immediately outputs the exact units to draw on a U-100 syringe.",
-          "tag": "Step 3",
-          "microcopy": "TARGET DOSAGE"
-        },
-        "result": {
-          "label": "The Result",
-          "text": "A precise, error-free measurement <primary>for every session.</primary>"
-        }
-      },
-      "reconstitution": {
-        "eyebrow": "How It Works",
-        "title": "Peptide Reconstitution",
-        "understanding": {
-          "title": "Understanding Peptide Reconstitution",
-          "description": "Peptide reconstitution is the process of dissolving a lyophilized peptide powder into a liquid carrier — almost always bacteriostatic water (BAC water) — to create an injectable solution for research use."
-        },
-        "whyBacWater": {
-          "title": "Why BAC Water?",
-          "description": "Bacteriostatic water contains 0.9% benzyl alcohol, which inhibits microbial growth and extends the usable shelf life of your reconstituted peptide solution compared to sterile water alone. This makes it the gold standard carrier for peptide research."
-        },
-        "badgeTitle": "Research Grade",
-        "badgeSubtitle": "99%+ Verified Purity"
-      },
-      "process": {
-        "title": "The Reconstitution Process — Step by Step",
-        "steps": [
-          "Wipe the vial septa with an alcohol swab and allow to dry completely.",
-          "Draw the desired volume of BAC water into a sterile syringe.",
-          "Insert the needle at an angle along the inner wall of the vial — never aim directly at the peptide cake.",
-          "Allow the water to run slowly down the glass rather than jetting directly onto the powder.",
-          "Gently roll the vial between your palms until the powder is fully dissolved. Do not shake.",
-          "Inspect the solution — it should be clear to slightly opaque. Discard if visibly particulate or discolored."
-        ],
-        "criticalNote": "Critical note: Shaking a peptide vial can denature the amino acid chains. Always roll, never shake."
-      },
-      "mistakes": {
-        "title": "5 Mistakes to Avoid",
-        "subtitle": "Protect your compound integrity and ensure accurate dosing by avoiding these common reconstitution errors.",
-        "items": [
-          {
-            "title": "Shaking the vial instead of rolling.",
-            "desc": "Mechanical agitation can disrupt the amino acid chains. Always roll gently between your palms."
-          },
-          {
-            "title": "Injecting BAC water directly onto the peptide cake.",
-            "desc": "This causes localized denaturation. Angle the needle against the glass wall and let the water cascade down."
-          },
-          {
-            "title": "Confusing mg with mcg.",
-            "desc": "1mg = 1,000mcg. If your vial is 5mg and your dose is 250mcg, your dose is 0.25mg — not 250mg. Use the calculator to eliminate this conversion error."
-          },
-          {
-            "title": "Using the wrong syringe type.",
-            "desc": "U-40 and U-100 syringes have different unit values per mL. This is one of the most dangerous and common dosing errors. Always verify."
-          },
-          {
-            "title": "Reconstituting too far in advance.",
-            "desc": "Once reconstituted, peptide solutions should be used within the timeframe appropriate for your storage conditions. See our storage guide for details."
-          }
-        ]
-      },
-      "storage": {
-        "title": "Storage",
-        "subtitle": "Best Practices",
-        "lyophilized": {
-          "title": "Lyophilized (Unreconstituted) Peptides",
-          "description": "Store at –20°C (standard freezer) in a dark, dry location. Most lyophilized peptides maintain stability for 24–36 months under these conditions. Avoid repeated freeze-thaw cycles."
-        },
-        "reconstituted": {
-          "title": "Reconstituted Peptide Solutions",
-          "description": "Once mixed with BAC water, store in the refrigerator at 2–8°C (36–46°F). Avoid freezing reconstituted solutions, as this can cause aggregation. Most research-grade peptide solutions remain stable for 28–30 days under refrigeration with BAC water as the carrier."
-        },
-        "bullets": [
-          "Keep vials away from direct light (use amber vials or wrap in foil if needed)",
-          "Never store near heat sources or leave at room temperature for extended periods",
-          "Label each vial with the reconstitution date",
-          "Do not use solutions that appear cloudy, discolored, or particulate (beyond expected slight opacity)"
-        ]
-      },
-      "bacWaterTable": {
-        "title": "BAC Water Mixing Reference",
-        "intro": "The volume of bacteriostatic water you add directly determines the concentration of your solution — and therefore how many syringe units equal your target dose. Use this reference chart:",
-        "chooserHeading": "Choosing the Right BAC Water Volume",
-        "chooserBody": "More BAC water = lower concentration = more units per dose (easier to measure small doses accurately). Less BAC water = higher concentration = fewer units per dose (more practical for large doses, but precision decreases).",
-        "chooserBaseline": "For most research protocols with common dosing ranges of 100–500mcg, 2mL of BAC water per 5–10mg vial is the widely-used baseline.",
-        "headers": {
-          "vialSize": "Vial Size",
-          "bacWaterAdded": "BAC Water Added",
-          "concentration": "Concentration",
-          "doseEquals": "250mcg Dose ="
-        },
-        "footnote": "All unit values calculated for U-100 insulin syringes."
-      },
-      "math": {
-        "title": "Peptide Dosage Math",
-        "subtitle": "How the Calculation Works",
-        "formulaIntro": "The underlying formula this calculator uses is:",
-        "formula1": "Draw Volume (mL) = (Desired Dose in mcg ÷ Total Peptide in mcg) × Total BAC Water Volume (mL)",
-        "thenLabel": "Then:",
-        "formula2": "Units on U-100 syringe = Draw Volume (mL) × 100",
-        "exampleTitle": "Example Calculation",
-        "example": {
-          "vialLabel": "Vial:",
-          "vialValue": "5mg (= 5,000mcg)",
-          "bacWaterLabel": "BAC water:",
-          "desiredDoseLabel": "Desired dose:",
-          "drawVolumeLabel": "Draw volume:"
-        },
-        "footnote": "This is the same calculation the peptide dosage calculator performs automatically — eliminating human error from every research session."
-      },
-      "syringeConversion": {
-        "title": "Syringe Unit Conversion",
-        "subtitle": "For Peptide Research",
-        "intro": "Understanding your syringe markings is essential for accurate peptide dosing. The vast majority of peptide research uses U-100 insulin syringes, which contain <bold>100 units per 1mL</bold>.",
-        "referenceTitle": "U-100 Reference",
-        "headers": {
-          "drawVolume": "Draw Volume",
-          "unitsU100": "= Units on U-100"
-        },
-        "warningTitle": "U-100 vs. U-40 Syringes",
-        "warningText": "Important: U-40 syringes contain only 40 units per mL and are used primarily for veterinary insulin. If you accidentally use a U-40 syringe while dosing based on U-100 calculations, your draw will be <bold>2.5× higher</bold> than intended. Always confirm your syringe type."
-      },
-      "whyAccuracy": {
-        "title": "Why Accurate Peptide Calculation Matters for Research",
-        "subtitle": "Manual dosage math introduces variables that compromise research reproducibility. A dedicated peptide reconstitution calculator:",
-        "items": {
-          "item1": "Eliminates conversion errors between mg, mcg, mL, and syringe units",
-          "item2": "Standardizes protocols across research sessions and researchers",
-          "item3": "Saves time during setup without sacrificing precision",
-          "item4": "Supports documentation with consistent, repeatable measurements",
-          "item5": "Reduces waste by calculating exact draw volumes for your target dose"
-        },
-        "footnote": "For research requiring consistent inter-session dosing, calculator-assisted measurement is the most reliable method available without laboratory-grade volumetric equipment."
-      },
-      "precision": {
-        "title": "Precision in Peptide Research",
-        "subtitle": "Why Every Unit Matters",
-        "paragraph1": "Peptide research outcomes are sensitive to dosing variability. A difference of even <bold>10–20 units</bold> on a syringe can represent a <bold>25–50% deviation</bold> from your target dose depending on concentration.",
-        "paragraph2": "That deviation alters pharmacokinetic profiles in observational studies, reduces inter-session reproducibility, and compromises data integrity across longitudinal research.",
-        "paragraph3": "Using a validated peptide dosage calculator — and cross-referencing with a BAC water mixing chart — ensures your research sessions begin with the highest possible measurement accuracy."
-      },
-      "cta": {
-        "badge": "Quality Assurance",
-        "title": "Start Your Research With <primary>Verified-Purity</primary> Peptides",
-        "description": "Precise dosing calculations mean nothing if your peptide isn't what the label claims. Every product in our catalog is manufactured under strict quality standards and ships with third-party Certificate of Analysis (CoA) documentation — so your research data reflects compound behavior, not contamination.",
-        "browseCatalog": "Browse Catalog",
-        "viewCoaStandards": "View COA Standards"
-      },
       "faq": {
         "title": "Calculator FAQ",
         "description": "Common questions about peptide reconstitution and dosing mathematics.",
         "q1": {
           "question": "How much bacteriostatic water do I add to a 5mg peptide vial?",
-          "answer": "The standard ratio for a 5mg peptide vial is 2mL of bacteriostatic water. This creates a concentration of 2.5mg/mL, where every 0.1mL (10 units on a U-100 insulin syringe) delivers exactly 250mcg. You can adjust this ratio — use our peptide calculator above to recalculate for any water volume."
+          "answer": "The standard ratio for a 5mg peptide vial is 2mL of bacteriostatic water. This creates a concentration of 2.5mg/mL, where every 0.1mL (10 units on a U-100 insulin syringe) delivers exactly 250mcg. Using a different water volume changes that number, so recalculate with the peptide calculator above whenever your ratio changes."
         },
         "q2": {
           "question": "How many units is 250mcg on an insulin syringe?",
@@ -2344,7 +2252,7 @@
         },
         "q3": {
           "question": "What is the difference between a U-100 and U-40 syringe for peptide dosing?",
-          "answer": "A U-100 syringe contains 100 units per 1mL. A U-40 syringe contains only 40 units per 1mL. Nearly all peptide research sessions use U-100 syringes. Drawing the same number of markings on a U-40 syringe delivers 2.5 times more volume than a U-100 — a critical distinction that can lead to significant dosing errors if unrecognized."
+          "answer": "A U-100 syringe contains 100 units per 1mL. A U-40 syringe contains only 40 units per 1mL. Nearly all peptide research sessions use U-100 syringes. Drawing to the same tick mark on a U-40 syringe delivers 2.5 times more volume than a U-100, which is exactly how dosing errors happen when the syringe type goes unchecked."
         },
         "q4": {
           "question": "Do you shake or roll a peptide vial after adding bacteriostatic water?",
@@ -2356,11 +2264,11 @@
         },
         "q6": {
           "question": "How much BAC water should I use for a 10mg peptide vial?",
-          "answer": "For a 10mg vial, adding 2mL of bacteriostatic water creates a 5mg/mL concentration, where a 250mcg dose equals 5 units on a U-100 syringe. Adding 5mL instead creates a 2mg/mL concentration, where the same dose equals 12.5 units — easier to measure precisely. Use the peptide reconstitution calculator above to find the optimal ratio for your dose range."
+          "answer": "For a 10mg vial, adding 2mL of bacteriostatic water creates a 5mg/mL concentration, where a 250mcg dose equals 5 units on a U-100 syringe. Adding 5mL instead creates a 2mg/mL concentration, where the same dose equals 12.5 units, which is easier to measure precisely. Use the peptide reconstitution calculator above to find the optimal ratio for your dose range."
         },
         "q7": {
           "question": "What is peptide reconstitution?",
-          "answer": "Peptide reconstitution is the process of dissolving a lyophilized (freeze-dried) peptide powder into a sterile liquid carrier — typically bacteriostatic water — to create an injectable solution ready for research use. The ratio of peptide to water determines the concentration of the final solution, which dictates how many syringe units correspond to any given dose."
+          "answer": "Peptide reconstitution is the process of dissolving a lyophilized (freeze-dried) peptide powder into a sterile liquid carrier, typically bacteriostatic water, to create a solution ready for research use. The ratio of peptide to water sets the concentration of the final solution, which is what determines how many syringe units correspond to any given dose."
         },
         "q8": {
           "question": "How do I convert mcg to mg for peptide dosing?",
@@ -2368,11 +2276,11 @@
         },
         "q9": {
           "question": "Can I use sterile water instead of bacteriostatic water for peptides?",
-          "answer": "Sterile water can technically dissolve peptides, but it lacks the 0.9% benzyl alcohol preservative found in bacteriostatic water. Without this preservative, microbial growth is possible and the reconstituted solution's shelf life is dramatically reduced — typically to 24 hours. For any research session extending beyond a single day, bacteriostatic water is strongly preferred."
+          "answer": "Sterile water can technically dissolve peptides, but it lacks the 0.9% benzyl alcohol preservative found in bacteriostatic water. Without that preservative, microbial growth becomes possible and the reconstituted solution's shelf life drops sharply, typically to 24 hours. For any research session extending beyond a single day, bacteriostatic water is strongly preferred."
         },
         "q10": {
           "question": "Why does the BAC water volume I add matter for dosing accuracy?",
-          "answer": "The volume of bacteriostatic water you add determines your peptide solution's concentration — and therefore how many syringe units correspond to your target dose. Using inconsistent water volumes across sessions creates inconsistent dosing, even with the same vial. Always note the exact water volume used and recalculate using the peptide calculator if you change your reconstitution ratio."
+          "answer": "The volume of bacteriostatic water you add sets your peptide solution's concentration, and that concentration is what determines how many syringe units correspond to your target dose. Using inconsistent water volumes across sessions creates inconsistent dosing, even with the same vial. Always note the exact water volume used and recalculate with the peptide calculator if you change your reconstitution ratio."
         }
       }
     }
@@ -2382,7 +2290,7 @@
     "metaDescription": "Explore peptide research articles, laboratory protocols, and reconstitution guides from Veracue Peptides, a U.S. supplier of 99%+ pure research peptides.",
     "hero": {
       "title": "The U.S. Authority in Advanced Peptide Research & Scientific Insights",
-      "description": "Explore peer-reviewed peptide research, advanced laboratory protocols, reconstitution guides, and analytical testing standards curated for American scientific professionals. Trusted educational resources for 99%+ pure research compounds—strictly for in-vitro laboratory use only.",
+      "description": "Explore peer-reviewed peptide research, reconstitution guides, and analytical testing standards curated for research professionals. Educational resources for 99%+ pure research compounds, strictly for in-vitro laboratory use.",
       "exploreLatestLong": "Explore Latest Articles",
       "exploreLatestShort": "Explore Articles"
     },

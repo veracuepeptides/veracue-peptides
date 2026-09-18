@@ -161,7 +161,7 @@ export function HeroButton({
     </>
   )
 
-  const baseClasses = `relative group inline-flex items-center justify-between gap-2 sm:gap-4 ${colorClasses} ${sizeClasses} rounded-full font-semibold transition-colors duration-300 shadow-[0_2px_8px_rgba(0,0,0,0.06)] cursor-pointer overflow-hidden whitespace-nowrap ${className}`
+  const baseClasses = `relative group inline-flex items-center justify-between gap-2 sm:gap-4 max-w-full ${colorClasses} ${sizeClasses} rounded-full font-semibold transition-colors duration-300 shadow-[0_2px_8px_rgba(0,0,0,0.06)] cursor-pointer overflow-hidden whitespace-nowrap ${className}`
 
   if (href) {
     // If it's an anchor or external link, use native <a> to preserve smooth scroll without i18n routing

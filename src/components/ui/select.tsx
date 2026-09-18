@@ -37,7 +37,7 @@ function SelectTrigger({
       data-slot="select-trigger"
       data-size={size}
       className={cn(
-        "flex w-full items-center justify-between gap-1.5 whitespace-nowrap rounded-sm border border-default bg-cream-warm px-4 h-12 text-body-md font-sans outline-none transition-all duration-200 ease-out focus-visible:border-[#a5a58d] focus-visible:shadow-focus disabled:cursor-not-allowed disabled:opacity-40 data-placeholder:text-ink-subtle [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0",
+        "flex w-full items-center justify-between gap-1.5 whitespace-nowrap rounded-sm border border-default bg-[#f0efeb] px-4 h-12 text-body-md font-sans outline-none transition-all duration-200 ease-out focus-visible:border-[#a5a58d] focus-visible:shadow-focus disabled:cursor-not-allowed disabled:opacity-40 data-placeholder:text-[#a5a58d] [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0",
         size === 'sm' && "h-9 px-3 text-body-sm",
         className,
       )}
@@ -45,7 +45,7 @@ function SelectTrigger({
     >
       {children}
       <SelectPrimitive.Icon asChild>
-        <ChevronDownIcon className="pointer-events-none size-4 text-ink-muted" />
+        <ChevronDownIcon className="pointer-events-none size-4 text-[#525b4c]" />
       </SelectPrimitive.Icon>
     </SelectPrimitive.Trigger>
   )
@@ -65,7 +65,7 @@ function SelectContent({
         data-slot="select-content"
         data-align-trigger={position === 'item-aligned'}
         className={cn(
-          'relative z-50 max-h-96 min-w-36 overflow-y-auto overflow-x-hidden rounded-md bg-cream text-ink shadow-md border border-default data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95 duration-fast',
+          'relative z-50 max-h-96 min-w-36 overflow-y-auto overflow-x-hidden rounded-md bg-[#f0efeb] text-[#20221c] shadow-md border border-default data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95 duration-fast',
           position === 'popper' &&
             'data-[side=bottom]:translate-y-1 data-[side=left]:-translate-x-1 data-[side=right]:translate-x-1 data-[side=top]:-translate-y-1',
           className,
@@ -98,7 +98,7 @@ function SelectLabel({ className, ...props }: React.ComponentProps<typeof Select
   return (
     <SelectPrimitive.Label
       data-slot="select-label"
-      className={cn('px-2 py-1.5 text-label-md uppercase tracking-wider text-ink-muted font-sans', className)}
+      className={cn('px-2 py-1.5 text-label-md uppercase tracking-wider text-[#525b4c] font-sans', className)}
       {...props}
     />
   )
@@ -113,14 +113,14 @@ function SelectItem({
     <SelectPrimitive.Item
       data-slot="select-item"
       className={cn(
-        "relative flex w-full cursor-default select-none items-center gap-2 rounded-sm py-2 pl-2 pr-8 text-body-md font-sans outline-none focus:bg-cream-warm focus:text-ink data-disabled:pointer-events-none data-disabled:opacity-40 transition-colors duration-fast",
+        "relative flex w-full cursor-default select-none items-center gap-2 rounded-sm py-2 pl-2 pr-8 text-body-md font-sans outline-none focus:bg-[#f0efeb] focus:text-[#20221c] data-disabled:pointer-events-none data-disabled:opacity-40 transition-colors duration-fast",
         className,
       )}
       {...props}
     >
       <span className="pointer-events-none absolute right-2 flex size-4 items-center justify-center">
         <SelectPrimitive.ItemIndicator>
-          <CheckIcon className="pointer-events-none text-primary size-3.5" strokeWidth={3} />
+          <CheckIcon className="pointer-events-none text-[#a5a58d] size-3.5" strokeWidth={3} />
         </SelectPrimitive.ItemIndicator>
       </span>
       <SelectPrimitive.ItemText>{children}</SelectPrimitive.ItemText>
@@ -149,7 +149,7 @@ function SelectScrollUpButton({
     <SelectPrimitive.ScrollUpButton
       data-slot="select-scroll-up-button"
       className={cn(
-        "z-10 flex cursor-default items-center justify-center bg-cream py-1 text-ink-muted hover:bg-cream-warm transition-colors duration-fast",
+        "z-10 flex cursor-default items-center justify-center bg-[#f0efeb] py-1 text-[#525b4c] hover:bg-[#f0efeb] transition-colors duration-fast",
         className,
       )}
       {...props}
@@ -167,7 +167,7 @@ function SelectScrollDownButton({
     <SelectPrimitive.ScrollDownButton
       data-slot="select-scroll-down-button"
       className={cn(
-        "z-10 flex cursor-default items-center justify-center bg-cream py-1 text-ink-muted hover:bg-cream-warm transition-colors duration-fast",
+        "z-10 flex cursor-default items-center justify-center bg-[#f0efeb] py-1 text-[#525b4c] hover:bg-[#f0efeb] transition-colors duration-fast",
         className,
       )}
       {...props}

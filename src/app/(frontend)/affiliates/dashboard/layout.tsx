@@ -39,14 +39,25 @@ export default async function AffiliateDashboardLayout({ children }: { children:
   const tier = affiliate.tier || 'standard'
 
   return (
-    <div className="bg-[#F8F9FA] min-h-screen selection:bg-black/10 flex flex-col">
-      <AffiliateTopNav userName={userName} tier={tier} />
+    <div className="bg-[#f0efeb] min-h-screen text-[#1a1f16] selection:bg-[#a5a58d]/30 selection:text-[#1a1f16] flex flex-col relative pt-24 sm:pt-28 md:pt-[116px] lg:pt-[120px] pb-12 sm:pb-16">
+      {/* Subtle architectural olive ambient depth contained to not disrupt sticky positioning */}
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div
+          className="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[400px] bg-gradient-to-b from-[#a5a58d]/15 via-[#edf0e8]/30 to-transparent blur-3xl opacity-60"
+        />
+        <div
+          className="absolute top-1/4 -right-48 w-80 h-80 bg-[#a5a58d]/10 rounded-full blur-3xl"
+        />
+      </div>
 
-      {/* Main Content */}
-      <div className="flex-1 w-full min-w-0 px-4 py-8 md:p-10 lg:p-12">
-        <div className="max-w-[1400px] mx-auto">
+      {/* Main Portal Container */}
+      <div className="max-w-[1400px] w-full mx-auto px-3 sm:px-6 lg:px-8 relative z-10 flex flex-col">
+        <AffiliateTopNav userName={userName} tier={tier} />
+
+        {/* Main Content Area */}
+        <main className="w-full mt-6 sm:mt-8">
           {children}
-        </div>
+        </main>
       </div>
     </div>
   )

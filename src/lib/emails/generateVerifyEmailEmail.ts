@@ -1,19 +1,24 @@
 import { escapeHtml } from './escapeHtml'
-import { emailLayout } from './emailLayout'
+import { BRAND, shellOpen, shellClose, pillButton, wave, iconBadge } from './emailShell'
 
 export function generateVerifyEmailEmail(firstName: string | null | undefined, verifyUrl: string): string {
   const name = escapeHtml(firstName || 'there')
-  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com';
-  return emailLayout({
-    title: 'Verify your email - Veracue Peptides',
-    serverUrl,
-    content: `
-              <h2 style="margin: 0 0 16px 0; font-size: 22px; color: #20221c; text-align: center; font-weight: 700;">Welcome to Veracue Peptides</h2>
-              <p style="margin: 0 0 24px 0; font-size: 15px; color: #4A4A4A; text-align: center; line-height: 1.6;">Hi ${name}, please confirm your email address to complete your researcher registration and activate your account.</p>
-              <div style="text-align: center; margin: 30px 0;">
-                <a href="${verifyUrl}" style="display: inline-block; padding: 14px 32px; background-color: #20221c; color: #ffffff; text-decoration: none; font-size: 14px; font-weight: 600; border-radius: 10px; letter-spacing: 0.05em; text-transform: uppercase;">Verify Email</a>
-              </div>
-              <p style="margin: 24px 0 0 0; font-size: 12px; color: #8A8A8A; text-align: center; line-height: 1.6;">This verification link expires in 48 hours. If you did not create this account, please disregard this email.</p>
-    `
-  })
+
+  return `${shellOpen({ title: 'Verify Your Email — Veracue', headerColor: BRAND.olive, headerWaveInto: '#ffffff' })}
+          <tr>
+            <td style="background-color:#ffffff;padding:8px 24px 36px;text-align:center;">
+              ${iconBadge('mail')}
+              <p style="margin:0 0 10px;font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:${BRAND.olive};">Confirm Your Email</p>
+              <h1 style="margin:0 0 10px;font-family:-apple-system,sans-serif;font-weight:800;font-size:25px;color:${BRAND.charcoal};letter-spacing:-0.01em;">Welcome, ${name}.</h1>
+              <p style="margin:0;font-size:14px;line-height:1.65;color:rgba(32,34,28,0.6);">Please confirm your email address to complete your researcher registration and activate your account.</p>
+            </td>
+          </tr>
+          ${wave('#ffffff', BRAND.olive, 44)}
+          <tr>
+            <td style="background-color:${BRAND.olive};padding:38px 24px 42px;text-align:center;">
+              ${pillButton(verifyUrl, 'Verify Email')}
+              <p style="margin:20px 0 0;font-size:12px;color:rgba(255,241,230,0.8);">This link expires in 48 hours. If you didn't create this account, you can safely ignore this email.</p>
+            </td>
+          </tr>
+${shellClose({ footerWaveFrom: BRAND.olive, serverUrl: process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com' })}`
 }

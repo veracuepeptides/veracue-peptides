@@ -81,6 +81,8 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
   const [isScrollingDown, setIsScrollingDown] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
   const [showFiltersDrawer, setShowFiltersDrawer] = useState(false)
+  const [showMobileSearch, setShowMobileSearch] = useState(false)
+  const mobileSearchInputRef = useRef<HTMLInputElement>(null)
   const lastScrollYRef = useRef(0)
 
   const { scrollY } = useScroll()
@@ -257,8 +259,6 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
               
               {/* Horizontal Scrollable Category Pills */}
               <div className="relative flex-1 min-w-0 overflow-hidden">
-                {/* Left Fade Edge */}
-                <div className="absolute left-0 top-0 bottom-0 w-4 bg-gradient-to-r from-[#f0efeb] to-transparent pointer-events-none z-10 hidden sm:block" />
                 {/* Right Fade Edge */}
                 <div className="absolute right-0 top-0 bottom-0 w-8 sm:w-12 bg-gradient-to-l from-[#f0efeb] to-transparent pointer-events-none z-10" />
 
@@ -303,8 +303,30 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
               {/* Controls Group: Search, Quick Filters & Sort */}
               <div className="flex items-center gap-2 shrink-0 pt-1 md:pt-0 border-t border-[#eddcd2]/50 md:border-t-0 px-1">
                 
-                {/* Live Search Input */}
-                <div className="relative flex-1 sm:w-48 md:w-56 lg:w-64">
+                {/* Mobile Icon-Only Search Button */}
+                <button
+                  type="button"
+                  onClick={() => {
+                    setShowMobileSearch((prev) => {
+                      const next = !prev
+                      if (next) {
+                        setTimeout(() => mobileSearchInputRef.current?.focus(), 150)
+                      }
+                      return next
+                    })
+                  }}
+                  aria-label="Search compounds"
+                  className={`sm:hidden w-9 h-9 rounded-full flex items-center justify-center transition-all duration-200 shrink-0 cursor-pointer border ${
+                    showMobileSearch || searchQuery.trim()
+                      ? 'bg-[#20221c] text-[#fff1e6] border-[#20221c]'
+                      : 'bg-white/90 hover:bg-white text-neutral-700 border-[#eddcd2]'
+                  }`}
+                >
+                  <Search size={15} />
+                </button>
+
+                {/* Desktop Live Search Input */}
+                <div className="relative hidden sm:block w-48 md:w-56 lg:w-64">
                   <Search
                     size={15}
                     className="absolute left-3 top-1/2 -translate-y-1/2 text-neutral-400 pointer-events-none"
@@ -314,7 +336,7 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     placeholder="Search compounds..."
-                    className="w-full pl-9 pr-7 py-2 sm:py-2.5 text-xs sm:text-[13px] bg-white/90 focus:bg-white border border-[#eddcd2] rounded-full text-[#20221c] placeholder:text-neutral-400 focus:outline-none focus:border-[#cb997e] transition-colors"
+                    className="w-full pl-9 pr-7 py-2 sm:py-2.5 text-xs sm:text-[13px] bg-white/90 focus:bg-white border border-[#eddcd2] rounded-full text-[#20221c] placeholder:text-neutral-400 focus:outline-none focus:border-[#a5a58d] transition-colors"
                   />
                   {searchQuery && (
                     <button
@@ -377,6 +399,51 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
 
               </div>
             </div>
+
+            {/* Expandable Mobile Search Row */}
+            <AnimatePresence>
+              {showMobileSearch && (
+                <motion.div
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: 'auto', opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  transition={{ duration: 0.25, ease: 'easeInOut' }}
+                  className="overflow-hidden border-t border-[#eddcd2]/70 pt-2.5 px-1 sm:hidden"
+                >
+                  <div className="relative w-full py-0.5">
+                    <Search
+                      size={15}
+                      className="absolute left-3.5 top-1/2 -translate-y-1/2 text-neutral-400 pointer-events-none"
+                    />
+                    <input
+                      ref={mobileSearchInputRef}
+                      type="text"
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                      placeholder="Search compounds by name or sku..."
+                      className="w-full pl-9 pr-9 py-2 text-xs bg-white border border-[#eddcd2] rounded-full text-[#20221c] placeholder:text-neutral-400 focus:outline-none focus:border-[#a5a58d] transition-colors shadow-2xs"
+                    />
+                    {searchQuery ? (
+                      <button
+                        onClick={() => setSearchQuery('')}
+                        className="absolute right-2.5 top-1/2 -translate-y-1/2 text-neutral-400 hover:text-neutral-800 p-1 cursor-pointer"
+                        aria-label="Clear search"
+                      >
+                        <X size={13} />
+                      </button>
+                    ) : (
+                      <button
+                        onClick={() => setShowMobileSearch(false)}
+                        className="absolute right-2.5 top-1/2 -translate-y-1/2 text-neutral-400 hover:text-neutral-800 p-1 cursor-pointer"
+                        aria-label="Close search"
+                      >
+                        <X size={13} />
+                      </button>
+                    )}
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
 
             {/* Expandable Filter Row (Stock & Sale Toggles) */}
             <AnimatePresence>
@@ -551,7 +618,7 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
 
             {!hasMore && !searchQuery.trim() && (
               <div className="w-full text-center pt-16 sm:pt-20 pb-8 text-xs font-sans uppercase tracking-widest text-neutral-400 font-medium">
-                — End of Catalog ({products.length} Compounds Total) —
+                End of catalog · {products.length} compounds total
               </div>
             )}
           </>
@@ -559,8 +626,8 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
           <div className="bg-white/80 border border-[#eddcd2] rounded-3xl p-8 sm:p-14 text-center my-8 shadow-xs">
             <EmptyState
               icon={Search}
-              title="No Research Peptides Found"
-              description="No peptide compounds match your currently active filters or query. Try resetting your search or clearing selected categories."
+              title="Nothing Matches Those Filters"
+              description="Try clearing a category or two, or search by compound name instead. The full catalog is one click away."
               action={
                 <Button
                   onClick={resetAllFilters}
@@ -577,13 +644,13 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
         <div className="mt-16 sm:mt-24 mb-12 sm:mb-16 bg-[#b7b7a4]/25 border border-[#b7b7a4]/60 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 shadow-[0_8px_30px_rgba(0,0,0,0.02)]">
           <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
             <p className="font-serif tracking-[0.2em] text-xs uppercase text-neutral-700 font-normal mb-2">
-              Laboratory Assurance
+              Before You Order
             </p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-[#20221c] font-heading">
-              Veracue Analytical Standards
+              What Every Listing Includes
             </h2>
             <p className="text-neutral-600 text-xs sm:text-sm mt-2 leading-relaxed">
-              Every compound is synthesized to the highest scientific purity levels, strictly designated for analytical evaluation and in vitro cellular research.
+              These four checks run on every compound in the catalog, not just the featured ones, before it's cleared for sale.
             </p>
           </div>
 
@@ -597,7 +664,7 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
                 ≥99% HPLC Purity
               </h3>
               <p className="text-neutral-500 text-xs leading-relaxed">
-                Quantitative High-Performance Liquid Chromatography verification on every batch lot.
+                Each lot is run through HPLC before listing, and the result is published, not just claimed.
               </p>
             </div>
 
@@ -610,7 +677,7 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
                 Cold-Chain Packaged
               </h3>
               <p className="text-neutral-500 text-xs leading-relaxed">
-                Thermal insulated packaging protecting lyophilized cake integrity from temperature fluctuation.
+                Insulated shipping keeps the lyophilized cake stable in transit, so what arrives matches what shipped.
               </p>
             </div>
 
@@ -623,7 +690,7 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
                 Lot-Specific COA
               </h3>
               <p className="text-neutral-500 text-xs leading-relaxed">
-                Independent certificates of analysis documenting mass spectrometry data available with every order.
+                Your order's COA is tied to the exact lot you received, not a generic spec sheet.
               </p>
             </div>
 
@@ -636,7 +703,7 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
                 Rapid U.S. Dispatch
               </h3>
               <p className="text-neutral-500 text-xs leading-relaxed">
-                Domestic fulfillment from climate-controlled research logistics hubs across the United States.
+                Orders leave a climate-controlled U.S. facility, typically the same or next business day.
               </p>
             </div>
           </div>

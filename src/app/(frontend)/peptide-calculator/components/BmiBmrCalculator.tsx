@@ -176,7 +176,7 @@ export function BmiBmrCalculator() {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6 sm:mb-8">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#a5a58d]/15 border border-[#a5a58d]/35 text-[#a5a58d] text-xs font-bold tracking-[0.2em] uppercase">
               <span className="w-1.5 h-1.5 rounded-full bg-[#a5a58d]" />
-              <span>BMI &amp; BMR Configurator</span>
+              <span>BMI &amp; BMR Calculator</span>
             </div>
             
             <div className="flex items-center gap-3">
@@ -213,13 +213,13 @@ export function BmiBmrCalculator() {
           </div>
 
           <div className="text-xl sm:text-2xl md:text-3xl lg:text-[34px] font-heading font-light text-neutral-900 tracking-tight leading-[1.7] md:leading-[1.75]">
-            I am a <DynamicInput value={age} onChange={setAge} /> year old 
-            <DynamicSelect 
-              value={gender} 
+            For a subject who is <DynamicInput value={age} onChange={setAge} /> years old,
+            <DynamicSelect
+              value={gender}
               onChange={(v) => setGender(v as Gender)}
-              options={[{label: 'Male', value: 'male'}, {label: 'Female', value: 'female'}]} 
-            /> 
-            standing 
+              options={[{label: 'Male', value: 'male'}, {label: 'Female', value: 'female'}]}
+            />,
+            standing
             {system === 'imperial' ? (
               <> <DynamicInput value={feet} onChange={setFeet} /> ft <DynamicInput value={inches} onChange={setInches} /> in </>
             ) : (

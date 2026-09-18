@@ -9,7 +9,7 @@ export function StockIndicator({ stock, className, ...props }: StockIndicatorPro
   let status: 'in-stock' | 'low-stock' | 'out-of-stock' = 'in-stock'
   let label = 'In Stock'
   let dotClass = 'bg-success'
-  let textClass = 'text-ink-muted'
+  let textClass = 'text-[#525b4c]'
 
   if (stock === 0) {
     status = 'out-of-stock'
@@ -19,8 +19,8 @@ export function StockIndicator({ stock, className, ...props }: StockIndicatorPro
   } else if (stock <= 5) {
     status = 'low-stock'
     label = `Low Stock: ${stock} remaining`
-    dotClass = 'bg-gold'
-    textClass = 'text-gold-dark'
+    dotClass = 'bg-[#cb997e]'
+    textClass = 'text-[#a5732f]'
   }
 
   return (

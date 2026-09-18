@@ -7,22 +7,22 @@ import { HeroButton } from '@/components/ui/hero-button'
 
 const BLOG_HERO_IMAGES = [
   {
-    src: '/veracue-images/veracue-research-grade-50mg-molecular-helix.png',
-    alt: 'Veracue molecular peptide helix and biochemical research',
+    src: '/veracue-images/veracue-klow-50mg-sunlit-water-ripples.webp',
+    alt: 'Veracue molecular peptide research and biochemical solutions',
     topic: 'Molecular Biology',
   },
   {
-    src: '/veracue-images/veracue-military-researcher-lab.jpg',
+    src: '/veracue-images/veracue-nad-plus-500mg-sunlight-branches.webp',
     alt: 'Veracue analytical laboratory and cleanroom facility',
     topic: 'Analytical Cleanroom',
   },
   {
-    src: '/veracue-images/veracue-research-grade-50mg-dish-leaf-droplets.png',
+    src: '/veracue-images/veracue-epithalon-50mg-water-bamboo.webp',
     alt: 'Veracue cellular signaling and biochemical assays',
     topic: 'Cellular Assays',
   },
   {
-    src: '/veracue-images/veracue-research-grade-50mg-gloved-hand.png',
+    src: '/veracue-images/veracue-ghk-cu-50mg-ice-bed-warm.webp',
     alt: 'Veracue solid-phase peptide synthesis and quality assurance',
     topic: 'Synthesis & Testing',
   },
@@ -68,17 +68,17 @@ export function BlogHero() {
       <div className="flex flex-col items-center text-center shrink-0 w-full max-w-5xl px-3">
         {/* 1. Eyebrow Tagline */}
         <p className="font-serif tracking-[0.16em] sm:tracking-[0.24em] text-[9.5px] sm:text-[11.5px] md:text-[12px] uppercase text-neutral-700 font-normal mb-1.5 sm:mb-2">
-          The Veracue Research Archive &bull; Peer-Reviewed Insights &bull; HPLC Verified
+          Peptide Science &bull; Lab Guides &bull; Compliance Notes
         </p>
 
         {/* 2. Main Headline (H1) */}
-        <h1 className="text-[22px] xs:text-2xl sm:text-3xl md:text-4xl lg:text-[46px] xl:text-[52px] font-bold tracking-[-0.03em] text-neutral-900 leading-tight mb-1.5 sm:mb-2.5 sm:whitespace-nowrap font-heading">
-          Empirical Research. Molecular Analysis.
+        <h1 className="text-[22px]/[1.15] xs:text-2xl/[1.15] sm:text-3xl/[1.12] md:text-4xl/[1.1] lg:text-[44px]/[1.08] xl:text-[50px]/[1.08] font-bold tracking-[-0.03em] text-neutral-900 leading-[1.15] sm:leading-[1.12] md:leading-[1.1] lg:leading-[1.08] mb-1.5 sm:mb-2.5 font-heading text-balance max-w-4xl">
+          Research Peptide Guides & Lab Notes
         </h1>
 
         {/* 3. Sub-headline / Supporting Description */}
         <p className="text-neutral-500 text-[11.5px] sm:text-[13px] md:text-[14.5px] max-w-2xl leading-relaxed mb-2.5 sm:mb-4 font-normal px-1 line-clamp-3 sm:line-clamp-none">
-          Peer-reviewed scientific monographs, analytical chromatography breakdowns, reconstitution guides, and molecular research protocols authored for peptide investigators.
+          Purity-testing breakdowns, reconstitution guides, and storage notes, written for people actually running the research.
         </p>
 
         {/* 4. CTA Pill Button (Smooth scrolls directly to archive) */}
@@ -157,10 +157,10 @@ export function BlogHero() {
           {/* Top-Left Overlay (Key Stat & Research Volume) */}
           <div className="absolute top-3.5 sm:top-7 md:top-9 left-3.5 sm:left-7 md:left-9 z-20 text-white text-left">
             <div className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-[68px] font-black tracking-[-0.03em] text-white leading-none drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] font-heading">
-              100+
+              RUO
             </div>
             <p className="text-white/95 text-[10.5px] xs:text-xs sm:text-[13.5px] md:text-[15px] font-medium leading-snug mt-1 sm:mt-2.5 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)] max-w-[150px] sm:max-w-[240px]">
-              Scientific Protocols,<br />Whitepapers &amp; Guides
+              Compliant Research<br />Content
             </p>
           </div>
 
@@ -170,10 +170,10 @@ export function BlogHero() {
               Analytical<br className="sm:hidden" /> Rigor
             </h3>
             <p className="hidden xs:block sm:hidden text-[9px] text-white/85 leading-snug line-clamp-2 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
-              Peer-reviewed synthesis and reconstitution data.
+              Written from our own testing data.
             </p>
             <p className="hidden sm:block text-white/90 text-xs sm:text-[13px] md:text-[14.5px] font-normal leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
-              Every monograph is reviewed by research biochemists with primary literature references and chromatographic verification data.
+              Every article draws on our own testing data and cited primary literature, not secondhand claims.
             </p>
           </div>
 
@@ -217,14 +217,14 @@ export function BlogHero() {
                 <div className="flex items-center gap-3 sm:gap-8 md:gap-12 shrink-0 pr-3 sm:pr-8 md:pr-12">
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="text-neutral-950 font-bold text-[9px] xs:text-[10px] sm:text-base leading-none">✦</span>
-                    <span className="font-extrabold text-neutral-950">100+</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Articles</span>
+                    <span className="font-extrabold text-neutral-950">USA</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Research Team</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full border border-neutral-950 bg-neutral-950 inline-block shrink-0" />
-                    <span className="font-extrabold text-neutral-950">Peer</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Reviewed</span>
+                    <span className="font-extrabold text-neutral-950">Independent</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Lab Data</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
@@ -256,14 +256,14 @@ export function BlogHero() {
                 <div className="flex items-center gap-3 sm:gap-8 md:gap-12 shrink-0 pr-3 sm:pr-8 md:pr-12" aria-hidden="true">
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="text-neutral-950 font-bold text-[9px] xs:text-[10px] sm:text-base leading-none">✦</span>
-                    <span className="font-extrabold text-neutral-950">100+</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Articles</span>
+                    <span className="font-extrabold text-neutral-950">USA</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Research Team</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full border border-neutral-950 bg-neutral-950 inline-block shrink-0" />
-                    <span className="font-extrabold text-neutral-950">Peer</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Reviewed</span>
+                    <span className="font-extrabold text-neutral-950">Independent</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Lab Data</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">

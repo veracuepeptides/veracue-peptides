@@ -47,7 +47,7 @@ export default function MedicalDisclaimerPage() {
       titleLine2={t('titleLine2')}
       effectiveDate={t('effectiveDate')}
       intro={t('intro')}
-      introHeading="Critical Research Notice & Regulatory Posture"
+      introHeading="Critical Research Notice & Regulatory Status"
       sections={sections}
       contactProps={{
         title: t('contactTitle'),
@@ -68,7 +68,7 @@ export default function MedicalDisclaimerPage() {
           <div className="flex items-start gap-2.5">
             <AlertOctagon size={16} className="text-[#cb997e] shrink-0 mt-0.5" />
             <span>
-              All compounds distributed by Veracue are strictly designated for <strong>in vitro experimentation</strong> and laboratory research purposes only. Under no circumstances are products intended for therapeutic, diagnostic, or clinical administration.
+              All compounds distributed by Veracue Peptides LLC are strictly designated for <strong>in vitro experimentation</strong> and laboratory research purposes only. Under no circumstances are products intended for therapeutic, diagnostic, or clinical administration.
             </span>
           </div>
         </LegalCallout>
@@ -104,7 +104,7 @@ export default function MedicalDisclaimerPage() {
             <span>Analytical Purity &amp; Identity Documentation</span>
           </div>
           <p className="text-xs sm:text-[13px] text-[#20221c]/75 leading-relaxed">
-            Every batch distributed by Veracue is accompanied by public, third-party HPLC and MS analytical reports. These certificates confirm identity and purity, but do not imply or constitute regulatory authorization for human or veterinary use.
+            Every batch distributed by Veracue Peptides LLC ships with a public, third-party HPLC and MS analytical report. These reports confirm identity and purity. They don't imply or constitute regulatory authorization for human or veterinary use.
           </p>
         </div>
       </LegalSection>

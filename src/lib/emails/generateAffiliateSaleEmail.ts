@@ -1,23 +1,35 @@
-import { emailLayout } from './emailLayout'
+import { escapeHtml } from './escapeHtml'
+import { BRAND, shellOpen, shellClose, wave, iconBadge } from './emailShell'
 
 export async function generateAffiliateSaleEmail(affiliate: any, commissionAmount: number, isVoid: boolean): Promise<string> {
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
   const amount = (commissionAmount || 0).toFixed(2)
-  const name = affiliate.displayName || 'Partner'
-  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com'
+  const name = escapeHtml(affiliate.displayName || 'Partner')
+  const accent = isVoid ? BRAND.stone : BRAND.olive
 
-  const title = isVoid ? 'Sale Tracked (Voided)' : 'New Sale Tracked!'
-  const content = isVoid 
-    ? `<p style="margin: 0 0 16px 0; font-size: 16px; color: #4A4A4A;">A sale was recently tracked to your affiliate account, but it has been marked as void.</p><p style="margin: 0 0 16px 0; font-size: 16px; color: #4A4A4A;">This typically happens if our system detects a self-referral or a policy violation.</p><p style="margin: 0 0 16px 0; font-size: 16px; color: #4A4A4A;">If you believe this was in error, please contact our support team.</p>`
-    : `<p style="margin: 0 0 16px 0; font-size: 16px; color: #4A4A4A;">Great news! A new sale has been tracked to your affiliate account.</p><p style="margin: 0 0 24px 0; font-size: 16px; color: #4A4A4A;">Commission amount: <strong style="color: #1e5661; font-size: 20px;">$${amount}</strong></p><p style="margin: 0 0 16px 0; font-size: 16px; color: #4A4A4A;">Keep up the great work!</p>`
-
-  return emailLayout({
-    title,
-    serverUrl,
-    content: `
-              <h2 style="margin: 0 0 20px 0; font-size: 24px; color: #0A0A0A; font-weight: 800; letter-spacing: -0.5px;">Hi ${name},</h2>
-              ${content}
-              <p style="margin: 32px 0 0 0; font-size: 16px; color: #4A4A4A; font-weight: 600;">Best regards,<br>The Helix Bio Team</p>
-    `
-  })
+  return `${shellOpen({ title: isVoid ? 'Sale Tracked (Voided) — Veracue Partners' : 'New Sale Tracked — Veracue Partners', headerColor: BRAND.olive, headerWaveInto: '#ffffff' })}
+          <tr>
+            <td style="background-color:#ffffff;padding:8px 24px 36px;text-align:center;">
+              ${iconBadge(isVoid ? 'x-circle' : 'coin', BRAND.charcoal)}
+              <p style="margin:0 0 10px;font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:${accent};">${isVoid ? 'Sale Voided' : 'New Sale Tracked'}</p>
+              <h1 style="margin:0 0 12px;font-family:-apple-system,sans-serif;font-weight:800;font-size:25px;color:${BRAND.charcoal};letter-spacing:-0.01em;">Hi ${name},</h1>
+              <p style="margin:0;font-size:14px;line-height:1.7;color:rgba(32,34,28,0.6);">${
+                isVoid
+                  ? "A sale was recently tracked to your affiliate account, but it has been marked as void. This typically happens if our system detects a self-referral or a policy violation. If you believe this was in error, please contact our support team."
+                  : 'Great news! A new sale has been tracked to your affiliate account. Keep up the great work.'
+              }</p>
+            </td>
+          </tr>
+          ${wave('#ffffff', accent, 44)}
+          <tr>
+            <td style="background-color:${accent};padding:${isVoid ? '30px' : '38px'} 24px 40px;text-align:center;">
+              ${
+                isVoid
+                  ? `<p style="margin:0;font-size:13px;color:${BRAND.charcoal};">Questions? <a href="${serverUrl}/contact-us" style="color:${BRAND.charcoal};text-decoration:underline;font-weight:700;">Contact support</a></p>`
+                  : `<p style="margin:0 0 6px;font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,241,230,0.75);">Commission Earned</p>
+                     <p style="margin:0;font-family:-apple-system,sans-serif;font-weight:800;font-size:40px;color:${BRAND.linen};">$${amount}</p>`
+              }
+            </td>
+          </tr>
+${shellClose({ footerWaveFrom: accent, serverUrl })}`
 }
-

@@ -99,7 +99,7 @@ export const authOptions: NextAuthOptions = {
         try {
           const { sendTrackedEmail } = await import('@/lib/emails/sendTrackedEmail')
           await sendTrackedEmail(payload, {
-            from: 'Support | Veracue Peptides <support@veracuepeptides.com>',
+            from: 'Veracue Support <support@veracuepeptides.com>',
             to: linked.email,
             subject: 'A new sign-in method was added to your account',
             html: `<p>Google sign-in was just linked to your Veracue Peptides account (${linked.email}). If this wasn't you, please contact support immediately.</p>`,

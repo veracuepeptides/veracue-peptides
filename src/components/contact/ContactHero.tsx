@@ -7,19 +7,19 @@ import { HeroButton } from '@/components/ui/hero-button'
 
 const CONTACT_HERO_IMAGES = [
   {
-    src: '/veracue-images/veracue-military-researcher-lab.jpg',
+    src: '/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp',
+    alt: 'Veracue Research Peptides Collection',
+    topic: 'Bulk Orders & Quotes',
+  },
+  {
+    src: '/veracue-images/veracue-klow-50mg-pool-water-ripples.webp',
     alt: 'Veracue Customer & Laboratory Support',
     topic: 'Customer & Laboratory Support',
   },
   {
-    src: '/veracue-images/veracue-research-grade-50mg-gloved-hand.png',
+    src: '/veracue-images/veracue-ghk-cu-50mg-ice-bed-white.webp',
     alt: 'Veracue Research Peptide Handling',
     topic: 'Product & Batch Testing',
-  },
-  {
-    src: '/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp',
-    alt: 'Veracue Research Peptides Collection',
-    topic: 'Bulk Orders & Quotes',
   },
 ]
 
@@ -75,7 +75,7 @@ export function ContactHero() {
         </p>
 
         {/* 2. Main Headline (H1) */}
-        <h1 className="text-[22px] xs:text-2xl sm:text-3xl md:text-4xl lg:text-[46px] xl:text-[52px] font-bold tracking-[-0.03em] text-neutral-900 leading-tight mb-1.5 sm:mb-2.5 sm:whitespace-nowrap font-heading">
+        <h1 className="text-[22px]/[1.15] xs:text-2xl/[1.15] sm:text-3xl/[1.12] md:text-4xl/[1.1] lg:text-[44px]/[1.08] xl:text-[50px]/[1.08] font-bold tracking-[-0.03em] text-neutral-900 leading-[1.15] sm:leading-[1.12] md:leading-[1.1] lg:leading-[1.08] mb-1.5 sm:mb-2.5 font-heading text-balance max-w-4xl">
           Get in Touch with Our Team
         </h1>
 
@@ -167,7 +167,7 @@ export function ContactHero() {
               &lt; 2h
             </div>
             <p className="text-white/95 text-[10.5px] xs:text-xs sm:text-[13.5px] md:text-[15px] font-medium leading-snug mt-1 sm:mt-2.5 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)] max-w-[150px] sm:max-w-[240px]">
-              Average Response,<br />During Business Hours
+              Average Response<br />Time
             </p>
           </div>
 
@@ -180,7 +180,7 @@ export function ContactHero() {
               Real support from our US-based team.
             </p>
             <p className="hidden sm:block text-white/90 text-xs sm:text-[13px] md:text-[14.5px] font-normal leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
-              Our team is available Monday through Friday to answer product questions, provide batch COAs, and assist with orders.
+              Our team is on hand to answer product questions, provide batch COAs, and assist with orders.
             </p>
           </div>
 

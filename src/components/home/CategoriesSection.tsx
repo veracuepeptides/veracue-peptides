@@ -100,14 +100,14 @@ export function CategoriesSection({ categories = [] }: CategoriesSectionProps) {
         >
           <div>
             {/* Standardized Eyebrow Pill */}
-            <div className="inline-block border border-[#eddcd2] rounded-full px-4 py-1.5 mb-3.5 bg-white shadow-sm">
-              <span className="text-[#a5a58d] text-xs font-bold tracking-[0.2em] uppercase font-editorial">
+            <div className="inline-block border border-[#eddcd2] rounded-full max-w-full px-3 sm:px-4 py-1.5 mb-3.5 bg-white shadow-sm">
+              <span className="text-[#a5a58d] text-[9px] xs:text-[9.5px] sm:text-xs font-bold tracking-[0.02em] xs:tracking-[0.06em] sm:tracking-[0.2em] uppercase font-editorial whitespace-nowrap">
                 RESEARCH CLASSIFICATIONS
               </span>
             </div>
 
             {/* Main Heading (Matching reference style) */}
-            <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-extrabold text-neutral-900 tracking-tight leading-[1.06] uppercase">
+            <h2 className="font-heading text-3xl/[1.18] sm:text-4xl/[1.15] md:text-5xl/[1.12] font-extrabold text-neutral-900 tracking-tight leading-[1.18] sm:leading-[1.15] md:leading-[1.12] uppercase">
               Select By Category
             </h2>
           </div>
@@ -155,10 +155,9 @@ export function CategoriesSection({ categories = [] }: CategoriesSectionProps) {
                       {displayName}
                     </span>
 
-                    {/* Minimalist Line-Arrow (matching reference image line ───→) */}
+                    {/* Minimalist Arrow */}
                     <div className="flex items-center gap-1 text-neutral-400 group-hover:text-black transition-colors shrink-0">
-                      <span className="w-3.5 xs:w-5 sm:w-8 md:w-10 h-[1.5px] bg-neutral-300 group-hover:bg-black transition-colors rounded-full" />
-                      <ArrowRight size={13} className="-ml-1 transition-transform duration-300 group-hover:translate-x-1" strokeWidth={2.5} />
+                      <ArrowRight size={13} className="transition-transform duration-300 group-hover:translate-x-1" strokeWidth={2.5} />
                     </div>
                   </div>
 

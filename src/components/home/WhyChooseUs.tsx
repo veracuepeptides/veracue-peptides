@@ -89,14 +89,14 @@ export function WhyChooseUs() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 sm:mb-14 md:mb-16 gap-6 md:gap-12">
           <div className="max-w-2xl">
             {/* Eyebrow Pill */}
-            <div className="inline-block border border-[#eddcd2] rounded-full px-4 py-1.5 mb-4 sm:mb-5 bg-white shadow-2xs">
-              <span className="text-[#a5a58d] text-xs font-bold tracking-[0.2em] uppercase font-editorial">
+            <div className="inline-block border border-[#eddcd2] rounded-full max-w-full px-3 sm:px-4 py-1.5 mb-4 sm:mb-5 bg-white shadow-2xs">
+              <span className="text-[#a5a58d] text-[9px] xs:text-[9.5px] sm:text-xs font-bold tracking-[0.02em] xs:tracking-[0.06em] sm:tracking-[0.2em] uppercase font-editorial whitespace-nowrap">
                 {t('eyebrow')}
               </span>
             </div>
 
             {/* Display Headline */}
-            <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-[#20221c] leading-[0.95] tracking-tight uppercase">
+            <h2 className="font-heading text-3xl/[1.1] sm:text-4xl/[1.08] md:text-5xl/[1.05] lg:text-7xl/[1.02] font-black text-[#20221c] leading-[1.1] sm:leading-[1.08] md:leading-[1.05] lg:leading-[1.02] tracking-tight uppercase">
               {t('titleLine1')}{' '}
               <br className="hidden sm:inline" />
               {t('titleLine2')}

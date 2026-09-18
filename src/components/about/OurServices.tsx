@@ -18,13 +18,13 @@ export function OurServices() {
         {/* HEADER: Pill & Display Title                                         */}
         {/* ==================================================================== */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 md:mb-20">
-          <div className="inline-block border border-[#eddcd2] rounded-full px-4 py-1.5 mb-4 sm:mb-5 bg-white shadow-2xs">
-            <span className="text-[#a5a58d] text-[11px] sm:text-xs font-bold tracking-[0.2em] uppercase font-editorial">
+          <div className="inline-block border border-[#eddcd2] rounded-full max-w-full px-3 sm:px-4 py-1.5 mb-4 sm:mb-5 bg-white shadow-2xs">
+            <span className="text-[#a5a58d] text-[9px] xs:text-[9.5px] sm:text-xs font-bold tracking-[0.02em] xs:tracking-[0.06em] sm:tracking-[0.2em] uppercase font-editorial whitespace-nowrap">
               {t('capabilitiesLabel')}
             </span>
           </div>
           
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-black text-neutral-900 tracking-tight uppercase leading-[1.05]">
+          <h2 className="text-3xl/[1.18] sm:text-4xl/[1.14] md:text-5xl/[1.12] lg:text-6xl/[1.1] font-heading font-black text-neutral-900 tracking-tight uppercase leading-[1.18] sm:leading-[1.14] md:leading-[1.12] lg:leading-[1.1]">
             {t('titleLine1')} <br className="hidden sm:inline" />
             <span className="text-neutral-900">{t('titleLine2')}</span>
           </h2>

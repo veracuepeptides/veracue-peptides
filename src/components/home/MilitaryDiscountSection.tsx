@@ -33,7 +33,7 @@ export function MilitaryDiscountSection() {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  // Dignified US Flag & Great Seal Military Honor Image (Zero Human Faces, Zero Helix Bio Assets)
+  // Dignified US Flag & Great Seal Military Honor Image (Zero Human Faces)
   const usFlagImage = {
     src: '/veracue-images/veracue-military-us-flag.jpg',
     alt: 'Dignified American US flag with embroidered stars and bronze military seal honoring service members'
@@ -150,7 +150,7 @@ export function MilitaryDiscountSection() {
           
           {/* LEFT COLUMN: US Flag & Military Honor Visual Stage */}
           <div className="lg:col-span-5 xl:col-span-5 flex flex-col">
-            <div className="relative w-full h-full min-h-[360px] sm:min-h-[420px] lg:min-h-[500px] rounded-[24px] sm:rounded-[32px] overflow-hidden bg-[#20221c] border border-[#20221c]/10 shadow-[0_20px_50px_rgba(32,34,28,0.12)] flex flex-col justify-between p-5 sm:p-7 group">
+            <div className="relative w-full h-full min-h-[480px] sm:min-h-[420px] lg:min-h-[500px] rounded-[24px] sm:rounded-[32px] overflow-hidden bg-[#20221c] border border-[#20221c]/10 shadow-[0_20px_50px_rgba(32,34,28,0.12)] flex flex-col justify-between p-5 sm:p-7 group">
               
               {/* US Flag & Brass Seal Background Image */}
               <div className="absolute inset-0">
@@ -217,8 +217,9 @@ export function MilitaryDiscountSection() {
                       })}
                     </p>
                     
-                    {/* Micro Badges */}
-                    <div className="mt-2.5 pt-2 border-t border-[#20221c]/10 flex flex-wrap items-center gap-x-3 gap-y-1 text-[10px] font-bold text-[#20221c]/70 uppercase tracking-wider">
+                    {/* Micro Badges — hidden on mobile so the card stays compact enough for the
+                        background photo to actually show through above it (see min-h note below) */}
+                    <div className="hidden sm:flex mt-2.5 pt-2 border-t border-[#20221c]/10 flex-wrap items-center gap-x-3 gap-y-1 text-[10px] font-bold text-[#20221c]/70 uppercase tracking-wider">
                       <span className="inline-flex items-center gap-1">
                         <Lock className="w-3 h-3 text-[#a5a58d]" /> Encrypted
                       </span>
@@ -269,7 +270,7 @@ export function MilitaryDiscountSection() {
                         </div>
                       </div>
 
-                      <h2 className="text-2xl sm:text-3xl md:text-4xl font-black font-heading uppercase text-[#20221c] leading-[1.05] tracking-tight mb-2">
+                      <h2 className="text-2xl/[1.2] sm:text-3xl/[1.18] md:text-4xl/[1.15] font-black font-heading uppercase text-[#20221c] leading-[1.2] sm:leading-[1.18] md:leading-[1.15] tracking-tight mb-2">
                         <span>{t('titleLine1')}</span>{' '}
                         <span className="text-[#a5a58d]">{t('titleLine2')}</span>
                       </h2>
@@ -536,7 +537,7 @@ export function MilitaryDiscountSection() {
                     {/* Micro Security Footnote */}
                     <div className="text-center">
                       <p className="text-[10px] text-[#20221c]/50 font-medium">
-                        Verification is strictly confidential under AES-256 protocol. Credentials are destroyed immediately upon code generation.
+                        Your ID is AES-256 encrypted the moment it's uploaded, and permanently deleted once your discount code is generated.
                       </p>
                     </div>
 

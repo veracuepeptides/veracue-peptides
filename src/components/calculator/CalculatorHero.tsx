@@ -5,7 +5,6 @@ import Image from 'next/image'
 import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion'
 import { ArrowDown, CheckCircle2, ShieldCheck, Sparkles, Calculator } from 'lucide-react'
 import { HeroButton } from '@/components/ui/hero-button'
-import { useTranslations } from 'next-intl'
 
 const CALCULATOR_HERO_IMAGES = [
   {
@@ -29,7 +28,6 @@ const CALCULATOR_HERO_IMAGES = [
 ]
 
 export function CalculatorHero() {
-  const t = useTranslations('calculator.main.hero')
   const containerRef = useRef<HTMLDivElement>(null)
   const shouldReduceMotion = useReducedMotion()
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
@@ -82,17 +80,17 @@ export function CalculatorHero() {
           
           {/* 1. Eyebrow Tagline */}
           <p className="font-serif tracking-[0.16em] sm:tracking-[0.24em] text-[9.5px] sm:text-[11.5px] md:text-[12px] uppercase text-neutral-700 font-normal mb-1.5 sm:mb-2">
-            The Veracue Research Suite &bull; Precision Dosing &bull; Analytically Verified
+            Free Research Tool &bull; No Sign-Up &bull; Instant Results
           </p>
 
           {/* 2. Main Headline (H1) - Single line presentation on desktop */}
-          <h1 className="text-[22px] xs:text-2xl sm:text-3xl md:text-4xl lg:text-[46px] xl:text-[52px] font-bold tracking-[-0.03em] text-neutral-900 leading-tight mb-1.5 sm:mb-2.5 sm:whitespace-nowrap">
-            Peptide Reconstitution Calculator
+          <h1 className="text-[22px]/[1.15] xs:text-2xl/[1.15] sm:text-3xl/[1.12] md:text-4xl/[1.1] lg:text-[44px]/[1.08] xl:text-[50px]/[1.08] font-bold tracking-[-0.03em] text-neutral-900 leading-[1.15] sm:leading-[1.12] md:leading-[1.1] lg:leading-[1.08] mb-1.5 sm:mb-2.5 font-heading text-balance max-w-4xl">
+            Peptide Reconstitution & Dosage Calculator
           </h1>
 
           {/* 3. Sub-headline / Supporting Description */}
           <p className="text-neutral-500 text-[11.5px] sm:text-[13px] md:text-[14.5px] max-w-2xl leading-relaxed mb-2.5 sm:mb-4 font-normal px-1 line-clamp-3 sm:line-clamp-none">
-            {t('description1') || 'The most precise peptide reconstitution calculator available for research laboratories. Enter your vial mass, bacteriostatic water volume, and target dose to obtain verified syringe draw units instantly.'}
+            Enter your vial size, bacteriostatic water volume, and target dose. This tool converts the math into an exact syringe draw, in units, instantly.
           </p>
 
           {/* 4. Action HeroButtons */}
@@ -185,7 +183,7 @@ export function CalculatorHero() {
                 100%
               </div>
               <p className="text-white/95 text-[10.5px] xs:text-xs sm:text-[13.5px] md:text-[15px] font-medium leading-snug mt-1 sm:mt-2.5 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)] max-w-[140px] sm:max-w-[240px]">
-                Analytical Accuracy,<br />Zero Manual Guesswork
+                Exact Draw Volume,<br />Every Time
               </p>
             </div>
 
@@ -195,10 +193,10 @@ export function CalculatorHero() {
                 Precision<br className="sm:hidden" /> Calibration
               </h3>
               <p className="hidden xs:block sm:hidden text-[9px] text-white/85 leading-snug line-clamp-2 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
-                Instant U-100 syringe units.
+                Works for any vial size.
               </p>
               <p className="hidden sm:block text-white/90 text-xs sm:text-[13px] md:text-[14.5px] font-normal leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
-                Accurately converts 2mg, 5mg, 10mg &amp; 30mg vials into exact unit graduations for laboratory protocols.
+                Converts 2mg, 5mg, 10mg, and 30mg vials into exact U-100 syringe units for your research.
               </p>
             </div>
 

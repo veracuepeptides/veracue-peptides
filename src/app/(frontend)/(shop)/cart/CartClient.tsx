@@ -470,7 +470,7 @@ export function CartClient() {
 
       {/* --- Page Heading --- */}
       <div className="flex items-center gap-2.5 sm:gap-3.5 mb-6 sm:mb-10">
-        <h1 className="text-[24px] xs:text-[26px] sm:text-3xl md:text-4xl font-sans font-bold text-neutral-900 tracking-[-0.03em] leading-tight sm:leading-none">
+        <h1 className="text-[24px] xs:text-[26px] sm:text-3xl md:text-4xl font-sans font-bold text-neutral-900 tracking-[-0.03em] leading-tight">
           Shopping Cart
         </h1>
         <span className="whitespace-nowrap shrink-0 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full text-[11px] sm:text-xs font-sans font-semibold bg-[#fff1e6] text-[#cb997e] border border-[#eddcd2]">

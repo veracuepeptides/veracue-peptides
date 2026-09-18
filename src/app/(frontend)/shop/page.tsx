@@ -30,8 +30,8 @@ const SHOP_FAQ_KEYS = [
   'fdaApproval',
 ]
 
-const title = 'Research Peptides Catalog | Lab-Verified ≥99% Purity | Veracue'
-const description = 'Shop analytical-grade research peptides with third-party verified COA on every batch, ≥99% HPLC purity, and cold-chain USA shipping. Explore the Veracue catalog.'
+const title = 'Shop Research Peptides | 99%+ HPLC Verified | Veracue'
+const description = 'Every research peptide in our USA catalog ships with a batch-specific COA and verified 99%+ HPLC purity. Browse compounds, pricing, and stock in real time.'
 
 export async function generateMetadata({
   params,
@@ -107,7 +107,7 @@ export default async function ShopPage() {
     )
   }
 
-  const siteUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com'
+  const siteUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
 
   const t = await getTranslations('shop.shopClient')
   const shopFaqs = SHOP_FAQ_KEYS.map((key) => ({
@@ -156,14 +156,14 @@ export default async function ShopPage() {
                 '@type': 'WebSite',
                 '@id': `${siteUrl}/#website`,
                 url: siteUrl,
-                name: 'Veracue',
+                name: 'Veracue Peptides',
               },
               {
                 '@type': 'Organization',
                 '@id': `${siteUrl}/#organization`,
-                name: 'Veracue',
+                name: 'Veracue Peptides',
                 url: siteUrl,
-                description: 'USA-based supplier of analytical-grade research peptides for laboratory research.',
+                description: 'USA-based supplier of research-use-only synthetic peptides for laboratory research.',
               },
               {
                 '@type': 'FAQPage',

@@ -13,12 +13,12 @@ const SHOP_HERO_IMAGES = [
     compound: 'Catalog Collection',
   },
   {
-    src: '/veracue-images/veracue-research-grade-50mg-dish-leaf-droplets.png',
+    src: '/veracue-images/veracue-klow-50mg-pool-water-ripples.webp',
     alt: 'Veracue Analytical Laboratory Grade Research Peptides',
     compound: 'Analytical Grade',
   },
   {
-    src: '/veracue-images/veracue-research-grade-50mg-gloved-hand.png',
+    src: '/veracue-images/veracue-ghk-cu-50mg-ice-bed-white.webp',
     alt: 'Veracue Peptide Synthesis and Quality Control',
     compound: 'Synthesis & QA',
   },
@@ -77,17 +77,17 @@ export function ShopHero() {
       <div className="flex flex-col items-center text-center shrink-0 w-full max-w-5xl px-3">
         {/* 1. Eyebrow Tagline */}
         <p className="font-serif tracking-[0.16em] sm:tracking-[0.24em] text-[9.5px] sm:text-[11.5px] md:text-[12px] uppercase text-neutral-700 font-normal mb-1.5 sm:mb-2">
-          Synthesized for Precision · Verified for Purity · Batch HPLC &amp; Mass Spec Tested
+          Every Listing Ships With Its Own Certificate of Analysis
         </p>
 
         {/* 2. Main Headline (H1) */}
-        <h1 className="text-[22px] xs:text-2xl sm:text-3xl md:text-4xl lg:text-[46px] xl:text-[52px] font-bold tracking-[-0.03em] text-neutral-900 leading-tight mb-1.5 sm:mb-2.5 sm:whitespace-nowrap font-heading">
-          Complete Research Peptide Catalog
+        <h1 className="text-[22px]/[1.15] xs:text-2xl/[1.15] sm:text-3xl/[1.12] md:text-4xl/[1.1] lg:text-[44px]/[1.08] xl:text-[50px]/[1.08] font-bold tracking-[-0.03em] text-neutral-900 leading-[1.15] sm:leading-[1.12] md:leading-[1.1] lg:leading-[1.08] mb-1.5 sm:mb-2.5 font-heading text-balance max-w-4xl">
+          Research Peptides, Fully Verified and In Stock
         </h1>
 
         {/* 3. Sub-headline / Supporting Description */}
         <p className="text-neutral-500 text-[11.5px] sm:text-[13px] md:text-[14.5px] max-w-2xl leading-relaxed mb-2.5 sm:mb-4 font-normal px-1 line-clamp-3 sm:line-clamp-none">
-          Analytical-grade lyophilized peptides formulated for controlled laboratory investigation. Every compound is verified for ≥99% purity with third-party mass spectrometry and lot-specific HPLC reports on file.
+          Filter by category, check live stock, and open the COA before you order. Nothing in this catalog ships until it clears HPLC and mass spectrometry testing.
         </p>
 
         {/* 4. CTA Pill Button (Smooth scrolls directly to catalog) */}
@@ -176,13 +176,13 @@ export function ShopHero() {
           {/* Bottom-Right Overlay (Third-Party Testing & Features) */}
           <div className="absolute bottom-12 xs:bottom-14 sm:bottom-12 md:bottom-14 right-3 sm:right-7 md:right-10 z-20 text-white text-right sm:text-left max-w-[135px] xs:max-w-[170px] sm:max-w-[300px] md:max-w-[360px]">
             <h3 className="text-xs xs:text-sm sm:text-xl md:text-2xl lg:text-[26px] font-extrabold tracking-tight text-white leading-tight mb-0.5 sm:mb-2 drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] font-heading">
-              Batch-Specific<br className="sm:hidden" /> COA Included
+              Open the COA<br className="sm:hidden" /> Before You Buy
             </h3>
             <p className="hidden xs:block sm:hidden text-[9px] text-white/85 leading-snug line-clamp-2 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
-              Independent laboratory analytical testing on every lot.
+              Linked from every product page, before checkout.
             </p>
             <p className="hidden sm:block text-white/90 text-xs sm:text-[13px] md:text-[14.5px] font-normal leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
-              Every compound is certified by independent testing facilities with batch-specific purity documentation prior to dispatch.
+              Each listing links its own lab report, so you can check the numbers before you ever add it to cart.
             </p>
           </div>
 

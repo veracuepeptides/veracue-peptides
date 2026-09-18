@@ -33,7 +33,7 @@ export const Timeline = ({ data, title, description }: { data: TimelineEntry[], 
 
   return (
     <div
-      className="w-full bg-ink font-sans md:px-10"
+      className="w-full bg-[#20221c] font-sans md:px-10"
       ref={containerRef}
     >
       {(title || description) && (
@@ -54,8 +54,8 @@ export const Timeline = ({ data, title, description }: { data: TimelineEntry[], 
             className="flex flex-col md:grid md:grid-cols-[300px_1fr] lg:grid-cols-[400px_1fr] pt-10 md:pt-40 gap-10"
           >
             <div className="sticky z-40 top-40 self-start w-full flex items-center">
-              <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-ink flex items-center justify-center">
-                <div className="h-4 w-4 rounded-full bg-primary/20 border border-primary/50" />
+              <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-[#20221c] flex items-center justify-center">
+                <div className="h-4 w-4 rounded-full bg-[#a5a58d]/20 border border-[#a5a58d]/50" />
               </div>
               <h3 className="hidden md:block text-3xl md:text-4xl lg:text-5xl font-heading font-black text-white/20 uppercase tracking-tight pl-20 break-words w-full">
                 {item.title}

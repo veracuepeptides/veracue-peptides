@@ -327,7 +327,20 @@ export function CertificatesClient({ coas }: CertificatesClientProps) {
           </div>
 
           {/* Library Content */}
-          {filteredCOAs.length === 0 ? (
+          {coas.length === 0 ? (
+            <div className="bg-[#f0efeb] rounded-2xl p-12 sm:p-16 text-center border border-dashed border-[#eddcd2]">
+              <FileText className="w-10 h-10 text-[#a5a58d] mx-auto mb-4 stroke-1" />
+              <h3 className="font-heading font-bold text-lg sm:text-xl text-[#20221c] mb-2">
+                Certificates are being added
+              </h3>
+              <p className="text-sm text-neutral-600 max-w-md mx-auto mb-6">
+                We're in the process of publishing batch-specific COAs to this library. Need a certificate for a product you've ordered? Request it directly and our team will send it over.
+              </p>
+              <HeroButton href="/contact-us">
+                Request a Certificate
+              </HeroButton>
+            </div>
+          ) : filteredCOAs.length === 0 ? (
             <div className="bg-[#f0efeb] rounded-2xl p-12 sm:p-16 text-center border border-dashed border-[#eddcd2]">
               <FileText className="w-10 h-10 text-[#a5a58d] mx-auto mb-4 stroke-1" />
               <h3 className="font-heading font-bold text-lg sm:text-xl text-[#20221c] mb-2">
@@ -623,7 +636,7 @@ export function CertificatesClient({ coas }: CertificatesClientProps) {
                   <div className="text-right">
                     <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#a5a58d] text-white text-xs font-heading font-bold uppercase tracking-wider shadow-xs">
                       <CheckCircle2 className="w-4 h-4" />
-                      {inspectingCoa.status || 'PASS • ≥99% Verified'}
+                      {inspectingCoa.status || 'Verified'}
                     </span>
                     <span className="text-[10px] font-mono text-neutral-500 block mt-1">
                       Target Purity Standard: ≥99.00%
@@ -669,50 +682,19 @@ export function CertificatesClient({ coas }: CertificatesClientProps) {
                   </div>
                 </div>
 
-                {/* Simulated Chromatogram Peak Visualizer */}
-                <div className="p-4 sm:p-5 rounded-2xl bg-[#20221c] text-white border border-neutral-800">
-                  <div className="flex items-center justify-between mb-3 pb-2 border-b border-neutral-800">
-                    <div className="flex items-center gap-2">
+                {inspectingCoa.notes && (
+                  <div className="p-4 sm:p-5 rounded-2xl bg-[#20221c] text-white border border-neutral-800">
+                    <div className="flex items-center gap-2 mb-2">
                       <Activity className="w-4 h-4 text-[#a5a58d]" />
                       <span className="text-xs font-heading font-bold uppercase tracking-wider text-[#fff1e6]">
-                        HPLC Peak Integration
+                        Lab Notes
                       </span>
                     </div>
-                    <span className="text-[10px] font-mono text-[#a5a58d]">
-                      Detection: UV 214nm
-                    </span>
-                  </div>
-
-                  {/* Visual Peak Bar */}
-                  <div className="space-y-2">
-                    <div className="flex justify-between text-xs font-mono">
-                      <span className="text-white/70">Main Compound Peak</span>
-                      <span className="font-bold text-[#a5a58d]">{inspectingCoa.purity} Area</span>
-                    </div>
-                    <div className="w-full h-3 bg-neutral-800 rounded-full overflow-hidden flex">
-                      <div
-                        style={{
-                          width: inspectingCoa.purity.includes('%')
-                            ? inspectingCoa.purity
-                            : '99.4%',
-                        }}
-                        className="bg-gradient-to-r from-[#a5a58d] to-[#ddbea9] h-full"
-                      />
-                      <div className="w-1 bg-white/20 h-full" />
-                    </div>
-                    <div className="flex justify-between text-[10px] font-mono text-white/40 pt-1">
-                      <span>0.0 min (injection)</span>
-                      <span>14.8 min (retention)</span>
-                      <span>25.0 min</span>
-                    </div>
-                  </div>
-
-                  {inspectingCoa.notes && (
-                    <p className="text-xs text-white/70 mt-3 pt-3 border-t border-neutral-800/80 leading-relaxed italic">
+                    <p className="text-xs text-white/70 leading-relaxed italic">
                       &ldquo;{inspectingCoa.notes}&rdquo;
                     </p>
-                  )}
-                </div>
+                  </div>
+                )}
 
                 {/* Footer Modal Actions */}
                 <div className="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-[#eddcd2]">
@@ -891,7 +873,7 @@ export function CertificatesClient({ coas }: CertificatesClientProps) {
         contactHeading="Need custom lot documentation?"
         contactSubtext="Reach out directly through our contact page and our analytical team will assist you."
         contactButtonText="Contact Us"
-        contactHref="/contact"
+        contactHref="/contact-us"
       />
 
       {/* ==================================================================== */}

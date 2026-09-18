@@ -3,19 +3,7 @@
 import React from 'react'
 import { useTranslations } from 'next-intl'
 import { SharedFaqSection } from '@/components/shared/SharedFaqSection'
-
-const FAQ_KEYS = [
-  'ruoPeptide',
-  'researchGradePurity',
-  'coaContents',
-  'massSpecIdentity',
-  'lyophilizedStorage',
-  'assayDevelopment',
-  'commonImpurities',
-  'receptorBindingStudies',
-  'vendorQuestions',
-  'supplierLegitimacy',
-];
+import { FAQ_KEYS } from '@/lib/home/faqKeys'
 
 export function FaqSection() {
   const t = useTranslations('home.faqSection')
@@ -36,7 +24,7 @@ export function FaqSection() {
       contactHeading="Still have questions?"
       contactSubtext="Reach out directly through our contact page and our scientific team will assist you."
       contactButtonText="Contact Us"
-      contactHref="/contact"
+      contactHref="/contact-us"
     />
   )
 }

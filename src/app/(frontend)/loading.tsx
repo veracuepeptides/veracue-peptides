@@ -3,43 +3,52 @@ import { Skeleton } from '@/components/ui/skeleton'
 
 export default function HomepageLoading() {
   return (
-      <div className="flex flex-col w-full min-h-screen relative z-10 bg-[#FAFAFA] overflow-x-clip">
+    <div style={{ backgroundColor: '#f0efeb' }} className="flex flex-col w-full min-h-screen font-sans overflow-x-clip">
+      {/* 1. Hero Section Skeleton Mimic — light olive green / sage */}
+      <section className="w-full pt-[78px] sm:pt-[94px] md:pt-[128px] pb-4 px-3 sm:px-6 md:px-10 flex flex-col items-center justify-between min-h-[100dvh] md:h-screen md:min-h-[620px]">
         
-        {/* Hero Section Skeleton Mimic */}
-        <section className="bg-[#FAFAFA] w-full px-4 sm:px-6 md:px-12 pb-6 md:pb-12 pt-[140px] font-sans min-h-screen flex flex-col">
-          <div className="relative w-full flex-1 min-h-[400px] md:min-h-[450px] rounded-[32px] overflow-visible bg-zinc-200 animate-pulse">
+        {/* Top Header & Intro Block */}
+        <div className="flex flex-col items-center text-center shrink-0 w-full max-w-5xl px-3 animate-pulse">
+          {/* Eyebrow Tagline */}
+          <div className="h-3 w-64 sm:w-80 bg-[#a5a58d]/25 rounded-full mb-3" />
 
-            {/* Text Content Skeleton */}
-            <div className="absolute top-8 sm:top-12 md:top-1/4 left-6 sm:left-8 md:left-16 flex flex-col items-start z-10">
-              <Skeleton className="w-[280px] md:w-[400px] h-10 md:h-16 mb-4 bg-white/40 rounded-lg" />
-              <Skeleton className="w-[200px] md:w-[300px] h-10 md:h-16 mb-6 bg-white/40 rounded-lg" />
-              <Skeleton className="w-[250px] md:w-[350px] h-4 md:h-5 bg-white/40 rounded-full" />
+          {/* Main Headline */}
+          <div className="h-8 sm:h-12 md:h-14 w-4/5 max-w-2xl bg-[#a5a58d]/20 rounded-2xl mb-3" />
+
+          {/* Sub-headline */}
+          <div className="h-4 w-full max-w-lg bg-[#a5a58d]/12 rounded-full mb-2" />
+          <div className="h-4 w-3/4 max-w-md bg-[#a5a58d]/12 rounded-full mb-5" />
+
+          {/* CTA Pill Button Skeleton — light olive green */}
+          <div className="h-11 sm:h-12 w-48 bg-[#a5a58d]/35 rounded-full shadow-xs" />
+        </div>
+
+        {/* Visual Feature Card Container */}
+        <div className="w-full mx-auto px-1 sm:px-2 flex-1 min-h-[300px] sm:min-h-[360px] md:min-h-[250px] flex flex-col mt-4 mb-2">
+          <div className="relative w-full h-full flex-1 rounded-2xl md:rounded-[18px] overflow-hidden bg-white/80 border border-[#a5a58d]/25 animate-pulse flex items-center justify-center">
+            {/* Center compound logo/badge placeholder */}
+            <div className="flex flex-col items-center gap-3 opacity-60">
+              <div className="w-14 h-14 rounded-2xl bg-[#a5a58d]/15 border border-[#a5a58d]/30" />
+              <div className="h-3 w-32 bg-[#a5a58d]/20 rounded-full" />
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Floating Action Bar Skeleton */}
-            <div className="absolute -bottom-24 md:-bottom-10 left-1/2 -translate-x-1/2 w-[95%] md:w-[90%] lg:w-[80%] max-w-5xl bg-white rounded-[24px] shadow-[0_8px_30px_rgba(0,0,0,0.05)] p-3 md:p-4 flex flex-col md:flex-row items-center justify-between gap-3 md:gap-0 z-20 border border-gray-100">
-              <div className="flex-1 flex justify-start md:justify-center w-full md:w-auto">
-                <Skeleton className="w-full md:w-32 h-[48px] bg-gray-100 rounded-xl" />
-              </div>
-              <div className="hidden md:block w-px h-10 bg-gray-100 shrink-0 mx-2 lg:mx-4" />
-              <div className="flex-[1.5] flex justify-center w-full md:w-auto px-1 md:px-0">
-                <Skeleton className="w-full h-[48px] bg-gray-100 rounded-[16px]" />
-              </div>
-              <div className="hidden md:block w-px h-10 bg-gray-100 shrink-0 mx-2 lg:mx-4" />
-              <div className="flex-1 flex justify-end md:justify-center w-full md:w-auto">
-                <Skeleton className="w-full md:w-48 h-[48px] bg-gray-100 rounded-[16px]" />
+      {/* 2. Trust Badges / Categories Section Skeleton Placeholder */}
+      <div className="w-full max-w-[1400px] mx-auto px-3 sm:px-6 md:px-10 py-10">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 animate-pulse">
+          {[1, 2, 3, 4].map((i) => (
+            <div key={i} className="h-24 bg-white/70 border border-[#a5a58d]/25 rounded-2xl p-4 flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-[#a5a58d]/10 border border-[#a5a58d]/25 shrink-0" />
+              <div className="flex flex-col gap-2 flex-1">
+                <div className="h-3 w-20 bg-[#a5a58d]/20 rounded-sm" />
+                <div className="h-2.5 w-full bg-[#a5a58d]/10 rounded-sm" />
               </div>
             </div>
-
-          </div>
-
-          {/* Stats Cards */}
-          <div className="mt-32 md:mt-20 shrink-0 w-full grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-             <Skeleton className="h-36 w-full bg-white rounded-3xl animate-pulse" />
-             <Skeleton className="h-36 w-full bg-zinc-200 rounded-3xl animate-pulse" />
-             <Skeleton className="h-36 w-full bg-[#121212]/10 rounded-3xl animate-pulse" />
-          </div>
-        </section>
+          ))}
+        </div>
       </div>
+    </div>
   )
 }

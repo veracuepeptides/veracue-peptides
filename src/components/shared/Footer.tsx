@@ -140,10 +140,10 @@ const FooterContent = () => {
       {/* ==================================================================== */}
       <div id="pre-footer-cta" className="w-full mx-auto px-3 sm:px-6 md:px-10 max-w-[1920px] relative z-10 pt-4 sm:pt-10 md:pt-16 pb-12 sm:pb-16 md:pb-24">
         <div className="max-w-5xl">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-[4.5rem] xl:text-[5.2rem] font-bold tracking-tight leading-[1.05] text-[#20221c]">
+          <h2 className="text-4xl/[1.14] sm:text-5xl/[1.1] md:text-6xl/[1.08] lg:text-[4.5rem]/[1.06] xl:text-[5.2rem]/[1.05] font-bold tracking-tight leading-[1.14] sm:leading-[1.1] md:leading-[1.08] lg:leading-[1.06] text-[#20221c]">
             Ready to elevate your research?
           </h2>
-          <p className="text-4xl sm:text-5xl md:text-6xl lg:text-[4.5rem] xl:text-[5.2rem] font-medium tracking-tight leading-[1.05] text-[#20221c]/40 mt-1 sm:mt-2">
+          <p className="text-4xl/[1.14] sm:text-5xl/[1.1] md:text-6xl/[1.08] lg:text-[4.5rem]/[1.06] xl:text-[5.2rem]/[1.05] font-medium tracking-tight leading-[1.14] sm:leading-[1.1] md:leading-[1.08] lg:leading-[1.06] text-[#20221c]/40 mt-1 sm:mt-2">
             Let’s make it happen
           </p>
 
@@ -187,8 +187,8 @@ const FooterContent = () => {
             <div className="w-full lg:w-[46%] xl:w-[44%] flex flex-col justify-between">
               <div>
                 {/* Editorial Display Headline */}
-                <h2 className="font-heading font-extrabold uppercase text-[#20221c] tracking-tight leading-[1.08] text-2xl sm:text-3xl md:text-4xl lg:text-[2.5rem] xl:text-[2.85rem] max-w-xl">
-                  Receive peptide synthesis updates, purity analyses &amp; research protocols in your inbox.
+                <h2 className="font-heading font-extrabold uppercase text-[#20221c] tracking-tight leading-[1.16] sm:leading-[1.14] md:leading-[1.12] text-2xl/[1.16] sm:text-3xl/[1.14] md:text-4xl/[1.12] lg:text-[2.5rem]/[1.1] xl:text-[2.85rem]/[1.1] max-w-xl">
+                  New batch releases, purity results, and research guides, straight to your inbox.
                 </h2>
               </div>
 

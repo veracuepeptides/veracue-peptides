@@ -47,7 +47,7 @@ const Toaster = ({ ...props }: ToasterProps) => {
           success: '!bg-green-600 !border-green-500/50',
           error: '!bg-red-600 !border-red-500/50',
           warning: '!bg-amber-500 !border-amber-400/50',
-          info: '!bg-primary-dark !border-primary/50',
+          info: '!bg-[#7a4a34] !border-[#a5a58d]/50',
           actionButton: '!w-full sm:!w-auto !justify-center !bg-white !text-black !font-bold !rounded-full !px-5 !py-2 hover:!scale-105 !transition-transform !border-0',
           cancelButton: '!w-full sm:!w-auto !justify-center !bg-white/20 !text-white !font-bold !rounded-full !px-5 !py-2 hover:!bg-white/30 !border-0',
           closeButton: '!bg-white/20 !text-white hover:!bg-white/30 !border-0 !rounded-full',

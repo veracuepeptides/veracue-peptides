@@ -20,12 +20,12 @@ export interface AffiliateResearchPillar {
 const AFFILIATE_RESEARCH_PILLARS: AffiliateResearchPillar[] = [
   {
     id: 'purity',
-    badge: '≥99.2% PURITY',
+    badge: '≥99% PURITY',
     scriptTitle: 'Pure Synthesis',
     heading: 'HPLC & Mass Spec Verified',
     description:
-      'Every batch undergoes independent third-party chromatographic analysis with public COAs. Uncompromising purity eliminates checkout hesitation and maximizes referral conversion.',
-    spec: 'USP Grade • ≥99.2% Confirmed',
+      'Every batch undergoes independent third-party chromatographic analysis with a public COA, so what you recommend is backed by real documentation, not a claim.',
+    spec: 'USP Grade • ≥99% Confirmed',
     image: '/veracue-images/veracue-klow-50mg-sunlit-water-ripples.webp',
     icon: ShieldCheck,
   },
@@ -35,18 +35,18 @@ const AFFILIATE_RESEARCH_PILLARS: AffiliateResearchPillar[] = [
     scriptTitle: 'Precision Batch',
     heading: 'Controlled Formulation',
     description:
-      'Synthesized in certified United States laboratories under strictly regulated laminar flow hoods. Reliable quality builds audience trust and generates lifelong customer retention.',
-    spec: 'c-GMP Compliant • Sterile Vialing',
+      'Synthesized in certified United States laboratories under strictly regulated laminar flow hoods, the same standard your audience can verify for themselves.',
+    spec: 'Cleanroom Synthesis • Sterile Vialing',
     image: '/veracue-images/veracue-nad-plus-500mg-sunlight-branches.webp',
     icon: PackageCheck,
   },
   {
     id: 'expertise',
-    badge: '10+ YEARS EXP',
+    badge: 'BATCH TESTED',
     scriptTitle: 'Scientific Rigor',
     heading: 'Lyophilized Stability',
     description:
-      'Engineered for molecular integrity, high cake density, and temperature resilience during transit. Minimal degradation protects your reputation as a trusted research partner.',
+      'Engineered for molecular integrity, high cake density, and temperature resilience during transit, so what your audience receives matches what you promised them.',
     spec: 'Cold-Chain Preserved • Lot COA',
     image: '/veracue-images/veracue-epithalon-50mg-water-bamboo.webp',
     icon: Award,
@@ -79,7 +79,7 @@ export function AffiliateDifferenceSection() {
         {/* Row 1: Left-to-Right Translation */}
         <motion.div style={{ x: x1 }} className="whitespace-nowrap will-change-transform">
           <span className="font-heading font-black text-[5.5rem] xs:text-[7rem] sm:text-[9.5rem] md:text-[11.5rem] lg:text-[13.5rem] xl:text-[15rem] text-[#fff1e6]/85 uppercase tracking-tighter leading-[0.82] block">
-            RESEARCH STANDARDS • HPLC CERTIFIED • 99%+ PURITY • VERACUE LABS • HIGHER CONVERSION •
+            RESEARCH STANDARDS • HPLC CERTIFIED • 99%+ PURITY • VERACUE PEPTIDES • HIGHER CONVERSION •
           </span>
         </motion.div>
 
@@ -93,7 +93,7 @@ export function AffiliateDifferenceSection() {
         {/* Row 3: Left-to-Right Translation */}
         <motion.div style={{ x: x3 }} className="whitespace-nowrap will-change-transform">
           <span className="font-heading font-black text-[5.5rem] xs:text-[7rem] sm:text-[9.5rem] md:text-[11.5rem] lg:text-[13.5rem] xl:text-[15rem] text-[#fff1e6]/85 uppercase tracking-tighter leading-[0.82] block">
-            PRODUCE LOYALTY • ZERO REFUNDS • 15% RECURRING • VERACUE LABS • SCALE TOGETHER •
+            BUILD LOYALTY • ZERO REFUNDS • 15% RECURRING • VERACUE PEPTIDES • SCALE TOGETHER •
           </span>
         </motion.div>
       </div>
@@ -113,7 +113,7 @@ export function AffiliateDifferenceSection() {
             The Product Quality Behind What You Promote.
           </h2>
           <p className="text-[#20221c]/80 text-sm sm:text-base leading-relaxed font-sans max-w-lg mx-auto">
-            Audience trust is everything in peptide research. Recommending documented purity guarantees higher order conversion and continuous repeat purchases.
+            This is what you're actually recommending when you share a Veracue link: documented purity your audience can check for themselves.
           </p>
         </div>
 

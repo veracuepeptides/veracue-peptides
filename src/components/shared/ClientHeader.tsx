@@ -681,7 +681,7 @@ export function ClientHeader({
                                 </div>
                               </Link>
 
-                              {/* Page 2: Research Journal */}
+                              {/* Page 2: Research Blog */}
                               <Link
                                 href="/blog"
                                 onClick={() => setActiveDropdown(null)}
@@ -693,7 +693,7 @@ export function ClientHeader({
                                   </div>
                                   <div className="min-w-0 flex-1">
                                     <span className="text-[14px] font-editorial font-bold text-white group-hover/item:text-white tracking-[0.02em] block leading-snug">
-                                      Journal
+                                      Blog
                                     </span>
                                     <p className="text-[12px] text-white/80 group-hover/item:text-white leading-relaxed font-normal mt-1 transition-colors">
                                       Clinical literature &amp; peer-reviewed studies

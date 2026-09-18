@@ -214,20 +214,20 @@ body.mobile-menu-open #custom-tidio-button {
 
 /* --- Blog article typography (rendered Payload Lexical content) --- */
 .prose-article {
-  @apply text-ink;
+  @apply text-[#20221c];
 }
 .prose-article > * + * {
   margin-top: 1.75em;
 }
 .prose-article h2 {
-  @apply text-3xl sm:text-4xl font-heading font-black text-ink uppercase tracking-tight leading-[1.1];
+  @apply text-3xl sm:text-4xl font-heading font-black text-[#20221c] uppercase tracking-tight leading-[1.1];
   scroll-margin-top: 8rem;
   margin-top: 3em;
   padding-top: 1.75em;
-  border-top: 1px solid rgba(10, 10, 10, 0.08);
+  border-top: 1px solid rgba(32, 34, 28, 0.1);
 }
 .prose-article h3 {
-  @apply text-lg sm:text-xl font-heading font-bold text-gold-dark uppercase tracking-wide leading-[1.3];
+  @apply text-lg sm:text-xl font-heading font-bold text-[#a5732f] uppercase tracking-wide leading-[1.3];
   scroll-margin-top: 8rem;
   margin-top: 2.25em;
 }
@@ -240,17 +240,17 @@ body.mobile-menu-open #custom-tidio-button {
   margin-top: 0;
 }
 .prose-article p {
-  @apply text-body-lg text-ink-muted leading-loose;
+  @apply text-body-lg text-[#525b4c] leading-loose;
 }
 .prose-article a {
-  @apply text-gold-dark underline underline-offset-4 decoration-gold/40 hover:decoration-gold transition-colors;
+  @apply text-[#a5732f] underline underline-offset-4 decoration-[#cb997e]/40 hover:decoration-[#cb997e] transition-colors;
 }
 .prose-article strong {
-  @apply font-semibold text-ink;
+  @apply font-semibold text-[#20221c];
 }
 .prose-article ul,
 .prose-article ol {
-  @apply pl-6 space-y-2 text-body-lg text-ink-muted;
+  @apply pl-6 space-y-2 text-body-lg text-[#525b4c];
 }
 .prose-article ul {
   list-style: disc;
@@ -259,7 +259,7 @@ body.mobile-menu-open #custom-tidio-button {
   list-style: decimal;
 }
 .prose-article blockquote {
-  @apply border-l-2 border-gold pl-6 italic text-ink-soft text-editorial-md;
+  @apply border-l-2 border-[#cb997e] pl-6 italic text-[#20221c]/80 text-editorial-md;
   margin: 2.5em 0;
 }
 .prose-article img {
@@ -267,11 +267,11 @@ body.mobile-menu-open #custom-tidio-button {
   margin: 2.5em 0;
 }
 .prose-article hr {
-  @apply border-ink/10;
+  @apply border-[#eddcd2];
   margin: 3em 0;
 }
 .prose-article table {
-  @apply text-sm sm:text-body-md text-ink-muted border-collapse;
+  @apply text-sm sm:text-body-md text-[#525b4c] border-collapse;
 }
 
 /* Thin, visible scrollbar for the article Table of Contents (overrides the global hidden scrollbar) */

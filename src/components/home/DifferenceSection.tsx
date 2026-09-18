@@ -10,11 +10,11 @@ import { HeroButton } from '@/components/ui/hero-button'
 const RESEARCH_PILLARS = [
   {
     id: 'purity',
-    badge: '≥99.2% PURITY',
+    badge: '≥99% PURITY',
     scriptTitle: 'Pure Synthesis',
     heading: 'HPLC & Mass Spec Verified',
-    description: 'Every compound undergoes exhaustive independent chromatographic analysis guaranteeing documented peak chemical purity.',
-    spec: 'USP Grade • ≥99.2% Confirmed',
+    description: 'Chromatography isolates a single clean peak for every compound we test, the signature of a high-purity batch.',
+    spec: 'USP Grade • ≥99% Confirmed',
     image: '/veracue-images/veracue-klow-50mg-sunlit-water-ripples.webp',
     icon: ShieldCheck,
   },
@@ -24,16 +24,16 @@ const RESEARCH_PILLARS = [
     scriptTitle: 'Precision Batch',
     heading: 'Controlled Formulation',
     description: 'Synthesized in certified United States laboratories under strictly regulated laminar flow hoods and sterile cleanroom controls.',
-    spec: 'c-GMP Compliant • Sterile Vialing',
+    spec: 'Cleanroom Synthesis • Sterile Vialing',
     image: '/veracue-images/veracue-nad-plus-500mg-sunlight-branches.webp',
     icon: PackageCheck,
   },
   {
     id: 'expertise',
-    badge: '10+ YEARS EXP',
+    badge: 'BATCH TESTED',
     scriptTitle: 'Scientific Rigor',
     heading: 'Lyophilized Stability',
-    description: 'Over a decade of biomedical expertise optimizing molecular integrity, lyophilization cake density, and cold-chain resilience.',
+    description: 'Every batch is optimized for molecular integrity, lyophilization cake density, and cold-chain resilience.',
     spec: 'Cold-Chain Preserved • Lot COA',
     image: '/veracue-images/veracue-epithalon-50mg-water-bamboo.webp',
     icon: Award,
@@ -70,7 +70,7 @@ export function DifferenceSection() {
             className="whitespace-nowrap will-change-transform"
           >
             <span className="font-heading font-black text-[5.5rem] xs:text-[7rem] sm:text-[9.5rem] md:text-[11.5rem] lg:text-[13.5rem] xl:text-[15rem] text-[#fff1e6]/85 uppercase tracking-tighter leading-[0.82] block">
-              RESEARCH STANDARDS • HPLC CERTIFIED • 99%+ PURITY • VERACUE LABS • RESEARCH STANDARDS •
+              RESEARCH STANDARDS • HPLC CERTIFIED • 99%+ PURITY • VERACUE PEPTIDES • RESEARCH STANDARDS •
             </span>
           </motion.div>
 
@@ -90,7 +90,7 @@ export function DifferenceSection() {
             className="whitespace-nowrap will-change-transform"
           >
             <span className="font-heading font-black text-[5.5rem] xs:text-[7rem] sm:text-[9.5rem] md:text-[11.5rem] lg:text-[13.5rem] xl:text-[15rem] text-[#fff1e6]/85 uppercase tracking-tighter leading-[0.82] block">
-              RESEARCH STANDARDS • HPLC CERTIFIED • 10K+ FULFILLED • VERACUE LABS • RESEARCH STANDARDS •
+              RESEARCH STANDARDS • HPLC CERTIFIED • ISO-7 CLEANROOM • VERACUE PEPTIDES • RESEARCH STANDARDS •
             </span>
           </motion.div>
         </div>

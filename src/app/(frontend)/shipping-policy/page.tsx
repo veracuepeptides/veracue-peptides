@@ -32,7 +32,7 @@ export default function ShippingPolicyPage() {
       titleLine2={t('titleLine2')}
       effectiveDate={t('effectiveDate')}
       intro={t('intro')}
-      introHeading="Logistics, Packaging & Cold-Chain Safeguards"
+      introHeading="Delivery Windows, Packaging & Damage Reporting"
       sections={sections}
       contactProps={{
         title: t('contactTitle'),
@@ -55,7 +55,7 @@ export default function ShippingPolicyPage() {
         </LegalCallout>
       </LegalSection>
 
-      {/* 02. Domestic Shipping Rates & Estimates */}
+      {/* 02. Shipping Options */}
       <LegalSection id="section2" number={2} title={t('section2Title')}>
         <p>{t('section2Intro')}</p>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
@@ -95,22 +95,16 @@ export default function ShippingPolicyPage() {
         </LegalCallout>
       </LegalSection>
 
-      {/* 04. Cold-Chain Packaging & Climate Safeguards */}
+      {/* 04. Shipping Rates */}
       <LegalSection id="section4" number={4} title={t('section4Title')}>
         <p>{t('section4Intro')}</p>
         <ul className="space-y-3 pt-2">
           <LegalListItem>{t('section4Item1')}</LegalListItem>
           <LegalListItem>{t('section4Item2')}</LegalListItem>
         </ul>
-        <div className="bg-[#fff1e6] rounded-2xl p-4 sm:p-5 border border-[#eddcd2] mt-3 flex items-start gap-3">
-          <ThermometerSnowflake size={18} className="text-[#cb997e] shrink-0 mt-0.5" />
-          <p className="text-xs sm:text-[13px] text-[#20221c]/80 leading-relaxed font-sans">
-            Lyophilized peptides remain stable at ambient temperatures during standard transit. Upon receipt, immediate transfer to recommended storage (-20°C or colder) ensures optimal longevity.
-          </p>
-        </div>
       </LegalSection>
 
-      {/* 05. Shipment Confirmation & Order Tracking */}
+      {/* 05. How We Package Orders */}
       <LegalSection id="section5" number={5} title={t('section5Title')}>
         <p>{t('section5Intro')}</p>
         <ul className="space-y-3 pt-2">
@@ -118,9 +112,15 @@ export default function ShippingPolicyPage() {
           <LegalListItem>{t('section5Item2')}</LegalListItem>
           <LegalListItem>{t('section5Item3')}</LegalListItem>
         </ul>
+        <div className="bg-[#fff1e6] rounded-2xl p-4 sm:p-5 border border-[#eddcd2] mt-3 flex items-start gap-3">
+          <ThermometerSnowflake size={18} className="text-[#cb997e] shrink-0 mt-0.5" />
+          <p className="text-xs sm:text-[13px] text-[#20221c]/80 leading-relaxed font-sans">
+            Lyophilized peptides stay stable at ambient temperature during standard transit. Once your order arrives, move it to the recommended storage (-20°C or colder) right away to preserve it long-term.
+          </p>
+        </div>
       </LegalSection>
 
-      {/* 06. Customs, Duties & Import Taxes */}
+      {/* 06. International Restrictions */}
       <LegalSection id="section6" number={6} title={t('section6Title')}>
         <p>{t('section6Intro')}</p>
         <ul className="space-y-3 pt-2">
@@ -129,7 +129,7 @@ export default function ShippingPolicyPage() {
         </ul>
       </LegalSection>
 
-      {/* 07. Damages, Transit Losses & Stolen Packages */}
+      {/* 07. If a Shipment Arrives Damaged */}
       <LegalSection id="section7" number={7} title={t('section7Title')}>
         <p>{t('section7Intro')}</p>
         <ul className="space-y-3 pt-2">

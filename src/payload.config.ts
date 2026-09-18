@@ -216,7 +216,7 @@ export default buildConfig({
   ],
   email: resendAdapter({
     defaultFromAddress: process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev',
-    defaultFromName: 'Helix Bio',
+    defaultFromName: 'Veracue',
     apiKey: process.env.RESEND_API_KEY || '',
   }),
 })

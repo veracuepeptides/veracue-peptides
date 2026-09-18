@@ -9,31 +9,31 @@ import { useTranslations } from 'next-intl'
 
 const ABOUT_HERO_IMAGES = [
   {
-    src: '/veracue-images/veracue-military-researcher-lab.jpg',
-    alt: 'Veracue state-of-the-art laboratory and cleanroom facility',
-    facility: 'US Cleanroom Facility',
-  },
-  {
-    src: '/veracue-images/veracue-research-grade-50mg-gloved-hand.png',
-    alt: 'Solid-phase peptide synthesis and analytical verification',
-    facility: 'Solid-Phase Synthesis',
-  },
-  {
     src: '/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp',
     alt: 'Veracue research peptides collection with batch COA documentation',
     facility: 'Batch COA Archives',
+  },
+  {
+    src: '/veracue-images/veracue-klow-50mg-pool-water-ripples.webp',
+    alt: 'Veracue state-of-the-art laboratory and cleanroom facility standards',
+    facility: 'US Cleanroom Standards',
+  },
+  {
+    src: '/veracue-images/veracue-ghk-cu-50mg-ice-bed-white.webp',
+    alt: 'Solid-phase peptide synthesis and cryogenic verification',
+    facility: 'Solid-Phase Synthesis',
   },
 ]
 
 const STATS_DATA = [
   {
-    value: '2018',
-    label: 'FOUNDING HERITAGE',
-    detail: 'Dedicated synthesis protocols',
+    value: 'USA',
+    label: 'DOMESTIC SYNTHESIS',
+    detail: 'Not imported raw powder',
     icon: Award,
   },
   {
-    value: '≥99.2%',
+    value: '≥99%',
     label: 'HPLC VERIFIED PURITY',
     detail: 'Documented peak separation',
     icon: ShieldCheck,
@@ -98,12 +98,12 @@ export function AboutHero() {
         <div className="flex flex-col items-center text-center shrink-0 w-full max-w-5xl px-3">
           {/* 1. Eyebrow Tagline */}
           <p className="font-serif tracking-[0.16em] sm:tracking-[0.24em] text-[9.5px] sm:text-[11.5px] md:text-[12px] uppercase text-neutral-700 font-normal mb-1.5 sm:mb-2">
-            The Veracue Pedigree &bull; Synthesized for Precision &bull; Verified for Purity
+            USA-Synthesized &bull; HPLC Verified &bull; Batch-Specific COA
           </p>
 
           {/* 2. Main Headline (H1) */}
-          <h1 className="text-[22px] xs:text-2xl sm:text-3xl md:text-4xl lg:text-[46px] xl:text-[52px] font-bold tracking-[-0.03em] text-neutral-900 leading-tight mb-1.5 sm:mb-2.5 sm:whitespace-nowrap">
-            Synthesizing Purity. Advancing Science.
+          <h1 className="text-[22px]/[1.15] xs:text-2xl/[1.15] sm:text-3xl/[1.12] md:text-4xl/[1.1] lg:text-[44px]/[1.08] xl:text-[50px]/[1.08] font-bold tracking-[-0.03em] text-neutral-900 leading-[1.15] sm:leading-[1.12] md:leading-[1.1] lg:leading-[1.08] mb-1.5 sm:mb-2.5 font-heading text-balance max-w-4xl">
+            The Lab Behind Your Research Peptides
           </h1>
 
           {/* 3. Sub-headline / Supporting Description */}
@@ -194,10 +194,10 @@ export function AboutHero() {
             {/* Top-Left Overlay (Key Stat & Purity) */}
             <div className="absolute top-3.5 sm:top-7 md:top-9 left-3.5 sm:left-7 md:left-9 z-20 text-white text-left">
               <div className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-[68px] font-black tracking-[-0.03em] text-white leading-none drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] font-heading">
-                2018
+                USA
               </div>
               <p className="text-white/95 text-[10.5px] xs:text-xs sm:text-[13.5px] md:text-[15px] font-medium leading-snug mt-1 sm:mt-2.5 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)] max-w-[140px] sm:max-w-[240px]">
-                Founded Heritage,<br />HPLC Tested &amp; Certified
+                Domestic Synthesis,<br />HPLC Tested &amp; Certified
               </p>
             </div>
 
@@ -254,8 +254,8 @@ export function AboutHero() {
                   <div className="flex items-center gap-3 sm:gap-8 md:gap-12 shrink-0 pr-3 sm:pr-8 md:pr-12">
                     <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                       <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full border-[1.5px] sm:border-[2px] border-neutral-950 inline-block shrink-0" />
-                      <span className="font-extrabold text-neutral-950">2018</span>
-                      <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Founded</span>
+                      <span className="font-extrabold text-neutral-950">RUO</span>
+                      <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Labeled</span>
                     </div>
 
                     <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
@@ -293,8 +293,8 @@ export function AboutHero() {
                   <div className="flex items-center gap-3 sm:gap-8 md:gap-12 shrink-0 pr-3 sm:pr-8 md:pr-12" aria-hidden="true">
                     <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                       <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full border-[1.5px] sm:border-[2px] border-neutral-950 inline-block shrink-0" />
-                      <span className="font-extrabold text-neutral-950">2018</span>
-                      <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Founded</span>
+                      <span className="font-extrabold text-neutral-950">RUO</span>
+                      <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Labeled</span>
                     </div>
 
                     <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">

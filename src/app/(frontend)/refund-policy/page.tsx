@@ -31,7 +31,7 @@ export default function RefundPolicyPage() {
       titleLine2={t('titleLine2')}
       effectiveDate={t('effectiveDate')}
       intro={t('intro')}
-      introHeading="Analytical Quality Guarantee & All-Sales-Final Standards"
+      introHeading="Final-Sale Policy, With One Exchange Exception"
       sections={sections}
       contactProps={{
         title: t('contactTitle'),
@@ -43,12 +43,12 @@ export default function RefundPolicyPage() {
         ordersEmail: 'orders@veracuepeptides.com',
       }}
     >
-      {/* 01. Overview & Research-Grade Notice */}
+      {/* 01. What This Policy Covers */}
       <LegalSection id="section1" number={1} title={t('section1Title')}>
         <p>{t('section1Text')}</p>
       </LegalSection>
 
-      {/* 02. Damaged or Defective Items */}
+      {/* 02. Items That Arrive Damaged */}
       <LegalSection id="section2" number={2} title={t('section2Title')}>
         <p>{t('section2Intro')}</p>
         <ul className="space-y-3 pt-2">
@@ -64,7 +64,7 @@ export default function RefundPolicyPage() {
         </LegalCallout>
       </LegalSection>
 
-      {/* 03. Return Eligibility & Non-Returnable Items */}
+      {/* 03. Why All Other Sales Are Final */}
       <LegalSection id="section3" number={3} title={t('section3Title')}>
         <p>{t('section3Intro')}</p>
         <ul className="space-y-3 pt-2">
@@ -104,7 +104,7 @@ export default function RefundPolicyPage() {
         </LegalCallout>
       </LegalSection>
 
-      {/* 05. Refund Method & Processing Times */}
+      {/* 05. Receiving Your Order */}
       <LegalSection id="section5" number={5} title={t('section5Title')}>
         <ul className="space-y-3">
           <LegalListItem>{t('section5Item1')}</LegalListItem>
@@ -113,7 +113,7 @@ export default function RefundPolicyPage() {
         </ul>
       </LegalSection>
 
-      {/* 06. How to Request a Refund */}
+      {/* 06. Other Order Questions */}
       <LegalSection id="section6" number={6} title={t('section6Title')}>
         <p>{t('section6Intro')}</p>
         <div className="bg-[#f0efeb]/80 rounded-2xl p-4 sm:p-5 border border-[#eddcd2] space-y-2 mt-3">
@@ -132,7 +132,7 @@ export default function RefundPolicyPage() {
         </div>
       </LegalSection>
 
-      {/* 07. Chargebacks & Disputed Transactions */}
+      {/* 07. Legal Notes */}
       <LegalSection id="section7" number={7} title={t('section7Title')}>
         <ul className="space-y-3">
           <LegalListItem>{t('section7Item1')}</LegalListItem>

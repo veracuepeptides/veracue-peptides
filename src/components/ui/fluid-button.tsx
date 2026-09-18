@@ -15,6 +15,7 @@ export interface FluidButtonProps {
   className?: string;
   variant?: "dark" | "cyan" | "white" | "hero";
   ariaLabel?: string;
+  icon?: React.ReactNode;
 }
 
 export function FluidButton({
@@ -27,7 +28,8 @@ export function FluidButton({
   text,
   children,
   className = "",
-  ariaLabel
+  ariaLabel,
+  icon,
 }: FluidButtonProps) {
   return (
     <HeroButton
@@ -40,6 +42,7 @@ export function FluidButton({
       ariaLabel={ariaLabel}
       className={className}
       text={text || children}
+      icon={icon}
     />
   );
 }

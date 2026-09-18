@@ -68,17 +68,17 @@ export function AffiliateHero() {
       <div className="flex flex-col items-center text-center shrink-0 w-full max-w-5xl px-3">
         {/* 1. Eyebrow Tagline */}
         <p className="font-serif tracking-[0.16em] sm:tracking-[0.24em] text-[9.5px] sm:text-[11.5px] md:text-[12px] uppercase text-neutral-700 font-normal mb-1.5 sm:mb-2">
-          The Veracue Partner Network &bull; Research Affiliate Program &bull; Tiered Commissions
+          Research Affiliate Program &bull; Free to Join &bull; Tiered Commissions
         </p>
 
         {/* 2. Main Headline (H1) */}
-        <h1 className="text-[22px] xs:text-2xl sm:text-3xl md:text-4xl lg:text-[46px] xl:text-[52px] font-bold tracking-[-0.03em] text-neutral-900 leading-tight mb-1.5 sm:mb-2.5 sm:whitespace-nowrap font-heading">
-          Partner with Veracue. Earn Industry-Leading Rewards.
+        <h1 className="text-[22px]/[1.15] xs:text-2xl/[1.15] sm:text-3xl/[1.12] md:text-4xl/[1.1] lg:text-[44px]/[1.08] xl:text-[50px]/[1.08] font-bold tracking-[-0.03em] text-neutral-900 leading-[1.15] sm:leading-[1.12] md:leading-[1.1] lg:leading-[1.08] mb-1.5 sm:mb-2.5 font-heading text-balance max-w-4xl">
+          Refer Research Peptides. Earn Real Commission.
         </h1>
 
         {/* 3. Sub-headline / Supporting Description */}
         <p className="text-neutral-500 text-[11.5px] sm:text-[13px] md:text-[14.5px] max-w-2xl leading-relaxed mb-2.5 sm:mb-4 font-normal px-1 line-clamp-3 sm:line-clamp-none">
-          Empower your community with &ge;99% HPLC-verified research peptides. Earn a competitive 15% base commission on all verified orders with 7-day cookie tracking and on-time monthly disbursements.
+          Share &ge;99% HPLC-verified research peptides with your audience and earn 15% on every order, scaling up to 20% at volume, with a 7-day tracking window and payouts every month.
         </p>
 
         {/* 4. Action HeroButtons */}

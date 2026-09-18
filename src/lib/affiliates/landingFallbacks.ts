@@ -1,10 +1,7 @@
 export const AFFILIATE_FALLBACKS: Record<string, string> = {
-  metaTitle: 'Peptide Affiliate Program | Earn 15% Commission | Veracue',
+  metaTitle: 'Peptide Affiliate Program | Earn 15% Commission | Veracue Peptides',
   metaDescription:
     'Earn 15% commission promoting Veracue research peptides, plus a 15% customer discount and monthly payouts. Apply to the affiliate program today.',
-  heroJoinButtonLong: 'Join the Affiliate Program Now',
-  heroJoinButtonShort: 'Join the Program',
-  heroTitle: 'Affiliates',
   introEyebrow: 'Affiliate Program',
   introTitle: 'Earn Passive Income Promoting Premium Research Peptides',
   introDescription:
@@ -12,23 +9,21 @@ export const AFFILIATE_FALLBACKS: Record<string, string> = {
   benefit1: '15% commission on every qualified sale',
   benefit2: '15% discount for your referred customers',
   benefit3: 'Free, real-time commission tracking from day one',
-  benefit4: 'Monthly payouts via PayPal, Stripe, or bank transfer',
-  benefit5: '7-day cookie duration for maximum time to convert',
+  benefit4: 'Monthly payouts via direct bank ACH, wire transfer, or crypto (USDC)',
   howItWorksTitle: 'How It Works',
   howItWorksSubtitle:
     'Our affiliate program is designed with your success in mind, offering a straightforward way to earn from both sides of every referral.',
   commissionCardTitle: 'Commission for You',
   commissionCardDesc:
-    'Earn 15% commission on every qualified sale you refer — paid monthly, with no cap on how much you can earn.',
+    'Earn 15% commission on every qualified sale you refer, paid out monthly, with no ceiling on total earnings.',
   commissionCardMicrocopy: 'REVENUE SHARE',
   discountCardTitle: 'Discount for Customers',
   discountCardDesc:
     'Your referred customers get 15% off their first order, which makes sharing your link an easy, low-friction recommendation rather than a hard sell.',
   discountCardMicrocopy: 'INCREASE CONVERSIONS',
-  stepsTitle: 'Simple 4-Step Process to Start Earning',
   step1Title: 'Join the Program',
   step1Desc:
-    "Apply and get approved to join the affiliate program — there's no cost and no minimum audience size required.",
+    "Apply and get approved to join the affiliate program. There's no cost and no minimum audience size required.",
   step1Tag: 'Step 1',
   step1Microcopy: 'INSTANT APPROVAL',
   step2Title: 'Get Your Links',
@@ -38,7 +33,7 @@ export const AFFILIATE_FALLBACKS: Record<string, string> = {
   step2Microcopy: 'CUSTOM CODES',
   step3Title: 'Share Your Content',
   step3Desc:
-    "Promote through your blog, social media, email list, or wherever your audience already spends time — following the program's content standards.",
+    "Promote through your blog, social media, email list, or wherever your audience already spends time, following the program's content standards.",
   step3Tag: 'Step 3',
   step3Microcopy: 'GROW AUDIENCE',
   step4Title: 'Earn Commissions',
@@ -52,13 +47,8 @@ export const AFFILIATE_FALLBACKS: Record<string, string> = {
   commissionExampleTitle: 'Commission Example',
   commissionExampleOrderValueLabel: 'Customer Order Value',
   commissionExampleDiscountLabel: 'Customer Discount (15%)',
-  commissionExampleCustomerPaysLabel: 'Customer Pays',
   commissionExampleYourCommissionLabel: 'Your Commission (15% of $200)',
   monthlyEarningsTitle: 'Realistic Monthly Earnings',
-  monthlyEarningsAvgOrder: '@ $150 avg order',
-  monthlyEarnings10Label: '10 referrals/mo',
-  monthlyEarnings25Label: '25 referrals/mo',
-  monthlyEarnings50Label: '50 referrals/mo',
   statCookieValue: '7-Day',
   statCookieLabel: 'Cookie Duration',
   statCookieDesc:
@@ -67,14 +57,6 @@ export const AFFILIATE_FALLBACKS: Record<string, string> = {
   statDualLabel: 'Attribution System',
   statDualDesc:
     'Both referral link tracking and coupon-code tracking ensure you never miss a commission.',
-  statRealValue: 'Real-Time',
-  statRealLabel: 'Time Dashboard',
-  statRealDesc:
-    'See total clicks, conversion rates, pending & approved commissions, and lifetime earnings instantly.',
-  statMonthlyValue: 'Monthly',
-  statMonthlyLabel: 'Payouts',
-  statMonthlyDesc:
-    'Reliable payouts at the end of every month with zero minimum threshold requirements.',
   managementToolsTitle: 'Comprehensive Management Tools',
   tool1Title: 'Real-Time Analytics',
   tool1Desc:
@@ -96,34 +78,6 @@ export const AFFILIATE_FALLBACKS: Record<string, string> = {
     'Download detailed commission statements and access approved marketing resources to support your promotion.',
   tool4Tag: 'Reports',
   tool4Microcopy: 'DOWNLOADABLE',
-  whyChooseTitle: 'Why Choose the Veracue Affiliate Program',
-  why1Title: 'High Conversion Rates',
-  why1Desc:
-    'The built-in 15% customer discount gives your audience an immediate reason to buy, improving conversion on every link you share.',
-  why2Title: '15% Commission',
-  why2Desc:
-    'One of the more competitive commission rates in the research-chemical affiliate space, paid on every qualifying referral.',
-  why3Title: 'No Technical Setup',
-  why3Desc:
-    "No coding, tracking pixels, or technical experience required — your dashboard, links, and codes are ready as soon as you're approved.",
-  why4Title: 'Dual Tracking System',
-  why4Desc:
-    "Both your referral link and your personal discount code are tracked independently, so you're credited for a sale no matter which one a customer uses.",
-  why5Title: 'Real-Time Data',
-  why5Desc:
-    'Monitor clicks, conversions, and pending commissions as they happen, instead of waiting for a periodic report.',
-  why6Title: 'Growing Market',
-  why6Desc:
-    'Research peptides and the broader life-sciences supply space are an expanding market, giving your content room to keep finding new audience interest.',
-  why7Title: 'Premium Quality',
-  why7Desc:
-    'You promoting a catalog backed by third-party HPLC and mass-spectrometry testing, which makes trust-based recommendations easier to stand behind.',
-  why8Title: 'Dedicated Support',
-  why8Desc:
-    'A dedicated affiliate support contact is available for questions about tracking, payouts, or approved content.',
-  why9Title: 'Scalable Income',
-  why9Desc:
-    "There's no cap on total commission — earnings can grow alongside your audience and content output, with no artificial ceiling built into the program.",
   prohibitedTitle: 'Prohibited Practices',
   prohibited1:
     'No medical, dosing, or human-use claims about any research peptide in affiliate content',
@@ -162,11 +116,7 @@ export const AFFILIATE_FALLBACKS: Record<string, string> = {
   displayNamePlaceholder: 'John Doe or Channel Name',
   phoneLabel: 'Phone Number',
   phonePlaceholder: '+1 (555) 000-0000',
-  phoneHelpText: 'Direct line for partner onboarding and updates.',
   websiteUrlLabel: 'Website URL (Optional)',
-  guestNoticeTitle: 'Applying as a Guest?',
-  guestNoticeDesc: 'Have an account? Sign in to autofill and submit instantly.',
-  signInLink: 'Sign In',
   signInToApplyTitle: 'Sign In to Apply',
   signInToApplyDesc:
     'Partner applications are linked directly to your Veracue account to automatically configure your referral link, custom coupon code, and commission portal.',
@@ -198,11 +148,9 @@ export const AFFILIATE_FALLBACKS: Record<string, string> = {
     'I agree to the Affiliate Program Terms of Service and acknowledge that I will only promote products in accordance with legal and platform guidelines.',
   submitting: 'Submitting...',
   submitNow: 'Submit Now',
-  faqTitle: 'Have questions?',
-  faqSubtitle: 'FREQUENTLY ASKED QUESTIONS',
   faq1Question: 'How does the affiliate program work?',
   faq1Answer:
-    'You apply, get approved, and receive a unique referral link and discount code from your dashboard. When someone orders using either one within the 7-day cookie window, you earn a 15% commission and they get 15% off.',
+    'You apply, get approved, and receive a unique referral link and discount code from your dashboard. When someone orders using either one within the 7-day cookie window, you earn a 15% commission and they get 15% off. Refer more than 50 orders in a month and your rate steps up to 17.5%, and past 100 orders it steps up again to 20%.',
   faq2Question: 'How do I get paid as an affiliate?',
   faq2Answer:
     'Approved commissions are paid out monthly via direct bank ACH, wire, or cryptocurrency, whichever you set as your preferred payout method in the affiliate dashboard.',
@@ -214,7 +162,7 @@ export const AFFILIATE_FALLBACKS: Record<string, string> = {
     "Yes. There's no minimum audience size or prior affiliate experience required to apply; the application is reviewed for fit with the program's content standards, not follower count.",
   faq5Question: 'How are referrals tracked?',
   faq5Answer:
-    'Referrals are tracked two ways at once — through your unique link and through your personal discount code — so a sale is credited to you whether the customer clicks through or types the code in directly.',
+    'Referrals are tracked two ways at once, through your unique link and through your personal discount code, so a sale is credited to you whether the customer clicks through or types the code in directly.',
   faq6Question: 'What is cookie duration and why does it matter?',
   faq6Answer:
     'Cookie duration is how long a referral click stays credited to you after someone visits through your link. Ours is 7 days, meaning a purchase made within that window still counts as your referral even without the code.',
@@ -223,7 +171,7 @@ export const AFFILIATE_FALLBACKS: Record<string, string> = {
     'No. The affiliate program is free to join, with no application fee, subscription cost, or minimum spend required to start earning commission.',
   faq8Question: 'What marketing methods can I use?',
   faq8Answer:
-    "Blogs, email newsletters, and social media are all permitted, provided your content follows the program's content standards — research-focused, RUO-consistent language rather than medical or dosing claims.",
+    "Blogs, email newsletters, and social media are all permitted, as long as your content follows the program's content standards: research-focused, RUO-consistent language rather than medical or dosing claims.",
   faq9Question: 'Can I use my own discount code?',
   faq9Answer:
     'Yes. Every approved affiliate receives a personal discount code that customers can apply directly at checkout, in addition to their unique referral link.',
@@ -236,10 +184,10 @@ export const AFFILIATE_FALLBACKS: Record<string, string> = {
   faq12Question:
     "What happens if someone uses another affiliate's code after clicking my link?",
   faq12Answer:
-    "The dual tracking system credits the touchpoint that's actually used at checkout — if a different affiliate's code is applied at purchase, that affiliate receives the commission for that specific order.",
+    "The dual tracking system credits whichever touchpoint is actually used at checkout. If a different affiliate's code is applied at purchase, that affiliate receives the commission for that specific order.",
   faq13Question: 'Can I promote on social media?',
   faq13Answer:
-    "Yes, social media is an approved marketing channel, provided posts follow the same content standards as other channels — no prohibited claims, and no bidding on Veracue's brand name in paid search.",
+    "Yes, social media is an approved marketing channel, as long as posts follow the same content standards as other channels: no prohibited claims, and no bidding on Veracue's brand name in paid search.",
   finalCtaTitle: 'Start Earning 15% Commission Today',
   finalCtaDesc:
     'Join a growing network of partners earning recurring commission promoting research-grade peptides backed by verified purity and real testing data.',
@@ -250,9 +198,9 @@ export const AFFILIATE_FALLBACKS: Record<string, string> = {
   finalCtaBullet3: 'Commission tracking updated in real time',
   finalCtaBullet4: 'Ready-to-use marketing assets provided',
   finalCtaBullet5: 'A support team dedicated to affiliates',
-  finalCtaBullet6: 'Payouts issued monthly, from $30 up',
+  finalCtaBullet6: 'Payouts issued monthly, with zero minimum threshold',
   footerResearchLabel: 'Research Use Only:',
   footerResearchText:
     'All Veracue products are manufactured and sold exclusively for laboratory research purposes. Not for human consumption, medical treatment, or athletic performance enhancement. This affiliate program is for marketing research compounds only. Affiliates must comply with all applicable laws and regulations.',
-  footerCopyright: '© 2026 Veracue. All rights reserved.',
+  footerCopyright: '© 2026 Veracue Peptides. All rights reserved.',
 }

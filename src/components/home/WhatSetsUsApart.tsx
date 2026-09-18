@@ -121,20 +121,20 @@ export function WhatSetsUsApart() {
           <div className="lg:w-[38%] xl:w-[35%] flex flex-col justify-between p-6 sm:p-8 md:p-10 lg:p-12 xl:p-14 border-b lg:border-b-0 lg:border-r border-[#b7b7a4]/50">
             <div>
               {/* Standardized Eyebrow Pill */}
-              <div className="inline-block border border-[#eddcd2] rounded-full px-4 py-1.5 mb-5 bg-[#fff1e6] shadow-xs">
-                <span className="text-[#a5a58d] text-xs font-bold tracking-[0.2em] uppercase font-editorial">
+              <div className="inline-block border border-[#eddcd2] rounded-full max-w-full px-3 sm:px-4 py-1.5 mb-5 bg-[#fff1e6] shadow-xs">
+                <span className="text-[#a5a58d] text-[9px] xs:text-[9.5px] sm:text-xs font-bold tracking-[0.02em] xs:tracking-[0.06em] sm:tracking-[0.2em] uppercase font-editorial whitespace-nowrap">
                   THE VERACUE STANDARD
                 </span>
               </div>
 
               {/* Main Display Heading */}
-              <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-[44px] xl:text-[50px] font-extrabold text-neutral-900 tracking-tight leading-[1.08] uppercase mb-4 sm:mb-6">
+              <h2 className="font-heading text-3xl/[1.15] sm:text-4xl/[1.12] md:text-5xl/[1.1] lg:text-[44px]/[1.1] xl:text-[50px]/[1.1] font-extrabold text-neutral-900 tracking-tight leading-[1.15] sm:leading-[1.12] md:leading-[1.1] lg:leading-[1.1] uppercase mb-4 sm:mb-6 text-balance">
                 What Sets Us Apart
               </h2>
 
               {/* Editorial Description Paragraph */}
               <p className="text-neutral-600 text-sm sm:text-base leading-relaxed font-sans mb-8 max-w-lg">
-                A relentless commitment to analytical purity, independent third-party sequence validation, and regulated cleanroom formulation. Every synthesis batch is rigorously documented before release to ensure absolute scientific reproducibility for laboratory research.
+                Third-party labs verify sequence identity and purity on every batch before it's formulated in a certified cleanroom and released for sale.
               </p>
             </div>
 

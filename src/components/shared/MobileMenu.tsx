@@ -115,7 +115,7 @@ const PRIMARY_NAV = [
   },
   {
     key: 'blog',
-    title: 'Research Journal',
+    title: 'Blog',
     subtitle: 'Scientific protocols, handling guides & clinical insights',
     href: '/blog',
     icon: BookOpen,

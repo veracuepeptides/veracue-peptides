@@ -31,8 +31,8 @@ export function WhyChooseUsGrid() {
       icon: CheckCircle2,
       media: '/veracue-images/veracue-klow-50mg-sunlit-water-ripples.webp',
       alt: 'HPLC analytical purity certification of Veracue peptides',
-      title: 'Analytical Evaluation & Purity',
-      description: 'Every batch of raw material is inspected against defined purity and identity specifications before clearance. Reverse-phase chromatography ensures sharp peak resolution with zero synthesis truncated sequences.',
+      title: 'Purity Confirmed Before Clearance',
+      description: 'Every batch of raw material is inspected against defined purity and identity specifications before clearance. Reverse-phase chromatography confirms sharp peak resolution, with no truncated sequences from incomplete synthesis.',
     },
     {
       key: 'clearClassification',
@@ -42,7 +42,7 @@ export function WhyChooseUsGrid() {
       icon: Activity,
       media: '/veracue-images/veracue-nad-plus-50mg-water-caustics.webp',
       alt: 'Mass Spectrometry identity validation for Veracue research peptides',
-      title: 'Clear Scientific Classification',
+      title: 'Identity Confirmed by Mass Spec',
       description: 'Each compound is classified strictly as research use only. Electrospray Ionization Mass Spectrometry (ESI-MS) confirms exact molecular weight within ±0.5 Da, validating amino acid sequence authenticity.',
     },
     {
@@ -53,8 +53,8 @@ export function WhyChooseUsGrid() {
       icon: Layers,
       media: '/veracue-images/veracue-research-grade-50mg-gloved-hand.png',
       alt: 'Controlled cleanroom handling and sterile lyophilization at Veracue',
-      title: 'Controlled Cleanroom Formulation',
-      description: 'Synthesized and vialed under certified US laminar flow controls. Freeze-dried into a stable lyophilized cake under high-vacuum nitrogen to prevent moisture hydrolysis and assure batch uniformity.',
+      title: 'Formulated in a Sealed Cleanroom',
+      description: 'Synthesized and vialed under certified US laminar flow controls. Freeze-dried into a stable lyophilized cake under high-vacuum nitrogen to prevent moisture hydrolysis and confirm batch uniformity.',
     },
     {
       key: 'operationalTransparency',
@@ -64,7 +64,7 @@ export function WhyChooseUsGrid() {
       icon: FileCheck2,
       media: '/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp',
       alt: 'Operational transparency and batch COA records for Veracue',
-      title: 'Operational Transparency & COAs',
+      title: 'Every Lot Traceable to a COA',
       description: 'Third-party analytical reports are published openly for researchers prior to ordering. Every vial carries a serialized QR code linking directly to verifiable lot documentation and chain-of-custody data.',
     },
   ]
@@ -108,8 +108,8 @@ export function WhyChooseUsGrid() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 sm:mb-14 md:mb-16 gap-6 md:gap-12">
           <div className="max-w-2xl">
             {/* Eyebrow Pill */}
-            <div className="inline-block border border-[#eddcd2] rounded-full px-4 py-1.5 mb-4 sm:mb-5 bg-white shadow-2xs">
-              <span className="text-[#a5a58d] text-[11px] sm:text-xs font-bold tracking-[0.2em] uppercase font-editorial">
+            <div className="inline-block border border-[#eddcd2] rounded-full max-w-full px-3 sm:px-4 py-1.5 mb-4 sm:mb-5 bg-white shadow-2xs">
+              <span className="text-[#a5a58d] text-[9px] xs:text-[9.5px] sm:text-xs font-bold tracking-[0.02em] xs:tracking-[0.06em] sm:tracking-[0.2em] uppercase font-editorial whitespace-nowrap">
                 {t('eyebrow')}
               </span>
             </div>

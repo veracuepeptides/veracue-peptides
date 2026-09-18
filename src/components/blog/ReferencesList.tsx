@@ -11,13 +11,13 @@ export function ReferencesList({
   return (
     <ol className="space-y-3">
       {references.map((ref, i) => (
-        <li key={i} className="flex items-start gap-3 text-sm text-ink-muted leading-relaxed">
-          <span className="text-ink/30 font-bold tabular-nums shrink-0">{String(i + 1).padStart(2, '0')}</span>
+        <li key={i} className="flex items-start gap-3 text-sm text-[#525b4c] leading-relaxed">
+          <span className="text-[#a5a58d] font-bold tabular-nums shrink-0">{String(i + 1).padStart(2, '0')}</span>
           <a
             href={ref.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-ink transition-colors inline-flex items-start gap-1.5 underline underline-offset-4 decoration-ink/20 hover:decoration-ink/50"
+            className="hover:text-[#20221c] transition-colors inline-flex items-start gap-1.5 underline underline-offset-4 decoration-[#eddcd2] hover:decoration-[#cb997e]"
           >
             <span>{ref.citationText}</span>
             <ExternalLink className="w-3.5 h-3.5 shrink-0 mt-0.5" />

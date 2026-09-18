@@ -1,134 +1,174 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { Link } from '@/i18n/navigation'
 import { usePathname } from 'next/navigation'
-import { LayoutDashboard, Link as LinkIcon, Target, DollarSign, Settings, LogOut, ArrowLeft, Menu } from 'lucide-react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { LayoutDashboard, Link as LinkIcon, Target, DollarSign, Settings, LogOut, ArrowLeft, Award } from 'lucide-react'
+import { motion, useScroll, useMotionValueEvent } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import { signOut } from 'next-auth/react'
 
 const NAV_ITEMS = [
-  { key: 'overview', href: '/affiliates/dashboard', icon: LayoutDashboard },
-  { key: 'links', href: '/affiliates/dashboard/links', icon: LinkIcon },
-  { key: 'conversions', href: '/affiliates/dashboard/conversions', icon: Target },
-  { key: 'payouts', href: '/affiliates/dashboard/payouts', icon: DollarSign },
-  { key: 'settings', href: '/affiliates/dashboard/settings', icon: Settings },
+  { key: 'overview', href: '/affiliates/dashboard', icon: LayoutDashboard, iconColor: 'text-[#525b4c]', activeIconColor: 'text-[#1a1f16]' },
+  { key: 'links', href: '/affiliates/dashboard/links', icon: LinkIcon, iconColor: 'text-amber-600', activeIconColor: 'text-amber-700' },
+  { key: 'conversions', href: '/affiliates/dashboard/conversions', icon: Target, iconColor: 'text-emerald-600', activeIconColor: 'text-emerald-700' },
+  { key: 'payouts', href: '/affiliates/dashboard/payouts', icon: DollarSign, iconColor: 'text-rose-500', activeIconColor: 'text-rose-600' },
+  { key: 'settings', href: '/affiliates/dashboard/settings', icon: Settings, iconColor: 'text-indigo-600', activeIconColor: 'text-indigo-700' },
 ]
 
-export function AffiliateTopNav({ 
-  userName = 'Partner', 
-  tier = 'standard' 
-}: { 
+export function AffiliateTopNav({
+  userName = 'Affiliate',
+  tier = 'standard'
+}: {
   userName?: string
   tier?: string
 }) {
   const t = useTranslations('affiliate.sidebar')
   const pathname = usePathname() || ''
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
-  const activeNavItems = NAV_ITEMS
-  const userInitial = userName.charAt(0).toUpperCase()
+  // Scroll detection matching /account's AccountTopNav
+  const [isScrollingDown, setIsScrollingDown] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
+  const lastScrollYRef = useRef(0)
+  const { scrollY } = useScroll()
+
+  useMotionValueEvent(scrollY, 'change', (latest) => {
+    setIsScrolled(latest > 20)
+    const difference = latest - lastScrollYRef.current
+    if (Math.abs(difference) > 6) {
+      if (difference > 0 && latest > 120) {
+        if (!isScrollingDown) setIsScrollingDown(true)
+      } else if (difference < 0) {
+        if (isScrollingDown) setIsScrollingDown(false)
+      }
+      lastScrollYRef.current = latest
+    }
+  })
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setIsScrolled(window.scrollY > 20)
+    }
+  }, [])
 
   return (
-    <div className="w-full bg-white/80 backdrop-blur-3xl border-b border-gray-100 sticky top-0 z-50">
-      <div className="max-w-[1400px] mx-auto px-4 md:px-8">
-        
-        {/* Top Header Row (Logo, Profile, Tier) */}
-        <div className="flex items-center justify-between h-20">
-          
-          <div className="flex items-center gap-2 sm:gap-6">
-            {/* Mobile Back Button */}
-            <Link href="/account" className="sm:hidden flex items-center justify-center p-1.5 -ml-2 text-gray-400 hover:text-black hover:bg-gray-100 rounded-lg transition-colors shrink-0">
-              <ArrowLeft size={18} />
-            </Link>
+    <div
+      className={`sticky z-40 transition-all duration-300 ease-out w-full ${
+        isScrollingDown
+          ? 'top-2.5 sm:top-4'
+          : 'top-[72px] sm:top-[88px] md:top-[98px]'
+      }`}
+    >
+      <div
+        className={`w-full bg-white/95 backdrop-blur-md rounded-2xl border border-[#dce0d6] p-1 sm:p-2 transition-shadow duration-300 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 sm:gap-4 relative overflow-hidden ${
+          isScrolled
+            ? 'shadow-[0_12px_32px_rgba(40,49,33,0.08)] border-[#dce0d6]/90'
+            : 'shadow-[0_1px_6px_rgba(40,49,33,0.03)]'
+        }`}
+      >
 
-            <Link href="/" className="shrink-0 flex items-center">
-              <img src="/HelixBio Images/hb-logo.png" alt="HelixBio" className="h-9 sm:h-10 w-auto object-contain" />
-            </Link>
+        {/* Mobile Top Sub-Row: Back to Account, Tier Badge & Sign Out (Hidden on Tablet/Desktop) */}
+        <div className="flex sm:hidden items-center justify-between px-1.5 py-1 border-b border-[#e6e9e1] gap-2">
+          <Link
+            href="/account"
+            className="flex items-center gap-1 text-[10.5px] font-medium text-[#525b4c] hover:text-[#1a1f16] transition-colors shrink-0"
+          >
+            <ArrowLeft size={11} />
+            {t('backToAccount')}
+          </Link>
 
-            <div className="h-6 w-px bg-gray-200 hidden sm:block" />
-
-            <Link href="/account" className="text-[10px] font-bold text-gray-400 hover:text-black items-center gap-1.5 uppercase tracking-widest transition-colors hidden sm:flex">
-              <ArrowLeft size={12} />
-              {t('backToAccount')}
-            </Link>
-          </div>
-
-          <div className="flex items-center gap-2.5 sm:gap-3">
-            <div className="flex flex-col items-end">
-              <h2 className="text-xs sm:text-sm font-bold text-black truncate max-w-[90px] sm:max-w-[150px] tracking-tight leading-none text-right">{userName}</h2>
-              <span className="text-[8px] sm:text-[9px] font-bold uppercase tracking-widest text-gray-400 mt-0.5 sm:mt-1 capitalize text-right">{tier} {t('tierSuffix')}</span>
+          <div className="flex items-center gap-1.5">
+            <div className="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-amber-50 border border-amber-200/80 text-amber-900 shadow-2xs">
+              <Award className="w-3 h-3 text-amber-600" />
+              <span className="text-[10.5px] font-semibold capitalize">{tier}</span>
             </div>
-            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-tr from-[#1e5661] to-[#2b646c] flex items-center justify-center text-white font-bold shadow-md shrink-0 text-xs sm:text-sm">
-              {userInitial}
-            </div>
+            <button
+              onClick={() => signOut({ callbackUrl: '/' })}
+              className="flex items-center gap-1 text-[10.5px] font-medium text-[#737c6d] hover:text-rose-600 transition-colors px-2 py-0.5 rounded-md hover:bg-rose-50"
+            >
+              <LogOut size={11} className="text-neutral-400" />
+            </button>
           </div>
         </div>
 
-        {/* Navigation Row */}
-        <nav className="flex items-center justify-between sm:justify-start sm:gap-2 h-14 border-t border-gray-100/50 relative -mx-4 px-6 sm:px-0">
-          {activeNavItems.map((item) => {
-            const isActive = item.href === '/affiliates/dashboard' 
-              ? pathname === '/affiliates/dashboard' 
+        {/* Navigation Tabs: Adaptive 5-grid that fits perfectly even on 320px narrow screens */}
+        <nav
+          aria-label="Affiliate dashboard navigation"
+          className="flex items-center justify-between sm:justify-start w-full sm:w-auto gap-0.5 sm:gap-1.5"
+        >
+          {NAV_ITEMS.map((item) => {
+            const isActive = item.href === '/affiliates/dashboard'
+              ? pathname === '/affiliates/dashboard'
               : pathname.startsWith(item.href)
-              
+
             return (
-              <Link 
-                key={item.key} 
+              <Link
+                key={item.key}
                 href={item.href}
                 className={`
-                  relative px-2 sm:px-5 h-full flex flex-col justify-center items-center gap-1 text-[11px] font-bold uppercase tracking-widest transition-colors font-heading group shrink-0
-                  ${isActive ? 'text-[#1e5661]' : 'text-gray-400 hover:text-black'}
+                  relative flex-1 sm:flex-initial px-0.5 xs:px-1.5 sm:px-4 py-1.5 sm:py-2 rounded-xl flex flex-col sm:flex-row items-center justify-center gap-0.5 sm:gap-2 text-center transition-all duration-150 group min-w-0 sm:min-w-fit shrink-0 sm:shrink-0
+                  ${isActive
+                    ? 'text-[#1a1f16] bg-[#edf0e8] font-semibold border border-[#a5a58d]/40 shadow-xs'
+                    : 'text-[#525b4c] hover:text-[#1a1f16] hover:bg-[#f0efeb]'
+                  }
                 `}
               >
-                <div className="flex items-center gap-2 relative">
-                  <item.icon size={18} className={`transition-transform ${isActive ? 'scale-110' : 'group-hover:scale-110'} sm:w-4 sm:h-4`} />
-                  <span className={`hidden lg:block ${isActive ? '' : ''}`}>
-                    {t(`nav.${item.key}`)}
-                  </span>
-                  
-                  {/* Mobile Active Bubble */}
-                  <AnimatePresence>
-                    {isActive && (
-                      <div className="absolute bottom-full left-1/2 -translate-x-1/2 z-50 lg:hidden pointer-events-none mb-2.5">
-                        <motion.div
-                          initial={{ opacity: 0, y: 5, scale: 0.8 }}
-                          animate={{ opacity: 1, y: 0, scale: 1 }}
-                          exit={{ opacity: 0, y: 2, scale: 0.9 }}
-                          transition={{ type: "spring", stiffness: 500, damping: 25 }}
-                          className="bg-black text-white px-3 py-1.5 rounded-lg text-[9px] font-bold tracking-widest shadow-xl whitespace-nowrap flex items-center justify-center relative uppercase"
-                        >
-                          {t(`nav.${item.key}`)}
-                          <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-black rotate-45" />
-                        </motion.div>
-                      </div>
-                    )}
-                  </AnimatePresence>
-                </div>
-                
+                <item.icon
+                  size={14}
+                  className={`shrink-0 transition-transform duration-200 group-hover:scale-110 ${
+                    isActive
+                      ? `${item.activeIconColor} scale-105`
+                      : `${item.iconColor} opacity-80 group-hover:opacity-100`
+                  }`}
+                />
+                <span className="text-[9px] xs:text-[10px] sm:text-xs font-medium tracking-tight sm:tracking-normal whitespace-nowrap leading-none block text-center">
+                  {t(`nav.${item.key}`)}
+                </span>
+
                 {isActive && (
-                  <motion.div 
-                    layoutId="affiliate-nav-indicator"
-                    className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#1e5661]"
+                  <motion.div
+                    layoutId="affiliate-nav-active-indicator"
+                    className="absolute inset-0 rounded-xl border border-[#a5a58d]/50 pointer-events-none"
                     initial={false}
-                    transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                    transition={{ type: "spring", stiffness: 500, damping: 35 }}
                   />
                 )}
               </Link>
             )
           })}
-          
-          <div className="ml-auto shrink-0 flex items-center h-full">
-            <button 
-              onClick={() => signOut({ callbackUrl: '/' })}
-              className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-gray-400 hover:text-red-500 transition-colors font-heading px-2 sm:px-5 h-full"
-            >
-              <LogOut size={18} className="sm:w-4 sm:h-4" />
-              <span className="hidden lg:block">{t('signOut')}</span>
-            </button>
-          </div>
         </nav>
+
+        {/* Desktop & Tablet: Right Dock (Back to Account, Tier Chip & Sign Out) */}
+        <div className="hidden sm:flex items-center gap-2 sm:gap-3 shrink-0 ml-auto">
+          <Link
+            href="/account"
+            className="flex items-center gap-1.5 text-xs font-medium text-[#525b4c] hover:text-[#1a1f16] transition-colors px-2.5 py-1.5 rounded-lg hover:bg-[#f0efeb]"
+          >
+            <ArrowLeft size={13} />
+            <span className="hidden md:inline">{t('backToAccount')}</span>
+          </Link>
+
+          <div className="h-6 w-px bg-[#dce0d6]" />
+
+          {/* Tier Badge */}
+          <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 border border-amber-200/80 text-amber-900 shadow-2xs">
+            <Award className="w-3.5 h-3.5 text-amber-600" />
+            <span className="text-[11px] font-semibold tracking-wide capitalize">
+              {tier} <span className="text-[10px] text-amber-700/80">{t('tierSuffix')}</span>
+            </span>
+          </div>
+
+          {/* Sign Out Button */}
+          <button
+            onClick={() => signOut({ callbackUrl: '/' })}
+            className="flex items-center gap-1.5 text-xs font-medium text-[#737c6d] hover:text-rose-600 transition-colors px-2.5 py-1.5 rounded-lg hover:bg-rose-50 group"
+            title={t('signOut')}
+          >
+            <LogOut size={13} className="text-neutral-400 group-hover:text-rose-600 transition-colors" />
+            <span className="hidden sm:inline">{t('signOut')}</span>
+          </button>
+        </div>
+
       </div>
     </div>
   )

@@ -55,7 +55,7 @@ export default async function FaqPage() {
     }))
   );
 
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
   const path = `/${slug}`
   const url = `${baseUrl}${path}`
 
@@ -82,12 +82,12 @@ export default async function FaqPage() {
         '@type': 'WebSite',
         '@id': `${baseUrl}/#website`,
         url: baseUrl,
-        name: 'Veracue',
+        name: 'Veracue Peptides',
       },
       {
         '@type': 'Organization',
         '@id': `${baseUrl}/#organization`,
-        name: 'Veracue',
+        name: 'Veracue Peptides',
         url: baseUrl,
       },
     ],

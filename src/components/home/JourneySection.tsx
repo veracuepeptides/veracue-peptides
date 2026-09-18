@@ -200,12 +200,12 @@ export function JourneySection() {
 
                 {/* Narrative Headline & Technical Specification */}
                 <div className="flex flex-col gap-3 sm:gap-4 my-auto">
-                  <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-[40px] xl:text-[44px] font-black text-[#20221c] leading-[1.05] tracking-tight uppercase">
+                  <h2 className="font-heading text-2xl/[1.2] sm:text-3xl/[1.18] md:text-4xl/[1.15] lg:text-[40px]/[1.12] xl:text-[44px]/[1.12] font-black text-[#20221c] leading-[1.2] sm:leading-[1.18] md:leading-[1.15] lg:leading-[1.12] tracking-tight uppercase">
                     Molecular Synthesis To Laboratory Bench
                   </h2>
                   
                   <p className="text-neutral-600 text-xs sm:text-sm md:text-base font-sans leading-relaxed max-w-2xl">
-                    Every compound in the Veracue catalog adheres to an unbroken four-stage chain of custody &mdash; validating chemical sequence identity, mass precision, and cryogenic vacuum stability prior to authorized laboratory expedition.
+                    Four checks stand between synthesis and your bench: sequence identity, mass precision, and cold-chain integrity, confirmed in that order before anything ships.
                   </p>
                 </div>
 

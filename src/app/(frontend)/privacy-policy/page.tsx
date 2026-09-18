@@ -31,14 +31,14 @@ export default function PrivacyPolicyPage() {
       titleLine2={t('titleLine2')}
       effectiveDate={t('effectiveDate')}
       intro={t('intro')}
-      introHeading="Data Privacy, Encryption & Research Confidentiality"
+      introHeading="Data Collection, Use & Protection"
       sections={sections}
       contactProps={{
         title: t('contactTitle'),
         intro: t('contactIntro'),
         supportLabel: t('supportIssuesLabel'),
         orderLabel: t('orderQueriesLabel'),
-        closingText: 'Veracue Peptides applies industry-standard TLS encryption, strict data minimization, and secure tokenization across all transactions.',
+        closingText: 'Veracue Peptides LLC applies industry-standard TLS encryption, strict data minimization, and secure tokenization across all transactions.',
         supportEmail: 'support@veracuepeptides.com',
         ordersEmail: 'orders@veracuepeptides.com',
       }}
@@ -106,7 +106,7 @@ export default function PrivacyPolicyPage() {
         </div>
       </LegalSection>
 
-      {/* 04. Cookies & Tracking Technologies */}
+      {/* 04. Protecting Your Data */}
       <LegalSection id="section4" number={4} title={t('section4Title')}>
         <p>{t('section4Text1')}</p>
         <p className="pt-2">{t('section4Text2')}</p>
@@ -137,7 +137,7 @@ export default function PrivacyPolicyPage() {
         </div>
       </LegalSection>
 
-      {/* 06. Data Security & Storage */}
+      {/* 06. Research-Use Product Notice */}
       <LegalSection id="section6" number={6} title={t('section6Title')}>
         <p>{t('section6Intro')}</p>
         <ul className="space-y-3 pt-2">
@@ -147,7 +147,7 @@ export default function PrivacyPolicyPage() {
         </ul>
       </LegalSection>
 
-      {/* 07. International Data Transfers & Children's Privacy */}
+      {/* 07. Policy Updates */}
       <LegalSection id="section7" number={7} title={t('section7Title')}>
         <p>{t('section7Text1')}</p>
         <p className="pt-2">{t('section7Text2')}</p>

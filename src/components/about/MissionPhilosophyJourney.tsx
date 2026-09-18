@@ -34,7 +34,7 @@ export function MissionPhilosophyJourney() {
       id: 'cold-chain',
       number: '04',
       title: 'Cold-Chain Preservation',
-      description: 'Maintained at -20°C in climate-monitored facilities with insulated packaging to eliminate temperature fluctuation and preserve lyophilized cake structure.',
+      description: 'Stored at -20°C in climate-monitored facilities and shipped in insulated packaging, so temperature swings never compromise the lyophilized cake.',
       icon: Snowflake,
     },
   ]
@@ -57,8 +57,8 @@ export function MissionPhilosophyJourney() {
           <div className="lg:w-[38%] xl:w-[35%] flex flex-col justify-between p-6 sm:p-8 md:p-10 lg:p-12 xl:p-14 border-b lg:border-b-0 lg:border-r border-[#b7b7a4]/50">
             <div>
               {/* Eyebrow Pill */}
-              <div className="inline-block border border-[#eddcd2] rounded-full px-4 py-1.5 mb-5 bg-[#fff1e6] shadow-2xs">
-                <span className="text-[#a5a58d] text-[11px] sm:text-xs font-bold tracking-[0.2em] uppercase font-editorial">
+              <div className="inline-block border border-[#eddcd2] rounded-full max-w-full px-3 sm:px-4 py-1.5 mb-5 bg-[#fff1e6] shadow-2xs">
+                <span className="text-[#a5a58d] text-[9px] xs:text-[9.5px] sm:text-xs font-bold tracking-[0.02em] xs:tracking-[0.06em] sm:tracking-[0.2em] uppercase font-editorial whitespace-nowrap">
                   {t('eyebrow')}
                 </span>
               </div>
@@ -70,7 +70,7 @@ export function MissionPhilosophyJourney() {
 
               {/* Editorial Narrative */}
               <p className="text-neutral-600 text-sm sm:text-base leading-relaxed font-sans mb-8 max-w-lg font-light">
-                Our approach to research integrity starts with refusing to treat compliance and analytical verification as afterthoughts. Every synthetic peptide supplied by Veracue is manufactured against defined purity specifications, verified through independent analytical testing, and paired with public documentation researchers can inspect before placing an order.
+                These aren't marketing promises. Every principle here maps to something we actually do in the lab: a written specification, an independent test, a document you can request before you order. If we can't back a claim with paperwork, we don't make it.
               </p>
             </div>
 

@@ -4,7 +4,7 @@ import React, { useEffect } from 'react'
 import { usePathname } from '@/i18n/navigation'
 import { useCartStore } from '@/lib/cart/store'
 
-const HIDDEN_HEADER_PREFIXES = ['/affiliates/dashboard']
+const HIDDEN_HEADER_PREFIXES: string[] = []
 
 export function LayoutClientWrapper({
   children,

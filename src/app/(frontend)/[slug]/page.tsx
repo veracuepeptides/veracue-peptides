@@ -54,17 +54,17 @@ export async function generateMetadata({
   const post = await getPost(slug)
 
   if (!post) {
-    return { title: 'Post Not Found | Helix Bio' }
+    return { title: 'Post Not Found | Veracue' }
   }
 
-  const title = post.meta?.title || `${post.title} | Helix Bio`
+  const title = post.meta?.title || `${post.title} | Veracue`
   const description = post.meta?.description || post.excerpt || ''
   const path = `/${slug}`
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
   const imageUrl = toAbsoluteUrl(baseUrl, getFeaturedImageUrl(post))
   const payload = await getPayload({ config: configPromise })
   const authorProfile = await payload.findGlobal({ slug: 'blog-author-profile' })
-  const authorName = authorProfile?.name || 'Helix Bio Team'
+  const authorName = authorProfile?.name || 'Veracue Research Team'
   const publishedIso = post.publishedAt
     ? new Date(post.publishedAt).toISOString()
     : new Date(post.createdAt).toISOString()
@@ -77,7 +77,7 @@ export async function generateMetadata({
       ? post.keywords.split(',').map((k: string) => k.trim()).filter(Boolean)
       : undefined,
     authors: [{ name: authorName }],
-    publisher: 'Helix Bio',
+    publisher: 'Veracue',
     robots: { index: true, follow: true },
     alternates: { canonical: path },
     openGraph: {
@@ -85,7 +85,7 @@ export async function generateMetadata({
       description,
       type: 'article',
       url: path,
-      siteName: 'Helix Bio',
+      siteName: 'Veracue',
       publishedTime: publishedIso,
       modifiedTime: modifiedIso,
       authors: [authorName],
@@ -170,7 +170,7 @@ export default async function BlogPostPage({
 
   const { first: introContent, rest: restContent } = splitFirstParagraph(post.content)
 
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
   const postUrl = `${baseUrl}/${slug}`
   const isoDate = post.publishedAt ? new Date(post.publishedAt).toISOString() : new Date(post.createdAt).toISOString()
 
@@ -189,7 +189,7 @@ export default async function BlogPostPage({
       image: productImage,
       sku: product.sku || String(product.id),
       url: productUrl,
-      brand: { '@type': 'Brand', name: 'Helix Bio' },
+      brand: { '@type': 'Brand', name: 'Veracue' },
       offers: {
         '@type': 'Offer',
         url: productUrl,
@@ -219,12 +219,12 @@ export default async function BlogPostPage({
         keywords: post.keywords || undefined,
         author: {
           '@type': 'Person',
-          name: authorProfile?.name || 'Helix Bio Team',
+          name: authorProfile?.name || 'Veracue Research Team',
         },
         publisher: {
           '@type': 'Organization',
-          name: 'Helix Bio',
-          logo: { '@type': 'ImageObject', url: `${baseUrl}/HelixBio%20Images/hb-logo.png` },
+          name: 'Veracue',
+          logo: { '@type': 'ImageObject', url: `${baseUrl}/veracue-images/logo-header.png` },
         },
         mainEntityOfPage: { '@type': 'WebPage', '@id': postUrl },
         ...(productSchemas.length > 0
@@ -262,7 +262,7 @@ export default async function BlogPostPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <main className="bg-[#FAFAFA] min-h-screen pb-32">
+      <main className="bg-[#f0efeb] min-h-screen pb-32">
         <ReadingProgress />
 
         <BlogPostHero
@@ -296,10 +296,10 @@ export default async function BlogPostPage({
 
                 {post.faqs && post.faqs.length > 0 && (
                   <div className="pt-4">
-                    <span className="text-label-md uppercase tracking-wider text-gold-dark mb-2 block">
+                    <span className="text-label-md uppercase tracking-wider text-[#a5732f] mb-2 block">
                       Got Questions?
                     </span>
-                    <h3 className="text-2xl sm:text-3xl font-heading font-black text-ink uppercase tracking-tight leading-[1.1] mb-6">
+                    <h3 className="text-2xl sm:text-3xl font-heading font-black text-[#20221c] uppercase tracking-tight leading-[1.1] mb-6">
                       Frequently Asked Questions
                     </h3>
                     <FaqAccordion faqs={post.faqs} />
@@ -307,8 +307,8 @@ export default async function BlogPostPage({
                 )}
 
                 {post.references && post.references.length > 0 && (
-                  <div className="pt-8 border-t border-ink/10">
-                    <span className="text-label-md uppercase tracking-wider text-ink-muted mb-4 block">
+                  <div className="pt-8 border-t border-[#eddcd2]">
+                    <span className="text-label-md uppercase tracking-wider text-[#525b4c] mb-4 block">
                       References
                     </span>
                     <ReferencesList references={post.references} />
@@ -316,7 +316,7 @@ export default async function BlogPostPage({
                 )}
 
                 <AuthorCard
-                  name={authorProfile?.name || 'Helix Bio Team'}
+                  name={authorProfile?.name || 'Veracue Research Team'}
                   title={authorProfile?.title ?? undefined}
                   bio={authorProfile?.bio ?? undefined}
                   credentials={authorProfile?.credentials ?? undefined}
@@ -333,12 +333,12 @@ export default async function BlogPostPage({
 
         {/* Related Posts */}
         {relatedPosts.length > 0 && (
-          <section className="px-6 max-w-[1440px] mx-auto mt-24 pt-16 border-t border-ink/10">
+          <section className="px-6 max-w-[1440px] mx-auto mt-24 pt-16 border-t border-[#eddcd2]">
             <div className="mb-12">
-              <span className="text-label-md uppercase tracking-wider text-gold-dark mb-2 block">
+              <span className="text-label-md uppercase tracking-wider text-[#a5732f] mb-2 block">
                 Related
               </span>
-              <h3 className="text-editorial-lg font-heading font-black text-ink normal-case">
+              <h3 className="text-editorial-lg font-heading font-black text-[#20221c] normal-case">
                 Continue reading
               </h3>
             </div>

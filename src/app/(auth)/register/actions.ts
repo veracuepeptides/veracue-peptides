@@ -59,7 +59,7 @@ export async function registerUser(input: RegisterInput) {
         const verifyUrl = `${base}/api/verify-email?token=${token}`
         const html = generateVerifyEmailEmail(firstName, verifyUrl)
         await sendTrackedEmail(payload, {
-          from: 'Support | Veracue Peptides <support@veracuepeptides.com>',
+          from: 'Veracue Support <support@veracuepeptides.com>',
           to: email.toLowerCase(),
           subject: 'Verify your email - Veracue Peptides',
           html,

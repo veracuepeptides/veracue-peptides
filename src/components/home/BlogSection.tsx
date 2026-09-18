@@ -1,9 +1,9 @@
 'use client'
 
 import React from 'react'
-import { Link } from '@/i18n/navigation'
-import Image from 'next/image'
 import { useTranslations } from 'next-intl'
+import { BlogPostCard } from '@/components/editorial/BlogPostCard'
+import { HeroButton } from '@/components/ui/hero-button'
 
 export type BlogSectionPost = {
   slug: string
@@ -20,99 +20,52 @@ export function BlogSection({ posts }: { posts: BlogSectionPost[] }) {
 
   if (!posts || posts.length === 0) return null
 
-  const featuredPost = posts[0]
-  const recentPosts = posts.slice(1, 4)
+  const displayPosts = posts.slice(0, 3)
 
   return (
-    <section className="bg-[#FAFAFA] py-20 md:py-32 font-sans relative overflow-hidden">
-      <div className="container mx-auto px-4 md:px-10 max-w-[1300px]">
-        {/* Header */}
-        <div className="flex flex-col mb-16">
-          <div className="inline-block border border-[#eddcd2] rounded-full px-4 py-1.5 mb-4 sm:mb-5 bg-white shadow-sm w-fit">
-            <span className="text-[#a5a58d] text-xs font-bold tracking-[0.2em] uppercase font-editorial">Blog</span>
+    <section className="font-sans relative z-30 py-10 sm:py-14 md:py-18 px-3 sm:px-6 md:px-10 bg-[#f0efeb]">
+      <div className="bg-[#eddcd2]/30 border border-[#eddcd2] rounded-2xl sm:rounded-3xl md:rounded-[36px] p-5 sm:p-8 md:p-12 lg:p-14 w-full mx-auto overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.02)]">
+
+        {/* Header Split — same pattern as BestSellerSection */}
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-8 sm:mb-12 md:mb-14 gap-5 sm:gap-6">
+          <div className="max-w-2xl">
+            <div className="inline-block border border-[#eddcd2] rounded-full max-w-full px-3 sm:px-4 py-1.5 mb-4 sm:mb-5 bg-white shadow-sm">
+              <span className="text-[#a5a58d] text-[9px] xs:text-[9.5px] sm:text-xs font-bold tracking-[0.02em] xs:tracking-[0.06em] sm:tracking-[0.2em] uppercase font-editorial whitespace-nowrap">
+                {t('eyebrow')}
+              </span>
+            </div>
+            <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-neutral-900 leading-[1.08] tracking-tight uppercase">
+              {t('titleLine1')} {t('titleLine2')}
+            </h2>
           </div>
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[#111] leading-[1.05] tracking-tight max-w-4xl font-heading">
-            {t('titleLine1')} {t('titleLine2')}
-          </h2>
+          <div className="max-w-md lg:text-right">
+            <p className="text-neutral-600 text-sm sm:text-base md:text-lg leading-relaxed font-sans">
+              {t('subtitle')}
+            </p>
+          </div>
         </div>
 
-        {/* Featured Post (Horizontal) */}
-        {featuredPost && (
-          <Link href={`/${featuredPost.slug}`} className="group block mb-6">
-            <div className="bg-white rounded-[2rem] p-4 lg:p-6 shadow-sm border border-black/5 hover:shadow-xl hover:shadow-black/5 transition-all duration-500 flex flex-col lg:flex-row gap-6 lg:gap-12">
-              
-              <div className="relative w-full lg:w-[55%] aspect-[4/3] lg:aspect-auto lg:h-[450px] rounded-[1.5rem] overflow-hidden shrink-0">
-                <Image
-                  src={featuredPost.imageSrc}
-                  alt={featuredPost.title}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-700"
-                  unoptimized
-                />
-              </div>
-
-              <div className="flex flex-col justify-center flex-1 py-4 lg:py-8 pr-4 lg:pr-10">
-                <div className="inline-block px-4 py-1.5 bg-gray-100 text-gray-700 text-xs font-bold rounded-full mb-6 w-fit">
-                  {featuredPost.category}
-                </div>
-                <h3 className="text-3xl lg:text-[2.5rem] font-bold text-gray-900 mb-6 leading-[1.15] group-hover:text-blue-600 transition-colors">
-                  {featuredPost.title}
-                </h3>
-                <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-10 line-clamp-3 font-medium">
-                  {featuredPost.excerpt}
-                </p>
-                
-                <div className="flex items-center justify-between mt-auto pt-6 border-t border-gray-100">
-                  <div className="flex items-center gap-3">
-                    <div className="w-9 h-9 rounded-full bg-gray-200 overflow-hidden relative">
-                      <Image src="/HelixBio Images/hero-1.png" alt="HelixBio Research team author avatar" fill className="object-cover" />
-                    </div>
-                    <span className="text-sm font-semibold text-gray-700">HelixBio Research</span>
-                  </div>
-                  <span className="text-sm text-gray-500 font-medium">{featuredPost.date}</span>
-                </div>
-              </div>
-
-            </div>
-          </Link>
-        )}
-
-        {/* Recent Posts Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {recentPosts.map((post) => (
-            <Link key={post.slug} href={`/${post.slug}`} className="group block">
-              <div className="bg-white rounded-[2rem] p-4 shadow-sm border border-black/5 hover:shadow-xl hover:shadow-black/5 transition-all duration-500 h-full flex flex-col">
-                <div className="relative w-full aspect-[16/10] rounded-[1.5rem] overflow-hidden mb-6">
-                  <Image
-                    src={post.imageSrc}
-                    alt={post.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-700"
-                    unoptimized
-                  />
-                </div>
-                <div className="px-2 pb-2 flex flex-col flex-1">
-                  <div className="inline-block px-3 py-1.5 bg-gray-100 text-gray-700 text-[11px] font-bold rounded-full mb-4 w-fit">
-                    {post.category}
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 leading-[1.3] group-hover:text-blue-600 transition-colors mb-4 line-clamp-2">
-                    {post.title}
-                  </h3>
-                  <div className="mt-auto pt-6 border-t border-gray-100 flex items-center justify-between">
-                     <span className="text-sm font-semibold text-gray-700">HelixBio</span>
-                     <span className="text-xs text-gray-500 font-medium">{post.readTime}</span>
-                  </div>
-                </div>
-              </div>
-            </Link>
+        {/* Post Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+          {displayPosts.map((post) => (
+            <BlogPostCard
+              key={post.slug}
+              slug={post.slug}
+              title={post.title}
+              category={post.category}
+              excerpt={post.excerpt}
+              imageSrc={post.imageSrc}
+              readTime={post.readTime}
+              date={post.date}
+            />
           ))}
         </div>
 
-        {/* Load More Button */}
-        <div className="mt-16 flex justify-center">
-          <Link href="/blog" className="px-10 py-4 bg-[#222] text-white text-sm font-bold rounded-[10px] uppercase tracking-widest hover:bg-black transition-colors shadow-lg shadow-black/10">
+        {/* CTA */}
+        <div className="mt-10 sm:mt-12 md:mt-14 flex justify-center">
+          <HeroButton href="/blog">
             {t('ctaText')}
-          </Link>
+          </HeroButton>
         </div>
 
       </div>

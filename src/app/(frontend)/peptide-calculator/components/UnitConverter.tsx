@@ -2,7 +2,6 @@
 
 import React, { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { useTranslations } from 'next-intl'
 import { FadeUp } from '@/components/motion/FadeUp'
 import { RefreshCw, ArrowRight, ChevronDown } from 'lucide-react'
 
@@ -84,8 +83,6 @@ const DynamicSelect = ({ value, options, onChange }: { value: string, options: {
 }
 
 export function UnitConverter() {
-  const t = useTranslations('calculator.unitConverter')
-  
   const [val, setVal] = useState('5');
   const [fromUnit, setFromUnit] = useState<Unit>('mg');
   const [toUnit, setToUnit] = useState<Unit>('mcg');
@@ -129,7 +126,7 @@ export function UnitConverter() {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6 sm:mb-8">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#a5a58d]/15 border border-[#a5a58d]/35 text-[#a5a58d] text-xs font-bold tracking-[0.2em] uppercase">
               <span className="w-1.5 h-1.5 rounded-full bg-[#a5a58d]" />
-              <span>Universal Unit Converter</span>
+              <span>Unit Converter</span>
             </div>
             
             <button
@@ -159,7 +156,7 @@ export function UnitConverter() {
           </div>
 
           <p className="text-xs text-neutral-500 mt-6 leading-relaxed">
-            *Instant bidirectional conversion between mass (mg &bull; mcg) and volumetric liquid units (mL &bull; IU).
+            *Converts between mg/mcg (mass) and mL/IU (liquid volume) in either direction.
           </p>
         </FadeUp>
       </div>
