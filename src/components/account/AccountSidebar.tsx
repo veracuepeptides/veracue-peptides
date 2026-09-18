@@ -56,7 +56,7 @@ export function AccountSidebar({
           </div>
           <div className="flex flex-col">
             <h2 className="text-xl font-bold text-black font-heading truncate max-w-[150px] tracking-tight">{userName}</h2>
-            <span className="text-[11px] font-bold uppercase tracking-widest text-gray-400 font-heading">HelixBio Member</span>
+            <span className="text-[11px] font-bold uppercase tracking-widest text-gray-400 font-heading">Veracue Member</span>
           </div>
         </div>
       </div>
@@ -161,9 +161,9 @@ export function AccountSidebar({
             <div className="absolute inset-0 bg-gradient-to-t from-[#112a2e] to-transparent opacity-80" />
             
             <div className="relative z-10 flex flex-col gap-2">
-              <span className="text-[9px] font-bold text-[#84d0d9] tracking-[0.2em] font-heading uppercase">{t('partnerProgram')}</span>
+              <span className="text-[9px] font-bold text-[#cb997e] tracking-[0.2em] font-heading uppercase">{t('partnerProgram')}</span>
               <p className="text-[13px] font-bold text-white leading-snug font-heading tracking-wide">
-                Earn commissions by sharing HelixBio
+                Earn commissions by sharing Veracue
               </p>
               <div className="mt-2 inline-flex items-center gap-1.5 text-[10px] font-bold text-white uppercase tracking-widest group-hover:text-[#84d0d9] transition-colors font-heading">
                 Apply Now <ChevronRight size={12} className="group-hover:translate-x-1 transition-transform" />

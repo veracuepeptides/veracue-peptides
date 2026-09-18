@@ -8,7 +8,7 @@ import * as Sentry from '@sentry/nextjs'
 // in the sitemap until the next deploy. Regenerate hourly instead.
 export const revalidate = 3600
 
-const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com'
+const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
 
 // Grouped by crawl priority rather than alphabetically, so the sitemap's own ordering
 // reflects which pages matter most (highest first) — homepage/shop first, then core

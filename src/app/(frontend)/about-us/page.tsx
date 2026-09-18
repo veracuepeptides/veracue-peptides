@@ -48,13 +48,21 @@ export async function generateMetadata({
       description,
       type: 'website',
       url: path,
-      images: [{ url: getOgImageUrl(title, description) }],
+      siteName: 'Veracue Peptides',
+      images: [
+        {
+          url: getOgImageUrl(title, description, undefined, 'ABOUT VERACUE PEPTIDES', 'veracue-glow-50mg-underwater-seabed.webp'),
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images: [getOgImageUrl(title, description)],
+      images: [getOgImageUrl(title, description, undefined, 'ABOUT VERACUE PEPTIDES', 'veracue-glow-50mg-underwater-seabed.webp')],
     },
   }
 }

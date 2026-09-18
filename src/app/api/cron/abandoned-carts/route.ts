@@ -44,7 +44,7 @@ export async function GET(req: Request) {
           const firstName = user.firstName || 'there'
 
           await resend.emails.send({
-            from: process.env.RESEND_FROM_EMAIL || 'HelixBio <support@helixbiochem.com>',
+            from: process.env.RESEND_FROM_EMAIL || 'Veracue <support@veracuepeptides.com>',
             to: user.email,
             subject: 'Did you forget something in your cart?',
             html: `<!DOCTYPE html>
@@ -57,26 +57,26 @@ export async function GET(req: Request) {
     body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
     table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
     img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; display: block; }
-    body { margin: 0; padding: 0; background-color: #000000; color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-    .container { width: 100%; max-width: 600px; margin: 0 auto; background-color: #0a0a0a; border-left: 1px solid #1f1f1f; border-right: 1px solid #1f1f1f; }
-    .header { padding: 40px 20px; text-align: center; border-bottom: 1px solid #1f1f1f; background-color: #000000; }
-    .logo-img { display: block; margin: 0 auto; height: 60px; max-width: 100%; }
+    body { margin: 0; padding: 0; background-color: #191b16; color: #fff1e6; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+    .container { width: 100%; max-width: 600px; margin: 0 auto; background-color: #20221c; border-left: 1px solid rgba(237, 220, 210, 0.2); border-right: 1px solid rgba(237, 220, 210, 0.2); }
+    .header { padding: 40px 20px; text-align: center; border-bottom: 1px solid rgba(237, 220, 210, 0.2); background-color: #191b16; }
+    .logo-img { display: block; margin: 0 auto; height: 42px; max-width: 100%; }
     .content-block { padding: 50px 40px; text-align: center; }
-    .eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #06b6d4; margin-bottom: 20px; }
-    h1 { font-size: 32px; font-weight: 700; letter-spacing: -1px; margin: 0 0 20px 0; color: #ffffff; line-height: 1.2; }
-    p { font-size: 16px; line-height: 1.6; color: #a3a3a3; margin: 0 0 30px 0; font-weight: 400; }
-    .btn { display: inline-block; background-color: #06b6d4; color: #000000 !important; padding: 16px 40px; border-radius: 4px; text-decoration: none; font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; transition: background-color 0.2s; }
-    .footer { padding: 40px; text-align: center; background-color: #000000; border-top: 1px solid #1f1f1f; }
-    .disclaimer { font-size: 11px; line-height: 1.6; color: #555555; font-weight: 400; }
+    .eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #cb997e; margin-bottom: 20px; }
+    h1 { font-size: 32px; font-weight: 700; letter-spacing: -1px; margin: 0 0 20px 0; color: #fff1e6; line-height: 1.2; }
+    p { font-size: 16px; line-height: 1.6; color: #eddcd2; margin: 0 0 30px 0; font-weight: 400; }
+    .btn { display: inline-block; background-color: #cb997e; color: #fff1e6 !important; padding: 16px 40px; border-radius: 4px; text-decoration: none; font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; transition: background-color 0.2s; }
+    .footer { padding: 40px; text-align: center; background-color: #191b16; border-top: 1px solid rgba(237, 220, 210, 0.2); }
+    .disclaimer { font-size: 11px; line-height: 1.6; color: #b7b7a4; font-weight: 400; }
   </style>
 </head>
 <body>
-  <center style="width: 100%; background-color: #000000;">
+  <center style="width: 100%; background-color: #191b16;">
     <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="container">
       <tr>
         <td class="header">
-          <a href="https://helixbiochem.com">
-            <img src="https://pub-0b0f2f98407442588d161ae09cb84207.r2.dev/email-assets/hb-logo.png" alt="Helix Bio" class="logo-img" />
+          <a href="https://veracuepeptides.com">
+            <img src="https://veracuepeptides.com/veracue-images/logo-header.png" alt="Veracue Peptides" class="logo-img" />
           </a>
         </td>
       </tr>
@@ -90,14 +90,14 @@ export async function GET(req: Request) {
           <p>
             Return to the lab to secure your order and resume your research.
           </p>
-          <a href="https://helixbiochem.com/cart" class="btn">Return to Cart</a>
+          <a href="https://veracuepeptides.com/cart" class="btn">Return to Cart</a>
         </td>
       </tr>
       <tr>
         <td class="footer">
           <p class="disclaimer">
             <strong>FDA Disclaimer:</strong> These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. All products offered are for laboratory and research use only.<br><br>
-            © 2026 HelixBio. All rights reserved.
+            © 2026 Veracue Peptides. All rights reserved.
           </p>
         </td>
       </tr>

@@ -38,7 +38,7 @@ export async function generateMetadata({
   if (product.images && product.images.length > 0 && typeof product.images[0].image === 'object' && product.images[0].image?.url) {
     imageUrl = product.images[0].image.url
     if (imageUrl.startsWith('/')) {
-      imageUrl = `${process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com'}${imageUrl}`
+      imageUrl = `${process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'}${imageUrl}`
     }
   }
 
@@ -48,14 +48,22 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
-      images: [{ url: getOgImageUrl(title, description) }],
       type: 'website',
+      siteName: 'Veracue Peptides',
+      images: [
+        {
+          url: getOgImageUrl(title, description, imageUrl, 'RESEARCH PEPTIDE', 'veracue-ghk-cu-50mg-ice-bed-warm.webp'),
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images: [getOgImageUrl(title, description)],
+      images: [getOgImageUrl(title, description, imageUrl, 'RESEARCH PEPTIDE', 'veracue-ghk-cu-50mg-ice-bed-warm.webp')],
     },
     alternates: {
       canonical: true ? `/product/${slug}` : `/${locale}/product/${slug}`,
@@ -116,7 +124,7 @@ export default async function ProductPage({
     
     // Only push fallback if NO global images and NO variant images exist
     if (!hasVariantImages) {
-      mappedImages.push('/HelixBio Images/featured-research-2.webp')
+      mappedImages.push('/veracue-images/veracue-research-grade-50mg-studio-portrait.png')
     }
   }
 
@@ -284,7 +292,7 @@ export default async function ProductPage({
       })
 
       productData.relatedProducts = relatedDocs.map((p: any) => {
-        let imageUrl = '/HelixBio Images/featured-research-2.webp'
+        let imageUrl = '/veracue-images/veracue-research-grade-50mg-studio-portrait.png'
         let hoverImageUrl = undefined
         if (p.images && p.images.length > 0 && typeof p.images[0].image === 'object' && p.images[0].image?.url) {
           imageUrl = encodeImageUrl(p.images[0].image.url)
@@ -294,7 +302,7 @@ export default async function ProductPage({
         }
 
         // Fallback to variant images if no global image exists
-        if (imageUrl === '/HelixBio Images/featured-research-2.webp' && p.hasVariants && p.variants && p.variants.length > 0) {
+        if (imageUrl === '/veracue-images/veracue-research-grade-50mg-studio-portrait.png' && p.hasVariants && p.variants && p.variants.length > 0) {
           for (const variant of p.variants) {
             if (variant.images && variant.images.length > 0 && typeof variant.images[0].image === 'object' && variant.images[0].image?.url) {
               imageUrl = encodeImageUrl(variant.images[0].image.url)
@@ -340,7 +348,7 @@ export default async function ProductPage({
     })
 
     productData.relatedProducts = recentDocs.map((p: any) => {
-      let imageUrl = '/HelixBio Images/featured-research-2.webp'
+      let imageUrl = '/veracue-images/veracue-research-grade-50mg-studio-portrait.png'
       let hoverImageUrl = undefined
       if (p.images && p.images.length > 0 && typeof p.images[0].image === 'object' && p.images[0].image?.url) {
         imageUrl = encodeImageUrl(p.images[0].image.url)
@@ -350,7 +358,7 @@ export default async function ProductPage({
       }
 
       // Fallback to variant images if no global image exists
-      if (imageUrl === '/HelixBio Images/featured-research-2.webp' && p.hasVariants && p.variants && p.variants.length > 0) {
+      if (imageUrl === '/veracue-images/veracue-research-grade-50mg-studio-portrait.png' && p.hasVariants && p.variants && p.variants.length > 0) {
         for (const variant of p.variants) {
           if (variant.images && variant.images.length > 0 && typeof variant.images[0].image === 'object' && variant.images[0].image?.url) {
             imageUrl = encodeImageUrl(variant.images[0].image.url)
@@ -393,7 +401,7 @@ export default async function ProductPage({
   })
 
   const mappedBlogs = blogDocs.map((post: any) => {
-    let imageUrl = '/HelixBio Images/featured-research-2.webp'
+    let imageUrl = '/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp'
     if (post.featuredImage && typeof post.featuredImage === 'object' && post.featuredImage.url) {
       imageUrl = encodeImageUrl(post.featuredImage.url)
     }
@@ -412,7 +420,7 @@ export default async function ProductPage({
 
   productData.suggestedBlogs = mappedBlogs
 
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
   const productUrl = `${baseUrl}/product/${slug}`
 
   // Mirrors the published Refund Policy (/refund-policy): all sales are final, no
@@ -429,7 +437,7 @@ export default async function ProductPage({
     name: productData.name,
     description: productData.shortDescription,
     image: (productData.images.length > 0 ? productData.images : (
-      productData.variants.find(v => v.images?.length > 0)?.images || ['/HelixBio Images/featured-research-2.webp']
+      productData.variants.find(v => v.images?.length > 0)?.images || ['/veracue-images/veracue-research-grade-50mg-studio-portrait.png']
     )).map((img: string) => img.startsWith('http') ? img : `${baseUrl}${img}`),
     sku: productData.sku || productData.id,
     mpn: productData.sku || productData.id,

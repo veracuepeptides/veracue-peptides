@@ -1,6 +1,6 @@
 import { encodeImageUrl } from '@/lib/utils'
 
-export const FALLBACK_BLOG_IMAGE = '/HelixBio Images/featured-research-2.webp'
+export const FALLBACK_BLOG_IMAGE = '/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp'
 
 export function getFeaturedImageUrl(post: any): string {
   if (post.featuredImage && typeof post.featuredImage === 'object' && post.featuredImage.url) {

@@ -31,18 +31,21 @@ export async function generateMetadata({
   const description = t('metaDescription')
   const path = true ? '/' : `/${locale}`
 
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+  const homeOgImage = `${serverUrl}/veracue-images/veracue-home-og.png`
+
   return {
     title,
     description,
     keywords: [
+      'buy peptides',
       'research peptides',
-      'research grade peptides USA',
+      'peptides USA',
       'HPLC verified purity peptides',
       'peptide certificate of analysis',
       'RUO peptides',
       'mass spectrometry tested peptides',
       'buy research peptides online',
-      'USA peptide supplier',
     ],
     alternates: {
       canonical: path,
@@ -53,13 +56,21 @@ export async function generateMetadata({
       description,
       type: 'website',
       url: path,
-      images: [{ url: getOgImageUrl(title, description) }],
+      siteName: 'Veracue Peptides',
+      images: [
+        {
+          url: homeOgImage,
+          width: 1200,
+          height: 675,
+          alt: 'Veracue Peptides',
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images: [getOgImageUrl(title, description)],
+      images: [homeOgImage],
     },
   }
 }

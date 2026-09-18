@@ -23,13 +23,21 @@ export async function generateMetadata(): Promise<Metadata> {
       description,
       type: 'website',
       url: path,
-      images: [{ url: getOgImageUrl(title, description) }],
+      siteName: 'Veracue Peptides',
+      images: [
+        {
+          url: getOgImageUrl(title, description, undefined, 'RESEARCH BLOG & ARTICLES', 'veracue-klow-50mg-sunlit-water-ripples.webp'),
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images: [getOgImageUrl(title, description)],
+      images: [getOgImageUrl(title, description, undefined, 'RESEARCH BLOG & ARTICLES', 'veracue-klow-50mg-sunlit-water-ripples.webp')],
     },
   }
 }

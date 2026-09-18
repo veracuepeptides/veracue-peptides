@@ -4,12 +4,27 @@ import { twMerge } from 'tailwind-merge'
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
-export function getOgImageUrl(title: string, description?: string) {
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com'
+export function getOgImageUrl(
+  title: string,
+  description?: string,
+  image?: string,
+  category?: string,
+  bg?: string
+) {
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
   const url = new URL('/api/og', baseUrl)
   url.searchParams.set('title', title)
   if (description) {
     url.searchParams.set('description', description)
+  }
+  if (image) {
+    url.searchParams.set('image', image)
+  }
+  if (category) {
+    url.searchParams.set('category', category)
+  }
+  if (bg) {
+    url.searchParams.set('bg', bg)
   }
   return url.toString()
 }

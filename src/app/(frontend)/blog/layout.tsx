@@ -29,13 +29,21 @@ export async function generateMetadata({
       description,
       type: 'website',
       url: path,
-      images: [getOgImageUrl(title, description)],
+      siteName: 'Veracue Peptides',
+      images: [
+        {
+          url: getOgImageUrl(title, description, undefined, 'RESEARCH BLOG & ARTICLES', 'veracue-klow-50mg-sunlit-water-ripples.webp'),
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images: [getOgImageUrl(title, description)],
+      images: [getOgImageUrl(title, description, undefined, 'RESEARCH BLOG & ARTICLES', 'veracue-klow-50mg-sunlit-water-ripples.webp')],
     },
   }
 }
@@ -51,7 +59,7 @@ export default async function BlogLayout({
   const t = await getTranslations('blog')
   const title = t('metaTitle')
   const description = t('metaDescription')
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
   const path = true ? `/${slug}` : `/${locale}/${slug}`
   const url = `${baseUrl}${path}`
 

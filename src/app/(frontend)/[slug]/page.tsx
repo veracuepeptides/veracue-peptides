@@ -85,17 +85,24 @@ export async function generateMetadata({
       description,
       type: 'article',
       url: path,
-      siteName: 'Veracue',
+      siteName: 'Veracue Peptides',
       publishedTime: publishedIso,
       modifiedTime: modifiedIso,
       authors: [authorName],
-      images: imageUrl.startsWith('http') ? [{ url: imageUrl }] : [getOgImageUrl(title, description)],
+      images: [
+        {
+          url: getOgImageUrl(title, description, imageUrl, 'RESEARCH ARTICLE', 'veracue-klow-50mg-sunlit-water-ripples.webp'),
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images: [imageUrl],
+      images: [getOgImageUrl(title, description, imageUrl, 'RESEARCH ARTICLE', 'veracue-klow-50mg-sunlit-water-ripples.webp')],
     },
   }
 }

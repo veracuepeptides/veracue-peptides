@@ -53,13 +53,21 @@ export async function generateMetadata({
       description,
       type: 'website',
       url: path,
-      images: [{ url: getOgImageUrl('Shop Peptides', description) }],
+      siteName: 'Veracue Peptides',
+      images: [
+        {
+          url: getOgImageUrl('Shop Research Peptides', description, undefined, 'RESEARCH PEPTIDES CATALOG', 'veracue-peptides-multi-vials-collection-flatlay.webp'),
+          width: 1200,
+          height: 630,
+          alt: 'Veracue Research Peptides Catalog',
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images: [getOgImageUrl('Shop Peptides', description)],
+      images: [getOgImageUrl('Shop Research Peptides', description, undefined, 'RESEARCH PEPTIDES CATALOG', 'veracue-peptides-multi-vials-collection-flatlay.webp')],
     },
   }
 }

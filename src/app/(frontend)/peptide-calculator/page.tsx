@@ -29,13 +29,21 @@ export async function generateMetadata({
       description,
       type: 'website',
       url: path,
-      images: [getOgImageUrl(title, description)],
+      siteName: 'Veracue Peptides',
+      images: [
+        {
+          url: getOgImageUrl(title, description, undefined, 'RESEARCH TOOLS & CALCULATOR', 'veracue-glow-50mg-beach-shore-landscape.webp'),
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images: [getOgImageUrl(title, description)],
+      images: [getOgImageUrl(title, description, undefined, 'RESEARCH TOOLS & CALCULATOR', 'veracue-glow-50mg-beach-shore-landscape.webp')],
     },
   }
 }

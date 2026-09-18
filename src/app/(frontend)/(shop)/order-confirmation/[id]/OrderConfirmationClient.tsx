@@ -221,7 +221,7 @@ export function OrderConfirmationClient({ order }: { order: OrderData }) {
       <div className="mt-6 text-center">
         <span className="text-[11px] text-[#20221c]/40 font-medium">
           {t.rich('questionsContactSupport', {
-            link: (chunks) => <a href="mailto:support@helixbiochem.com" className="text-[#cb997e] hover:text-[#a5a58d] underline transition-colors">{chunks}</a>,
+            link: (chunks) => <a href="mailto:support@veracuepeptides.com" className="text-[#cb997e] hover:text-[#a5a58d] underline transition-colors">{chunks}</a>,
           })}
         </span>
       </div>
@@ -337,7 +337,7 @@ export function OrderConfirmationClient({ order }: { order: OrderData }) {
 
             <div className="text-center text-xs text-gray-500 pt-6 border-t border-gray-300">
               <p>Thank you for your order.</p>
-              <p className="mt-1">Questions? Contact support@helixbiochem.com</p>
+              <p className="mt-1">Questions? Contact support@veracuepeptides.com</p>
             </div>
           </div>
 

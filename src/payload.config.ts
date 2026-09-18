@@ -205,11 +205,11 @@ export default buildConfig({
       collections: ['pages', 'blog-posts'],
       tabbedUI: true,
       uploadsCollection: 'media',
-      generateTitle: ({ doc }: any) => (doc?.title ? `${doc.title} | Helix Bio` : 'Helix Bio'),
+      generateTitle: ({ doc }: any) => (doc?.title ? `${doc.title} | Veracue` : 'Veracue Peptides'),
       generateDescription: ({ doc }: any) => doc?.excerpt || doc?.seoDescription || '',
       generateImage: ({ doc }: any) => doc?.featuredImage || doc?.meta?.image,
       generateURL: ({ doc }: any) => {
-        const base = process.env.NEXT_PUBLIC_SERVER_URL || 'https://helixbiochem.com'
+        const base = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
         return `${base}/${doc?.slug || ''}`
       },
     }),
