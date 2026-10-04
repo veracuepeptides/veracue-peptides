@@ -8,17 +8,17 @@ import { HeroButton } from '@/components/ui/hero-button'
 const CONTACT_HERO_IMAGES = [
   {
     src: '/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp',
-    alt: 'Veracue Research Peptides Collection',
+    alt: 'Veracue research peptide vials arranged in a flat lay collection',
     topic: 'Bulk Orders & Quotes',
   },
   {
     src: '/veracue-images/veracue-klow-50mg-pool-water-ripples.webp',
-    alt: 'Veracue Customer & Laboratory Support',
+    alt: 'Veracue research peptide vial resting on rippling pool water',
     topic: 'Customer & Laboratory Support',
   },
   {
     src: '/veracue-images/veracue-ghk-cu-50mg-ice-bed-white.webp',
-    alt: 'Veracue Research Peptide Handling',
+    alt: 'Veracue research peptide vial on an ice bed',
     topic: 'Product & Batch Testing',
   },
 ]
@@ -47,6 +47,7 @@ export function ContactHero() {
 
   // Automatic Subtle Carousel Rotation every 5.5s
   useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
     const timer = setInterval(() => {
       setCurrentImageIndex((prev) => (prev + 1) % CONTACT_HERO_IMAGES.length)
     }, 5500)
@@ -173,9 +174,9 @@ export function ContactHero() {
 
           {/* Bottom-Right Overlay */}
           <div className="absolute bottom-12 xs:bottom-14 sm:bottom-12 md:bottom-14 right-3 sm:right-7 md:right-10 z-20 text-white text-right sm:text-left max-w-[135px] xs:max-w-[170px] sm:max-w-[300px] md:max-w-[360px]">
-            <h3 className="text-xs xs:text-sm sm:text-xl md:text-2xl lg:text-[26px] font-extrabold tracking-tight text-white leading-tight mb-0.5 sm:mb-2 drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] font-heading">
+            <p className="text-xs xs:text-sm sm:text-xl md:text-2xl lg:text-[26px] font-extrabold tracking-tight text-white leading-tight mb-0.5 sm:mb-2 drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] font-heading">
               Dedicated<br className="sm:hidden" /> Support
-            </h3>
+            </p>
             <p className="hidden xs:block sm:hidden text-[9px] text-white/85 leading-snug line-clamp-2 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
               Real support from our US-based team.
             </p>
@@ -242,8 +243,8 @@ export function ContactHero() {
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full border border-neutral-950 bg-neutral-950 inline-block shrink-0" />
-                    <span className="font-extrabold text-neutral-950">Same-Day</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Dispatch</span>
+                    <span className="font-extrabold text-neutral-950">1-3 Day</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Order Review</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
@@ -281,8 +282,8 @@ export function ContactHero() {
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full border border-neutral-950 bg-neutral-950 inline-block shrink-0" />
-                    <span className="font-extrabold text-neutral-950">Same-Day</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Dispatch</span>
+                    <span className="font-extrabold text-neutral-950">1-3 Day</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Order Review</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">

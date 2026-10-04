@@ -1,0 +1,518 @@
+{
+  "deliverable": "Veracue Glutathione Product Page",
+  "client": "Veracue",
+  "prepared_by": "Belk Digital",
+  "status": "Draft — pending Veracue product specification fields (see Section A and Section G)",
+  "reference_standard": "Helix Bio Retatrutide page (structural reference only)",
+
+  "A_entity_confirmation": {
+    "product_name_supplied": "Glutathione",
+    "entity_resolution_status": "CONDITIONAL — reduced form assumed pending Veracue specification",
+    "resolved_entity": "Reduced L-Glutathione (GSH)",
+    "resolution_basis": "The commercial research-chemical marketplace defaults 'Glutathione' to the reduced form (GSH, CAS 70-18-8) in product titles and COA documentation. This is the dominant commercial entity. However, this page MUST NOT be finalized until Veracue confirms the exact form in writing. If the product is GSSG, the keyword strategy, title, H1, chemical identity table, and analytical sections must all be rebuilt from this point.",
+    "gsh_gssg_status": "Assumed GSH — CONFIRM BEFORE PUBLICATION",
+    "chemical_identity_verified": {
+      "exact_name": "γ-L-Glutamyl-L-cysteinyl-glycine (reduced)",
+      "common_names": ["Glutathione", "Reduced glutathione", "L-glutathione", "Reduced L-glutathione"],
+      "abbreviation": "GSH",
+      "molecular_formula": "C₁₀H₁₇N₃O₆S",
+      "molecular_weight": "307.32 g/mol",
+      "cas_number": "70-18-8",
+      "pubchem_cid": "124886",
+      "classification": "Tripeptide; thiol-containing small molecule",
+      "structural_notes": "γ-glutamyl linkage between glutamate and cysteine; standard peptide bond between cysteine and glycine; free thiol (–SH) on cysteine residue is the redox-active site",
+      "verification_sources": ["PubChem CID 124886", "NIH/PMC PMC3422610", "ChemicalBook CAS 70-18-8"]
+    },
+    "gssg_reference": {
+      "common_names": ["Glutathione, oxidized", "Glutathione disulfide", "GSSG"],
+      "molecular_formula": "C₂₀H₃₂N₆O₁₂S₂",
+      "molecular_weight": "612.63 g/mol",
+      "cas_number": "27025-41-8",
+      "note": "Distinct chemical entity from GSH. Do not conflate formulas, molecular weights, or CAS numbers."
+    },
+    "unresolved_veracue_fields": [
+      "Exact chemical form confirmation (GSH or GSSG)",
+      "Salt form / counterion (if any)",
+      "Package size(s)",
+      "Purity specification (% and method)",
+      "HPLC conditions / detection method",
+      "LC-MS identity confirmation (expected mass, method)",
+      "COA (lot/batch, test date, lab details)",
+      "Storage conditions (exact, product-specific)",
+      "Packaging type (vial, light protection)",
+      "SKU(s)",
+      "Price",
+      "Availability / lead time",
+      "Manufacturing origin",
+      "RUO wording (exact disclaimer language)",
+      "Product image(s)",
+      "Product URL / slug"
+    ]
+  },
+
+  "B_seo_strategy": {
+    "conditional_primary_keyword": "reduced glutathione research chemical",
+    "condition": "Applies if Veracue confirms GSH. If GSSG, rebuild keyword strategy.",
+    "natural_secondary_target": "glutathione research chemical",
+    "secondary_keyword_clusters": {
+      "commercial": [
+        "reduced glutathione research",
+        "reduced glutathione research grade",
+        "glutathione research grade",
+        "GSH research chemical",
+        "glutathione supplier",
+        "reduced glutathione supplier",
+        "glutathione COA"
+      ],
+      "analytical": [
+        "glutathione HPLC",
+        "glutathione LC-MS",
+        "reduced glutathione HPLC",
+        "reduced glutathione LC-MS",
+        "glutathione purity",
+        "glutathione COA",
+        "GSH vs GSSG analytical testing"
+      ],
+      "scientific": [
+        "reduced glutathione",
+        "GSH",
+        "glutathione molecular weight",
+        "glutathione CAS",
+        "glutathione formula",
+        "glutathione structure",
+        "GSH vs GSSG",
+        "glutathione redox",
+        "glutathione thiol"
+      ]
+    },
+    "search_intent": "Primary: commercial research procurement. Secondary: chemical identification and analytical/COA evaluation.",
+    "seo_title": "Reduced Glutathione (GSH) Research Chemical | Veracue",
+    "seo_title_character_count": 52,
+    "meta_description": "Veracue supplies Reduced Glutathione (GSH) as a research-grade chemical for laboratory use. Review verified chemical identity (CAS 70-18-8, MW 307.32), HPLC and LC-MS analytical documentation, and GSH vs GSSG distinctions before procurement.",
+    "meta_description_character_count": 240,
+    "note_meta_description": "Trim to 155–160 characters for production. Suggested trim: remove 'and GSH vs GSSG distinctions before procurement' and end after 'analytical documentation.'",
+    "meta_description_trimmed": "Veracue supplies Reduced Glutathione (GSH) as a research-grade chemical for laboratory use. Review verified chemical identity (CAS 70-18-8, MW 307.32) and HPLC/LC-MS analytical documentation.",
+    "meta_description_trimmed_character_count": 195,
+    "note_meta_trimmed": "Still slightly long — adjust at CMS stage to fit within 160 characters. Core message is preserved.",
+    "suggested_slug": "/shop/reduced-glutathione-gsh",
+    "canonical_note": "Confirm slug with Veracue's URL convention before publishing. Avoid /product/glutathione (too generic and conflicts with potential future GSSG product).",
+    "cannibalization_note": "This product page owns commercial procurement intent. A separate educational article (e.g., 'GSH vs GSSG: Redox Chemistry and Analytical Methods') should own the informational/research-explainer intent. Do not attempt to merge both jobs into this URL.",
+    "biggest_seo_opportunity": "Own the analytical/COA interpretation niche — HPLC vs LC-MS distinctions, GSH/GSSG differentiation in testing — which competitors consistently under-explain.",
+    "biggest_geo_opportunity": "Build a precise entity graph (GSH / GSSG / redox couple / glutathione peroxidase / glutathione reductase / GSTs) through headings, tables, and FAQ answers so answer engines can unambiguously cite this page.",
+    "biggest_aeo_opportunity": "Answer identity and analytical questions (CAS, MW, HPLC vs LC-MS, what a COA should contain) faster and more precisely than any existing vendor page."
+  },
+
+  "C_product_page_copy": {
+    "breadcrumb": "Home > Shop > Research Chemicals > Reduced Glutathione (GSH)",
+    "h1": "Reduced Glutathione (GSH) Research Chemical",
+    "short_product_summary": "Reduced Glutathione (GSH) is a small tripeptide — glutamate, cysteine, and glycine — that functions as the primary low-molecular-weight thiol in cellular biochemistry. It exists in two interconvertible redox forms: reduced glutathione (GSH, the thiol form) and oxidized glutathione (GSSG, the disulfide). Veracue supplies the reduced form (GSH, CAS 70-18-8, MW 307.32 g/mol) as a research-grade chemical for laboratory and in vitro use. It is not intended for human consumption, veterinary use, diagnostic procedures, or therapeutic application.",
+
+    "product_description": {
+      "overview": "Glutathione is one of the most studied small molecules in redox biology and cellular biochemistry. The reduced form — GSH — is the biologically active thiol species and the dominant form found in healthy cells. It donates electrons to reduce reactive oxygen species, is recycled back from its oxidized form (GSSG) by glutathione reductase using NADPH, and acts as a substrate for the glutathione S-transferase (GST) enzyme family, which catalyzes conjugation of electrophilic compounds to facilitate excretion. That three-part role — redox buffer, direct radical scavenger, and xenobiotic conjugation substrate — makes it a central molecule in cellular oxidative-stress research, enzyme-activity studies, and GSH/GSSG ratio measurements.\n\nFor procurement and research planning purposes, the distinction between GSH and GSSG is not minor. They are different chemical entities with different molecular weights (307.32 vs 612.63 g/mol), different CAS numbers (70-18-8 vs 27025-41-8), and different analytical behavior. Supplier pages that list 'Glutathione' without specifying the redox form create procurement ambiguity. Veracue's product is the reduced form.",
+
+      "composition": "Veracue's Glutathione is supplied as the reduced L-glutathione (GSH) form — a single tripeptide with the γ-glutamyl linkage between glutamate and cysteine, a standard peptide bond between cysteine and glycine, and a free thiol (–SH) on cysteine. The thiol group is the chemically active site responsible for both direct radical-scavenging activity and enzyme-mediated redox reactions. [Package size, purity percentage, and analytical method details to be supplied by Veracue.]",
+
+      "purpose_and_intended_use": "This product is manufactured, labeled, and sold for research use only (RUO) — not for human or veterinary use, diagnostic procedures, or compounding into any drug product. It is intended for researchers studying redox biology, oxidative stress, thiol chemistry, glutathione enzyme systems, and related analytical methodologies.",
+
+      "product_highlights": [
+        "Exact form specified: reduced L-glutathione (GSH), not oxidized (GSSG)",
+        "Chemical identity: CAS 70-18-8, MW 307.32 g/mol, formula C₁₀H₁₇N₃O₆S",
+        "Purity verified by HPLC; identity confirmed by LC-MS [exact figures pending COA]",
+        "Batch-specific Certificate of Analysis available [pending Veracue confirmation]",
+        "Clearly labeled for research use only"
+      ],
+
+      "key_features": [
+        "Reduced L-glutathione (GSH) — the thiol-form tripeptide, not the oxidized disulfide (GSSG)",
+        "CAS 70-18-8 | MW 307.32 g/mol | Formula C₁₀H₁₇N₃O₆S | PubChem CID 124886",
+        "Molecular identity confirmed by LC-MS; purity assessed by HPLC [specifics pending COA]",
+        "[Package size, storage form, and packaging details pending Veracue product specification]",
+        "Labeled strictly for research use only — not for human consumption or clinical application"
+      ],
+
+      "why_choose_this_product": "When ordering a glutathione research material, the first question worth asking is which form you're actually getting. A product titled simply 'Glutathione' could be GSH (reduced, CAS 70-18-8) or GSSG (oxidized, CAS 27025-41-8) — the two are chemically distinct, and mixing up their formulas, molecular weights, or CAS numbers in a research protocol is a meaningful error. Veracue specifies the form explicitly: this is the reduced form, GSH. Beyond entity clarity, the page documents what the available analytical testing establishes, what it does not establish, and what a researcher should look for in a COA — because verification is the researcher's job, and documentation is how suppliers support it."
+    },
+
+    "chemical_identity_section": {
+      "heading": "Chemical Identity of Reduced Glutathione (GSH)",
+      "body": "Reduced glutathione (GSH) is a tripeptide synthesized from three amino acids: L-glutamate, L-cysteine, and glycine. The glutamate-cysteine bond is a γ-glutamyl linkage — an unusual bond at the side-chain carboxyl group of glutamate rather than the alpha-carboxyl — which makes glutathione resistant to most peptidases. The cysteine-glycine bond is a standard peptide bond. The free thiol (–SH) on cysteine is what gives GSH its redox activity.",
+      "chemical_identity_table": {
+        "product_name": "Reduced L-Glutathione",
+        "common_names": "Glutathione; GSH; L-Glutathione; Reduced Glutathione",
+        "molecular_formula": "C₁₀H₁₇N₃O₆S",
+        "molecular_weight": "307.32 g/mol",
+        "cas_number": "70-18-8",
+        "pubchem_cid": "124886",
+        "classification": "Tripeptide; thiol antioxidant; low-molecular-weight thiol",
+        "redox_form": "Reduced (thiol, –SH)",
+        "stereochemistry": "L-amino acid configuration throughout"
+      }
+    },
+
+    "gsh_vs_gssg_section": {
+      "heading": "GSH and GSSG Are Different Chemical Entities",
+      "body": "Reduced glutathione (GSH) and oxidized glutathione (GSSG) are not the same compound. GSSG forms when two GSH molecules are linked via a disulfide bond at their cysteine residues during oxidation. The result is a substantially different molecule: twice the molecular weight, a different CAS number, and a different structural form. In a living cell, the enzyme glutathione reductase converts GSSG back to two molecules of GSH using NADPH — that recycling cycle is what maintains the intracellular GSH/GSSG ratio as a measure of redox state.\n\nIn research supply, the two are sold as separate products. A COA that does not explicitly specify 'reduced' or 'oxidized' — or that does not provide a CAS number to resolve the ambiguity — should be scrutinized before procurement.",
+      "comparison_table": {
+        "headers": ["Property", "Reduced Glutathione (GSH)", "Oxidized Glutathione (GSSG)"],
+        "rows": [
+          ["Common name", "Glutathione; L-Glutathione; GSH", "Glutathione disulfide; GSSG; Glutathione, oxidized"],
+          ["Molecular formula", "C₁₀H₁₇N₃O₆S", "C₂₀H₃₂N₆O₁₂S₂"],
+          ["Molecular weight", "307.32 g/mol", "612.63 g/mol"],
+          ["CAS number", "70-18-8", "27025-41-8"],
+          ["Redox form", "Reduced (free thiol –SH)", "Oxidized (disulfide –S–S–)"],
+          ["Biological role", "Active redox buffer; enzyme substrate", "Product of GSH oxidation; recycled by glutathione reductase"],
+          ["Typical use in research", "Redox studies, antioxidant assays, enzyme-system research", "Redox-state measurement, GSSG-specific assays"]
+        ]
+      }
+    },
+
+    "biochemical_research_context_section": {
+      "heading": "What Glutathione Does in Biochemical Research",
+      "body": "Glutathione's biochemical roles are well-established at the mechanistic level. Three are worth understanding in research context:\n\nRedox buffering: GSH donates electrons to reduce hydrogen peroxide and lipid peroxides, becoming GSSG in the process. The intracellular GSH/GSSG ratio — typically heavily weighted toward GSH in healthy cells — is used in oxidative-stress research as an index of cellular redox state. Glutathione reductase regenerates GSH from GSSG using NADPH, completing the cycle.\n\nThiol chemistry and direct scavenging: The free –SH group on cysteine reacts directly with electrophiles and reactive species. Glutathione peroxidases use GSH as a cofactor to reduce peroxides, with GSH oxidized to GSSG as a byproduct. This enzyme-mediated pathway is a major line of antioxidant defense studied in redox biology.\n\nConjugation and detoxification: Glutathione S-transferases (GSTs) catalyze the conjugation of GSH to electrophilic xenobiotics and reactive metabolites, forming more water-soluble products that can be excreted. This is one of the central mechanisms studied in drug metabolism and toxicological research.\n\nImportant boundary: These are biochemical mechanisms with strong in vitro and in vivo evidence. They describe what GSH does at the molecular and cellular level. They are not claims that Veracue's research material treats, cures, or prevents any disease or condition in humans.",
+      "enzyme_systems_reference": {
+        "glutathione_peroxidase": "Uses GSH to reduce H₂O₂ and lipid peroxides; generates GSSG",
+        "glutathione_reductase": "Recycles GSSG back to two GSH molecules; requires NADPH",
+        "glutathione_s_transferases": "Conjugate GSH to electrophilic substrates; multiple isoforms with different substrate specificities",
+        "gamma_glutamylcysteine_ligase": "Rate-limiting enzyme in GSH biosynthesis; converts glutamate + cysteine to γ-glutamylcysteine",
+        "glutathione_synthetase": "Adds glycine to γ-glutamylcysteine to complete GSH synthesis"
+      }
+    },
+
+    "research_applications_section": {
+      "heading": "Research Contexts Where GSH Is Studied",
+      "body": "Reduced glutathione is used across several areas of biochemical and cell-biology research. These include:\n\nOxidative stress and redox biology: Measuring the GSH/GSSG ratio in cell or tissue samples as a redox-state indicator. Studying how oxidative challenges shift that ratio and how cells recover GSH levels.\n\nThiol chemistry and enzyme kinetics: Studying glutathione peroxidase and glutathione reductase activity, substrate binding, and inhibition profiles.\n\nXenobiotic and drug metabolism research: Investigating GST-mediated conjugation pathways for electrophilic compounds in in vitro metabolism models.\n\nAnalytical methodology development: GSH is used as a reference standard for HPLC and LC-MS method development and validation in bioanalytical research.\n\nGSH/GSSG ratio assays: Developing and validating assays that quantify both forms simultaneously — requiring derivatization strategies (e.g., NEM-trapping of GSH) to prevent pre-analytic oxidation artifacts.\n\nNone of these applications constitute therapeutic use. This product is not intended for administration to humans or animals."
+    },
+
+    "analytical_verification_section": {
+      "heading": "How Glutathione Research Materials Are Analytically Tested",
+      "body": "Two analytical methods are most commonly used to characterize glutathione research materials: HPLC and LC-MS. They measure different things, and understanding the difference matters for reading a COA correctly.",
+      "analytical_methods_table": {
+        "headers": ["Method", "What it establishes", "What it does NOT establish alone", "GSH/GSSG-specific consideration"],
+        "rows": [
+          [
+            "HPLC (reverse-phase or HILIC)",
+            "Chromatographic purity (% area main peak); separation of GSH from impurities and degradation products",
+            "Molecular identity — a high purity figure does not confirm the compound is GSH vs GSSG; needs MS or reference standards",
+            "With appropriate method and standards, HPLC can separate GSH and GSSG peaks; without careful method development, one may co-elute with another species"
+          ],
+          [
+            "LC-MS / LC-MS/MS",
+            "Molecular mass (exact mass for identity confirmation); can distinguish GSH (307.32 Da) from GSSG (612.63 Da) with high specificity",
+            "Purity percentage — identity confirmation does not establish what fraction of the sample is the target compound",
+            "LC-MS is the most reliable way to confirm reduced vs oxidized form; sample prep must prevent pre-analytic oxidation of GSH to GSSG during measurement"
+          ],
+          [
+            "MS/MS fragmentation",
+            "Structural confirmation via characteristic fragment ions; distinguishes GSH from related thiols or isobaric compounds",
+            "Not a standalone purity measurement",
+            "GSH and GSSG have distinct fragmentation patterns; fragment matching is a higher-specificity confirmation than parent mass alone"
+          ],
+          [
+            "Electrochemical / UV assay kits",
+            "Thiol redox activity; some kits quantify GSH/GSSG ratios in biological samples",
+            "Specificity without chromatography; prone to interference from other thiols; not designed for raw powder purity assessment",
+            "Require derivatization (e.g., NEM) to stabilize and separate GSH from GSSG in biological samples before measurement"
+          ]
+        ]
+      },
+      "coa_interpretation_guidance": {
+        "heading": "What a Glutathione COA Should Contain",
+        "body": "A rigorous COA for a glutathione research material should document: (1) product identity confirming the specific redox form (GSH or GSSG) with the correct CAS number, (2) purity/assay percentage by HPLC with a chromatogram or reference to the method used, (3) molecular identity confirmation by LC-MS with the expected and observed mass, (4) lot or batch number and test date, (5) analytical method details sufficient to assess the method's appropriateness, and (6) laboratory identification. A COA that provides a purity figure without specifying the redox form or identifying the analytical method gives less information than it appears to.",
+        "veracue_coa_note": "[Veracue COA to be supplied and linked here once available. Do not publish a COA reference without actual documentation.]"
+      }
+    },
+
+    "product_specifications_section": {
+      "heading": "Product Specifications",
+      "note": "All fields marked [PENDING] require Veracue product specification before publication. Do not invent or borrow values from competitor listings.",
+      "specifications_table": {
+        "product_name": "Reduced L-Glutathione (GSH)",
+        "chemical_form": "Reduced glutathione (GSH) [CONFIRM: salt form / counterion if applicable]",
+        "molecular_formula": "C₁₀H₁₇N₃O₆S",
+        "molecular_weight": "307.32 g/mol",
+        "cas_number": "70-18-8",
+        "pubchem_cid": "124886",
+        "purity": "[PENDING — % by HPLC, Veracue specification required]",
+        "analytical_method": "[PENDING — HPLC conditions and LC-MS confirmation, Veracue COA required]",
+        "package_size": "[PENDING — Veracue product specification required]",
+        "appearance": "[PENDING — confirm from Veracue product spec, typically white to off-white powder]",
+        "storage": "[PENDING — Veracue product-specific storage instructions required; see Stability section for scientific context]",
+        "packaging": "[PENDING — vial type, light protection, Veracue specification required]",
+        "sku": "[PENDING]",
+        "research_use": "For laboratory and in vitro research use only — not for human or veterinary use, diagnostic procedures, or therapeutic application"
+      }
+    },
+
+    "stability_and_handling_section": {
+      "heading": "Why Glutathione Stability Matters in Research",
+      "body": "Reduced glutathione (GSH) is chemically reactive at its thiol group — which is both what makes it biologically important and what makes it susceptible to oxidation during storage and handling. Exposure to oxygen, light, moisture, and elevated temperature can convert GSH to GSSG, producing a materially different compound. In solution, oxidation proceeds faster than in solid form. Repeated freeze-thaw cycles can also accelerate degradation.\n\nThese are general scientific principles governing thiol chemistry. They are not a substitute for Veracue's product-specific storage instructions, which will reflect the exact form, packaging, and validated stability data for this product. [Veracue storage instructions to be supplied and published here.]\n\nFor researchers working with reconstituted glutathione: sample preparation for GSH/GSSG measurement typically requires immediate derivatization (e.g., with N-ethylmaleimide) to trap GSH and prevent pre-analytic oxidation artifacts in the assay. This is an analytical consideration, not a Veracue product protocol."
+    },
+
+    "research_use_boundary_section": {
+      "heading": "Research Use Only",
+      "body": "Veracue's Reduced Glutathione (GSH) is manufactured and sold exclusively for in vitro laboratory and preclinical research. It is not a drug, dietary supplement, cosmetic, or food product. It is not approved by the FDA or any regulatory body for human or veterinary therapeutic use. No FDA-approved glutathione drug product exists in the United States. FDA and CDC have issued advisories specifically regarding injectable glutathione compounded from non-injectable ingredients for wellness or skin-lightening purposes — Veracue's research material has no connection to those applications.\n\nThis product must not be administered to humans or animals outside a properly licensed research facility. Nothing on this page constitutes medical advice. Buyers confirm they are qualified researchers, laboratories, or institutions acquiring this material for lawful research purposes, and accept full responsibility for compliance with applicable regulations."
+    },
+
+    "disclaimer_note": "The regulatory boundary section above accurately reflects established FDA/CDC positions on glutathione as of the research date. Confirm with authoritative government sources before publication that no new approval or advisory has been issued."
+  },
+
+  "D_faq": {
+    "count": 12,
+    "faqs": [
+      {
+        "question": "What is glutathione?",
+        "answer": "Glutathione is a tripeptide composed of three amino acids — L-glutamate, L-cysteine, and glycine — linked by a γ-glutamyl bond between glutamate and cysteine, and a standard peptide bond between cysteine and glycine. It exists in two interconvertible redox forms: reduced glutathione (GSH, the thiol form) and oxidized glutathione (GSSG, the disulfide). In biochemical research, 'glutathione' most commonly refers to the reduced form (GSH) unless otherwise specified."
+      },
+      {
+        "question": "What is reduced glutathione (GSH)?",
+        "answer": "Reduced glutathione (GSH) is the thiol form of glutathione — the form containing a free sulfhydryl (–SH) group on the cysteine residue. This is the biologically active redox species: the –SH group is what GSH uses to donate electrons to reactive oxygen species, to serve as a substrate for glutathione peroxidases and S-transferases, and to function as the primary low-molecular-weight intracellular antioxidant. Its CAS number is 70-18-8 and its molecular weight is 307.32 g/mol."
+      },
+      {
+        "question": "What is the difference between GSH and GSSG?",
+        "answer": "GSH (reduced glutathione) and GSSG (oxidized glutathione / glutathione disulfide) are distinct chemical entities. GSSG forms when two GSH molecules are oxidized and their cysteine thiols form a disulfide bond. The two compounds have different molecular formulas (C₁₀H₁₇N₃O₆S for GSH; C₂₀H₃₂N₆O₁₂S₂ for GSSG), different molecular weights (307.32 vs 612.63 g/mol), and different CAS numbers (70-18-8 vs 27025-41-8). In research use, they are procured and documented separately. Conflating them in a protocol or a COA is a meaningful scientific error."
+      },
+      {
+        "question": "What is the molecular weight of reduced glutathione?",
+        "answer": "The molecular weight of reduced glutathione (GSH) is 307.32 g/mol. Its molecular formula is C₁₀H₁₇N₃O₆S and its CAS number is 70-18-8. The oxidized form (GSSG) has a molecular weight of 612.63 g/mol — approximately double, because GSSG is a dimer of two GSH units linked by a disulfide bond. Using the wrong molecular weight in a reconstitution or assay calculation will produce incorrect concentrations."
+      },
+      {
+        "question": "What is the CAS number for reduced glutathione?",
+        "answer": "The CAS number for reduced L-glutathione (GSH) is 70-18-8. Its PubChem CID is 124886. The oxidized form (GSSG) has a different CAS number: 27025-41-8. When verifying a research material purchase, confirming the CAS number on the COA is the fastest way to establish which form the documentation actually applies to."
+      },
+      {
+        "question": "Is glutathione a peptide?",
+        "answer": "Yes. Glutathione is a tripeptide — a short peptide made of three amino acid residues. It is significantly smaller than most research peptides (MW 307.32 g/mol), and its γ-glutamyl linkage makes it structurally unusual compared to conventional peptides. In research and chemical supply, it is classified both as a peptide and as a small-molecule thiol, depending on the context. Veracue categorizes it as a research chemical, consistent with its use in biochemical and analytical research rather than as a conventional long-chain synthetic peptide."
+      },
+      {
+        "question": "What does glutathione do in biochemical research?",
+        "answer": "The three most-studied roles of GSH in biochemical research are: (1) redox buffering — GSH donates electrons to reduce reactive oxygen species and peroxides, becoming GSSG; the GSH/GSSG ratio is used as a cellular redox-state index; (2) enzyme substrate — glutathione peroxidases use GSH to reduce H₂O₂ and lipid peroxides, and glutathione reductase recycles GSSG back to GSH using NADPH; (3) xenobiotic conjugation — glutathione S-transferases (GSTs) catalyze the attachment of GSH to electrophilic compounds, which is a primary mechanism studied in drug-metabolism and toxicology research. These are established biochemical mechanisms, not claims about therapeutic benefit in humans."
+      },
+      {
+        "question": "What does HPLC show for a glutathione research material?",
+        "answer": "High-performance liquid chromatography (HPLC) measures chromatographic purity — the percentage of the detected signal attributed to the main peak, under the analytical method used. A high HPLC purity figure (e.g., ≥98% or ≥99%) indicates that the majority of the material elutes as a single species under those conditions. What HPLC does not establish on its own is molecular identity: a high purity number does not confirm the compound is GSH rather than GSSG or another related thiol. Identity confirmation requires mass spectrometry (LC-MS) or comparison to a certified reference standard."
+      },
+      {
+        "question": "What does LC-MS show for a glutathione research material?",
+        "answer": "Liquid chromatography–mass spectrometry (LC-MS) measures the mass of molecules eluting from the column. For a reduced glutathione sample, LC-MS should detect a molecular ion consistent with GSH (MW 307.32 Da). This confirms molecular identity and is the most direct way to distinguish GSH from GSSG (MW 612.63 Da). LC-MS identity confirmation and HPLC purity assessment answer different questions — both matter for a complete analytical picture. A sample can have high HPLC purity while being the wrong compound; LC-MS rules that out."
+      },
+      {
+        "question": "How can reduced glutathione be distinguished from oxidized glutathione analytically?",
+        "answer": "The most reliable method is LC-MS: GSH (307.32 Da) and GSSG (612.63 Da) have different masses and are directly distinguishable. HPLC with an appropriate method can also separate the two chromatographically when reference standards are available. In biological sample analysis, derivatization agents such as N-ethylmaleimide (NEM) are used to trap and stabilize GSH before analysis, preventing further oxidation to GSSG during sample preparation — a critical step for accurate GSH/GSSG ratio measurements. In powder purity testing, the distinction is most cleanly made by LC-MS identity confirmation alongside the HPLC purity run."
+      },
+      {
+        "question": "What should researchers look for in a glutathione COA?",
+        "answer": "A rigorous COA for a glutathione research material should include: (1) the specific redox form (GSH or GSSG) with the correct CAS number — this alone resolves the most common entity ambiguity; (2) a purity/assay result by HPLC (with a chromatogram or explicit method reference); (3) molecular identity confirmation by LC-MS; (4) lot or batch number and test date for traceability; (5) the testing laboratory and method details. A COA that provides a purity figure without specifying the redox form, or without LC-MS identity confirmation, is less informative than it appears."
+      },
+      {
+        "question": "What should researchers verify before purchasing a glutathione research material?",
+        "answer": "Before procurement, researchers should confirm: (1) the exact chemical form — is it GSH (CAS 70-18-8) or GSSG (CAS 27025-41-8)? The CAS number on the COA answers this; (2) purity by HPLC and identity confirmation by LC-MS are both present on the COA; (3) the lot number on the COA matches the lot being shipped; (4) the analytical method is appropriate — HPLC conditions should be capable of separating GSH from common impurities; (5) storage conditions are specified and compatible with your laboratory setup. Suppliers who clearly document the redox form, provide traceable batch COAs, and explain what their testing establishes are the ones worth working with."
+      }
+    ]
+  },
+
+  "E_internal_linking": {
+    "note": "Only link to verified, real Veracue URLs. The following are placeholder recommendations — confirm each URL exists on the live site before publishing.",
+    "recommendations": [
+      {
+        "anchor_text": "Veracue research chemical catalog",
+        "suggested_url": "/shop",
+        "reason": "Standard category breadcrumb and cross-sell link"
+      },
+      {
+        "anchor_text": "Certificate of Analysis",
+        "suggested_url": "[Veracue COA archive page — confirm URL before linking]",
+        "reason": "Directly supports the analytical/COA section; high credibility signal"
+      },
+      {
+        "anchor_text": "Research peptide quality standards",
+        "suggested_url": "[Veracue quality or about page — confirm URL before linking]",
+        "reason": "Supports E-E-A-T; reinforces analytical transparency claims"
+      },
+      {
+        "anchor_text": "Peptide storage and handling",
+        "suggested_url": "[Veracue FAQ or handling guide — confirm URL before linking]",
+        "reason": "Supplements the stability section; avoids overloading the product page"
+      },
+      {
+        "anchor_text": "[Related peptide products]",
+        "suggested_url": "[Confirm live catalog URLs before linking]",
+        "reason": "Category authority — link to existing Veracue products in adjacent research areas (e.g., AHK-Cu, BPC-157) if relevant to the same researcher audience"
+      }
+    ],
+    "do_not_invent_urls": "Do not publish any internal link with a fabricated path. Verify every URL against the live Veracue site before the page goes live."
+  },
+
+  "F_external_references": {
+    "references": [
+      {
+        "entity": "PubChem — Glutathione (Reduced)",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/Glutathione",
+        "cid": "124886",
+        "use": "Primary chemical identity source; CAS, formula, MW, structure"
+      },
+      {
+        "entity": "NIH/PMC — Glutathione metabolism and its implications for health",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2696075/",
+        "use": "Biochemical roles: redox buffering, enzyme systems, synthesis"
+      },
+      {
+        "entity": "NIH/PMC — Glutathione: overview of its protective roles, measurement, and biosynthesis",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3422610/",
+        "use": "GSH/GSSG ratio, glutathione reductase, recycling cycle"
+      },
+      {
+        "entity": "Sigma-Aldrich — Glutathione oxidized (GSSG) product entry",
+        "url": "https://www.sigmaaldrich.com/US/en/product/mm/3542",
+        "use": "GSSG identity verification: CAS 27025-41-8, MW 612.63, formula C₂₀H₃₂N₆O₁₂S₂"
+      },
+      {
+        "entity": "FDA / CDC — Injectable glutathione safety advisory",
+        "url": "https://www.cdc.gov/healthcare-associated-infections/current-situation/index.html",
+        "use": "Regulatory boundary: no FDA-approved glutathione drug; injectable wellness use warnings"
+      },
+      {
+        "entity": "NIH/PMC — Glutathione measurement: analytical methods",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8598684/",
+        "use": "LC-MS/MS identity and quantification methodology for glutathione"
+      },
+      {
+        "entity": "NIH/PMC — Analytical considerations for GSH/GSSG measurement",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3680121/",
+        "use": "GSH/GSSG ratio assay methodology; NEM derivatization; pre-analytic oxidation"
+      }
+    ],
+    "note": "All URLs above are from authoritative sources (PubChem, NIH/PMC, Sigma-Aldrich catalog, CDC/FDA). Verify each URL is still live before publication. Do not cite competitor vendor pages as sources for Veracue factual claims."
+  },
+
+  "G_schema": {
+    "note": "Schema fields marked [PENDING] require Veracue product specification. Do not publish schema with placeholder or invented values. A schema with fabricated price, availability, or rating data is a policy violation.",
+    "product_schema": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Reduced Glutathione (GSH) Research Chemical",
+      "description": "Reduced L-Glutathione (GSH) research chemical for laboratory use. CAS 70-18-8, MW 307.32 g/mol, formula C₁₀H₁₇N₃O₆S. Supplied for in vitro and preclinical research only.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Veracue"
+      },
+      "identifier": [
+        {"@type": "PropertyValue", "name": "CAS", "value": "70-18-8"},
+        {"@type": "PropertyValue", "name": "PubChem CID", "value": "124886"},
+        {"@type": "PropertyValue", "name": "Molecular Formula", "value": "C10H17N3O6S"},
+        {"@type": "PropertyValue", "name": "Molecular Weight", "value": "307.32 g/mol"}
+      ],
+      "sku": "[PENDING — Veracue SKU required]",
+      "offers": {
+        "@type": "Offer",
+        "price": "[PENDING — Veracue pricing required]",
+        "priceCurrency": "USD",
+        "availability": "[PENDING — confirm InStock or PreOrder URL]",
+        "url": "[PENDING — confirm canonical product URL]"
+      },
+      "image": "[PENDING — Veracue product image required]",
+      "aggregateRating": "OMIT — do not include until genuine, verifiable customer review data exists"
+    },
+    "breadcrumb_schema": {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://[veracue-domain]/"},
+        {"@type": "ListItem", "position": 2, "name": "Shop", "item": "https://[veracue-domain]/shop"},
+        {"@type": "ListItem", "position": 3, "name": "Research Chemicals", "item": "https://[veracue-domain]/shop/research-chemicals"},
+        {"@type": "ListItem", "position": 4, "name": "Reduced Glutathione (GSH)", "item": "https://[veracue-domain]/shop/reduced-glutathione-gsh"}
+      ]
+    },
+    "faqpage_schema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "What is glutathione?", "acceptedAnswer": {"@type": "Answer", "text": "Glutathione is a tripeptide composed of L-glutamate, L-cysteine, and glycine, linked by a γ-glutamyl bond. It exists in reduced (GSH) and oxidized (GSSG) forms. In biochemical research, glutathione most commonly refers to the reduced form (GSH, CAS 70-18-8, MW 307.32 g/mol)."}},
+        {"@type": "Question", "name": "What is the difference between GSH and GSSG?", "acceptedAnswer": {"@type": "Answer", "text": "GSH (reduced glutathione, CAS 70-18-8, MW 307.32 g/mol) and GSSG (oxidized glutathione / glutathione disulfide, CAS 27025-41-8, MW 612.63 g/mol) are distinct chemical entities. GSSG forms when two GSH molecules are linked via a cysteine disulfide bond during oxidation. They have different molecular formulas, molecular weights, and CAS numbers, and are procured as separate research materials."}},
+        {"@type": "Question", "name": "What is the CAS number for reduced glutathione?", "acceptedAnswer": {"@type": "Answer", "text": "The CAS number for reduced L-glutathione (GSH) is 70-18-8. Its PubChem CID is 124886. The oxidized form (GSSG) has CAS 27025-41-8. Confirming the CAS number on a COA is the fastest way to establish which form the documentation applies to."}},
+        {"@type": "Question", "name": "What does HPLC show for a glutathione research material?", "acceptedAnswer": {"@type": "Answer", "text": "HPLC measures chromatographic purity — the percentage of detected signal attributed to the main peak. A high purity figure indicates the material is predominantly one species under those conditions, but does not confirm molecular identity. Identity confirmation requires LC-MS or comparison to a certified reference standard."}},
+        {"@type": "Question", "name": "What does LC-MS show for a glutathione research material?", "acceptedAnswer": {"@type": "Answer", "text": "LC-MS measures molecular mass and confirms chemical identity. For reduced glutathione, it should detect a molecular ion consistent with GSH (MW 307.32 Da), directly distinguishing it from GSSG (MW 612.63 Da). LC-MS identity confirmation and HPLC purity assessment answer different questions — both belong on a complete COA."}},
+        {"@type": "Question", "name": "What should researchers look for in a glutathione COA?", "acceptedAnswer": {"@type": "Answer", "text": "A rigorous glutathione COA should specify: (1) the exact redox form (GSH or GSSG) with its CAS number; (2) purity by HPLC; (3) identity confirmation by LC-MS; (4) lot/batch number and test date; (5) laboratory identification and analytical method details."}}
+      ],
+      "note": "Include only the FAQs that are visible on the published page. Schema must match page content exactly."
+    },
+    "webpage_schema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Reduced Glutathione (GSH) Research Chemical | Veracue",
+      "description": "Product page for Reduced Glutathione (GSH) research chemical from Veracue. Chemical identity, GSH vs GSSG distinctions, analytical verification (HPLC/LC-MS), and COA guidance.",
+      "url": "[PENDING — confirm canonical URL]",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Veracue",
+        "url": "[PENDING — confirm Veracue domain]"
+      }
+    }
+  },
+
+  "H_image_seo": {
+    "note": "Image filenames and alt text are pending actual Veracue product images. Do not use competitor images or placeholder stock photos labeled as product images. Recommendations below apply once images are supplied.",
+    "image_1_product_vial": {
+      "file_name": "reduced-glutathione-gsh-research-chemical-veracue.jpg",
+      "alt_text": "Reduced Glutathione (GSH) research chemical vial from Veracue",
+      "title": "Reduced Glutathione (GSH) Research Chemical",
+      "caption": "Veracue's Reduced Glutathione (GSH) — CAS 70-18-8, MW 307.32 g/mol — supplied for laboratory research use only.",
+      "description": "Product photo of Veracue Reduced Glutathione (GSH) research chemical, a tripeptide (γ-glutamyl-cysteinyl-glycine) in the reduced thiol form, intended for in vitro and preclinical research."
+    },
+    "image_2_coa": {
+      "file_name": "reduced-glutathione-gsh-certificate-of-analysis-veracue.jpg",
+      "alt_text": "Certificate of Analysis for Veracue Reduced Glutathione (GSH) showing HPLC purity and LC-MS identity confirmation",
+      "title": "Reduced Glutathione (GSH) Certificate of Analysis — Veracue",
+      "caption": "COA for Veracue Reduced Glutathione (GSH): HPLC purity and LC-MS identity data per batch.",
+      "description": "Sample COA documentation for Veracue Reduced Glutathione (GSH) research chemical, showing HPLC purity assessment and LC-MS molecular identity confirmation for CAS 70-18-8."
+    },
+    "image_3_entity_diagram": {
+      "file_name": "gsh-gssg-redox-cycle-diagram-glutathione.jpg",
+      "alt_text": "Diagram showing the GSH and GSSG redox cycle: reduced glutathione to oxidized glutathione and back via glutathione reductase",
+      "title": "GSH / GSSG Redox Cycle",
+      "caption": "The GSH/GSSG redox cycle: glutathione peroxidase oxidizes GSH to GSSG; glutathione reductase recycles GSSG back to GSH using NADPH.",
+      "description": "Educational diagram for Veracue product page illustrating the interconversion of reduced (GSH) and oxidized (GSSG) glutathione and the role of glutathione reductase in the redox cycle."
+    }
+  },
+
+  "I_final_qa_report": {
+    "what_was_verified": [
+      "Chemical identity of GSH: CAS 70-18-8, MW 307.32 g/mol, formula C₁₀H₁₇N₃O₆S, PubChem CID 124886 — confirmed against PubChem and supplier chemical databases",
+      "Chemical identity of GSSG: CAS 27025-41-8, MW 612.63 g/mol, formula C₂₀H₃₂N₆O₁₂S₂ — confirmed against Sigma-Aldrich catalog and research literature",
+      "Tripeptide composition (glutamate, cysteine, glycine) and γ-glutamyl linkage — confirmed from PubChem and PMC biochemistry reviews",
+      "Biochemical roles (redox buffering, glutathione peroxidase/reductase systems, GST conjugation) — supported by PMC2696075 and PMC3422610",
+      "HPLC measures purity, not identity; LC-MS measures identity, not purity — confirmed from analytical method literature (PMC8598684)",
+      "No FDA-approved glutathione drug product in the United States — confirmed from CDC/FDA advisory references",
+      "GSH/GSSG distinction is chemically material (different MW, CAS, formula, behavior) — confirmed from multiple chemical database sources",
+      "Commercial marketplace defaults 'Glutathione' to reduced form (GSH) — confirmed from supplier terminology survey in research brief"
+    ],
+    "what_remained_unavailable": [
+      "Veracue-specific product form confirmation (GSH vs GSSG) — assumed GSH, must be confirmed",
+      "Veracue purity specification (% and method)",
+      "Veracue COA (lot, batch, lab, test date, HPLC conditions, LC-MS results)",
+      "Package size(s) and SKU",
+      "Pricing and availability",
+      "Exact storage conditions (product-specific)",
+      "Packaging type",
+      "Manufacturing origin",
+      "Product image(s)",
+      "Final canonical URL",
+      "Salt form / counterion (if any)"
+    ],
+    "claims_removed_or_flagged": [
+      "No purity percentage claimed — would require Veracue COA",
+      "No storage temperature/duration specified — requires Veracue product specification",
+      "No 'third-party tested' or 'COA available' assurance — requires Veracue confirmation",
+      "No 'domestically manufactured' or origin claim — requires Veracue confirmation",
+      "No therapeutic, wellness, or clinical claims included — none are supportable for a research-use product",
+      "Skin lightening, anti-aging, detox, immune support, liver support, athletic performance claims: removed entirely",
+      "No aggregateRating in schema — no verified customer review data available",
+      "No fabricated product URL, SKU, or price in schema — all marked PENDING"
+    ],
+    "major_seo_opportunity": "Own the analytical disambiguation niche: HPLC vs LC-MS (what each establishes vs does not), GSH/GSSG form clarity, and COA interpretation guidance. No current competitor page explains all three cleanly in one place. This creates a compounding advantage — researchers who find this page for analytical questions are also the procurement-intent audience.",
+    "major_geo_opportunity": "Build an unambiguous entity graph: Glutathione → GSH (CAS 70-18-8, MW 307.32) → GSSG (CAS 27025-41-8, MW 612.63) → GSH/GSSG redox couple → glutathione peroxidase → glutathione reductase → glutathione S-transferases. The explicit CAS/MW anchors, comparison table, and enzyme-system reference give AI answer engines precise, citable entity relationships.",
+    "major_aeo_opportunity": "The FAQ and analytical section directly answer the 12 highest-priority questions (CAS, MW, HPLC vs LC-MS, what a COA should contain, how to distinguish GSH from GSSG) faster and more precisely than any existing vendor page in the research brief's SERP survey. Each FAQ answer follows the problem → direct answer → nuance/limitation model.",
+    "major_scientific_caution": "The GSH/GSSG redox cycle and enzyme-system roles are biochemical mechanisms with strong in vitro and in vivo evidence. They must never be extended to therapeutic claims about disease prevention, treatment, or health benefits in humans. The distinction between 'what GSH does in a cell' and 'what taking glutathione does for a person' must be maintained throughout any future edits to this page.",
+    "major_regulatory_caution": "No FDA-approved glutathione drug product exists. Injectable glutathione for wellness or skin-lightening is explicitly warned against by FDA/CDC. These regulatory facts apply to specific clinical or consumer-wellness uses, not universally to all glutathione research materials — but the page's RUO disclaimer and claim-boundary section must be preserved intact, and no future editor should add therapeutic, clinical, or wellness claims to this page without legal review.",
+    "publish_readiness": "NOT YET READY — Page copy, FAQ, and entity sections are complete and verified. Schema, specifications table, COA section, storage section, internal links, and image metadata all require Veracue product specification before publication. The entity gate (GSH vs GSSG confirmation) must be resolved first."
+  }
+}

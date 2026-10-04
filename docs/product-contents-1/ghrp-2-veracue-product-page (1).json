@@ -1,0 +1,590 @@
+{
+  "page": {
+    "slug": "ghrp-2",
+    "url": "https://veracue-peptides.vercel.app/product/ghrp-2",
+    "canonical": "https://veracue-peptides.vercel.app/product/ghrp-2",
+    "seo": {
+      "title": "GHRP-2 Research Peptide (Pralmorelin) | Veracue",
+      "metaDescription": "GHRP-2, the ghrelin-receptor peptide pralmorelin, for lab research: GHS-R1a mechanism, molecular identity, GHRP-2 vs GHRP-6, and RUO/COA verification."
+    },
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "https://veracue-peptides.vercel.app/"
+      },
+      {
+        "name": "Shop",
+        "url": "https://veracue-peptides.vercel.app/shop"
+      },
+      {
+        "name": "GHRP-2",
+        "url": "https://veracue-peptides.vercel.app/product/ghrp-2"
+      }
+    ],
+    "category": "Growth Hormone Secretagogues"
+  },
+  "productHeader": {
+    "name": "GHRP-2",
+    "subtitle": "Pralmorelin",
+    "pending_first_party_data": [
+      "price",
+      "vialSizes",
+      "sku",
+      "stockStatus"
+    ]
+  },
+  "shopCardBlurb": "GHRP-2 (pralmorelin) is a synthetic hexapeptide that activates the ghrelin receptor (GHS-R1a) to stimulate growth hormone release. Veracue supplies it as a research material for laboratory work. The most directly relevant published data (Arvat et al., 1997; Adis Editorial, 2004) come from controlled human pharmacodynamic studies and Japan's approved single-dose diagnostic use, not repeated or self-directed administration. No controlled trial comparing GHRP-2 head-to-head with GHRP-6 was identified, so this material does not establish superiority, safety or effect for any use outside that supervised diagnostic setting.",
+  "ruoNotice": "Research Use Only. GHRP-2 is supplied strictly for in vitro and laboratory research. It is not a drug, supplement, or consumer product, and this page does not provide dosing, administration, or self-use instructions. Outside Japan's approved diagnostic use of pralmorelin under medical supervision, GHRP-2 has no approved human application, and it is a WADA-prohibited substance at all times, in and out of competition.",
+  "whatIsGHRP2": {
+    "directAnswer": "GHRP-2 — Growth Hormone Releasing Peptide-2, pharmaceutical name pralmorelin — is a synthetic hexapeptide that binds the ghrelin receptor (GHS-R1a) and triggers growth hormone (GH) release from the anterior pituitary. It was the first compound in this drug class to reach clinical use, and remains the only GHRP with a regulatory approval anywhere: Japan's Pharmaceuticals and Medical Devices Agency (PMDA) cleared it in October 2004 as a single-dose diagnostic agent for growth hormone deficiency, marketed by Kaken Pharmaceutical as GHRP Kaken.",
+    "chemicalContext": "Chemically, GHRP-2 is an analogue of met-enkephalin with the sequence D-Ala-D-2-Naphthylalanine-Ala-Trp-D-Phe-Lys-NH2 — six amino acid residues capped with a C-terminal amide. It is structurally related to GHRP-6, GHRP-1, and hexarelin, all developed from the same line of research by endocrinologist Cyril Y. Bowers and collaborators beginning in the 1980s. \"GHRP\" on its own refers to the broader class of growth-hormone-releasing peptides; GHRP-2 is one specific, well-characterized member of that class, distinct from GHRP-6 in sequence, receptor affinity, and hormonal side-effect profile.",
+    "clinicalDevelopmentHistory": "GHRP-2 also went through Phase II clinical trials — in Japan and, separately, in the United States with Wyeth — for treating GH deficiency and short stature directly, rather than only diagnosing it. Neither program reached market; per the published drug-development review cited in sources, GHRP-2's GH-raising effect is substantially blunted in people who actually have GH deficiency, which limited its usefulness as a treatment compared with its usefulness as a diagnostic stimulus in people whose pituitary still functions."
+  },
+  "whyResearchersStudyGHRP2": [
+    "It was first: GHRP-2 (alongside GHRP-6) helped establish that a receptor distinct from the GHRH receptor — later identified as GHS-R1a, the ghrelin receptor — could independently drive pulsatile GH release. Much of the foundational pharmacology of the entire GHS-R1a class, including ipamorelin, hexarelin, and non-peptide secretagogues, traces back to comparative work done with GHRP-2 and GHRP-6 in the 1980s–90s.",
+    "It has an actual regulatory record: because Kaken Pharmaceutical took pralmorelin through Japanese approval as a diagnostic, GHRP-2 has published general pharmacology, toxicology, and human dose-response data that most research peptides never accumulate.",
+    "It anchors comparative GHS-R1a pharmacology: because ipamorelin was developed specifically to be more receptor-selective than the earlier GHRPs, GHRP-2 (and GHRP-6) function as the non-selective reference point in papers characterizing newer secretagogues — the compounds against which selectivity claims for ipamorelin and others are actually measured."
+  ],
+  "researchFocusMechanismOverview": {
+    "alsoKnownAs": [
+      "Pralmorelin",
+      "KP-102",
+      "GPA-748",
+      "WAY-GPA-748",
+      "Growth Hormone Releasing Peptide-2"
+    ],
+    "class": "Growth hormone secretagogue (GHS); GHRP subfamily",
+    "molecularTarget": "Growth hormone secretagogue receptor 1a (GHS-R1a), the ghrelin receptor",
+    "structuralRelative": "Analogue of met-enkephalin; closely related in lineage to GHRP-1, GHRP-6, and hexarelin",
+    "regulatoryStatus": "Approved in Japan (PMDA, 2004) as a diagnostic agent only; never approved by the FDA for any use",
+    "sportStatus": "Prohibited at all times by WADA, Section S2.2.4 (GH-releasing peptides)",
+    "directHumanEvidenceBase": "Multiple published human pharmacodynamic and diagnostic-accuracy studies; not equivalent to therapeutic-efficacy evidence"
+  },
+  "molecularIdentity": {
+    "commonName": "GHRP-2",
+    "pharmaceuticalName": "Pralmorelin (INN); pralmorelin hydrochloride (JAN); pralmorelin dihydrochloride (USAN)",
+    "developmentalCodes": [
+      "KP-102",
+      "GPA-748",
+      "WAY-GPA-748"
+    ],
+    "sequence": "D-Ala-D-2-Naphthylalanine-Ala-Trp-D-Phe-Lys-NH2 (hexapeptide amide)",
+    "molecularFormula": "C45H55N9O6",
+    "molecularWeight": "817.99 g/mol",
+    "casNumber": "158861-67-7",
+    "pubchemCID": {
+      "freeBase": "6852372",
+      "acetate": "5493556"
+    },
+    "inchiKey": "HRNLPPBUBKMZMT-RDRUQFPZSA-N",
+    "note": "A Certificate of Analysis may report the free base, an acetate salt, or another counter-ion form — each with a different molecular weight. A COA should state which form its identity and mass figures refer to."
+  },
+  "ghrp2VsGhrp6": {
+    "intro": "Search demand for \"GHRP-2 vs GHRP-6\" is high enough in the supplied keyword data to warrant a dedicated, evidence-scoped comparison — not a ranking. No controlled human trial directly comparing GHRP-2 and GHRP-6 head-to-head in the same subjects was identified in the literature reviewed for this page. The comparison below is drawn from separately published pharmacology on each compound, not a single study, and should be read with that limitation in mind.",
+    "background": "Both are hexapeptide agonists of GHS-R1a developed from the same original research program. GHRP-6 (His-D-Trp-Ala-Trp-D-Phe-Lys-NH2) was the earlier compound; GHRP-2 (D-Ala-D-2-Nal-Ala-Trp-D-Phe-Lys-NH2) was developed subsequently as part of the same structure-activity series that also produced GHRP-1 and hexarelin.",
+    "comparisonTable": [
+      {
+        "attribute": "Sequence",
+        "ghrp2": "D-Ala-D-2-Nal-Ala-Trp-D-Phe-Lys-NH2",
+        "ghrp6": "His-D-Trp-Ala-Trp-D-Phe-Lys-NH2"
+      },
+      {
+        "attribute": "Receptor",
+        "ghrp2": "GHS-R1a agonist",
+        "ghrp6": "GHS-R1a agonist"
+      },
+      {
+        "attribute": "Regulatory approval",
+        "ghrp2": "Approved in Japan as a GHD diagnostic (pralmorelin)",
+        "ghrp6": "None identified in any jurisdiction"
+      },
+      {
+        "attribute": "Direct human clinical record",
+        "ghrp2": "Multiple published pharmacodynamic and diagnostic-validation studies",
+        "ghrp6": "Foundational pharmacology studies from the 1980s–90s; no diagnostic approval"
+      },
+      {
+        "attribute": "ACTH/cortisol and prolactin effects",
+        "ghrp2": "Documented in published human studies (e.g., Arvat et al., 1997, comparing GHRP-2 and hexarelin to GHRH/TRH/hCRH)",
+        "ghrp6": "Documented in earlier foundational GHRP pharmacology literature"
+      },
+      {
+        "attribute": "WADA status",
+        "ghrp2": "Prohibited (S2.2.4)",
+        "ghrp6": "Prohibited (S2.2.4)"
+      },
+      {
+        "attribute": "Head-to-head trial",
+        "ghrp2": "Not identified",
+        "ghrp6": "Not identified"
+      }
+    ],
+    "conclusion": "Both compounds activate the same receptor and were characterized in overlapping research programs, which is why they're so often discussed together. Because the two were rarely tested against each other in a single controlled design, precise, sourced claims about relative potency, relative appetite stimulation, or relative hormonal side effects between them are not something this page can responsibly assert. Content claiming GHRP-2 is flatly \"stronger\" or \"cleaner\" than GHRP-6 is typically drawing on informal secondary sources, not a cited comparative trial."
+  },
+  "relatedResearchCompounds": {
+    "intro": "GHRP-2 sits within a wider family of GH-secretagogue and GHRH-analogue research compounds, several of which appear in the supplied keyword data.",
+    "compounds": [
+      {
+        "name": "GHRP-6",
+        "note": "The earlier, structurally related GHS-R1a agonist compared above.",
+        "livePage": false
+      },
+      {
+        "name": "Hexarelin",
+        "note": "Another GHS-R1a agonist from the same research lineage; directly compared to GHRP-2 in the Arvat et al. (1997) human study.",
+        "livePage": false
+      },
+      {
+        "name": "Ipamorelin",
+        "note": "A later-generation GHS-R1a agonist developed for greater receptor selectivity, often cited as producing less ACTH/cortisol/prolactin co-release than GHRP-2 or GHRP-6.",
+        "livePage": false
+      },
+      {
+        "name": "Sermorelin / CJC-1295",
+        "note": "Act on the GHRH receptor, not GHS-R1a. Published human data show GHRH-class compounds and GHS-R1a agonists like GHRP-2 have an additive/synergistic effect on GH release when studied together.",
+        "livePage": false
+      },
+      {
+        "name": "Tesamorelin",
+        "note": "A GHRH-receptor agonist, mechanistically distinct from GHRP-2 for the same reason as sermorelin/CJC-1295.",
+        "livePage": false
+      }
+    ],
+    "linkingNote": "None of these currently has a live product page in the catalog per the shop page fetched for this brief — named for research context only, not linked, until pages exist."
+  },
+  "focusedResearchQuestions": [
+    {
+      "id": "q1",
+      "question": "What is GHRP-2 chemically?",
+      "answer": "GHRP-2 is a synthetic hexapeptide amide — six amino acids (D-Ala-D-2-Nal-Ala-Trp-D-Phe-Lys) with a C-terminal amide — structurally classed as a met-enkephalin analogue. Its molecular formula is C45H55N9O6 (MW 817.99 g/mol), CAS 158861-67-7. It is not a hormone itself; it is a small synthetic molecule that mimics ghrelin closely enough to activate ghrelin's own receptor."
+    },
+    {
+      "id": "q2",
+      "question": "What receptor does GHRP-2 act on, and how does that differ from GHRH?",
+      "answer": "GHRP-2 activates GHS-R1a, the same receptor ghrelin naturally binds. Growth hormone-releasing hormone (GHRH) acts on a separate receptor, the GHRH receptor. Published human pharmacology shows the two pathways converge on the same somatotroph cells but don't cross-desensitize each other, which is why the two classes are frequently studied together for their additive effect on GH pulse size."
+    },
+    {
+      "id": "q3",
+      "question": "Why is GHRP-2 also called pralmorelin?",
+      "answer": "Pralmorelin is the International Nonproprietary Name (INN) assigned once the compound moved into formal clinical development and eventual regulatory approval. \"GHRP-2\" is the earlier research designation from Bowers' original series (alongside GHRP-1 and GHRP-6); KP-102 and GPA-748 are older development codes for the same molecule."
+    },
+    {
+      "id": "q4",
+      "question": "Is GHRP-2 approved as a medicine anywhere?",
+      "answer": "Yes, narrowly. Japan's PMDA approved pralmorelin in October 2004 as a single-dose intravenous diagnostic agent — not a treatment — for assessing growth hormone deficiency in adults and children, marketed by Kaken Pharmaceutical. It has never been approved by the U.S. FDA or EU regulators for any indication. Phase II treatment trials in Japan and the U.S. (with Wyeth) did not lead to marketing approval for treatment use."
+    },
+    {
+      "id": "q5",
+      "question": "How is GHRP-2 used in the growth hormone deficiency diagnostic test, and what does that establish?",
+      "answer": "In the Japanese-approved diagnostic protocol, a single intravenous dose of pralmorelin is given and plasma GH is measured afterward; published cutoffs cited in clinical-trial protocol documentation put the threshold around a peak GH of ≤16 ng/mL in children and ≤9 ng/mL in adults as consistent with GH deficiency. This establishes diagnostic utility under medical supervision as a single-dose clinical procedure — not evidence about repeated or self-directed use, and not a treatment outcome."
+    },
+    {
+      "id": "q6",
+      "question": "What does the published literature report about GHRP-2 and cortisol, ACTH, or prolactin?",
+      "answer": "A frequently cited human study (Arvat et al., 1997) measured GH, prolactin, ACTH, and cortisol responses to intravenous GHRP-2 and hexarelin in healthy adults, comparing them against GHRH, TRH, and hCRH. It reported that GHRP-2 produced a slight-to-moderate stimulatory effect on prolactin, ACTH, and cortisol in addition to its GH-releasing effect — a documented pharmacodynamic property, not an adverse-event report from a safety trial."
+    },
+    {
+      "id": "q7",
+      "question": "Has GHRP-2 been studied for anything beyond the GHD diagnostic?",
+      "answer": "Published clinical literature includes a case report (Haruta et al., 2015, Journal of Cachexia, Sarcopenia and Muscle, co-authored by GHRP discoverer Cyril Bowers) describing one year of intranasal GHRP-2 in a single severely emaciated anorexia nervosa patient, reporting increased appetite, body weight, and muscle strength alongside improved fatigue and hypoglycemia. This is a single-patient case report, not a controlled trial."
+    },
+    {
+      "id": "q8",
+      "question": "What does \"GHRP-2 dosage\" mean in the research literature, versus a usable protocol?",
+      "answer": "In published pharmacodynamic and diagnostic studies, GHRP-2 dose is an experimental variable — typically a body-weight-normalized intravenous bolus under controlled, monitored, single-administration clinical conditions, chosen to characterize a dose-response curve or standardize a diagnostic stimulus. That is fundamentally different from a self-administration protocol: it describes what was tested in a specific study design, not a validated, safe, or legal amount for any other context."
+    },
+    {
+      "id": "q9",
+      "question": "What adverse or physiological effects have been reported with GHRP-2 in research settings?",
+      "answer": "Beyond the ACTH/cortisol/prolactin elevation noted above, the general pharmacology and toxicology literature developed during pralmorelin's Japanese drug approval (Furuta et al., 2004) characterizes the compound's broader pharmacological profile as part of its regulatory submission. Findings vary by study design and species. This page does not compile these into a consumer safety list, because single-dose diagnostic-context data does not describe the risk profile of repeated, unsupervised, non-clinical use, which has not been studied."
+    },
+    {
+      "id": "q10",
+      "question": "How does GHRP-2 compare mechanistically with GHRH-class compounds like CJC-1295 or tesamorelin?",
+      "answer": "GHRP-2 and GHRH-analogues act on different receptors that converge on the same GH-releasing outcome. GHRH-class compounds (sermorelin, CJC-1295, tesamorelin) bind the GHRH receptor; GHRP-2 binds GHS-R1a. Published human pharmacodynamic data show combining a GHS-R1a agonist with a GHRH-receptor agonist produces a larger GH pulse than either alone — a synergistic effect from two pathways converging before GH release."
+    },
+    {
+      "id": "q11",
+      "question": "Why do researchers distinguish GHRP-2 from the broader term \"GHRP\"?",
+      "answer": "\"GHRP\" (growth hormone-releasing peptide) is a class name covering GHRP-1, GHRP-2, GHRP-6, hexarelin, and related compounds — all GHS-R1a agonists sharing a discovery lineage but differing in exact sequence, receptor affinity, and downstream hormonal effects. Treating \"GHRP\" and \"GHRP-2\" as interchangeable obscures real pharmacological differences between family members."
+    },
+    {
+      "id": "q12",
+      "question": "What should not be inferred from GHRP-2's existing research record?",
+      "answer": "Three things the evidence does not support: (1) that GHRP-2's diagnostic use in a single-dose, medically supervised clinical setting says anything about repeated or self-directed use; (2) that a case report in one patient establishes a general treatment effect; and (3) that GHRP-2 is \"safer\" or \"cleaner\" than GHRP-6 or hexarelin as a settled fact — the direct comparative literature to support that ranking does not exist."
+    }
+  ],
+  "whatEvidenceDoesNotEstablish": [
+    "That GHRP-2 is safe or effective for any human therapeutic use outside its approved Japanese diagnostic application, which itself is a single-dose, medically supervised procedure",
+    "That GHRP-2 is superior or inferior to GHRP-6, hexarelin, or ipamorelin — no direct head-to-head human trial was identified",
+    "That findings from the single anorexia-nervosa case report generalize to other populations or conditions",
+    "That any dosing figure reported in a diagnostic or pharmacodynamic study is a usable, safe, or legal self-administration amount",
+    "That GHRP-2 supplied for laboratory research has been tested for, or is suitable for, any use in humans or animals"
+  ],
+  "regulatoryAndAntiDopingStatus": [
+    {
+      "jurisdiction": "Japan (PMDA)",
+      "status": "Approved since October 2004 as a diagnostic agent for GH deficiency, marketed by Kaken Pharmaceutical as GHRP Kaken. Not approved as a treatment."
+    },
+    {
+      "jurisdiction": "United States (FDA)",
+      "status": "Not approved for any indication; not a legally marketed drug. Phase II trials for GHD/short-stature treatment (with Wyeth) did not proceed to approval."
+    },
+    {
+      "jurisdiction": "World Anti-Doping Agency (WADA)",
+      "status": "Listed by name under Section S2.2.4 (\"GH-Releasing Peptides\") of the current Prohibited List, alongside GHRP-1, GHRP-3 through GHRP-6, and hexarelin. Prohibited at all times, in and out of competition."
+    }
+  ],
+  "coaGuidance": {
+    "table": [
+      {
+        "element": "Lot or batch number",
+        "tellsYou": "Links the report to a specific production lot",
+        "doesNotEstablish": "Anything about quality unless it matches the vial label"
+      },
+      {
+        "element": "HPLC purity (%)",
+        "tellsYou": "Share of detected signal in the main peak under stated conditions",
+        "doesNotEstablish": "Identity, net peptide content, sterility, or biological activity"
+      },
+      {
+        "element": "Mass spectrometry / LC-MS",
+        "tellsYou": "Whether an observed mass is consistent with C45H55N9O6",
+        "doesNotEstablish": "Purity, or the amount of material present"
+      },
+      {
+        "element": "Net peptide content",
+        "tellsYou": "How much of the vial's mass is peptide rather than salts, acetate, or water",
+        "doesNotEstablish": "Chromatographic purity"
+      },
+      {
+        "element": "Salt/counter-ion form stated",
+        "tellsYou": "Whether the reported mass refers to the free base or an acetate/other salt",
+        "doesNotEstablish": "Identity by itself — must be paired with MS data"
+      },
+      {
+        "element": "Laboratory name and test date",
+        "tellsYou": "Who tested the lot and when",
+        "doesNotEstablish": "Independence, unless the relationship is disclosed"
+      }
+    ],
+    "quickCheck": [
+      "Lot number on the COA matches the vial label",
+      "Purity method is named, not just a percentage",
+      "Identity result states expected vs. observed mass against C45H55N9O6",
+      "Salt form (free base vs. acetate) is stated",
+      "Testing laboratory and date are shown"
+    ]
+  },
+  "productSpecifications": {
+    "status": "PENDING_FIRST_PARTY_DATA",
+    "note": "The live catalog and COA archive had no GHRP-2 record at the time this page was written. Populate once confirmed.",
+    "fieldsToPopulate": [
+      "sku",
+      "vialSizes_netPeptideContent",
+      "purityPercent_and_method_perLot",
+      "formulation",
+      "batchLotNumber_and_coaLink",
+      "price_and_stockStatus",
+      "storageTemperature_documentedForThisLot"
+    ]
+  },
+  "complianceNotice": "GHRP-2 supplied by Veracue is intended solely for laboratory research. It is not a drug, cosmetic, dietary supplement, or food, and it is not intended to diagnose, treat, cure, or prevent any disease. It must not be administered to humans or animals. GHRP-2 is listed under Section S2.2.4 of the WADA Prohibited List and is prohibited in competitive sport at all times. The scientific information on this page describes published research and regulatory history and is not medical advice or a statement of efficacy or safety for any use outside an approved clinical setting. Purchasers are responsible for using this material lawfully and within an appropriate research setting.",
+  "faq": [
+    {
+      "question": "What is GHRP-2?",
+      "answer": "GHRP-2 is a synthetic hexapeptide, also known by its pharmaceutical name pralmorelin, that activates the ghrelin receptor (GHS-R1a) to stimulate growth hormone release. It is supplied here as a laboratory research material."
+    },
+    {
+      "question": "Is GHRP-2 the same as pralmorelin?",
+      "answer": "Yes. Pralmorelin is the International Nonproprietary Name for the compound research literature calls GHRP-2; KP-102 and GPA-748 are earlier development codes for the same molecule."
+    },
+    {
+      "question": "What is the difference between GHRP-2 and GHRP-6?",
+      "answer": "Both are hexapeptide GHS-R1a agonists from the same research lineage but with different sequences and different published hormonal effect profiles. No direct head-to-head human trial comparing them was identified in the literature reviewed for this page."
+    },
+    {
+      "question": "Is GHRP-2 approved as a medicine?",
+      "answer": "Only narrowly: Japan's PMDA approved it in 2004 as a single-dose diagnostic agent for growth hormone deficiency. It has no FDA approval and is not approved as a treatment anywhere."
+    },
+    {
+      "question": "What does GHRP-2 dosage mean in research literature?",
+      "answer": "Published studies report dose as an experimental variable — typically a body-weight-normalized intravenous bolus under controlled clinical conditions — used to characterize dose-response relationships or standardize a diagnostic test. That is not the same as a usable self-administration protocol."
+    },
+    {
+      "question": "Does GHRP-2 affect cortisol or prolactin?",
+      "answer": "Published human pharmacodynamic studies report that GHRP-2 produces a documented, slight-to-moderate stimulatory effect on ACTH, cortisol, and prolactin in addition to GH release. This is a reported pharmacodynamic property, not a personal safety guide."
+    },
+    {
+      "question": "What has GHRP-2 been studied for besides GH deficiency diagnosis?",
+      "answer": "A single published case report describes one year of intranasal GHRP-2 in one anorexia nervosa patient, with reported improvements in appetite, weight, and muscle strength. As a single case report, it is not evidence of a general treatment effect."
+    },
+    {
+      "question": "Is GHRP-2 legal for research purposes?",
+      "answer": "Regulatory status varies by jurisdiction and by intended use; GHRP-2 is separately prohibited by WADA for competitive athletes. This page does not provide legal advice — verify current regulations in your jurisdiction and institution."
+    },
+    {
+      "question": "What is the molecular weight and CAS number of GHRP-2?",
+      "answer": "GHRP-2 (C45H55N9O6) has a molecular weight of 817.99 g/mol and CAS number 158861-67-7."
+    },
+    {
+      "question": "What should a GHRP-2 Certificate of Analysis include?",
+      "answer": "At minimum: a matching lot number, a named purity method (typically HPLC), a mass spectrometry identity result stated against the correct salt form, net peptide content, and the testing laboratory's name and date."
+    },
+    {
+      "question": "How does GHRP-2 compare mechanistically to GHRH analogues like CJC-1295?",
+      "answer": "They act on different receptors — GHRP-2 on GHS-R1a, GHRH analogues on the GHRH receptor — that converge on GH release. Published data show combining the two classes produces a larger GH response than either alone."
+    },
+    {
+      "question": "What does \"Research Use Only\" mean for GHRP-2?",
+      "answer": "It means the material is intended strictly for laboratory and scientific research, not for human or veterinary administration, diagnosis, or treatment, and has not been evaluated by the FDA for safety or efficacy in those other contexts."
+    }
+  ],
+  "structuredData": {
+    "product": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "GHRP-2 (Pralmorelin)",
+      "alternateName": [
+        "Pralmorelin",
+        "KP-102",
+        "GPA-748",
+        "Growth Hormone Releasing Peptide-2"
+      ],
+      "description": "GHRP-2 (pralmorelin) is a synthetic hexapeptide GHS-R1a agonist supplied by Veracue as a Research Use Only laboratory material.",
+      "sku": "PENDING-FIRST-PARTY-DATA",
+      "category": "Growth Hormone Secretagogues",
+      "url": "https://veracue-peptides.vercel.app/product/ghrp-2",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "CAS Number",
+          "value": "158861-67-7"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Molecular Formula",
+          "value": "C45H55N9O6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Molecular Weight",
+          "value": "817.99 g/mol"
+        }
+      ],
+      "_note": "Do NOT publish with a fabricated 'offers' block. Add 'offers' only once price/SKU/availability are confirmed from first-party catalog data; a Product schema with no 'offers' is valid."
+    },
+    "breadcrumbList": {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://veracue-peptides.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Shop",
+          "item": "https://veracue-peptides.vercel.app/shop"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "GHRP-2",
+          "item": "https://veracue-peptides.vercel.app/product/ghrp-2"
+        }
+      ]
+    },
+    "faqPage": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is GHRP-2?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GHRP-2 is a synthetic hexapeptide, also known by its pharmaceutical name pralmorelin, that activates the ghrelin receptor (GHS-R1a) to stimulate growth hormone release. It is supplied here as a laboratory research material."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is GHRP-2 the same as pralmorelin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Pralmorelin is the International Nonproprietary Name for the compound research literature calls GHRP-2; KP-102 and GPA-748 are earlier development codes for the same molecule."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between GHRP-2 and GHRP-6?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both are hexapeptide GHS-R1a agonists from the same research lineage but with different sequences and different published hormonal effect profiles. No direct head-to-head human trial comparing them was identified in the reviewed literature."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is GHRP-2 approved as a medicine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only narrowly: Japan's PMDA approved it in 2004 as a single-dose diagnostic agent for growth hormone deficiency. It has no FDA approval and is not approved as a treatment anywhere."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does GHRP-2 dosage mean in research literature?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Published studies report dose as an experimental variable under controlled clinical conditions used to characterize dose-response relationships or standardize a diagnostic test — not a usable self-administration protocol."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does GHRP-2 affect cortisol or prolactin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Published human pharmacodynamic studies report that GHRP-2 produces a documented, slight-to-moderate stimulatory effect on ACTH, cortisol, and prolactin in addition to GH release."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What has GHRP-2 been studied for besides GH deficiency diagnosis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A single published case report describes one year of intranasal GHRP-2 in one anorexia nervosa patient, with reported improvements in appetite, weight, and muscle strength. It is not evidence of a general treatment effect."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is GHRP-2 legal for research purposes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Regulatory status varies by jurisdiction and intended use, and GHRP-2 is separately prohibited by WADA for competitive athletes. Verify current regulations in your jurisdiction and institution."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the molecular weight and CAS number of GHRP-2?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GHRP-2 (C45H55N9O6) has a molecular weight of 817.99 g/mol and CAS number 158861-67-7."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should a GHRP-2 Certificate of Analysis include?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A matching lot number, a named purity method, a mass spectrometry identity result stated against the correct salt form, net peptide content, and the testing laboratory's name and date."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does GHRP-2 compare mechanistically to GHRH analogues like CJC-1295?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They act on different receptors — GHRP-2 on GHS-R1a, GHRH analogues on the GHRH receptor — that converge on GH release, and published data show combining the two classes produces a larger GH response than either alone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does Research Use Only mean for GHRP-2?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It means the material is intended strictly for laboratory and scientific research, not for human or veterinary administration, diagnosis, or treatment, and has not been evaluated by the FDA for safety or efficacy in those other contexts."
+          }
+        }
+      ]
+    }
+  },
+  "internalLinking": {
+    "confirmedLive": [
+      {
+        "url": "/shop?category=Growth%20Hormone%20Secretagogues",
+        "label": "Growth Hormone Secretagogues category"
+      },
+      {
+        "url": "/certificates",
+        "label": "COA archive"
+      },
+      {
+        "url": "/peptide-calculator",
+        "label": "Peptide calculator"
+      },
+      {
+        "url": "/faq",
+        "label": "Site FAQ"
+      },
+      {
+        "url": "/contact-us",
+        "label": "Contact"
+      }
+    ],
+    "notYetLive_doNotLinkUntilConfirmed": [
+      "/product/ghrp-6",
+      "/product/ipamorelin",
+      "/product/cjc-1295",
+      "/product/hexarelin",
+      "/product/sermorelin"
+    ]
+  },
+  "sources": [
+    {
+      "id": 1,
+      "citation": "Wikipedia, \"Pralmorelin\" (pharmacology infobox: CAS, formula, MW, sequence, InChIKey; regulatory/clinical history)",
+      "url": "https://en.wikipedia.org/wiki/Pralmorelin"
+    },
+    {
+      "id": 2,
+      "citation": "Adis Editorial (2004). \"Pralmorelin: GHRP 2, GPA 748, growth hormone-releasing peptide 2, KP-102 D, KP-102 LN.\" Drugs in R&D 5(4):236–239.",
+      "pmid": "15230633"
+    },
+    {
+      "id": 3,
+      "citation": "Furuta S, et al. (2004). \"General pharmacology of KP-102 (GHRP-2), a potent growth hormone-releasing peptide.\" Arzneimittel-Forschung 54(12):868–880.",
+      "pmid": "15646371"
+    },
+    {
+      "id": 4,
+      "citation": "Arvat E, et al. (1997). \"Effects of GHRP-2 and hexarelin ... on GH, prolactin, ACTH and cortisol levels in man.\"",
+      "pmid": "9285939"
+    },
+    {
+      "id": 5,
+      "citation": "Haruta I, et al. (2015). \"One-year intranasal application of growth hormone releasing peptide-2 improves body weight and hypoglycemia in a severely emaciated anorexia nervosa patient.\" J Cachexia Sarcopenia Muscle 6(3):237–241.",
+      "pmid": "26401470"
+    },
+    {
+      "id": 6,
+      "citation": "World Anti-Doping Agency, Prohibited List, Section S2.2.4",
+      "url": "https://www.wada-ama.org/en/prohibited-list"
+    },
+    {
+      "id": 7,
+      "citation": "ClinicalTrials.gov protocol documents (NCT03874013, NCT04615273) — GHRP-2 diagnostic-test GH cutoff values"
+    },
+    {
+      "id": 8,
+      "citation": "Determination of GHRP-2 and metabolite in human urine by LC-MS/MS (doping-control detection method)",
+      "pmid": "20552695"
+    },
+    {
+      "id": 9,
+      "citation": "Wikipedia, \"Ipamorelin\" — comparative pharmacology reference",
+      "url": "https://en.wikipedia.org/wiki/Ipamorelin"
+    },
+    {
+      "id": 10,
+      "citation": "PubChem CID 6852372 / 5493556 — molecular identity cross-reference"
+    },
+    {
+      "id": 11,
+      "citation": "Veracue site content fetched directly (homepage, /product/ahk-cu, /shop?category=Growth%20Hormone%20Secretagogues) for house style, taxonomy, and confirmed live URLs"
+    }
+  ],
+  "implementationNote": "No repo or CMS write access was available for this brief, so this JSON is the full content payload — not a strategy doc — structured to map directly onto the fields your existing product-page template already uses (confirmed by fetching the live /product/ahk-cu page). Share repo/CMS access to go further and generate the actual component/entry."
+}

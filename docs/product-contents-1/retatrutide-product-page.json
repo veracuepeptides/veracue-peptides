@@ -1,0 +1,964 @@
+{
+  "meta": {
+    "route": "/product/retatrutide",
+    "pageType": "product",
+    "compliance": "Research Use Only",
+    "lastReviewed": "2026-09-25",
+    "language": "en-US",
+    "note": "Customer-facing content only. Veracue product fields not publicly specified on the current product information (SKU, sizes, price, stock, form, purity, lot results) are intentionally absent and must come from Veracue first-party data."
+  },
+  "seo": {
+    "title": "Retatrutide Research Peptide (LY3437943) | Veracue",
+    "metaDescription": "Retatrutide (LY3437943), a GIP, GLP-1 and glucagon triple agonist, for lab research: molecular identity, published trials, vs tirzepatide, and COA checks.",
+    "alternateTitle": "Retatrutide Peptide (LY3437943) for Research | Veracue",
+    "canonicalUrl": "https://veracue-peptides.vercel.app/product/retatrutide",
+    "canonicalNote": "Uses the current site host. Swap to the production domain at launch and keep canonical, og:url and schema URLs identical.",
+    "robots": "index,follow",
+    "openGraph": {
+      "type": "website",
+      "url": "https://veracue-peptides.vercel.app/product/retatrutide",
+      "siteName": "Veracue Peptides",
+      "title": "Retatrutide Research Peptide (LY3437943) | Veracue",
+      "description": "Molecular identity, receptor pharmacology, published research context and COA guidance for retatrutide (LY3437943). Research use only."
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Retatrutide Research Peptide (LY3437943) | Veracue",
+      "description": "Molecular identity, receptor pharmacology, published research context and COA guidance for retatrutide (LY3437943). Research use only."
+    },
+    "primaryKeyword": "retatrutide peptide",
+    "coPrimaryKeyword": "retatrutide research peptide",
+    "secondaryKeywords": [
+      "retatrutide",
+      "LY3437943",
+      "what is retatrutide",
+      "retatrutide molecular weight",
+      "retatrutide sequence",
+      "retatrutide research",
+      "retatrutide COA",
+      "retatrutide clinical trials",
+      "retatrutide vs tirzepatide",
+      "retatrutide vs semaglutide",
+      "retatrutide side effects",
+      "retatrutide dosage",
+      "is retatrutide a peptide",
+      "reta peptide",
+      "triple receptor agonist"
+    ],
+    "entityTerms": [
+      "Retatrutide",
+      "LY3437943",
+      "GIPR",
+      "GLP-1R",
+      "GCGR",
+      "GIP",
+      "GLP-1",
+      "glucagon",
+      "triple receptor agonist",
+      "lipid-conjugated peptide",
+      "C20 fatty diacid",
+      "metabolic research",
+      "obesity research",
+      "type 2 diabetes research",
+      "TRIUMPH",
+      "TRANSCEND-T2D-1"
+    ],
+    "imageAltText": {
+      "primary": "Veracue research peptide vial, catalog image",
+      "note": "Use only if the image shows a Veracue vial. Do not describe a generic vial as retatrutide material unless a verified retatrutide product image exists."
+    },
+    "suggestedInternalAnchorText": [
+      "retatrutide research peptide",
+      "Retatrutide (LY3437943)",
+      "retatrutide molecular weight and identity",
+      "how to read a retatrutide COA"
+    ]
+  },
+  "hero": {
+    "h1": "Retatrutide Peptide",
+    "subtitle": "LY3437943 · Investigational GIP, GLP-1 and Glucagon Receptor Agonist",
+    "badge": "Research Use Only",
+    "shortDescription": "Retatrutide (LY3437943) is an investigational peptide conjugated to a C20 fatty diacid, designed to activate the GIP, GLP-1 and glucagon receptors from a single molecule. Veracue supplies it as a research material for laboratory work. The most directly relevant peer-reviewed evidence comes from Phase 2 and Phase 3 clinical trials (Jastreboff et al., 2023; Bajaj et al., 2026), while the TRIUMPH topline results are company announcements. No regulator has approved retatrutide, and clinical findings do not establish the specifications, efficacy or safety of this research material.",
+    "intro": "Retatrutide (LY3437943) is an investigational lipid-conjugated peptide designed to activate the GIP, GLP-1 and glucagon receptors from a single molecule. Its three-receptor profile has made it a major subject of metabolic research. This page brings together the molecule’s identity, published evidence and practical documentation points for evaluating retatrutide as a laboratory research material."
+  },
+  "aeoAnswer": {
+    "heading": "What is Retatrutide?",
+    "answer": "Retatrutide, also known as LY3437943, is an investigational synthetic peptide designed to activate three receptors from one molecule: the GIP receptor (GIPR), the GLP-1 receptor (GLP-1R) and the glucagon receptor (GCGR). It has been studied in clinical trials for obesity and type 2 diabetes and remains an unapproved investigational compound. Veracue offers retatrutide as a research material for laboratory use only."
+  },
+  "productSnapshot": {
+    "heading": "Retatrutide at a Glance",
+    "rows": [
+      [
+        "Product name",
+        "Retatrutide"
+      ],
+      [
+        "Development name",
+        "LY3437943 (also written LY-3437943)"
+      ],
+      [
+        "Molecular class",
+        "39-amino-acid peptide conjugated to a C20 fatty diacid"
+      ],
+      [
+        "Receptor targets",
+        "GIPR, GLP-1R and GCGR (agonist activity)"
+      ],
+      [
+        "Lipid attachment",
+        "C20 fatty diacid through a linker at lysine 17"
+      ],
+      [
+        "Molecular formula",
+        "C221H342N46O68"
+      ],
+      [
+        "Molecular weight (average)",
+        "About 4,731 g/mol"
+      ],
+      [
+        "Monoisotopic mass",
+        "About 4,728.47 Da"
+      ],
+      [
+        "CAS Registry Number",
+        "2381089-83-2"
+      ],
+      [
+        "Development status",
+        "Investigational"
+      ]
+    ],
+    "footnote": "Formula from the PubChem record (CID 171390338); masses calculated from that formula. CAS number as listed in chemical databases.",
+    "productDocumentation": "Physical form, salt/counterion, purity, lot results and storage: Not publicly specified on the current Veracue product information. Request lot documentation through the contact page.",
+    "refIds": [
+      1,
+      2,
+      3
+    ]
+  },
+  "molecularIdentity": {
+    "heading": "Molecular Identity",
+    "subsections": [
+      {
+        "h3": "Names and identifiers",
+        "text": "Retatrutide is the nonproprietary name for LY3437943, also written LY-3437943, Eli Lilly’s development code. Both names describe the same molecule, which is catalogued in PubChem and the IUPHAR/BPS Guide to PHARMACOLOGY. You may also see ‘reta’ and ‘GLP-3’ in search results. Both are informal, and Lilly describes ‘GLP-3’ as a scientifically inaccurate nickname, so this page mentions it only to help readers searching under that term."
+      },
+      {
+        "h3": "Peptide and lipid architecture",
+        "text": "Retatrutide is built on a 39-amino-acid peptide backbone engineered from a GIP sequence. A few non-standard residues contribute to enzymatic stability and receptor activity. A C20 fatty diacid is attached through a linker at lysine 17, and it supports albumin binding, which shapes how long the molecule remains in circulation in biological systems. The Cell Metabolism discovery paper shows the structure for readers who want the residue-level sequence."
+      },
+      {
+        "h3": "One molecule, three receptor systems",
+        "text": "This is the central identity point. Retatrutide is one engineered molecule, not a mixture of three separate peptides or hormones. Preclinical receptor studies showed a distinct balance of activity across GIPR, GLP-1R and GCGR, with greater relative activity at GIPR than at GLP-1R or GCGR in the reported assay system."
+      }
+    ],
+    "refIds": [
+      1,
+      2,
+      3,
+      12
+    ]
+  },
+  "researchContext": {
+    "heading": "Research Context",
+    "subsections": [
+      {
+        "h3": "Established receptor pharmacology",
+        "label": "Established",
+        "text": "In receptor and cell-based studies, retatrutide activates GIPR, GLP-1R and GCGR. These receptors sit within a wider metabolic signaling network that includes insulin secretion, appetite regulation, gastric emptying and energy balance."
+      },
+      {
+        "h3": "Proposed biological rationale",
+        "label": "Hypothesis",
+        "text": "Researchers have proposed that combining the three activities in one molecule may influence energy intake, energy expenditure and glucose handling differently from single- or dual-receptor approaches. The glucagon receptor is the most interesting addition, because glucagon is traditionally associated with raising blood glucose. How the three signals interact is still being worked out, so these ideas remain hypotheses."
+      },
+      {
+        "h3": "Clinical evidence",
+        "label": "Observed in trials",
+        "text": "What human trials have observed is summarized in the next section, separately from the mechanistic ideas above."
+      }
+    ],
+    "refIds": [
+      3
+    ]
+  },
+  "evidence": {
+    "heading": "What the Research Has Reported",
+    "tiers": [
+      {
+        "tier": "Discovery and preclinical",
+        "sourceType": "Peer-reviewed",
+        "date": "2022",
+        "text": "The Cell Metabolism discovery paper (Coskun et al.) describes the molecule’s design, its activity at the three receptors in cell-based assays, animal studies in obesity models and a first-in-human study.",
+        "refIds": [
+          3
+        ]
+      },
+      {
+        "tier": "Phase 1",
+        "sourceType": "Peer-reviewed",
+        "date": "2022",
+        "text": "Phase 1 work covered single ascending doses in 45 healthy adults and a 12-week study in people with type 2 diabetes (Urva et al., The Lancet). Gastrointestinal events were the most common adverse findings, and the half-life reported in healthy adults was roughly 5 to 7 days.",
+        "refIds": [
+          3,
+          4
+        ]
+      },
+      {
+        "tier": "Phase 2",
+        "sourceType": "Peer-reviewed",
+        "date": "2023",
+        "text": "In the NEJM trial (Jastreboff et al.), 338 adults with obesity or overweight received retatrutide or placebo for 48 weeks. Body weight fell substantially and in a dose-dependent way; in the highest-dose group the mean change was 24.2% versus 2.1% with placebo. A separate Lancet Phase 2 trial (Rosenstock et al.) studied people with type 2 diabetes.",
+        "refIds": [
+          5,
+          6
+        ]
+      },
+      {
+        "tier": "Phase 3: peer-reviewed",
+        "sourceType": "Peer-reviewed",
+        "date": "2026",
+        "text": "TRANSCEND-T2D-1 (Bajaj et al., The Lancet) was a 40-week, placebo-controlled trial in adults with type 2 diabetes not adequately controlled by diet and exercise. Retatrutide produced significant reductions in HbA1c and fasting glucose versus placebo.",
+        "refIds": [
+          7
+        ]
+      }
+    ],
+    "currentPhase3": {
+      "h3": "Current Phase 3 development",
+      "text": "By 2026, Lilly had reported positive topline results from multiple Phase 3 TRIUMPH studies in obesity and related metabolic populations. These are company announcements, not peer-reviewed publications, and no full TRIUMPH papers had been identified as of September 25, 2026.",
+      "columns": [
+        "Trial",
+        "Population",
+        "Duration",
+        "Evidence status"
+      ],
+      "rows": [
+        [
+          "TRIUMPH-4",
+          "Obesity with knee osteoarthritis",
+          "68 weeks",
+          "Company announcement, Dec 2025"
+        ],
+        [
+          "TRIUMPH-1",
+          "Obesity or overweight without diabetes",
+          "80 weeks",
+          "Company announcement, May 2026"
+        ],
+        [
+          "TRIUMPH-2",
+          "Type 2 diabetes with obesity or overweight",
+          "80 weeks",
+          "Company announcement, Jul 2026"
+        ],
+        [
+          "TRIUMPH-3",
+          "Severe obesity with cardiovascular disease",
+          "80 weeks",
+          "Company announcement, Jul 2026"
+        ]
+      ],
+      "refIds": [
+        8,
+        9
+      ]
+    },
+    "regulatoryStatus": {
+      "h3": "Regulatory status",
+      "text": "Retatrutide remains investigational; Phase 3 development has progressed, but regulatory approval has not been granted. Lilly has announced plans for a regulatory submission, and a planned submission is not an approval.",
+      "refIds": [
+        9
+      ]
+    },
+    "adverseEvents": {
+      "h3": "What have clinical studies reported about side effects?",
+      "text": "Clinical studies have reported gastrointestinal adverse events among the more common findings, while dysesthesia was also reported more frequently than placebo in the Phase 3 topline reports. Frequency and severity varied by study and dose. These observations describe the investigational clinical program and should not be treated as a safety characterization of a separate research-material lot.",
+      "refIds": [
+        5,
+        9
+      ]
+    }
+  },
+  "problemSolutions": [
+    {
+      "number": 1,
+      "heading": "How do I confirm that the material is actually Retatrutide?",
+      "problem": "Retatrutide can appear under several names and development codes, while related lipidated peptides can look similar in product catalogs. A name on a label tells you what a material is called, not what it is.",
+      "practicalAnswer": "Identity comes from analytical data compared with a defined reference. For retatrutide, the reference is the published structure and the PubChem record: a 39-amino-acid peptide conjugated to a C20 fatty diacid, formula C221H342N46O68. Mass spectrometry can support that match by showing an intact mass consistent with the reference. A clean chromatography peak cannot do the same job. It shows that a sample is uniform, not what the molecule is. Names such as ‘reta’ and ‘GLP-3’ are search shorthand, not analytical identifiers.",
+      "researcherTakeaway": "Name is not analytical identity. Ask which reference and which method a report used.",
+      "refIds": [
+        1,
+        3
+      ]
+    },
+    {
+      "number": 2,
+      "heading": "How is Retatrutide different from GLP-1-only and dual-agonist peptides?",
+      "problem": "Incretin peptides are often grouped together, which hides real differences in receptor biology and molecular design.",
+      "practicalAnswer": "A GLP-1 receptor agonist such as semaglutide acts at one receptor. A GIP/GLP-1 dual agonist such as tirzepatide acts at two. Retatrutide adds the glucagon receptor to GIP and GLP-1 activity in a single molecule. All three are lipidated peptides, so the differences lie in sequence, receptor profile and research history rather than in the presence of a fatty diacid. Semaglutide and tirzepatide appear here only as scientific comparators, and their trials used different populations and designs.",
+      "researcherTakeaway": "Compare receptor profile, molecular design and study context, not headline numbers.",
+      "refIds": [
+        10,
+        11
+      ]
+    },
+    {
+      "number": 3,
+      "heading": "What does the fatty-acid conjugation actually mean?",
+      "problem": "‘Peptide’ suggests a plain chain of amino acids. Retatrutide also carries a lipid, and it helps to know what that adds.",
+      "practicalAnswer": "NEJM describes retatrutide as a single peptide conjugated to a fatty diacid. In the Cell Metabolism paper, a C20 fatty diacid is attached through a linker at lysine 17. The lipid supports reversible binding to albumin, a common strategy for longer circulation and sustained exposure. It also makes the molecule more hydrophobic, which is worth remembering when interpreting analytical data. None of this is a handling or preparation instruction; it describes how the molecule was designed.",
+      "researcherTakeaway": "The lipid is part of the molecule’s identity, not an accessory.",
+      "refIds": [
+        3,
+        5
+      ]
+    },
+    {
+      "number": 4,
+      "heading": "What do GIP, GLP-1 and glucagon receptor activity each contribute?",
+      "problem": "It is tempting to give each receptor a single job. Real metabolic signaling is more interconnected.",
+      "practicalAnswer": "In receptor biology, GLP-1R and GIPR are both linked to glucose-dependent insulin secretion, and GLP-1R signaling is also linked to slower gastric emptying. The glucagon receptor is mainly known for glucagon’s role in glucose and energy metabolism. The hypothesis behind combining them is simple. The three signals together may influence intake, energy expenditure and glucose handling in ways single-receptor approaches do not. What clinical trials actually observed is a separate question, covered in the evidence section.",
+      "researcherTakeaway": "Keep receptor biology, mechanistic hypotheses and clinical outcomes in separate boxes.",
+      "refIds": [
+        3,
+        5
+      ]
+    },
+    {
+      "number": 5,
+      "heading": "Why is Retatrutide called a triple agonist?",
+      "problem": "‘Triple agonist’ can sound like three drugs combined.",
+      "practicalAnswer": "Triple agonist describes the receptor profile of one molecule; it does not mean a three-peptide mixture. Retatrutide is a single engineered peptide with a lipid attached, and its activity at GIPR, GLP-1R and GCGR comes from that one structure. A mixture of separate peptides would behave differently, because each component would have its own exposure and stability. Lilly likewise describes retatrutide as a single molecule that activates the receptors for GIP, GLP-1 and glucagon. Preclinical studies treat the three-receptor activity as a property of the intact molecule, so it is discussed as one research subject rather than a combination.",
+      "researcherTakeaway": "‘Triple’ counts receptors, not ingredients.",
+      "refIds": [
+        9
+      ]
+    },
+    {
+      "number": 6,
+      "heading": "What does the human clinical literature actually show?",
+      "problem": "Retatrutide now has evidence from several development phases, and online summaries often blend peer-reviewed papers with press releases.",
+      "practicalAnswer": "Peer-reviewed evidence includes the Phase 1 studies published in 2022, the 2023 NEJM Phase 2 obesity trial, the 2023 Lancet Phase 2 trial in type 2 diabetes and the 2026 Lancet Phase 3 trial TRANSCEND-T2D-1. Results from the TRIUMPH program in 2025 and 2026 are company-reported topline announcements, and full peer-reviewed papers had not been identified as of September 25, 2026. All of these findings describe an investigational clinical program, not the properties of any research material.",
+      "researcherTakeaway": "Label every finding as peer-reviewed or company-reported before citing it.",
+      "refIds": [
+        4,
+        5,
+        6,
+        7,
+        9
+      ]
+    },
+    {
+      "number": 7,
+      "heading": "Why do Retatrutide searches focus so heavily on weight loss?",
+      "problem": "Weight loss dominates retatrutide search behavior, which can tempt a product page to turn interest into a claim.",
+      "practicalAnswer": "The pattern is easy to explain. Obesity is a major focus of retatrutide’s clinical-development program, and the headline trial results drew wide public attention in 2025 and 2026, so search interest follows. Those results come from an investigational medicine studied in defined populations under clinical supervision. This page reports them with their source and study type and makes no claim about the research material it describes. Readers who want detail can follow the cited studies.",
+      "researcherTakeaway": "Search interest reflects the clinical program, not the properties of a research lot.",
+      "refIds": [
+        9
+      ]
+    },
+    {
+      "number": 8,
+      "heading": "What do ‘Retatrutide dosage’ and ‘Retatrutide peptide dosage’ searches actually mean?",
+      "problem": "‘Dosage’ is one of the most common words searched next to retatrutide, but a research-material page is not the place to answer it.",
+      "practicalAnswer": "Dosage terminology comes largely from clinical-trial literature, where investigators describe study regimens, and from public search behavior around consumer use. Neither belongs here. Veracue’s retatrutide material is for laboratory research only, and this page does not provide dosing, administration or preparation guidance. Trial documents describe supervised investigational programs, which is a different setting from laboratory research. Readers who want to understand how a trial was designed can consult the primary publications in the references.",
+      "researcherTakeaway": "A dose in a trial report describes that study, not a research material.",
+      "refIds": [
+        5
+      ]
+    },
+    {
+      "number": 9,
+      "heading": "How should I distinguish Retatrutide from semaglutide and tirzepatide?",
+      "problem": "The three molecules are often compared as if they were interchangeable.",
+      "practicalAnswer": "The table places them side by side on molecular facts and development status only. It does not rank them. Semaglutide and tirzepatide are approved pharmaceutical products; that status belongs to those molecules and does not carry over to retatrutide. Comparisons across separate trials are also unreliable, because populations, durations and methods differ. The main scientific distinction is receptor profile: one, two or three targets. Only a purpose-built head-to-head study can compare two molecules on a defined outcome.",
+      "researcherTakeaway": "Use each molecule’s own literature, and keep approval status with the molecule it belongs to.",
+      "refIds": [
+        10,
+        11
+      ],
+      "table": {
+        "columns": [
+          "Molecule",
+          "Receptor profile",
+          "Molecular design",
+          "Status"
+        ],
+        "rows": [
+          [
+            "Retatrutide",
+            "GIPR, GLP-1R, GCGR",
+            "Lipid-conjugated peptide",
+            "Investigational"
+          ],
+          [
+            "Tirzepatide",
+            "GIPR, GLP-1R",
+            "Lipid-conjugated peptide",
+            "Approved pharmaceutical"
+          ],
+          [
+            "Semaglutide",
+            "GLP-1R",
+            "Lipid-conjugated peptide",
+            "Approved pharmaceutical"
+          ]
+        ]
+      }
+    },
+    {
+      "number": 10,
+      "heading": "What should I look for on a Retatrutide COA?",
+      "problem": "A certificate of analysis is only useful if you know what each line can and cannot show.",
+      "practicalAnswer": "Depending on the testing program, a lot-specific COA may include a product identifier, lot number, test date, analytical method, identity result, purity or assay value, an acceptance criterion and the testing laboratory. The COA section below maps each item to what it supports. Two points matter most for a lipidated peptide: the identity result should say what it was matched against, and the purity value should name its method. It also helps to confirm that the report refers to the lot in hand.",
+      "researcherTakeaway": "Read a COA for method, lot and identity basis, not just the percentage."
+    },
+    {
+      "number": 11,
+      "heading": "How should I interpret Retatrutide mass-spectrometry data?",
+      "problem": "A single mass number appears on many listings, and it is easy to compare it with the wrong thing.",
+      "practicalAnswer": "A calculated molecular mass and an LC-MS m/z value are not automatically the same number. Average molecular weight and monoisotopic mass are both calculated from the formula and differ slightly. An instrument, by contrast, usually reports m/z for multiply charged ions. An observed peak therefore has to be read alongside its charge state, any adducts and the deconvolution method. A figure quoted without those details cannot be checked.",
+      "researcherTakeaway": "Ask which m/z values, charge states and processing method sit behind a mass claim."
+    },
+    {
+      "number": 12,
+      "heading": "What can a Veracue Retatrutide product page establish, and what requires lot-specific documentation?",
+      "problem": "A product page can read like a guarantee, but the material in a vial is a specific lot.",
+      "practicalAnswer": "Identity, purity, physical form and storage details belong to the lot record, and a report for one lot does not describe another lot, even for the same compound. Clinical-trial results sit further away still, because they describe the sponsor’s investigational program. The certificate page explains how to request lot documentation. The product page provides molecular and research context; lot-specific documentation provides the analytical results reported for that particular material.",
+      "researcherTakeaway": "Use the page to understand the molecule and the lot record to understand the material."
+    }
+  ],
+  "comparisons": {
+    "heading": "Retatrutide vs Related Incretin-Based Research Compounds",
+    "intro": "All three are lipidated peptides. Approval status stays with the molecule it belongs to.",
+    "columns": [
+      "Molecule",
+      "Receptor activity",
+      "Molecular design",
+      "Development status"
+    ],
+    "rows": [
+      [
+        "Retatrutide",
+        "GIPR + GLP-1R + GCGR",
+        "39-residue peptide conjugated to a C20 fatty diacid",
+        "Investigational"
+      ],
+      [
+        "Tirzepatide",
+        "GIPR + GLP-1R",
+        "39-residue peptide conjugated to a C20 fatty diacid",
+        "Approved pharmaceutical"
+      ],
+      [
+        "Semaglutide",
+        "GLP-1R",
+        "31-residue GLP-1 analogue conjugated to a C18 fatty diacid",
+        "Approved pharmaceutical"
+      ]
+    ],
+    "refIds": [
+      3,
+      10,
+      11
+    ]
+  },
+  "coa": {
+    "heading": "How to Read a Retatrutide COA",
+    "intro": "Certificates vary between laboratories and testing programs, so treat this as what a COA may include rather than a fixed checklist.",
+    "columns": [
+      "COA item",
+      "What it helps establish"
+    ],
+    "rows": [
+      [
+        "Product name / identifier",
+        "What material the report refers to"
+      ],
+      [
+        "Lot number",
+        "Links the report to a specific batch"
+      ],
+      [
+        "Identity method",
+        "How identity was assessed"
+      ],
+      [
+        "MS / mass result",
+        "Supports molecular identity"
+      ],
+      [
+        "HPLC or other purity method",
+        "Reports analytical purity under the stated method"
+      ],
+      [
+        "Test date",
+        "Establishes when testing occurred"
+      ],
+      [
+        "Laboratory",
+        "Identifies who performed the analysis"
+      ],
+      [
+        "Specification / acceptance criterion",
+        "Provides context for the reported result"
+      ]
+    ],
+    "closing": "HPLC alone does not prove identity, and mass spectrometry alone does not prove purity. If a lot-specific certificate is available, use it as the primary source for that lot’s reported analytical results. The certificate page explains how to request lot documentation."
+  },
+  "analyticalNotes": {
+    "heading": "Analytical Note",
+    "text": "Retatrutide is a lipid-conjugated peptide: a 39-residue backbone carrying a C20 fatty diacid through a linker. Its calculated molecular weight (about 4,731 g/mol average, about 4,728.47 Da monoisotopic, from the PubChem formula) is not the same as an observed LC-MS m/z value, because instruments typically report multiply charged ions and adducts can shift peaks. Confirm the charge state and processing method, and check that the method detected the intact conjugate rather than a fragment. Finally, identity and purity are separate questions. Mass data speak to what a material is, while chromatographic purity speaks to how much of the detected signal belongs to a single component. A mass quoted without its method is therefore hard to verify.",
+    "refIds": [
+      1
+    ]
+  },
+  "whatRetatrutideIsNot": {
+    "heading": "What Retatrutide Is Not",
+    "items": [
+      "Not semaglutide, tirzepatide or liraglutide.",
+      "Not a physical mixture of three hormones.",
+      "Not an approved medicine simply because it has entered Phase 3.",
+      "Not a consumer supplement."
+    ]
+  },
+  "researchVsPharmaceutical": {
+    "heading": "Research Material vs Clinical-Development Material",
+    "paragraphs": [
+      "Retatrutide has been studied in human clinical trials under the sponsor’s controls and defined protocols.",
+      "Clinical research establishes findings about the investigational program; it does not establish the specifications of a separate commercial research lot.",
+      "Veracue’s research material should therefore be evaluated on its own lot documentation rather than assumed identical to trial material."
+    ]
+  },
+  "faq": [
+    {
+      "question": "What is Retatrutide?",
+      "answer": "Retatrutide (LY3437943) is an investigational synthetic peptide that activates the GIP, GLP-1 and glucagon receptors from a single molecule. It has been studied in obesity and type 2 diabetes but has not been approved by a regulatory agency."
+    },
+    {
+      "question": "What is LY3437943?",
+      "answer": "LY3437943 is Eli Lilly’s development code for retatrutide, also written LY-3437943. Both names refer to the same molecule."
+    },
+    {
+      "question": "Is Retatrutide a peptide?",
+      "answer": "Yes. Retatrutide has a 39-amino-acid peptide backbone conjugated to a C20 fatty diacid, so it is a lipid-conjugated peptide rather than a plain peptide chain."
+    },
+    {
+      "question": "Why is Retatrutide called a triple agonist?",
+      "answer": "Because one molecule activates three receptors: GIPR, GLP-1R and GCGR. The term describes the receptor profile of a single peptide, not a mixture of three."
+    },
+    {
+      "question": "Which receptors does Retatrutide target?",
+      "answer": "The glucose-dependent insulinotropic polypeptide receptor (GIPR), the glucagon-like peptide-1 receptor (GLP-1R) and the glucagon receptor (GCGR). Preclinical assays showed a distinct balance of activity across the three."
+    },
+    {
+      "question": "How is Retatrutide different from semaglutide?",
+      "answer": "Semaglutide is a GLP-1 receptor agonist and an approved pharmaceutical product. Retatrutide acts at three receptors, has a different sequence and lipid, and remains investigational."
+    },
+    {
+      "question": "How is Retatrutide different from tirzepatide?",
+      "answer": "Tirzepatide is an approved dual GIP/GLP-1 receptor agonist. Retatrutide adds glucagon receptor activity and remains investigational. Separate trials are not head-to-head comparisons."
+    },
+    {
+      "question": "What does current research show about Retatrutide?",
+      "answer": "Peer-reviewed Phase 2 trials (NEJM and The Lancet, 2023) and a 2026 Phase 3 trial in type 2 diabetes (TRANSCEND-T2D-1, The Lancet) have been published. Lilly has also reported positive topline results from TRIUMPH Phase 3 studies, which are company announcements rather than peer-reviewed papers."
+    },
+    {
+      "question": "Why do people search for Retatrutide weight loss?",
+      "answer": "Obesity is a major focus of retatrutide’s clinical development, so search interest follows. Published results describe an investigational medicine in defined study populations, not any research material."
+    },
+    {
+      "question": "What should a Retatrutide COA show?",
+      "answer": "A lot-specific COA may include a product identifier, lot number, test date, method, identity result, purity value, acceptance criterion and laboratory. The identity result should say what it was matched against, and the purity value should name its method."
+    },
+    {
+      "question": "How should Retatrutide mass-spectrometry results be interpreted?",
+      "answer": "A calculated mass and an observed m/z value are not automatically the same number. Check the charge state, adducts and deconvolution method first, and remember that mass data speak to identity, not purity."
+    },
+    {
+      "question": "Does Veracue provide Retatrutide dosing or administration instructions?",
+      "answer": "No. Veracue’s retatrutide material is offered for laboratory research use only, and this page does not provide dosing, administration or consumer-use guidance."
+    }
+  ],
+  "references": [
+    {
+      "id": 1,
+      "type": "Chemical record",
+      "citation": "PubChem. Retatrutide (CID 171390338). National Library of Medicine.",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/Retatrutide"
+    },
+    {
+      "id": 2,
+      "type": "Pharmacology database",
+      "citation": "IUPHAR/BPS Guide to PHARMACOLOGY. Retatrutide, ligand ID 13769 (free registration required).",
+      "url": "https://www.guidetopharmacology.org/GRAC/LigandDisplayForward?ligandId=13769"
+    },
+    {
+      "id": 3,
+      "type": "Peer-reviewed",
+      "citation": "Coskun T, Urva S, Roell WC, et al. LY3437943, a novel triple glucagon, GIP, and GLP-1 receptor agonist for glycemic control and weight loss: from discovery to clinical proof of concept. Cell Metab. 2022;34(9):1234-1247.e9.",
+      "url": "https://doi.org/10.1016/j.cmet.2022.07.013"
+    },
+    {
+      "id": 4,
+      "type": "Peer-reviewed",
+      "citation": "Urva S, Coskun T, Loh MT, et al. LY3437943, a novel triple GIP, GLP-1, and glucagon receptor agonist in people with type 2 diabetes: a phase 1b, multicentre, double-blind, placebo-controlled, randomised, multiple-ascending dose trial. Lancet. 2022;400(10366):1869-1881.",
+      "url": "https://doi.org/10.1016/S0140-6736(22)02033-5"
+    },
+    {
+      "id": 5,
+      "type": "Peer-reviewed",
+      "citation": "Jastreboff AM, Kaplan LM, Frías JP, et al. Triple-hormone-receptor agonist retatrutide for obesity: a phase 2 trial. N Engl J Med. 2023;389(6):514-526.",
+      "url": "https://doi.org/10.1056/NEJMoa2301972"
+    },
+    {
+      "id": 6,
+      "type": "Peer-reviewed",
+      "citation": "Rosenstock J, Frias J, Jastreboff AM, et al. Retatrutide, a GIP, GLP-1 and glucagon receptor agonist, for people with type 2 diabetes: a randomised, double-blind, placebo and active-controlled, parallel-group, phase 2 trial conducted in the USA. Lancet. 2023;402(10401):529-544.",
+      "url": "https://doi.org/10.1016/S0140-6736(23)01053-X"
+    },
+    {
+      "id": 7,
+      "type": "Peer-reviewed",
+      "citation": "Bajaj HS, Welch M, Shah P, et al. Efficacy and safety of retatrutide, a GIP, GLP-1, and glucagon receptor agonist, in people with type 2 diabetes and inadequate glycaemic control with diet and exercise (TRANSCEND-T2D-1): a double-blind, randomised, phase 3 trial. Lancet. 2026;407(10546):2402-2413.",
+      "url": "https://doi.org/10.1016/S0140-6736(26)00967-0"
+    },
+    {
+      "id": 8,
+      "type": "Trial registry",
+      "citation": "ClinicalTrials.gov. TRIUMPH-1 (NCT05929066); TRIUMPH-2 (NCT05929079); TRIUMPH-3 (NCT05882045); TRIUMPH-4 (NCT05931367). Sponsor: Eli Lilly and Company.",
+      "url": "https://clinicaltrials.gov/study/NCT05929066"
+    },
+    {
+      "id": 9,
+      "type": "Company announcements (not peer-reviewed)",
+      "citation": "Eli Lilly and Company. Topline results announcements: TRIUMPH-4 (December 11, 2025), TRIUMPH-1 (May 21, 2026), TRIUMPH-2 and TRIUMPH-3 (July 23, 2026). Eli Lilly and Company. What to know about retatrutide (2026).",
+      "url": "https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-successful-two-additional",
+      "additionalUrls": [
+        "https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-delivered-powerful-weight-loss",
+        "https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-delivered-weight-loss-average",
+        "https://www.lilly.com/news/stories/what-to-know-about-retatrutide"
+      ]
+    },
+    {
+      "id": 10,
+      "type": "Sponsor protocol",
+      "citation": "Eli Lilly and Company. Tirzepatide clinical study protocol, background section (NCT04311424): 39-amino-acid synthetic peptide with a C20 fatty di-acid moiety.",
+      "url": "https://cdn.clinicaltrials.gov/large-docs/24/NCT04311424/Prot_000.pdf"
+    },
+    {
+      "id": 11,
+      "type": "Structural reference",
+      "citation": "RCSB PDB-101. Semaglutide (structure summary citing Lau et al., 2015).",
+      "url": "https://pdb101.rcsb.org/global-health/diabetes-mellitus/drugs/incretins/drug/semaglutide/semaglutide"
+    },
+    {
+      "id": 12,
+      "type": "Company statement",
+      "citation": "Eli Lilly and Company. What to know about retatrutide: description of “GLP-3” as an informal, scientifically inaccurate label.",
+      "url": "https://www.lilly.com/news/stories/what-to-know-about-retatrutide"
+    }
+  ],
+  "compliance": {
+    "heading": "Research Use Only Notice",
+    "text": "Veracue’s retatrutide material is offered for laboratory research use only and is not intended for human or veterinary use. This page contains no dosing, administration, therapeutic or consumer-use guidance, and clinical findings about the investigational program do not indicate approval, efficacy, safety or suitability of any research-material lot. See the Medical Disclaimer and the Terms and Conditions for sitewide policies."
+  },
+  "cta": {
+    "headline": "Need lot documentation for retatrutide?",
+    "text": "Ask the Veracue team about available documentation for a specific lot, or review the certificate library.",
+    "primary": {
+      "label": "Request lot documentation",
+      "href": "/contact-us"
+    },
+    "secondary": {
+      "label": "View certificates",
+      "href": "/certificates"
+    },
+    "tertiary": {
+      "label": "Browse the research catalog",
+      "href": "/shop"
+    }
+  },
+  "internalLinks": [
+    {
+      "href": "/certificates",
+      "anchor": "certificate page",
+      "sections": [
+        "problemSolutions.12",
+        "coa.closing"
+      ]
+    },
+    {
+      "href": "/contact-us",
+      "anchor": "contact page",
+      "sections": [
+        "productSnapshot.productDocumentation"
+      ]
+    },
+    {
+      "href": "/medical-disclaimer",
+      "anchor": "Medical Disclaimer",
+      "sections": [
+        "compliance"
+      ]
+    },
+    {
+      "href": "/terms-and-conditions",
+      "anchor": "Terms and Conditions",
+      "sections": [
+        "compliance"
+      ]
+    },
+    {
+      "href": "/contact-us",
+      "anchor": "Request lot documentation",
+      "sections": [
+        "cta"
+      ]
+    },
+    {
+      "href": "/certificates",
+      "anchor": "View certificates",
+      "sections": [
+        "cta"
+      ]
+    },
+    {
+      "href": "/shop",
+      "anchor": "Browse the research catalog",
+      "sections": [
+        "cta",
+        "breadcrumb"
+      ]
+    },
+    {
+      "href": "/faq",
+      "anchor": "Veracue FAQ",
+      "sections": [
+        "cta"
+      ],
+      "note": "Optional; add a visible sentence if used."
+    },
+    {
+      "href": "/about-us",
+      "anchor": "About Veracue",
+      "sections": [
+        "footer/optional"
+      ],
+      "note": "Optional; not required on this page."
+    }
+  ],
+  "productCard": {
+    "title": "Retatrutide",
+    "categoryLabel": "Metabolic Research",
+    "blurb": "Retatrutide (LY3437943) is an investigational peptide conjugated to a C20 fatty diacid, designed to activate the GIP, GLP-1 and glucagon receptors from a single molecule. Veracue supplies it as a research material for laboratory work. The most directly relevant peer-reviewed evidence comes from Phase 2 and Phase 3 clinical trials (Jastreboff et al., 2023; Bajaj et al., 2026), while the TRIUMPH topline results are company announcements. No regulator has approved retatrutide, and clinical findings do not establish the specifications, efficacy or safety of this research material."
+  },
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://veracue-peptides.vercel.app/product/retatrutide#webpage",
+        "url": "https://veracue-peptides.vercel.app/product/retatrutide",
+        "name": "Retatrutide Research Peptide (LY3437943) | Veracue",
+        "description": "Retatrutide (LY3437943), a GIP, GLP-1 and glucagon triple agonist, for lab research: molecular identity, published trials, vs tirzepatide, and COA checks.",
+        "inLanguage": "en-US",
+        "dateModified": "2026-09-25",
+        "breadcrumb": {
+          "@id": "https://veracue-peptides.vercel.app/product/retatrutide#breadcrumb"
+        },
+        "about": [
+          {
+            "@id": "https://veracue-peptides.vercel.app/product/retatrutide#product"
+          },
+          {
+            "@id": "https://veracue-peptides.vercel.app/product/retatrutide#molecule"
+          }
+        ],
+        "mainEntity": {
+          "@id": "https://veracue-peptides.vercel.app/product/retatrutide#product"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://veracue-peptides.vercel.app/product/retatrutide#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://veracue-peptides.vercel.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Shop",
+            "item": "https://veracue-peptides.vercel.app/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Retatrutide",
+            "item": "https://veracue-peptides.vercel.app/product/retatrutide"
+          }
+        ]
+      },
+      {
+        "@type": "Product",
+        "@id": "https://veracue-peptides.vercel.app/product/retatrutide#product",
+        "name": "Retatrutide",
+        "url": "https://veracue-peptides.vercel.app/product/retatrutide",
+        "description": "Veracue research listing for retatrutide (LY3437943), offered for laboratory research use only. Not for human or veterinary use.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Veracue Peptides"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://veracue-peptides.vercel.app/product/retatrutide#webpage"
+        },
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "Compound",
+            "value": "Retatrutide (LY3437943)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Intended use",
+            "value": "Laboratory research use only"
+          }
+        ]
+      },
+      {
+        "@type": "MolecularEntity",
+        "@id": "https://veracue-peptides.vercel.app/product/retatrutide#molecule",
+        "name": "Retatrutide",
+        "alternateName": [
+          "LY3437943",
+          "LY-3437943"
+        ],
+        "description": "Investigational 39-amino-acid peptide conjugated to a C20 fatty diacid, with agonist activity at the GIP, GLP-1 and glucagon receptors.",
+        "molecularFormula": "C221H342N46O68",
+        "molecularWeight": "4731 g/mol",
+        "monoisotopicMolecularWeight": "4728.47 Da",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "CAS Registry Number",
+          "value": "2381089-83-2"
+        },
+        "sameAs": [
+          "https://pubchem.ncbi.nlm.nih.gov/compound/Retatrutide",
+          "https://www.guidetopharmacology.org/GRAC/LigandDisplayForward?ligandId=13769"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://veracue-peptides.vercel.app/product/retatrutide#faq",
+        "isPartOf": {
+          "@id": "https://veracue-peptides.vercel.app/product/retatrutide#webpage"
+        },
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Retatrutide?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Retatrutide (LY3437943) is an investigational synthetic peptide that activates the GIP, GLP-1 and glucagon receptors from a single molecule. It has been studied in obesity and type 2 diabetes but has not been approved by a regulatory agency."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is LY3437943?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "LY3437943 is Eli Lilly’s development code for retatrutide, also written LY-3437943. Both names refer to the same molecule."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Retatrutide a peptide?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Retatrutide has a 39-amino-acid peptide backbone conjugated to a C20 fatty diacid, so it is a lipid-conjugated peptide rather than a plain peptide chain."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is Retatrutide called a triple agonist?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Because one molecule activates three receptors: GIPR, GLP-1R and GCGR. The term describes the receptor profile of a single peptide, not a mixture of three."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which receptors does Retatrutide target?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The glucose-dependent insulinotropic polypeptide receptor (GIPR), the glucagon-like peptide-1 receptor (GLP-1R) and the glucagon receptor (GCGR). Preclinical assays showed a distinct balance of activity across the three."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is Retatrutide different from semaglutide?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Semaglutide is a GLP-1 receptor agonist and an approved pharmaceutical product. Retatrutide acts at three receptors, has a different sequence and lipid, and remains investigational."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is Retatrutide different from tirzepatide?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tirzepatide is an approved dual GIP/GLP-1 receptor agonist. Retatrutide adds glucagon receptor activity and remains investigational. Separate trials are not head-to-head comparisons."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does current research show about Retatrutide?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Peer-reviewed Phase 2 trials (NEJM and The Lancet, 2023) and a 2026 Phase 3 trial in type 2 diabetes (TRANSCEND-T2D-1, The Lancet) have been published. Lilly has also reported positive topline results from TRIUMPH Phase 3 studies, which are company announcements rather than peer-reviewed papers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do people search for Retatrutide weight loss?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Obesity is a major focus of retatrutide’s clinical development, so search interest follows. Published results describe an investigational medicine in defined study populations, not any research material."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should a Retatrutide COA show?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A lot-specific COA may include a product identifier, lot number, test date, method, identity result, purity value, acceptance criterion and laboratory. The identity result should say what it was matched against, and the purity value should name its method."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How should Retatrutide mass-spectrometry results be interpreted?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A calculated mass and an observed m/z value are not automatically the same number. Check the charge state, adducts and deconvolution method first, and remember that mass data speak to identity, not purity."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Veracue provide Retatrutide dosing or administration instructions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Veracue’s retatrutide material is offered for laboratory research use only, and this page does not provide dosing, administration or consumer-use guidance."
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

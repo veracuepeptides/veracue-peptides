@@ -2,6 +2,8 @@ import { CollectionConfig } from 'payload'
 import { lexicalEditor, EXPERIMENTAL_TableFeature, BlocksFeature } from '@payloadcms/richtext-lexical'
 import { accessContent } from '../access/content'
 import { CalloutBox } from '../blocks/CalloutBox'
+import { toCleanSlug, validateBlogSlug } from '../lib/slug/validate'
+import { revalidateGeneratedFiles } from '../lib/revalidate'
 
 export const BlogPosts: CollectionConfig = {
   slug: 'blog-posts',
@@ -9,7 +11,24 @@ export const BlogPosts: CollectionConfig = {
   access: accessContent,
   fields: [
     { name: 'title', type: 'text', required: true, localized: true },
-    { name: 'slug', type: 'text', admin: { position: 'sidebar' } },
+    {
+      name: 'slug',
+      type: 'text',
+      unique: true,
+      index: true,
+      required: true,
+      validate: validateBlogSlug,
+      hooks: {
+        beforeValidate: [
+          ({ value, siblingData }) => {
+            if (value) return value
+            const title = siblingData?.title
+            return typeof title === 'string' && title ? toCleanSlug(title) : value
+          },
+        ],
+      },
+      admin: { position: 'sidebar', description: 'Lowercase letters, numbers, and hyphens only. Generated from the title when left empty on create.' },
+    },
     { name: 'author', type: 'relationship', relationTo: 'users', required: true },
     { name: 'featuredImage', type: 'upload', relationTo: 'blog-media', label: 'Featured Image' },
     { name: 'excerpt', type: 'textarea', localized: true, admin: { description: 'Short summary shown on blog listing cards and used as the default SEO/social description.' } },
@@ -97,9 +116,21 @@ export const BlogPosts: CollectionConfig = {
     beforeChange: [
       ({ data, operation }) => {
         if (operation === 'create' && !data.slug && data.title) {
-          data.slug = data.title.toLowerCase().replace(/\s+/g, '-')
+          data.slug = toCleanSlug(String(data.title))
         }
         return data
+      },
+    ],
+    afterChange: [
+      ({ doc }) => {
+        revalidateGeneratedFiles()
+        return doc
+      },
+    ],
+    afterDelete: [
+      ({ doc }) => {
+        revalidateGeneratedFiles()
+        return doc
       },
     ],
   },

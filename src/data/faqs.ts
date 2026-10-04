@@ -72,7 +72,7 @@ export const faqData: FaqCategoryType[] = [
       },
       {
         "question": "What purity level should a research peptide meet?",
-        "answer": "<p><span style=\"font-weight: 400;\">Look for 98% or higher. Many premium compounds test at 99%+.</span></p>\r\n<p><span style=\"font-weight: 400;\"></span></p>\r\n<p><span style=\"font-weight: 400;\">That number has to come from an independent batch test, not a figure printed on a page with nothing behind it.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">Check the HPLC purity printed on the batch COA and compare it with the purity your study requires.</span></p>\r\n<p><span style=\"font-weight: 400;\"></span></p>\r\n<p><span style=\"font-weight: 400;\">That number has to come from an independent batch test, not a figure printed on a page with nothing behind it.</span></p>"
       },
       {
         "question": "How can I verify a peptide's purity independently?",
@@ -823,7 +823,7 @@ export const faqData: FaqCategoryType[] = [
       },
       {
         "question": "Which analytical techniques verify GHK-Cu purity?",
-        "answer": "<p><span style=\"font-weight: 400;\">Reversed-phase HPLC quantifies purity and confirms the ≥99% threshold expected of research-grade material, while LC-MS verifies identity by measuring molecular weight. A complete COA reports results from both.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">Reversed-phase HPLC quantifies purity and confirms purity against the threshold your study requires, while LC-MS verifies identity by measuring molecular weight. A complete COA reports results from both.</span></p>"
       },
       {
         "question": "What impurity checks matter most for GHK-Cu peptide?",
@@ -831,7 +831,7 @@ export const faqData: FaqCategoryType[] = [
       },
       {
         "question": "How does lab-grade GHK-Cu differ from cosmetic-grade copper peptide?",
-        "answer": "<p><span style=\"font-weight: 400;\">Lab-grade comes as a lyophilized powder with verified ≥99% HPLC purity, LC-MS identity confirmation, and a full COA behind it, designated strictly for research. Cosmetic-grade copper tripeptide-1 is a different thing entirely: a finished topical formulation under cosmetic regulations, without that same analytical disclosure.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">Lab-grade comes as a lyophilized powder with HPLC purity reported on its COA, LC-MS identity confirmation, and a full COA behind it, designated strictly for research. Cosmetic-grade copper tripeptide-1 is a different thing entirely: a finished topical formulation under cosmetic regulations, without that same analytical disclosure.</span></p>"
       },
       {
         "question": "Where can research-grade GHK-Cu be purchased within the US?",
@@ -883,7 +883,7 @@ export const faqData: FaqCategoryType[] = [
       },
       {
         "question": "What testing should precede use of GHK-Cu in an experiment?",
-        "answer": "<p><span style=\"font-weight: 400;\">Standard practice is reviewing the supplier's COA first: ≥99% HPLC purity, LC-MS identity confirmation, and a documented impurity profile. For sensitive applications, some labs also run their own identity verification once the material arrives.</span></p>"
+        "answer": "<p><span style=\"font-weight: 400;\">Standard practice is reviewing the supplier's COA first: HPLC purity, LC-MS identity confirmation, and a documented impurity profile. For sensitive applications, some labs also run their own identity verification once the material arrives.</span></p>"
       },
       {
         "question": "Can researchers in the USA access GHK-Cu peptide?",

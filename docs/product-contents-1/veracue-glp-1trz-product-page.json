@@ -1,0 +1,474 @@
+{
+  "deliverable": {
+    "product": "GLP-1TRZ",
+    "client": "Veracue Peptides",
+    "site": "https://veracue-peptides.vercel.app/",
+    "type": "SEO/GEO/AEO product page copy, implementation ready",
+    "prepared_by": "Belk Digital",
+    "status": "Draft pending Veracue product-data verification"
+  },
+
+  "data_status": {
+    "veracue_product_exists": false,
+    "live_catalog_products": ["AHK-Cu (Copper Tripeptide-3)", "NAD+ (Nicotinamide Adenine Dinucleotide)"],
+    "verified_fields": [],
+    "unverified_fields": [
+      "price", "sku", "vial sizes", "purity figure", "identity method and observed mass",
+      "lot number", "COA link", "appearance", "storage conditions", "packaging",
+      "country of origin", "testing laboratory"
+    ],
+    "note": "No GLP-1TRZ listing, no Weight Loss & Metabolic product, and no GLP-1TRZ certificate exist on the live site. Every product-specific field below is marked [VERACUE TO CONFIRM]. Nothing was carried over from Helix Bio, 99 Purity Peptides, or any competitor page.",
+    "site_issues_to_fix": [
+      "Shop FAQ states the catalog carries BPC-157, TB-500, Semaglutide, Tirzepatide, Ipamorelin, CJC-1295, PT-141, Melanotan II, GHK-Cu, Thymosin Alpha-1, Epithalon, Selank and Semax. Two products are actually listed.",
+      "Footer disclaimer says purity may vary and some items may test below 99%, while shop headers state '≥99% HPLC Verified'. Keep product claims tied to the lot COA."
+    ]
+  },
+
+  "seo": {
+    "title": "GLP-1TRZ Peptide, Tirzepatide Identity & COA | Veracue",
+    "title_length": 54,
+    "meta_description": "GLP-1TRZ is a supplier name for a tirzepatide-type research peptide. See the verified tirzepatide identity data and what a lot COA has to prove. RUO.",
+    "meta_description_length": 151,
+    "slug": "/product/glp-1trz",
+    "canonical": "https://veracue-peptides.vercel.app/product/glp-1trz",
+    "primary_keyword": "GLP-1TRZ peptide",
+    "primary_entity": "GLP-1TRZ (commercial product label)",
+    "primary_scientific_entity": "Tirzepatide / LY3298176",
+    "search_intent": "Mixed. Entity clarification first, then technical identity, then analytical verification, then procurement.",
+    "secondary_keywords": [
+      "GLP-1TRZ", "GLP-1 TRZ", "GLP1-TRZ", "GLP-1TRZ tirzepatide", "is GLP-1TRZ tirzepatide",
+      "GLP-1TRZ research peptide", "GLP-1TRZ research grade", "GLP-1TRZ COA", "GLP-1TRZ purity",
+      "GLP-1TRZ HPLC", "GLP-1TRZ LC-MS", "tirzepatide research peptide", "tirzepatide research material",
+      "tirzepatide peptide sequence", "tirzepatide molecular weight", "tirzepatide molecular formula",
+      "tirzepatide CAS", "tirzepatide mechanism", "LY3298176", "dual GIP/GLP-1 receptor agonist",
+      "C20 fatty diacid", "Aib residues", "lot-specific certificate of analysis"
+    ]
+  },
+
+  "page": {
+    "breadcrumb": ["Home", "Shop", "Weight Loss & Metabolic", "GLP-1TRZ"],
+    "h1": "GLP-1TRZ",
+    "sub_label": "Tirzepatide-type dual GIP/GLP-1 research peptide",
+
+    "hero_summary": "GLP-1TRZ is a supplier catalog name, not a scientific one. Vendors across the research market use it, along with spellings like GLP-1 TRZ and GLP1-TRZ, for material represented as tirzepatide, the 39-residue dual GIP and GLP-1 receptor agonist also known by its development code LY3298176. The name itself proves nothing about sequence, salt form, or purity. What proves those things is the paperwork attached to the vial you receive. This page sets out what is established for tirzepatide from regulatory and peer-reviewed sources, what only a lot certificate of analysis can establish, and where the two are routinely confused. Supplied for laboratory research use only, not for human or veterinary use.",
+
+    "compound_profile_strip": [
+      { "label": "Verified purity", "value": "[VERACUE TO CONFIRM — state the lot value, not a site-wide figure]" },
+      { "label": "Lab tested", "value": "[VERACUE TO CONFIRM — third party or in house, and name the panel]" },
+      { "label": "Grade", "value": "Research use only" },
+      { "label": "Documented", "value": "Batch COA [VERACUE TO CONFIRM — link the lot]" }
+    ],
+
+    "sections": [
+      {
+        "id": "overview",
+        "heading": "Overview",
+        "body": [
+          "Walk the research peptide market and you will meet the same molecule under half a dozen names. GLP-1TRZ, GLP-1 TRZ, GLP1-TRZ, TRZ. None of these appear in PubChem, in FDA labeling, or in the peer-reviewed literature. They are trade shorthand, and they exist largely because suppliers avoid the approved drug names attached to the same active molecule.",
+          "The scientific entity behind the shorthand is tirzepatide. It carries the development code LY3298176, CAS 2023788-19-2, and PubChem CID 156588324. Prescribing information from the U.S. Food and Drug Administration describes it as a glucose-dependent insulinotropic polypeptide (GIP) receptor and glucagon-like peptide-1 (GLP-1) receptor agonist, built on the GIP sequence.",
+          "Here is the part most product pages skip. A supplier label does not carry chemical identity with it. A vial marked GLP-1TRZ is tirzepatide if, and only if, its analytical documentation says so and the report belongs to that lot. Treat the name as a pointer to what the material is meant to be, and treat the COA as the evidence of what it is."
+        ]
+      },
+      {
+        "id": "intended-use",
+        "heading": "What this material is for",
+        "body": [
+          "This listing supports in vitro and preclinical laboratory work: incretin receptor pharmacology, GIP and GLP-1 signaling assays, comparative studies against single-receptor and triple-receptor peptides, and analytical method development. It is not a drug, supplement, cosmetic, or food, and it is not intended for administration to humans or animals.",
+          "Nothing on this page provides dosing, administration, titration, reconstitution for injection, or treatment information, and none should be inferred from the clinical literature discussed below."
+        ]
+      },
+      {
+        "id": "highlights",
+        "heading": "Product highlights",
+        "bullets": [
+          "Supplied as a lyophilized research powder [VERACUE TO CONFIRM — vial sizes]",
+          "Represented as a tirzepatide-type dual GIP/GLP-1 receptor agonist, with lot documentation as the basis for identity",
+          "Batch certificate of analysis [VERACUE TO CONFIRM — what the COA panel covers]",
+          "Sealed vial, packaged for laboratory delivery [VERACUE TO CONFIRM — packaging and cold chain]",
+          "Labeled strictly for laboratory research use, not for human or veterinary use"
+        ]
+      },
+      {
+        "id": "identity-comparison",
+        "heading": "GLP-1TRZ and tirzepatide, side by side",
+        "intro": "The question researchers actually type into a search box is whether these two names mean the same thing. The honest answer has two halves, and this table is the page's central reference asset.",
+        "table": {
+          "columns": ["Attribute", "Tirzepatide / LY3298176 (established)", "GLP-1TRZ (as a product label)"],
+          "rows": [
+            ["Status of the name", "Nonproprietary drug name plus development code", "Supplier catalog shorthand, no standardized scientific status"],
+            ["Where the name appears", "FDA labeling, PubChem, peer-reviewed literature", "Vendor product pages and catalogs"],
+            ["Residue count", "39 amino acids", "Not established by the name; confirm per lot"],
+            ["Backbone origin", "Based on the native GIP sequence", "Confirm per lot"],
+            ["Key substitutions", "Aminoisobutyric acid (Aib) at positions 2 and 13", "Confirm per lot"],
+            ["Lipid modification", "Lys20 attached to 1,20-eicosanedioic acid (a C20 fatty diacid) through a linker", "Confirm per lot"],
+            ["C-terminus", "Amide", "Confirm per lot; some vendor pages state free acid, which contradicts FDA labeling"],
+            ["Molecular formula", "C225H348N48O68", "Confirm per lot"],
+            ["Molecular weight", "4813.53 Da per FDA labeling. See the note below on competing figures", "Confirm per lot, with the form stated"],
+            ["CAS", "2023788-19-2", "Do not assume it applies to a given lot"],
+            ["Receptor activity", "Agonist at both the GIP and GLP-1 receptors", "Represented as dual GIP/GLP-1; confirm the material first"],
+            ["Purity", "Not a property of the molecule at all", "Lot value only"],
+            ["Regulatory status", "Active ingredient in approved prescription products", "Unapproved research material"]
+          ]
+        },
+        "outro": "Read the right-hand column as a checklist rather than a set of blanks. Each row is something the lot paperwork can answer and the label alone cannot."
+      },
+      {
+        "id": "molecular-weight",
+        "heading": "Why the molecular weight is printed three different ways",
+        "intro": "Catalogs quote tirzepatide at 4813.53, 4813.45, and around 4810.52, and researchers reasonably wonder which one is wrong. None of them is. They describe different measurements.",
+        "table": {
+          "columns": ["Value", "What it represents", "Where you see it"],
+          "rows": [
+            ["4813.53 Da", "Average molecular weight as stated in FDA prescribing information for the approved product", "Regulatory labeling"],
+            ["4813.45 g/mol", "Average molecular weight from analytical reference standard suppliers, from the same formula", "Reference standard and catalog listings"],
+            ["~4810.52 Da", "Accurate (monoisotopic) mass, the figure a high-resolution mass spectrometer reports", "Analytical reference data and MS reports"]
+          ]
+        },
+        "outro": "The gap between the first two is rounding in atomic mass tables applied to a 225-carbon molecule. The gap to the third is the difference between an averaged isotope distribution and the single lightest isotopologue. A COA that quotes an observed mass without saying which convention it used has left out the information you need to judge it."
+      },
+      {
+        "id": "receptor-research",
+        "heading": "What the receptor research shows",
+        "body": [
+          "Tirzepatide engages the receptors for two incretin hormones in one molecule, which is the feature that made it interesting to metabolic researchers. FDA labeling states that it selectively binds and activates both the GIP and GLP-1 receptors, that it enhances first-phase and second-phase insulin secretion, that it reduces glucagon in a glucose-dependent way, and that it delays gastric emptying.",
+          "The C20 fatty diacid does the pharmacokinetic work. It drives binding to plasma albumin, reported at 99 percent, which is the reason the molecule persists long enough for weekly dosing in the approved product rather than clearing in minutes.",
+          "Receptor engagement is not symmetrical, and that detail matters to anyone designing an assay. A 2020 study in JCI Insight characterized tirzepatide as an imbalanced and biased dual agonist. Occupancy calculations pointed to greater engagement of the GIP receptor than the GLP-1 receptor. At the GIP receptor, signaling resembled native GIP. At the GLP-1 receptor, the molecule favored cAMP generation over beta-arrestin recruitment and drove receptor internalization less strongly than GLP-1 itself."
+        ],
+        "evidence_classification": "In vitro receptor pharmacology and primary islet work for the bias findings, with animal models. Human clinical pharmacology for the insulin, glucagon and gastric emptying statements, all from studies of the approved pharmaceutical product."
+      },
+      {
+        "id": "evidence-limits",
+        "heading": "Where the human evidence stops",
+        "body": [
+          "Tirzepatide has a large clinical record, built on the SURPASS program in type 2 diabetes and the SURMOUNT program in weight management. That record belongs to a regulated, sterile, formulated injectable made under pharmaceutical manufacturing controls.",
+          "It does not transfer to a research powder. A clinical trial result establishes nothing about a research lot's sequence fidelity, purity, aggregation state, endotoxin content, sterility, or excipient profile. Any supplier who points at trial data to imply something about a vial of research material is making a claim the data cannot support, and that includes any vial sold by Veracue."
+        ]
+      },
+      {
+        "id": "coa",
+        "heading": "What a GLP-1TRZ certificate of analysis has to do",
+        "intro": "A percentage on its own answers one narrow question. A COA that earns its place answers four: what the material is, how pure it is by a stated method, how much is in the vial, and whether the report belongs to your lot.",
+        "table": {
+          "columns": ["COA element", "What it establishes", "What it does not establish"],
+          "rows": [
+            ["Lot or batch number", "That the report belongs to a specific production lot", "Anything at all, unless it matches the vial label"],
+            ["RP-HPLC purity (%)", "Share of detected peak area under stated chromatographic conditions", "Identity, net peptide content, sterility, or biological activity"],
+            ["Stated HPLC method", "Column, mobile phase, gradient and detection wavelength, which is what makes a figure comparable", "That impurities not retained or not detected were absent"],
+            ["Mass spectrometry result", "Whether the observed mass is consistent with the expected species", "Purity, or the quantity of material present"],
+            ["Mass convention used", "Which figure the observed mass was matched against, average or monoisotopic", "Identity on its own"],
+            ["Net peptide content", "How much of the vial's mass is peptide rather than counterion, water or salts", "Chromatographic purity"],
+            ["Counterion (commonly TFA or acetate)", "What the remaining mass is", "Peptide quality"],
+            ["Laboratory name and test date", "Who ran the test and when", "Independence, unless the relationship is disclosed"]
+          ]
+        }
+      },
+      {
+        "id": "hplc-vs-ms",
+        "heading": "HPLC and mass spectrometry answer different questions",
+        "body": [
+          "Vendors tend to list the two side by side as though they were interchangeable proof. They are not.",
+          "RP-HPLC separates the target peptide from related substances, truncated and deletion sequences, and other chromatographic impurities. It supports a purity percentage under the stated conditions. It says nothing about what the main peak actually is.",
+          "Mass spectrometry measures mass-to-charge behavior and tells you whether the observed mass is consistent with the expected molecule, including the lipidated Lys20 conjugate. It says nothing about how much of the sample is that molecule.",
+          "Run together, they are complementary: one supports identity, the other supports purity. Run alone, either leaves a hole. Neither speaks to sterility, endotoxin, residual solvents, water content, or aggregation, so none of those can be inferred from a purity line.",
+          "One practical warning. A reported purity above 100 percent is a signal, not a rounding quirk. It usually means an assay or normalization problem, and it is a reason to ask the supplier for the chromatogram and the method rather than to accept the figure."
+        ],
+        "internal_link": {
+          "anchor": "Analytical RP-HPLC, interpreting purity and mass spectrometry reports",
+          "url": "/analytical-rp-hplc-interpreting-purity-mass-spec-reports"
+        }
+      }
+    ],
+
+    "specifications": {
+      "columns": ["Field", "Detail"],
+      "rows": [
+        ["Product name", "GLP-1TRZ"],
+        ["Also listed as", "GLP-1 TRZ, GLP1-TRZ"],
+        ["Scientific entity represented", "Tirzepatide / LY3298176 [confirm against lot documentation]"],
+        ["Category", "Weight Loss & Metabolic — dual GIP/GLP-1 receptor agonist research peptide"],
+        ["Form", "Lyophilized powder [VERACUE TO CONFIRM]"],
+        ["Appearance", "[VERACUE TO CONFIRM]"],
+        ["Vial sizes", "[VERACUE TO CONFIRM]"],
+        ["Purity", "[VERACUE TO CONFIRM — lot value and method]"],
+        ["Identity testing", "[VERACUE TO CONFIRM — method and mass convention]"],
+        ["Storage, unreconstituted", "[VERACUE TO CONFIRM]"],
+        ["Packaging", "[VERACUE TO CONFIRM]"],
+        ["Country of origin", "[VERACUE TO CONFIRM]"],
+        ["Testing laboratory", "[VERACUE TO CONFIRM — name it, and state whether it is independent]"],
+        ["Research use", "Laboratory, in vitro and preclinical research only"]
+      ]
+    },
+
+    "what_this_page_does_not_claim": [
+      "That every product sold as GLP-1TRZ, by Veracue or anyone else, is chemically identical to pharmaceutical tirzepatide",
+      "That this material is Mounjaro, Zepbound, or any approved medicine, or is interchangeable with one",
+      "That clinical trial findings apply to a research lot",
+      "That a purity figure implies sterility, safety, biological activity, or suitability for administration",
+      "That the CAS number or molecular weight of tirzepatide can be assigned to a lot without analytical support"
+    ],
+
+    "compliance_notice": "GLP-1TRZ supplied by Veracue is intended solely for laboratory research. It is not a drug, cosmetic, dietary supplement, or food, and it is not approved by the FDA for human or veterinary use, diagnosis, treatment, cure, or prevention of any disease. It must not be administered to humans or animals. The FDA has publicly raised concerns about products marketed under research labeling while being promoted for human use, and this listing is not offered on those terms. The scientific information on this page describes published research and regulatory documentation. It is not medical advice and not a statement of efficacy or safety. Purchasers are responsible for lawful use within an appropriate research setting."
+  },
+
+  "faq": [
+    {
+      "n": 1,
+      "question": "What is GLP-1TRZ?",
+      "answer": "GLP-1TRZ is a supplier catalog name used across the research peptide market for material represented as tirzepatide, a synthetic dual GIP and GLP-1 receptor agonist. It is not a scientific name and does not appear in chemical databases or regulatory labeling. Veracue supplies it as a laboratory research material."
+    },
+    {
+      "n": 2,
+      "question": "Is GLP-1TRZ the same as tirzepatide?",
+      "answer": "It is meant to be, and the market uses the two names for the same molecule. The name by itself does not prove it. A specific lot is tirzepatide when its analytical documentation supports that identity and the report matches the vial. Ask for the COA rather than relying on the label."
+    },
+    {
+      "n": 3,
+      "question": "What is LY3298176?",
+      "answer": "LY3298176 is the development code for tirzepatide, used through its clinical program and still common in the scientific literature. Searching that code alongside the name is the quickest way to reach primary sources rather than vendor pages."
+    },
+    {
+      "n": 4,
+      "question": "What is the tirzepatide sequence and how long is it?",
+      "answer": "Tirzepatide is a 39-amino-acid synthetic peptide based on the native GIP sequence. FDA labeling describes aminoisobutyric acid at positions 2 and 13, a C-terminal amide, and a lysine at position 20 attached to 1,20-eicosanedioic acid through a linker. The full residue-by-residue sequence for a given lot should come from its documentation."
+    },
+    {
+      "n": 5,
+      "question": "What is the molecular weight of tirzepatide?",
+      "answer": "FDA prescribing information gives 4813.53 Da with the empirical formula C225H348N48O68. Analytical reference suppliers commonly list 4813.45 g/mol from the same formula, and the accurate or monoisotopic mass is around 4810.52 Da. The values differ by convention, not by disagreement."
+    },
+    {
+      "n": 6,
+      "question": "What is the CAS number for tirzepatide?",
+      "answer": "CAS 2023788-19-2 is the number associated with tirzepatide, and PubChem lists it under CID 156588324. A CAS number attaches to a chemical identity, not to a vial, so it should not be assigned to a lot that has no identity testing behind it."
+    },
+    {
+      "n": 7,
+      "question": "What receptors does tirzepatide act on?",
+      "answer": "Both the GIP receptor and the GLP-1 receptor. Engagement is not equal across the two. A 2020 JCI Insight study described greater occupancy at the GIP receptor and, at the GLP-1 receptor, signaling biased toward cAMP generation over beta-arrestin recruitment."
+    },
+    {
+      "n": 8,
+      "question": "Why does tirzepatide carry a fatty acid?",
+      "answer": "The C20 fatty diacid at Lys20 drives binding to plasma albumin, reported at 99 percent in FDA labeling. That association slows clearance. It is also the part of the molecule most worth confirming analytically, since an unconjugated peptide would give a different mass."
+    },
+    {
+      "n": 9,
+      "question": "How is GLP-1TRZ purity tested, and what does the number mean?",
+      "answer": "Purity is normally reported by reversed-phase HPLC as a percentage of detected peak area under stated conditions. It describes chromatographic purity and nothing else. It does not establish identity, net peptide content, sterility, endotoxin status, or biological activity."
+    },
+    {
+      "n": 10,
+      "question": "What is the difference between HPLC and LC-MS on a COA?",
+      "answer": "HPLC separates the target from related substances and supports the purity figure. Mass spectrometry compares an observed mass against the expected one and supports identity. One answers how pure, the other answers what it is. A COA that reports only one has answered half the question."
+    },
+    {
+      "n": 11,
+      "question": "Is GLP-1TRZ an approved medicine?",
+      "answer": "No. Tirzepatide is the active ingredient in approved prescription products, but those are sterile, formulated, regulated drug products made under pharmaceutical controls. A research powder sold under a catalog name is a separate, unapproved material for laboratory use only, and it is not a substitute for any prescription medicine."
+    }
+  ],
+
+  "internal_links": [
+    {
+      "anchor": "Analytical RP-HPLC, interpreting purity and mass spectrometry reports",
+      "url": "/analytical-rp-hplc-interpreting-purity-mass-spec-reports",
+      "verified_live": true,
+      "reason": "Extends the COA section. This URL already owns the analytical-method intent, so the product page should link rather than duplicate it."
+    },
+    {
+      "anchor": "GLP-1 and dual GIP receptor agonism",
+      "url": "/glp-1-gip-receptor-agonism-metabolic-investigation",
+      "verified_live": true,
+      "reason": "Owns the mechanism deep-dive intent. Link from the receptor section and keep that section short."
+    },
+    {
+      "anchor": "Certificates of analysis",
+      "url": "/certificates",
+      "verified_live": true,
+      "reason": "Primary trust destination and the page the identity argument depends on."
+    },
+    {
+      "anchor": "Weight Loss & Metabolic",
+      "url": "/shop",
+      "verified_live": true,
+      "reason": "Category-level topical grouping. Currently a shop filter; needs a real category URL if one can be created."
+    },
+    {
+      "anchor": "Peptide calculator",
+      "url": "/peptide-calculator",
+      "verified_live": true,
+      "reason": "Laboratory utility for researchers planning solution concentrations."
+    },
+    {
+      "anchor": "Shipping policy",
+      "url": "/shipping-policy",
+      "verified_live": true,
+      "reason": "Referenced by packaging claims once those are confirmed."
+    },
+    {
+      "anchor": "About Veracue",
+      "url": "/about-us",
+      "verified_live": true,
+      "reason": "E-E-A-T support for manufacturing and testing claims."
+    },
+    {
+      "anchor": "Help & FAQ",
+      "url": "/faq",
+      "verified_live": true,
+      "reason": "Extends the on-page FAQ. Correct the catalog list on that page first."
+    }
+  ],
+
+  "cannibalization_control": {
+    "page_owns": "GLP-1TRZ as an entity, product identity, and lot-level verification",
+    "do_not_duplicate": [
+      { "intent": "Mechanism depth", "owned_by": "/glp-1-gip-receptor-agonism-metabolic-investigation" },
+      { "intent": "Chromatography methodology", "owned_by": "/analytical-rp-hplc-interpreting-purity-mass-spec-reports" }
+    ],
+    "do_not_link_until_created": ["tirzepatide research guide", "GLP-1TRZ COA page"]
+  },
+
+  "external_sources": [
+    { "anchor": "FDA prescribing information for tirzepatide", "destination": "dailymed.nlm.nih.gov", "reason": "Formula, molecular weight, Aib positions, C-terminal amide, Lys20 conjugation, albumin binding, receptor activity" },
+    { "anchor": "PubChem, tirzepatide (CID 156588324)", "destination": "pubchem.ncbi.nlm.nih.gov", "reason": "Chemical identity, formula, CAS" },
+    { "anchor": "Willard et al., JCI Insight 2020", "destination": "pubmed.ncbi.nlm.nih.gov/32730231", "reason": "Imbalanced and biased dual agonism" },
+    { "anchor": "FDA concerns about unapproved GLP-1 products", "destination": "fda.gov", "reason": "Regulatory context for the research-use boundary" },
+    { "anchor": "ClinicalTrials.gov", "destination": "clinicaltrials.gov", "reason": "Trial records for the SURPASS and SURMOUNT programs" }
+  ],
+
+  "image_seo": [
+    {
+      "slot": "Hero product vial",
+      "file_name": "veracue-glp-1trz-tirzepatide-research-peptide-vial.webp",
+      "alt": "Veracue GLP-1TRZ tirzepatide-type research peptide lyophilized vial",
+      "caption": "GLP-1TRZ is supplied as a lyophilized powder for laboratory research use only."
+    },
+    {
+      "slot": "Certificate of analysis",
+      "file_name": "veracue-glp-1trz-certificate-of-analysis-hplc-ms.webp",
+      "alt": "GLP-1TRZ certificate of analysis showing HPLC purity and mass spectrometry identity results",
+      "caption": "Identity and purity come from the lot certificate, not from the product name.",
+      "note": "Use only a real Veracue COA image. Do not mock one up."
+    },
+    {
+      "slot": "Structure reference",
+      "file_name": "tirzepatide-dual-gip-glp-1-receptor-agonist-structure.webp",
+      "alt": "Diagram of the tirzepatide dual GIP and GLP-1 receptor agonist with C20 fatty diacid at Lys20",
+      "caption": "Tirzepatide is a 39-residue peptide with a C20 fatty diacid conjugated at Lys20."
+    }
+  ],
+
+  "aeo_answer_targets": [
+    "What GLP-1TRZ is",
+    "Whether GLP-1TRZ is tirzepatide",
+    "What LY3298176 means",
+    "Residue count",
+    "Molecular weight",
+    "CAS number",
+    "Which receptors are involved",
+    "What HPLC shows",
+    "What LC-MS shows",
+    "How a research material differs from an approved product"
+  ],
+
+  "geo_recommendations": [
+    "Name both entities explicitly and state the relationship in the first 60 words, since that relationship is the page's reason to exist",
+    "Mark every scientific fact with its source type, and every product fact with its lot",
+    "Carry the spelling variants (GLP-1 TRZ, GLP1-TRZ) in body copy and FAQ wording, never as separate thin pages",
+    "Distinguish tirzepatide from semaglutide and from triple agonists in one sentence each, no more, or the comparison hijacks the page",
+    "Publish the conditional identity language rather than a flat equivalence claim. It is the single thing no competing page currently does, and it is what makes the page worth citing"
+  ],
+
+  "structured_data": {
+    "implementation_notes": [
+      "Implement only what is visible on the published page",
+      "Omit `offers` entirely until price and availability are live on the page",
+      "Do not add `aggregateRating`, `review`, or Organization award or certification properties. None are supported by real data",
+      "Mirror all 11 FAQs into FAQPage, matching the visible text word for word",
+      "Google narrowed FAQ rich results in 2026 to well-known authoritative government and health sites. Implement the markup for accuracy and answer coverage, not as a rich-result tactic"
+    ],
+    "json_ld": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://veracue-peptides.vercel.app/" },
+            { "@type": "ListItem", "position": 2, "name": "Shop", "item": "https://veracue-peptides.vercel.app/shop" },
+            { "@type": "ListItem", "position": 3, "name": "GLP-1TRZ", "item": "https://veracue-peptides.vercel.app/product/glp-1trz" }
+          ]
+        },
+        {
+          "@type": "Product",
+          "name": "GLP-1TRZ",
+          "alternateName": ["GLP-1 TRZ", "GLP1-TRZ"],
+          "description": "GLP-1TRZ is a supplier designation for a tirzepatide-type dual GIP/GLP-1 receptor agonist research peptide, supplied by Veracue for laboratory research use only.",
+          "brand": { "@type": "Brand", "name": "Veracue" },
+          "category": "Research Peptide",
+          "image": "[REAL PRODUCT IMAGE URL]",
+          "sku": "[VERACUE TO CONFIRM]",
+          "url": "https://veracue-peptides.vercel.app/product/glp-1trz",
+          "offers": {
+            "@type": "Offer",
+            "price": "[VERACUE TO CONFIRM]",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/[InStock or OutOfStock]",
+            "url": "https://veracue-peptides.vercel.app/product/glp-1trz"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is GLP-1TRZ the same as tirzepatide?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "GLP-1TRZ is a supplier catalog name used for material represented as tirzepatide. The name alone does not establish chemical identity. A specific lot is tirzepatide when its analytical documentation supports that identity and the report matches the vial."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+
+  "quality_notes": {
+    "strongest_information_gain": "The identity table paired with the molecular-weight explainer. No competing page on this term explains why 4813.53, 4813.45 and 4810.52 all appear in the market and what each one means. That section turns an apparent contradiction into a usable check.",
+    "primary_seo_opportunity": "GLP-1TRZ plus verification modifiers (COA, purity, HPLC, LC-MS). The head term is dominated by near-identical supplier listings that describe what the compound does without resolving what it is.",
+    "primary_aeo_opportunity": "\"Is GLP-1TRZ the same as tirzepatide?\" A qualified, sourced answer beats both available alternatives: a flat yes with nothing behind it, and silence.",
+    "primary_geo_opportunity": "Entity resolution. The page connects a commercial label to a scientific entity with its identifiers attached, states the evidence for the link, and marks the limits.",
+    "verification_required_before_publishing": [
+      "Whether GLP-1TRZ will be listed at all, and under which catalog name and category URL",
+      "Price, SKU, vial sizes, stock status",
+      "Lot purity figure, HPLC method conditions, and detection wavelength",
+      "Identity method, observed mass, and the mass convention used",
+      "Testing laboratory name and whether it is genuinely independent",
+      "Appearance, storage conditions, packaging, country of origin",
+      "A real COA to link and, if used, a real COA image",
+      "Correction of the shop FAQ catalog list, which currently names products the store does not carry"
+    ]
+  },
+
+  "fact_check": {
+    "method": "Every claim in this output was verified against primary sources rather than against the supplied research reports.",
+    "verified_claims": [
+      { "claim": "Molecular formula C225H348N48O68", "source": "FDA prescribing information (DailyMed); PubChem CID 156588324" },
+      { "claim": "Molecular weight 4813.53 Da", "source": "FDA prescribing information, Description section" },
+      { "claim": "Average MW 4813.45 g/mol, accurate mass 4810.5249", "source": "Analytical reference standard listing (LGC/TRC)" },
+      { "claim": "39 amino acids, based on the GIP sequence", "source": "FDA labeling and Eli Lilly clinical trial protocols" },
+      { "claim": "Aib at positions 2 and 13, C-terminal amide, Lys20 attached to 1,20-eicosanedioic acid via a linker", "source": "FDA prescribing information, Description section" },
+      { "claim": "Albumin binding 99 percent; half-life about 5 days", "source": "FDA prescribing information, Clinical Pharmacology" },
+      { "claim": "Imbalanced and biased dual agonism, greater GIP receptor engagement, cAMP over beta-arrestin at GLP-1R", "source": "Willard et al., JCI Insight 2020;5(17):e140532 (PMID 32730231)" },
+      { "claim": "CAS 2023788-19-2; PubChem CID 156588324", "source": "PubChem and reference standard suppliers" },
+      { "claim": "Tirzepatide is the active ingredient in approved prescription products", "source": "FDA labeling, current as of the August 2026 revision" }
+    ],
+    "corrections_to_supplied_research": [
+      "The supplied keyword research quotes 4813.45 Da as the molecular weight. That is the reference-standard figure. FDA labeling states 4813.53 Da. Both are reported here with the reason they differ.",
+      "One vendor source in search results claims tirzepatide has a free-acid C-terminus. FDA labeling and peer-reviewed literature state a C-terminal amide. The page notes this discrepancy."
+    ],
+    "freshness_note": "Approved indications for tirzepatide have changed several times, including a pediatric indication added in December 2025 and a major adverse cardiovascular events indication added in August 2026. Recheck FDA labeling before publication if more than a quarter has passed."
+  },
+
+  "disclaimer": "No ranking outcome is promised. This page is built to be the most accurate and useful GLP-1TRZ resource Veracue can legitimately publish."
+}

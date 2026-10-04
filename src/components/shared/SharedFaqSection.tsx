@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { Plus, ArrowRight } from 'lucide-react'
 import Image from 'next/image'
 import { Link } from '@/i18n/navigation'
@@ -66,7 +66,7 @@ export function SharedFaqSection({
               <div>
                 {subtitle && (
                   <div className="inline-block border border-[#eddcd2] rounded-full max-w-full px-3 sm:px-4 py-1.5 mb-5 bg-[#fff1e6] shadow-xs">
-                    <span className="text-[#a5a58d] text-[9px] xs:text-[9.5px] sm:text-xs font-bold tracking-[0.02em] xs:tracking-[0.06em] sm:tracking-[0.2em] uppercase font-editorial whitespace-nowrap">
+                    <span className="text-[#6b705c] text-[9px] xs:text-[9.5px] sm:text-xs font-bold tracking-[0.02em] xs:tracking-[0.06em] sm:tracking-[0.2em] uppercase font-editorial whitespace-nowrap">
                       {subtitle}
                     </span>
                   </div>
@@ -92,7 +92,7 @@ export function SharedFaqSection({
                 {/* Support Specialist Avatar */}
                 <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-white/80 shadow-xs mb-3.5 bg-[#eddcd2] shrink-0">
                   <Image
-                    src="/veracue-images/support-avatar.jpg"
+                    src="/veracue-images/support-avatar.webp"
                     alt="Research Support Specialist"
                     fill
                     className="object-cover"
@@ -129,8 +129,10 @@ export function SharedFaqSection({
                     <button
                       type="button"
                       onClick={() => toggleItem(index)}
-                      className="w-full py-5 sm:py-6 flex items-center justify-between gap-4 text-left cursor-pointer group focus:outline-none select-none"
+                      className="w-full py-5 sm:py-6 flex items-center justify-between gap-4 text-left cursor-pointer group select-none rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-[#a5a58d] focus-visible:ring-offset-2 focus-visible:ring-offset-[#f0efeb]"
                       aria-expanded={isOpen}
+                      aria-controls={`shared-faq-panel-${index}`}
+                      id={`shared-faq-button-${index}`}
                     >
                       <span className="font-heading font-bold text-base sm:text-lg md:text-[19px] text-[#20221c] group-hover:text-[#cb997e] transition-colors duration-200 leading-snug pr-4">
                         {faq.question}
@@ -148,35 +150,22 @@ export function SharedFaqSection({
                       </span>
                     </button>
 
-                    <AnimatePresence initial={false}>
-                      {isOpen && (
-                        <motion.div
-                          key="content"
-                          initial={{ height: 0, opacity: 0 }}
-                          animate={{
-                            height: 'auto',
-                            opacity: 1,
-                            transition: {
-                              height: { duration: 0.35, ease: [0.25, 0.1, 0.25, 1] },
-                              opacity: { duration: 0.25, delay: 0.05 }
-                            }
-                          }}
-                          exit={{
-                            height: 0,
-                            opacity: 0,
-                            transition: {
-                              height: { duration: 0.25, ease: [0.25, 0.1, 0.25, 1] },
-                              opacity: { duration: 0.15 }
-                            }
-                          }}
-                          className="overflow-hidden"
-                        >
-                          <div className="pb-6 sm:pb-7 pr-4 sm:pr-12 text-neutral-700 text-sm sm:text-base leading-relaxed font-sans">
-                            {faq.answer}
-                          </div>
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
+                    {/* Answer stays mounted (collapsed via height) so it is present in the server HTML */}
+                    <motion.div
+                      id={`shared-faq-panel-${index}`}
+                      role="region"
+                      aria-labelledby={`shared-faq-button-${index}`}
+                      aria-hidden={!isOpen}
+                      inert={!isOpen}
+                      initial={false}
+                      animate={{ height: isOpen ? 'auto' : 0, opacity: isOpen ? 1 : 0 }}
+                      transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
+                      className="overflow-hidden"
+                    >
+                      <div className="pb-6 sm:pb-7 pr-4 sm:pr-12 text-neutral-700 text-sm sm:text-base leading-relaxed font-sans">
+                        {faq.answer}
+                      </div>
+                    </motion.div>
                   </div>
                 )
               })}
@@ -185,7 +174,7 @@ export function SharedFaqSection({
               <div className="block lg:hidden mt-8 pt-8 border-t border-[#a5a58d]/35">
                 <div className="relative w-11 h-11 rounded-full overflow-hidden border-2 border-white/80 shadow-xs bg-[#eddcd2] shrink-0 mb-3.5">
                   <Image
-                    src="/veracue-images/support-avatar.jpg"
+                    src="/veracue-images/support-avatar.webp"
                     alt="Research Support Specialist"
                     fill
                     className="object-cover"

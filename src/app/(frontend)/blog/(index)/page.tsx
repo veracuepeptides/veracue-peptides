@@ -6,8 +6,9 @@ import { getFeaturedImageUrl, formatPostDate } from '@/lib/blog/postDisplay'
 import { estimateReadingTime } from '@/lib/blog/readingTime'
 import { getOgImageUrl } from '@/lib/utils'
 import { BLOG_FAQS } from '@/lib/blog/blogFaqs'
+import { safeJsonLd } from '@/lib/seo/jsonLd'
 
-const title = 'Research Peptide Blog | Veracue Peptides'
+const title = 'Research Peptide Blog'
 const description = 'Guides on peptide purity testing, reconstitution, storage, and lab compliance from the Veracue Peptides research team.'
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -82,6 +83,9 @@ export default async function BlogIndexPage() {
         url,
         name: title,
         description,
+        inLanguage: 'en',
+        isPartOf: { '@id': `${baseUrl}/#website` },
+        publisher: { '@id': `${baseUrl}/#organization` },
       },
       {
         '@type': 'BreadcrumbList',
@@ -90,18 +94,6 @@ export default async function BlogIndexPage() {
           { '@type': 'ListItem', position: 1, name: 'Home', item: baseUrl },
           { '@type': 'ListItem', position: 2, name: 'Blog', item: url },
         ],
-      },
-      {
-        '@type': 'WebSite',
-        '@id': `${baseUrl}/#website`,
-        url: baseUrl,
-        name: 'Veracue Peptides',
-      },
-      {
-        '@type': 'Organization',
-        '@id': `${baseUrl}/#organization`,
-        name: 'Veracue Peptides',
-        url: baseUrl,
       },
       {
         '@type': 'FAQPage',
@@ -123,7 +115,7 @@ export default async function BlogIndexPage() {
       <BlogIndexClient posts={payloadPosts} />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(schema) }}
       />
     </>
   )

@@ -20,7 +20,7 @@ export function generateAdminAffiliateNotificationEmail(application: any, affili
     socialLinksHtml = application.socialLinks.map((link: any) => `<a href="${link.url}" style="color:${BRAND.terracotta};text-decoration:underline;">${link.platform}</a>`).join(' &middot; ')
   }
 
-  return `${shellOpen({ title: 'New Partner Registration — Veracue Admin', headerColor: BRAND.olive, headerWaveInto: '#ffffff' })}
+  return `${shellOpen({ title: 'New Partner Registration | Veracue Admin', headerColor: BRAND.olive, headerWaveInto: '#ffffff' })}
           <tr>
             <td style="background-color:#ffffff;padding:8px 24px 8px;text-align:center;">
               ${iconBadge('user', BRAND.charcoal)}

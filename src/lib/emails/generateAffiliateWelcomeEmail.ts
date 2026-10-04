@@ -30,7 +30,7 @@ export async function generateAffiliateWelcomeEmail(affiliate: any, user: any): 
                   <td style="padding:26px 24px 32px;text-align:center;">
                     <p style="margin:0 0 12px;font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:${BRAND.terracotta};">Application Approved</p>
                     <h1 style="margin:0 0 12px;font-family:-apple-system,sans-serif;font-weight:800;font-size:26px;color:${BRAND.charcoal};letter-spacing:-0.01em;">You're in, ${affiliateName}.</h1>
-                    <p style="margin:0;font-size:14px;line-height:1.7;color:rgba(32,34,28,0.6);">Your application was instantly approved. You're now an official Veracue partner &mdash; start earning ${commissionRate}% commission on every referral.</p>
+                    <p style="margin:0;font-size:14px;line-height:1.7;color:rgba(32,34,28,0.6);">Your application was instantly approved. You're now an official Veracue partner, start earning ${commissionRate}% commission on every referral.</p>
                   </td>
                 </tr>
               </table>
@@ -56,7 +56,7 @@ export async function generateAffiliateWelcomeEmail(affiliate: any, user: any): 
                     <p style="margin:0 0 10px;font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,241,230,0.5);">Your ${commissionRate}% Discount Code</p>
                     <p style="margin:0;font-family:-apple-system,sans-serif;font-weight:800;font-size:28px;letter-spacing:0.1em;color:${BRAND.linen};">${couponCode}</p>
                     <div style="border-top:1.5px dashed rgba(255,241,230,0.25);margin:20px 0 16px;"></div>
-                    <p style="margin:0;font-size:12px;color:rgba(255,241,230,0.7);line-height:1.6;">Share it &mdash; they get ${commissionRate}% off, you earn ${commissionRate}% commission on the sale.</p>
+                    <p style="margin:0;font-size:12px;color:rgba(255,241,230,0.7);line-height:1.6;">Share it, they get ${commissionRate}% off, you earn ${commissionRate}% commission on the sale.</p>
                   </td>
                 </tr>
               </table>

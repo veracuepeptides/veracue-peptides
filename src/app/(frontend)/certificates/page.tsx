@@ -6,6 +6,7 @@ import { getTranslations } from 'next-intl/server'
 import { CertificatesClient } from './CertificatesClient'
 import { type VerifiedCOA } from '@/lib/certificates/fallbackCertificates'
 import { getOgImageUrl } from '@/lib/utils'
+import { safeJsonLd } from '@/lib/seo/jsonLd'
 
 const slug = 'certificates'
 
@@ -88,10 +89,10 @@ export default async function CertificatesPage() {
         id: doc.id,
         product: doc.name,
         category: (doc.categories?.[0] && typeof doc.categories[0] === 'object' ? doc.categories[0].name : null) || 'Research',
-        purity: typeof doc.coaPurity === 'number' ? `${doc.coaPurity}%` : '99%+',
+        purity: typeof doc.coaPurity === 'number' ? `${doc.coaPurity}%` : 'See COA',
         batch: doc.coaBatchNumber || `VR-${doc.id}`,
         analyzed: doc.coaAnalyzedDate ? dateFormatter.format(new Date(doc.coaAnalyzedDate)) : 'Recent Batch',
-        lab: 'Independent Third-Party Laboratory (USA)',
+        lab: 'Analytical Testing Laboratory',
         status: 'Verified',
         coaUrl: doc.coaFile.url,
         productSlug: doc.slug,
@@ -116,6 +117,8 @@ export default async function CertificatesPage() {
         name: title,
         description,
         inLanguage: locale,
+        isPartOf: { '@id': `${baseUrl}/#website` },
+        publisher: { '@id': `${baseUrl}/#organization` },
       },
       {
         '@type': 'BreadcrumbList',
@@ -125,18 +128,6 @@ export default async function CertificatesPage() {
           { '@type': 'ListItem', position: 2, name: 'Certificates' },
         ],
       },
-      {
-        '@type': 'WebSite',
-        '@id': `${baseUrl}/#website`,
-        url: baseUrl,
-        name: 'Veracue Peptides',
-      },
-      {
-        '@type': 'Organization',
-        '@id': `${baseUrl}/#organization`,
-        name: 'Veracue Peptides',
-        url: baseUrl,
-      },
     ],
   }
 
@@ -144,7 +135,7 @@ export default async function CertificatesPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(pageSchema) }}
       />
       <CertificatesClient coas={coas} />
     </>

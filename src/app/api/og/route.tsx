@@ -5,6 +5,40 @@ import path from 'path'
 
 export const runtime = 'nodejs'
 
+const IMAGES_DIR = path.join(process.cwd(), 'public/veracue-images')
+const DEFAULT_BG = 'veracue-peptides-multi-vials-collection-flatlay.jpg'
+const SAFE_BG = /^[a-z0-9][a-z0-9._-]*$/i
+
+// Fonts and logo are read from disk once per server instance, not once per request.
+let assetsPromise: Promise<{ sora700: Buffer; sora400: Buffer; logoDataUri: string }> | null = null
+function loadAssets() {
+  if (!assetsPromise) {
+    assetsPromise = (async () => {
+      const fontsDir = path.join(process.cwd(), 'public/fonts')
+      const [sora700, sora400, logoBuf] = await Promise.all([
+        fs.promises.readFile(path.join(fontsDir, 'sora-700.woff')),
+        fs.promises.readFile(path.join(fontsDir, 'sora-400.woff')),
+        fs.promises.readFile(path.join(IMAGES_DIR, 'logo-header.png')),
+      ])
+      return { sora700, sora400, logoDataUri: `data:image/png;base64,${logoBuf.toString('base64')}` }
+    })().catch((err) => {
+      assetsPromise = null
+      throw err
+    })
+  }
+  return assetsPromise
+}
+
+// Only bare file names inside public/veracue-images are accepted (no path traversal).
+function resolveBgPath(raw: string): string {
+  const cleaned = raw.replace(/\.webp$/i, '.jpg').replace(/^\/?veracue-images\//, '')
+  if (SAFE_BG.test(cleaned)) {
+    const candidate = path.join(IMAGES_DIR, path.basename(cleaned))
+    if (fs.existsSync(candidate)) return candidate
+  }
+  return path.join(IMAGES_DIR, DEFAULT_BG)
+}
+
 export async function GET(req: NextRequest) {
   try {
     const { searchParams } = new URL(req.url)
@@ -14,41 +48,21 @@ export async function GET(req: NextRequest) {
     title = title
       .replace(/ \| Veracue Peptides/gi, '')
       .replace(/ \| Veracue/gi, '')
-      .replace(/ \| HelixBioPeptides/gi, '')
-      .replace(/ \| Helix Bio/gi, '')
       .trim()
     if (!title) title = 'Veracue Peptides'
     title = title.slice(0, 85)
 
-    let description = searchParams.get('description') || 'HPLC Verified Research Peptides • 99%+ Laboratory Purity'
+    let description = searchParams.get('description') || 'HPLC Verified Research Peptides for Laboratory Use'
     description = description.slice(0, 150)
 
     const category = (searchParams.get('category') || 'RESEARCH GRADE BIOCHEMISTRY').slice(0, 45)
 
-    // Load fonts synchronously from disk for instant, reliable rendering
-    const fontsDir = path.join(process.cwd(), 'public/fonts')
-    const sora700 = fs.readFileSync(path.join(fontsDir, 'sora-700.woff'))
-    const sora400 = fs.readFileSync(path.join(fontsDir, 'sora-400.woff'))
-
-    // Load original header logo as base64 data URI
-    const logoBuf = fs.readFileSync(path.join(process.cwd(), 'public/veracue-images/logo-header.png'))
-    const logoDataUri = `data:image/png;base64,${logoBuf.toString('base64')}`
+    const { sora700, sora400, logoDataUri } = await loadAssets()
 
     // Determine background image (normalizing .webp to .jpg for Satori compatibility)
-    let rawBg = searchParams.get('bg') || searchParams.get('backgroundImage') || 'veracue-peptides-multi-vials-collection-flatlay.jpg'
-    rawBg = rawBg.replace(/\.webp$/i, '.jpg').replace(/^\/?veracue-images\//, '')
-
-    let bgDataUri = ''
-    const localBgPath = path.join(process.cwd(), 'public/veracue-images', rawBg)
-    if (fs.existsSync(localBgPath)) {
-      const bgBuf = fs.readFileSync(localBgPath)
-      bgDataUri = `data:image/jpeg;base64,${bgBuf.toString('base64')}`
-    } else {
-      // Fallback to default collection flatlay if specific file not found
-      const fallbackPath = path.join(process.cwd(), 'public/veracue-images/veracue-peptides-multi-vials-collection-flatlay.jpg')
-      const bgBuf = fs.readFileSync(fallbackPath)
-      bgDataUri = `data:image/jpeg;base64,${bgBuf.toString('base64')}`
-    }
+    const rawBg = searchParams.get('bg') || searchParams.get('backgroundImage') || DEFAULT_BG
+    const bgBuf = await fs.promises.readFile(resolveBgPath(rawBg))
+    const bgDataUri = `data:image/jpeg;base64,${bgBuf.toString('base64')}`
 
     return new ImageResponse(
       (
@@ -143,7 +157,7 @@ export async function GET(req: NextRequest) {
                     marginRight: '10px',
                   }}
                 />
-                <span>HPLC VERIFIED • 99%+ PURITY</span>
+                <span>HPLC TESTED</span>
               </div>
             </div>
 
@@ -223,7 +237,7 @@ export async function GET(req: NextRequest) {
                     color: '#fff1e6',
                   }}
                 >
-                  Third-Party Tested
+                  HPLC Tested
                 </div>
                 <div
                   style={{
@@ -276,6 +290,9 @@ export async function GET(req: NextRequest) {
       {
         width: 1200,
         height: 630,
+        headers: {
+          'Cache-Control': 'public, max-age=86400, s-maxage=604800, stale-while-revalidate=86400',
+        },
         fonts: [
           {
             name: 'Sora',

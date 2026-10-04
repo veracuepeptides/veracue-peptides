@@ -1,0 +1,502 @@
+{
+  "slug": "semax-selank-spray",
+  "url": "/product/semax-selank-spray",
+  "productName": "Semax + Selank Sprays",
+  "classification": "Research Use Only (RUO) — laboratory and analytical research material",
+  "seo": {
+    "metaTitle": "Semax + Selank Spray Research Peptides (RUO) | Veracue",
+    "metaTitleLength": 54,
+    "metaDescription": "Reference page for Veracue's Semax + Selank Spray: two distinct peptide identities, sequences, research evidence by study level, and listing details.",
+    "metaDescriptionLength": 148,
+    "canonical": "https://veracue-peptides.vercel.app/product/semax-selank-spray",
+    "h1": "Semax + Selank Sprays",
+    "primaryKeyword": "semax and selank",
+    "keywordClusters": {
+      "core": ["semax", "selank", "semax peptide", "selank peptide", "semax spray", "selank spray", "semax selank spray"],
+      "comparison": ["semax vs selank", "selank vs semax"],
+      "informational": ["what is semax", "what is selank", "what does semax do", "what is selank peptide used for", "semax benefits", "selank benefits", "semax side effects", "selank side effects"],
+      "research": ["semax research", "selank research", "semax dosage", "selank dosage", "semax peptide research", "selank peptide research"],
+      "searchIntentOnly": ["semax nasal spray", "selank nasal spray", "semax and selank nasal spray", "selank semax nasal spray"]
+    },
+    "ogTitle": "Semax + Selank Sprays — Research Use Only | Veracue",
+    "ogDescription": "Two separate synthetic heptapeptides in one spray-format research listing. Verified identities, evidence sorted by study level."
+  },
+  "hero": {
+    "eyebrow": "Research Use Only",
+    "h1": "Semax + Selank Sprays",
+    "subhead": "Two peptides, listed together. Documented separately.",
+    "body": "Semax + Selank Spray is presented as a spray-format research listing covering two distinct synthetic heptapeptides. Semax (Met-Glu-His-Phe-Pro-Gly-Pro) grew out of work on short ACTH-derived fragments. Selank (Thr-Lys-Pro-Arg-Pro-Gly-Pro) grew out of work on the tetrapeptide tuftsin. Each has its own literature, and most of that literature is preclinical — rat and mouse models, brain-tissue preparations, and cell culture. This page keeps the two molecules, and the product listing itself, clearly apart. Supplied for laboratory research only.",
+    "primaryCta": "View listing details",
+    "secondaryCta": "Compare Semax and Selank"
+  },
+  "quickResearchSummary": {
+    "whatItIs": "A spray-format research listing covering two separate synthetic heptapeptides, Semax and Selank.",
+    "researchFocus": "Semax: neurotrophin expression and gene-expression changes in rodent brain, particularly ischemia models. Selank: allosteric modulation of GABA binding, anxiety-related rodent behaviour, and immune gene expression in rodent tissue.",
+    "evidenceSpan": "1991 to 2025. Predominantly rodent, brain-membrane and cell-culture work, with a small set of human studies concentrated in a narrow group of journals.",
+    "productStatus": "Listed in spray format. Concentration, ratio, volume and lot documentation are not publicly specified on the current Veracue product information.",
+    "classification": "Research Use Only — not for human or veterinary use, and not for administration in any form."
+  },
+  "quickAnswers": {
+    "heading": "Quick answers",
+    "items": [
+      {
+        "question": "What is Semax?",
+        "answer": "Semax is a synthetic heptapeptide, Met-Glu-His-Phe-Pro-Gly-Pro, with molecular formula C37H51N9O10S and molecular weight 813.9 g/mol. Its first four residues correspond to positions 4 to 7 of adrenocorticotropic hormone, followed by a Pro-Gly-Pro extension that is not part of the native hormone."
+      },
+      {
+        "question": "What is Selank?",
+        "answer": "Selank is a synthetic heptapeptide, Thr-Lys-Pro-Arg-Pro-Gly-Pro, with molecular formula C33H57N11O9 and molecular weight 751.9 g/mol. Its first four residues are the tuftsin sequence, followed by the same Pro-Gly-Pro extension found in Semax."
+      },
+      {
+        "question": "What is the difference between Semax and Selank?",
+        "answer": "They are two different molecules with different sequences, formulas, masses and parent compounds — Semax from an ACTH fragment, Selank from tuftsin. Only their length and their C-terminal Pro-Gly-Pro extension are shared, which reflects a common design approach rather than similar activity."
+      },
+      {
+        "question": "What are Semax and Selank studied for?",
+        "answer": "Both are studied as short, enzymatically modified regulatory peptides in neuroscience research. Their published work runs along different lines: neurotrophic and gene-expression effects for Semax, GABA-related and anxiety-behaviour effects for Selank."
+      },
+      {
+        "question": "What does Semax research focus on?",
+        "answer": "Chiefly BDNF and trkB expression in rat brain tissue, and gene- and protein-level changes in rodent cerebral ischemia models. There is also cell-free chemistry on copper binding and amyloid aggregation."
+      },
+      {
+        "question": "What does Selank research focus on?",
+        "answer": "Chiefly allosteric modulation of GABA binding in isolated rat brain membranes, anxiety-related behaviour in rodents, and inflammation-related gene expression in mouse tissue. Several studies also examine its effect on enkephalin-degrading enzymes."
+      },
+      {
+        "question": "What does Semax + Selank Spray mean?",
+        "answer": "It refers to a Veracue research listing that covers both peptides and is presented in spray format. It is not a single molecule, and no defined ratio or combined formulation is specified."
+      },
+      {
+        "question": "Does \"Spray\" mean nasal or intranasal?",
+        "answer": "No. Spray describes the listing format. Route of administration is not publicly specified on the current Veracue product information, and this material is not intended for administration in any form."
+      },
+      {
+        "question": "What does Semax dosage mean in research?",
+        "answer": "In published studies it means the amount a particular research group administered to a particular species by a particular route — for example 50 µg/kg in specific rat protocols. Those are experimental parameters from those studies, not transferable figures."
+      },
+      {
+        "question": "What does Selank dosage mean in research?",
+        "answer": "The same applies. Rodent studies report their own administered amounts, such as 100 µg/kg or 300 µg/kg. In mice, intranasal and intraperitoneal Selank engaged different targets, so an amount from one route does not carry to another even within one species."
+      },
+      {
+        "question": "What are Semax benefits in research?",
+        "answer": "No benefits are claimed for this product. In rodent work, reported findings include increased BDNF protein and trkB expression in rat brain regions, and gene- and protein-level changes in ischemia models. These are animal findings."
+      },
+      {
+        "question": "What are Selank benefits in research?",
+        "answer": "No benefits are claimed for this product. Rodent work reports reduced anxiety-related behaviour, strain-dependent in mice, along with changes in GABA binding in brain-membrane preparations and in immune gene expression."
+      },
+      {
+        "question": "What does research report about Semax side effects?",
+        "answer": "The indexed literature contains no independent controlled safety study of Semax. Absence of published adverse findings is not the same as an established safety profile, and no safety information is offered for this research material."
+      },
+      {
+        "question": "What does research report about Selank side effects?",
+        "answer": "Likewise, no independent controlled safety or dependence study was located. One English-language pharmacology review flags unevaluated abuse potential for GABAergic agents of this class (Doyno and White, 2021)."
+      }
+    ]
+  },
+  "molecularIdentity": {
+    "heading": "Molecular identity",
+    "intro": "Identity data below are drawn from chemical supplier and database records, and are consistent with the sequence, CAS and mass values Veracue publishes for its existing vial-format Semax/Selank listing.",
+    "semax": {
+      "commonName": "Semax",
+      "aliases": ["ACTH(4-7)-PGP", "MEHFPGP", "Met-Glu-His-Phe-Pro-Gly-Pro"],
+      "sequenceThreeLetter": "Met-Glu-His-Phe-Pro-Gly-Pro",
+      "sequenceOneLetter": "MEHFPGP",
+      "residues": 7,
+      "classification": "Synthetic heptapeptide; melanocortin-related peptide built on an ACTH fragment",
+      "molecularFormula": "C37H51N9O10S",
+      "molecularWeight": "813.9 g/mol",
+      "cas": "80714-61-0",
+      "structuralNote": "Residues 1 to 4 correspond to ACTH positions 4 to 7 (Met-Glu-His-Phe). Native ACTH(4-10) continues Arg-Trp-Gly; in Semax that tail is replaced by Pro-Gly-Pro.",
+      "saltFormNote": "CAS 80714-61-0 refers to the free peptide. Acetate and trifluoroacetate forms carry their own identifiers and formula weights. The form supplied in this listing is not publicly specified on the current Veracue product information."
+    },
+    "selank": {
+      "commonName": "Selank",
+      "aliases": ["TP-7", "TKPRPGP", "Thr-Lys-Pro-Arg-Pro-Gly-Pro"],
+      "sequenceThreeLetter": "Thr-Lys-Pro-Arg-Pro-Gly-Pro",
+      "sequenceOneLetter": "TKPRPGP",
+      "residues": 7,
+      "classification": "Synthetic heptapeptide; derivative of the tetrapeptide tuftsin",
+      "molecularFormula": "C33H57N11O9",
+      "molecularWeight": "751.9 g/mol",
+      "cas": "129954-34-3",
+      "structuralNote": "Residues 1 to 4 are the tuftsin sequence (Thr-Lys-Pro-Arg), followed by the same Pro-Gly-Pro extension used in Semax.",
+      "saltFormNote": "CAS 129954-34-3 refers to the free peptide at 751.9 g/mol. The monoacetate is a distinct entity — CAS 2703745-90-6, C33H57N11O9·C2H4O2, formula weight 811.9 — and diacetate and trifluoroacetate forms are also sold. The form supplied in this listing is not publicly specified on the current Veracue product information."
+    },
+    "sharedMotif": "Both peptides end in Pro-Gly-Pro, added in each case to a short active fragment of a larger parent molecule. That shared tail is a design convention from the same research programme, not a sign that the two behave alike."
+  },
+  "comparison": {
+    "heading": "Semax and Selank compared",
+    "intro": "The two are frequently searched against each other. What follows covers chemistry and research direction only. No head-to-head study has compared them on any endpoint, so nothing here speaks to relative effectiveness.",
+    "columns": ["Attribute", "Semax", "Selank"],
+    "rows": [
+      ["Sequence", "Met-Glu-His-Phe-Pro-Gly-Pro", "Thr-Lys-Pro-Arg-Pro-Gly-Pro"],
+      ["Parent compound", "ACTH, residues 4 to 7", "Tuftsin (Thr-Lys-Pro-Arg)"],
+      ["Molecular formula", "C37H51N9O10S", "C33H57N11O9"],
+      ["Molecular weight, free peptide", "813.9 g/mol", "751.9 g/mol"],
+      ["CAS, free peptide", "80714-61-0", "129954-34-3"],
+      ["Contains sulfur", "Yes, via methionine", "No"],
+      ["Shared structural feature", "C-terminal Pro-Gly-Pro", "C-terminal Pro-Gly-Pro"],
+      ["Main preclinical direction", "Neurotrophin expression; gene and protein changes in rat ischemia models", "GABA-binding modulation; anxiety-related rodent behaviour; rodent immune gene expression"],
+      ["Enkephalin-degrading enzyme inhibition, human serum", "IC50 around 10 µM", "IC50 around 20 µM"],
+      ["Character of human evidence", "Small studies in stroke and cerebrovascular insufficiency, no placebo arm", "Small anxiety studies against benzodiazepine comparators, no placebo arm"],
+      ["Head-to-head comparison", "None published", "None published"]
+    ],
+    "closing": "Both peptides came out of a closely linked group of Moscow research institutes, and most work on each shares senior authors. Independent replication outside that group is limited — for Semax, mainly cell-free and cell-line copper and amyloid chemistry from an Italian group; for Selank, one independent English-language review that describes it as poorly studied."
+  },
+  "listingDetails": {
+    "heading": "Listing details",
+    "intro": "Veracue also publishes a vial-format Semax/Selank listing at /product/semax-selank, supplying 10 mg of each peptide. This spray-format listing is a separate presentation, and the fields below describe only what is documented for it.",
+    "rows": [
+      ["Format", "Spray-format research listing"],
+      ["Route of administration", "Not publicly specified on the current Veracue product information"],
+      ["Concentration, each peptide", "Not publicly specified on the current Veracue product information"],
+      ["Semax to Selank ratio", "Not publicly specified on the current Veracue product information"],
+      ["Fill volume", "Not publicly specified on the current Veracue product information"],
+      ["Volume or count per actuation", "Not publicly specified on the current Veracue product information"],
+      ["Carrier, solvent, excipients, preservatives, pH", "Not publicly specified on the current Veracue product information"],
+      ["Salt form or counterion", "Not publicly specified on the current Veracue product information"],
+      ["SKU", "Not publicly specified on the current Veracue product information"],
+      ["Price", "Not publicly specified on the current Veracue product information"],
+      ["Purity", "Veracue states a ≥99% HPLC purity standard, verified by independent HPLC, across its catalog. A lot-specific result for this listing is not publicly specified."],
+      ["Lot number and certificate", "Not publicly specified. Veracue's certificate library currently lists no published reports and notes that batch-specific certificates are being added, with lot documentation available on request."],
+      ["Storage and expiry", "Not publicly specified on the current Veracue product information"]
+    ]
+  },
+  "moleculeVersusProduct": {
+    "heading": "What the science does and does not tell you about this listing",
+    "body": "The chemistry of Semax and Selank is well characterised. Sequences, formulas, masses and CAS identifiers are settled, and a substantial preclinical literature exists for each. None of that describes a particular preparation. A published sequence says nothing about the concentration in a given container, the carrier it sits in, its purity on a given lot, or how it behaves in storage. Those belong to the preparation and come from its documentation. Where this page states a molecular fact, it is a fact about the molecule; where it states a listing attribute, it comes from Veracue's own published information or is marked as unspecified."
+  },
+  "whatThisIsNot": {
+    "heading": "What this listing is not",
+    "items": [
+      "Not one molecule. Semax and Selank are chemically distinct peptides supplied together in a single listing.",
+      "Not a combination product with a defined ratio, concentration or characterised pharmacology.",
+      "Not a nasal, intranasal, oral or topical preparation, unless Veracue's own product information states so. The word spray describes format.",
+      "Not the same as any similarly named preparation marketed elsewhere under the Semax or Selank names. Those are separate products with their own formulations, and they fall outside the scope of this page.",
+      "Not a supplement, nootropic for consumption, or therapeutic agent.",
+      "Not intended for ingestion, injection, inhalation, or any form of administration to humans or animals."
+    ]
+  },
+  "researchSections": [
+    {
+      "number": 1,
+      "heading": "One listing, two molecules, and why attribution depends on it",
+      "problem": "Catalog names like Semax/Selank and search phrases like \"semax and selank\" read as one entity. A single compound identifier then goes into the record, and any observed effect cannot be assigned to either peptide.",
+      "solution": "Treat this as two reference standards that happen to ship together. Semax is C37H51N9O10S at 813.9 g/mol, CAS 80714-61-0, sequence MEHFPGP. Selank is C33H57N11O9 at 751.9 g/mol, CAS 129954-34-3, sequence TKPRPGP. They share no parent compound. Two entries, two masses, two identity references — and if the combination is the subject of study, single-peptide arms are what make the result readable."
+    },
+    {
+      "number": 2,
+      "heading": "Spray is the format here, not the route",
+      "problem": "Search demand around this listing is dominated by phrases like \"semax nasal spray\" and \"selank nasal spray\". Those describe what people type. Reading a route into the product name imports absorption, bioavailability and per-actuation dose, none of which appear in Veracue's product information.",
+      "solution": "Take spray as presentation and stop there. Route, carrier, concentration, fill volume and volume per actuation are not publicly specified, so no route-dependent figure can be derived from the name. This is not a technicality in this peptide class: in mice, Selank given intranasally and intraperitoneally engaged different targets, with intraperitoneal dosing raising GABA-receptor binding sites in frontal cortex and intranasal dosing raising hippocampal MK-801 binding sites instead (Vasil'eva et al., 2016, PMID 29787664). Route changes what you measure."
+    },
+    {
+      "number": 3,
+      "heading": "Semax is called an ACTH(4-10) analogue but contains ACTH(4-7). Both descriptions hold.",
+      "problem": "Reference sources describe Semax as an analogue of ACTH(4-10) while supplier records list the synonym ACTH(4-7)-PGP. Anyone comparing the two concludes that one is an error, and may write up a sequence that does not match the material.",
+      "solution": "Both are accurate, for different reasons. Native ACTH(4-10) is a heptapeptide, Met-Glu-His-Phe-Arg-Trp-Gly. Semax is also a heptapeptide, but only the first four residues carry over; Arg-Trp-Gly gives way to Pro-Gly-Pro. So Semax is an ACTH(4-10) analogue by position and length, and ACTH(4-7)-PGP by composition. These are historical naming conventions for the same molecule rather than competing structures. Early work found Semax more stable than ACTH(4-10) against some rat serum degrading enzymes, though N-terminal cleavage of Met and Glu proceeded in both (Potaman et al., 1991, PMID 1851003). When writing up, give the sequence."
+    },
+    {
+      "number": 4,
+      "heading": "Selank's tuftsin lineage does not carry tuftsin's immunology across",
+      "problem": "Because Selank contains the tuftsin sequence, tuftsin's documented phagocyte-stimulating and immunomodulatory properties get attributed to Selank. The tuftsin literature is large enough that borrowed claims look well founded.",
+      "solution": "Keep parent and analogue apart. Selank-specific immune data exist, but they are rodent gene-expression and cytokine studies rather than tuftsin-equivalent phagocyte assays. In mouse spleen, a single intraperitoneal dose produced roughly a threefold fall in complement C3 mRNA within 30 minutes alongside changes in Casp1, Il2rg and Xcr1 (Kolomin et al., 2013, PMID 24291245), and an earlier study found 34 inflammation-related genes altered at 6 and 24 hours (Kolomin et al., 2011, PMID 21609736). Worth noting: the Gly-Pro fragment reproduced much of that profile, so even within those studies the effect is not cleanly attributable to the intact heptapeptide. Cite tuftsin for tuftsin."
+    },
+    {
+      "number": 5,
+      "heading": "Salt form changes your peptide mass, and the form here is unspecified",
+      "problem": "Weighing against the free-peptide mass under-delivers peptide if the material is a salt. For Selank the gap is real: free peptide is 751.9 g/mol, the monoacetate 811.9, so nominally identical weights deliver around 7.4% less peptide.",
+      "solution": "Confirm the form before calculating. Selank free peptide is CAS 129954-34-3; the monoacetate is a separate entity at CAS 2703745-90-6, and diacetate and trifluoroacetate forms are also sold. Semax free peptide is CAS 80714-61-0, again with salt forms carrying their own identifiers. Request the lot certificate, confirm the form and the stated peptide content, and record both in your methods. Counterion content is a routine question to put to any supplier, and a reasonable one to expect an answer to."
+    },
+    {
+      "number": 6,
+      "heading": "What the human record actually contains",
+      "problem": "Summaries describe both peptides as clinically studied, which suggests multinational controlled trials. Preclinical work then gets benchmarked against a clinical literature that does not have the design strength implied.",
+      "solution": "Look at the indexed record. For Selank, the anxiety studies use active benzodiazepine comparators rather than placebo: 62 patients with generalised anxiety disorder and neurasthenia against medazepam (Zozulya et al., 2008, PMID 18454096); 60 patients with phobic-anxiety and somatoform disorders against phenazepam (Medvedev et al., 2014, PMID 25176261); and 70 patients comparing phenazepam alone with phenazepam plus Selank (Medvedev et al., 2015, PMID 26356395). For Semax, the picture is similar — 110 post-stroke patients (Gusev et al., 2018, PMID 29798983) and 187 patients with cerebrovascular insufficiency (Gusev et al., 2005, PMID 15792140). PubMed indexes two of the Selank studies as randomised controlled trials, but none of these abstracts describes randomisation method, allocation concealment or blinding, and none includes a placebo arm. The one placebo-controlled study covering both peptides is a resting-state fMRI connectivity study in 52 healthy volunteers with no cognitive or clinical endpoint (Panikratova et al., 2020, PMID 32342318). Small, geographically concentrated, and without placebo controls is the fair summary."
+    },
+    {
+      "number": 7,
+      "heading": "The claim that Semax raises dopamine runs opposite to its own source",
+      "problem": "\"Semax increases dopamine\" circulates widely, usually cited to a 2005 paper whose title mentions activation of dopaminergic and serotonergic systems. Work designed on that premise starts from something the source does not report.",
+      "solution": "Read the result rather than the title. In rodents, Semax alone did not change dopamine or its metabolites. It raised the serotonin metabolite 5-HIAA — striatal tissue levels by about 25% at two hours, extracellular striatal 5-HIAA to around 180% over one to four hours after 0.15 mg/kg intraperitoneally. Dopamine moved only in combination: given 20 minutes before D-amphetamine, Semax markedly enhanced amphetamine-evoked extracellular dopamine and locomotor activity (Eremin et al., 2005, PMID 16362768). Accurately stated, Semax modulated a serotonin metabolite in rodents and amplified a stimulant-evoked dopamine response, without shifting baseline dopamine."
+    },
+    {
+      "number": 8,
+      "heading": "The Selank BDNF claim inverts the direction of its finding",
+      "problem": "Both peptides get marketed as BDNF elevators, often described together as enhancing BDNF pathways. For Selank, the best-characterised rodent finding points the other way.",
+      "solution": "Separate the two, because the evidence is not equivalent. For Semax, rodent data do support increases: intranasal administration at 50 and 250 µg/kg raised BDNF protein in rat basal forebrain at three hours (Dolotov et al., 2006, PMID 16635254); a single 50 µg/kg dose modulated hippocampal BDNF and trkB expression and phosphorylation (Dolotov et al., 2006, PMID 16996037); and cultured rat glial cells showed an eightfold rise in BDNF mRNA within 30 minutes (Shadrina et al., 2001, PMID 11457573). For Selank, the clearest indexed result is that it prevented an ethanol-induced increase in BDNF in rat hippocampus and frontal cortex, while also preventing withdrawal-associated memory and attention deficits (Kolik et al., 2019, PMID 31625062). That is normalisation downward. An earlier rat study on intranasal Selank and hippocampal BDNF has no abstract indexed, so its direction cannot be confirmed. No human BDNF data exist for Selank."
+    },
+    {
+      "number": 9,
+      "heading": "Both peptides degrade quickly, and their fragments are not inert",
+      "problem": "Experiments get interpreted as though the intact heptapeptide is the species present throughout. It is not, and several degradation products carry activity of their own — so an effect credited to Semax or Selank may belong to a fragment.",
+      "solution": "Build metabolism into the design. After intranasal administration in rats, about 0.093% of administered radioactivity per gram reached brain at two minutes, roughly 80% of it intact Semax, with rapid cleavage and Pro-Gly-Pro predominating thereafter (Shevchenko et al., 2006, PMID 16523722). In the presence of nerve cells, the major Semax products were the pentapeptide HFPGP and the tripeptide PGP; for Selank, plasma degradation yields the pentapeptide TKPRP, the tripeptide TKP, and the dipeptides RP and GP (Zolotarev et al., 2006, PMID 16637290). Fragment activity is documented: pentapeptide fragments of both peptides inhibited enkephalin-degrading enzymes in human serum, while tri-, tetra- and hexapeptide fragments did not (Kost et al., 2001, PMID 11443939). In a rat ischemia model, Pro-Gly-Pro alone altered gene expression, though its effects were described as largely unspecific next to Semax (Dmitrieva et al., 2009, PMID 19633950). Fragment analysis is what makes attribution to the intact peptide defensible."
+    },
+    {
+      "number": 10,
+      "heading": "Shipping two peptides together is not a finding about the pair",
+      "problem": "A combined listing invites the reading that this is a designed stack with complementary mechanisms, and search behaviour reinforces it — \"semax and selank\" carries the highest interest in this space. Co-packaging is a commercial decision.",
+      "solution": "No published study establishes a synergistic, additive or complementary interaction between the two, and no ratio has been characterised. What the literature offers is two mechanistic pictures that do not obviously meet. Selank behaves as a positive allosteric modulator of GABA binding in isolated rat brain plasma membranes, with subtype-selective concentration-dependent effects, and blocked the modulatory activity of diazepam and olanzapine (Vyunova et al., 2018, PMID 30255741); in human IMR-32 neuroblastoma cells it changed none of 84 neurotransmission mRNAs on its own, yet near-completely suppressed GABA-induced changes (Filatova et al., 2017, PMID 28293190). Semax's characterised activity runs instead through neurotrophin expression and, in rat ischemia models, immune and vascular gene programmes (Medvedeva et al., 2014, PMID 24661604). Two compounds sharing a package, each needing its own controls."
+    },
+    {
+      "number": 11,
+      "heading": "What to request before this enters a protocol",
+      "problem": "Material with an unspecified preparation cannot be written into a reproducible method. \"Semax + Selank spray, obtained commercially\" is not reproducible by anyone, including the original researcher on a later lot.",
+      "solution": "Ask for the salt form and counterion for each peptide; peptide content as a percentage of total mass; the concentration of each peptide; the ratio; fill volume; carrier or solvent with any excipients; lot number; and the lot-specific HPLC result together with the identity confirmation method used. Veracue states a ≥99% HPLC purity standard verified by independent HPLC across its catalog, and notes that lot documentation is available on request while batch certificates are being added to its library. Record what arrives, and where a field cannot be obtained, say so in your methods rather than leaving it out. The chemistry of these peptides is settled; the gap sits at preparation level, and documentation is what closes it."
+    }
+  ],
+  "evidenceByLevel": {
+    "heading": "Evidence by study level",
+    "intro": "Findings are reported at the level at which they were observed. Nothing here describes a use for this product.",
+    "levels": [
+      {
+        "level": "Chemical and analytical",
+        "findings": [
+          "Semax: C37H51N9O10S, 813.9 g/mol, CAS 80714-61-0, sequence MEHFPGP, synonym ACTH(4-7)-PGP.",
+          "Selank: C33H57N11O9, 751.9 g/mol, CAS 129954-34-3, sequence TKPRPGP; monoacetate CAS 2703745-90-6, formula weight 811.9.",
+          "Both peptides were identified in seized unauthorised preparations, and a validated LC-MS/MS screen was subsequently applied to peptides sold online (Vanhee et al., 2020, PMID 31667971). The authors state that to their knowledge these peptides have not completed any clinical trials."
+        ]
+      },
+      {
+        "level": "Mechanistic and biochemical, cell-free",
+        "findings": [
+          "Both peptides inhibited enkephalin-degrading enzymes in human serum dose-dependently — Semax IC50 around 10 µM, Selank around 20 µM — more potently than puromycin or bacitracin. Pentapeptide fragments were active; tri-, tetra- and hexapeptide fragments were not (PMID 11443939).",
+          "Reported Selank IC50 values differ by matrix: around 15 µM for enkephalin hydrolysis in human plasma (PMID 11550013) against around 20 µM in serum (PMID 11443939). Quote the matrix with the figure.",
+          "In human plasma, Selank preferentially inhibited carboxypeptidases and dicarboxypeptidases rather than aminopeptidases (PMID 15344652).",
+          "Selank acted as a positive allosteric modulator of tritiated-GABA binding in isolated rat brain plasma membranes, with subtype-selective concentration-dependent effects, and blocked the modulatory activity of diazepam and olanzapine (PMID 30255741).",
+          "Semax bound rat basal forebrain membranes specifically and reversibly, Kd 2.4 ± 1.0 nM, Bmax 33.5 ± 7.9 fmol/mg protein (PMID 16635254).",
+          "Semax interfered with copper-induced amyloid-beta aggregation in artificial membrane models, and stripped Cu(II) from Cu(II)-amyloid-beta complexes with reduced ROS production in SH-SY5Y cells (PMIDs 35080861, 40496623)."
+        ]
+      },
+      {
+        "level": "Cell culture",
+        "findings": [
+          "In cultured glial cells from newborn rat basal forebrain, Semax raised BDNF mRNA around eightfold and NGF mRNA around fivefold within 30 minutes (PMID 11457573).",
+          "In human IMR-32 neuroblastoma cells, Selank alone changed none of 84 neurotransmission-related mRNAs, but near-completely suppressed GABA-induced changes and amplified olanzapine-induced changes (PMID 28293190)."
+        ]
+      },
+      {
+        "level": "Animal",
+        "findings": [
+          "Rat: intranasal Semax at 50 and 250 µg/kg raised basal forebrain BDNF protein at three hours, with no change in cerebellum (PMID 16635254).",
+          "Rat: a single 50 µg/kg Semax dose produced up to 1.4-fold higher hippocampal BDNF protein, 1.6-fold higher trkB phosphorylation, threefold higher exon-III BDNF mRNA and twofold higher trkB mRNA, alongside increased conditioned avoidance responding (PMID 16996037).",
+          "Rat, permanent middle cerebral artery occlusion: Semax increased Bdnf, TrkC and TrkA transcription at three hours and Nt-3 and Ngf at 24 hours, while Pro-Gly-Pro effects were mainly unspecific (PMID 19633950).",
+          "Rat, focal ischemia: genome-wide analysis found more than half of Semax-altered genes at 24 hours were immune-response genes, with 24 vascular-system genes altered at three hours (PMID 24661604); a later study found enhanced antigen-presentation and interferon signalling gene expression (PMID 28255762).",
+          "Rat, transient ischemia: Semax reduced Il1a, Il1b, Il6, Ccl3 and Cxcl2 transcripts (PMID 34097675), and at protein level raised active CREB subcortically while lowering MMP-9, c-Fos and active JNK (PMID 34201112).",
+          "Rat, acute restraint stress: Semax at 100 µg/kg given 30 minutes before stress attenuated behavioural changes, with over 1,500 hippocampal differentially expressed genes opposing stress-induced changes (PMID 34576218).",
+          "Rat, chronic unpredictable stress: Semax at 60 nmol/kg attenuated anhedonia, adrenal hypertrophy and the fall in hippocampal BDNF, with no effect on forced-swim immobility (PMID 39442746).",
+          "Rodent: Semax alone did not alter dopamine or its metabolites; it raised striatal 5-HIAA and enhanced amphetamine-evoked dopamine release and locomotion (PMID 16362768).",
+          "Mouse: Semax raised hippocampal and cortical BDNF only in animals with low baseline exploratory efficacy (PMID 20095391).",
+          "Rat: courses of the test substances themselves worsened elevated plus-maze anxiety indices, least so for Selank alone; under unpredictable chronic mild stress, diazepam plus Selank was the arm that returned anxiety indices closest to pre-stress values (PMID 28280289).",
+          "Rat frontal cortex: Selank and GABA at 300 µg/kg produced correlated changes across 84 neurotransmission genes — 45 at one hour, 22 at three hours (PMID 26924987).",
+          "Mouse: Selank's behavioural effects appeared only in the high-anxiety BALB/c strain, and target engagement differed by route — intraperitoneal raised frontal-cortex GABA-receptor binding sites by 38%, intranasal raised hippocampal MK-801 binding sites by 23% (PMID 29787664).",
+          "Mouse: Selank at 100 µg/kg produced an anxiolytic open-field effect and lengthened plasma leu-enkephalin half-life in BALB/c mice, with no effect in C57Bl/6 (PMID 12432865).",
+          "Mouse and rat brain membranes: Selank reduced apomorphine-induced verticalisation, an effect blocked by naloxone, while showing no direct displacement at D2 or δ/µ-opioid receptors (PMID 17415472).",
+          "Rat: Selank prevented ethanol-withdrawal-associated memory and attention deficits and prevented the ethanol-induced increase in hippocampal and frontal-cortex BDNF (PMID 31625062).",
+          "Rat, morphine withdrawal: single-dose Selank reduced the total withdrawal index by 39.6% and raised tactile threshold ninefold, against 49.3% and thirteenfold for diazepam (PMID 36322304).",
+          "Rat hippocampal slices: Selank at 1 to 8 µM increased the amplitude and rate of spontaneous inhibitory postsynaptic currents, without significant dose-dependence across that range (PMID 28361410).",
+          "Rat: intranasal Semax reached brain within two minutes with roughly 80% intact peptide at that point (PMID 16523722); labelled Semax also reached ocular tissue after intranasal administration (PMID 15678666)."
+        ]
+      },
+      {
+        "level": "Human",
+        "findings": [
+          "52 healthy participants, placebo-controlled resting-state fMRI, single injection of Semax, Selank or placebo: group and condition differences in functional connectivity between right amygdala and right fusiform, inferior-middle temporal and parahippocampal regions. Randomisation and blinding are not described. No cognitive or clinical endpoint was measured (PMID 32342318).",
+          "Selank, 62 patients with generalised anxiety disorder and neurasthenia, 30 on Selank against 32 on medazepam, no placebo arm: anxiolytic effects reported as similar between arms, with additional antiasthenic effects for Selank and an increase in the reduced serum leu-enkephalin half-life. Duration not stated (PMID 18454096).",
+          "Selank, 60 patients with phobic-anxiety and somatoform disorders, phenazepam comparator: anxiolytic and mild nootropic effects reported, with no effect sizes given and per-arm numbers, randomisation and blinding not stated (PMID 25176261).",
+          "Selank, 70 patients, phenazepam monotherapy (30) against Selank plus phenazepam (40): earlier response on the Hamilton depression scale and fewer benzodiazepine-related adverse effects in the combination arm. Duration not stated (PMID 26356395).",
+          "Selank, patients with anxiety and phobic disorders: shortened enkephalin half-life and reduced total enkephalinase activity found in generalised anxiety but not panic disorder or agoraphobia. Participant number not stated; no treatment arm described (PMID 11550013).",
+          "Semax, 110 post-ischemic-stroke patients, mean age 58.0 ± 9.7, allocated to early or late rehabilitation with and without Semax, two 10-day courses: increased plasma BDNF and improved Barthel index scores reported, with a positive correlation between the two. Randomisation, blinding and placebo use are not described (PMID 29798983).",
+          "Semax, 30 acute hemispheric ischemic stroke patients against 80 controls on conventional therapy, 5- and 10-day courses: faster regression of general cerebral and focal, especially motor, deficits reported. Described as a controlled comparative study, not as randomised or placebo-controlled (PMID 11517472).",
+          "Semax, 187 patients with cerebrovascular insufficiency: clinical improvement and reduced stroke and TIA risk reported across a broad assessment battery. Design not described as randomised or placebo-controlled; duration not stated (PMID 15792140)."
+        ]
+      },
+      {
+        "level": "Review and background",
+        "findings": [
+          "An independent English-language pharmacology review characterises Selank and phenibut as poorly studied agents with GABAergic mechanisms, and flags unevaluated abuse potential for the class (PMID 34396551).",
+          "A review of tuftsin and its analogues covers the parent tetrapeptide's activity classes, and is the appropriate citation for tuftsin background rather than for Selank-specific effects (PMID 28745220).",
+          "A review of highly stable regulatory oligopeptides gives the background for why Pro-Gly-Pro extensions were used in this peptide family (PMID 14682258)."
+        ]
+      }
+    ]
+  },
+  "claimsNotSupported": {
+    "heading": "Claims the indexed literature does not support",
+    "intro": "Each of the following appears widely in secondary summaries of these peptides. They are listed because they could not be traced to a primary indexed source, or because the primary source reports something different.",
+    "items": [
+      "That Semax improves memory or attention in humans. No indexed human cognition trial was located; the claim appears as an unreferenced introductory assertion in preclinical papers and in a hypothesis-journal article.",
+      "That Semax increases dopamine. The primary rodent study found no change in dopamine or its metabolites from Semax alone (PMID 16362768).",
+      "That Semax is entirely devoid of hormonal activity. The literature describes the analogue as noncorticotropic, but no indexed primary study measuring an absent cortisol or corticosterone response was located. Treat it as how the literature characterises the compound.",
+      "That Selank increases BDNF. The clearest indexed rodent finding is prevention of an ethanol-induced BDNF increase (PMID 31625062). No human BDNF data exist.",
+      "That Selank has completed Phase III clinical trials. No Phase III report is indexed, and an independent analytical paper states that to the authors' knowledge the peptides have not completed any clinical trials (PMID 31667971).",
+      "That either peptide is non-addictive, free of withdrawal effects, or free of side effects. No independent controlled safety, withdrawal or dependence study was located.",
+      "That either peptide has established human pharmacokinetics — bioavailability percentages, half-lives or brain-uptake figures. The pharmacokinetic work located is in rats, using tritium-labelled peptide.",
+      "That either peptide benefits neurodegenerative disease. For Semax this exists only as cell-free and SH-SY5Y cell-line copper and amyloid chemistry.",
+      "That Semax improves vision or optic-nerve outcomes. The supporting human work either reports no participant numbers or combines Semax with three simultaneous interventions, which makes attribution impossible.",
+      "That the two peptides act synergistically. No study of the combination was located, and no ratio has been characterised."
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Are Semax and Selank the same peptide?",
+      "answer": "No. They differ in sequence, molecular formula, molecular weight, CAS number and parent compound. Semax is built on an ACTH fragment and Selank on tuftsin. Both are seven residues long and both end in Pro-Gly-Pro, which reflects a shared design approach rather than shared activity."
+    },
+    {
+      "question": "Semax vs Selank — which is more appropriate for my work?",
+      "answer": "That depends on the question being asked, and no head-to-head study has compared them on any endpoint. Their characterised preclinical directions differ: Semax around BDNF and trkB expression and gene and protein changes in rat ischemia models, Selank around GABA-binding modulation and anxiety-related rodent behaviour. Since this listing covers both, a design with single-peptide arms will tell you more than either alone."
+    },
+    {
+      "question": "Is this a nasal spray?",
+      "answer": "Spray describes the listing format. Route of administration, carrier, concentration and volume per actuation are not publicly specified on the current Veracue product information, so no route can be read off the product name. Search phrases such as \"semax nasal spray\" reflect search behaviour, not this listing. The material is not for administration in any form."
+    },
+    {
+      "question": "What concentration of Semax and Selank does the spray contain?",
+      "answer": "Not publicly specified on the current Veracue product information, and neither is the ratio between them. Request the lot documentation before use, and record whatever is supplied in your methods."
+    },
+    {
+      "question": "What is the Semax dosage?",
+      "answer": "No dosage applies. This is research material supplied for laboratory use rather than a product for administration, and no route or concentration is specified for this listing, so no dose could be derived from it. Rodent studies state their own administered amounts — 50 µg/kg or 100 µg/kg in particular rat protocols — which are parameters of those experiments in those species by those routes."
+    },
+    {
+      "question": "What is the Selank dosage?",
+      "answer": "The same applies. Rodent studies report amounts such as 100 µg/kg or 300 µg/kg by defined routes. Note that in mice, intranasal and intraperitoneal Selank engaged different targets (PMID 29787664), so a figure from one route does not translate to another even within one species."
+    },
+    {
+      "question": "What are the benefits of Semax?",
+      "answer": "No benefits are claimed for this product. The preclinical literature reports increased BDNF protein and trkB expression in rat brain regions, gene- and protein-level changes in cerebral ischemia models, and attenuation of stress-induced behavioural changes in rats. In rodents it raised a serotonin metabolite without altering dopamine. Human data are limited to small studies without placebo controls, plus one placebo-controlled fMRI connectivity study with no clinical endpoint."
+    },
+    {
+      "question": "What are the benefits of Selank?",
+      "answer": "Again, none are claimed for this product. Preclinical work reports allosteric modulation of GABA binding in isolated rat brain membranes, reduced anxiety-related behaviour in rodents that was strain-dependent in mice, changes in rodent immune gene expression, and attenuation of ethanol- and morphine-withdrawal effects in rats. Human evidence consists of small studies against benzodiazepine comparators reporting broadly comparable anxiolytic effects."
+    },
+    {
+      "question": "What are the side effects of Semax or Selank?",
+      "answer": "Side-effect profiles do not apply to research material that is not administered, and no safety information is offered for this listing. On the wider question, no independent controlled safety study of either peptide was located in the indexed literature. Claims that either is free of side effects or withdrawal effects could not be traced to an independent controlled source, and absence of published adverse findings is not an established safety profile."
+    },
+    {
+      "question": "Is this product a medicine?",
+      "answer": "No. Veracue supplies it as research material for laboratory and analytical use, not as a drug product, and not for human or veterinary use. Preparations marketed elsewhere under the Semax or Selank names are separate products with their own formulations and fall outside the scope of this page."
+    },
+    {
+      "question": "What documentation comes with this listing?",
+      "answer": "Veracue states a ≥99% HPLC purity standard verified by independent HPLC across its catalog, and its certificate library notes that batch-specific certificates are being added, with lot documentation available on request. For this listing specifically, lot number, lot purity result, concentration, ratio, carrier and salt form are not publicly specified. Request them before use."
+    },
+    {
+      "question": "Why does so much of the literature come from one place?",
+      "answer": "Both peptides originated in a linked group of Moscow research institutes, and most preclinical and clinical work on each shares senior authors. Independent replication outside that group is limited, which is worth weighing when citing any single finding. It applies equally to both peptides."
+    }
+  ],
+  "complianceNotice": {
+    "heading": "Compliance notice",
+    "body": "Semax and Selank are offered for laboratory research and analytical use only. They are not intended for human or veterinary use, for ingestion, injection, inhalation or any form of administration, or to diagnose, treat, cure or prevent any disease. Nothing on this page describes an application in humans, and no statement here constitutes dosing, administration or safety guidance. Purchasers are responsible for ensuring that acquisition, handling, storage and disposal comply with applicable institutional policies and with local, state and federal law."
+  },
+  "references": {
+    "attribution": "Bibliographic records below were retrieved from PubMed (National Library of Medicine). DOI links are given where a DOI is indexed.",
+    "items": [
+      { "pmid": "1851003", "citation": "Potaman VN, et al. N-terminal degradation of ACTH(4-10) and its synthetic analog semax by the rat blood enzymes. Biochem Biophys Res Commun. 1991;176(2):741-6.", "doi": "https://doi.org/10.1016/s0006-291x(05)80247-5" },
+      { "pmid": "11443939", "citation": "Kost NV, et al. Semax and selank inhibit the enkephalin-degrading enzymes from human serum. Bioorg Khim. 2001;27(3):180-3.", "doi": "https://doi.org/10.1023/a:1011373002885" },
+      { "pmid": "11457573", "citation": "Shadrina MI, et al. Rapid induction of neurotrophin mRNAs in rat glial cell cultures by Semax, an adrenocorticotropic hormone analog. Neurosci Lett. 2001.", "doi": "https://doi.org/10.1016/s0304-3940(01)01994-2" },
+      { "pmid": "11517472", "citation": "Gusev EI, et al. Effectiveness of semax in acute period of hemispheric ischemic stroke. Zh Nevrol Psikhiatr Im S S Korsakova. 1997. [Russian]", "doi": null },
+      { "pmid": "11550013", "citation": "Zozulya AA, et al. The inhibitory effect of Selank on enkephalin-degrading enzymes as a possible mechanism of its anxiolytic activity. Bull Exp Biol Med. 2001;131(4):315-7.", "doi": "https://doi.org/10.1023/a:1017979514274" },
+      { "pmid": "12432865", "citation": "Sokolov OY, et al. Bull Exp Biol Med. 2002;133(2):133-5.", "doi": "https://doi.org/10.1023/a:1015582302311" },
+      { "pmid": "14682258", "citation": "Ashmarin IP. Highly stable regulatory oligopeptides: experience and applications. Patol Fiziol Eksp Ter. 2003. [Russian]", "doi": null },
+      { "pmid": "15344652", "citation": "Zolotarev YuA, et al. Bioorg Khim. 2004;30(3):234-40. [Russian]", "doi": "https://doi.org/10.1023/b:rubi.0000030126.09208.c3" },
+      { "pmid": "15678666", "citation": "Sheremet NL, et al. An experimental substantiation for using the Semax neuroprotector in the treatment of optic-nerve diseases. Vestn Oftalmol. 2004. [Russian]", "doi": null },
+      { "pmid": "15792140", "citation": "Gusev EI, et al. Semax in prevention of disease progress and development of exacerbations in patients with cerebrovascular insufficiency. Zh Nevrol Psikhiatr Im S S Korsakova. 2005. [Russian]", "doi": null },
+      { "pmid": "16362768", "citation": "Eremin KO, et al. Semax, an ACTH(4-10) analogue with nootropic properties, activates dopaminergic and serotoninergic brain systems in rodents. Neurochem Res. 2005.", "doi": "https://doi.org/10.1007/s11064-005-8826-8" },
+      { "pmid": "16523722", "citation": "Shevchenko KV, et al. Kinetics of Semax penetration into the brain and blood of rats after its intranasal administration. Bioorg Khim. 2006. [Russian]", "doi": "https://doi.org/10.1134/s1068162006010055" },
+      { "pmid": "16635254", "citation": "Dolotov OV, et al. Semax, an analogue of adrenocorticotropin (4-10), binds specifically and increases levels of brain-derived neurotrophic factor protein in rat basal forebrain. J Neurochem. 2006.", "doi": "https://doi.org/10.1111/j.1471-4159.2006.03658.x" },
+      { "pmid": "16637290", "citation": "Zolotarev YuA, et al. Evenly tritium-labeled peptides and their in vivo and in vitro biodegradation. Bioorg Khim. 2006;32(2):183-91. [Russian]", "doi": null },
+      { "pmid": "16996037", "citation": "Dolotov OV, et al. Semax, an analog of ACTH(4-10) with cognitive effects, regulates BDNF and trkB expression in the rat hippocampus. Brain Res. 2006.", "doi": "https://doi.org/10.1016/j.brainres.2006.07.108" },
+      { "pmid": "17415472", "citation": "Meshavkin VK, et al. Bull Exp Biol Med. 2006;142(5):598-600.", "doi": "https://doi.org/10.1007/s10517-006-0428-1" },
+      { "pmid": "18454096", "citation": "Zozulya AA, et al. Efficacy and possible mechanisms of action of a new peptide anxiolytic selank in the therapy of generalized anxiety disorders and neurasthenia. Zh Nevrol Psikhiatr Im S S Korsakova. 2008;108(4):38-48. [Russian]", "doi": null },
+      { "pmid": "18841804", "citation": "Inozemtseva LS, et al. Dokl Biol Sci. 2008;421:241-3. [Abstract not indexed]", "doi": "https://doi.org/10.1134/s0012496608040066" },
+      { "pmid": "19633950", "citation": "Dmitrieva VG, et al. Semax and Pro-Gly-Pro activate the transcription of neurotrophins and their receptor genes after cerebral ischemia. Cell Mol Neurobiol. 2009.", "doi": "https://doi.org/10.1007/s10571-009-9432-0" },
+      { "pmid": "20095391", "citation": "Firstova YuYu, et al. Eksp Klin Farmakol. 2009. [Russian]", "doi": null },
+      { "pmid": "21609736", "citation": "Kolomin T, et al. Regul Pept. 2011;170(1-3):18-23.", "doi": "https://doi.org/10.1016/j.regpep.2011.05.001" },
+      { "pmid": "24291245", "citation": "Kolomin T, et al. Mol Immunol. 2013;58(1):50-5.", "doi": "https://doi.org/10.1016/j.molimm.2013.11.002" },
+      { "pmid": "24661604", "citation": "Medvedeva EV, et al. The peptide semax affects the expression of genes related to the immune and vascular systems in rat brain focal ischemia: genome-wide transcriptional analysis. BMC Genomics. 2014;15:228.", "doi": "https://doi.org/10.1186/1471-2164-15-228" },
+      { "pmid": "25176261", "citation": "Medvedev VE, et al. A comparison of the anxiolytic effect and tolerability of selank and phenazepam in the treatment of anxiety disorders. Zh Nevrol Psikhiatr Im S S Korsakova. 2014;114(7):17-22. [Russian]", "doi": null },
+      { "pmid": "26356395", "citation": "Medvedev VE, et al. Optimization of the treatment of anxiety disorders with selank. Zh Nevrol Psikhiatr Im S S Korsakova. 2015;115(6):33-40. [Russian]", "doi": "https://doi.org/10.17116/jnevro20151156133-40" },
+      { "pmid": "26924987", "citation": "Volkova A, et al. Selank Administration Affects the Expression of Some Genes Involved in GABAergic Neurotransmission. Front Pharmacol. 2016;7:31.", "doi": "https://doi.org/10.3389/fphar.2016.00031" },
+      { "pmid": "28255762", "citation": "Medvedeva EV, et al. Semax, an analog of ACTH, regulates expression of immune response genes during ischemic brain injury in rats. Mol Genet Genomics. 2017.", "doi": "https://doi.org/10.1007/s00438-017-1297-1" },
+      { "pmid": "28280289", "citation": "Kasian A, et al. Behav Neurol. 2017;2017:5091027.", "doi": "https://doi.org/10.1155/2017/5091027" },
+      { "pmid": "28293190", "citation": "Filatova E, et al. GABA, Selank, and Olanzapine Affect the Expression of Genes Involved in GABAergic Neurotransmission in IMR-32 Cells. Front Pharmacol. 2017;8:89.", "doi": "https://doi.org/10.3389/fphar.2017.00089" },
+      { "pmid": "28361410", "citation": "Povarov IS, et al. Bull Exp Biol Med. 2017;162(5):640-642.", "doi": "https://doi.org/10.1007/s10517-017-3676-3" },
+      { "pmid": "28745220", "citation": "Siebert A, et al. Tuftsin — Properties and Analogs. Curr Med Chem. 2017;24(34).", "doi": "https://doi.org/10.2174/0929867324666170725140826" },
+      { "pmid": "29787664", "citation": "Vasil'eva EV, et al. Eksp Klin Farmakol. 2016;79(9):3-11. [Russian]", "doi": null },
+      { "pmid": "29798983", "citation": "Gusev EI, et al. The efficacy of semax in the treatment of patients at different stages of ischemic stroke. Zh Nevrol Psikhiatr Im S S Korsakova. 2018;118(3-2):61-68. [Russian]", "doi": "https://doi.org/10.17116/jnevro20181183261-68" },
+      { "pmid": "30255741", "citation": "Vyunova TV, et al. Protein Pept Lett. 2018;25(10):914-923.", "doi": "https://doi.org/10.2174/0929866525666180925144642" },
+      { "pmid": "31625062", "citation": "Kolik LG, et al. Bull Exp Biol Med. 2019;167(5):641-644.", "doi": "https://doi.org/10.1007/s10517-019-04588-9" },
+      { "pmid": "31667971", "citation": "Vanhee C, et al. Drug Test Anal. 2020;12(1).", "doi": "https://doi.org/10.1002/dta.2717" },
+      { "pmid": "32342318", "citation": "Panikratova YaR, et al. Functional Connectomic Approach to Studying Selank and Semax Effects. Dokl Biol Sci. 2020;490(1):9-11.", "doi": "https://doi.org/10.1134/S001249662001007X" },
+      { "pmid": "34097675", "citation": "Dergunova LV, et al. Mol Biol (Mosk). 2021. [Russian]", "doi": "https://doi.org/10.31857/S0026898421010043" },
+      { "pmid": "34201112", "citation": "Sudarkina OYu, et al. Brain Protein Expression Profile Confirms the Protective Effect of the ACTHPGP Peptide (Semax) in a Rat Model of Cerebral Ischemia-Reperfusion. Int J Mol Sci. 2021;22(12):6179.", "doi": "https://doi.org/10.3390/ijms22126179" },
+      { "pmid": "34396551", "citation": "Doyno CR, White CM. Sedative-Hypnotic Agents That Impact Gamma-Aminobutyric Acid Receptors: Focus on Flunitrazepam, Gamma-Hydroxybutyric Acid, Phenibut, and Selank. J Clin Pharmacol. 2021;61(Suppl 2).", "doi": "https://doi.org/10.1002/jcph.1922" },
+      { "pmid": "34576218", "citation": "Filippenkov IB, et al. Int J Mol Sci. 2021;22(18):10054.", "doi": "https://doi.org/10.3390/ijms221810054" },
+      { "pmid": "35080861", "citation": "Sciacca MFM, et al. Semax, a Synthetic Regulatory Peptide, Affects Copper-Induced Abeta Aggregation and Amyloid Formation in Artificial Membrane Models. ACS Chem Neurosci. 2022.", "doi": "https://doi.org/10.1021/acschemneuro.1c00707" },
+      { "pmid": "36322304", "citation": "Konstantinopolsky MA, et al. Bull Exp Biol Med. 2022;173(6):730-733.", "doi": "https://doi.org/10.1007/s10517-022-05624-x" },
+      { "pmid": "39442746", "citation": "Inozemtseva LS, et al. Antidepressant-like and antistress effects of the ACTH(4-10) synthetic analogs Semax and Melanotan II on male rats in a model of chronic unpredictable stress. Eur J Pharmacol. 2024.", "doi": "https://doi.org/10.1016/j.ejphar.2024.177068" },
+      { "pmid": "40496623", "citation": "Tomasello MF, et al. Semax, a Copper Chelator Peptide, Decreases the Cu(II)-Catalyzed ROS Production and Cytotoxicity of Abeta by Metal Ion Stripping and Redox Silencing. Bioinorg Chem Appl. 2025.", "doi": "https://doi.org/10.1155/bca/4226220" }
+    ]
+  },
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Semax + Selank Sprays",
+      "description": "Spray-format research listing covering two separate synthetic heptapeptides, Semax (MEHFPGP) and Selank (TKPRPGP). Supplied for laboratory research use only; not for human or veterinary use.",
+      "category": "Research Chemicals > Peptides > Research Use Only",
+      "url": "https://veracue-peptides.vercel.app/product/semax-selank-spray",
+      "brand": { "@type": "Brand", "name": "Veracue" },
+      "isRelatedTo": [
+        {
+          "@type": "ChemicalSubstance",
+          "name": "Semax",
+          "alternateName": ["ACTH(4-7)-PGP", "MEHFPGP"],
+          "molecularFormula": "C37H51N9O10S",
+          "molecularWeight": "813.9 g/mol",
+          "identifier": [{ "@type": "PropertyValue", "propertyID": "CAS", "value": "80714-61-0" }]
+        },
+        {
+          "@type": "ChemicalSubstance",
+          "name": "Selank",
+          "alternateName": ["TP-7", "TKPRPGP"],
+          "molecularFormula": "C33H57N11O9",
+          "molecularWeight": "751.9 g/mol",
+          "identifier": [{ "@type": "PropertyValue", "propertyID": "CAS", "value": "129954-34-3" }]
+        }
+      ],
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "Intended use", "value": "Research use only — laboratory and analytical research" },
+        { "@type": "PropertyValue", "name": "Format", "value": "Spray-format research listing" },
+        { "@type": "PropertyValue", "name": "Route of administration", "value": "Not publicly specified" },
+        { "@type": "PropertyValue", "name": "Concentration per peptide", "value": "Not publicly specified" },
+        { "@type": "PropertyValue", "name": "Semax to Selank ratio", "value": "Not publicly specified" }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What is Semax?", "acceptedAnswer": { "@type": "Answer", "text": "Semax is a synthetic heptapeptide, Met-Glu-His-Phe-Pro-Gly-Pro, with molecular formula C37H51N9O10S and molecular weight 813.9 g/mol. Its first four residues correspond to positions 4 to 7 of adrenocorticotropic hormone, followed by a Pro-Gly-Pro extension that is not part of the native hormone." } },
+        { "@type": "Question", "name": "What is Selank?", "acceptedAnswer": { "@type": "Answer", "text": "Selank is a synthetic heptapeptide, Thr-Lys-Pro-Arg-Pro-Gly-Pro, with molecular formula C33H57N11O9 and molecular weight 751.9 g/mol. Its first four residues are the tuftsin sequence, followed by the same Pro-Gly-Pro extension found in Semax." } },
+        { "@type": "Question", "name": "What is the difference between Semax and Selank?", "acceptedAnswer": { "@type": "Answer", "text": "They are two different molecules with different sequences, formulas, masses and parent compounds. Semax is built on an ACTH fragment and Selank on tuftsin. Only their length and their C-terminal Pro-Gly-Pro extension are shared, reflecting a common design approach rather than similar activity." } },
+        { "@type": "Question", "name": "Does Spray mean nasal or intranasal?", "acceptedAnswer": { "@type": "Answer", "text": "No. Spray describes the listing format. Route of administration is not publicly specified on the current Veracue product information, and this material is not intended for administration in any form." } },
+        { "@type": "Question", "name": "What does Semax dosage mean in research?", "acceptedAnswer": { "@type": "Answer", "text": "In published studies it means the amount a particular research group administered to a particular species by a particular route, such as 50 µg/kg in specific rat protocols. Those are experimental parameters from those studies rather than transferable figures." } },
+        { "@type": "Question", "name": "Is this product a medicine?", "acceptedAnswer": { "@type": "Answer", "text": "No. Veracue supplies it as research material for laboratory and analytical use, not as a drug product, and not for human or veterinary use. Preparations marketed elsewhere under the Semax or Selank names are separate products and fall outside the scope of this page." } }
+      ]
+    }
+  ],
+  "contentMetrics": {
+    "researchSections": 11,
+    "quickAnswers": 14,
+    "faqs": 12,
+    "references": 45
+  }
+}

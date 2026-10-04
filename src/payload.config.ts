@@ -208,9 +208,11 @@ export default buildConfig({
       generateTitle: ({ doc }: any) => (doc?.title ? `${doc.title} | Veracue` : 'Veracue Peptides'),
       generateDescription: ({ doc }: any) => doc?.excerpt || doc?.seoDescription || '',
       generateImage: ({ doc }: any) => doc?.featuredImage || doc?.meta?.image,
-      generateURL: ({ doc }: any) => {
+      generateURL: ({ doc, collectionSlug }: any) => {
         const base = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
-        return `${base}/${doc?.slug || ''}`
+        // Blog posts live under /blog; the (unused) pages collection resolves at the root.
+        const prefix = collectionSlug === 'blog-posts' ? '/blog' : ''
+        return `${base}${prefix}/${doc?.slug || ''}`
       },
     }),
   ],

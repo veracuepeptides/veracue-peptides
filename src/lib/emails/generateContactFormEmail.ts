@@ -21,7 +21,7 @@ export function generateContactFormEmail(
   const subject = escapeHtml(rawSubject)
   const message = escapeHtml(rawMessage)
 
-  return `${shellOpen({ title: 'New Contact Form Submission — Veracue Admin', headerColor: BRAND.olive, headerWaveInto: '#ffffff' })}
+  return `${shellOpen({ title: 'New Contact Form Submission | Veracue Admin', headerColor: BRAND.olive, headerWaveInto: '#ffffff' })}
           <tr>
             <td style="background-color:#ffffff;padding:8px 24px 8px;text-align:center;">
               ${iconBadge('message')}

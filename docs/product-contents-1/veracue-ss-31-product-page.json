@@ -1,0 +1,775 @@
+{
+  "meta": {
+    "route": "/product/ss-31",
+    "title": "SS-31 Research Peptide (Elamipretide) | Veracue",
+    "metaDescription": "SS-31, the research name for elamipretide, for lab research: molecular identity, cardiolipin biology, human trial evidence, SS-31 vs MOTS-c, and COA checks.",
+    "canonical": "https://veracue-peptides.vercel.app/product/ss-31",
+    "primaryKeyword": "SS-31 peptide",
+    "secondaryKeywords": [
+      "SS-31",
+      "SS31",
+      "SS 31 peptide",
+      "elamipretide",
+      "what is SS-31 peptide",
+      "what is SS31",
+      "SS-31 sequence",
+      "SS-31 molecular weight",
+      "SS-31 research peptide",
+      "SS-31 mitochondria",
+      "SS-31 cardiolipin",
+      "SS-31 COA",
+      "SS-31 vs MOTS-c",
+      "SS-31 peptide dosage"
+    ],
+    "semanticTerms": [
+      "inner mitochondrial membrane",
+      "cardiolipin",
+      "cytochrome c",
+      "cristae",
+      "oxidative phosphorylation",
+      "tetrapeptide",
+      "2,6-dimethyltyrosine",
+      "D-arginine",
+      "MTP-131",
+      "Bendavia",
+      "Barth syndrome",
+      "TAFAZZIN",
+      "research use only"
+    ],
+    "category": "Mitochondrial & Cellular Energy",
+    "dateModified": "2026-09-25",
+    "shortBlurb": "SS-31 is the research name for elamipretide, a synthetic tetrapeptide studied for its interaction with cardiolipin, a lipid concentrated in the inner mitochondrial membrane. Veracue supplies it as a research material for laboratory work. The most direct human evidence comes from randomized trials in primary mitochondrial myopathy and Barth syndrome — MMPOWER-3 and TAZPOWER did not meet their primary endpoints, though a related Barth syndrome program supported a narrow FDA accelerated approval in 2025 based on a different, intermediate endpoint. This material does not establish human efficacy, safety or treatment effect."
+  },
+  "hero": {
+    "eyebrow": "Research Use Only",
+    "h1": "SS-31 Peptide (Elamipretide)",
+    "subhead": "A synthetic tetrapeptide studied for its interaction with mitochondrial cardiolipin.",
+    "supporting": "SS-31 is the research name for elamipretide, a synthetic four-residue peptide built around D-arginine and 2,6-dimethyltyrosine. It has drawn sustained research interest for its interaction with cardiolipin, a phospholipid concentrated in the inner mitochondrial membrane, and carries one of the more substantial human trial records among research peptides — spanning mitochondrial myopathy, retinal disease and Barth syndrome. This page separates the molecule's chemical identity, what the published literature reports, and what a Veracue research material can establish on its own. Veracue supplies SS-31 for laboratory research only.",
+    "badges": [
+      "Tetrapeptide",
+      "Cardiolipin-interacting",
+      "CAS 736992-21-5",
+      "PubChem CID 11764719",
+      "Not for human or veterinary use"
+    ]
+  },
+  "aeo": {
+    "question": "What is SS-31 peptide?",
+    "answer": "SS-31 is the research name for elamipretide, a synthetic tetrapeptide with the sequence D-Arg-Dmt-Lys-Phe-NH2 — D-arginine, 2,6-dimethyltyrosine, lysine and phenylalanine. Its molecular formula is C32H49N9O5, with a molecular weight of approximately 639.8 g/mol. Research on SS-31 centers on its interaction with cardiolipin, a lipid concentrated in the inner mitochondrial membrane. Veracue supplies SS-31 as a research material for laboratory use only.",
+    "wordCount": 68
+  },
+  "productSnapshot": {
+    "molecularReference": {
+      "heading": "Molecular Reference Data",
+      "note": "Public database values for the parent compound, not any specific research lot.",
+      "fields": [
+        {
+          "label": "Common name",
+          "value": "Elamipretide"
+        },
+        {
+          "label": "Research / development name",
+          "value": "SS-31"
+        },
+        {
+          "label": "Other development codes",
+          "value": "MTP-131; Bendavia"
+        },
+        {
+          "label": "Sequence",
+          "value": "D-Arg-Dmt-Lys-Phe-NH2 (D-arginyl-2,6-dimethyl-L-tyrosyl-L-lysyl-L-phenylalaninamide)"
+        },
+        {
+          "label": "Peptide length",
+          "value": "4 residues"
+        },
+        {
+          "label": "Molecular formula",
+          "value": "C32H49N9O5"
+        },
+        {
+          "label": "Molecular weight",
+          "value": "approximately 639.8 g/mol"
+        },
+        {
+          "label": "CAS number",
+          "value": "736992-21-5 (parent compound)"
+        },
+        {
+          "label": "PubChem CID",
+          "value": "11764719"
+        },
+        {
+          "label": "InChIKey",
+          "value": "SFVLTCAESLKEHH-WKAQUBQDSA-N"
+        },
+        {
+          "label": "Chemical form",
+          "value": "Values above describe the parent compound; hydrochloride, TFA and other salt forms have different formulas and masses"
+        }
+      ]
+    },
+    "veracueProduct": {
+      "heading": "Veracue Product Data",
+      "note": "Populated only from published first-party Veracue information; unpublished fields are marked as such.",
+      "fields": [
+        {
+          "label": "SKU",
+          "value": "Not publicly specified on the current Veracue product information."
+        },
+        {
+          "label": "Vial size",
+          "value": "Not publicly specified on the current Veracue product information."
+        },
+        {
+          "label": "Physical form",
+          "value": "Not publicly specified on the current Veracue product information."
+        },
+        {
+          "label": "Salt / counterion form",
+          "value": "Not publicly specified on the current Veracue product information."
+        },
+        {
+          "label": "Purity",
+          "value": "Not publicly specified on the current Veracue product information."
+        },
+        {
+          "label": "Lot number",
+          "value": "Not publicly specified on the current Veracue product information."
+        },
+        {
+          "label": "COA",
+          "value": "Not publicly specified on the current Veracue product information."
+        },
+        {
+          "label": "Storage",
+          "value": "Not publicly specified on the current Veracue product information."
+        },
+        {
+          "label": "Price",
+          "value": "Not publicly specified on the current Veracue product information."
+        },
+        {
+          "label": "Stock status",
+          "value": "Not publicly specified on the current Veracue product information."
+        }
+      ]
+    }
+  },
+  "molecularIdentity": {
+    "heading": "Molecular Identity",
+    "body": [
+      "SS-31 is short — four residues — but not an ordinary four residues. The full description is D-arginyl-2,6-dimethyl-L-tyrosyl-L-lysyl-L-phenylalaninamide, condensed to D-Arg-Dmt-Lys-Phe-NH2: a D-arginine, a 2,6-dimethyltyrosine, a lysine and a phenylalanine, terminating in a C-terminal amide. Writing it as \"Arg-Tyr-Lys-Phe\" drops the modifications that make it SS-31 rather than a generic peptide of the same length.",
+      "PubChem also lists the sequence in shorthand as RXKF, where X stands in for the modified tyrosine residue. That notation is a database convenience, not a simplification of the chemistry — it should not be read as an ordinary Arg-Tyr-Lys-Phe peptide.",
+      "The parent compound is recorded under CAS 736992-21-5 and PubChem CID 11764719, formula C32H49N9O5, molecular weight near 639.8 g/mol. What matters practically is that a label and the underlying chemistry can diverge: a vial marked SS-31 may contain the parent compound, a hydrochloride, a TFA salt or a di-TFA form, each with its own formula and mass. Net peptide content and gross vial fill are also different figures, and listings do not always specify which one a stated mass refers to.",
+      "Chemical form, purity and mass are properties of a lot. Only lot-specific documentation — not the parent-compound reference values above — can establish them for a given vial."
+    ],
+    "saltFormNote": "Elamipretide is the parent active moiety. Salt and counterion forms have different molecular formulas and molecular weights and should not be assumed for a specific research lot."
+  },
+  "researchContext": {
+    "heading": "Why SS-31 Is Described as Mitochondrial-Targeted",
+    "body": [
+      "SS-31 is a synthetic peptide whose physicochemical properties — a net positive charge paired with an aromatic surface — promote association with mitochondrial membranes. Within that broader affinity, it has a documented interaction with cardiolipin specifically, a phospholipid enriched in the inner mitochondrial membrane.",
+      "Mechanistic studies built on that interaction have examined its effects on the cytochrome c/cardiolipin relationship, on membrane organization, and on mitochondrial respiration in isolated systems. Those are the findings summarized in the evidence sections below.",
+      "None of this establishes selective targeting of damaged mitochondria, a repair mechanism, or a guaranteed change in ATP output or oxidative stress. \"Targeted\" describes an affinity for a membrane component, not a therapeutic action — and mechanistic findings do not automatically establish clinical benefit."
+    ]
+  },
+  "cardiolipinContext": {
+    "heading": "Why Cardiolipin Is Central to SS-31 Research",
+    "body": [
+      "Cardiolipin is a distinctive phospholipid, largely confined to the inner mitochondrial membrane, where it contributes to membrane organization and to the architecture of the respiratory chain. Cytochrome c can interact with cardiolipin in ways relevant to its peroxidase activity — a mode that, unchecked, contributes to cardiolipin oxidation and membrane damage.",
+      "SS-31 has been shown experimentally to associate with cardiolipin-containing membranes, and mechanistic studies use that association to investigate whether it alters downstream mitochondrial behavior — respiratory chain activity, cristae structure, and related measures in isolated systems.",
+      "That rationale is why cardiolipin biology recurs throughout the SS-31 literature, and why it is the connective thread to Barth syndrome, discussed further below."
+    ]
+  },
+  "evidenceSummary": {
+    "heading": "Evidence Hierarchy",
+    "intro": "Mechanistic evidence is not clinical evidence. Animal findings are not human outcomes. A pharmaceutical approval is not evidence about a research-material lot. These tiers are kept separate for that reason.",
+    "tiers": [
+      {
+        "level": "Molecular / biochemical",
+        "whatItCovers": "Binding and biophysical studies in liposomes, bicelles and isolated mitochondria.",
+        "whatHasBeenReported": "Selective interaction with cardiolipin-containing membranes and effects on cytochrome c/cardiolipin peroxidase activity in isolated systems."
+      },
+      {
+        "level": "Cellular",
+        "whatItCovers": "Cultured and patient-derived cell models, including TAFAZZIN-deficient models.",
+        "whatHasBeenReported": "Reported effects on mitochondrial respiratory measures in these models."
+      },
+      {
+        "level": "Animal",
+        "whatItCovers": "Rodent and canine models of ischemia and heart failure.",
+        "whatHasBeenReported": "Findings in specific model systems, summarized in the references."
+      },
+      {
+        "level": "Human clinical",
+        "whatItCovers": "Randomized trials in defined patient populations.",
+        "whatHasBeenReported": "Mixed. Detailed in the section below."
+      },
+      {
+        "level": "Disease-specific",
+        "whatItCovers": "Barth syndrome, primary mitochondrial myopathy, geographic atrophy.",
+        "whatHasBeenReported": "Outcomes differ by indication."
+      },
+      {
+        "level": "Regulatory / pharmaceutical",
+        "whatItCovers": "FDA review of a specific pharmaceutical product.",
+        "whatHasBeenReported": "One accelerated approval, for one indication, detailed below."
+      }
+    ]
+  },
+  "clinicalResearch": {
+    "heading": "What the Human Literature on Elamipretide Shows",
+    "intro": "Elamipretide has a substantial clinical-development history, so the accurate summary is neither \"no human data\" nor \"clinically proven.\" It is mixed, across several distinct programs.",
+    "studies": [
+      {
+        "study": "MMPOWER-3 — primary mitochondrial myopathy",
+        "design": "Phase 3, randomized, 218 participants, 24 weeks.",
+        "finding": "Did not meet its primary six-minute walk test and fatigue endpoints."
+      },
+      {
+        "study": "ReCLAIM-2 — dry AMD with geographic atrophy",
+        "design": "Phase 2, randomized, 176 participants, 48 weeks.",
+        "finding": "Primary endpoints not statistically significant. Secondary and exploratory structural imaging findings were reported and should be read as exactly that — exploratory, not primary."
+      },
+      {
+        "study": "TAZPOWER — Barth syndrome",
+        "design": "Randomized crossover, 12 participants in the randomized portion.",
+        "finding": "Neither primary endpoint was met in the randomized comparison."
+      }
+    ],
+    "readOut": "Mechanistic and preclinical work on SS-31 has been detailed and reproducible. Human outcome trials, by contrast, have largely missed their stated primary endpoints — with one exception, described next."
+  },
+  "regulatoryContext": {
+    "heading": "FDA Accelerated Approval and Ongoing Confirmatory Trial",
+    "body": [
+      "On September 19, 2025, the FDA granted accelerated approval to FORZINITY (elamipretide hydrochloride) to improve muscle strength in adult and pediatric patients with Barth syndrome weighing at least 30 kg. The approval was based on improvement in knee extensor muscle strength, an intermediate clinical endpoint, rather than on the six-minute walk test or fatigue measures that were the primary endpoints in TAZPOWER. Continued approval for this indication is subject to confirmatory evidence requirements.",
+      "A post-approval confirmatory study is registered as NCT07531251 (4TAZPower, also filed as SPIBA-401), a Phase 3b/4 randomized, placebo-controlled trial in genetically confirmed Barth syndrome. As of the most recent registry update (July 2026), the study's status is listed as recruiting; current status should be checked against the live ClinicalTrials.gov record, as it can change.",
+      "This approval and trial apply to a specific pharmaceutical product manufactured under pharmaceutical controls, with its own labeling. It does not extend to, and should not be read as validating, Veracue research material or any other supplier's research-grade SS-31."
+    ]
+  },
+  "barthSyndrome": {
+    "heading": "Why Barth Syndrome Comes Up So Often in SS-31 Research",
+    "body": [
+      "Barth syndrome is caused by variants in TAFAZZIN, a gene involved in remodeling cardiolipin after it is first synthesized. Loss of function leaves the inner mitochondrial membrane with abnormal cardiolipin composition — a particularly direct disease context for studying cardiolipin biology, and the reason elamipretide's clinical program concentrated there.",
+      "That relevance is specific to a defined pharmaceutical development program, tested in a diagnosed patient population under clinical supervision. It does not validate Veracue research material, and this page gives no treatment or dosing guidance for Barth syndrome or any other condition."
+    ]
+  },
+  "dosageAndProtocolIntent": {
+    "heading": "About SS-31 Dosage and Protocol Searches",
+    "body": [
+      "Dosage and protocol are among the most common searches attached to this compound, so it's worth explaining what those figures represent in the literature. Published dose values belong to defined clinical studies — a specific formulation, a defined population, a defined route, clinical monitoring, and study-specific endpoints. They are not general-purpose instructions, and they do not transfer to a research material from Veracue or any other supplier.",
+      "Veracue does not provide human-use dosing, administration, reconstitution or handling instructions. Experimental design for in vitro or preclinical work remains the responsibility of the investigator and their institution."
+    ]
+  },
+  "problemSolutions": [
+    {
+      "number": 1,
+      "heading": "How do I confirm that SS-31 and elamipretide are the same research molecule?",
+      "problem": "The compound circulates under several names, and listings rarely explain how they relate.",
+      "solution": "SS-31 is the original Szeto-Schiller research designation; elamipretide is the assigned generic name for the same molecule. MTP-131 and Bendavia were development codes, and FORZINITY is the trade name of an approved pharmaceutical product containing elamipretide hydrochloride. Confirm equivalence by matching identifiers — CAS 736992-21-5, PubChem CID 11764719, formula C32H49N9O5 — rather than by name alone. A different CAS or formula on a listing may simply indicate a salt form, but it's worth resolving before use."
+    },
+    {
+      "number": 2,
+      "heading": "What is the exact chemical identity of SS-31?",
+      "problem": "Abbreviated sequence notation can obscure the modifications that define the molecule.",
+      "solution": "D-arginyl-2,6-dimethyl-L-tyrosyl-L-lysyl-L-phenylalaninamide, condensed as D-Arg-Dmt-Lys-Phe-NH2. PubChem's shorthand RXKF uses X for the modified tyrosine — not an ordinary tyrosine. The parent compound is C32H49N9O5, approximately 639.8 g/mol, CAS 736992-21-5, PubChem CID 11764719. A COA that lists only \"RYKF\" or \"Arg-Tyr-Lys-Phe\" has described a different, unmodified compound."
+    },
+    {
+      "number": 3,
+      "heading": "Why does SS-31 research focus on cardiolipin?",
+      "problem": "\"Interacts with cardiolipin\" is often stated without explaining what has actually been measured.",
+      "solution": "Cardiolipin is concentrated in the inner mitochondrial membrane and contributes to its structural organization. SS-31 has been shown experimentally to associate with cardiolipin-containing membranes, and that association has been linked to changes in cytochrome c/cardiolipin peroxidase activity in isolated systems. That is a documented molecular interaction with measured effects in a defined system — not, by itself, a statement about tissue or clinical outcomes."
+    },
+    {
+      "number": 4,
+      "heading": "What does \"mitochondrial-targeted peptide\" actually mean?",
+      "problem": "The phrase is often used as an implied benefit claim.",
+      "solution": "It describes localization, not function. SS-31's charge and aromatic structure give it affinity for mitochondrial membranes generally and for cardiolipin specifically. It does not mean selective targeting of damaged mitochondria, a repair mechanism, or a guaranteed metabolic outcome. What the peptide does once localized is a separate, and much narrower, set of experimental findings."
+    },
+    {
+      "number": 5,
+      "heading": "What does SS-31 research actually show about mitochondrial function?",
+      "problem": "Findings from isolated mitochondria, cell culture and animal models tend to be blended into one general claim.",
+      "solution": "Keep the tiers separate. In isolated systems: cardiolipin binding and altered cytochrome c/cardiolipin peroxidase activity. In cellular models, including TAFAZZIN-deficient models: reported effects on respiratory measures. In animal models: findings specific to the species and injury model studied. Each is genuine within its system; none is a human outcome, which is why human trials are summarized separately."
+    },
+    {
+      "number": 6,
+      "heading": "What does the human clinical literature on elamipretide actually show?",
+      "problem": "Sources tend to cite either the regulatory approval or the negative trials, rarely both.",
+      "solution": "Both belong in the picture. MMPOWER-3 (218 participants, primary mitochondrial myopathy) did not meet its primary six-minute walk and fatigue endpoints. ReCLAIM-2 (176 participants, geographic atrophy) did not meet its primary endpoints, though exploratory imaging findings were reported. TAZPOWER (12 participants, Barth syndrome) did not meet its randomized primary endpoints. The later FDA accelerated approval rested on a different, intermediate endpoint — knee extensor strength — in the same Barth syndrome program. The honest summary is a well-characterized mechanism with one narrow, conditional clinical approval."
+    },
+    {
+      "number": 7,
+      "heading": "Why does SS-31 research frequently mention Barth syndrome?",
+      "problem": "The association is repeated without explaining why this disease specifically.",
+      "solution": "Barth syndrome results from TAFAZZIN variants that disrupt cardiolipin remodeling — a direct disease context for a cardiolipin-interacting molecule. That is why elamipretide's clinical program concentrated there and why the approved pharmaceutical product carries a Barth syndrome indication. This applies to a defined pharmaceutical program in diagnosed patients under clinical care, not to research material from any supplier."
+    },
+    {
+      "number": 8,
+      "heading": "What does SS-31 research say about mitochondrial membrane function and oxidative stress?",
+      "problem": "\"Reduces oxidative stress\" is often stated as a conclusion rather than an interpretation of specific measurements.",
+      "solution": "What is directly measured, in defined systems, includes cytochrome c/cardiolipin peroxidase activity, respiration rates, and membrane or cristae structure by microscopy. The interpretation built on those measurements — that protecting cardiolipin preserves the structural scaffold the respiratory chain depends on — is a mechanistic model consistent with the data, not itself a clinical finding."
+    },
+    {
+      "number": 9,
+      "heading": "How should I compare SS-31 with MOTS-c and other mitochondrial research peptides?",
+      "problem": "Peptides get grouped under \"mitochondrial\" even when their structure and evidence base have little in common.",
+      "solution": "Compare origin, structure and evidence type rather than the category label. SS-31 is a four-residue synthetic peptide with an established interaction with a membrane lipid and a substantial human trial record. MOTS-c is a 16-residue peptide encoded within mitochondrial DNA; it has a substantially different evidence base, with research concentrated in cellular, animal and observational human contexts rather than the randomized trial programs that exist for elamipretide. The two are not interchangeable and are not studied for the same proposed mechanism — see the comparison table below."
+    },
+    {
+      "number": 10,
+      "heading": "What should I verify on an SS-31 / elamipretide COA?",
+      "problem": "A certificate can look thorough while omitting the fields that actually establish identity.",
+      "solution": "A useful SS-31 COA may include a lot or batch number, the material identity written out in full, the chemical form (parent compound, hydrochloride, TFA or di-TFA), HPLC purity with the chromatogram, MS identity with observed values, the analytical method, the testing date and the testing laboratory. A certificate without a lot number describes a product line, not the vial in hand."
+    },
+    {
+      "number": 11,
+      "heading": "How should I interpret SS-31 mass-spectrometry data when salt forms differ?",
+      "problem": "An observed mass that doesn't match 639.8 g/mol is sometimes read as a failed identity check when it may simply reflect the chemical form.",
+      "solution": "Molecular weight and m/z are not the same number — electrospray ionization commonly produces multiply charged ions, and SS-31 has both an arginine and a lysine available to protonate. Adducts and counterions shift observed values further: a hydrochloride, mono-TFA or di-TFA form each carries a different total mass than the parent compound. Interpreting a spectrum requires knowing the chemical form and charge state first; matching a single expected number second."
+    },
+    {
+      "number": 12,
+      "heading": "What can a Veracue SS-31 product page establish versus lot-specific documentation?",
+      "problem": "Product pages often blur reference data, published literature and lot-level facts into one apparent guarantee.",
+      "solution": "This page establishes what the molecule is, according to public chemical databases; what the published literature reports, at its stated evidence level; and what the regulatory record says about a specific pharmaceutical product. It does not and cannot establish the purity, chemical form, mass or identity of any individual vial — those are lot-level facts, supported only by lot-specific analytical documentation."
+    }
+  ],
+  "comparison": {
+    "heading": "SS-31 / Elamipretide and MOTS-c Side by Side",
+    "note": "Two peptides studied in mitochondrial contexts with different origins, structures and evidence bases. No ranking is implied.",
+    "columns": [
+      "Attribute",
+      "SS-31 / Elamipretide",
+      "MOTS-c"
+    ],
+    "rows": [
+      {
+        "attribute": "Molecular identity",
+        "ss31": "Synthetic tetrapeptide, C32H49N9O5, ~639.8 g/mol, CAS 736992-21-5, PubChem CID 11764719",
+        "motsc": "Mitochondrial-DNA-encoded peptide, CAS 1627580-64-6, PubChem CID 146675088"
+      },
+      {
+        "attribute": "Peptide length",
+        "ss31": "4 residues, including D-arginine and 2,6-dimethyltyrosine, C-terminal amide",
+        "motsc": "16 residues, standard L-amino acids"
+      },
+      {
+        "attribute": "Mitochondrial relationship",
+        "ss31": "Synthetic molecule that localizes to the inner mitochondrial membrane and interacts with cardiolipin",
+        "motsc": "Encoded within the mitochondrial 12S rRNA gene; studied as a signaling peptide"
+      },
+      {
+        "attribute": "Proposed mechanism",
+        "ss31": "Cardiolipin binding and modulation of the cytochrome c/cardiolipin interaction",
+        "motsc": "Reported metabolic and nuclear gene-regulatory signaling"
+      },
+      {
+        "attribute": "Evidence type",
+        "ss31": "Biophysical, cellular, animal and multiple randomized human trials",
+        "motsc": "Concentrated in cellular, animal and observational human contexts"
+      }
+    ]
+  },
+  "coaGuide": {
+    "heading": "What an SS-31 COA May Include",
+    "intro": "A certificate of analysis is only useful if it ties measurements to a specific batch. A thorough SS-31 or elamipretide COA, from any supplier, may include the following.",
+    "items": [
+      {
+        "field": "Lot / batch number",
+        "why": "Ties the document to the vial in hand rather than a product line."
+      },
+      {
+        "field": "Material identity",
+        "why": "Should give the full modified sequence, not a four-letter shorthand."
+      },
+      {
+        "field": "Chemical form",
+        "why": "Parent compound, hydrochloride, TFA or di-TFA — determines the expected formula and mass."
+      },
+      {
+        "field": "HPLC purity and chromatogram",
+        "why": "A percentage without the trace can't be independently assessed."
+      },
+      {
+        "field": "Mass spectrometry",
+        "why": "Observed values and charge states, not only a pass/fail statement."
+      },
+      {
+        "field": "Analytical method and instrument",
+        "why": "Makes results comparable across lots and labs."
+      }
+    ],
+    "veracueNote": "No public SS-31 lot-specific COA was identified in the currently published Veracue product information."
+  },
+  "massSpecGuide": {
+    "heading": "Reading SS-31 Mass Spectrometry Data",
+    "body": [
+      "The most common misreading of a peptide spectrum treats molecular weight and m/z as the same number. They aren't: molecular weight describes the neutral molecule, while m/z depends on how many charges the observed ion carries.",
+      "Electrospray ionization commonly produces multiply charged ions, particularly for basic peptides like SS-31. Adducts and counterions shift the observed value further — a hydrochloride, mono-TFA or di-TFA form each has a different total mass than the parent compound. There is no single universally dominant peak to expect; the correct comparison depends on knowing the chemical form and charge state for the material in question before interpreting the spectrum."
+    ]
+  },
+  "researchDoesNotShow": {
+    "heading": "What This Page Does Not Establish",
+    "items": [
+      "Equivalence between Veracue research material and any approved pharmaceutical product containing elamipretide.",
+      "Human efficacy for any condition.",
+      "Clinical outcomes attributable to any individual research lot.",
+      "Safety for human or veterinary use in any form.",
+      "Dosing, dose per day, or any human-use protocol.",
+      "Administration, reconstitution, injection or handling instructions.",
+      "Treatment or disease-management guidance of any kind.",
+      "Lot-specific purity, chemical form or identity without lot-specific analytical documentation."
+    ]
+  },
+  "faq": [
+    {
+      "question": "What is SS-31 peptide?",
+      "answer": "SS-31 is the research name for elamipretide, a synthetic tetrapeptide with the sequence D-Arg-Dmt-Lys-Phe-NH2. It is studied for its interaction with cardiolipin in the inner mitochondrial membrane. Veracue supplies it as a research material for laboratory use only."
+    },
+    {
+      "question": "Is SS-31 the same as elamipretide?",
+      "answer": "Yes. SS-31 is the original Szeto-Schiller research name; elamipretide is the generic name for the same molecule. MTP-131 and Bendavia were development codes used during its clinical program."
+    },
+    {
+      "question": "What is the SS-31 sequence?",
+      "answer": "D-Arg-Dmt-Lys-Phe-NH2 — D-arginyl-2,6-dimethyl-L-tyrosyl-L-lysyl-L-phenylalaninamide. PubChem's RXKF shorthand uses X for the modified tyrosine, not an ordinary one."
+    },
+    {
+      "question": "What is the molecular weight of SS-31?",
+      "answer": "The parent compound is C32H49N9O5, approximately 639.8 g/mol, PubChem CID 11764719, CAS 736992-21-5. Hydrochloride and TFA salt forms have different formulas and higher total masses."
+    },
+    {
+      "question": "What does SS-31 do at the mitochondrial level?",
+      "answer": "Published work reports that SS-31 associates with cardiolipin-containing membranes and affects cytochrome c/cardiolipin peroxidase activity in isolated systems — mechanistic findings, not clinical claims."
+    },
+    {
+      "question": "Why does SS-31 interact with cardiolipin?",
+      "answer": "Cardiolipin is an anionic phospholipid concentrated in the inner mitochondrial membrane. SS-31's charged and aromatic residues give it affinity for that specific lipid environment, described in biophysical studies using liposomes and NMR."
+    },
+    {
+      "question": "What is SS-31 research in Barth syndrome?",
+      "answer": "Barth syndrome involves TAFAZZIN variants that disrupt cardiolipin remodeling, giving it a direct connection to cardiolipin biology. Elamipretide's clinical program, including the TAZPOWER trial, concentrated on this population."
+    },
+    {
+      "question": "What does human research on elamipretide show?",
+      "answer": "Mixed. Trials in mitochondrial myopathy and geographic atrophy did not meet primary endpoints. A Barth syndrome program supported FDA accelerated approval in September 2025, based on an intermediate muscle-strength endpoint."
+    },
+    {
+      "question": "What do SS-31 dosage searches mean?",
+      "answer": "Dose figures in the literature belong to specific clinical study designs with defined populations and monitoring. They are not instructions and do not transfer to research material. Veracue provides no human-use dosing or administration guidance."
+    },
+    {
+      "question": "How is SS-31 different from MOTS-c?",
+      "answer": "SS-31 is a synthetic four-residue peptide binding a membrane lipid, with an extensive human trial record. MOTS-c is a 16-residue, mitochondrial-DNA-encoded peptide with evidence concentrated in cellular, animal and observational research."
+    },
+    {
+      "question": "What should an SS-31 COA contain?",
+      "answer": "A lot number, full material identity, chemical form, HPLC purity with chromatogram, mass spectrometry with observed values, analytical method, testing date and testing laboratory."
+    },
+    {
+      "question": "Is Veracue SS-31 intended for human use?",
+      "answer": "No. Veracue supplies SS-31 strictly for laboratory research. It is not for human or veterinary use and is not intended for ingestion, injection or any form of administration."
+    }
+  ],
+  "references": [
+    {
+      "id": 1,
+      "citation": "PubChem Compound Summary for CID 11764719, Elamipretide.",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/11764719",
+      "usedFor": "Molecular formula, weight, CAS, InChIKey, synonyms, sequence notation"
+    },
+    {
+      "id": 2,
+      "citation": "FORZINITY (elamipretide) — Highlights of Prescribing Information. FDA, 2025.",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/215244s000lbl.pdf",
+      "usedFor": "Approved indication, accelerated approval basis, TAZPOWER endpoint outcome"
+    },
+    {
+      "id": 3,
+      "citation": "FDA Grants Accelerated Approval to First Treatment for Barth Syndrome. FDA press announcement, 2025.",
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-grants-accelerated-approval-first-treatment-barth-syndrome",
+      "usedFor": "Approval date and regulatory status"
+    },
+    {
+      "id": 4,
+      "citation": "Birk AV, Liu S, Soong Y, et al. The mitochondrial-targeted compound SS-31 re-energizes ischemic mitochondria by interacting with cardiolipin. J Am Soc Nephrol. 2013;24(8):1250-1261.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3736700/",
+      "usedFor": "Cardiolipin binding, cristae protection in a rat ischemia model"
+    },
+    {
+      "id": 5,
+      "citation": "Birk AV, Chao WM, Bracken C, et al. Targeting mitochondrial cardiolipin and the cytochrome c/cardiolipin complex to promote electron transport and optimize mitochondrial ATP synthesis. Br J Pharmacol. 2014;171(8):2017-2028.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3976619/",
+      "usedFor": "Liposome/bicelle binding, NMR, respiration and ATP synthesis measures"
+    },
+    {
+      "id": 6,
+      "citation": "Karaa A, et al. Efficacy and Safety of Elamipretide in Individuals With Primary Mitochondrial Myopathy: The MMPOWER-3 Randomized Clinical Trial. Neurology. 2023;101(3):e238-e252.",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10382259/",
+      "usedFor": "MMPOWER-3 design and primary-endpoint result"
+    },
+    {
+      "id": 7,
+      "citation": "ReCLAIM-2: A Randomized Phase II Clinical Trial Evaluating Elamipretide in AMD, Geographic Atrophy Growth, Visual Function, and Ellipsoid Zone Preservation. Ophthalmology Science. 2024.",
+      "url": "https://www.ophthalmologyscience.org/article/S2666-9145(24)00164-7/fulltext",
+      "usedFor": "ReCLAIM-2 design and primary-endpoint result"
+    },
+    {
+      "id": 8,
+      "citation": "A Trial to Evaluate Safety, Tolerability and Efficacy of Elamipretide in Subjects With Barth Syndrome (TAZPOWER). ClinicalTrials.gov NCT03098797.",
+      "url": "https://clinicaltrials.gov/study/NCT03098797",
+      "usedFor": "TAZPOWER design and population"
+    },
+    {
+      "id": 9,
+      "citation": "Clinical Trial in Patients With Barth Syndrome — 4TAZPower. ClinicalTrials.gov NCT07531251.",
+      "url": "https://clinicaltrials.gov/study/NCT07531251",
+      "usedFor": "Post-approval confirmatory trial design and status"
+    },
+    {
+      "id": 10,
+      "citation": "MOTS-c compound record. PubChem CID 146675088 / CAS 1627580-64-6.",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/146675088",
+      "usedFor": "MOTS-c reference values in the comparison table"
+    }
+  ],
+  "internalLinks": [
+    {
+      "anchor": "browse the research catalog",
+      "href": "/shop",
+      "context": "Hero and closing CTA"
+    },
+    {
+      "anchor": "batch certificates of analysis",
+      "href": "/certificates",
+      "context": "COA section"
+    },
+    {
+      "anchor": "general research FAQ",
+      "href": "/faq",
+      "context": "FAQ footer"
+    },
+    {
+      "anchor": "contact the Veracue team",
+      "href": "/contact-us",
+      "context": "Product data and CTA sections"
+    },
+    {
+      "anchor": "how Veracue verifies its material",
+      "href": "/about-us",
+      "context": "COA and analytical sections"
+    },
+    {
+      "anchor": "medical disclaimer",
+      "href": "/medical-disclaimer",
+      "context": "Compliance block"
+    },
+    {
+      "anchor": "terms and conditions",
+      "href": "/terms-and-conditions",
+      "context": "Compliance block"
+    }
+  ],
+  "compliance": {
+    "ruoStatement": "SS-31 supplied by Veracue is intended for laboratory research use only. It is not for human or veterinary use, and is not intended for ingestion, injection or any form of administration.",
+    "fdaStatement": "The content on this page has not been evaluated by the U.S. Food and Drug Administration. Veracue research material is not a drug and is not intended to diagnose, treat, cure or prevent any disease.",
+    "pharmaceuticalDistinction": "An FDA-approved pharmaceutical product containing elamipretide exists for a specific Barth syndrome indication. That approval applies to the approved product and its labeled use — not to Veracue research material or any claim of equivalence to it.",
+    "lotStatement": "Purity, chemical form and analytical results are properties of an individual lot, established only by lot-specific documentation."
+  },
+  "cta": {
+    "heading": "Documented, not promised.",
+    "body": "For the analytical detail behind a specific compound before it reaches your bench, batch certificates are published alongside the catalog. For material not yet listed, the research team can answer directly.",
+    "primary": {
+      "label": "View batch certificates",
+      "href": "/certificates"
+    },
+    "secondary": {
+      "label": "Contact the research team",
+      "href": "/contact-us"
+    }
+  },
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://veracue-peptides.vercel.app/#website",
+        "url": "https://veracue-peptides.vercel.app",
+        "name": "Veracue Peptides",
+        "publisher": {
+          "@id": "https://veracue-peptides.vercel.app/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://veracue-peptides.vercel.app/#organization",
+        "name": "Veracue Peptides",
+        "url": "https://veracue-peptides.vercel.app",
+        "logo": "https://veracue-peptides.vercel.app/veracue-images/logo-header.png",
+        "email": "support@veracuepeptides.com",
+        "telephone": "+1-800-837-2283"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://veracue-peptides.vercel.app/product/ss-31#webpage",
+        "url": "https://veracue-peptides.vercel.app/product/ss-31",
+        "name": "SS-31 Peptide (Elamipretide) — Research Reference",
+        "description": "Molecular identity, cardiolipin research context, human clinical evidence, COA and mass spectrometry guidance for SS-31 (elamipretide) research material.",
+        "dateModified": "2026-09-25",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@id": "https://veracue-peptides.vercel.app/#website"
+        },
+        "about": {
+          "@type": "Thing",
+          "name": "Elamipretide (SS-31)",
+          "alternateName": [
+            "SS-31",
+            "SS31",
+            "MTP-131",
+            "Bendavia"
+          ],
+          "description": "Synthetic mitochondria-targeted tetrapeptide, D-Arg-Dmt-Lys-Phe-NH2, molecular formula C32H49N9O5.",
+          "identifier": "PubChem CID 11764719",
+          "sameAs": [
+            "https://pubchem.ncbi.nlm.nih.gov/compound/11764719"
+          ]
+        },
+        "mainEntity": {
+          "@id": "https://veracue-peptides.vercel.app/product/ss-31#faq"
+        },
+        "breadcrumb": {
+          "@id": "https://veracue-peptides.vercel.app/product/ss-31#breadcrumb"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://veracue-peptides.vercel.app/product/ss-31#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://veracue-peptides.vercel.app"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Shop",
+            "item": "https://veracue-peptides.vercel.app/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "SS-31 (Elamipretide)",
+            "item": "https://veracue-peptides.vercel.app/product/ss-31"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://veracue-peptides.vercel.app/product/ss-31#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is SS-31 peptide?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SS-31 is the research name for elamipretide, a synthetic tetrapeptide with the sequence D-Arg-Dmt-Lys-Phe-NH2. It is studied for its interaction with cardiolipin in the inner mitochondrial membrane. Veracue supplies it as a research material for laboratory use only."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is SS-31 the same as elamipretide?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. SS-31 is the original Szeto-Schiller research name; elamipretide is the generic name for the same molecule. MTP-131 and Bendavia were development codes used during its clinical program."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the SS-31 sequence?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "D-Arg-Dmt-Lys-Phe-NH2 — D-arginyl-2,6-dimethyl-L-tyrosyl-L-lysyl-L-phenylalaninamide. PubChem's RXKF shorthand uses X for the modified tyrosine, not an ordinary one."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the molecular weight of SS-31?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The parent compound is C32H49N9O5, approximately 639.8 g/mol, PubChem CID 11764719, CAS 736992-21-5. Hydrochloride and TFA salt forms have different formulas and higher total masses."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does SS-31 do at the mitochondrial level?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Published work reports that SS-31 associates with cardiolipin-containing membranes and affects cytochrome c/cardiolipin peroxidase activity in isolated systems. These are mechanistic findings, not statements about clinical effects."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does SS-31 interact with cardiolipin?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cardiolipin is an anionic phospholipid concentrated in the inner mitochondrial membrane. SS-31's charged and aromatic residues give it affinity for that specific lipid environment, described in biophysical studies using liposomes and NMR."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is SS-31 research in Barth syndrome?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Barth syndrome involves TAFAZZIN variants that disrupt cardiolipin remodeling, giving it a direct connection to cardiolipin biology. Elamipretide's clinical program, including the TAZPOWER trial, concentrated on this population."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does human research on elamipretide show?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mixed results. Trials in primary mitochondrial myopathy and geographic atrophy did not meet their primary endpoints. A Barth syndrome program supported FDA accelerated approval in September 2025, based on an intermediate muscle-strength endpoint."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What do SS-31 dosage searches mean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dose figures in the literature belong to specific clinical study designs with defined populations and monitoring. They are not instructions and do not transfer to research material. Veracue provides no human-use dosing or administration guidance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is SS-31 different from MOTS-c?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SS-31 is a synthetic four-residue peptide that binds a membrane lipid and has an extensive human trial record. MOTS-c is a 16-residue, mitochondrial-DNA-encoded peptide with an evidence base concentrated in cellular, animal and observational research."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should an SS-31 COA contain?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A lot number, full material identity, chemical form, HPLC purity with chromatogram, mass spectrometry with observed values, analytical method, testing date and testing laboratory."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Veracue SS-31 intended for human use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Veracue supplies SS-31 strictly for laboratory research. It is not for human or veterinary use and is not intended for ingestion, injection or any form of administration."
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

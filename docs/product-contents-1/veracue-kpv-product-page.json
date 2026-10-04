@@ -1,0 +1,1499 @@
+{
+  "deliverable": {
+    "client": "Veracue Peptides",
+    "site": "https://veracue-peptides.vercel.app",
+    "page": "KPV product page",
+    "prepared_by": "Belk Digital",
+    "prepared_on": "2026-09-19",
+    "format_note": "Body copy in I.sections[] (id, heading, body[] or subsections[], optional table {columns, rows}). J–M feed page modules. P.json_ld is ready to lift into a script tag."
+  },
+  "A_page_positioning": {
+    "summary": "A research-reference product page for KPV (Lys-Pro-Val, α-MSH 11–13). It resolves the name to a verified molecular identity, explains the chemical-form and isomer questions that make KPV harder to verify than its size suggests, summarises the published preclinical literature without converting it into outcomes, and makes lot documentation the page's main differentiator.",
+    "differentiators": [
+      "Chemical-form table: free acid vs C-terminal amide vs acetylated amide vs acetate salt, with calculated masses. Most competing listings give one molecular weight and never say which form it describes.",
+      "Isomer and near-mass section: Lys-Val-Pro and Pro-Val-Lys share KPV's exact formula; GHK (340.38) and KdPT (344.41) sit within a few daltons. Explains why intact-mass MS alone cannot confirm KPV.",
+      "Honest mechanism summary: PepT1 uptake, MC1R-independence and the IL-1β hypothesis presented as unresolved, model-specific findings, including a published negative in-vitro result.",
+      "Consumer-intent queries (benefits, dosage, oral KPV) answered directly from a research-only position instead of ignored."
+    ],
+    "status_gate": "As of 19 September 2026 the live Veracue catalog (/shop, 3 products) and COA archive (/certificates, 12 reports) contain no KPV record. Every Veracue-specific field is therefore set to the standard not-specified wording. Before publishing, Veracue must supply: vial quantity, physical form, chemical/salt form, purity result, identity result, lot number, testing lab and date, COA link, storage statement, SKU and price."
+  },
+  "B_primary_keyword": {
+    "primary_keyword": "KPV peptide",
+    "validation": "The spreadsheet is a Google Trends related-queries export (relative interest 0–100, not absolute volume). 'kpv peptide' (97), 'peptide kpv' (100) and 'kpv peptides' (73) form the head cluster and match a product page's navigational/commercial intent. 'kpv peptide benefits' scores 100 in two blocks but is informational; it is covered in a dedicated section and FAQ rather than made the primary term, since a product page targeting 'benefits' would pull the copy toward consumer claims.",
+    "placement": [
+      "SEO title",
+      "H1",
+      "first sentence of the 'What Is KPV Peptide?' section",
+      "meta description",
+      "one FAQ question",
+      "image alt text on the primary image"
+    ]
+  },
+  "C_secondary_keyword_clusters": {
+    "core": [
+      "KPV peptide",
+      "peptide KPV",
+      "KPV peptides",
+      "KPV tripeptide",
+      "Lys-Pro-Val"
+    ],
+    "identity_entities": [
+      "α-MSH (11–13)",
+      "alpha-melanocyte-stimulating hormone",
+      "KPV sequence",
+      "KPV molecular weight",
+      "CAS 67727-97-3",
+      "PubChem CID 125672"
+    ],
+    "informational": [
+      "what is KPV peptide",
+      "what does KPV peptide do",
+      "what does KPV do",
+      "what is KPV peptide used for"
+    ],
+    "benefits_intent_research_framed": [
+      "KPV peptide benefits",
+      "KPV benefits"
+    ],
+    "dosage_intent_handled_without_numbers": [
+      "KPV dosage",
+      "KPV peptide dosage",
+      "KPV dosing"
+    ],
+    "route_intent_handled_without_instructions": [
+      "oral KPV"
+    ],
+    "analytical_documentation": [
+      "KPV COA",
+      "KPV HPLC",
+      "KPV mass spectrometry",
+      "KPV acetate",
+      "KPV free base"
+    ],
+    "related_entities_used_only_in_comparisons": [
+      "GHK-Cu",
+      "BPC-157",
+      "KdPT",
+      "KLOW (blend name, disambiguation only)"
+    ],
+    "excluded_from_dataset": {
+      "terms": [
+        "peptide calculator",
+        "peptide dosage calculator",
+        "mcg to mg",
+        "bac water",
+        "kpv reddit",
+        "kvp",
+        "amino club",
+        "protide health",
+        "ion peptides",
+        "wolverine stack"
+      ],
+      "reason": "Dosing-tool, reconstitution, forum, competitor-brand or misspelling queries. Using them would undermine the RUO boundary or add no relevance. 'kvp' is addressed only as a naming-confusion point, never used as a target term."
+    },
+    "cannibalization_note": "KLOW queries are the fastest-rising in the file (e.g. 'klow peptide' +550% in one block). KLOW is a separate blend page already in progress; this page mentions it only to disambiguate. Target KLOW terms on the KLOW page, not here."
+  },
+  "D_search_intent_map": [
+    {
+      "query": "KPV peptide / peptide KPV / KPV peptides",
+      "intent": "Navigational + commercial research",
+      "handling": "H1, hero, specs table, documentation section",
+      "section": "hero, quick_specs"
+    },
+    {
+      "query": "what is KPV peptide",
+      "intent": "Definitional",
+      "handling": "40–80-word definition leading the section; AEO block 1",
+      "section": "what_is_kpv"
+    },
+    {
+      "query": "what does KPV peptide do / what does KPV do",
+      "intent": "Mechanistic",
+      "handling": "Answered as published experimental activity with model limits; never as effects in a person",
+      "section": "what_does_kpv_do"
+    },
+    {
+      "query": "what is KPV peptide used for",
+      "intent": "Application",
+      "handling": "Reframed as what researchers study KPV for",
+      "section": "what_researchers_study"
+    },
+    {
+      "query": "KPV peptide benefits / KPV benefits",
+      "intent": "Consumer outcome",
+      "handling": "Research-findings section, each finding tied to its model; explicit list of what is not established",
+      "section": "benefits_research"
+    },
+    {
+      "query": "KPV dosage / KPV peptide dosage / KPV dosing",
+      "intent": "Human-use instruction",
+      "handling": "Direct statement that no dose is provided and why; redirected to study-design variables. No numbers.",
+      "section": "dosage"
+    },
+    {
+      "query": "oral KPV",
+      "intent": "Route / formulation",
+      "handling": "States human route questions are out of scope; notes that published gut-targeted carriers were animal-model systems",
+      "section": "oral_kpv"
+    },
+    {
+      "query": "KPV vs GHK-Cu / KPV vs BPC-157",
+      "intent": "Comparative",
+      "handling": "Factual identity tables, no ranking",
+      "section": "K"
+    },
+    {
+      "query": "KPV COA / KPV HPLC / KPV mass spec",
+      "intent": "Verification",
+      "handling": "Analytical and COA sections, checklist table",
+      "section": "analytical, coa"
+    }
+  ],
+  "E_seo_title": {
+    "title": "KPV Research Peptide (Lys-Pro-Val, α-MSH 11–13) | Veracue",
+    "length": 57,
+    "note": "Matches the live AHK-Cu house pattern: <Compound> Research Peptide (<alt name>) | Veracue."
+  },
+  "F_meta_description": {
+    "text": "KPV, the Lys-Pro-Val tripeptide of α-MSH, for lab research: molecular identity, what the 2008 PepT1 colitis study tested, KPV vs α-MSH, and COA checks.",
+    "length": 151,
+    "note": "Matches the AHK-Cu pattern: identity clause, 'for lab research:', then what the page covers. No benefit or outcome claims."
+  },
+  "G_url_slug": {
+    "slug": "/product/kpv",
+    "full_url": "https://veracue-peptides.vercel.app/product/kpv",
+    "note": "Matches the live convention (/product/selank, /product/ahk-cu, /product/nad-plus). The URL does not exist yet; do not link to it from other pages until the product record is live."
+  },
+  "H_h1": "KPV Peptide",
+  "I_product_page_copy": {
+    "sections": [
+      {
+        "id": "hero",
+        "eyebrow": "Research Use Only",
+        "h1": "KPV Peptide",
+        "subheading": "Lys-Pro-Val · α-MSH (11–13) · C₁₆H₃₀N₄O₄",
+        "body": [
+          "KPV is a synthetic tripeptide built from three amino acids: lysine, proline and valine. The same Lys-Pro-Val sequence forms the C-terminal end of alpha-melanocyte-stimulating hormone (α-MSH), which is why the literature also calls it α-MSH (11–13). Interest in the fragment grew out of 1980s work on α-MSH, when researchers asked how much of the hormone's activity a short tail could carry. Since then, KPV has been studied mainly in cell culture and rodent models of inflammatory signaling, including intestinal models involving the PepT1 peptide transporter.",
+          "Veracue presents KPV strictly as a Research Use Only material. It is not for human or veterinary use."
+        ],
+        "cta": [
+          {
+            "label": "Review Research Specifications",
+            "target": "#quick-specs"
+          },
+          {
+            "label": "View Product Documentation",
+            "target": "#coa"
+          }
+        ]
+      },
+      {
+        "id": "quick_specs",
+        "heading": "Quick Research Specifications",
+        "table": {
+          "columns": [
+            "Field",
+            "Value"
+          ],
+          "rows": [
+            [
+              "Product name",
+              "KPV"
+            ],
+            [
+              "Alternate names",
+              "Lys-Pro-Val; H-Lys-Pro-Val-OH; α-MSH (11–13); KPV tripeptide"
+            ],
+            [
+              "Peptide sequence",
+              "Lys-Pro-Val (K-P-V)"
+            ],
+            [
+              "Peptide length",
+              "3 amino acids (tripeptide)"
+            ],
+            [
+              "Reference chemical form",
+              "Free acid, all L-amino acids (as indexed in PubChem)"
+            ],
+            [
+              "Molecular formula (free acid)",
+              "C₁₆H₃₀N₄O₄"
+            ],
+            [
+              "Average molecular weight (free acid)",
+              "342.44 g/mol"
+            ],
+            [
+              "Monoisotopic mass (free acid)",
+              "342.2267 Da"
+            ],
+            [
+              "CAS number (free acid)",
+              "67727-97-3"
+            ],
+            [
+              "PubChem CID",
+              "125672"
+            ],
+            [
+              "Parent peptide",
+              "C-terminal residues 11–13 of α-MSH"
+            ],
+            [
+              "Supplied chemical / salt form",
+              "Not publicly specified on the current Veracue product information."
+            ],
+            [
+              "Vial quantity",
+              "Not publicly specified on the current Veracue product information."
+            ],
+            [
+              "Physical form",
+              "Not publicly specified on the current Veracue product information."
+            ],
+            [
+              "Purity (HPLC)",
+              "Not publicly specified on the current Veracue product information."
+            ],
+            [
+              "Identity (mass spectrometry)",
+              "Not publicly specified on the current Veracue product information."
+            ],
+            [
+              "Lot number",
+              "Not publicly specified on the current Veracue product information."
+            ],
+            [
+              "Testing laboratory and date",
+              "Not publicly specified on the current Veracue product information."
+            ],
+            [
+              "Certificate of Analysis",
+              "Not publicly specified on the current Veracue product information."
+            ],
+            [
+              "Research designation",
+              "Research Use Only. Not for human or veterinary use."
+            ]
+          ]
+        }
+      },
+      {
+        "id": "what_is_kpv",
+        "heading": "What Is KPV Peptide?",
+        "body": [
+          "KPV peptide is the tripeptide Lys-Pro-Val, corresponding to residues 11 to 13 of α-MSH. In its reference form (CAS 67727-97-3, PubChem CID 125672) it is a free acid with the formula C₁₆H₃₀N₄O₄ and an average molecular weight of about 342.44 g/mol. Published reviews describe KPV as retaining anti-inflammatory activity reported for α-MSH in experimental systems, without the parent hormone's pigmentary action.",
+          "Two separate questions sit behind any KPV listing, though. The first concerns the molecule: its sequence, formula and research history. The second concerns a specific vial: whether that material is KPV, in which chemical form, and at what documented purity. Only lot-specific analytical data can answer the second question."
+        ]
+      },
+      {
+        "id": "scientific_background",
+        "heading": "KPV Scientific Background",
+        "subsections": [
+          {
+            "heading": "Molecular Identity and Structure",
+            "body": [
+              "KPV is short enough that every residue matters. Lysine contributes two basic amino groups. Proline adds a ring that restricts backbone flexibility, and valine closes the chain with a small hydrophobic side group. None of the three residues is aromatic, a detail that shapes how KPV behaves in HPLC analysis.",
+              "Inside native α-MSH, this sequence sits at an amidated C-terminus. The standalone reference compound indexed in PubChem, however, is the free acid. Because published studies do not always use the same form, terminal chemistry is worth checking before comparing results."
+            ]
+          },
+          {
+            "heading": "Mechanistic Research Context",
+            "body": [
+              "The most cited mechanistic work comes from intestinal research. Dalmasso and colleagues (2008) reported that KPV is taken up through PepT1, a di- and tripeptide transporter, in human intestinal epithelial and T-cell lines. In those cells, KPV reduced cytokine-stimulated NF-κB reporter activity and pro-inflammatory signaling.",
+              "Other groups reached different conclusions about mechanism. Kannengiesser and colleagues (2008) reported that effects in two mouse colitis models appeared at least partly independent of the MC1R melanocortin receptor. Earlier, Getting and colleagues (2003) found that KPV reduced neutrophil accumulation in a mouse peritonitis model, yet did not suppress macrophage mediator release in vitro. They proposed interference with IL-1β signaling rather than melanocortin-receptor activation."
+            ]
+          },
+          {
+            "heading": "Why KPV Appears in Experimental Research",
+            "body": [
+              "KPV lets researchers study one part of α-MSH biology in isolation. Brzoska and colleagues (2008) described it as retaining anti-inflammatory activity while lacking the full hormone's pigmentary action. Its uptake through PepT1 also connects it to peptide-transport research. Later studies, including Laroui and colleagues (2010) and Xiao and colleagues (2017), tested nanoparticle carriers designed to deliver KPV to the colon in mouse colitis models."
+            ]
+          },
+          {
+            "heading": "What the Literature Does and Does Not Establish",
+            "body": [
+              "The KPV studies cited here are cell-culture and animal experiments. They show that KPV changed specific measured markers, under specific conditions, in specific models. They do not establish human efficacy, human safety or a human dose. No peer-reviewed human efficacy trial of KPV was identified in the literature reviewed for this page. Mechanism also remains open, since the transporter, receptor and IL-1β hypotheses come from different models and have not been reconciled."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "analytical",
+        "heading": "Analytical Characterization of KPV",
+        "body": [
+          "Two methods do most of the work, and each answers a different question.",
+          "Reversed-phase HPLC (RP-HPLC) separates the components of a sample. It reports purity as a percentage of total peak area at a stated detection wavelength. For KPV, detection relies on peptide-bond absorbance in the low-UV range, because the molecule has no aromatic side chains. HPLC shows how much of the detected material elutes as the main peak. By itself, it cannot prove that the main peak is KPV.",
+          "Mass spectrometry (ESI-MS or LC-MS) measures molecular mass. A result matching the expected mass supports identity, provided the report says whether it shows the neutral mass or a protonated ion. For the free acid, the protonated ion [M+H]⁺ is expected near m/z 343.23. Mass alone, however, cannot tell KPV apart from sequence isomers such as Lys-Val-Pro, or from D-residue variants. Both share its exact formula.",
+          "Orthogonal checks close those gaps. Tandem MS (MS/MS) fragmentation supports residue order. Co-elution with a characterized reference standard supports retention identity, and chiral analysis addresses stereochemistry. Not every COA will include all of these. Knowing which questions a document leaves open is part of reading it well."
+        ],
+        "table": {
+          "columns": [
+            "Method",
+            "What it can establish",
+            "What it cannot establish on its own"
+          ],
+          "rows": [
+            [
+              "RP-HPLC (UV)",
+              "Chromatographic purity as area %; impurity profile; batch-to-batch consistency",
+              "Molecular identity; counter-ion or water content; stereochemistry"
+            ],
+            [
+              "ESI-MS / LC-MS (intact mass)",
+              "Mass consistent with KPV in the stated form",
+              "Residue order (isomers share the mass); D- vs L-configuration; purity"
+            ],
+            [
+              "MS/MS fragmentation",
+              "Residue sequence from fragment ions",
+              "Quantitative purity; stereochemistry"
+            ],
+            [
+              "Chiral analysis",
+              "D/L configuration of residues",
+              "Sequence or overall purity"
+            ],
+            [
+              "Net peptide content (e.g. amino acid analysis)",
+              "Fraction of the weighed powder that is peptide",
+              "Identity of the peptide or its impurities"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "coa",
+        "heading": "KPV Certificate of Analysis: What to Look For",
+        "body": [
+          "A certificate of analysis describes one manufacturing lot. It is not a general statement about KPV, and it should not be carried over to a different lot. For a molecule this small, and with this many look-alikes, the details on the certificate matter more than the headline purity figure.",
+          "At the time this page was prepared, Veracue's public COA archive did not include a KPV report. Lot-specific KPV documentation is therefore not publicly specified on the current Veracue product information. Veracue's Certificates page provides a route to request lot documentation through the contact page."
+        ],
+        "table": {
+          "columns": [
+            "COA element",
+            "Why it matters for KPV"
+          ],
+          "rows": [
+            [
+              "Exact product identity and sequence",
+              "Confirms the document covers Lys-Pro-Val, not a blend or an analog such as KdPT"
+            ],
+            [
+              "Chemical form and counter-ion",
+              "Free acid, amide, acetylated amide and salt forms differ in mass and composition"
+            ],
+            [
+              "Lot number matching the vial",
+              "Ties every result to the physical material in hand"
+            ],
+            [
+              "Testing laboratory and test date",
+              "Shows who performed the work and how current it is"
+            ],
+            [
+              "HPLC result with chromatogram",
+              "Lets a reader see peak shape, retention and impurities, not only a percentage"
+            ],
+            [
+              "Mass result, stating neutral or [M+H]⁺",
+              "Prevents a roughly 1 Da reporting ambiguity from hiding a form mismatch"
+            ],
+            [
+              "Stated tolerance and method",
+              "Shows how tightly the observed mass was compared with theory"
+            ],
+            [
+              "Traceability back to the report",
+              "Allows the document to be checked independently of the listing"
+            ]
+          ]
+        },
+        "cta": [
+          {
+            "label": "View Veracue's COA Archive",
+            "target": "/certificates"
+          },
+          {
+            "label": "Request Lot Documentation",
+            "target": "/contact-us"
+          }
+        ]
+      },
+      {
+        "id": "benefits_research",
+        "heading": "KPV Peptide Benefits: What Research Actually Shows",
+        "body": [
+          "Searches for KPV peptide benefits usually ask what the peptide has been shown to do. The accurate answer is narrower than most results suggest, because KPV research describes measured activities in models, not benefits in people.",
+          "In human intestinal epithelial and T-cell lines, KPV reduced NF-κB-linked inflammatory signaling after cytokine stimulation (Dalmasso et al., 2008). In mouse colitis models, induced chemically or by T-cell transfer, KPV-treated groups showed lower inflammatory and histological scores than controls (Dalmasso et al., 2008; Kannengiesser et al., 2008). In a mouse ear-swelling model, α-MSH (11–13) inhibited experimentally induced swelling (Hiltz and Lipton, 1989). In a mouse peritonitis model, it reduced neutrophil accumulation (Getting et al., 2003).",
+          "Each of these is a finding about a defined experimental system. Together, they do not show reduced inflammation in humans, improved gut or skin health, or any treatment effect. The same literature also contains results where KPV did not act, which is why model choice matters as much as the headline result."
+        ]
+      },
+      {
+        "id": "what_does_kpv_do",
+        "heading": "What Does KPV Do?",
+        "body": [
+          "In published experiments, KPV has been observed to enter certain cells through the PepT1 transporter and to dampen NF-κB-linked signaling in stimulated cell lines. In rodent models, it has changed measured inflammatory endpoints. How it does this is still debated. Transporter-dependent, IL-1β-related and melanocortin-receptor-independent explanations all appear in the literature. These are observations about experimental systems. They do not describe what KPV does in a person."
+        ]
+      },
+      {
+        "id": "what_researchers_study",
+        "heading": "What Is KPV Used For in Research?",
+        "body": [
+          "Researchers study KPV in a handful of connected areas: inflammatory signaling in epithelial and immune cell lines; di- and tripeptide transport through PepT1; structure–function questions about which parts of α-MSH carry which activities; pharmacology in rodent colitis models; and delivery-system design, such as nanoparticle and hydrogel carriers. Analog work, including stereoisomers and the related tripeptide KdPT, adds structure–activity comparisons. None of this constitutes a use for KPV outside the laboratory."
+        ]
+      },
+      {
+        "id": "dosage",
+        "heading": "KPV Dosage: Why This Page Gives No Numbers",
+        "body": [
+          "Veracue does not provide KPV dosage, dosing schedules or administration guidance of any kind. Human dosing sits outside the scope of a Research Use Only product page, and no human dose for KPV has been established in peer-reviewed clinical research.",
+          "For laboratory work, experimental conditions come from the study design, not from a supplier. They depend on the model, the assay, the chemical form used and the endpoints being measured. Researchers typically start from the primary literature, validate their own assay variables and confirm the identity and net content of the specific lot. Without that last step, results are difficult to compare with published work."
+        ]
+      },
+      {
+        "id": "oral_kpv",
+        "heading": "Oral KPV",
+        "body": [
+          "Questions about oral KPV for human use are outside the scope of this page, and Veracue provides no oral-use or formulation guidance. Some published rodent studies tested gut-targeted carrier systems, such as polymer nanoparticles in polysaccharide hydrogels. Those were experimental delivery systems built for animal models. Their results say nothing about how an unformulated research material would behave, and they are not instructions. Formulation questions belong inside a validated research design."
+        ]
+      },
+      {
+        "id": "ruo_regulatory",
+        "heading": "Research Use Only and Regulatory Context",
+        "body": [
+          "KPV is not an FDA-approved drug. In July 2026, KPV free base and KPV acetate were among the bulk substances discussed by the FDA's Pharmacy Compounding Advisory Committee, in connection with the Section 503A bulk drug substances list. That process concerns pharmacy compounding, not research supply. An advisory discussion is also not an approval.",
+          "This material is supplied for laboratory research, scientific investigation and analytical characterization only. It is not intended for human or veterinary use, ingestion, injection or any form of administration, and it has not been evaluated by the FDA for safety or efficacy."
+        ],
+        "cta": [
+          {
+            "label": "Explore Related Research Peptides",
+            "target": "/shop"
+          },
+          {
+            "label": "Contact Veracue",
+            "target": "/contact-us"
+          }
+        ]
+      }
+    ],
+    "implementation_notes": [
+      "Swap the 'At the time this page was prepared' sentence in the COA section for the lot details once a KPV COA is published.",
+      "Replace every 'Not publicly specified…' spec row with Veracue first-party values when supplied. Do not borrow values from another listing.",
+      "Proposed category: Immune Modulation (an existing Veracue category). Needs client confirmation.",
+      "Regulatory paragraph is date-sensitive. Re-check FDA's PCAC and 503A pages before publishing and at each quarterly review."
+    ],
+    "short_description": {
+      "subtitle_under_h1": "Lys-Pro-Val",
+      "text": "KPV is the tripeptide L-lysyl-L-prolyl-L-valine (Lys-Pro-Val), the final three residues of alpha-melanocyte-stimulating hormone, and is also listed as α-MSH (11–13). Veracue supplies it as a research material for laboratory work. The most widely cited published study (Dalmasso et al., 2008) tested KPV on cultured human intestinal and T-cell lines and in two mouse colitis models — in vitro and animal evidence only. No human clinical trial of KPV was identified, so this material does not establish anti-inflammatory, gut or skin effects, or safety, in people.",
+      "words": 85,
+      "note": "Matches the live AHK-Cu blurb pattern: identity, supply statement, most relevant study with evidence type, human-evidence boundary."
+    }
+  },
+  "J_problem_research_solutions": {
+    "heading": "Common KPV Research Problems and How to Approach Them",
+    "sections": [
+      {
+        "n": 1,
+        "heading": "The Name Is Not the Identity",
+        "problem": "“KPV” appears on single-peptide listings, inside multi-peptide blend names such as KLOW, and as a frequent misspelling (“KVP”). Similar abbreviations, such as KPT and KdPT, describe different peptides.",
+        "research_approach": "Treat the name as a label. Confirm the full sequence, Lys-Pro-Val, on the lot's documentation. Check whether the material is a single compound or a blend, and in which chemical form it was supplied. For any blend, identity and quantity need documenting for each component separately."
+      },
+      {
+        "n": 2,
+        "heading": "Sequence Isomers Share KPV's Exact Mass",
+        "problem": "Lys-Val-Pro and Pro-Val-Lys contain the same three residues as KPV and share its formula, C₁₆H₃₀N₄O₄. An intact-mass result cannot tell them apart.",
+        "research_approach": "Look for evidence of residue order. MS/MS fragmentation breaks the peptide at predictable bonds and reveals sequence. Co-elution with a characterized KPV reference standard offers a second, independent line of support."
+      },
+      {
+        "n": 3,
+        "heading": "Stereochemistry Is Invisible to Mass",
+        "problem": "The KPV literature includes analogs with D-amino acids, such as KdPV and dKPdV, and early work examined how stereochemistry changed activity. Swapping an L-residue for a D-residue does not change mass.",
+        "research_approach": "If configuration matters to the study, ask whether it was tested or simply assumed from the synthesis inputs. Chiral analysis, for example after hydrolysis and chiral derivatization, addresses it directly. Standard RP-HPLC and MS may not."
+      },
+      {
+        "n": 4,
+        "heading": "Free Acid, Amide or Acetylated?",
+        "problem": "Native α-MSH ends in an amidated valine, while the PubChem reference compound is the free acid. Early patent literature described an acetylated, amidated form. Papers do not always use the same one.",
+        "research_approach": "Match the form to the study being compared. The monoisotopic masses separate them: 342.23 Da for the free acid, 341.24 Da for the amide and 383.25 Da for Ac-KPV-NH₂. A COA should state the form explicitly rather than leave it to inference."
+      },
+      {
+        "n": 5,
+        "heading": "Salt Form and Net Peptide Content",
+        "problem": "FDA's July 2026 advisory agenda listed KPV free base and KPV acetate as separate substances. Purified peptides are commonly isolated as salts, and KPV's two amine groups can each carry a counter-ion.",
+        "research_approach": "Weighed powder includes counter-ion and residual water as well as peptide. Look for a named counter-ion and, ideally, a net peptide content figure. Without them, comparisons between lots, or with published work, rest on an unstated assumption."
+      },
+      {
+        "n": 6,
+        "heading": "Purity and Identity Are Different Measurements",
+        "problem": "A high HPLC percentage is often read as proof that a vial contains KPV. A sample can be chromatographically clean and still be the wrong molecule.",
+        "research_approach": "Require both measurements. HPLC describes how much of the detected material is the main component. Mass spectrometry describes whether that component has the expected mass. Neither replaces the other."
+      },
+      {
+        "n": 7,
+        "heading": "Reading a KPV HPLC Result",
+        "problem": "Purity is reported as area percent at one wavelength. KPV has no aromatic residues, so detection depends on low-UV peptide-bond absorbance, where some impurities respond differently. Small, polar peptides can also retain weakly on reversed-phase columns.",
+        "research_approach": "Ask for the chromatogram, not only the number. Check the detection wavelength, where the main peak elutes relative to the solvent front, and whether minor peaks are integrated. A clean, well-retained peak says more than a percentage alone."
+      },
+      {
+        "n": 8,
+        "heading": "Near-Mass Neighbors and Reporting Conventions",
+        "problem": "GHK (340.38 g/mol) and KdPT (344.41 g/mol) sit within a few daltons of KPV (342.44 g/mol). Some listings round KPV to “about 340 Da.” The amide's protonated ion (m/z 342.25) also lands almost exactly on the free acid's neutral mass (342.23).",
+        "research_approach": "Compare observed and theoretical values using the same convention. Check whether the report gives neutral or [M+H]⁺ mass, and whether it uses average or monoisotopic values. The stated tolerance should be tight enough to separate the forms in question."
+      },
+      {
+        "n": 9,
+        "heading": "Keeping KPV Separate from α-MSH",
+        "problem": "Properties of α-MSH and synthetic melanocortin analogs, such as pigmentation and melanocortin-receptor agonism, are often attributed to KPV by association.",
+        "research_approach": "Keep parent and fragment separate. KPV lacks the His-Phe-Arg-Trp core that melanocortin-receptor binding depends on, and reviews describe it as lacking α-MSH's pigmentary action. Findings for the full hormone describe the full hormone."
+      },
+      {
+        "n": 10,
+        "heading": "Findings Depend on the Model",
+        "problem": "KPV results come from cell lines, chemically induced colitis, T-cell-transfer colitis, peritonitis and skin models. They do not all agree. In one study, KPV reduced neutrophil accumulation in mice but did not suppress macrophage mediator release in vitro.",
+        "research_approach": "Record the model, species, cell type, chemical form and endpoint for every paper cited. Read agreement and disagreement at that level, rather than summarising the literature as one effect."
+      },
+      {
+        "n": 11,
+        "heading": "Mechanistic Language Is Not a Therapeutic Claim",
+        "problem": "Phrases such as “reduced inflammation” in a paper describe a measured marker in a defined system. Retold online, they turn into promises about people.",
+        "research_approach": "Keep the qualifier with the finding: which marker, which model, compared with what. When a statement cannot be traced to a specific experiment, treat it as unsupported."
+      },
+      {
+        "n": 12,
+        "heading": "Building a Reproducible Record",
+        "problem": "Months later, a result is hard to interpret if nobody recorded which lot, which form and which document the material came with.",
+        "research_approach": "File the COA against the lot number on the vial. Note the chemical form, counter-ion, storage conditions on receipt, and any in-house identity checks. That record is what lets a result be repeated, or explained when it is not."
+      }
+    ]
+  },
+  "K_comparison_tables": {
+    "intro": "Comparisons are limited to peptides that are scientifically related to KPV or appear in the keyword data. They describe identity and research context only. They do not rank peptides or recommend any of them.",
+    "tables": [
+      {
+        "id": "kpv_family",
+        "heading": "KPV, α-MSH and KdPT",
+        "columns": [
+          "Attribute",
+          "KPV",
+          "α-MSH",
+          "KdPT"
+        ],
+        "rows": [
+          [
+            "Sequence",
+            "Lys-Pro-Val",
+            "Ac-Ser-Tyr-Ser-Met-Glu-His-Phe-Arg-Trp-Gly-Lys-Pro-Val-NH₂",
+            "Lys-D-Pro-Thr"
+          ],
+          [
+            "Length",
+            "3 residues",
+            "13 residues",
+            "3 residues"
+          ],
+          [
+            "Average MW",
+            "342.44 g/mol (free acid)",
+            "≈1664.9 g/mol",
+            "344.41 g/mol"
+          ],
+          [
+            "Relationship",
+            "C-terminal residues 11–13 of α-MSH",
+            "Parent hormone, derived from POMC",
+            "KPV-related derivative; sequence matches IL-1β (193–195) with a D-proline"
+          ],
+          [
+            "Receptor context in the literature",
+            "Reported effects at least partly independent of MC1R; IL-1β and PepT1 hypotheses",
+            "Melanocortin receptor agonist",
+            "Proposed interaction with IL-1 receptor type I signaling (review literature)"
+          ],
+          [
+            "Analytical note",
+            "Near-isobaric with GHK and KdPT; shares formula with sequence isomers",
+            "Large enough that intact mass is highly specific",
+            "Differs from KPV by a Val→Thr swap and a D-residue"
+          ]
+        ]
+      },
+      {
+        "id": "keyword_neighbours",
+        "heading": "KPV, GHK-Cu and BPC-157",
+        "columns": [
+          "Attribute",
+          "KPV",
+          "GHK-Cu",
+          "BPC-157"
+        ],
+        "rows": [
+          [
+            "Sequence",
+            "Lys-Pro-Val",
+            "Gly-His-Lys, complexed with copper(II)",
+            "Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val"
+          ],
+          [
+            "Length",
+            "3 residues",
+            "3 residues plus copper",
+            "15 residues"
+          ],
+          [
+            "Average MW",
+            "342.44 g/mol (free acid)",
+            "340.38 g/mol (GHK); ≈403.9 g/mol (copper complex)",
+            "≈1419.5 g/mol"
+          ],
+          [
+            "Origin",
+            "Fragment of α-MSH",
+            "Tripeptide first isolated from human plasma; studied mainly as its copper complex",
+            "Synthetic 15-residue sequence from a peptide isolated from human gastric juice"
+          ],
+          [
+            "Main research context",
+            "Inflammatory signaling, PepT1 transport, colitis models",
+            "Copper-peptide biology, extracellular-matrix research",
+            "Tissue-repair models; no well-characterized high-affinity receptor"
+          ],
+          [
+            "Analytical note",
+            "Confirm form, sequence order and stereochemistry",
+            "Confirm free peptide vs copper complex",
+            "Confirm full 15-residue sequence and truncation impurities"
+          ]
+        ]
+      },
+      {
+        "id": "kpv_forms",
+        "heading": "KPV Chemical Forms (calculated values)",
+        "columns": [
+          "Form",
+          "Formula",
+          "Average MW (g/mol)",
+          "Monoisotopic mass (Da)",
+          "Expected [M+H]⁺ (m/z)"
+        ],
+        "rows": [
+          [
+            "H-Lys-Pro-Val-OH (free acid)",
+            "C₁₆H₃₀N₄O₄",
+            "342.44",
+            "342.2267",
+            "343.234"
+          ],
+          [
+            "H-Lys-Pro-Val-NH₂ (C-terminal amide)",
+            "C₁₆H₃₁N₅O₃",
+            "341.46",
+            "341.2427",
+            "342.250"
+          ],
+          [
+            "Ac-Lys-Pro-Val-NH₂ (acetylated amide)",
+            "C₁₈H₃₃N₅O₄",
+            "383.49",
+            "383.2533",
+            "384.261"
+          ],
+          [
+            "KPV acetate (salt)",
+            "Peptide + acetate counter-ion(s)",
+            "Depends on counter-ion stoichiometry",
+            "Peptide ion as for the free base",
+            "As for the free base; the counter-ion is not seen as part of the peptide ion"
+          ]
+        ],
+        "note": "Values calculated from molecular formulas using standard atomic weights. The free-acid values agree with the reference figures for CAS 67727-97-3."
+      }
+    ]
+  },
+  "L_aeo_direct_answers": [
+    {
+      "q": "What is KPV peptide?",
+      "a": "KPV peptide is the tripeptide Lys-Pro-Val, the C-terminal residues 11–13 of alpha-melanocyte-stimulating hormone (α-MSH). Its reference free-acid form has the formula C₁₆H₃₀N₄O₄, an average molecular weight of 342.44 g/mol, CAS number 67727-97-3 and PubChem CID 125672. It is studied in cell and animal models of inflammatory signaling and is supplied by Veracue for Research Use Only."
+    },
+    {
+      "q": "What is KPV made of?",
+      "a": "KPV is made of three amino acids joined by peptide bonds: lysine, proline and valine, in that order. In the reference compound all three are L-amino acids and the chain ends as a free carboxylic acid. Commercial materials may instead be salts, commonly acetate, or modified forms such as the C-terminal amide, which is why the chemical form should be stated."
+    },
+    {
+      "q": "What does KPV peptide do?",
+      "a": "In published experiments, KPV entered intestinal and immune cell lines through the PepT1 transporter and reduced NF-κB-linked inflammatory signaling after cytokine stimulation. In mouse models it changed measured inflammatory endpoints. Its mechanism is still debated. These findings describe experimental systems only; they do not describe effects in people."
+    },
+    {
+      "q": "What is KPV peptide studied for?",
+      "a": "Researchers study KPV for inflammatory signaling in epithelial and immune cells, di- and tripeptide transport through PepT1, the structure–function relationship between α-MSH and its fragments, pharmacology in rodent colitis models, and colon-targeted delivery systems. Analogs such as KdPT and D-residue variants support structure–activity comparisons."
+    },
+    {
+      "q": "What are KPV peptide benefits?",
+      "a": "KPV research reports measured activities in models, not established benefits in people. Cell studies showed reduced NF-κB-linked signaling; mouse studies showed lower colitis scores, reduced ear swelling and reduced neutrophil accumulation. No peer-reviewed human efficacy trial was identified, so these findings do not establish any human health outcome."
+    },
+    {
+      "q": "How is KPV characterized analytically?",
+      "a": "KPV is characterized mainly by RP-HPLC, which reports chromatographic purity as area percent, and by mass spectrometry, which checks mass against the expected form. Because sequence isomers and D-residue variants share KPV's mass, full confirmation may also need MS/MS fragmentation, reference-standard comparison or chiral analysis."
+    },
+    {
+      "q": "What should a KPV COA contain?",
+      "a": "A KPV COA should name the exact sequence and chemical form, including any counter-ion, and carry a lot number matching the vial. It should list the testing laboratory and date, an HPLC result with chromatogram, and a mass result stating whether neutral or protonated mass is reported, with tolerance."
+    },
+    {
+      "q": "Does Veracue provide KPV documentation?",
+      "a": "As of this page's preparation, Veracue's public COA archive did not include a KPV report, so lot-specific KPV documentation is not publicly specified. Veracue's Certificates page provides a route to request lot documentation through its contact page. Any KPV COA should be matched to the lot number printed on the vial before its results are relied on."
+    },
+    {
+      "q": "What is the difference between KPV and related peptides?",
+      "a": "KPV (Lys-Pro-Val) is a 3-residue fragment of α-MSH. α-MSH is the 13-residue parent hormone, which acts on melanocortin receptors. KdPT (Lys-D-Pro-Thr) is a related derivative matching IL-1β residues 193–195. GHK-Cu is an unrelated copper tripeptide, and BPC-157 is a 15-residue synthetic peptide."
+    },
+    {
+      "q": "Does Veracue provide KPV dosage instructions?",
+      "a": "No. Veracue does not provide KPV dosage, dosing schedules, routes or administration guidance, because the material is sold for Research Use Only and no human dose has been established in peer-reviewed clinical research. Laboratory conditions are set by each study's own validated design."
+    }
+  ],
+  "M_faq": [
+    {
+      "q": "What is KPV peptide?",
+      "a": "KPV is a synthetic tripeptide, Lys-Pro-Val, identical to the last three residues of α-MSH. It is studied in laboratory models of inflammatory signaling and is supplied for Research Use Only."
+    },
+    {
+      "q": "What is the KPV peptide sequence?",
+      "a": "The sequence is lysine–proline–valine, written Lys-Pro-Val or K-P-V. The reference compound is H-Lys-Pro-Val-OH, with all three residues in the L-configuration."
+    },
+    {
+      "q": "What is the molecular weight of KPV?",
+      "a": "The free acid (C₁₆H₃₀N₄O₄) has an average molecular weight of 342.44 g/mol and a monoisotopic mass of 342.2267 Da. Other forms, such as the C-terminal amide or acetate salt, differ, so the form should be confirmed first."
+    },
+    {
+      "q": "Is KPV the same as α-MSH?",
+      "a": "No. α-MSH is a 13-residue hormone. KPV is only its final three residues. It lacks the His-Phe-Arg-Trp core linked to melanocortin-receptor binding, and reviews describe it as lacking the hormone's pigmentary action."
+    },
+    {
+      "q": "What is KPV studied for in research?",
+      "a": "Mainly inflammatory signaling in cell lines, PepT1-mediated peptide transport, rodent colitis models, α-MSH structure–function questions and colon-targeted delivery systems."
+    },
+    {
+      "q": "What does KPV peptide do?",
+      "a": "In experiments, it reduced NF-κB-linked signaling in stimulated cell lines and changed inflammatory measures in mouse models. These are model-specific observations, not effects in people."
+    },
+    {
+      "q": "What are the benefits of KPV peptide?",
+      "a": "No human benefits have been established. Published findings come from cell and animal models, and each applies only to the model and endpoint in which it was measured."
+    },
+    {
+      "q": "Does KPV act through melanocortin receptors?",
+      "a": "The evidence suggests not primarily. One study reported colitis effects at least partly independent of MC1R. Another proposed interference with IL-1β signaling. PepT1 uptake has also been reported. The mechanism remains unresolved."
+    },
+    {
+      "q": "What is the recommended KPV dosage or dosing?",
+      "a": "Veracue provides no dosage or dosing information. KPV is a Research Use Only material, no human dose has been established in peer-reviewed clinical research, and experimental conditions belong to each study's own design."
+    },
+    {
+      "q": "Does Veracue provide guidance on oral KPV?",
+      "a": "No. Veracue provides no oral-use, formulation or administration guidance. Published gut-targeted studies used experimental carrier systems in animal models and are not instructions for any use."
+    },
+    {
+      "q": "How is KPV identity confirmed?",
+      "a": "Usually by mass spectrometry, supported where needed by MS/MS fragmentation for residue order, comparison with a reference standard, and chiral analysis for stereochemistry."
+    },
+    {
+      "q": "What does HPLC purity tell you about KPV?",
+      "a": "It reports the main peak's share of total detected peak area at one wavelength. It describes cleanliness, not identity, and should be read alongside the chromatogram."
+    },
+    {
+      "q": "Can mass spectrometry alone confirm KPV?",
+      "a": "Not completely. Lys-Val-Pro, Pro-Val-Lys and D-residue variants have the same mass as KPV. Intact mass supports identity but does not prove sequence order or configuration."
+    },
+    {
+      "q": "What is the difference between KPV free base and KPV acetate?",
+      "a": "The free base is the peptide alone. The acetate is a salt in which acetate counter-ions accompany the peptide, so a given weight of powder contains less peptide. A COA should name the form."
+    },
+    {
+      "q": "What should a KPV Certificate of Analysis include?",
+      "a": "Sequence and chemical form, lot number, testing lab and date, HPLC result with chromatogram, and a mass result with its reporting convention and tolerance."
+    },
+    {
+      "q": "Does Veracue publish a KPV COA?",
+      "a": "Not at the time this page was prepared. Lot documentation can be requested through Veracue's contact page, as described on the Certificates page."
+    },
+    {
+      "q": "How is KPV different from GHK-Cu and BPC-157?",
+      "a": "All three are distinct molecules. KPV is Lys-Pro-Val from α-MSH; GHK-Cu is Gly-His-Lys bound to copper; BPC-157 is a 15-residue synthetic peptide. Their research contexts differ, and none is interchangeable with another."
+    },
+    {
+      "q": "Is KPV approved by the FDA?",
+      "a": "No. KPV is not an FDA-approved drug. It was among substances discussed by an FDA compounding advisory committee in July 2026, which is not an approval. Veracue supplies KPV for Research Use Only."
+    }
+  ],
+  "N_internal_links": {
+    "verified_on": "2026-09-19",
+    "links": [
+      {
+        "anchor": "Veracue research peptide catalog",
+        "url": "https://veracue-peptides.vercel.app/shop",
+        "placement": "Hero CTA and final 'Explore Related Research Peptides' CTA",
+        "purpose": "Primary catalog path; live and indexable."
+      },
+      {
+        "anchor": "Veracue's COA archive",
+        "url": "https://veracue-peptides.vercel.app/certificates",
+        "placement": "COA section CTA and AEO block 'Does Veracue provide KPV documentation?'",
+        "purpose": "Lets readers confirm that documentation is published per lot, and see that no KPV report exists yet."
+      },
+      {
+        "anchor": "request lot documentation",
+        "url": "https://veracue-peptides.vercel.app/contact-us",
+        "placement": "COA section body and CTA",
+        "purpose": "The route the Certificates page itself names for lot-specific documents."
+      },
+      {
+        "anchor": "Help & FAQ",
+        "url": "https://veracue-peptides.vercel.app/faq",
+        "placement": "Research Use Only section",
+        "purpose": "Site-wide RUO and COA answers; avoids repeating general content."
+      },
+      {
+        "anchor": "Medical Disclaimer",
+        "url": "https://veracue-peptides.vercel.app/medical-disclaimer",
+        "placement": "Compliance notice, after the RUO paragraph",
+        "purpose": "Reinforces the RUO boundary."
+      },
+      {
+        "anchor": "About Veracue",
+        "url": "https://veracue-peptides.vercel.app/about-us",
+        "placement": "Documentation section, one mention",
+        "purpose": "Company and testing-approach context."
+      },
+      {
+        "anchor": "AHK-Cu, another tripeptide research material",
+        "url": "https://veracue-peptides.vercel.app/product/ahk-cu",
+        "placement": "'Also Considered' module",
+        "purpose": "Live product; relevant as a tripeptide with its own identity and form questions."
+      },
+      {
+        "anchor": "Selank research peptide",
+        "url": "https://veracue-peptides.vercel.app/product/selank",
+        "placement": "'Also Considered' module",
+        "purpose": "Live product; same research-only page format."
+      },
+      {
+        "anchor": "Immune Modulation research peptides",
+        "url": "https://veracue-peptides.vercel.app/shop?category=Immune%20Modulation",
+        "placement": "Category label under the H1",
+        "purpose": "Only if Veracue confirms KPV sits in this existing category."
+      }
+    ],
+    "do_not_link": [
+      {
+        "url": "https://veracue-peptides.vercel.app/peptide-calculator",
+        "reason": "Dosing/reconstitution tool; conflicts with the page's no-dosage position."
+      },
+      {
+        "url": "https://veracue-peptides.vercel.app/product/ghk-cu",
+        "reason": "Returns 'Product Not Found' (noindex) despite appearing on the homepage. Link only once live."
+      },
+      {
+        "url": "https://veracue-peptides.vercel.app/product/bpc-157, /product/tb-500, /product/semaglutide, /product/retatrutide",
+        "reason": "Linked from homepage cards but not in the 3-product shop catalog; treat as not live until confirmed."
+      },
+      {
+        "url": "https://veracue-peptides.vercel.app/product/kpv",
+        "reason": "Does not exist yet. Do not add inbound links until the record is live."
+      }
+    ]
+  },
+  "O_image_seo": {
+    "primary_product_image": {
+      "filename": "veracue-kpv-research-peptide-vial.webp",
+      "alt": "Veracue KPV peptide research vial labelled Research Use Only",
+      "title": "KPV Peptide (Lys-Pro-Val) Research Vial",
+      "caption": "KPV research material. Lot details appear on the lot-specific Certificate of Analysis.",
+      "note": "Use a photo of the actual KPV vial and label. Do not reuse another product's vial image; the live Selank page currently shows NAD+ images."
+    },
+    "sequence_graphic": {
+      "filename": "kpv-lys-pro-val-tripeptide-structure.svg",
+      "alt": "Structure of KPV tripeptide lysine-proline-valine, the C-terminal residues 11 to 13 of alpha-MSH",
+      "title": "KPV (Lys-Pro-Val) Structure and Position in α-MSH",
+      "caption": "KPV corresponds to the final three residues of α-MSH. The standalone reference compound is the free acid.",
+      "note": "Draw from the PubChem CID 125672 structure. Show α-MSH's sequence with residues 11–13 highlighted."
+    },
+    "analytical_illustration": {
+      "filename": "kpv-hplc-ms-identity-purity-illustration.svg",
+      "alt": "Illustrative diagram showing how HPLC purity and mass spectrometry identity answer different questions for KPV",
+      "title": "Purity vs Identity: How KPV Is Characterized",
+      "caption": "Illustrative diagram only. Not a Veracue test result.",
+      "note": "Schematic only: no numeric axes, no lot number, no percentage. Never present as a chromatogram or COA."
+    }
+  },
+  "P_structured_data": {
+    "status": "Implementation-ready. Contains only values visible on the page. No offers, price, availability, SKU, GTIN, rating, review or purity fields, because none are currently verifiable. Without an 'offers' block the Product markup is valid but not eligible for Google product rich results; add offers only from live first-party data.",
+    "currently_verifiable_product_data": "None. KPV is not in the live catalog or COA archive as of 2026-09-19.",
+    "check_before_deploy": "The fetched HTML did not expose the site's existing JSON-LD. If the layout already outputs Organization or WebSite markup, reference it by @id rather than duplicating it; neither is added here.",
+    "faq_rich_results_note": "Google limits FAQ rich results to authoritative government and health sites, so FAQPage markup is kept for answer-engine and AI-retrieval clarity, not for a SERP feature.",
+    "json_ld": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Product",
+          "@id": "https://veracue-peptides.vercel.app/product/kpv#product",
+          "name": "KPV",
+          "alternateName": [
+            "KPV Peptide",
+            "Lys-Pro-Val",
+            "α-MSH (11–13)"
+          ],
+          "description": "KPV (Lys-Pro-Val) is a synthetic tripeptide corresponding to residues 11–13 of alpha-melanocyte-stimulating hormone, supplied for Research Use Only. Not for human or veterinary use.",
+          "url": "https://veracue-peptides.vercel.app/product/kpv",
+          "brand": {
+            "@type": "Brand",
+            "name": "Veracue"
+          },
+          "category": "Research Use Only peptides",
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "Peptide sequence",
+              "value": "Lys-Pro-Val"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Molecular formula (free acid)",
+              "value": "C16H30N4O4"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Average molecular weight (free acid)",
+              "value": "342.44 g/mol"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "CAS number (free acid)",
+              "value": "67727-97-3"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "PubChem CID",
+              "value": "125672"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Research designation",
+              "value": "Research Use Only. Not for human or veterinary use."
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://veracue-peptides.vercel.app/product/kpv#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://veracue-peptides.vercel.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shop",
+              "item": "https://veracue-peptides.vercel.app/shop"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "KPV",
+              "item": "https://veracue-peptides.vercel.app/product/kpv"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://veracue-peptides.vercel.app/product/kpv#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is KPV peptide?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "KPV is a synthetic tripeptide, Lys-Pro-Val, identical to the last three residues of α-MSH. It is studied in laboratory models of inflammatory signaling and is supplied for Research Use Only."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the KPV peptide sequence?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The sequence is lysine–proline–valine, written Lys-Pro-Val or K-P-V. The reference compound is H-Lys-Pro-Val-OH, with all three residues in the L-configuration."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the molecular weight of KPV?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The free acid (C₁₆H₃₀N₄O₄) has an average molecular weight of 342.44 g/mol and a monoisotopic mass of 342.2267 Da. Other forms, such as the C-terminal amide or acetate salt, differ, so the form should be confirmed first."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is KPV the same as α-MSH?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. α-MSH is a 13-residue hormone. KPV is only its final three residues. It lacks the His-Phe-Arg-Trp core linked to melanocortin-receptor binding, and reviews describe it as lacking the hormone's pigmentary action."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is KPV studied for in research?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Mainly inflammatory signaling in cell lines, PepT1-mediated peptide transport, rodent colitis models, α-MSH structure–function questions and colon-targeted delivery systems."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does KPV peptide do?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In experiments, it reduced NF-κB-linked signaling in stimulated cell lines and changed inflammatory measures in mouse models. These are model-specific observations, not effects in people."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the benefits of KPV peptide?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No human benefits have been established. Published findings come from cell and animal models, and each applies only to the model and endpoint in which it was measured."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does KPV act through melanocortin receptors?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The evidence suggests not primarily. One study reported colitis effects at least partly independent of MC1R. Another proposed interference with IL-1β signaling. PepT1 uptake has also been reported. The mechanism remains unresolved."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the recommended KPV dosage or dosing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Veracue provides no dosage or dosing information. KPV is a Research Use Only material, no human dose has been established in peer-reviewed clinical research, and experimental conditions belong to each study's own design."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Veracue provide guidance on oral KPV?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Veracue provides no oral-use, formulation or administration guidance. Published gut-targeted studies used experimental carrier systems in animal models and are not instructions for any use."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is KPV identity confirmed?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Usually by mass spectrometry, supported where needed by MS/MS fragmentation for residue order, comparison with a reference standard, and chiral analysis for stereochemistry."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does HPLC purity tell you about KPV?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It reports the main peak's share of total detected peak area at one wavelength. It describes cleanliness, not identity, and should be read alongside the chromatogram."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can mass spectrometry alone confirm KPV?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Not completely. Lys-Val-Pro, Pro-Val-Lys and D-residue variants have the same mass as KPV. Intact mass supports identity but does not prove sequence order or configuration."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between KPV free base and KPV acetate?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The free base is the peptide alone. The acetate is a salt in which acetate counter-ions accompany the peptide, so a given weight of powder contains less peptide. A COA should name the form."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What should a KPV Certificate of Analysis include?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sequence and chemical form, lot number, testing lab and date, HPLC result with chromatogram, and a mass result with its reporting convention and tolerance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Veracue publish a KPV COA?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Not at the time this page was prepared. Lot documentation can be requested through Veracue's contact page, as described on the Certificates page."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is KPV different from GHK-Cu and BPC-157?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "All three are distinct molecules. KPV is Lys-Pro-Val from α-MSH; GHK-Cu is Gly-His-Lys bound to copper; BPC-157 is a 15-residue synthetic peptide. Their research contexts differ, and none is interchangeable with another."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is KPV approved by the FDA?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. KPV is not an FDA-approved drug. It was among substances discussed by an FDA compounding advisory committee in July 2026, which is not an approval. Veracue supplies KPV for Research Use Only."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "Q_scientific_references": [
+    {
+      "id": 1,
+      "citation": "Dalmasso G, Charrier-Hisamuddin L, Nguyen HTT, Yan Y, Sitaraman S, Merlin D. PepT1-mediated tripeptide KPV uptake reduces intestinal inflammation. Gastroenterology. 2008;134(1):166-178.",
+      "doi": "10.1053/j.gastro.2007.10.026",
+      "pmid": "18061177",
+      "supports": "PepT1 uptake; NF-κB reduction in Caco2-BBE, HT29-Cl.19A and Jurkat cells; DSS and TNBS mouse colitis findings"
+    },
+    {
+      "id": 2,
+      "citation": "Kannengiesser K, Maaser C, Heidemann J, et al. Melanocortin-derived tripeptide KPV has anti-inflammatory potential in murine models of inflammatory bowel disease. Inflamm Bowel Dis. 2008;14(3):324-331.",
+      "doi": "10.1002/ibd.20334",
+      "pmid": "18092346",
+      "supports": "DSS and CD45RBhi transfer colitis findings; effects at least partly independent of MC1R"
+    },
+    {
+      "id": 3,
+      "citation": "Getting SJ, Schiöth HB, Perretti M. Dissection of the anti-inflammatory effect of the core and C-terminal (KPV) alpha-melanocyte-stimulating hormone peptides. J Pharmacol Exp Ther. 2003;306(2):631-637.",
+      "doi": "10.1124/jpet.103.051623",
+      "pmid": "12750433",
+      "supports": "Reduced neutrophil accumulation in peritonitis; no inhibition of macrophage KC/IL-1β release in vitro; IL-1β hypothesis; His-Phe-Arg-Trp as core melanocortin peptide"
+    },
+    {
+      "id": 4,
+      "citation": "Brzoska T, Luger TA, Maaser C, Abels C, Böhm M. α-Melanocyte-stimulating hormone and related tripeptides: biochemistry, antiinflammatory and protective effects in vitro and in vivo, and future perspectives for the treatment of immune-mediated inflammatory diseases. Endocr Rev. 2008;29(5):581-602.",
+      "doi": "10.1210/er.2007-0027",
+      "pmid": "18612139",
+      "supports": "KPV retains anti-inflammatory activity but lacks pigmentary action; KdPT MW 344.41; stereo-variant tripeptides studied"
+    },
+    {
+      "id": 5,
+      "citation": "Hiltz ME, Lipton JM. Antiinflammatory activity of a COOH-terminal fragment of the neuropeptide alpha-MSH. FASEB J. 1989;3(11):2282-2284.",
+      "doi": "10.1096/fasebj.3.11.2550304",
+      "pmid": "2550304",
+      "supports": "α-MSH (11–13) inhibited picryl chloride-induced ear swelling in mice; 1980s origin of KPV research"
+    },
+    {
+      "id": 6,
+      "citation": "Laroui H, Dalmasso G, Nguyen HTT, Yan Y, Sitaraman SV, Merlin D. Drug-loaded nanoparticles targeted to the colon with polysaccharide hydrogel reduce colitis in a mouse model. Gastroenterology. 2010;138(3):843-853.",
+      "doi": "10.1053/j.gastro.2009.11.003",
+      "pmid": "19909746",
+      "supports": "Nanoparticle/alginate-chitosan hydrogel delivery of KPV in DSS mouse colitis"
+    },
+    {
+      "id": 7,
+      "citation": "Xiao B, Laroui H, Viennois E, et al. Orally targeted delivery of tripeptide KPV via hyaluronic acid-functionalized nanoparticles efficiently alleviates ulcerative colitis. Mol Ther. 2017.",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1525001616454316",
+      "supports": "Hyaluronic-acid nanoparticle carriers for KPV in a mouse model",
+      "note": "Volume/pages/PMID not retrieved; add from the publisher page before publishing the reference list."
+    },
+    {
+      "id": 8,
+      "citation": "Meyer KC, Brzoska T, Abels C, et al. The alpha-melanocyte stimulating hormone-related tripeptide K(D)PT stimulates human hair follicle pigmentation in situ under proinflammatory conditions. Br J Dermatol. 2009;160(2):433-437.",
+      "doi": "10.1111/j.1365-2133.2008.08872.x",
+      "pmid": "19016700",
+      "supports": "KdPT identical to IL-1β (193–195); background statement that KPV lacks the MC-R binding motif"
+    },
+    {
+      "id": 9,
+      "citation": "PubChem Compound Summary, CID 125672, 'Msh (11-13)'. National Center for Biotechnology Information.",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/125672",
+      "supports": "Identity record and formula C16H30N4O4"
+    },
+    {
+      "id": 10,
+      "citation": "U.S. Food and Drug Administration. Pharmacy Compounding Advisory Committee meeting, July 23–24, 2026: agenda and meeting page.",
+      "url": "https://www.fda.gov/advisory-committees/advisory-committee-calendar/july-23-24-2026-meeting-pharmacy-compounding-advisory-committee-07232026",
+      "supports": "KPV (free base) and KPV acetate discussed for the 503A bulks list on July 23, 2026"
+    },
+    {
+      "id": 11,
+      "citation": "Multifunctionality and Possible Medical Application of the BPC 157 Peptide—Literature and Patent Review. PMC11859134.",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11859134/",
+      "supports": "BPC-157 sequence, MW 1419.55, gastric-juice origin (comparison table only)"
+    },
+    {
+      "id": 12,
+      "citation": "Pickart L, Margolina A. Regenerative and protective actions of the GHK-Cu peptide in the light of the new gene data. Int J Mol Sci. 2018;19(7):1987.",
+      "supports": "GHK-Cu identity and research context (comparison table only)",
+      "note": "DOI not retrieved; add before publishing."
+    }
+  ],
+  "R_claim_verification": {
+    "columns": [
+      "Claim",
+      "Source",
+      "Verified?",
+      "Publish?",
+      "Notes"
+    ],
+    "rows": [
+      [
+        "KPV sequence is Lys-Pro-Val, α-MSH residues 11–13",
+        "Refs 1, 2, 4; PubChem CID 125672 (indexed as 'Msh (11-13)')",
+        "Yes",
+        "Yes",
+        ""
+      ],
+      [
+        "Formula C16H30N4O4 (free acid)",
+        "PubChem CID 125672 title record; Wikipedia chembox",
+        "Yes",
+        "Yes",
+        ""
+      ],
+      [
+        "Average MW 342.44 g/mol; monoisotopic 342.2267 Da",
+        "Calculated from formula (IUPAC atomic weights); matches reference figures 342.43–342.44",
+        "Yes",
+        "Yes",
+        "Suppliers quoting '~340 Da' are rounding loosely"
+      ],
+      [
+        "CAS 67727-97-3",
+        "Wikipedia chembox (linked to ChemSpider 111779, ChEBI 160254); consistent across suppliers",
+        "Yes (secondary)",
+        "Yes",
+        "PubChem page needs JavaScript; confirm CAS in PubChem 'Identifiers' before launch"
+      ],
+      [
+        "PubChem CID 125672",
+        "PubChem",
+        "Yes",
+        "Yes",
+        ""
+      ],
+      [
+        "Native α-MSH is N-acetylated and C-terminally amidated",
+        "Standard biochemistry; Ref 4 section II.B",
+        "Yes (established, text not retrieved)",
+        "Yes",
+        "Optional direct check: UniProt POMC entry"
+      ],
+      [
+        "KPV is taken up by PepT1 in intestinal epithelial and T-cell lines",
+        "Ref 1 abstract",
+        "Yes",
+        "Yes",
+        ""
+      ],
+      [
+        "KPV reduced cytokine-stimulated NF-κB reporter activity",
+        "Ref 1 (Fig. 1; introduction)",
+        "Yes",
+        "Yes",
+        "MAPK claim seen only in secondary sources; not used"
+      ],
+      [
+        "Reduced colitis measures in DSS/TNBS and transfer-colitis mouse models",
+        "Refs 1, 2",
+        "Yes",
+        "Yes",
+        "Framed as model findings"
+      ],
+      [
+        "Effects at least partly independent of MC1R",
+        "Ref 2 conclusion",
+        "Yes",
+        "Yes",
+        ""
+      ],
+      [
+        "Reduced neutrophil accumulation in vivo; no macrophage mediator suppression in vitro; IL-1β hypothesis",
+        "Ref 3 abstract and full text",
+        "Yes",
+        "Yes",
+        ""
+      ],
+      [
+        "KPV lacks α-MSH pigmentary action",
+        "Ref 4 abstract",
+        "Yes",
+        "Yes",
+        "Attributed to reviews"
+      ],
+      [
+        "KPV lacks His-Phe-Arg-Trp core linked to MC-R binding",
+        "Ref 3 (HFRW as core peptide); Ref 8 introduction",
+        "Yes",
+        "Yes",
+        ""
+      ],
+      [
+        "Ear-swelling inhibition by α-MSH (11–13)",
+        "Ref 5 abstract",
+        "Yes",
+        "Yes",
+        "Dose wording from the paper deliberately omitted"
+      ],
+      [
+        "Nanoparticle / hydrogel carrier studies in mouse colitis",
+        "Refs 6, 7",
+        "Yes",
+        "Yes",
+        "Route and amounts deliberately omitted"
+      ],
+      [
+        "Stereo-variant analogs (KdPV, dKPdV) studied",
+        "Ref 4 full text excerpt",
+        "Yes",
+        "Yes",
+        ""
+      ],
+      [
+        "Lys-Val-Pro and Pro-Val-Lys share C16H30N4O4",
+        "PubChem CIDs 145456820 and 145457641",
+        "Yes",
+        "Yes",
+        ""
+      ],
+      [
+        "Amide and Ac-KPV-NH2 masses",
+        "Calculated from formulas",
+        "Yes",
+        "Yes",
+        "Calculation, not measurement"
+      ],
+      [
+        "Early patent literature used Ac-Lys-Pro-Val-NH2",
+        "US 5,028,592",
+        "Yes",
+        "Yes",
+        "Patent's dose statements not used"
+      ],
+      [
+        "GHK 340.38; KdPT 344.41; α-MSH ≈1664.9; BPC-157 ≈1419.5",
+        "Calculated; KdPT matches Ref 4; BPC-157 matches Ref 11",
+        "Yes",
+        "Yes",
+        ""
+      ],
+      [
+        "No peer-reviewed human efficacy trial of KPV identified",
+        "Literature reviewed for this page (Refs 1–8 and searches)",
+        "Yes, scoped",
+        "Yes",
+        "Worded as 'identified in the literature reviewed', not as an absolute"
+      ],
+      [
+        "KPV is not an FDA-approved drug",
+        "FDA 503A nomination context (Ref 10); no approved product identified",
+        "Yes",
+        "Yes",
+        ""
+      ],
+      [
+        "KPV free base and KPV acetate discussed at July 23, 2026 PCAC",
+        "Ref 10 (FDA agenda and meeting page)",
+        "Yes",
+        "Yes",
+        "Committee vote outcome reported only by secondary sources; deliberately not stated"
+      ],
+      [
+        "No KPV product or COA on Veracue",
+        "Live /shop and /certificates, fetched 2026-09-19",
+        "Yes",
+        "Yes",
+        "Update at launch"
+      ],
+      [
+        "Veracue Certificates page offers a lot-documentation request via contact page",
+        "Live /certificates",
+        "Yes",
+        "Yes",
+        "The 24-hour turnaround mentioned there is for legacy lots; not repeated"
+      ],
+      [
+        "Any Veracue KPV purity, lot, lab, vial size, form, price, storage",
+        "None available",
+        "No",
+        "No",
+        "Shown as not publicly specified"
+      ],
+      [
+        "Veracue site-wide ≥99% / ±0.5 Da standards",
+        "Live homepage and certificates",
+        "Conflicting",
+        "No",
+        "Not carried onto the KPV page; see audit"
+      ]
+    ]
+  },
+  "S_final_audit": {
+    "ruo_audit": [
+      [
+        "Dosage numbers, mg/mcg, schedules, frequency",
+        "None present. The dosage section states no dose is provided."
+      ],
+      [
+        "Routes, oral instructions, injection, reconstitution, mixing",
+        "None. Oral section declines guidance; published carrier studies mentioned without route or amounts."
+      ],
+      [
+        "Treatment, gut, skin, anti-aging, weight-loss, bodybuilding claims",
+        "None. Every activity is tied to a named model."
+      ],
+      [
+        "Therapeutic or human-outcome promises",
+        "None. Explicit 'does not establish' statements in background and benefits sections."
+      ],
+      [
+        "Stacks, 'best peptide', rankings",
+        "None. Comparison intro states no ranking."
+      ],
+      [
+        "Testimonials, reviews, ratings",
+        "None, including in schema."
+      ],
+      [
+        "Fake COA, purity, certification, availability, regulatory status",
+        "None. All Veracue fields use the not-specified wording; regulatory text limited to what FDA's own pages show."
+      ],
+      [
+        "Veracue 'our/provides' sentences",
+        "Only three: RUO designation, no dosage guidance, and the documentation-request route. All verified on the live site."
+      ],
+      [
+        "Numbers on the page",
+        "Limited to molecular identifiers, calculated masses, publication years and the FDA meeting date."
+      ]
+    ],
+    "humanization_check": "Varied sentence openings, paragraphs under 100 words, one idea per paragraph, transitions used where logic changes direction. No 'cutting-edge', 'unlock', 'premium' or similar. Tone matches the live Selank page.",
+    "live_site_issues_to_fix": [
+      "Homepage 'Best-Selling' cards link to product URLs that are not live. /product/ghk-cu returns 'Product Not Found' (noindex); the shop lists only 3 products.",
+      "Homepage states ESI-MS confirms 'zero optical isomers'. Mass spectrometry cannot distinguish enantiomers or D/L residues; the claim needs a chiral method behind it or should be removed.",
+      "Mass tolerance still conflicts: ±0.5 Da (homepage) vs ±0.05 Da (Certificates page).",
+      "Purity messaging still conflicts: '≥99%' / '99.1%+' claims vs the footer's 'certain items may test below 99% purity'.",
+      "Homepage 'Exact Milligram Dosing… reconstitution math' copy and the footer Peptide Calculator sit awkwardly with RUO positioning, and the keyword data shows calculator/dosage traffic these would attract.",
+      "Shop FAQ still lists roughly a dozen compounds not in the catalog.",
+      "Selank product gallery uses NAD+ image files.",
+      "Price inconsistencies: Selank shows $34 (was $43) on shop cards and $34 (was $39) on the product page; the AHK-Cu 'Also Considered' card shows $59 vs $49 on the shop.",
+      "The fetched Selank page exposed no meta description or canonical tag, while home/shop/certificates did. Worth checking product-page head output.",
+      "Shop and Certificates 'Contact Us' buttons point to /contact while the footer uses /contact-us. Confirm /contact resolves."
+    ]
+  }
+}

@@ -30,10 +30,11 @@ export const afterCreateUserTodo: CollectionAfterChangeHook = async ({ doc, oper
         
         try {
           await sendTrackedEmail(req.payload, {
-            from: 'Veracue Support <support@veracuepeptides.com>',
+            from: 'Veracue Peptides <support@veracuepeptides.com>',
             to: doc.email,
             subject: 'Welcome to Veracue!',
             html: welcomeHtml,
+            headers: { 'List-Unsubscribe': '<mailto:support@veracuepeptides.com?subject=Unsubscribe>' },
           })
           req.payload.logger.info(`Sent welcome email to new user ${doc.email}`)
         } catch (err) {

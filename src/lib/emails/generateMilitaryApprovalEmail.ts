@@ -6,13 +6,13 @@ export function generateMilitaryApprovalEmail(name: string, couponCode: string):
   const safeName = escapeHtml(name)
   const safeCoupon = escapeHtml(couponCode)
 
-  return `${shellOpen({ title: 'Thank You For Your Service — Veracue', headerColor: BRAND.olive, headerWaveInto: '#ffffff' })}
+  return `${shellOpen({ title: 'Thank You For Your Service | Veracue Peptides', headerColor: BRAND.olive, headerWaveInto: '#ffffff' })}
           <tr>
             <td style="background-color:#ffffff;padding:8px 24px 36px;text-align:center;">
               ${iconBadge('star')}
               <p style="margin:0 0 10px;font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:${BRAND.terracotta};">Verification Approved</p>
               <h1 style="margin:0 0 12px;font-family:-apple-system,sans-serif;font-weight:800;font-size:25px;color:${BRAND.charcoal};letter-spacing:-0.01em;">Hi ${safeName},</h1>
-              <p style="margin:0;font-size:14px;line-height:1.7;color:rgba(32,34,28,0.6);">Your military ID has been verified by our team. We deeply appreciate your service &mdash; here's your discount code.</p>
+              <p style="margin:0;font-size:14px;line-height:1.7;color:rgba(32,34,28,0.6);">Your military ID has been verified by our team. We deeply appreciate your service, here's your discount code.</p>
             </td>
           </tr>
           ${wave('#ffffff', BRAND.linen, 44)}
@@ -22,7 +22,7 @@ export function generateMilitaryApprovalEmail(name: string, couponCode: string):
                 <p style="margin:0 0 10px;font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,241,230,0.5);">Your Discount Code</p>
                 <p style="margin:0;font-family:-apple-system,sans-serif;font-weight:800;font-size:30px;letter-spacing:0.1em;color:${BRAND.linen};">${safeCoupon}</p>
                 <div style="border-top:1.5px dashed rgba(255,241,230,0.25);margin:20px 0 14px;"></div>
-                <p style="margin:0;font-size:11.5px;font-style:italic;color:rgba(255,241,230,0.65);">Locked to your email address &mdash; this code cannot be shared or transferred.</p>
+                <p style="margin:0;font-size:11.5px;font-style:italic;color:rgba(255,241,230,0.65);">Locked to your email address, this code cannot be shared or transferred.</p>
               </td></tr></table>
               <div style="height:14px;line-height:14px;font-size:0;">&nbsp;</div>
             </td>

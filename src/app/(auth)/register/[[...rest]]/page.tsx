@@ -1,10 +1,10 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { use, useState } from 'react'
 import Link from 'next/link'
 import { MailCheck, Eye, EyeOff, AlertCircle } from 'lucide-react'
 import { signIn } from 'next-auth/react'
-import { useRouter } from 'next/navigation'
+import { notFound, useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useTranslations } from 'next-intl'
@@ -12,7 +12,11 @@ import { AuthSplitLayout } from '@/components/auth/AuthSplitLayout'
 import { registerSchema, type RegisterInput } from '@/lib/validations/auth'
 import { registerUser } from '../actions'
 
-export default function RegisterPage() {
+export default function RegisterPage({ params }: { params: Promise<{ rest?: string[] }> }) {
+  // Optional catch-all: only /register itself is valid, so /register/anything returns 404.
+  const { rest } = use(params)
+  if (rest && rest.length > 0) notFound()
+
   const t = useTranslations('auth.register')
   const router = useRouter()
   const [serverError, setServerError] = useState('')

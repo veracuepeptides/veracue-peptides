@@ -1,6 +1,10 @@
 import React from 'react'
 import type { Metadata } from 'next'
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, getMessages } from 'next-intl/server'
+import { NextIntlClientProvider } from 'next-intl'
+import { pickMessages } from '@/lib/i18n/pickMessages'
+import { getOgImageUrl } from '@/lib/utils'
+import { safeJsonLd } from '@/lib/seo/jsonLd'
 
 export async function generateMetadata({
   params,
@@ -12,6 +16,8 @@ export async function generateMetadata({
   const title = t('metaTitle')
   const description = t('metaDescription')
   const path = true ? '/refund-policy' : `/${locale}/refund-policy`
+
+  const ogImage = getOgImageUrl(title, description, undefined, 'LEGAL INFORMATION', 'veracue-glow-50mg-water-splash-grey-bg.webp')
 
   return {
     title,
@@ -25,11 +31,14 @@ export async function generateMetadata({
       description,
       type: 'website',
       url: path,
+      siteName: 'Veracue Peptides',
+      images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
+      images: [ogImage],
     },
   }
 }
@@ -59,6 +68,7 @@ export default async function RefundPolicyLayout({
         name: title,
         description,
         inLanguage: locale,
+        isPartOf: { '@id': `${baseUrl}/#website` },
       },
       {
         '@type': 'BreadcrumbList',
@@ -75,9 +85,9 @@ export default async function RefundPolicyLayout({
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(schema) }}
       />
-      {children}
+      <NextIntlClientProvider messages={pickMessages(await getMessages(), ['legal.refundPolicy'])}>{children}</NextIntlClientProvider>
     </>
   )
 }

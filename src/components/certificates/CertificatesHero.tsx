@@ -9,27 +9,27 @@ import { Award, ShieldCheck, Activity, FlaskConical } from 'lucide-react'
 const CERT_HERO_IMAGES = [
   {
     src: '/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp',
-    alt: 'Veracue Verified Lot Archive and Lyophilized Peptide Collection',
+    alt: 'Veracue research peptide vials arranged in a flat lay collection',
     topic: 'Verified Lot Archive',
     spec: 'Dual-Method Testing',
   },
   {
     src: '/veracue-images/veracue-ghk-cu-50mg-ice-bed-white.webp',
-    alt: 'Veracue Cleanroom Synthesis and HPLC Quality Assurance',
-    topic: 'Cleanroom Synthesis',
-    spec: 'ISO-7 Verified',
+    alt: 'Veracue research peptide vial on an ice bed',
+    topic: 'Lyophilized Vials',
+    spec: 'Lot Labeled',
   },
   {
     src: '/veracue-images/veracue-klow-50mg-pool-water-ripples.webp',
-    alt: 'Veracue Analytical Chromatography and Laboratory Purity Testing',
+    alt: 'Veracue research peptide vial resting on rippling pool water',
     topic: 'Analytical HPLC',
     spec: 'UV-214nm Detection',
   },
   {
     src: '/veracue-images/veracue-epithalon-50mg-water-ripples-landscape.webp',
-    alt: 'Veracue High-Resolution Mass Spectrometry Sequence Confirmation',
+    alt: 'Veracue research peptide vial on rippling water',
     topic: 'Mass Spectrometry',
-    spec: '±0.05 Da Mass Match',
+    spec: 'Identity Check',
   },
 ]
 
@@ -40,6 +40,7 @@ export function CertificatesHero() {
 
   // Auto-advance slides every 5.5 seconds matching Homepage & Affiliates
   useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
     const timer = setInterval(() => {
       setCurrentImageIndex((prev) => (prev + 1) % CERT_HERO_IMAGES.length)
     }, 5500)
@@ -88,9 +89,9 @@ export function CertificatesHero() {
       {/* Top Header & Intro Block */}
       <div className="flex flex-col items-center text-center shrink-0 w-full max-w-5xl px-3">
         {/* 1. Eyebrow Tagline with Olive Green (#a5a58d) Accent */}
-        <p className="font-serif tracking-[0.16em] sm:tracking-[0.24em] text-[9.5px] sm:text-[11.5px] md:text-[12px] uppercase text-[#a5a58d] font-semibold mb-1.5 sm:mb-2 flex items-center gap-2">
+        <p className="font-serif tracking-[0.16em] sm:tracking-[0.24em] text-[9.5px] sm:text-[11.5px] md:text-[12px] uppercase text-[#6b705c] font-semibold mb-1.5 sm:mb-2 flex items-center gap-2">
           <span className="w-1.5 h-1.5 rounded-full bg-[#a5a58d] inline-block" />
-          <span>Analytical HPLC Verification &bull; Mass Spectrometry &bull; Third-Party US Labs</span>
+          <span>Analytical HPLC Testing &bull; Mass Spectrometry &bull; COA Per Batch</span>
           <span className="w-1.5 h-1.5 rounded-full bg-[#a5a58d] inline-block" />
         </p>
 
@@ -101,7 +102,7 @@ export function CertificatesHero() {
 
         {/* 3. Sub-headline / Supporting Description */}
         <p className="text-neutral-500 text-[11.5px] sm:text-[13px] md:text-[14.5px] max-w-2xl leading-relaxed mb-2.5 sm:mb-4 font-normal px-1 line-clamp-3 sm:line-clamp-none">
-          Study with absolute confidence. Every batch synthesized by Veracue ships with accredited US third-party HPLC chromatography and mass spectrometry reports verifying &ge;99.0% baseline purity.
+          Look up the Certificate of Analysis for your lot before you order. Each batch is HPLC tested, and the purity result for that batch is reported on its COA.
         </p>
 
         {/* 4. Action HeroButtons */}
@@ -196,14 +197,14 @@ export function CertificatesHero() {
           <div className="absolute top-3.5 sm:top-7 md:top-9 left-3.5 sm:left-7 md:left-9 z-20 text-white text-left">
             <div className="inline-flex items-center gap-1 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full bg-[#a5a58d] text-white text-[9px] xs:text-[10px] sm:text-xs font-bold uppercase tracking-wider font-heading mb-1.5 sm:mb-2 shadow-sm border border-white/20 whitespace-nowrap">
               <ShieldCheck className="w-3 h-3 sm:w-3.5 sm:h-3.5 shrink-0" />
-              <span>Third-Party Verified</span>
+              <span>COA Per Batch</span>
             </div>
             <div className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-[68px] font-black tracking-[-0.03em] text-white leading-none drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] font-heading">
-              &ge;99.0%
+              Per Batch
             </div>
             <p className="text-white/95 text-[10px] xs:text-[11px] sm:text-[13.5px] md:text-[15px] font-medium leading-snug mt-1 sm:mt-2 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)] max-w-[150px] sm:max-w-[260px]">
-              HPLC Area Normalization,<br />
-              Mass Spectrometry Verified
+              HPLC Purity Reported<br />
+              on Every COA
             </p>
           </div>
 
@@ -213,11 +214,11 @@ export function CertificatesHero() {
               <Activity className="w-3.5 h-3.5" />
               <span>Orthogonal Validation</span>
             </div>
-            <h3 className="text-xs xs:text-sm sm:text-xl md:text-2xl lg:text-[26px] font-extrabold tracking-tight text-white leading-tight mb-0.5 sm:mb-2 drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] font-heading">
-              Accredited US<br className="sm:hidden" /> Laboratories
-            </h3>
+            <p className="text-xs xs:text-sm sm:text-xl md:text-2xl lg:text-[26px] font-extrabold tracking-tight text-white leading-tight mb-0.5 sm:mb-2 drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] font-heading">
+              Analytical<br className="sm:hidden" /> Testing Reports
+            </p>
             <p className="hidden sm:block text-white/90 text-xs sm:text-[13px] md:text-[14.5px] font-normal leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
-              Independent laboratory dockets verify sequence fidelity, purity percentage, and trace residual limits before catalog release.
+              Each lot has its own testing docket showing the HPLC purity result reported for that batch.
             </p>
           </div>
 
@@ -261,7 +262,7 @@ export function CertificatesHero() {
                 <div className="flex items-center gap-3 sm:gap-8 md:gap-12 shrink-0 pr-3 sm:pr-8 md:pr-12">
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full bg-[#a5a58d] inline-block shrink-0" />
-                    <span className="font-extrabold text-[#20221c]">≥99%</span>
+                    <span className="font-extrabold text-[#20221c]">Per Batch</span>
                     <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Purity</span>
                   </div>
 
@@ -273,26 +274,26 @@ export function CertificatesHero() {
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full border border-[#a5a58d] bg-[#a5a58d] inline-block shrink-0" />
-                    <span className="font-extrabold text-[#20221c]">100%</span>
+                    <span className="font-extrabold text-[#20221c]">Every</span>
                     <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Lot Tested</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full bg-gradient-to-r from-[#a5a58d] to-transparent border border-[#a5a58d] inline-block shrink-0" />
-                    <span className="font-extrabold text-[#20221c]">US</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Laboratories</span>
+                    <span className="font-extrabold text-[#20221c]">USA</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Shipped</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="text-[#a5a58d] font-bold text-[9px] xs:text-[10px] sm:text-base leading-none">✦</span>
                     <span className="font-extrabold text-[#20221c]">MASS SPEC</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Confirmed</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Tested</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full border border-[#a5a58d] bg-[#a5a58d] inline-block shrink-0" />
-                    <span className="font-extrabold text-[#20221c]">ISO-7</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Synthesis</span>
+                    <span className="font-extrabold text-[#20221c]">Research</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Use Only</span>
                   </div>
                 </div>
 
@@ -300,7 +301,7 @@ export function CertificatesHero() {
                 <div className="flex items-center gap-3 sm:gap-8 md:gap-12 shrink-0 pr-3 sm:pr-8 md:pr-12">
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full bg-[#a5a58d] inline-block shrink-0" />
-                    <span className="font-extrabold text-[#20221c]">≥99%</span>
+                    <span className="font-extrabold text-[#20221c]">Per Batch</span>
                     <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Purity</span>
                   </div>
 
@@ -312,26 +313,26 @@ export function CertificatesHero() {
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full border border-[#a5a58d] bg-[#a5a58d] inline-block shrink-0" />
-                    <span className="font-extrabold text-[#20221c]">100%</span>
+                    <span className="font-extrabold text-[#20221c]">Every</span>
                     <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Lot Tested</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full bg-gradient-to-r from-[#a5a58d] to-transparent border border-[#a5a58d] inline-block shrink-0" />
-                    <span className="font-extrabold text-[#20221c]">US</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Laboratories</span>
+                    <span className="font-extrabold text-[#20221c]">USA</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Shipped</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="text-[#a5a58d] font-bold text-[9px] xs:text-[10px] sm:text-base leading-none">✦</span>
                     <span className="font-extrabold text-[#20221c]">MASS SPEC</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Confirmed</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Tested</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full border border-[#a5a58d] bg-[#a5a58d] inline-block shrink-0" />
-                    <span className="font-extrabold text-[#20221c]">ISO-7</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Synthesis</span>
+                    <span className="font-extrabold text-[#20221c]">Research</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Use Only</span>
                   </div>
                 </div>
               </div>

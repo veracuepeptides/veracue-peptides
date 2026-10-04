@@ -1,7 +1,10 @@
 import { Metadata } from 'next'
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, getMessages } from 'next-intl/server'
+import { NextIntlClientProvider } from 'next-intl'
+import { pickMessages } from '@/lib/i18n/pickMessages'
 import PeptideCalculatorPage from './PeptideCalculatorClient'
 import { getOgImageUrl } from '@/lib/utils'
+import { safeJsonLd } from '@/lib/seo/jsonLd'
 
 const slug = 'peptide-calculator'
 const FAQ_KEYS = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8', 'q9', 'q10'] as const
@@ -86,10 +89,7 @@ export default async function Page({
       "price": "0",
       "priceCurrency": "USD"
     },
-    "creator": {
-      "@type": "Organization",
-      "name": "Veracue Peptides"
-    }
+    "creator": { "@id": `${baseUrl}/#organization` }
   }
 
   const breadcrumbSchema = {
@@ -121,41 +121,40 @@ export default async function Page({
         name: t('metaTitle'),
         description: t('metaDescription'),
         inLanguage: locale,
-      },
-      {
-        '@type': 'WebSite',
-        '@id': `${baseUrl}/#website`,
-        url: baseUrl,
-        name: 'Veracue Peptides',
-      },
-      {
-        '@type': 'Organization',
-        '@id': `${baseUrl}/#organization`,
-        name: 'Veracue Peptides',
-        url: baseUrl,
+        isPartOf: { '@id': `${baseUrl}/#website` },
       },
     ],
   }
+
+  const pageMessages = pickMessages(await getMessages(), [
+    'calculator.main',
+    'calculator.hub',
+    'calculator.bmiBmr',
+    'calculator.creatinineClearance',
+    'calculator.peptideReconstitution',
+  ])
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(pageSchema) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(faqSchema) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppSchema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(webAppSchema) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(breadcrumbSchema) }}
       />
-      <PeptideCalculatorPage />
+      <NextIntlClientProvider messages={pageMessages}>
+        <PeptideCalculatorPage />
+      </NextIntlClientProvider>
     </>
   )
 }

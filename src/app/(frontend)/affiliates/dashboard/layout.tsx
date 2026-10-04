@@ -4,13 +4,16 @@ import { AffiliateTopNav } from '@/components/affiliates/AffiliateTopNav'
 import { getPayloadUser } from '@/lib/auth/getPayloadUser'
 import { getPayload } from 'payload'
 import config from '@payload-config'
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, getMessages } from 'next-intl/server'
+import { NextIntlClientProvider } from 'next-intl'
+import { pickMessages } from '@/lib/i18n/pickMessages'
 
 export async function generateMetadata() {
   const t = await getTranslations('affiliate.dashboardLayout')
   return {
     title: t('metaTitle'),
     description: t('metaDescription'),
+    robots: { index: false, follow: false },
   }
 }
 
@@ -38,7 +41,17 @@ export default async function AffiliateDashboardLayout({ children }: { children:
   const userName = affiliate.displayName || user?.firstName || user?.email?.split('@')[0] || t('defaultPartnerName')
   const tier = affiliate.tier || 'standard'
 
+  const pageMessages = pickMessages(await getMessages(), [
+    'affiliate.dashboard',
+    'affiliate.conversions',
+    'affiliate.links',
+    'affiliate.payouts',
+    'affiliate.dashboardSettings',
+    'affiliate.sidebar',
+  ])
+
   return (
+    <NextIntlClientProvider messages={pageMessages}>
     <div className="bg-[#f0efeb] min-h-screen text-[#1a1f16] selection:bg-[#a5a58d]/30 selection:text-[#1a1f16] flex flex-col relative pt-24 sm:pt-28 md:pt-[116px] lg:pt-[120px] pb-12 sm:pb-16">
       {/* Subtle architectural olive ambient depth contained to not disrupt sticky positioning */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
@@ -55,10 +68,11 @@ export default async function AffiliateDashboardLayout({ children }: { children:
         <AffiliateTopNav userName={userName} tier={tier} />
 
         {/* Main Content Area */}
-        <main className="w-full mt-6 sm:mt-8">
+        <div className="w-full mt-6 sm:mt-8">
           {children}
-        </main>
+        </div>
       </div>
     </div>
+    </NextIntlClientProvider>
   )
 }

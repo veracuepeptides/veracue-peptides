@@ -661,10 +661,10 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
                 <ShieldCheck size={20} />
               </div>
               <h3 className="font-heading font-bold text-sm sm:text-base text-[#20221c] mb-1">
-                ≥99% HPLC Purity
+                HPLC Purity Per Batch
               </h3>
               <p className="text-neutral-500 text-xs leading-relaxed">
-                Each lot is run through HPLC before listing, and the result is published, not just claimed.
+                Each lot is run through HPLC and the result is published on its COA, not just claimed.
               </p>
             </div>
 
@@ -674,10 +674,10 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
                 <Snowflake size={20} />
               </div>
               <h3 className="font-heading font-bold text-sm sm:text-base text-[#20221c] mb-1">
-                Cold-Chain Packaged
+                Insulated Packaging
               </h3>
               <p className="text-neutral-500 text-xs leading-relaxed">
-                Insulated shipping keeps the lyophilized cake stable in transit, so what arrives matches what shipped.
+                Orders are packed with insulation to protect the lyophilized cake in transit.
               </p>
             </div>
 
@@ -700,10 +700,10 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
                 <Truck size={20} />
               </div>
               <h3 className="font-heading font-bold text-sm sm:text-base text-[#20221c] mb-1">
-                Rapid U.S. Dispatch
+                Shipped From the USA
               </h3>
               <p className="text-neutral-500 text-xs leading-relaxed">
-                Orders leave a climate-controlled U.S. facility, typically the same or next business day.
+                Orders ship from within the United States, with tracking provided once your order is on its way.
               </p>
             </div>
           </div>

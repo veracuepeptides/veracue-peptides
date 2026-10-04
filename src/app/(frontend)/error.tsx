@@ -69,7 +69,7 @@ export default function GlobalError({
   }, [error])
 
   return (
-    <main className="relative min-h-[100dvh] bg-[#f0efeb] flex flex-col items-center justify-start overflow-y-auto overflow-x-hidden pt-[140px] pb-12 px-4 sm:px-6">
+    <div className="relative min-h-[100dvh] bg-[#f0efeb] flex flex-col items-center justify-start overflow-y-auto overflow-x-hidden pt-[140px] pb-12 px-4 sm:px-6">
       <style dangerouslySetInnerHTML={{ __html: `
         #global-footer { display: none !important; }
       `}} />
@@ -110,7 +110,7 @@ export default function GlobalError({
           
         </div>
       </motion.div>
-    </main>
+    </div>
   )
 }
 

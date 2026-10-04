@@ -1,0 +1,1223 @@
+{
+  "meta": {
+    "route": "/product/pt-141",
+    "canonicalUrl": "https://veracue-peptides.vercel.app/product/pt-141",
+    "robots": "index,follow",
+    "title": "PT-141 Peptide (Bremelanotide) for Research | Veracue",
+    "description": "PT-141 peptide (bremelanotide) for laboratory research: molecular identity, cyclic structure, PT-141 vs Melanotan II, what the studies cover, and COA checks.",
+    "keywords": [
+      "PT-141 peptide",
+      "PT141 peptide",
+      "PT-141",
+      "PT 141",
+      "bremelanotide",
+      "bremelanotide peptide",
+      "peptide PT-141",
+      "what is PT-141",
+      "PT-141 sequence",
+      "PT-141 molecular weight",
+      "PT-141 formula",
+      "PT-141 research",
+      "PT-141 vs Melanotan II",
+      "PT-141 COA",
+      "bremelanotide COA"
+    ],
+    "openGraph": {
+      "type": "website",
+      "title": "PT-141 Peptide (Bremelanotide) for Research | Veracue",
+      "description": "PT-141 peptide (bremelanotide) for laboratory research: molecular identity, cyclic structure, PT-141 vs Melanotan II, what the studies cover, and COA checks.",
+      "url": "https://veracue-peptides.vercel.app/product/pt-141",
+      "siteName": "Veracue Peptides"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "PT-141 Peptide (Bremelanotide) for Research | Veracue",
+      "description": "PT-141 peptide (bremelanotide) for laboratory research: molecular identity, cyclic structure, PT-141 vs Melanotan II, what the studies cover, and COA checks."
+    },
+    "productCardBlurb": "PT-141, also known as bremelanotide, is a synthetic cyclic heptapeptide that acts as a melanocortin receptor agonist. Veracue supplies it as a research material for laboratory work. The most directly relevant human evidence comes from clinical studies of Vyleesi, an approved bremelanotide medicine, in a defined patient population. That evidence and approval belong to the pharmaceutical product, so this research material does not establish clinical use or safety in people.",
+    "breadcrumb": [
+      {
+        "name": "Home",
+        "url": "https://veracue-peptides.vercel.app/"
+      },
+      {
+        "name": "Shop",
+        "url": "https://veracue-peptides.vercel.app/shop"
+      },
+      {
+        "name": "PT-141 Peptide",
+        "url": "https://veracue-peptides.vercel.app/product/pt-141"
+      }
+    ],
+    "dateModified": "2026-09-25"
+  },
+  "pageOrder": [
+    "hero",
+    "aeo",
+    "snapshot",
+    "molecularIdentity",
+    "researchContext",
+    "problemSolutionSections",
+    "comparison",
+    "researchVsPharmaceutical",
+    "faq",
+    "references",
+    "compliance",
+    "cta"
+  ],
+  "hero": {
+    "eyebrow": "RESEARCH USE ONLY",
+    "h1": "PT-141 Peptide",
+    "subtitle": "Bremelanotide · Cyclic Melanocortin Peptide",
+    "description": "PT-141, also known as bremelanotide, is a synthetic cyclic heptapeptide studied for its activity at melanocortin receptors. This page brings together its molecular identity, structure, research history and the product documentation researchers should review when evaluating a PT-141 material.",
+    "badges": [
+      "Research Use Only",
+      "Compound-level reference data",
+      "Lot documentation guide"
+    ]
+  },
+  "aeo": {
+    "heading": "What is PT-141?",
+    "answer": "PT-141, also called bremelanotide, is a synthetic cyclic heptapeptide that acts as a melanocortin receptor agonist. It appears in receptor pharmacology, animal studies and clinical literature, which is why the name turns up in so many searches. Veracue offers PT-141 (bremelanotide) as a Research Use Only material for laboratory work. Formula and molecular weight describe the molecule itself, while purity, salt form and lot identity come from the documentation for a specific lot.",
+    "quickAnswers": [
+      {
+        "question": "Is PT-141 the same as bremelanotide?",
+        "answer": "Yes at the molecular level. PT-141 is the early development code, and bremelanotide is the standardized name."
+      },
+      {
+        "question": "What is the PT-141 sequence?",
+        "answer": "Ac-Nle-cyclo(Asp-His-D-Phe-Arg-Trp-Lys)-OH: seven residues, an N-terminal acetyl group and a lactam ring between Asp and Lys."
+      },
+      {
+        "question": "What is the molecular weight of bremelanotide?",
+        "answer": "About 1025.2 g/mol for the free peptide, formula C50H68N14O10."
+      },
+      {
+        "question": "Is PT-141 the same as Melanotan II?",
+        "answer": "No. They share a cyclic core, but PT-141 ends in a free acid and Melanotan II in an amide."
+      },
+      {
+        "question": "What does PT-141 research study?",
+        "answer": "Melanocortin receptor pharmacology, animal behavior models and clinical studies in defined populations."
+      },
+      {
+        "question": "What should a PT-141 COA show?",
+        "answer": "Compound name, lot number, test date, laboratory, methods, and purity and identity results where reported."
+      }
+    ]
+  },
+  "snapshot": {
+    "heading": "Research snapshot",
+    "note": "Compound-level rows describe the molecule. Details for a specific lot come from that lot's documentation.",
+    "compoundLevel": {
+      "label": "Compound-level reference information",
+      "rows": [
+        [
+          "Common names",
+          "PT-141, PT141, bremelanotide"
+        ],
+        [
+          "Peptide class",
+          "Cyclic heptapeptide, melanocortin receptor agonist"
+        ],
+        [
+          "Molecular formula",
+          "C50H68N14O10 (free peptide)"
+        ],
+        [
+          "Molecular weight",
+          "≈ 1025.2 g/mol (average)"
+        ],
+        [
+          "Monoisotopic mass",
+          "1024.52428442 Da"
+        ],
+        [
+          "CAS number",
+          "189691-06-3"
+        ],
+        [
+          "PubChem CID",
+          "9941379"
+        ],
+        [
+          "UNII",
+          "6Y24O4F92S"
+        ],
+        [
+          "Sequence",
+          "Ac-Nle-cyclo(Asp-His-D-Phe-Arg-Trp-Lys)-OH"
+        ],
+        [
+          "Structural feature",
+          "Lactam ring between Asp and Lys; N-terminal acetyl; free C-terminal acid; no disulfide bond"
+        ]
+      ],
+      "refs": [
+        1,
+        2,
+        3
+      ]
+    },
+    "productLevel": {
+      "label": "Veracue product-specific information",
+      "rows": [
+        [
+          "Intended use",
+          "Research Use Only"
+        ],
+        [
+          "Salt or counterion form",
+          "Product-specific salt/counterion form is not publicly specified."
+        ],
+        [
+          "Purity",
+          "Not publicly specified on the current Veracue product information."
+        ],
+        [
+          "Physical form",
+          "Not publicly specified on the current Veracue product information."
+        ],
+        [
+          "Lot documentation",
+          "Not publicly specified on the current Veracue product information."
+        ]
+      ]
+    }
+  },
+  "molecularIdentity": {
+    "heading": "Molecular identity",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Bremelanotide is a synthetic peptide of seven amino acid residues: norleucine, aspartic acid, histidine, D-phenylalanine, arginine, tryptophan and lysine. An acetyl group caps the N-terminus, and the C-terminus is a free carboxylic acid.",
+        "refs": [
+          1,
+          3
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "The cyclic structure comes from a side-chain lactam (amide) linkage between Asp and Lys. It is not a disulfide bond. Norleucine (Nle) is a non-proteinogenic amino-acid residue, and D-phenylalanine is the D-enantiomer rather than the L-form found in native α-MSH.",
+        "refs": [
+          3,
+          10
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "The values on this page describe the free bremelanotide reference molecule. Bremelanotide acetate, the salt described in FDA labeling for the approved medicine, is a different material with added acetic acid, while Veracue's own material may differ again. Product-specific salt/counterion form is not publicly specified.",
+        "refs": [
+          2,
+          3
+        ]
+      }
+    ]
+  },
+  "researchContext": {
+    "heading": "Where PT-141 appears in the research literature",
+    "intro": "The name turns up at four evidence levels, and each answers a different question.",
+    "table": {
+      "columns": [
+        "Level",
+        "What it covers",
+        "What it can tell you"
+      ],
+      "rows": [
+        [
+          "Receptor pharmacology",
+          "Binding and activation of melanocortin receptors in cells.",
+          "What the molecule does at a receptor in a defined assay, not a physiological result."
+        ],
+        [
+          "Preclinical research",
+          "Animal behavior studies, such as solicitation behavior in female rats.",
+          "Effects in a model organism, with limits on how far they transfer."
+        ],
+        [
+          "Human clinical research",
+          "Early studies in men and phase 3 trials in premenopausal women with a defined condition.",
+          "Specific endpoints in specific populations."
+        ],
+        [
+          "Regulatory context",
+          "FDA labeling for Vyleesi, an approved injectable product.",
+          "That product's indication and limits, not those of a research material."
+        ]
+      ]
+    },
+    "refs": [
+      3,
+      6,
+      8,
+      9
+    ]
+  },
+  "problemSolutionSections": [
+    {
+      "number": 1,
+      "heading": "How do I confirm what “PT-141” actually refers to?",
+      "solution": "At the compound level, PT-141, PT141 and bremelanotide name the same molecule.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "PT-141 began as a development code. Later clinical reports and FDA labeling then adopted the standardized name bremelanotide. Variants such as “PT141 peptide”, “PT 141”, “peptide PT-141” and “bremelanotide peptide” are simply different spellings of the same search.",
+          "refs": [
+            3,
+            6,
+            7
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Databases anchor the name with identifiers: PubChem CID 9941379, CAS 189691-06-3 and UNII 6Y24O4F92S all point to free bremelanotide. A shared name still doesn't make two materials identical, though. Salt form, water content and impurities can differ by supplier and lot, so lot documentation is what confirms a specific material.",
+          "refs": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "heading": "How do I distinguish bremelanotide from its acetate or other material forms?",
+      "solution": "Bremelanotide and bremelanotide acetate share the same peptide but not the same composition.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Bremelanotide and bremelanotide acetate share the same active peptide moiety, but the salt/counterion changes the material's composition and molecular mass. So a database entry for the parent molecule should not be used as proof of the exact physical form in a vial.",
+          "refs": [
+            2,
+            3
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Veracue's current public product information does not specify the product-specific salt/counterion form."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "heading": "How should I read the PT-141 sequence and cyclic structure?",
+      "solution": "Read it as Ac-Nle-cyclo(Asp-His-D-Phe-Arg-Trp-Lys)-OH: seven residues, one acetyl cap and one lactam ring.",
+      "table": {
+        "caption": "Residue-by-residue reading of bremelanotide.",
+        "columns": [
+          "Position",
+          "Residue",
+          "What to notice"
+        ],
+        "rows": [
+          [
+            "1",
+            "Ac-Nle",
+            "Acetylated N-terminus. Norleucine is a non-proteinogenic residue and sits outside the ring."
+          ],
+          [
+            "2",
+            "Asp",
+            "Its side-chain carboxyl forms one end of the lactam linkage."
+          ],
+          [
+            "3",
+            "His",
+            "Part of the His-Phe-Arg-Trp core shared with α-MSH."
+          ],
+          [
+            "4",
+            "D-Phe",
+            "The D-enantiomer, rather than the L-form found in α-MSH."
+          ],
+          [
+            "5",
+            "Arg",
+            "Part of the core motif."
+          ],
+          [
+            "6",
+            "Trp",
+            "Part of the core motif."
+          ],
+          [
+            "7",
+            "Lys",
+            "Its side-chain amine closes the ring. The C-terminus stays a free carboxylic acid."
+          ]
+        ]
+      },
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "In fact, the ring is a side-chain lactam (amide) linkage between Asp and Lys. It is not a disulfide bond, and no cysteine is present. Single-letter strings such as XDHFRWK are handy for searching, but they leave out the acetyl group, the D-configuration and the ring, so check the three-letter form as well.",
+          "refs": [
+            3,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "heading": "Why does PT-141 appear alongside Melanotan II in research searches?",
+      "solution": "They are distinct compounds built on the same cyclic core.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "PT-141/bremelanotide and Melanotan II are structurally related melanocortin peptides. Both also contain the cyclic core Ac-Nle-cyclo(Asp-His-D-Phe-Arg-Trp-Lys). PT-141 ends in a free carboxylic acid, while Melanotan II ends in a C-terminal amide.",
+          "refs": [
+            3,
+            10
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "That single difference gives them different formulas (C50H68N14O10 versus C50H69N15O9) and different masses, so they aren't synonyms. Melanotan II is sometimes searched as a “tanning peptide”, which is one reason the two names get mixed up. Neither is offered here as a tanning agent."
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "heading": "What does melanocortin receptor activity actually establish?",
+      "solution": "Receptor activity is mechanistic evidence. On its own, it doesn't establish a clinical outcome.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Melanocortin receptors, MC1R through MC5R, are G protein-coupled receptors. FDA labeling describes bremelanotide as a non-selective agonist that activates several of these subtypes, while the pharmacology literature has investigated its activity at MC1R, MC3R and MC4R in particular.",
+          "refs": [
+            3,
+            5,
+            10
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Activity at a receptor shows what a molecule does in a defined assay. It doesn't show which receptor is responsible for a response in a living organism, and the mechanism linking receptor activation to the approved clinical effect remains incompletely defined. Affinity and potency values also vary with species and assay system, so none appear here.",
+          "refs": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "heading": "Why do PT-141 searches produce sexual-health and “benefits” claims?",
+      "solution": "Because one name now spans laboratory pharmacology, animal research, clinical studies and marketing language.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Searches such as “PT-141 benefits”, “PT-141 dosage” and “PT-141 for men” mix four different things: laboratory pharmacology, animal research, pharmaceutical clinical studies and consumer marketing. Scientific writing keeps them apart, but marketing language often blends them. Promotional claims aren't repeated here."
+        }
+      ],
+      "subsections": [
+        {
+          "heading": "What are the reported effects of PT-141 in research?",
+          "body": [
+            {
+              "type": "paragraph",
+              "text": "In the literature, “effects” means something specific: receptor activation in cells, behaviors such as solicitation in female rats, and questionnaire-based endpoints in clinical trials. Each answers a different question, and none applies automatically to a research material.",
+              "refs": [
+                6,
+                8,
+                9
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Dosage searches",
+          "callout": "Dosage information belongs to clinical/pharmaceutical labeling and study protocols, not to this RUO product page. Veracue does not provide human-use dosing or administration guidance for this research material."
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "heading": "What does the human evidence actually show?",
+      "solution": "Human clinical evidence exists, and it concerns pharmaceutical bremelanotide in specific populations.",
+      "subsections": [
+        {
+          "heading": "Clinical studies",
+          "body": [
+            {
+              "type": "paragraph",
+              "text": "The major controlled program was a pair of phase 3 trials in premenopausal women with acquired, generalized hypoactive sexual desire disorder, and it measured specific validated endpoints. Earlier studies also investigated men, but results belong to the population and product studied, so they don't establish the characteristics of a Veracue research material.",
+              "refs": [
+                3,
+                6,
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Side effects and adverse-event information",
+          "body": [
+            {
+              "type": "paragraph",
+              "text": "Safety information comes from the approved medicine's trials and labeling. It describes that product in its studied population, so it isn't a safety profile for an unspecified research material. For details, read the original trials and the current label.",
+              "refs": [
+                3,
+                4,
+                6
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "heading": "How should I interpret “PT-141 for men” and “PT-141 for women” searches?",
+      "solution": "Search results echo who was studied during development, not who a research material is for.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Development work covered different populations. The major controlled program enrolled premenopausal women with a defined condition, and earlier studies looked at men. A study population isn't a recommendation, though, and it doesn't describe a Veracue research material.",
+          "refs": [
+            3,
+            6,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "heading": "Why do searches mention PT-141 nasal spray?",
+      "solution": "They reflect historical research and online search behavior.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Because early clinical studies of PT-141 investigated an intranasal formulation, the term stayed in circulation online. Searches for “PT-141 nasal spray” or “PT 141 spray” reflect that history. However, they do not establish the formulation of a Veracue product. The form of Veracue's PT-141 material is not publicly specified on the current Veracue product information.",
+          "refs": [
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "heading": "What should I verify on a PT-141 COA?",
+      "solution": "A useful certificate shows what the material is, how a purity figure was obtained and which lot the report covers.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "A PT-141 or bremelanotide COA may include the items below. Not every certificate carries every test, so a gap is a reason to ask a question, not an automatic failure."
+        }
+      ],
+      "checklist": [
+        {
+          "item": "Compound identity",
+          "detail": "May name PT-141 or bremelanotide, ideally with a formula or structure reference."
+        },
+        {
+          "item": "Lot or batch number",
+          "detail": "Should match the label on your vial."
+        },
+        {
+          "item": "Test date",
+          "detail": "Shows when the analysis ran."
+        },
+        {
+          "item": "Testing laboratory",
+          "detail": "Names who performed the work."
+        },
+        {
+          "item": "Analytical method",
+          "detail": "A named method with stated conditions is more useful than a percentage alone."
+        },
+        {
+          "item": "Purity or assay result, if reported",
+          "detail": "Check what the number means. Chromatographic purity isn't the same as net peptide content."
+        },
+        {
+          "item": "Identity testing",
+          "detail": "May include mass spectrometry and any other method the laboratory lists."
+        },
+        {
+          "item": "Mass spectrometry, where performed",
+          "detail": "Look for observed and expected values with the ion and charge state stated."
+        },
+        {
+          "item": "Acceptance criteria, where applicable",
+          "detail": "The limit each result is measured against."
+        },
+        {
+          "item": "Salt/counterion or material form, where documented",
+          "detail": "Free peptide, acetate or another form."
+        }
+      ],
+      "closing": {
+        "type": "paragraph",
+        "text": "Check the Veracue certificate archive for any publicly available lot documentation. If the relevant PT-141 lot is not listed, contact Veracue to request the documentation available for that material."
+      }
+    },
+    {
+      "number": 11,
+      "heading": "How should I interpret PT-141 mass-spectrometry data?",
+      "solution": "Mass spectrometry reports mass-to-charge ratio (m/z), while molecular weight refers to the neutral molecule.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Charge state, adducts and the material's form can change the observed m/z. For that reason, an MS result should be read together with the reported ion, charge state and analytical method."
+        },
+        {
+          "type": "paragraph",
+          "text": "For reference, the exact monoisotopic mass of free bremelanotide is 1024.52428442 Da. A single missing or shifted peak doesn't automatically mean a failed identity test. Because Melanotan II differs from PT-141 by roughly one mass unit, it's also worth asking which resolution the laboratory used.",
+          "refs": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "heading": "What can a Veracue PT-141 product page actually establish?",
+      "solution": "It can carry compound-level reference information. Lot-specific facts come from lot documentation.",
+      "twoColumn": [
+        {
+          "heading": "Molecular reference information",
+          "text": "Names, formula, molecular weight, CAS and PubChem identifiers, sequence and structural features. These hold for the molecule wherever it comes from."
+        },
+        {
+          "heading": "Lot-specific documentation",
+          "text": "Purity, salt or counterion, water content, mass-spectrometry results, testing laboratory, test date and lot number. These belong to the certificate for a specific lot."
+        }
+      ],
+      "table": {
+        "caption": "Product details.",
+        "columns": [
+          "Product detail",
+          "Status"
+        ],
+        "rows": [
+          [
+            "Salt or counterion",
+            "Product-specific salt/counterion form is not publicly specified."
+          ],
+          [
+            "Purity and physical form",
+            "Not publicly specified on the current Veracue product information."
+          ],
+          [
+            "Vial size, SKU and storage",
+            "Not publicly specified on the current Veracue product information."
+          ],
+          [
+            "Lot number, COA result and testing laboratory",
+            "Not publicly specified on the current Veracue product information."
+          ],
+          [
+            "Manufacturing, sterility and endotoxin details",
+            "Not publicly specified on the current Veracue product information."
+          ]
+        ]
+      },
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Once a certificate exists, it is the authority for that lot, and you can request lot documentation through the contact page."
+        }
+      ]
+    }
+  ],
+  "comparison": {
+    "heading": "PT-141 vs Melanotan II and related melanocortin compounds",
+    "intro": "This table clarifies identity and context. It doesn't rank the compounds.",
+    "table": {
+      "columns": [
+        "Compound",
+        "Relationship",
+        "Key distinction"
+      ],
+      "rows": [
+        [
+          "PT-141 / bremelanotide",
+          "Target compound",
+          "Cyclic heptapeptide with a free C-terminal acid."
+        ],
+        [
+          "Melanotan II",
+          "Related melanocortin peptide",
+          "Same cyclic core with a C-terminal amide."
+        ],
+        [
+          "Melanotan I / afamelanotide",
+          "Related melanocortin analogue",
+          "Linear α-MSH analogue, approved as Scenesse for erythropoietic protoporphyria."
+        ],
+        [
+          "α-MSH",
+          "Endogenous melanocortin peptide",
+          "The native 13-residue peptide."
+        ],
+        [
+          "Vyleesi",
+          "Pharmaceutical product containing bremelanotide",
+          "Approved drug formulation, distinct from a research-material listing."
+        ]
+      ]
+    },
+    "refs": [
+      3,
+      10,
+      11
+    ]
+  },
+  "researchVsPharmaceutical": {
+    "heading": "Research material and pharmaceutical bremelanotide",
+    "intro": "Bremelanotide is the active ingredient in Vyleesi, an FDA-approved prescription medicine. That approval applies to the approved pharmaceutical product and its labeled indication. It does not establish approval, clinical use or therapeutic suitability of a Veracue research material.",
+    "table": {
+      "columns": [
+        "Aspect",
+        "Veracue PT-141 research material",
+        "Vyleesi (approved product)"
+      ],
+      "rows": [
+        [
+          "Purpose",
+          "Laboratory research only.",
+          "Prescription medicine with a labeled indication."
+        ],
+        [
+          "Regulatory status",
+          "Not evaluated or approved by the FDA.",
+          "FDA-approved product with a specific indication and stated limits of use."
+        ],
+        [
+          "Formulation",
+          "Form and salt: Not publicly specified on the current Veracue product information.",
+          "Sterile injectable solution in a prefilled autoinjector, with bremelanotide acetate as the drug substance."
+        ],
+        [
+          "Documentation",
+          "Lot-specific documentation.",
+          "Specifications and labeling defined by the approved application."
+        ],
+        [
+          "Clinical and safety data",
+          "No product-specific clinical or safety evidence is established by this product page.",
+          "Trial and labeling data for the approved product in its studied population."
+        ]
+      ]
+    },
+    "refs": [
+      3,
+      4
+    ]
+  },
+  "faq": {
+    "heading": "Frequently asked questions",
+    "items": [
+      {
+        "question": "What is PT-141?",
+        "answer": "PT-141 is another name for bremelanotide, a synthetic cyclic heptapeptide that acts as a melanocortin receptor agonist. Veracue offers it as a Research Use Only material for laboratory work."
+      },
+      {
+        "question": "Is PT-141 the same as bremelanotide?",
+        "answer": "At the molecular level, yes. PT-141 is the earlier development code, and bremelanotide is the standardized name. The exact material in a vial still depends on its salt form and purity."
+      },
+      {
+        "question": "What is the PT-141 peptide sequence?",
+        "answer": "Ac-Nle-cyclo(Asp-His-D-Phe-Arg-Trp-Lys)-OH, with an acetylated N-terminus, a free C-terminal acid and a lactam ring between Asp and Lys."
+      },
+      {
+        "question": "What is the molecular weight of bremelanotide?",
+        "answer": "About 1025.2 g/mol for the free peptide (C50H68N14O10). Acetate forms weigh more."
+      },
+      {
+        "question": "Is PT-141 a cyclic peptide?",
+        "answer": "Yes. A side-chain lactam between Asp and Lys closes the ring. It contains no cysteine, so it isn't a disulfide-bonded peptide."
+      },
+      {
+        "question": "Is PT-141 the same as Melanotan II?",
+        "answer": "No. They are related cyclic peptides, but PT-141 ends in a free carboxylic acid and Melanotan II in an amide, so their formulas and masses differ."
+      },
+      {
+        "question": "What receptors does bremelanotide interact with?",
+        "answer": "It activates several melanocortin receptor subtypes. FDA labeling describes it as a non-selective agonist, while the literature has investigated MC1R, MC3R and MC4R in particular."
+      },
+      {
+        "question": "What does PT-141 research investigate?",
+        "answer": "Melanocortin receptor pharmacology, animal behavior models and clinical studies of pharmaceutical bremelanotide in defined populations."
+      },
+      {
+        "question": "Why do searches mention PT-141 for men and women?",
+        "answer": "Development work covered different populations. A study population isn't a recommendation for any research material, though."
+      },
+      {
+        "question": "Why do people search for PT-141 nasal spray?",
+        "answer": "Early clinical studies investigated an intranasal formulation, and the term persists online. However, it doesn't establish the formulation of a Veracue product."
+      },
+      {
+        "question": "What should I look for on a PT-141 COA?",
+        "answer": "Look for the compound name, lot number, test date, laboratory, named methods, purity or assay results if reported, identity data such as mass spectrometry, and any salt or form information."
+      },
+      {
+        "question": "Does Veracue provide human dosing or administration instructions?",
+        "answer": "No. Dosage information belongs to clinical labeling and study protocols. Instead, Veracue provides this material for laboratory research only, without human-use dosing or administration guidance."
+      }
+    ],
+    "footerNote": "More answers on ordering, testing and shipping are on the Veracue FAQ page."
+  },
+  "references": {
+    "heading": "References",
+    "note": "",
+    "items": [
+      {
+        "id": 1,
+        "tier": "Authoritative database",
+        "citation": "National Center for Biotechnology Information. PubChem Compound Summary for CID 9941379, Bremelanotide.",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/Bremelanotide"
+      },
+      {
+        "id": 2,
+        "tier": "Regulator / registry",
+        "citation": "FDA Global Substance Registration System (NCATS-hosted). Bremelanotide, UNII 6Y24O4F92S, and its acetate salt/solvate record.",
+        "url": "https://gsrs.ncats.nih.gov/ginas/app/beta/substances/6Y24O4F92S"
+      },
+      {
+        "id": 3,
+        "tier": "Regulator",
+        "citation": "U.S. Food and Drug Administration. VYLEESI (bremelanotide injection) prescribing information. NDA 210557; approved 2019 (Drugs@FDA label).",
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/210557s000lbl.pdf"
+      },
+      {
+        "id": 4,
+        "tier": "Regulator",
+        "citation": "National Library of Medicine. DailyMed: VYLEESI current labeling.",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f1d0c1b5-2f39-4bad-a6a4-0066e3ad5dcf"
+      },
+      {
+        "id": 5,
+        "tier": "Authoritative database",
+        "citation": "IUPHAR/BPS Guide to PHARMACOLOGY. Melanocortin receptors (G protein-coupled receptor family).",
+        "url": "https://www.guidetopharmacology.org/GRAC/FamilyDisplayForward?familyId=38"
+      },
+      {
+        "id": 6,
+        "tier": "Primary clinical",
+        "citation": "Kingsberg SA, Clayton AH, Portman D, et al. Bremelanotide for the treatment of hypoactive sexual desire disorder: two randomized phase 3 trials. Obstet Gynecol. 2019;134(5):899-908.",
+        "doi": "10.1097/AOG.0000000000003500",
+        "pmid": "31599840",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31599840/"
+      },
+      {
+        "id": 7,
+        "tier": "Primary clinical",
+        "citation": "Diamond LE, Earle DC, Rosen RC, et al. Double-blind, placebo-controlled evaluation of the safety, pharmacokinetic properties and pharmacodynamic effects of intranasal PT-141, a melanocortin receptor agonist, in healthy males and patients with mild-to-moderate erectile dysfunction. Int J Impot Res. 2004;16(1):51-59.",
+        "doi": "10.1038/sj.ijir.3901139",
+        "pmid": "14963471",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/14963471/"
+      },
+      {
+        "id": 8,
+        "tier": "Primary preclinical",
+        "citation": "Pfaus J, Shadiack A, Van Soest T, et al. Selective facilitation of sexual solicitation in the female rat by a melanocortin receptor agonist. Proc Natl Acad Sci USA. 2004;101(27):10201-10204.",
+        "doi": "10.1073/pnas.0400491101",
+        "pmid": "15226502",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/15226502/"
+      },
+      {
+        "id": 9,
+        "tier": "Primary / review",
+        "citation": "Molinoff PB, Shadiack AM, Earle D, et al. PT-141: a melanocortin agonist for the treatment of sexual dysfunction. Ann N Y Acad Sci. 2003;994:96-102.",
+        "doi": "10.1111/j.1749-6632.2003.tb03167.x",
+        "pmid": "12851303",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/12851303/"
+      },
+      {
+        "id": 10,
+        "tier": "Secondary review",
+        "citation": "King SH, Mayorov AV, Balse-Srinivasan P, et al. Melanocortin receptors, melanotropic peptides and penile erection. Curr Top Med Chem. 2007;7(11):1098-1106.",
+        "doi": "10.2174/1568026610707011111",
+        "pmid": "17584130",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/17584130/"
+      },
+      {
+        "id": 11,
+        "tier": "Regulator",
+        "citation": "U.S. Food and Drug Administration. Multi-discipline review, NDA 210797, SCENESSE (afamelanotide), 2019.",
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2019/210797Orig1s000MultidisciplineR.pdf"
+      }
+    ]
+  },
+  "compliance": {
+    "heading": "Research Use Only",
+    "text": "Veracue’s PT-141/bremelanotide material is offered for laboratory research use only and is not intended for human or veterinary use. This page does not provide dosing, administration, therapeutic, cosmetic, or consumer-use guidance. Regulatory status or clinical evidence associated with an approved pharmaceutical product should not be transferred to a research-material listing.",
+    "links": [
+      {
+        "text": "Medical disclaimer",
+        "href": "/medical-disclaimer"
+      },
+      {
+        "text": "Terms and conditions",
+        "href": "/terms-and-conditions"
+      },
+      {
+        "text": "About Veracue",
+        "href": "/about-us"
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Review the documentation first",
+    "text": "Check the certificate archive, request lot documentation for PT-141, or ask the Veracue team a specific question about this material.",
+    "buttons": [
+      {
+        "label": "Explore Certificates",
+        "href": "/certificates",
+        "style": "primary"
+      },
+      {
+        "label": "Contact Veracue",
+        "href": "/contact-us",
+        "style": "secondary"
+      },
+      {
+        "label": "View Research Catalog",
+        "href": "/shop",
+        "style": "tertiary"
+      }
+    ]
+  },
+  "internalLinks": [
+    {
+      "href": "/certificates",
+      "anchor": "certificate archive",
+      "placement": [
+        "problemSolutionSections.10",
+        "cta"
+      ]
+    },
+    {
+      "href": "/contact-us",
+      "anchor": "contact page",
+      "placement": [
+        "problemSolutionSections.10",
+        "problemSolutionSections.12",
+        "cta"
+      ]
+    },
+    {
+      "href": "/faq",
+      "anchor": "Veracue FAQ page",
+      "placement": [
+        "faq.footerNote"
+      ]
+    },
+    {
+      "href": "/shop",
+      "anchor": "research catalog",
+      "placement": [
+        "cta",
+        "meta.breadcrumb"
+      ]
+    },
+    {
+      "href": "/about-us",
+      "anchor": "About Veracue",
+      "placement": [
+        "compliance"
+      ]
+    },
+    {
+      "href": "/medical-disclaimer",
+      "anchor": "Medical disclaimer",
+      "placement": [
+        "compliance"
+      ]
+    },
+    {
+      "href": "/terms-and-conditions",
+      "anchor": "Terms and conditions",
+      "placement": [
+        "compliance"
+      ]
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://veracue-peptides.vercel.app/product/pt-141#webpage",
+        "url": "https://veracue-peptides.vercel.app/product/pt-141",
+        "name": "PT-141 Peptide (Bremelanotide) for Research | Veracue",
+        "description": "PT-141 peptide (bremelanotide) for laboratory research: molecular identity, cyclic structure, PT-141 vs Melanotan II, what the studies cover, and COA checks.",
+        "inLanguage": "en-US",
+        "dateModified": "2026-09-25",
+        "breadcrumb": {
+          "@id": "https://veracue-peptides.vercel.app/product/pt-141#breadcrumb"
+        },
+        "mainEntity": {
+          "@id": "https://veracue-peptides.vercel.app/product/pt-141#product"
+        },
+        "about": {
+          "@id": "https://veracue-peptides.vercel.app/product/pt-141#bremelanotide"
+        },
+        "mentions": [
+          {
+            "@type": "MolecularEntity",
+            "name": "Melanotan II"
+          },
+          {
+            "@type": "MolecularEntity",
+            "name": "Afamelanotide"
+          },
+          {
+            "@type": "MolecularEntity",
+            "name": "alpha-Melanocyte-stimulating hormone"
+          }
+        ],
+        "citation": [
+          {
+            "@type": "CreativeWork",
+            "name": "VYLEESI (bremelanotide injection) prescribing information, Drugs@FDA",
+            "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/210557s000lbl.pdf"
+          },
+          {
+            "@type": "CreativeWork",
+            "name": "VYLEESI (bremelanotide injection) current labeling, DailyMed",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f1d0c1b5-2f39-4bad-a6a4-0066e3ad5dcf"
+          },
+          {
+            "@type": "ScholarlyArticle",
+            "name": "Bremelanotide for the treatment of hypoactive sexual desire disorder: two randomized phase 3 trials",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/31599840/",
+            "sameAs": "https://doi.org/10.1097/AOG.0000000000003500"
+          },
+          {
+            "@type": "ScholarlyArticle",
+            "name": "Double-blind, placebo-controlled evaluation of the safety, pharmacokinetic properties and pharmacodynamic effects of intranasal PT-141, a melanocortin receptor agonist, in healthy males and patients with mild-to-moderate erectile dysfunction",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/14963471/",
+            "sameAs": "https://doi.org/10.1038/sj.ijir.3901139"
+          },
+          {
+            "@type": "ScholarlyArticle",
+            "name": "Selective facilitation of sexual solicitation in the female rat by a melanocortin receptor agonist",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/15226502/",
+            "sameAs": "https://doi.org/10.1073/pnas.0400491101"
+          },
+          {
+            "@type": "ScholarlyArticle",
+            "name": "PT-141: a melanocortin agonist for the treatment of sexual dysfunction",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/12851303/",
+            "sameAs": "https://doi.org/10.1111/j.1749-6632.2003.tb03167.x"
+          },
+          {
+            "@type": "ScholarlyArticle",
+            "name": "Melanocortin receptors, melanotropic peptides and penile erection",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/17584130/",
+            "sameAs": "https://doi.org/10.2174/1568026610707011111"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://veracue-peptides.vercel.app/product/pt-141#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://veracue-peptides.vercel.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Shop",
+            "item": "https://veracue-peptides.vercel.app/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "PT-141 Peptide",
+            "item": "https://veracue-peptides.vercel.app/product/pt-141"
+          }
+        ]
+      },
+      {
+        "@type": "Product",
+        "@id": "https://veracue-peptides.vercel.app/product/pt-141#product",
+        "name": "PT-141 Peptide (Bremelanotide)",
+        "description": "PT-141 (bremelanotide) is offered by Veracue as a Research Use Only material for laboratory research. It is not intended for human or veterinary use.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Veracue"
+        },
+        "url": "https://veracue-peptides.vercel.app/product/pt-141",
+        "mainEntityOfPage": {
+          "@id": "https://veracue-peptides.vercel.app/product/pt-141#webpage"
+        }
+      },
+      {
+        "@type": "MolecularEntity",
+        "@id": "https://veracue-peptides.vercel.app/product/pt-141#bremelanotide",
+        "name": "Bremelanotide",
+        "alternateName": [
+          "PT-141",
+          "PT141",
+          "Ac-Nle-cyclo(Asp-His-D-Phe-Arg-Trp-Lys)-OH"
+        ],
+        "description": "Bremelanotide (PT-141) is a synthetic cyclic heptapeptide melanocortin receptor agonist with an N-terminal acetyl group, a side-chain lactam ring between aspartic acid and lysine, and a free C-terminal carboxylic acid. Values describe the free compound, not a specific product lot.",
+        "molecularFormula": "C50H68N14O10",
+        "molecularWeight": {
+          "@type": "QuantitativeValue",
+          "value": 1025.2,
+          "unitText": "g/mol"
+        },
+        "monoisotopicMolecularWeight": {
+          "@type": "QuantitativeValue",
+          "value": 1024.52428442,
+          "unitText": "Da"
+        },
+        "inChIKey": "FFHBJDQSGDNCIV-MFVUMRCOSA-N",
+        "identifier": [
+          {
+            "@type": "PropertyValue",
+            "propertyID": "CAS",
+            "value": "189691-06-3"
+          },
+          {
+            "@type": "PropertyValue",
+            "propertyID": "PubChem CID",
+            "value": "9941379"
+          },
+          {
+            "@type": "PropertyValue",
+            "propertyID": "UNII",
+            "value": "6Y24O4F92S"
+          }
+        ],
+        "sameAs": [
+          "https://pubchem.ncbi.nlm.nih.gov/compound/9941379",
+          "https://gsrs.ncats.nih.gov/ginas/app/beta/substances/6Y24O4F92S"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://veracue-peptides.vercel.app/product/pt-141#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is PT-141?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PT-141 is another name for bremelanotide, a synthetic cyclic heptapeptide that acts as a melanocortin receptor agonist. Veracue offers it as a Research Use Only material for laboratory work."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is PT-141 the same as bremelanotide?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "At the molecular level, yes. PT-141 is the earlier development code, and bremelanotide is the standardized name. The exact material in a vial still depends on its salt form and purity."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the PT-141 peptide sequence?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ac-Nle-cyclo(Asp-His-D-Phe-Arg-Trp-Lys)-OH, with an acetylated N-terminus, a free C-terminal acid and a lactam ring between Asp and Lys."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the molecular weight of bremelanotide?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "About 1025.2 g/mol for the free peptide (C50H68N14O10). Acetate forms weigh more."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is PT-141 a cyclic peptide?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. A side-chain lactam between Asp and Lys closes the ring. It contains no cysteine, so it isn't a disulfide-bonded peptide."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is PT-141 the same as Melanotan II?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. They are related cyclic peptides, but PT-141 ends in a free carboxylic acid and Melanotan II in an amide, so their formulas and masses differ."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What receptors does bremelanotide interact with?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It activates several melanocortin receptor subtypes. FDA labeling describes it as a non-selective agonist, while the literature has investigated MC1R, MC3R and MC4R in particular."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does PT-141 research investigate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Melanocortin receptor pharmacology, animal behavior models and clinical studies of pharmaceutical bremelanotide in defined populations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do searches mention PT-141 for men and women?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Development work covered different populations. A study population isn't a recommendation for any research material, though."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do people search for PT-141 nasal spray?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Early clinical studies investigated an intranasal formulation, and the term persists online. However, it doesn't establish the formulation of a Veracue product."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I look for on a PT-141 COA?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Look for the compound name, lot number, test date, laboratory, named methods, purity or assay results if reported, identity data such as mass spectrometry, and any salt or form information."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Veracue provide human dosing or administration instructions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Dosage information belongs to clinical labeling and study protocols. Instead, Veracue provides this material for laboratory research only, without human-use dosing or administration guidance."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "jsonLdOptionalSiteWide": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://veracue-peptides.vercel.app/#organization",
+        "name": "Veracue Peptides",
+        "url": "https://veracue-peptides.vercel.app/",
+        "logo": "https://veracue-peptides.vercel.app/veracue-images/logo-header.png"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://veracue-peptides.vercel.app/#website",
+        "url": "https://veracue-peptides.vercel.app/",
+        "name": "Veracue Peptides",
+        "publisher": {
+          "@id": "https://veracue-peptides.vercel.app/#organization"
+        }
+      }
+    ]
+  }
+}

@@ -3,9 +3,11 @@ import { ShopClient } from '@/components/shop/ShopClient'
 import { Metadata } from 'next'
 import { getPayload } from 'payload'
 import configPromise from '@payload-config'
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, getMessages } from 'next-intl/server'
+import { NextIntlClientProvider } from 'next-intl'
+import { pickMessages } from '@/lib/i18n/pickMessages'
 import { getShopProducts } from '../(shop)/actions'
-import { getOgImageUrl } from '@/lib/utils'
+import { safeJsonLd } from '@/lib/seo/jsonLd'
 
 const SHOP_FAQ_KEYS = [
   'availablePeptides',
@@ -30,8 +32,9 @@ const SHOP_FAQ_KEYS = [
   'fdaApproval',
 ]
 
-const title = 'Shop Research Peptides | 99%+ HPLC Verified | Veracue'
-const description = 'Every research peptide in our USA catalog ships with a batch-specific COA and verified 99%+ HPLC purity. Browse compounds, pricing, and stock in real time.'
+// No brand suffix: the root title template appends " | Veracue Peptides".
+const title = 'Shop Research Peptides | HPLC Verified'
+const description = 'Browse research peptides for laboratory use only. Product pages show batch Certificate of Analysis details, HPLC purity data, pricing, and stock from a U.S. supplier.'
 
 export async function generateMetadata({
   params,
@@ -40,6 +43,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const locale = 'en'
   const path = true ? '/shop' : `/${locale}/shop`
+
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+  const shopOgImage = `${serverUrl}/veracue-images/shop-page-og.png`
 
   return {
     title,
@@ -56,8 +62,8 @@ export async function generateMetadata({
       siteName: 'Veracue Peptides',
       images: [
         {
-          url: getOgImageUrl('Shop Research Peptides', description, undefined, 'RESEARCH PEPTIDES CATALOG', 'veracue-peptides-multi-vials-collection-flatlay.webp'),
-          width: 1200,
+          url: shopOgImage,
+          width: 1119,
           height: 630,
           alt: 'Veracue Research Peptides Catalog',
         },
@@ -67,7 +73,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title,
       description,
-      images: [getOgImageUrl('Shop Research Peptides', description, undefined, 'RESEARCH PEPTIDES CATALOG', 'veracue-peptides-multi-vials-collection-flatlay.webp')],
+      images: [shopOgImage],
     },
   }
 }
@@ -76,7 +82,6 @@ export const dynamic = 'force-dynamic'
 
 export default async function ShopPage() {
   let categories: any[] = []
-  let dbError = null
 
   try {
     const payload = await getPayload({ config: configPromise })
@@ -97,25 +102,18 @@ export default async function ShopPage() {
     }))
   } catch (error: any) {
     console.error("DB Connection Error on /shop:", error)
-    dbError = error.message || 'Unknown database error'
+    // Rethrow so error.tsx renders instead of a 200 page that leaks internals.
+    throw error
   }
 
   // Fetch initial page of products
   const initialProductsRes = await getShopProducts({ page: 1, limit: 24 })
 
-  if (dbError) {
-    return (
-      <div className="min-h-screen bg-white pt-32 px-6 flex flex-col items-center">
-        <div className="bg-red-50 border border-red-200 text-red-600 p-6 rounded-xl max-w-2xl w-full">
-          <h2 className="text-xl font-bold mb-2">Database Connection Error</h2>
-          <p className="mb-4">The shop page crashed because it couldn't connect to Supabase on Vercel.</p>
-          <pre className="bg-red-100 p-4 rounded-lg overflow-x-auto text-xs font-mono">{dbError}</pre>
-        </div>
-      </div>
-    )
-  }
-
   const siteUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+
+  const listedProducts: any[] = initialProductsRes.success
+    ? ((initialProductsRes.products as any[]) || []).filter((p) => p?.name && p?.slug)
+    : []
 
   const t = await getTranslations('shop.shopClient')
   const shopFaqs = SHOP_FAQ_KEYS.map((key) => ({
@@ -123,33 +121,34 @@ export default async function ShopPage() {
     answer: t(`faqs.${key}.answer`),
   }))
 
+  const pageMessages = pickMessages(await getMessages(), ['shop.shopClient'])
+
   return (
     <>
+      <NextIntlClientProvider messages={pageMessages}>
       <ShopClient
         initialProducts={initialProductsRes.success ? (initialProductsRes.products as any) : []}
         totalPages={initialProductsRes.success ? initialProductsRes.totalPages : 0}
         categories={categories}
       />
+      </NextIntlClientProvider>
 
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
+          __html: safeJsonLd({
             '@context': 'https://schema.org',
             '@graph': [
-              {
-                '@type': 'WebPage',
-                '@id': `${siteUrl}/shop#webpage`,
-                url: `${siteUrl}/shop`,
-                name: title,
-                description,
-              },
               {
                 '@type': 'CollectionPage',
                 '@id': `${siteUrl}/shop#collectionpage`,
                 url: `${siteUrl}/shop`,
                 name: title,
                 description,
+                isPartOf: { '@id': `${siteUrl}/#website` },
+                publisher: { '@id': `${siteUrl}/#organization` },
+                breadcrumb: { '@id': `${siteUrl}/shop#breadcrumb` },
+                ...(listedProducts.length > 0 ? { mainEntity: { '@id': `${siteUrl}/shop#itemlist` } } : {}),
               },
               {
                 '@type': 'BreadcrumbList',
@@ -157,22 +156,24 @@ export default async function ShopPage() {
                 itemListElement: [
                   { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl },
                   { '@type': 'ListItem', position: 2, name: 'Shop', item: `${siteUrl}/shop` },
-                  { '@type': 'ListItem', position: 3, name: 'All Research Peptides', item: `${siteUrl}/shop` },
                 ],
               },
-              {
-                '@type': 'WebSite',
-                '@id': `${siteUrl}/#website`,
-                url: siteUrl,
-                name: 'Veracue Peptides',
-              },
-              {
-                '@type': 'Organization',
-                '@id': `${siteUrl}/#organization`,
-                name: 'Veracue Peptides',
-                url: siteUrl,
-                description: 'USA-based supplier of research-use-only synthetic peptides for laboratory research.',
-              },
+              ...(listedProducts.length > 0
+                ? [
+                    {
+                      '@type': 'ItemList',
+                      '@id': `${siteUrl}/shop#itemlist`,
+                      itemListElement: listedProducts.map((p: any, i: number) => ({
+                        '@type': 'ListItem',
+                        position: i + 1,
+                        name: p.name,
+                        url: `${siteUrl}/product/${p.slug}`,
+                      })),
+                    },
+                  ]
+                : []),
+              { '@id': `${siteUrl}/#website` },
+              { '@id': `${siteUrl}/#organization` },
               {
                 '@type': 'FAQPage',
                 '@id': `${siteUrl}/shop#faq`,

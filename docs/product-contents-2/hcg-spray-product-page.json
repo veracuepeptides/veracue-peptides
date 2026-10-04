@@ -1,0 +1,467 @@
+{
+  "route": "/product/hcg-spray",
+  "seo": {
+    "title": "HCG Spray (Human Chorionic Gonadotropin) | Research Use Only | Veracue",
+    "metaDescription": "HCG Spray is a Research Use Only material referencing human chorionic gonadotropin, a glycoprotein hormone. Structure, receptor biology, and COA guidance."
+  },
+  "hero": {
+    "eyebrow": "Research Use Only",
+    "h1": "HCG Spray",
+    "subtitle": "HCG — human chorionic gonadotropin — is a glycoprotein hormone built from alpha and beta subunits, not a short synthetic peptide. This page covers what HCG is, how its structure and receptor biology work, and what a Spray-format research listing can and cannot tell you about formulation or route.",
+    "badges": [
+      "Research Use Only",
+      "Spray Format",
+      "Human Chorionic Gonadotropin"
+    ]
+  },
+  "overview": "Human chorionic gonadotropin (HCG) is a glycoprotein hormone with a long history in reproductive biology, clinical medicine, and laboratory research — and one of the more frequently mislabeled molecules in the research-compound market, often flattened into “HCG peptide” shorthand that undersells its structure. This page works through HCG’s actual biology — its alpha/beta subunit architecture, its receptor activity, and how researchers read its analytical documentation — then turns to Veracue’s HCG Spray listing specifically, separating established science about the hormone from the formulation details still to be confirmed for this product.",
+  "productSnapshot": {
+    "compoundLevel": {
+      "material": "Human chorionic gonadotropin (hCG)",
+      "type": "Heterodimeric glycoprotein hormone",
+      "subunits": "Alpha subunit (shared across the glycoprotein hormone family) plus a hormone-specific beta subunit",
+      "biologicalReceptor": "LH/CG receptor (LHCGR)",
+      "endogenousSource": "Produced by placental tissue during pregnancy",
+      "relatedHormoneFamily": "Glycoprotein gonadotropin hormone family (hCG, LH, FSH, TSH)",
+      "structuralComplexity": "Glycosylated alpha/beta heterodimer; carbohydrate content differs between preparations and glycoforms"
+    },
+    "veracueSpecific": {
+      "product": "HCG Spray",
+      "category": "Research material / hormone research",
+      "format": "Spray",
+      "researchStatus": "Research Use Only (RUO) — not for human or veterinary use",
+      "concentration": "Not publicly specified",
+      "iuPerSpray": "Not publicly specified",
+      "route": "Not publicly specified",
+      "packageSize": "Not publicly specified",
+      "purity": "Not publicly specified",
+      "formulation": "Not publicly specified",
+      "carrier": "Not publicly specified",
+      "coa": "Not publicly confirmed for this listing",
+      "storage": "Not publicly specified"
+    }
+  },
+  "problemSolutionSections": [
+    {
+      "heading": "How do I confirm what HCG actually is?",
+      "body": "HCG is human chorionic gonadotropin: a glycoprotein hormone assembled from two subunits, alpha and beta, each carrying its own carbohydrate structure. That's a different kind of molecule than the short synthetic peptides it's often grouped with in research-compound listings. Confirming identity starts with the hormone class rather than a sequence — hCG belongs to the glycoprotein gonadotropin family, alongside LH, FSH, and TSH, and its functional identity depends on the alpha and beta chains being correctly associated, not on a single amino-acid chain the way a peptide's identity would. Authoritative sources such as PubChem describe hCG at this level — as a glycoprotein hormone entry — rather than assigning it one discrete small-molecule structure. For a researcher, that means identity verification for HCG looks more like subunit- and glycoform-aware characterization than a simple mass check. The sections below build on this: subunit structure, receptor activity, how the literature is organized, and what a certificate of analysis can reasonably tell you about a given lot."
+    },
+    {
+      "heading": "Why is human chorionic gonadotropin a glycoprotein hormone rather than a simple peptide?",
+      "body": "Because hCG is built from two folded, glycosylated protein chains rather than one linear amino-acid sequence. A conventional research peptide — BPC-157 or GHRP-6, for example — can be written as a single sequence with one molecular formula and one molecular weight. HCG can't be reduced that way. Its alpha subunit carries N-linked carbohydrate chains, and its beta subunit carries both N-linked and O-linked carbohydrate chains — two different glycosylation patterns on two different chains, not one uniform carbohydrate coat across the molecule. That carbohydrate content is also heterogeneous rather than fixed: it varies between preparations and between individual glycoforms of the same hormone, so intact hCG doesn't have a single settled mass the way a peptide does. This is the structural reason identity databases classify hCG as a glycoprotein hormone rather than a discrete chemical structure, and it's the reason a single molecular-weight figure for “intact HCG” should be treated with caution wherever you encounter one."
+    },
+    {
+      "heading": "How are the alpha and beta subunits of HCG different?",
+      "body": "The alpha subunit is shared across the glycoprotein hormone family — the same or a near-identical alpha chain appears in LH, FSH, and TSH — so on its own it doesn't confer hCG-specific identity. The beta subunit is where hCG's specificity lives: its sequence and glycosylation differ enough from the beta chains of LH, FSH, and TSH that assays built around beta-subunit-specific regions can reliably distinguish hCG from its relatives. That's also the reason “beta hCG” is the term you'll see attached to most immunoassay-based testing — it reflects which subunit actually carries the identifying signal, not a separate substance. For documentation purposes, this means subunit-level characterization is more informative than a single mass reading. What it doesn't mean is that a generic COA automatically confirms the alpha and beta chains are present and correctly paired — that depends entirely on which analytical methods were actually used. Subunit-specific immunochemical, chromatographic, or mass-spectrometric approaches are what establish that, not identity testing in general."
+    },
+    {
+      "heading": "What does HCG actually do at the LH/CG receptor?",
+      "body": "HCG's assembled heterodimer binds and activates the LH/CG receptor (LHCGR), a G-protein-coupled receptor. LH acts through the same receptor, which is why the two are so often discussed together in reproductive-endocrine literature — despite being distinct molecules with different subunit-level structures and different circulating behavior. Downstream of receptor activation, cAMP/PKA signaling is the primary pathway studied in this context, and it's the basis for most of the receptor pharmacology in the published literature. This is where HCG differs from a conventional peptide in another way: its activity is a function of the assembled, glycosylated heterodimer engaging a receptor, not a short chain binding a simpler target. None of this describes what any specific research material does once introduced into a system outside the controlled conditions of a published study — receptor biology in the literature reflects defined concentrations and experimental setups, and it isn't a basis for dosing or outcome expectations for the Veracue Spray."
+    },
+    {
+      "heading": "Why does HCG appear in both pregnancy research and reproductive-endocrine research?",
+      "body": "Because the same hormone shows up in two different lines of inquiry. Endogenously, hCG is produced by placental tissue, which is why it's the analyte pregnancy assays are built to detect. Separately, its activity at LHCGR makes it a subject of reproductive-endocrine research into gonadotropin signaling, independent of pregnancy status entirely. These two contexts share a molecule and a receptor system, but they're answering different questions — one is about detecting a hormone the body is already producing, the other is about how that hormone behaves as a signaling molecule under study conditions. A research material labeled HCG Spray doesn't automatically belong to either context: it's an external material with its own identity and formulation questions, and this page addresses those on their own terms rather than borrowing conclusions from either the pregnancy-testing literature or the receptor-biology literature on endogenous hCG. A research HCG material is not, itself, a pregnancy test."
+    },
+    {
+      "heading": "What does “HCG peptide” mean in search results?",
+      "body": "“HCG peptide” is a common search term, but intact HCG is more accurately described as a glycosylated heterodimeric protein hormone. The phrase persists because hCG is marketed and discussed alongside genuinely short synthetic peptides in the research-compound space, and the terminology gets applied broadly across the category for convenience — it's a search-and-commerce convention, not a structural claim. This page uses “HCG peptide” as a recognizable entry point while describing the molecule accurately elsewhere: two subunits, distinct glycosylation on each, and receptor activity that depends on the assembled heterodimer. Researchers comparing suppliers or reading product listings will encounter both terms — “HCG peptide” in casual and commercial usage, “glycoprotein hormone” in scientific and regulatory contexts — and it's worth knowing they refer to the same molecule described at two different levels of precision, rather than treating either term as more authoritative on its own."
+    },
+    {
+      "heading": "What does the HCG research literature actually establish?",
+      "body": "A substantial one — hCG has decades of literature across endogenous physiology, approved pharmaceutical use, and laboratory research; it isn't a molecule with thin or absent human data. Published work has characterized its LHCGR receptor interactions, its role in placental and reproductive physiology, its subunit and glycosylation structure, and its behavior in approved clinical formulations for specific indications. Analytical literature has also examined how glycoform heterogeneity affects immunoassay design and mass-spectrometric characterization. What that body of work establishes is the biology and chemistry of HCG as a hormone class. It doesn't extend to a specific unverified research listing — concentration, formulation, or stability for a given product are separate facts that live in first-party documentation, not in the general literature. Keeping those two layers distinct — what's been studied about the hormone, and what's confirmed about a particular product — is the useful habit here."
+    },
+    {
+      "heading": "How is HCG different from LH, FSH, hMG, kisspeptin and related reproductive hormones?",
+      "body": "These names cluster together in search behavior and in research-compound catalogs, but they're structurally distinct entities. LH and FSH are, like hCG, heterodimeric glycoprotein hormones sharing the same alpha subunit — hCG and LH are close enough in structure and receptor activity (both act through LHCGR) that they're frequently discussed as a pair, while FSH signals through a separate receptor, FSHR, despite the shared alpha chain. hMG isn't a single molecular species at all — it's a pharmaceutical preparation containing combined gonadotropin activity, historically derived from urinary sources. Kisspeptin sits outside this family entirely: it's a peptide ligand that acts upstream through the kisspeptin receptor (KISS1R) to stimulate GnRH release, rather than acting at LHCGR directly. The comparison table below lays these out side by side. None of it is a ranking — identity and receptor context differ across these molecules, and that's the extent of the comparison."
+    },
+    {
+      "heading": "What do searches such as “HCG 10000 IU,” “HCG dosing,” and “HCG for men” actually mean?",
+      "body": "These terms come out of pharmaceutical labeling conventions. An IU value is a potency measure, not a direct mass measurement — it reflects biological activity calibrated against a defined reference standard, which is why a vial can be labeled “10,000 IU” without that number translating directly into milligrams or milliliters. That distinction carries over directly to a spray-format listing: potency figures from pharmaceutical literature don't convert into spray concentration, output volume, or spray count, because potency and dispensing volume are different measurements answering different questions. “HCG for men” searches generally trace back to clinical and off-label discussions of gonadotropin activity in male reproductive-endocrine contexts — acknowledged here as terminology and search-intent context, not as guidance. This page doesn't publish dosing figures, IU-per-spray values, or spray counts for Veracue's HCG Spray, because none of that has been made public for this listing."
+    },
+    {
+      "heading": "What should I verify on an HCG COA?",
+      "body": "Depending on the material and laboratory method, an HCG COA may include product and lot identification, the testing laboratory and date, the analytical method used, and results tied to those specific methods. Because hCG is a heterodimeric glycoprotein, identity testing that addresses subunit composition tends to be more informative than a single mass value, and chromatographic or immunochemical methods are commonly used alongside — or instead of — simple mass measurement. The useful distinction here is that purity, identity, and potency are different analytical questions: a chromatographic purity figure, an immunochemical identity result, and a bioassay potency reading each answer something different, and a potency result shouldn't be read as if it were a purity result. Not every COA will include glycosylation or subunit-level characterization — that depends on what the lab was asked to test, not on whether the material is legitimate. What a COA speaks to is the specific lot tested, under the disclosed methods; it doesn't independently establish formulation or administration route."
+    },
+    {
+      "heading": "How should I interpret HCG identity, potency and analytical data?",
+      "body": "Read it as a distribution rather than a single expected value. Because of the alpha/beta structure and its glycosylation, mass-based methods can show multiple glycoforms in a single sample, each contributing a slightly different mass — a single peak or one reported figure doesn't capture the full picture the way it might for a short peptide. Identity confirmation for HCG typically leans on subunit-specific and immunochemical methods for exactly this reason. A mass-spectrometry result alone doesn't necessarily establish complete biological identity or potency, either — it speaks to mass and, with the right method, glycosylation pattern, while a biological activity assay answers a separate question about functional potency against a reference standard. For sourcing decisions, the molecule-level literature and lot-level documentation answer different questions, and both matter: general HCG science tells you what the hormone is and how it behaves, while a lot's own analytical data tells you what's actually in that lot."
+    },
+    {
+      "heading": "What can a Veracue HCG Spray page establish, and what requires lot-specific documentation?",
+      "body": "This page can accurately describe HCG's biology: a heterodimeric glycoprotein hormone built from alpha and beta subunits, active at LHCGR, with a substantial literature spanning endogenous physiology, pharmaceutical use, and laboratory research. What it can't do is stand in for lot-specific documentation on Veracue's HCG Spray — exact concentration, formulation, carrier, purity, and glycoform profile for this listing are not publicly specified, and only first-party documentation, such as a lot-matched certificate of analysis, can confirm them. The practical takeaway: treat this page as a reference on HCG as a molecule and research subject, and treat any claim about the Spray product specifically — what it contains, at what concentration, for what use — as a separate question that its own documentation needs to answer before it factors into a research design or sourcing decision."
+    }
+  ],
+  "researchEvidence": {
+    "summary": "HCG has an extensive evidence base. The useful move isn't asking whether evidence exists — it clearly does — but sorting which layer a given piece of evidence belongs to, since conclusions from one layer don't automatically carry into another.",
+    "layers": [
+      {
+        "name": "Layer 1 — Endogenous biology",
+        "description": "Placental production of hCG, its glycoprotein structure, and its role in reproductive physiology are well established in the literature."
+      },
+      {
+        "name": "Layer 2 — Receptor biology",
+        "description": "LHCGR signaling and hCG's structural and functional relationship to LH are characterized at the molecular and cell-signaling level."
+      },
+      {
+        "name": "Layer 3 — Pharmaceutical and clinical literature",
+        "description": "Approved chorionic gonadotropin products have their own regulatory labeling, defined clinical indications, and dosing established for those specific formulations."
+      },
+      {
+        "name": "Layer 4 — Veracue product-specific evidence",
+        "description": "Concentration, formulation, purity, and route for the HCG Spray listing are not publicly specified and are not established by the general HCG literature or by pharmaceutical labeling for unrelated products."
+      }
+    ],
+    "pharmaceuticalContext": "Approved chorionic gonadotropin pharmaceutical products exist, with their own regulatory labeling and clinical indications. That context belongs to those specific products; it isn't transferred to Veracue's RUO Spray, and this page doesn't reproduce pharmaceutical dosing or administration instructions in connection with it.",
+    "benefitsFraming": "In research literature, “HCG benefits” is often shorthand for biological effects or physiological observations reported under specific experimental or clinical conditions — receptor signaling, endocrine physiology, reproductive-biology outcomes in defined models. That's a different thing from a product benefit claim, and this page doesn't make one: no fat-loss, muscle-gain, testosterone-optimization, fertility-enhancement, libido, or anti-aging claims are made for the Veracue material.",
+    "pregnancyTestingNote": "Pregnancy assays detect endogenous hCG circulating in blood or urine. A research HCG material is a laboratory material used to study HCG biology or analytical properties — a different context and a different use case. This page doesn't interpret pregnancy-test results or provide expected hCG ranges, and Veracue's HCG Spray is not a pregnancy test."
+  },
+  "comparison": {
+    "note": "Comparison by molecular class and receptor context only — not a ranking, and not a claim that any entity is more effective, safer, or superior.",
+    "columns": [
+      "Entity",
+      "Molecular class",
+      "Structural relationship",
+      "Primary receptor / signaling context",
+      "Key identity distinction"
+    ],
+    "rows": [
+      {
+        "entity": "HCG",
+        "molecularClass": "Heterodimeric glycoprotein hormone",
+        "structuralRelationship": "Shares alpha subunit with LH/FSH/TSH; hormone-specific beta subunit",
+        "receptorContext": "LHCGR",
+        "identityDistinction": "Beta subunit and its glycosylation distinguish hCG from LH"
+      },
+      {
+        "entity": "LH (luteinizing hormone)",
+        "molecularClass": "Heterodimeric glycoprotein hormone",
+        "structuralRelationship": "Shares alpha subunit with hCG/FSH/TSH; distinct beta subunit",
+        "receptorContext": "LHCGR",
+        "identityDistinction": "Closely related to hCG in receptor activity, distinct beta sequence"
+      },
+      {
+        "entity": "FSH (follicle-stimulating hormone)",
+        "molecularClass": "Heterodimeric glycoprotein hormone",
+        "structuralRelationship": "Shares alpha subunit with hCG/LH/TSH; distinct beta subunit",
+        "receptorContext": "FSHR",
+        "identityDistinction": "Acts through a separate receptor despite shared alpha chain"
+      },
+      {
+        "entity": "hMG (human menopausal gonadotropin)",
+        "molecularClass": "Pharmaceutical preparation, not a single molecular species",
+        "structuralRelationship": "Contains combined gonadotropin activity, historically urinary-derived",
+        "receptorContext": "LHCGR and FSHR (mixed activity)",
+        "identityDistinction": "A formulated product, not one hormone"
+      },
+      {
+        "entity": "Kisspeptin",
+        "molecularClass": "Peptide ligand",
+        "structuralRelationship": "Structurally unrelated to the glycoprotein gonadotropins",
+        "receptorContext": "KISS1R, acting upstream on the GnRH axis",
+        "identityDistinction": "Regulates GnRH release rather than acting at LHCGR"
+      },
+      {
+        "entity": "Beta-hCG (subunit)",
+        "molecularClass": "Subunit of intact hCG",
+        "structuralRelationship": "The hormone-specific chain of the hCG heterodimer",
+        "receptorContext": "Not independently active at LHCGR outside the assembled heterodimer",
+        "identityDistinction": "The typical target of hCG-specific immunoassays"
+      },
+      {
+        "entity": "HCG fragments",
+        "molecularClass": "Partial subunit or degradation products",
+        "structuralRelationship": "Derived from intact hCG; distinct from the full heterodimer",
+        "receptorContext": "Behavior differs from the intact hormone and is context-dependent",
+        "identityDistinction": "Requires its own identity confirmation, separate from intact hCG"
+      }
+    ]
+  },
+  "coaSection": {
+    "title": "Reading an HCG certificate of analysis",
+    "body": "A good HCG COA does more work than a peptide COA, because there is more to characterize. Depending on the material and laboratory method, an HCG COA may include the items below — not every certificate covers all of them, and that alone is not a red flag; it reflects what the lab was asked to test. The distinction worth holding onto is that purity, identity, and potency are different analytical questions. A chromatographic purity result speaks to contaminants and related substances. An identity result, ideally addressing subunit composition rather than mass alone, confirms the material is what it claims to be. A potency or bioactivity result speaks to functional signaling relative to a reference standard. None of the three substitutes for the others, and none of them establishes a spray administration route or proves clinical efficacy.",
+    "mayInclude": [
+      "Product or material identity",
+      "Lot number",
+      "Testing date",
+      "Testing laboratory",
+      "Analytical method used",
+      "Identity testing",
+      "Purity / chromatographic information, where applicable",
+      "Potency or biological activity assay, where applicable",
+      "Subunit-related characterization, where applicable",
+      "Mass spectrometry, where applicable",
+      "Specification-to-result comparison",
+      "Traceability to the tested lot"
+    ],
+    "cautions": [
+      "A COA does not prove clinical efficacy.",
+      "A COA does not establish or confirm a spray's administration route.",
+      "No Veracue-specific COA results are assumed here; none are publicly confirmed for this listing."
+    ]
+  },
+  "analyticalSection": {
+    "title": "Molecular and analytical identity",
+    "body": "A single mass value is not enough to describe the intact glycoprotein. Because hCG is a disulfide-linked alpha/beta heterodimer, and because the alpha subunit’s N-linked carbohydrate chains and the beta subunit’s N- and O-linked chains vary between preparations, a single reported mass reflects one glycoform among several rather than the whole molecule. This is where HCG differs from a conventional peptide in a practical sense: characterization usually draws on more than one method. Immunochemical methods targeting subunit-specific regions confirm identity; chromatography resolves glycoform heterogeneity; mass spectrometry on intact or reduced/subunit samples can show charge-state distributions and mass shifts from glycosylation, though sample preparation and method choice affect what a given run shows. A biological activity assay answers a different question again — functional potency rather than molecular identity. No specific peaks, spectra, or numeric results are asserted here for Veracue’s HCG Spray; a single result, whatever the method, does not by itself establish complete identity for a molecule this complex.",
+    "concepts": [
+      "Glycoform heterogeneity",
+      "Alpha-subunit N-linked glycosylation",
+      "Beta-subunit N- and O-linked glycosylation",
+      "Intact versus reduced/subunit analysis",
+      "Charge-state distributions in mass spectrometry",
+      "Sample preparation effects",
+      "Chromatographic separation",
+      "Identity versus potency versus purity"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "What is HCG?",
+      "answer": "HCG is human chorionic gonadotropin, a glycosylated heterodimeric hormone built from alpha and beta subunits rather than a single peptide chain. Its identity depends on both subunits being present and correctly assembled, plus the carbohydrate structures attached to each."
+    },
+    {
+      "question": "What does HCG stand for?",
+      "answer": "Human chorionic gonadotropin — a glycoprotein hormone produced by placental tissue during pregnancy and also manufactured as a pharmaceutical product for specific approved indications."
+    },
+    {
+      "question": "Is HCG a peptide or a protein hormone?",
+      "answer": "HCG is a protein hormone — specifically a heterodimeric glycoprotein hormone — rather than a short synthetic peptide. “HCG peptide” is common search language, but the molecule itself is built from two glycosylated subunits, not one amino-acid chain."
+    },
+    {
+      "question": "What are the alpha and beta subunits of HCG?",
+      "answer": "The alpha subunit is shared across the glycoprotein hormone family (hCG, LH, FSH, TSH) and carries N-linked glycosylation. The beta subunit provides hCG's hormone-specific identity, carries both N- and O-linked glycosylation, and is the usual target of hCG-specific assays."
+    },
+    {
+      "question": "How does HCG interact with the LH/CG receptor?",
+      "answer": "The assembled hCG heterodimer binds and activates LHCGR, a G-protein-coupled receptor also activated by LH, triggering cAMP/PKA signaling studied extensively in reproductive-endocrine and cell-signaling research."
+    },
+    {
+      "question": "What is HCG researched for?",
+      "answer": "Published research covers hCG's receptor biology at LHCGR, its role in placental and reproductive physiology, its subunit and glycosylation structure, and its use in approved pharmaceutical formulations — describing the hormone generally, not any specific research material."
+    },
+    {
+      "question": "What does “HCG peptide” mean?",
+      "answer": "It's a common search and commercial term. Intact HCG is more accurately described as a glycosylated heterodimeric protein hormone, but the phrase persists because hCG is marketed alongside genuinely short peptides in the research-compound category."
+    },
+    {
+      "question": "Is HCG the same as LH?",
+      "answer": "No. HCG and LH share the same alpha subunit and both act through LHCGR, which makes them closely related, but they have distinct beta subunits and are produced in different physiological contexts — they're related, not identical."
+    },
+    {
+      "question": "What do HCG 10000 IU and HCG dosing searches mean?",
+      "answer": "IU reflects pharmaceutical potency labeling — a measure of biological activity against a reference standard, not a direct mass or concentration figure. It doesn't convert to spray output, and this page doesn't provide dosing information for Veracue's Spray."
+    },
+    {
+      "question": "What should I look for on an HCG COA?",
+      "answer": "Lot identification, the testing lab and method, and identity testing that addresses subunit composition rather than mass alone. Purity, identity, and potency are separate analytical questions, and a thorough COA keeps them distinct rather than treating one as proof of the others."
+    },
+    {
+      "question": "Is HCG Spray a nasal spray?",
+      "answer": "Not necessarily. “Spray” describes the dispensing format, not an independently verified administration route. Current product documentation should be consulted for any product-specific formulation information."
+    },
+    {
+      "question": "What does the Veracue HCG Spray page establish?",
+      "answer": "It establishes accurate general biology for HCG — structure, subunits, and receptor activity — while making clear that concentration, formulation, purity, and route for this specific listing are not publicly specified and require lot-matched documentation to confirm."
+    }
+  ],
+  "complianceNotice": "This product is offered strictly for Research Use Only (RUO). It is not intended for human or veterinary use, and is not a drug, dietary supplement, medical device, diagnostic test, or pregnancy test. Nothing on this page constitutes medical, fertility, pregnancy, bodybuilding, or hormone-optimization advice.",
+  "internalLinks": [
+    {
+      "label": "Home",
+      "route": "/"
+    },
+    {
+      "label": "Shop",
+      "route": "/shop"
+    },
+    {
+      "label": "Certificates",
+      "route": "/certificates"
+    },
+    {
+      "label": "FAQ",
+      "route": "/faq"
+    },
+    {
+      "label": "Contact Us",
+      "route": "/contact-us"
+    },
+    {
+      "label": "About Us",
+      "route": "/about-us"
+    },
+    {
+      "label": "Medical Disclaimer",
+      "route": "/medical-disclaimer"
+    },
+    {
+      "label": "Terms and Conditions",
+      "route": "/terms-and-conditions"
+    }
+  ],
+  "references": {
+    "scientificIdentity": [
+      "PubChem — Human Chorionic Gonadotropin (glycoprotein hormone entry; not represented as a single discrete small-molecule structure)",
+      "UniProt — Glycoprotein hormones alpha chain (gene CGA)",
+      "UniProt — Chorionic gonadotropin beta chain gene cluster (CGB)"
+    ],
+    "scientificLiterature": [
+      "PubMed — peer-reviewed literature on hCG structure, LHCGR receptor pharmacology, and reproductive endocrinology"
+    ],
+    "regulatoryContext": [
+      "FDA / DailyMed — labeling for approved pharmaceutical chorionic gonadotropin products (referenced only to distinguish regulated pharmaceutical context from Veracue's RUO material)"
+    ],
+    "productInformation": [
+      "Veracue first-party product listing for HCG Spray",
+      "Veracue certificate library (lot-specific COAs, where published)"
+    ],
+    "commercialConventionNote": "Where a statement, such as IU-based potency labeling, reflects pharmaceutical or commercial convention rather than a universal scientific constant, it is identified as such rather than presented as an intrinsic property of HCG."
+  },
+  "schemaNotes": "Product schema is intentionally omitted because the live Veracue HCG Spray listing does not provide verified commercial data (price, SKU, availability, rating, review count, brand fields, package size, purity, or concentration) sufficient to populate it without invention. Only WebSite, WebPage, BreadcrumbList, and FAQPage schema are included, and FAQPage matches the 12 visible FAQs exactly.",
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://veracue-peptides.vercel.app/#website",
+        "url": "https://veracue-peptides.vercel.app/",
+        "name": "Veracue"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://veracue-peptides.vercel.app/product/hcg-spray#webpage",
+        "url": "https://veracue-peptides.vercel.app/product/hcg-spray",
+        "name": "HCG Spray (Human Chorionic Gonadotropin) | Research Use Only | Veracue",
+        "description": "HCG Spray is a Research Use Only material referencing human chorionic gonadotropin, a glycoprotein hormone. Structure, receptor biology, and COA guidance.",
+        "isPartOf": {
+          "@id": "https://veracue-peptides.vercel.app/#website"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://veracue-peptides.vercel.app/product/hcg-spray#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://veracue-peptides.vercel.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Shop",
+            "item": "https://veracue-peptides.vercel.app/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "HCG Spray",
+            "item": "https://veracue-peptides.vercel.app/product/hcg-spray"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://veracue-peptides.vercel.app/product/hcg-spray#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is HCG?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HCG is human chorionic gonadotropin, a glycosylated heterodimeric hormone built from alpha and beta subunits rather than a single peptide chain. Its identity depends on both subunits being present and correctly assembled, plus the carbohydrate structures attached to each."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does HCG stand for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Human chorionic gonadotropin — a glycoprotein hormone produced by placental tissue during pregnancy and also manufactured as a pharmaceutical product for specific approved indications."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is HCG a peptide or a protein hormone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HCG is a protein hormone — specifically a heterodimeric glycoprotein hormone — rather than a short synthetic peptide. “HCG peptide” is common search language, but the molecule itself is built from two glycosylated subunits, not one amino-acid chain."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the alpha and beta subunits of HCG?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The alpha subunit is shared across the glycoprotein hormone family (hCG, LH, FSH, TSH) and carries N-linked glycosylation. The beta subunit provides hCG's hormone-specific identity, carries both N- and O-linked glycosylation, and is the usual target of hCG-specific assays."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does HCG interact with the LH/CG receptor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The assembled hCG heterodimer binds and activates LHCGR, a G-protein-coupled receptor also activated by LH, triggering cAMP/PKA signaling studied extensively in reproductive-endocrine and cell-signaling research."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is HCG researched for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Published research covers hCG's receptor biology at LHCGR, its role in placental and reproductive physiology, its subunit and glycosylation structure, and its use in approved pharmaceutical formulations — describing the hormone generally, not any specific research material."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does “HCG peptide” mean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It's a common search and commercial term. Intact HCG is more accurately described as a glycosylated heterodimeric protein hormone, but the phrase persists because hCG is marketed alongside genuinely short peptides in the research-compound category."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is HCG the same as LH?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. HCG and LH share the same alpha subunit and both act through LHCGR, which makes them closely related, but they have distinct beta subunits and are produced in different physiological contexts — they're related, not identical."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What do HCG 10000 IU and HCG dosing searches mean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "IU reflects pharmaceutical potency labeling — a measure of biological activity against a reference standard, not a direct mass or concentration figure. It doesn't convert to spray output, and this page doesn't provide dosing information for Veracue's Spray."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I look for on an HCG COA?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Lot identification, the testing lab and method, and identity testing that addresses subunit composition rather than mass alone. Purity, identity, and potency are separate analytical questions, and a thorough COA keeps them distinct rather than treating one as proof of the others."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is HCG Spray a nasal spray?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not necessarily. “Spray” describes the dispensing format, not an independently verified administration route. Current product documentation should be consulted for any product-specific formulation information."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does the Veracue HCG Spray page establish?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It establishes accurate general biology for HCG — structure, subunits, and receptor activity — while making clear that concentration, formulation, purity, and route for this specific listing are not publicly specified and require lot-matched documentation to confirm."
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

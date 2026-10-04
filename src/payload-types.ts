@@ -406,7 +406,7 @@ export interface Product {
     | null;
   seoTitle?: string | null;
   seoDescription?: string | null;
-  slug?: string | null;
+  slug: string;
   sku?: string | null;
   price: number;
   /**
@@ -940,7 +940,10 @@ export interface Shippingzone {
 export interface BlogPost {
   id: number;
   title: string;
-  slug?: string | null;
+  /**
+   * Lowercase letters, numbers, and hyphens only. Generated from the title when left empty on create.
+   */
+  slug: string;
   author: number | User;
   featuredImage?: (number | null) | BlogMedia;
   /**
@@ -2442,7 +2445,7 @@ export interface AffiliateSetting {
   createdAt?: string | null;
 }
 /**
- * The single byline used across every blog post (the Helix Bio Team account is the only author). Feeds Author/Person schema.org markup for E-E-A-T.
+ * The single byline used across every blog post (the Veracue Research Team account is the only author). Feeds Author/Person schema.org markup for E-E-A-T.
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "blog-author-profile".

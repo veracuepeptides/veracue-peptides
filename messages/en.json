@@ -1,9 +1,8 @@
 {
   "common": {
-    "siteTagline": "Premium Peptides for Peak Performance",
+    "siteTagline": "HPLC-tested synthetic peptides for laboratory research. Every batch ships with a certificate of analysis. For research use only, not for human consumption.",
     "languageSwitcher": {
-      "en": "English",
-      "es": "Español"
+      "en": "English"
     }
   },
   "auth": {
@@ -22,7 +21,7 @@
       "resendVerification": "Resend verification email",
       "resending": "Sending…",
       "verificationResent": "A new verification email has been dispatched. Please check your inbox.",
-      "metaTitle": "Sign In | Veracue Peptides",
+      "metaTitle": "Sign In",
       "metaDescription": "Sign in to your Veracue Peptides laboratory account to manage orders, access batch COAs, and track analytical shipments."
     },
     "register": {
@@ -39,8 +38,8 @@
       "genericError": "Unable to complete registration. Please verify your details and try again.",
       "successMessage": "Account registered. Please check your institutional inbox to verify your credentials.",
       "backToLogin": "Back to sign in",
-      "metaTitle": "Create an Account | Veracue Peptides",
-      "metaDescription": "Create a Veracue Peptides account to order ≥99% HPLC verified research peptides, download batch COAs, and maintain chain-of-custody documentation."
+      "metaTitle": "Create an Account",
+      "metaDescription": "Create a Veracue Peptides account to order HPLC-tested research peptides, download batch COAs, and keep chain-of-custody documentation."
     },
     "forgotPassword": {
       "title": "Reset Your Password",
@@ -49,7 +48,7 @@
       "submit": "Send Recovery Link",
       "success": "If an account exists for that email, password recovery instructions have been dispatched.",
       "backToLogin": "Back to sign in",
-      "metaTitle": "Forgot Password | Veracue Peptides",
+      "metaTitle": "Forgot Password",
       "metaDescription": "Reset your Veracue Peptides laboratory account password through a secure, encrypted recovery link."
     },
     "resetPassword": {
@@ -62,7 +61,7 @@
       "mismatch": "Passwords do not match",
       "invalidToken": "This reset authorization is invalid or has expired",
       "backToLogin": "Back to sign in",
-      "metaTitle": "Reset Password | Veracue Peptides",
+      "metaTitle": "Reset Password",
       "metaDescription": "Choose a new password to regain access to your Veracue Peptides account."
     }
   },
@@ -81,8 +80,8 @@
     "deniedText": "Due to the strict nature of research chemicals, you must be 18 years of age or older to enter this site.",
     "goBack": "Wait, I made a mistake",
     "purityGuaranteed": "Purity Verified",
-    "hplcVerifiedLine1": "99.1% HPLC",
-    "hplcVerifiedLine2": "Verified"
+    "hplcVerifiedLine1": "HPLC",
+    "hplcVerifiedLine2": "Tested"
   },
   "nav": {},
   "searchOverlay": {
@@ -199,36 +198,36 @@
     "designedBy": "Designed & Developed by"
   },
   "home": {
-    "metaTitle": "Buy Research Peptides USA | 99%+ Purity | Veracue Peptides",
-    "metaDescription": "USA-made research peptides, independently verified by HPLC and mass spectrometry. Every order includes a batch-specific COA. Browse the Veracue catalog.",
+    "metaTitle": "HPLC-Tested Research Peptides USA",
+    "metaDescription": "Laboratory research peptides with HPLC and mass spectrometry testing and batch COA records. For research use only. Browse the Veracue catalog.",
     "hero": {
       "viewPeptidesShort": "View Peptides",
       "viewPeptidesLong": "View Research Peptides",
       "titleLine1": "HIGH-PURITY",
       "titleLine2": "RESEARCH PEPTIDES",
-      "subtitle": "Precision-engineered peptides for researchers demanding the highest standards of <white>purity</white> and <white>performance</white>.",
-      "marqueePurity": "99.1% PURITY",
+      "subtitle": "Research peptides supplied with batch documentation for laboratories that need verifiable <white>purity</white> and <white>identity</white> data.",
+      "marqueePurity": "HPLC TESTED",
       "marqueeLabTested": "LAB TESTED",
-      "marqueeUsaMade": "USA MADE",
+      "marqueeUsaMade": "COA INCLUDED",
       "featured": "Featured",
       "total": "Total",
       "addedToCart": "Added {name} to cart!",
       "closeFeaturedProduct": "Close featured product",
       "viewFeaturedProduct": "View featured product",
       "products": {
-        "retatrutide": "Advanced metabolic research peptide designed for maximum efficacy. Rigorously tested for purity.",
-        "tirzepatide": "Dual GIP and GLP-1 receptor agonist for comprehensive metabolic and cardiovascular research.",
-        "semaglutide": "High-purity GLP-1 analogue synthesized for precise half-life and cellular response studies.",
-        "bpc157": "Premium synthetic peptide sequence known for accelerated tissue healing and recovery pathways."
+        "retatrutide": "Research peptide supplied for in-vitro assays. Batch-tested for purity.",
+        "tirzepatide": "Research peptide supplied for in-vitro receptor-binding and signaling assays.",
+        "semaglutide": "Synthetic peptide supplied for in-vitro receptor-binding and cell-signaling assays.",
+        "bpc157": "Synthetic peptide sequence supplied for in-vitro research on cell signaling pathways."
       }
     },
     "aboutTeaser": {
       "eyebrow": "THE LAB",
       "title": "Considered Compounds for Considered Research.",
-      "description": "We synthesize ultra-pure research peptides using advanced solid-phase peptide synthesis (SPPS) in US-based, ISO-certified facilities. Every compound undergoes independent third-party LC-MS and HPLC analysis to verify both molecular identity and ≥99% purity before it reaches your bench. No overseas raw powders. No shortcuts. Just verifiable science.",
+      "description": "Our research peptides are made by solid-phase peptide synthesis (SPPS) and analyzed by independent third-party LC-MS and HPLC to check molecular identity and report purity before they reach your bench. Every batch is documented, and every result is on the certificate of analysis.",
       "readAboutUs": "Read About Us",
-      "proof1Title": "≥99% HPLC Purity, Every Batch, No Exceptions",
-      "proof1Text": "High-Performance Liquid Chromatography (HPLC) testing is performed on every production batch. Any sample that fails to meet our strict 99% purity threshold is discarded immediately, not sold.",
+      "proof1Title": "HPLC Purity Reported for Every Batch",
+      "proof1Text": "HPLC testing is performed on every production batch, and the measured purity is published on that batch's certificate of analysis so it can be checked against the vial you receive.",
       "proof2Title": "LC-MS Verified Peptide Identity",
       "proof2Text": "Mass spectrometry (LC-MS) confirms the exact molecular weight and identity of every compound we ship. You receive the peptide on the label, exactly as described.",
       "proof3Title": "COA with Every Order: Full Transparency",
@@ -243,10 +242,10 @@
       "fallbackDescription": "Highly purified synthetic peptide prepared for rigorous laboratory research.",
       "fromLabel": "From",
       "products": {
-        "tb500": "Potent synthetic peptide researched for its role in cellular migration, actin regulation, and wound healing.",
-        "bpc157": "A highly purified synthetic peptide widely studied for its profound effects on tissue regeneration and angiogenesis.",
-        "semaglutide": "A GLP-1 receptor agonist actively researched for its mechanisms in glycemic control and metabolic regulation.",
-        "ghkCu": "A naturally occurring copper complex peptide frequently studied for its role in collagen synthesis and anti-aging."
+        "tb500": "A synthetic peptide related to thymosin beta-4, supplied for in-vitro studies of actin regulation and cell migration.",
+        "bpc157": "A synthetic pentadecapeptide supplied for in-vitro research on angiogenesis and cell signaling pathways.",
+        "semaglutide": "A synthetic incretin-pathway peptide supplied for in-vitro receptor-binding and cell-signaling assays.",
+        "ghkCu": "A naturally occurring copper-binding tripeptide supplied for in-vitro studies of extracellular matrix proteins such as collagen."
       }
     },
     "blogSection": {
@@ -260,7 +259,7 @@
     },
     "blogTeaser": {
       "eyebrow": "SCIENCE BLOG",
-      "title": "Clinical Reviews & Research Guidelines",
+      "title": "Research Guides & Laboratory Resources",
       "description": "Our blog publishes peer-reviewed literature summaries, compound mechanism deep dives, and methodology guides covering purity testing, reconstitution, and storage. Written for researchers who need the science, not the hype.",
       "scrollToExplore": "Scroll to Explore",
       "ctaText": "View the Full Blog"
@@ -303,21 +302,21 @@
       "titleLine2": "Every Single Batch.",
       "description": "Third-party purity verification is the cornerstone of research-grade compounds. Every vial we ship carries an independently verified COA that proves what is inside, not what we claim is inside. Here is exactly what we test for, and why it matters.",
       "vialAlt": "Single precision research peptide vial with Certificate of Analysis document, Veracue Peptides",
-      "metric1Title": "≥99% HPLC Purity",
+      "metric1Title": "HPLC Purity Reported",
       "metric1Desc": "Stringent chromatographic isolation for every compound, verified before any order ships.",
-      "metric1Tooltip": "HPLC separates compound mixtures by molecular polarity, confirming concentration and purity to ≥99%.",
+      "metric1Tooltip": "HPLC separates compound mixtures by molecular polarity, and the measured purity is reported per batch on the certificate of analysis.",
       "metric2Title": "Mass Spectrometry (LC-MS)",
       "metric2Desc": "Exact molecular weight verification confirms you are receiving the compound on the label.",
       "metric2Tooltip": "LC-MS cross-references molecular mass against known peptide databases. Cannot be faked.",
-      "metric3Title": "Endotoxin-Free",
-      "metric3Desc": "Limulus Amebocyte Lysate (LAL) testing confirms endotoxin levels below research-safe thresholds.",
-      "metric3Tooltip": "Endotoxin contamination invalidates in-vitro research results. We test and confirm absence.",
+      "metric3Title": "Endotoxin Data on Request",
+      "metric3Desc": "Ask support whether endotoxin data is available for a specific batch.",
+      "metric3Tooltip": "Endotoxin contamination can affect in-vitro results, so ask us about the data available for the batch you are ordering.",
       "ctaText": "VIEW COA LIBRARY"
     },
     "difference": {
       "titleLine1": "Vitality",
       "titleLine2": "Collection.",
-      "description": "A curated line built around longevity, recovery, and everyday research support, featuring some of our most-requested research compounds.",
+      "description": "A curated line built around everyday research support, featuring some of our most-requested research compounds.",
       "ctaText": "View COA Library",
       "vialAlt": "Veracue Peptides Vitality Collection research peptide vials.",
       "shakeWarningTitle": "Critical Warning",
@@ -332,7 +331,7 @@
           "desc": "Pioneering research grades."
         },
         "madeInUsa": {
-          "title": "Made in the USA",
+          "title": "Documented Batches",
           "desc": "Strictly controlled standards."
         },
         "coldChain": {
@@ -351,11 +350,11 @@
       "items": {
         "ruoPeptide": {
           "question": "What does \"Research Use Only\" (RUO) mean for these peptides?",
-          "answer": "Research Use Only means a compound is intended strictly for laboratory and scientific research, not for human or veterinary consumption, diagnosis, or treatment. Veracue Peptides peptides are labeled and sold on this basis and are not evaluated by the FDA for safety or efficacy in those other contexts."
+          "answer": "Research Use Only means a compound is intended strictly for laboratory and scientific research, not for human or veterinary consumption, diagnosis, or treatment. Every product from Veracue Peptides is labeled and sold on this basis, and none of it has been evaluated by the FDA for safety or efficacy in those other contexts."
         },
         "researchGradePurity": {
           "question": "What is considered a research-grade peptide?",
-          "answer": "A research-grade peptide is synthesized and tested to a documented purity standard, typically 98% or higher, with identity and concentration confirmed through HPLC and mass spectrometry rather than estimated. It is sold with supporting batch documentation for laboratory use, not formulated or labeled for clinical administration."
+          "answer": "A research-grade peptide is synthesized and analyzed against a documented specification. Its HPLC purity is reported per batch on the certificate of analysis, and its identity is confirmed by mass spectrometry rather than estimated. It is sold with batch documentation for laboratory use, not formulated or labeled for clinical administration."
         },
         "coaContents": {
           "question": "What should a peptide's certificate of analysis (COA) include?",
@@ -394,7 +393,7 @@
     "featuredProducts": {
       "titleLine1": "SELECTED",
       "titleLine2": "REFERENCES",
-      "description": "A small catalogue of research-grade peptides. Each batch independently verified, sealed and traceable to the milligram.",
+      "description": "A small catalogue of research-grade peptides. Each batch is tested, sealed, and traceable by lot number.",
       "inStock": "IN STOCK",
       "featuredLabel": "FEATURED",
       "researchUseOnly": "RESEARCH USE ONLY",
@@ -415,7 +414,7 @@
       "exploreGear": "Explore Gear",
       "premiumQuality": "Premium Quality",
       "exclusiveMerch": "Exclusive Merch",
-      "worldwideShipping": "Worldwide Shipping",
+      "worldwideShipping": "Ships to Select Regions",
       "ctaText": "Shop All Gear",
       "items": {
         "canvasTote": "Canvas Tote",
@@ -432,9 +431,9 @@
     },
     "militaryDiscount": {
       "eyebrow": "MILITARY DISCOUNT",
-      "titleLine1": "30% OFF",
+      "titleLine1": "15% OFF",
       "titleLine2": "FOR OUR HEROES",
-      "description": "Active-duty military, veterans, and first responders can request 30% off a research peptide order as a standing thank-you from the Veracue team. Eligibility is verified at checkout.",
+      "description": "Active-duty military, veterans, and first responders can request 15% off a research peptide order as a standing thank-you from the Veracue team. Eligibility is verified at checkout.",
       "privacyNoticeTitle": "Privacy & Security Notice",
       "privacyNoticeText": "For your protection, please <redact>redact (black out)</redact> sensitive information like your SSN. Documents are securely encrypted for review and <destroyed>permanently destroyed</destroyed> from our servers immediately upon approval.",
       "formTitle": "Verify Status",
@@ -457,7 +456,7 @@
       },
       "submitButton": "Submit for Verification",
       "successTitle": "Documents Received",
-      "successText": "Thank you for your service! Your documents have been securely routed for review. We will email your exclusive 30% discount code shortly.",
+      "successText": "Thank you for your service! Your documents have been securely routed for review. We will email your exclusive 15% discount code shortly.",
       "submitAnother": "Submit Another"
     },
     "newsletter": {
@@ -535,25 +534,25 @@
       "eyebrow": "The Veracue Analytical Standard",
       "titleLine1": "DOCUMENTED,",
       "titleLine2": "NOT PROMISED.",
-      "subtitle": "USA-Manufactured. Third-Party Verified.",
+      "subtitle": "Batch-Tested. Documented. Research Use Only.",
       "ctaText": "Our Scientific Approach",
       "description": "Every compound in the Veracue catalog is synthesized to a documented purity standard and verified before it's listed. Not estimated, and not left to a marketing claim.",
       "cards": {
         "purity": {
-          "title": "99.1%+ Verified Purity",
-          "description": "Every batch undergoes rigorous High-Performance Liquid Chromatography (RP-HPLC) analysis to guarantee purity exceeding 99.1%, with authentic certificates of analysis published directly on our catalog.",
-          "tag": "USA Verified"
+          "title": "HPLC-Verified Purity",
+          "description": "Each batch is analyzed by reversed-phase HPLC, and the measured purity is reported on that batch's certificate of analysis, published directly in our catalog.",
+          "tag": "Per-Batch COA"
         },
         "stability": {
           "title": "Freeze-Dried for Stability",
-          "description": "Vacuum-lyophilized under certified ISO-7 cleanroom conditions to safeguard peptide tertiary structure against degradation, ensuring integrity through shipping and long-term cold storage.",
+          "description": "Peptides are supplied as vacuum-sealed lyophilized powder, a format that helps protect the sequence from degradation during shipping and cold storage.",
           "tag": "Sealed Under Vacuum",
           "microcopy": "Stability Verified Per Batch"
         },
         "dosing": {
-          "title": "Exact Milligram Dosing",
-          "description": "Formulated to exacting quantitative thresholds verified via Electrospray Ionization Mass Spectrometry (ESI-MS), guaranteeing absolute molar accuracy for reproducible reconstitution.",
-          "tag": "Precision Dosed",
+          "title": "Verified Vial Content",
+          "description": "Stated vial content is checked against batch analytical data, and mass spectrometry confirms molecular identity, so stock solutions can be prepared from documented figures.",
+          "tag": "Documented Quantity",
           "microcopy": "Mass Spectrometry Confirmed"
         }
       }
@@ -633,11 +632,11 @@
     "shopClient": {
       "inStock": "In Stock",
       "onSale": "On Sale",
-      "marqueeUsaMade": "USA-MADE",
+      "marqueeUsaMade": "BATCH TESTED",
       "marqueeFreeShipping": "FREE SHIPPING OVER $300",
       "heroTitle": "Synthetic Research Peptides for Laboratory Applications",
       "heroDescription": "Documented synthetic research peptides are supplied for controlled laboratory and analytical research environments only.",
-      "highlightPurityText": "≥99% HPLC Purity",
+      "highlightPurityText": "HPLC Tested",
       "highlightPuritySubtext": "Independently Tested",
       "highlightCoaText": "COA Verified",
       "highlightCoaSubtext": "Batch Certified",
@@ -662,7 +661,7 @@
       "faqs": {
         "availablePeptides": {
           "question": "What research peptides are available in the Veracue Peptides shop?",
-          "answer": "The Veracue Peptides shop carries a curated catalog of research-use-only peptides for laboratory study, including BPC-157, TB-500, Semaglutide, Tirzepatide, Ipamorelin, CJC-1295, PT-141, Melanotan II, GHK-Cu, Thymosin Alpha-1, Epithalon, Selank, Semax, and related compounds. Each listing shows current stock status, available vial sizes, and a linked certificate of analysis."
+          "answer": "The Veracue Peptides shop carries a curated catalog of research-use-only peptides for laboratory study, organized by research category such as recovery, metabolic, cognitive function, and bioregulators. Each listing shows current stock status, available vial sizes, and a linked certificate of analysis."
         },
         "purityQualityTested": {
           "question": "Are all Veracue Peptides products tested for purity and quality?",
@@ -670,7 +669,7 @@
         },
         "standardPurityLevels": {
           "question": "What purity levels are standard for research peptides?",
-          "answer": "Reputable research peptide suppliers report purity of 98% or higher, with many premium compounds tested at 99%. Purity is confirmed by HPLC analysis and disclosed on each batch's certificate of analysis rather than estimated, so researchers can verify the figure independently."
+          "answer": "Purity varies by compound and batch. It is measured by HPLC and disclosed on each batch's certificate of analysis rather than estimated, so researchers can verify the figure independently."
         },
         "interpretCoa": {
           "question": "How do I interpret the certificate of analysis (COA)?",
@@ -714,15 +713,15 @@
         },
         "findSpecificPeptides": {
           "question": "How do I find specific peptides in your catalog?",
-          "answer": "The shop can be browsed by category, such as GLP-1 compounds, tissue-repair peptides, or cognitive research peptides, or searched directly by compound name. Filtering by stock status also narrows results to what is currently available."
+          "answer": "The shop can be browsed by research category, such as recovery, metabolic, or cognitive function, or searched directly by compound name. Filtering by stock status also narrows results to what is currently available."
         },
         "productPageInfo": {
           "question": "What information is included on product pages?",
           "answer": "Each product page lists the compound name, available vial sizes, current price, stock status, a linked certificate of analysis, and relevant handling notes such as recommended storage and reconstitution guidance."
         },
         "manufacturedInUsa": {
-          "question": "Are all products manufactured in the USA for research compliance?",
-          "answer": "Veracue Peptides sources and distributes from within the USA, and each batch is tested domestically before listing. Country-of-origin and testing details for a specific compound can be confirmed on request or within the linked COA."
+          "question": "Where are Veracue Peptides products sourced and tested?",
+          "answer": "Sourcing and testing details for a specific compound are listed on its linked certificate of analysis and can be confirmed on request through support."
         },
         "researchUseOnlyMeaning": {
           "question": "What does \"Research Use Only\" mean for these products?",
@@ -765,10 +764,10 @@
       "outOfStock": "Out of Stock",
       "buyNow": "Buy Now",
       "trustFastShipping": "Fast Shipping",
-      "trustPurity": "99% Purity",
+      "trustPurity": "HPLC Tested",
       "trustThirdPartyTested": "3rd Party Tested",
       "trustGuaranteed": "Guaranteed",
-      "shipsWorldwide": "Ships Worldwide",
+      "shipsWorldwide": "Ships to US & Select Countries",
       "secureCheckout": "Secure Checkout",
       "thirdPartyTested": "3rd-Party Tested",
       "certificateOfAnalysis": "Certificate of Analysis",
@@ -789,10 +788,10 @@
       "theScienceSubtitle": "Every batch, independently verified.",
       "downloadCertificate": "Download Certificate",
       "statVerifiedPurityLabel": "Verified Purity",
-      "statVerifiedPurityDesc": "Confirmed by independent HPLC assay",
-      "statLabTestedValue": "3rd Party",
-      "statLabTestedLabel": "Lab Tested",
-      "statLabTestedDesc": "No self-reported results, ever",
+      "statVerifiedPurityDesc": "HPLC purity is reported per batch on the COA",
+      "statLabTestedValue": "COA",
+      "statLabTestedLabel": "Batch Report",
+      "statLabTestedDesc": "Analytical results are published per batch",
       "statGradeQualityValue": "Research",
       "statGradeQualityLabel": "Grade Quality",
       "statGradeQualityDesc": "One uncompromising standard, every batch",
@@ -820,7 +819,7 @@
     "overview": {
       "welcomeBack": "Welcome back",
       "subtitle": "Here is your account overview.",
-      "purityPoints": "Purity Points",
+      "purityPoints": "Veracue Points",
       "purityPointsDescription": "1 Point = $1. Your points can be applied as a discount directly at checkout.",
       "ordersPlaced": "Orders Placed",
       "wishlistItems": "Wishlist Items",
@@ -855,13 +854,13 @@
       "statusProcessing": "Processing",
       "statusShipped": "Shipped",
       "statusDelivered": "Delivered",
-      "metaTitle": "Account Overview | Veracue Peptides",
+      "metaTitle": "Account Overview",
       "metaDescription": "View your recent orders, research wishlist, reward points, and account details in one place."
     },
     "addresses": {
       "title": "Saved Addresses",
       "subtitle": "Manage where your lab equipment and peptides are shipped.",
-      "metaTitle": "Saved Addresses | Veracue Peptides",
+      "metaTitle": "Saved Addresses",
       "metaDescription": "Manage laboratory shipping and delivery addresses for your Veracue account.",
       "addNewAddress": "Add New Address",
       "editAddressTitle": "Edit Address",
@@ -900,13 +899,13 @@
     },
     "layout": {
       "title": "My Account",
-      "metaTitle": "My Account | Veracue Peptides",
+      "metaTitle": "My Account",
       "metaDescription": "Manage your Veracue Peptides account, orders, lab addresses, and research preferences."
     },
     "orders": {
       "title": "Order History",
       "subtitle": "Track, manage, and return your recent purchases.",
-      "metaTitle": "Order History | Veracue Peptides",
+      "metaTitle": "Order History",
       "metaDescription": "Track, review, and manage your recent Veracue Peptides research orders.",
       "filterStatus": "Filter Status",
       "filterAll": "All Orders",
@@ -951,12 +950,12 @@
       "shipping": "Shipping",
       "free": "Free",
       "processingFee": "Processing Fee",
-      "purityPoints": "Purity Points",
+      "purityPoints": "Veracue Points",
       "total": "Total",
       "paymentSuccessful": "Payment Successful",
       "paymentRefunded": "Refunded",
       "paymentProcessing": "Payment Processing",
-      "metaTitle": "Order Details | Veracue Peptides",
+      "metaTitle": "Order Details",
       "metaDescription": "View batch details, certificate of analysis records, and shipping status of your Veracue order."
     },
     "settings": {
@@ -993,7 +992,7 @@
       "orderSmsUpdatesDescription": "Get real-time text messages about your order shipments and deliveries.",
       "errorUnauthorized": "Unauthorized",
       "errorUnexpected": "An unexpected error occurred",
-      "metaTitle": "Account Settings | Veracue Peptides",
+      "metaTitle": "Account Settings",
       "metaDescription": "Manage your personal credentials, laboratory security settings, and notifications."
     },
     "wishlist": {
@@ -1005,13 +1004,13 @@
       "emptyTitle": "Your wishlist is empty",
       "emptyDescription": "Save items you want to buy later by clicking the heart icon on any product page.",
       "startBrowsing": "Start Browsing",
-      "metaTitle": "My Wishlist | Veracue Peptides",
+      "metaTitle": "My Wishlist",
       "metaDescription": "Review and manage the research peptide standards saved to your wishlist.",
       "selectVariantRequired": "Please select a variant on the product page."
     },
     "sidebar": {
       "welcomeBack": "Welcome Back",
-      "purityPoints": "Purity Points",
+      "purityPoints": "Veracue Points",
       "purityPointsDescription": "<strong>1 Point = $1.</strong> Your points can be applied as a discount directly at checkout.",
       "nav": {
         "overview": "Overview",
@@ -1065,11 +1064,11 @@
     }
   },
   "cartPage": {
-    "metaTitle": "Your Cart | Veracue Peptides",
+    "metaTitle": "Your Cart",
     "metaDescription": "Review the research peptides in your cart before proceeding to secure checkout."
   },
   "checkout": {
-    "metaTitle": "Secure Checkout | Veracue Peptides",
+    "metaTitle": "Secure Checkout",
     "metaDescription": "Complete your secure checkout for research peptides at Veracue Peptides.",
     "cartDrawer": {
       "title": "CART",
@@ -1150,7 +1149,7 @@
       "total": "Total",
       "discountCodePlaceholder": "Coupons code",
       "apply": "Apply",
-      "purityPoints": "Purity Points",
+      "purityPoints": "Veracue Points",
       "youHavePoints": "You have {points} points",
       "youHavePointsWithValue": "You have {points} points (${value})",
       "expressCheckout": "Express Checkout",
@@ -1218,7 +1217,7 @@
       "remove": "Remove",
       "checking": "Checking...",
       "apply": "Apply",
-      "savesAmount": "— saves ${amount}",
+      "savesAmount": "- saves ${amount}",
       "plusFreeShipping": "+ Free Shipping!",
       "enterCouponCode": "Please enter a coupon code",
       "couponAppliedSuccess": "Coupon applied!",
@@ -1234,7 +1233,7 @@
     }
   },
   "orderConfirmation": {
-    "metaTitle": "Order Confirmed | Veracue Peptides",
+    "metaTitle": "Order Confirmed",
     "metaDescription": "Your Veracue Peptides order has been placed. View your order confirmation and payment details.",
     "paymentSuccessful": "Payment Successful",
     "orderPlaced": "Order Placed",
@@ -1266,7 +1265,7 @@
     "shipping": "Shipping",
     "free": "Free",
     "processingFee": "Processing Fee",
-    "purityPoints": "Purity Points",
+    "purityPoints": "Veracue Points",
     "totalUsd": "Total USD",
     "printReceipt": "Print Receipt",
     "questionsContactSupport": "Questions? <link>Contact Support</link>",
@@ -1277,7 +1276,7 @@
   },
   "legal": {
     "privacyPolicy": {
-      "metaTitle": "Privacy Policy | Veracue Peptides",
+      "metaTitle": "Privacy Policy",
       "metaDescription": "How Veracue Peptides collects, uses, and protects personal data across ordering, account access, and research-use compliance on our website.",
       "eyebrow": "Legal Information",
       "titleLine1": "Veracue Peptides",
@@ -1339,7 +1338,7 @@
       "contactLabel": "Contact"
     },
     "refundPolicy": {
-      "metaTitle": "Refund & Exchange Policy | Veracue Peptides",
+      "metaTitle": "Refund & Exchange Policy",
       "metaDescription": "Veracue Peptides sells research products as final sale, with one exception: items that arrive damaged are eligible for exchange. See the full policy here.",
       "eyebrow": "Legal Information",
       "titleLine1": "Veracue Peptides",
@@ -1389,7 +1388,7 @@
       "closingText2": "Outside of a damaged-item exchange, remember that all sales are final, so review your order carefully before checkout."
     },
     "shippingPolicy": {
-      "metaTitle": "Shipping Policy | Veracue Peptides",
+      "metaTitle": "Shipping Policy",
       "metaDescription": "How Veracue Peptides handles order processing, shipping methods, delivery windows, packaging, and damaged-shipment exchanges for research-use products.",
       "eyebrow": "Legal Information",
       "titleLine1": "Veracue Peptides",
@@ -1442,7 +1441,7 @@
       "closingText": "Our team is on hand to make sure every order gets to you safely and on schedule."
     },
     "medicalDisclaimer": {
-      "metaTitle": "Medical Disclaimer | Veracue Peptides",
+      "metaTitle": "Medical Disclaimer",
       "metaDescription": "Veracue Peptides' Medical Disclaimer: research peptides are for laboratory use only, not medical advice, treatment, or human consumption.",
       "eyebrow": "Legal Information",
       "titleLine1": "Veracue Peptides",
@@ -1511,7 +1510,7 @@
       }
     },
     "termsAndConditions": {
-      "metaTitle": "Terms & Conditions | Veracue Peptides",
+      "metaTitle": "Terms & Conditions",
       "metaDescription": "Read Veracue Peptides' Terms and Conditions covering orders, payments, shipping, and research-use policies for our peptide products.",
       "eyebrow": "Legal Information",
       "titleLine1": "Veracue Peptides",
@@ -1610,7 +1609,7 @@
       }
     },
     "certificates": {
-      "metaTitle": "Peptide Certificates of Analysis | Veracue Peptides",
+      "metaTitle": "Peptide Certificates of Analysis",
       "metaDescription": "Browse batch-specific certificates of analysis for Veracue Peptides research compounds, verified by independent third-party HPLC and mass spectrometry testing.",
       "eyebrow": "Verification",
       "title": "Certificates of Analysis",
@@ -1623,7 +1622,7 @@
       "statBatchesLabel": "Batches Verified",
       "statLabsValue": "3rd-Party",
       "statLabsLabel": "US Laboratories",
-      "statTestedValue": "100%",
+      "statTestedValue": "Per Batch",
       "statTestedLabel": "Independently Tested",
       "tableProduct": "Product",
       "tablePurity": "Purity",
@@ -1640,7 +1639,7 @@
       "processEyebrow": "The Process",
       "processTitle": "About our testing methodology",
       "processText1": "Every raw material we receive undergoes rigorous High-Performance Liquid Chromatography (HPLC) prior to compounding. This analytical technique separates, identifies, and quantifies each component in a mixture, ensuring absolute sequence accuracy.",
-      "processText2": "Following synthesis and lyophilization, random samples from the finished batch are submitted to independent third-party laboratories. They perform secondary HPLC alongside Mass Spectrometry (MS) to verify that the molecular weight perfectly matches the target peptide structure and that purity exceeds our 99% baseline standard.",
+      "processText2": "Following synthesis and lyophilization, samples from the finished batch are submitted to independent third-party laboratories. They perform secondary HPLC alongside mass spectrometry (MS) to verify that the molecular weight matches the target peptide structure, and the measured purity is reported on the batch's certificate of analysis.",
       "ctaTitle": "Demanding a higher standard",
       "ctaText": "Learn more about why rigorous independent testing is the only way to guarantee reproducible research results.",
       "ctaButton": "Explore Our Science"
@@ -1648,7 +1647,7 @@
   },
   "affiliate": {
     "landing": {
-      "metaTitle": "Peptide Affiliate Program | Earn 15% Commission | Veracue Peptides",
+      "metaTitle": "Peptide Affiliate Program: Earn 15%",
       "metaDescription": "Earn 15% commission promoting Veracue research peptides, plus a 15% customer discount and monthly payouts. Apply to the affiliate program today.",
       "introEyebrow": "Affiliate Program",
       "introTitle": "Earn Passive Income Promoting Premium Research Peptides",
@@ -1813,7 +1812,7 @@
       "footerCopyright": "© 2026 Veracue Peptides. All rights reserved."
     },
     "dashboardLayout": {
-      "metaTitle": "Affiliate Dashboard | Veracue Affiliates",
+      "metaTitle": "Affiliate Dashboard",
       "metaDescription": "Manage your Veracue affiliate links, track conversions, and request commission payouts."
     },
     "sidebar": {
@@ -1830,7 +1829,7 @@
       }
     },
     "dashboard": {
-      "metaTitle": "Affiliate Dashboard | Veracue Affiliates",
+      "metaTitle": "Affiliate Dashboard",
       "metaDescription": "Track your clicks, conversions, and commission earnings as a Veracue affiliate.",
       "eyebrow": "Affiliate Dashboard",
       "welcomeBack": "Welcome back",
@@ -1856,7 +1855,7 @@
       "copyCode": "Copy Code"
     },
     "links": {
-      "metaTitle": "Referral Links & Coupon Code | Veracue Affiliates",
+      "metaTitle": "Referral Links & Coupon Code",
       "metaDescription": "Get your unique Veracue referral link and coupon code to share with your audience.",
       "eyebrow": "Share Tools",
       "title": "Links & Coupon Code",
@@ -1878,7 +1877,7 @@
       "errorUnexpected": "Something went wrong. Please try again."
     },
     "conversions": {
-      "metaTitle": "Conversions | Veracue Affiliates",
+      "metaTitle": "Conversions",
       "metaDescription": "View the full history of orders converted through your Veracue affiliate referral link and coupon code.",
       "eyebrow": "Commission Ledger",
       "title": "Conversions",
@@ -1896,7 +1895,7 @@
       "loadMore": "Load More"
     },
     "payouts": {
-      "metaTitle": "Payouts | Veracue Affiliates",
+      "metaTitle": "Payouts",
       "metaDescription": "Request a commission payout and view your Veracue affiliate payout history.",
       "eyebrow": "Commission Payouts",
       "pageTitle": "Payouts",
@@ -1929,7 +1928,7 @@
       "emptyDesc": "Once you request a payout, its status will be tracked here."
     },
     "dashboardSettings": {
-      "metaTitle": "Affiliate Settings | Veracue Affiliates",
+      "metaTitle": "Affiliate Settings",
       "metaDescription": "Manage your preferred payout currency and affiliate account preferences.",
       "eyebrow": "Affiliate Settings",
       "title": "Settings",
@@ -1937,9 +1936,9 @@
       "payoutMethodTitle": "Payout Currency",
       "payoutMethodDesc": "Choose which currency or method you'd like to receive commission payouts in.",
       "preferredCurrencyLabel": "Preferred Currency",
-      "currencyUsd": "USD — US Dollar",
-      "currencyBtc": "BTC — Bitcoin",
-      "currencyEth": "ETH — Ethereum",
+      "currencyUsd": "USD - US Dollar",
+      "currencyBtc": "BTC - Bitcoin",
+      "currencyEth": "ETH - Ethereum",
       "currencyUsdtErc20": "USDT (ERC-20)",
       "currencyUsdtTrc20": "USDT (TRC-20)",
       "currencyStoreCredit": "Store Credit",
@@ -1948,8 +1947,8 @@
   },
   "content": {
     "aboutPage": {
-      "metaTitle": "About Veracue Peptides | USA Research Peptide Supplier",
-      "metaDescription": "Veracue Peptides supplies HPLC-verified, USA-made research peptides with a certificate of analysis on every batch. See how we test, document, and ship.",
+      "metaTitle": "About Us: Research Peptide Supplier",
+      "metaDescription": "Veracue Peptides supplies HPLC-tested research peptides with a certificate of analysis on every batch. See how we test, document, and ship for laboratory use.",
       "faqTitle": "Questions",
       "faqDescription": "Common questions about research peptides, ordering, and lab standards",
       "faqs": {
@@ -1983,7 +1982,7 @@
         },
         "domesticVsOverseas": {
           "question": "How is Veracue Peptides different from overseas peptide sellers?",
-          "answer": "Every compound we sell is synthesized and tested domestically, with the certificate of analysis tied to a U.S. lot rather than an imported raw powder. The purity data on the label reflects testing done here, not passed along from an unverified overseas source."
+          "answer": "The difference is documentation. Each certificate of analysis is tied to a specific lot number and lists the testing performed, so the data can be matched to the vial you receive instead of relying on an unverified purity claim."
         },
         "batchQuestions": {
           "question": "Who do I contact with a question about a specific batch or COA?",
@@ -1996,8 +1995,8 @@
       }
     },
     "contactPage": {
-      "metaTitle": "Contact Veracue Peptides | Research Support",
-      "metaDescription": "Reach the Veracue Peptides team for order questions, batch certificates of analysis, or bulk research inquiries. Average response under 2 hours."
+      "metaTitle": "Contact Us: Research Support",
+      "metaDescription": "Reach the Veracue Peptides team for order questions, batch certificates of analysis, or bulk research inquiries. We reply on business days."
     },
     "contactForm": {
       "heading": "Send Us a Message",
@@ -2020,7 +2019,7 @@
       "errorUnexpected": "Something went wrong while sending your message. Please email support@veracuepeptides.com directly."
     },
     "faqPage": {
-      "metaTitle": "Research Peptide FAQs | Veracue Peptides",
+      "metaTitle": "Research Peptide FAQs",
       "metaDescription": "Answers on research peptide purity, legality, storage, and ordering, plus compound-specific FAQs for BPC-157, GHK-Cu, Semaglutide, and more."
     },
     "aboutHero": {
@@ -2103,19 +2102,19 @@
     "contactClient": {
       "supportEmailTitle": "Customer & Product Support",
       "supportEmailDescription": "Questions regarding research peptides, storage, reconstitution, or batch testing.",
-      "supportEmailMicrocopy": "Average response time under 2 hours.",
+      "supportEmailMicrocopy": "Replies on business days.",
       "bulkEmailTitle": "Bulk & Institutional Orders",
       "bulkEmailDescription": "Inquiries for academic laboratories, high-volume orders, and invoice billing.",
       "bulkEmailMicrocopy": "Custom volume pricing available upon request.",
       "logisticsTitle": "Shipping & Order Help",
       "logisticsDescription": "Questions about shipping, tracking, or your recent delivery.",
-      "logisticsMicrocopy": "Orders before 2:00 PM EST ship same day.",
+      "logisticsMicrocopy": "Orders enter a 1 to 3 business day review before shipping.",
       "faqTitle": "Frequently Asked Questions",
       "faqSubtitle": "Quick answers to common questions about orders, testing, and shipping.",
       "faqs": {
         "contactInfo": {
           "question": "What is the best way to contact Veracue?",
-          "answer": "You can email us at support@veracuepeptides.com or use the contact form below. We typically respond within 2 hours on business days."
+          "answer": "You can email us at support@veracuepeptides.com or use the contact form below. We reply as soon as possible on business days."
         },
         "usLabsContact": {
           "question": "Where are Veracue peptides tested?",
@@ -2127,7 +2126,7 @@
         },
         "serviceHours": {
           "question": "What are your customer service hours?",
-          "answer": "Reach out anytime by email, and our team will get back to you as soon as possible, usually within about 2 hours."
+          "answer": "Reach out anytime by email, and our team will reply as soon as possible on business days."
         }
       },
       "disclaimerLabel": "RESEARCH USE ONLY NOTICE",
@@ -2157,7 +2156,7 @@
   },
   "calculator": {
     "page": {
-      "metaTitle": "Peptide Calculator: Dosage & Reconstitution Tool | Veracue Peptides",
+      "metaTitle": "Peptide Calculator: Dosage & Reconstitution Tool",
       "metaDescription": "Use our free peptide calculator to get your exact dosage in seconds. Enter vial size, BAC water volume, and desired mcg - and see exactly how many units to draw.",
       "webApp": {
         "name": "Peptide Reconstitution & Research Calculators Hub",
@@ -2286,11 +2285,11 @@
     }
   },
   "blog": {
-    "metaTitle": "Peptide Research Blog | Studies & Protocols | Veracue Peptides",
-    "metaDescription": "Explore peptide research articles, laboratory protocols, and reconstitution guides from Veracue Peptides, a U.S. supplier of 99%+ pure research peptides.",
+    "metaTitle": "Peptide Research Blog and Guides",
+    "metaDescription": "Peptide research articles, laboratory guides, and reconstitution explainers from Veracue Peptides, a supplier of research-use-only peptides.",
     "hero": {
-      "title": "The U.S. Authority in Advanced Peptide Research & Scientific Insights",
-      "description": "Explore peer-reviewed peptide research, reconstitution guides, and analytical testing standards curated for research professionals. Educational resources for 99%+ pure research compounds, strictly for in-vitro laboratory use.",
+      "title": "Peptide Research Guides and Laboratory Resources",
+      "description": "Read reconstitution guides, analytical testing explainers, and research summaries written for laboratory professionals. All content is educational and applies to in-vitro laboratory research only.",
       "exploreLatestLong": "Explore Latest Articles",
       "exploreLatestShort": "Explore Articles"
     },

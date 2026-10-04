@@ -1,0 +1,847 @@
+{
+  "deliverable": {
+    "client": "Veracue Peptides",
+    "product": "KLOW Peptide Blend",
+    "route": "/product/klow",
+    "status": "Research Use Only (RUO)",
+    "prepared_by": "Belk Digital",
+    "revision_note": "Publication-ready revision. Market-formulation detail, TB-500 identity discussion and regulatory chronology have been compressed per client instruction. Component sections shortened. Category marked pending confirmation rather than inferred. No repository access was used; no implementation has occurred.",
+    "site_inspection_record": {
+      "date_checked": "2026-09-24",
+      "live_catalog": "Veracue /shop lists 3 compounds total: Selank, AHK-Cu (Copper Tripeptide-3), NAD+. No KLOW record.",
+      "klow_route": "/product/klow returns 'Product Not Found' and is served with meta robots noindex.",
+      "glow_route": "No GLOW product appears in the live catalog listing.",
+      "coa_archive": "/certificates renders '0 Reports Available' with a notice that batch-specific COAs are still being published. No KLOW lot exists.",
+      "conclusion": "No first-party Veracue KLOW composition, purity, lot, SKU, size, price or category exists at the time of writing. Every product-specific field in this package is marked 'Not publicly specified by Veracue at the time of publication,' and category is marked pending confirmation rather than assigned.",
+      "open_verification_items": [
+        "Confirmed component list and amounts for Veracue's KLOW material.",
+        "Whether the Veracue TB-500 component is the short actin-binding fragment or full-length thymosin beta-4.",
+        "Whether KLOW and the separately commissioned Glow page are distinct SKUs, a rename, or a reformulation.",
+        "Product category, vial size, physical form, excipients, purity method, lot code, testing laboratory, SKU, price, stock."
+      ]
+    }
+  },
+  "seo_metadata": {
+    "title": "KLOW Research Peptide (Multi-Peptide Blend) | Veracue",
+    "title_char_count": 53,
+    "meta_description": "KLOW, a multi-peptide research blend name, for lab research: what KLOW is, composition status, component evidence, KLOW vs GLOW, and COA checks.",
+    "meta_description_char_count": 144,
+    "canonical": "https://veracue-peptides.vercel.app/product/klow",
+    "slug": "/product/klow",
+    "robots": "index, follow",
+    "og_title": "KLOW Research Peptide (Multi-Peptide Blend) | Veracue",
+    "og_description": "KLOW, a multi-peptide research blend name, for lab research: what KLOW is, composition status, component evidence, KLOW vs GLOW, and COA checks.",
+    "primary_keyword": "KLOW peptide",
+    "secondary_keywords": [
+      "KLOW blend peptide",
+      "what is KLOW peptide",
+      "what is KLOW",
+      "KLOW peptide benefits",
+      "KLOW dosage",
+      "KLOW peptide dosage",
+      "KLOW vs GLOW",
+      "KLOW 80mg"
+    ],
+    "keyword_notes": "KLOW 80mg is treated purely as search-intent language inside the body copy, never as a product specification, and is not used in the title or metadata."
+  },
+  "hero": {
+    "eyebrow": "Research Use Only",
+    "category_label": "Category pending client confirmation",
+    "category_note": "Not yet assigned. Assign only once Veracue confirms the live-taxonomy placement.",
+    "h1": "KLOW Peptide Blend",
+    "subtitle": "Multi-component research blend · Composition pending first-party documentation",
+    "intro_paragraph": "KLOW is a blend and product designation rather than a single peptide molecule. The scientific evidence available for the peptides commonly associated with the KLOW name belongs primarily to those individual components, not automatically to the combination. This page keeps the two apart: what the component literature actually shows, and what Veracue has documented about its own KLOW material.",
+    "trust_strip": [
+      "Research Use Only",
+      "Not for human or veterinary use",
+      "Lot documentation governs product facts"
+    ]
+  },
+  "product_card_blurb": {
+    "usage": "Catalog card and /shop listing, matching the AHK-Cu blurb pattern",
+    "text": "KLOW is a multi-peptide research blend name used across the market rather than a single peptide molecule. Veracue supplies it as a research material for laboratory work; the peptides commonly associated with the name each carry their own separate published literature. No direct study of the KLOW combination itself was identified, so this material does not establish combined effect, treatment benefit or safety in people."
+  },
+  "research_snapshot": {
+    "heading": "Research Snapshot",
+    "rows": [
+      {
+        "label": "What KLOW is",
+        "value": "A market blend designation, not a single molecular entity"
+      },
+      {
+        "label": "Composition",
+        "value": "Not publicly specified by Veracue at the time of publication"
+      },
+      {
+        "label": "Direct combination evidence",
+        "value": "None identified in the literature reviewed for this page"
+      },
+      {
+        "label": "Component evidence",
+        "value": "Each peptide commonly associated with the name has its own separate literature"
+      },
+      {
+        "label": "Human clinical evidence for the blend",
+        "value": "None identified"
+      },
+      {
+        "label": "Regulatory status",
+        "value": "Not presented as an FDA-approved drug"
+      },
+      {
+        "label": "Intended use",
+        "value": "Laboratory research only. Not for human or veterinary use"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "what-is-klow",
+      "h2": "What Is KLOW Peptide?",
+      "aeo_answer_first": "KLOW is a product and blend name used in the research-peptide market. It is not a single peptide molecule, a defined amino acid sequence, or a standardized pharmaceutical composition.",
+      "body": [
+        "The name functions as a label for a combination of separate peptides supplied together in one vial. Listings that use the term most often describe four components, and each keeps its own molecular identity, its own chemistry and its own separate research history inside the mixture. Combining them does not create a new molecule.",
+        "That distinction is the most important thing to understand about the term. A single peptide name points to one sequence, one formula and one molecular weight. KLOW points to a mixture, so no single sequence or molecular weight applies to it. No authoritative standardized KLOW composition was identified in the sources reviewed for this page, which is why the only composition that describes a specific vial is the one documented by the supplier who filled it.",
+        "At the time of writing, Veracue has not published a KLOW composition, so this page does not state one."
+      ],
+      "callout": "KLOW is a blend designation. Treat any stated composition as supplier-specific, not as a property of the name."
+    },
+    {
+      "id": "klow-composition",
+      "h2": "KLOW Composition",
+      "lead": "This section is driven entirely by first-party Veracue information. Where Veracue has not published a value, the field is marked unspecified rather than filled from another vendor's listing.",
+      "table": {
+        "columns": [
+          "Composition field",
+          "Veracue documented value"
+        ],
+        "rows": [
+          [
+            "Total blend amount",
+            "Not publicly specified by Veracue at the time of publication"
+          ],
+          [
+            "Individual components",
+            "Not publicly specified by Veracue at the time of publication"
+          ],
+          [
+            "Amount of each component",
+            "Not publicly specified by Veracue at the time of publication"
+          ],
+          [
+            "Component ratio",
+            "Not publicly specified by Veracue at the time of publication"
+          ],
+          [
+            "Physical form",
+            "Not publicly specified by Veracue at the time of publication"
+          ],
+          [
+            "Formulation",
+            "Not publicly specified by Veracue at the time of publication"
+          ],
+          [
+            "Salt or counterion, where relevant",
+            "Not publicly specified by Veracue at the time of publication"
+          ],
+          [
+            "Excipients",
+            "Not publicly specified by Veracue at the time of publication"
+          ],
+          [
+            "Lot information",
+            "No KLOW lot appears in the Veracue certificate archive at the time of publication"
+          ]
+        ]
+      },
+      "market_context_note": "KLOW is used as a market blend designation, but supplier compositions can differ. Veracue has not publicly specified the composition of its KLOW material, so no external formulation is presented as a Veracue product fact.",
+      "implementation_note": "When Veracue supplies the composition, replace every row above with the documented value and add a lot reference."
+    },
+    {
+      "id": "component-identity",
+      "h2": "KLOW Component Research",
+      "lead": "If Veracue confirms the components described across the market, they are set out separately below, because each is a distinct molecule with its own evidence base. Nothing here is presented as evidence for the blend itself.",
+      "cards": [
+        {
+          "component": "KPV",
+          "summary": "KPV is a tripeptide — lysine, proline, valine — corresponding to the C-terminal region of alpha-melanocyte-stimulating hormone. It is studied mainly in inflammatory signaling: cultured intestinal epithelial and immune cells, and rodent models of chemically induced colitis, where oral KPV reduced inflammatory markers and disease severity. Delivery-formulation research, including nanoparticle carriers, has focused on improving how efficiently it reaches colonic tissue.",
+          "evidence_type": "In vitro and rodent models; delivery-formulation research",
+          "limitation": "The published record centers on experimental models. No completed human efficacy trial of KPV as a standalone material was identified for this page."
+        },
+        {
+          "component": "GHK-Cu",
+          "summary": "GHK-Cu is the copper(II) complex of the tripeptide glycyl-L-histidyl-L-lysine, a sequence that occurs naturally in human plasma and was first isolated in 1973. It is studied in extracellular matrix and collagen biology, fibroblast behavior and broad gene-expression research. Human-subject research reported in the review literature is predominantly topical, using specific finished cosmetic formulations rather than a research-grade powder.",
+          "evidence_type": "In vitro, animal models, and topical human studies of specific formulations",
+          "limitation": "It is a peptide-copper complex, not an unmodified peptide, so identity and copper content both need to be specified. Topical-formulation findings do not transfer to any other route or material form."
+        },
+        {
+          "component": "BPC-157",
+          "summary": "BPC-157 is a synthetic pentadecapeptide corresponding to a partial sequence of a protein found in human gastric juice. It has a large preclinical literature covering rodent gastrointestinal, tendon, muscle and vascular injury models, along with cell-level work on fibroblast migration and receptor expression, much of it from a single research group and its collaborators.",
+          "evidence_type": "Predominantly animal models and cell culture",
+          "limitation": "The volume of preclinical work is sometimes mistaken for clinical validation. No completed, published human efficacy trial was identified for this page."
+        },
+        {
+          "component": "TB-500",
+          "summary": "TB-500 is a market term whose identity can vary between suppliers, referring either to a short synthetic fragment of thymosin beta-4 or, in some listings, to the full-length protein. For a KLOW product, the exact TB-500 species should be taken from Veracue's own product documentation or lot-specific analytical record rather than assumed from the label. Thymosin beta-4's broader biology has been studied in cell migration and tissue-repair research, including human ophthalmic trials of the full-length protein.",
+          "evidence_type": "Cell and animal models; human ophthalmic trials specific to the full-length protein",
+          "limitation": "Full-length thymosin beta-4 human data should not be read as evidence for a short fragment, or vice versa, without confirming which species is present."
+        }
+      ],
+      "critical_rule_note": "Four separate evidence labels. No combined mechanism or synergy is claimed, because no controlled combination study supporting one was identified."
+    },
+    {
+      "id": "what-research-shows",
+      "h2": "KLOW Research Findings: What Has Actually Been Studied",
+      "lead": "People searching for KLOW peptide benefits are usually looking for what the underlying research reports. That question has an answer, but the answer is component by component.",
+      "table": {
+        "columns": [
+          "Component",
+          "Research area",
+          "Evidence type",
+          "Important limitation"
+        ],
+        "rows": [
+          [
+            "KPV",
+            "Inflammatory signaling; intestinal inflammation models",
+            "In vitro cell lines; rodent colitis models",
+            "No standalone human efficacy trial identified; findings do not establish an effect in people"
+          ],
+          [
+            "GHK-Cu",
+            "Extracellular matrix, fibroblast and gene-expression research",
+            "In vitro and animal models; human studies of specific topical formulations",
+            "Topical-product findings do not transfer to a research-grade powder or other routes"
+          ],
+          [
+            "BPC-157",
+            "Tendon, gastrointestinal and vascular injury research",
+            "Rodent injury models; primary cell culture",
+            "No completed human efficacy trial identified; animal findings do not establish human outcomes"
+          ],
+          [
+            "TB-500 / thymosin beta-4",
+            "Actin-mediated cell migration; corneal epithelial healing",
+            "Cell and animal models for the fragment; randomized human ophthalmic trials for the full-length protein",
+            "Full-length human ophthalmic data does not establish outcomes for the short fragment or for other indications"
+          ]
+        ]
+      },
+      "closing": "None of these studies tested four peptides together, and none of the findings above should be read as a claim about the KLOW blend."
+    },
+    {
+      "id": "combination-evidence",
+      "h2": "What Is Known About the KLOW Combination?",
+      "aeo_answer_first": "No direct controlled study of the KLOW combination was identified in the literature reviewed for this page.",
+      "body": [
+        "The peer-reviewed record that exists belongs to the individual component peptides, tested individually and in their own models. Individual-component studies do not establish combination efficacy; a study of one peptide answers a question about that peptide, not about a four-peptide mixture.",
+        "A claim of synergy or additive effect is a specific, measurable finding, and demonstrating it requires a direct experimental comparison of the combination against its components. No such study was identified here, so this page does not speculate about whether the components are complementary, and does not rely on vendor descriptions as evidence.",
+        "The published evidence discussed on this page belongs to the individual component peptides and should not be interpreted as evidence that the combination produces the same outcomes together."
+      ]
+    },
+    {
+      "id": "klow-vs-glow",
+      "h2": "KLOW vs GLOW",
+      "lead": "The comparison is a strong search pattern, so it is worth answering directly and concisely.",
+      "body": [
+        "KLOW and GLOW are market blend names whose compositions can vary by supplier. Market usage often distinguishes KLOW by the addition of KPV, but this should not be treated as a universal or Veracue-confirmed formulation. At the time of writing, no GLOW product appears in the live Veracue catalog, so GLOW is described here only as a market naming convention.",
+        "Neither blend has a direct controlled combination study behind it, so neither can be described as having stronger evidence, and neither is presented as clinically proven."
+      ],
+      "implementation_note": "If a Veracue GLOW page goes live with a documented formulation, update this section with the verified details and add the internal link. Until then, no GLOW route is linked from this page."
+    },
+    {
+      "id": "dosage-intent",
+      "h2": "KLOW Dosage and Dosing Protocol Searches",
+      "aeo_answer_first": "Veracue does not provide human or animal dosing, administration, reconstitution or cycle protocols for KLOW because the material is Research Use Only.",
+      "body": [
+        "Searches for KLOW dosage and dosing protocols are common, and the honest answer is that no such figure exists to give. Experimental conditions reported for individual component peptides are study-specific — a cell-culture concentration, a mouse colitis protocol, a topical ophthalmic formulation — and are not instructions for using a KLOW product.",
+        "Protocol figures circulating for KLOW online come from vendor pages and community sources rather than published research, and inherit the same problem this page addresses throughout: they assume a composition that varies between suppliers and a combination behavior that has not been studied."
+      ],
+      "prohibited_content_confirmation": "This section contains no daily dose, dose per kilogram, injection schedule, reconstitution solvent, concentration, cycle or stack protocol."
+    },
+    {
+      "id": "researcher-considerations",
+      "h2": "Researcher Considerations When Evaluating KLOW",
+      "lead": "Ten practical issues come up repeatedly when evaluating a multi-component research material, along with what to do about each.",
+      "items": [
+        {
+          "problem": "KLOW is a blend name, not one molecular entity.",
+          "solution": "Anchor any record of the material to the confirmed component list and lot documentation, not to the four-letter name alone."
+        },
+        {
+          "problem": "Supplier compositions can differ under the same blend name.",
+          "solution": "Use only first-party composition data from the supplier who filled the vial, and record which fields remain undocumented."
+        },
+        {
+          "problem": "Component evidence is not combination evidence.",
+          "solution": "Keep the two categories in separate records. A citation supporting one peptide in one model supports that peptide in that model, and nothing about a mixture."
+        },
+        {
+          "problem": "External formulations circulating in the market should not be treated as Veracue specifications.",
+          "solution": "Request the composition directly from Veracue's own documentation rather than inferring it from another supplier's listing."
+        },
+        {
+          "problem": "The four components have different analytical properties.",
+          "solution": "Identify each peptide separately. A small tripeptide, a copper complex, a mid-sized peptide and a much larger protein fragment do not share analytical behavior."
+        },
+        {
+          "problem": "TB-500 terminology can vary between suppliers.",
+          "solution": "Confirm the exact species from Veracue's own product documentation or lot-specific analytical record rather than assuming it from the label."
+        },
+        {
+          "problem": "GHK-Cu is a peptide-copper complex and should be identified accordingly.",
+          "solution": "Keep its identity separate from unmodified peptides in the blend, and confirm copper content as its own measurement rather than assuming it from the peptide result alone."
+        },
+        {
+          "problem": "Evidence maturity differs between components.",
+          "solution": "Label evidence by component and by study type rather than treating the blend as carrying one uniform evidence level."
+        },
+        {
+          "problem": "Dosage searches can be confused with research protocols.",
+          "solution": "Report study conditions as study conditions, tied to their original model, rather than translating them into product instructions."
+        },
+        {
+          "problem": "A blend COA needs component-level traceability.",
+          "solution": "Expect a report that identifies each component, names the method used for each, and ties the whole record to a lot number matching the vial."
+        }
+      ]
+    },
+    {
+      "id": "evidence-limits",
+      "h2": "Evidence Limits",
+      "bullets": [
+        "No direct controlled study of the KLOW combination was identified.",
+        "No human clinical evidence exists for the combination, and component-level human data do not substitute for it.",
+        "No synergy, additive effect or superiority over individual peptides has been demonstrated for the combination.",
+        "Component findings are tied to their models, routes and formulations, and do not transfer between them.",
+        "Nothing on this page establishes safety for human or animal exposure by any route."
+      ]
+    },
+    {
+      "id": "safety",
+      "h2": "KLOW Safety and Evidence Limitations",
+      "body": [
+        "No direct human safety profile for the KLOW combination was identified in the literature reviewed for this page. That is an absence of evidence, not a finding of safety.",
+        "Component-level safety observations remain specific to the component, formulation, route and population studied, and should not be transferred automatically to the blend. Handle the material as a laboratory chemical, with appropriate personal protective equipment and institutional safety practice."
+      ],
+      "prohibited_content_confirmation": "No claim that KLOW is safe, no claim that it lacks side effects, no KLOW adverse-event table built from unrelated component studies, and no safety labeling transferred from approved drugs."
+    },
+    {
+      "id": "product-specifications",
+      "h2": "Veracue KLOW Product Specifications",
+      "known_table": {
+        "columns": [
+          "Field",
+          "Value"
+        ],
+        "rows": [
+          [
+            "Product name",
+            "KLOW Peptide Blend"
+          ],
+          [
+            "Product type",
+            "Multi-component research blend"
+          ],
+          [
+            "Intended use",
+            "Research Use Only — laboratory research; not for human or veterinary use"
+          ],
+          [
+            "Supplier",
+            "Veracue"
+          ]
+        ]
+      },
+      "unspecified_table": {
+        "columns": [
+          "Field",
+          "Status"
+        ],
+        "missing_value": "Not publicly specified by Veracue at the time of publication.",
+        "fields": [
+          "Category",
+          "Total peptide amount",
+          "Individual component identities",
+          "Individual component amounts",
+          "Component ratio",
+          "Physical form",
+          "Salt or counterion",
+          "Buffer or excipients",
+          "Purity (blend-level or component-level)",
+          "Analytical methods",
+          "Lot number",
+          "Testing laboratory",
+          "Test date",
+          "Storage conditions",
+          "Shipping conditions",
+          "SKU",
+          "Price",
+          "Availability"
+        ]
+      },
+      "critical_rule": "No field above may be populated from another vendor's listing. Each is filled only from Veracue formulation records or lot documentation."
+    },
+    {
+      "id": "coa",
+      "h2": "KLOW COA and Analytical Documentation",
+      "lead": "A certificate of analysis for a blend has to answer more questions than a certificate for a single peptide, because one headline number cannot describe four molecules.",
+      "body": [
+        "A blend COA should name the lot, identify every component, and make clear which component each analytical result refers to. Identity and purity are different measurements produced by different methods, and both should be named rather than implied.",
+        "No KLOW-specific Veracue COA is publicly available at the time of writing. Veracue's certificate archive currently shows no reports and no KLOW lot record."
+      ],
+      "expected_elements_table": {
+        "columns": [
+          "COA element",
+          "What it tells you",
+          "What it does not establish"
+        ],
+        "rows": [
+          [
+            "Lot or batch number",
+            "Links the report to one production lot",
+            "Anything at all unless it matches the vial label"
+          ],
+          [
+            "Component identities",
+            "Which molecules the report claims are present",
+            "That each is present at the stated amount"
+          ],
+          [
+            "Component-level results",
+            "How each individual component performed under test",
+            "Blend-level behavior in solution"
+          ],
+          [
+            "Named analytical methods",
+            "How each result was produced and under what conditions",
+            "Comparability with a result produced under different conditions"
+          ],
+          [
+            "HPLC purity",
+            "Share of detected signal in the stated peak or peaks",
+            "Identity, component amounts, sterility or biological activity"
+          ],
+          [
+            "Mass spectrometry / identity data",
+            "Whether observed masses match expected species",
+            "Purity, or how much material is present"
+          ],
+          [
+            "Purity scope stated (blend vs. component)",
+            "Whether the number covers the mixture or one ingredient",
+            "Component-level certainty, if the figure is blend-level"
+          ],
+          [
+            "Testing laboratory and date",
+            "Who tested the lot and when",
+            "Independence, unless the relationship is disclosed"
+          ],
+          [
+            "Formulation and net content",
+            "What else is in the vial and how much material it holds",
+            "How that content divides across components"
+          ]
+        ]
+      },
+      "critical_questions": [
+        "Does the COA identify every component in the blend?",
+        "Does the lot number match the vial in hand?",
+        "Are the analytical methods named for each result?",
+        "Is the reported purity blend-level or component-level, and does the report say which?",
+        "Are the testing laboratory and test date disclosed?"
+      ],
+      "boundary_statement": "A generic COA for one component does not prove the identity, composition or purity of the final four-component blend.",
+      "internal_link": "/certificates"
+    },
+    {
+      "id": "storage-handling",
+      "h2": "Storage and Handling",
+      "body": "Follow the storage conditions stated on the applicable Veracue lot documentation and product label. Do not infer blend-specific handling parameters from unrelated component suppliers.",
+      "excluded": [
+        "competitor temperatures",
+        "freeze-thaw cycles",
+        "reconstitution solvents",
+        "carrier proteins",
+        "buffer recipes"
+      ]
+    },
+    {
+      "id": "regulatory",
+      "h2": "Regulatory Status",
+      "body": "KLOW is not presented by Veracue as an FDA-approved drug, and no KLOW-specific FDA drug approval was identified. Regulatory or compounding records concerning individual component substances apply to those substances in their specific regulatory contexts and do not transfer automatically to the KLOW blend.",
+      "source_note": "For current component-level regulatory context, refer to FDA's published bulk drug substances materials at fda.gov."
+    },
+    {
+      "id": "ruo-notice",
+      "h2": "Research Use Only",
+      "body": "KLOW supplied by Veracue is intended solely for laboratory research. It is not a drug, a dietary supplement, a cosmetic or a food. It is not intended to diagnose, treat, cure or prevent any disease, and it must not be administered to humans or animals. The scientific information on this page describes published laboratory studies and is not medical advice, a statement of efficacy, or a statement of safety. Purchasers are responsible for using the material lawfully and within an appropriate research setting.",
+      "internal_link": "/medical-disclaimer"
+    }
+  ],
+  "faq": [
+    {
+      "question": "What is KLOW peptide?",
+      "answer": "KLOW is a blend and product designation used in the research-peptide market, not a single peptide molecule or a defined amino acid sequence. Listings using the name commonly describe a combination of separate peptides supplied in one vial, each of which keeps its own molecular identity."
+    },
+    {
+      "question": "Is KLOW a single peptide?",
+      "answer": "No. KLOW names a mixture rather than one molecule, so it has no single sequence, formula or molecular weight. Each component in the blend remains a distinct molecular species."
+    },
+    {
+      "question": "What is in KLOW?",
+      "answer": "Veracue has not publicly specified the composition of its KLOW material at the time of publication, so the components and amounts for this product are not stated here rather than assumed from other suppliers."
+    },
+    {
+      "question": "Is the KLOW composition standardized?",
+      "answer": "No authoritative standardized KLOW composition was identified in the sources reviewed for this page. Supplier compositions can differ, so only a specific supplier's own documentation describes a specific vial."
+    },
+    {
+      "question": "What research has been conducted on KLOW?",
+      "answer": "The published research belongs to the individual component peptides rather than to the blend. No direct controlled study of the KLOW combination was identified in the literature reviewed for this page."
+    },
+    {
+      "question": "Have KLOW components been studied together?",
+      "answer": "No direct controlled combination study was identified. Demonstrating a combination effect would require a study comparing the blend against its components directly."
+    },
+    {
+      "question": "What are KLOW peptide benefits?",
+      "answer": "No benefits are established for the blend. What exists is component-level research in defined models — inflammatory signaling work, matrix and skin research, injury-model research and cell-migration research — and those findings apply to the component and model studied, not to the combination."
+    },
+    {
+      "question": "How is KLOW different from GLOW?",
+      "answer": "KLOW and GLOW are market blend names whose compositions can vary by supplier. Market usage often distinguishes KLOW by the addition of KPV, but this is not a universal or Veracue-confirmed formulation, and neither blend has direct combination evidence."
+    },
+    {
+      "question": "Does KLOW have human clinical evidence?",
+      "answer": "No human clinical evidence for the KLOW combination was identified. Human data that exist for an individual component apply to that component and the formulation and route studied, and do not transfer to the blend."
+    },
+    {
+      "question": "What are KLOW peptide side effects?",
+      "answer": "No direct human safety data for the KLOW combination were identified, which is an absence of evidence rather than a finding of safety. A KLOW-specific adverse-effect profile should not be inferred from the separate literature on its components."
+    },
+    {
+      "question": "What should a KLOW COA contain?",
+      "answer": "A blend certificate should state the lot number, identify every component, name the analytical method behind each result, make clear whether a reported purity is blend-level or component-level, and disclose the testing laboratory and test date. A generic COA for one component does not prove the identity or purity of the final blend."
+    },
+    {
+      "question": "Does Veracue provide KLOW dosage information?",
+      "answer": "No. KLOW is supplied for laboratory research only, and Veracue does not provide human or animal dosing, administration, reconstitution or cycle information."
+    }
+  ],
+  "references": [
+    {
+      "id": 1,
+      "citation": "Dalmasso G, Charrier-Hisamuddin L, Nguyen HTT, Yan Y, Sitaraman S, Merlin D. PepT1-mediated tripeptide KPV uptake reduces intestinal inflammation. Gastroenterology. 2008;134(1):166-178.",
+      "identifier": "PMID 18061177"
+    },
+    {
+      "id": 2,
+      "citation": "Xiao B, Xu Z, Viennois E, et al. Orally targeted delivery of tripeptide KPV via hyaluronic acid-functionalized nanoparticles efficiently alleviates ulcerative colitis. Mol Ther. 2017;25(7):1628-1640."
+    },
+    {
+      "id": 3,
+      "citation": "PubChem Compound Summary CID 125672 (Lys-Pro-Val). National Library of Medicine."
+    },
+    {
+      "id": 4,
+      "citation": "Pickart L, Thaler MM. Tripeptide in human serum which prolongs survival of normal liver cells and stimulates growth in neoplastic liver. Nat New Biol. 1973;243(124):85-87."
+    },
+    {
+      "id": 5,
+      "citation": "Pickart L, Vasquez-Soltero JM, Margolina A. GHK peptide as a natural modulator of multiple cellular pathways in skin regeneration. Biomed Res Int. 2015;2015:648108."
+    },
+    {
+      "id": 6,
+      "citation": "Chang CH, Tsai WC, Lin MS, Hsu YH, Pang JHS. The promoting effect of pentadecapeptide BPC 157 on tendon healing involves tendon outgrowth, cell survival, and cell migration. J Appl Physiol. 2011;110(3):774-780.",
+      "identifier": "PMID 21030672"
+    },
+    {
+      "id": 7,
+      "citation": "PubChem Compound Summary CID 9941957 (BPC-157). National Library of Medicine."
+    },
+    {
+      "id": 8,
+      "citation": "Sosne G, Kleinman HK, et al. 0.1% RGN-259 (thymosin beta-4) ophthalmic solution promotes healing and improves comfort in neurotrophic keratopathy patients in a randomized, placebo-controlled, double-masked Phase III clinical trial. Int J Mol Sci. 2023;24(1):554."
+    },
+    {
+      "id": 9,
+      "citation": "U.S. Food and Drug Administration. Certain Bulk Drug Substances for Use in Compounding That May Present Significant Safety Risks. fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"
+    }
+  ],
+  "internal_links": {
+    "verified_live": [
+      {
+        "label": "Shop all research peptides",
+        "url": "/shop",
+        "context": "Catalog cross-link in the related-products area"
+      },
+      {
+        "label": "Certificates of analysis",
+        "url": "/certificates",
+        "context": "Linked from the COA section"
+      },
+      {
+        "label": "Help and FAQ",
+        "url": "/faq",
+        "context": "Linked below the page FAQ"
+      },
+      {
+        "label": "Contact us",
+        "url": "/contact-us",
+        "context": "Linked for lot documentation requests"
+      },
+      {
+        "label": "Medical disclaimer",
+        "url": "/medical-disclaimer",
+        "context": "Linked from the Research Use Only notice"
+      },
+      {
+        "label": "AHK-Cu (Copper Tripeptide-3)",
+        "url": "/product/ahk-cu",
+        "context": "Related product — live in catalog"
+      },
+      {
+        "label": "Selank",
+        "url": "/product/selank",
+        "context": "Related product — live in catalog"
+      },
+      {
+        "label": "NAD+",
+        "url": "/product/nad-plus",
+        "context": "Related product — live in catalog"
+      }
+    ],
+    "do_not_link_until_verified": [
+      {
+        "url": "/product/glow",
+        "reason": "No GLOW record in the live catalog"
+      },
+      {
+        "url": "/product/kpv",
+        "reason": "Not present in the live catalog listing"
+      },
+      {
+        "url": "/product/ghk-cu",
+        "reason": "Appears in homepage carousel but not in the live catalog listing; confirm before linking"
+      },
+      {
+        "url": "/product/bpc-157",
+        "reason": "Appears in homepage carousel but not in the live catalog listing; confirm before linking"
+      },
+      {
+        "url": "/product/tb-500",
+        "reason": "Appears in homepage carousel but not in the live catalog listing; confirm before linking"
+      }
+    ],
+    "excluded_by_choice": [
+      {
+        "url": "/peptide-calculator",
+        "reason": "A reconstitution calculator sits awkwardly beside a section stating that no reconstitution or dosing information is provided."
+      }
+    ]
+  },
+  "structured_data": {
+    "note": "One coherent graph. No Offer, price, SKU, GTIN, MPN, image, review or aggregateRating, because no first-party commerce data or verified product image exists. No standardized composition is claimed in schema. FAQ entries match the visible FAQ text exactly.",
+    "json_ld": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://veracue-peptides.vercel.app/product/klow#webpage",
+          "url": "https://veracue-peptides.vercel.app/product/klow",
+          "name": "KLOW Research Peptide (Multi-Peptide Blend) | Veracue",
+          "description": "KLOW, a multi-peptide research blend name, for lab research: what KLOW is, composition status, component evidence, KLOW vs GLOW, and COA checks.",
+          "inLanguage": "en-US",
+          "isPartOf": {
+            "@id": "https://veracue-peptides.vercel.app/#website"
+          },
+          "breadcrumb": {
+            "@id": "https://veracue-peptides.vercel.app/product/klow#breadcrumb"
+          },
+          "about": {
+            "@id": "https://veracue-peptides.vercel.app/product/klow#product"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://veracue-peptides.vercel.app/product/klow#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://veracue-peptides.vercel.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shop",
+              "item": "https://veracue-peptides.vercel.app/shop"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "KLOW Peptide Blend",
+              "item": "https://veracue-peptides.vercel.app/product/klow"
+            }
+          ]
+        },
+        {
+          "@type": "Product",
+          "@id": "https://veracue-peptides.vercel.app/product/klow#product",
+          "name": "KLOW Peptide Blend",
+          "brand": {
+            "@type": "Brand",
+            "name": "Veracue"
+          },
+          "description": "KLOW is a multi-component research blend designation rather than a single peptide molecule. Supplied by Veracue for laboratory research use only. Not for human or veterinary use. The composition of this material has not been publicly specified at the time of publication, and no direct controlled study of the KLOW combination was identified in the literature reviewed for this page.",
+          "url": "https://veracue-peptides.vercel.app/product/klow",
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "Intended use",
+              "value": "Research Use Only — not for human or veterinary use"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Material type",
+              "value": "Multi-component research blend"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Composition",
+              "value": "Not publicly specified by Veracue at the time of publication"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Direct combination evidence",
+              "value": "None identified"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://veracue-peptides.vercel.app/product/klow#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is KLOW peptide?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "KLOW is a blend and product designation used in the research-peptide market, not a single peptide molecule or a defined amino acid sequence. Listings using the name commonly describe a combination of separate peptides supplied in one vial, each of which keeps its own molecular identity."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is KLOW a single peptide?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. KLOW names a mixture rather than one molecule, so it has no single sequence, formula or molecular weight. Each component in the blend remains a distinct molecular species."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is in KLOW?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Veracue has not publicly specified the composition of its KLOW material at the time of publication, so the components and amounts for this product are not stated here rather than assumed from other suppliers."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the KLOW composition standardized?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No authoritative standardized KLOW composition was identified in the sources reviewed for this page. Supplier compositions can differ, so only a specific supplier's own documentation describes a specific vial."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What research has been conducted on KLOW?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The published research belongs to the individual component peptides rather than to the blend. No direct controlled study of the KLOW combination was identified in the literature reviewed for this page."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Have KLOW components been studied together?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No direct controlled combination study was identified. Demonstrating a combination effect would require a study comparing the blend against its components directly."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are KLOW peptide benefits?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No benefits are established for the blend. What exists is component-level research in defined models — inflammatory signaling work, matrix and skin research, injury-model research and cell-migration research — and those findings apply to the component and model studied, not to the combination."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is KLOW different from GLOW?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "KLOW and GLOW are market blend names whose compositions can vary by supplier. Market usage often distinguishes KLOW by the addition of KPV, but this is not a universal or Veracue-confirmed formulation, and neither blend has direct combination evidence."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does KLOW have human clinical evidence?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No human clinical evidence for the KLOW combination was identified. Human data that exist for an individual component apply to that component and the formulation and route studied, and do not transfer to the blend."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are KLOW peptide side effects?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No direct human safety data for the KLOW combination were identified, which is an absence of evidence rather than a finding of safety. A KLOW-specific adverse-effect profile should not be inferred from the separate literature on its components."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What should a KLOW COA contain?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A blend certificate should state the lot number, identify every component, name the analytical method behind each result, make clear whether a reported purity is blend-level or component-level, and disclose the testing laboratory and test date. A generic COA for one component does not prove the identity or purity of the final blend."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Veracue provide KLOW dosage information?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. KLOW is supplied for laboratory research only, and Veracue does not provide human or animal dosing, administration, reconstitution or cycle information."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "validation_checklist": {
+    "klow_identified_as_blend_not_molecule": true,
+    "no_unverified_veracue_composition": true,
+    "no_exact_competitor_formulations_in_visible_copy": true,
+    "no_competitor_formulation_in_faq": true,
+    "no_direct_combination_study_claimed": true,
+    "no_synergy_claim": true,
+    "component_evidence_separate_from_blend_evidence": true,
+    "klow_vs_glow_concise_and_market_terminology_only": true,
+    "no_fda_committee_vote_narrative": true,
+    "regulatory_statement_concise_and_primary_source_based": true,
+    "no_dosing_or_reconstitution_instructions": true,
+    "no_fabricated_coa_purity_lot_or_formulation": true,
+    "exactly_ten_researcher_problem_solution_items": true,
+    "faq_matches_faqpage_schema_exactly": true,
+    "product_schema_has_no_offers_images_ratings_or_composition_claim": true,
+    "page_is_strictly_ruo": true,
+    "category_marked_pending_not_inferred": true
+  }
+}

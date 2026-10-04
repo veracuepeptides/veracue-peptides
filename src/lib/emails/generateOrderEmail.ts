@@ -1,7 +1,7 @@
 import { escapeHtml } from './escapeHtml'
+import { ZELLE_RECIPIENT_PHONE } from '@/lib/payments/zelle'
 import { BRAND, shellOpen, shellClose, pillButton, wave, statusPill, iconBadge, type IconName } from './emailShell'
 
-const ZELLE_RECIPIENT_PHONE = '555-010-0199' // TODO: swap for the real Zelle recipient number before launch
 const ZELLE_QR_URL = 'https://pub-ac7469377283406ab723756fc506e004.r2.dev/assets/zelle-qr.webp'
 
 export async function generateOrderInvoiceHtml(order: any, payload?: any, customNote?: string, statusContext: 'success' | 'failed' | 'cancelled' | 'refunded' = 'success'): Promise<string> {

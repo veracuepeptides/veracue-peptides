@@ -71,7 +71,7 @@ export async function GET(req: Request) {
         data: {
           code: couponCode,
           type: 'percentage',
-          value: 30, // 30% discount
+          value: 15, // 15% discount
           usageLimit: 1, // One-time use — a repeat request generates its own separate coupon
           lockedEmails: [{ email }],
           appliesTo: 'all',
@@ -103,7 +103,7 @@ export async function GET(req: Request) {
       return new NextResponse(`
         <div style="font-family: sans-serif; padding: 40px; text-align: center;">
           <h2 style="color: #10b981;">Verification Approved</h2>
-          <p>The 30% coupon (<strong>${couponCode}</strong>) has been generated and emailed to ${email}.</p>
+          <p>The 15% coupon (<strong>${couponCode}</strong>) has been generated and emailed to ${email}.</p>
           <p>You may now close this window.</p>
         </div>
       `, { headers: { 'Content-Type': 'text/html' } });

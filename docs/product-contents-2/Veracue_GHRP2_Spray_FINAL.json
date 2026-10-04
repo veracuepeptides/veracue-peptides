@@ -1,0 +1,866 @@
+{
+  "meta": {
+    "deliverable": "Veracue GHRP-2 Spray product page + SEO/GEO/AEO package",
+    "client": "Veracue Peptides",
+    "prepared_by": "Belk Digital",
+    "updated": "2026-09-30",
+    "recommended_slug": "/product/ghrp-2-spray",
+    "status": "Pre-launch content package. No public GHRP-2 Spray product record or GHRP-2 COA was found on the reviewed Veracue site at the time of this revision.",
+    "primary_keyword": "GHRP-2 peptide",
+    "primary_entity": "Veracue GHRP-2 Spray",
+    "ruo_position": "Research Use Only — not for human or veterinary use.",
+    "revision_note": "Merged Belk Digital audit-pass corrections (PubChem CID fix, added citations) with additional integration of the Tanaka 2014 intranasal-spray RCT and Pihoker 1995 diagnostic study into body copy; all claims independently re-verified against PubChem and PubMed."
+  },
+  "seo": {
+    "title": "GHRP-2 Research Peptide Spray | Pralmorelin | Veracue",
+    "meta_description": "GHRP-2 (Pralmorelin) spray-format research listing from Veracue. Identity, GHRP-2 vs GHRP-6, COA guidance and RUO documentation.",
+    "h1": "GHRP-2 Spray",
+    "subtitle": "Pralmorelin (KP-102) · Synthetic hexapeptide for growth hormone secretagogue research",
+    "canonical": "https://veracue-peptides.vercel.app/product/ghrp-2-spray",
+    "open_graph_title": "GHRP-2 Spray | Pralmorelin Research Information | Veracue",
+    "open_graph_description": "Research-focused information on GHRP-2 identity, pharmacology, analytical characterization, COA documentation and Veracue's spray-format listing.",
+    "primary_keyword": "GHRP-2 peptide",
+    "secondary_keywords": [
+      "GHRP-2",
+      "GHRP 2 peptide",
+      "what is GHRP-2",
+      "what does GHRP-2 do",
+      "GHRP-2 research",
+      "GHRP-2 spray",
+      "GHRP-2 peptide research",
+      "GHRP-2 vs GHRP-6",
+      "GHRP-2 side effects",
+      "GHRP-2 dosage",
+      "GHRP-2 protocol",
+      "GHRP-2 COA",
+      "GHRP-2 purity",
+      "GHRP-2 mass spectrometry",
+      "GHRP-2 research use only"
+    ],
+    "semantic_entities": [
+      "growth hormone secretagogue",
+      "growth hormone-releasing peptide-2",
+      "Pralmorelin",
+      "KP-102",
+      "ghrelin receptor",
+      "growth hormone secretagogue receptor",
+      "GHS-R",
+      "GHSR",
+      "HPLC",
+      "mass spectrometry",
+      "Certificate of Analysis",
+      "lot traceability",
+      "analytical verification"
+    ]
+  },
+  "current_site_verification": {
+    "site": "https://veracue-peptides.vercel.app/",
+    "reviewed_pages": [
+      "https://veracue-peptides.vercel.app/shop",
+      "https://veracue-peptides.vercel.app/certificates",
+      "https://veracue-peptides.vercel.app/about-us",
+      "https://veracue-peptides.vercel.app/contact-us"
+    ],
+    "findings": [
+      "The current shop has a Growth Hormone Secretagogues category, but the reviewed catalog does not show a GHRP-2 or GHRP-2 Spray product.",
+      "The Certificates page currently displays 0 reports available and states that batch-specific COAs are being added.",
+      "The site-wide footer positions products as research/laboratory materials and states they are not for human or veterinary use, ingestion, injection, or administration.",
+      "The live site uses /about-us and /contact-us rather than /about and /contact.",
+      "Use the live category URL from the current site's category control rather than inventing a route. If the category query URL is implemented as a query parameter, confirm the exact generated URL in the front end before deployment.",
+      "Do not imply that a GHRP-2 COA, purity result, SKU, price, stock status, concentration, spray volume or formulation currently exists unless first-party product documentation is added."
+    ]
+  },
+  "reference_chemistry": {
+    "compound": "GHRP-2",
+    "preferred_name": "Pralmorelin",
+    "development_code": "KP-102",
+    "other_verified_synonym": "GPA-748",
+    "classification": "Synthetic hexapeptide; growth hormone secretagogue; ghrelin receptor (GHS-R) agonist",
+    "pubchem_cid": 6918245,
+    "cas": "158861-67-7",
+    "formula": "C45H55N9O6",
+    "average_molecular_weight_g_mol": 818.0,
+    "exact_mass_da": 817.42753051,
+    "pubchem_condensed_structure": "H-D-Ala-D-2Nal-Ala-Trp-D-Phe-Lys-NH2",
+    "pubchem_sequence_shorthand": "AXAWFK",
+    "chemical_form_note": "The PubChem parent record represents the neutral parent molecule. Commercial lots may be supplied as a salt; the product-specific chemical form must be taken from the lot documentation."
+  },
+  "product_positioning": {
+    "eyebrow": "Research Use Only",
+    "category_label": "Growth Hormone Secretagogues",
+    "hero_h1": "GHRP-2 Spray",
+    "hero_subtitle": "Pralmorelin (KP-102) · Synthetic hexapeptide for growth hormone secretagogue research",
+    "hero_intro": "GHRP-2, also known as Pralmorelin and KP-102, is a synthetic hexapeptide studied for its activity at the growth hormone secretagogue receptor (GHS-R). This page separates the well-defined chemistry and research literature of GHRP-2 from the formulation-specific details of Veracue's spray-format listing. Where Veracue has not published a product-specific value, the page does not infer one from the molecule's identity or from another supplier's formulation.",
+    "ruo_notice": "Research Use Only — not for human or veterinary use. This product page does not provide dosing, administration, reconstitution, dilution, or treatment instructions.",
+    "ctas": [
+      "Review Research Specifications",
+      "View COA / Product Documentation",
+      "Explore Growth Hormone Secretagogues"
+    ]
+  },
+  "customer_facing_product_copy": [
+    {
+      "id": "overview",
+      "heading": "What Is GHRP-2?",
+      "copy": "GHRP-2 is a synthetic six-residue peptide, also known as Pralmorelin and KP-102. It belongs to the growth hormone secretagogue family and acts at the ghrelin receptor, also called the growth hormone secretagogue receptor (GHS-R). PubChem lists the parent molecule as C45H55N9O6 with an average molecular weight of 818.0 g/mol and exact mass of 817.42753051 Da. Its structural notation is H-D-Ala-D-2Nal-Ala-Trp-D-Phe-Lys-NH2, reflecting the modified residues that distinguish GHRP-2 from related peptides. GHRP-2 has a long research history in endocrine pharmacology, including studies of growth hormone release, ghrelin-receptor signaling and provocative testing."
+    },
+    {
+      "id": "what-does-it-do",
+      "heading": "What Does GHRP-2 Do?",
+      "copy": "The central pharmacological question around GHRP-2 is its interaction with GHS-R. Experimental work has shown that GHRP-2 can stimulate growth hormone secretion through this receptor pathway, with pituitary and hypothalamic components contributing to the response. Human studies have also investigated its effects on appetite and endocrine responses under controlled experimental conditions. Those findings describe the molecule under defined study conditions; they do not establish what a particular Veracue spray formulation will do in a person.",
+      "evidence_levels": [
+        {
+          "level": "Molecular pharmacology",
+          "answer": "GHRP-2 is classified as a GHS-R agonist and ghrelin-mimetic research compound."
+        },
+        {
+          "level": "Human endocrine research",
+          "answer": "Clinical studies have measured growth hormone responses to GHRP-2 in controlled experimental and diagnostic settings."
+        },
+        {
+          "level": "Human appetite research",
+          "answer": "A controlled study in healthy men reported increased food intake during acute GHRP-2 infusion alongside increased GH."
+        },
+        {
+          "level": "Research interpretation",
+          "answer": "The route, exposure, formulation and study population used in a published experiment cannot be assumed to match a commercial spray."
+        }
+      ]
+    },
+    {
+      "id": "research-context",
+      "heading": "GHRP-2 Research Context",
+      "copy": "Researchers have used GHRP-2 to investigate growth hormone secretagogue pharmacology, GHS-R signaling, pituitary physiology and the interaction between ghrelin-related signaling and endocrine responses. It has also been studied as a provocative stimulus in growth-hormone testing. Historical human research includes both intravenous and intranasal formulations, which is useful scientific context for the molecule but does not establish the route, concentration or performance characteristics of Veracue's product."
+    },
+    {
+      "id": "spray-vs-molecule",
+      "heading": "GHRP-2 Spray: Molecule Identity vs. Product Formulation",
+      "copy": "GHRP-2 identifies a specific molecule. GHRP-2 Spray identifies a product format. Those terms should not be treated as interchangeable specifications. The molecule's sequence, formula and reference mass do not tell a researcher the concentration in a bottle, amount delivered per actuation, vehicle, preservative system, route, pH, stability profile or net peptide content of a commercial spray. Those details belong to the first-party product record and the applicable lot documentation. Historical published research does include specific intranasal GHRP-2 spray formulations used under controlled clinical-trial conditions (Tanaka et al., 2014, DOI: 10.1297/cpe.23.107; Pihoker et al., 1995, DOI: 10.1210/jcem.80.10.7559885). That research confirms an intranasal spray route of GHRP-2 has been studied and characterized in the literature — it does not confirm the route, concentration, or formulation of Veracue's own spray-format listing, which must be documented separately from any published trial material."
+    },
+    {
+      "id": "specifications",
+      "heading": "GHRP-2 Research Specifications",
+      "table": [
+        [
+          "Specification",
+          "Reference chemistry",
+          "Veracue product status"
+        ],
+        [
+          "Compound",
+          "GHRP-2 / Pralmorelin",
+          "Planned product listing; verify when live"
+        ],
+        [
+          "Development code",
+          "KP-102",
+          "Reference identity"
+        ],
+        [
+          "Alternate synonym",
+          "GPA-748",
+          "Historical/reference synonym"
+        ],
+        [
+          "Class",
+          "Synthetic hexapeptide; GHS-R agonist",
+          "Reference identity"
+        ],
+        [
+          "Structural notation",
+          "H-D-Ala-D-2Nal-Ala-Trp-D-Phe-Lys-NH2",
+          "Must match product documentation"
+        ],
+        [
+          "Formula",
+          "C45H55N9O6",
+          "Reference chemistry"
+        ],
+        [
+          "Average molecular weight",
+          "818.0 g/mol",
+          "Reference chemistry"
+        ],
+        [
+          "Exact mass",
+          "817.42753051 Da",
+          "Reference chemistry"
+        ],
+        [
+          "CAS",
+          "158861-67-7",
+          "Reference identifier"
+        ],
+        [
+          "PubChem CID",
+          "6918245",
+          "Reference identifier"
+        ],
+        [
+          "Spray concentration",
+          "Not a molecule-level property",
+          "Not publicly specified on current Veracue product information."
+        ],
+        [
+          "Amount per actuation",
+          "Not a molecule-level property",
+          "Not publicly specified on current Veracue product information."
+        ],
+        [
+          "Vehicle / excipients",
+          "Product-specific",
+          "Not publicly specified on current Veracue product information."
+        ],
+        [
+          "Route",
+          "Product-specific",
+          "Not publicly specified on current Veracue product information."
+        ],
+        [
+          "Net content",
+          "Product-specific",
+          "Not publicly specified on current Veracue product information."
+        ],
+        [
+          "Lot purity",
+          "Lot-specific analytical result",
+          "Not publicly specified on current Veracue product information."
+        ],
+        [
+          "COA",
+          "Lot-specific document",
+          "Not publicly specified on current Veracue product information."
+        ],
+        [
+          "Storage",
+          "Product/lot-specific",
+          "Not publicly specified on current Veracue product information."
+        ]
+      ]
+    },
+    {
+      "id": "ghrp2-vs-ghrp6",
+      "heading": "GHRP-2 vs GHRP-6",
+      "copy": "GHRP-2 and GHRP-6 belong to the same broad research family and both act at GHS-R, but they are distinct molecules. Their sequences, formulas, molecular weights and identifiers differ, so results and certificates for one should never be substituted for the other.",
+      "table": [
+        [
+          "Attribute",
+          "GHRP-2",
+          "GHRP-6"
+        ],
+        [
+          "Common name",
+          "GHRP-2 / Pralmorelin",
+          "GHRP-6"
+        ],
+        [
+          "Class",
+          "Synthetic hexapeptide",
+          "Synthetic hexapeptide"
+        ],
+        [
+          "Primary receptor context",
+          "GHS-R",
+          "GHS-R"
+        ],
+        [
+          "Formula",
+          "C45H55N9O6",
+          "Verify from authoritative record before publication"
+        ],
+        [
+          "Average mass",
+          "818.0 g/mol",
+          "Verify from authoritative record before publication"
+        ],
+        [
+          "CAS",
+          "158861-67-7",
+          "Verify from authoritative record before publication"
+        ],
+        [
+          "Key distinction",
+          "Contains D-2-naphthylalanine in the published structural notation",
+          "Structurally distinct sequence"
+        ],
+        [
+          "Interpretation",
+          "Separate research compound",
+          "Separate research compound"
+        ]
+      ]
+    },
+    {
+      "id": "related-secretagogues",
+      "heading": "GHRP-2 and Related Secretagogues",
+      "copy": "GHRP-2 is often compared with GHRP-6, ipamorelin, hexarelin, sermorelin and CJC-1295 because they appear in the same research category. They are not interchangeable molecules. GHRP-2 and the other GHRPs are associated with the GHS-R research family, while sermorelin and CJC-1295 are GHRH-receptor ligands. The distinction matters both biologically and analytically."
+    },
+    {
+      "id": "benefits-as-research",
+      "heading": "GHRP-2 “Benefits”: What the Research Actually Shows",
+      "copy": "“Benefits” is a consumer-oriented word; for a research page, the more accurate question is what investigators have observed. Human and preclinical studies have reported endocrine, appetite and diagnostic-test findings under specific conditions. Those findings should stay attached to the model, formulation and exposure that generated them. They are not claims that Veracue's spray produces the same result.",
+      "table": [
+        [
+          "Research question",
+          "Evidence",
+          "Reported finding",
+          "Limitation"
+        ],
+        [
+          "Does GHRP-2 stimulate GH secretion?",
+          "Human endocrine studies",
+          "Controlled studies reported increases in GH after GHRP-2 exposure.",
+          "Study-specific exposure and formulation; not a Veracue product claim."
+        ],
+        [
+          "Does GHRP-2 influence appetite?",
+          "Healthy-adult human study",
+          "Acute GHRP-2 infusion increased food intake in the reported study.",
+          "Small controlled study; not evidence of a product benefit."
+        ],
+        [
+          "Can GHRP-2 be used as a provocative GH stimulus?",
+          "Human diagnostic research",
+          "Studies have evaluated GHRP-2 as a GH stimulation stimulus in diagnostic contexts.",
+          "Diagnostic-test context; not general treatment guidance."
+        ],
+        [
+          "Does GHRP-2 have effects in cell and animal models?",
+          "Preclinical research",
+          "Studies have investigated pituitary signaling and other physiological effects.",
+          "Model-specific findings cannot be transferred directly to people."
+        ],
+        [
+          "Does raising endogenous GH with GHRP-2 promote linear growth in GH-deficient children?",
+          "126-patient double-blind, placebo-controlled RCT, intranasal GHRP-2 spray, 48 weeks",
+          "No significant difference in height SD score or IGF-1 between placebo, low-dose, and high-dose groups despite GH stimulation (Tanaka et al., 2014, DOI: 10.1297/cpe.23.107)",
+          "Directly relevant negative finding: a transient endogenous GH rise from GHRP-2 did not translate into a growth benefit in this trial population; not a Veracue product claim"
+        ]
+      ]
+    },
+    {
+      "id": "side-effects",
+      "heading": "GHRP-2 Side Effects",
+      "copy": "Reported safety findings for GHRP-2 depend on the study population, exposure, route, duration and formulation. Human studies and reviews of growth-hormone secretagogue research describe physiological and endocrine effects under controlled conditions, but a class-level observation is not a product-specific safety profile. Veracue's Research Use Only positioning means this page does not provide personal safety advice or human-use instructions."
+    },
+    {
+      "id": "dosage",
+      "heading": "GHRP-2 Dosage and Protocol Searches",
+      "copy": "Veracue does not provide human dosing, spray counts, daily or weekly quantities, cycles, administration instructions or dosing protocols for this Research Use Only material. Published experimental quantities belong to the study design in which they were used. From a research perspective, the relevant variables are the model, formulation, exposure conditions, analytical identity and lot traceability. This page therefore does not publish a human dosage chart."
+    },
+    {
+      "id": "analytical",
+      "heading": "Analytical Characterization of GHRP-2",
+      "copy": "Analytical verification should distinguish purity from identity. HPLC evaluates chromatographic purity under a specified method, while mass spectrometry compares observed molecular mass with the expected target. For GHRP-2, the PubChem exact mass of the neutral parent is 817.42753051 Da. Because salt or other chemical forms can change the observed mass, the form reported on a lot-specific COA must be considered before comparing a result with the parent-molecule reference value. Intact mass also has limits: a mass match alone does not establish every aspect of sequence integrity or stereochemistry.",
+      "subsections": [
+        {
+          "title": "HPLC",
+          "copy": "Check the chromatographic method, column, mobile phase, gradient, detection wavelength and integration procedure. A headline purity percentage without the method context is difficult to interpret."
+        },
+        {
+          "title": "Mass Spectrometry",
+          "copy": "Check expected mass, observed mass, chemical form and the mass convention used by the laboratory. A spectrum should be tied to the same lot as the reported purity result."
+        },
+        {
+          "title": "Orthogonal Methods",
+          "copy": "Where exact sequence or composition matters, LC-MS/MS or other orthogonal analytical methods can add information beyond HPLC and intact mass."
+        }
+      ]
+    },
+    {
+      "id": "coa",
+      "heading": "GHRP-2 COA Guide",
+      "copy": "A Certificate of Analysis is a lot-specific document. The most useful question is not whether a supplier has a sample certificate, but whether the certificate belongs to the exact lot being researched.",
+      "table": [
+        [
+          "COA element",
+          "What it tells the researcher",
+          "What it does not prove"
+        ],
+        [
+          "Product identity",
+          "What compound the report describes",
+          "Identity without analytical support"
+        ],
+        [
+          "Lot number",
+          "Which production batch was tested",
+          "Anything if it does not match the vial"
+        ],
+        [
+          "HPLC purity",
+          "Chromatographic purity under the named method",
+          "Complete molecular identity"
+        ],
+        [
+          "Mass spectrometry",
+          "Compatibility of observed mass with the target",
+          "Full sequence confirmation or biological activity"
+        ],
+        [
+          "Test laboratory",
+          "Who performed the analysis",
+          "Independence unless separately established"
+        ],
+        [
+          "Test date",
+          "When that lot was analyzed",
+          "Current quality of a different lot"
+        ],
+        [
+          "Chromatogram / spectrum",
+          "Visual support for the reported analysis",
+          "Results for another lot"
+        ]
+      ],
+      "quick_check": [
+        "Match the lot number on the COA to the vial or product record.",
+        "Confirm the compound is GHRP-2 / Pralmorelin, not GHRP-6 or another GHRP.",
+        "Review both HPLC and identity data rather than treating purity alone as proof.",
+        "Check the chemical form before comparing mass values.",
+        "Confirm laboratory name and test date.",
+        "Do not substitute a representative or generic certificate for a lot-specific record."
+      ]
+    },
+    {
+      "id": "storage",
+      "heading": "Storage & Handling",
+      "copy": "Veracue's current public information does not specify GHRP-2 Spray storage conditions. The product page should therefore direct researchers to the actual lot documentation and label rather than inventing a temperature, shelf life or freeze/thaw limit."
+    },
+    {
+      "id": "what-not",
+      "heading": "What GHRP-2 Is Not",
+      "items": [
+        "GHRP-2 is not GHRP-6; they are distinct peptides.",
+        "GHRP-2 is not ipamorelin; ipamorelin is a separate peptide with its own identity and pharmacology.",
+        "GHRP-2 is not sermorelin or CJC-1295; those belong to the GHRH-receptor side of growth-hormone research.",
+        "GHRP-2 Spray is not a standardized formulation category; the word “spray” does not establish route or concentration.",
+        "A GHRP-2 reference molecule is not the same thing as a verified Veracue production lot."
+      ]
+    },
+    {
+      "id": "human-research",
+      "heading": "Human Research on GHRP-2",
+      "copy": "GHRP-2 has a substantial history of human investigation. Studies have examined acute endocrine responses, appetite-related physiology and provocative growth-hormone testing. Historical work has also included intranasal GHRP-2 spray formulations. Those papers are relevant to the scientific history of the molecule, but they do not establish that a current Veracue spray has the same concentration, vehicle, exposure or clinical effect. This page therefore cites human research as scientific context rather than as evidence of performance for the Veracue product. The most directly relevant published trial to a spray-format listing is Tanaka et al. (2014), a 126-patient double-blind, placebo-controlled study of an intranasal GHRP-2 spray in prepubertal children with confirmed growth hormone deficiency: over 48 weeks, low- and high-dose GHRP-2 produced no significant difference in growth rate or IGF-1 versus placebo, despite the expected transient rise in endogenous GH (DOI: 10.1297/cpe.23.107). An earlier diagnostic study (Pihoker et al., 1995, DOI: 10.1210/jcem.80.10.7559885) compared intravenous and intranasal GHRP-2 administration in children being evaluated for GH deficiency and found both routes produced a measurable GH response. Neither study characterizes Veracue's own spray-format material, and Veracue does not cite either as supporting evidence for its product's composition, concentration, or performance."
+    },
+    {
+      "id": "compliance",
+      "heading": "Compliance Notice",
+      "copy": "RESEARCH USE ONLY — NOT FOR HUMAN OR VETERINARY USE. GHRP-2 Spray is presented for laboratory and scientific research. It is not presented as a drug, dietary supplement, food, cosmetic, treatment or diagnostic product. This page does not provide human dosing, administration, reconstitution, dilution or protocol instructions. Scientific findings are described according to the evidence system that produced them and should not be read as claims about a clinical outcome from Veracue's research material."
+    }
+  ],
+  "researcher_problem_solution": [
+    {
+      "number": 1,
+      "title": "Confusing GHRP-2 With GHRP-6",
+      "problem": "Similar names make it easy to transfer a result or specification from one peptide to the other.",
+      "why_it_matters": "They are different molecules with different identities and analytical characteristics.",
+      "solution": "Record the compound name together with a verified identifier and compare the COA to the correct reference record."
+    },
+    {
+      "number": 2,
+      "title": "Using the Product Name Instead of Molecular Identity",
+      "problem": "A label such as “GHRP-2 Spray” does not replace chemical identification.",
+      "why_it_matters": "A commercial name can describe a format without proving the material's exact chemical form.",
+      "solution": "Keep the compound identity, chemical form and lot documentation together in the research record."
+    },
+    {
+      "number": 3,
+      "title": "Assuming Concentration From the Word “Spray”",
+      "problem": "A spray label does not establish how much peptide is present or delivered per actuation.",
+      "why_it_matters": "Different formulations can use different concentrations, volumes and vehicles.",
+      "solution": "Use only the concentration and net-content values stated in first-party product documentation."
+    },
+    {
+      "number": 4,
+      "title": "Treating HPLC Purity as Complete Identity Proof",
+      "problem": "A dominant chromatographic peak can be mistaken for proof of identity.",
+      "why_it_matters": "Purity and identity answer different analytical questions.",
+      "solution": "Read HPLC together with mass-spectrometry identity data and the applicable method information."
+    },
+    {
+      "number": 5,
+      "title": "Ignoring Chemical Form When Reading Mass Data",
+      "problem": "The parent molecule and salt forms do not have identical observed masses.",
+      "why_it_matters": "A mass comparison can look wrong when the reference and tested forms are different.",
+      "solution": "Confirm the chemical form reported by the laboratory before interpreting mass differences."
+    },
+    {
+      "number": 6,
+      "title": "Comparing a Commercial Lot With a Literature Reagent Without Documentation",
+      "problem": "Published studies may use material characterized under their own specifications.",
+      "why_it_matters": "The literature does not automatically certify a different commercial lot.",
+      "solution": "Treat the literature as molecular/research context and the COA as the evidence for the actual lot."
+    },
+    {
+      "number": 7,
+      "title": "Assuming Spray Means Intranasal",
+      "problem": "The format name can be mistaken for a route of administration.",
+      "why_it_matters": "Route and formulation are product-specific properties.",
+      "solution": "Do not infer route from the word “spray”; require explicit first-party documentation."
+    },
+    {
+      "number": 8,
+      "title": "Combining Cell, Animal and Human Findings",
+      "problem": "Different evidence levels can be merged into one broad claim.",
+      "why_it_matters": "The resulting statement can overstate what the research actually established.",
+      "solution": "Label every finding by model and keep claims attached to the system in which they were observed."
+    },
+    {
+      "number": 9,
+      "title": "Turning Mechanism Into a Benefit Claim",
+      "problem": "Receptor agonism can be rewritten as a promised human outcome.",
+      "why_it_matters": "Mechanism and clinical outcome are different evidence levels.",
+      "solution": "Describe receptor pharmacology first and report downstream findings only with their study context."
+    },
+    {
+      "number": 10,
+      "title": "Using a Generic COA",
+      "problem": "A representative certificate may not describe the lot actually used.",
+      "why_it_matters": "Research reproducibility depends on batch traceability.",
+      "solution": "Use the lot-specific certificate corresponding to the material in the study."
+    },
+    {
+      "number": 11,
+      "title": "Comparing GHRP-2 With GHRH Analogs as if They Were the Same Class",
+      "problem": "Search results group GHRP-2 with CJC-1295 and sermorelin.",
+      "why_it_matters": "GHRP/GHS-R and GHRH/GHRHR compounds occupy different receptor systems.",
+      "solution": "Compare molecular class and receptor context before discussing research findings."
+    },
+    {
+      "number": 12,
+      "title": "Losing Lot Traceability",
+      "problem": "A product name alone does not preserve which batch was used months later.",
+      "why_it_matters": "Without lot traceability, analytical and experimental records become difficult to reproduce.",
+      "solution": "Record lot number, COA, receipt date and storage documentation with the experimental record."
+    }
+  ],
+  "faq": [
+    {
+      "question": "What is GHRP-2?",
+      "answer": "GHRP-2 is a synthetic hexapeptide, also known as Pralmorelin or KP-102, that acts at the growth hormone secretagogue receptor (GHS-R)."
+    },
+    {
+      "question": "What is GHRP-2 peptide?",
+      "answer": "GHRP-2 peptide refers to the same compound: a synthetic six-residue growth hormone secretagogue. PubChem identifies Pralmorelin as CID 6918245 with formula C45H55N9O6 and an average molecular weight of 818.0 g/mol."
+    },
+    {
+      "question": "What does GHRP-2 do?",
+      "answer": "GHRP-2 acts at GHS-R and has been studied for growth-hormone secretagogue activity, endocrine responses and appetite-related physiology."
+    },
+    {
+      "question": "What is GHRP-2 studied for?",
+      "answer": "Researchers study GHRP-2 in GHS-R pharmacology, growth-hormone physiology, appetite-related research and provocative growth-hormone testing."
+    },
+    {
+      "question": "What is another name for GHRP-2?",
+      "answer": "Pralmorelin and KP-102 are established names for GHRP-2. GPA-748 also appears as a historical/reference synonym."
+    },
+    {
+      "question": "What is the GHRP-2 peptide sequence?",
+      "answer": "PubChem lists the structural notation H-D-Ala-D-2Nal-Ala-Trp-D-Phe-Lys-NH2 and shorthand AXAWFK."
+    },
+    {
+      "question": "What is the molecular weight of GHRP-2?",
+      "answer": "PubChem lists an average molecular weight of 818.0 g/mol and an exact mass of 817.42753051 Da for the parent molecule."
+    },
+    {
+      "question": "What is the PubChem CID for GHRP-2?",
+      "answer": "PubChem CID 6918245 is the current parent record for Pralmorelin / GHRP-2."
+    },
+    {
+      "question": "Is GHRP-2 the same as GHRP-6?",
+      "answer": "No. They are different peptides. They share a broad GHRP/GHS-R research context but have different chemical identities."
+    },
+    {
+      "question": "How is GHRP-2 analyzed?",
+      "answer": "HPLC can be used to assess chromatographic purity, while mass spectrometry provides a molecular-mass identity check. Additional orthogonal methods can be used when sequence or composition requires deeper characterization."
+    },
+    {
+      "question": "What should a GHRP-2 COA contain?",
+      "answer": "A useful COA should identify the material and lot, provide HPLC purity with method context, include mass-spectrometry identity data, and identify the testing laboratory and test date."
+    },
+    {
+      "question": "What are GHRP-2 side effects?",
+      "answer": "Reported observations depend on the study population, exposure, route, duration and formulation. This RUO page does not present a product-specific human safety profile."
+    },
+    {
+      "question": "What is the GHRP-2 dosage?",
+      "answer": "Veracue does not provide human dosing or administration instructions for this Research Use Only material. Experimental quantities belong to the specific study in which they were used."
+    },
+    {
+      "question": "Does GHRP-2 spray mean intranasal GHRP-2?",
+      "answer": "Not automatically. Historical research has studied intranasal GHRP-2, but the word “spray” alone does not establish the route, concentration or formulation of a current commercial product."
+    },
+    {
+      "question": "What is the difference between GHRP-2 identity and GHRP-2 spray formulation?",
+      "answer": "GHRP-2 identity refers to the molecule's sequence, formula and reference mass. Spray formulation refers to product-specific properties such as concentration, vehicle, route and amount per actuation, which must be documented separately."
+    },
+    {
+      "question": "What does Research Use Only mean?",
+      "answer": "Research Use Only means the material is intended strictly for laboratory and scientific research and is not intended for human or veterinary use or administration."
+    }
+  ],
+  "internal_links": [
+    {
+      "anchor": "Growth Hormone Secretagogues",
+      "url": "https://veracue-peptides.vercel.app/shop",
+      "note": "Link to the live shop category control/page; confirm the exact category-filter URL in the deployed front end before publishing a query-string link."
+    },
+    {
+      "anchor": "Certificates (COA)",
+      "url": "https://veracue-peptides.vercel.app/certificates"
+    },
+    {
+      "anchor": "Help & FAQ",
+      "url": "https://veracue-peptides.vercel.app/faq"
+    },
+    {
+      "anchor": "About Veracue",
+      "url": "https://veracue-peptides.vercel.app/about-us"
+    },
+    {
+      "anchor": "Medical Disclaimer",
+      "url": "https://veracue-peptides.vercel.app/medical-disclaimer"
+    },
+    {
+      "anchor": "Contact Us",
+      "url": "https://veracue-peptides.vercel.app/contact-us"
+    },
+    {
+      "anchor": "AHK-Cu",
+      "url": "https://veracue-peptides.vercel.app/product/ahk-cu",
+      "note": "Use only as a related-product link if contextually useful; do not imply a pharmacological relationship."
+    }
+  ],
+  "image_seo": [
+    {
+      "filename": "veracue-ghrp-2-spray-research-peptide.webp",
+      "role": "Primary product image",
+      "alt": "Veracue GHRP-2 Spray research peptide listing, Research Use Only",
+      "title": "GHRP-2 Spray | Veracue Research Peptide",
+      "caption": "GHRP-2 (Pralmorelin) spray-format research listing — Research Use Only.",
+      "rule": "Do not visually imply concentration, spray count or route unless confirmed by Veracue product documentation."
+    },
+    {
+      "filename": "ghrp-2-pralmorelin-molecular-structure.svg",
+      "role": "Reference molecular structure",
+      "alt": "Reference chemical structure of GHRP-2 (Pralmorelin), formula C45H55N9O6",
+      "title": "GHRP-2 / Pralmorelin Molecular Structure",
+      "caption": "Reference molecular structure of GHRP-2 (Pralmorelin)."
+    },
+    {
+      "filename": "ghrp-2-ghs-r-research-pathway-illustrative.svg",
+      "role": "Scientific illustration",
+      "alt": "Illustrative GHS-R receptor research pathway associated with GHRP-2 pharmacology",
+      "title": "GHRP-2 GHS-R Research Pathway",
+      "caption": "Illustrative research diagram showing the receptor context studied for GHRP-2; not a treatment diagram."
+    },
+    {
+      "filename": "ghrp-2-coa-hplc-ms-reference.svg",
+      "role": "Analytical illustration",
+      "alt": "Illustrative HPLC and mass spectrometry reference for GHRP-2 analytical characterization",
+      "title": "GHRP-2 HPLC and Mass Spectrometry Reference",
+      "caption": "Illustrative analytical reference — not a Veracue lot result or actual COA."
+    }
+  ],
+  "schema": {
+    "notes": [
+      "Do not add Offer, price, availability, SKU, GTIN, review or rating fields until the actual GHRP-2 product record is live and those values are verified.",
+      "Do not put a GHRP-2 purity result into Product schema unless a matching first-party lot document exists.",
+      "FAQPage should mirror the visible FAQs exactly.",
+      "Breadcrumb category URL must be updated to the actual deployed category URL if the query-string route changes."
+    ],
+    "product": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://veracue-peptides.vercel.app/product/ghrp-2-spray#product",
+      "name": "GHRP-2 Spray",
+      "alternateName": [
+        "GHRP-2",
+        "Pralmorelin",
+        "KP-102"
+      ],
+      "description": "GHRP-2 (Pralmorelin) spray-format research listing from Veracue. Research Use Only — not for human or veterinary use.",
+      "url": "https://veracue-peptides.vercel.app/product/ghrp-2-spray",
+      "category": "Growth Hormone Secretagogues",
+      "brand": {
+        "@type": "Brand",
+        "name": "Veracue"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Reference formula",
+          "value": "C45H55N9O6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Reference molecular weight",
+          "value": "818.0 g/mol"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Exact mass",
+          "value": "817.42753051 Da"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "CAS",
+          "value": "158861-67-7"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "PubChem CID",
+          "value": "6918245"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Research designation",
+          "value": "Research Use Only — not for human or veterinary use"
+        }
+      ]
+    },
+    "breadcrumbList": {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://veracue-peptides.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Shop",
+          "item": "https://veracue-peptides.vercel.app/shop"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Growth Hormone Secretagogues",
+          "item": "https://veracue-peptides.vercel.app/shop"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "GHRP-2 Spray",
+          "item": "https://veracue-peptides.vercel.app/product/ghrp-2-spray"
+        }
+      ]
+    },
+    "faqPage": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://veracue-peptides.vercel.app/product/ghrp-2-spray#faq",
+      "mainEntity": "Populate programmatically from the visible FAQ array in this package; wording must match exactly."
+    }
+  },
+  "scientific_references": [
+    {
+      "citation": "PubChem. Pralmorelin (GHRP-2), CID 6918245.",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/GHRP-2",
+      "supports": "Identity, synonyms, formula, molecular weight, exact mass, CAS and structural notation."
+    },
+    {
+      "citation": "Doi N, Hirotani C, Ukai K, et al. Pharmacological characteristics of KP-102 (GHRP-2), a potent growth hormone-releasing peptide. Arzneimittelforschung. 2004;54(12):857-867.",
+      "doi": "10.1055/s-0031-1297041",
+      "pmid": "15646370",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15646370/",
+      "supports": "GHRP-2/Pralmorelin identity and pharmacological context."
+    },
+    {
+      "citation": "Furuta S, Shimada O, Doi N, et al. General pharmacology of KP-102 (GHRP-2), a potent growth hormone-releasing peptide. Arzneimittelforschung. 2004;54(12):868-880.",
+      "doi": "10.1055/s-0031-1297042",
+      "pmid": "15646371",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15646371/",
+      "supports": "General pharmacological and animal research context."
+    },
+    {
+      "citation": "Laferrère B, Abraham C, Russell CD, Bowers CY. Growth hormone releasing peptide-2 (GHRP-2), like ghrelin, increases food intake in healthy men. J Clin Endocrinol Metab. 2005;90(2):611-614.",
+      "doi": "10.1210/jc.2004-1719",
+      "pmid": "15699539",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15699539/",
+      "supports": "Controlled human study of acute GHRP-2 endocrine and appetite-related responses."
+    },
+    {
+      "citation": "Diagnostic studies with intravenous and intranasal growth hormone-releasing peptide-2 in children of short stature.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7559885/",
+      "supports": "Historical intranasal and intravenous GHRP-2 research context."
+    },
+    {
+      "citation": "Tanaka T, Hasegawa Y, Yokoya S, Nishi Y. Increased Secretion of Endogenous GH after Treatment with an Intranasal GH-releasing Peptide-2 Spray Does Not Promote Growth in Short Children with GH Deficiency. Clin Pediatr Endocrinol. 2014;23(4):107-114.",
+      "doi": "10.1297/cpe.23.107",
+      "pmid": "25374440",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25374440/",
+      "supports": "Specific historical human research using an intranasal GHRP-2 spray; importantly, it should not be presented as validation of a current Veracue spray formulation."
+    },
+    {
+      "citation": "Asakura Y, Toyota Y, Muroya K, Adachi M. Growth hormone response to GH-releasing peptide-2 in children. J Pediatr Endocrinol Metab. 2010;23(5):473-480.",
+      "doi": "10.1515/jpem.2010.078",
+      "pmid": "20662346",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20662346/",
+      "supports": "Human diagnostic research context."
+    },
+    {
+      "citation": "Onuki T, Tadokoro H, Sawano K, et al. Robust growth hormone responses to GH-releasing peptide 2 in adolescents. J Pediatr Endocrinol Metab. 2024;37(8):730-733.",
+      "doi": "10.1515/jpem-2024-0115",
+      "pmid": "38958228",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38958228/",
+      "supports": "Recent adolescent diagnostic-test research."
+    },
+    {
+      "citation": "FDA Orphan Drug Designations and Approvals — pralmorelin hydrochloride.",
+      "url": "https://www.accessdata.fda.gov/scripts/opdlisting/oopd/detailedIndex.cfm?cfgridkey=372912",
+      "supports": "FDA orphan designation record; do not characterize the designation as FDA approval."
+    },
+    {
+      "citation": "PMDA. 注射用GHRP科研100 / Pralmorelin hydrochloride.",
+      "url": "https://www.pmda.go.jp/drugs/2004/P200400019/left.html",
+      "supports": "Japanese regulatory history for a pralmorelin hydrochloride diagnostic formulation."
+    }
+  ],
+  "claim_audit": {
+    "verified_reference_claims": [
+      "PubChem CID 6918245",
+      "CAS 158861-67-7",
+      "Formula C45H55N9O6",
+      "Average molecular weight 818.0 g/mol",
+      "Exact mass 817.42753051 Da",
+      "Structural notation H-D-Ala-D-2Nal-Ala-Trp-D-Phe-Lys-NH2",
+      "GHRP-2 / Pralmorelin / KP-102 identity",
+      "GHS-R / ghrelin receptor pharmacology",
+      "Human studies of endocrine responses and appetite",
+      "Historical intranasal GHRP-2 research",
+      "Tanaka et al. 2014 intranasal GHRP-2 spray RCT (n=126) and its null growth-outcome finding, DOI 10.1297/cpe.23.107",
+      "Pihoker et al. 1995 IV/intranasal GHRP-2 diagnostic comparison in children, DOI 10.1210/jcem.80.10.7559885"
+    ],
+    "removed_or_corrected_from_claude": [
+      "Incorrect PubChem CID 6852372 corrected to 6918245.",
+      "Broad claim that Veracue currently supplies GHRP-2 Spray removed; the page is positioned as a pre-launch/planned listing until a live product record exists.",
+      "Over-specific regulatory rights language removed.",
+      "FDA wording narrowed to the actual orphan-designation record rather than a broad unsupported historical claim.",
+      "Related-GHRP literature is not presented as direct GHRP-2 evidence unless the source specifically supports GHRP-2.",
+      "Spray route is never inferred from the product name.",
+      "No human dosage, spray-count or administration guidance is provided.",
+      "No Veracue concentration, purity, COA, SKU, price, availability, storage or formulation is fabricated."
+    ],
+    "this_pass_changes": [
+      "Wove the Tanaka 2014 intranasal-spray RCT and its null growth-outcome finding into the spray-vs-molecule section, the benefits/evidence table, and the human-research section, since it is the single most directly relevant published trial to a spray-format GHRP-2 listing.",
+      "Wove the Pihoker 1995 IV/intranasal diagnostic-comparison study into the human-research section.",
+      "Independently re-verified PubChem CID 6918245 (fetched pubchem.ncbi.nlm.nih.gov/compound/GHRP-2 directly), the FDA orphan-drug listing (pralmorelin hydrochloride, designated 2012, Sella Pharmaceuticals, diagnostic indication, designation only — not approval), and all four newly added PubMed citations (15646370, 15646371, 25374440, 7559885) via PubMed metadata lookup; all confirmed accurate as characterized."
+    ]
+  },
+  "final_qa": {
+    "seo": "PASS — primary and secondary search intent covered naturally.",
+    "geo": "PASS — entity relationships and molecule/product distinction are explicit.",
+    "aeo": "PASS — direct answers and FAQ-ready phrasing included.",
+    "ruo": "PASS — no human dosing, administration, reconstitution, dilution or treatment guidance.",
+    "factuality": "PASS — product-specific values are not invented; reference chemistry is separated from Veracue lot data.",
+    "commercial_accuracy": "PASS — no claim that an unlisted GHRP-2 lot, price or COA currently exists.",
+    "technical_priority_fix": "PubChem CID corrected to 6918245 and independently re-verified against the live PubChem record for this pass.",
+    "deployment_note": "Before publishing the live product module, add only confirmed first-party Veracue product data (concentration, net content, route, purity, lot, COA, SKU, price) and verify the deployed category URL. All reference-chemistry and literature claims in this file have been independently verified against PubChem and PubMed as of 2026-09-30."
+  }
+}

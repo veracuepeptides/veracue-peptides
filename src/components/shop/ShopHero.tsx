@@ -9,22 +9,22 @@ import { HeroButton } from '@/components/ui/hero-button'
 const SHOP_HERO_IMAGES = [
   {
     src: '/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp',
-    alt: 'Veracue Lyophilized Research Peptides Vials Collection',
+    alt: 'Veracue research peptide vials arranged in a flat lay collection',
     compound: 'Catalog Collection',
   },
   {
     src: '/veracue-images/veracue-klow-50mg-pool-water-ripples.webp',
-    alt: 'Veracue Analytical Laboratory Grade Research Peptides',
+    alt: 'Veracue research peptide vial resting on rippling pool water',
     compound: 'Analytical Grade',
   },
   {
     src: '/veracue-images/veracue-ghk-cu-50mg-ice-bed-white.webp',
-    alt: 'Veracue Peptide Synthesis and Quality Control',
+    alt: 'Veracue research peptide vial on an ice bed',
     compound: 'Synthesis & QA',
   },
   {
     src: '/veracue-images/veracue-epithalon-50mg-water-ripples-landscape.webp',
-    alt: 'Veracue Cellular Investigation Peptides',
+    alt: 'Veracue research peptide vial on rippling water',
     compound: 'Cellular Research',
   },
 ]
@@ -36,6 +36,7 @@ export function ShopHero() {
 
   // Auto-advance hero slides every 5.5 seconds with smooth crossfade
   useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
     const timer = setInterval(() => {
       setCurrentImageIndex((prev) => (prev + 1) % SHOP_HERO_IMAGES.length)
     }, 5500)
@@ -87,7 +88,7 @@ export function ShopHero() {
 
         {/* 3. Sub-headline / Supporting Description */}
         <p className="text-neutral-500 text-[11.5px] sm:text-[13px] md:text-[14.5px] max-w-2xl leading-relaxed mb-2.5 sm:mb-4 font-normal px-1 line-clamp-3 sm:line-clamp-none">
-          Filter by category, check live stock, and open the COA before you order. Nothing in this catalog ships until it clears HPLC and mass spectrometry testing.
+          Filter by category, check live stock, and open the COA before you order. Every batch in this catalog is HPLC tested, with the result published on its COA.
         </p>
 
         {/* 4. CTA Pill Button (Smooth scrolls directly to catalog) */}
@@ -166,18 +167,18 @@ export function ShopHero() {
           {/* Top-Left Overlay (Key Stat & Purity) */}
           <div className="absolute top-3.5 sm:top-7 md:top-9 left-3.5 sm:left-7 md:left-9 z-20 text-white text-left">
             <div className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-[68px] font-black tracking-[-0.03em] text-white leading-none drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] font-heading">
-              ≥99%
+              Per Batch
             </div>
             <p className="text-white/95 text-[10.5px] xs:text-xs sm:text-[13.5px] md:text-[15px] font-medium leading-snug mt-1 sm:mt-2.5 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)] max-w-[150px] sm:max-w-[240px]">
-              HPLC Verified,<br />Mass Spec Confirmed
+              HPLC Purity on<br />Every COA
             </p>
           </div>
 
           {/* Bottom-Right Overlay (Third-Party Testing & Features) */}
           <div className="absolute bottom-12 xs:bottom-14 sm:bottom-12 md:bottom-14 right-3 sm:right-7 md:right-10 z-20 text-white text-right sm:text-left max-w-[135px] xs:max-w-[170px] sm:max-w-[300px] md:max-w-[360px]">
-            <h3 className="text-xs xs:text-sm sm:text-xl md:text-2xl lg:text-[26px] font-extrabold tracking-tight text-white leading-tight mb-0.5 sm:mb-2 drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] font-heading">
+            <p className="text-xs xs:text-sm sm:text-xl md:text-2xl lg:text-[26px] font-extrabold tracking-tight text-white leading-tight mb-0.5 sm:mb-2 drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] font-heading">
               Open the COA<br className="sm:hidden" /> Before You Buy
-            </h3>
+            </p>
             <p className="hidden xs:block sm:hidden text-[9px] text-white/85 leading-snug line-clamp-2 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
               Linked from every product page, before checkout.
             </p>
@@ -226,20 +227,20 @@ export function ShopHero() {
                 <div className="flex items-center gap-3 sm:gap-8 md:gap-12 shrink-0 pr-3 sm:pr-8 md:pr-12">
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="text-neutral-950 font-bold text-[9px] xs:text-[10px] sm:text-base leading-none">✦</span>
-                    <span className="font-extrabold text-neutral-950">≥99%</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">HPLC Verified</span>
+                    <span className="font-extrabold text-neutral-950">Per Batch</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">HPLC Tested</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full border border-neutral-950 bg-neutral-950 inline-block shrink-0" />
-                    <span className="font-extrabold text-neutral-950">Same-Day</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Dispatch</span>
+                    <span className="font-extrabold text-neutral-950">Ships</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">From USA</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="text-neutral-950 font-bold text-[9px] xs:text-[10px] sm:text-base leading-none">✦</span>
-                    <span className="font-extrabold text-neutral-950">Cold-Chain</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Packaged</span>
+                    <span className="font-extrabold text-neutral-950">Insulated</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Packaging</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
@@ -265,20 +266,20 @@ export function ShopHero() {
                 <div className="flex items-center gap-3 sm:gap-8 md:gap-12 shrink-0 pr-3 sm:pr-8 md:pr-12" aria-hidden="true">
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="text-neutral-950 font-bold text-[9px] xs:text-[10px] sm:text-base leading-none">✦</span>
-                    <span className="font-extrabold text-neutral-950">≥99%</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">HPLC Verified</span>
+                    <span className="font-extrabold text-neutral-950">Per Batch</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">HPLC Tested</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full border border-neutral-950 bg-neutral-950 inline-block shrink-0" />
-                    <span className="font-extrabold text-neutral-950">Same-Day</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Dispatch</span>
+                    <span className="font-extrabold text-neutral-950">Ships</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">From USA</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="text-neutral-950 font-bold text-[9px] xs:text-[10px] sm:text-base leading-none">✦</span>
-                    <span className="font-extrabold text-neutral-950">Cold-Chain</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Packaged</span>
+                    <span className="font-extrabold text-neutral-950">Insulated</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Packaging</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">

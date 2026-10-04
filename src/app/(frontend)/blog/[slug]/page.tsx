@@ -3,8 +3,8 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { getPayload } from 'payload'
 import configPromise from '@payload-config'
+import { getPublishedPost as getPost, getAuthorProfile } from '@/lib/blog/getPublishedPost'
 
-import { FadeUp } from '@/components/motion/FadeUp'
 import { BlogPostCard } from '@/components/editorial/BlogPostCard'
 import { StaggerChildren } from '@/components/motion/StaggerChildren'
 import { ReadingProgress } from '@/components/editorial/ReadingProgress'
@@ -20,18 +20,22 @@ import { estimateReadingTime } from '@/lib/blog/readingTime'
 import { splitFirstParagraph } from '@/lib/blog/splitContent'
 import { getFeaturedImageUrl, formatPostDate, FALLBACK_BLOG_IMAGE as FALLBACK_IMAGE } from '@/lib/blog/postDisplay'
 import { encodeImageUrl, getOgImageUrl, toAbsoluteUrl } from '@/lib/utils'
+import { safeJsonLd } from '@/lib/seo/jsonLd'
 
-async function getPost(slug: string) {
-  const payload = await getPayload({ config: configPromise })
-  const { docs } = await payload.find({
-    collection: 'blog-posts',
-    where: {
-      and: [{ slug: { equals: slug } }, { status: { equals: 'published' } }],
-    },
-    limit: 1,
-    depth: 2,
-  })
-  return docs[0] || null
+// The root layout title template appends the brand, so strip any brand suffix already
+// present in CMS-authored titles.
+function stripBrandSuffix(title: string): string {
+  return title.replace(/\s*\|\s*(Veracue Peptides|Veracue|Helix Bio)\s*$/i, '').trim()
+}
+
+// Cheap word count from Lexical JSON text nodes.
+function countWords(node: any): number {
+  if (!node) return 0
+  let n = 0
+  if (typeof node.text === 'string') n += node.text.trim().split(/\s+/).filter(Boolean).length
+  if (Array.isArray(node.children)) for (const c of node.children) n += countWords(c)
+  if (node.root) n += countWords(node.root)
+  return n
 }
 
 export async function generateStaticParams() {
@@ -54,16 +58,15 @@ export async function generateMetadata({
   const post = await getPost(slug)
 
   if (!post) {
-    return { title: 'Post Not Found | Veracue' }
+    return { title: 'Post Not Found', robots: { index: false, follow: false } }
   }
 
-  const title = post.meta?.title || `${post.title} | Veracue`
+  const title = stripBrandSuffix(post.meta?.title || post.title)
   const description = post.meta?.description || post.excerpt || ''
-  const path = `/${slug}`
+  const path = `/blog/${slug}`
   const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
   const imageUrl = toAbsoluteUrl(baseUrl, getFeaturedImageUrl(post))
-  const payload = await getPayload({ config: configPromise })
-  const authorProfile = await payload.findGlobal({ slug: 'blog-author-profile' })
+  const authorProfile = await getAuthorProfile()
   const authorName = authorProfile?.name || 'Veracue Research Team'
   const publishedIso = post.publishedAt
     ? new Date(post.publishedAt).toISOString()
@@ -78,7 +81,6 @@ export async function generateMetadata({
       : undefined,
     authors: [{ name: authorName }],
     publisher: 'Veracue',
-    robots: { index: true, follow: true },
     alternates: { canonical: path },
     openGraph: {
       title,
@@ -86,6 +88,10 @@ export async function generateMetadata({
       type: 'article',
       url: path,
       siteName: 'Veracue Peptides',
+      section: post.category || undefined,
+      tags: post.keywords
+        ? post.keywords.split(',').map((k: string) => k.trim()).filter(Boolean)
+        : undefined,
       publishedTime: publishedIso,
       modifiedTime: modifiedIso,
       authors: [authorName],
@@ -134,7 +140,7 @@ export default async function BlogPostPage({
       limit: 3,
       depth: 1,
     }),
-    payload.findGlobal({ slug: 'blog-author-profile' }),
+    getAuthorProfile(),
   ])
 
   let relatedPosts = relatedDocs
@@ -178,36 +184,31 @@ export default async function BlogPostPage({
   const { first: introContent, rest: restContent } = splitFirstParagraph(post.content)
 
   const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
-  const postUrl = `${baseUrl}/${slug}`
+  const postUrl = `${baseUrl}/blog/${slug}`
   const isoDate = post.publishedAt ? new Date(post.publishedAt).toISOString() : new Date(post.createdAt).toISOString()
 
-  const productSchemas = relatedProducts.map((product: any) => {
+  // Lean references only; the full Product node (price, availability) lives on the product page.
+  const productMentions = relatedProducts.map((product: any) => {
     const productUrl = `${baseUrl}/product/${product.slug}`
-    const price = Number(product.salePrice || product.price || 0)
-    // getProductImageUrl already returns a fully-encoded URL (via encodeImageUrl) —
-    // wrapping it in encodeURI again would double-encode already-escaped characters.
-    const productImage = toAbsoluteUrl(baseUrl, getProductImageUrl(product))
-
     return {
       '@type': 'Product',
       '@id': `${productUrl}#product`,
       name: product.name,
-      description: product.seoDescription || product.description || undefined,
-      image: productImage,
-      sku: product.sku || String(product.id),
       url: productUrl,
-      brand: { '@type': 'Brand', name: 'Veracue' },
-      offers: {
-        '@type': 'Offer',
-        url: productUrl,
-        priceCurrency: 'USD',
-        price: price.toFixed(2),
-        availability:
-          product.stock && product.stock > 0 ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
-        itemCondition: 'https://schema.org/NewCondition',
-      },
     }
   })
+
+  const authorDisplayName = authorProfile?.name || 'Veracue Research Team'
+  const authorNode = /team/i.test(authorDisplayName)
+    ? {
+        '@type': 'Organization',
+        '@id': `${baseUrl}/#organization`,
+        name: authorDisplayName,
+        url: baseUrl,
+      }
+    : { '@type': 'Person', name: authorDisplayName }
+  const wordCount = countWords(post.content)
+  const postDescription = post.meta?.description || post.excerpt || undefined
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -215,8 +216,10 @@ export default async function BlogPostPage({
       {
         '@type': 'BlogPosting',
         '@id': `${postUrl}#article`,
-        headline: post.title,
-        description: post.excerpt,
+        headline: String(post.title).slice(0, 110),
+        description: postDescription,
+        inLanguage: 'en',
+        ...(wordCount > 0 ? { wordCount } : {}),
         // featuredImageUrl is already fully encoded (via encodeImageUrl) and may already
         // be an absolute R2 URL — only prefix baseUrl if it's relative, never re-encode.
         image: toAbsoluteUrl(baseUrl, featuredImageUrl),
@@ -224,19 +227,10 @@ export default async function BlogPostPage({
         dateModified: post.updatedAt ? new Date(post.updatedAt).toISOString() : isoDate,
         articleSection: post.category || undefined,
         keywords: post.keywords || undefined,
-        author: {
-          '@type': 'Person',
-          name: authorProfile?.name || 'Veracue Research Team',
-        },
-        publisher: {
-          '@type': 'Organization',
-          name: 'Veracue',
-          logo: { '@type': 'ImageObject', url: `${baseUrl}/veracue-images/logo-header.png` },
-        },
+        author: authorNode,
+        publisher: { '@id': `${baseUrl}/#organization` },
         mainEntityOfPage: { '@type': 'WebPage', '@id': postUrl },
-        ...(productSchemas.length > 0
-          ? { mentions: productSchemas.map((p) => ({ '@id': p['@id'] })) }
-          : {}),
+        ...(productMentions.length > 0 ? { mentions: productMentions } : {}),
       },
       {
         '@type': 'BreadcrumbList',
@@ -259,7 +253,6 @@ export default async function BlogPostPage({
             },
           ]
         : []),
-      ...productSchemas,
     ],
   }
 
@@ -267,9 +260,9 @@ export default async function BlogPostPage({
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(jsonLd) }}
       />
-      <main className="bg-[#f0efeb] min-h-screen pb-32">
+      <div className="bg-[#f0efeb] min-h-screen pb-32">
         <ReadingProgress />
 
         <BlogPostHero
@@ -289,8 +282,7 @@ export default async function BlogPostPage({
           </aside>
 
           <article className="max-w-[820px] w-full mx-auto lg:mx-0 space-y-10">
-            <FadeUp>
-              <div className="space-y-10">
+            <div className="space-y-10">
                 {post.keyTakeaways && post.keyTakeaways.length > 0 && (
                   <KeyTakeaways items={post.keyTakeaways.map((t: any) => t.text)} />
                 )}
@@ -306,9 +298,9 @@ export default async function BlogPostPage({
                     <span className="text-label-md uppercase tracking-wider text-[#a5732f] mb-2 block">
                       Got Questions?
                     </span>
-                    <h3 className="text-2xl sm:text-3xl font-heading font-black text-[#20221c] uppercase tracking-tight leading-[1.1] mb-6">
+                    <h2 className="text-2xl sm:text-3xl font-heading font-black text-[#20221c] uppercase tracking-tight leading-[1.1] mb-6">
                       Frequently Asked Questions
-                    </h3>
+                    </h2>
                     <FaqAccordion faqs={post.faqs} />
                   </div>
                 )}
@@ -333,8 +325,7 @@ export default async function BlogPostPage({
                       : undefined
                   }
                 />
-              </div>
-            </FadeUp>
+            </div>
           </article>
         </div>
 
@@ -366,7 +357,7 @@ export default async function BlogPostPage({
             </StaggerChildren>
           </section>
         )}
-      </main>
+      </div>
     </>
   )
 }

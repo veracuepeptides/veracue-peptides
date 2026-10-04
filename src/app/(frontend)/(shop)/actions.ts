@@ -490,7 +490,7 @@ export async function getShopProducts(params: {
     })
 
     const uiProducts = results.docs.map(doc => {
-      let imageUrl = '/veracue-images/vp-product-vial.jpeg'
+      let imageUrl = '/veracue-images/vp-product-vial.webp'
       let hoverImageUrl: string | undefined = undefined
 
       if (doc.images && doc.images.length > 0) {
@@ -519,7 +519,7 @@ export async function getShopProducts(params: {
       }
       
       // Fallback to variant images if no global image exists
-      if (imageUrl === '/veracue-images/vp-product-vial.jpeg' && doc.hasVariants && doc.variants && doc.variants.length > 0) {
+      if (imageUrl === '/veracue-images/vp-product-vial.webp' && doc.hasVariants && doc.variants && doc.variants.length > 0) {
         for (const variant of doc.variants) {
           if (variant.images && variant.images.length > 0 && typeof variant.images[0].image === 'object' && variant.images[0].image !== null) {
             const encodeUrl = (url: string) => {

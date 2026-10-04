@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server'
 import configPromise from '@payload-config'
 import { getPayload } from 'payload'
 import { Resend } from 'resend'
+import { companyAddressLine, MARKETING_OPT_OUT_TEXT, MARKETING_EMAIL_HEADERS } from '@/lib/emails/emailShell'
 
 export const dynamic = 'force-dynamic'
 
@@ -42,9 +43,11 @@ export async function GET(req: Request) {
         
         if (user && user.email) {
           const firstName = user.firstName || 'there'
+          const addressLine = companyAddressLine()
 
           await resend.emails.send({
-            from: process.env.RESEND_FROM_EMAIL || 'Veracue <support@veracuepeptides.com>',
+            from: process.env.RESEND_FROM_EMAIL || 'Veracue Peptides <support@veracuepeptides.com>',
+            headers: MARKETING_EMAIL_HEADERS,
             to: user.email,
             subject: 'Did you forget something in your cart?',
             html: `<!DOCTYPE html>
@@ -97,7 +100,8 @@ export async function GET(req: Request) {
         <td class="footer">
           <p class="disclaimer">
             <strong>FDA Disclaimer:</strong> These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. All products offered are for laboratory and research use only.<br><br>
-            © 2026 Veracue Peptides. All rights reserved.
+            ${MARKETING_OPT_OUT_TEXT}<br><br>
+            ${addressLine ? `${addressLine}<br>` : ''}© ${new Date().getFullYear()} Veracue Peptides. All rights reserved.
           </p>
         </td>
       </tr>

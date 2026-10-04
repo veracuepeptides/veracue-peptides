@@ -35,8 +35,14 @@ export function LayoutClientWrapper({
 
   return (
     <div className="flex min-h-screen flex-col relative z-0 isolate">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-[10000] focus:rounded-full focus:bg-[#fff1e6] focus:px-5 focus:py-2.5 focus:text-sm focus:font-semibold focus:text-[#20221c] focus:outline-none focus:ring-2 focus:ring-[#a5a58d] focus:ring-offset-2 focus:ring-offset-[#f0efeb]"
+      >
+        Skip to main content
+      </a>
       {!hideHeader && header}
-      <main className="flex-1 flex flex-col relative">
+      <main id="main-content" tabIndex={-1} className="flex-1 flex flex-col relative outline-none">
         {children}
       </main>
       <div className="relative z-40 isolate">

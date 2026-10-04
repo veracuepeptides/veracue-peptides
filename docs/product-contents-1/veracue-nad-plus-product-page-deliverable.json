@@ -1,0 +1,618 @@
+{
+  "deliverable": {
+    "title": "NAD+ Product Page Deliverable",
+    "client": "Veracue",
+    "site": "https://veracue-peptides.vercel.app",
+    "prepared_by": "Belk Digital",
+    "stage": "Stage 3 — verification, generation, optimization, QA",
+    "target_url": "/product/nad-plus",
+    "action": "Rewrite existing live URL. Do not create a new page.",
+    "date": "2026-09-18"
+  },
+
+  "blockers": [
+    {
+      "id": 1,
+      "severity": "critical",
+      "title": "NAD+ is not a new product. It is already live.",
+      "detail": "The Stage 3 brief treats NAD+ as a new product whose only on-site reference is a static homepage card. A complete product page is already published at /product/nad-plus.",
+      "live_page_contains": [
+        "SKU NADPLUS-10MG",
+        "Three sizes: 10mg $19.00 (was $24.00), 50mg $49.00, 500mg $299.00",
+        "Bundle pricing: 5 kits 12% off, 10 kits 20% off",
+        "Category: Mitochondrial & Cellular Energy",
+        "Three uploaded product images",
+        "A 10-question FAQ block",
+        "A linked blog article"
+      ],
+      "recommendation": "Rewrite in place. Publishing a second NAD+ URL would cannibalize an indexed page for no gain."
+    },
+    {
+      "id": 2,
+      "severity": "critical",
+      "title": "The live title tag calls NAD+ a peptide.",
+      "current_title": "NAD+ Research Peptide | High-Purity Lyophilized Powder | Veracue",
+      "detail": "NAD+ is a dinucleotide coenzyme. No amino acids, no peptide bonds. This is also the exact competitor gap the brief wants the page to exploit, so the site currently makes the error it is pitching against.",
+      "recommendation": "Highest-value single fix on the page."
+    },
+    {
+      "id": 3,
+      "severity": "high",
+      "title": "Sitewide analytical copy is peptide-specific and is wrong when applied to NAD+.",
+      "conflicts": [
+        {
+          "live_claim": "ESI-MS measures empirical molecular mass against theoretical amino acid sequence",
+          "problem": "NAD+ has no amino acid sequence."
+        },
+        {
+          "live_claim": "Zero truncated sequences or synthesis impurities",
+          "problem": "Truncation is a solid-phase peptide synthesis failure mode. It does not exist for a dinucleotide."
+        },
+        {
+          "live_claim": "Cleanroom synthesis, sequence authenticated, zero optical isomers confirmed",
+          "problem": "Commercial beta-NAD is typically produced by yeast extraction or enzymatic/fermentation routes, not peptide synthesis. The relevant isomer question for NAD+ is the alpha/beta anomer, which is a genuine open check, not a settled one."
+        }
+      ],
+      "recommendation": "Scope this copy to peptides, or add a non-peptide variant for coenzyme and small-molecule listings."
+    },
+    {
+      "id": 4,
+      "severity": "medium",
+      "title": "Four smaller site inconsistencies worth a ticket.",
+      "items": [
+        "Cross-client leak: the homepage blog card is bylined 'HelixBio Research team' on the Veracue site. The same article on the product page is bylined 'Veracue Research'.",
+        "Purity contradiction: the footer disclaimer says certain items may test below 99% purity, while the NAD+ and shop pages assert 99% or higher.",
+        "Phantom catalog: the shop FAQ names 14 products (BPC-157, TB-500, Semaglutide, Tirzepatide, Ipamorelin, CJC-1295, PT-141, Melanotan II, GHK-Cu, Thymosin Alpha-1, Epithalon, Selank, Semax) while the shop shows two. Homepage best-sellers link to /product/tb-500, /product/semaglutide, /product/ghk-cu, /product/retatrutide, /product/tirzepatide, /product/bpc-157. Check whether these resolve or 404.",
+        "Contact URL split: the footer links /contact-us while FAQ blocks link /contact."
+      ]
+    }
+  ],
+
+  "A_entity_verification": {
+    "chemical_identity": [
+      { "property": "Common name", "value": "NAD+", "source": "PubChem, ChEBI" },
+      { "property": "Scientific name", "value": "beta-Nicotinamide adenine dinucleotide", "source": "PubChem CID 5892" },
+      { "property": "USAN/INN", "value": "Nadide", "source": "PubChem, DrugBank DB14128" },
+      { "property": "Legacy synonyms", "value": "Coenzyme I, Cozymase, DPN, diphosphopyridine nucleotide, beta-NAD", "source": "PubChem, ChemicalBook" },
+      { "property": "CAS", "value": "53-84-9", "source": "PubChem, DrugBank, American Elements" },
+      { "property": "PubChem CID", "value": "5892 (record title 'Nadide')", "source": "PubChem" },
+      { "property": "ChEBI", "value": "CHEBI:15846 (cation) / CHEBI:44215 (zwitterion)", "source": "EMBL-EBI" },
+      { "property": "KEGG", "value": "C00003", "source": "KEGG via ChEBI" },
+      { "property": "EC number", "value": "200-184-4", "source": "American Elements" },
+      { "property": "Oxidation state", "value": "Oxidized", "source": "PubChem, ChEBI" },
+      { "property": "Classification", "value": "Dinucleotide coenzyme. Not a peptide.", "source": "PubChem, RCSB ligand NAD" },
+      { "property": "Appearance", "value": "White powder", "source": "American Elements" },
+      { "property": "Water solubility", "value": "approximately 50 mg/mL", "source": "American Elements" }
+    ],
+
+    "molecular_weight_problem": {
+      "summary": "Every vendor page publishes 663.4 g/mol with no qualification. That figure is correct for one representation and not another, and the difference is one proton. This is the page's cleanest information-gain hook.",
+      "representations": [
+        {
+          "representation": "NAD+ cation (the species the plus sign actually refers to)",
+          "formula": "C21H28N7O14P2+",
+          "net_charge": "+1",
+          "average_mw": 664.44,
+          "monoisotopic_mw": 664.116,
+          "source": "ChEBI:15846"
+        },
+        {
+          "representation": "NAD zwitterion / inner salt",
+          "formula": "C21H27N7O14P2",
+          "net_charge": "0",
+          "average_mw": 663.43,
+          "monoisotopic_mw": null,
+          "source": "PubChem CID 5892; RCSB ligand NAD (663.425)"
+        }
+      ],
+      "additional_traps": [
+        "663.4 is the anhydrous figure. Commercial beta-NAD is frequently supplied as a hydrate. Oriental Yeast's NAD+ specification computes purity using MW 663.4 'as of anhydrate' with an explicit water-content correction. A vial sold as 500mg of hydrated material does not contain 500mg of anhydrous NAD+.",
+        "Sodium salt forms exist and carry a different mass again. The monosodium form is listed at approximately 685.4. Form must come from the supplier spec, not a database lookup."
+      ]
+    },
+
+    "related_entities": [
+      { "entity": "NAD+", "formula": "C21H28N7O14P2+", "average_mw": 664.44, "cas": "53-84-9", "relationship": "Reference entity, oxidized" },
+      { "entity": "NADH", "formula": "C21H29N7O14P2", "average_mw": 665.4, "cas": "58-68-4", "relationship": "Reduced form of the same coenzyme" },
+      { "entity": "NADP+", "formula": "C21H28N7O17P3+", "average_mw": 744.4, "cas": null, "relationship": "Separate phosphorylated cofactor", "note": "Sources conflict on CAS (53-59-8 vs 53-55-8). Do not publish a CAS for NADP+ until resolved against a primary registry." },
+      { "entity": "NADPH", "formula": "C21H30N7O17P3", "average_mw": 745.4, "cas": null, "relationship": "Reduced form of NADP+" },
+      { "entity": "NMN", "formula": "C11H15N2O8P", "average_mw": 334.22, "cas": "1094-61-7", "relationship": "Immediate precursor, salvage pathway" },
+      { "entity": "NR", "formula": "C11H15N2O5+", "average_mw": 255.25, "cas": "1341-23-7", "relationship": "Upstream precursor", "note": "255.25 is the free base. Commercial NR is almost always the chloride salt at 290.70." },
+      { "entity": "Nicotinamide (NAM)", "formula": "C6H6N2O", "average_mw": 122.12, "cas": "98-92-0", "relationship": "Salvage precursor and NAD+ breakdown product" }
+    ],
+
+    "product_specification_gate": [
+      { "field": "Product name", "status": "confirmed", "current_value": "NAD+ (Nicotinamide Adenine Dinucleotide)" },
+      { "field": "SKU", "status": "partial", "current_value": "NADPLUS-10MG", "note": "SKUs needed for 50mg and 500mg" },
+      { "field": "Package sizes", "status": "confirmed", "current_value": "10mg, 50mg, 500mg" },
+      { "field": "Price", "status": "confirmed", "current_value": "$19 / $49 / $299" },
+      { "field": "Form", "status": "site-stated", "current_value": "Lyophilized powder", "note": "Needs confirmation. beta-NAD is commonly supplied as a crystalline or amorphous solid from yeast or fermentation, not necessarily lyophilized." },
+      { "field": "Free acid vs salt vs hydrate", "status": "PENDING", "current_value": null, "note": "Blocks any exact MW or net-content claim." },
+      { "field": "Water content (Karl Fischer)", "status": "PENDING", "current_value": null, "note": "Required to state anhydrous-basis content." },
+      { "field": "Purity figure and method", "status": "site-stated", "current_value": "99% or higher, independent HPLC", "note": "Needs actual method and a real COA. Also contradicts the footer disclaimer." },
+      { "field": "Assay (content) method", "status": "PENDING", "current_value": null, "note": "HPLC area-% and enzymatic assay are different numbers." },
+      { "field": "LC-MS / ESI-MS identity data", "status": "site-stated", "current_value": "Sitewide claim only, phrased for peptides" },
+      { "field": "COA", "status": "site-stated", "current_value": "Available on request; /certificates archive exists", "note": "Confirm a real NAD+ lot COA is present." },
+      { "field": "Lot / batch", "status": "PENDING", "current_value": null },
+      { "field": "Testing laboratory", "status": "PENDING", "current_value": "Third party, unnamed" },
+      { "field": "Manufacturing origin", "status": "site-stated", "current_value": "United States", "note": "Confirm. Most bulk beta-NAD is produced by yeast or enzymatic routes at a limited number of facilities." },
+      { "field": "Storage spec", "status": "site-stated", "current_value": "-20C, protected from light", "note": "Consistent with literature, but confirm it is Veracue's own spec." },
+      { "field": "Packaging", "status": "site-stated", "current_value": "Sealed glass vial, desiccant, cold-chain" },
+      { "field": "RUO wording", "status": "confirmed", "current_value": "Sitewide footer and page compliance notice" },
+      { "field": "Product images", "status": "confirmed", "current_value": "Three live assets" }
+    ],
+
+    "hard_rule_applied": "No numeric purity figure, COA claim, lab name or lot reference appears in the page body beyond what the live site already asserts as its own position. Everything else is written so it remains true regardless of what the spec turns out to be."
+  },
+
+  "B_seo_strategy": {
+    "primary_keyword": "NAD+ research chemical",
+    "secondary_clusters": {
+      "commercial": ["NAD+ research grade", "NAD+ supplier", "NAD+ research material", "buy NAD+ for research"],
+      "analytical": ["NAD+ COA", "NAD+ purity", "NAD+ HPLC", "NAD+ LC-MS", "NAD+ assay"],
+      "scientific": ["NAD+ molecular weight", "NAD+ CAS number", "NAD+ formula", "nicotinamide adenine dinucleotide"],
+      "entity_separation": ["NAD+ vs NADH", "NAD+ vs NMN", "NAD+ vs NR", "NAD+ vs NADP+", "is NAD+ a peptide"]
+    },
+    "search_intent": "Primarily commercial procurement, secondarily chemical identification and analytical verification. The page should not answer 'should I take NAD+'. That intent belongs to wellness sites and carries claim risk.",
+    "keyword_caution": "'Research chemical' is the term the SERP uses and the brief is right to target it, but it carries recreational-supply connotations in some contexts. Safe in the H1 and body because everything around it is analytical. Do not extend it into ad copy or meta without review.",
+    "seo_title": "NAD+ Research Chemical | CAS 53-84-9 Coenzyme | Veracue",
+    "seo_title_length": 58,
+    "meta_description": "NAD+ research chemical from Veracue. Nicotinamide adenine dinucleotide, CAS 53-84-9, supplied as a laboratory research material with batch documentation.",
+    "meta_description_length": 155,
+    "url": "/product/nad-plus",
+    "url_note": "Keep. Do not change a live product URL for keyword cosmetics.",
+    "breadcrumb": "Home > Shop > Mitochondrial & Cellular Energy > NAD+",
+    "h1": "NAD+ Research Chemical",
+    "h1_subline": "Nicotinamide adenine dinucleotide, CAS 53-84-9"
+  },
+
+  "C_product_page_copy": {
+    "hero_summary": "NAD+ is nicotinamide adenine dinucleotide, a dinucleotide coenzyme that sits at the center of cellular redox chemistry. It is not a peptide, and a lot of vendor pages get that wrong. Veracue supplies NAD+ as a laboratory research material under CAS 53-84-9, for in vitro and preclinical work only. It is not for human or veterinary use, not for diagnostic use, and not for any therapeutic application.",
+
+    "sections": [
+      {
+        "heading": "What NAD+ is, and what it is not",
+        "body": [
+          "NAD+ is built from two nucleotides, one carrying nicotinamide and one carrying adenine, joined through a ribose-phosphate-phosphate-ribose bridge. That structure puts it in the dinucleotide class. Peptides are chains of amino acids linked by peptide bonds. NAD+ contains neither.",
+          "The distinction matters for more than terminology. It changes which analytical methods mean anything. Sequence confirmation, truncation analysis and amino acid analysis are peptide tools. For NAD+ the relevant questions are anomeric configuration, redox state, water content and chromatographic purity under a stated method.",
+          "Four related molecules get confused with NAD+ constantly, often in ways that move evidence from one compound to another where it does not belong.",
+          "Read that table once and a common error becomes visible. Most published human trial data described as NAD+ research was generated with NR or NMN, not with NAD+. Precursor results are not NAD+ results."
+        ],
+        "table": {
+          "columns": ["Entity", "What it is", "Relationship to NAD+"],
+          "rows": [
+            ["NAD+", "Oxidized nicotinamide adenine dinucleotide", "The reference entity"],
+            ["NADH", "The reduced form of the same coenzyme", "Redox partner. Same molecule, different electron state"],
+            ["NADP+", "A phosphorylated cofactor", "A separate cofactor system, mostly anabolic. Not interchangeable"],
+            ["NADPH", "The reduced form of NADP+", "Distinct from NADH in its metabolic role"],
+            ["Nicotinamide (NAM)", "A B3-related metabolite", "Released when NAD+ is consumed, and fed back through salvage"],
+            ["NR", "Nicotinamide riboside", "An upstream precursor, converted toward NMN"],
+            ["NMN", "Nicotinamide mononucleotide", "The immediate precursor, converted to NAD+ by NMNAT"]
+          ]
+        }
+      },
+      {
+        "heading": "Chemical identity",
+        "table": {
+          "columns": ["Property", "Value"],
+          "rows": [
+            ["Product", "NAD+"],
+            ["Scientific name", "beta-Nicotinamide adenine dinucleotide"],
+            ["USAN/INN", "Nadide"],
+            ["Other names", "Coenzyme I, Cozymase, DPN, beta-NAD"],
+            ["CAS", "53-84-9"],
+            ["PubChem CID", "5892"],
+            ["ChEBI", "CHEBI:15846"],
+            ["KEGG", "C00003"],
+            ["Formula (cation)", "C21H28N7O14P2+"],
+            ["Formula (zwitterion)", "C21H27N7O14P2"],
+            ["Average MW", "664.44 (cation) / 663.43 (zwitterion)"],
+            ["Oxidation state", "Oxidized"],
+            ["Classification", "Dinucleotide coenzyme"]
+          ]
+        }
+      },
+      {
+        "heading": "Why two molecular weights show up for the same compound",
+        "body": [
+          "This trips people up during molar calculations, so it is worth spelling out.",
+          "The plus sign in NAD+ refers to the positive charge on the nicotinamide ring nitrogen. Written strictly as that cation, the formula is C21H28N7O14P2+ with an average mass of 664.44. Most chemical databases, including PubChem CID 5892, publish the neutral inner-salt form instead, where a phosphate oxygen carries the balancing negative charge. That representation is C21H27N7O14P2 at 663.43.",
+          "Same substance. Same CAS. One proton apart in bookkeeping.",
+          "There is a second, larger correction that matters more in practice. Published molecular weights are anhydrous values. beta-NAD is commonly supplied as a hydrate, and water content can be a meaningful fraction of what is in the vial. If a protocol needs an accurate molar concentration, the calculation needs the supplier's water content figure, not just the catalog MW. Salt forms shift the number again.",
+          "Researchers should work from the specification sheet for the lot in hand rather than a database value."
+        ]
+      },
+      {
+        "heading": "What NAD+ does in cells",
+        "body": [
+          "Two roles, and they are worth separating because they lead to different research questions.",
+          "As a redox cofactor. NAD+ accepts a hydride to become NADH, and NADH donates electrons downstream. That NAD+/NADH couple runs through glycolysis, the TCA cycle and oxidative phosphorylation. It is the reason NAD+ appears in almost every bioenergetics protocol ever written.",
+          "As a consumed co-substrate. Three enzyme families cleave NAD+ rather than cycling it. Sirtuins (SIRT1 through SIRT7) use it for deacetylation and related deacylation reactions. PARPs use it during DNA damage sensing and repair, and can draw down large NAD+ pools when strongly activated. CD38 and CD157 act as NADases, producing ADP-ribose and cyclic ADP-ribose. Each of these reactions releases nicotinamide, which feeds back into the salvage pathway.",
+          "Cells rebuild NAD+ through three routes. The de novo route starts from tryptophan through the kynurenine pathway. The Preiss-Handler route starts from nicotinic acid. The salvage pathway dominates in mammals, converting nicotinamide to NMN through NAMPT, then NMN to NAD+ through NMNAT.",
+          "None of this is a claim about what happens when NAD+ is administered to an organism. Biochemical centrality is not a therapeutic outcome, and compartmentalization means an increase in one pool does not imply an increase in another."
+        ]
+      },
+      {
+        "heading": "Research applications",
+        "body": ["NAD+ appears as a reagent, a substrate or a measured analyte across several fields.", "These are research contexts. None of them is a statement that purchasing this material produces a physiological result."],
+        "list": [
+          "Enzyme kinetics. As the cofactor in dehydrogenase assays, where NADH formation is tracked spectrophotometrically",
+          "Redox biology. NAD+/NADH ratio measurement in cells, tissues and isolated mitochondria",
+          "Sirtuin research. As the obligate co-substrate in deacetylation assays",
+          "PARP and DNA damage biology. Following NAD+ consumption during PARP activation",
+          "CD38 and NADase work. Substrate for cyclase and hydrolase activity assays",
+          "Metabolomics. As an analytical standard for NAD-pathway metabolite panels",
+          "Comparative pathway studies. Alongside NMN, NR and nicotinamide, where the distinction between compounds is the point of the experiment"
+        ]
+      },
+      {
+        "heading": "Analytical verification, and what each test actually proves",
+        "body": [
+          "This is where most vendor pages stop at a percentage. A percentage on its own does not tell a researcher much, because different methods measure different things and each one leaves a specific blind spot."
+        ],
+        "table": {
+          "columns": ["Method", "What it establishes", "What it does not establish"],
+          "rows": [
+            ["RP-HPLC with UV detection, reported as area %", "Chromatographic purity under one stated column, mobile phase and detection wavelength", "Molecular identity. Anything that does not elute or does not absorb. Water content. Salt form"],
+            ["LC-MS", "A measured mass consistent with the expected molecule", "Purity. Anything mass-identical, including isomers"],
+            ["LC-MS/MS", "Accurate mass plus fragmentation consistent with the expected structure", "Absolute purity. Anomeric configuration, since alpha-NAD and beta-NAD share a mass"],
+            ["UV scan, A260 and A340", "Redox state. NADH absorbs strongly near 340 nm, NAD+ effectively does not", "Purity against impurities that do not absorb in that region"],
+            ["Enzymatic assay tracking change in A340", "Functional NAD+ content, using the NADH extinction coefficient of roughly 6.2 to 6.3 x 10^3 L per mol per cm", "The identity of whatever is not NAD+"],
+            ["Karl Fischer titration", "Water content, which converts an as-supplied figure to an anhydrous-basis figure", "Chemical purity"],
+            ["Endotoxin (LAL)", "Endotoxin level", "Sterility, identity or purity"]
+          ]
+        },
+        "consequences": [
+          {
+            "point": "Chromatographic purity and content are different numbers.",
+            "explanation": "An HPLC area percentage says what fraction of the detected peak area belongs to the main peak. An assay value says how much NAD+ is actually present per unit mass. A hydrated material can show excellent chromatographic purity and still deliver less anhydrous NAD+ per milligram than the label implies."
+          },
+          {
+            "point": "Mass alone cannot resolve the anomer.",
+            "explanation": "beta-NAD is the biologically active configuration. The alpha-anomer is an isomer with an identical molecular mass, so mass spectrometry will not separate them. Chromatographic resolution or an enzymatic assay is what settles that question."
+          },
+          {
+            "point": "Redox state needs its own check.",
+            "explanation": "NAD+ and NADH differ by two mass units and behave very differently in the UV. A supplier claiming NAD+ should be able to show that the material is in the oxidized state."
+          }
+        ]
+      },
+      {
+        "heading": "What to look for on a NAD+ certificate of analysis",
+        "body": ["If a COA is supplied with your lot, these are the fields that carry weight.", "A number without a method behind it is not verification. If a supplier cannot produce a lot-specific document, that is the signal."],
+        "list": [
+          "Product name stated as NAD+ or beta-nicotinamide adenine dinucleotide, with CAS 53-84-9",
+          "The specific form, meaning free acid, salt or hydrate, since this changes the molar math",
+          "Lot or batch number that matches the label on the vial in hand",
+          "Test date and the issuing laboratory",
+          "Purity result with the method named, not just a number",
+          "Assay or content result, stated on an anhydrous basis where relevant",
+          "Water content, if the material is hydrated",
+          "Identity confirmation method",
+          "Specification limits, so the result can be read against a standard rather than in isolation"
+        ]
+      },
+      {
+        "heading": "Stability and handling",
+        "body": ["NAD+ is hygroscopic, and the degradation routes are well characterized in the literature. The factors that matter are below.", "Those are general properties of the compound. Storage instructions for a specific product should come from that product's own specification sheet, which accounts for its form, water content and packaging."],
+        "list": [
+          "Moisture. Absorbed water accelerates hydrolysis. This is the main reason supplier documentation emphasizes sealed, desiccated storage",
+          "Temperature. Degradation speeds up with heat. Supplier specifications commonly call for cold storage of the solid, with lower temperatures for longer holds",
+          "pH. Stability is best near neutral to slightly acidic. Base-catalyzed cleavage of the N-glycosidic bond accelerates above neutral",
+          "Light. UV and near-UV exposure can drive photodegradation, which is why amber or foil protection is standard",
+          "Solution state. Reconstituted NAD+ is less stable than the solid. Keep solutions cold, protected from light, and avoid alkaline buffers and repeated freeze-thaw"
+        ]
+      },
+      {
+        "heading": "Human evidence, stated accurately",
+        "body": [
+          "Direct NAD+ administration and NAD precursor administration are separate evidence bases. Conflating them is the most common error in NAD content, and it usually runs in one direction, taking the larger precursor literature and presenting it as support for NAD+ itself."
+        ],
+        "evidence_table": [
+          {
+            "category": "Direct NAD+",
+            "compound_and_route": "IV NAD+, 10 mg/day for 7 days",
+            "study": "Single-center randomized placebo-controlled trial, 180 adults with ischemic cardiomyopathy, LVEF 45% or below, NYHA II to III",
+            "identifier": "PMID 40954388",
+            "result": "Greater improvement in LVEF at 1 month versus placebo, 45.44 +/- 8.55% vs 42.44 +/- 9.09%, p = 0.024",
+            "limitation": "Single center. Surrogate imaging endpoint. Every secondary endpoint was a non-significant trend: NT-proBNP p = 0.102, composite events 14.6% vs 24.7% p = 0.089, first HF hospitalization 13.5% vs 23.6% p = 0.078, NYHA class at 6 months p = 0.097"
+          },
+          {
+            "category": "Direct NAD+",
+            "compound_and_route": "IV NAD+, 750 mg over 6 hours",
+            "study": "Open-label pilot, 11 male participants (8 infused, 3 control)",
+            "identifier": "PMID 31572171",
+            "result": "No change in plasma NAD+ or its metabolites until after 2 hours. Increased urinary excretion of methylnicotinamide and NAD+ at 6 hours",
+            "limitation": "Pharmacokinetic only. Very small. No clinical outcomes. The authors described the plasma result as surprising"
+          },
+          {
+            "category": "Direct NAD+",
+            "compound_and_route": "IV NAD+, 50 mg for 7 days",
+            "study": "Randomized study, 60 older heart failure patients, Rev Cardiovasc Med 2024",
+            "identifier": null,
+            "result": "Reported improvement rates in NT-proBNP and LVEF",
+            "limitation": "Small, single center, short duration"
+          },
+          {
+            "category": "NAD precursors",
+            "compound_and_route": "Oral NR and NMN",
+            "study": "Review of human ageing evidence, Nature Metabolism, October 2025",
+            "identifier": "PMID 41083806",
+            "result": "Precursors reliably raise NAD-related metabolites. Human clinical trials have shown limited efficacy",
+            "limitation": "This is precursor evidence. It does not transfer to NAD+"
+          }
+        ],
+        "what_the_evidence_does_not_show": "There is no established human outcome evidence for NAD+ in ageing, energy, cognition, body composition or athletic performance. The same Nature Metabolism review notes that even the premise of an age-related NAD+ decline in humans has been consistently observed in only a limited number of studies, and that human tissue-level data remains sparse. Mechanism is not outcome. Preclinical is not clinical. Precursor is not NAD+."
+      },
+      {
+        "heading": "Regulatory position",
+        "body": [
+          "NAD+ is not approved by the FDA as a drug for any indication.",
+          "In September 2019 the FDA proposed that nicotinamide adenine dinucleotide, along with reduced NADH disodium, not be included on the 503A bulk drug substances list (Federal Register, docket FDA-2018-N-4845). That proposal has not been finalized, and NAD remains on the Category 1 list of substances under evaluation, which is why compounded NAD+ preparations continue to exist under the FDA's interim enforcement policy. NAD does not appear on the final 503A list at 21 CFR 216.23.",
+          "Two separations worth holding onto. Regulatory status attaching to compounded injectable NAD+ preparations is not the same as the status of a laboratory research material. And the regulatory histories of NMN and NR are separate again, and cannot be read across to NAD+.",
+          "Veracue is not a compounding pharmacy and does not operate as a compounding facility under Section 503A."
+        ]
+      },
+      {
+        "heading": "Research use boundary",
+        "body": [
+          "NAD+ supplied by Veracue is for in vitro laboratory and preclinical research only. It is not a drug, a dietary supplement, a cosmetic or a food product. It is not approved by the FDA or any regulatory body for human or veterinary use, diagnosis, treatment, cure or prevention of any disease or condition. It must not be administered to humans or animals.",
+          "Nothing on this page is medical advice, and no statement here should be read as a therapeutic or health claim. By purchasing, the buyer confirms they are a qualified researcher, laboratory or institution acquiring this material for lawful research purposes, and accepts responsibility for compliance with applicable local, state and federal regulations."
+        ]
+      }
+    ]
+  },
+
+  "D_faq": [
+    {
+      "question": "What is NAD+?",
+      "answer": "NAD+ is nicotinamide adenine dinucleotide in its oxidized form, a coenzyme found in every living cell. It works as a redox cofactor in energy metabolism and as a consumed co-substrate for sirtuins, PARPs and CD38. Veracue supplies it as a laboratory research material under CAS 53-84-9."
+    },
+    {
+      "question": "Is NAD+ a peptide?",
+      "answer": "No. NAD+ is a dinucleotide coenzyme, built from a nicotinamide nucleotide and an adenine nucleotide joined through a ribose-phosphate bridge. It contains no amino acids and no peptide bonds. Several vendor sites label it a peptide. That label is incorrect."
+    },
+    {
+      "question": "What is the difference between NAD+ and NADH?",
+      "answer": "They are the two redox states of the same coenzyme. NAD+ is the oxidized form and accepts a hydride to become NADH, the reduced form. NADH then donates electrons downstream. The pair is usually written as the NAD+/NADH couple. They are easy to tell apart in the UV, because NADH absorbs strongly near 340 nm and NAD+ effectively does not."
+    },
+    {
+      "question": "Is NAD+ the same as NMN?",
+      "answer": "No. NMN, nicotinamide mononucleotide, is the immediate precursor to NAD+ in the salvage pathway, converted by the enzyme NMNAT. NMN has the formula C11H15N2O8P at 334.22 g/mol, roughly half the mass of NAD+. Research results generated with NMN are not results for NAD+."
+    },
+    {
+      "question": "Is NAD+ the same as NR?",
+      "answer": "No. NR, nicotinamide riboside, is an upstream precursor that is converted toward NMN and then to NAD+. NR has the formula C11H15N2O5+ at 255.25 g/mol for the free base, and is usually sold as the chloride salt at 290.70. Like NMN, it is a different compound with its own evidence base."
+    },
+    {
+      "question": "What is the difference between NAD+ and NADP+?",
+      "answer": "NADP+ is a separate phosphorylated cofactor with the formula C21H28N7O17P3+ at roughly 744.4 g/mol. It carries an extra phosphate group and serves largely anabolic and antioxidant pathways, while NAD+ serves catabolic energy metabolism. The two are not interchangeable, and neither are their reduced forms NADPH and NADH."
+    },
+    {
+      "question": "What is the molecular weight and CAS number of NAD+?",
+      "answer": "The CAS number is 53-84-9. Molecular weight depends on how the molecule is written. As the cation C21H28N7O14P2+ it is 664.44 g/mol. As the neutral inner-salt form C21H27N7O14P2, which is what PubChem CID 5892 publishes, it is 663.43 g/mol. Both figures are anhydrous values, so hydrated material needs a water-content correction for accurate molar work."
+    },
+    {
+      "question": "Why does the molecular weight on my calculation not match the label?",
+      "answer": "Usually one of three reasons. The catalog figure is anhydrous and the material is hydrated. The material is a salt form with a different mass. Or the two published representations, cation and zwitterion, are being mixed. Check the supplier specification for form and water content before calculating molarity."
+    },
+    {
+      "question": "How is NAD+ tested for identity and purity?",
+      "answer": "Typically by reverse-phase HPLC with UV detection for chromatographic purity, and by mass spectrometry for identity. A UV scan can confirm redox state, and an enzymatic assay tracking absorbance change at 340 nm can measure functional NAD+ content. Karl Fischer titration measures water content where the material is hydrated."
+    },
+    {
+      "question": "Does HPLC alone prove the identity of a NAD+ sample?",
+      "answer": "No. HPLC reports what fraction of the detected peak area corresponds to the main peak under one specific method. It does not identify the molecule, and it does not see anything that fails to elute or fails to absorb at the detection wavelength. Mass spectrometry adds a measured mass consistent with the expected structure. Even combined, the two cannot separate the alpha and beta anomers, which share a molecular mass. That takes chromatographic resolution or an enzymatic assay."
+    },
+    {
+      "question": "What should a NAD+ certificate of analysis contain?",
+      "answer": "Product name and CAS, the specific form, a lot number matching the vial, the test date and issuing laboratory, a purity result with the method named, an assay or content result, water content where relevant, identity confirmation, and specification limits to read the results against. A purity figure with no method attached is not verification."
+    },
+    {
+      "question": "What should researchers verify before purchasing NAD+ research material?",
+      "answer": "Four things. That the supplier states the form, since free acid, salt and hydrate carry different masses. That purity and content are reported as separate numbers with methods named. That identity is confirmed by an orthogonal method, not chromatography alone. And that a lot-specific document exists for the vial being shipped, not a generic sample document."
+    }
+  ],
+
+  "E_internal_links": {
+    "verified_live": [
+      { "anchor": "Certificate of analysis archive", "url": "/certificates", "why": "Directly supports the COA section. Confirm a NAD+ lot document is actually present first" },
+      { "anchor": "Peptide calculator", "url": "/peptide-calculator", "why": "Practical utility for reconstitution volumes. Check whether it handles a non-peptide MW correctly before linking" },
+      { "anchor": "AHK-Cu (Copper Tripeptide-3)", "url": "/product/ahk-cu", "why": "The only other live product. Already cross-linked on the page" },
+      { "anchor": "NAD+ and AHK-Cu in metabolic and longevity research", "url": "/nad-plus-ahk-cu-metabolic-longevity-research", "why": "Existing editorial content on this exact compound" },
+      { "anchor": "Mitochondrial and cellular energy compounds", "url": "/shop?category=Mitochondrial%20%26%20Cellular%20Energy", "why": "Category-level topical grouping" },
+      { "anchor": "Research catalog", "url": "/shop", "why": "Standard commercial path" },
+      { "anchor": "Help and FAQ", "url": "/faq", "why": "Extends the Q&A depth" },
+      { "anchor": "About Veracue", "url": "/about-us", "why": "E-E-A-T support for quality and sourcing claims" },
+      { "anchor": "Shipping policy", "url": "/shipping-policy", "why": "Referenced by the packaging section" },
+      { "anchor": "Medical disclaimer", "url": "/medical-disclaimer", "why": "Supports the research use boundary" }
+    ],
+    "not_yet_linkable": {
+      "note": "There is no NAD+ vs NADH page, no NAD+ vs NMN page, no analytical methods resource and no stability guide. These are the four supporting articles that would turn this product page into a topical cluster, and they are the right next commissions. Each would own an educational query while this page keeps the procurement intent.",
+      "recommended_commissions": [
+        "NAD+ vs NADH",
+        "NAD+ vs NMN vs NR",
+        "NAD+ analytical methods",
+        "NAD+ stability and storage"
+      ]
+    }
+  },
+
+  "F_external_references": [
+    { "source": "PubChem CID 5892 (Nadide)", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5892", "used_for": "CAS, formula, identity" },
+    { "source": "ChEBI:15846 (NAD+)", "url": "https://www.ebi.ac.uk/chebi", "used_for": "Cation formula, charge, average and monoisotopic mass" },
+    { "source": "RCSB PDB ligand NAD", "url": "https://www.rcsb.org/ligand/NAD", "used_for": "Zwitterion formula and 663.425 MW" },
+    { "source": "DrugBank DB14128", "url": "https://go.drugbank.com", "used_for": "Nadide entry, investigational status" },
+    { "source": "Nature Metabolism, Vinten et al. 2025, PMID 41083806", "url": "https://doi.org/10.1038/s42255-025-01387-7", "used_for": "Human precursor evidence, limited efficacy, sparse tissue data" },
+    { "source": "Ischemic cardiomyopathy RCT, PMID 40954388", "url": "https://pubmed.ncbi.nlm.nih.gov/40954388", "used_for": "The only sizeable direct IV NAD+ RCT" },
+    { "source": "Grant et al. 2019, PMID 31572171", "url": "https://doi.org/10.3389/fnagi.2019.00257", "used_for": "IV NAD+ pharmacokinetic pilot" },
+    { "source": "Federal Register, 84 FR 46688 (Sept 5, 2019)", "url": "https://www.federalregister.gov", "used_for": "FDA proposal to exclude NAD from the 503A bulks list" },
+    { "source": "FDA bulk drug substances nominated for compounding", "url": "https://www.fda.gov", "used_for": "Category 1 status" }
+  ],
+
+  "G_schema": {
+    "notes": [
+      "Product, BreadcrumbList and FAQPage only. No AggregateRating and no Review, because no genuine review data exists.",
+      "Offers use the live prices only. Confirm SKUs for the 50mg and 500mg variants before publishing and replace the placeholders.",
+      "Google no longer shows FAQ rich results broadly, limiting them to recognized government and health sites. Mark up the FAQ for accuracy and answer coverage, not for a rich result. Any question marked up must appear visibly on the page."
+    ],
+    "json_ld": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Product",
+          "@id": "https://veracue-peptides.vercel.app/product/nad-plus#product",
+          "name": "NAD+ (Nicotinamide Adenine Dinucleotide)",
+          "alternateName": "Nadide",
+          "description": "NAD+ research chemical, CAS 53-84-9. Nicotinamide adenine dinucleotide supplied by Veracue as a laboratory research material for in vitro and preclinical research only. Not for human or veterinary use.",
+          "sku": "NADPLUS-10MG",
+          "category": "Mitochondrial & Cellular Energy",
+          "url": "https://veracue-peptides.vercel.app/product/nad-plus",
+          "image": [
+            "https://veracue-peptides.vercel.app/api/media/file/veracue-nad-plus-10mg-studio.webp",
+            "https://veracue-peptides.vercel.app/api/media/file/veracue-nad-plus-500mg-pedestal-white.webp",
+            "https://veracue-peptides.vercel.app/api/media/file/veracue-nad-plus-50mg-dappled-shadow.webp"
+          ],
+          "brand": { "@type": "Brand", "name": "Veracue" },
+          "additionalProperty": [
+            { "@type": "PropertyValue", "name": "CAS Number", "value": "53-84-9" },
+            { "@type": "PropertyValue", "name": "PubChem CID", "value": "5892" },
+            { "@type": "PropertyValue", "name": "Molecular Formula", "value": "C21H28N7O14P2+" },
+            { "@type": "PropertyValue", "name": "Molecular Weight", "value": "664.44 g/mol (cation); 663.43 g/mol (zwitterion)" },
+            { "@type": "PropertyValue", "name": "Classification", "value": "Dinucleotide coenzyme" },
+            { "@type": "PropertyValue", "name": "Oxidation State", "value": "Oxidized" },
+            { "@type": "PropertyValue", "name": "Intended Use", "value": "Research use only. Not for human consumption." }
+          ],
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "USD",
+            "lowPrice": "19.00",
+            "highPrice": "299.00",
+            "offerCount": 3,
+            "offers": [
+              { "@type": "Offer", "sku": "NADPLUS-10MG", "name": "NAD+ 10mg", "price": "19.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://veracue-peptides.vercel.app/product/nad-plus" },
+              { "@type": "Offer", "sku": "NADPLUS-50MG-PLACEHOLDER", "name": "NAD+ 50mg", "price": "49.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://veracue-peptides.vercel.app/product/nad-plus" },
+              { "@type": "Offer", "sku": "NADPLUS-500MG-PLACEHOLDER", "name": "NAD+ 500mg", "price": "299.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://veracue-peptides.vercel.app/product/nad-plus" }
+            ]
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://veracue-peptides.vercel.app/" },
+            { "@type": "ListItem", "position": 2, "name": "Shop", "item": "https://veracue-peptides.vercel.app/shop" },
+            { "@type": "ListItem", "position": 3, "name": "Mitochondrial & Cellular Energy", "item": "https://veracue-peptides.vercel.app/shop?category=Mitochondrial%20%26%20Cellular%20Energy" },
+            { "@type": "ListItem", "position": 4, "name": "NAD+" }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "Is NAD+ a peptide?", "acceptedAnswer": { "@type": "Answer", "text": "No. NAD+ is a dinucleotide coenzyme, built from a nicotinamide nucleotide and an adenine nucleotide joined through a ribose-phosphate bridge. It contains no amino acids and no peptide bonds." } },
+            { "@type": "Question", "name": "What is the difference between NAD+ and NADH?", "acceptedAnswer": { "@type": "Answer", "text": "They are the two redox states of the same coenzyme. NAD+ is the oxidized form and accepts a hydride to become NADH, the reduced form. NADH absorbs strongly near 340 nm and NAD+ effectively does not." } },
+            { "@type": "Question", "name": "What is the molecular weight and CAS number of NAD+?", "acceptedAnswer": { "@type": "Answer", "text": "The CAS number is 53-84-9. As the cation C21H28N7O14P2+ the average molecular weight is 664.44 g/mol. As the neutral inner-salt form C21H27N7O14P2, which PubChem CID 5892 publishes, it is 663.43 g/mol. Both are anhydrous values." } },
+            { "@type": "Question", "name": "Does HPLC alone prove the identity of a NAD+ sample?", "acceptedAnswer": { "@type": "Answer", "text": "No. HPLC reports chromatographic purity under one specific method. It does not identify the molecule and does not detect anything that fails to elute or absorb at the detection wavelength. Mass spectrometry adds identity evidence, but neither method separates the alpha and beta anomers, which share a molecular mass." } }
+          ]
+        }
+      ]
+    }
+  },
+
+  "H_image_seo": {
+    "rules": [
+      "Do not describe any image as a specific salt, hydrate or free acid until the form is confirmed.",
+      "Do not add a COA image until a real NAD+ lot document exists."
+    ],
+    "images": [
+      {
+        "current_filename": "veracue-nad-plus-10mg-studio.webp",
+        "recommended_filename": "veracue-nad-plus-research-chemical-10mg-vial.webp",
+        "alt": "NAD+ research chemical 10mg vial from Veracue, CAS 53-84-9",
+        "title": "NAD+ Research Chemical 10mg Vial",
+        "caption": "NAD+ is supplied as a laboratory research material for in vitro use only."
+      },
+      {
+        "current_filename": "veracue-nad-plus-500mg-pedestal-white.webp",
+        "recommended_filename": "veracue-nad-plus-research-chemical-500mg-vial.webp",
+        "alt": "NAD+ research chemical 500mg vial, nicotinamide adenine dinucleotide",
+        "title": "NAD+ Research Chemical 500mg",
+        "caption": "NAD+ is available in 10mg, 50mg and 500mg research quantities."
+      },
+      {
+        "current_filename": "veracue-nad-plus-50mg-dappled-shadow.webp",
+        "recommended_filename": "veracue-nad-plus-research-chemical-50mg-vial.webp",
+        "alt": "NAD+ research chemical 50mg vial, oxidized nicotinamide adenine dinucleotide",
+        "title": "NAD+ Research Chemical 50mg",
+        "caption": "Nicotinamide adenine dinucleotide, oxidized form, CAS 53-84-9."
+      }
+    ]
+  },
+
+  "I_final_qa": {
+    "verified": [
+      "NAD+ identity: CAS 53-84-9, PubChem CID 5892, ChEBI:15846, KEGG C00003, DrugBank DB14128",
+      "Both molecular formulas and both average molecular weights, with the reason they differ",
+      "NAD+ classified as a dinucleotide coenzyme, not a peptide",
+      "Entity separation from NADH, NADP+, NADPH, NMN, NR and nicotinamide, each with independently checked formula and mass",
+      "Biochemical roles: redox cofactor, and consumed co-substrate for sirtuins, PARPs and CD38/CD157",
+      "Biosynthesis via de novo, Preiss-Handler and salvage routes, including NAMPT and NMNAT",
+      "The three direct IV NAD+ human studies, with design, size, endpoint, result and limitation",
+      "Analytical method capabilities and blind spots, including the NADH 340 nm extinction coefficient",
+      "Regulatory status, including the 2019 Federal Register proposal to exclude NAD from the 503A list"
+    ],
+
+    "corrected_from_supplied_research": [
+      {
+        "brief_claim": "2026 RCT (China, n=180)",
+        "correction": "The trial published in 2025, not 2026. PMID 40954388."
+      },
+      {
+        "brief_claim": "2019 open-label pilot, n=11, no measurable change over 2 hours",
+        "correction": "The study ran a 6-hour infusion with 8 infused participants and 3 controls. The finding was no change until after 2 hours, not no change across 2 hours. Urinary NAD+ and methylnicotinamide did rise by 6 hours. PMID 31572171."
+      },
+      {
+        "brief_claim": "No eligible direct-administration trials",
+        "correction": "There are at least three direct IV NAD+ human studies, including a second randomized study in 60 older heart failure patients."
+      },
+      {
+        "brief_claim": "NAD+ appears on FDA Category 1 bulk drug substances list as of May 14, 2026",
+        "correction": "Category 1 is correct, but the brief omitted the more consequential fact: FDA proposed in September 2019 that NAD not be included on the 503A list at all. Stating only the Category 1 status implies a more favorable regulatory posture than exists."
+      },
+      {
+        "brief_claim": "Human evidence sourced to vendor blogs (artemispeptides, echopeptides, palmettopeptides)",
+        "correction": "Everything in this deliverable has been re-sourced to PubMed, PubChem, ChEBI, RCSB and the Federal Register."
+      }
+    ],
+
+    "claims_removed_or_qualified": [
+      { "action": "removed", "claim": "Central role in cellular energy metabolism, mitochondrial function, and DNA repair signaling, used as a product-level selling line", "reason": "Accurate as biochemistry, but as hero copy on a commercial page it reads as a benefit claim. Reframed as mechanism with an explicit note that biochemical centrality is not a therapeutic outcome." },
+      { "action": "removed", "claim": "One of the most widely studied coenzymes in metabolic and longevity research", "reason": "Longevity framing on a commercial page is the highest-risk claim category on the compliance audit." },
+      { "action": "removed", "claim": "NAD+ has been the subject of extensive published preclinical research examining its decline with age and its restoration", "reason": "The premise of a consistent human age-related decline is contested in the current literature." },
+      { "action": "qualified", "claim": "Every purity, COA, third-party and lab claim", "reason": "The page copy states what a researcher should look for rather than asserting what Veracue provides, because none of it is confirmed." },
+      { "action": "qualified", "claim": "Storage conditions", "reason": "Presented as compound properties, with product-specific instructions deferred to the specification sheet." }
+    ],
+
+    "pending_before_publish": [
+      "Form: free acid, salt or hydrate, plus water content",
+      "A real lot COA with method, limits, lab and date",
+      "SKUs for the 50mg and 500mg variants",
+      "Resolution of the 99%-or-higher claim against the footer disclaimer",
+      "Confirmation that lyophilized powder is accurate for this material",
+      "Confirmation of US manufacture"
+    ],
+
+    "strongest_opportunities": {
+      "seo": "Entity precision. Correcting the peptide misclassification and publishing a properly qualified identity table puts this page ahead of vendor pages that copy each other's errors.",
+      "geo": "The entity separation table. NAD+ against NADH, NADP+, NADPH, NMN, NR and nicotinamide, each with formula, mass and relationship, is exactly the structure an AI system can cite cleanly.",
+      "aeo": "The molecular weight question. 'Why does NAD+ have two molecular weights' is a real researcher question that no ranking page currently answers.",
+      "information_gain": "The analytical capability table and its three consequences. Purity is not content, mass cannot resolve the anomer, and redox state needs its own check. No competing vendor page explains any of the three."
+    },
+
+    "cautions": {
+      "scientific": "Never let precursor evidence stand in for NAD+ evidence. That is the field's default error and it runs through most competing content.",
+      "analytical": "Never write that HPLC proves identity or that LC-MS proves purity. Each method has a named blind spot and the page's credibility rests on naming them.",
+      "stability": "General literature is not a product specification. Keep them separate.",
+      "regulatory": "Compounded injectable NAD+, dietary supplement NMN and a laboratory research material are three different regulatory categories. Do not read across."
+    }
+  }
+}

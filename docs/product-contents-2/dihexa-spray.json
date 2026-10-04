@@ -1,0 +1,496 @@
+{
+  "route": "/product/dihexa-spray",
+  "h1": "Dihexa Spray",
+  "eyebrow": "RESEARCH USE ONLY",
+  "subtitle": "Angiotensin IV-Derived Small Molecule · Research Use Only",
+  "primary_keyword": "dihexa peptide",
+  "secondary_keywords": [
+    "dihexa",
+    "dihexa spray",
+    "what is dihexa",
+    "dihexa benefits",
+    "dihexa peptide benefits",
+    "dihexa research",
+    "dihexa compound",
+    "dihexa mechanism",
+    "dihexa HGF",
+    "dihexa c-Met",
+    "dihexa memory research",
+    "dihexa cognitive research",
+    "dihexa molecular weight",
+    "dihexa COA",
+    "dihexa vs semax",
+    "dihexa vs selank"
+  ],
+  "meta": {
+    "title": "Dihexa Spray Research Compound (PNB-0408) | Veracue",
+    "description": "Research reference for Dihexa Spray covering molecular identity, AngIV/HGF-c-Met literature, evidence limits, COA guidance, and RUO status for lab use."
+  },
+  "hero": {
+    "eyebrow": "RESEARCH USE ONLY",
+    "h1": "Dihexa Spray",
+    "subtitle": "Angiotensin IV-Derived Small Molecule · Research Use Only",
+    "short_description": "Dihexa is an Angiotensin IV-derived small molecule investigated in HGF/c-Met signaling, neuronal plasticity and experimental memory research. This Veracue material is presented for laboratory research use only. Published research describes the compound; lot-specific documentation establishes the analytical characteristics of the material supplied."
+  },
+  "aeo_direct_answer": {
+    "question": "What is Dihexa?",
+    "answer": "Dihexa (also referenced as PNB-0408) is an Angiotensin IV-derived small molecule, not a conventional peptide, investigated in HGF/c-Met signaling and broader neuroscience research. Preclinical work has examined synaptic and learning/memory-related endpoints in cell and animal models. An established human clinical evidence base for therapeutic efficacy has not been identified. Veracue presents its Dihexa material strictly for Research Use Only; product-specific analytical characteristics, such as concentration and purity, must be verified through Veracue's own first-party and lot-specific documentation."
+  },
+  "active_compound_clarification": "The named research compound for this product is Dihexa. Product-specific formulation details such as concentration, carrier, fill volume, salt/form, and lot-specific analytical results are stated only when documented by Veracue; where they are not yet published, that is noted as 'Not publicly specified by Veracue,' not as an unidentified or unknown active compound.",
+  "terminology_correction": "Although 'Dihexa peptide' is a common search term and is used on this page because it reflects real search behavior, Dihexa is more accurately classified as an Angiotensin IV-derived small molecule analogue rather than a conventional peptide. Its structure, N-hexanoic-Tyr-Ile-(6)-aminohexanoic amide, is a defined small-molecule chemical structure and should not be read as an ordinary amino-acid sequence.",
+  "product_snapshot": {
+    "compound": "Dihexa",
+    "alternative_designation": "PNB-0408",
+    "chemical_class": "Angiotensin IV-derived small molecule analogue",
+    "formula": "C27H44N4O5",
+    "molecular_weight": "Approximately 504.7 g/mol",
+    "pubchem_cid": "125355097",
+    "research_designation": "Research Use Only",
+    "format": "Spray formulation",
+    "concentration": "Not publicly specified by Veracue.",
+    "carrier": "Not publicly specified by Veracue.",
+    "solvent": "Not publicly specified by Veracue.",
+    "excipients": "Not publicly specified by Veracue.",
+    "preservative": "Not publicly specified by Veracue.",
+    "fill_volume": "Not publicly specified by Veracue.",
+    "volume_per_actuation": "Not publicly specified by Veracue.",
+    "salt_counterion": "Not publicly specified by Veracue.",
+    "ph": "Not publicly specified by Veracue.",
+    "storage_conditions": "Not publicly specified by Veracue.",
+    "sku": "Not publicly specified by Veracue.",
+    "price": "Not publicly specified by Veracue.",
+    "lot_number": "Not publicly specified by Veracue.",
+    "lot_specific_purity": "Not publicly specified by Veracue.",
+    "lot_specific_ms_result": "Not publicly specified by Veracue.",
+    "catalog_status_at_time_of_writing": "No Dihexa Spray record found on the live Veracue catalog or public COA archive."
+  },
+  "angiv_relationship": {
+    "heading": "Dihexa and Angiotensin IV: a related but distinct identity",
+    "content": "Angiotensin IV (AngIV) is the biological peptide from which this research program originated; it is a fragment of the renin-angiotensin system studied for its effects on learning and memory. Dihexa is a synthetic analogue derived from AngIV-related chemistry, not another name for AngIV itself, and it is not a naturally occurring human peptide hormone. Researchers should not assume Dihexa shares AngIV's full biological profile simply because it descends from the same research lineage; the two are chemically and pharmacologically distinct entities."
+  },
+  "mechanism_hgf_cmet": {
+    "heading": "The Dihexa → HGF → c-Met research story",
+    "content": "The research narrative most associated with Dihexa traces a proposed path from the compound to hepatocyte growth factor (HGF), to c-Met receptor signaling, to downstream neuronal effects including synaptogenesis and structural plasticity, tested in experimental learning and memory models. The primary study describing this pathway (Benoist et al., 2014, Journal of Pharmacology and Experimental Therapeutics, DOI 10.1124/jpet.114.218735) reported that Dihexa interacted with HGF, enhanced HGF-related c-Met phosphorylation under experimental conditions, and was associated with increased synaptogenesis and spinogenesis in experimental neuronal systems, with related findings in animal behavioral models of learning and memory.",
+    "evidence_status_note": "This 2014 paper has since been retracted; PubMed's record for it (PMID 25187433) is marked as a retracted publication. Independent science-journalism reporting on related expressions of concern from the same research group ties the retraction to an image-manipulation finding. Because the primary mechanistic evidence for the HGF/c-Met pathway has been formally withdrawn, this page treats it as a disputed research hypothesis rather than an established mechanism. A separate, independent 2021 study (Sun et al., Brain Sciences, DOI 10.3390/brainsci11111487) reported cognitive effects in an APP/PS1 Alzheimer's-model mouse through a different proposed pathway, PI3K/AKT signaling, without relying on the retracted findings; this is a single, unreplicated study and does not resolve the compound's mechanism of action."
+  },
+  "problem_solution_sections": [
+    {
+      "id": 1,
+      "heading": "How do I confirm what Dihexa actually is?",
+      "problem": "Dihexa is described inconsistently across vendor sites and forums, with molecular details often missing, so it is hard to know what compound is actually being discussed.",
+      "solution": "Start from an authoritative chemical database rather than marketing copy. Dihexa is indexed on PubChem under CID 125355097, with molecular formula C27H44N4O5 and a molecular weight of approximately 504.7 g/mol, and is also referenced as PNB-0408 in the literature. That identity record is the fixed point to check any product or vendor claim against."
+    },
+    {
+      "id": 2,
+      "heading": "Is Dihexa really a peptide, or is it a small molecule?",
+      "problem": "\"Dihexa peptide\" is the most common way researchers search for this compound, which builds an assumption that Dihexa is a conventional amino-acid chain like most research peptides.",
+      "solution": "Dihexa is more accurately classified as an Angiotensin IV-derived small molecule analogue rather than a conventional peptide. Its structure, N-hexanoic-Tyr-Ile-(6)-aminohexanoic amide, is a defined small-molecule chemical structure, not an ordinary amino-acid sequence. 'Dihexa peptide' is used on this page only because it reflects how researchers search, not as a scientific classification."
+    },
+    {
+      "id": 3,
+      "heading": "Where does Dihexa come from, and how is it related to Angiotensin IV?",
+      "problem": "Angiotensin IV, Norleucine1-AngIV, and Dihexa appear together in the same papers, which makes it easy to conflate them as the same substance.",
+      "solution": "Dihexa was developed out of research into Angiotensin IV and related AngIV compounds and their effects on cognition and neuronal signaling (Wright, Kawas & Harding, 2014, Progress in Neurobiology, DOI 10.1016/j.pneurobio.2014.11.004). It is a synthetic AngIV-derived analogue, not AngIV itself, and not a naturally occurring human peptide hormone. Treating Dihexa as interchangeable with AngIV misrepresents both its chemical identity and its origin."
+    },
+    {
+      "id": 4,
+      "heading": "What does the HGF/c-Met research on Dihexa actually show?",
+      "problem": "Secondary sources often cite the original mechanistic study as settled science, without noting that it has since been retracted.",
+      "solution": "The 2014 study proposing Dihexa acts through HGF/c-Met signaling (Benoist et al., J Pharmacol Exp Ther, DOI 10.1124/jpet.114.218735) reported HGF interaction, c-Met phosphorylation, and synaptogenesis effects under experimental conditions. PubMed's record for this paper is marked retracted, and related reporting ties the retraction to an image-manipulation finding. A researcher citing this pathway should treat it as a withdrawn, disputed hypothesis rather than confirmed mechanism, and independently verify the current status of any source before relying on it."
+    },
+    {
+      "id": 5,
+      "heading": "What does \"Dihexa benefits\" mean when the evidence is mainly experimental?",
+      "problem": "The phrase \"Dihexa benefits\" implies a settled list of effects, but the underlying literature is experimental and preclinical, with the foundational mechanism paper retracted.",
+      "solution": "In a research context, \"Dihexa benefits\" refers to endpoints examined in specific experimental systems, not confirmed effects. Published work has looked at spatial-learning performance and synaptic/dendritic-spine formation in animal and cell-culture models. Each finding needs to be read with its evidence level and publication status attached, not compressed into a general benefits claim."
+    },
+    {
+      "id": 6,
+      "heading": "What have Dihexa studies actually measured in learning and memory models?",
+      "problem": "Researchers need to know which specific behavioral tests have been used, rather than a general claim that Dihexa \"improves memory.\"",
+      "solution": "Reported animal work has used spatial-learning tasks alongside models of Alzheimer's- and Parkinson's-disease-like impairment (Wright, Kawas & Harding, 2014, DOI 10.1016/j.pneurobio.2014.11.004; Sun et al., 2021, DOI 10.3390/brainsci11111487). Results are not uniform: a 2024 study of the related compound PNB-0408 in a rat model of 3-nitropropionic-acid-induced Huntington's-disease-like symptoms found no protective effect on the induced motor and cognitive deficits (Wells et al., 2024, Journal of Huntington's Disease, DOI 10.3233/JHD-231507). This negative finding is part of the record."
+    },
+    {
+      "id": 7,
+      "heading": "What does Dihexa research show about synaptogenesis and neuronal structure?",
+      "problem": "Claims about Dihexa building new neural connections circulate without the underlying cellular detail or evidence level attached.",
+      "solution": "In cultured neuronal systems and animal hippocampal tissue, studies in this research program reported dendritic spine formation and synaptogenesis, originally attributed to HGF/c-Met signaling in the now-retracted 2014 paper, and separately attributed to PI3K/AKT signaling in the independent 2021 APP/PS1-mouse study. These are cellular- and tissue-level findings in specific animal models, not evidence of structural brain change in humans."
+    },
+    {
+      "id": 8,
+      "heading": "Is there established human clinical evidence for Dihexa?",
+      "problem": "Marketing and forum content sometimes implies Dihexa has clinical backing, which can lead researchers to overestimate how far the evidence extends.",
+      "solution": "Most of the published Dihexa evidence discussed here is preclinical, and an established human clinical evidence base demonstrating therapeutic efficacy has not been identified in the sources reviewed. Dihexa does not have FDA approval for Alzheimer's disease, Parkinson's disease, dementia, or any other condition. Animal and cell-culture findings should not be read as evidence of an effect in humans."
+    },
+    {
+      "id": 9,
+      "heading": "How is Dihexa different from Semax, Selank and other neuroscience research compounds?",
+      "problem": "Dihexa, Semax, and Selank are frequently grouped together in \"nootropic peptide\" content, which obscures that they come from different chemical families and research traditions.",
+      "solution": "Semax is a synthetic ACTH-derived heptapeptide and Selank is a synthetic tuftsin-derived heptapeptide, both developed within Russian neuroscience research programs. Dihexa is a non-peptide, AngIV-derived small molecule studied primarily around synaptic plasticity and the disputed HGF/c-Met or PI3K/AKT pathways. The comparison table below sets out these distinctions by chemical class, origin, and evidence level without ranking or recommending between them."
+    },
+    {
+      "id": 10,
+      "heading": "What should I verify on a Dihexa COA?",
+      "problem": "Researchers evaluating a specific lot need to know what a certificate of analysis can and cannot tell them, and what is reasonable to expect it to contain.",
+      "solution": "A COA for a compound like Dihexa may include a lot number, identity testing, the analytical method used, HPLC or other chromatography data where performed, mass spectrometry results, the chemical form tested, a test date, and the testing laboratory. Not every COA contains every element, so check the specific document for a given lot. A COA is lot-specific documentation, separate from the general chemical-identity information available on PubChem; see the COA section below."
+    },
+    {
+      "id": 11,
+      "heading": "How should I interpret Dihexa mass-spectrometry or analytical identity data?",
+      "problem": "Mass-spectrometry results on a COA can look authoritative without the researcher having a basis to judge whether the data actually confirms the compound's identity.",
+      "solution": "The reference point is Dihexa's expected molecular weight of approximately 504.7 g/mol (formula C27H44N4O5). A mass-spectrometry report shows an observed m/z for the tested material, which needs to be read against the ionization mode and adduct used, such as a protonated [M+H]+ ion, since observed m/z does not equal molecular weight directly once charge state and adducts are involved. A close match between expected and adduct-corrected observed mass supports identity confirmation for that lot; it does not by itself establish purity or formulation. See the mass-spectrometry section below."
+    },
+    {
+      "id": 12,
+      "heading": "What can a Veracue Dihexa Spray page establish, and what requires lot-specific documentation?",
+      "problem": "It is easy to read a product page as if every statement applies equally to \"Dihexa\" generally and to the specific bottle a researcher would receive, when these are different levels of evidence.",
+      "solution": "This page establishes Dihexa's general chemical identity from PubChem and summarizes published science about the compound, including the 2014 retraction discussed above. It states facts about the Veracue product itself only where Veracue has publicly documented them; as of this page's preparation, no Dihexa Spray record existed in Veracue's public catalog or COA archive, so product-specific fields are marked 'Not publicly specified by Veracue.' Lot-specific facts, such as a COA result or test date, can only come from that lot's own documentation once it exists."
+    }
+  ],
+  "evidence_hierarchy": {
+    "heading": "Reading the Dihexa evidence by level",
+    "levels": [
+      {
+        "level": "A. Chemical / analytical identity",
+        "can_establish": "What Dihexa is as a defined chemical entity: its formula, molecular weight, and reference identifiers (e.g., PubChem CID 125355097).",
+        "cannot_establish": "Biological activity, safety, or effects in any organism."
+      },
+      {
+        "level": "B. Cellular or laboratory research",
+        "can_establish": "How the compound behaves in defined in-vitro systems, such as receptor binding or signaling changes in cultured cells.",
+        "cannot_establish": "Whole-organism effects, or that a cellular finding translates to an intact animal or human."
+      },
+      {
+        "level": "C. Animal research",
+        "can_establish": "Behavioral or physiological outcomes measured in specific animal models under specific experimental conditions.",
+        "cannot_establish": "Human efficacy, human safety, or an appropriate human use case; animal findings do not automatically generalize to people."
+      },
+      {
+        "level": "D. Human evidence",
+        "can_establish": "Would be the only level capable of supporting a human therapeutic or cognitive-benefit claim.",
+        "cannot_establish": "Not applicable here: an established human clinical evidence base for Dihexa was not identified in the sources reviewed for this page."
+      }
+    ],
+    "summary": "Much of the published Dihexa literature sits at levels B and C. Readers should not treat a Level B or C finding as though it were Level D evidence."
+  },
+  "benefits_research_section": {
+    "heading": "Dihexa Benefits: What Researchers Actually Investigated",
+    "content": "In animal studies, researchers reported spatial-learning and memory-related behavioral changes, investigated originally under the (now largely disputed) HGF/c-Met model and, separately, under a PI3K/AKT signaling model in an APP/PS1 Alzheimer's-model study. In experimental neuronal systems, studies reported dendritic spine formation and synaptogenesis-related changes. Findings have not been uniform across models: a 2024 study of the related compound PNB-0408 found no protective effect in a rat model of Huntington's-disease-like symptoms. None of this constitutes evidence of memory improvement or cognitive benefit in humans, and this page does not offer nootropic use recommendations."
+  },
+  "spray_format_section": {
+    "heading": "What \"Dihexa spray\" actually tells a researcher",
+    "content": "'Spray' describes the supplied product format, not a route of administration. It does not establish, and should not be read to imply, nasal, oral, sublingual, buccal, topical, injectable, or any other administration route. This page does not provide dose, spray-count, frequency, timing, administration, or reconstitution information for the Veracue Dihexa Spray product."
+  },
+  "coa_section": {
+    "heading": "How should a COA be evaluated?",
+    "content": "A certificate of analysis for Dihexa may include a lot number, identity testing, the analytical method used, HPLC or other chromatography data where applicable, mass spectrometry, assay/content where applicable, the chemical form tested, a test date, and the testing laboratory. Not every COA contains every element. No Dihexa Spray COA record was found in Veracue's public catalog or COA archive at the time this page was prepared, and no purity percentage is stated here for that reason. PubChem establishes reference molecular identity; a COA establishes what was analytically measured for a particular lot. These are different evidence layers and should not be substituted for one another."
+  },
+  "mass_spectrometry_section": {
+    "heading": "Interpreting Dihexa mass-spectrometry or analytical identity data",
+    "content": "Dihexa's expected molecular weight is approximately 504.7 g/mol, corresponding to formula C27H44N4O5; the monoisotopic mass will differ slightly from this average molecular weight, and either may be used as a reference depending on the instrument and method. A mass-spectrometry analysis reports an observed m/z value, which reflects both the mass of the ion and its charge state, and is often shifted from the neutral molecular weight by an adduct such as a protonated [M+H]+ or sodiated [M+Na]+ species. This is why an observed m/z value does not necessarily equal the compound's molecular weight directly, and why the adduct and charge state need to be accounted for before comparing an observed result to the expected mass. Close agreement, once adjusted, supports identity confirmation for that specific lot; it is a separate question from purity (typically HPLC-based) or formulation detail."
+  },
+  "what_research_does_not_establish": {
+    "heading": "What the published research does not establish",
+    "content": "The literature summarized on this page does not establish human therapeutic efficacy; treatment for Alzheimer's disease, Parkinson's disease, or dementia; improved human intelligence or nootropic benefit; the safety or efficacy of the Veracue product specifically; product-specific purity, concentration, or formulation; the bioavailability of this spray format; an administration route; or an appropriate human dose. Readers should not extend animal or cellular findings, or general Dihexa literature, into claims about this product."
+  },
+  "comparison_table": {
+    "caption": "Dihexa compared with related neuroscience research compounds",
+    "note": "This is a neutral, factual comparison. It does not rank these compounds, call one stronger, safer or more effective, or recommend one over another.",
+    "columns": [
+      "Compound",
+      "Chemical class",
+      "Origin",
+      "Molecular type",
+      "Principal research focus",
+      "Major biological system studied",
+      "Evidence level"
+    ],
+    "rows": [
+      {
+        "compound": "Dihexa (PNB-0408)",
+        "chemical_class": "AngIV-derived small molecule",
+        "origin": "Synthesized from AngIV-analogue research program",
+        "molecular_type": "Non-peptide small molecule",
+        "principal_research_focus": "Synaptic plasticity, spatial learning, neurodegeneration models",
+        "major_biological_system_studied": "HGF/c-Met signaling (disputed; key paper retracted) and PI3K/AKT signaling (independent, preliminary)",
+        "evidence_level": "Preclinical: animal and cell-culture studies"
+      },
+      {
+        "compound": "Semax",
+        "chemical_class": "ACTH-derived synthetic heptapeptide",
+        "origin": "Russian neuroscience research program",
+        "molecular_type": "Peptide",
+        "principal_research_focus": "Neuroprotection, neurotrophic-factor-related signaling research",
+        "major_biological_system_studied": "Neurotrophic factor signaling",
+        "evidence_level": "Preclinical and some regional human research"
+      },
+      {
+        "compound": "Selank",
+        "chemical_class": "Tuftsin-derived synthetic heptapeptide",
+        "origin": "Russian neuroscience research program",
+        "molecular_type": "Peptide",
+        "principal_research_focus": "Anxiolytic-adjacent and neuroimmune research",
+        "major_biological_system_studied": "Neuroimmune and GABAergic-adjacent pathways",
+        "evidence_level": "Preclinical and some regional human research"
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "id": 1,
+      "question": "What is Dihexa?",
+      "answer": "Dihexa is an Angiotensin IV-derived small molecule (also referenced as PNB-0408) studied in HGF/c-Met signaling and neuroscience research, not a conventional peptide."
+    },
+    {
+      "id": 2,
+      "question": "Is Dihexa a peptide?",
+      "answer": "Not in the conventional sense. 'Dihexa peptide' is common search terminology, but Dihexa's structure is a defined small molecule rather than an amino-acid sequence."
+    },
+    {
+      "id": 3,
+      "question": "What is Dihexa derived from?",
+      "answer": "Dihexa was developed out of research into Angiotensin IV (AngIV) and related AngIV compounds; it is a synthetic AngIV-derived analogue, not AngIV itself."
+    },
+    {
+      "id": 4,
+      "question": "What is Dihexa's molecular weight?",
+      "answer": "Approximately 504.7 g/mol, corresponding to molecular formula C27H44N4O5 (PubChem CID 125355097)."
+    },
+    {
+      "id": 5,
+      "question": "How does Dihexa relate to HGF and c-Met?",
+      "answer": "The primary study proposing this link (Benoist et al., 2014) reported HGF interaction and c-Met signaling effects, but that paper has since been retracted, so the pathway is treated as a disputed hypothesis rather than an established mechanism."
+    },
+    {
+      "id": 6,
+      "question": "What does Dihexa research actually show?",
+      "answer": "Preclinical studies report synaptic and spatial-learning changes in animal and cell-culture models; results are mixed across models, including a 2024 negative finding in a Huntington's-disease-like rat model."
+    },
+    {
+      "id": 7,
+      "question": "What does \"Dihexa benefits\" mean in research?",
+      "answer": "It refers to specific experimental endpoints studied, such as spatial learning or synaptogenesis in animal models, not confirmed benefits in humans."
+    },
+    {
+      "id": 8,
+      "question": "Has Dihexa been studied in humans?",
+      "answer": "An established human clinical evidence base demonstrating therapeutic efficacy was not identified in the sources reviewed for this page."
+    },
+    {
+      "id": 9,
+      "question": "How is Dihexa different from Semax and Selank?",
+      "answer": "Semax and Selank are peptides developed in Russian neuroscience research programs; Dihexa is a non-peptide, AngIV-derived small molecule with a different research focus and evidence base."
+    },
+    {
+      "id": 10,
+      "question": "What should a Dihexa COA contain?",
+      "answer": "A COA may include a lot number, identity testing, analytical method, HPLC or chromatography data, mass spectrometry, chemical form, test date, and testing laboratory, though not every COA includes every element."
+    },
+    {
+      "id": 11,
+      "question": "How should Dihexa mass-spectrometry results be interpreted?",
+      "answer": "Compare the observed m/z, adjusted for adduct and charge state, against the expected molecular weight of approximately 504.7 g/mol; agreement supports identity confirmation for that lot, not purity or formulation."
+    },
+    {
+      "id": 12,
+      "question": "What does the Veracue Dihexa Spray page establish?",
+      "answer": "It establishes Dihexa's general chemical identity and summarizes published research; it does not establish product-specific formulation, purity, or lot data, which require Veracue's own first-party and lot-specific documentation."
+    }
+  ],
+  "ruo_compliance_statement": "This page and the Dihexa material it describes are strictly for Research Use Only (RUO). This product is not intended for human or veterinary use, and is not intended to diagnose, treat, cure, or prevent any disease. Nothing on this page constitutes a dosing, administration, or clinical-use recommendation.",
+  "internal_links": [
+    "/",
+    "/shop",
+    "/certificates",
+    "/faq",
+    "/contact-us",
+    "/about-us",
+    "/medical-disclaimer",
+    "/terms-and-conditions"
+  ],
+  "sources": [
+    {
+      "citation": "PubChem CID 125355097 (Dihexa)",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/125355097"
+    },
+    {
+      "citation": "Benoist CC, Kawas LH, Zhu M, et al. The procognitive and synaptogenic effects of angiotensin IV-derived peptides are dependent on activation of the hepatocyte growth factor/c-met system. J Pharmacol Exp Ther. 2014;351(2):390-402. RETRACTED.",
+      "doi": "https://doi.org/10.1124/jpet.114.218735",
+      "pmid": "25187433"
+    },
+    {
+      "citation": "Wright JW, Kawas LH, Harding JW. The development of small molecule angiotensin IV analogs to treat Alzheimer's and Parkinson's diseases. Prog Neurobiol. 2014;125:26-46.",
+      "doi": "https://doi.org/10.1016/j.pneurobio.2014.11.004",
+      "pmid": "25455861"
+    },
+    {
+      "citation": "Sun X, Deng Y, Fu X, et al. AngIV-Analog Dihexa Rescues Cognitive Impairment and Recovers Memory in the APP/PS1 Mouse via the PI3K/AKT Signaling Pathway. Brain Sci. 2021;11(11):1487.",
+      "doi": "https://doi.org/10.3390/brainsci11111487",
+      "pmid": "34827486"
+    },
+    {
+      "citation": "Wells RG, Azzam AF, Hiller AL, Sardinia MF. Effects of an Angiotensin IV Analog on 3-Nitropropionic Acid-Induced Huntington's Disease-Like Symptoms in Rats. J Huntingtons Dis. 2024;13(1):55-66.",
+      "doi": "https://doi.org/10.3233/JHD-231507",
+      "pmid": "38489193"
+    },
+    {
+      "citation": "Ho JK, Nation DA. Cognitive benefits of angiotensin IV and angiotensin-(1-7): A systematic review of experimental studies. Neurosci Biobehav Rev. 2018;92:209-225.",
+      "doi": "https://doi.org/10.1016/j.neubiorev.2018.05.005",
+      "pmid": "29733881"
+    },
+    {
+      "citation": "Retraction Watch reporting on expressions of concern for co-authored papers from this research group.",
+      "url": "https://retractionwatch.com/2021/09/24/four-papers-by-athira-ceo-earn-expressions-of-concern/"
+    },
+    {
+      "citation": "Veracue Peptides live site (checked for existing Dihexa Spray product/COA record).",
+      "url": "https://veracue-peptides.vercel.app/"
+    }
+  ],
+  "schema_jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://veracue-peptides.vercel.app/",
+      "name": "Veracue"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "https://veracue-peptides.vercel.app/product/dihexa-spray",
+      "name": "Dihexa Spray Research Compound (PNB-0408) | Veracue",
+      "description": "Research reference for Dihexa Spray covering molecular identity, AngIV/HGF-c-Met literature, evidence limits, COA guidance, and RUO status for lab use.",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://veracue-peptides.vercel.app/"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://veracue-peptides.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Shop",
+          "item": "https://veracue-peptides.vercel.app/shop"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Dihexa Spray",
+          "item": "https://veracue-peptides.vercel.app/product/dihexa-spray"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Dihexa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dihexa is an Angiotensin IV-derived small molecule (also referenced as PNB-0408) studied in HGF/c-Met signaling and neuroscience research, not a conventional peptide."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Dihexa a peptide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not in the conventional sense. 'Dihexa peptide' is common search terminology, but Dihexa's structure is a defined small molecule rather than an amino-acid sequence."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Dihexa derived from?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dihexa was developed out of research into Angiotensin IV (AngIV) and related AngIV compounds; it is a synthetic AngIV-derived analogue, not AngIV itself."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Dihexa's molecular weight?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Approximately 504.7 g/mol, corresponding to molecular formula C27H44N4O5 (PubChem CID 125355097)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Dihexa relate to HGF and c-Met?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The primary study proposing this link (Benoist et al., 2014) reported HGF interaction and c-Met signaling effects, but that paper has since been retracted, so the pathway is treated as a disputed hypothesis rather than an established mechanism."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does Dihexa research actually show?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Preclinical studies report synaptic and spatial-learning changes in animal and cell-culture models; results are mixed across models, including a 2024 negative finding in a Huntington's-disease-like rat model."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does \"Dihexa benefits\" mean in research?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It refers to specific experimental endpoints studied, such as spatial learning or synaptogenesis in animal models, not confirmed benefits in humans."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Has Dihexa been studied in humans?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An established human clinical evidence base demonstrating therapeutic efficacy was not identified in the sources reviewed for this page."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is Dihexa different from Semax and Selank?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Semax and Selank are peptides developed in Russian neuroscience research programs; Dihexa is a non-peptide, AngIV-derived small molecule with a different research focus and evidence base."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should a Dihexa COA contain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A COA may include a lot number, identity testing, analytical method, HPLC or chromatography data, mass spectrometry, chemical form, test date, and testing laboratory, though not every COA includes every element."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How should Dihexa mass-spectrometry results be interpreted?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Compare the observed m/z, adjusted for adduct and charge state, against the expected molecular weight of approximately 504.7 g/mol; agreement supports identity confirmation for that lot, not purity or formulation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Veracue Dihexa Spray page establish?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It establishes Dihexa's general chemical identity and summarizes published research; it does not establish product-specific formulation, purity, or lot data, which require Veracue's own first-party and lot-specific documentation."
+          }
+        }
+      ]
+    }
+  ],
+  "schema_note": "Product schema is intentionally omitted: no verified price, SKU, availability, rating, review, or image data exists for this product yet. Add an Offers/Product block only once Veracue publishes first-party product data."
+}

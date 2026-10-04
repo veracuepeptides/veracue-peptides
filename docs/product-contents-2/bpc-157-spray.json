@@ -1,0 +1,405 @@
+{
+  "route": "/product/bpc-157-spray",
+  "seo": {
+    "title": "BPC-157 Peptide Spray | Research Use Only | Veracue",
+    "metaDescription": "Research-only BPC-157 Spray from Veracue. Verified molecular identity, preclinical evidence, COA guidance and clear RUO documentation.",
+    "primaryKeyword": "BPC-157 peptide",
+    "secondaryKeywords": [
+      "BPC-157 spray",
+      "what is BPC-157",
+      "BPC-157 benefits",
+      "BPC-157 research",
+      "BPC-157 and TB-500",
+      "BPC-157 COA",
+      "BPC-157 sequence",
+      "BPC-157 molecular weight"
+    ]
+  },
+  "hero": {
+    "eyebrow": "Research Use Only",
+    "productName": "BPC-157 Spray",
+    "subtitle": "A liquid research format of the BPC-157 pentadecapeptide, supplied for laboratory investigation.",
+    "blurb": "BPC-157 Spray is Veracue's liquid research format of the BPC-157 pentadecapeptide, a synthetic 15-residue compound widely referenced in preclinical literature on tissue injury and repair. This page is built around a simple principle: the reference molecule, the published research, and Veracue's own product documentation are three different things, and none should be mistaken for the others. What follows separates them clearly, so researchers evaluating this material know exactly what is established, what is proposed, and what still depends on a batch's own analytical paperwork."
+  },
+  "aeoDirectAnswer": {
+    "question": "What is BPC-157?",
+    "answer": "BPC-157 is a synthetic 15-amino-acid peptide (sequence GEPPPGKPADDAGLV, formula C62H98N16O22) first described in connection with a protein reported in human gastric juice. Its research history runs mostly through rodent and cell-based studies of gastrointestinal and musculoskeletal injury, conducted primarily by a small number of laboratories. Human evidence is limited by comparison. It is not an approved drug, and Veracue supplies BPC-157 strictly for laboratory research — not for human or animal use."
+  },
+  "productSnapshot": {
+    "heading": "Product Snapshot",
+    "referenceMolecule": {
+      "name": "BPC-157",
+      "alternateNames": [
+        "BPC 157",
+        "Body Protection Compound-157",
+        "PL 14736",
+        "Bepecin"
+      ],
+      "classification": "Synthetic pentadecapeptide (15 residues)",
+      "sequence": "Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val (GEPPPGKPADDAGLV)",
+      "residueCount": 15,
+      "molecularFormula": "C62H98N16O22",
+      "averageMolecularWeight": "~1419.5 g/mol",
+      "casNumber": "137525-51-0",
+      "pubchemCid": "9941957"
+    },
+    "veracueProductDocumentation": "Format: liquid spray. Concentration, fill volume, carrier, pH, preservative system, purity, lot number, SKU and price are not publicly specified on the current Veracue product listing. These fields depend on the analytical and manufacturing documentation for a specific batch, not on the reference molecule shown above."
+  },
+  "molecularIdentity": {
+    "heading": "What the Reference Molecule Actually Is",
+    "body": "“Pentadecapeptide” simply means a chain of fifteen amino acids, and BPC-157's sequence — Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val — is what chemical databases use to define the compound, rather than any single physical property. The sequence gives rise to a molecular formula (C62H98N16O22) and an average molecular weight of approximately 1419.5 g/mol, figures that are consistent across PubChem, ChemSpider, DrugBank and CAS records (CAS 137525-51-0, PubChem CID 9941957). Molecular weight matters mainly as a reference point for mass spectrometry: an observed mass close to the theoretical value is one piece of evidence supporting identity. One detail worth knowing is that commercial BPC-157 is sometimes supplied as an acetate salt rather than the free peptide, which shifts the expected mass slightly. That's a normal part of peptide chemistry, not a red flag — but it does mean a lot's own Certificate of Analysis, not this reference data, is the right place to confirm exactly what form and mass a given batch is expected to show."
+  },
+  "researchOverview": {
+    "heading": "What the Published Research Actually Covers",
+    "preclinical": "BPC-157's evidence base is almost entirely preclinical. Studies in rodents and in cell or tissue culture systems have investigated the peptide across several recurring areas: gastrointestinal injury models such as gastric and duodenal ulceration and anastomotic healing; musculoskeletal models involving tendon, ligament and muscle injury; nervous-system injury models; and vascular or angiogenesis-related markers measured within those same injury systems. A substantial portion of this literature comes from one research group based at the University of Zagreb, which is useful context when weighing how broadly a given finding has been replicated.",
+    "humanEvidence": "Human evidence is limited compared with the much larger preclinical literature. Older development-stage work under the names PL 14736 and Bepecin is referenced in connection with inflammatory bowel disease research, and a registered early-phase study (NCT02637284) assessed the safety and pharmacokinetics of an oral formulation in a small group of subjects. These are narrow, early-stage data points focused on safety and pharmacokinetics rather than a body of controlled efficacy trials, and they don't speak to the identity or performance of any product sold today, including Veracue's material.",
+    "whatRemainsUncertain": "Because the direct evidence is concentrated in animal models and a small number of laboratories, questions about mechanism, dose-response in humans, and long-term safety remain open. Findings reported in a rat injury model describe that model — they are not evidence of an equivalent effect in people, and this page does not treat them as such."
+  },
+  "problemSolutionSections": [
+    {
+      "heading": "How do I confirm what BPC-157 actually is?",
+      "content": "BPC-157 is defined by its chemistry, not by a supplier's description of it. The sequence GEPPPGKPADDAGLV, the formula C62H98N16O22 and the CAS number 137525-51-0 are the three reference points that actually identify the compound, and they should agree across any source you check. If a listing's stated formula or CAS number doesn't line up with these, that's worth resolving before treating the material as BPC-157 at all."
+    },
+    {
+      "heading": "What is BPC-157 made of, and how do I verify its identity?",
+      "content": "As a synthetic peptide, BPC-157 is simply its amino-acid sequence assembled in order — there's no separate “ingredient” beyond that sequence, though it may be supplied as the free peptide or as an acetate salt. Because lyophilized peptides of entirely different sequences can look identical as a white powder, appearance tells you nothing about identity. That confirmation comes from analytical chemistry: sequence-consistent mass spectrometry, and where available, amino-acid analysis, referenced on a lot-specific Certificate of Analysis."
+    },
+    {
+      "heading": "What does BPC-157 research actually show?",
+      "content": "Each published finding is tied to a specific model, dose and endpoint chosen by that study — not a general statement about the molecule. A result measured in a rat tendon-injury model, for instance, describes what happened in that model under those conditions. Reading a claim well means tracing it back to the paper it came from and checking whether the model and endpoint actually match the question you're asking."
+    },
+    {
+      "heading": "Why do so many BPC-157 claims come from animal studies?",
+      "content": "The compound's research history developed largely through rodent injury models, run by a comparatively small number of laboratories, well before any substantial human study followed. That pattern is common for experimental peptides, but it means animal findings should be read as hypothesis-generating rather than as a substitute for human data. Before treating any claim as settled, it's worth checking whether human evidence exists for it at all."
+    },
+    {
+      "heading": "What does “BPC-157 benefits” mean in a research context?",
+      "content": "In the literature, “benefit” describes a measured outcome in a specific experimental model — reduced lesion size in a rat ulcer model, or a functional recovery score in an injury model — not a general wellness or performance claim. It's a useful habit to convert any “benefit” you come across into a question: which model, which endpoint, which paper, and how far does that context actually travel toward what you're studying?"
+    },
+    {
+      "heading": "What has BPC-157 been studied for in tissue-repair research?",
+      "content": "Preclinical studies have looked at BPC-157 in tendon, ligament and muscle-injury models, typically measuring endpoints like tissue organization, vascular response markers, and functional recovery in animals over a defined time course. These are legitimate research findings within their own models, but they describe animal outcomes under experimental conditions — not a demonstrated repair effect in people."
+    },
+    {
+      "heading": "What does the gastrointestinal BPC-157 literature actually tell us?",
+      "content": "A large share of the foundational BPC-157 literature involves rodent models of gastric and duodenal ulceration, colitis-type injury, and surgical anastomosis, with outcomes reported as lesion scores or histological findings in animals. The handful of related early-phase human studies referenced in the literature focused on safety and pharmacokinetics, not treatment efficacy, so the animal and human evidence here shouldn't be conflated."
+    },
+    {
+      "heading": "What should I know about BPC-157 and angiogenesis research?",
+      "content": "Some studies report markers consistent with altered vascular activity within specific injury models, alongside proposed signaling mechanisms that might explain them. These are observations tied to a particular experimental system, not a demonstrated, general angiogenic effect of the compound. If angiogenesis is central to your work, it's worth checking whether a given study measured an actual functional vascular outcome or only a proxy marker."
+    },
+    {
+      "heading": "How is BPC-157 different from TB-500, KPV and other research peptides?",
+      "content": "BPC-157 is chemically distinct from TB-500 and KPV — different sequences, different molecular weights, different research histories. “TB-500” is a particular source of confusion, since the name has been applied inconsistently across suppliers, sometimes to full-length Thymosin Beta-4 and sometimes to a shorter fragment. It's worth confirming each peptide's own sequence and formula independently rather than assuming a listing that pairs BPC-157 with TB-500 describes two clearly defined, equivalent materials."
+    },
+    {
+      "heading": "What should I verify on a BPC-157 COA?",
+      "content": "A Certificate of Analysis is only useful when it's tied to the specific lot you have and states the method behind each result, rather than presenting a bare purity number. Check that the lot number matches your vial, that the identity result names the analytical method and the form it was matched against (free peptide vs. acetate), and that a testing laboratory and date are shown."
+    },
+    {
+      "heading": "How should I interpret BPC-157 mass-spectrometry data?",
+      "content": "A mass spectrometry result reports a mass-to-charge ratio (m/z), which depends on the ionization charge state and any adducts formed during the run — it isn't automatically the same number as the peptide's neutral molecular weight. A useful comparison accounts for charge state first, then checks whether the resulting mass falls within a stated tolerance of the ~1419.5 g/mol reference value. A close match supports identity; it isn't, on its own, a purity measurement."
+    },
+    {
+      "heading": "What can a Veracue BPC-157 Spray page establish, and what requires lot-specific documentation?",
+      "content": "This page can establish BPC-157's verified molecular identity and summarize what the published research actually covers. It can't establish anything specific to a given Veracue lot — concentration, purity, carrier composition or storage stability — since those depend on that batch's own manufacturing and testing records. For any lot-specific question, the Certificate of Analysis tied to that particular batch is the right document to check."
+    }
+  ],
+  "comparisonSection": {
+    "heading": "BPC-157 Alongside Other Research Peptides",
+    "intro": "BPC-157 is often mentioned in the same breath as several other research peptides. They are not interchangeable, and none should be read as stronger, safer or more effective than another based on the summary below — it's meant as orientation, not a ranking.",
+    "table": {
+      "columns": [
+        "Research material",
+        "Molecular identity",
+        "Common research context",
+        "Evidence type"
+      ],
+      "rows": [
+        [
+          "BPC-157",
+          "Synthetic 15-residue peptide, C62H98N16O22",
+          "Gastrointestinal and musculoskeletal injury models",
+          "Predominantly preclinical; limited early-phase human data"
+        ],
+        [
+          "TB-500 / Thymosin Beta-4",
+          "Naming inconsistent across suppliers — sometimes full-length Thymosin Beta-4 (43 residues), sometimes a shorter fragment",
+          "Actin regulation, cell migration, wound-healing biology",
+          "Preclinical, with the naming inconsistency itself a known caveat"
+        ],
+        [
+          "KPV",
+          "Tripeptide, Lys-Pro-Val",
+          "Immune and inflammation-related cell research",
+          "Preclinical, in vitro and animal models"
+        ],
+        [
+          "GHK-Cu",
+          "Copper(II) complex of Gly-His-Lys",
+          "Skin, collagen and copper-peptide signaling research",
+          "Broad preclinical base, limited human data"
+        ],
+        [
+          "ARA-290 (cibinetide)",
+          "11-residue peptide related to erythropoietin's tissue-protective domain",
+          "Neuroprotection and metabolic research models",
+          "Preclinical, with some early-phase human studies referenced in the literature"
+        ],
+        [
+          "SS-31 (elamipretide)",
+          "Small mitochondria-targeted peptide",
+          "Mitochondrial function and oxidative-stress research",
+          "Preclinical, with some clinical-stage research referenced in the literature"
+        ]
+      ]
+    },
+    "note": "BPC-157 and TB-500 are frequently paired in commercial listings, but they are different molecules with different evidence bases, and this page does not treat that pairing as a validated combination or recommend using them together."
+  },
+  "sprayFormatSection": {
+    "heading": "About the “Spray” Format",
+    "body": "“Spray” in this product's name describes how the material is dispensed — a liquid format — not a route of administration. Veracue's current listing does not specify whether this product is intended for a particular delivery method, and this page does not assume nasal, oral, buccal, sublingual or topical use based on the name alone. Concentration, fill volume, carrier, pH, preservative system and stability data are similarly not publicly specified for this listing. In keeping with its research-only purpose, this page does not provide spray counts, dosing frequency, administration technique, or any absorption or bioavailability claim."
+  },
+  "coaSection": {
+    "heading": "Reading a BPC-157 Certificate of Analysis",
+    "body": "A Certificate of Analysis for a BPC-157 lot may include a lot or batch number, the analytical method used to confirm identity, the reference and observed molecular mass, an HPLC purity result, and the testing laboratory's name and test date. Not every COA will contain all of these, and this page does not assume that testing language used for other Veracue compounds automatically applies to this spray format. No purity figure, HPLC result or mass-spectrometry value is stated here, since none has been published for this listing.",
+    "checklist": [
+      "Lot number on the COA matches the vial or packaging",
+      "Identity method is named (for example LC-MS or ESI-MS), not just a pass/fail result",
+      "Reference and observed molecular mass are both shown, with the tolerance used",
+      "HPLC purity states the method and detection conditions",
+      "Testing laboratory and test date are included",
+      "Salt form (free peptide vs. acetate) is specified, since it changes the expected mass"
+    ]
+  },
+  "massSpectrometrySection": {
+    "heading": "Mass Spectrometry, in Practical Terms",
+    "body": "BPC-157's reference molecular weight is approximately 1419.5 g/mol. In electrospray ionization mass spectrometry, a peptide this size usually shows up as one or more multiply charged ions rather than a single peak at that neutral weight, so a reported m/z value needs to be read alongside its charge state before it means anything as a comparison. Adducts — sodium or potassium attaching to the peptide, for example — can shift an observed m/z further still. A mass that lands within a stated tolerance of the reference value supports identity; it doesn't, by itself, tell you anything about purity, and no specific observed mass for Veracue's BPC-157 Spray is claimed here, since that figure would be lot-specific."
+  },
+  "researchDoesNotEstablish": {
+    "heading": "What This Page Does Not Claim",
+    "items": [
+      "A demonstrated therapeutic effect or treatment benefit of BPC-157 in humans",
+      "A validated administration route for this spray format",
+      "Any absorption, bioavailability or pharmacokinetic property of this spray",
+      "A specific purity, concentration or lot identity for this product absent its own COA",
+      "That findings from animal models translate directly to human outcomes"
+    ]
+  },
+  "regulatoryContext": {
+    "heading": "Research Use Only",
+    "body": "Veracue's BPC-157 Spray is supplied strictly for laboratory and analytical research. It is not a drug, dietary supplement, food or cosmetic, has not been evaluated by the FDA, and is not intended for diagnostic, therapeutic or any other use in humans or animals. BPC-157 is not approved by any drug regulatory agency for human use and remains listed under the World Anti-Doping Agency's S0 category of non-approved substances on the current Prohibited List. Research Use Only describes the intended purpose of this material — it isn't a claim about safety, and its lack of regulatory approval isn't a claim about danger either. Researchers are responsible for using this material lawfully and within an appropriate laboratory setting."
+  },
+  "faqs": [
+    {
+      "question": "What is BPC-157?",
+      "answer": "BPC-157 is a synthetic 15-amino-acid peptide (formula C62H98N16O22, CAS 137525-51-0) first described in connection with a protein reported in human gastric juice, studied mainly through preclinical research."
+    },
+    {
+      "question": "Is BPC-157 a peptide?",
+      "answer": "Yes. It's a pentadecapeptide — a chain of 15 amino acids in a defined sequence — rather than a small-molecule drug or a larger protein."
+    },
+    {
+      "question": "What is the BPC-157 sequence?",
+      "answer": "Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val, written in one-letter code as GEPPPGKPADDAGLV."
+    },
+    {
+      "question": "What is the molecular weight of BPC-157?",
+      "answer": "Approximately 1419.5 g/mol for the free peptide (average mass); salt forms such as the acetate carry a slightly different molecular weight."
+    },
+    {
+      "question": "What has BPC-157 been studied for?",
+      "answer": "Mostly preclinical research: rodent models of gastrointestinal injury, tendon and muscle injury, and nervous-system injury, along with related vascular markers measured in those same models."
+    },
+    {
+      "question": "What does BPC-157 benefits mean?",
+      "answer": "In research literature, “benefit” refers to a measured outcome in a specific experimental model, not a general wellness claim. Each reported effect is tied to a particular study, species and endpoint."
+    },
+    {
+      "question": "Is BPC-157 supported by human clinical research?",
+      "answer": "Human evidence is limited compared with the animal literature. A small number of early-phase studies and older IBD-related trials are referenced in the literature, focused mainly on safety and pharmacokinetics."
+    },
+    {
+      "question": "What is the difference between BPC-157 and TB-500?",
+      "answer": "They're chemically distinct peptides with separate sequences and research histories. “TB-500” is also used inconsistently across suppliers — sometimes referring to full-length Thymosin Beta-4, sometimes to a shorter fragment."
+    },
+    {
+      "question": "Is BPC-157 the same as KPV or GHK-Cu?",
+      "answer": "No. Both are smaller, structurally unrelated peptides with their own sequences and literature, sharing no sequence homology with BPC-157."
+    },
+    {
+      "question": "What should a BPC-157 COA contain?",
+      "answer": "A lot number, the identity-confirmation method used, the reference and observed molecular mass, an HPLC purity result, and the testing laboratory's name and test date."
+    },
+    {
+      "question": "How should BPC-157 mass-spectrometry results be interpreted?",
+      "answer": "An observed mass-to-charge ratio should be read alongside its charge state and possible adducts before comparing it against BPC-157's ~1419.5 g/mol reference weight."
+    },
+    {
+      "question": "What does the Veracue BPC-157 Spray page establish?",
+      "answer": "It establishes BPC-157's verified molecular identity and summarizes the published research. It does not establish this product's purity, concentration, delivery route or lot identity, which depend on that batch's own COA."
+    }
+  ],
+  "complianceNotice": "BPC-157 Spray supplied by Veracue is intended solely for laboratory research. It is not a drug, dietary supplement, food or cosmetic, and is not intended to diagnose, treat, cure or prevent any disease in humans or animals. It must not be administered to humans or animals. The information on this page reflects published research and verified chemical reference data; it is not medical advice and is not a statement of safety or efficacy for this or any product. Purchasers are responsible for using this material lawfully and within an appropriate research setting.",
+  "references": [
+    "PubChem Compound Summary for CID 9941957, BPC 157 — National Center for Biotechnology Information",
+    "DrugBank accession DB11882 — BPC-157",
+    "Sikiric P, et al. Stable gastric pentadecapeptide BPC 157: novel therapy in gastrointestinal tract. Curr Pharm Des. 2011;17(16):1612-1632.",
+    "Chang CH, Tsai WC, Lin MS, Hsu YH, Pang JH. The promoting effect of pentadecapeptide BPC 157 on tendon healing involves tendon outgrowth, cell survival, and cell migration. J Appl Physiol. 2011.",
+    "Cerovecki T, et al. Pentadecapeptide BPC 157 (PL 14736) improves ligament healing in the rat. J Orthop Res. 2010;28(9):1155-1161.",
+    "Perovic D, et al. Stable gastric pentadecapeptide BPC 157 can improve the healing course of spinal cord injury and lead to functional recovery in rats. J Orthop Surg Res. 2019.",
+    "ClinicalTrials.gov NCT02637284 — PCO-02 Safety and Pharmacokinetics Trial",
+    "World Anti-Doping Agency, 2026 Prohibited List — S0: Non-Approved Substances"
+  ],
+  "internalLinks": [
+    "/shop",
+    "/certificates",
+    "/faq",
+    "/contact-us",
+    "/about-us",
+    "/medical-disclaimer",
+    "/terms-and-conditions"
+  ],
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://veracue-peptides.vercel.app/",
+      "name": "Veracue Peptides"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "https://veracue-peptides.vercel.app/product/bpc-157-spray",
+      "name": "BPC-157 Peptide Spray | Research Use Only | Veracue",
+      "description": "Research-only BPC-157 Spray from Veracue. Verified molecular identity, preclinical evidence, COA guidance and clear RUO documentation.",
+      "inLanguage": "en-US"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://veracue-peptides.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Shop",
+          "item": "https://veracue-peptides.vercel.app/shop"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "BPC-157 Spray",
+          "item": "https://veracue-peptides.vercel.app/product/bpc-157-spray"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is BPC-157?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "BPC-157 is a synthetic 15-amino-acid peptide (formula C62H98N16O22, CAS 137525-51-0) first described in connection with a protein reported in human gastric juice, studied mainly through preclinical research."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is BPC-157 a peptide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. It's a pentadecapeptide — a chain of 15 amino acids in a defined sequence — rather than a small-molecule drug or a larger protein."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the BPC-157 sequence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val, written in one-letter code as GEPPPGKPADDAGLV."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the molecular weight of BPC-157?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Approximately 1419.5 g/mol for the free peptide (average mass); salt forms such as the acetate carry a slightly different molecular weight."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What has BPC-157 been studied for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mostly preclinical research: rodent models of gastrointestinal injury, tendon and muscle injury, and nervous-system injury, along with related vascular markers measured in those same models."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does BPC-157 benefits mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In research literature, “benefit” refers to a measured outcome in a specific experimental model, not a general wellness claim. Each reported effect is tied to a particular study, species and endpoint."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is BPC-157 supported by human clinical research?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Human evidence is limited compared with the animal literature. A small number of early-phase studies and older IBD-related trials are referenced in the literature, focused mainly on safety and pharmacokinetics."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between BPC-157 and TB-500?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They're chemically distinct peptides with separate sequences and research histories. “TB-500” is also used inconsistently across suppliers — sometimes referring to full-length Thymosin Beta-4, sometimes to a shorter fragment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is BPC-157 the same as KPV or GHK-Cu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Both are smaller, structurally unrelated peptides with their own sequences and literature, sharing no sequence homology with BPC-157."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should a BPC-157 COA contain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A lot number, the identity-confirmation method used, the reference and observed molecular mass, an HPLC purity result, and the testing laboratory's name and test date."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How should BPC-157 mass-spectrometry results be interpreted?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An observed mass-to-charge ratio should be read alongside its charge state and possible adducts before comparing it against BPC-157's ~1419.5 g/mol reference weight."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Veracue BPC-157 Spray page establish?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It establishes BPC-157's verified molecular identity and summarizes the published research. It does not establish this product's purity, concentration, delivery route or lot identity, which depend on that batch's own COA."
+          }
+        }
+      ]
+    }
+  ]
+}

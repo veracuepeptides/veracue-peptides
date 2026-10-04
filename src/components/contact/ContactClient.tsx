@@ -43,7 +43,7 @@ const CHANNELS: ContactChannel[] = [
     tag: 'ANALYTICAL CHEMISTRY DESK',
     description: 'Direct consultation for lot-specific HPLC chromatograms, mass spectrometry verification, compound handling, and storage guidance.',
     email: 'support@veracuepeptides.com',
-    status: '< 2 Hour Response',
+    status: 'Email Support',
     icon: Microscope,
   },
   {
@@ -244,7 +244,7 @@ export function ContactClient() {
                     </div>
                     <div>
                       <span className="font-bold text-[#20221c] block">Response Time</span>
-                      <span className="text-neutral-600 block">Most inquiries answered within 2 hours</span>
+                      <span className="text-neutral-600 block">We reply to inquiries by email</span>
                       <span className="text-neutral-400 text-[11px] block">Reach us anytime by email</span>
                     </div>
                   </div>
@@ -254,9 +254,9 @@ export function ContactClient() {
                       <MapPin size={14} strokeWidth={2.2} />
                     </div>
                     <div>
-                      <span className="font-bold text-[#20221c] block">Synthesis &amp; Testing Facility</span>
-                      <span className="text-neutral-600 block">US-Based Cleanroom Facility</span>
-                      <span className="text-neutral-400 text-[11px] block">Accredited ISO-7 &amp; HPLC Testing Cleanroom</span>
+                      <span className="font-bold text-[#20221c] block">Orders &amp; Testing Records</span>
+                      <span className="text-neutral-600 block">Shipped From the USA</span>
+                      <span className="text-neutral-400 text-[11px] block">HPLC Data Published Per Batch COA</span>
                     </div>
                   </div>
 
@@ -265,9 +265,9 @@ export function ContactClient() {
                       <Truck size={14} strokeWidth={2.2} />
                     </div>
                     <div>
-                      <span className="font-bold text-[#20221c] block">Cold-Chain Dispatch Cutoff</span>
-                      <span className="text-neutral-600 block">Same-day transit for orders before 2:00 PM EST</span>
-                      <span className="text-neutral-400 text-[11px] block">Insulated thermal boxes with refrigerant cooling</span>
+                      <span className="font-bold text-[#20221c] block">Shipping</span>
+                      <span className="text-neutral-600 block">Orders ship from the USA with tracking</span>
+                      <span className="text-neutral-400 text-[11px] block">Packed in insulated packaging for transit</span>
                     </div>
                   </div>
                 </div>
@@ -278,7 +278,7 @@ export function ContactClient() {
                 <div className="flex items-start gap-4 mb-4">
                   <div className="relative w-12 h-12 sm:w-14 sm:h-14 rounded-full overflow-hidden border-2 border-white shadow-xs bg-[#eddcd2] shrink-0">
                     <Image
-                      src="/veracue-images/support-avatar.jpg"
+                      src="/veracue-images/support-avatar.webp"
                       alt="Veracue Support Team"
                       fill
                       className="object-cover"
@@ -318,15 +318,15 @@ export function ContactClient() {
                 <ul className="space-y-2.5 text-xs font-sans text-neutral-700">
                   <li className="flex items-center gap-2.5">
                     <CheckCircle2 size={15} className="text-[#cb997e] shrink-0" />
-                    <span>≥99.0% Purity Confirmed by Reverse-Phase HPLC</span>
+                    <span>Purity Reported by Reverse-Phase HPLC on Every COA</span>
                   </li>
                   <li className="flex items-center gap-2.5">
                     <CheckCircle2 size={15} className="text-[#cb997e] shrink-0" />
-                    <span>ESI Mass Spectrometry Sequence Identity Verification</span>
+                    <span>Mass Spectrometry Identity Data Alongside HPLC</span>
                   </li>
                   <li className="flex items-center gap-2.5">
                     <CheckCircle2 size={15} className="text-[#cb997e] shrink-0" />
-                    <span>Inert Argon Gas Packaging with Desiccant Seal</span>
+                    <span>Sealed Glass Vials Packed for Transit</span>
                   </li>
                   <li className="flex items-center gap-2.5">
                     <CheckCircle2 size={15} className="text-[#cb997e] shrink-0" />

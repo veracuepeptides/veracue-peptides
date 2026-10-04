@@ -7,6 +7,8 @@ import * as Sentry from '@sentry/nextjs'
 // inside it) and freezes it at build time — new products/posts silently stop appearing
 // in the sitemap until the next deploy. Regenerate hourly instead.
 export const revalidate = 3600
+// Regeneration queries the full catalog; the Vercel Hobby default (10s) is tight.
+export const maxDuration = 60
 
 const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
 
@@ -36,7 +38,7 @@ function entry(
 ) {
   return {
     url: `${baseUrl}${path}`,
-    lastModified: opts?.lastModified || new Date(),
+    ...(opts?.lastModified ? { lastModified: opts.lastModified } : {}),
     ...(opts?.priority !== undefined ? { priority: opts.priority } : {}),
     ...(opts?.changeFrequency ? { changeFrequency: opts.changeFrequency } : {}),
   }
@@ -53,7 +55,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const payload = await getPayload({ config: configPromise })
     const { docs: products } = await payload.find({
       collection: 'products',
-      where: { status: { equals: 'active' } },
+      where: { and: [{ status: { equals: 'active' } }, { isVisible: { equals: true } }] },
       limit: 1000,
       depth: 0,
     })
@@ -78,7 +80,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })
 
     for (const post of posts) {
-      const path = `/${post.slug}`
+      const path = `/blog/${post.slug}`
       const lastModified = post.updatedAt ? new Date(post.updatedAt) : undefined
       entries.push(entry(path, { lastModified, priority: 0.6, changeFrequency: 'monthly' }))
     }

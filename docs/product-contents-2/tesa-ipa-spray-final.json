@@ -1,0 +1,437 @@
+{
+  "productPage": {
+    "slug": "tesa-ipa-spray",
+    "productName": "Tesa/IPA Spray",
+    "category": "Peptide Research Blends",
+    "eyebrow": "Research Use Only",
+    "h1": "Tesa/IPA Spray",
+    "subtitle": "A spray-format research listing combining two distinct, independently studied peptides: Tesamorelin and Ipamorelin.",
+    "heroCopy": "Tesa/IPA Spray pairs two peptides that act on growth-hormone release through different pathways: Tesamorelin, a GHRH analog, and Ipamorelin, a ghrelin-receptor (GHS-R) secretagogue. Each has its own identity, mechanism, and research history, which this page keeps clearly separated.\n\nThis listing is offered strictly for research and laboratory use. \"Spray\" refers to the dispensing format of this listing; it does not indicate a route of administration.",
+    "heroCtas": [],
+
+    "quickResearchSummary": {
+      "components": ["Tesamorelin", "Ipamorelin"],
+      "primaryPathways": ["GHRH receptor (Tesamorelin)", "GHS-R / ghrelin receptor (Ipamorelin)"],
+      "evidenceBase": "Independent research literature exists for each peptide individually; direct research on the combination of Tesamorelin and Ipamorelin together is limited.",
+      "productStatus": "Composition, concentration, and spray specifications for this exact listing are not publicly specified on the current Veracue product information."
+    },
+
+    "quickAnswers": [
+      { "question": "What is Tesa/IPA?", "answer": "Tesa/IPA is Veracue's name for a research listing containing two separate peptides, Tesamorelin and Ipamorelin, rather than a single molecule." },
+      { "question": "Is Tesa/IPA one peptide or two?", "answer": "Two. Tesamorelin and Ipamorelin are chemically distinct peptides with different sequences, molecular weights, and mechanisms, sold together under one listing name." },
+      { "question": "What is Tesamorelin?", "answer": "Tesamorelin is a synthetic 44-amino-acid analog of growth hormone-releasing hormone (GHRH), carrying an added trans-3-hexenoyl group at the N-terminus for stability." },
+      { "question": "What is Ipamorelin?", "answer": "Ipamorelin is a synthetic 5-amino-acid peptide (Aib-His-D-2-Nal-D-Phe-Lys-NH2) that acts as a selective agonist at the ghrelin receptor (GHS-R1a)." },
+      { "question": "How are Tesamorelin and Ipamorelin different?", "answer": "They act on different receptors — Tesamorelin on the GHRH receptor, Ipamorelin on the ghrelin receptor — and differ in size, structure, and research history. They are not interchangeable forms of the same compound." },
+      { "question": "What receptor pathway does Tesamorelin involve?", "answer": "Tesamorelin binds the growth hormone-releasing hormone (GHRH) receptor on pituitary somatotroph cells, the same receptor targeted by native GHRH." },
+      { "question": "What receptor pathway does Ipamorelin involve?", "answer": "Ipamorelin binds the growth hormone secretagogue receptor (GHS-R1a), the same receptor that responds to the hormone ghrelin." },
+      { "question": "What has Tesamorelin research investigated?", "answer": "Published research on Tesamorelin includes a randomized, placebo-controlled human trial in HIV-associated lipodystrophy measuring visceral adipose tissue and IGF-1 change, alongside mechanistic work on GHRH receptor binding and pulsatile GH release." },
+      { "question": "What has Ipamorelin research investigated?", "answer": "Ipamorelin's original characterization used rodent and porcine models to establish GH-selective secretagogue activity; a Phase II human trial (TZP-101) tested it for postoperative ileus but was discontinued for lack of efficacy." },
+      { "question": "Does research prove Tesamorelin + Ipamorelin synergy?", "answer": "No direct study combining Tesamorelin and Ipamorelin was identified. Evidence for each peptide individually should not be read as evidence for a combined effect." },
+      { "question": "What does Tesa/IPA Spray mean?", "answer": "\"Spray\" describes the packaging and dispensing format of this listing. It does not specify or imply a route of administration such as nasal or oral use." },
+      { "question": "Does Veracue publish dosing instructions?", "answer": "No. Veracue does not provide dosing protocols for research materials. Doses reported in published studies describe those studies' experimental conditions only." }
+    ],
+
+    "productIdentity": {
+      "productType": "Two-peptide research listing/blend",
+      "components": ["Tesamorelin", "Ipamorelin"],
+      "tesamorelin": {
+        "classification": "Synthetic growth hormone-releasing hormone (GHRH) analog",
+        "sequenceLength": "44 amino acids (full native GHRH(1-44) sequence with an N-terminal trans-3-hexenoyl modification and C-terminal amide)",
+        "molecularFormula": "C221H366N72O67S",
+        "molecularWeight": "5135.86 g/mol",
+        "casNumbers": { "freeBase": "218949-48-5", "acetateSalt": "901758-09-6" },
+        "receptor": "Growth hormone-releasing hormone receptor (GHRH-R)",
+        "pharmaceuticalNote": "Tesamorelin acetate is also the active ingredient in FDA-approved prescription products (Egrifta, Egrifta SV). Veracue's material is a separate research-use compound and is not those pharmaceutical products."
+      },
+      "ipamorelin": {
+        "classification": "Synthetic pentapeptide, ghrelin-receptor growth hormone secretagogue",
+        "sequenceLength": "5 amino acids",
+        "sequence": "Aib-His-D-2-Nal-D-Phe-Lys-NH2",
+        "molecularFormula": "C38H49N9O5",
+        "molecularWeight": "711.87 g/mol",
+        "casNumber": "170851-70-4",
+        "receptor": "Growth hormone secretagogue receptor (GHS-R1a), the ghrelin receptor",
+        "pharmaceuticalNote": "Ipamorelin has no FDA-approved pharmaceutical status; it has been studied clinically under the code TZP-101 but is currently marketed only as a research compound."
+      },
+      "blendRelationship": "Tesamorelin and Ipamorelin both promote growth hormone release, but through independent receptors (GHRH-R and GHS-R1a, respectively). Veracue lists them together as a research pairing; this is a product-listing decision, not a claim that the two combine into a new molecular entity or a demonstrated synergistic effect."
+    },
+
+    "researchSections": [
+      {
+        "heading": "What Exactly Is Tesa/IPA?",
+        "researcherProblem": "The name \"Tesa/IPA\" reads like a single product, which can obscure that two separate active peptides are involved.",
+        "researchQuestion": "Does Tesa/IPA refer to one molecule or two?",
+        "evidence": "Tesamorelin (CAS 218949-48-5) and Ipamorelin (CAS 170851-70-4) are each individually registered chemical entities with distinct sequences, formulas, and molecular weights. No literature or regulatory source treats \"Tesa/IPA\" as a single registered compound.",
+        "practicalInterpretation": "Tesa/IPA is best understood as a listing/product name for a two-peptide pairing, not a new molecular entity. Any research question about \"Tesa/IPA\" should be broken into a question about Tesamorelin and a separate question about Ipamorelin.",
+        "limitation": "There is no single-entity identity data (formula, CAS, sequence) for \"Tesa/IPA\" to report, because none exists."
+      },
+      {
+        "heading": "What Exactly Is Tesamorelin?",
+        "researcherProblem": "Researchers need to know whether Tesamorelin is native GHRH, a fragment, or a modified analog before interpreting any study that uses it.",
+        "researchQuestion": "What is Tesamorelin's structure and relationship to natural GHRH?",
+        "evidence": "Tesamorelin is a 44-amino-acid peptide corresponding to the full-length sequence of human GHRH(1-44), modified with a trans-3-hexenoyl group at the N-terminus. This modification is reported to increase resistance to enzymatic degradation compared with unmodified GHRH, extending its functional half-life. It acts at the GHRH receptor on pituitary somatotroph cells to stimulate pulsatile growth hormone release, with a downstream increase in circulating IGF-1.",
+        "practicalInterpretation": "For research purposes, Tesamorelin functions as a stabilized, full-length GHRH analog rather than a truncated fragment (unlike Sermorelin) or a differently-modified long-acting analog (unlike CJC-1295).",
+        "limitation": "Structural and mechanistic data describe the Tesamorelin molecule generally; they do not describe Veracue's specific lot, formulation, or the Tesa/IPA Spray listing."
+      },
+      {
+        "heading": "What Exactly Is Ipamorelin?",
+        "researcherProblem": "Ipamorelin is often grouped with older secretagogues (GHRP-2, GHRP-6) despite being developed specifically to reduce off-target hormone release.",
+        "researchQuestion": "What is Ipamorelin's structure and pharmacological origin?",
+        "evidence": "Ipamorelin is a synthetic pentapeptide (Aib-His-D-2-Nal-D-Phe-Lys-NH2) developed as a ghrelin-receptor (GHS-R1a) agonist. Original pharmacological characterization in rodent and porcine models (Raun et al., 1998, European Journal of Endocrinology) reported growth-hormone release with minimal effect on ACTH, cortisol, prolactin, and gonadotropins compared with earlier secretagogues tested in the same studies.",
+        "practicalInterpretation": "Ipamorelin's research relevance centers on its receptor selectivity profile as reported in its founding pharmacology literature, rather than on a large independent human evidence base.",
+        "limitation": "The original selectivity data come primarily from animal models; the extent to which that selectivity profile generalizes to humans has not been established by a large independent human trial program."
+      },
+      {
+        "heading": "How Do Tesamorelin and Ipamorelin Work Through Different Signaling Pathways?",
+        "researcherProblem": "Because both compounds are described as \"growth hormone secretagogues,\" it is easy to assume they work the same way.",
+        "researchQuestion": "What receptor does each peptide act on, and why does that distinction matter?",
+        "evidence": "Tesamorelin acts on the GHRH receptor, the same receptor targeted by endogenous growth hormone-releasing hormone. Ipamorelin acts on the GHS-R1a receptor, the receptor targeted by the hormone ghrelin. These are two distinct G-protein-coupled receptor systems that both converge on growth hormone release from the pituitary, but through separate upstream signaling.",
+        "practicalInterpretation": "Because the two peptides engage different receptors, research designed around one pathway (e.g., GHRH-receptor density or desensitization) does not automatically transfer to the other. This distinction is the basis for why the two are studied and marketed as a pairing rather than as duplicates of one mechanism.",
+        "limitation": "Receptor-level distinction is well established individually for each peptide; it does not by itself demonstrate a specific combined physiological outcome when both are administered together."
+      },
+      {
+        "heading": "What Has Human Research Actually Studied With Tesamorelin?",
+        "researcherProblem": "Tesamorelin's most-cited human data comes from a specific clinical population, and generalizing it beyond that population is a common error.",
+        "researchQuestion": "What did the principal human trial of Tesamorelin measure, and in whom?",
+        "evidence": "Falutz et al. (2007, New England Journal of Medicine) conducted a randomized, double-blind, placebo-controlled trial in HIV-infected adults with excess abdominal fat (lipodystrophy). Participants received tesamorelin 2 mg subcutaneously daily for 26 weeks. The primary endpoint was change in visceral adipose tissue (VAT) measured by CT. The tesamorelin group showed a statistically significant reduction in VAT (approximately 15-18%) relative to placebo, along with an increase in IGF-1.",
+        "practicalInterpretation": "This trial is the strongest direct human evidence for Tesamorelin's effect on visceral fat and IGF-1, but it was conducted in a specific clinical population (HIV-associated lipodystrophy) under a specific dosing regimen.",
+        "limitation": "Findings in this population should not be generalized to healthy individuals, other patient groups, or other endpoints (e.g., muscle mass, general fat loss) without direct supporting evidence in those contexts."
+      },
+      {
+        "heading": "What Has Research Actually Studied With Ipamorelin?",
+        "researcherProblem": "Ipamorelin's evidence base is frequently cited without distinguishing which claims come from animal work, receptor pharmacology, or actual human trials.",
+        "researchQuestion": "What levels of evidence exist for Ipamorelin, and what did each show?",
+        "evidence": "Receptor/pharmacology level: Raun et al. (1998) characterized Ipamorelin as a selective GHS-R1a agonist in rodent and porcine models. Animal level: subsequent rodent studies (e.g., Canete et al., examining chronic Ipamorelin administration) reported increased body weight gain and in vitro GH release in young female rats. Human level: Ipamorelin was developed clinically under the code TZP-101 and tested in Phase II human trials for postoperative ileus (ClinicalTrials.gov NCT00617552) and gastroparesis; the postoperative ileus program was ultimately discontinued for lack of efficacy against its clinical endpoint.",
+        "practicalInterpretation": "Ipamorelin's GH-secretagogue pharmacology is well characterized at the receptor and animal level. Its one major human clinical program tested a gastrointestinal motility endpoint, not a growth-hormone or body-composition endpoint, and did not succeed against that endpoint.",
+        "limitation": "There is no large human trial establishing Ipamorelin's effect on GH/IGF-1 levels, body composition, or recovery outcomes; the available human trial data addressed a different clinical question and had a negative result."
+      },
+      {
+        "heading": "Is There Direct Evidence for Tesamorelin + Ipamorelin Together?",
+        "researcherProblem": "Search interest strongly associates the two compounds, which can be mistaken for evidence that they have been studied, or work better, together.",
+        "researchQuestion": "Has any study directly tested Tesamorelin combined with Ipamorelin?",
+        "evidence": "No peer-reviewed study directly testing the combination of Tesamorelin and Ipamorelin was identified in the literature reviewed for this page.",
+        "practicalInterpretation": "The individual evidence bases for Tesamorelin and Ipamorelin described elsewhere on this page do not, together, constitute evidence for a combined effect. Any specific outcome attributed to using both together would need its own direct study.",
+        "limitation": "Absence of identified combination studies does not rule one out existing elsewhere; it means this page cannot cite direct combination evidence, and none should be inferred from the two compounds' individual profiles."
+      },
+      {
+        "heading": "What Do \"Tesamorelin Benefits\" and \"Ipamorelin Benefits\" Actually Mean in Research?",
+        "researcherProblem": "\"Benefits\" searches often expect a general wellness list rather than the specific endpoints that were actually measured in a lab or clinical setting.",
+        "researchQuestion": "What specific endpoints has each compound's research actually measured?",
+        "evidence": "For Tesamorelin, the Falutz et al. (2007) trial measured visceral adipose tissue by CT scan and serum IGF-1 in HIV-associated lipodystrophy patients. For Ipamorelin, the founding pharmacology work measured plasma GH response relative to ACTH, cortisol, prolactin, and gonadotropin levels in animal models, and the TZP-101 program measured gastrointestinal motility recovery after surgery in humans.",
+        "practicalInterpretation": "\"Benefit\" in the research sense means a specific, measured endpoint in a specific population or model — VAT reduction in HIV lipodystrophy for Tesamorelin, GH-selective secretagogue activity in animal pharmacology for Ipamorelin — not a general claim about fat loss, muscle gain, or anti-aging.",
+        "limitation": "Neither compound has direct evidence for broad wellness claims such as fat loss in healthy adults, muscle building, or anti-aging; those claims would require separate, specific studies that were not identified here."
+      },
+      {
+        "heading": "What Does Tesamorelin or Ipamorelin Dosage Mean in Research?",
+        "researcherProblem": "Search terms for \"tesamorelin dosage\" and \"ipamorelin dosage\" often seek a usable regimen rather than a study parameter.",
+        "researchQuestion": "What dosing has appeared in published research, and how should it be interpreted?",
+        "evidence": "In the Falutz et al. (2007) trial, tesamorelin was administered at 2 mg subcutaneously once daily for 26 weeks in a clinical trial population under medical supervision. Ipamorelin dosing in its founding animal studies and the TZP-101 human program was administered intravenously or subcutaneously under controlled clinical-trial conditions specific to those protocols.",
+        "practicalInterpretation": "Published doses are study-specific experimental conditions, tied to a particular population, route, and monitoring protocol. They describe historical research design, not usage instructions for this or any RUO product.",
+        "limitation": "This page does not provide, and should not be read as providing, a dosing recommendation, cycle, schedule, or conversion for any Veracue product."
+      },
+      {
+        "heading": "What Is Actually Known About Safety and Tolerability?",
+        "researcherProblem": "Safety questions are often answered with a blanket reassurance rather than a breakdown of what population the safety data came from.",
+        "researchQuestion": "What does the literature say about tolerability, and in what context?",
+        "evidence": "In the Falutz et al. (2007) trial, tesamorelin was associated with injection-site reactions and joint-related adverse events more frequently than placebo in the HIV lipodystrophy population studied, alongside the expected IGF-1 increase from GH-axis stimulation. Ipamorelin's animal pharmacology work reported a GH-selective profile with limited effect on other pituitary hormones; its human program (TZP-101) was discontinued for lack of efficacy rather than for a specific safety signal, based on the sources reviewed.",
+        "practicalInterpretation": "Tolerability data exist for each compound in its own studied context, at the doses and in the populations described above.",
+        "limitation": "Neither compound can be characterized here as safe, risk-free, or side-effect-free outside the specific populations and conditions studied. This is not medical guidance, and no safety conclusion should be extended to research use outside those study conditions."
+      },
+      {
+        "heading": "What Should Researchers Verify About a Tesa/IPA Spray Product?",
+        "researcherProblem": "Molecule-level identity data for Tesamorelin and Ipamorelin can be mistaken for verified specifications of this specific spray listing.",
+        "researchQuestion": "What should a researcher confirm before relying on this listing, separate from the general science above?",
+        "evidence": "Veracue's current public product information for Tesa/IPA Spray does not specify the ratio or amount of each component, total concentration, volume per spray, number of sprays, fill volume, purity, or a lot-specific Certificate of Analysis for this listing.",
+        "practicalInterpretation": "Researchers should request or confirm identity testing, quantification of each component, and a current Certificate of Analysis directly from Veracue for the specific lot they intend to use, rather than assuming any of the molecule-level data above describes this product's exact composition.",
+        "limitation": "This section describes what is not yet publicly specified; it does not substitute for lot-specific documentation."
+      }
+    ],
+
+    "evidenceTable": [
+      {
+        "researchQuestion": "Does Tesamorelin reduce visceral adipose tissue in a clinical population?",
+        "compound": "Tesamorelin",
+        "evidenceType": "Human RCT",
+        "populationOrModel": "HIV-infected adults with excess abdominal fat (lipodystrophy)",
+        "studyDesign": "Randomized, double-blind, placebo-controlled, 26 weeks, tesamorelin 2 mg SC daily",
+        "mainFinding": "Significant reduction in visceral adipose tissue (CT-measured) and increase in IGF-1 versus placebo",
+        "limitation": "Population-specific (HIV lipodystrophy); not evidence for effects in healthy adults or other populations",
+        "source": "Falutz et al., New England Journal of Medicine, 2007"
+      },
+      {
+        "researchQuestion": "What is Tesamorelin's mechanism of GH release?",
+        "compound": "Tesamorelin",
+        "evidenceType": "Pharmacology / mechanism",
+        "populationOrModel": "In vitro / pituitary somatotroph receptor studies",
+        "studyDesign": "Receptor-binding and endocrine pharmacology characterization",
+        "mainFinding": "Binds the GHRH receptor to stimulate pulsatile GH release, increasing downstream IGF-1",
+        "limitation": "Mechanistic data; does not establish a specific clinical outcome in every population",
+        "source": "GHRH-receptor pharmacology literature; product labeling for tesamorelin-containing pharmaceuticals"
+      },
+      {
+        "researchQuestion": "Is Ipamorelin selective for GH release over other pituitary hormones?",
+        "compound": "Ipamorelin",
+        "evidenceType": "Animal pharmacology",
+        "populationOrModel": "Rodent and porcine models",
+        "studyDesign": "Comparative secretagogue pharmacology versus GHRP-2/GHRP-6",
+        "mainFinding": "GH release with reported minimal effect on ACTH, cortisol, prolactin, and gonadotropins in the models tested",
+        "limitation": "Animal-model selectivity data; not a confirmed human clinical selectivity trial",
+        "source": "Raun et al., European Journal of Endocrinology, 1998"
+      },
+      {
+        "researchQuestion": "Does chronic Ipamorelin affect growth and GH release in an animal model?",
+        "compound": "Ipamorelin",
+        "evidenceType": "Animal study",
+        "populationOrModel": "Young female rats",
+        "studyDesign": "Chronic in vivo Ipamorelin administration with in vitro GH-release assay",
+        "mainFinding": "Increased body weight gain and increased in vitro pituitary GH release",
+        "limitation": "Rodent model; not directly translatable to human dosing or outcomes",
+        "source": "Canete et al. (rodent Ipamorelin study)"
+      },
+      {
+        "researchQuestion": "Does Ipamorelin (TZP-101) improve postoperative gastrointestinal recovery in humans?",
+        "compound": "Ipamorelin",
+        "evidenceType": "Human RCT (Phase II)",
+        "populationOrModel": "Adult patients after major open abdominal surgery",
+        "studyDesign": "Randomized, controlled Phase II trial of IV Ipamorelin (TZP-101) for postoperative ileus",
+        "mainFinding": "Program discontinued for lack of efficacy against the clinical GI-motility endpoint",
+        "limitation": "Tested a gastrointestinal endpoint, not a GH/IGF-1 or body-composition endpoint; negative result",
+        "source": "ClinicalTrials.gov NCT00617552; Tranzyme Pharma Phase II program"
+      },
+      {
+        "researchQuestion": "Has Tesamorelin combined with Ipamorelin been directly studied?",
+        "compound": "Tesa/IPA (combination)",
+        "evidenceType": "Direct combination evidence",
+        "populationOrModel": "Not applicable",
+        "studyDesign": "Not identified",
+        "mainFinding": "No peer-reviewed combination study identified",
+        "limitation": "Individual-compound evidence for Tesamorelin and Ipamorelin cannot be combined into a synergy claim",
+        "source": "Literature review conducted for this page; no combination study found"
+      }
+    ],
+
+    "evidenceLimitations": [
+      "No direct study of Tesamorelin combined with Ipamorelin was identified; individual-compound findings should not be read as combination evidence.",
+      "Tesamorelin's strongest human evidence comes from one clinical population (HIV-associated lipodystrophy) and should not be generalized to other populations or goals.",
+      "Ipamorelin's human clinical trial data (TZP-101) tested a gastrointestinal endpoint, not a GH, IGF-1, or body-composition endpoint, and did not meet its efficacy goal.",
+      "Ipamorelin's selectivity profile is established primarily in animal models; human selectivity data are more limited.",
+      "None of the cited research describes Veracue's specific Tesa/IPA Spray formulation, concentration, or lot."
+    ],
+
+    "comparison": {
+      "primaryTable": {
+        "columns": ["Attribute", "Tesamorelin", "Ipamorelin", "Tesa/IPA"],
+        "rows": [
+          { "attribute": "Molecular class", "tesamorelin": "GHRH analog (44 aa)", "ipamorelin": "Ghrelin-receptor secretagogue (5 aa pentapeptide)", "tesaIpa": "Listing combining both peptides" },
+          { "attribute": "Structural identity", "tesamorelin": "C221H366N72O67S, ~5135.9 g/mol", "ipamorelin": "C38H49N9O5, ~711.87 g/mol", "tesaIpa": "No single formula; each component retains its own identity" },
+          { "attribute": "Primary signaling pathway", "tesamorelin": "GHRH receptor", "ipamorelin": "GHS-R1a (ghrelin receptor)", "tesaIpa": "Two independent pathways, not a shared mechanism" },
+          { "attribute": "Research context", "tesamorelin": "Human RCT in HIV-associated lipodystrophy (VAT, IGF-1)", "ipamorelin": "Animal secretagogue pharmacology; human Phase II GI-motility trial", "tesaIpa": "No direct combination research identified" },
+          { "attribute": "Evidence type", "tesamorelin": "Human clinical + mechanistic", "ipamorelin": "Animal pharmacology + one human clinical program (different endpoint)", "tesaIpa": "Not applicable — no combination-specific evidence" },
+          { "attribute": "Combination evidence", "tesamorelin": "N/A individually", "ipamorelin": "N/A individually", "tesaIpa": "None identified" }
+        ],
+        "note": "This table compares molecular class, mechanism, and evidence type only. It does not rank the compounds or imply one is more effective than another."
+      },
+      "secondaryComparisons": [
+        {
+          "pair": "Tesamorelin vs. CJC-1295",
+          "note": "Both are GHRH-receptor analogs. Tesamorelin uses an N-terminal trans-3-hexenoyl modification; CJC-1295 is commonly discussed in a DAC (Drug Affinity Complex) form designed for extended half-life via albumin binding, and a non-DAC form. They are distinct molecules with different structural modifications."
+        },
+        {
+          "pair": "Tesamorelin vs. Sermorelin",
+          "note": "Sermorelin (GRF 1-29) is an unmodified, truncated 29-residue fragment of native GHRH, while Tesamorelin is the full 44-residue sequence with a stabilizing modification. Both act on the GHRH receptor but are structurally distinct."
+        },
+        {
+          "pair": "Ipamorelin vs. CJC-1295",
+          "note": "Ipamorelin acts on the ghrelin receptor; CJC-1295 acts on the GHRH receptor. They are frequently discussed as a pairing precisely because they engage different receptors in the same downstream pathway."
+        }
+      ]
+    },
+
+    "productSpecifications": {
+      "productName": "Tesa/IPA Spray",
+      "productType": "Two-peptide research blend/listing",
+      "components": ["Tesamorelin", "Ipamorelin"],
+      "productFormat": "Spray (dispensing format only)",
+      "route": "Not publicly specified on the current Veracue product information.",
+      "concentration": "Not publicly specified on the current Veracue product information.",
+      "amountPerSpray": "Not publicly specified on the current Veracue product information.",
+      "fillVolume": "Not publicly specified on the current Veracue product information.",
+      "availableSizes": "Not publicly specified on the current Veracue product information.",
+      "purity": "Not publicly specified on the current Veracue product information.",
+      "analyticalTesting": "Not publicly specified on the current Veracue product information.",
+      "coa": "Not publicly specified on the current Veracue product information.",
+      "storage": "Not publicly specified on the current Veracue product information.",
+      "packaging": "Not publicly specified on the current Veracue product information."
+    },
+
+    "productFormat": {
+      "heading": "About the Spray Format",
+      "body": "\"Spray\" identifies how this listing is packaged and dispensed. It does not indicate a route of administration, and none should be assumed. Concentration, volume per spray, and total fill volume for this listing are not publicly specified at this time."
+    },
+
+    "coaAndDocumentation": {
+      "heading": "Certificate of Analysis",
+      "body": "A Certificate of Analysis for a peptide research product would typically confirm identity (by mass spectrometry), purity (by HPLC), lot number, testing date, and the testing laboratory. No lot-specific Certificate of Analysis for Tesa/IPA Spray was found in Veracue's current documentation at the time this page was written. Researchers should request current lot documentation directly before use."
+    },
+
+    "storageAndHandling": {
+      "heading": "Storage",
+      "body": "Storage conditions are not publicly specified on the current Veracue product information for this listing."
+    },
+
+    "whatResearchDoesNotShow": [
+      "No study has directly tested Tesamorelin combined with Ipamorelin.",
+      "No evidence supports a synergy, additive, or enhanced-GH-release claim for this pairing.",
+      "Tesamorelin's VAT-reduction data come from one clinical population (HIV-associated lipodystrophy) and do not establish an effect in healthy adults.",
+      "Ipamorelin's only major human clinical program addressed postoperative gastrointestinal recovery, not GH, IGF-1, or body composition, and did not meet its efficacy endpoint.",
+      "Neither compound's research establishes a usable dosing protocol for this RUO listing."
+    ],
+
+    "ruoNotice": {
+      "heading": "Research Use Only",
+      "body": "Tesa/IPA Spray is intended solely for research and laboratory use. It is not intended for human use, veterinary use, or administration of any kind, and is not intended for the diagnosis, treatment, cure, mitigation, or prevention of any disease."
+    },
+
+    "faq": [
+      { "question": "Is Tesa/IPA a single compound?", "answer": "No. It is a research listing combining two separate peptides, Tesamorelin and Ipamorelin, each with its own identity and mechanism." },
+      { "question": "What distinguishes Tesamorelin from Ipamorelin?", "answer": "Tesamorelin is a 44-amino-acid GHRH analog acting on the GHRH receptor; Ipamorelin is a 5-amino-acid peptide acting on the ghrelin receptor (GHS-R1a). They differ in size, structure, and mechanism." },
+      { "question": "Why are these two peptides often paired?", "answer": "They stimulate growth hormone release through two separate receptor pathways, which is the basis for pairing them in research listings — not a demonstrated combined effect." },
+      { "question": "Is there research showing Tesamorelin and Ipamorelin work better together?", "answer": "No direct combination study was identified. Findings for each peptide individually should not be treated as evidence for a combined effect." },
+      { "question": "Does \"Spray\" mean this product is used nasally?", "answer": "No. \"Spray\" describes the dispensing format only; Veracue's current product information does not specify a route of administration." },
+      { "question": "What has actually been studied with Tesamorelin in humans?", "answer": "A randomized, placebo-controlled trial in HIV-associated lipodystrophy measured visceral adipose tissue and IGF-1 change over 26 weeks (Falutz et al., NEJM, 2007)." },
+      { "question": "What has actually been studied with Ipamorelin in humans?", "answer": "Ipamorelin was tested clinically as TZP-101 in a Phase II trial for postoperative ileus; the program was discontinued for lack of efficacy against that endpoint." },
+      { "question": "Does research give a dosage for this product?", "answer": "No. Published doses reflect specific study protocols and are not usage instructions for this or any research listing." },
+      { "question": "Is a Certificate of Analysis available for Tesa/IPA Spray?", "answer": "Not publicly specified. No lot-specific COA for this listing was identified at the time of writing." },
+      { "question": "How should this product be stored?", "answer": "Storage conditions for this specific listing are not publicly specified on the current Veracue product information." },
+      { "question": "Is this product safe for human use?", "answer": "This is a research-use-only product not intended for human or veterinary use, administration, or the treatment of any condition." },
+      { "question": "How does Tesamorelin compare to CJC-1295?", "answer": "Both are GHRH-receptor analogs, but they carry different structural modifications and are discussed with different reported half-life profiles; they are not the same compound." }
+    ],
+
+    "internalLinks": [
+      { "label": "Tesamorelin (GRF 1-44)", "url": "/product/tesamorelin" },
+      { "label": "Ipamorelin", "url": "/product/ipamorelin" }
+    ],
+
+    "seo": {
+      "primaryKeyword": "Tesa/IPA Spray",
+      "secondaryKeywords": [
+        "Tesa/IPA", "Tesa IPA", "Tesamorelin", "Ipamorelin", "Tesamorelin peptide",
+        "Ipamorelin peptide", "Tesamorelin and Ipamorelin", "Tesa/IPA blend", "Tesamorelin vs Ipamorelin"
+      ],
+      "searchIntent": {
+        "core": ["tesamorelin and ipamorelin", "ipamorelin and tesamorelin", "tesamorelin peptide", "ipamorelin peptide", "tesa ipa blend", "tesa/ipa blend", "tesa ipa peptide"],
+        "informational": ["what is tesamorelin", "what is ipamorelin", "what does tesamorelin do", "what does ipamorelin do"],
+        "dosage": ["tesamorelin dosage", "tesamorelin dosage per day", "ipamorelin dosage", "ipamorelin dosage per day"],
+        "comparison": ["tesamorelin vs ipamorelin", "tesamorelin vs cjc 1295", "tesamorelin vs sermorelin", "sermorelin vs tesamorelin", "ipamorelin cjc 1295", "cjc 1295 ipamorelin", "sermorelin vs ipamorelin", "ipamorelin vs sermorelin"]
+      },
+      "title": "Tesa/IPA Spray Research Peptide Blend | Veracue",
+      "metaDescription": "Tesa/IPA Spray research listing: Tesamorelin and Ipamorelin identity, receptor pathways, human and animal evidence, and product documentation status.",
+      "canonical": "https://veracue-peptides.vercel.app/product/tesa-ipa-spray",
+      "suggestedSlug": "tesa-ipa-spray"
+    },
+
+    "geo": {
+      "primaryEntity": "Tesa/IPA Spray",
+      "secondaryEntities": ["Tesamorelin", "Ipamorelin", "GHRH receptor", "GHS-R1a / ghrelin receptor", "CJC-1295", "Sermorelin", "Egrifta"],
+      "entityRelationships": [
+        "Tesa/IPA Spray = a Veracue listing containing Tesamorelin + Ipamorelin",
+        "Tesamorelin = a GHRH/GRF analog acting on the GHRH receptor",
+        "Ipamorelin = a pentapeptide acting on the GHS-R1a (ghrelin) receptor",
+        "Tesamorelin acetate = active ingredient in the FDA-approved pharmaceutical Egrifta, distinct from Veracue's RUO material",
+        "CJC-1295 and Sermorelin = other GHRH-receptor analogs, structurally distinct from Tesamorelin"
+      ],
+      "scientificCategory": "Peptide research chemicals — growth hormone axis secretagogues",
+      "researchTopics": ["GHRH receptor pharmacology", "ghrelin receptor (GHS-R1a) pharmacology", "growth hormone / IGF-1 axis", "visceral adipose tissue research", "gastrointestinal motility research"],
+      "terminology": {
+        "Tesa/IPA": "Listing name for the Tesamorelin + Ipamorelin pairing, not a molecular entity",
+        "Spray": "Packaging/dispensing format term, not a route of administration",
+        "RUO": "Research Use Only — not intended for human or veterinary use"
+      },
+      "ambiguityNotes": [
+        "\"Tesa/IPA\" should never be treated as a single CAS number, formula, or sequence.",
+        "\"Spray\" should never be expanded to \"nasal spray\" or any other route without first-party confirmation.",
+        "Tesamorelin the RUO research compound should not be conflated with Egrifta, the approved pharmaceutical."
+      ]
+    },
+
+    "aeo": {
+      "directAnswers": [
+        "Tesa/IPA Spray combines two peptides — Tesamorelin and Ipamorelin — in one research listing.",
+        "Tesamorelin is a 44-amino-acid GHRH analog; Ipamorelin is a 5-amino-acid ghrelin-receptor agonist."
+      ],
+      "keyDefinitions": {
+        "Tesamorelin": "A synthetic analog of growth hormone-releasing hormone (GHRH) that binds the GHRH receptor to stimulate GH release.",
+        "Ipamorelin": "A synthetic pentapeptide that selectively agonizes the ghrelin receptor (GHS-R1a) to stimulate GH release.",
+        "Tesa/IPA": "A product-listing name for the Tesamorelin + Ipamorelin pairing, not a single molecule."
+      },
+      "comparisonQuestions": [
+        "How does Tesamorelin differ from Ipamorelin?",
+        "How does Tesamorelin compare to CJC-1295?",
+        "How does Tesamorelin compare to Sermorelin?",
+        "How does Ipamorelin compare to CJC-1295?"
+      ],
+      "dosageIntent": "Published doses for Tesamorelin and Ipamorelin reflect specific research or clinical-trial protocols and are not usage instructions for this product.",
+      "safetyIntent": "Tolerability data exist only within the specific populations and conditions each compound was studied in; neither compound is characterized here as risk-free.",
+      "productFormatIntent": "\"Spray\" refers to the dispensing format of this listing only; no route of administration is specified."
+    },
+
+    "schema": {
+      "product": {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Tesa/IPA Spray",
+        "description": "A research-use-only spray-format listing combining Tesamorelin and Ipamorelin, two independently characterized peptides.",
+        "category": "Peptide Research Blends",
+        "brand": { "@type": "Brand", "name": "Veracue" },
+        "url": "https://veracue-peptides.vercel.app/product/tesa-ipa-spray"
+      },
+      "webPage": {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Tesa/IPA Spray Research Peptide Blend | Veracue",
+        "description": "Tesa/IPA Spray research listing: Tesamorelin and Ipamorelin identity, receptor pathways, human and animal evidence, and product documentation status.",
+        "url": "https://veracue-peptides.vercel.app/product/tesa-ipa-spray",
+        "isPartOf": { "@type": "WebSite", "name": "Veracue", "url": "https://veracue-peptides.vercel.app/" }
+      },
+      "breadcrumbList": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://veracue-peptides.vercel.app/" },
+          { "@type": "ListItem", "position": 2, "name": "Shop", "item": "https://veracue-peptides.vercel.app/shop" },
+          { "@type": "ListItem", "position": 3, "name": "Tesa/IPA Spray", "item": "https://veracue-peptides.vercel.app/product/tesa-ipa-spray" }
+        ]
+      },
+      "faqPage": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Is Tesa/IPA a single compound?", "acceptedAnswer": { "@type": "Answer", "text": "No. It is a research listing combining two separate peptides, Tesamorelin and Ipamorelin, each with its own identity and mechanism." } },
+          { "@type": "Question", "name": "What distinguishes Tesamorelin from Ipamorelin?", "acceptedAnswer": { "@type": "Answer", "text": "Tesamorelin is a 44-amino-acid GHRH analog acting on the GHRH receptor; Ipamorelin is a 5-amino-acid peptide acting on the ghrelin receptor (GHS-R1a)." } },
+          { "@type": "Question", "name": "Is there research showing Tesamorelin and Ipamorelin work better together?", "acceptedAnswer": { "@type": "Answer", "text": "No direct combination study was identified. Findings for each peptide individually should not be treated as evidence for a combined effect." } },
+          { "@type": "Question", "name": "Does \"Spray\" mean this product is used nasally?", "acceptedAnswer": { "@type": "Answer", "text": "No. \"Spray\" describes the dispensing format only; Veracue's current product information does not specify a route of administration." } },
+          { "@type": "Question", "name": "Does research give a dosage for this product?", "acceptedAnswer": { "@type": "Answer", "text": "No. Published doses reflect specific study protocols and are not usage instructions for this or any research listing." } },
+          { "@type": "Question", "name": "Is a Certificate of Analysis available for Tesa/IPA Spray?", "acceptedAnswer": { "@type": "Answer", "text": "Not publicly specified. No lot-specific COA for this listing was identified at the time of writing." } }
+        ]
+      }
+    },
+
+    "qualityAudit": {
+      "scienceVerified": true,
+      "identitySourcesUsed": ["PubChem-aligned reference data", "Wikipedia (cross-checked structural data)", "Falutz et al., NEJM 2007", "Raun et al., European Journal of Endocrinology 1998", "ClinicalTrials.gov NCT00617552"],
+      "evidenceSeparatedByLevel": true,
+      "combinationSynergyClaimed": false,
+      "sprayRouteInferred": false,
+      "productSpecsInvented": false,
+      "vialSpecsTransferredToSpray": false,
+      "unsupportedRegulatoryClaimsMade": false,
+      "dosageProtocolProvided": false,
+      "keywordWorkbookUsed": true,
+      "researchSectionCount": 11,
+      "quickAnswerCount": 12,
+      "faqCount": 12,
+      "evidenceTableEntryCount": 6,
+      "internalLinksVerifiedLive": true
+    }
+  }
+}

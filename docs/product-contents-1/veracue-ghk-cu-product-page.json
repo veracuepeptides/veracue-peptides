@@ -1,0 +1,526 @@
+{
+  "deliverable": {
+    "client": "Veracue Peptides",
+    "site": "https://veracue-peptides.vercel.app/",
+    "asset_type": "Product page content package",
+    "compound": "GHK-Cu",
+    "prepared_by": "Belk Digital",
+    "prepared_date": "2026-09-18",
+    "status": "Ready for CMS entry once the unverified_fields block is completed by Veracue",
+    "structural_reference": "Helix Bio product-page architecture; matched to the live Veracue AHK-Cu page for house consistency",
+    "competitor_reference_only": [
+      "https://99puritypeptides.com/product/ghk-cu",
+      "https://research.99puritypeptides.com/compounds/ghk-cu"
+    ]
+  },
+
+  "seo_metadata": {
+    "meta_title": "GHK-Cu Research Peptide (Copper Tripeptide-1) | Veracue",
+    "meta_title_length": 55,
+    "meta_description": "GHK-Cu research peptide from Veracue. Verified CAS and molecular-form identity, HPLC and LC-MS documentation, and a clear read on what the evidence shows.",
+    "meta_description_length": 153,
+    "canonical": "https://veracue-peptides.vercel.app/product/ghk-cu",
+    "url_slug": "/product/ghk-cu",
+    "primary_keyword": "GHK-Cu research peptide",
+    "secondary_keywords": [
+      "GHK-Cu peptide",
+      "GHK-Cu COA",
+      "GHK-Cu purity",
+      "GHK-Cu HPLC",
+      "GHK-Cu LC-MS",
+      "GHK-Cu molecular weight",
+      "GHK-Cu CAS",
+      "GHK-Cu sequence",
+      "copper tripeptide-1",
+      "prezatide copper",
+      "glycyl-L-histidyl-L-lysine",
+      "GHK vs GHK-Cu",
+      "GHK-Cu vs AHK-Cu",
+      "GHK-Cu third party tested",
+      "GHK-Cu research grade"
+    ],
+    "deprioritised_on_this_url": [
+      "GHK-Cu benefits",
+      "GHK-Cu anti-aging",
+      "GHK-Cu for hair growth",
+      "GHK-Cu injectable",
+      "GHK-Cu dosage",
+      "GHK-Cu before and after"
+    ],
+    "primary_search_intent": "Commercial investigation with a scientific-verification job attached. The visitor wants to source GHK-Cu research material and needs to confirm which chemical form they are buying, what the analytical paperwork does and does not prove, and how strong the underlying evidence actually is.",
+    "search_job_statement": "Help a researcher confirm exactly which GHK-Cu species a vendor is selling, read the accompanying COA critically, and place the published evidence in the correct tier before committing to a purchase."
+  },
+
+  "breadcrumbs": [
+    { "label": "Home", "url": "/" },
+    { "label": "Shop", "url": "/shop" },
+    { "label": "Cellular Repair & Healing", "url": "/shop?category=cellular-repair-healing" },
+    { "label": "GHK-Cu", "url": "/product/ghk-cu" }
+  ],
+
+  "hero": {
+    "eyebrow": "Cellular Repair & Healing",
+    "h1": "GHK-Cu",
+    "subtitle": "Copper Tripeptide-1",
+    "short_summary": "GHK-Cu is the copper(II) complex of glycyl-L-histidyl-L-lysine, the tripeptide Loren Pickart and Marvin Thaler first described in human serum in 1973. Ingredient suppliers list it as Copper Tripeptide-1, and drug-development literature calls it prezatide copper. Veracue supplies it as a research material for laboratory work. It carries a far larger published literature than most copper peptides, though almost all of it sits in cell culture and animal models, and the human data that does exist comes from topical cosmetic formulations rather than from research powder.",
+    "answer_surface_note": "The first 60 words resolve the entity, the cosmetic synonym, the regulatory synonym and the evidence ceiling. This is the block most likely to be lifted by an AI answer engine, so it carries the qualification with it."
+  },
+
+  "product": {
+    "name": "GHK-Cu",
+    "alternate_display_name": "GHK-Cu (Copper Tripeptide-1)",
+    "category": "Cellular Repair & Healing",
+    "sku": "__UNVERIFIED__ suggested pattern GHKCU-50MG, matching the live AHKCU-50MG convention",
+    "sizes": "__UNVERIFIED__ the AHK-Cu listing offers 50mg and 100mg; confirm before publishing",
+    "price": "__UNVERIFIED__",
+    "compare_at_price": "__UNVERIFIED__",
+    "availability": "__UNVERIFIED__",
+    "weight": "__UNVERIFIED__",
+    "form": "Lyophilized powder",
+    "appearance": "__UNVERIFIED__ copper complexes of GHK are typically blue to blue-violet solids, but state the actual observed appearance for the lot rather than a generic description",
+    "purity_claim": "Site-wide Veracue standard is greater than or equal to 99% by HPLC with batch-specific COA. The footer disclaimer already states purity may vary by lot and some items may test below 99%. Keep that qualification attached to any product-level purity statement.",
+    "country_of_origin": "United States (site-wide claim: USA formulated and tested)",
+    "lot_number": "__UNVERIFIED__ populate per shipment, not on the page template",
+    "testing_laboratory": "__UNVERIFIED__ name the independent lab or say the lab is named on the COA",
+    "storage_statement": "__UNVERIFIED__ mirror the AHK-Cu page approach: point to the conditions printed on this lot's documentation and label rather than publishing a generic temperature"
+  },
+
+  "trust_strip": [
+    { "label": "Verified Purity", "value": "≥99%", "caption": "Confirmed by independent HPLC assay" },
+    { "label": "Lab Tested", "value": "3rd Party", "caption": "No self-reported results" },
+    { "label": "Grade", "value": "Research", "caption": "One standard, every batch" },
+    { "label": "Documented", "value": "COA", "caption": "On file for every lot" }
+  ],
+
+  "sections": [
+    {
+      "id": "overview",
+      "heading": "Overview",
+      "type": "prose",
+      "body": [
+        "GHK-Cu pairs a three-amino-acid peptide with a single copper(II) ion. The peptide is glycine, histidine and lysine in that order, which is where the initials come from. Copper binds through nitrogen donors from the glycine terminus and the histidine side chain, and the peptide gives up amide protons as the metal locks in.",
+        "The compound reached the literature by accident. In 1973 Loren Pickart and Marvin Thaler reported in Nature New Biology that a small fraction of human serum kept liver cells alive in culture longer than expected. The active fraction turned out to be this tripeptide. Seven years later a Nature paper from Pickart and colleagues proposed that the peptide works largely by shuttling copper into cells, which is still the framing most mechanistic work starts from.",
+        "Two other names follow GHK-Cu around. Cosmetic ingredient lists call it Copper Tripeptide-1. Older drug-development records call the peptide prezatide and the complex prezatide copper. All three point at the same chemistry, but they belong to different regulatory worlds, and a cosmetic safety conclusion does not carry over to a research powder."
+      ]
+    },
+
+    {
+      "id": "intended-use",
+      "heading": "Intended Use",
+      "type": "prose",
+      "body": [
+        "This material is offered for in vitro and laboratory research. Typical contexts include fibroblast and keratinocyte culture, extracellular matrix and wound-model work, copper coordination chemistry, and analytical method development.",
+        "It is not a drug, cosmetic, supplement or food, and it is not intended for administration to humans or animals. Nothing on this page provides dosing, application, reconstitution for administration, or treatment information, and none of it should be read that way."
+      ]
+    },
+
+    {
+      "id": "highlights",
+      "heading": "Product Highlights",
+      "type": "list",
+      "items": [
+        "Copper(II) complex of the tripeptide Gly-His-Lys, listed by ingredient suppliers as Copper Tripeptide-1",
+        "Supplied as a lyophilized research powder in a sealed vial",
+        "Batch-specific Certificate of Analysis available for the lot shipped",
+        "Independent third-party purity testing, not self-reported results",
+        "Labelled for laboratory research use only, not for human or veterinary use"
+      ]
+    },
+
+    {
+      "id": "identity-snapshot",
+      "heading": "Identity at a Glance",
+      "type": "table",
+      "columns": ["Field", "Value"],
+      "rows": [
+        ["Name", "GHK-Cu"],
+        ["Other names", "Copper Tripeptide-1 (INCI); prezatide copper; glycyl-L-histidyl-L-lysine copper(II); copper peptide"],
+        ["Peptide sequence", "Gly-His-Lys (G-H-K), three amino acids"],
+        ["Metal", "Copper(II), one ion per peptide in the standard 1:1 complex"],
+        ["Free peptide CAS", "49557-75-7"],
+        ["Copper complex CAS", "89030-95-5"],
+        ["Closest relative", "AHK-Cu (Ala-His-Lys copper), differing only at the first amino acid"],
+        ["Evidence base", "Large by peptide standards, but dominated by in vitro and animal work"],
+        ["Human evidence", "Topical cosmetic formulations only; no randomised trial of research-grade powder identified"]
+      ]
+    },
+
+    {
+      "id": "molecular-identity",
+      "heading": "Molecular Identity and Why the Numbers Disagree",
+      "type": "prose_with_table",
+      "body": [
+        "Look up the molecular weight of GHK-Cu and you will find at least five different numbers. They are not all errors. Most of them describe genuinely different species, and a couple of the figures circulating on supplier pages are arithmetic that does not hold up.",
+        "The table below sets each representation against its formula so a researcher can match a catalogue value or a COA entry to the species it actually describes."
+      ],
+      "columns": ["Representation", "Formula", "MW (g/mol)", "Where you will see it"],
+      "rows": [
+        ["Free tripeptide, no copper (GHK)", "C14H24N6O4", "340.38", "PubChem CID 73587; CAS 49557-75-7; INCI Tripeptide-1"],
+        ["Neutral 1:1 Cu(II) complex, two protons displaced", "C14H22CuN6O4", "401.91", "CAS 89030-95-5; the formula CosIng lists for Copper Tripeptide-1; the value most research suppliers quote"],
+        ["1:1 Cu complex written as a cation", "C14H23CuN6O4+", "402.92", "PubChem CID 71587328, titled Prezatide copper"],
+        ["2:1 peptide to copper adduct", "C28H48CuN12O8", "744.31", "PubChem CID 133697840, confusingly titled GHK-Cu"],
+        ["Prezatide copper acetate, 2:1 diacetate salt", "C32H52CuN12O12", "860.39", "CAS 130120-57-9; DrugBank DBSALT002420; sold as Copper Tripeptide-1 (2:1, HOAc)"]
+      ],
+      "post_table_body": [
+        "Two corrections are worth making plainly, because both circulate widely.",
+        "First, a number of pages pair the formula C14H22CuN6O4 with a weight near 403.9 g/mol. That formula sums to 401.91. The 402.92 figure belongs to the cationic form PubChem draws, which carries one more hydrogen. A difference of one proton is small, but if a report says the two are the same thing, it was not checked.",
+        "Second, the acetate form is often listed around 462 to 467 g/mol, as though it were a 1:1 complex with one acetate attached. The registered substance behind CAS 130120-57-9 is not that. DrugBank records prezatide copper acetate as two peptide units, one copper and two acetates, averaging 860.39 g/mol. Some suppliers do sell a 1:1 mono-acetate, which is a different material again.",
+        "For a research powder the practical question is narrow. Which species did the vendor synthesise, and which species did the identity test match against? A COA that reports a mass without naming the form leaves that unanswered."
+      ]
+    },
+
+    {
+      "id": "ghk-vs-ghk-cu",
+      "heading": "GHK and GHK-Cu Are Not Interchangeable",
+      "type": "prose",
+      "body": [
+        "Plenty of sources use GHK and GHK-Cu as if they were one compound. They are not. GHK is the bare tripeptide, 340.38 g/mol, CAS 49557-75-7, a white peptide solid. GHK-Cu is the copper complex, roughly 402 g/mol depending on how the form is written, CAS 89030-95-5, and copper gives it colour.",
+        "The distinction has teeth in the literature. Several influential findings were produced with the free peptide rather than the complex. The 2012 Genome Medicine analysis that reported reversal of an emphysema-related gene signature used GHK, not GHK-Cu. Reviews that fold both into one story quietly blur which molecule was in the flask.",
+        "It also matters for what arrives in the vial. If a vendor labels a product GHK-Cu but the identity result matches 340 g/mol, the material is the free peptide and the copper is either absent or unaccounted for."
+      ]
+    },
+
+    {
+      "id": "copper-tripeptide-1",
+      "heading": "What Copper Tripeptide-1 Means, and What It Does Not",
+      "type": "prose",
+      "body": [
+        "Copper Tripeptide-1 is the cosmetic ingredient name for GHK-Cu. It sits in the EU CosIng database under reference 55687 against CAS 89030-95-5 and the formula C14H22CuN6O4. Copper Tripeptide-3 is the parallel name for AHK-Cu, which is why the two get mixed up on supplier pages.",
+        "In 2018 the Cosmetic Ingredient Review Expert Panel assessed Tripeptide-1, Copper Tripeptide-1 and related derivatives and concluded they are safe in the present practices of use and concentration in cosmetics. That conclusion is worth reading closely. The Panel anchored it to typical use concentrations below 10 ppm in finished cosmetic products.",
+        "So the CIR conclusion says something about a fraction of a percent of peptide in a lotion. It says nothing about a vial of lyophilized powder, nothing about any other route, and nothing about biological activity. It is a cosmetic-ingredient finding, and it should not be recycled as a safety statement for research material."
+      ]
+    },
+
+    {
+      "id": "what-research-shows",
+      "heading": "What the GHK-Cu Research Actually Shows",
+      "type": "prose_with_table",
+      "body": [
+        "GHK-Cu has an unusually deep literature for a tripeptide, stretching back five decades. The depth is real. The evidence tier is narrower than most product pages imply.",
+        "The core findings come from cultured human fibroblasts. Maquart and colleagues reported in FEBS Letters in 1988 that GHK-Cu stimulated collagen synthesis in fibroblast culture. Work through the 1990s and 2000s extended that to glycosaminoglycans and small proteoglycans in wounded skin, and to matrix metalloproteinase and TIMP expression. Kang and colleagues reported changes in integrin expression and p63 positivity in keratinocytes in 2009.",
+        "The strongest animal data is the 1993 Journal of Clinical Investigation study from Maquart's group, which found increased connective tissue accumulation in rat experimental wounds after GHK-Cu treatment. That is a living system, but it is a rat wound, not a person.",
+        "Human data exists and is thinner than its citation count suggests. The study nearly every page leans on is Leyden and colleagues, presented at the American Academy of Dermatology annual meeting in February 2002: a facial cream containing copper peptide, assessed over 12 weeks. It is a conference abstract for a cosmetic formulation, not a full peer-reviewed trial report of the compound itself. A 2016 Journal of Aging Science paper from Badenhorst and colleagues looked at MMP and TIMP expression alongside facial wrinkle parameters. Both tested finished topical products.",
+        "One more thing a careful reader should know. A large share of the review literature, including the widely cited 2018 International Journal of Molecular Sciences paper, comes from Loren Pickart and Anna Margolina at Skin Biology, a company that sells copper peptide products. The primary research they summarise is real. The framing carries a commercial interest that is rarely disclosed when those reviews get cited."
+      ],
+      "columns": ["Question", "Evidence type", "Finding", "Limitation"],
+      "rows": [
+        ["Does GHK-Cu increase collagen synthesis?", "In vitro, human fibroblast culture", "Stimulated collagen synthesis (Maquart et al., FEBS Lett 1988)", "Culture medium concentrations do not correspond to any real-world amount or route"],
+        ["Does it affect glycosaminoglycans and proteoglycans?", "In vitro and animal wound models", "Altered expression in wounded skin (Siméon et al., J Invest Dermatol 2000)", "Endpoint is expression, not a demonstrated tissue outcome in people"],
+        ["Does it change MMP and TIMP balance?", "In vitro", "Modulation reported across several studies", "Direction and magnitude vary by cell type and concentration"],
+        ["Does it accelerate tissue repair in a living animal?", "Animal, rat experimental wounds", "Increased connective tissue accumulation (Maquart et al., J Clin Invest 1993)", "Rodent wound model; single research group"],
+        ["Does it improve human skin?", "Human, topical cosmetic formulation", "Improvements reported for photoaged skin over 12 weeks (Leyden et al., AAD 2002)", "Conference abstract; finished cosmetic product, not the raw compound"],
+        ["Does it reset gene expression?", "In vitro plus bioinformatics", "Reversal of an emphysema-related signature reported (Campbell et al., Genome Med 2012)", "Used free GHK rather than the copper complex; computational signature analysis"],
+        ["Does it grow hair?", "Insufficient evidence", "No human randomised trial with hair endpoints identified", "Much of the hair literature attributed to GHK-Cu belongs to AHK-Cu"],
+        ["Is injectable or systemic use supported?", "Insufficient evidence", "No published randomised human trial identified", "Outside the scope of research-use material entirely"]
+      ]
+    },
+
+    {
+      "id": "hair-research",
+      "heading": "The Hair Claims Need Untangling",
+      "type": "prose",
+      "body": [
+        "Search interest in GHK-Cu and hair is enormous, and the content answering it is unusually unreliable. Three separate evidence streams get merged into one.",
+        "The first is genuine GHK-Cu work, which is thin on follicle endpoints. Uno and Kurata's 1993 Journal of Investigative Dermatology supplement reviewed chemical agents and peptides affecting hair growth in animal models, and copper peptide work sits inside that tradition.",
+        "The second stream is AHK-Cu, not GHK-Cu. The 2007 Archives of Pharmacal Research study by Pyo and colleagues, which tested isolated human scalp follicles and cultured dermal papilla cells, used AHK-Cu. Its findings, including the Bcl-2 to Bax ratio shift and reduced cleaved caspase-3, are routinely reattributed to GHK-Cu online. They are not GHK-Cu findings.",
+        "The third stream is general copper-peptide literature, which gets narrated as though every result applies to every copper peptide.",
+        "One specific citation is worth flagging. Several pages attribute a Wnt and beta-catenin activation finding in human dermal papilla cells to a 2018 Scientific Reports article. We could not locate that paper. Until a primary source turns up, treat that claim as unverified rather than established."
+      ]
+    },
+
+    {
+      "id": "what-it-does-not-show",
+      "heading": "What This Research Does Not Establish",
+      "type": "list",
+      "items": [
+        "That GHK-Cu treats, prevents or improves any condition in people",
+        "That concentrations active in culture medium translate to any real-world amount or route",
+        "That research-grade lyophilized powder behaves like the cosmetic formulations used in the human studies",
+        "That the CIR cosmetic safety conclusion extends beyond low-concentration topical products",
+        "That AHK-Cu hair-follicle findings apply to GHK-Cu",
+        "That GHK findings without copper apply to the copper complex, or the reverse",
+        "That any purity figure establishes safety, sterility or biological activity"
+      ]
+    },
+
+    {
+      "id": "ghk-cu-vs-ahk-cu",
+      "heading": "GHK-Cu Compared With AHK-Cu",
+      "type": "prose_with_table",
+      "body": [
+        "Both are copper(II) complexes of a tripeptide ending in histidine and lysine. The only structural difference is the first residue: glycine in GHK-Cu, alanine in AHK-Cu. That single change is enough to give them separate CAS numbers, separate INCI names and very different research histories.",
+        "No controlled study comparing the two head to head was identified. Neither can be called stronger, better or more effective on the published record. What can be said is that they have been studied in different models, for different questions, at very different volumes."
+      ],
+      "columns": ["Attribute", "GHK-Cu", "AHK-Cu"],
+      "rows": [
+        ["Sequence", "Gly-His-Lys + Cu(II)", "Ala-His-Lys + Cu(II)"],
+        ["Cosmetic ingredient name", "Copper Tripeptide-1", "Copper Tripeptide-3"],
+        ["Complex CAS", "89030-95-5", "682809-81-0 (supplier-assigned, form varies)"],
+        ["Size of direct evidence base", "Large: five decades of in vitro, animal and topical human work", "Small: principally Pyo et al., 2007"],
+        ["Dominant research model", "Human fibroblast culture, animal wound models, topical cosmetic trials", "Ex vivo human hair follicles, in vitro dermal papilla cells"],
+        ["Natural occurrence", "Present in human plasma; declines with age", "Not described as a native human plasma peptide"],
+        ["Head-to-head comparison", "None identified", "None identified"]
+      ]
+    },
+
+    {
+      "id": "coa",
+      "heading": "Reading a GHK-Cu Certificate of Analysis",
+      "type": "prose_with_table",
+      "body": [
+        "A purity percentage answers one question out of six. A useful GHK-Cu COA should let you confirm what the material is, which form it is, how pure it is by a named method, how much peptide is actually in the vial, whether copper is present in the expected ratio, and that the report belongs to the lot in your hand.",
+        "Copper complexes make the identity question sharper than it is for ordinary peptides. Because the free peptide, the neutral complex, the cationic form and the acetate salt all carry different masses, an identity result is only interpretable if the report states which species it was matched against."
+      ],
+      "columns": ["COA element", "What it tells you", "What it does not establish"],
+      "rows": [
+        ["Lot or batch number", "Links the report to a specific production lot", "Anything about quality unless it matches the vial label"],
+        ["HPLC purity (%)", "Share of detected signal in the main peak under stated conditions", "Identity, net peptide content, sterility or biological activity"],
+        ["LC-MS or mass spectrometry", "Whether an observed mass is consistent with the expected species", "Purity, or how much material is present"],
+        ["Stated molecular form", "Which of the GHK-Cu species the result refers to", "Identity on its own; it must be backed by analytical data"],
+        ["Copper content", "Whether copper is present at the expected ratio to peptide", "Purity of the peptide portion"],
+        ["Net peptide content", "How much of the vial mass is peptide rather than salt or water", "Chromatographic purity"],
+        ["Appearance and colour", "A weak consistency check, since the complex is coloured and the free peptide is not", "Anything quantitative"],
+        ["Laboratory name and test date", "Who tested the lot and when", "Independence, unless the relationship is disclosed"]
+      ]
+    },
+
+    {
+      "id": "hplc-vs-lcms",
+      "heading": "HPLC and LC-MS Answer Different Questions",
+      "type": "prose_with_table",
+      "body": [
+        "These two methods get quoted together so often that they start to read like one test. They are not, and they fail in different directions.",
+        "HPLC separates what is in the sample and reports how much of the detected signal sits under the main peak. It is a purity measure. It cannot tell you that the main peak is the molecule you wanted. A clean chromatogram of the wrong compound still looks clean.",
+        "Mass spectrometry answers the identity question by measuring mass. It tells you whether the species present matches an expected mass, which is exactly what a copper complex needs, since the metal changes the number. It does not tell you what fraction of the vial that species represents."
+      ],
+      "columns": ["Method", "What it measures", "What it cannot answer"],
+      "rows": [
+        ["HPLC", "Chromatographic purity under stated conditions; presence of related substances", "Whether the main peak is the intended molecule; how much peptide is in the vial"],
+        ["LC-MS / MS", "Whether an observed mass matches the expected species, including the copper-bound form", "Purity; quantity; sterility"],
+        ["Neither method", "—", "Safety, biological activity, endotoxin status or suitability for any use in a living system"]
+      ]
+    },
+
+    {
+      "id": "quick-coa-check",
+      "heading": "Quick COA Check",
+      "type": "list",
+      "items": [
+        "Lot number on the COA matches the vial label",
+        "Purity method is named, not just a percentage",
+        "Identity result states the expected mass, the observed mass and the species matched",
+        "Molecular form is stated: free complex, cation, acetate salt or other",
+        "Copper is accounted for, either by content testing or by the identity species",
+        "Testing laboratory and date are shown",
+        "Extra panels are reported with results, not just listed as tested"
+      ]
+    },
+
+    {
+      "id": "storage",
+      "heading": "Storage & Handling",
+      "type": "prose",
+      "body": [
+        "Store according to the conditions stated on this lot's documentation and label. Handle as a laboratory chemical using appropriate personal protective equipment.",
+        "__UNVERIFIED__ If Veracue documents specific storage conditions, light sensitivity or freeze-thaw guidance for this material, replace this block with the documented conditions. Do not publish generic temperature guidance that is not on the label."
+      ]
+    },
+
+    {
+      "id": "compliance",
+      "heading": "Compliance Notice",
+      "type": "prose",
+      "body": [
+        "GHK-Cu supplied by Veracue is intended solely for laboratory research. It is not a drug, cosmetic, dietary supplement or food, and it is not intended to diagnose, treat, cure or prevent any disease. It must not be administered to humans or animals.",
+        "GHK-Cu has not been approved by the FDA as a drug for any indication. Copper Tripeptide-1 is separately established as a cosmetic ingredient, which is a different regulatory status and does not extend to this material. The scientific information on this page describes published laboratory studies and is not medical advice or a statement of efficacy or safety. Purchasers are responsible for using the material lawfully and within an appropriate research setting."
+      ]
+    }
+  ],
+
+  "faqs": [
+    {
+      "q": "What is GHK-Cu?",
+      "a": "GHK-Cu is the copper(II) complex of the tripeptide glycyl-L-histidyl-L-lysine, first described in human serum by Pickart and Thaler in 1973. It is supplied here as a laboratory research material."
+    },
+    {
+      "q": "Is GHK the same as GHK-Cu?",
+      "a": "No. GHK is the free tripeptide, C14H24N6O4, 340.38 g/mol, CAS 49557-75-7. GHK-Cu is the copper complex, CAS 89030-95-5, around 402 g/mol depending on the form. Several well-known studies used the free peptide rather than the complex, so the distinction changes which findings apply."
+    },
+    {
+      "q": "Is GHK-Cu the same as Copper Tripeptide-1?",
+      "a": "Yes, chemically. Copper Tripeptide-1 is the cosmetic ingredient name, listed in CosIng under reference 55687 against CAS 89030-95-5. The name belongs to cosmetic formulation, not to research material, and a cosmetic safety assessment does not carry over to a research powder."
+    },
+    {
+      "q": "What is the sequence of GHK-Cu?",
+      "a": "Glycine, histidine, lysine, in that order, with a copper(II) ion bound through nitrogen donors from the glycine terminus and the histidine side chain."
+    },
+    {
+      "q": "Why do sources list different molecular weights for GHK-Cu?",
+      "a": "Because they describe different species. The free peptide is 340.38. The neutral 1:1 copper complex, C14H22CuN6O4, is 401.91. PubChem's cationic depiction, C14H23CuN6O4+, is 402.92. A 2:1 adduct is 744.31, and prezatide copper acetate, CAS 130120-57-9, is 860.39. A value near 403.9 paired with the formula C14H22CuN6O4 is an arithmetic error; that formula sums to 401.91."
+    },
+    {
+      "q": "What is the CAS number for GHK-Cu?",
+      "a": "89030-95-5 for the copper complex. The free peptide GHK is 49557-75-7, and prezatide copper acetate is 130120-57-9. Because suppliers attach these numbers to different forms, confirm which form a given lot represents."
+    },
+    {
+      "q": "What is prezatide copper?",
+      "a": "Prezatide is the drug-development name for the GHK peptide, and prezatide copper is the copper complex under that nomenclature. It appears in regulatory and pharmaceutical registries, including older records under names such as PC-1020 and Iamin. It refers to the same chemistry as GHK-Cu."
+    },
+    {
+      "q": "What does the human evidence for GHK-Cu show?",
+      "a": "The human evidence comes from topical cosmetic formulations, not from research powder. The most-cited study, Leyden and colleagues at the 2002 American Academy of Dermatology meeting, assessed a copper peptide facial cream over 12 weeks and was presented as a conference abstract. A 2016 Journal of Aging Science paper looked at MMP and TIMP expression alongside wrinkle parameters. Neither tested the raw compound."
+    },
+    {
+      "q": "Is GHK-Cu proven to grow hair?",
+      "a": "No. No human randomised trial with hair endpoints was identified. Much of the follicle research attributed to GHK-Cu online actually belongs to AHK-Cu, particularly the 2007 Pyo study on isolated human scalp follicles and dermal papilla cells."
+    },
+    {
+      "q": "What is the difference between GHK-Cu and AHK-Cu?",
+      "a": "One amino acid. GHK-Cu starts with glycine, AHK-Cu with alanine. GHK-Cu is a native human plasma peptide with a large literature across fibroblast, wound and topical studies. AHK-Cu's direct evidence centres on a single 2007 hair-follicle paper. No head-to-head study was identified, so neither can be called superior."
+    },
+    {
+      "q": "What should a GHK-Cu Certificate of Analysis include?",
+      "a": "Lot number matching the vial, a named purity method with its conditions, an identity result stating the expected mass, the observed mass and the species matched, the molecular form the result refers to, copper accounting, net peptide content where measured, and the testing laboratory and date."
+    },
+    {
+      "q": "Does high HPLC purity mean GHK-Cu is safe or biologically active?",
+      "a": "No. HPLC purity describes the share of detected signal under the main peak in a single chromatographic run. It says nothing about identity, net peptide content, sterility, endotoxin status, biological activity or suitability for use in any living system."
+    },
+    {
+      "q": "What does research use only mean for this product?",
+      "a": "It means the material is manufactured, labelled and supplied for in vitro and laboratory research only. It is not for human or veterinary use, not for ingestion, injection or any form of administration, and not for compounding."
+    }
+  ],
+
+  "internal_links": [
+    { "anchor": "AHK-Cu (Copper Tripeptide-3)", "url": "/product/ahk-cu", "rationale": "The direct structural comparison. Both pages should link to each other, and the AHK-Cu page already carries a GHK-Cu comparison table.", "verified": true },
+    { "anchor": "Certificates of Analysis", "url": "/certificates", "rationale": "Supports every COA claim on this page with the actual documents.", "verified": true },
+    { "anchor": "Cellular Repair & Healing", "url": "/shop?category=cellular-repair-healing", "rationale": "Category-level topical grouping with the copper peptides.", "verified": true },
+    { "anchor": "Peptide calculator", "url": "/peptide-calculator", "rationale": "Laboratory utility. Link with research-context anchor text only, never administration framing.", "verified": true },
+    { "anchor": "Help & FAQ", "url": "/faq", "rationale": "Site-wide storage, COA and handling answers extend this page's Q&A depth.", "verified": true },
+    { "anchor": "About Veracue", "url": "/about-us", "rationale": "E-E-A-T support for testing and manufacturing statements.", "verified": true },
+    { "anchor": "Shipping policy", "url": "/shipping-policy", "rationale": "Referenced by packaging and handling content.", "verified": true },
+    { "anchor": "Research articles", "url": "/blog", "rationale": "Destination for the deeper evidence review that should not live on the product page.", "verified": true }
+  ],
+
+  "external_references": [
+    { "citation": "Pickart L, Thaler MM. Tripeptide in human serum which prolongs survival of normal liver cells and stimulates growth in neoplastic liver. Nature New Biology, 1973.", "use": "Discovery and origin" },
+    { "citation": "Pickart L, Freedman JH, Loker WJ, et al. Growth-modulating plasma tripeptide may function by facilitating copper uptake into cells. Nature. 1980;288:715-717.", "use": "Copper transport mechanism" },
+    { "citation": "Maquart FX, Pickart L, Laurent M, Gillery P, Monboisse JC, Borel JP. Stimulation of collagen synthesis in fibroblast cultures by the tripeptide-copper complex glycyl-L-histidyl-L-lysine-Cu2+. FEBS Lett. 1988;238(2):343-346.", "use": "Core in vitro collagen finding" },
+    { "citation": "Maquart FX, Bellon G, Chaqour B, et al. In vivo stimulation of connective tissue accumulation by the tripeptide-copper complex glycyl-L-histidyl-L-lysine-Cu2+ in rat experimental wounds. J Clin Invest. 1993;92(5):2368-2376.", "use": "Animal wound evidence" },
+    { "citation": "Siméon A, Wegrowski Y, Bontemps Y, Maquart FX. Expression of glycosaminoglycans and small proteoglycans in wounded skin and regulation by GHK-Cu. J Invest Dermatol. 2000;115(6):962-968.", "use": "ECM component evidence" },
+    { "citation": "Kang YA, Choi HR, Na JI, et al. Copper-GHK increases integrin expression and p63 positivity by keratinocytes. Arch Dermatol Res. 2009;301:301-306.", "use": "Keratinocyte in vitro evidence" },
+    { "citation": "Campbell JD, McDonough JE, Zeskind JE, et al. A gene expression signature of emphysema-related lung destruction and its reversal by the tripeptide GHK. Genome Med. 2012;4(8):67.", "use": "Gene expression evidence; note it used free GHK" },
+    { "citation": "Leyden J, Stephens T, Finkey M, Appa Y, Barkovic S. Skin Care Benefits of Copper Peptide Containing Facial Cream. American Academy of Dermatology 60th Annual Meeting, New Orleans, February 2002.", "use": "Most-cited human topical evidence; conference abstract" },
+    { "citation": "Johnson W Jr, Bergfeld WF, Belsito DV, et al. Safety Assessment of Tripeptide-1, Hexapeptide-12, Their Metal Salts and Fatty Acyl Derivatives, and Palmitoyl Tetrapeptide-7 as Used in Cosmetics. Int J Toxicol. 2018.", "use": "CIR cosmetic safety conclusion and its scope" },
+    { "citation": "Pickart L, Margolina A. Regenerative and Protective Actions of the GHK-Cu Peptide in the Light of the New Gene Data. Int J Mol Sci. 2018;19(7):1987.", "use": "Review; cite with the Skin Biology commercial affiliation disclosed" },
+    { "citation": "PubChem CID 73587 (glycyl-L-histidyl-L-lysine) and CID 71587328 (prezatide copper), National Center for Biotechnology Information.", "use": "Authoritative identity and formula" },
+    { "citation": "DrugBank DBSALT002420, prezatide copper acetate, CAS 130120-57-9.", "use": "Acetate salt form and mass correction" }
+  ],
+
+  "image_seo": [
+    {
+      "slot": "Hero product vial",
+      "file_name": "veracue-ghk-cu-research-peptide-lyophilized-vial.webp",
+      "alt": "GHK-Cu research peptide lyophilized powder vial from Veracue",
+      "title": "GHK-Cu Research Peptide Vial",
+      "caption": "GHK-Cu is supplied as a lyophilized powder for laboratory research use only.",
+      "note": "__UNVERIFIED__ Existing Veracue media includes files named veracue-ghk-cu-50mg-*. Confirm those assets depict GHK-Cu before reusing them; they are currently served on the AHK-Cu listing."
+    },
+    {
+      "slot": "Certificate of analysis",
+      "file_name": "veracue-ghk-cu-certificate-of-analysis.webp",
+      "alt": "GHK-Cu certificate of analysis showing HPLC purity and LC-MS identity results",
+      "title": "GHK-Cu Certificate of Analysis",
+      "caption": "Every lot ships with batch-specific analytical documentation."
+    },
+    {
+      "slot": "Molecular form reference",
+      "file_name": "ghk-cu-molecular-forms-comparison-chart.webp",
+      "alt": "Chart comparing GHK free peptide, GHK-Cu complex, cation and acetate salt molecular weights",
+      "title": "GHK-Cu Molecular Form Comparison",
+      "caption": "Free peptide, copper complex, cationic form and acetate salt each carry a different molecular weight."
+    }
+  ],
+
+  "schema": {
+    "recommended": ["Product", "BreadcrumbList", "WebPage", "Organization", "FAQPage"],
+    "do_not_implement": ["aggregateRating", "review", "any offer block until live price and availability are confirmed"],
+    "json_ld_product_template": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "GHK-Cu",
+      "alternateName": ["Copper Tripeptide-1", "Prezatide copper", "Glycyl-L-histidyl-L-lysine copper"],
+      "description": "GHK-Cu research peptide, the copper(II) complex of glycyl-L-histidyl-L-lysine, supplied as a lyophilized powder for laboratory research use only.",
+      "sku": "__UNVERIFIED__",
+      "brand": { "@type": "Brand", "name": "Veracue" },
+      "image": ["__UNVERIFIED__ absolute URL of the confirmed GHK-Cu product image"],
+      "category": "Cellular Repair & Healing",
+      "offers": "__UNVERIFIED__ omit this property entirely until price, currency and availability are confirmed"
+    },
+    "faq_note": "FAQPage markup should mirror the visible FAQ block verbatim. Google narrowed FAQ rich results in 2026 to a limited set of authoritative government and health sites, so implement this for answer coverage rather than as a rich-result tactic."
+  },
+
+  "aeo_geo_notes": {
+    "primary_answer_targets": [
+      "What is GHK-Cu",
+      "Is GHK the same as GHK-Cu",
+      "Is GHK-Cu the same as Copper Tripeptide-1",
+      "Why do GHK-Cu molecular weights differ",
+      "What is the CAS number for GHK-Cu",
+      "What does a GHK-Cu COA show",
+      "What is the difference between GHK-Cu and AHK-Cu",
+      "Is GHK-Cu proven to grow hair"
+    ],
+    "geo_entity_disambiguation": [
+      "GHK (free tripeptide) distinguished from GHK-Cu (copper complex) with separate CAS numbers and formulas",
+      "GHK-Cu distinguished from AHK-Cu with separate INCI names",
+      "Copper Tripeptide-1 (cosmetic INCI) distinguished from research material",
+      "Prezatide copper (regulatory nomenclature) mapped to GHK-Cu",
+      "PubChem CID 133697840 flagged as a 2:1 adduct rather than the standard research species",
+      "Evidence explicitly tiered as in vitro, animal, topical human and insufficient"
+    ],
+    "citation_worthiness_basis": "The molecular-form correction table and the AHK-Cu misattribution correction are both checkable against primary sources and are not currently answered correctly on competing pages. That is the legitimate reason an answer engine would cite this URL."
+  },
+
+  "cannibalisation_control": {
+    "this_url_owns": ["GHK-Cu", "GHK-Cu peptide", "GHK-Cu research peptide", "GHK-Cu CAS", "GHK-Cu molecular weight", "GHK-Cu COA", "Copper Tripeptide-1 identity"],
+    "existing_overlap": "The live /product/ahk-cu page already contains an AHK-Cu vs GHK-Cu comparison table. Keep the comparison on this page framed from the GHK-Cu side and cross-link rather than duplicating the AHK-Cu table wording.",
+    "route_elsewhere": [
+      "Deep evidence reviews, mechanism deep-dives and hair-research analysis belong on /blog, not here",
+      "Do not create separate GHK-Cu benefits, uses or guide URLs"
+    ]
+  },
+
+  "validation_notes": {
+    "strongest_information_gain": "The molecular-form table, which resolves the 340 / 401.91 / 402.92 / 744 / 860 confusion and corrects two figures that circulate widely: the 403.9 arithmetic error and the 462-467 acetate figure.",
+    "strongest_seo_opportunity": "GHK-Cu molecular weight, GHK-Cu CAS and GHK vs GHK-Cu are low-competition technical queries that every major supplier page answers incompletely or incorrectly.",
+    "strongest_aeo_opportunity": "Why do sources list different molecular weights for GHK-Cu. It is a real recurring question with no clean answer currently ranking.",
+    "strongest_geo_opportunity": "Explicit separation of GHK-Cu from AHK-Cu findings, which is a documented and correctable error running through the hair-research content across the category.",
+    "corrections_made_to_supplied_research": [
+      "The intelligence package lists C14H22CuN6O4 at approximately 403.93 g/mol. That formula sums to 401.91 g/mol. Corrected.",
+      "The package lists acetate-associated forms at 462-467 g/mol. Prezatide copper acetate, CAS 130120-57-9, is recorded by DrugBank as C32H52CuN12O12 at 860.39 g/mol, a 2:1 peptide to copper diacetate. Corrected and explained.",
+      "The package treats the Leyden 2002 study as a clinical trial. It is an American Academy of Dermatology conference abstract for a cosmetic facial cream. Qualified accordingly.",
+      "The package attributes GHK-Cu dermal papilla apoptosis findings to GHK-Cu. Those endpoints belong to the 2007 Pyo AHK-Cu study. Reattributed."
+    ],
+    "claims_deliberately_excluded": [
+      "FDA 503A Category 2 listing and delisting dates for injectable GHK-Cu. Only low-quality secondary sources were found. Verify against the Federal Register or FDA.gov before putting any version of this on the site.",
+      "A frequently cited 2018 Scientific Reports paper on GHK-Cu and Wnt/beta-catenin in dermal papilla cells. No such article was located.",
+      "The 31 percent of human genes figure. It traces to a commercially affiliated review rather than a primary analysis.",
+      "Any purity, lot, laboratory or testing-date figure for a Veracue GHK-Cu lot, since no such product record exists yet."
+    ],
+    "unverified_fields": [
+      "SKU",
+      "Vial sizes",
+      "Price and compare-at price",
+      "Availability and stock status",
+      "Shipping weight",
+      "Physical appearance of the actual material",
+      "Lot number and current COA",
+      "Testing laboratory name and test date",
+      "Documented storage conditions",
+      "Product image assets confirmed to depict GHK-Cu"
+    ],
+    "blocker": "Veracue's live catalog currently lists two compounds, AHK-Cu and NAD+. There is no GHK-Cu product record, so every product-specific field above is a placeholder. The scientific, identity, evidence and COA content is complete and publishable as written."
+  }
+}

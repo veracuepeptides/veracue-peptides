@@ -1,6 +1,8 @@
 import React from 'react'
 import type { Metadata } from 'next'
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, getMessages } from 'next-intl/server'
+import { NextIntlClientProvider } from 'next-intl'
+import { pickMessages } from '@/lib/i18n/pickMessages'
 import { AboutHero } from '@/components/about/AboutHero'
 import { MissionPhilosophyJourney } from '@/components/about/MissionPhilosophyJourney'
 import { WhyChooseUsGrid } from '@/components/about/WhyChooseUsGrid'
@@ -9,6 +11,7 @@ import { OurServices } from '@/components/about/OurServices'
 import { ComplianceStatement } from '@/components/about/ComplianceStatement'
 import { SharedFaqSection } from '@/components/shared/SharedFaqSection'
 import { getOgImageUrl } from '@/lib/utils'
+import { safeJsonLd } from '@/lib/seo/jsonLd'
 
 const ABOUT_FAQ_KEYS = [
   'trustworthySupplier',
@@ -90,12 +93,14 @@ export default async function AboutPage({
     '@context': 'https://schema.org',
     '@graph': [
       {
-        '@type': 'WebPage',
+        '@type': 'AboutPage',
         '@id': `${url}#webpage`,
         url,
         name: title,
         description,
         inLanguage: locale,
+        isPartOf: { '@id': `${baseUrl}/#website` },
+        about: { '@id': `${baseUrl}/#organization` },
       },
       {
         '@type': 'BreadcrumbList',
@@ -120,13 +125,22 @@ export default async function AboutPage({
     ],
   }
 
+  const pageMessages = pickMessages(await getMessages(), [
+    'content.aboutHero',
+    'content.complianceStatement',
+    'content.missionPhilosophyJourney',
+    'content.ourServices',
+    'content.whyChooseUsGrid',
+  ])
+
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(schema) }}
       />
-    <main className="bg-[#f0efeb] min-h-screen">
+    <NextIntlClientProvider messages={pageMessages}>
+    <div className="bg-[#f0efeb] min-h-screen">
       <AboutHero />
       <MissionPhilosophyJourney />
       <WhyChooseUsGrid />
@@ -142,7 +156,8 @@ export default async function AboutPage({
         description={t('faqDescription')}
         faqs={aboutFaqs}
       />
-    </main>
+    </div>
+    </NextIntlClientProvider>
     </>
   )
 }

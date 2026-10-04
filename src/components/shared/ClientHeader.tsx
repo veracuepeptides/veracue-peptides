@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { Link, usePathname } from '@/i18n/navigation'
 import Image from 'next/image'
-import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion'
+import { motion, useScroll, useMotionValueEvent } from 'framer-motion'
 import { 
   ShoppingCart, 
   Menu, 
@@ -71,6 +71,8 @@ export function ClientHeader({
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const setUiMobileMenuOpen = useUiStore((state) => state.setMobileMenuOpen)
   const [isSearchOpen, setIsSearchOpen] = useState(false)
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => setMounted(true), [])
   const [categoriesData, setCategoriesData] = useState<any[]>(initialCategories)
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
   const dropdownTimeoutRef = useRef<NodeJS.Timeout | null>(null)
@@ -197,7 +199,7 @@ export function ClientHeader({
   const isPagesActive = ['/about-us', '/blog', '/peptide-calculator', '/faq', '/contact-us'].some(p => pathname.startsWith(p))
   const isFeaturesActive = ['/certificates', '/affiliates', '/shipping-policy', '/refund-policy', '/terms-and-conditions', '/medical-disclaimer', '/privacy-policy'].some(p => pathname.startsWith(p))
 
-  const displayCartCount = activeCartCount > 0 ? activeCartCount : 1
+  const showCartBadge = mounted && activeCartCount > 0
 
   return (
     <>
@@ -224,6 +226,9 @@ export function ClientHeader({
             }`}
             onMouseEnter={clearCloseTimeout}
             onMouseLeave={handleDropdownLeave}
+            onKeyDown={(e) => {
+              if (e.key === 'Escape') setActiveDropdown(null)
+            }}
           >
             {/* Top Navbar Row (In-Flow) */}
             <div className="w-full h-[54px] sm:h-[64px] md:h-[70px] px-2.5 sm:px-6 lg:px-8 flex items-center justify-between relative">
@@ -258,6 +263,7 @@ export function ClientHeader({
 
                 {/* Desktop Nav Items */}
                 <nav 
+                  aria-label="Primary"
                   className="hidden xl:flex items-center gap-6 lg:gap-8 h-full"
                   onMouseEnter={clearCloseTimeout}
                 >
@@ -269,6 +275,9 @@ export function ClientHeader({
                   >
                     <Link
                       href="/shop"
+                      aria-haspopup="true"
+                      aria-expanded={activeDropdown === 'shop'}
+                      onKeyDown={(e) => { if (e.key === 'ArrowDown') { e.preventDefault(); handleDropdownEnter('shop') } }}
                       className={`flex items-center gap-1.5 py-2 text-[14px] sm:text-[14.5px] font-editorial tracking-[0.05em] transition-colors group cursor-pointer ${
                         isShopActive || activeDropdown === 'shop' ? 'text-white font-bold' : 'text-white/85 hover:text-white'
                       }`}
@@ -291,6 +300,9 @@ export function ClientHeader({
                   >
                     <Link
                       href="/shop"
+                      aria-haspopup="true"
+                      aria-expanded={activeDropdown === 'collections'}
+                      onKeyDown={(e) => { if (e.key === 'ArrowDown') { e.preventDefault(); handleDropdownEnter('collections') } }}
                       className={`flex items-center gap-1.5 py-2 text-[14px] sm:text-[14.5px] font-editorial tracking-[0.05em] transition-colors group cursor-pointer ${
                         isCollectionsActive || activeDropdown === 'collections' ? 'text-white font-bold' : 'text-white/85 hover:text-white'
                       }`}
@@ -312,6 +324,10 @@ export function ClientHeader({
                     onMouseEnter={() => handleDropdownEnter('pages')}
                   >
                     <button
+                      type="button"
+                      aria-haspopup="true"
+                      aria-expanded={activeDropdown === 'pages'}
+                      onClick={() => setActiveDropdown(activeDropdown === 'pages' ? null : 'pages')}
                       className={`flex items-center gap-1.5 py-2 text-[14px] sm:text-[14.5px] font-editorial tracking-[0.05em] transition-colors group cursor-pointer ${
                         isPagesActive || activeDropdown === 'pages' ? 'text-white font-bold' : 'text-white/85 hover:text-white'
                       }`}
@@ -333,6 +349,10 @@ export function ClientHeader({
                     onMouseEnter={() => handleDropdownEnter('features')}
                   >
                     <button
+                      type="button"
+                      aria-haspopup="true"
+                      aria-expanded={activeDropdown === 'features'}
+                      onClick={() => setActiveDropdown(activeDropdown === 'features' ? null : 'features')}
                       className={`flex items-center gap-1.5 py-2 text-[14px] sm:text-[14.5px] font-editorial tracking-[0.05em] transition-colors group cursor-pointer ${
                         isFeaturesActive || activeDropdown === 'features' ? 'text-white font-bold' : 'text-white/85 hover:text-white'
                       }`}
@@ -351,7 +371,7 @@ export function ClientHeader({
                 </nav>
               </div>
 
-              {/* CENTER: Logo using /veracue-images/logo-header.png */}
+              {/* CENTER: Logo using /veracue-images/logo-header.webp */}
               <div 
                 className="shrink-0 flex items-center justify-center px-1 sm:px-2 pointer-events-auto xl:absolute xl:left-1/2 xl:-translate-x-1/2"
                 onMouseEnter={handleDropdownLeave}
@@ -362,7 +382,7 @@ export function ClientHeader({
                   aria-label="Veracue Home"
                 >
                   <Image
-                    src="/veracue-images/logo-header.png"
+                    src="/veracue-images/logo-header.webp"
                     alt="Veracue"
                     width={180}
                     height={60}
@@ -408,17 +428,20 @@ export function ClientHeader({
                 <button
                   onClick={cartStore.openCart}
                   className="relative text-white/90 hover:text-white transition-colors p-1.5 rounded-full hover:bg-white/15 flex items-center justify-center cursor-pointer shrink-0"
-                  aria-label="Open Shopping Cart"
+                  aria-label={showCartBadge ? `Open Shopping Cart, ${activeCartCount} items` : 'Open Shopping Cart'}
                 >
                   <ShoppingCart size={18} className="sm:w-5 sm:h-5" strokeWidth={2} />
                   
                   {/* Terracotta Badge (#cb997e) from the palette */}
-                  <span 
-                    style={{ backgroundColor: '#cb997e' }}
-                    className="absolute -top-1 -right-1 min-w-[15px] sm:min-w-[17px] h-[15px] sm:h-[17px] px-0.5 sm:px-1 text-white text-[9px] sm:text-[9.5px] font-bold rounded-full flex items-center justify-center shadow-[0_2px_6px_rgba(203,153,126,0.4)]"
-                  >
-                    {displayCartCount}
-                  </span>
+                  {showCartBadge && (
+                    <span 
+                      style={{ backgroundColor: '#cb997e' }}
+                      className="absolute -top-1 -right-1 min-w-[15px] sm:min-w-[17px] h-[15px] sm:h-[17px] px-0.5 sm:px-1 text-white text-[9px] sm:text-[9.5px] font-bold rounded-full flex items-center justify-center shadow-[0_2px_6px_rgba(203,153,126,0.4)]"
+                      aria-hidden="true"
+                    >
+                      {activeCartCount}
+                    </span>
+                  )}
                 </button>
 
                 {/* Mobile / Tablet Menu Button (xl:hidden) */}
@@ -434,32 +457,24 @@ export function ClientHeader({
             </div>
 
             {/* UNIFIED FULL-WIDTH DROPDOWN SHELF (In-Flow inside same outer container) */}
-            <AnimatePresence>
-              {activeDropdown && (
-                <motion.div
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{ opacity: 1, height: 'auto' }}
-                  exit={{ opacity: 0, height: 0 }}
-                  transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                  className="hidden xl:block w-full overflow-hidden pointer-events-auto"
-                  onMouseEnter={clearCloseTimeout}
-                >
-                  {/* Crisp Hairline Divider separating Header bar from Dropdown Shelf */}
-                  <div className="w-full h-[1px] bg-white/30" />
+            <motion.div
+              initial={false}
+              animate={activeDropdown ? { opacity: 1, height: 'auto' } : { opacity: 0, height: 0 }}
+              transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
+              className="hidden xl:block w-full overflow-hidden pointer-events-auto"
+              aria-hidden={!activeDropdown}
+              inert={!activeDropdown}
+              onMouseEnter={clearCloseTimeout}
+            >
+              {/* Crisp Hairline Divider separating Header bar from Dropdown Shelf */}
+              <div className="w-full h-[1px] bg-white/30" />
 
-                  {/* Shelf Content */}
-                  <div className="px-8 lg:px-12 py-7 lg:py-8">
-                    <AnimatePresence mode="wait">
-                      <motion.div
-                        key={activeDropdown}
-                        initial={{ opacity: 0, y: 4 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -4 }}
-                        transition={{ duration: 0.15, ease: 'easeOut' }}
-                      >
+              {/* Shelf Content. All four shelves stay mounted (hidden with CSS) so their links are in the server HTML. */}
+              <div className="px-8 lg:px-12 py-7 lg:py-8">
+                <div>
 
                         {/* 1. SHOP SHELF */}
-                        {activeDropdown === 'shop' && (
+                        <motion.div initial={false} animate={activeDropdown === 'shop' ? { opacity: 1, y: 0 } : { opacity: 0, y: 4 }} transition={{ duration: 0.15, ease: 'easeOut' }} className={activeDropdown === 'shop' ? 'block' : 'hidden'}>
                           <div className="flex items-start gap-8 lg:gap-12">
                             {/* Left Column: / shop */}
                             <div className="w-[190px] lg:w-[230px] shrink-0 pt-0.5">
@@ -496,7 +511,7 @@ export function ClientHeader({
                                       All Peptides
                                     </span>
                                     <p className="text-[12px] text-white/80 group-hover/item:text-white leading-relaxed font-normal mt-1 transition-colors">
-                                      Complete catalog of 99%+ analytical grade compounds
+                                      Complete catalog of HPLC-tested research compounds
                                     </p>
                                   </div>
                                 </div>
@@ -504,7 +519,7 @@ export function ClientHeader({
 
                               {/* Item 2: Best Sellers */}
                               <Link
-                                href="/shop?filter=best-sellers"
+                                href="/shop"
                                 onClick={() => setActiveDropdown(null)}
                                 className="group/item p-3 rounded-xl hover:bg-white/[0.15] active:bg-white/25 transition-all duration-200 block cursor-pointer"
                               >
@@ -530,7 +545,7 @@ export function ClientHeader({
 
                               {/* Item 3: New Syntheses */}
                               <Link
-                                href="/shop?filter=newest"
+                                href="/shop?sort=newest"
                                 onClick={() => setActiveDropdown(null)}
                                 className="group/item p-3 rounded-xl hover:bg-white/[0.15] active:bg-white/25 transition-all duration-200 block cursor-pointer"
                               >
@@ -569,17 +584,17 @@ export function ClientHeader({
                                       Calculator
                                     </span>
                                     <p className="text-[12px] text-white/80 group-hover/item:text-white leading-relaxed font-normal mt-1 transition-colors">
-                                      Precision dilution volume &amp; unit dosing tool
+                                      Precision dilution volume &amp; unit conversion tool
                                     </p>
                                   </div>
                                 </div>
                               </Link>
                             </div>
                           </div>
-                        )}
+                        </motion.div>
 
                         {/* 2. COLLECTIONS SHELF */}
-                        {activeDropdown === 'collections' && (
+                        <motion.div initial={false} animate={activeDropdown === 'collections' ? { opacity: 1, y: 0 } : { opacity: 0, y: 4 }} transition={{ duration: 0.15, ease: 'easeOut' }} className={activeDropdown === 'collections' ? 'block' : 'hidden'}>
                           <div className="flex items-start gap-8 lg:gap-12">
                             {/* Left Column: / collections */}
                             <div className="w-[190px] lg:w-[230px] shrink-0 pt-0.5">
@@ -593,7 +608,7 @@ export function ClientHeader({
                                 <div className="w-6 h-6 rounded-full bg-white/20 border border-white/30 flex items-center justify-center text-white shrink-0">
                                   <CheckCircle2 size={13} strokeWidth={2.5} />
                                 </div>
-                                <span className="leading-tight">3rd-Party Analytical Lab Verified</span>
+                                <span className="leading-tight">HPLC Tested, COA Per Batch</span>
                               </div>
                             </div>
 
@@ -635,10 +650,10 @@ export function ClientHeader({
                               })}
                             </div>
                           </div>
-                        )}
+                        </motion.div>
 
                         {/* 3. PAGES SHELF */}
-                        {activeDropdown === 'pages' && (
+                        <motion.div initial={false} animate={activeDropdown === 'pages' ? { opacity: 1, y: 0 } : { opacity: 0, y: 4 }} transition={{ duration: 0.15, ease: 'easeOut' }} className={activeDropdown === 'pages' ? 'block' : 'hidden'}>
                           <div className="flex items-start gap-8 lg:gap-12">
                             {/* Left Column: / pages */}
                             <div className="w-[190px] lg:w-[230px] shrink-0 pt-0.5">
@@ -675,7 +690,7 @@ export function ClientHeader({
                                       About Us
                                     </span>
                                     <p className="text-[12px] text-white/80 group-hover/item:text-white leading-relaxed font-normal mt-1 transition-colors">
-                                      Synthesis standards, cleanroom labs &amp; mission
+                                      Our testing standards, COA process &amp; mission
                                     </p>
                                   </div>
                                 </div>
@@ -766,10 +781,10 @@ export function ClientHeader({
                               </Link>
                             </div>
                           </div>
-                        )}
+                        </motion.div>
 
                         {/* 4. FEATURES SHELF */}
-                        {activeDropdown === 'features' && (
+                        <motion.div initial={false} animate={activeDropdown === 'features' ? { opacity: 1, y: 0 } : { opacity: 0, y: 4 }} transition={{ duration: 0.15, ease: 'easeOut' }} className={activeDropdown === 'features' ? 'block' : 'hidden'}>
                           <div className="flex items-start gap-8 lg:gap-12">
                             {/* Left Column: / features */}
                             <div className="w-[190px] lg:w-[230px] shrink-0 pt-0.5">
@@ -921,15 +936,11 @@ export function ClientHeader({
                               </Link>
                             </div>
                           </div>
-                        )}
+                        </motion.div>
 
-                      </motion.div>
-                    </AnimatePresence>
-
-                  </div>
-                </motion.div>
-              )}
-            </AnimatePresence>
+                </div>
+              </div>
+            </motion.div>
 
           </div>
         </motion.div>

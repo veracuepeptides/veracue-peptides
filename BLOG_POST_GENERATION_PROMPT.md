@@ -1,4 +1,4 @@
-# Helix Bio — Blog Post Content Template
+# Veracue Peptides: Blog Post Content Template
 
 This is a fixed content template, not a one-off prompt. Use it with any AI
 tool or source — the output format must be identical every time, because it
@@ -29,7 +29,7 @@ me to write custom code per post. The script always does the same thing:
 upload the image to `blog-media`, verify every internal link against the
 real database, convert `content` to lexical richText, resolve
 `relatedProducts` names to real product IDs, set the author to the one
-Helix Bio Team admin account, and create the post as `status: draft`.
+designated admin account, and create the post as `status: draft`.
 
 ---
 
@@ -37,8 +37,11 @@ Helix Bio Team admin account, and create the post as `status: draft`.
 TEMPLATE TO FILL OUT
 =====================================================================
 
-CONTEXT (fixed — do not change)
-- Site: Helix Bio, a U.S. supplier of 99%+ pure research peptides.
+CONTEXT (fixed, do not change)
+- Site: Veracue Peptides, a U.S. supplier of research-use-only (RUO)
+  synthetic peptides. Every product page carries an HPLC-tested, per-batch
+  Certificate of Analysis; do not assert a specific purity number in blog
+  copy (say "see the product's Certificate of Analysis" instead).
 - Audience: researchers and lab professionals.
 - Every claim must be framed as laboratory/in-vitro RESEARCH — never
   instructions for human use, personal dosing, or therapeutic claims.
@@ -148,15 +151,17 @@ the format rule attached to each key
   // 8–12 comma-separated secondary keywords/phrases, one string.
 
   "metaTitle": "",
-  // 55–60 chars: "<keyphrase-driven title> | Helix Bio"
+  // 45-50 chars, keyword-rich title ONLY. Do not add a brand suffix: the
+  // site's title template appends " | Veracue Peptides" automatically.
 
   "metaDescription": "",
   // 150–160 chars. Distinct from excerpt — snippet-optimized, can end
   // with a soft CTA like "Explore the research."
 
   "relatedProducts": [""],
-  // Likely Helix Bio product name(s) this post should cross-sell
-  // (e.g. "Retatrutide 10mg"). Names, not IDs — the script resolves them.
+  // Real Veracue catalog product name(s) this post should cross-sell
+  // (e.g. "GLP-3RTA", "BPC-157"). No strength/mg in the name. Names, not
+  // IDs: the script resolves them.
 
   "references": [
     { "citationText": "", "url": "" }
@@ -197,7 +202,7 @@ the format rule attached to each key
 | references | `references` | One row per citation |
 | status | `status` | Always draft on import |
 | publishedAt | `publishedAt` | |
-| author | `author` | Not in the template — the script always sets it to the one admin user (the Helix Bio Team account); bio/photo comes from the `blog-author-profile` global |
+| author | `author` | Not in the template: the script always sets it to the one admin user (the designated author account); bio/photo comes from the `blog-author-profile` global |
 
 ---
 

@@ -1,0 +1,799 @@
+{
+  "meta": {
+    "product": "NAD+ Spray",
+    "route": "/product/nad-plus-spray",
+    "site": "https://veracue-peptides.vercel.app",
+    "version": "launch-refinement",
+    "generatedDate": "2026-09-22",
+    "primaryEntity": "NAD+ Spray",
+    "primaryEntityReason": "Nasal format is not confirmed in any first-party record available to Belk Digital. Per brief fallback, the verified name 'NAD+ Spray' is the primary entity; 'NAD+ nasal spray' is used only as a search-intent phrase and for describing intranasal research.",
+    "dataSourcesChecked": "Public site only (/shop, /certificates, homepage) on 2026-09-22; repository, CMS and admin product data not accessible. Fields marked unspecified are unverified from these sources, not confirmed absent from Veracue's systems.",
+    "visibleEditorialWordCount": 1518
+  },
+  "switchIfNasalFormatConfirmed": {
+    "title": "NAD+ Nasal Spray Research Product | RUO | Veracue",
+    "h1": "NAD+ Nasal Spray",
+    "productSchemaName": "NAD+ Nasal Spray",
+    "addSnapshotField": {
+      "label": "Format",
+      "value": "Nasal-spray formulation"
+    }
+  },
+  "seo": {
+    "title": "NAD+ Spray Research Formulation (NAD+) | Veracue",
+    "metaDescription": "NAD+ Spray, a coenzyme formulation for lab research: NAD+/NADH chemistry, what the 2007 rat and 2026 mouse studies tested, and NAD+ Spray COA checks.",
+    "canonical": "https://veracue-peptides.vercel.app/product/nad-plus-spray",
+    "h1": "NAD+ Spray",
+    "openGraph": {
+      "title": "NAD+ Spray Research Formulation (NAD+) | Veracue",
+      "description": "NAD+ Spray, a coenzyme formulation for lab research: NAD+/NADH chemistry, what the 2007 rat and 2026 mouse studies tested, and NAD+ Spray COA checks.",
+      "type": "product",
+      "url": "https://veracue-peptides.vercel.app/product/nad-plus-spray",
+      "image": "Use existing site /api/og generator pattern"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "NAD+ Spray Research Formulation (NAD+) | Veracue",
+      "description": "NAD+ Spray, a coenzyme formulation for lab research: NAD+/NADH chemistry, what the 2007 rat and 2026 mouse studies tested, and NAD+ Spray COA checks."
+    },
+    "robots": {
+      "prelaunch": "noindex, follow",
+      "launch": "index, follow",
+      "switchWhen": [
+        "Actual product record exists",
+        "Product identity confirmed",
+        "Page intended for public publication",
+        "Core product data complete enough for a real product page"
+      ],
+      "rule": "Do not leave the launched page on noindex."
+    }
+  },
+  "hero": {
+    "eyebrow": "RESEARCH USE ONLY",
+    "h1": "NAD+ Spray",
+    "subtitle": "Nicotinamide Adenine Dinucleotide · Research Formulation",
+    "shortDescription": "NAD+ Spray is a research formulation of NAD+ (nicotinamide adenine dinucleotide), a naturally occurring coenzyme that cells use as an electron carrier in redox reactions. Veracue supplies it as a research material for laboratory work. The most directly relevant published studies tested intranasal NAD+ on rats (Ying et al., 2007) and, more recently, on human olfactory stem cells and mice (Yoo et al., 2026) — cell-based and animal evidence only. No human clinical trial of intranasal NAD+ was identified, so this material does not establish NAD+ elevation, brain delivery or safety in people.",
+    "ruoNotice": [
+      "For laboratory research use only.",
+      "Not for human use.",
+      "Not for veterinary use.",
+      "Not intended for self-administration."
+    ],
+    "ctas": [
+      {
+        "text": "Request lot documentation",
+        "href": "/certificates"
+      },
+      {
+        "text": "Ask a research specialist",
+        "href": "/contact-us"
+      }
+    ],
+    "image": {
+      "useExistingFallback": true,
+      "altIfFallbackRendered": "Veracue NAD+ Spray research product supplied for Research Use Only",
+      "rule": "Do not use the NAD+ powder vial image or any bottle/label image implying a real formulation."
+    },
+    "commerce": {
+      "render": false,
+      "restoreWhen": "First-party price, SKU, inventory, package size, variants and image exist; then use the existing Veracue purchase component."
+    }
+  },
+  "productSnapshot": {
+    "fields": [
+      {
+        "label": "Product name",
+        "value": "NAD+ Spray"
+      },
+      {
+        "label": "Named compound",
+        "value": "NAD+ (nicotinamide adenine dinucleotide)"
+      },
+      {
+        "label": "Research designation",
+        "value": "Research Use Only (RUO)"
+      },
+      {
+        "label": "Documentation",
+        "value": "Lot-specific COA on request",
+        "links": [
+          {
+            "text": "Request documentation",
+            "href": "/certificates"
+          }
+        ]
+      }
+    ]
+  },
+  "referenceCompoundData": {
+    "heading": "NAD+ Reference Compound Data",
+    "visualLabel": "Reference compound data — not Veracue product specifications",
+    "fields": [
+      {
+        "label": "Chemical name",
+        "value": "Nicotinamide adenine dinucleotide"
+      },
+      {
+        "label": "Formula",
+        "value": "C21H27N7O14P2"
+      },
+      {
+        "label": "Molecular weight",
+        "value": "approximately 663.4 g/mol"
+      },
+      {
+        "label": "CAS",
+        "value": "53-84-9"
+      },
+      {
+        "label": "Redox partner",
+        "value": "NADH (reduced form)"
+      }
+    ],
+    "references": [
+      4
+    ]
+  },
+  "sections": [
+    {
+      "number": 1,
+      "id": "what-is-nad-plus-nasal-spray",
+      "heading": "What Is NAD+ Nasal Spray?",
+      "headingLevel": "h2",
+      "paragraphs": [
+        "\"NAD+ nasal spray\" usually describes a liquid preparation of nicotinamide adenine dinucleotide packaged in a spray container for intranasal delivery. Veracue's product is listed as NAD+ Spray, a research formulation supplied for laboratory use.",
+        "The name brings together two different things. NAD+ is a molecule with well-described chemistry and a large research literature. A spray is a formulation: NAD+ dissolved in a vehicle, possibly with excipients, at a particular concentration. Research on the molecule tells you a lot about NAD+. It tells you much less about any one spray, because concentration, composition and stability belong to the formulation and its lot. This page covers both, and keeps them apart."
+      ]
+    },
+    {
+      "number": 2,
+      "id": "what-is-nad-plus",
+      "heading": "What Is NAD+?",
+      "headingLevel": "h2",
+      "paragraphs": [
+        "NAD+ is the oxidized form of nicotinamide adenine dinucleotide, a coenzyme present in essentially all living cells.",
+        "Structurally, it is a dinucleotide: an adenosine nucleotide and a nicotinamide nucleotide joined by a pyrophosphate bridge. It contains no amino acids, so it is not a peptide, even though it is often sold alongside peptides."
+      ],
+      "subsections": [
+        {
+          "heading": "NAD+ and NADH: a redox pair",
+          "headingLevel": "h3",
+          "paragraphs": [
+            "NAD+ and NADH are two states of the same molecule. NAD+ is the oxidized form; when it accepts electrons in an enzyme-catalysed reaction, it becomes NADH, the reduced form. NADH can then hand those electrons on and return to NAD+. Because the two forms interconvert continuously, researchers often discuss the NAD+/NADH ratio rather than either form alone."
+          ]
+        }
+      ],
+      "references": [
+        4
+      ]
+    },
+    {
+      "number": 3,
+      "id": "why-nad-plus-is-studied",
+      "heading": "Why Is NAD+ Studied in Cell Biology?",
+      "headingLevel": "h2",
+      "paragraphs": [
+        "NAD+ is studied because a large share of cellular chemistry depends on it.",
+        "As an electron carrier, the NAD+/NADH pair links the breakdown of nutrients to energy production, including the pathways that feed mitochondrial respiration. NAD+ is also consumed, not only recycled. Enzymes such as poly(ADP-ribose) polymerase-1 (PARP-1) use it as a substrate during responses to DNA damage, and strong PARP-1 activation can deplete a cell's NAD+. That combination of roles explains why NAD+ appears so often in research on cellular metabolism, DNA repair and cell stress.",
+        "These are descriptions of what NAD+ does inside cells. They do not say what happens when NAD+ is supplied from outside the body, by any route."
+      ],
+      "references": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "number": 4,
+      "id": "intranasal-nad-plus-research",
+      "heading": "What Is Different About Intranasal NAD+ Research?",
+      "headingLevel": "h2",
+      "paragraphs": [
+        "Route of delivery changes the research question.",
+        "NAD+ added to cultured cells, given by injection, or infused intravenously meets different tissues, enzymes and barriers than NAD+ delivered into the nose. A human pilot study of intravenous NAD+ found no rise in plasma NAD+ during the first two hours of infusion, a reminder that NAD+ outside cells is handled quickly by the body. Findings from one route therefore cannot be carried over to another.",
+        "Intranasal research also depends on the formulation. The concentration, vehicle and stability of the liquid shape what is actually delivered, which is why evidence has to be matched to the route and, ideally, to the specific preparation studied."
+      ],
+      "references": [
+        3
+      ]
+    },
+    {
+      "number": 5,
+      "id": "what-the-research-shows",
+      "heading": "What Does the Research Actually Show?",
+      "headingLevel": "h2",
+      "paragraphs": [
+        "The intranasal NAD+ evidence identified for this page comes from animal and cell studies. No human clinical study of intranasal NAD+ was identified in the sources reviewed."
+      ],
+      "subsections": [
+        {
+          "heading": "What Researchers Have Investigated",
+          "headingLevel": "h3",
+          "paragraphs": [
+            "In a rat model of transient focal cerebral ischemia (Ying et al., 2007), intranasal NAD+ increased NAD+ content measured in brain tissue, and rats given NAD+ two hours after ischemic onset showed smaller infarcts and fewer neurological deficits than controls. Intranasal nicotinamide, tested for comparison, did not reduce the damage.",
+            "A 2026 study (Yoo et al.) used two models. In cultured human olfactory stem cells, adding NAD+ increased markers of differentiation into olfactory sensory neurons. In mice with chemically induced loss of smell, daily intranasal NAD+ over four weeks was associated with better food-finding performance and a thicker olfactory epithelium than in untreated anosmic mice. This is cell-based and animal research, not a human trial.",
+            "Both studies are small. The rat study reports groups of five to six animals in its infarct experiments, and the mouse study used ten female mice per group. Each used laboratory-grade NAD+ in a single injury model, not a finished spray product. They are reasonable signals for further laboratory work and a weak basis for broad conclusions."
+          ]
+        }
+      ],
+      "evidenceTiers": [
+        {
+          "order": 1,
+          "name": "Laboratory / Formulation Research",
+          "description": "NAD+ chemistry and solution stability are well characterised for the molecule. No formulation or stability data for Veracue NAD+ Spray were available.",
+          "applicable": true,
+          "scope": "Molecule only"
+        },
+        {
+          "order": 2,
+          "name": "Cell-Based Research",
+          "description": "NAD+ added to cultured human olfactory stem cells increased neuronal differentiation markers (Yoo et al., 2026).",
+          "applicable": true,
+          "scope": "Molecule, in vitro"
+        },
+        {
+          "order": 3,
+          "name": "Animal Research",
+          "description": "Intranasal NAD+ in a rat ischemia model (Ying et al., 2007) and a mouse anosmia model (Yoo et al., 2026).",
+          "applicable": true,
+          "scope": "Intranasal, laboratory-grade NAD+"
+        },
+        {
+          "order": 4,
+          "name": "Human Research",
+          "description": "No human clinical study of intranasal NAD+ was identified in the sources reviewed.",
+          "applicable": false,
+          "scope": "None for intranasal delivery"
+        }
+      ],
+      "implementationNote": "Show 'scope' as a small label under each tier. No scores or rankings.",
+      "references": [
+        1,
+        2
+      ]
+    },
+    {
+      "number": 6,
+      "id": "what-research-does-not-establish",
+      "heading": "What Does NAD+ Research Not Establish?",
+      "headingLevel": "h2",
+      "paragraphs": [
+        "The distance between these studies and any statement about people is large.",
+        "The animal findings describe specific injury models in rats and mice. They do not show that intranasal NAD+ raises NAD+ levels in people, and a rat brain measurement does not establish that NAD+ delivered into the human nose reaches the brain. Nor do they show effects on energy, cognition, smell or ageing in humans. Precursor research, such as work on nicotinamide riboside raising plasma NAD+, concerns different molecules. Intravenous NAD+ data concern a different route. None of the studies tested the Veracue formulation. Treating these separate bodies of evidence as proof that an NAD+ spray works would combine results that were never designed to be combined."
+      ],
+      "references": [
+        3
+      ]
+    },
+    {
+      "number": 7,
+      "id": "safety",
+      "heading": "What Is Known About Safety?",
+      "headingLevel": "h2",
+      "paragraphs": [
+        "No human safety data for intranasal NAD+ were identified in the sources reviewed.",
+        "Safety depends on the actual formulation, amount, route, frequency and population, and none of these can be read across from animal injury models or intravenous studies. Veracue does not publish a human side-effect profile for this product, because it is not supplied for human use. Handling information belongs in the lot documentation."
+      ]
+    },
+    {
+      "number": 8,
+      "id": "formulation",
+      "heading": "What Is the Actual Product Formulation?",
+      "headingLevel": "h2",
+      "paragraphs": [
+        "The formulation details for Veracue NAD+ Spray are listed in the panel below as they currently stand; fields not yet documented are marked as such rather than estimated.",
+        "These details matter more for NAD+ than for many research compounds. Reference data describe NAD+ in solution as sensitive to heat and light and unstable under alkaline conditions, and published work shows that buffer choice and temperature affect how quickly nicotinamide cofactors degrade. A liquid NAD+ preparation can change over time in ways a dry powder may not. Veracue's separate NAD+ listing is supplied as a lyophilized powder, and the spray should not be assumed to share its specifications or storage conditions."
+      ],
+      "formulationPanel": {
+        "heading": "NAD+ Spray Formulation",
+        "fields": [
+          {
+            "label": "NAD+ form",
+            "value": "Not currently specified in the available Veracue product documentation."
+          },
+          {
+            "label": "Concentration",
+            "value": "Not currently specified in the available Veracue product documentation."
+          },
+          {
+            "label": "Vehicle",
+            "value": "Not currently specified in the available Veracue product documentation."
+          },
+          {
+            "label": "Excipients",
+            "value": "Not currently specified in the available Veracue product documentation."
+          },
+          {
+            "label": "Preservative",
+            "value": "Not currently specified in the available Veracue product documentation."
+          },
+          {
+            "label": "Fill volume",
+            "value": "Not currently specified in the available Veracue product documentation."
+          },
+          {
+            "label": "Volume per actuation",
+            "value": "Not currently specified in the available Veracue product documentation."
+          },
+          {
+            "label": "Number of actuations",
+            "value": "Not currently specified in the available Veracue product documentation."
+          },
+          {
+            "label": "Storage",
+            "value": "Not currently specified in the available Veracue product documentation."
+          }
+        ],
+        "implementationNote": "Replace each value from the product record as it becomes available; never estimate."
+      },
+      "links": [
+        {
+          "text": "NAD+ listing",
+          "href": "/product/nad-plus"
+        }
+      ],
+      "references": [
+        5,
+        6
+      ]
+    },
+    {
+      "number": 9,
+      "id": "dosage",
+      "heading": "Does Veracue Provide Dosage Information?",
+      "headingLevel": "h2",
+      "paragraphs": [
+        "No. Veracue does not provide human dosage or administration guidance because the product is supplied strictly for Research Use Only.",
+        "That applies to searches for NAD+ spray dosage, spray counts and how to use an NAD+ nasal spray. Amounts reported in animal studies are not a basis for any human use. Researchers should follow their approved laboratory procedures and the applicable product documentation, and contact our team if a protocol needs formulation information that is not documented."
+      ],
+      "links": [
+        {
+          "text": "contact our team",
+          "href": "/contact-us"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "id": "coa",
+      "heading": "How to Read the NAD+ Spray COA",
+      "headingLevel": "h2",
+      "paragraphs": [
+        "The lot documentation, not the product name, establishes what is in the container. For NAD+ Spray, check that it states:"
+      ],
+      "checklist": [
+        {
+          "label": "Product identity",
+          "detail": "NAD+ named unambiguously."
+        },
+        {
+          "label": "Chemical and formulation form",
+          "detail": "The NAD+ form used, plus vehicle, excipients and any preservative."
+        },
+        {
+          "label": "Concentration or assay",
+          "detail": "Measured NAD+ content of the finished spray, with units."
+        },
+        {
+          "label": "Lot number",
+          "detail": "Matching the number on your container."
+        },
+        {
+          "label": "Analytical methods",
+          "detail": "Each method used and its result."
+        },
+        {
+          "label": "Identity confirmation",
+          "detail": "How the material was confirmed to be NAD+."
+        },
+        {
+          "label": "Testing date",
+          "detail": "When the analysis was performed."
+        },
+        {
+          "label": "Testing laboratory",
+          "detail": "Where supplied."
+        },
+        {
+          "label": "Storage information",
+          "detail": "Conditions stated for this liquid formulation."
+        }
+      ],
+      "closing": "Confirm the results describe the finished spray, not only the raw NAD+ that went into it. Lot-specific documentation can be requested through Veracue's Certificates page.",
+      "links": [
+        {
+          "text": "Certificates",
+          "href": "/certificates"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "id": "purity-assay",
+      "heading": "What Does NAD+ Purity or Assay Mean?",
+      "headingLevel": "h2",
+      "paragraphs": [
+        "Each analytical result answers one question.",
+        "A chromatographic purity figure tells you what share of the detected signal belongs to the NAD+ peak under the stated conditions. An assay tells you how much NAD+ the spray actually contains. Identity testing confirms the material is NAD+. None of these establishes sterility, biological activity or human safety. For a liquid NAD+ preparation, a purity result on the raw material is especially limited, because degradation can occur after formulation; a useful COA reports the finished spray."
+      ]
+    },
+    {
+      "number": 12,
+      "id": "what-remains-unknown",
+      "heading": "What Remains Unknown?",
+      "headingLevel": "h2",
+      "paragraphs": [
+        "For intranasal NAD+ in general, the open questions are basic ones: whether it raises NAD+ in human tissues, how much crosses the nasal lining, and what happens to it afterward. None has been answered in people.",
+        "For this product, the formulation and a published lot COA are the remaining gaps. The documents that would resolve most of them are straightforward: a stated NAD+ form, an assay of the finished spray, and stability data showing how the NAD+ content of the liquid holds up under its stated storage conditions over time. Interest in NAD+ is high, and that can make an NAD+ spray look more established than the evidence allows. This page will be updated as documentation is published."
+      ]
+    }
+  ],
+  "aeoBlocks": [
+    {
+      "question": "What is NAD+ nasal spray?",
+      "directAnswer": "A liquid preparation of nicotinamide adenine dinucleotide packaged for intranasal delivery.",
+      "explanation": "Veracue's product, NAD+ Spray, is supplied as a research formulation for laboratory use."
+    },
+    {
+      "question": "What is NAD+?",
+      "directAnswer": "The oxidized form of nicotinamide adenine dinucleotide, a cellular coenzyme.",
+      "explanation": "It carries electrons in redox reactions, cycling with its reduced form NADH, and is consumed by enzymes such as PARP-1."
+    },
+    {
+      "question": "Is NAD+ a peptide?",
+      "directAnswer": "No.",
+      "explanation": "NAD+ is a dinucleotide coenzyme made of two nucleotides joined by a pyrophosphate bridge; it contains no amino acids."
+    },
+    {
+      "question": "What is NAD+ nasal spray studied for?",
+      "directAnswer": "Published intranasal NAD+ studies are in animal and cell models.",
+      "explanation": "They include a rat model of ischemic brain injury (2007) and a mouse model of chemically induced loss of smell (2026)."
+    },
+    {
+      "question": "Does NAD+ nasal spray increase NAD+ in humans?",
+      "directAnswer": "Not established.",
+      "explanation": "No human clinical study of intranasal NAD+ was identified in the sources reviewed."
+    },
+    {
+      "question": "Does NAD+ nasal spray reach the brain?",
+      "directAnswer": "Not established in people.",
+      "explanation": "One rat study measured higher brain NAD+ after intranasal delivery; animal findings do not establish human brain delivery."
+    },
+    {
+      "question": "Does Veracue provide NAD+ spray dosage information?",
+      "directAnswer": "No.",
+      "explanation": "Veracue does not provide human dosage or administration guidance for this Research Use Only product."
+    },
+    {
+      "question": "What should researchers check on a NAD+ spray COA?",
+      "directAnswer": "Identity, form, concentration or assay, lot number and methods.",
+      "explanation": "Results should describe the finished spray, with testing date, laboratory and storage conditions where supplied."
+    },
+    {
+      "question": "What does Research Use Only mean for NAD+ Spray?",
+      "directAnswer": "It is supplied for laboratory research, not as a human product.",
+      "explanation": "It is not for human or veterinary use and is not intended for self-administration."
+    },
+    {
+      "question": "What is the difference between NAD+ and NADH?",
+      "directAnswer": "NAD+ is the oxidized form; NADH is the reduced form.",
+      "explanation": "NAD+ accepts electrons to become NADH, and NADH donates them to return to NAD+."
+    }
+  ],
+  "faq": [
+    {
+      "question": "What is NAD+ nasal spray?",
+      "answer": "NAD+ nasal spray usually describes a liquid preparation of nicotinamide adenine dinucleotide packaged for intranasal delivery. Veracue's product, NAD+ Spray, is supplied as a research formulation for laboratory use only."
+    },
+    {
+      "question": "What is NAD+?",
+      "answer": "NAD+ is the oxidized form of nicotinamide adenine dinucleotide, a coenzyme found in essentially all living cells. It carries electrons in oxidation–reduction reactions, cycling with its reduced form NADH, and is consumed by enzymes such as PARP-1."
+    },
+    {
+      "question": "Is NAD+ a peptide?",
+      "answer": "No. NAD+ is a dinucleotide coenzyme made of two nucleotides joined through a pyrophosphate bridge. It contains no amino acids."
+    },
+    {
+      "question": "What is NAD+ studied for in research?",
+      "answer": "NAD+ is studied for its roles in redox reactions, cellular energy metabolism, DNA-damage responses and mitochondrial function. These are research topics, not established outcomes for any NAD+ product."
+    },
+    {
+      "question": "What is intranasal NAD+ research?",
+      "answer": "It is research in which NAD+ is delivered through the nose, so far in animal models. Published examples include a rat model of ischemic brain injury (2007) and a mouse model of chemically induced loss of smell (2026), both using laboratory-grade NAD+."
+    },
+    {
+      "question": "Does NAD+ nasal spray increase NAD+ in humans?",
+      "answer": "This has not been established. No human clinical study of intranasal NAD+ was identified in the sources reviewed."
+    },
+    {
+      "question": "Does NAD+ nasal spray reach the brain?",
+      "answer": "This has not been established in people. One rat study measured higher brain NAD+ content after intranasal delivery, but animal findings do not establish human brain delivery or describe any specific formulation."
+    },
+    {
+      "question": "What ingredients are in the Veracue NAD+ Spray?",
+      "answer": "The NAD+ form, concentration, vehicle, excipients and preservative are not currently specified in the available Veracue product documentation. They should be taken from the lot documentation."
+    },
+    {
+      "question": "Does Veracue provide NAD+ spray dosage information?",
+      "answer": "No. Veracue does not provide human dosage or administration guidance because the product is supplied strictly for Research Use Only."
+    },
+    {
+      "question": "What does Research Use Only mean for NAD+ Spray?",
+      "answer": "It means the product is supplied for laboratory research only. It is not for human or veterinary use, is not intended for self-administration, and is not a supplement or medicine."
+    },
+    {
+      "question": "What should researchers check on a NAD+ Spray COA?",
+      "answer": "Check product identity, chemical and formulation form, concentration or assay of the finished spray, lot number, analytical methods, identity confirmation, testing date, testing laboratory where supplied, and storage information."
+    },
+    {
+      "question": "What does NAD+ purity or assay mean?",
+      "answer": "Purity describes the NAD+ peak's share of the detected signal; assay describes how much NAD+ the spray actually contains. Neither establishes sterility, biological activity or human safety."
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "/shop",
+      "anchor": "Research catalog"
+    },
+    {
+      "href": "/product/nad-plus",
+      "anchor": "NAD+ listing"
+    },
+    {
+      "href": "/certificates",
+      "anchor": "Certificates"
+    },
+    {
+      "href": "/contact-us",
+      "anchor": "contact our team"
+    },
+    {
+      "href": "/medical-disclaimer",
+      "anchor": "Medical Disclaimer"
+    }
+  ],
+  "references": [
+    {
+      "id": 1,
+      "citation": "Ying W, Wei G, Wang D, et al. Intranasal administration with NAD+ profoundly decreases brain injury in a rat model of transient focal ischemia. Front Biosci. 2007;12:2728–2734. doi:10.2741/2267",
+      "url": "https://www.imrpress.com/journal/fbl/12/7/10.2741/2267",
+      "evidenceType": "Animal (rat)"
+    },
+    {
+      "id": 2,
+      "citation": "Yoo SH, Jang JY, Bae J-S, et al. Therapeutic effect of intranasal nicotinamide adenine dinucleotide in the restoration of olfactory dysfunction. Exp Mol Med. 2026;58:2155–2167. doi:10.1038/s12276-026-01761-9",
+      "url": "https://www.nature.com/articles/s12276-026-01761-9",
+      "evidenceType": "Cell-based (human olfactory stem cells) and animal (mouse)"
+    },
+    {
+      "id": 3,
+      "citation": "Grant R, Berg J, Mestayer R, et al. A pilot study investigating changes in the human plasma and urine NAD+ metabolome during a 6 hour intravenous infusion of NAD+. Front Aging Neurosci. 2019;11:257. doi:10.3389/fnagi.2019.00257",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6751327/",
+      "evidenceType": "Human, intravenous route"
+    },
+    {
+      "id": 4,
+      "citation": "RCSB Protein Data Bank. Ligand NAD: nicotinamide-adenine-dinucleotide.",
+      "url": "https://www.rcsb.org/ligand/NAD",
+      "evidenceType": "Chemical reference"
+    },
+    {
+      "id": 5,
+      "citation": "Sigma-Aldrich. β-Nicotinamide adenine dinucleotide, Product Information N8285.",
+      "url": "https://www.sigmaaldrich.com/deepweb/assets/sigmaaldrich/product/documents/668/557/n8285pis.pdf",
+      "evidenceType": "Chemical reference (stability)"
+    },
+    {
+      "id": 6,
+      "citation": "Long-term stability of nicotinamide cofactors in common aqueous buffers: implications for cell-free biocatalysis. PMC11597533.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11597533/",
+      "evidenceType": "Laboratory (stability)"
+    }
+  ],
+  "structuredData": {
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://veracue-peptides.vercel.app/product/nad-plus-spray#webpage",
+          "url": "https://veracue-peptides.vercel.app/product/nad-plus-spray",
+          "name": "NAD+ Spray Research Formulation (NAD+) | Veracue",
+          "description": "NAD+ Spray, a coenzyme formulation for lab research: NAD+/NADH chemistry, what the 2007 rat and 2026 mouse studies tested, and NAD+ Spray COA checks.",
+          "isPartOf": {
+            "@id": "https://veracue-peptides.vercel.app/#website"
+          },
+          "breadcrumb": {
+            "@id": "https://veracue-peptides.vercel.app/product/nad-plus-spray#breadcrumb"
+          },
+          "mainEntity": {
+            "@id": "https://veracue-peptides.vercel.app/product/nad-plus-spray#product"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://veracue-peptides.vercel.app/product/nad-plus-spray#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://veracue-peptides.vercel.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shop",
+              "item": "https://veracue-peptides.vercel.app/shop"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "NAD+ Spray",
+              "item": "https://veracue-peptides.vercel.app/product/nad-plus-spray"
+            }
+          ]
+        },
+        {
+          "@type": "Product",
+          "@id": "https://veracue-peptides.vercel.app/product/nad-plus-spray#product",
+          "name": "NAD+ Spray",
+          "description": "Research formulation of NAD+ (nicotinamide adenine dinucleotide) supplied for Research Use Only. Not for human or veterinary use.",
+          "brand": {
+            "@type": "Brand",
+            "name": "Veracue"
+          },
+          "url": "https://veracue-peptides.vercel.app/product/nad-plus-spray",
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "Research designation",
+              "value": "Research Use Only (RUO)"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Named compound",
+              "value": "NAD+ (nicotinamide adenine dinucleotide)"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://veracue-peptides.vercel.app/product/nad-plus-spray#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is NAD+ nasal spray?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NAD+ nasal spray usually describes a liquid preparation of nicotinamide adenine dinucleotide packaged for intranasal delivery. Veracue's product, NAD+ Spray, is supplied as a research formulation for laboratory use only."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is NAD+?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NAD+ is the oxidized form of nicotinamide adenine dinucleotide, a coenzyme found in essentially all living cells. It carries electrons in oxidation–reduction reactions, cycling with its reduced form NADH, and is consumed by enzymes such as PARP-1."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is NAD+ a peptide?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. NAD+ is a dinucleotide coenzyme made of two nucleotides joined through a pyrophosphate bridge. It contains no amino acids."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is NAD+ studied for in research?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NAD+ is studied for its roles in redox reactions, cellular energy metabolism, DNA-damage responses and mitochondrial function. These are research topics, not established outcomes for any NAD+ product."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is intranasal NAD+ research?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It is research in which NAD+ is delivered through the nose, so far in animal models. Published examples include a rat model of ischemic brain injury (2007) and a mouse model of chemically induced loss of smell (2026), both using laboratory-grade NAD+."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does NAD+ nasal spray increase NAD+ in humans?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This has not been established. No human clinical study of intranasal NAD+ was identified in the sources reviewed."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does NAD+ nasal spray reach the brain?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This has not been established in people. One rat study measured higher brain NAD+ content after intranasal delivery, but animal findings do not establish human brain delivery or describe any specific formulation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What ingredients are in the Veracue NAD+ Spray?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The NAD+ form, concentration, vehicle, excipients and preservative are not currently specified in the available Veracue product documentation. They should be taken from the lot documentation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Veracue provide NAD+ spray dosage information?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Veracue does not provide human dosage or administration guidance because the product is supplied strictly for Research Use Only."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Research Use Only mean for NAD+ Spray?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It means the product is supplied for laboratory research only. It is not for human or veterinary use, is not intended for self-administration, and is not a supplement or medicine."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What should researchers check on a NAD+ Spray COA?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Check product identity, chemical and formulation form, concentration or assay of the finished spray, lot number, analytical methods, identity confirmation, testing date, testing laboratory where supplied, and storage information."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does NAD+ purity or assay mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Purity describes the NAD+ peak's share of the detected signal; assay describes how much NAD+ the spray actually contains. Neither establishes sterility, biological activity or human safety."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "notes": [
+      "Product omits offers, sku, image, availability, gtin, aggregateRating and review until first-party data exists.",
+      "Confirm the site's #website @id.",
+      "FAQPage matches visible FAQ exactly; Product name matches the H1."
+    ]
+  },
+  "changesFromPreviousVersion": [
+    "Primary entity changed from 'NAD+ Nasal Spray' to 'NAD+ Spray' (nasal format unconfirmed); title/H1/schema follow the brief's fallback.",
+    "Removed nasal-device metrics (plume geometry, droplet size, priming) and their two references.",
+    "IV infusion discussion cut to one sentence.",
+    "Standalone RUO section removed; RUO stated once in the hero notice plus FAQ and dosage answer.",
+    "Repeated 'formulation unknown' statements consolidated into the formulation panel.",
+    "Added NAD+/NADH H3, 'What Researchers Have Investigated' H3, formulation panel with fields, and the brief's COA heading and checklist.",
+    "Human-evidence wording standardised; 2026 study labelled as cell and animal research throughout.",
+    "Robots changed to prelaunch/launch pair."
+  ],
+  "missingFirstPartyData": [
+    "Confirmation of nasal-spray format",
+    "NAD+ form / salt / hydrate",
+    "concentration",
+    "vehicle",
+    "excipients",
+    "preservative",
+    "fill volume",
+    "volume per actuation",
+    "number of actuations",
+    "storage",
+    "SKU",
+    "price",
+    "inventory",
+    "package size / variants",
+    "product image",
+    "lot COA",
+    "category"
+  ]
+}

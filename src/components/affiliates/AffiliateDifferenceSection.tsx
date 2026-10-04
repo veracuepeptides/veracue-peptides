@@ -20,23 +20,23 @@ export interface AffiliateResearchPillar {
 const AFFILIATE_RESEARCH_PILLARS: AffiliateResearchPillar[] = [
   {
     id: 'purity',
-    badge: '≥99% PURITY',
+    badge: 'HPLC TESTED',
     scriptTitle: 'Pure Synthesis',
-    heading: 'HPLC & Mass Spec Verified',
+    heading: 'HPLC Tested Per Batch',
     description:
-      'Every batch undergoes independent third-party chromatographic analysis with a public COA, so what you recommend is backed by real documentation, not a claim.',
-    spec: 'USP Grade • ≥99% Confirmed',
+      'Every batch is analyzed by HPLC and the result is published on a public COA, so what you recommend is backed by real documentation, not a claim.',
+    spec: 'Batch HPLC Data • Purity on Every COA',
     image: '/veracue-images/veracue-klow-50mg-sunlit-water-ripples.webp',
     icon: ShieldCheck,
   },
   {
     id: 'formulation',
-    badge: 'ISO-7 CLEANROOM',
+    badge: 'USA SHIPPED',
     scriptTitle: 'Precision Batch',
-    heading: 'Controlled Formulation',
+    heading: 'Batch-Level Records',
     description:
-      'Synthesized in certified United States laboratories under strictly regulated laminar flow hoods, the same standard your audience can verify for themselves.',
-    spec: 'Cleanroom Synthesis • Sterile Vialing',
+      'Each vial carries a lot number, so your audience can match the vial in their hands to the analytical results published for that batch.',
+    spec: 'Lot Labeled • Shipped From the USA',
     image: '/veracue-images/veracue-nad-plus-500mg-sunlight-branches.webp',
     icon: PackageCheck,
   },
@@ -46,8 +46,8 @@ const AFFILIATE_RESEARCH_PILLARS: AffiliateResearchPillar[] = [
     scriptTitle: 'Scientific Rigor',
     heading: 'Lyophilized Stability',
     description:
-      'Engineered for molecular integrity, high cake density, and temperature resilience during transit, so what your audience receives matches what you promised them.',
-    spec: 'Cold-Chain Preserved • Lot COA',
+      'Supplied as lyophilized powder, a stable format for storage and transit, so what your audience receives can be checked against the batch COA.',
+    spec: 'Lyophilized Powder • Lot COA',
     image: '/veracue-images/veracue-epithalon-50mg-water-bamboo.webp',
     icon: Award,
   },
@@ -79,7 +79,7 @@ export function AffiliateDifferenceSection() {
         {/* Row 1: Left-to-Right Translation */}
         <motion.div style={{ x: x1 }} className="whitespace-nowrap will-change-transform">
           <span className="font-heading font-black text-[5.5rem] xs:text-[7rem] sm:text-[9.5rem] md:text-[11.5rem] lg:text-[13.5rem] xl:text-[15rem] text-[#fff1e6]/85 uppercase tracking-tighter leading-[0.82] block">
-            RESEARCH STANDARDS • HPLC CERTIFIED • 99%+ PURITY • VERACUE PEPTIDES • HIGHER CONVERSION •
+            RESEARCH STANDARDS • HPLC TESTED • COA PER BATCH • VERACUE PEPTIDES • HIGHER CONVERSION •
           </span>
         </motion.div>
 

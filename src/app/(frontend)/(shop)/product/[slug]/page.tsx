@@ -6,53 +6,76 @@ import { getPayload } from 'payload'
 import configPromise from '@payload-config'
 import { Metadata } from 'next'
 import { getCategoryDisplayName } from '@/lib/categoryDisplay'
+import { safeJsonLd } from '@/lib/seo/jsonLd'
+import { getActiveProduct } from '@/lib/products/getActiveProduct'
+import { getMessages } from 'next-intl/server'
+import { NextIntlClientProvider } from 'next-intl'
+import { pickMessages } from '@/lib/i18n/pickMessages'
+
+const BASE_URL = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+
+function stripHtml(input: string): string {
+  return input
+    .replace(/<[^>]*>/g, ' ')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
+// Cut on a word boundary at <= max chars with no dangling word or trailing punctuation.
+function truncateAtWord(text: string, max: number): string {
+  if (text.length <= max) return text
+  const cut = text.slice(0, max + 1)
+  const lastSpace = cut.lastIndexOf(' ')
+  const base = lastSpace > 0 ? cut.slice(0, lastSpace) : text.slice(0, max)
+  return base.replace(/[\s,;:.\-]+$/, '')
+}
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string;  }>
+  params: Promise<{ slug: string }>
 }): Promise<Metadata> {
   const { slug } = await params
-  const locale = 'en'
-  const payload = await getPayload({ config: configPromise })
-  
-  const { docs } = await payload.find({
-    collection: 'products',
-    where: { slug: { equals: slug } },
-    limit: 1,
-    depth: 1, // Need media depth for images
-    locale: locale as 'en' | 'es',
-    fallbackLocale: 'en',
-  })
+  const product = await getActiveProduct(slug)
 
-  if (!docs || docs.length === 0) {
-    return { title: 'Product Not Found' }
+  if (!product) {
+    notFound()
   }
 
-  const product = docs[0]
-  const title = product.seoTitle || product.name || 'Product'
-  const description = product.seoDescription || product.description?.substring(0, 160) || ''
+  const name = product.name || 'Product'
+  // seoTitle may already carry the brand; absolute avoids the root template appending it twice.
+  const title = product.seoTitle || `${name} | Veracue Peptides`
+  const plainDescription = product.description ? stripHtml(String(product.description)) : ''
+  const description =
+    product.seoDescription ||
+    (plainDescription ? truncateAtWord(plainDescription, 155) : '') ||
+    `${name} research peptide. Batch COA and HPLC purity data. For laboratory research use only.`
 
   // Get primary image for open graph
   let imageUrl = undefined
   if (product.images && product.images.length > 0 && typeof product.images[0].image === 'object' && product.images[0].image?.url) {
     imageUrl = product.images[0].image.url
     if (imageUrl.startsWith('/')) {
-      imageUrl = `${process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'}${imageUrl}`
+      imageUrl = `${BASE_URL}${imageUrl}`
     }
   }
 
+  const ogImage = getOgImageUrl(title, description, imageUrl, 'RESEARCH PEPTIDE', 'veracue-ghk-cu-50mg-ice-bed-warm.webp')
+
   return {
-    title,
+    title: { absolute: title },
     description,
     openGraph: {
       title,
       description,
       type: 'website',
+      url: `${BASE_URL}/product/${slug}`,
       siteName: 'Veracue Peptides',
       images: [
         {
-          url: getOgImageUrl(title, description, imageUrl, 'RESEARCH PEPTIDE', 'veracue-ghk-cu-50mg-ice-bed-warm.webp'),
+          url: ogImage,
           width: 1200,
           height: 630,
           alt: title,
@@ -63,44 +86,28 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title,
       description,
-      images: [getOgImageUrl(title, description, imageUrl, 'RESEARCH PEPTIDE', 'veracue-ghk-cu-50mg-ice-bed-warm.webp')],
+      images: [ogImage],
     },
     alternates: {
-      canonical: true ? `/product/${slug}` : `/${locale}/product/${slug}`,
-      
+      canonical: `/product/${slug}`,
     },
-    robots: undefined,
   }
 }
 
 export default async function ProductPage({
   params,
 }: {
-  params: Promise<{ slug: string;  }>
+  params: Promise<{ slug: string }>
 }) {
   const { slug } = await params
-  const locale = 'en'
 
   const payload = await getPayload({ config: configPromise })
 
-  const { docs } = await payload.find({
-    collection: 'products',
-    where: {
-      slug: {
-        equals: slug,
-      },
-    },
-    limit: 1,
-    depth: 2, // To fetch categories and media
-    locale: locale as 'en' | 'es',
-    fallbackLocale: 'en',
-  })
+  const rawProduct = await getActiveProduct(slug)
 
-  if (!docs || docs.length === 0) {
+  if (!rawProduct) {
     notFound()
   }
-
-  const rawProduct = docs[0]
 
   // Map images
   const mappedImages = rawProduct.images?.map((img: any) => {
@@ -124,7 +131,7 @@ export default async function ProductPage({
     
     // Only push fallback if NO global images and NO variant images exist
     if (!hasVariantImages) {
-      mappedImages.push('/veracue-images/veracue-research-grade-50mg-studio-portrait.png')
+      mappedImages.push('/veracue-images/veracue-research-grade-studio-portrait.webp')
     }
   }
 
@@ -284,6 +291,11 @@ export default async function ProductPage({
               status: {
                 equals: 'active'
               }
+            },
+            {
+              isVisible: {
+                equals: true
+              }
             }
           ]
         },
@@ -292,7 +304,7 @@ export default async function ProductPage({
       })
 
       productData.relatedProducts = relatedDocs.map((p: any) => {
-        let imageUrl = '/veracue-images/veracue-research-grade-50mg-studio-portrait.png'
+        let imageUrl = '/veracue-images/veracue-research-grade-studio-portrait.webp'
         let hoverImageUrl = undefined
         if (p.images && p.images.length > 0 && typeof p.images[0].image === 'object' && p.images[0].image?.url) {
           imageUrl = encodeImageUrl(p.images[0].image.url)
@@ -302,7 +314,7 @@ export default async function ProductPage({
         }
 
         // Fallback to variant images if no global image exists
-        if (imageUrl === '/veracue-images/veracue-research-grade-50mg-studio-portrait.png' && p.hasVariants && p.variants && p.variants.length > 0) {
+        if (imageUrl === '/veracue-images/veracue-research-grade-studio-portrait.webp' && p.hasVariants && p.variants && p.variants.length > 0) {
           for (const variant of p.variants) {
             if (variant.images && variant.images.length > 0 && typeof variant.images[0].image === 'object' && variant.images[0].image?.url) {
               imageUrl = encodeImageUrl(variant.images[0].image.url)
@@ -322,8 +334,8 @@ export default async function ProductPage({
           hoverImage: hoverImageUrl,
           shortDescription: p.seoDescription || 'High-purity research peptide for laboratory use.',
           category: typeof p.categories?.[0] === 'object' ? p.categories[0].title : '',
-          priceRange: `$${p.price?.toFixed(2) || '0.00'}`,
-          originalPrice: p.salePrice ? `$${p.salePrice.toFixed(2)}` : undefined,
+          priceRange: `$${(p.salePrice && p.salePrice < p.price ? p.salePrice : p.price)?.toFixed(2) || '0.00'}`,
+          originalPrice: p.salePrice && p.salePrice < p.price ? `$${p.price.toFixed(2)}` : undefined,
           isFrom: p.bulkBundles && p.bulkBundles.length > 0,
         }
       })
@@ -340,6 +352,9 @@ export default async function ProductPage({
         },
         status: {
           equals: 'active'
+        },
+        isVisible: {
+          equals: true
         }
       },
       sort: '-createdAt',
@@ -348,7 +363,7 @@ export default async function ProductPage({
     })
 
     productData.relatedProducts = recentDocs.map((p: any) => {
-      let imageUrl = '/veracue-images/veracue-research-grade-50mg-studio-portrait.png'
+      let imageUrl = '/veracue-images/veracue-research-grade-studio-portrait.webp'
       let hoverImageUrl = undefined
       if (p.images && p.images.length > 0 && typeof p.images[0].image === 'object' && p.images[0].image?.url) {
         imageUrl = encodeImageUrl(p.images[0].image.url)
@@ -358,7 +373,7 @@ export default async function ProductPage({
       }
 
       // Fallback to variant images if no global image exists
-      if (imageUrl === '/veracue-images/veracue-research-grade-50mg-studio-portrait.png' && p.hasVariants && p.variants && p.variants.length > 0) {
+      if (imageUrl === '/veracue-images/veracue-research-grade-studio-portrait.webp' && p.hasVariants && p.variants && p.variants.length > 0) {
         for (const variant of p.variants) {
           if (variant.images && variant.images.length > 0 && typeof variant.images[0].image === 'object' && variant.images[0].image?.url) {
             imageUrl = encodeImageUrl(variant.images[0].image.url)
@@ -378,8 +393,8 @@ export default async function ProductPage({
         hoverImage: hoverImageUrl,
         shortDescription: p.seoDescription || 'High-purity research peptide for laboratory use.',
         category: typeof p.categories?.[0] === 'object' ? p.categories[0].title : '',
-        priceRange: `$${p.price?.toFixed(2) || '0.00'}`,
-        originalPrice: p.salePrice ? `$${p.salePrice.toFixed(2)}` : undefined,
+        priceRange: `$${(p.salePrice && p.salePrice < p.price ? p.salePrice : p.price)?.toFixed(2) || '0.00'}`,
+        originalPrice: p.salePrice && p.salePrice < p.price ? `$${p.price.toFixed(2)}` : undefined,
         isFrom: p.bulkBundles && p.bulkBundles.length > 0,
       }
     })
@@ -420,108 +435,103 @@ export default async function ProductPage({
 
   productData.suggestedBlogs = mappedBlogs
 
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+  const baseUrl = BASE_URL
   const productUrl = `${baseUrl}/product/${slug}`
+  const priceValidUntil = new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10)
 
-  // Mirrors the published Refund Policy (/refund-policy): all sales are final, no
-  // returns, refunds, or exchanges under any circumstances.
+  // Mirrors the published Refund Policy (/refund-policy): all sales are final,
+  // except an exchange for items damaged in transit.
   const merchantReturnPolicy = {
     '@type': 'MerchantReturnPolicy',
     applicableCountry: 'US',
     returnPolicyCategory: 'https://schema.org/MerchantReturnNotPermitted',
   }
 
+  const toPrice = (v: { salePrice?: string; price: string }) =>
+    Number((v.salePrice || v.price || '').replace(/[^0-9.]/g, ''))
+
+  const offerNodes = productData.variants
+    .map((v) => ({ v, price: toPrice(v) }))
+    .filter(({ price }) => Number.isFinite(price) && price > 0)
+    .map(({ v, price }) => ({
+      '@type': 'Offer',
+      ...(productData.variants.length > 1 ? { name: v.title } : {}),
+      url: productUrl,
+      priceCurrency: 'USD',
+      price: price.toFixed(2),
+      priceValidUntil,
+      availability: v.inStock ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
+      itemCondition: 'https://schema.org/NewCondition',
+      sku: v.sku || productData.sku || productData.id,
+      seller: { '@id': `${baseUrl}/#organization` },
+      hasMerchantReturnPolicy: merchantReturnPolicy,
+    }))
+
+  const offerPrices = offerNodes.map((o) => Number(o.price))
+  const offers =
+    offerNodes.length > 1
+      ? {
+          '@type': 'AggregateOffer',
+          url: productUrl,
+          priceCurrency: 'USD',
+          lowPrice: Math.min(...offerPrices).toFixed(2),
+          highPrice: Math.max(...offerPrices).toFixed(2),
+          offerCount: offerNodes.length,
+          offers: offerNodes,
+        }
+      : offerNodes[0]
+
+  // Only real product images; no shared placeholder for imageless products.
+  const globalImages: string[] = (rawProduct.images || [])
+    .map((img: any) => (typeof img.image === 'object' && img.image?.url ? encodeImageUrl(img.image.url) : ''))
+    .filter(Boolean)
+  const schemaImages: string[] =
+    globalImages.length > 0
+      ? globalImages
+      : productData.variants.find((v) => v.images?.length > 0)?.images || []
+  const absoluteImages = schemaImages.map((img: string) => (img.startsWith('http') ? img : `${baseUrl}${img}`))
+
+  const schemaDescription = truncateAtWord(
+    stripHtml(String(rawProduct.seoDescription || rawProduct.description || '')),
+    5000,
+  )
+
+  const ratingCount = Number(rawProduct.reviewCount || 0)
+  const ratingValue = Number(rawProduct.averageRating || 0)
+
   const productSchema = {
     '@context': 'https://schema.org/',
     '@type': 'Product',
+    '@id': `${productUrl}#product`,
+    url: productUrl,
     name: productData.name,
-    description: productData.shortDescription,
-    image: (productData.images.length > 0 ? productData.images : (
-      productData.variants.find(v => v.images?.length > 0)?.images || ['/veracue-images/veracue-research-grade-50mg-studio-portrait.png']
-    )).map((img: string) => img.startsWith('http') ? img : `${baseUrl}${img}`),
+    ...(schemaDescription ? { description: schemaDescription } : {}),
+    ...(absoluteImages.length > 0 ? { image: absoluteImages } : {}),
     sku: productData.sku || productData.id,
-    mpn: productData.sku || productData.id,
     productID: productData.sku || productData.id,
     category: productData.category,
     ...(productData.weight ? {
       weight: {
         '@type': 'QuantitativeValue',
         value: productData.weight,
-        unitCode: 'GRM' // Default to grams for peptides
+        unitCode: 'KGM' // the product page renders weight in kg
       }
     } : {}),
     brand: {
       '@type': 'Brand',
-      name: 'Helix Bio'
+      name: 'Veracue Peptides'
     },
     manufacturer: {
       '@type': 'Organization',
-      name: 'Helix Bio'
+      name: 'Veracue Peptides'
     },
-    offers: productData.variants.length > 1 ? {
-      '@type': 'AggregateOffer',
-      url: productUrl,
-      priceCurrency: 'USD',
-      lowPrice: Math.min(...productData.variants.map(v => Number((v.salePrice || v.price).replace(/[^0-9.]/g, '')))),
-      highPrice: Math.max(...productData.variants.map(v => Number((v.salePrice || v.price).replace(/[^0-9.]/g, '')))),
-      offerCount: productData.variants.length,
-      offers: productData.variants.map(v => ({
-        '@type': 'Offer',
-        name: v.title,
-        url: productUrl,
-        priceCurrency: 'USD',
-        price: (v.salePrice || v.price).replace(/[^0-9.]/g, ''),
-        availability: v.inStock ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
-        itemCondition: 'https://schema.org/NewCondition',
-        sku: v.sku || productData.sku || productData.id,
-      })),
-      hasMerchantReturnPolicy: merchantReturnPolicy,
-    } : {
-      '@type': 'Offer',
-      url: productUrl,
-      priceCurrency: 'USD',
-      price: (productData.variants[0]?.salePrice || productData.variants[0]?.price || '$0').replace(/[^0-9.]/g, ''),
-      availability: productData.variants[0]?.inStock ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
-      itemCondition: 'https://schema.org/NewCondition',
-      sku: productData.variants[0]?.sku || productData.sku || productData.id,
-      shippingDetails: {
-        '@type': 'OfferShippingDetails',
-        shippingRate: {
-          '@type': 'MonetaryAmount',
-          value: '0',
-          currency: 'USD'
-        },
-        shippingDestination: {
-          '@type': 'DefinedRegion',
-          addressCountry: 'US'
-        },
-        deliveryTime: {
-          '@type': 'ShippingDeliveryTime',
-          handlingTime: {
-            '@type': 'QuantitativeValue',
-            minValue: 0,
-            maxValue: 1,
-            unitCode: 'd'
-          },
-          transitTime: {
-            '@type': 'QuantitativeValue',
-            minValue: 1,
-            maxValue: 5,
-            unitCode: 'd'
-          }
-        }
-      },
-      hasMerchantReturnPolicy: merchantReturnPolicy,
-    },
-    ...(productData.reviewCount > 0 ? {
+    ...(offers ? { offers } : {}),
+    ...(ratingCount > 0 && ratingValue > 0 ? {
       aggregateRating: {
         '@type': 'AggregateRating',
-        ratingValue: productData.averageRating,
-        reviewCount: productData.reviewCount
+        ratingValue,
+        reviewCount: ratingCount
       }
-    } : {}),
-    ...(productData.reviews && productData.reviews.length > 0 ? {
-      review: productData.reviews
     } : {}),
   }
 
@@ -538,9 +548,11 @@ export default async function ProductPage({
     }))
   } : undefined
 
-  // Mirrors the visible breadcrumb trail in ProductClient exactly (Home > Shop > Product) —
-  // a schema.org BreadcrumbList that includes a step not shown on the page is a
-  // markup/visible-content mismatch per Google's structured data guidelines.
+  // Same label the visible breadcrumb in ProductClient shows (short name, without the
+  // parenthetical scientific name). No category level: the visible trail is Home > Shop > Product.
+  const nameMatch = String(productData.name).match(/^(.*?)\s*\(([^)]+)\)\s*$/)
+  const breadcrumbName = nameMatch ? nameMatch[1].trim() : productData.name
+
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -560,31 +572,38 @@ export default async function ProductPage({
       {
         '@type': 'ListItem',
         position: 3,
-        name: productData.name,
+        name: breadcrumbName,
         item: productUrl
       }
     ]
   }
 
+  const pageMessages = pickMessages(await getMessages(), [
+    'shop.productDetail',
+    'shop.quantityStepper',
+  ])
+
   return (
     <div className="flex flex-col min-h-screen">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(productSchema) }}
       />
       {faqSchema && (
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+          dangerouslySetInnerHTML={{ __html: safeJsonLd(faqSchema) }}
         />
       )}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(breadcrumbSchema) }}
       />
-      <main className="flex-1">
-        <ProductClient product={productData as any} />
-      </main>
+      <div className="flex-1">
+        <NextIntlClientProvider messages={pageMessages}>
+          <ProductClient product={productData as any} />
+        </NextIntlClientProvider>
+      </div>
     </div>
   )
 }

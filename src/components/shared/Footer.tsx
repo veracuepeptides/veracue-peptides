@@ -46,23 +46,6 @@ const VisaBadge = () => (
 )
 
 // ============================================================================
-// SOCIAL ICONS (Focused selection: Instagram & X / Twitter)
-// ============================================================================
-const InstagramIcon = () => (
-  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-  </svg>
-)
-
-const TwitterXIcon = () => (
-  <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-  </svg>
-)
-
-// ============================================================================
 // MAIN FOOTER CONTENT COMPONENT
 // ============================================================================
 const FooterContent = () => {
@@ -140,9 +123,9 @@ const FooterContent = () => {
       {/* ==================================================================== */}
       <div id="pre-footer-cta" className="w-full mx-auto px-3 sm:px-6 md:px-10 max-w-[1920px] relative z-10 pt-4 sm:pt-10 md:pt-16 pb-12 sm:pb-16 md:pb-24">
         <div className="max-w-5xl">
-          <h2 className="text-4xl/[1.14] sm:text-5xl/[1.1] md:text-6xl/[1.08] lg:text-[4.5rem]/[1.06] xl:text-[5.2rem]/[1.05] font-bold tracking-tight leading-[1.14] sm:leading-[1.1] md:leading-[1.08] lg:leading-[1.06] text-[#20221c]">
+          <p className="text-4xl/[1.14] sm:text-5xl/[1.1] md:text-6xl/[1.08] lg:text-[4.5rem]/[1.06] xl:text-[5.2rem]/[1.05] font-bold tracking-tight leading-[1.14] sm:leading-[1.1] md:leading-[1.08] lg:leading-[1.06] text-[#20221c]">
             Ready to elevate your research?
-          </h2>
+          </p>
           <p className="text-4xl/[1.14] sm:text-5xl/[1.1] md:text-6xl/[1.08] lg:text-[4.5rem]/[1.06] xl:text-[5.2rem]/[1.05] font-medium tracking-tight leading-[1.14] sm:leading-[1.1] md:leading-[1.08] lg:leading-[1.06] text-[#20221c]/40 mt-1 sm:mt-2">
             Let’s make it happen
           </p>
@@ -187,9 +170,9 @@ const FooterContent = () => {
             <div className="w-full lg:w-[46%] xl:w-[44%] flex flex-col justify-between">
               <div>
                 {/* Editorial Display Headline */}
-                <h2 className="font-heading font-extrabold uppercase text-[#20221c] tracking-tight leading-[1.16] sm:leading-[1.14] md:leading-[1.12] text-2xl/[1.16] sm:text-3xl/[1.14] md:text-4xl/[1.12] lg:text-[2.5rem]/[1.1] xl:text-[2.85rem]/[1.1] max-w-xl">
+                <p className="font-heading font-extrabold uppercase text-[#20221c] tracking-tight leading-[1.16] sm:leading-[1.14] md:leading-[1.12] text-2xl/[1.16] sm:text-3xl/[1.14] md:text-4xl/[1.12] lg:text-[2.5rem]/[1.1] xl:text-[2.85rem]/[1.1] max-w-xl">
                   New batch releases, purity results, and research guides, straight to your inbox.
-                </h2>
+                </p>
               </div>
 
               {/* Minimalist Underline Input Form */}
@@ -199,6 +182,7 @@ const FooterContent = () => {
                     <input
                       type="email"
                       name="email"
+                      aria-label="Email address"
                       placeholder="Email address"
                       required
                       disabled={status === 'loading' || status === 'success'}
@@ -265,10 +249,10 @@ const FooterContent = () => {
                 
                 {/* Column 1: Products & Lab */}
                 <div className="flex flex-col min-w-[120px]">
-                  <h3 className="text-[#20221c] font-semibold text-sm sm:text-base tracking-normal mb-4 sm:mb-5">
+                  <p className="text-[#20221c] font-semibold text-sm sm:text-base tracking-normal mb-4 sm:mb-5">
                     Products &amp; Lab
-                  </h3>
-                  <nav className="flex flex-col gap-2.5">
+                  </p>
+                  <nav aria-label="Shop" className="flex flex-col gap-2.5">
                     {[
                       { label: 'Shop All Peptides', href: '/shop' },
                       { label: 'Certificates (COA)', href: '/certificates' },
@@ -289,10 +273,10 @@ const FooterContent = () => {
 
                 {/* Column 2: Company & Support */}
                 <div className="flex flex-col min-w-[125px]">
-                  <h3 className="text-[#20221c] font-semibold text-sm sm:text-base tracking-normal mb-4 sm:mb-5">
+                  <p className="text-[#20221c] font-semibold text-sm sm:text-base tracking-normal mb-4 sm:mb-5">
                     Company &amp; Support
-                  </h3>
-                  <nav className="flex flex-col gap-2.5">
+                  </p>
+                  <nav aria-label="Company" className="flex flex-col gap-2.5">
                     {[
                       { label: 'About Veracue', href: '/about-us' },
                       { label: 'Help & FAQ', href: '/faq' },
@@ -313,10 +297,10 @@ const FooterContent = () => {
 
                 {/* Column 3: Policies & Legal */}
                 <div className="flex flex-col min-w-[130px] col-span-2 sm:col-span-1">
-                  <h3 className="text-[#20221c] font-semibold text-sm sm:text-base tracking-normal mb-4 sm:mb-5">
+                  <p className="text-[#20221c] font-semibold text-sm sm:text-base tracking-normal mb-4 sm:mb-5">
                     Policies &amp; Legal
-                  </h3>
-                  <nav className="flex flex-col gap-2.5">
+                  </p>
+                  <nav aria-label="Legal" className="flex flex-col gap-2.5">
                     {[
                       { label: 'Shipping Policy', href: '/shipping-policy' },
                       { label: 'Refund Policy', href: '/refund-policy' },
@@ -345,7 +329,7 @@ const FooterContent = () => {
                   aria-label="Veracue Home"
                 >
                   <Image
-                    src="/veracue-images/logo-header.png"
+                    src="/veracue-images/logo-header.webp"
                     alt="Veracue"
                     width={600}
                     height={180}
@@ -373,25 +357,6 @@ const FooterContent = () => {
 
             {/* Social Media Badges (Focused Instagram & X) & Back to Top Triangle */}
             <div className="flex items-center gap-2.5 sm:gap-3">
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#20221c] text-[#fff1e6] hover:bg-[#cb997e] hover:text-white flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-sm"
-              >
-                <InstagramIcon />
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Twitter / X"
-                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#20221c] text-[#fff1e6] hover:bg-[#cb997e] hover:text-white flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-sm"
-              >
-                <TwitterXIcon />
-              </a>
-
               {/* Enhanced, Intuitive Back to Top Button */}
               <button
                 onClick={handleScrollToTop}
@@ -424,7 +389,7 @@ const FooterContent = () => {
           {/* Bottom Copyright & Credits */}
           <div className="flex flex-col sm:flex-row justify-between items-center gap-3 pt-4 border-t border-[#eddcd2]/80 text-[#20221c]/60 text-xs text-center sm:text-left">
             <p className="font-medium">
-              &copy; {new Date().getFullYear()} Veracue. All rights reserved.
+              &copy; {new Date().getFullYear()} Veracue Peptides. All rights reserved.
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">

@@ -91,7 +91,7 @@ export function ContactForm() {
                 {t('sent')}
               </h4>
               <p className="font-sans text-xs sm:text-sm text-emerald-800 leading-relaxed mb-3">
-                We usually reply in under 2 hours during weekday business hours (8 AM – 6 PM EST).
+                We reply by email as soon as we can during weekday business hours (8 AM – 6 PM EST).
               </p>
               <button
                 type="button"

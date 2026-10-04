@@ -14,25 +14,25 @@ const TOPICS: TopicItem[] = [
   {
     id: 'hplc-purity',
     title: 'HPLC Purity Certification',
-    description: 'Every synthesis lot undergoes high-resolution reverse-phase chromatography (RP-HPLC). Sharp peak separation verifies documented ≥99.0% chemical purity with zero truncated sequences or synthesis impurities.',
+    description: 'Each batch is analyzed by reverse-phase HPLC, and the chromatogram and purity figure for that batch are reported on its Certificate of Analysis.',
     iconType: 'rings',
   },
   {
     id: 'mass-spec',
     title: 'ESI-MS Structural Identity',
-    description: 'Electrospray Ionization Mass Spectrometry (ESI-MS) authenticates empirical molecular mass against theoretical amino acid sequence within ±0.5 Da, validating exact molecular weight and zero optical isomers.',
+    description: 'Mass spectrometry compares the measured molecular mass of a compound with its expected value, giving an identity check that sits alongside the HPLC data.',
     iconType: 'triangles',
   },
   {
     id: 'cleanroom',
-    title: 'ISO-7 Cleanroom Lyophilization',
-    description: 'Formulated in regulated United States cleanrooms under sterile laminar flow controls. Vacuum freeze-dried into a stable lyophilized cake and sealed under dry nitrogen to prevent moisture hydrolysis.',
+    title: 'Lyophilized for Stability',
+    description: 'Peptides are supplied as a freeze-dried lyophilized powder in sealed vials, a format chosen to keep the compound stable until it is reconstituted for research.',
     iconType: 'ripple',
   },
   {
     id: 'traceability',
     title: 'Traceable Batch COA & Cold Chain',
-    description: 'Every vial includes a tamper-evident seal with serialized lot QR code linking directly to public third-party analytical reports. Stored and dispatched under temperature-controlled cold chain.',
+    description: 'Each batch has its own Certificate of Analysis, which you can look up by lot before ordering. Orders are packed for careful transit and shipped from the USA.',
     iconType: 'star',
   },
 ]
@@ -134,7 +134,7 @@ export function WhatSetsUsApart() {
 
               {/* Editorial Description Paragraph */}
               <p className="text-neutral-600 text-sm sm:text-base leading-relaxed font-sans mb-8 max-w-lg">
-                Third-party labs verify sequence identity and purity on every batch before it's formulated in a certified cleanroom and released for sale.
+                Every batch is analyzed by HPLC and the result is published on its Certificate of Analysis, so you can review the data first.
               </p>
             </div>
 

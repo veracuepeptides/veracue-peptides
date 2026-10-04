@@ -1,0 +1,755 @@
+{
+  "productPage": {
+    "eyebrow": "Research Use Only",
+    "category": "Research Peptides",
+    "h1": "Semax Spray",
+    "subtitle": "A Research Use Only listing of Semax, a synthetic peptide built from a fragment of ACTH and studied mainly in Russian neurobiological and stroke-recovery research.",
+    "heroCopy": "Semax is a synthetic heptapeptide, Met-Glu-His-Phe-Pro-Gly-Pro, built from the first four residues of adrenocorticotropic hormone (ACTH) fragment 4-10 with a synthetic Pro-Gly-Pro tripeptide added on. Researchers have studied it for decades, mostly in relation to neurotrophic signaling, ischemic stroke recovery, and cognitive or behavioral endpoints. Veracue lists this product as \"Semax Spray\" — a spray-format listing, not a confirmed administration route or dose — strictly for laboratory and research use, not for human or veterinary use.",
+    "quickResearchSummary": {
+      "whatItIs": "A synthetic ACTH(4-7)-derived heptapeptide with an added Pro-Gly-Pro tripeptide, commonly referred to in the literature as an ACTH(4-10) analog.",
+      "researchFocus": "Neurotrophic gene expression (including BDNF), ischemic stroke recovery, inflammatory signaling after brain injury, and cognitive/behavioral endpoints.",
+      "evidenceSpan": "Cellular and rodent gene-expression studies, a rodent ischemia model, and a small set of human studies conducted in Russian clinical and imaging research settings.",
+      "productStatus": "Not publicly specified on the current Veracue product information.",
+      "classification": "Research Use Only. Not a drug, supplement, or consumer product."
+    },
+    "quickAnswers": [
+      {
+        "question": "What is Semax?",
+        "answer": "Semax is a synthetic heptapeptide (Met-Glu-His-Phe-Pro-Gly-Pro) built from the first four residues of ACTH fragment 4-10 with an added Pro-Gly-Pro tripeptide. It was developed in Russia and has been studied since the 1980s in neurobiological and stroke-recovery research."
+      },
+      {
+        "question": "What is Semax studied for?",
+        "answer": "Research has focused on neurotrophic factor gene expression, recovery-related signaling after ischemic brain injury, inflammatory gene expression, and cognitive/behavioral or brain-connectivity endpoints in animal and some human studies."
+      },
+      {
+        "question": "What type of molecule is Semax?",
+        "answer": "Semax is a synthetic peptide, specifically a heptapeptide derived from an ACTH fragment. It is not a full hormone, a small-molecule drug, or a protein."
+      },
+      {
+        "question": "What does Semax research focus on?",
+        "answer": "The bulk of published research centers on neurotrophin (BDNF/NGF) gene expression, ischemic stroke recovery, and inflammatory signaling in rodent brain-injury models, with a smaller set of human studies in stroke rehabilitation and brain-imaging settings."
+      },
+      {
+        "question": "What does Semax research say about BDNF?",
+        "answer": "Rodent studies have reported region- and time-dependent changes in BDNF gene expression, and a human stroke-rehabilitation study reported higher plasma BDNF levels associated with Semax administration. These findings are directional and model-specific rather than a demonstrated universal effect."
+      },
+      {
+        "question": "Has Semax been studied in humans?",
+        "answer": "Yes, in a limited set of studies: a functional-MRI study of brain connectivity in 52 healthy volunteers, and clinical research in ischemic stroke patients examining plasma BDNF and functional recovery measures."
+      },
+      {
+        "question": "What is the difference between Semax and Selank?",
+        "answer": "Semax and Selank are related but distinct peptides from the same Russian research tradition. Semax derives from an ACTH fragment and has been studied mainly for neurotrophic and stroke-recovery questions; Selank derives from tuftsin and has been studied mainly in stress and GABAergic research contexts."
+      },
+      {
+        "question": "What does \"Semax dosage\" mean in research literature?",
+        "answer": "Published dosing figures come from specific study protocols — a clinical regimen used under medical supervision, or a per-kilogram dose used in a rodent model. These are research parameters, not usage instructions for this listing."
+      },
+      {
+        "question": "What are commonly described Semax benefits in research?",
+        "answer": "Rather than a benefits list, published research describes specific endpoints studied in specific models: neurotrophin expression, stroke-recovery markers, inflammatory signaling, and brain connectivity. See the benefits-context section below for how these are organized."
+      },
+      {
+        "question": "What should researchers verify before using a Semax research product?",
+        "answer": "Sequence and identity confirmation, concentration if stated, analytical testing method, purity data, lot documentation, and storage conditions — all of which should come from current first-party Veracue documentation rather than general Semax literature."
+      }
+    ],
+    "productIdentity": {
+      "commonName": "Semax",
+      "scientificName": "ACTH(4-7)-Pro-Gly-Pro",
+      "chemicalDescription": "Semax is a synthetic heptapeptide consisting of the first four amino acids of adrenocorticotropic hormone (ACTH) fragment 4-10 — Met-Glu-His-Phe, referred to as ACTH(4-7) — with a synthetic Pro-Gly-Pro tripeptide added to the C-terminus in place of ACTH's natural continuation. It is commonly described in the literature either as \"ACTH(4-7)-Pro-Gly-Pro\" (the precise structural description) or as an \"ACTH(4-10) analog\" (a looser but widely used shorthand). Both terms refer to the same molecule; this page uses ACTH(4-7)-Pro-Gly-Pro as the primary description and ACTH(4-10) analog as its accepted alternate name.",
+      "sequence": "Met-Glu-His-Phe-Pro-Gly-Pro",
+      "peptideClass": "Synthetic ACTH-fragment-derived heptapeptide",
+      "molecularFormula": "C37H51N9O10S",
+      "molecularWeight": "~813.9 g/mol (free base)",
+      "CAS": "80714-61-0",
+      "aliases": [
+        "ACTH(4-10) analog",
+        "ACTH(4-7)-PGP"
+      ],
+      "researchHistory": "First characterized by Russian researchers at the Institute of Molecular Genetics beginning in the 1980s as a non-corticotropic ACTH fragment analog, and studied since then primarily within Russian pharmacology and neurology research programs.",
+      "productLevelNote": "These are molecule-level facts drawn from chemical literature and registry sources. They describe the Semax compound generally and are not, by themselves, a confirmation of this Veracue listing's identity, purity, or composition. Not publicly specified on the current Veracue product information."
+    },
+    "researchOverview": {
+      "summary": "Semax research falls into four evidence tiers: human studies, animal studies, cellular/mechanistic work, and background or review literature. The strongest and most consistent findings come from rodent gene-expression and ischemia work; human evidence is real but comes from a small number of studies conducted mostly within Russian clinical and academic research settings.",
+      "evidenceLevels": [
+        "Level 1 — Human research",
+        "Level 2 — Animal research",
+        "Level 3 — Cellular / in-vitro research",
+        "Level 4 — Mechanistic / biochemical evidence",
+        "Level 5 — Review / background literature"
+      ]
+    },
+    "researchSections": [
+      {
+        "title": "What Exactly Is Semax?",
+        "researchQuestion": "What is the verified molecular identity of Semax, and how does it relate to ACTH?",
+        "evidenceSummary": "Semax is registered under CAS 80714-61-0 with molecular formula C37H51N9O10S and a molecular weight of approximately 813.9 g/mol. Its sequence, Met-Glu-His-Phe-Pro-Gly-Pro, combines ACTH(4-7) with a synthetic Pro-Gly-Pro addition not found in native ACTH.",
+        "whatResearchersObserved": "Chemical characterization consistently identifies Semax as this specific synthetic construct rather than as ACTH itself or a naturally occurring hormone fragment.",
+        "practicalInterpretation": "Researchers can treat Semax's molecular identity as well established in chemical literature, independent of any specific commercial listing.",
+        "limitation": "A well-documented molecular identity in chemical databases doesn't confirm the identity or purity of material sold under any particular product name, including this listing.",
+        "references": [
+          "CAS 80714-61-0",
+          "Wikipedia/PubChem-consistent chemical registry data"
+        ]
+      },
+      {
+        "title": "Why Has Semax Been Studied in Neurobiological Research?",
+        "researchQuestion": "What made researchers interested in an ACTH-fragment peptide that lacks classical corticotropic hormone activity?",
+        "evidenceSummary": "Semax's development was motivated by interest in whether ACTH-fragment peptides could influence brain signaling independently of the adrenal-stimulating activity that defines full-length ACTH.",
+        "whatResearchersObserved": "Subsequent rodent work (detailed in the following sections) found that Semax administration altered expression of genes tied to neurotrophic and immune signaling in brain tissue, supporting the original research rationale.",
+        "practicalInterpretation": "This gives researchers a defined starting hypothesis — CNS-relevant signaling separate from endocrine ACTH activity — that later, more specific studies have tested directly.",
+        "limitation": "A research rationale is not itself a finding; it explains why the molecule was studied, not what was ultimately observed or how reliably.",
+        "references": []
+      },
+      {
+        "title": "What Does Semax Research Say About Neurotrophic or Neurobiological Signaling?",
+        "researchQuestion": "What has been measured when Semax is administered to animal models, at the level of brain gene expression?",
+        "evidenceSummary": "Rodent studies have tracked changes in gene expression tied to neurotrophic and inflammatory signaling after Semax administration, both at baseline and following induced brain ischemia.",
+        "whatResearchersObserved": "Shadrina et al. (2009) reported region- and time-dependent shifts in NGF and BDNF gene expression in rat hippocampus, frontal cortex, and retina. Medvedeva et al. (2014) and Dergunova et al. (2021) reported that Semax altered expression of immune-, vascular-, and inflammation-related genes in a rat cerebral ischemia model.",
+        "practicalInterpretation": "Together these studies describe measurable, tissue- and timepoint-specific transcriptional effects in injured and uninjured rodent brain tissue.",
+        "limitation": "These are rat gene-expression findings from specific experimental models; they describe that context and don't establish a general human neurobiological effect.",
+        "references": [
+          "Shadrina et al. 2009, J Mol Neurosci, doi:10.1007/s12031-009-9270-z",
+          "Medvedeva et al. 2014, BMC Genomics, doi:10.1186/1471-2164-15-228",
+          "Dergunova et al. 2021, Molekuliarnaia Biologiia, doi:10.31857/S0026898421010043"
+        ]
+      },
+      {
+        "title": "What Has Semax Research Examined in Cognitive or Behavioral Models?",
+        "researchQuestion": "What cognitive- or behavior-adjacent endpoints have actually been measured, and in which species?",
+        "evidenceSummary": "The most directly verifiable cognitive-adjacent research is a human neuroimaging study rather than a behavioral task: Panikratova et al. (2020) used resting-state fMRI to compare functional brain connectivity in 52 healthy volunteers after Semax, Selank, or placebo.",
+        "whatResearchersObserved": "The study reported condition-specific changes in functional connectivity between the amygdala and temporal cortex following Semax administration, distinct in pattern from the Selank and placebo conditions.",
+        "practicalInterpretation": "This is genuine human data, but it measures brain connectivity as an imaging signal — a different thing from a memory, attention, or learning task result.",
+        "limitation": "A connectivity change on fMRI in healthy volunteers is not a demonstrated cognitive-enhancement effect, and it doesn't speak to behavior in any other population or model.",
+        "references": [
+          "Panikratova et al. 2020, Dokl Biol Sci, doi:10.1134/S001249662001007X"
+        ]
+      },
+      {
+        "title": "What Is Known About Semax and BDNF-Related Research?",
+        "researchQuestion": "Does Semax reliably increase BDNF, as often claimed in marketing copy?",
+        "evidenceSummary": "BDNF has been measured two ways in Semax research: as gene expression in rat brain tissue, and as a plasma biomarker in human stroke-rehabilitation patients.",
+        "whatResearchersObserved": "Shadrina et al. (2009) found that BDNF expression rose in rat frontal cortex at some timepoints but initially fell in hippocampus and retina — a mixed, tissue-dependent pattern. Gusev et al. (2018) reported that Semax administration, given as part of a structured stroke-rehabilitation protocol, was associated with elevated plasma BDNF alongside improved functional recovery scores in 110 ischemic stroke patients.",
+        "practicalInterpretation": "Across both study types, BDNF changes were directional and context-specific rather than a simple, consistent \"more BDNF everywhere\" effect.",
+        "limitation": "The human finding comes from a clinical rehabilitation population receiving Semax under medical supervision alongside a structured recovery program — it doesn't isolate Semax's BDNF effect from that broader protocol, and it doesn't describe this listing.",
+        "references": [
+          "Shadrina et al. 2009, J Mol Neurosci, doi:10.1007/s12031-009-9270-z",
+          "Gusev et al. 2018, Zh Nevrol Psikhiatr Im S S Korsakova, PMID 29798983"
+        ]
+      },
+      {
+        "title": "What Does Research Say About Semax and Inflammation or Cellular Stress?",
+        "researchQuestion": "Is there support for describing Semax as having an anti-inflammatory or neuroprotective research profile?",
+        "evidenceSummary": "The evidence here comes specifically from a rat cerebral ischemia-reperfusion model, where researchers measured proinflammatory gene and transcript expression.",
+        "whatResearchersObserved": "Dergunova et al. (2021) found that Semax reduced ischemia-induced elevation of several proinflammatory transcripts, including Il1a, Il1b, and Il6. Medvedeva et al. (2014) reported broader Semax-associated shifts in immune- and vascular-related gene expression in the same injury model.",
+        "practicalInterpretation": "Within this specific injury model, Semax administration was linked to a dampened proinflammatory transcriptional response.",
+        "limitation": "This is a single injury model in rats studied at the transcript level; it supports a narrow, model-specific research finding rather than a general anti-inflammatory or neuroprotective property.",
+        "references": [
+          "Dergunova et al. 2021, Molekuliarnaia Biologiia, doi:10.31857/S0026898421010043",
+          "Medvedeva et al. 2014, BMC Genomics, doi:10.1186/1471-2164-15-228"
+        ]
+      },
+      {
+        "title": "What Have Human Studies Actually Investigated?",
+        "researchQuestion": "What, specifically, has been studied in people, as opposed to cells or rodents?",
+        "evidenceSummary": "Three identifiable strands of human research exist: a functional-connectivity imaging study in healthy volunteers, a clinical rehabilitation study in ischemic stroke patients, and an earlier clinical-biochemical study in acute stroke patients.",
+        "whatResearchersObserved": "Panikratova et al. (2020) studied 52 healthy volunteers with resting-state fMRI after Semax, Selank, or placebo. Gusev et al. (2018) studied 110 patients recovering from ischemic stroke, comparing Semax and non-Semax subgroups across early and late rehabilitation timing, and reported associations with plasma BDNF and Barthel index recovery scores. Miasoedova et al. (1999) examined cytokine balance in acute ischemic stroke patients receiving Semax, reporting a shift toward anti-inflammatory cytokine activity.",
+        "practicalInterpretation": "Human evidence for Semax exists, but it is concentrated in two narrow populations — healthy volunteers in an imaging protocol, and ischemic stroke patients under clinical supervision — rather than broad, general-population research.",
+        "limitation": "Findings from stroke-rehabilitation and acute-stroke clinical settings, conducted under medical supervision with defined regimens, don't extend to other populations, uses, or to any specific research material.",
+        "references": [
+          "Panikratova et al. 2020, Dokl Biol Sci, doi:10.1134/S001249662001007X",
+          "Gusev et al. 2018, Zh Nevrol Psikhiatr Im S S Korsakova, PMID 29798983",
+          "Miasoedova et al. 1999, Zh Nevrol Psikhiatr Im S S Korsakova, PMID 10358912"
+        ]
+      },
+      {
+        "title": "Semax vs Selank: What Is Actually Different?",
+        "researchQuestion": "Are Semax and Selank the same thing, and how should researchers think about the difference?",
+        "evidenceSummary": "Semax and Selank come from the same Russian Pro-Gly-Pro peptide-extension research tradition but derive from different parent structures: Semax from an ACTH fragment, Selank from tuftsin, an immunomodulatory tetrapeptide.",
+        "whatResearchersObserved": "Panikratova et al. (2020) compared the two directly in the same fMRI protocol and found both shared and peptide-specific connectivity effects. Selank's broader research emphasis — stress and GABAergic-adjacent research contexts — is described in pharmacology literature (Doyno & White, 2021) that also notes Selank is comparatively under-studied outside Russia.",
+        "practicalInterpretation": "The two peptides are related in design philosophy but distinct in chemical identity and primary research focus; they shouldn't be treated as interchangeable or as a matched pair.",
+        "limitation": "This comparison is chemical and research-context only — it is not a ranking, and it does not suggest that using both together is supported by the cited research.",
+        "references": [
+          "Panikratova et al. 2020, Dokl Biol Sci, doi:10.1134/S001249662001007X",
+          "Doyno & White 2021, J Clin Pharmacol, doi:10.1002/jcph.1922"
+        ]
+      },
+      {
+        "title": "What Does \"Semax Dosage\" Mean in Research Literature?",
+        "researchQuestion": "When a study reports a Semax dose, what does that figure actually represent?",
+        "evidenceSummary": "Reported doses are tied to a specific study's route, formulation, and population — they are experimental parameters, not general usage figures.",
+        "whatResearchersObserved": "Gusev et al. (2018) describe a defined clinical regimen — two 10-day courses at 6,000 mcg per day, separated by a 20-day interval — administered under medical supervision to stroke-rehabilitation patients. Rodent studies elsewhere in the literature report dosing on a milligram-per-kilogram basis specific to those animal models.",
+        "practicalInterpretation": "A dose reported in a supervised clinical study reflects that study's formulation and delivery method; a rodent per-kilogram dose reflects a different species' pharmacology entirely. Neither converts directly into a usage figure for another context.",
+        "limitation": "This page does not provide dosing schedules, reconstitution guidance, or administration instructions for the Veracue listing; the figures above describe published research only.",
+        "references": [
+          "Gusev et al. 2018, Zh Nevrol Psikhiatr Im S S Korsakova, PMID 29798983"
+        ]
+      },
+      {
+        "title": "What Does \"Semax Benefits\" Actually Mean Scientifically?",
+        "researchQuestion": "What does the research base actually support when people search for Semax's benefits?",
+        "evidenceSummary": "Organized by category, the literature reviewed on this page covers: neurotrophic gene expression (BDNF/NGF), stroke-recovery markers (plasma BDNF, functional recovery scores), inflammatory/cellular-stress signaling, and brain-connectivity findings in healthy volunteers.",
+        "whatResearchersObserved": "Each category shows a measured, model-specific change — not a uniform effect across tissues, species, or study types. Findings are strongest and most consistent at the rodent gene-expression level, and more limited at the human level.",
+        "practicalInterpretation": "Researchers can treat this as a map of what has actually been investigated and at what evidence tier, rather than as a confirmed benefits list.",
+        "limitation": "None of these findings, individually or combined, establish an effect that a researcher should expect from using this or any other Semax research material.",
+        "references": [
+          "See references cited in the sections above"
+        ]
+      },
+      {
+        "title": "What Should Researchers Verify About a Semax Spray Product?",
+        "researchQuestion": "What should a researcher confirm before relying on this listing for experimental work?",
+        "evidenceSummary": "Standard verification points for any peptide research material include molecular identity, sequence confirmation, concentration (if stated), analytical testing method, purity result, lot documentation, and storage conditions.",
+        "whatResearchersObserved": "Veracue's currently available first-party information does not confirm sequence verification, concentration, fill volume, purity, analytical method, lot number, or storage conditions for this specific listing.",
+        "practicalInterpretation": "Until that documentation is published or supplied directly, these fields should be treated as unconfirmed rather than assumed from general Semax literature.",
+        "limitation": "Not publicly specified on the current Veracue product information.",
+        "references": []
+      }
+    ],
+    "evidenceTable": [
+      {
+        "researchArea": "Molecular identity",
+        "modelPopulation": "Chemical characterization",
+        "whatWasInvestigated": "Sequence, formula, and structural classification",
+        "mainFinding": "Confirmed as ACTH(4-7)-Pro-Gly-Pro, a synthetic heptapeptide",
+        "evidenceLevel": "Level 4 — Mechanistic/biochemical",
+        "limitation": "Describes the molecule generally, not this specific listing",
+        "primarySource": "CAS 80714-61-0"
+      },
+      {
+        "researchArea": "Neurotrophin gene expression",
+        "modelPopulation": "Rat hippocampus, frontal cortex, retina",
+        "whatWasInvestigated": "NGF and BDNF mRNA expression after administration",
+        "mainFinding": "Region- and time-dependent, directionally mixed changes",
+        "evidenceLevel": "Level 2 — Animal",
+        "limitation": "Findings vary by tissue and timepoint",
+        "primarySource": "Shadrina et al. 2009, doi:10.1007/s12031-009-9270-z"
+      },
+      {
+        "researchArea": "Immune/vascular gene expression in ischemia",
+        "modelPopulation": "Rat cerebral ischemia model (pMCAO)",
+        "whatWasInvestigated": "Gene expression tied to immune and vascular systems",
+        "mainFinding": "Semax altered expression of immune- and vascular-related genes post-ischemia",
+        "evidenceLevel": "Level 2 — Animal",
+        "limitation": "Model-specific to induced-injury rodents",
+        "primarySource": "Medvedeva et al. 2014, doi:10.1186/1471-2164-15-228"
+      },
+      {
+        "researchArea": "Proinflammatory transcript suppression",
+        "modelPopulation": "Rat cerebral ischemia-reperfusion model",
+        "whatWasInvestigated": "Il1a, Il1b, Il6, Ccl3, Cxcl2 transcript levels",
+        "mainFinding": "Reduced ischemia-induced elevation of several proinflammatory transcripts",
+        "evidenceLevel": "Level 2 — Animal",
+        "limitation": "qRT-PCR findings in rat brain tissue only",
+        "primarySource": "Dergunova et al. 2021, doi:10.31857/S0026898421010043"
+      },
+      {
+        "researchArea": "Functional brain connectivity",
+        "modelPopulation": "52 healthy human volunteers",
+        "whatWasInvestigated": "Resting-state fMRI connectivity after Semax, Selank, or placebo",
+        "mainFinding": "Condition-specific changes in amygdala–temporal cortex connectivity",
+        "evidenceLevel": "Level 1 — Human",
+        "limitation": "Connectivity signal, not a direct behavioral or cognitive measure",
+        "primarySource": "Panikratova et al. 2020, doi:10.1134/S001249662001007X"
+      },
+      {
+        "researchArea": "Ischemic stroke rehabilitation",
+        "modelPopulation": "110 human ischemic stroke patients",
+        "whatWasInvestigated": "Plasma BDNF, motor performance, Barthel index",
+        "mainFinding": "Semax administration associated with elevated plasma BDNF and improved recovery scores",
+        "evidenceLevel": "Level 1 — Human",
+        "limitation": "Clinical population under medical supervision with a structured rehabilitation protocol",
+        "primarySource": "Gusev et al. 2018, PMID 29798983"
+      },
+      {
+        "researchArea": "Cytokine balance in acute stroke",
+        "modelPopulation": "Human acute ischemic stroke patients",
+        "whatWasInvestigated": "Anti-inflammatory vs proinflammatory cytokine markers",
+        "mainFinding": "Reported shift toward anti-inflammatory cytokine activity",
+        "evidenceLevel": "Level 1 — Human",
+        "limitation": "Retrospective clinical analysis in an acute-care population",
+        "primarySource": "Miasoedova et al. 1999, PMID 10358912"
+      },
+      {
+        "researchArea": "Product-specific identity and composition",
+        "modelPopulation": "Veracue Semax Spray listing",
+        "whatWasInvestigated": "Sequence verification, concentration, purity, formulation, lot documentation",
+        "mainFinding": "Not publicly specified on the current Veracue product information.",
+        "evidenceLevel": "Product-specific",
+        "limitation": "No first-party analytical documentation currently available",
+        "primarySource": "Not publicly specified on the current Veracue product information."
+      }
+    ],
+    "evidenceLimitations": [
+      "Semax literature spans cell, rodent, and human models that are not directly comparable to one another.",
+      "Reported doses are tied to a specific route, formulation, and population, and don't transfer across contexts.",
+      "Most human research identified here comes from ischemic stroke rehabilitation and imaging settings in Russia — a narrow slice of the broader research population.",
+      "Gene expression, plasma biomarkers, functional connectivity, and clinical recovery scores are different kinds of measurements and shouldn't be read as equivalent \"effects.\"",
+      "None of the cited literature evaluates this specific Veracue listing; it evaluates the Semax molecule under separate experimental conditions."
+    ],
+    "semaxVsSelank": {
+      "intro": "Semax and Selank share a research lineage — both use the Pro-Gly-Pro extension strategy developed by the same group of Russian researchers — but they are chemically distinct peptides with different research emphases.",
+      "table": [
+        {
+          "attribute": "Molecular identity",
+          "semax": "ACTH(4-7)-Pro-Gly-Pro (verified, CAS 80714-61-0)",
+          "selank": "Tuftsin analog, Pro-Gly-Pro extended (verified, CAS 129954-34-3)"
+        },
+        {
+          "attribute": "Sequence",
+          "semax": "Met-Glu-His-Phe-Pro-Gly-Pro",
+          "selank": "Thr-Lys-Pro-Arg-Pro-Gly-Pro"
+        },
+        {
+          "attribute": "Structural origin",
+          "semax": "Fragment of adrenocorticotropic hormone (ACTH)",
+          "selank": "Synthetic analog of tuftsin, an immunomodulatory tetrapeptide"
+        },
+        {
+          "attribute": "Main research areas",
+          "semax": "Neurotrophic signaling, ischemic stroke recovery, cognitive/connectivity research",
+          "selank": "Stress-response and GABAergic-adjacent research contexts"
+        },
+        {
+          "attribute": "Human research context",
+          "semax": "fMRI connectivity in healthy volunteers; ischemic stroke rehabilitation studies",
+          "selank": "Studied alongside Semax in the same fMRI connectivity protocol; otherwise comparatively under-studied outside Russia"
+        },
+        {
+          "attribute": "Product-format status",
+          "semax": "Not publicly specified on the current Veracue product information. (this listing)",
+          "selank": "Not applicable to this listing"
+        }
+      ],
+      "closing": "This is a factual comparison, not a ranking. Nothing here suggests one peptide is more effective than the other or that combining them is supported by the cited research."
+    },
+    "researchDosageContext": {
+      "summary": "Dosage figures in Semax literature are study-specific parameters, not usage instructions.",
+      "clinicalExample": "A stroke-rehabilitation study used two 10-day courses of 6,000 mcg/day, separated by a 20-day interval, administered under medical supervision (Gusev et al., 2018).",
+      "animalExample": "Rodent studies report dosing on a milligram-per-kilogram basis specific to those animal models; figures don't convert to a human dose.",
+      "note": "This page provides no dosing schedule, reconstitution guidance, or administration instructions for the Veracue listing."
+    },
+    "benefitsResearchContext": {
+      "summary": "Organized by what has actually been studied, rather than as a benefits list.",
+      "categories": [
+        {
+          "category": "Neurotrophic findings",
+          "detail": "Region- and time-dependent BDNF/NGF gene-expression changes in rodent brain tissue."
+        },
+        {
+          "category": "Stroke-recovery findings",
+          "detail": "Elevated plasma BDNF and improved functional recovery scores in a supervised clinical rehabilitation study."
+        },
+        {
+          "category": "Inflammatory/cellular-stress findings",
+          "detail": "Reduced proinflammatory transcript elevation in a rat ischemia-reperfusion model."
+        },
+        {
+          "category": "Cognitive/connectivity findings",
+          "detail": "Condition-specific functional-connectivity changes on fMRI in healthy human volunteers."
+        }
+      ],
+      "note": "A finding in a specific model is not the same as a demonstrated product benefit."
+    },
+    "sideEffectsResearchContext": {
+      "summary": "The studies reviewed for this page do not include a dedicated, systematic safety or adverse-event analysis for Semax.",
+      "whatIsKnown": "The human stroke-rehabilitation and acute-stroke studies cited on this page were conducted under medical supervision in clinical populations; the published summaries available for this page do not report adverse-event data in detail.",
+      "whatIsNotKnown": "Absence of a discussed adverse event in a given study is not the same as evidence of safety, and no systematic safety profile for Semax — or for this specific listing — has been established here.",
+      "productSpecific": "Not publicly specified on the current Veracue product information."
+    },
+    "productFormat": {
+      "title": "Semax Spray Format",
+      "body": "\"Spray\" identifies how this listing is packaged and dispensed. On its own, it doesn't establish a route of administration, a concentration, a dose, metered delivery, or a specific formulation. This page does not describe Semax Spray as nasal, intranasal, or any other delivery method, because Veracue's first-party information doesn't currently confirm that. Researchers who need formulation or delivery specifics should request that documentation directly from Veracue.",
+      "formatEstablishes": [
+        "The packaging/dispensing format is a spray."
+      ],
+      "formatDoesNotEstablish": [
+        "Route of administration",
+        "Concentration",
+        "Fill volume or sprays per container",
+        "Dose per spray",
+        "Formulation or excipients",
+        "Absorption or bioavailability profile"
+      ]
+    },
+    "productSpecifications": {
+      "productName": "Semax Spray",
+      "category": "Research Peptides",
+      "format": "Spray (packaging/dispensing format as listed)",
+      "molecularIdentity": "ACTH(4-7)-Pro-Gly-Pro (molecule-level)",
+      "sequence": "Met-Glu-His-Phe-Pro-Gly-Pro (molecule-level)",
+      "CAS": "80714-61-0 (molecule-level)",
+      "molecularFormula": "C37H51N9O10S (molecule-level)",
+      "molecularWeight": "~813.9 g/mol, free base (molecule-level)",
+      "purity": "Not publicly specified on the current Veracue product information.",
+      "concentration": "Not publicly specified on the current Veracue product information.",
+      "fillAmount": "Not publicly specified on the current Veracue product information.",
+      "analyticalTesting": "Not publicly specified on the current Veracue product information.",
+      "COA": "Not publicly specified on the current Veracue product information.",
+      "lotInformation": "Not publicly specified on the current Veracue product information.",
+      "storage": "Not publicly specified on the current Veracue product information.",
+      "formulation": "Not publicly specified on the current Veracue product information.",
+      "route": "Not publicly specified on the current Veracue product information."
+    },
+    "coaGuidance": {
+      "title": "Documentation & Certificate of Analysis",
+      "intro": "A Certificate of Analysis, when available, typically confirms identity, purity, the analytical method used, the lot tested, the testing date, and the testing laboratory.",
+      "checklist": [
+        {
+          "item": "Identity confirmation (e.g., mass spectrometry or sequence verification)",
+          "status": "Not publicly specified on the current Veracue product information."
+        },
+        {
+          "item": "Analytical method (e.g., HPLC, LC-MS)",
+          "status": "Not publicly specified on the current Veracue product information."
+        },
+        {
+          "item": "Purity result",
+          "status": "Not publicly specified on the current Veracue product information."
+        },
+        {
+          "item": "Lot or batch number",
+          "status": "Not publicly specified on the current Veracue product information."
+        },
+        {
+          "item": "Testing date and laboratory",
+          "status": "Not publicly specified on the current Veracue product information."
+        }
+      ],
+      "note": "This page does not claim that a specific Certificate of Analysis currently exists for this listing."
+    },
+    "storageAndHandling": {
+      "title": "Storage & Handling",
+      "status": "Not publicly specified on the current Veracue product information.",
+      "note": "Storage conditions are not inferred from general peptide-stability literature. Request current, product-specific handling guidance directly from Veracue."
+    },
+    "ruoNotice": {
+      "statement": "This Semax Spray listing is intended strictly for laboratory and research use.",
+      "appliesTo": [
+        "Laboratory research",
+        "Analytical and experimental use by qualified researchers"
+      ],
+      "notIntendedFor": [
+        "Human use",
+        "Veterinary use",
+        "Diagnosis, treatment, prevention, or cure of any disease or condition",
+        "Personal or self-administered use"
+      ],
+      "note": "No clinical dosing, administration protocol, or treatment recommendation is provided on this page."
+    },
+    "faq": [
+      {
+        "question": "What is Semax?",
+        "answer": "A synthetic heptapeptide (Met-Glu-His-Phe-Pro-Gly-Pro) built from an ACTH fragment, studied since the 1980s primarily in Russian neurobiological and stroke-recovery research."
+      },
+      {
+        "question": "What is Semax peptide?",
+        "answer": "The same molecule described above — a lab-synthesized ACTH-fragment derivative, not a naturally occurring hormone."
+      },
+      {
+        "question": "What is Semax used for in research?",
+        "answer": "Researchers have used it to study neurotrophic gene expression, ischemic stroke recovery, inflammatory signaling, and brain connectivity."
+      },
+      {
+        "question": "What does Semax research focus on?",
+        "answer": "Mainly neurotrophin (BDNF/NGF) expression, stroke-recovery biomarkers, and inflammatory signaling in rodent models, alongside a smaller body of human imaging and clinical research."
+      },
+      {
+        "question": "What is the Semax sequence?",
+        "answer": "Met-Glu-His-Phe-Pro-Gly-Pro."
+      },
+      {
+        "question": "What is Semax's molecular weight?",
+        "answer": "Approximately 813.9 g/mol as the free base (molecular formula C37H51N9O10S, CAS 80714-61-0)."
+      },
+      {
+        "question": "What is Semax dosage?",
+        "answer": "Dosage figures in the literature are tied to specific study protocols — for example, a clinical stroke-rehabilitation regimen or a rodent per-kilogram dose. This page does not provide usage instructions."
+      },
+      {
+        "question": "What are Semax benefits?",
+        "answer": "Rather than a benefits list, research describes specific endpoints — neurotrophic gene expression, stroke-recovery markers, inflammatory signaling, and brain connectivity — each tied to a particular model. See the benefits-context section above."
+      },
+      {
+        "question": "What are Semax side effects?",
+        "answer": "The studies reviewed here don't include a dedicated safety analysis. No adverse-event profile or product-specific safety data has been established for this listing."
+      },
+      {
+        "question": "Semax vs Selank — what's the difference?",
+        "answer": "Related but distinct peptides: Semax derives from an ACTH fragment and is studied mainly for neurotrophic and stroke-recovery questions; Selank derives from tuftsin and is studied mainly in stress-related research."
+      },
+      {
+        "question": "Is Semax a peptide?",
+        "answer": "Yes — a synthetic peptide, not a hormone, small-molecule drug, or protein complex."
+      },
+      {
+        "question": "What does \"Semax Spray\" mean?",
+        "answer": "It identifies the packaging/dispensing format of this Veracue listing. It does not, by itself, confirm a route of administration, concentration, or dose."
+      },
+      {
+        "question": "Is this Semax product for human use?",
+        "answer": "No. This listing is Research Use Only and is not intended for human or veterinary use, diagnosis, treatment, prevention, or cure."
+      }
+    ],
+    "seo": {
+      "seoTitle": "Semax Spray | Research Peptide | Veracue",
+      "metaDescription": "Semax Spray research listing from Veracue: verified molecular identity, evidence-tiered research summary, Semax vs Selank comparison, and RUO documentation guidance.",
+      "canonicalUrl": "https://veracue-peptides.vercel.app/product/semax-spray",
+      "urlSlug": "/product/semax-spray",
+      "primaryKeyword": "semax spray",
+      "secondaryKeywords": [
+        "semax peptide",
+        "what is semax",
+        "semax research",
+        "semax benefits",
+        "semax dosage",
+        "semax side effects",
+        "semax vs selank",
+        "semax bdnf",
+        "semax peptide sequence",
+        "semax molecular weight",
+        "semax research peptide",
+        "research peptides"
+      ],
+      "searchIntent": {
+        "semax spray": "product",
+        "semax peptide": "informational",
+        "what is semax": "informational",
+        "semax vs selank": "comparison",
+        "semax dosage": "research/terminology",
+        "semax benefits": "informational",
+        "semax side effects": "informational",
+        "research peptides": "informational/documentation"
+      }
+    },
+    "geo": {
+      "entityRelationships": "Semax → synthetic ACTH(4-7)-Pro-Gly-Pro heptapeptide (also called an ACTH(4-10) analog) → studied in Russian neurobiological, stroke-recovery, and connectivity research → related but chemically distinct from Selank, a tuftsin-derived peptide → listed by Veracue as \"Semax Spray,\" a Research-Use-Only spray-format product → no confirmed product-specific analytical documentation.",
+      "keyDistinctions": [
+        "Semax (the molecule) is distinct from Semax Spray (this specific Veracue listing).",
+        "Semax is distinct from Selank, a related but separately identified peptide.",
+        "Molecule-level chemical and research literature is distinct from first-party Veracue product documentation.",
+        "\"Spray\" (packaging format) is distinct from a confirmed administration route."
+      ]
+    },
+    "aeo": {
+      "directAnswers": [
+        {
+          "q": "What is Semax?",
+          "a": "A synthetic heptapeptide (Met-Glu-His-Phe-Pro-Gly-Pro) derived from an ACTH fragment, studied in Russian neurobiological and stroke-recovery research."
+        },
+        {
+          "q": "What is Semax Spray?",
+          "a": "Veracue's spray-format Research Use Only listing of Semax; \"spray\" describes packaging, not a confirmed administration route."
+        },
+        {
+          "q": "What has Semax been studied for?",
+          "a": "Neurotrophic gene expression, ischemic stroke recovery, inflammatory signaling, and brain connectivity."
+        },
+        {
+          "q": "Is Semax the same as Selank?",
+          "a": "No — related but chemically distinct peptides with different parent structures and research emphases."
+        },
+        {
+          "q": "What does Semax dosage mean?",
+          "a": "A study-specific research parameter, not a usage instruction; this listing provides no dosing guidance."
+        },
+        {
+          "q": "Is Semax Spray intended for human use?",
+          "a": "No — it is Research Use Only."
+        }
+      ]
+    },
+    "internalLinks": [
+      {
+        "label": "Shop All Research Peptides",
+        "url": "/shop"
+      },
+      {
+        "label": "Certificates of Analysis (COA)",
+        "url": "/certificates"
+      },
+      {
+        "label": "Home",
+        "url": "/"
+      }
+    ],
+    "schemas": {
+      "Product": {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Semax Spray",
+        "description": "Semax Spray is a Research Use Only, spray-format listing of Semax, a synthetic ACTH(4-7)-Pro-Gly-Pro heptapeptide studied in neurobiological and stroke-recovery research literature.",
+        "category": "Research Peptides",
+        "brand": {
+          "@type": "Brand",
+          "name": "Veracue"
+        },
+        "url": "https://veracue-peptides.vercel.app/product/semax-spray",
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "Research Use Only",
+            "value": "true"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Peptide Sequence (molecule-level)",
+            "value": "Met-Glu-His-Phe-Pro-Gly-Pro"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "CAS Number (molecule-level)",
+            "value": "80714-61-0"
+          }
+        ]
+      },
+      "WebPage": {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Semax Spray | Research Peptide | Veracue",
+        "description": "Semax Spray research listing from Veracue: verified molecular identity, evidence-tiered research summary, Semax vs Selank comparison, and RUO documentation guidance.",
+        "url": "https://veracue-peptides.vercel.app/product/semax-spray",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Veracue",
+          "url": "https://veracue-peptides.vercel.app/"
+        }
+      },
+      "BreadcrumbList": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://veracue-peptides.vercel.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Shop",
+            "item": "https://veracue-peptides.vercel.app/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Semax Spray",
+            "item": "https://veracue-peptides.vercel.app/product/semax-spray"
+          }
+        ]
+      },
+      "FAQPage": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Semax?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A synthetic heptapeptide (Met-Glu-His-Phe-Pro-Gly-Pro) built from an ACTH fragment, studied since the 1980s primarily in Russian neurobiological and stroke-recovery research."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Semax peptide?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The same molecule described above — a lab-synthesized ACTH-fragment derivative, not a naturally occurring hormone."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Semax used for in research?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Researchers have used it to study neurotrophic gene expression, ischemic stroke recovery, inflammatory signaling, and brain connectivity."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does Semax research focus on?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mainly neurotrophin (BDNF/NGF) expression, stroke-recovery biomarkers, and inflammatory signaling in rodent models, alongside a smaller body of human imaging and clinical research."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the Semax sequence?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Met-Glu-His-Phe-Pro-Gly-Pro."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Semax's molecular weight?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Approximately 813.9 g/mol as the free base (molecular formula C37H51N9O10S, CAS 80714-61-0)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Semax dosage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dosage figures in the literature are tied to specific study protocols — for example, a clinical stroke-rehabilitation regimen or a rodent per-kilogram dose. This page does not provide usage instructions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are Semax benefits?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Rather than a benefits list, research describes specific endpoints — neurotrophic gene expression, stroke-recovery markers, inflammatory signaling, and brain connectivity — each tied to a particular model. See the benefits-context section above."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are Semax side effects?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The studies reviewed here don't include a dedicated safety analysis. No adverse-event profile or product-specific safety data has been established for this listing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Semax vs Selank — what's the difference?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Related but distinct peptides: Semax derives from an ACTH fragment and is studied mainly for neurotrophic and stroke-recovery questions; Selank derives from tuftsin and is studied mainly in stress-related research."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Semax a peptide?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes — a synthetic peptide, not a hormone, small-molecule drug, or protein complex."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does \"Semax Spray\" mean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It identifies the packaging/dispensing format of this Veracue listing. It does not, by itself, confirm a route of administration, concentration, or dose."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is this Semax product for human use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. This listing is Research Use Only and is not intended for human or veterinary use, diagnosis, treatment, prevention, or cure."
+            }
+          }
+        ]
+      }
+    }
+  }
+}

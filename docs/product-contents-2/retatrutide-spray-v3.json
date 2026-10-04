@@ -1,0 +1,634 @@
+{
+  "product": {
+    "product_slug": "retatrutide-spray",
+    "product_name": "Retatrutide Spray",
+    "primary_keyword": "retatrutide peptide",
+    "secondary_keywords": [
+      "retatrutide spray",
+      "retatrutide research peptide",
+      "what is retatrutide",
+      "retatrutide research",
+      "LY3437943",
+      "retatrutide mechanism",
+      "retatrutide GLP-1 GIP glucagon",
+      "retatrutide clinical research",
+      "retatrutide trials",
+      "retatrutide side effects",
+      "retatrutide dosing",
+      "retatrutide dosage"
+    ],
+    "category": "Metabolic & Receptor Pharmacology Research",
+    "classification": "Research Use Only (RUO)",
+    "url": "/product/retatrutide-spray",
+    "eyebrow": "Triple Receptor Agonist Research Peptide",
+    "h1": "Retatrutide Spray",
+    "subtitle": "A Research Use Only listing for retatrutide (LY3437943), studied for combined activity at GLP-1, GIP and glucagon receptors.",
+    "hero_copy": "Retatrutide — known in the research literature by its development code LY3437943 — is a peptide engineered to act on three metabolic receptors at once instead of one. That design has made it one of the more closely watched molecules in current receptor pharmacology research. Veracue lists Retatrutide Spray as a Research Use Only material for qualified laboratory settings; it is not a medicine, supplement, or consumer product, and it is not intended for human or animal use.",
+    "primary_cta": "View Research Documentation",
+    "secondary_cta": "Contact Our Research Team",
+    "short_description": "Retatrutide (LY3437943) is studied as a unimolecular triple agonist acting on GLP-1, GIP and glucagon receptors, placing it at the center of research into whether combining these three pathways produces a pharmacological profile distinct from single- or dual-receptor compounds. Veracue offers Retatrutide Spray as a Research Use Only laboratory material. Where Veracue has not published a specific formulation detail, that gap is stated plainly rather than filled with an assumption."
+  },
+  "product_at_a_glance": {
+    "compound": "Retatrutide (LY3437943)",
+    "research_classification": "Investigational triple GLP-1 / GIP / glucagon receptor agonist peptide",
+    "product_format": "Spray — product/listing name only; formulation and delivery details not publicly specified by Veracue",
+    "intended_use": "Laboratory research use only — not for human or animal use",
+    "documentation": "Lot-specific COA availability should be confirmed directly with Veracue before any research use"
+  },
+  "product_highlights": [
+    "Corresponds to LY3437943, the development code used throughout retatrutide's scientific literature",
+    "One of the few clinically studied peptides engineered to act on three separate receptors — GLP-1, GIP and glucagon — within a single molecule",
+    "Central to an active research question: whether triple-receptor engagement changes the pharmacological profile compared with single- or dual-agonist compounds",
+    "Referenced in preclinical pharmacology work and in later-stage human clinical trials examining metabolic and glycemic measures",
+    "Listed by Veracue strictly as a Research Use Only material intended for qualified laboratory settings",
+    "Kept on this page as a distinct entity from any finished pharmaceutical product or implied route of administration"
+  ],
+  "scientific_identity": {
+    "compound_name": "Retatrutide",
+    "development_code": "LY3437943",
+    "class": "Investigational triple receptor agonist peptide",
+    "targets": [
+      "GLP-1 receptor",
+      "GIP receptor",
+      "glucagon receptor"
+    ],
+    "regulatory_status": "Investigational; retatrutide has not received a general marketing approval for human therapeutic use as of the most recently verified information available to this page"
+  },
+  "overview": "Retatrutide is a peptide developed under the code LY3437943 and studied as a unimolecular triple receptor agonist — a single molecule engineered to engage the GLP-1, GIP and glucagon receptors rather than just one of them. That combination sets it apart from earlier incretin-focused compounds and from dual agonists such as tirzepatide, which targets GLP-1 and GIP without glucagon receptor activity.\n\nThe interest from researchers isn't just that retatrutide hits three targets; it's what happens pharmacologically when those three signaling pathways are engaged together rather than separately. GLP-1 and GIP are both incretin hormones involved in glucose-dependent insulin signaling, while glucagon receptor activity sits in a different part of metabolic biology, tied to hepatic glucose output and energy-expenditure pathways. Layering glucagon receptor engagement onto incretin activity is a deliberate research choice, not an incidental one, and it's the reason retatrutide is discussed differently from GLP-1-only or GLP-1/GIP compounds in the literature.\n\nVeracue lists Retatrutide Spray as a Research Use Only laboratory material. This page keeps two things separate throughout: what the published literature says about retatrutide as a molecule, and what Veracue has — and has not — confirmed about this specific listing.",
+  "why_researchers_study_retatrutide": "The core scientific question behind retatrutide's development is straightforward to state but not yet fully answered: does simultaneous activity at GLP-1, GIP and glucagon receptors produce a pharmacological profile that meaningfully differs from single- or dual-receptor approaches, or does it mainly amplify effects already seen with fewer targets? Preclinical pharmacology work laid out the receptor-binding case for the molecule, and later clinical research has examined metabolic and glycemic endpoints in defined trial populations. Neither body of evidence answers the question in isolation — receptor-binding data explains mechanism, not outcome, and trial data describes a specific population under a specific protocol, not a general verdict on triple agonism. Researchers studying retatrutide are, in effect, studying that open question directly.",
+  "research_focus": [
+    {
+      "research_area": "GLP-1 receptor signaling",
+      "what_researchers_investigate": "How GLP-1 receptor activation, the best-characterized incretin pathway, contributes to retatrutide's overall profile",
+      "evidence_context": "Supported by decades of independent incretin pharmacology research"
+    },
+    {
+      "research_area": "GIP receptor signaling",
+      "what_researchers_investigate": "Whether GIP receptor agonism complements GLP-1 activity or contributes through a separate mechanism",
+      "evidence_context": "An actively debated question in dual- and triple-agonist pharmacology literature"
+    },
+    {
+      "research_area": "Glucagon receptor signaling",
+      "what_researchers_investigate": "Whether glucagon receptor agonism, layered onto incretin activity, changes energy-expenditure or hepatic metabolic signaling",
+      "evidence_context": "The feature that distinguishes retatrutide research from GLP-1/GIP-only compounds"
+    },
+    {
+      "research_area": "Multi-receptor pharmacology",
+      "what_researchers_investigate": "Whether combining three receptor targets in one molecule produces effects that differ in kind, not just degree, from single-target agonists",
+      "evidence_context": "The central open question in retatrutide's research program"
+    },
+    {
+      "research_area": "Body-weight and glycemic measures",
+      "what_researchers_investigate": "Changes in body weight and glycemic parameters recorded in controlled clinical trial populations",
+      "evidence_context": "Reported in peer-reviewed phase 2 trial publications"
+    },
+    {
+      "research_area": "Clinical pharmacokinetics",
+      "what_researchers_investigate": "Absorption, half-life and dosing-interval properties of the investigational clinical formulation",
+      "evidence_context": "Characterized in early-phase clinical pharmacology studies supporting later trial design"
+    }
+  ],
+  "mechanism": {
+    "introduction": "Three receptor systems anchor retatrutide's studied pharmacology. Each is independently characterized in metabolic research; what's novel is engaging all three from one molecule.",
+    "glp1_receptor": "GLP-1 receptor signaling is the most established piece of this picture. It's part of the incretin system — gut-derived hormonal signaling tied to glucose-dependent insulin secretion and satiety-related pathways — and GLP-1 receptor agonism is the pharmacological foundation that retatrutide research builds on.",
+    "gip_receptor": "GIP is the second incretin hormone alongside GLP-1, and its receptor's role has been genuinely contested in the literature: some research frames GIP receptor agonism as complementary to GLP-1 activity, while other work has explored GIP receptor antagonism instead. Retatrutide research specifically tests the agonism side of that debate, using a triple-agonist design to study how GIP signaling behaves when engaged alongside GLP-1 rather than on its own.",
+    "glucagon_receptor": "Glucagon receptor activity sits outside the incretin system. It's linked in the literature to hepatic glucose output and energy-expenditure pathways, and adding it is what turns a dual agonist into a triple agonist. Researchers add this third target specifically to ask whether it shifts energy-related outcomes beyond what incretin signaling alone produces.",
+    "triple_agonism": "Triple agonism means one peptide is built to reach all three receptors rather than combining separately dosed compounds. That matters experimentally: it lets researchers study combined receptor engagement within a single, consistent pharmacokinetic profile instead of comparing separately timed agents. It does not, on its own, establish that three-target engagement outperforms one- or two-target approaches — that remains a question the evidence has to answer, not a conclusion the molecule's design guarantees.",
+    "translational_question": "The mechanism sections above describe receptor binding. Whether that binding profile translates into a measurably different research outcome compared with dual or single agonists is a separate, ongoing question addressed in the evidence section below — not something the mechanism itself settles."
+  },
+  "answer_engine_answers": {
+    "what_is_retatrutide": "Retatrutide is an investigational peptide, also known as LY3437943, engineered to act on GLP-1, GIP and glucagon receptors as a single triple-agonist molecule. It is studied in pharmacology and clinical research, not sold as an approved medicine.",
+    "is_retatrutide_a_peptide": "Yes. Retatrutide is built from an amino acid backbone, which places it in the peptide class of research compounds, distinct from small-molecule drugs.",
+    "what_is_ly3437943": "LY3437943 is the development code assigned to retatrutide throughout its research and clinical trial program. The two names refer to the same molecule.",
+    "why_triple_agonist": "Because retatrutide is designed to bind and activate three separate receptors — GLP-1, GIP and glucagon — within one molecule, rather than one or two, which is the defining feature of triple-agonist classification.",
+    "what_receptors_does_it_target": "Published research identifies three receptor targets: the GLP-1 receptor, the GIP receptor and the glucagon receptor.",
+    "what_does_retatrutide_do": "Research has examined retatrutide's activity at GLP-1, GIP and glucagon receptors and its relationship to metabolic, glycemic and body-weight measures in clinical trial populations — findings about the investigational compound, not claims about any commercial listing.",
+    "what_is_retatrutide_being_studied_for": "Clinical and preclinical research has studied retatrutide in relation to metabolic regulation, glycemic parameters and body weight, alongside ongoing mechanistic work on its triple-receptor pharmacology.",
+    "how_different_from_tirzepatide": "Tirzepatide is a dual GIP/GLP-1 receptor agonist; retatrutide adds a third target, the glucagon receptor. That additional receptor engagement is the core mechanistic distinction between the two.",
+    "what_do_trials_study": "Published retatrutide trials have measured defined endpoints — body-weight change, glycemic parameters, and safety/tolerability — within specific trial populations and dosing protocols.",
+    "what_does_dosing_in_research_mean": "Doses reported in clinical papers reflect a specific trial's escalation design and monitoring protocol. They describe how that trial was run, not instructions for using any research material."
+  },
+  "problem_solution_sections": [
+    {
+      "problem": "Retatrutide and LY3437943 appear as separate terms across different sources, and researchers need to know whether they're indexing the same compound before cross-referencing literature.",
+      "research_question": "Does LY3437943 refer to the same compound as retatrutide?",
+      "what_research_shows": "Yes — LY3437943 is the development code used throughout retatrutide's research and clinical trial program; both names identify the same molecule.",
+      "why_it_matters": "Treating them as separate compounds risks missing relevant preclinical or early-phase data published under the code name.",
+      "limitation": "Shared naming confirms the molecule identity in the literature; it does not confirm that a specific commercial listing matches that literature material."
+    },
+    {
+      "problem": "Researchers deciding where to search for retatrutide literature need to know which scientific category it falls under.",
+      "research_question": "Is retatrutide classified as a peptide?",
+      "what_research_shows": "Yes. It has an amino acid backbone and is consistently classified as a peptide rather than a small-molecule compound.",
+      "why_it_matters": "Classification determines which databases and search terms return relevant pharmacology literature.",
+      "limitation": "Peptide classification describes chemical structure, not purity, formulation, or suitability for any use."
+    },
+    {
+      "problem": "The label 'triple agonist' is used loosely in commercial and search contexts, and researchers need the precise criterion behind it.",
+      "research_question": "What specifically makes retatrutide a triple agonist rather than a dual or single agonist?",
+      "what_research_shows": "Retatrutide is engineered to bind and activate three distinct receptors — GLP-1, GIP and glucagon — within one molecule, which is the defining structural criterion for triple-agonist classification.",
+      "why_it_matters": "Knowing the precise criterion prevents conflating retatrutide with dual agonists like tirzepatide in comparative research.",
+      "limitation": "The classification describes receptor-binding design; it does not by itself describe comparative potency or outcome."
+    },
+    {
+      "problem": "Before interpreting receptor-pharmacology papers, researchers need a working model of what each individual receptor contributes.",
+      "research_question": "What does each receptor pathway — GLP-1, GIP and glucagon — individually contribute to the research rationale?",
+      "what_research_shows": "GLP-1 and GIP are incretin hormones tied to glucose-dependent insulin signaling and satiety pathways; glucagon receptor activity relates to hepatic glucose output and energy expenditure. Each has an independent research history outside of retatrutide.",
+      "why_it_matters": "Understanding each pathway separately makes it possible to evaluate claims about their combined effect critically, rather than taking triple engagement at face value.",
+      "limitation": "Individual receptor roles are well-studied in isolation; their combined behavior in one molecule is a separate, less settled question."
+    },
+    {
+      "problem": "Researchers unfamiliar with incretin pharmacology may not know why GIP receptor engagement became a research direction alongside GLP-1.",
+      "research_question": "Why did combining GLP-1 and GIP receptor activity become a research direction?",
+      "what_research_shows": "GIP is the second major incretin hormone, and research explored whether GIP receptor agonism complements GLP-1 signaling rather than working independently or in opposition to it.",
+      "why_it_matters": "This history explains why dual GLP-1/GIP agonists like tirzepatide preceded triple agonists like retatrutide in the research timeline.",
+      "limitation": "GIP receptor agonism's exact contribution relative to GLP-1 activity alone remains an active research question, not a settled finding."
+    },
+    {
+      "problem": "Glucagon receptor agonism can seem counterintuitive to researchers who associate glucagon mainly with raising blood glucose.",
+      "research_question": "Why add glucagon receptor activity to an incretin-based molecule?",
+      "what_research_shows": "Glucagon receptor signaling is linked in the literature to hepatic metabolic regulation and energy-expenditure pathways, which researchers hypothesized could complement incretin-driven effects when engaged together.",
+      "why_it_matters": "This is the specific design choice that separates retatrutide research from GLP-1/GIP-only compounds, and it's central to interpreting why retatrutide is studied as a distinct research category.",
+      "limitation": "The hypothesis motivates the molecule's design; it does not by itself confirm a specific magnitude of added effect in humans."
+    },
+    {
+      "problem": "Researchers comparing retatrutide and tirzepatide papers need a precise mechanistic delta rather than marketing shorthand.",
+      "research_question": "How does retatrutide differ mechanistically from tirzepatide?",
+      "what_research_shows": "Tirzepatide is characterized as a dual GIP/GLP-1 receptor agonist. Retatrutide adds glucagon receptor agonism as a third target, which is the defining mechanistic difference reported between the two.",
+      "why_it_matters": "This distinction is the basis for nearly every comparative research question involving the two compounds and should anchor any literature comparison.",
+      "limitation": "A mechanistic difference does not establish that one compound produces superior outcomes; that requires direct comparative trial data."
+    },
+    {
+      "problem": "Researchers need to know what preclinical work has actually established versus what is still open before citing it as settled.",
+      "research_question": "What has preclinical research established about retatrutide, and what remains open?",
+      "what_research_shows": "Preclinical and in-vitro pharmacology work has characterized retatrutide's receptor-binding profile and supported its classification as a unimolecular triple agonist.",
+      "why_it_matters": "Preclinical characterization is foundational evidence, but it describes binding pharmacology, not confirmed human outcomes.",
+      "limitation": "Findings from cellular and animal models do not automatically predict human clinical results."
+    },
+    {
+      "problem": "News and forum summaries often treat 'clinical trial' as one undifferentiated category, obscuring what a given trial actually measured.",
+      "research_question": "What have human clinical trials of retatrutide actually measured?",
+      "what_research_shows": "Published phase 2 trials have measured defined endpoints — including body-weight change, glycemic parameters, and safety/tolerability outcomes — within specific trial populations over a defined duration.",
+      "why_it_matters": "Knowing the actual measured endpoints prevents over-generalizing a single trial's results to unrelated populations or uses.",
+      "limitation": "Endpoints and findings are specific to each trial's protocol and population; they should not be read as universal claims."
+    },
+    {
+      "problem": "Trial outcome figures circulate outside their original context, and researchers need a basis for deciding how much weight to give a secondhand summary versus the original publication.",
+      "research_question": "How should published trial outcomes be interpreted responsibly?",
+      "what_research_shows": "Peer-reviewed trial publications specify the population, dosing protocol, duration and statistical methods behind any reported figure, which is the context required to interpret that figure correctly.",
+      "why_it_matters": "A number detached from its study context (dose, duration, population) can be misleading even when accurately quoted.",
+      "limitation": "This page summarizes evidence categories rather than restating full trial results; original publications should be consulted directly."
+    },
+    {
+      "problem": "Researchers see specific milligram values in trial papers and need to understand why those numbers cannot simply be reused elsewhere.",
+      "research_question": "How should researchers interpret dosing information found in published papers?",
+      "what_research_shows": "Doses reported in clinical literature are tied to a specific trial's escalation schedule, study population, formulation and monitoring protocol — they describe how that trial was conducted.",
+      "why_it_matters": "Recognizing this prevents treating a published research dose as a usable instruction outside its original clinical protocol.",
+      "limitation": "This page does not provide dosing guidance, and published study doses are not a basis for using any RUO research material."
+    },
+    {
+      "problem": "Before citing or sourcing any commercially available material labeled 'retatrutide,' researchers need a basis for evaluating it.",
+      "research_question": "What should researchers verify when evaluating a retatrutide research material?",
+      "what_research_shows": "Standard laboratory practice involves confirming compound identity, purity and lot-specific testing through a Certificate of Analysis before any research use.",
+      "why_it_matters": "A product name alone does not confirm formulation, purity or identity; documentation is what allows that to be verified.",
+      "limitation": "This page does not confirm current COA availability for Veracue's Retatrutide Spray listing — that should be requested directly from Veracue."
+    }
+  ],
+  "scientific_distinctions": [
+    "Mechanism (receptor binding) is distinct from outcome (what a specific trial measured).",
+    "Preclinical (animal/cellular) evidence is distinct from clinical (human) evidence.",
+    "Published trial data about investigational retatrutide is distinct from documentation specific to Veracue's RUO listing.",
+    "'Retatrutide' as a researched molecule is distinct from 'Retatrutide Spray' as a product name — the name does not confirm formulation or route."
+  ],
+  "comparisons": [
+    {
+      "topic": "Retatrutide vs. tirzepatide",
+      "question_addressed": "What mechanistically separates a triple agonist from the dual agonist most often compared to it?",
+      "table": [
+        {
+          "feature": "Scientific class",
+          "retatrutide": "Triple receptor agonist peptide",
+          "tirzepatide": "Dual receptor agonist peptide"
+        },
+        {
+          "feature": "GLP-1 receptor",
+          "retatrutide": "Targeted",
+          "tirzepatide": "Targeted"
+        },
+        {
+          "feature": "GIP receptor",
+          "retatrutide": "Targeted",
+          "tirzepatide": "Targeted"
+        },
+        {
+          "feature": "Glucagon receptor",
+          "retatrutide": "Targeted",
+          "tirzepatide": "Not targeted"
+        },
+        {
+          "feature": "Research context",
+          "retatrutide": "Investigational; phase 2 clinical data published",
+          "tirzepatide": "Separate clinical and regulatory research history"
+        }
+      ],
+      "note": "This table reflects receptor-targeting design only. It does not rank the two compounds, and no comparative-superiority claim is made without a specific, directly cited head-to-head study."
+    },
+    {
+      "topic": "Retatrutide vs. GLP-1-only receptor agonists",
+      "question_addressed": "How does adding GIP and glucagon receptor targets change the research question compared with single-target GLP-1 agonists?",
+      "note": "GLP-1-only agonists represent the original incretin-based research class that dual and triple agonists were developed to build on. Retatrutide research asks whether adding GIP and glucagon receptor activity changes the pharmacological profile beyond what GLP-1 engagement alone produces — a question distinct from, and not answered by, GLP-1 agonist research on its own."
+    },
+    {
+      "topic": "Retatrutide vs. cagrilintide",
+      "question_addressed": "Are these compounds mechanistically comparable, or are they studied for different reasons?",
+      "note": "Cagrilintide acts through the amylin receptor pathway, mechanistically distinct from GLP-1/GIP/glucagon receptor agonism, and is frequently studied in combination research alongside GLP-1 agonists rather than as a triple agonist itself. It is a related but separate research compound, not a direct mechanistic comparator to retatrutide."
+    }
+  ],
+  "evidence": [
+    {
+      "study": "Coskun T, et al. — preclinical characterization of LY3437943",
+      "year": "2022",
+      "evidence_level": "Preclinical / in-vitro pharmacology",
+      "population_or_system": "In-vitro receptor assays and preclinical models",
+      "question_studied": "Characterizing LY3437943 (retatrutide) as a unimolecular triple GIP, GLP-1 and glucagon receptor agonist",
+      "key_finding": "Described the receptor-binding design of a single peptide engineered to engage all three receptor targets",
+      "limitation": "Preclinical and in-vitro findings describe receptor pharmacology; they do not establish human clinical outcomes",
+      "source": "Peer-reviewed pharmacology literature"
+    },
+    {
+      "study": "Jastreboff AM, et al. — phase 2 trial published in The New England Journal of Medicine",
+      "year": "2023",
+      "evidence_level": "Clinical (phase 2 randomized trial)",
+      "population_or_system": "Adults enrolled in a controlled clinical research population studying obesity-related measures",
+      "question_studied": "Body-weight change and safety/tolerability across a range of investigational retatrutide dose groups",
+      "key_finding": "Reported dose-group-specific body-weight and safety/tolerability outcomes, including commonly observed gastrointestinal adverse events during dose escalation",
+      "limitation": "Findings are specific to this trial's protocol, population and duration; they describe the investigational compound as studied, not any commercial research material",
+      "source": "Peer-reviewed clinical trial publication"
+    },
+    {
+      "study": "Rosenstock J, et al. — phase 2 trial in type 2 diabetes",
+      "year": "2023",
+      "evidence_level": "Clinical (phase 2 randomized trial)",
+      "population_or_system": "Adults with type 2 diabetes enrolled in a controlled research population",
+      "question_studied": "Glycemic and metabolic measures associated with investigational retatrutide versus placebo and active comparators",
+      "key_finding": "Reported glycemic and metabolic outcome data specific to the trial's dosing protocol and population",
+      "limitation": "Results are specific to a type 2 diabetes trial population and should not be generalized beyond that study's conditions",
+      "source": "Peer-reviewed clinical trial publication"
+    }
+  ],
+  "what_research_does_not_show": "Published retatrutide research characterizes receptor pharmacology and reports outcomes measured in specific, controlled studies. It does not establish the efficacy of Veracue's Retatrutide Spray listing, confirm suitability for human or animal use, establish a personal dosage, support self-administration, reflect a regulatory approval for therapeutic use, or confirm that any commercially available material is equivalent to the formulation used in a given clinical trial.",
+  "product_specifications": {
+    "product_name": "Retatrutide Spray",
+    "format": "Spray (listing name only; physical formulation and delivery mechanism not disclosed)",
+    "concentration": "Not publicly specified on the current Veracue product information.",
+    "fill_volume": "Not publicly specified on the current Veracue product information.",
+    "purity": "Not publicly specified on the current Veracue product information.",
+    "salt_form": "Not publicly specified on the current Veracue product information.",
+    "sku": "Not publicly specified on the current Veracue product information.",
+    "storage": "Not publicly specified on the current Veracue product information.",
+    "coa": "Not publicly specified on the current Veracue product information."
+  },
+  "documentation": {
+    "overview": "A Certificate of Analysis (COA) is the standard document researchers use to confirm a research material's identity and quality before use. A useful COA typically includes:",
+    "what_to_check": [
+      "Identity confirmation — testing that matches the labeled compound, typically via HPLC retention time or mass spectrometry against a reference standard",
+      "A stated purity percentage tied to a named analytical method, ideally from an independent third-party lab",
+      "A specific lot or batch number connecting the COA to the exact unit being evaluated",
+      "A testing date, so the report's recency can be assessed",
+      "Identification of the testing laboratory, allowing independent verification"
+    ],
+    "current_status_note": "Current availability and lot-specific documentation for Retatrutide Spray should be verified directly with Veracue."
+  },
+  "storage_and_handling": "Storage and handling specifications are not publicly specified on the current Veracue product information.",
+  "compliance_notice": {
+    "heading": "Research Use Only",
+    "statement": "Retatrutide Spray is offered strictly for laboratory research use by qualified professionals. It is not a drug, supplement, food product, or cosmetic, and it is not intended for human or animal use. Nothing on this page constitutes medical advice or a recommendation for personal use."
+  },
+  "faq": [
+    {
+      "question": "What is retatrutide?",
+      "answer": "Retatrutide is an investigational peptide, also known by its development code LY3437943, studied for activity at GLP-1, GIP and glucagon receptors. It is not an approved medicine."
+    },
+    {
+      "question": "Is retatrutide a peptide?",
+      "answer": "Yes — it has an amino acid backbone and is classified as a peptide engineered for triple-receptor activity."
+    },
+    {
+      "question": "What is LY3437943?",
+      "answer": "LY3437943 is the development code used for retatrutide throughout its research and clinical trial program; both names refer to the same molecule."
+    },
+    {
+      "question": "Why is retatrutide called a triple agonist?",
+      "answer": "Because it's designed to bind and activate three receptors — GLP-1, GIP and glucagon — within one molecule, rather than one or two."
+    },
+    {
+      "question": "What receptors does retatrutide target?",
+      "answer": "Published research identifies the GLP-1 receptor, the GIP receptor and the glucagon receptor as its three targets."
+    },
+    {
+      "question": "What is retatrutide being studied for?",
+      "answer": "Clinical research has examined retatrutide in relation to metabolic regulation, glycemic parameters and body-weight measures in defined trial populations."
+    },
+    {
+      "question": "What do clinical trials of retatrutide investigate?",
+      "answer": "Published phase 2 trials have measured endpoints such as body-weight change, glycemic parameters, and safety/tolerability within specific dosing protocols and study populations."
+    },
+    {
+      "question": "What is retatrutide peptide research?",
+      "answer": "It refers to the body of preclinical and clinical literature studying LY3437943's receptor pharmacology and its measured effects in controlled research settings."
+    },
+    {
+      "question": "How should clinical findings about retatrutide be interpreted?",
+      "answer": "As results tied to a specific trial's population, dosing protocol and duration — not as general claims that apply beyond that study's conditions."
+    },
+    {
+      "question": "How does retatrutide differ from tirzepatide?",
+      "answer": "Tirzepatide is a dual GIP/GLP-1 receptor agonist; retatrutide adds glucagon receptor agonism as a third target. That additional receptor is the core mechanistic difference."
+    },
+    {
+      "question": "How is retatrutide different from a GLP-1-only agonist?",
+      "answer": "GLP-1-only agonists engage a single receptor; retatrutide adds GIP and glucagon receptor activity, which is the research question its triple-agonist design was built to explore."
+    },
+    {
+      "question": "What is Retatrutide Spray?",
+      "answer": "Retatrutide Spray is Veracue's Research Use Only listing for the retatrutide (LY3437943) research material. 'Spray' refers to the listing name only, not a confirmed route of administration."
+    },
+    {
+      "question": "What product specifications are available for Retatrutide Spray?",
+      "answer": "Veracue has not publicly specified formulation details such as concentration, fill volume, purity, or COA availability for this listing. Contact Veracue directly for current documentation."
+    },
+    {
+      "question": "What should researchers check on a retatrutide COA?",
+      "answer": "Compound identity confirmation, a purity result from a named analytical method, a specific lot number, a testing date, and the testing laboratory's identity."
+    },
+    {
+      "question": "Is Retatrutide Spray intended for human use?",
+      "answer": "No. It is offered strictly for laboratory research use and is not intended for human or animal use."
+    },
+    {
+      "question": "Does this page provide dosing instructions?",
+      "answer": "No. Published research dosing is discussed only as scientific context tied to specific trials; this page does not provide dosing schedules or usage instructions."
+    }
+  ],
+  "seo": {
+    "title_options": [
+      "Retatrutide Spray | LY3437943 Research Peptide | Veracue",
+      "Retatrutide Peptide (LY3437943) — Research Spray | Veracue",
+      "Retatrutide Spray: RUO Triple Agonist Peptide | Veracue"
+    ],
+    "meta_description_options": [
+      "Retatrutide Spray from Veracue: a Research Use Only listing covering retatrutide (LY3437943) mechanism, triple-receptor research and RUO documentation.",
+      "Explore Veracue's Retatrutide Spray listing — what retatrutide (LY3437943) is, its GLP-1/GIP/glucagon receptor research, and compliance details.",
+      "Veracue's Retatrutide Spray page covers retatrutide (LY3437943) identity, triple-agonist mechanism, clinical research context and RUO status."
+    ],
+    "recommended_title": "Retatrutide Spray | LY3437943 Research Peptide | Veracue",
+    "recommended_meta_description": "Retatrutide Spray from Veracue: a Research Use Only listing covering retatrutide (LY3437943) mechanism, triple-receptor research and RUO documentation.",
+    "canonical_slug": "/product/retatrutide-spray"
+  },
+  "internal_links": [
+    {
+      "anchor_text": "Browse the Veracue research catalog",
+      "url": "/shop",
+      "purpose": "Directs researchers to all available RUO research materials"
+    },
+    {
+      "anchor_text": "Certificates of Analysis",
+      "url": "/certificates",
+      "purpose": "Supports the documentation section by linking to Veracue's COA library page"
+    },
+    {
+      "anchor_text": "AHK-Cu research listing",
+      "url": "/product/ahk-cu",
+      "purpose": "Provides an example of a fully live Veracue research-peptide listing for cross-reference"
+    },
+    {
+      "anchor_text": "Return to Veracue home",
+      "url": "/",
+      "purpose": "Standard homepage navigation link"
+    }
+  ],
+  "entity_map": [
+    {
+      "entity": "Retatrutide",
+      "relationship_to_page": "Primary subject compound of this listing"
+    },
+    {
+      "entity": "LY3437943",
+      "relationship_to_page": "Development code identifying the same molecule as retatrutide"
+    },
+    {
+      "entity": "GLP-1 receptor",
+      "relationship_to_page": "One of three receptor targets central to retatrutide's studied mechanism"
+    },
+    {
+      "entity": "GIP receptor",
+      "relationship_to_page": "One of three receptor targets central to retatrutide's studied mechanism"
+    },
+    {
+      "entity": "glucagon receptor",
+      "relationship_to_page": "One of three receptor targets central to retatrutide's studied mechanism"
+    },
+    {
+      "entity": "tirzepatide",
+      "relationship_to_page": "Comparison compound — mechanistically related dual agonist"
+    },
+    {
+      "entity": "cagrilintide",
+      "relationship_to_page": "Related but mechanistically distinct research compound, referenced in comparison"
+    },
+    {
+      "entity": "metabolic research",
+      "relationship_to_page": "Broader research field retatrutide's pharmacology is studied within"
+    },
+    {
+      "entity": "clinical trials",
+      "relationship_to_page": "Evidence source category cited in the evidence section"
+    }
+  ],
+  "schema": {
+    "product": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Retatrutide Spray",
+      "alternateName": "LY3437943 Spray",
+      "description": "Retatrutide Spray is a Research Use Only (RUO) laboratory research listing for retatrutide (LY3437943), an investigational peptide studied for activity at GLP-1, GIP and glucagon receptors. Not for human or animal use.",
+      "category": "Research Use Only laboratory research material",
+      "url": "https://veracue-peptides.vercel.app/product/retatrutide-spray"
+    },
+    "webpage": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Retatrutide Spray | LY3437943 Research Peptide | Veracue",
+      "description": "Retatrutide Spray from Veracue: a Research Use Only listing covering retatrutide (LY3437943) mechanism, triple-receptor research and RUO documentation.",
+      "url": "https://veracue-peptides.vercel.app/product/retatrutide-spray"
+    },
+    "breadcrumb": {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://veracue-peptides.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Shop",
+          "item": "https://veracue-peptides.vercel.app/shop"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Retatrutide Spray",
+          "item": "https://veracue-peptides.vercel.app/product/retatrutide-spray"
+        }
+      ]
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is retatrutide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Retatrutide is an investigational peptide, also known by its development code LY3437943, studied for activity at GLP-1, GIP and glucagon receptors. It is not an approved medicine."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is retatrutide a peptide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — it has an amino acid backbone and is classified as a peptide engineered for triple-receptor activity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is LY3437943?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "LY3437943 is the development code used for retatrutide throughout its research and clinical trial program; both names refer to the same molecule."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is retatrutide called a triple agonist?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because it's designed to bind and activate three receptors — GLP-1, GIP and glucagon — within one molecule, rather than one or two."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What receptors does retatrutide target?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Published research identifies the GLP-1 receptor, the GIP receptor and the glucagon receptor as its three targets."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is retatrutide being studied for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Clinical research has examined retatrutide in relation to metabolic regulation, glycemic parameters and body-weight measures in defined trial populations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do clinical trials of retatrutide investigate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Published phase 2 trials have measured endpoints such as body-weight change, glycemic parameters, and safety/tolerability within specific dosing protocols and study populations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is retatrutide peptide research?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It refers to the body of preclinical and clinical literature studying LY3437943's receptor pharmacology and its measured effects in controlled research settings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How should clinical findings about retatrutide be interpreted?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As results tied to a specific trial's population, dosing protocol and duration — not as general claims that apply beyond that study's conditions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does retatrutide differ from tirzepatide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tirzepatide is a dual GIP/GLP-1 receptor agonist; retatrutide adds glucagon receptor agonism as a third target. That additional receptor is the core mechanistic difference."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is retatrutide different from a GLP-1-only agonist?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GLP-1-only agonists engage a single receptor; retatrutide adds GIP and glucagon receptor activity, which is the research question its triple-agonist design was built to explore."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Retatrutide Spray?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Retatrutide Spray is Veracue's Research Use Only listing for the retatrutide (LY3437943) research material. 'Spray' refers to the listing name only, not a confirmed route of administration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What product specifications are available for Retatrutide Spray?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Veracue has not publicly specified formulation details such as concentration, fill volume, purity, or COA availability for this listing. Contact Veracue directly for current documentation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should researchers check on a retatrutide COA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Compound identity confirmation, a purity result from a named analytical method, a specific lot number, a testing date, and the testing laboratory's identity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Retatrutide Spray intended for human use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It is offered strictly for laboratory research use and is not intended for human or animal use."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does this page provide dosing instructions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Published research dosing is discussed only as scientific context tied to specific trials; this page does not provide dosing schedules or usage instructions."
+          }
+        }
+      ]
+    }
+  },
+  "quality_control": {
+    "scientific_accuracy": "Mechanism is kept separate from trial outcomes throughout; preclinical and clinical evidence are labeled by evidence level; no fabricated study details introduced.",
+    "product_claim_accuracy": "No specification inferred from the 'Spray' name; unverified product fields are marked not publicly specified rather than populated with typical industry values.",
+    "ruo_compliance": "RUO status is centralized in the hero, product_at_a_glance, compliance_notice and select FAQs rather than repeated in every section; no dosing or administration instructions appear anywhere.",
+    "seo_coverage": "Primary keyword 'retatrutide peptide' and product keyword 'retatrutide spray' both covered naturally, alongside dosing/side-effect/weight-loss search intent addressed informationally.",
+    "geo_coverage": "Entity relationships (Retatrutide → LY3437943 → GLP-1/GIP/glucagon receptors → research) made explicit in scientific_identity, mechanism and entity_map.",
+    "aeo_coverage": "Ten direct answer-first responses provided in answer_engine_answers, plus 16 FAQ entries spanning scientific, research, comparison, product and RUO categories.",
+    "humanization": "Sentence length and structure varied throughout; repetitive disclaimer language and flagged AI-cliche phrases removed per the v3 correction notes.",
+    "ux": "Product identity and RUO status establish in the first screen (hero, product_at_a_glance); scientific depth is layered progressively after; product-level facts are kept separate from molecule-level facts throughout."
+  }
+}

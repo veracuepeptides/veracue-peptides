@@ -121,7 +121,7 @@ export function BlogIndexClient({ posts }: { posts: BlogIndexPost[] }) {
   const handleShare = async (e: React.MouseEvent, post: BlogIndexPost) => {
     e.preventDefault()
     e.stopPropagation()
-    const url = typeof window !== 'undefined' ? `${window.location.origin}/${post.slug}` : `/${post.slug}`
+    const url = typeof window !== 'undefined' ? `${window.location.origin}/blog/${post.slug}` : `/blog/${post.slug}`
     if (typeof navigator !== 'undefined' && navigator.share) {
       try {
         await navigator.share({
@@ -140,7 +140,7 @@ export function BlogIndexClient({ posts }: { posts: BlogIndexPost[] }) {
   }
 
   return (
-    <main style={{ backgroundColor: '#f0efeb' }} className="w-full text-[#20221c] min-h-screen font-sans overflow-x-clip">
+    <div style={{ backgroundColor: '#f0efeb' }} className="w-full text-[#20221c] min-h-screen font-sans overflow-x-clip">
       {/* 1. Signature Veracue Hero Section */}
       <BlogHero />
 
@@ -312,7 +312,7 @@ export function BlogIndexClient({ posts }: { posts: BlogIndexPost[] }) {
                         </span>
                       </div>
 
-                      <Link href={`/${spotlightPost.slug}`}>
+                      <Link href={`/blog/${spotlightPost.slug}`}>
                         <h2 className="text-2xl sm:text-3xl lg:text-[32px] font-extrabold font-heading text-[#20221c] leading-[1.2] mb-3 sm:mb-5 group-hover:text-[#cb997e] transition-colors duration-300">
                           {spotlightPost.title}
                         </h2>
@@ -327,7 +327,7 @@ export function BlogIndexClient({ posts }: { posts: BlogIndexPost[] }) {
                     <div className="pt-4 border-t border-[#eddcd2]/70 flex items-center justify-between gap-3">
                       {/* Natural width button on mobile! */}
                       <Link
-                        href={`/${spotlightPost.slug}`}
+                        href={`/blog/${spotlightPost.slug}`}
                         className="inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-full bg-[#20221c] hover:bg-[#cb997e] text-[#fff1e6] text-xs sm:text-[13px] font-bold uppercase tracking-wider transition-all duration-300 shadow-sm cursor-pointer"
                       >
                         <BookOpen className="w-4 h-4" />
@@ -452,6 +452,6 @@ export function BlogIndexClient({ posts }: { posts: BlogIndexPost[] }) {
           contactHref="/contact-us"
         />
       </FadeUp>
-    </main>
+    </div>
   )
 }

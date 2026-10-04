@@ -1,0 +1,642 @@
+{
+  "slug": "/product/semax",
+  "category": "Cognitive & Neuro-Protection",
+  "h1": "Semax Peptide",
+  "seo": {
+    "metaTitle": "Semax Research Peptide | Sequence, Evidence & COA | Veracue",
+    "metaDescription": "Semax peptide for laboratory research: MEHFPGP sequence, molecular identity, BDNF and neurobiological research, Semax vs Selank and COA checks. RUO only.",
+    "primaryKeyword": "semax peptide",
+    "secondaryKeywords": [
+      "what is semax",
+      "semax selank",
+      "semax vs selank",
+      "semax benefits",
+      "semax dosage",
+      "semax bdnf",
+      "semax acetate",
+      "semax certificate of analysis"
+    ],
+    "semanticTerms": [
+      "n-acetyl semax",
+      "adamax",
+      "semax 10mg",
+      "ACTH(4-7)-Pro-Gly-Pro",
+      "MEHFPGP"
+    ],
+    "canonical": "https://veracue-peptides.vercel.app/product/semax"
+  },
+  "blurb": "Semax is a synthetic heptapeptide, Met-Glu-His-Phe-Pro-Gly-Pro, related to the ACTH(4-7) sequence and studied in neurotrophin and neurobiological research. Veracue offers it for Research Use Only. This page covers its identity, the published evidence, how it differs from Selank, and how to read a certificate of analysis.",
+  "hero": {
+    "badge": "Research Use Only",
+    "h1": "Semax Peptide",
+    "subtitle": "A synthetic heptapeptide related to the ACTH(4-7) sequence and studied in neurobiological and neurotrophin research.",
+    "notice": "Veracue Semax is offered for Research Use Only and is not intended for human or veterinary use."
+  },
+  "aeo": {
+    "question": "What is Semax?",
+    "answer": "Semax is a synthetic heptapeptide with the sequence Met-Glu-His-Phe-Pro-Gly-Pro (MEHFPGP). It joins the ACTH(4-7) fragment to a Pro-Gly-Pro tail and is described in the literature as an analogue related to ACTH(4-10). Published research has examined it mainly in neurotrophin, gene-expression and cerebral-ischemia models, largely in rodents and cell systems. Veracue Semax is offered for Research Use Only and is not intended for human or veterinary use."
+  },
+  "productSnapshot": {
+    "title": "Semax Molecular Snapshot",
+    "rows": [
+      [
+        "Name",
+        "Semax — MEHFPGP (also written ACTH(4-7)-Pro-Gly-Pro)"
+      ],
+      [
+        "Sequence",
+        "MEHFPGP (Met-Glu-His-Phe-Pro-Gly-Pro)"
+      ],
+      [
+        "Length",
+        "7 amino acids"
+      ],
+      [
+        "Formula",
+        "C37H51N9O10S"
+      ],
+      [
+        "Average molecular weight",
+        "Approximately 813.93 g/mol"
+      ],
+      [
+        "CAS",
+        "80714-61-0"
+      ],
+      [
+        "PubChem CID",
+        "9811102"
+      ],
+      [
+        "UNII",
+        "I5FAL2585H"
+      ],
+      [
+        "Research designation",
+        "Research Use Only"
+      ]
+    ],
+    "note": "Reference representation: H-Met-Glu-His-Phe-Pro-Gly-Pro-OH describes the free peptide as a reference structure. It is not a statement about the form Veracue supplies. Salt or counterion form is a lot-level detail and should be confirmed from the applicable lot documentation."
+  },
+  "sections": [
+    {
+      "id": "why-researchers-study-semax",
+      "heading": "Why Researchers Study Semax",
+      "level": 2,
+      "body": [
+        "Semax draws research interest for two connected reasons. It has a short, defined sequence, and published work has linked it to neurotrophin signaling and to injury-model readouts. Those are areas where labs want a well-documented reference peptide.",
+        "Most of that work comes from rodents and cell systems, and much of it comes from a small number of Russian research groups. Historical clinical papers exist too, but they sit in a separate evidence tier. The questions below take the topics researchers raise most often, one at a time."
+      ]
+    },
+    {
+      "id": "storage-and-documentation",
+      "heading": "Storage and Documentation",
+      "level": 2,
+      "body": [
+        "Follow the storage conditions provided on the applicable product documentation and vial label. Do not infer product-specific storage conditions from general peptide-handling practices.",
+        "Where analytical documentation is available, researchers should review the lot-specific HPLC and mass-spectrometry results rather than assuming a sitewide testing specification. A search for \"Semax 10mg\" reflects a product-size query. The actual amount supplied should be confirmed from the current product listing rather than inferred from search terminology.",
+        "Questions about lot documentation can be sent through Contact Us."
+      ]
+    }
+  ],
+  "problemSolution": [
+    {
+      "number": 1,
+      "problem": "How do I confirm that the material I am researching is actually Semax?",
+      "solution": "Start with the molecule. Semax is Met-Glu-His-Phe-Pro-Gly-Pro (MEHFPGP), formula C37H51N9O10S, with an average molecular weight near 813.93 g/mol. PubChem lists it as CID 9811102, and FDA's review lists CAS 80714-61-0 and UNII I5FAL2585H for the free peptide. However, public databases hold more than one record, including records for salt forms, so match the exact name and formula rather than the name alone.",
+      "explanation": "Those identifiers describe the molecule, not a vial. Confirming a specific lot takes analytical data: a mass result consistent with the reference mass and a chromatographic purity result, both tied to that lot number."
+    },
+    {
+      "number": 2,
+      "problem": "What does the Semax sequence actually tell me?",
+      "solution": "MEHFPGP is seven residues: methionine, glutamic acid, histidine, phenylalanine, proline, glycine and proline. The first four (MEHF) match the ACTH(4-7) region. The last three (PGP) are an added Pro-Gly-Pro extension, which is thought to slow peptidase attack (Potaman et al., 1991).",
+      "explanation": "The sequence matters when you compare supplier documents. Names and abbreviations vary, but a genuine Semax record should resolve to these same seven residues in this order. A different length, order or terminal modification describes a different compound."
+    },
+    {
+      "number": 3,
+      "problem": "Is Semax the same molecule as ACTH?",
+      "solution": "No. ACTH is a 39-amino-acid hormone. Semax is a seven-residue synthetic peptide related to a short region of it. FDA's review, citing earlier literature, describes the ACTH(4-10) fragment as lacking the hormonal (corticotropic and melanotropic) properties of full-length ACTH.",
+      "explanation": "In practice, findings about ACTH the hormone do not transfer to Semax, and Semax findings do not describe ACTH. Treat them as separate molecules that share ancestry."
+    },
+    {
+      "number": 4,
+      "problem": "How should I distinguish Semax from ACTH(4-10), ACTH(4-7), and Pro-Gly-Pro?",
+      "solution": "The four names describe four different sequences: Semax is MEHFPGP, ACTH(4-7) is MEHF, ACTH(4-10) is MEHFRWG, and Pro-Gly-Pro is PGP. Semax is a synthetic analogue related to the ACTH(4-10) region, with a different sequence: it keeps MEHF and replaces the last three residues with PGP. Calculated average masses run about 814, 563, 962 and 269 g/mol respectively.",
+      "explanation": "Similar names cause real errors. A literature search on \"ACTH(4-10) analog\" can pull in unrelated results, and a procurement record that says only \"ACTH fragment\" is ambiguous. N-acetyl Semax and Adamax refer to related but distinct compounds and should not be treated as interchangeable with Semax."
+    },
+    {
+      "number": 5,
+      "problem": "What does the Semax–BDNF research actually show?",
+      "solution": "A rat hippocampal study (Dolotov et al., 2006) reported increased BDNF protein, TrkB phosphorylation and BDNF mRNA following Semax exposure; the largest BDNF protein rise was about 1.4-fold. A companion basal-forebrain paper reported specific binding and higher BDNF protein, and earlier glial-culture work reported NGF and BDNF mRNA induction (Shadrina et al., 2001).",
+      "explanation": "Taken together, these studies link Semax to changes in neurotrophin markers in those systems. They do not identify the receptor, and FDA's 2026 review states that the mechanism of Semax gene regulation is unknown. They also come from rat and cell models, so they do not translate automatically to humans."
+    },
+    {
+      "number": 6,
+      "problem": "What does “neuroprotective” mean in Semax research?",
+      "solution": "In experimental work, neuroprotection means a measured difference in an injury model compared with a control group. It might be a change in gene or protein markers, or a smaller damaged area. It is a description of a result, not a promise.",
+      "explanation": "In rat cerebral-ischemia models, Semax altered neurotrophin transcripts (Dmitrieva et al., 2010) and immune-response and vascular genes (Medvedeva et al., 2014). Later work reported lower inflammatory-gene expression and changes in MMP-9, c-Fos, JNK and CREB (Filippenkov et al., 2020; Sudarkina et al., 2021). These are molecular readouts in animals. They do not show that Semax protects the human brain."
+    },
+    {
+      "number": 7,
+      "problem": "What do Semax cognitive and behavioral findings actually tell a researcher?",
+      "solution": "The animal findings are specific. The 2006 hippocampal study reported more conditioned avoidance reactions in Semax-treated rats alongside its BDNF results. In a rat photothrombotic-ischemia study, Semax-treated animals did not show the memory-retention deficit seen in vehicle-treated animals (Romanova et al., 2006, as summarized in FDA's briefing).",
+      "explanation": "Human reports come from historical clinical literature, mostly stroke-related and mostly Russian. That literature is limited, as the research-limits section below explains. Together, these findings tell a researcher which endpoints have been examined. They do not support a cognitive-enhancement claim, and this page does not make one."
+    },
+    {
+      "number": 8,
+      "problem": "What should I understand when searching for “Semax benefits”?",
+      "solution": "In research writing, a benefit is not a product promise. It usually means a reported biological, molecular or behavioral finding in one study. Examples include higher BDNF protein in rat hippocampus, or a smaller infarcted area in a rat ischemia model (about 20% smaller in the Romanova study).",
+      "explanation": "Consumer pages often blend such findings with claims that no study tested. So when you meet the word, ask four questions: which species or system, which comparator, which endpoint, and which chemical form. This page reports findings. It does not say what Semax will do for anyone."
+    },
+    {
+      "number": 9,
+      "problem": "How should I interpret “Semax dosage” searches?",
+      "solution": "Published doses and historical pharmaceutical administration parameters belong to their own research contexts. Each depends on the species, the preparation, the chemical form and the purpose of the study, and none transfers to another setting. FDA's review also notes that many clinical reports do not say which form of Semax was used.",
+      "explanation": "Veracue does not provide human-use dosing or administration guidance, and this page lists no doses, schedules or routes. That applies to every dosage-related query, including searches for spray and injectable formats. Researchers set experimental concentrations through their own validated study design and the primary literature."
+    },
+    {
+      "number": 10,
+      "problem": "How is Semax different from Selank?",
+      "solution": "They are different molecules with a shared ending. Semax (MEHFPGP) derives from an ACTH fragment. Selank (Thr-Lys-Pro-Arg-Pro-Gly-Pro) is described as a tuftsin analogue. Both have seven residues and both end in Pro-Gly-Pro, but their first four residues differ, and so do their average masses (about 813.9 and 751.9 g/mol).",
+      "explanation": "Both have experimental literature and some historical clinical literature. The table below sets them side by side without ranking them. For Veracue's Selank information, see the Selank page."
+    },
+    {
+      "number": 11,
+      "problem": "What should I look for on a Semax COA?",
+      "solution": "A certificate of analysis documents one lot, so read it as a set of linked facts. A Semax COA may include the lot number, product identity, purity, the HPLC or UPLC method, a mass spectrometry result, the molecular form, the testing laboratory and the test date. It may also report peptide or water content. The checklist below lists each field.",
+      "explanation": "Check that the pieces agree. In FDA's review, certificates titled Semax Acetate carried the free peptide's CAS number, formula and molecular weight, which left the described substance unclear. A COA is only as useful as its consistency with the vial in hand."
+    },
+    {
+      "number": 12,
+      "problem": "What can the Veracue Semax page establish — and what requires lot-specific documentation?",
+      "solution": "This page can establish molecular reference information: the sequence, formula and weight, the relationship to ACTH fragments, the published research context and how Semax compares with Selank. It cannot establish what is in a particular vial.",
+      "explanation": "Lot-specific documentation is required for the actual purity, the actual analytical results, the lot identity, the salt or counterion, and any product-specific testing. Chemistry describes the target, and testing describes the sample. Keeping those apart is what makes the reference material on this page trustworthy."
+    }
+  ],
+  "comparison": {
+    "title": "Semax vs. Selank at a Glance",
+    "columns": [
+      "Attribute",
+      "Semax",
+      "Selank"
+    ],
+    "rows": [
+      [
+        "Sequence",
+        "MEHFPGP (Met-Glu-His-Phe-Pro-Gly-Pro)",
+        "TKPRPGP (Thr-Lys-Pro-Arg-Pro-Gly-Pro)"
+      ],
+      [
+        "General identity",
+        "ACTH-related synthetic peptide",
+        "Tuftsin-related synthetic peptide"
+      ],
+      [
+        "Length",
+        "7 amino acids",
+        "7 amino acids"
+      ],
+      [
+        "Average molecular weight (calculated)",
+        "About 813.9 g/mol",
+        "About 751.9 g/mol"
+      ],
+      [
+        "Research areas",
+        "Neurotrophin, ischemia and neurological research",
+        "Neurobiological research, including receptor-binding, enzyme-activity and BDNF-expression studies"
+      ],
+      [
+        "Evidence context",
+        "Experimental studies plus historical clinical literature",
+        "Experimental studies plus historical literature"
+      ]
+    ],
+    "note": "The two peptides share a Pro-Gly-Pro ending. The table does not rank them, and neither is presented as better or as suitable for combination."
+  },
+  "coa": {
+    "title": "Semax COA Checklist",
+    "intro": "A Semax certificate of analysis may include the following fields. Confirm each against the vial and the lot in hand.",
+    "items": [
+      [
+        "Lot number",
+        "Which production run the results describe. It should match the vial."
+      ],
+      [
+        "Product identity",
+        "The compound name, which should agree with the formula and weight shown."
+      ],
+      [
+        "Sequence or molecular identity",
+        "Whether the record ties the material to MEHFPGP."
+      ],
+      [
+        "Purity",
+        "The reported chromatographic purity value."
+      ],
+      [
+        "HPLC or UPLC method",
+        "The method and detection conditions behind the purity value."
+      ],
+      [
+        "Mass spectrometry result",
+        "Whether the measured mass fits Semax's reference mass."
+      ],
+      [
+        "Molecular form",
+        "Free peptide, acetate, trifluoroacetate or another counterion."
+      ],
+      [
+        "Testing laboratory",
+        "Who performed the analysis."
+      ],
+      [
+        "Test date",
+        "How recent the result is."
+      ],
+      [
+        "Content or moisture information",
+        "Peptide or water content, if reported."
+      ]
+    ],
+    "note": "Any field marked may include depends on the lot's own documentation. Veracue's first-party records confirm a field only when the lot certificate reports it."
+  },
+  "massSpectrometry": {
+    "title": "Chromatography and Mass Spectrometry: Two Different Questions",
+    "body": [
+      "Chromatography and mass spectrometry answer different questions. HPLC helps assess chromatographic purity. Mass spectrometry helps assess molecular identity and mass. Neither one alone establishes every aspect of material quality, and a single mass peak does not prove identity by itself.",
+      "HPLC purity should be interpreted together with the chromatographic method and detection conditions reported on the applicable analytical record.",
+      "For Semax, the calculated monoisotopic mass is approximately 813.348 Da. The observed m/z depends on the charge state and on ion or adduct conditions, so a report should not be judged against one universal value. Methionine oxidation can produce a mass shift of approximately +16 Da, so oxidation-related species may appear in an MS dataset. Interpretation should be based on the complete analytical spectrum and method."
+    ],
+    "keyValues": [
+      [
+        "Calculated monoisotopic mass",
+        "Approximately 813.348 Da"
+      ],
+      [
+        "Average molecular weight",
+        "Approximately 813.93 g/mol"
+      ]
+    ]
+  },
+  "researchLimitations": {
+    "title": "What the Evidence Can and Cannot Tell You",
+    "intro": "Historical clinical literature on Semax exists, and it stays on this page. It is not evidence for the Veracue research material.",
+    "points": [
+      [
+        "What exists",
+        "Gusev et al. (1997) compared 30 acute-stroke patients receiving Semax within combined therapy with 80 patients on conventional therapy, and reported some influence on recovery rate. Gusev et al. (2018) followed 110 post-stroke patients with and without Semax and reported higher plasma BDNF and faster Barthel-index improvement in the Semax subgroups."
+      ],
+      [
+        "Design and size",
+        "These were comparative studies of modest size. Their abstracts do not describe placebo control."
+      ],
+      [
+        "Comparators and context",
+        "Comparator groups differ between papers, and most of the literature comes from one geographic and linguistic setting. FDA's 2026 briefing did not evaluate Russian-language studies, and it found no human pharmacokinetic studies."
+      ],
+      [
+        "Chemical form",
+        "The clinical papers rarely say whether they used the free peptide or a salt, so they cannot be matched to a specific research lot."
+      ],
+      [
+        "No direct equivalence",
+        "A historical pharmaceutical preparation and a current research lot are different things. Findings from one do not carry over to the other."
+      ],
+      [
+        "Regulatory context",
+        "FDA's 2026 briefing describes Semax as a registered drug in Russia. Semax is not an FDA-approved drug in the United States. Regulatory materials change, so check current FDA sources."
+      ]
+    ]
+  },
+  "faq": [
+    {
+      "question": "What is Semax?",
+      "answer": "Semax is a synthetic heptapeptide with the sequence Met-Glu-His-Phe-Pro-Gly-Pro (MEHFPGP). It combines the ACTH(4-7) fragment with a Pro-Gly-Pro tail. Published research has examined it mainly in cell and rodent models, and Veracue offers it for Research Use Only."
+    },
+    {
+      "question": "What is the Semax peptide sequence?",
+      "answer": "The sequence is Met-Glu-His-Phe-Pro-Gly-Pro, written MEHFPGP in one-letter code. It has seven residues. The first four match the ACTH(4-7) region, and the last three, Pro-Gly-Pro, are an added extension. Supplier documents should resolve to this same order."
+    },
+    {
+      "question": "What is the molecular identity of Semax?",
+      "answer": "The free-peptide reference form has the formula C37H51N9O10S and an average molecular weight near 813.93 g/mol. PubChem lists CID 9811102, and FDA's review lists CAS 80714-61-0 and UNII I5FAL2585H. These describe the molecule. Lot documentation describes a specific vial."
+    },
+    {
+      "question": "Is Semax the same as ACTH?",
+      "answer": "No. ACTH is a 39-amino-acid hormone. Semax is a seven-residue synthetic peptide related to a short ACTH region. It is also not the same as ACTH(4-7), which is MEHF, or ACTH(4-10), which is MEHFRWG. Each is a separate molecule."
+    },
+    {
+      "question": "What does research show about Semax and BDNF?",
+      "answer": "A rat hippocampal study reported increased BDNF protein, TrkB phosphorylation and BDNF mRNA after Semax exposure. Other work reported neurotrophin changes in ischemia models. These are rat and cell findings. The receptor is not settled, and the results do not translate automatically to humans."
+    },
+    {
+      "question": "What does neuroprotective mean in Semax research?",
+      "answer": "It means a measured difference in an experimental injury model, such as altered gene or protein markers in rat ischemia studies, compared with a control. It describes a laboratory result. It does not show that Semax protects the human brain."
+    },
+    {
+      "question": "What is the difference between Semax and Selank?",
+      "answer": "They are different seven-residue peptides. Semax (MEHFPGP) is ACTH-related, while Selank (TKPRPGP) is described as tuftsin-related. Both end in Pro-Gly-Pro, but their first four residues and masses differ. Each has its own experimental literature and its own documentation."
+    },
+    {
+      "question": "Is Semax the same as Semax acetate?",
+      "answer": "Semax acetate is the acetate salt of the same peptide, and FDA's review lists it as a separate substance from the free peptide. This page does not state which form Veracue's material is. The form belongs to the lot documentation and should be confirmed there."
+    },
+    {
+      "question": "What are the benefits of Semax?",
+      "answer": "In research literature, a benefit means a reported finding in one experimental system, such as higher BDNF protein in rat hippocampus. It is not a product promise. Veracue does not claim benefits for people, and this material is for laboratory research only."
+    },
+    {
+      "question": "Does Veracue provide Semax dosage information?",
+      "answer": "No. Published doses belong to specific research contexts and do not transfer between them. Veracue does not provide human-use dosing or administration guidance. Researchers set experimental concentrations through their own validated study design and the primary literature."
+    },
+    {
+      "question": "What should a Semax COA include?",
+      "answer": "A Semax COA may include the lot number, product identity, purity, HPLC or UPLC method, a mass spectrometry result, molecular form, testing laboratory, test date, and peptide or water content. The lot number should match the vial, and the details should agree with one another."
+    },
+    {
+      "question": "Is Veracue Semax for human use?",
+      "answer": "No. Veracue Semax is offered for Research Use Only and is not intended for human or veterinary use, or for ingestion, injection or any form of administration. It has not been evaluated by the FDA for safety or efficacy."
+    }
+  ],
+  "references": [
+    "PubChem. Semax (ACTH (4-7), Pro-Gly-Pro), CID 9811102. pubchem.ncbi.nlm.nih.gov/compound/9811102",
+    "U.S. FDA. Evaluation of Semax-related bulk drug substances (semax free base and semax acetate). Briefing document dated 11 May 2026, Pharmacy Compounding Advisory Committee, 23-24 July 2026. fda.gov/media/193348/download. Also the source for summaries of Romanova 2006, Kost 2001, Eremin 2004-2005, Lyapina 2006 and Shevchenko 2006.",
+    "Dolotov OV et al. Semax, an analog of ACTH(4-10) with cognitive effects, regulates BDNF and trkB expression in the rat hippocampus. Brain Res. 2006;1117(1):54-60. PMID 16996037.",
+    "Dolotov OV et al. Semax, an analogue of adrenocorticotropin (4-10), binds specifically and increases levels of brain-derived neurotrophic factor protein in rat basal forebrain. J Neurochem. 2006;97(Suppl 1):82-86. doi:10.1111/j.1471-4159.2006.03658.x",
+    "Shadrina MI et al. Rapid and efficient NGF and BDNF mRNA induction in the rat glial cell cultures upon ACTH(4-10) analog 'Semax' action. Neurosci Lett. 2001;308:115-118.",
+    "Dmitrieva VG et al. Semax and Pro-Gly-Pro activate the transcription of neurotrophins and their receptor genes after cerebral ischemia. Cell Mol Neurobiol. 2010;30(1):71-79. PMID 19633950.",
+    "Medvedeva EV et al. The peptide semax affects the expression of genes related to the immune and vascular systems in rat brain focal ischemia: genome-wide transcriptional analysis. BMC Genomics. 2014;15:228. doi:10.1186/1471-2164-15-228",
+    "Filippenkov IB et al. Novel insights into the protective properties of ACTH(4-7)PGP (Semax) peptide at the transcriptome level following cerebral ischaemia-reperfusion in rats. Genes. 2020;11(6):681. doi:10.3390/genes11060681",
+    "Sudarkina OY et al. Brain protein expression profile confirms the protective effect of the ACTH(4-7)PGP peptide (Semax) in a rat model of cerebral ischemia-reperfusion. Int J Mol Sci. 2021;22(12):6179. doi:10.3390/ijms22126179",
+    "Potaman VN et al. N-terminal degradation of ACTH(4-10) and its synthetic analog semax by the rat blood enzymes. Biochem Biophys Res Commun. 1991;176:741-746.",
+    "Gusev EI et al. Effectiveness of semax in acute period of hemispheric ischemic stroke (a clinical and electrophysiological study). Zh Nevrol Psikhiatr Im S S Korsakova. 1997;97(6):26-34. PMID 11517472.",
+    "Gusev EI, Martynov MY, Kostenko EV et al. The efficacy of semax in the treatment of patients at different stages of ischemic stroke. Zh Nevrol Psikhiatr Im S S Korsakova. 2018. PMID 29798983.",
+    "Sigma-Aldrich. Semax, catalog listing S8826 (name given with a trifluoroacetate salt synonym). sigmaaldrich.com/US/en/product/sigma/s8826"
+  ],
+  "compliance": {
+    "heading": "Research Use Only",
+    "statement": "Veracue Semax is offered for Research Use Only and is not intended for human or veterinary use. It is intended for laboratory research, scientific investigation and analytical characterization. It is not for ingestion, injection, inhalation or any form of administration, and it has not been evaluated by the FDA for safety or efficacy.",
+    "guidance": "Veracue does not provide human-use dosing or administration guidance. This page describes published research and documentation, and it does not offer treatment advice or consumer recommendations.",
+    "links": [
+      {
+        "label": "Medical Disclaimer",
+        "url": "/medical-disclaimer"
+      },
+      {
+        "label": "Terms & Conditions",
+        "url": "/terms-and-conditions"
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Evaluate Semax Documentation",
+    "text": "Check the certificate library, confirm amounts on the current product listing, or contact the team with questions about lot documentation.",
+    "buttons": [
+      {
+        "label": "View Certificates",
+        "url": "/certificates"
+      },
+      {
+        "label": "Contact Us",
+        "url": "/contact-us"
+      },
+      {
+        "label": "Browse the Shop",
+        "url": "/shop"
+      }
+    ]
+  },
+  "internalLinks": [
+    {
+      "label": "Selank",
+      "url": "/product/selank"
+    },
+    {
+      "label": "Certificates",
+      "url": "/certificates"
+    },
+    {
+      "label": "Contact Us",
+      "url": "/contact-us"
+    },
+    {
+      "label": "Shop",
+      "url": "/shop"
+    },
+    {
+      "label": "Medical Disclaimer",
+      "url": "/medical-disclaimer"
+    },
+    {
+      "label": "Terms & Conditions",
+      "url": "/terms-and-conditions"
+    }
+  ],
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://veracue-peptides.vercel.app/product/semax#webpage",
+      "url": "https://veracue-peptides.vercel.app/product/semax",
+      "name": "Semax Research Peptide | Sequence, Evidence & COA | Veracue",
+      "description": "Semax peptide for laboratory research: MEHFPGP sequence, molecular identity, BDNF and neurobiological research, Semax vs Selank and COA checks. RUO only.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Veracue Peptides",
+        "url": "https://veracue-peptides.vercel.app"
+      },
+      "breadcrumb": {
+        "@id": "https://veracue-peptides.vercel.app/product/semax#breadcrumb"
+      },
+      "about": {
+        "@id": "https://veracue-peptides.vercel.app/product/semax#molecule"
+      },
+      "mainEntity": {
+        "@id": "https://veracue-peptides.vercel.app/product/semax#product"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://veracue-peptides.vercel.app/product/semax#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://veracue-peptides.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Shop",
+          "item": "https://veracue-peptides.vercel.app/shop"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Semax Peptide",
+          "item": "https://veracue-peptides.vercel.app/product/semax"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://veracue-peptides.vercel.app/product/semax#product",
+      "name": "Semax Peptide",
+      "url": "https://veracue-peptides.vercel.app/product/semax",
+      "description": "Semax (MEHFPGP) offered by Veracue for Research Use Only. Not for human or veterinary use.",
+      "category": "Research peptide",
+      "brand": {
+        "@type": "Brand",
+        "name": "Veracue Peptides"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MolecularEntity",
+      "@id": "https://veracue-peptides.vercel.app/product/semax#molecule",
+      "name": "Semax",
+      "alternateName": [
+        "ACTH(4-7)-Pro-Gly-Pro",
+        "MEHFPGP"
+      ],
+      "description": "Synthetic heptapeptide Met-Glu-His-Phe-Pro-Gly-Pro, related to the ACTH(4-7) sequence. Reference data describe the free peptide.",
+      "molecularFormula": "C37H51N9O10S",
+      "molecularWeight": {
+        "@type": "QuantitativeValue",
+        "value": 813.93,
+        "unitText": "g/mol"
+      },
+      "monoisotopicMolecularWeight": {
+        "@type": "QuantitativeValue",
+        "value": 813.348,
+        "unitText": "Da"
+      },
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "CAS",
+          "value": "80714-61-0"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "PubChem CID",
+          "value": "9811102"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "UNII",
+          "value": "I5FAL2585H"
+        }
+      ],
+      "sameAs": "https://pubchem.ncbi.nlm.nih.gov/compound/9811102"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://veracue-peptides.vercel.app/product/semax#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Semax?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Semax is a synthetic heptapeptide with the sequence Met-Glu-His-Phe-Pro-Gly-Pro (MEHFPGP). It combines the ACTH(4-7) fragment with a Pro-Gly-Pro tail. Published research has examined it mainly in cell and rodent models, and Veracue offers it for Research Use Only."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the Semax peptide sequence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The sequence is Met-Glu-His-Phe-Pro-Gly-Pro, written MEHFPGP in one-letter code. It has seven residues. The first four match the ACTH(4-7) region, and the last three, Pro-Gly-Pro, are an added extension. Supplier documents should resolve to this same order."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the molecular identity of Semax?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The free-peptide reference form has the formula C37H51N9O10S and an average molecular weight near 813.93 g/mol. PubChem lists CID 9811102, and FDA's review lists CAS 80714-61-0 and UNII I5FAL2585H. These describe the molecule. Lot documentation describes a specific vial."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Semax the same as ACTH?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. ACTH is a 39-amino-acid hormone. Semax is a seven-residue synthetic peptide related to a short ACTH region. It is also not the same as ACTH(4-7), which is MEHF, or ACTH(4-10), which is MEHFRWG. Each is a separate molecule."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does research show about Semax and BDNF?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A rat hippocampal study reported increased BDNF protein, TrkB phosphorylation and BDNF mRNA after Semax exposure. Other work reported neurotrophin changes in ischemia models. These are rat and cell findings. The receptor is not settled, and the results do not translate automatically to humans."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does neuroprotective mean in Semax research?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It means a measured difference in an experimental injury model, such as altered gene or protein markers in rat ischemia studies, compared with a control. It describes a laboratory result. It does not show that Semax protects the human brain."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between Semax and Selank?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They are different seven-residue peptides. Semax (MEHFPGP) is ACTH-related, while Selank (TKPRPGP) is described as tuftsin-related. Both end in Pro-Gly-Pro, but their first four residues and masses differ. Each has its own experimental literature and its own documentation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Semax the same as Semax acetate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Semax acetate is the acetate salt of the same peptide, and FDA's review lists it as a separate substance from the free peptide. This page does not state which form Veracue's material is. The form belongs to the lot documentation and should be confirmed there."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of Semax?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In research literature, a benefit means a reported finding in one experimental system, such as higher BDNF protein in rat hippocampus. It is not a product promise. Veracue does not claim benefits for people, and this material is for laboratory research only."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Veracue provide Semax dosage information?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Published doses belong to specific research contexts and do not transfer between them. Veracue does not provide human-use dosing or administration guidance. Researchers set experimental concentrations through their own validated study design and the primary literature."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should a Semax COA include?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Semax COA may include the lot number, product identity, purity, HPLC or UPLC method, a mass spectrometry result, molecular form, testing laboratory, test date, and peptide or water content. The lot number should match the vial, and the details should agree with one another."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Veracue Semax for human use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Veracue Semax is offered for Research Use Only and is not intended for human or veterinary use, or for ingestion, injection or any form of administration. It has not been evaluated by the FDA for safety or efficacy."
+          }
+        }
+      ]
+    }
+  ]
+}

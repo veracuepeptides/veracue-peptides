@@ -4,13 +4,16 @@ import { getPayload } from 'payload'
 import configPromise from '@payload-config'
 import { OrderConfirmationClient } from './OrderConfirmationClient'
 import { notFound } from 'next/navigation'
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, getMessages } from 'next-intl/server'
+import { NextIntlClientProvider } from 'next-intl'
+import { pickMessages } from '@/lib/i18n/pickMessages'
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('orderConfirmation')
   return {
     title: t('metaTitle'),
     description: t('metaDescription'),
+    robots: { index: false, follow: false },
   }
 }
 
@@ -22,7 +25,7 @@ async function buildPreviewOrder(payload: Awaited<ReturnType<typeof getPayload>>
   let name = 'NAD+ (Nicotinamide Adenine Dinucleotide)'
   let variant = '10mg'
   let price = 19
-  let image = '/veracue-images/vp-product-vial.jpeg'
+  let image = '/veracue-images/vp-product-vial.webp'
 
   try {
     const res = await payload.find({ collection: 'products', where: { slug: { equals: 'nad-plus' } }, depth: 2, limit: 1 })
@@ -76,6 +79,7 @@ export default async function OrderConfirmationPage({ params }: { params: Promis
   }
 
   const payload = await getPayload({ config: configPromise })
+  const pageMessages = pickMessages(await getMessages(), ['orderConfirmation'])
 
   if (id === 'preview') {
     if (process.env.NODE_ENV === 'production') {
@@ -83,7 +87,9 @@ export default async function OrderConfirmationPage({ params }: { params: Promis
     }
     return (
       <div className="pt-20">
-        <OrderConfirmationClient order={await buildPreviewOrder(payload, t)} />
+        <NextIntlClientProvider messages={pageMessages}>
+          <OrderConfirmationClient order={await buildPreviewOrder(payload, t)} />
+        </NextIntlClientProvider>
       </div>
     )
   }
@@ -176,7 +182,7 @@ export default async function OrderConfirmationPage({ params }: { params: Promis
         variant: displayVariant, 
         quantity: item.quantity,
         price: typeof item.price === 'number' ? item.price : (productData?.price || productData?.basePrice || 0),
-        image: (variantImageUrl || productData?.images?.[0]?.image?.url || productData?.images?.[0]?.url || '/veracue-images/veracue-research-grade-50mg-studio-portrait.png').replace(/ /g, '%20')
+        image: (variantImageUrl || productData?.images?.[0]?.image?.url || productData?.images?.[0]?.url || '/veracue-images/veracue-research-grade-studio-portrait.webp').replace(/ /g, '%20')
      }
   })
 
@@ -222,7 +228,9 @@ export default async function OrderConfirmationPage({ params }: { params: Promis
 
   return (
     <div className="pt-20">
-      <OrderConfirmationClient order={orderData} />
+      <NextIntlClientProvider messages={pageMessages}>
+        <OrderConfirmationClient order={orderData} />
+      </NextIntlClientProvider>
     </div>
   )
 }

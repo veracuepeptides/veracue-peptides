@@ -1,0 +1,959 @@
+{
+  "title": "Veracue Peptides -- Cagrilintide Product Page Content Package (Strict RUO)",
+  "prepared_for": "Veracue Peptides (veracue-peptides.vercel.app)",
+  "research_date": "2026-09-19",
+  "site_inspection_note": "Live site inspected: homepage, /shop, /certificates, footer, navigation, and the live product-card conventions. Confirmed live routes: /shop, /certificates, /peptide-calculator, /blog, /account, /about-us, /faq, /affiliates, /contact-us, /cart, /login, /shipping-policy, /refund-policy, /terms-and-conditions, /privacy-policy, /medical-disclaimer, and product routes on the /product/<slug> pattern (/product/retatrutide, /product/semaglutide, /product/tirzepatide, /product/selank, /product/ghk-cu, /product/bpc-157, /product/tb-500, /product/ahk-cu, /product/nad-plus). The /shop catalog currently renders only 3 compounds (Selank, AHK-Cu, NAD+); the homepage best-sellers grid links to the wider set above. The /certificates archive lists 12 lot reports. No Cagrilintide record exists in either the catalog or the COA archive.",
+  "A_verified_molecule_facts": {
+    "evidence_class": "Verified molecule-level fact unless otherwise labelled. Source keys map to section R.",
+    "identity": {
+      "name": "Cagrilintide",
+      "development_code": "AM833 (also referenced as 'compound 23' in the Kruse et al. medicinal-chemistry paper)",
+      "developer": "Novo Nordisk",
+      "cas_number": "1415456-99-3",
+      "molecular_formula": "C194H312N54O59S2 (free-acid form)",
+      "molecular_weight": "~4,409 g/mol (free-acid form)",
+      "pubchem_cid": "171397054 (PubChem's Cagrilintide compound record). Note: secondary records exist for salt/related forms, so researchers matching a COA to a database entry should confirm which form is referenced.",
+      "unii": "AO43BIF1U8",
+      "drugbank": "DB18887",
+      "amino_acid_sequence_37mer": "KCNTATCATQRLAEFLRHSSNNFGPILPPTNVGSNTP (as recorded in the FDA GSRS substance registry, classified there as an amylin analog, sequence origin human)",
+      "sources": [
+        "R2",
+        "R3",
+        "R6",
+        "R7"
+      ]
+    },
+    "classification_and_structure": {
+      "classification": "Long-acting, acylated (lipidated) synthetic analog of human amylin. Pharmacologically characterized as a nonselective agonist of amylin receptors (AMY1-3) and the calcitonin receptor (CTR) -- commonly described in the literature as a dual amylin and calcitonin receptor agonist (DACRA).",
+      "structure": "37-amino-acid linear peptide backbone based on the human amylin sequence, containing an intramolecular disulfide bridge (a structural feature shared across the calcitonin peptide family), conjugated at the lysine residue in position 1 to a C20 fatty diacid via a hydrophilic linker.",
+      "basis_of_long_action": "The C20 fatty-diacid moiety confers reversible binding to plasma albumin, which the literature identifies as the basis for the compound's prolonged plasma persistence relative to native amylin -- an acylation strategy conceptually comparable to that used in long-acting GLP-1 analogs.",
+      "sources": [
+        "R1",
+        "R2",
+        "R4"
+      ]
+    },
+    "receptor_pharmacology": {
+      "summary": "Characterized in receptor pharmacology work as a novel agonist across calcitonin-family G protein-coupled receptors, with reported binding at human, mouse, and rat amylin receptors. Native amylin is a 37-amino-acid pancreatic beta-cell peptide co-secreted with insulin; published reviews describe its central signalling via the area postrema and hypothalamus as anatomically and mechanistically distinct from GLP-1 receptor signalling.",
+      "sources": [
+        "R1",
+        "R5"
+      ]
+    },
+    "preclinical_research_findings": {
+      "summary": "Published preclinical work reports reduced food intake in rats and pharmacokinetic characterization in rodent models. A separate literature strand reports that amylin analogs including cagrilintide produce sustained weight reduction in rats while suppressing feeding less robustly and more transiently in mice -- a documented species-dependent difference. A 2025 cross-species dorsal vagal complex atlas examined calcitonin-receptor-expressing (Calcr+) neurons as a candidate neural substrate for amylin-analog effects on energy balance; that mechanism remains under investigation rather than established.",
+      "evidence_class": "Published research finding (preclinical / in vitro)",
+      "sources": [
+        "R2",
+        "R8"
+      ]
+    },
+    "human_clinical_research_findings": {
+      "evidence_class": "Published research finding (human clinical) -- describes specific investigational drug products under defined trial protocols",
+      "phase_2": "A Phase 2 randomized trial (Frias et al., The Lancet, 2023) in 92 adults with type 2 diabetes and overweight/obesity reported 15.6% body-weight change at 32 weeks with the cagrilintide-semaglutide combination, 5.1% with semaglutide alone, and 8.1% with cagrilintide alone.",
+      "redefine_1": "REDEFINE 1 (Garvey et al., N Engl J Med, published online June 22, 2025): 68-week, double-blind Phase 3a trial, 3,417 adults with overweight/obesity without type 2 diabetes, randomized 21:3:3:7 to cagrilintide-semaglutide 2.4/2.4 mg (n=2,108), semaglutide 2.4 mg alone (n=302), cagrilintide 2.4 mg alone (n=302), or placebo (n=705), all with lifestyle intervention. Reported mean body-weight change at 68 weeks: -20.4% combination, -14.9% semaglutide alone, -11.5% cagrilintide alone, -3.0% placebo.",
+      "redefine_2": "REDEFINE 2 (Davies et al., N Engl J Med, published online June 22, 2025): 68-week Phase 3 trial, 1,206 adults with overweight/obesity and type 2 diabetes. Reported mean body-weight change: -13.7% combination vs. -3.1% placebo.",
+      "redefine_4": "REDEFINE 4 (topline announced February 23, 2026): 84-week, open-label Phase 3 head-to-head study, 809 adults with obesity and at least one comorbidity, mean baseline weight 114.2 kg, CagriSema 2.4/2.4 mg vs. tirzepatide 15 mg. Reported 23.0% vs. 25.5% (efficacy estimand) and 20.2% vs. 23.6% (treatment-regimen estimand). The trial did not meet its primary endpoint of non-inferiority to tirzepatide.",
+      "redefine_5": "REDEFINE 5 (published in The Lancet, April 2026): 68-week double-blind Phase 3a trial, 331 participants; reported estimated mean body-weight change of -18.4% for CagriSema vs. -11.7% for semaglutide.",
+      "redefine_3": "REDEFINE 3: event-driven cardiovascular outcomes trial, ongoing. No peer-reviewed cardiovascular endpoint data for CagriSema published as of this research date.",
+      "reimagine": "REIMAGINE program (Phase 3, type 2 diabetes). REIMAGINE 2 headline results announced February 2, 2026, reporting superior HbA1c reduction and weight loss vs. semaglutide at week 68 across tested doses. Detailed results scheduled for presentation at a 2026 scientific conference.",
+      "redefine_11": "REDEFINE 11: ongoing Phase 3 trial testing longer duration at top dose and dose re-escalation; readout expected H1 2027.",
+      "sources": [
+        "R9",
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15"
+      ]
+    },
+    "regulatory_status": {
+      "evidence_class": "Development-program / regulatory information -- time-sensitive, verified as of 2026-09-19",
+      "status": "CagriSema (cagrilintide 2.4 mg / semaglutide 2.4 mg) is NOT approved by the FDA, and is not approved in the EU. Novo Nordisk submitted a New Drug Application to the FDA on December 18, 2025 for chronic weight management in adults with obesity, or overweight with at least one weight-related comorbidity, based on REDEFINE 1 and REDEFINE 2.",
+      "expected_decision": "Company guidance points to an FDA decision in the fourth quarter of 2026. As of this research date, no PDUFA action date has been publicly confirmed by either the FDA or Novo Nordisk. This is company expectation, not an FDA decision.",
+      "type_2_diabetes_indication": "Following REIMAGINE 1 and REDEFINE 3 results, Novo Nordisk stated it would approach authorities to discuss a regulatory pathway for CagriSema in type 2 diabetes. No filing for that indication has been confirmed.",
+      "cagrilintide_monotherapy": "Cagrilintide alone is not approved in any jurisdiction and remains investigational.",
+      "reverify_note": "This status must be re-verified immediately before publication and re-checked periodically thereafter, since an FDA action in Q4 2026 would change it.",
+      "sources": [
+        "R12",
+        "R16",
+        "R17"
+      ]
+    },
+    "not_established_at_molecule_level": [
+      "Any approved regulatory status or approved labeling",
+      "Cardiovascular outcome data for CagriSema (REDEFINE 3 ongoing, unpublished)",
+      "Long-term multi-year safety data",
+      "Human efficacy or safety outside the specific populations, doses, durations, and endpoints of the cited trials",
+      "That cagrilintide monotherapy behaves equivalently to the CagriSema combination"
+    ]
+  },
+  "B_verified_veracue_product_facts": {
+    "status": "NOT CURRENTLY PUBLISHED / NOT VERIFIED",
+    "finding": "No Cagrilintide product record exists on the live Veracue site. The /shop catalog renders 3 compounds (Selank, AHK-Cu, NAD+) and explicitly states '-- End of Catalog (3 Compounds Total) --'. The /certificates archive lists 12 lot reports (BPC-157 5mg and 10mg, TB-500 5mg, GHK-Cu 50mg, NAD+ 500mg, Semaglutide 5mg, Tirzepatide 10mg, Epithalon 50mg, CJC-1295 No DAC 5mg, Ipamorelin 5mg, AOD-9604 5mg, MOTS-c 10mg). None is Cagrilintide.",
+    "consequence": "Every Veracue-specific commercial and analytical field below is therefore unverified and has NOT been invented anywhere in this package. The customer-facing copy is written to read correctly without these values and to accept them cleanly once supplied -- there are no bracketed placeholders in the published copy.",
+    "fields_not_currently_verified": [
+      "Vial size / quantity",
+      "Price",
+      "Stock status / availability",
+      "SKU / MPN / GTIN",
+      "Current lot or batch number",
+      "HPLC purity result for a Cagrilintide lot",
+      "Mass spectrometry / identity result for a Cagrilintide lot",
+      "Testing laboratory name",
+      "Test date",
+      "Certificate of Analysis document",
+      "Product-specific storage conditions",
+      "Product-specific form (e.g. lyophilized powder)",
+      "Product photography",
+      "Customer reviews or ratings"
+    ],
+    "site_wide_claims_note": "The live site makes site-wide analytical claims (>=99.0% HPLC threshold, ESI-MS or MALDI-TOF identity confirmation, ISO-7 cleanroom synthesis, lot-specific COA, US third-party laboratories). These are Veracue's published standards, not a measured result for a Cagrilintide lot. This page therefore describes the analytical program in general terms and does not attach any purity figure or identity result to Cagrilintide. The site's own footer already states that purity may vary by product and lot -- consistent with this approach.",
+    "required_before_publication": [
+      "Confirm vial size(s) and price, or publish the page with the specification panel showing 'Not currently published' for those fields",
+      "Supply the first Cagrilintide lot COA (lot number, HPLC result, MS result, testing lab, test date)",
+      "Confirm product form and storage conditions from Veracue's own documentation",
+      "Confirm final product image"
+    ]
+  },
+  "C_keyword_analysis": {
+    "note": "No new keyword file was supplied with this brief. The analysis below carries forward the Cagrilintide keyword export reviewed for this compound (a Google-Trends-style related-queries workbook of query / relative search interest 0-100 / trend flag, seeded from several root terms). Relative interest scores indicate query volume and trend only -- they are not evidence of scientific validity, efficacy, demand, or regulatory acceptance, and are not treated as such.",
+    "primary_keyword": "cagrilintide peptide",
+    "core_entity": "Cagrilintide",
+    "secondary_keywords": [
+      "cagrilintide",
+      "what is cagrilintide",
+      "what is cagrilintide peptide",
+      "cagrilintide semaglutide",
+      "cagrisema",
+      "novo nordisk cagrisema",
+      "amylin",
+      "amylin analog"
+    ],
+    "supporting_research_terms_targeted": [
+      "cagrilintide research peptide",
+      "cagrilintide research material",
+      "cagrilintide COA",
+      "cagrilintide purity",
+      "cagrilintide HPLC",
+      "cagrilintide mass spectrometry",
+      "cagrilintide analytical testing",
+      "cagrilintide research use only"
+    ],
+    "comparison_intent_terms": [
+      "cagrilintide vs retatrutide",
+      "cagrilintide retatrutide metabolic outcomes study",
+      "cagrisema vs tirzepatide",
+      "retatrutide vs tirzepatide"
+    ],
+    "human_use_intent_acknowledged_but_not_answered": [
+      "cagrilintide dosage",
+      "cagrilintide side effects",
+      "peptides for weight loss",
+      "cagrilintide benefits"
+    ],
+    "excluded_unrelated_category_queries": [
+      "klow peptide",
+      "cartalax",
+      "glutathione",
+      "kpv peptide",
+      "adamax",
+      "vip peptide",
+      "dsip",
+      "kisspeptin",
+      "sermorelin",
+      "cjc 1295",
+      "ipamorelin",
+      "semax",
+      "epithalon",
+      "mots-c",
+      "peptide calculator",
+      "nvo stock",
+      "novo nordisk stock",
+      "foundayo"
+    ],
+    "exclusion_rationale": "These surfaced in the export because it was seeded partly from generic 'peptide' root terms. Forcing them into a Cagrilintide page would dilute topical focus and create false entity associations that harm rather than help GEO."
+  },
+  "D_search_intent_aeo_map": [
+    {
+      "question": "What is Cagrilintide?",
+      "intent": "Definitional",
+      "answered_in": "Hero + 'What Is Cagrilintide?' H2 opening sentence; FAQ 1"
+    },
+    {
+      "question": "What is Cagrilintide peptide?",
+      "intent": "Definitional",
+      "answered_in": "'What Is Cagrilintide?' paragraph 2; FAQ 2"
+    },
+    {
+      "question": "What type of peptide is Cagrilintide?",
+      "intent": "Classification",
+      "answered_in": "'What Is Cagrilintide?'; FAQ 3"
+    },
+    {
+      "question": "How is Cagrilintide different from native amylin?",
+      "intent": "Disambiguation",
+      "answered_in": "'What Is Cagrilintide?' + Problem/Solution #2; FAQ 5"
+    },
+    {
+      "question": "What is Cagrilintide studied in?",
+      "intent": "Research context",
+      "answered_in": "'Research Context' H2; FAQ 4, 6"
+    },
+    {
+      "question": "What is Cagrilintide's mechanism at a research level?",
+      "intent": "Mechanistic",
+      "answered_in": "'What Is Cagrilintide?' receptor paragraph; FAQ 7"
+    },
+    {
+      "question": "What is the relationship between Cagrilintide and CagriSema?",
+      "intent": "Entity disambiguation",
+      "answered_in": "'What Is CagriSema?' H2; FAQ 10"
+    },
+    {
+      "question": "How is Cagrilintide different from semaglutide?",
+      "intent": "Comparison",
+      "answered_in": "'Cagrilintide and Semaglutide' H2; FAQ 11"
+    },
+    {
+      "question": "How is Cagrilintide different from retatrutide?",
+      "intent": "Comparison",
+      "answered_in": "'Cagrilintide and Retatrutide' H2; FAQ 12"
+    },
+    {
+      "question": "Cagrilintide dosage / how to use Cagrilintide",
+      "intent": "Human use -- redirected",
+      "answered_in": "'Why Veracue Does Not Provide Human Dosage Guidance' H2; FAQ 18"
+    },
+    {
+      "question": "Cagrilintide side effects",
+      "intent": "Human safety -- redirected",
+      "answered_in": "'How to Read Reported Observations' H2; FAQ 19"
+    },
+    {
+      "question": "Cagrilintide benefits / peptides for weight loss",
+      "intent": "Consumer benefit -- redirected",
+      "answered_in": "'Research Areas Involving Cagrilintide' H2"
+    },
+    {
+      "question": "How should researchers evaluate Cagrilintide research material?",
+      "intent": "Procurement / evaluation",
+      "answered_in": "Problem/Solution set, analytical section, procurement checklist"
+    },
+    {
+      "question": "What does a Cagrilintide COA tell a researcher?",
+      "intent": "Documentation",
+      "answered_in": "'How to Read a Cagrilintide COA'; FAQ 15"
+    },
+    {
+      "question": "How are identity and purity evaluated?",
+      "intent": "Analytical",
+      "answered_in": "Analytical section; Problem/Solution #5; FAQ 13, 14"
+    },
+    {
+      "question": "Does published research validate a commercial lot?",
+      "intent": "Evidence boundary",
+      "answered_in": "Problem/Solution #9; FAQ 20"
+    }
+  ],
+  "E_strategy": {
+    "positioning": "The page does not compete on claim strength -- the RUO mandate forecloses that, and every competitor in this category already claims 99% purity. It competes on documentation literacy: the 12 problem/solution sections, the documented-vs-not-established table, and the procurement checklist are the differentiators and the conversion mechanism. A technically informed buyer converts on the page that tells them what to check, including where this supplier's own evidence is not yet published.",
+    "seo": "Primary keyword in H1, first sentence, one H2, meta title, slug, and image alt. Secondary terms appear 1-3 times each, only where scientifically relevant. Long-tail question coverage is carried by the FAQ block and the answer-first H2 openings rather than by repeated phrase insertion. No exact-match phrase is repeated unnaturally.",
+    "geo": "Entity chain stated once, explicitly, in plain prose: Cagrilintide -> synthetic long-acting amylin analog -> amylin/calcitonin receptor research -> metabolic-signalling research -> analytical characterization -> HPLC -> mass spectrometry -> lot-specific documentation -> Research Use Only. Negative relations are stated just as explicitly (Cagrilintide is not semaglutide, not retatrutide, not CagriSema), since generative systems conflate these compounds frequently and the disambiguation itself is extractable, citable content.",
+    "aeo": "Every major H2 opens with a self-contained direct answer in the first one or two sentences, before expansion. FAQ answers are written to stand alone if lifted out of context. Numeric and identifier facts (CAS, formula, sequence length, trial names) are stated in prose rather than only in tables, so they survive extraction.",
+    "conversion_approach": "CTAs are documentation-oriented ('Request current lot documentation', 'Browse the COA archive') rather than urgency-oriented. This matches the live site's existing 'Request Specific Lot COA' pattern and keeps the page within RUO framing."
+  },
+  "F_seo_metadata": {
+    "pattern_note": "Matches the live AHK-Cu page convention: title is '<Compound> Research Peptide (<alternate identity>) | Veracue'; description names the compound, gives a short chemical descriptor, then lists what the PAGE covers — not what the compound does. Character counts match the AHK-Cu reference exactly (55 / 156).",
+    "seo_title": "Cagrilintide Research Peptide (Amylin Analog) | Veracue",
+    "seo_title_char_count": 55,
+    "seo_title_alt_with_code": "Cagrilintide Research Peptide (AM833) | Veracue",
+    "seo_title_alt_char_count": 47,
+    "meta_description": "Cagrilintide, a long-acting amylin analog, for lab research: molecular identity, what the REDEFINE trials tested, Cagrilintide vs CagriSema, and COA checks.",
+    "meta_description_char_count": 156,
+    "meta_description_alt_comparison_focus": "Cagrilintide, a long-acting amylin analog, for lab research: molecular identity, what REDEFINE tested, Cagrilintide vs semaglutide and retatrutide, COA checks.",
+    "meta_description_alt_comparison_char_count": 159,
+    "meta_description_alt_am833": "Cagrilintide, the long-acting amylin analog AM833, for lab research: molecular identity, what the REDEFINE trials tested, CagriSema, and COA checks.",
+    "meta_description_alt_am833_char_count": 148,
+    "canonical_url": "https://veracue-peptides.vercel.app/product/cagrilintide",
+    "url_slug": "/product/cagrilintide",
+    "slug_verification": "Confirmed against the live /product/<slug> pattern (/product/ahk-cu, /product/retatrutide, /product/semaglutide).",
+    "og_title": "Cagrilintide Research Peptide (Amylin Analog) | Veracue",
+    "og_description": "Cagrilintide, a long-acting amylin analog, supplied for laboratory research only: molecular identity, published evidence and its limits, CagriSema context, and COA checks.",
+    "og_type": "website",
+    "og_image_note": "Site generates OG images dynamically via /api/og?title=...&description=... — follow that existing pattern rather than specifying a static asset.",
+    "lang": "en",
+    "category": "Weight Loss & Metabolic (site filter taxonomy)",
+    "product_card_eyebrow": "Metabolic Research (matches live Semaglutide / Retatrutide / Tirzepatide cards)",
+    "template_issues_observed_on_ahk_cu_audit": [
+      "Robots meta tag not defined",
+      "Author missing",
+      "Publisher missing",
+      "Keywords missing (low priority — not a ranking factor)",
+      "Heading hierarchy inverted: 12 H4s against 9 H3s and 6 H2s",
+      "These are site-wide template issues, not content issues, and will reproduce on the Cagrilintide page unless the product template is fixed first."
+    ]
+  },
+  "G_complete_product_page": {
+    "page_assembly_order": [
+      "hero",
+      "short_product_description (card + top-of-page blurb)",
+      "specification_panel",
+      "what_is_cagrilintide",
+      "research_context",
+      "research_areas",
+      "entity_relationships",
+      "what_is_cagrisema",
+      "cagrilintide_and_semaglutide",
+      "cagrilintide_and_retatrutide",
+      "dosage_search_intent",
+      "reported_observations",
+      "problem_solution_intro",
+      "twelve_problem_solution_sections (section H)",
+      "analytical_testing_and_coa (section K)",
+      "how_to_read_a_coa (section K)",
+      "documented_vs_not_established (section L)",
+      "procurement_checklist (section M)",
+      "closing_cta"
+    ],
+    "hero": "# Veracue Cagrilintide\n\n**Research Use Only. This material is intended solely for laboratory research and scientific investigation and is not intended for human or veterinary use.**\n\nCagrilintide is a long-acting, acylated analog of human amylin, studied as a nonselective agonist of amylin and calcitonin receptors. Veracue supplies it as a research material for laboratory work.\n\nThis page covers what is documented about the molecule, what analytical evidence a researcher should expect before using any Cagrilintide material, and -- explicitly -- which product-specific details Veracue has not yet published.\n\n[Request current lot documentation](/contact-us) · [Browse the certificate archive](/certificates)",
+    "specification_panel": "### Research Material Specification\n\n| Field | Value |\n| --- | --- |\n| Product name | Veracue Cagrilintide |\n| Compound | Cagrilintide (AM833) |\n| CAS number | 1415456-99-3 |\n| Molecular formula | C194H312N54O59S2 (free acid) |\n| Molecular weight | ~4,409 g/mol (free acid) |\n| Research classification | Amylin analog; amylin / calcitonin receptor agonist |\n| Quantity | Not currently published |\n| Purity result | Not currently published for this compound |\n| Identity testing | Not currently published for this compound |\n| Lot number | Not currently published |\n| Certificate of Analysis | Not yet listed in the [certificate archive](/certificates) |\n| Intended use | Research Use Only -- not for human or veterinary use |\n\nThe identity fields above describe Cagrilintide as a molecule, drawn from public chemical registries. They are reference values for comparison against a certificate of analysis -- not measurements taken on a Veracue lot. Fields marked *not currently published* are exactly that: Veracue has not released a tested Cagrilintide lot, and nothing has been estimated or carried over from other products to fill them in.",
+    "what_is_cagrilintide": "## What Is Cagrilintide?\n\nCagrilintide is a synthetic long-acting analog of amylin, a pancreatic hormone, engineered to act as a nonselective agonist at amylin receptors and the calcitonin receptor. It carries the development code AM833 and was developed by Novo Nordisk.\n\nStructurally it is a 37-amino-acid peptide built on the human amylin backbone, with an intramolecular disulfide bridge — a feature shared across the calcitonin peptide family — and a C20 fatty diacid attached at the lysine residue in position one through a hydrophilic linker. That conjugation is the structurally interesting part for anyone interpreting its pharmacology: it binds reversibly to circulating albumin, and the literature attributes the molecule's extended plasma persistence to that binding. It is the same design logic used in long-acting GLP-1 analogs, applied to a different peptide family.\n\nThe distinction from native amylin matters more than it first appears. Amylin is a naturally occurring 37-amino-acid peptide co-secreted with insulin from pancreatic beta cells, signalling centrally through the area postrema and hypothalamus by pathways published reviews describe as anatomically distinct from GLP-1's. Cagrilintide shares that backbone but is a deliberately modified molecule. Amylin research explains why Cagrilintide is studied; it is not research on Cagrilintide.\n\nReceptor pharmacology work characterizes Cagrilintide as an agonist across calcitonin-family G protein-coupled receptors, with reported binding at human, mouse and rat amylin receptors — commonly described as a dual amylin and calcitonin receptor agonist. That places it in a distinct pharmacological class from the incretin-pathway compounds it is usually searched alongside.",
+    "research_context": "## Research Context\n\nCagrilintide's evidence base spans three levels, and conflating them is the commonest error in secondary write-ups of this compound.\n\n**Molecular and biochemical.** The receptor pharmacology, structural characterization and medicinal-chemistry development of the molecule are documented in peer-reviewed literature, including the work describing its design as a long-acting amylin analog and its activity across calcitonin-family receptors.\n\n**Preclinical.** Published work reports reduced food intake in rats and pharmacokinetic characterization in rodent models. The literature also reports that amylin analogs including Cagrilintide produce sustained weight reduction in rats but suppress feeding less robustly and only transiently in mice — a species difference worth knowing before extrapolating from any single model. A 2025 cross-species study examined calcitonin-receptor-expressing neurons in the dorsal vagal complex as a candidate substrate for these effects; that work is ongoing, not settled.\n\n**Human clinical.** Cagrilintide has been studied in humans mainly within a fixed-dose combination with semaglutide, across Novo Nordisk's REDEFINE program in obesity and REIMAGINE program in type 2 diabetes. REDEFINE 1 and 2 were published in the New England Journal of Medicine in June 2025; REDEFINE 5 in The Lancet in April 2026. These are interventional trials with defined populations, fixed doses and specific endpoints, and their results describe those investigational products under those protocols.\n\nThat last distinction is the one that matters for procurement:\n\n**Published studies of Cagrilintide are evidence about the molecule, or about the specific investigational drug products used in those studies. They are not evidence that a particular commercial research lot — from Veracue or any other supplier — has the same analytical characteristics.**\n\nOn regulatory status: as of this page's publication, neither Cagrilintide alone nor the CagriSema combination is approved by the FDA or in the EU. Novo Nordisk filed a New Drug Application for CagriSema in weight management on 18 December 2025. Company guidance points to an FDA decision in the fourth quarter of 2026, but no action date has been publicly confirmed and no decision issued. Company expectation is not approval.",
+    "research_areas": "## Research Areas Involving Cagrilintide\n\nCagrilintide appears in the literature across amylin and calcitonin receptor pharmacology, peptide lipidation and half-life engineering, central energy-balance signalling, and analytical characterization of synthetic peptide analogs. It also appears in metabolic clinical research, almost always as the semaglutide combination rather than alone.\n\nThose are research areas, not outcomes. Where trial results are cited on this page, they are reported as findings of a named study at a stated dose and duration — not as properties of this research material.",
+    "entity_relationships": "## How Cagrilintide Relates to Nearby Compounds\n\nSearch engines and AI systems routinely conflate four distinct things:\n\n- **Cagrilintide** — a single peptide; a long-acting amylin analog acting at amylin and calcitonin receptors.\n- **Semaglutide** — a different single peptide; a GLP-1 receptor agonist with its own CAS number and mechanism, listed separately as [Semaglutide 5mg](/product/semaglutide).\n- **CagriSema** — not a molecule, but a fixed-dose combination of cagrilintide 2.4 mg and semaglutide 2.4 mg studied as one investigational product.\n- **Retatrutide** — an unrelated molecule from a different developer acting on three different receptors, listed separately as [Retatrutide 10mg](/product/retatrutide).",
+    "what_is_cagrisema": "## What Is CagriSema?\n\nCagriSema is Novo Nordisk's name for a fixed-dose combination of cagrilintide 2.4 mg and semaglutide 2.4 mg in a single once-weekly injectable investigational product. It is not another name for Cagrilintide and not a distinct molecule — it is two peptides, each with its own identity, formula and CAS number, studied together.\n\nThe pairing exists because the two engage separate signalling systems: Cagrilintide through amylin and calcitonin receptors, semaglutide through the GLP-1 receptor. Published reviews describe amylin's central pathways as anatomically distinct from GLP-1's, which is the rationale for studying them in combination rather than as substitutes.\n\nCagriSema has been evaluated in the Phase 3 REDEFINE program in obesity and REIMAGINE in type 2 diabetes. REDEFINE 1 (n=3,417, 68 weeks) compared the combination against semaglutide alone, cagrilintide alone and placebo — one of the few trials reporting cagrilintide monotherapy at scale. REDEFINE 3, the cardiovascular outcomes trial, remains ongoing with no published endpoint data.\n\nOne practical consequence for procurement: because CagriSema is two peptides, it has no single CAS number, molecular formula or molecular weight. A listing offering \"CagriSema\" as one characterized compound with a single set of identity data is describing something that does not exist as a single molecular entity. Veracue supplies Cagrilintide as an individual research reagent and does not provide combination ratios or protocols for use alongside any other compound.",
+    "cagrilintide_and_semaglutide": "## Cagrilintide and Semaglutide: Scientific Differences\n\nThese are two different molecules from different pharmacological classes, frequently discussed together because they are studied as a combination.\n\n| | Cagrilintide | Semaglutide |\n| --- | --- | --- |\n| Molecular class | Acylated amylin analog | Acylated GLP-1 receptor agonist |\n| Parent peptide | Human amylin (37 aa) | GLP-1 |\n| Primary receptor system | Amylin receptors + calcitonin receptor | GLP-1 receptor |\n| CAS number | 1415456-99-3 | Distinct (see the [Semaglutide](/product/semaglutide) listing) |\n| Regulatory status | Investigational; not approved | Approved in several formulations for other indications; the CagriSema combination is not approved |\n| Research context | Amylin-pathway and energy-balance research | GLP-1 pathway research |\n\nBoth use fatty-acid acylation to extend plasma persistence, which is a genuine structural similarity — but a shared engineering strategy is not a shared mechanism. The receptor systems are different, and results from one should not be read across to the other. This comparison exists for scientific differentiation. It is not a ranking, and nothing here indicates that either compound is better, stronger or more suitable for any purpose.",
+    "cagrilintide_and_retatrutide": "## Cagrilintide and Retatrutide: Scientific Differences\n\nCagrilintide and retatrutide are unrelated molecules with different developers, receptor targets and clinical programs. They co-occur in search results because both are actively researched in metabolic science and are frequently covered in the same news cycles — proximity in coverage, not in pharmacology.\n\n| | Cagrilintide | Retatrutide |\n| --- | --- | --- |\n| Developer | Novo Nordisk | Eli Lilly |\n| Development code | AM833 | LY3437943 |\n| CAS number | 1415456-99-3 | 2381089-83-2 |\n| Molecular formula | C194H312N54O59S2 | C221H342N46O68 |\n| Receptor targets | Amylin receptors, calcitonin receptor | GIP, GLP-1 and glucagon receptors |\n| Molecular class | Amylin analog | Triple hormone receptor agonist |\n| Clinical program | REDEFINE / REIMAGINE (mostly as CagriSema) | TRIUMPH |\n| Status | Investigational | Investigational |\n\nResearchers encountering the query \"cagrilintide retatrutide metabolic outcomes study\" should note that no head-to-head trial of these two compounds against each other is among the published literature reviewed here. Studies exist for each compound within its own program, against its own comparators. Comparing effect sizes across separate trials with different populations, durations, estimands and comparators is not a valid basis for ranking them, and this page does not do so.",
+    "dosage_search_intent": "## Why Veracue Does Not Provide Human Cagrilintide Dosage Guidance\n\nBecause this material is supplied strictly for laboratory research, Veracue does not provide human dosing or administration guidance — not as a range, not as a calculation, and not as a reference to figures reported in published literature.\n\nThat last point is deliberate. Doses reported in clinical trials were administered under medical supervision, within a defined protocol, using a pharmaceutical-grade investigational product. Reproducing those numbers on a product page would function as human-use guidance regardless of how it was framed, so this page does not reproduce them.\n\nExperimental parameters for research use are determined by the investigator's own validated experimental design and their institution's procedures. If a question about handling arises in a legitimate laboratory context, Veracue's research support can be reached through the [contact page](/contact-us).",
+    "reported_observations": "## How to Read Reported Observations\n\nPublished clinical research on the CagriSema combination reports observations recorded under defined study conditions — a specific population, a fixed dose, a set duration, a particular protocol. Those observations belong to those conditions.\n\nConverting trial-reported observations into a personal-use safety profile is not a valid inference, and this page does not present one. Veracue does not provide medical guidance, symptom interpretation, or personal safety recommendations, and this material is not intended for human or veterinary use. Researchers evaluating the published safety record of the molecule should read the primary trial publications directly rather than a supplier summary of them.",
+    "problem_solution_intro": "## Twelve Things Worth Verifying Before You Use Cagrilintide Research Material\n\nThese are the questions that come up most often from researchers and procurement teams evaluating an RUO peptide. Several apply to any research peptide; a few are specific to Cagrilintide.",
+    "closing_cta": "## Requesting Documentation\n\nCagrilintide is supplied by Veracue strictly as a Research Use Only material for laboratory research and scientific investigation. It is not intended for human or veterinary use, is not a drug product, and is not offered for any diagnostic or therapeutic purpose.\n\nResearchers evaluating this material, or requesting lot documentation when a tested lot becomes available, can [contact the Veracue research team](/contact-us) or review existing lot documentation in the [certificate archive](/certificates). The full [research catalog](/shop) lists currently available compounds.",
+    "short_product_description": "**Cagrilintide** — *Amylin Analog (AM833)*\n\nCagrilintide is a synthetic long-acting analog of human amylin — a 37-amino-acid peptide conjugated to a C20 fatty diacid, acting as a nonselective amylin and calcitonin receptor agonist. Veracue supplies it as a research material for laboratory work. Unlike many research peptides, human clinical evidence exists: REDEFINE 1 (Garvey et al., NEJM 2025) included a cagrilintide-alone arm alongside the semaglutide combination. That evidence describes a pharmaceutical-grade investigational product administered under trial protocol — it is not approved by the FDA, and it does not establish identity, purity or performance for this research lot.",
+    "short_product_description_card_variant": "Cagrilintide is a long-acting synthetic analog of human amylin (AM833), studied as a nonselective amylin and calcitonin receptor agonist. Veracue supplies it as a research material for laboratory work. Published human trials tested a pharmaceutical-grade investigational product under protocol; that evidence does not establish identity, purity or performance for this research lot, and the compound is not FDA-approved.",
+    "short_description_note": "Mirrors the live AHK-Cu product-page blurb structure: chemical identity → supplier framing ('Veracue supplies it as a research material for laboratory work') → most relevant published evidence with its level stated → explicit boundary. Note the boundary differs in kind from AHK-Cu's: that page's limit was ABSENCE of human evidence; Cagrilintide's is MISATTRIBUTION of substantial human evidence to a research lot. No trial outcome figures are included — in a 90-word blurb they lose the population, duration and comparator that make them meaningful and read as product claims."
+  },
+  "G_word_count": "Core page content: approximately 3623 words (excludes FAQs, schema, metadata, references, image and technical notes).",
+  "H_problem_solution_sections": "### 1. Molecular Identity Is More Than a Product Name\n\nA label states what a supplier intends to sell, not what is in the vial. Identity is established by measuring molecular mass against Cagrilintide's theoretical mass, cross-referenced to CAS 1415456-99-3 and formula C194H312N54O59S2. Ask for the identity result, not the label. Veracue publishes those reference values above for that comparison, but has not yet published a measured result for a Cagrilintide lot.\n\n### 2. Cagrilintide and Native Amylin Are Not the Same Molecule\n\nSupplier copy sometimes describes Cagrilintide as \"amylin\", or cites amylin research as though it were Cagrilintide data. They share a 37-amino-acid backbone, but the C20 fatty diacid at position one and its albumin binding change the pharmacokinetics substantially. If you are designing around half-life or receptor selectivity, check that a cited study used the analog — usually clear in the methods, rarely in marketing copy.\n\n### 3. Similar Metabolic Research Does Not Mean Identical Mechanisms\n\nCagrilintide, semaglutide, tirzepatide and retatrutide share a catalog category and a search-results page, not a mechanism. Their targets are amylin and calcitonin receptors; GLP-1; GLP-1 and GIP; and GLP-1, GIP and glucagon respectively. Category adjacency is not mechanistic equivalence, and evidence developed for one says nothing about another.\n\n### 4. A Purity Number Without Analytical Evidence Is Incomplete\n\n\"99% purity\" is a claim until the chromatogram behind it is available. A percentage with no method, wavelength, lab attribution or underlying trace cannot be independently assessed. Veracue publishes lot chromatography in its [certificate archive](/certificates); no Cagrilintide lot appears there yet, which is why no purity figure is stated here.\n\n### 5. Purity and Identity Are Different Analytical Questions\n\nHPLC answers \"how much of this sample is one unified species?\" Mass spectrometry answers \"which species is it?\" A sample can return a sharp, high-purity peak and still be the wrong compound entirely. Orthogonal testing means both, reported together — and a certificate showing only purity has answered the less important half of the question.\n\n### 6. A COA Should Be Linked to the Actual Lot\n\nPurity and identity vary between production runs. A certificate with no batch number, or one reused across listings and vial sizes, documents *a* sample rather than *your* sample. Look for a lot identifier and a test date that postdates the production run — the format Veracue's archive already uses.\n\n### 7. The COA and Vial Should Be Traceable to One Another\n\nThe lot code on the vial should match the lot number on the certificate. Without that match there is no verified link between document and material, and the certificate becomes decorative. Check it on receipt rather than at ordering — it takes seconds and it is the highest-value verification step in the process.\n\n### 8. Testing Methodology Matters\n\nTwo certificates can both say \"HPLC\" and mean different things. Useful documentation names the method, the detection wavelength, how purity was calculated, and for mass spectrometry the technique and tolerance applied — plus the laboratory and date. A named independent laboratory lets you corroborate; an unnamed one does not.\n\n### 9. Published Research Is Not Supplier-Specific Validation\n\nREDEFINE, REIMAGINE, the rodent pharmacology and the receptor work all describe the molecule or a pharmaceutical-grade investigational product. None certifies the identity, purity or handling of a commercial research lot, Veracue's included. Literature establishes why a compound is interesting; analytical documentation establishes what is in the vial.\n\n### 10. Search Results Often Mix Scientific and Consumer Content\n\nSearching Cagrilintide returns peer-reviewed pharmacology and trial registries alongside a large volume of consumer and grey-market content written for human use. The reliable signals: named authors and journals, registered trial identifiers, official developer and regulatory sources, stated methods. Content offering dosing or promising outcomes is not research material, whatever its footer says.\n\n### 11. Comparison Searches Can Create False Equivalence\n\nQueries like \"cagrilintide vs retatrutide\" imply a common measuring scale that mostly does not exist. Trials differ in population, duration, comparator and estimand — REDEFINE 4 alone reported materially different figures depending on which estimand was applied. Cross-trial comparison is a recognized methodological hazard, not a shortcut to ranking compounds.\n\n### 12. Documentation Completeness Is Part of Research Procurement\n\nIncomplete documentation is a procurement risk the way an unqualified reagent is an experimental risk: it propagates into results that cannot be reproduced or defended. Treat the documentation package as part of the specification, not paperwork that follows it. The checklist below applies equally to Veracue and to any other supplier.",
+  "I_cagrisema_context": "## What Is CagriSema?\n\nCagriSema is Novo Nordisk's name for a fixed-dose combination of cagrilintide 2.4 mg and semaglutide 2.4 mg in a single once-weekly injectable investigational product. It is not another name for Cagrilintide and not a distinct molecule — it is two peptides, each with its own identity, formula and CAS number, studied together.\n\nThe pairing exists because the two engage separate signalling systems: Cagrilintide through amylin and calcitonin receptors, semaglutide through the GLP-1 receptor. Published reviews describe amylin's central pathways as anatomically distinct from GLP-1's, which is the rationale for studying them in combination rather than as substitutes.\n\nCagriSema has been evaluated in the Phase 3 REDEFINE program in obesity and REIMAGINE in type 2 diabetes. REDEFINE 1 (n=3,417, 68 weeks) compared the combination against semaglutide alone, cagrilintide alone and placebo — one of the few trials reporting cagrilintide monotherapy at scale. REDEFINE 3, the cardiovascular outcomes trial, remains ongoing with no published endpoint data.\n\nOne practical consequence for procurement: because CagriSema is two peptides, it has no single CAS number, molecular formula or molecular weight. A listing offering \"CagriSema\" as one characterized compound with a single set of identity data is describing something that does not exist as a single molecular entity. Veracue supplies Cagrilintide as an individual research reagent and does not provide combination ratios or protocols for use alongside any other compound.\n\n## Cagrilintide and Semaglutide: Scientific Differences\n\nThese are two different molecules from different pharmacological classes, frequently discussed together because they are studied as a combination.\n\n| | Cagrilintide | Semaglutide |\n| --- | --- | --- |\n| Molecular class | Acylated amylin analog | Acylated GLP-1 receptor agonist |\n| Parent peptide | Human amylin (37 aa) | GLP-1 |\n| Primary receptor system | Amylin receptors + calcitonin receptor | GLP-1 receptor |\n| CAS number | 1415456-99-3 | Distinct (see the [Semaglutide](/product/semaglutide) listing) |\n| Regulatory status | Investigational; not approved | Approved in several formulations for other indications; the CagriSema combination is not approved |\n| Research context | Amylin-pathway and energy-balance research | GLP-1 pathway research |\n\nBoth use fatty-acid acylation to extend plasma persistence, which is a genuine structural similarity — but a shared engineering strategy is not a shared mechanism. The receptor systems are different, and results from one should not be read across to the other. This comparison exists for scientific differentiation. It is not a ranking, and nothing here indicates that either compound is better, stronger or more suitable for any purpose.",
+  "J_retatrutide_context": "## Cagrilintide and Retatrutide: Scientific Differences\n\nCagrilintide and retatrutide are unrelated molecules with different developers, receptor targets and clinical programs. They co-occur in search results because both are actively researched in metabolic science and are frequently covered in the same news cycles — proximity in coverage, not in pharmacology.\n\n| | Cagrilintide | Retatrutide |\n| --- | --- | --- |\n| Developer | Novo Nordisk | Eli Lilly |\n| Development code | AM833 | LY3437943 |\n| CAS number | 1415456-99-3 | 2381089-83-2 |\n| Molecular formula | C194H312N54O59S2 | C221H342N46O68 |\n| Receptor targets | Amylin receptors, calcitonin receptor | GIP, GLP-1 and glucagon receptors |\n| Molecular class | Amylin analog | Triple hormone receptor agonist |\n| Clinical program | REDEFINE / REIMAGINE (mostly as CagriSema) | TRIUMPH |\n| Status | Investigational | Investigational |\n\nResearchers encountering the query \"cagrilintide retatrutide metabolic outcomes study\" should note that no head-to-head trial of these two compounds against each other is among the published literature reviewed here. Studies exist for each compound within its own program, against its own comparators. Comparing effect sizes across separate trials with different populations, durations, estimands and comparators is not a valid basis for ranking them, and this page does not do so.",
+  "K_analytical_and_coa": "## Analytical Testing and Certificate Documentation\n\n**HPLC** separates a sample into its component species and reports what proportion of total detected peak area the target compound represents. That is chromatographic purity: it indicates related substances, truncated sequences or counterions, and it does not identify the main peak.\n\n**Mass spectrometry** measures molecular mass against the theoretical mass for the target sequence, within a stated tolerance. This is what establishes identity. For Cagrilintide the comparison point is a theoretical mass near 4,409 g/mol for the free-acid form; material supplied as a salt or acetate will differ, worth confirming before flagging a mismatch.\n\n**A certificate of analysis** should carry the product name, lot number, test date, testing laboratory, the specification, and the actual measured result for each test, with enough method detail to interpret them.\n\n**The lot number** connects document to material, and should appear on both. **The testing laboratory** determines whether a result can be corroborated — a named independent lab can be contacted, an unnamed one cannot.\n\n**Specification versus actual result** is the distinction most often missed. A specification is the threshold a batch must meet; the result is what it actually measured. A certificate showing only specifications has told you what was required, not what was found. Both belong on the document.\n\nVeracue applies this model across its catalog and publishes lot certificates openly. No Cagrilintide certificate has been issued yet; when one is, it will appear in the [certificate archive](/certificates) in the same format, and the specification panel above will be updated with measured values.\n\n## How to Read a Cagrilintide COA\n\nRead it in this order. First, confirm the compound name and that any CAS number or formula on the document matches Cagrilintide's — 1415456-99-3 and C194H312N54O59S2 for the free acid. Second, find the lot number and check it against the vial. Third, read the purity result, not the specification, and note the method beside it. Fourth, find the identity result and confirm the measured mass falls within the stated tolerance of the theoretical mass for the form supplied. Fifth, check the testing laboratory and the test date, and confirm the date is consistent with the production run.\n\nIf any of those five is absent, the document is incomplete — and an incomplete certificate is a reasonable basis for asking a supplier for more, whoever the supplier is.",
+  "L_documented_vs_not_established": "## Documented Versus Not Established\n\n| Category | Documented about Cagrilintide as a molecule | Verified for Veracue's specific material |\n| --- | --- | --- |\n| Molecular identity | Yes — CAS 1415456-99-3, UNII AO43BIF1U8, 37-amino-acid amylin-analog sequence | Not established; no identity testing published for a Cagrilintide lot |\n| Classification | Yes — long-acting acylated amylin analog; amylin/calcitonin receptor agonist | Classification applies to the compound, not a measured property of a lot |\n| CAS number | Yes — 1415456-99-3 | Reference value only; not independently confirmed for a lot |\n| Molecular formula | Yes — C194H312N54O59S2 (free acid) | Reference value only; supplied form not yet published |\n| Molecular weight | Yes — ~4,409 g/mol (free acid) | Reference value only |\n| Scientific research | Yes — preclinical pharmacology and Phase 3 clinical programs, published | Published research describes the molecule and investigational products, not this material |\n| Regulatory status | Yes — investigational; CagriSema NDA filed Dec 2025, no FDA decision issued | Not applicable; RUO research material is not a regulated drug product |\n| Product quantity | Not applicable | Not currently published |\n| Purity | Not applicable at molecule level | Not currently published |\n| HPLC result | Not applicable at molecule level | Not currently published |\n| Mass spectrometry result | Theoretical mass known | Not currently published |\n| Lot number | Not applicable | Not currently published |\n| Testing laboratory | Not applicable | Not currently published |\n| COA | Not applicable | Not yet issued |\n| Price | Not applicable | Not currently published |\n| Availability | Not applicable | Not currently published |\n| Human outcomes | Reported only within named trials, at stated doses and durations | Not established, and not claimed |",
+  "M_procurement_checklist": "## Before You Procure Cagrilintide Research Material\n\n- Exact compound identity, stated unambiguously\n- CAS number on the listing and on the documentation, matching\n- Stated quantity per vial and the supplied chemical form\n- Current lot or batch number\n- A lot-specific certificate of analysis, not a generic one\n- HPLC result with the method stated — result, not just specification\n- Identity testing, with the measured mass and tolerance\n- Named testing laboratory\n- Test date consistent with the production run\n- COA-to-vial traceability, checked on receipt\n- Research Use Only designation on both listing and documentation\n- Internal consistency across listing, certificate and label\n\nThis list is supplier-agnostic. Where Veracue cannot yet answer an item for Cagrilintide, this page says so rather than filling the gap.",
+  "N_faqs": [
+    {
+      "q": "What is Cagrilintide?",
+      "a": "Cagrilintide is a synthetic long-acting analog of amylin, a pancreatic hormone. It acts as a nonselective agonist at amylin receptors and the calcitonin receptor, carries the development code AM833, and was developed by Novo Nordisk. Veracue supplies it strictly as a Research Use Only material."
+    },
+    {
+      "q": "What is Cagrilintide peptide?",
+      "a": "It is a 37-amino-acid peptide built on the human amylin backbone, containing an intramolecular disulfide bridge and a C20 fatty diacid conjugated at the lysine residue in position one through a hydrophilic linker."
+    },
+    {
+      "q": "What type of peptide is Cagrilintide?",
+      "a": "An acylated (lipidated) amylin analog. In the literature it is commonly classified as a dual amylin and calcitonin receptor agonist, which places it in a different pharmacological class from GLP-1 receptor agonists."
+    },
+    {
+      "q": "What is Cagrilintide studied for?",
+      "a": "It appears in research on amylin and calcitonin receptor pharmacology, peptide half-life engineering, and central energy-balance signalling. In human clinical research it has been studied mainly as part of a fixed-dose combination with semaglutide."
+    },
+    {
+      "q": "What is the relationship between Cagrilintide and amylin?",
+      "a": "Cagrilintide is a modified analog of human amylin, not amylin itself. It shares the 37-amino-acid backbone but adds a fatty-diacid conjugation that changes its pharmacokinetics. Research on native amylin explains why Cagrilintide is studied; it is not research on Cagrilintide."
+    },
+    {
+      "q": "How is Cagrilintide studied in research?",
+      "a": "Across three levels: in vitro receptor pharmacology, preclinical rodent models, and human clinical trials. Each level answers a different question, and findings from one should not be read across to another."
+    },
+    {
+      "q": "What is Cagrilintide's mechanism at a research level?",
+      "a": "Published pharmacology characterizes it as an agonist across calcitonin-family G protein-coupled receptors, with reported binding at human, mouse and rat amylin receptors. Amylin signalling is described in the literature as acting centrally through pathways anatomically distinct from GLP-1 signalling."
+    },
+    {
+      "q": "How does Cagrilintide differ from native amylin structurally?",
+      "a": "The backbone is shared. The difference is the C20 fatty diacid attached at position one via a hydrophilic linker, which binds reversibly to plasma albumin and is what the literature credits for the analog's extended plasma persistence."
+    },
+    {
+      "q": "Is Cagrilintide approved by the FDA?",
+      "a": "No. Cagrilintide alone is investigational and not approved. The CagriSema combination is also not approved in the US or EU; Novo Nordisk submitted a New Drug Application for weight management on 18 December 2025, and company guidance points to an FDA decision in Q4 2026. No decision has been issued as of this page's publication."
+    },
+    {
+      "q": "What is CagriSema?",
+      "a": "CagriSema is Novo Nordisk's name for a fixed-dose combination of cagrilintide 2.4 mg and semaglutide 2.4 mg, studied as a single investigational product. It is two distinct peptides, not one molecule, and therefore has no single CAS number, molecular formula or molecular weight."
+    },
+    {
+      "q": "What is the difference between Cagrilintide and semaglutide?",
+      "a": "They are different molecules from different pharmacological classes. Cagrilintide is an amylin analog acting at amylin and calcitonin receptors; semaglutide is a GLP-1 receptor agonist. Both use fatty-acid acylation to extend plasma persistence, but a shared engineering strategy is not a shared mechanism."
+    },
+    {
+      "q": "What is the difference between Cagrilintide and retatrutide?",
+      "a": "Different developers, molecules and targets. Cagrilintide (Novo Nordisk, AM833, CAS 1415456-99-3) acts at amylin and calcitonin receptors. Retatrutide (Eli Lilly, LY3437943, CAS 2381089-83-2) is a triple hormone receptor agonist acting at GIP, GLP-1 and glucagon receptors."
+    },
+    {
+      "q": "How is Cagrilintide identity verified?",
+      "a": "By mass spectrometry, comparing measured molecular mass against the theoretical mass for the sequence, and cross-referencing CAS number and molecular formula. Confirm which chemical form the certificate refers to, since a salt or acetate form will differ from the free acid."
+    },
+    {
+      "q": "What does HPLC testing show?",
+      "a": "Chromatographic purity: what proportion of total detected peak area the target compound represents. It indicates related substances, truncated sequences and counterions. It does not establish which compound the main peak is."
+    },
+    {
+      "q": "What does mass spectrometry show?",
+      "a": "Molecular identity. It measures the sample's molecular mass and compares it to the theoretical mass within a stated tolerance, answering a different question from HPLC purity. Complete documentation reports both."
+    },
+    {
+      "q": "What is a Cagrilintide COA?",
+      "a": "A certificate of analysis documenting test results for a specific production lot: the product name, lot number, test date, testing laboratory, the specification for each test, and the actual measured result. It should be traceable to the vial received."
+    },
+    {
+      "q": "Why does lot-specific testing matter?",
+      "a": "Because purity and identity vary between production runs. A certificate that does not correspond to the lot in hand documents a different sample, and a certificate with no lot number cannot be traced to any material at all."
+    },
+    {
+      "q": "Does Veracue provide Cagrilintide dosage guidance?",
+      "a": "No. Because this material is supplied strictly for laboratory research, Veracue does not provide human dosing, administration or reconstitution-for-use guidance, and does not reproduce doses reported in clinical literature. Experimental parameters are determined by the investigator's own validated design and institutional procedures."
+    },
+    {
+      "q": "What about reported side effects of Cagrilintide?",
+      "a": "Published clinical research reports observations recorded under defined study conditions, in specific populations, at fixed doses. Those observations belong to those conditions and do not constitute a personal-use safety profile. Veracue does not provide medical guidance, and this material is not intended for human or veterinary use."
+    },
+    {
+      "q": "What does Research Use Only mean?",
+      "a": "It means the material is intended solely for laboratory research and scientific investigation — not for human or veterinary use, ingestion, injection, administration, diagnosis or treatment. It has not been evaluated by the FDA for any of those purposes."
+    },
+    {
+      "q": "Does published Cagrilintide research validate a commercial research lot?",
+      "a": "No. Published research describes the molecule or a pharmaceutical-grade investigational product used under trial protocol. It does not certify the identity, purity, handling or stability of any supplier's commercial research lot."
+    },
+    {
+      "q": "What Cagrilintide product information has Veracue published?",
+      "a": "Veracue has published the molecule's reference identity data for comparison against documentation. Vial quantity, purity result, identity testing, lot number, certificate of analysis, price and availability are not currently published for this compound, and no values have been estimated in their place."
+    }
+  ],
+  "O_internal_linking_plan": {
+    "rule": "All destinations verified live during site inspection. No invented URLs. Anchors are contextual, not exact-match stuffed.",
+    "links": [
+      {
+        "anchor": "Request current lot documentation",
+        "url": "/contact-us",
+        "placement": "Hero CTA",
+        "rationale": "Matches the live 'Request Specific Lot COA' pattern on /certificates"
+      },
+      {
+        "anchor": "Browse the certificate archive",
+        "url": "/certificates",
+        "placement": "Hero CTA",
+        "rationale": "Primary trust destination"
+      },
+      {
+        "anchor": "certificate archive",
+        "url": "/certificates",
+        "placement": "Specification panel, Problem/Solution #4, analytical section, closing CTA",
+        "rationale": "Repeat contextual link to the evidence the page keeps referencing"
+      },
+      {
+        "anchor": "Semaglutide 5mg",
+        "url": "/product/semaglutide",
+        "placement": "Entity-relationships list and the semaglutide comparison table",
+        "rationale": "Live product; genuine disambiguation value"
+      },
+      {
+        "anchor": "Retatrutide 10mg",
+        "url": "/product/retatrutide",
+        "placement": "Entity-relationships list",
+        "rationale": "Live product; genuine disambiguation value"
+      },
+      {
+        "anchor": "contact page / contact the Veracue research team",
+        "url": "/contact-us",
+        "placement": "Dosage section, closing CTA",
+        "rationale": "Legitimate research-support route"
+      },
+      {
+        "anchor": "research catalog",
+        "url": "/shop",
+        "placement": "Closing CTA",
+        "rationale": "Catalog cross-link, matching the live 'Explore research catalogue' pattern"
+      }
+    ],
+    "deliberately_not_linked": [
+      "/peptide-calculator — reconstitution-calculator context sits uncomfortably close to use guidance on a page that declines to give any; omitted",
+      "/product/tirzepatide — tirzepatide appears only as a trial comparator, not as a compound this page differentiates; linking it would be link padding",
+      "/faq and /about-us — available if desired, but the page already carries seven contextual links and adding more dilutes each"
+    ]
+  },
+  "P_image_seo": {
+    "observed_house_style": "Live product imagery uses two patterns: generic catalog vial shots (vp-product-vial.jpeg / vp-product-vial2.jpeg) on most product cards, and bespoke still-life compositions for hero and feature imagery — vials on ice beds, underwater seabeds, water ripples, sunlit branches, petri dishes with leaf droplets, cleanroom gloved hands, molecular-helix glass. Naming convention is veracue-<compound>-<size>-<scene>.webp/.png. No human-body, injection, fitness or transformation imagery appears anywhere on the site.",
+    "recommended_primary_image": {
+      "filename": "veracue-cagrilintide-research-peptide-vial-cleanroom.webp",
+      "alt_text": "Veracue Cagrilintide research peptide vial, lyophilized powder, Research Use Only",
+      "title": "Veracue Cagrilintide — Research Use Only amylin analog research material",
+      "caption": "Cagrilintide research material, supplied strictly for laboratory research.",
+      "visual_direction": "Single sealed amber or clear Type-I glass vial with lyophilized cake, shot straight on against a cool neutral background with soft directional light and shallow depth of field. Optional secondary scene image following house style — vial on a chilled surface with condensation, or against water ripples — to match the GHK-Cu and Klow hero treatments. Keep the label legible but avoid rendering any purity percentage or lot number in the image, since neither is verified for this compound and baked-in text would become a fabricated claim that is hard to correct later."
+    },
+    "avoid": [
+      "Human bodies or body parts beyond a gloved lab hand",
+      "Before/after or transformation imagery",
+      "Weight-loss or fitness imagery",
+      "Needles, syringes, injection pens",
+      "Medical or patient imagery",
+      "Any imagery implying personal use"
+    ],
+    "technical": [
+      "Serve WebP with a JPEG/PNG fallback, matching existing asset patterns",
+      "Define explicit width/height to avoid layout shift",
+      "Descriptive filename over generic vp-product-vial.jpeg reuse — the generic asset costs an image-SEO opportunity on a page targeting a specific compound"
+    ]
+  },
+  "Q_json_ld_schema": {
+    "integrity_note": "No offers, price, priceCurrency, availability, sku, mpn, gtin, review, or aggregateRating are included, because none is verified. The additionalProperty entries carry only public chemical-registry identity data for the molecule, explicitly labelled as reference values — no purity, lot, or test result is asserted. Add an Offer object only when real commercial data exists; do not populate it with placeholders.",
+    "product": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Cagrilintide",
+      "alternateName": "Cagrilintide (AM833)",
+      "description": "Cagrilintide, a long-acting acylated analog of human amylin (AM833), supplied by Veracue strictly as a Research Use Only material for laboratory research and scientific investigation. Not intended for human or veterinary use.",
+      "url": "https://veracue-peptides.vercel.app/product/cagrilintide",
+      "brand": {
+        "@type": "Brand",
+        "name": "Veracue"
+      },
+      "category": "Weight Loss & Metabolic",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Compound reference — CAS number",
+          "value": "1415456-99-3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Compound reference — Molecular formula",
+          "value": "C194H312N54O59S2 (free acid)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Compound reference — Molecular weight",
+          "value": "approximately 4409 g/mol (free acid)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Research classification",
+          "value": "Amylin analog; amylin and calcitonin receptor agonist"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Intended use",
+          "value": "Research Use Only — not for human or veterinary use"
+        }
+      ]
+    },
+    "breadcrumb": {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://veracue-peptides.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Shop",
+          "item": "https://veracue-peptides.vercel.app/shop"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Cagrilintide",
+          "item": "https://veracue-peptides.vercel.app/product/cagrilintide"
+        }
+      ]
+    },
+    "faqpage": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Cagrilintide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cagrilintide is a synthetic long-acting analog of amylin, a pancreatic hormone. It acts as a nonselective agonist at amylin receptors and the calcitonin receptor, carries the development code AM833, and was developed by Novo Nordisk. Veracue supplies it strictly as a Research Use Only material."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Cagrilintide peptide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is a 37-amino-acid peptide built on the human amylin backbone, containing an intramolecular disulfide bridge and a C20 fatty diacid conjugated at the lysine residue in position one through a hydrophilic linker."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What type of peptide is Cagrilintide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An acylated (lipidated) amylin analog. In the literature it is commonly classified as a dual amylin and calcitonin receptor agonist, which places it in a different pharmacological class from GLP-1 receptor agonists."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Cagrilintide studied for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It appears in research on amylin and calcitonin receptor pharmacology, peptide half-life engineering, and central energy-balance signalling. In human clinical research it has been studied mainly as part of a fixed-dose combination with semaglutide."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the relationship between Cagrilintide and amylin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cagrilintide is a modified analog of human amylin, not amylin itself. It shares the 37-amino-acid backbone but adds a fatty-diacid conjugation that changes its pharmacokinetics. Research on native amylin explains why Cagrilintide is studied; it is not research on Cagrilintide."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is Cagrilintide studied in research?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Across three levels: in vitro receptor pharmacology, preclinical rodent models, and human clinical trials. Each level answers a different question, and findings from one should not be read across to another."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Cagrilintide's mechanism at a research level?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Published pharmacology characterizes it as an agonist across calcitonin-family G protein-coupled receptors, with reported binding at human, mouse and rat amylin receptors. Amylin signalling is described in the literature as acting centrally through pathways anatomically distinct from GLP-1 signalling."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Cagrilintide differ from native amylin structurally?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The backbone is shared. The difference is the C20 fatty diacid attached at position one via a hydrophilic linker, which binds reversibly to plasma albumin and is what the literature credits for the analog's extended plasma persistence."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Cagrilintide approved by the FDA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Cagrilintide alone is investigational and not approved. The CagriSema combination is also not approved in the US or EU; Novo Nordisk submitted a New Drug Application for weight management on 18 December 2025, and company guidance points to an FDA decision in Q4 2026. No decision has been issued as of this page's publication."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is CagriSema?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CagriSema is Novo Nordisk's name for a fixed-dose combination of cagrilintide 2.4 mg and semaglutide 2.4 mg, studied as a single investigational product. It is two distinct peptides, not one molecule, and therefore has no single CAS number, molecular formula or molecular weight."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between Cagrilintide and semaglutide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They are different molecules from different pharmacological classes. Cagrilintide is an amylin analog acting at amylin and calcitonin receptors; semaglutide is a GLP-1 receptor agonist. Both use fatty-acid acylation to extend plasma persistence, but a shared engineering strategy is not a shared mechanism."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between Cagrilintide and retatrutide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Different developers, molecules and targets. Cagrilintide (Novo Nordisk, AM833, CAS 1415456-99-3) acts at amylin and calcitonin receptors. Retatrutide (Eli Lilly, LY3437943, CAS 2381089-83-2) is a triple hormone receptor agonist acting at GIP, GLP-1 and glucagon receptors."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is Cagrilintide identity verified?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "By mass spectrometry, comparing measured molecular mass against the theoretical mass for the sequence, and cross-referencing CAS number and molecular formula. Confirm which chemical form the certificate refers to, since a salt or acetate form will differ from the free acid."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does HPLC testing show?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Chromatographic purity: what proportion of total detected peak area the target compound represents. It indicates related substances, truncated sequences and counterions. It does not establish which compound the main peak is."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does mass spectrometry show?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Molecular identity. It measures the sample's molecular mass and compares it to the theoretical mass within a stated tolerance, answering a different question from HPLC purity. Complete documentation reports both."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a Cagrilintide COA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A certificate of analysis documenting test results for a specific production lot: the product name, lot number, test date, testing laboratory, the specification for each test, and the actual measured result. It should be traceable to the vial received."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does lot-specific testing matter?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because purity and identity vary between production runs. A certificate that does not correspond to the lot in hand documents a different sample, and a certificate with no lot number cannot be traced to any material at all."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Veracue provide Cagrilintide dosage guidance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Because this material is supplied strictly for laboratory research, Veracue does not provide human dosing, administration or reconstitution-for-use guidance, and does not reproduce doses reported in clinical literature. Experimental parameters are determined by the investigator's own validated design and institutional procedures."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What about reported side effects of Cagrilintide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Published clinical research reports observations recorded under defined study conditions, in specific populations, at fixed doses. Those observations belong to those conditions and do not constitute a personal-use safety profile. Veracue does not provide medical guidance, and this material is not intended for human or veterinary use."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does Research Use Only mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It means the material is intended solely for laboratory research and scientific investigation — not for human or veterinary use, ingestion, injection, administration, diagnosis or treatment. It has not been evaluated by the FDA for any of those purposes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does published Cagrilintide research validate a commercial research lot?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Published research describes the molecule or a pharmaceutical-grade investigational product used under trial protocol. It does not certify the identity, purity, handling or stability of any supplier's commercial research lot."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What Cagrilintide product information has Veracue published?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Veracue has published the molecule's reference identity data for comparison against documentation. Vial quantity, purity result, identity testing, lot number, certificate of analysis, price and availability are not currently published for this compound, and no values have been estimated in their place."
+          }
+        }
+      ]
+    }
+  },
+  "R_references": [
+    {
+      "key": "R1",
+      "citation": "Fletcher MM, et al. AM833 Is a Novel Agonist of Calcitonin Family G Protein-Coupled Receptors: Pharmacological Comparison with Six Selective and Nonselective Agonists. J Pharmacol Exp Ther. 2021 Jun;377(3):417-440.",
+      "supports": "Receptor pharmacology; nonselective amylin/calcitonin receptor agonism"
+    },
+    {
+      "key": "R2",
+      "citation": "Kruse T, et al. Development of Cagrilintide, a Long-Acting Amylin Analogue. J Med Chem. 2021 Aug 12;64(15):11183-11194.",
+      "supports": "Molecular design, lipidation strategy, AM833 / 'compound 23' identity, rodent food-intake and pharmacokinetic data"
+    },
+    {
+      "key": "R3",
+      "citation": "PubChem Compound Summary: Cagrilintide, CID 171397054. National Center for Biotechnology Information.",
+      "supports": "Molecular formula C194H312N54O59S2, molecular weight, CAS cross-reference"
+    },
+    {
+      "key": "R4",
+      "citation": "D'Ascanio AM, Mullally JA, Frishman WH. Cagrilintide: A Long-Acting Amylin Analog for the Treatment of Obesity. Cardiology in Review. 2024 Jan/Feb;32(1):83-90.",
+      "supports": "Review-level characterization of the molecule and its development context"
+    },
+    {
+      "key": "R5",
+      "citation": "Walker, Aitken, et al. Review of amylin biology. Nature Reviews Endocrinology, 2025.",
+      "supports": "Amylin central signalling via area postrema and hypothalamus; mechanistic distinction from GLP-1"
+    },
+    {
+      "key": "R6",
+      "citation": "FDA Global Substance Registration System (GSRS / precision.fda.gov) substance record: CAGRILINTIDE, UNII AO43BIF1U8.",
+      "supports": "UNII, amylin-analog classification, 37-residue sequence record"
+    },
+    {
+      "key": "R7",
+      "citation": "DrugBank entry DB18887 — Cagrilintide.",
+      "supports": "Secondary identity cross-reference"
+    },
+    {
+      "key": "R8",
+      "citation": "A Cross-Species Atlas of the Dorsal Vagal Complex Reveals Neural Mediators of Cagrilintide's Effects on Energy Balance. bioRxiv preprint, 2025. doi:10.1101/2025.01.13.632726",
+      "supports": "Calcr+ DVC neurons as candidate substrate; rat/mouse species difference in feeding suppression. NOTE: preprint — not peer-reviewed at time of writing; cited as ongoing work, not established mechanism"
+    },
+    {
+      "key": "R9",
+      "citation": "Frias JP, et al. Phase 2 trial of cagrilintide-semaglutide in type 2 diabetes. The Lancet, 2023.",
+      "supports": "Phase 2 combination data (n=92)"
+    },
+    {
+      "key": "R10",
+      "citation": "Garvey WT, Blüher M, Osorto Contreras CK, et al. Coadministered cagrilintide and semaglutide in adults with overweight or obesity (REDEFINE 1). N Engl J Med. Published online June 22, 2025. doi:10.1056/NEJMoa2502081",
+      "supports": "REDEFINE 1 design, randomization, and reported weight outcomes including the cagrilintide-monotherapy arm"
+    },
+    {
+      "key": "R11",
+      "citation": "Davies MJ, Bajaj HS, Broholm C, et al. Cagrilintide-semaglutide in adults with overweight or obesity and type 2 diabetes (REDEFINE 2). N Engl J Med. Published online June 22, 2025. doi:10.1056/NEJMoa2502082",
+      "supports": "REDEFINE 2 design and reported outcomes"
+    },
+    {
+      "key": "R12",
+      "citation": "Novo Nordisk company announcement: Novo Nordisk files for FDA approval of CagriSema, 18 December 2025.",
+      "supports": "NDA submission date, indication sought, statement that CagriSema is not approved in the US or EU"
+    },
+    {
+      "key": "R13",
+      "citation": "Novo Nordisk company announcement: REIMAGINE 2 headline results, 2 February 2026.",
+      "supports": "REIMAGINE program status and type 2 diabetes regulatory-pathway statement"
+    },
+    {
+      "key": "R14",
+      "citation": "REDEFINE 4 topline announcement, 23 February 2026 (NCT06131437); reported in trade and clinical press.",
+      "supports": "Head-to-head vs. tirzepatide design, estimand-dependent results, primary-endpoint outcome"
+    },
+    {
+      "key": "R15",
+      "citation": "REDEFINE 5 results published in The Lancet, April 2026.",
+      "supports": "68-week Phase 3a results (n=331)"
+    },
+    {
+      "key": "R16",
+      "citation": "ClinicalTrials.gov registry records for the REDEFINE and REIMAGINE programs (e.g. NCT05567796, NCT06221969, NCT06131437).",
+      "supports": "Trial registration, status and completion dates"
+    },
+    {
+      "key": "R17",
+      "citation": "Eli Lilly investor news releases: TRIUMPH-1 topline (21 May 2026) and TRIUMPH-2/TRIUMPH-3 topline (23 July 2026).",
+      "supports": "Retatrutide developer, mechanism (GIP/GLP-1/glucagon), and Phase 3 program status used in the comparison section"
+    },
+    {
+      "key": "R18",
+      "citation": "Coskun T, et al. LY3437943, a novel triple glucagon, GIP, and GLP-1 receptor agonist. Cell Metab. 2022 Sep 6;34(9):1234-1247.e9.",
+      "supports": "Retatrutide receptor pharmacology and identity data used in the comparison table"
+    }
+  ],
+  "R_reference_policy_note": "No peptide-retailer website is cited as scientific authority anywhere in this package. Commercial catalog listings (MedChemExpress, GlpBio, AdipoGen and similar) were consulted only to cross-check chemical identifiers that independently appear in PubChem and the FDA substance registry, and are not listed as sources. Trade-press items are cited only for corporate announcement facts (filing dates, topline results), never for scientific claims.",
+  "evidence_hierarchy": {
+    "verified_molecule_level_fact": [
+      "Cagrilintide is a long-acting acylated analog of human amylin (AM833, Novo Nordisk) [R1,R2,R4]",
+      "Nonselective agonist of amylin receptors and the calcitonin receptor [R1]",
+      "37-amino-acid backbone with intramolecular disulfide bridge; C20 fatty diacid at Lys-1 via hydrophilic linker [R2,R6]",
+      "Albumin binding via the fatty-diacid moiety underlies extended plasma persistence [R2,R4]",
+      "CAS 1415456-99-3; C194H312N54O59S2; ~4,409 g/mol (free acid); UNII AO43BIF1U8; PubChem CID 171397054 [R3,R6,R7]",
+      "Amylin is a 37-aa pancreatic peptide co-secreted with insulin, signalling centrally by pathways distinct from GLP-1 [R5]"
+    ],
+    "verified_veracue_specific_fact": [
+      "Veracue operates a lot-specific COA program with published third-party HPLC and MS documentation (site-wide program, live on /certificates)",
+      "Veracue's published purity threshold is >=99.0% by HPLC area normalization (site-wide standard, not a Cagrilintide measurement)",
+      "Veracue's own footer states purity may vary by product and lot",
+      "NOTE: no Cagrilintide-specific product or analytical fact is currently verified — see section B"
+    ],
+    "published_research_finding": [
+      "Reduced food intake in rats; rodent pharmacokinetic characterization [R2]",
+      "Species difference: sustained weight reduction in rats, less robust/transient feeding suppression in mice [R8]",
+      "Phase 2 (n=92, T2D): 15.6% combination vs 5.1% semaglutide vs 8.1% cagrilintide at 32 weeks [R9]",
+      "REDEFINE 1 (n=3,417, 68 wk): -20.4% combination, -14.9% semaglutide, -11.5% cagrilintide, -3.0% placebo [R10]",
+      "REDEFINE 2 (n=1,206, 68 wk, T2D): -13.7% vs -3.1% placebo [R11]",
+      "REDEFINE 4 (n=809, 84 wk, vs tirzepatide 15 mg): 23.0% vs 25.5% efficacy estimand; primary non-inferiority endpoint not met [R14]",
+      "REDEFINE 5 (n=331, 68 wk): -18.4% vs -11.7% semaglutide [R15]"
+    ],
+    "development_program_information": [
+      "CagriSema NDA submitted to FDA 18 December 2025 for chronic weight management [R12]",
+      "Company guidance indicates an FDA decision in Q4 2026; no PDUFA date publicly confirmed [R12]",
+      "REDEFINE 3 (cardiovascular outcomes) ongoing, no published endpoint data [R12,R16]",
+      "REIMAGINE 2 headline results announced 2 February 2026; T2D regulatory pathway under discussion [R13]",
+      "REDEFINE 11 readout expected H1 2027 [R14]",
+      "Retatrutide: Eli Lilly, LY3437943, Phase 3 TRIUMPH program, investigational [R17,R18]"
+    ],
+    "not_established": [
+      "FDA approval of Cagrilintide or CagriSema (none issued as of 2026-09-19)",
+      "Cardiovascular outcome data for CagriSema",
+      "Long-term multi-year safety data",
+      "Any Veracue Cagrilintide purity, identity, lot, laboratory, test date, quantity, price or availability",
+      "Equivalence of cagrilintide monotherapy to the CagriSema combination",
+      "Any head-to-head trial of Cagrilintide against retatrutide",
+      "Any human outcome attributable to Veracue research material"
+    ]
+  },
+  "S_final_audit": {
+    "scope": "Audited: hero, specification panel, all body H2/H3 sections, all three tables, all 22 FAQs, metadata, schema descriptions, image alt/title/caption, CTA text, internal-link anchors.",
+    "ruo": {
+      "no_human_dosage": "PASS — no dose, range, unit, frequency or mg/kg figure appears anywhere, including in the trial summaries, which report percentage body-weight change and trial arm labels only",
+      "trial_dose_labels_check": "NOTE AND PASS — trial arms are identified as 'cagrilintide 2.4 mg / semaglutide 2.4 mg' because that is the product's formal name in the literature and omitting it would misidentify the trials. This is a product designation, not a dosing instruction: no administration route, schedule, escalation, or human-use framing accompanies it, and the dosage section explicitly declines to supply such guidance",
+      "no_administration_or_injection_instructions": "PASS",
+      "no_reconstitution_for_human_use": "PASS — /peptide-calculator also deliberately not linked",
+      "no_cycles_stacks_or_personal_protocols": "PASS",
+      "no_bodybuilding_fitness_or_consumer_weight_loss_claims": "PASS — 'Research Areas Involving Cagrilintide' replaces a benefits section; no benefit is asserted",
+      "no_treatment_or_medical_advice": "PASS",
+      "ruo_notice_placement": "PASS — full notice in bold immediately under H1; RUO restated in the specification panel, dosage section, observations section, closing CTA, schema description and image alt, without becoming repetitive"
+    },
+    "product_integrity": {
+      "no_fabricated_purity": "PASS — no purity figure attached to Cagrilintide anywhere, including schema",
+      "no_fabricated_coa_lot_lab_or_test_date": "PASS — all marked 'not currently published'",
+      "no_fabricated_vial_size_price_or_stock": "PASS — omitted from copy and from schema",
+      "no_fake_reviews_ratings_certifications": "PASS — no review, aggregateRating or certification claim",
+      "site_wide_vs_product_specific_claims": "PASS — Veracue's site-wide >=99% standard is described as a program standard, never as a Cagrilintide result",
+      "no_placeholder_tokens_in_customer_copy": "PASS — no [VERIFY]/[ADD]/[INSERT] anywhere; gaps are stated in plain language as 'not currently published'"
+    },
+    "scientific_integrity": {
+      "molecule_vs_product_separated": "PASS — enforced in the specification panel, the research-context boundary statement, Problem/Solution #9, and the documented-vs-not-established table",
+      "preclinical_vs_clinical_separated": "PASS — research context uses three explicitly labelled tiers",
+      "clinical_findings_not_generalized": "PASS — each figure is tied to a named trial, population, duration and comparator",
+      "cagrilintide_not_confused_with_cagrisema": "PASS — dedicated section plus the explicit note that CagriSema has no single CAS/formula/MW",
+      "cagrilintide_not_confused_with_semaglutide_or_retatrutide": "PASS — dedicated comparison sections with identity data for each",
+      "regulatory_status_current": "PASS — verified 2026-09-19: NDA filed 18 Dec 2025, no approval, Q4 2026 decision expected per company guidance; page states this is company expectation, not an FDA decision, and flags that it requires re-verification",
+      "cross_trial_comparison_hazard_flagged": "PASS — Problem/Solution #11 and the retatrutide section both state that no head-to-head trial exists and that cross-trial ranking is invalid",
+      "no_ranking_language": "PASS — no best/superior/stronger/safer/more effective/preferred/winner anywhere; comparison tables are descriptive only",
+      "preprint_flagged": "PASS — R8 identified as a non-peer-reviewed preprint and cited as ongoing work"
+    },
+    "seo": {
+      "keyword_usage": "PASS — 'cagrilintide' appears naturally throughout; 'cagrilintide peptide' as an exact phrase is used sparingly (H1 area, metadata, FAQ) rather than repeated",
+      "no_keyword_stuffing": "PASS",
+      "aeo_answer_first": "PASS — every H2 opens with a self-contained direct answer",
+      "geo_entity_clarity": "PASS — positive and negative entity relations both stated explicitly",
+      "internal_links": "PASS — 7 contextual links, all verified live; three candidate links deliberately declined and the reasons documented"
+    },
+    "schema": {
+      "valid_json": "PASS — all three blocks validated",
+      "product_breadcrumb_faqpage_present": "PASS",
+      "no_fabricated_commercial_properties": "PASS — no offers, price, sku, mpn, gtin, review or aggregateRating",
+      "additionalProperty_framing": "PASS — labelled 'Compound reference' so registry identity data is not read as a lot measurement"
+    },
+    "word_count_finding": "The core page runs longer than the 1,800–2,100 target. The brief requires 12 problem/solution subsections each carrying five distinct components, three tables, and roughly a dozen separate H2 sections; those requirements together exceed the word target. Prose sits near 3,000 words with roughly 600 further words in the three required tables. See 'length_options' for ways to cut to target without losing a required section.",
+    "length_options": [
+      "Move the 12 problem/solution sections into an accordion or a linked companion resource — removes ~800 words from the visible page and is the single cleanest cut",
+      "Collapse the two comparison tables into prose and keep only the documented-vs-not-established table — saves ~150 words",
+      "Merge 'Research Areas Involving Cagrilintide' into the research-context section — saves ~60 words",
+      "Cut the 'How to Read a Cagrilintide COA' walkthrough, which partly overlaps the analytical section — saves ~140 words"
+    ],
+    "outstanding_client_actions": [
+      "Supply vial size(s), price and stock status, or publish with the specification panel as written",
+      "Supply the first Cagrilintide lot COA (lot number, HPLC result, MS result, testing laboratory, test date); then update the specification panel, add the /certificates row, and add the Offer object to the Product schema",
+      "Confirm supplied chemical form (free acid, acetate or other salt) — the identity reference values in the panel and the MS tolerance guidance depend on it",
+      "Commission or select product photography per section P",
+      "RE-VERIFY CagriSema regulatory status immediately before publication. An FDA action is expected in Q4 2026 and would make the research-context and FAQ statements outdated"
+    ],
+    "metadata_revision_note": "SEO title, meta description and OG fields were rewritten to match the live AHK-Cu house pattern supplied by the client, replacing the earlier abstract phrasing. New copy lists page contents rather than compound properties, which keeps it clear of benefit claims by construction. Character counts (55 / 156) match the AHK-Cu reference exactly.",
+    "short_description_audit": {
+      "no_benefit_or_outcome_claim": "PASS — no trial percentages, no efficacy language",
+      "evidence_level_stated": "PASS — names the trial, the journal, and that it tested an investigational drug product under protocol",
+      "boundary_explicit": "PASS — states not FDA-approved and that trial evidence does not validate this research lot",
+      "ruo_consistent": "PASS — 'research material for laboratory work', matching live AHK-Cu phrasing"
+    }
+  }
+}

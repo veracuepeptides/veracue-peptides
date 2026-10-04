@@ -8,22 +8,22 @@ import { HeroButton } from '@/components/ui/hero-button'
 const BLOG_HERO_IMAGES = [
   {
     src: '/veracue-images/veracue-klow-50mg-sunlit-water-ripples.webp',
-    alt: 'Veracue molecular peptide research and biochemical solutions',
+    alt: 'Veracue research peptide vial on sunlit rippling water',
     topic: 'Molecular Biology',
   },
   {
     src: '/veracue-images/veracue-nad-plus-500mg-sunlight-branches.webp',
-    alt: 'Veracue analytical laboratory and cleanroom facility',
-    topic: 'Analytical Cleanroom',
+    alt: 'Veracue research peptide vial among sunlit branches',
+    topic: 'Analytical Testing',
   },
   {
     src: '/veracue-images/veracue-epithalon-50mg-water-bamboo.webp',
-    alt: 'Veracue cellular signaling and biochemical assays',
+    alt: 'Veracue research peptide vial beside water and bamboo',
     topic: 'Cellular Assays',
   },
   {
     src: '/veracue-images/veracue-ghk-cu-50mg-ice-bed-warm.webp',
-    alt: 'Veracue solid-phase peptide synthesis and quality assurance',
+    alt: 'Veracue research peptide vial on ice in warm light',
     topic: 'Synthesis & Testing',
   },
 ]
@@ -35,6 +35,7 @@ export function BlogHero() {
 
   // Auto-advance hero slides every 5.5 seconds with smooth crossfade
   useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
     const timer = setInterval(() => {
       setCurrentImageIndex((prev) => (prev + 1) % BLOG_HERO_IMAGES.length)
     }, 5500)
@@ -166,9 +167,9 @@ export function BlogHero() {
 
           {/* Bottom-Right Overlay (Editorial Rigor & Verification) */}
           <div className="absolute bottom-12 xs:bottom-14 sm:bottom-12 md:bottom-14 right-3 sm:right-7 md:right-10 z-20 text-white text-right sm:text-left max-w-[135px] xs:max-w-[170px] sm:max-w-[300px] md:max-w-[360px]">
-            <h3 className="text-xs xs:text-sm sm:text-xl md:text-2xl lg:text-[26px] font-extrabold tracking-tight text-white leading-tight mb-0.5 sm:mb-2 drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] font-heading">
+            <p className="text-xs xs:text-sm sm:text-xl md:text-2xl lg:text-[26px] font-extrabold tracking-tight text-white leading-tight mb-0.5 sm:mb-2 drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] font-heading">
               Analytical<br className="sm:hidden" /> Rigor
-            </h3>
+            </p>
             <p className="hidden xs:block sm:hidden text-[9px] text-white/85 leading-snug line-clamp-2 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
               Written from our own testing data.
             </p>

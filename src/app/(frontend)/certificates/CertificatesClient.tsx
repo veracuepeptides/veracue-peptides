@@ -102,9 +102,9 @@ export function CertificatesClient({ coas }: CertificatesClientProps) {
         'Each Veracue vial features a laser-printed tamper-resistant lot tag on the base of the label (e.g. "VR-BPC-2603A"). Entering this alphanumeric string into the search bar above will immediately surface the corresponding analytical report.',
     },
     {
-      question: 'What is the minimum purity threshold for Veracue research compounds?',
+      question: 'How is purity reported for Veracue research compounds?',
       answer:
-        'We enforce a strict ≥99.0% baseline purity threshold. Batches failing to reach 99.0% area resolution are rejected and never compounded or fulfilled. Overfill percentages in peptide net content are explicitly noted on the testing docket.',
+        'Purity is reported per batch. Every batch is analyzed by HPLC and the result is published on its Certificate of Analysis, so check the COA for the lot you are ordering.',
     },
     {
       question: 'Can academic institutions request raw chromatogram CSV or CDF files?',
@@ -132,17 +132,17 @@ export function CertificatesClient({ coas }: CertificatesClientProps) {
                 <div>
                   <div className="flex items-center justify-between gap-1.5 sm:gap-2 mb-2 sm:mb-3">
                     <span className="font-heading font-black text-lg xs:text-xl sm:text-2xl lg:text-3xl text-[#20221c] tracking-tight leading-none whitespace-nowrap">
-                      ≥99.0%
+                      Per Batch
                     </span>
                     <div className="w-7 h-7 xs:w-8 xs:h-8 sm:w-9 sm:h-9 rounded-full bg-[#a5a58d] text-white flex items-center justify-center shrink-0 shadow-xs">
                       <Award className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                     </div>
                   </div>
                   <span className="text-[10px] xs:text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#a5a58d] font-heading block mb-1 sm:mb-1.5 leading-tight">
-                    Purity Standard
+                    Purity Reporting
                   </span>
                   <p className="text-[10px] xs:text-[11px] sm:text-xs text-neutral-600 leading-relaxed">
-                    Strict rejection threshold for any batch under 99.0% area resolution.
+                    Every batch is analyzed by HPLC and the result is published on its COA.
                   </p>
                 </div>
               </div>
@@ -152,17 +152,17 @@ export function CertificatesClient({ coas }: CertificatesClientProps) {
                 <div>
                   <div className="flex items-center justify-between gap-1.5 sm:gap-2 mb-2 sm:mb-3">
                     <span className="font-heading font-black text-lg xs:text-xl sm:text-2xl lg:text-3xl text-[#20221c] tracking-tight leading-none whitespace-nowrap">
-                      100%
+                      Every Lot
                     </span>
                     <div className="w-7 h-7 xs:w-8 xs:h-8 sm:w-9 sm:h-9 rounded-full bg-[#a5a58d] text-white flex items-center justify-center shrink-0 shadow-xs">
                       <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                     </div>
                   </div>
                   <span className="text-[10px] xs:text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#a5a58d] font-heading block mb-1 sm:mb-1.5 leading-tight">
-                    Third-Party Tested
+                    Batch Tested
                   </span>
                   <p className="text-[10px] xs:text-[11px] sm:text-xs text-neutral-600 leading-relaxed">
-                    Independent US analytical laboratories test every lot prior to release.
+                    Analytical testing is run on each lot and reported on its own COA.
                   </p>
                 </div>
               </div>
@@ -172,17 +172,17 @@ export function CertificatesClient({ coas }: CertificatesClientProps) {
                 <div>
                   <div className="flex items-center justify-between gap-1.5 sm:gap-2 mb-2 sm:mb-3">
                     <span className="font-heading font-black text-lg xs:text-xl sm:text-2xl lg:text-3xl text-[#20221c] tracking-tight leading-none whitespace-nowrap">
-                      ISO-7
+                      RUO
                     </span>
                     <div className="w-7 h-7 xs:w-8 xs:h-8 sm:w-9 sm:h-9 rounded-full bg-[#a5a58d] text-white flex items-center justify-center shrink-0 shadow-xs">
                       <FlaskConical className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                     </div>
                   </div>
                   <span className="text-[10px] xs:text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#a5a58d] font-heading block mb-1 sm:mb-1.5 leading-tight">
-                    Cleanroom Synthesis
+                    Research Use Only
                   </span>
                   <p className="text-[10px] xs:text-[11px] sm:text-xs text-neutral-600 leading-relaxed">
-                    Controlled atmospheric compounding and sterile nitrogen vial backfill.
+                    Supplied as lyophilized powder in sealed vials for laboratory research only.
                   </p>
                 </div>
               </div>
@@ -199,10 +199,10 @@ export function CertificatesClient({ coas }: CertificatesClientProps) {
                     </div>
                   </div>
                   <span className="text-[10px] xs:text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#a5a58d] font-heading block mb-1 sm:mb-1.5 leading-tight">
-                    Dual Verification
+                    Analytical Methods
                   </span>
                   <p className="text-[10px] xs:text-[11px] sm:text-xs text-neutral-600 leading-relaxed">
-                    Liquid chromatography purity paired with mass spectrometry sequence match.
+                    Liquid chromatography purity data reported alongside mass spectrometry identity data.
                   </p>
                 </div>
               </div>
@@ -225,6 +225,7 @@ export function CertificatesClient({ coas }: CertificatesClientProps) {
                 <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-400" />
                 <input
                   type="text"
+                  aria-label="Search certificates of analysis"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="Search by peptide name, batch code (e.g. VR-BPC), or lab..."
@@ -309,7 +310,7 @@ export function CertificatesClient({ coas }: CertificatesClientProps) {
                         : 'text-neutral-600 hover:text-neutral-900'
                     }`}
                   >
-                    All (≥99%)
+                    All Batches
                   </button>
                   <button
                     onClick={() => setPurityFilter('high')}
@@ -639,7 +640,7 @@ export function CertificatesClient({ coas }: CertificatesClientProps) {
                       {inspectingCoa.status || 'Verified'}
                     </span>
                     <span className="text-[10px] font-mono text-neutral-500 block mt-1">
-                      Target Purity Standard: ≥99.00%
+                      Purity as reported for this batch
                     </span>
                   </div>
                 </div>
@@ -756,7 +757,7 @@ export function CertificatesClient({ coas }: CertificatesClientProps) {
               The 4-Stage Verification Protocol.
             </h2>
             <p className="text-white/70 text-sm sm:text-base md:text-lg leading-relaxed font-normal">
-              Every batch undergoes a four-tier sequence of chemical validation before release. We document synthesis parameters, chromatography resolution, and molecular weight matching for reproducible scientific research.
+              Each batch is analyzed by HPLC and mass spectrometry, and the results are published on its Certificate of Analysis for you to review.
             </p>
           </div>
 
@@ -771,11 +772,11 @@ export function CertificatesClient({ coas }: CertificatesClientProps) {
                   Solid-Phase Synthesis
                 </h3>
                 <p className="text-xs sm:text-sm text-white/70 leading-relaxed font-normal">
-                  Synthesized in ISO-7 cleanroom suites using high-grade Fmoc-protected amino acids to minimize truncated sequence fragments.
+                  Peptides are built by solid-phase synthesis, then purified and freeze-dried into a lyophilized powder before analysis.
                 </p>
               </div>
               <div className="mt-6 pt-4 border-t border-white/10 text-[11px] font-mono text-[#a5a58d]">
-                Standard: ISO-7 Environment
+                Format: Lyophilized Powder
               </div>
             </div>
 
@@ -788,11 +789,11 @@ export function CertificatesClient({ coas }: CertificatesClientProps) {
                   Reverse-Phase HPLC
                 </h3>
                 <p className="text-xs sm:text-sm text-white/70 leading-relaxed font-normal">
-                  C18 silica column separation detects trace peptide diastereomers and counterions via peak area normalization at 214 nm.
+                  A C18 column separates the sample and detects components by UV absorbance, and purity is calculated from the peak areas.
                 </p>
               </div>
               <div className="mt-6 pt-4 border-t border-white/10 text-[11px] font-mono text-[#a5a58d]">
-                Threshold: ≥99.0% Baseline
+                Result: Purity Per Batch COA
               </div>
             </div>
 
@@ -805,11 +806,11 @@ export function CertificatesClient({ coas }: CertificatesClientProps) {
                   Mass Spectrometry (MS)
                 </h3>
                 <p className="text-xs sm:text-sm text-white/70 leading-relaxed font-normal">
-                  ESI-MS or MALDI-TOF confirms the molecular weight matches theoretical target mass within ±0.05 Da tolerance.
+                  Mass spectrometry compares the measured molecular weight of the compound with its expected mass as an identity check.
                 </p>
               </div>
               <div className="mt-6 pt-4 border-t border-white/10 text-[11px] font-mono text-[#a5a58d]">
-                Tolerance: ±0.05 Da Mass
+                Result: Identity Check
               </div>
             </div>
 
@@ -822,11 +823,11 @@ export function CertificatesClient({ coas }: CertificatesClientProps) {
                   Lyophilized Quarantine
                 </h3>
                 <p className="text-xs sm:text-sm text-white/70 leading-relaxed font-normal">
-                  Freeze-dried into stable lyophilized cakes under inert nitrogen backfill to ensure stability during global transit.
+                  Peptides are supplied as freeze-dried lyophilized cakes, a format chosen for stability in storage and transit.
                 </p>
               </div>
               <div className="mt-6 pt-4 border-t border-white/10 text-[11px] font-mono text-[#a5a58d]">
-                Packaging: Sterile Sealed Glass
+                Packaging: Sealed Glass Vial
               </div>
             </div>
           </div>
@@ -846,7 +847,7 @@ export function CertificatesClient({ coas }: CertificatesClientProps) {
               Looking for an Earlier Batch Report?
             </h3>
             <p className="text-neutral-700 text-sm sm:text-base leading-relaxed">
-              If your vial features a legacy lot code or you need batch-specific data for published research, our quality assurance team will furnish certified analytical documentation within 24 hours.
+              If your vial features a legacy lot code or you need batch-specific data for published research, contact our team with your lot code and we will help you locate the analytical documentation for that batch.
             </p>
           </div>
 
@@ -868,7 +869,7 @@ export function CertificatesClient({ coas }: CertificatesClientProps) {
             Have<br />questions?
           </>
         }
-        description="Comprehensive answers regarding HPLC analytical purity verification, mass spectrometry sequence matching, and third-party laboratory dockets."
+        description="Comprehensive answers regarding HPLC analytical purity verification, mass spectrometry sequence matching, and batch testing dockets."
         faqs={FAQ_ITEMS}
         contactHeading="Need custom lot documentation?"
         contactSubtext="Reach out directly through our contact page and our analytical team will assist you."
@@ -888,10 +889,10 @@ export function CertificatesClient({ coas }: CertificatesClientProps) {
             VERACUE RESEARCH REPOSITORY &bull; VERIFIED QUALITY
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white font-heading tracking-tight mb-4 uppercase max-w-3xl leading-tight">
-            Order Certified &ge;99% Purity Peptides.
+            Order Peptides With Batch COAs.
           </h2>
           <p className="text-white/90 text-sm sm:text-base md:text-lg max-w-xl mx-auto leading-relaxed mb-8">
-            Every batch ships with its corresponding lot-verified Certificate of Analysis. Order today and study with confidence.
+            Every batch ships with its corresponding lot-verified Certificate of Analysis. Review the data for your lot before you order.
           </p>
           <HeroButton href="/shop" direction="right" size="lg">
             Shop All Verified Peptides

@@ -4,11 +4,12 @@ import React, { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { CheckCircle2, Snowflake, Activity, FileCheck2, Sparkles } from 'lucide-react'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion'
 import { HeroButton } from '@/components/ui/hero-button'
 
 export function TrustBadges() {
   const t = useTranslations('home.trustBadges')
+  const reduceMotion = useReducedMotion()
   
   // Ref for section scroll-driven parallax watermark
   const sectionRef = useRef<HTMLElement>(null)
@@ -30,64 +31,64 @@ export function TrustBadges() {
   const pillars = [
     {
       number: '01.',
-      tag: 'USA VERIFIED',
+      tag: 'BATCH TESTED',
       eyebrow: 'Pure Chromatography',
-      title: '99.1%+ Verified Purity',
-      description: 'RP-HPLC analysis runs on every batch, and a single symmetrical peak on the chromatogram is what confirms a clean synthesis.',
-      spec: 'RP-HPLC Confirmed',
+      title: 'Purity on Every COA',
+      description: 'Every batch is analyzed by RP-HPLC, and the chromatogram and purity result for that batch are published on its Certificate of Analysis.',
+      spec: 'HPLC Tested Per Batch',
       icon: CheckCircle2,
       iconColor: 'text-[#cb997e]',
-      image: '/veracue-images/veracue-research-grade-50mg-gloved-hand.png',
-      imageAlt: 'Veracue Research Grade 50mg Peptide Vial in Cleanroom Gloved Hand',
+      image: '/veracue-images/veracue-research-grade-gloved-hand.webp',
+      imageAlt: 'Veracue Research Grade Peptide Vial in Gloved Hand',
     },
     {
       number: '02.',
-      tag: 'SEALED UNDER VACUUM',
-      eyebrow: 'Cryogenic Preservation',
+      tag: 'SEALED VIALS',
+      eyebrow: 'Stable Format',
       title: 'Freeze-Dried for Stability',
-      description: 'Vacuum-lyophilized under certified ISO-7 cleanroom conditions to safeguard peptide tertiary structure against ambient degradation.',
-      spec: 'Moisture <1.5% • -20°C',
+      description: 'Peptides are supplied as a lyophilized powder in sealed vials, a format that keeps the compound stable until reconstitution.',
+      spec: 'Lyophilized • Store Cold',
       icon: Snowflake,
       iconColor: 'text-[#6b705c]',
-      image: '/veracue-images/veracue-research-grade-50mg-ice-dropper.png',
-      imageAlt: 'Veracue 50mg Lyophilized Peptide Vial on Ice with Precision Dropper',
+      image: '/veracue-images/veracue-research-grade-ice-dropper.webp',
+      imageAlt: 'Veracue Lyophilized Peptide Vial on Ice with Precision Dropper',
     },
     {
       number: '03.',
-      tag: 'PRECISION DOSED',
+      tag: 'VERIFIED CONTENT',
       eyebrow: 'Mass Precision',
-      title: 'Exact Milligram Dosing',
-      description: 'ESI-MS confirms exact molar concentration for every batch, keeping reconstitution math accurate down to the microgram.',
-      spec: '±0.5 Da • Zero Isomers',
+      title: 'Verified Vial Content',
+      description: 'Analytical testing supports the labeled quantity in each vial, and the batch COA is there so you can check the numbers yourself.',
+      spec: 'Identity Check • Batch COA',
       icon: Activity,
       iconColor: 'text-[#cb997e]',
-      image: '/veracue-images/veracue-research-grade-50mg-molecular-helix.png',
-      imageAlt: 'Veracue 50mg Research Peptide with Floating Glass Molecular Helix',
+      image: '/veracue-images/veracue-research-grade-molecular-helix.webp',
+      imageAlt: 'Veracue Research Peptide with Floating Glass Molecular Helix',
     },
     {
       number: '04.',
       tag: 'DOCUMENTED AUDIT',
       eyebrow: 'Chain-of-Custody',
       title: 'Batch COA Archive',
-      description: 'Every batch is cross-referenced with publicly accessible third-party mass spectrometry and chromatograms published directly in our catalog.',
+      description: 'Every batch has a Certificate of Analysis with its chromatogram and results, available in our COA archive and on the product page.',
       spec: 'Public COA Archive',
       icon: FileCheck2,
       iconColor: 'text-[#6b705c]',
-      image: '/veracue-images/veracue-research-grade-50mg-dish-leaf-droplets.png',
-      imageAlt: 'Veracue 50mg Research Grade Peptide in Petri Dish with Leaf Droplets',
+      image: '/veracue-images/veracue-research-grade-dish-leaf-droplets.webp',
+      imageAlt: 'Veracue Research Grade Peptide in Petri Dish with Leaf Droplets',
     },
   ]
 
   // Auto-interval timer to cycle the opened image every 3.8 seconds
   useEffect(() => {
-    if (isPaused) return
+    if (isPaused || reduceMotion) return
 
     const interval = setInterval(() => {
       setActiveCard((prev) => (prev + 1) % pillars.length)
     }, 3800)
 
     return () => clearInterval(interval)
-  }, [isPaused, pillars.length])
+  }, [isPaused, reduceMotion, pillars.length])
 
   // Automatically scroll active card into view on mobile / tablet viewports
   useEffect(() => {
@@ -125,7 +126,7 @@ export function TrustBadges() {
       className="bg-[#f0efeb] pt-16 sm:pt-20 md:pt-24 lg:pt-28 pb-6 sm:pb-8 md:pb-10 lg:pb-12 px-4 sm:px-6 md:px-10 lg:px-12 relative overflow-hidden font-sans select-none"
     >
       {/* Subtle Background Architectural Watermark Typography with Parallax Scroll Animation */}
-      <div className="absolute inset-0 flex items-center pointer-events-none select-none opacity-[0.04] z-0 overflow-hidden">
+      <div aria-hidden="true" className="absolute inset-0 flex items-center pointer-events-none select-none opacity-[0.04] z-0 overflow-hidden">
         <motion.div 
           style={{ x: watermarkX }} 
           className="whitespace-nowrap will-change-transform flex gap-12"
@@ -145,7 +146,7 @@ export function TrustBadges() {
           <div className="max-w-2xl">
             {/* Eyebrow Pill */}
             <div className="inline-block border border-[#eddcd2] rounded-full max-w-full px-3 sm:px-4 py-1.5 mb-4 sm:mb-5 bg-white shadow-2xs">
-              <span className="text-[#a5a58d] text-[9px] xs:text-[9.5px] sm:text-xs font-bold tracking-[0.02em] xs:tracking-[0.06em] sm:tracking-[0.2em] uppercase font-editorial whitespace-nowrap">
+              <span className="text-[#6b705c] text-[9px] xs:text-[9.5px] sm:text-xs font-bold tracking-[0.02em] xs:tracking-[0.06em] sm:tracking-[0.2em] uppercase font-editorial whitespace-nowrap">
                 {t('eyebrow')}
               </span>
             </div>
@@ -220,7 +221,6 @@ export function TrustBadges() {
                       fill
                       sizes="(max-width: 640px) 270px, (max-width: 1024px) 300px, 320px"
                       className="object-contain select-none"
-                      priority={index === 1}
                     />
                   </div>
                 </div>

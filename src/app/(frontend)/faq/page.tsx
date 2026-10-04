@@ -4,6 +4,21 @@ import { getTranslations } from 'next-intl/server'
 import { FaqClient } from '@/components/faq/FaqClient'
 import { faqData } from '@/data/faqs'
 import { getOgImageUrl } from '@/lib/utils'
+import { safeJsonLd } from '@/lib/seo/jsonLd'
+
+// Strip tags, decode common HTML entities, and collapse whitespace for structured data text.
+function toPlainText(html: string): string {
+  return html
+    .replace(/<[^>]*>?/gm, ' ')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&amp;/g, '&')
+    .replace(/s+/g, ' ')
+    .trim()
+}
 
 const slug = 'faq'
 const locale = 'en'
@@ -57,11 +72,11 @@ export default async function FaqPage() {
       "name": item.question,
       "acceptedAnswer": {
         "@type": "Answer",
-        // Strip HTML tags for clean text in structured data
-        "text": item.answer.replace(/<[^>]*>?/gm, '')
+        // Clean plain text for structured data
+        "text": toPlainText(item.answer)
       }
     }))
-  );
+  ).slice(0, 50);
 
   const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
   const path = `/${slug}`
@@ -77,6 +92,8 @@ export default async function FaqPage() {
         name: title,
         description,
         inLanguage: locale,
+        isPartOf: { '@id': `${baseUrl}/#website` },
+        publisher: { '@id': `${baseUrl}/#organization` },
       },
       {
         '@type': 'BreadcrumbList',
@@ -85,18 +102,6 @@ export default async function FaqPage() {
           { '@type': 'ListItem', position: 1, name: 'Home', item: baseUrl },
           { '@type': 'ListItem', position: 2, name: 'FAQ' },
         ],
-      },
-      {
-        '@type': 'WebSite',
-        '@id': `${baseUrl}/#website`,
-        url: baseUrl,
-        name: 'Veracue Peptides',
-      },
-      {
-        '@type': 'Organization',
-        '@id': `${baseUrl}/#organization`,
-        name: 'Veracue Peptides',
-        url: baseUrl,
       },
     ],
   }
@@ -108,12 +113,12 @@ export default async function FaqPage() {
       {/* JSON-LD Structured Data */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(pageSchema) }}
       />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
+          __html: safeJsonLd({
             "@context": "https://schema.org",
             "@type": "FAQPage",
             "mainEntity": allFaqs

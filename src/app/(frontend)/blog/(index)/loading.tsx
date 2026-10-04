@@ -3,7 +3,7 @@ import { BlogPostCardSkeleton } from '@/components/ui/skeleton'
 
 export default function BlogLoading() {
   return (
-    <main style={{ backgroundColor: '#f0efeb' }} className="w-full text-[#20221c] min-h-screen font-sans overflow-x-clip">
+    <div style={{ backgroundColor: '#f0efeb' }} className="w-full text-[#20221c] min-h-screen font-sans overflow-x-clip">
       {/* 1. Blog Hero Skeleton — light olive green */}
       <section className="w-full pt-[78px] sm:pt-[94px] md:pt-[128px] pb-6 px-3 sm:px-6 md:px-10 flex flex-col items-center">
         <div className="flex flex-col items-center w-full max-w-5xl text-center animate-pulse mb-6">
@@ -44,6 +44,6 @@ export default function BlogLoading() {
           ))}
         </div>
       </div>
-    </main>
+    </div>
   )
 }

@@ -1,0 +1,605 @@
+{
+  "route": "/product/ipamorelin-spray",
+  "productName": "Ipamorelin Spray",
+  "complianceStatus": "Research Use Only (RUO) — Not for human use — Not for veterinary use — Not a drug, dietary supplement, or medical treatment",
+  "seo": {
+    "title": "Ipamorelin Peptide Spray | Research Peptide | Veracue",
+    "metaDescription": "Ipamorelin Spray from Veracue: a Research Use Only pentapeptide growth hormone secretagogue. Verified sequence, molecular weight, GHS-R1a pharmacology, and COA guidance for laboratory research. RUO — not for human or veterinary use."
+  },
+  "breadcrumbs": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "Shop",
+      "url": "/shop"
+    },
+    {
+      "name": "Ipamorelin Spray",
+      "url": "/product/ipamorelin-spray"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Research Use Only",
+    "h1": "Ipamorelin Spray",
+    "subheading": "A synthetic pentapeptide growth hormone secretagogue supplied for laboratory research, with identity referenced to PubChem CID 9831659.",
+    "complianceBadges": [
+      "Research Use Only",
+      "Not for Human Use",
+      "Not for Veterinary Use",
+      "Not a Drug, Dietary Supplement, or Medical Treatment"
+    ]
+  },
+  "overview": {
+    "heading": "Overview",
+    "body": [
+      "Ipamorelin is a synthetic pentapeptide — Aib-His-D-2-Nal-D-Phe-Lys-NH2 — studied as a growth hormone secretagogue that acts on the growth hormone secretagogue receptor, GHS-R1a. That's the same receptor family the body's own ghrelin activates, and a different pathway from the GHRH receptor that compounds like CJC-1295, sermorelin, and tesamorelin work through. Researchers run into ipamorelin peptide comparisons constantly for exactly this reason: several molecules sit somewhere on the growth-hormone axis, but they get there by different receptor routes.",
+      "On this page, \"Ipamorelin Spray\" names a dispensing format — how the research material is packaged and dispensed from its container. It isn't a claim about how the peptide should be used or absorbed. Whether a given product is intended for a particular biological route is a question for Veracue's own first-party documentation, not something a product name settles on its own, so route is treated as not publicly specified below unless that documentation says otherwise.",
+      "The published record on ipamorelin spans in vitro receptor work, animal pharmacology, and a controlled human pharmacokinetic study. Those sit at different levels of evidence, and mixing them up — reading an animal finding as a human result, for instance — is one of the more common mistakes in how this peptide gets written about online. The sections below keep those levels apart.",
+      "What this page can establish with confidence is molecule-level identity: sequence, formula, mass, and receptor pharmacology, each checkable independently against PubChem and the primary literature. What has to come from a specific production run — concentration, formulation, purity result — sits on a lot-specific Certificate of Analysis rather than on a general product page, and that's addressed directly further down."
+    ]
+  },
+  "productSnapshot": {
+    "heading": "Product Snapshot",
+    "moleculeLevel": {
+      "heading": "Molecule level (verified)",
+      "fields": [
+        {
+          "label": "Common name",
+          "value": "Ipamorelin"
+        },
+        {
+          "label": "Development code",
+          "value": "NNC 26-0161 — as reported in the peptide's early pharmacokinetic literature (Johansen et al., 1998)"
+        },
+        {
+          "label": "Classification",
+          "value": "Synthetic pentapeptide; growth hormone secretagogue, GHS-R1a agonist"
+        },
+        {
+          "label": "Sequence",
+          "value": "Aib-His-D-2-Nal-D-Phe-Lys-NH2 (2-aminoisobutyric acid, histidine, D-2-naphthylalanine, D-phenylalanine, lysine; C-terminally amidated)"
+        },
+        {
+          "label": "Residue count",
+          "value": "5-residue pentapeptide; sequence includes a noncanonical residue (Aib) and two D-configured residues, so it is represented above rather than as a standard one-letter code"
+        },
+        {
+          "label": "Molecular formula",
+          "value": "C38H49N9O5"
+        },
+        {
+          "label": "Molecular weight",
+          "value": "≈711.9 g/mol (711.868 g/mol, per PubChem)"
+        },
+        {
+          "label": "CAS number",
+          "value": "170851-70-4"
+        },
+        {
+          "label": "PubChem CID",
+          "value": "9831659"
+        },
+        {
+          "label": "Receptor / pathway",
+          "value": "Growth hormone secretagogue receptor (GHS-R1a / ghrelin receptor)"
+        }
+      ]
+    },
+    "veracueProductLevel": {
+      "heading": "Veracue product level",
+      "note": "The PubChem record above verifies ipamorelin as a chemical entity — it does not verify any specific Veracue production lot. Fields below reflect what this listing confirms; anything else requires the applicable Certificate of Analysis.",
+      "fields": [
+        {
+          "label": "Product name",
+          "value": "Ipamorelin Spray"
+        },
+        {
+          "label": "Format",
+          "value": "Spray dispenser (research packaging)"
+        },
+        {
+          "label": "RUO status",
+          "value": "Research Use Only — not for human or veterinary use"
+        },
+        {
+          "label": "Concentration",
+          "value": "Not publicly specified"
+        },
+        {
+          "label": "Amount per spray/actuation",
+          "value": "Not publicly specified"
+        },
+        {
+          "label": "Package size",
+          "value": "Not publicly specified"
+        },
+        {
+          "label": "Formulation / carrier / excipients",
+          "value": "Not publicly specified"
+        },
+        {
+          "label": "Route",
+          "value": "Not publicly specified"
+        },
+        {
+          "label": "Purity",
+          "value": "Not publicly specified — product- and lot-specific, see applicable COA"
+        },
+        {
+          "label": "Storage conditions",
+          "value": "Not publicly specified"
+        },
+        {
+          "label": "Certificate of Analysis",
+          "value": "Product- and lot-specific documentation should be checked against Veracue's current certificate library or requested directly"
+        }
+      ]
+    }
+  },
+  "problemSolutionSections": [
+    {
+      "id": "identity",
+      "heading": "How do I confirm what Ipamorelin actually is?",
+      "body": [
+        "Ipamorelin is a synthetic pentapeptide classified as a growth hormone secretagogue — specifically an agonist at the growth hormone secretagogue receptor. It is not ghrelin, not growth hormone, not HGH, and not a GHRH analogue; those are separate molecules with separate receptor targets, even though the words around all of them tend to blur together in casual writing.",
+        "A lot of the confusion traces back to vendor catalogs and forum shorthand, where ipamorelin, CJC-1295, tesamorelin, and sermorelin get grouped as \"GH peptides\" without distinguishing how each one actually works. Pharmacologically, they split cleanly into two receptor families: ipamorelin activates GHS-R1a, while CJC-1295, tesamorelin, and sermorelin activate the GHRH receptor instead. That split is covered in more detail further down.",
+        "For a specific product rather than the molecule in general, identity is confirmed against a reference database — sequence and mass checked against the PubChem record — not inferred from a product name or a listing description alone."
+      ]
+    },
+    {
+      "id": "molecular-identity",
+      "heading": "What is the correct Ipamorelin sequence, molecular weight, and chemical identity?",
+      "body": [
+        "Ipamorelin's sequence is Aib-His-D-2-Nal-D-Phe-Lys-NH2: five residues — 2-aminoisobutyric acid (Aib), histidine, D-2-naphthylalanine, D-phenylalanine, and lysine — with an amidated C-terminus. Because the sequence includes a noncanonical residue and two D-configured amino acids, it's written out this way rather than compressed into a standard one-letter code, which would misrepresent it.",
+        "Its molecular formula is C38H49N9O5, giving a molecular weight of approximately 711.9 g/mol (711.868 g/mol per PubChem). It's registered under CAS number 170851-70-4 and listed as PubChem CID 9831659, where the formula and mass can be verified independently.",
+        "These figures describe ipamorelin as a chemical entity. They don't, by themselves, confirm what's in a particular Veracue vial — that's a question for lot-specific identity testing, covered in the COA section below."
+      ]
+    },
+    {
+      "id": "vs-ghrelin-ghrp6",
+      "heading": "How does Ipamorelin differ from ghrelin and GHRP-6?",
+      "body": [
+        "Ghrelin is the body's own hormone — a 28-amino-acid peptide produced mainly in the stomach that acts as the natural, endogenous ligand for GHS-R1a. Ipamorelin is a synthetic pentapeptide designed to engage that same receptor; it is a receptor agonist modeled around ghrelin's target, not ghrelin itself, and the two differ substantially in size, sequence, and origin.",
+        "GHRP-6 is a different synthetic compound again — an earlier hexapeptide growth hormone-releasing peptide that served as one of the pharmacological comparators in the original ipamorelin characterization work. In that research, ipamorelin's GH-releasing potency and efficacy in pituitary cell assays were benchmarked against GHRP-6 under matched experimental conditions (Raun et al., 1998, European Journal of Endocrinology).",
+        "So the three form a small family with a shared receptor target and distinct identities: native ghrelin as the endogenous signal, GHRP-6 as an earlier synthetic secretagogue, and ipamorelin as a later, structurally distinct pentapeptide developed for improved receptor selectivity."
+      ]
+    },
+    {
+      "id": "receptor-literature",
+      "heading": "What does the Ipamorelin receptor literature actually establish?",
+      "body": [
+        "The foundational pharmacology paper on ipamorelin, published by Novo Nordisk researchers, characterized it as a GHS-R1a agonist and used GHRH- and GHRP-receptor antagonists to confirm that its GH-releasing activity runs through the GHRP-type receptor pathway rather than the GHRH pathway (Raun et al., 1998, Eur J Endocrinol, DOI 10.1530/eje.0.1390552).",
+        "Receptor agonism is a specific, testable pharmacological event — a ligand binds a receptor and triggers a defined downstream signal. That's a narrower claim than saying a compound \"is\" growth hormone or automatically raises it in every context; what the receptor literature establishes is the binding and activation event itself, measured in isolated cells and in specific animal models.",
+        "The same body of work reported that, under the conditions tested, ipamorelin's hormonal effects looked comparatively selective: GH release without a significant rise in ACTH or cortisol, and without measurable change in FSH, LH, prolactin, or TSH. That's a finding tied to the animal models it came from, not a general statement about every biological system ipamorelin might be tested in."
+      ]
+    },
+    {
+      "id": "gh-secretion-research",
+      "heading": "What does Ipamorelin research actually show about growth hormone secretion?",
+      "body": [
+        "At the cell and animal level, the evidence is reasonably substantial. Ipamorelin released GH from primary rat pituitary cells with potency and efficacy comparable to GHRP-6, and produced measurable GH release in anesthetized rats and conscious swine (Raun et al., 1998). A separate 15-day dosing study in adult female rats found dose-dependent increases in longitudinal bone growth rate and body weight, without significant change in total IGF-1 or standard bone-turnover markers (Johansen et al., 1999, Growth Horm IGF Res, DOI 10.1054/ghir.1999.9998). In a rat model of glucocorticoid-induced muscle and bone loss, co-administered ipamorelin partly offset the loss in muscle tension and periosteal bone formation (Andersen et al., 2001, Growth Horm IGF Res, DOI 10.1054/ghir.2001.0239).",
+        "At the human level, the relevant published work is pharmacokinetic and pharmacodynamic rather than a treatment trial — covered in the next section.",
+        "None of the animal findings above transfer automatically to a human context, and none of them describe a treated condition improving. A rat's bone growth rate is a rat's bone growth rate; it's evidence about the pharmacology of the compound in that species, not a projection onto human physiology."
+      ]
+    },
+    {
+      "id": "human-literature",
+      "heading": "What does the human Ipamorelin literature actually show?",
+      "body": [
+        "There is published human data. Gobburu, Agersø, Jusko, and Ynddal (1999, Pharmaceutical Research, DOI 10.1023/a:1018955126402) ran a controlled pharmacokinetic/pharmacodynamic study of ipamorelin in healthy adult volunteers, examining how plasma ipamorelin exposure related to the resulting growth hormone response over time. The relationship they modeled was dose-proportional in its pharmacokinetics and produced a single, transient GH-release episode following administration, consistent with a short-acting secretagogue.",
+        "That's a real, citable human study, and the accurate statement isn't that ipamorelin has never been studied in people — it's that the human evidence that exists is pharmacokinetic and pharmacodynamic, describing exposure and hormone-response relationships, not a trial of therapeutic benefit, disease outcome, or long-term safety. Specific dose levels and infusion schedules from that trial aren't reproduced here, since they belong to a controlled research protocol rather than to general product information.",
+        "It's worth being precise about what a PK/PD study does and doesn't demonstrate: it characterizes how a compound behaves and how the body responds to it under defined conditions. It does not, on its own, establish clinical efficacy, approved use, or a benefit for any condition — and nothing about that study should be read onto Veracue's Spray product specifically."
+      ]
+    },
+    {
+      "id": "benefits-search-intent",
+      "heading": "What does \"Ipamorelin benefits\" mean in a research context?",
+      "body": [
+        "In the literature, \"benefit\" isn't a promotional word — it's shorthand for whatever endpoint a given study actually measured. For ipamorelin, that includes things like GH-release potency and efficacy in pituitary cell assays, receptor-binding selectivity relative to other secretagogues, the shape of the GH-response curve in the human PK/PD study, and structural endpoints such as bone formation rate or body weight in rat models.",
+        "None of those translate into a general claim about muscle growth, fat loss, recovery, sleep, testosterone, or anti-aging outcomes — findings like that don't appear in ipamorelin's published research record, human or animal, and this page doesn't extend the literature to cover them.",
+        "The more useful way to read an \"ipamorelin benefits\" search is as a question about the study behind it: what species or system was tested, what was actually measured, and at what evidentiary level. Framed that way, the search stays tied to real data instead of drifting into a consumer-benefits list."
+      ]
+    },
+    {
+      "id": "dosage-search-intent",
+      "heading": "What do \"Ipamorelin dosage,\" \"Ipamorelin 5mg/10mg,\" and similar searches actually mean?",
+      "body": [
+        "These searches tend to blend two different things: quantities used inside a research protocol, and quantities printed on a commercial package label. They aren't interchangeable, and neither is provided here as usage guidance.",
+        "Published research doses are protocol-specific — tied to a species, a route, and a study design — and aren't transferable to a spray product intended for research handling. Figures like \"5mg\" or \"10mg\" that show up in searches and product listings typically describe a package's total peptide content, but that has to be verified against the specific listing in question rather than assumed from the search term itself.",
+        "This page doesn't state a concentration, spray count, administration frequency, or route for Ipamorelin Spray, and none of the figures above should be read as a recommendation of any kind."
+      ]
+    },
+    {
+      "id": "vs-ghrp2-cjc-sermorelin-tesamorelin",
+      "heading": "How is Ipamorelin different from GHRP-2, CJC-1295, sermorelin, and tesamorelin?",
+      "body": [
+        "The cleanest way to sort these is by receptor family. Ipamorelin and GHRP-2 are both GHS-R1a (ghrelin-receptor) agonists, though they're structurally distinct hexapeptide-versus-pentapeptide secretagogues with different selectivity profiles reported in the pharmacology literature. CJC-1295, sermorelin, and tesamorelin sit in a separate family entirely — GHRH analogues that work through the GHRH receptor rather than GHS-R1a.",
+        "Tesamorelin is the active ingredient in EGRIFTA, an FDA-approved pharmaceutical for a specific indication in adults with HIV-associated lipodystrophy. That approval applies to the approved branded product and that indication — it doesn't extend to research-grade tesamorelin peptide, and it says nothing about ipamorelin, which is a different molecule on a different receptor pathway.",
+        "\"CJC-1295 and ipamorelin\" is also one of the more common paired searches in this space, mostly because the two compounds are frequently listed and discussed together as representatives of the two different GH-axis receptor pathways — GHS-R1a and GHRH-R. That pairing reflects how the compounds are categorized and marketed, not a documented claim of synergy or combined effect; no such claim is made here, and no combination protocol is described.",
+        "None of this is a ranking. Different receptor pathway, different regulatory status, and different research history are factual distinctions, not a statement that any one of these compounds is stronger, safer, or more effective than another."
+      ]
+    },
+    {
+      "id": "side-effects-search-intent",
+      "heading": "What does \"Ipamorelin side effects\" mean when reading research literature?",
+      "body": [
+        "Adverse-event and tolerability findings are tied to the exact molecule, species, dose, and formulation used in a given study, and they don't carry over cleanly to a chemically related but distinct compound. A side-effect profile reported for a different secretagogue, or for HGH, isn't ipamorelin's profile by default, and this page doesn't borrow from those lists to fill a gap in ipamorelin's own record.",
+        "What the animal pharmacology literature does report is a comparatively narrow hormonal footprint under the specific conditions tested: in the original swine and rat studies, ipamorelin's GH release wasn't accompanied by the ACTH and cortisol increases seen with some other secretagogues tested in the same experiments, and other pituitary hormones weren't significantly affected (Raun et al., 1998). That's a specific animal-pharmacology observation about a defined comparison, not a ranking of one compound's safety against another's, and not a human safety statement.",
+        "Tolerability for an actual research material also depends heavily on its formulation — carrier, concentration, and route — none of which is established for Veracue's Spray product on this page. Questions about a specific formulation's safety profile sit outside what the molecule-level literature can answer, and outside what a product page is positioned to provide."
+      ]
+    },
+    {
+      "id": "coa-reading",
+      "heading": "What should I verify on an Ipamorelin COA and mass-spectrometry report?",
+      "body": [
+        "A Certificate of Analysis ties a specific production lot to the testing performed on it. For a peptide like ipamorelin, a complete COA may include the product identity, a lot or batch number, the testing date, the testing laboratory, the analytical method used, a purity result, mass-spectrometry data supporting molecular identity, chromatographic data such as an HPLC trace, the tested specification, and the observed result against that specification.",
+        "On the analytical side, three questions are worth keeping separate. Identity asks whether the observed mass and chromatographic behavior match what's expected for ipamorelin's molecular formula. Purity asks what proportion of the sample corresponds to that target molecule under the stated method, typically from HPLC peak-area analysis. Potency — how strongly a sample activates its receptor biologically — doesn't follow automatically from either mass spectrometry or HPLC; it requires a separate functional assay.",
+        "Product- and lot-specific results — the actual purity figure, mass-spec data, or HPLC trace for a given Ipamorelin Spray batch — aren't stated on this page. They should be checked against the applicable COA in Veracue's current certificate library or requested directly when not yet published."
+      ]
+    },
+    {
+      "id": "molecule-vs-product",
+      "heading": "What can a Veracue Ipamorelin Spray page establish, and what requires lot-specific documentation?",
+      "body": [
+        "It helps to keep two layers separate. The molecule-level layer — sequence, molecular formula, molecular weight, CAS number, the PubChem record, and receptor pharmacology from the published literature — is a property of ipamorelin as a chemical entity, and it's what a general product page can verify with confidence.",
+        "The product-level layer — a given vial's concentration, exact formulation and carrier, tested purity, storage requirements, and route — is specific to a manufacturing lot. For procurement and QA purposes, that layer can only come from first-party documentation for that lot: the Certificate of Analysis and any accompanying product insert.",
+        "Where a product-level field above reads \"not publicly specified,\" that reflects the limit of what this page can responsibly state, not an oversight. Verifying those fields for a specific order means checking the current COA at /certificates or reaching out through /contact-us."
+      ]
+    }
+  ],
+  "comparisonTable": {
+    "heading": "Ipamorelin in context: a neutral comparison",
+    "note": "This table compares identity and receptor pharmacology only. It does not rank the compounds by potency, safety, or effectiveness.",
+    "columns": [
+      "Compound",
+      "Identity",
+      "Structural Class",
+      "Receptor / Pathway",
+      "Research Context"
+    ],
+    "rows": [
+      {
+        "compound": "Ipamorelin",
+        "identity": "Synthetic pentapeptide (Aib-His-D-2-Nal-D-Phe-Lys-NH2)",
+        "structuralClass": "Growth hormone secretagogue",
+        "receptorPathway": "GHS-R1a (ghrelin receptor) agonist",
+        "researchContext": "Receptor pharmacology, animal models, human PK/PD study"
+      },
+      {
+        "compound": "GHRP-6",
+        "identity": "Synthetic hexapeptide growth hormone-releasing peptide",
+        "structuralClass": "Growth hormone secretagogue",
+        "receptorPathway": "GHS-R1a (ghrelin receptor) agonist",
+        "researchContext": "Early secretagogue pharmacology; used as a comparator compound in ipamorelin's original characterization studies"
+      },
+      {
+        "compound": "GHRP-2 (pralmorelin)",
+        "identity": "Synthetic hexapeptide growth hormone-releasing peptide",
+        "structuralClass": "Growth hormone secretagogue",
+        "receptorPathway": "GHS-R1a (ghrelin receptor) agonist",
+        "researchContext": "Secretagogue pharmacology and comparator research"
+      },
+      {
+        "compound": "CJC-1295",
+        "identity": "Synthetic GHRH analogue peptide",
+        "structuralClass": "GHRH analogue",
+        "receptorPathway": "GHRH receptor agonist",
+        "researchContext": "GH-axis and pharmacokinetic research"
+      },
+      {
+        "compound": "Sermorelin",
+        "identity": "GHRH(1-29) analogue peptide",
+        "structuralClass": "GHRH analogue",
+        "receptorPathway": "GHRH receptor agonist",
+        "researchContext": "Historical clinical and pharmacology literature"
+      },
+      {
+        "compound": "Tesamorelin",
+        "identity": "GHRH analogue; active ingredient of FDA-approved EGRIFTA",
+        "structuralClass": "GHRH analogue",
+        "receptorPathway": "GHRH receptor agonist",
+        "researchContext": "Approved-product clinical literature (HIV-associated lipodystrophy indication); separate from research-grade peptide use"
+      },
+      {
+        "compound": "Native ghrelin",
+        "identity": "Endogenous 28-amino-acid peptide hormone",
+        "structuralClass": "Endogenous hormone",
+        "receptorPathway": "GHS-R1a (ghrelin receptor) endogenous ligand",
+        "researchContext": "Endocrinology and metabolic research"
+      }
+    ]
+  },
+  "analyticalSection": {
+    "heading": "Identity, purity, and potency: reading the analytical picture",
+    "body": [
+      "Identity, purity, and potency answer three different questions, even though they get used interchangeably in casual descriptions. Identity asks whether an analytical result supports the expected molecular identity — for ipamorelin, that means an observed mass and charge-state behavior consistent with a molecular formula of C38H49N9O5, typically assessed by mass spectrometry.",
+      "Purity asks how much of the analyzed sample corresponds to the target material under the stated method, most often established through HPLC peak-area analysis. Potency is a different kind of measurement again — how strongly a sample activates its target receptor biologically — and it does not follow automatically from either a mass-spec result or an HPLC purity figure.",
+      "Mass spectrometry can support molecular identity through the expected mass and charge-state pattern; HPLC can provide chromatographic purity information depending on the method used. Specific values — exact m/z, charge-state peaks, mass tolerance, HPLC percentage, retention time, or a purity threshold — depend on the method applied to a given sample and aren't stated here; they belong on the applicable Certificate of Analysis for a specific lot."
+    ]
+  },
+  "coaSection": {
+    "heading": "Reading an Ipamorelin Certificate of Analysis",
+    "body": [
+      "A Certificate of Analysis connects a specific production lot to the testing it underwent. For an ipamorelin research product, a COA may include product identity, a lot or batch number, the date testing was performed, the testing laboratory's name, the analytical method used, a purity result, supporting mass-spectrometry and chromatographic data, the tested specification, and the observed result against it.",
+      "Coverage varies by supplier and by which tests were actually run, so \"may include\" is meant literally — a COA for one product or lot isn't a template for what every certificate contains. No specific test result for this Ipamorelin Spray listing is stated on this page; product- and lot-specific findings — purity figures, identity results, HPLC or MS data — should be verified against the applicable COA rather than assumed from this description.",
+      "The underlying point is traceability: a COA should let a researcher connect the material in hand back to the batch it was actually tested from, checked against Veracue's current certificate library or requested directly when a document isn't yet published."
+    ]
+  },
+  "ruoNotice": {
+    "heading": "Research Use Only — compliance notice",
+    "statements": [
+      "Research Use Only",
+      "Not for human use",
+      "Not for veterinary use",
+      "Not a drug, dietary supplement, or medical treatment"
+    ],
+    "body": [
+      "Ipamorelin Spray is supplied by Veracue strictly for laboratory, analytical/reference, and in vitro research by qualified personnel. This page describes published research and verified molecular identity — it does not provide dosing, administration, injection, nasal-use, oral or sublingual use, spray-count, reconstitution, dilution, cycling, or treatment guidance of any kind.",
+      "Findings referenced above — receptor pharmacology, animal-model data, or the human pharmacokinetic study — describe what was observed under specific, controlled experimental conditions. They are not instructions, and they are not a basis for self-administration or for building a use protocol. This material carries no approval for human or animal treatment."
+    ]
+  },
+  "faqs": [
+    {
+      "question": "What is Ipamorelin?",
+      "answer": "Ipamorelin is a synthetic pentapeptide classified as a growth hormone secretagogue — an agonist at the growth hormone secretagogue receptor, GHS-R1a. It's studied as a research compound and is distinct from growth hormone itself and from GHRH analogues such as CJC-1295, sermorelin, and tesamorelin."
+    },
+    {
+      "question": "What is the Ipamorelin peptide sequence?",
+      "answer": "Aib-His-D-2-Nal-D-Phe-Lys-NH2: a five-residue, C-terminally amidated chain of 2-aminoisobutyric acid, histidine, D-2-naphthylalanine, D-phenylalanine, and lysine, as listed under PubChem CID 9831659."
+    },
+    {
+      "question": "What is the molecular weight of Ipamorelin?",
+      "answer": "Ipamorelin has a molecular formula of C38H49N9O5 and a molecular weight of approximately 711.9 g/mol (711.868 g/mol), registered under CAS number 170851-70-4."
+    },
+    {
+      "question": "How does Ipamorelin work in research?",
+      "answer": "Published pharmacology describes ipamorelin as binding and activating GHS-R1a, triggering GH release from the pituitary in cell and animal models. In the original characterization studies this occurred with a comparatively selective hormonal profile relative to certain other secretagogues tested under the same conditions — an animal-pharmacology finding, not a human treatment claim."
+    },
+    {
+      "question": "Is Ipamorelin the same as ghrelin or GHRP-6?",
+      "answer": "No. Ghrelin is the endogenous hormone that naturally activates GHS-R1a; ipamorelin is a synthetic pentapeptide designed to engage the same receptor. GHRP-6 is a separate, earlier synthetic hexapeptide secretagogue used as a pharmacological comparator in ipamorelin's original research. All three differ in structure and origin despite sharing a receptor target."
+    },
+    {
+      "question": "What receptor does Ipamorelin interact with?",
+      "answer": "Ipamorelin is an agonist at the growth hormone secretagogue receptor, GHS-R1a — the receptor ghrelin also activates. That's a different receptor from the GHRH receptor engaged by CJC-1295, sermorelin, and tesamorelin."
+    },
+    {
+      "question": "What is Ipamorelin researched for?",
+      "answer": "Ipamorelin is studied mainly in growth-hormone-secretagogue pharmacology: receptor binding and selectivity, GH-release kinetics in cell, animal, and human pharmacokinetic studies, and downstream endpoints such as bone formation rate in rat models."
+    },
+    {
+      "question": "Is there human research on Ipamorelin?",
+      "answer": "Yes. A controlled human pharmacokinetic/pharmacodynamic study examined the relationship between ipamorelin exposure and GH response in healthy volunteers (Gobburu et al., 1999, Pharmaceutical Research). That study characterizes exposure and hormone-response relationships; it does not demonstrate clinical efficacy or long-term safety."
+    },
+    {
+      "question": "What does \"Ipamorelin benefits\" mean in research?",
+      "answer": "In the literature, \"benefit\" corresponds to a specific measured endpoint — GH-release potency in a cell assay, a hormone-response curve in the human PK/PD study, a bone-growth endpoint in a rat model — rather than a general or guaranteed outcome. Each finding stays tied to the study, species, and endpoint that produced it."
+    },
+    {
+      "question": "What do Ipamorelin dosage and 5mg/10mg searches mean?",
+      "answer": "\"Dosage\" searches often reflect research-protocol quantities from published studies, which are species- and route-specific and not transferable to product use. Figures like \"5mg\" or \"10mg\" typically describe a package's total peptide content, but that has to be verified against the specific listing rather than assumed. No administration guidance is given here."
+    },
+    {
+      "question": "What should I look for on an Ipamorelin COA?",
+      "answer": "A complete Certificate of Analysis may include product identity, lot number, test date, testing laboratory, analytical method, purity result, HPLC and mass-spectrometry data, the tested specification, and the observed result. Product- and lot-specific documentation should be checked against Veracue's current certificate library or requested directly."
+    },
+    {
+      "question": "Is Ipamorelin Spray necessarily a nasal spray?",
+      "answer": "No. \"Spray\" describes Veracue's dispensing format for this research material, not a confirmed administration route. Unless Veracue's own first-party documentation states a specific route, it should be treated as not publicly specified rather than assumed to be nasal, oral, sublingual, buccal, or topical."
+    }
+  ],
+  "internalLinks": [
+    {
+      "label": "Shop research peptides",
+      "url": "/shop"
+    },
+    {
+      "label": "Certificates of Analysis",
+      "url": "/certificates"
+    },
+    {
+      "label": "Frequently Asked Questions",
+      "url": "/faq"
+    },
+    {
+      "label": "Contact Us",
+      "url": "/contact-us"
+    },
+    {
+      "label": "About Veracue",
+      "url": "/about-us"
+    },
+    {
+      "label": "Medical Disclaimer",
+      "url": "/medical-disclaimer"
+    },
+    {
+      "label": "Terms and Conditions",
+      "url": "/terms-and-conditions"
+    }
+  ],
+  "references": [
+    {
+      "source": "PubChem",
+      "citation": "Ipamorelin, PubChem CID 9831659",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/9831659"
+    },
+    {
+      "source": "PubMed",
+      "citation": "Raun K, Hansen BS, Johansen NL, et al. Ipamorelin, the first selective growth hormone secretagogue. Eur J Endocrinol. 1998;139(5):552-561.",
+      "doi": "https://doi.org/10.1530/eje.0.1390552",
+      "pmid": "9849822"
+    },
+    {
+      "source": "PubMed",
+      "citation": "Johansen PB, Nowak J, Skjaerbaek C, et al. Ipamorelin, a new growth-hormone-releasing peptide, induces longitudinal bone growth in rats. Growth Horm IGF Res. 1999;9(2):106-113.",
+      "doi": "https://doi.org/10.1054/ghir.1999.9998",
+      "pmid": "10373343"
+    },
+    {
+      "source": "PubMed",
+      "citation": "Gobburu JV, Agersø H, Jusko WJ, Ynddal L. Pharmacokinetic-pharmacodynamic modeling of ipamorelin, a growth hormone releasing peptide, in human volunteers. Pharm Res. 1999;16(9):1412-1416.",
+      "doi": "https://doi.org/10.1023/a:1018955126402",
+      "pmid": "10496658"
+    },
+    {
+      "source": "PubMed",
+      "citation": "Andersen NB, Malmlöf K, Johansen PB, et al. The growth hormone secretagogue ipamorelin counteracts glucocorticoid-induced decrease in bone formation of adult rats. Growth Horm IGF Res. 2001;11(5):266-272.",
+      "doi": "https://doi.org/10.1054/ghir.2001.0239",
+      "pmid": "11735244"
+    },
+    {
+      "source": "PubMed",
+      "citation": "Johansen PB, Hansen KT, Andersen JV, Johansen NL. Pharmacokinetic evaluation of ipamorelin and other peptidyl growth hormone secretagogues with emphasis on nasal absorption. Xenobiotica. 1998;28(11):1083-1092.",
+      "doi": "https://doi.org/10.1080/004982598238976",
+      "pmid": "9879640"
+    }
+  ],
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Veracue",
+      "url": "https://veracue-peptides.vercel.app/"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Ipamorelin Peptide Spray | Research Peptide | Veracue",
+      "description": "Ipamorelin Spray from Veracue: a Research Use Only pentapeptide growth hormone secretagogue. Verified sequence, molecular weight, GHS-R1a pharmacology, and COA guidance for laboratory research. RUO — not for human or veterinary use.",
+      "url": "https://veracue-peptides.vercel.app/product/ipamorelin-spray",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://veracue-peptides.vercel.app/"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://veracue-peptides.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Shop",
+          "item": "https://veracue-peptides.vercel.app/shop"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Ipamorelin Spray",
+          "item": "https://veracue-peptides.vercel.app/product/ipamorelin-spray"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Ipamorelin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ipamorelin is a synthetic pentapeptide classified as a growth hormone secretagogue — an agonist at the growth hormone secretagogue receptor, GHS-R1a. It's studied as a research compound and is distinct from growth hormone itself and from GHRH analogues such as CJC-1295, sermorelin, and tesamorelin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the Ipamorelin peptide sequence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Aib-His-D-2-Nal-D-Phe-Lys-NH2: a five-residue, C-terminally amidated chain of 2-aminoisobutyric acid, histidine, D-2-naphthylalanine, D-phenylalanine, and lysine, as listed under PubChem CID 9831659."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the molecular weight of Ipamorelin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ipamorelin has a molecular formula of C38H49N9O5 and a molecular weight of approximately 711.9 g/mol (711.868 g/mol), registered under CAS number 170851-70-4."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Ipamorelin work in research?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Published pharmacology describes ipamorelin as binding and activating GHS-R1a, triggering GH release from the pituitary in cell and animal models. In the original characterization studies this occurred with a comparatively selective hormonal profile relative to certain other secretagogues tested under the same conditions — an animal-pharmacology finding, not a human treatment claim."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Ipamorelin the same as ghrelin or GHRP-6?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Ghrelin is the endogenous hormone that naturally activates GHS-R1a; ipamorelin is a synthetic pentapeptide designed to engage the same receptor. GHRP-6 is a separate, earlier synthetic hexapeptide secretagogue used as a pharmacological comparator in ipamorelin's original research. All three differ in structure and origin despite sharing a receptor target."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What receptor does Ipamorelin interact with?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ipamorelin is an agonist at the growth hormone secretagogue receptor, GHS-R1a — the receptor ghrelin also activates. That's a different receptor from the GHRH receptor engaged by CJC-1295, sermorelin, and tesamorelin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Ipamorelin researched for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ipamorelin is studied mainly in growth-hormone-secretagogue pharmacology: receptor binding and selectivity, GH-release kinetics in cell, animal, and human pharmacokinetic studies, and downstream endpoints such as bone formation rate in rat models."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there human research on Ipamorelin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A controlled human pharmacokinetic/pharmacodynamic study examined the relationship between ipamorelin exposure and GH response in healthy volunteers (Gobburu et al., 1999, Pharmaceutical Research). That study characterizes exposure and hormone-response relationships; it does not demonstrate clinical efficacy or long-term safety."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does \"Ipamorelin benefits\" mean in research?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In the literature, \"benefit\" corresponds to a specific measured endpoint — GH-release potency in a cell assay, a hormone-response curve in the human PK/PD study, a bone-growth endpoint in a rat model — rather than a general or guaranteed outcome. Each finding stays tied to the study, species, and endpoint that produced it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do Ipamorelin dosage and 5mg/10mg searches mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\"Dosage\" searches often reflect research-protocol quantities from published studies, which are species- and route-specific and not transferable to product use. Figures like \"5mg\" or \"10mg\" typically describe a package's total peptide content, but that has to be verified against the specific listing rather than assumed. No administration guidance is given here."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I look for on an Ipamorelin COA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A complete Certificate of Analysis may include product identity, lot number, test date, testing laboratory, analytical method, purity result, HPLC and mass-spectrometry data, the tested specification, and the observed result. Product- and lot-specific documentation should be checked against Veracue's current certificate library or requested directly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Ipamorelin Spray necessarily a nasal spray?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. \"Spray\" describes Veracue's dispensing format for this research material, not a confirmed administration route. Unless Veracue's own first-party documentation states a specific route, it should be treated as not publicly specified rather than assumed to be nasal, oral, sublingual, buccal, or topical."
+          }
+        }
+      ]
+    }
+  ]
+}

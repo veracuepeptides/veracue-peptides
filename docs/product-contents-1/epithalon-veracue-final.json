@@ -1,0 +1,141 @@
+{
+  "product_slug": "epithalon",
+  "url": "https://veracue-peptides.vercel.app/product/epithalon",
+  "ruo_status": "Research Use Only — not for human or veterinary use",
+  "pending_first_party_data": [
+    "vial concentration / size options",
+    "formulation (lyophilized vs. pre-mixed)",
+    "purity spec (HPLC)",
+    "COA lot number"
+  ],
+  "meta": {
+    "title_tag": "Epithalon (Epitalon) – AEDG Research Peptide | Veracue",
+    "meta_description": "Epithalon, the AEDG tetrapeptide, for lab research: molecular identity, what the 2003 telomerase study tested, Epithalon vs epithalamin, and COA lot checks.",
+    "h1": "Epithalon (Epitalon) Research Peptide",
+    "canonical": "https://veracue-peptides.vercel.app/product/epithalon",
+    "schema_recommendations": {
+      "product": "schema.org/Product with an explicit RUO clause inside 'description'; omit schema.org/Drug entirely",
+      "faq": "schema.org/FAQPage using the faq array below verbatim",
+      "breadcrumb": "Home > Research Peptides > Epithalon"
+    }
+  },
+  "hero": {
+    "eyebrow": "Research Peptide — RUO",
+    "headline": "Epithalon (Epitalon) Research Peptide",
+    "body": "Epithalon — also written as Epitalon in translations from the original Russian research literature — is a short synthetic peptide that has been studied as a laboratory analog of epithalamin, a pineal-tissue preparation investigated by Russian researchers beginning in the late 20th century. It's most often described in the literature by its four-amino-acid sequence, Ala-Glu-Asp-Gly (AEDG).",
+    "ruo_note": "This page exists for research reference only. Epithalon supplied by Veracue is not a drug, supplement, or cosmetic ingredient. It's intended for laboratory and research use, by qualified personnel, under appropriate institutional conditions — not for human or veterinary administration.",
+    "product_fields": {
+      "concentration_options": "[PENDING]",
+      "form": "[PENDING]",
+      "purity_spec": "[PENDING]",
+      "coa_lot": "[PENDING]"
+    }
+  },
+  "sections": [
+    {
+      "heading": "Epithalon or Epitalon — same peptide, two spellings",
+      "body": "If you've seen both spellings and wondered whether they're different materials: they're not. \"Epitalon\" is the more direct transliteration from Russian-language sources, while \"Epithalon\" is the spelling that's become standard in Western commercial and research-adjacent writing. Both refer to the same AEDG tetrapeptide. The inconsistency is a translation artifact, not a sign of two distinct compounds — though it's worth confirming sequence on any documentation you're working from, since the two spellings do occasionally get attached to unrelated products in less careful commercial listings."
+    },
+    {
+      "heading": "Where the compound comes from",
+      "body": "Epithalon's research history traces back to work on epithalamin, a polypeptide extract from bovine or porcine pineal tissue, studied within a Russian gerontology research program associated with Vladimir Khavinson and colleagues. Epithalon was developed as a synthetic, sequence-defined counterpart to that tissue extract — the idea being a reproducible peptide rather than a variable biological preparation.\n\nWorth being precise about here: epithalamin (the tissue extract) and Epithalon (the synthetic tetrapeptide) are related but not identical materials, and older literature doesn't always separate findings on one from findings on the other cleanly. If you're pulling primary sources, it's worth checking which material a given study actually used."
+    },
+    {
+      "heading": "What has Epithalon been studied for?",
+      "intro": "Not \"benefits\" — research areas. The literature on Epithalon is preclinical almost across the board: cell-culture work, animal models, and older Russian-language publications rather than controlled human trials. Here's the general shape of it.",
+      "research_areas": [
+        {
+          "label": "Cellular aging markers",
+          "body": "The most-cited thread of research is in vitro work looking at telomerase activity in specific cultured human cell lines exposed to Epithalon. This is where a lot of the compound's research reputation comes from, but it's important to be accurate about scope: these are cell-culture findings, tied to particular cell lines and exposure conditions, not a demonstrated effect in living organisms or humans."
+        },
+        {
+          "label": "Circadian and pineal-related signaling",
+          "body": "Because Epithalon was built as an analog of a pineal-derived preparation, animal-model studies have looked at its relationship to circadian regulatory markers, including melatonin-related pathways. This research sits in rodent models; it hasn't been carried into human trials in any way that would support claims about circadian effects in people."
+        },
+        {
+          "label": "Neuroendocrine and aging-biomarker research",
+          "body": "Epithalon shows up in a handful of broader Russian gerontology studies examining aging-related biomarkers in animal models, often studied alongside other peptides from the same research program."
+        },
+        {
+          "label": "Oxidative stress markers",
+          "body": "A smaller set of preclinical studies has examined oxidative stress markers in laboratory models following Epithalon exposure. This is a thinner evidence base than the telomerase or circadian work, and results are specific to the models used."
+        },
+        {
+          "label": "Retinal or ocular research",
+          "body": "Sometimes mentioned in connection with this peptide family — worth flagging that this line of research is more strongly associated with a related bioregulator peptide (Retinalamin) than with Epithalon specifically, and Epithalon-specific ocular data is limited. If this is the angle you're researching, it's worth checking the primary source directly rather than assuming it used Epithalon."
+        }
+      ],
+      "closing_note": "None of the above should be read as an established mechanism of action. It's a preclinical, model-specific research literature — genuinely interesting to work with, but not evidence of an effect in humans."
+    },
+    {
+      "heading": "How Epithalon relates to other bioregulator peptides",
+      "body": "Epithalon isn't studied in isolation. It comes out of the same Khavinson-era research program as a handful of other short synthetic peptides, each developed as an analog of a different tissue-derived preparation:",
+      "comparison_table": {
+        "columns": [
+          "Peptide",
+          "Tissue analog",
+          "Primary research focus"
+        ],
+        "rows": [
+          [
+            "Epithalon (Epitalon)",
+            "Pineal gland (epithalamin)",
+            "Cellular aging markers, circadian regulation"
+          ],
+          [
+            "Thymalin",
+            "Thymus",
+            "Immune-related aging research"
+          ],
+          [
+            "Cartalax",
+            "Cartilage",
+            "Musculoskeletal aging research"
+          ]
+        ]
+      },
+      "closing_note": "Shared lineage doesn't mean shared findings — each of these has its own, separate research literature, and results for one shouldn't be assumed to apply to another."
+    },
+    {
+      "heading": "Sourcing and documentation",
+      "intro": "For research material, the identity and purity questions matter more than any marketing description. Before using Epithalon in a study, confirm:",
+      "checklist": [
+        "The sequence matches Ala-Glu-Asp-Gly on the supplier's documentation",
+        "A current Certificate of Analysis (COA) is available for the specific lot",
+        "Storage conditions (typically refrigerated or frozen, protected from light, prior to reconstitution) match what the material's stability data calls for"
+      ],
+      "closing_note": "Veracue provides lot-specific COA documentation for Epithalon [PENDING: attach once a confirmed lot exists]. Reconstitution and handling should follow your own institutional protocol; this page intentionally doesn't specify a reconstitution volume or exposure concentration, since that's a study-design decision, not a general recommendation."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Is Epitalon the same as Epithalon?",
+      "answer": "Yes — they're alternate spellings of the same AEDG tetrapeptide, and the difference comes from translation rather than a different compound."
+    },
+    {
+      "question": "What has research explored about Epithalon?",
+      "answer": "Mostly in vitro and animal-model work: telomerase activity in cultured cells, circadian and pineal-related signaling in rodent studies, and some work on aging-related biomarkers. It's a preclinical literature, not a body of human clinical evidence."
+    },
+    {
+      "question": "What's the recommended dosage for Epithalon?",
+      "answer": "There isn't one on this page, deliberately. Epithalon is sold for research use only, and this page doesn't provide human dosing guidance. Experimental concentrations and exposure conditions are a matter for your own research protocol, model, and institutional requirements."
+    },
+    {
+      "question": "Is Epithalon approved for human or veterinary use?",
+      "answer": "No. It's supplied strictly for laboratory and research use and isn't labeled, approved, or intended for human or veterinary administration, diagnosis, treatment, or prevention of any condition."
+    },
+    {
+      "question": "Is there a difference between Epithalon and epithalamin?",
+      "answer": "Yes — epithalamin is the original tissue-derived pineal preparation; Epithalon is the synthetic tetrapeptide developed to reproduce it in a defined, reproducible form. They're related but not the same material."
+    }
+  ],
+  "ruo_statement": "Epithalon, as offered by Veracue, is intended strictly for laboratory and research applications by qualified personnel in an appropriate setting. It is not a drug, dietary supplement, or cosmetic product, and it is not intended for human or veterinary use, self-administration, diagnosis, treatment, or prevention of any disease. Nothing on this page constitutes medical, therapeutic, or dosing advice, and use of this material should comply with applicable institutional, local, and federal regulations.",
+  "implementation_notes": [
+    "Pending fields (vial size/concentration, formulation, purity spec, COA lot) must be filled in from Veracue's live catalog before publishing — do not ship with [PENDING] markers live.",
+    "faq array is written to drop directly into FAQPage structured data as-is.",
+    "No specific study, journal, or date is cited anywhere in this content, by design — none could be verified for this draft. Consider linking 'epithalamin' to a primary source only if you have one vetted.",
+    "Internal links: consider linking 'Thymalin' and 'Cartalax' mentions to their own Veracue product pages once/if those exist.",
+    "Meta title/description enhanced to match the AHK-Cu SEO-tool pattern (title ~55 chars, description 156 chars, naming the anchor study). The 2003 telomerase study (Khavinson et al.) referenced in the description and short_description is not yet source-verified — confirm before publishing."
+  ],
+  "short_description": "Epithalon (also spelled Epitalon) is the synthetic tetrapeptide Ala-Glu-Asp-Gly (AEDG), developed as a laboratory analog of epithalamin, a pineal-tissue preparation studied in Russian gerontology research. Veracue supplies it as a research material for laboratory work. The most directly relevant published study (Khavinson et al., 2003) reported that Epithalon induced telomerase activity and telomere elongation in cultured human somatic cells — in vitro evidence only. No human clinical trial of Epithalon was identified, so this material does not establish anti-aging effect, treatment benefit, or safety in people."
+}

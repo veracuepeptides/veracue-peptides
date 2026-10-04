@@ -1,0 +1,308 @@
+{
+  "deliverable": "Veracue Ipamorelin \u2014 Final Publication-Ready RUO Product Page",
+  "status": "PUBLICATION-READY customer-facing copy (no [VERIFY]/[ADD] placeholders in page text). Internal fact-hierarchy and pre-publish notes are kept separate below for the editor/developer, not part of the live page.",
+  "internal_fact_hierarchy_not_for_publication": {
+    "category_a_molecule_level_independent_of_veracue": [
+      "Synthetic pentapeptide, sequence Aib-His-D-2-Nal-D-Phe-Lys-NH2",
+      "Molecular formula C38H49N9O5, MW ~711.85 g/mol, CAS 170851-70-4",
+      "Classified in literature as a selective GHS-R1a (ghrelin receptor) agonist / growth hormone secretagogue"
+    ],
+    "category_b_verified_veracue_specific_lot_level_not_a_standing_guarantee": [
+      "Lot VR-IPA-2602A: Ipamorelin, 5 mg, 99.5% HPLC purity, tested by Alliance Bio-Analytical Services, July 24, 2026, category Metabolic Research",
+      "Separately: CJC-1295 lot VR-CJC-2601A, 99.4% HPLC purity, tested by Colmar Analytical Laboratories"
+    ],
+    "category_c_not_verified_omitted_or_softened_in_page_text": [
+      "Mass spectrometry identity result for lot VR-IPA-2602A \u2014 not claimed; page text says this should be confirmed directly rather than asserting it exists or doesn't",
+      "Current price, inventory, SKU, MPN, GTIN \u2014 omitted from page text entirely",
+      "Product-specific storage conditions \u2014 omitted rather than assumed from site-wide standard",
+      "Whether a live /product/ipamorelin URL currently exists \u2014 flagged in implementation notes (section D below), not asserted in page copy",
+      "Tesamorelin availability at Veracue \u2014 stated plainly in page text as not currently in the certificate archive, since that itself is a confirmed (negative) fact"
+    ]
+  },
+  "A_seo_metadata": {
+    "seo_title": "Ipamorelin Research Peptide (GHS-R1a Agonist) | Veracue",
+    "meta_description": "Ipamorelin, the selective GHS-R1a pentapeptide, for lab research: molecular identity, what the 1998 Raun study found, Ipamorelin vs CJC-1295, and COA checks.",
+    "url_slug": "/product/ipamorelin",
+    "canonical_url": "https://veracue-peptides.vercel.app/product/ipamorelin",
+    "og_title": "Ipamorelin Research Peptide (GHS-R1a Agonist) | Veracue",
+    "og_description": "Molecular identity, the 1998 Raun study, Ipamorelin vs CJC-1295, and lot-specific COA documentation for Veracue's Ipamorelin research material.",
+    "primary_keyword": "ipamorelin peptide",
+    "secondary_keywords": [
+      "ipamorelin research peptide",
+      "what is ipamorelin",
+      "ipamorelin COA",
+      "ipamorelin purity"
+    ],
+    "long_tail_keywords": [
+      "what is ipamorelin used for in research",
+      "how to read an ipamorelin coa",
+      "ipamorelin research peptide documentation"
+    ],
+    "semantic_entities": [
+      "pentapeptide",
+      "ghrelin receptor",
+      "GHS-R1a",
+      "growth hormone secretagogue",
+      "HPLC",
+      "mass spectrometry",
+      "certificate of analysis",
+      "Research Use Only"
+    ]
+  },
+  "B_final_product_page": {
+    "breadcrumb": "Shop > Ipamorelin",
+    "hero": {
+      "h1": "Veracue Ipamorelin",
+      "product_line": "Ipamorelin \u2014 5 mg",
+      "description": "Ipamorelin is a synthetic pentapeptide (Aib-His-D-2-Nal-D-Phe-Lys-NH2; C38H49N9O5, CAS 170851-70-4) developed at Novo Nordisk and characterized in the literature as a selective ghrelin-receptor (GHS-R1a) agonist. Veracue supplies it as a research material for laboratory work; the lot currently on file, VR-IPA-2602A, returned 99.5% HPLC purity. The foundational study (Raun et al., 1998) found it released growth hormone comparably to GHRP-6 in rat pituitary cells, rats and swine, without raising ACTH or cortisol above GHRH-stimulated levels in swine \u2014 in vitro and animal evidence only. A Phase 2 trial in postoperative ileus (Beck et al., 2014) showed no significant difference from placebo, and ipamorelin is not a component of any FDA-approved drug, so this material does not establish effect, dosing or safety in people.",
+      "product_info_panel": {
+        "Product": "Ipamorelin",
+        "Amount": "5 mg",
+        "Purity": "99.5% (HPLC, lot VR-IPA-2602A)",
+        "Testing Laboratory": "Alliance Bio-Analytical Services",
+        "Test Date": "July 24, 2026",
+        "Research Designation": "Research Use Only"
+      },
+      "ruo_notice": "Research Use Only. This material is intended solely for laboratory research and scientific investigation and is not intended for human or veterinary use.",
+      "cta": "Review Certificate of Analysis"
+    },
+    "sections": [
+      {
+        "heading": "What Is Ipamorelin?",
+        "body": "Ipamorelin is a synthetic pentapeptide with the sequence Aib-His-D-2-Nal-D-Phe-Lys-NH2, a molecular formula of C38H49N9O5, and a molecular weight of approximately 711.85 g/mol (CAS 170851-70-4). These are properties of the molecule itself \u2014 documented consistently across independent chemical references and verifiable by any laboratory through standard analytical methods, regardless of supplier. In the scientific literature, Ipamorelin is classified as a selective agonist of the ghrelin receptor (GHS-R1a), studied for its receptor selectivity relative to earlier growth-hormone-releasing peptides. That classification describes the compound. It does not, on its own, describe any particular vial \u2014 purity, testing history, and documentation are properties of a specific research lot, established separately through analytical work."
+      },
+      {
+        "heading": "How Ipamorelin Appears in Research",
+        "body": "Research on Ipamorelin spans a few connected levels of investigation. Mechanistic and receptor-binding studies have characterized its selectivity at GHS-R1a relative to older growth-hormone-releasing peptides, distinguishing it by comparatively limited activity at related pathways such as cortisol and prolactin signaling. Animal and preclinical studies have examined growth hormone pulse dynamics following administration in experimental models, typically as part of broader endocrine or receptor-pharmacology research rather than as standalone product testing. That distinction is worth sitting with for a moment: a finding reported in an animal model, under a defined dose and protocol, describes what happened in that specific experimental system. It does not describe what a different sample of the same compound would do under different conditions, and it says nothing about the analytical status of any particular commercial vial. This page draws a firm line between two things that are easy to conflate: what has been studied about Ipamorelin as a molecule, under specific experimental conditions, and what has been verified about a specific Veracue research lot. The first is a matter of published literature. The second is a matter of lot-specific analytical testing, addressed below."
+      },
+      {
+        "heading": "What Veracue's Documentation Currently Shows",
+        "body": "Veracue's certificate archive lists one Ipamorelin lot: a 5 mg vial, lot VR-IPA-2602A, with a reported HPLC purity of 99.5%, tested by Alliance Bio-Analytical Services on July 24, 2026, under the Metabolic Research category. That is a genuine, lot-specific result \u2014 not a general claim about Ipamorelin as a compound, and not a standing guarantee that extends automatically to future batches. Each new lot carries its own testing history, and the certificate that matters for any given purchase is the one tied to the lot number actually printed on the vial. Mass spectrometry identity confirmation is not currently published for this specific lot; current lot-specific documentation should be reviewed directly before procurement to confirm what analytical work has been completed for the batch being purchased."
+      },
+      {
+        "heading": "Purity and Identity: What Each Test Establishes",
+        "body": "Purity and identity are measured separately, and a complete analytical picture requires both. Reverse-phase HPLC characterizes chromatographic purity \u2014 the proportion of a sample that resolves as a single, well-defined peak, distinct from impurities or incomplete synthesis byproducts, typically reported as a percentage of peak area. It doesn't, by itself, confirm that the peak in question is actually Ipamorelin rather than a structurally similar compound. That's the role of mass spectrometry, which evaluates whether a sample's measured molecular mass is consistent with Ipamorelin's known theoretical mass, within a stated tolerance. The published result for lot VR-IPA-2602A \u2014 99.5% HPLC purity \u2014 answers the first question. Whether an accompanying mass-spectrometry result exists for that same lot is worth confirming directly, since a purity figure alone doesn't establish molecular identity on its own."
+      },
+      {
+        "heading": "Reading an Ipamorelin Certificate of Analysis",
+        "body": "A certificate of analysis documents one specific manufacturing lot, not the compound in general. When reviewing any Ipamorelin COA, the fields that matter are the product name and lot number \u2014 checked against the number on the physical vial \u2014 the test date, the testing laboratory, the analytical method used, and the reported result against a stated specification. Veracue's published lot, VR-IPA-2602A, gives a concrete reference point: HPLC testing performed by Alliance Bio-Analytical Services on July 24, 2026, with a 99.5% purity result. A researcher evaluating a current purchase should confirm that the lot number on the vial in hand matches this certificate, or a subsequently issued one \u2014 a certificate tied to a different lot doesn't confirm the material actually received, even when the numbers on the page look reassuring."
+      },
+      {
+        "heading": "Why Ipamorelin and CJC-1295 Are Often Searched Together",
+        "body": "Ipamorelin and CJC-1295 show up together constantly in general peptide-research discussion, largely because both are studied in connection with the growth hormone axis, through different receptor mechanisms \u2014 Ipamorelin as a ghrelin-receptor (GHS-R1a) agonist, CJC-1295 as a growth-hormone-releasing-hormone (GHRH) receptor analog. That pattern in search behavior reflects how the two compounds are commonly discussed together, not a scientific finding about combining them, and nothing here should be read as guidance toward that. Veracue's certificate archive documents CJC-1295 separately, with its own lot (VR-CJC-2601A, 99.4% HPLC purity, tested by Colmar Analytical Laboratories). Each compound carries its own distinct identity and its own documentation; reviewing one is not a substitute for reviewing the other."
+      },
+      {
+        "heading": "Tesamorelin and Ipamorelin: A Mechanistic Distinction",
+        "body": "Tesamorelin and Ipamorelin are both studied within growth-hormone-axis research, but through different mechanisms \u2014 Tesamorelin as a GHRH analog, Ipamorelin as a selective ghrelin-receptor agonist. That's a genuine structural distinction, and it's where a responsible comparison has to stop for now: Veracue's certificate archive does not currently include a Tesamorelin lot, so no purity, identity, or documentation comparison between the two as Veracue products can be made honestly. This page notes the mechanistic difference and nothing more."
+      },
+      {
+        "heading": "Evaluating Ipamorelin Documentation: What Actually Matters",
+        "body": "A few recurring issues come up whenever researchers evaluate a peptide listing, and they're worth addressing directly rather than in the abstract.\n\nA product name alone doesn't confirm molecular identity \u2014 that requires a mass-spectrometry result tied to the specific lot being purchased, compared against Ipamorelin's known molecular weight. A stated purity percentage, without a linked laboratory report, is a claim rather than evidence; the underlying HPLC data, method, and date are what actually support it. Purity and identity are also easy to conflate: a sample can be highly pure and still be the wrong molecule if it was never separately identity-tested, which is why a complete COA reports both figures rather than one.\n\nLot-specificity matters just as much as the test results themselves. A certificate reused across multiple batches, rather than tied to one named lot, can't confirm that the material actually received matches the tested sample \u2014 and even a genuine, lot-specific COA is only useful if the lot number on the document matches the number printed on the vial. A supplier that names its testing laboratory, rather than reporting results with no named source, offers a more independently verifiable claim than one that doesn't.\n\nIt's also worth keeping published research and lot-specific testing in separate mental categories. Literature describing what has been studied about Ipamorelin as a molecule \u2014 its receptor selectivity, its behavior in animal models \u2014 says something about the compound under those conditions. It says nothing about whether a specific commercial vial has been independently tested and verified. Search results tend to blur this distinction, mixing scientific literature with consumer-oriented claims that treat preclinical findings as settled, personal-use fact; sources that don't distinguish between the two are worth treating with real caution.\n\nFinally, laboratory procurement often needs more than a product description. Institutional purchasing processes frequently require a documentation set \u2014 COA, sourcing information, safety data \u2014 before a material can be approved for use, and confirming what's available on request, and in what format, can save real time later in the process."
+      },
+      {
+        "heading": "Documented vs. Not Yet Confirmed",
+        "body": "It's worth being direct about what's actually established here. Ipamorelin's sequence, molecular formula, and molecular weight are documented independently of any supplier. Specific to Veracue: one certificate-archive lot, VR-IPA-2602A, 5 mg, with a 99.5% HPLC purity result from Alliance Bio-Analytical Services. Not yet confirmed: a mass-spectrometry identity result for that same lot, current price and availability, and storage conditions specific to this product rather than assumed from Veracue's general standard. Treating the first category as proof of the second \u2014 assuming that a well-documented molecule implies a fully verified product \u2014 would overstate what's actually on record for this listing."
+      },
+      {
+        "heading": "A Note on Dosage, Benefit, and Side-Effect Searches",
+        "body": "Searches referencing dosage, personal benefits, or side effects are common for a compound like Ipamorelin, and it's worth addressing that directly. As a Research Use Only material, Veracue does not provide human dosing, administration, or usage guidance of any kind; researchers determine experimental concentrations and protocols through their own validated study design, not through supplier instructions. Similarly, any observations reported in published research describe results under specific experimental conditions and should not be read as a human-use safety or benefit profile for this or any commercial research material. This page is written for laboratory procurement and documentation review, not personal use."
+      },
+      {
+        "heading": "Storage and Batch Traceability",
+        "body": "Lyophilized peptides are generally sensitive to temperature and moisture, and Veracue's site-wide handling standard for its published catalog calls for cold-chain shipping and frozen storage prior to reconstitution. Whether that general standard is stated specifically for this Ipamorelin listing is worth confirming directly, since assuming one product's storage guidance applies automatically to another is a common and avoidable source of error. Traceability follows the same logic: a serialized lot number \u2014 like VR-IPA-2602A \u2014 is what allows a researcher to connect a physical vial back to its specific testing history, and to compare results across batches if a study spans more than one order. A supplier that maintains this kind of lot-numbering discipline consistently across its catalog gives researchers something concrete to check, rather than a general assurance to take on faith."
+      },
+      {
+        "heading": "Before You Order",
+        "body": "A short, practical review before procurement tends to save more time than it costs. Confirm the exact product identity and labeled quantity match what's needed for the study. Confirm the lot number on the vial matches a published, lot-specific COA \u2014 for Ipamorelin, that currently means VR-IPA-2602A or a subsequently issued lot. Confirm which analytical methods stand behind that certificate, and don't assume a mass-spectrometry result exists simply because HPLC data is published. Confirm storage guidance directly rather than carrying it over from another product. And confirm, in writing if institutional procurement requires it, that the material is designated Research Use Only and supplied accordingly."
+      }
+    ],
+    "tables": [
+      {
+        "title": "Ipamorelin at a Glance",
+        "rows": [
+          {
+            "field": "Compound",
+            "value": "Ipamorelin (synthetic pentapeptide)"
+          },
+          {
+            "field": "Sequence",
+            "value": "Aib-His-D-2-Nal-D-Phe-Lys-NH2"
+          },
+          {
+            "field": "Molecular formula / weight",
+            "value": "C38H49N9O5 / ~711.85 g/mol"
+          },
+          {
+            "field": "Lot on file",
+            "value": "VR-IPA-2602A, 5 mg, 99.5% HPLC purity"
+          },
+          {
+            "field": "Testing laboratory",
+            "value": "Alliance Bio-Analytical Services"
+          },
+          {
+            "field": "Research designation",
+            "value": "Research Use Only"
+          }
+        ]
+      },
+      {
+        "title": "Documented vs. Not Yet Confirmed",
+        "rows": [
+          {
+            "documented": "Sequence, formula, and molecular weight",
+            "not_yet_confirmed": "Mass-spectrometry identity result for lot VR-IPA-2602A"
+          },
+          {
+            "documented": "HPLC purity result for lot VR-IPA-2602A (99.5%)",
+            "not_yet_confirmed": "Current price and availability"
+          },
+          {
+            "documented": "Testing laboratory and test date for this lot",
+            "not_yet_confirmed": "Product-specific storage conditions"
+          }
+        ]
+      }
+    ],
+    "approx_word_count_excluding_faq": 1727
+  },
+  "C_faqs": [
+    {
+      "q": "What is Ipamorelin?",
+      "a": "A synthetic pentapeptide studied as a selective ghrelin receptor (GHS-R1a) agonist and growth hormone secretagogue, with the sequence Aib-His-D-2-Nal-D-Phe-Lys-NH2."
+    },
+    {
+      "q": "What is the molecular identity of Ipamorelin?",
+      "a": "Molecular formula C38H49N9O5, molecular weight approximately 711.85 g/mol, CAS 170851-70-4."
+    },
+    {
+      "q": "What is Ipamorelin studied for?",
+      "a": "Research has examined its selectivity at the ghrelin receptor and its behavior in growth-hormone-pulse studies in animal models. These describe research findings, not human outcomes."
+    },
+    {
+      "q": "Does Veracue provide a certificate of analysis for Ipamorelin?",
+      "a": "Yes \u2014 lot VR-IPA-2602A carries a published HPLC purity result of 99.5%, tested by Alliance Bio-Analytical Services on July 24, 2026."
+    },
+    {
+      "q": "Does the published COA include mass spectrometry results?",
+      "a": "Not currently for this lot. Current lot-specific documentation should be reviewed directly to confirm what analytical testing accompanies the batch being purchased."
+    },
+    {
+      "q": "What does HPLC testing measure?",
+      "a": "Chromatographic purity \u2014 the proportion of a sample resolving as a single, clean peak relative to impurities."
+    },
+    {
+      "q": "What does mass spectrometry measure?",
+      "a": "Whether a sample's measured molecular mass is consistent with Ipamorelin's known theoretical mass, which is a separate question from purity."
+    },
+    {
+      "q": "Why does lot-specific testing matter?",
+      "a": "A certificate tied to a different lot than the one physically received doesn't confirm the material in hand. Matching lot numbers is what makes a COA meaningful."
+    },
+    {
+      "q": "What is the difference between Ipamorelin and CJC-1295?",
+      "a": "They act through different receptor mechanisms \u2014 Ipamorelin at the ghrelin receptor, CJC-1295 at the GHRH receptor \u2014 and are documented separately, with their own lot numbers."
+    },
+    {
+      "q": "Why are Ipamorelin and CJC-1295 often searched together?",
+      "a": "Both are studied in connection with the growth hormone axis and frequently discussed together, but that search pattern doesn't imply a recommendation to combine them."
+    },
+    {
+      "q": "What is the difference between Tesamorelin and Ipamorelin?",
+      "a": "Tesamorelin is studied as a GHRH analog; Ipamorelin as a selective ghrelin-receptor agonist. Veracue's certificate archive does not currently include a Tesamorelin lot."
+    },
+    {
+      "q": "Does Veracue provide Ipamorelin dosage guidance?",
+      "a": "No. As a Research Use Only product, dosing and administration guidance are outside the scope of what Veracue provides."
+    },
+    {
+      "q": "Can published Ipamorelin research be treated as evidence for a specific commercial batch?",
+      "a": "No. Published findings describe results under specific experimental conditions and don't establish the identity or purity of any individual vial \u2014 that requires lot-specific testing."
+    },
+    {
+      "q": "What is Research Use Only?",
+      "a": "A designation meaning the material is intended strictly for laboratory research and scientific investigation, not for human or veterinary use."
+    },
+    {
+      "q": "How should researchers evaluate an Ipamorelin supplier?",
+      "a": "By reviewing lot-specific COA documentation, confirming both purity and identity results where available, and checking that the lot number on the COA matches the physical vial."
+    }
+  ],
+  "D_internal_linking_plan": [
+    {
+      "url": "/certificates",
+      "anchor_text": "certificate of analysis",
+      "placement": "Hero CTA and 'Reading an Ipamorelin Certificate of Analysis'"
+    },
+    {
+      "url": "/shop",
+      "anchor_text": "research catalog",
+      "placement": "Breadcrumb and footer"
+    },
+    {
+      "url": "/faq",
+      "anchor_text": "Research Use Only FAQ",
+      "placement": "RUO notice"
+    },
+    {
+      "url": "/about-us",
+      "anchor_text": "analytical standards",
+      "placement": "'Purity and Identity' section"
+    },
+    {
+      "url": "/contact-us",
+      "anchor_text": "request documentation",
+      "placement": "Closing note"
+    }
+  ],
+  "E_image_seo": {
+    "recommended_alt_text": "Veracue Ipamorelin research peptide vial",
+    "suggested_filename": "veracue-ipamorelin-5mg-research-vial.webp",
+    "title": "Veracue Ipamorelin",
+    "note": "No Ipamorelin-specific product image was located on the live site; recommend a neutral lyophilized-vial photograph consistent with the site's existing catalog imagery, no lifestyle or fitness framing."
+  },
+  "F_json_ld_schema": {
+    "note": "Offer omitted \u2014 price/availability not confirmed. Do not add without real data.",
+    "BreadcrumbList": {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Shop",
+          "item": "https://veracue-peptides.vercel.app/shop"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Ipamorelin",
+          "item": "https://veracue-peptides.vercel.app/product/ipamorelin"
+        }
+      ]
+    },
+    "Product": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Ipamorelin",
+      "description": "Research Use Only synthetic pentapeptide. 5mg lot on file, 99.5% HPLC purity (lot VR-IPA-2602A, Alliance Bio-Analytical Services).",
+      "brand": {
+        "@type": "Brand",
+        "name": "Veracue"
+      }
+    },
+    "FAQPage": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": "Generate one Question/acceptedAnswer pair per entry in section C"
+    }
+  },
+  "G_pre_publish_notes_internal_only": [
+    "Confirm a live /product/ipamorelin URL actually exists before publishing the canonical as written \u2014 this could not be verified via search despite the confirmed COA lot.",
+    "Confirm directly whether a mass-spectrometry result exists for lot VR-IPA-2602A; if it does, add the result to the hero panel and the 'Purity and Identity' section rather than leaving it as an open question.",
+    "Add price/availability to the hero and schema only once confirmed \u2014 do not publish with fabricated values.",
+    "If a newer lot supersedes VR-IPA-2602A by the time this publishes, update the lot number, purity figure, and test date throughout \u2014 the page currently reflects that specific lot only.",
+    "No placeholder brackets remain in section B (the live page text); this section (G) and the internal_fact_hierarchy block above are the only places verification gaps are noted, and neither should be copied to the live page.",
+    "Hero description sources: Raun K et al., Eur J Endocrinol 1998;139(5):552-61 (PMID 9849822); Beck DE et al., Int J Colorectal Dis 2014;29(12):1527-34 (PMID 25331030, NCT00672074); FDA PCAC briefing document on ipamorelin-related bulk drug substances, Oct 29, 2024 ('neither is a component of an FDA-approved drug'). The hero names lot VR-IPA-2602A \u2014 update it together with the info panel if a newer lot supersedes it."
+  ]
+}

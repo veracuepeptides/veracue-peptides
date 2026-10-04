@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useId, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Plus } from 'lucide-react'
 import { FaqCategoryType, FaqItemType } from '@/data/faqs'
@@ -29,6 +29,9 @@ const FaqItem = ({
 }) => {
   const [isOpen, setIsOpen] = useState(false)
   const num = (index + 1).toString().padStart(2, '0')
+  const uid = useId()
+  const buttonId = `faq-q-${uid}`
+  const panelId = `faq-a-${uid}`
 
   return (
     <motion.div
@@ -36,51 +39,64 @@ const FaqItem = ({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-30px' }}
       transition={{ duration: 0.35, delay: (index % 6) * 0.03 }}
-      className={`rounded-2xl sm:rounded-3xl border transition-all duration-300 group cursor-pointer overflow-hidden p-5 sm:p-6 md:p-7 mb-3 ${
+      className={`rounded-2xl sm:rounded-3xl border transition-all duration-300 group overflow-hidden p-5 sm:p-6 md:p-7 mb-3 ${
         isOpen
           ? 'bg-white border-[#cb997e] shadow-[0_8px_30px_rgba(203,153,126,0.08)]'
           : 'bg-white/90 border-[#eddcd2] hover:border-[#cb997e]/60 hover:bg-white shadow-xs'
       }`}
-      onClick={() => setIsOpen(!isOpen)}
     >
       <div className="flex flex-col w-full justify-between items-start">
         {/* Top: Num + Question + Rotating Plus Icon */}
-        <div className="flex w-full items-start justify-between gap-3 sm:gap-5">
-          <div className="flex flex-1 gap-3 sm:gap-4 items-start">
-            {/* Smooth tabular number badge */}
-            <span
-              className={`font-sans text-xs sm:text-[13px] font-semibold tabular-nums px-2.5 py-1 rounded-full border transition-colors shrink-0 mt-0.5 select-none ${
-                isOpen
-                  ? 'bg-[#cb997e] text-white border-[#cb997e]'
-                  : 'bg-[#fff1e6] text-[#cb997e] border-[#eddcd2]'
-              }`}
-            >
-              {num}
+        <h3 className="w-full">
+          <button
+            type="button"
+            id={buttonId}
+            aria-expanded={isOpen}
+            aria-controls={panelId}
+            onClick={() => setIsOpen(!isOpen)}
+            className="flex w-full items-start justify-between gap-3 sm:gap-5 text-left cursor-pointer rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#a5a58d] focus-visible:ring-offset-4 focus-visible:ring-offset-white"
+          >
+            <span className="flex flex-1 gap-3 sm:gap-4 items-start">
+              {/* Smooth tabular number badge */}
+              <span
+                className={`font-sans text-xs sm:text-[13px] font-semibold tabular-nums px-2.5 py-1 rounded-full border transition-colors shrink-0 mt-0.5 select-none ${
+                  isOpen
+                    ? 'bg-[#cb997e] text-white border-[#cb997e]'
+                    : 'bg-[#fff1e6] text-[#6b705c] border-[#eddcd2]'
+                }`}
+              >
+                {num}
+              </span>
+
+              {/* Highly readable, balanced question typography using Plus Jakarta Sans */}
+              <span className="font-sans text-[15px] sm:text-[16.5px] md:text-[18px] font-semibold text-[#20221c] leading-snug group-hover:text-[#cb997e] transition-colors pr-2 tracking-[-0.01em]">
+                {faq.question}
+              </span>
             </span>
 
-            {/* Highly readable, balanced question typography using Plus Jakarta Sans */}
-            <h3 className="font-sans text-[15px] sm:text-[16.5px] md:text-[18px] font-semibold text-[#20221c] leading-snug group-hover:text-[#cb997e] transition-colors pr-2 tracking-[-0.01em]">
-              {faq.question}
-            </h3>
-          </div>
-
-          <div className="shrink-0 mt-0.5">
-            <motion.div
-              animate={{ rotate: isOpen ? 45 : 0 }}
-              transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-              className={`w-8 h-8 rounded-full border flex items-center justify-center transition-colors ${
-                isOpen
-                  ? 'bg-[#cb997e] text-white border-[#cb997e]'
-                  : 'bg-[#f0efeb] text-[#20221c] border-[#eddcd2] group-hover:border-[#cb997e] group-hover:text-[#cb997e]'
-              }`}
-            >
-              <Plus size={15} strokeWidth={2.5} />
-            </motion.div>
-          </div>
-        </div>
+            <span className="shrink-0 mt-0.5">
+              <motion.span
+                animate={{ rotate: isOpen ? 45 : 0 }}
+                transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+                className={`w-8 h-8 rounded-full border flex items-center justify-center transition-colors ${
+                  isOpen
+                    ? 'bg-[#cb997e] text-white border-[#cb997e]'
+                    : 'bg-[#f0efeb] text-[#20221c] border-[#eddcd2] group-hover:border-[#cb997e] group-hover:text-[#cb997e]'
+                }`}
+              >
+                <Plus size={15} strokeWidth={2.5} />
+              </motion.span>
+            </span>
+          </button>
+        </h3>
 
         {/* Answer Content — stays mounted for complete SEO crawler indexing */}
         <motion.div
+          id={panelId}
+          role="region"
+          aria-labelledby={buttonId}
+          aria-hidden={!isOpen}
+          inert={!isOpen}
           initial={false}
           animate={{ height: isOpen ? 'auto' : 0, opacity: isOpen ? 1 : 0 }}
           transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}

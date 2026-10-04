@@ -3,13 +3,15 @@ import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
 import Script from 'next/script'
 import { AuthSessionProvider } from '@/components/providers/AuthSessionProvider'
+import { fontVariables } from '@/lib/fonts'
+import { pickMessages } from '@/lib/i18n/pickMessages'
 import '@/app/globals.css'
 
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID
 
 export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'),
-  title: 'Veracue Peptides',
+  title: { default: 'Veracue Peptides', template: '%s | Veracue Peptides' },
   description: 'Laboratory Research Peptides & Analytical Standards',
   icons: {
     icon: [
@@ -26,28 +28,18 @@ export const metadata = {
     ],
   },
   manifest: '/site.webmanifest',
+  robots: { index: false, follow: false },
 }
 
 export default async function AuthLayout({ children }: { children: React.ReactNode }) {
-  const messages = await getMessages()
+  // Auth pages only ever need the small 'auth' namespace (~2.7KB), not the full
+  // site-wide messages file. See src/lib/i18n/pickMessages.ts.
+  const messages = pickMessages(await getMessages(), ['auth'])
 
   return (
-    <html lang="en" translate="no" className="min-h-screen notranslate" suppressHydrationWarning>
+    <html lang="en" translate="no" className={`min-h-screen notranslate ${fontVariables}`} suppressHydrationWarning>
       <head>
         <meta name="google" content="notranslate" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/site.webmanifest" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://pub-0b0f2f98407442588d161ae09cb84207.r2.dev" />
-        <link rel="preconnect" href="https://i.pravatar.cc" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&family=Big+Shoulders+Display:wght@100..900&display=swap"
-          rel="stylesheet"
-        />
         {GA_MEASUREMENT_ID && (
           <>
             <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} strategy="afterInteractive" />

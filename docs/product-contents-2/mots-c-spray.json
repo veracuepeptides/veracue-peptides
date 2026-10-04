@@ -1,0 +1,534 @@
+{
+  "product": {
+    "name": "MOTS-C Spray",
+    "compoundEntity": "MOTS-c (mitochondrial open reading frame of the 12S rRNA-c)",
+    "formatNote": "Spray describes the container and delivery hardware of the laboratory product only. It carries no administration route, and none is implied or recommended anywhere on this page.",
+    "positioningStatement": "MOTS-C Spray supplies MOTS-c — a 16-residue peptide encoded within the mitochondrial genome — in a liquid spray presentation for laboratory research use only. MOTS-c is studied as a mitochondrial-derived signalling peptide in cellular metabolism, energy-sensing and stress-response research. This product is not a medicine, supplement, cosmetic or wellness product, and it is not for human or veterinary use.",
+    "researchClassification": "Research Use Only. Not for human or veterinary use."
+  },
+
+  "seo": {
+    "title": "MOTS-C Spray Research Peptide (MOTS-c) | Veracue",
+    "metaDescription": "MOTS-C Spray for laboratory research use only. Covers MOTS-c identity, mitochondrial signalling research, evidence levels, COA review and RUO limits.",
+    "urlSlug": "/product/mots-c-spray",
+    "urlSlugNote": "Brief suggested /products/mots-c-spray/. Live Veracue catalog uses singular /product/ prefix with no trailing slash (matches /product/mots-c, /product/ahk-cu), so the slug above follows the live structure instead.",
+    "focusKeyword": "MOTS-C Spray",
+    "secondaryKeywords": [
+      "MOTS-C peptide",
+      "MOTS-c",
+      "MOTS C peptide",
+      "MOTS-C research peptide",
+      "MOTS-C research compound",
+      "what is MOTS-C",
+      "MOTS-C peptide research",
+      "MOTS-C mitochondrial research",
+      "MOTS-C peptide benefits",
+      "MOTS-C side effects",
+      "MOTS-C dosage",
+      "MOTS-C for sale"
+    ],
+    "excludedKeywordsNote": "The supplied keyword export also contains high-volume queries for KLOW, Glow, Wolverine peptide/stack, TB-500, BPC-157, GHK-Cu, Tesamorelin, Ipamorelin, CJC-1295, Retatrutide, KPV, SS-31, NAD, Semax, Selank, Epitalon, 5-Amino-1MQ, Melanotan, PT-141, IGF-1 LR3, Glutathione, Thymosin Alpha-1, bacteriostatic water and peptide calculators. None of these are topically related to MOTS-c and none appear on this page as keyword filler. SS-31 is referenced once, in the comparison section, because it is also studied in mitochondrial biology. NAD is referenced once inside a sourced mechanistic statement about MOTS-c raising intracellular NAD+ levels."
+  },
+
+  "hero": {
+    "h1": "MOTS-C Spray",
+    "intro": "MOTS-c is a 16-amino-acid peptide encoded by a short open reading frame inside the mitochondrial 12S rRNA gene. It is one of a small group of mitochondrial-derived peptides studied as signals between the mitochondrion and the rest of the cell. This listing supplies it in a liquid spray format for laboratory research use only.",
+    "productDetails": {
+      "compound": "MOTS-c",
+      "sequence": "Met-Arg-Trp-Gln-Glu-Met-Gly-Tyr-Ile-Phe-Tyr-Pro-Arg-Lys-Leu-Arg (MRWQEMGYIFYPRKLR)",
+      "format": "Spray (container format)",
+      "concentration": "[INSERT VERIFIED CONCENTRATION]",
+      "fillVolume": "[INSERT VERIFIED VOLUME]",
+      "carrierComposition": "[INSERT VERIFIED FORMULATION DATA]",
+      "purity": "[INSERT VERIFIED PURITY FOR THIS SPRAY LOT]",
+      "lot": "[INSERT LOT]",
+      "coaUrl": "[INSERT COA URL WHEN PUBLISHED]",
+      "price": "[INSERT CURRENT PRICE]"
+    },
+    "ctas": {
+      "primary": "Add to Research Cart",
+      "secondary": ["Request Batch Documentation", "Explore Research Details"]
+    },
+    "trustIndicators": [
+      "Research Use Only classification stated on the listing",
+      "Batch documentation available on request from the Veracue team",
+      "Compound identity stated by sequence, not by marketing name alone"
+    ],
+    "verificationNote": "Concentration, fill volume, carrier composition, purity, lot number and third-party test data for the spray format are not published on the Veracue catalog at the time of writing. Veracue's separate vial-format MOTS-C listing carries its own specifications and its own documentation; those figures belong to that product and are not transferred here. The certificate library currently shows no published reports, so this page does not claim that a COA is downloadable."
+  },
+
+  "shortSummary": "MOTS-c was identified in 2015 by Lee and colleagues, who found a short open reading frame within the mitochondrial 12S rRNA region that encodes a 16-residue peptide. That discovery mattered because it extended the idea that mitochondria are not only metabolic machinery but also a source of signalling molecules encoded in their own genome, separate from nuclear DNA. Research attention since then has concentrated on what the peptide does inside cells under metabolic stress. Experimental work has examined its effects on the folate–methionine cycle, on AMPK activation, on glucose handling in skeletal muscle models, and on nuclear gene expression. Findings come overwhelmingly from cell culture and rodent studies, with human data limited largely to observational measurements of circulating levels. This product supplies the peptide as a research material. It is supplied for laboratory investigation only — not for ingestion, injection, administration, diagnosis, treatment, cure or prevention of any condition.",
+
+  "whatIsMotsC": {
+    "heading": "What Is MOTS-C?",
+    "directAnswer": "MOTS-c is a 16-amino-acid peptide encoded by a short open reading frame within the 12S rRNA region of mitochondrial DNA. Its sequence is MRWQEMGYIFYPRKLR. It belongs to a small class called mitochondrial-derived peptides, and it is studied as a signalling molecule involved in cellular metabolism, energy sensing and responses to metabolic stress.",
+    "body": [
+      "The name is an acronym: mitochondrial open reading frame of the 12S rRNA type-c. It is written both MOTS-c and MOTS-C, and appears in search as MOTS C peptide, MOTS-C peptide and occasionally MOT-C. All refer to the same molecule.",
+      "What sets this class apart from most synthetic research peptides is where the coding sequence sits. Human mitochondrial DNA is a circular genome of roughly 16,569 base pairs carrying 37 recognised genes. MOTS-c is not among those 37 — it is translated from a short reading frame inside one of the ribosomal RNA genes. Humanin and the small humanin-like peptides were identified on similar grounds. The first eleven residues of MOTS-c are reported as highly conserved, which is one reason researchers have treated the sequence as functionally meaningful rather than incidental.",
+      "Its distribution is broad. The original work reported detection across brain, heart, liver, muscle, testis, kidney, spleen and intestinal tissue, as well as in circulation.",
+      "What remains unsettled is considerable. There is no established receptor. The full set of nuclear genes it regulates has not been mapped. Whether the peptide behaves as a true circulating hormone, a local intracellular signal, or both depending on context is still argued in the literature."
+    ]
+  },
+
+  "whyResearchersStudyMotsC": {
+    "heading": "Why Are Researchers Studying MOTS-C?",
+    "directAnswer": "Interest centres on a specific mechanistic question: whether a peptide encoded in mitochondrial DNA can act as a retrograde signal that reaches the nucleus and changes nuclear gene expression during metabolic stress. Secondary interest comes from experimental findings in metabolic, muscle, bone, immune and aging models, almost all of them preclinical.",
+    "body": [
+      "The mechanistic question is the durable one. Mitochondrial and nuclear genomes co-evolved and must coordinate, and most known coordination runs nucleus-to-mitochondrion. MOTS-c is studied as evidence for meaningful traffic in the other direction. Experimental work reports that under metabolic stress the peptide moves from mitochondria to the nucleus, where it has been reported to associate with antioxidant-response elements and influence transcription factor interactions.",
+      "The metabolic findings drew the wider attention. In the original mouse work, MOTS-c treatment prevented age-dependent and high-fat-diet-induced insulin resistance and diet-induced obesity, with skeletal muscle appearing to be the primary target tissue. Later animal work extended this into gestational diabetes models, cold adaptation and adipose thermogenesis, vascular calcification, bone metabolism, autoimmune diabetes models and lung ischaemia–reperfusion injury.",
+      "A genetic thread runs alongside the biochemistry. An East-Asian-specific mitochondrial variant, m.1382A>C (rs111033358), changes residue 14 from lysine to glutamine, producing a MOTS-c K14Q form described as having reduced biological activity. In a study of 211 Japanese individuals plus 721 Japanese athletes and 873 ethnicity-matched controls, Kumagai, Fuku and colleagues reported that C-allele carriers had a higher proportion of fast-twitch (MHC-IIx) muscle fibre, higher peak torque in leg flexion/extension among men, and a higher C-allele frequency among sprint/power athletes than among endurance athletes or controls; MOTS-c-neutralising-antibody injection in mice produced a similar fast-twitch shift. Separate review literature also links the C allele to type 2 diabetes risk in sedentary males and to longevity in Japanese cohorts. These are association findings in specific populations, not demonstrations of mechanism.",
+      "None of the above establishes a human clinical effect, and this page does not present it as one. What it establishes is a set of specific, testable biological questions — which is what makes the compound useful as a research variable."
+    ]
+  },
+
+  "problemSolutionSections": [
+    {
+      "number": 1,
+      "title": "Mitochondria signal as well as generate energy — but the vocabulary is poorly catalogued",
+      "researchProblem": "Mitochondrial dysfunction is implicated across metabolic and age-associated biology, but the molecular messages by which a stressed mitochondrion informs the rest of the cell are only partly identified.",
+      "researchersAreTryingToUnderstand": "Whether peptides encoded within mitochondrial DNA constitute a distinct signalling class, and how many such peptides exist.",
+      "currentEvidence": "Three groups of mitochondrial-derived peptides have been described to date: humanin, the small humanin-like peptides, and MOTS-c. Their identification rested on finding short open reading frames within mitochondrial genes rather than among the 37 recognised genes.",
+      "importantLimitation": "The physiological function of mitochondrial-derived peptides as a class remains largely uncharacterised, and reviews in this field say so explicitly. Treating MOTS-c as a well-understood signalling molecule overstates the state of the literature."
+    },
+    {
+      "number": 2,
+      "title": "Whether a mitochondrial peptide genuinely reaches the nucleus and changes transcription",
+      "researchProblem": "Retrograde mitochondria-to-nucleus signalling is easier to propose than to demonstrate, and localisation artefacts are a persistent hazard in peptide work.",
+      "researchersAreTryingToUnderstand": "Whether MOTS-c translocates to the nucleus under defined stress conditions, what it binds when it arrives, and which genes change as a result.",
+      "currentEvidence": "Experimental studies report stress-responsive nuclear translocation, with regulation of nuclear gene expression described as AMPK-dependent, and with the peptide reported to bind antioxidant-response elements and influence transcription-factor interactions. Separate work in a rat lung injury model reported nuclear transport dependent on MYH9 phosphorylation, with chromatin immunoprecipitation implicating antioxidant gene promoters including HMOX1 and NQO1.",
+      "importantLimitation": "The complete set of target genes has not been mapped, and reviews in the field name this as an open question. Mechanistic accounts assembled from different models and stressors should not be merged into a single pathway."
+    },
+    {
+      "number": 3,
+      "title": "How the peptide is coupled to cellular energy status",
+      "researchProblem": "Compounds that appear to affect energy metabolism often act through several routes at once, making a single proposed mechanism difficult to defend.",
+      "researchersAreTryingToUnderstand": "The biochemical step at which MOTS-c intersects energy sensing.",
+      "currentEvidence": "The proposed mechanism involves inhibition of the folate–methionine cycle at the level of 5-methyltetrahydrofolate, which impedes de novo purine biosynthesis and raises endogenous AICAR. Accumulated AICAR then activates AMPK, with downstream phosphorylation of acetyl-CoA carboxylase reported. Experimental work has also reported increased intracellular NAD+, activation of glycolysis and engagement of the pentose phosphate pathway.",
+      "importantLimitation": "This is a proposed mechanism supported by cellular work, not a settled one, and no single mechanism should be assumed to account for every observation reported across models. Concentration matters: one review notes that at high concentrations glucose uptake is described as routed into the pentose phosphate pathway rather than oxidised through glycolysis, which means findings are not automatically comparable across concentration ranges."
+    },
+    {
+      "number": 4,
+      "title": "Glucose handling and insulin signalling in muscle models",
+      "researchProblem": "Insulin resistance research needs experimental tools that act on muscle glucose handling through defined routes.",
+      "researchersAreTryingToUnderstand": "Whether and how MOTS-c alters glucose uptake and insulin sensitivity in skeletal muscle systems.",
+      "currentEvidence": "Skeletal muscle appeared to be the primary target organ in the original work. Subsequent studies reported GLUT4 translocation and increased glucose uptake alongside raised expression of mitochondrial biogenesis markers TFAM, COX4 and NRF1, and reported increased AMPK activity with improved insulin sensitivity in muscle cells from high-fat-diet models.",
+      "importantLimitation": "These are rodent and cell-culture findings. They do not demonstrate an effect on glucose metabolism in humans, and they say nothing about what would happen to a person. No such effect is claimed here."
+    },
+    {
+      "number": 5,
+      "title": "Exercise, adaptation, and endogenous expression",
+      "researchProblem": "Exercise produces broad metabolic adaptation through signals that are still being enumerated, and separating exercise-induced molecules from exercise mimics matters.",
+      "researchersAreTryingToUnderstand": "Whether endogenous MOTS-c responds to exercise, and whether administered peptide reproduces any part of exercise adaptation in animals.",
+      "currentEvidence": "This is one of the few places with direct human data. Reynolds and colleagues reported that exercise induces endogenous MOTS-c expression in human skeletal muscle and in circulation. The same study reported enhanced physical performance in young, middle-aged and old mice given MOTS-c, and increased physical capacity and healthspan in mice when intermittent treatment was initiated late in life.",
+      "importantLimitation": "The human component of that work concerns endogenous expression after exercise — it is not a study of administering MOTS-c to people, and the performance results are murine. The distinction is easy to blur and consequential. This product makes no performance claim of any kind."
+    },
+    {
+      "number": 6,
+      "title": "Age-associated decline in circulating levels",
+      "researchProblem": "Molecules that decline with age are routinely proposed as drivers of aging when they may equally be consequences or bystanders.",
+      "researchersAreTryingToUnderstand": "Whether falling MOTS-c levels contribute causally to age-associated metabolic decline.",
+      "currentEvidence": "Circulating and tissue MOTS-c levels are reported to decline with age. Animal work reports delayed onset of age-related physical impairment with treatment. Reviews in the field frame the causal step explicitly as a hypothesis, not a finding.",
+      "importantLimitation": "Correlation between a declining molecule and an aging phenotype does not establish direction. Reviewers writing on this compound describe the causal link as something they hypothesise; researchers should read it the same way."
+    },
+    {
+      "number": 7,
+      "title": "Genotype-dependent effects and population specificity",
+      "researchProblem": "A peptide encoded in mitochondrial DNA is subject to mitochondrial variation, which can differ sharply between populations and confound comparison across cohorts.",
+      "researchersAreTryingToUnderstand": "Whether sequence variants of MOTS-c behave differently, and what that implies for interpreting human association data.",
+      "currentEvidence": "The East-Asian-specific m.1382A>C variant (rs111033358) produces the K14Q form of the peptide, reported to have reduced biological activity. A study of Japanese individuals and athlete/control cohorts found the C allele associated with a higher proportion of fast-twitch muscle fibre, greater peak leg torque, and higher frequency among sprint/power athletes than endurance athletes. Review literature also links the allele to type 2 diabetes risk in sedentary males and to longevity in Japanese populations.",
+      "importantLimitation": "These are population-specific association findings. They do not establish that the variant peptide is functionally impaired in any defined way, and reviews list the relationship between MOTS-c expression and mitochondrial DNA polymorphism as an open question. Researchers using the wild-type sequence should note that it is not necessarily the only relevant one."
+    },
+    {
+      "number": 8,
+      "title": "Conflicting findings on senescence",
+      "researchProblem": "Compounds proposed as protective in aging research sometimes show effects that cut the opposite way in senescent cells, and selective citation hides this.",
+      "researchersAreTryingToUnderstand": "Whether the cytoprotective behaviour attributed to mitochondrial-derived peptides is desirable in every cellular context.",
+      "currentEvidence": "Alongside the protective findings, published work reports that humanin and MOTS-c both exacerbate the senescence-associated secretory phenotype in senescent cells, stimulating secretion of IL-6, IL-1β, IL-8, IL-10 and TNF-α. One interpretation offered is that cytoprotective activity may be permissive for increased proinflammatory cytokine expression.",
+      "importantLimitation": "The evidence here is genuinely conflicting, and the conflict is informative rather than a flaw to be edited out. Researchers designing senescence or inflammation experiments should treat the direction of effect as an open variable rather than assuming benefit."
+    },
+    {
+      "number": 9,
+      "title": "Biomarker versus intervention",
+      "researchProblem": "The same molecule can be a useful readout of a disease state and a poor intervention, and human MOTS-c literature sits mostly on the readout side.",
+      "researchersAreTryingToUnderstand": "Whether circulating MOTS-c has value as a measurable marker, independent of whether administering it does anything.",
+      "currentEvidence": "Human studies have generally measured levels rather than administered peptide. Reported examples include lower serum MOTS-c in obstructive sleep apnoea patients than controls, with levels falling as severity increased and correlating inversely with apnoea–hypopnoea index and BMI; lower levels in obese male children and adolescents than controls, without the same relationship in the female group; and post-surgical serum increments evaluated as a predictor of acute respiratory distress syndrome after cardiopulmonary bypass.",
+      "importantLimitation": "Every one of those is observational. They establish association with a clinical state, not causation, and not benefit from administration. They also involve small, specific cohorts. Reviews in the field describe MOTS-c as \"expected to become\" a diagnostic marker — a forward-looking framing, not an established use."
+    },
+    {
+      "number": 10,
+      "title": "Peptide identity and analytical confirmation",
+      "researchProblem": "For research peptides sold commercially, the most common threat to an experiment is not biology but material identity — wrong sequence, wrong salt form, degraded peptide, or a batch that does not match its label.",
+      "researchersAreTryingToUnderstand": "Whether the material in hand is the intended molecule at the intended quality.",
+      "currentEvidence": "The reference sequence for MOTS-c is well established in the literature: Met-Arg-Trp-Gln-Glu-Met-Gly-Tyr-Ile-Phe-Tyr-Pro-Arg-Lys-Leu-Arg. From that sequence the free (non-salt) peptide gives a molecular formula of C101H152N28O22S2 and a calculated average mass of approximately 2174.6 Da. That calculated value is a useful cross-check against a mass-spectrometry result on a certificate of analysis.",
+      "importantLimitation": "A calculated mass for the free peptide is not the mass a laboratory will necessarily measure. Peptides of this kind are frequently supplied as salts — acetate or trifluoroacetate are common — and the counterion shifts the measured figure and the effective peptide content per unit mass. The salt form of this product is not publicly specified by Veracue, so it should be confirmed against batch documentation rather than assumed. Two methionine residues and a tryptophan in the sequence are also worth noting as oxidation-prone positions when assessing a chromatogram."
+    },
+    {
+      "number": 11,
+      "title": "What a liquid or spray format does and does not tell a researcher",
+      "researchProblem": "A peptide already in solution removes a reconstitution step but introduces variables that a lyophilised powder does not have.",
+      "researchersAreTryingToUnderstand": "How formulation affects peptide integrity, concentration accuracy and experimental reproducibility over the working life of a container.",
+      "currentEvidence": "Peptides in solution are generally more susceptible to hydrolysis, oxidation and adsorption than the same peptide lyophilised, and concentration in a multi-dose container can drift with headspace, temperature exposure and repeated actuation. These are general formulation-science considerations. They are not specific findings about this product.",
+      "importantLimitation": "Nothing about a spray container implies an administration route, and none is stated or recommended here — the format describes packaging only. The concentration, carrier composition, excipients and stability profile of this particular product are not published on the Veracue catalog, so any concentration used in an experiment should be confirmed against the product label and batch documentation rather than inferred from the format. This section is not a storage or handling instruction; refer to the product label and batch documentation for applicable storage and handling requirements."
+    },
+    {
+      "number": 12,
+      "title": "Keeping preclinical findings separate from human clinical evidence",
+      "researchProblem": "MOTS-c literature is unusually easy to misreport, because a large and genuinely interesting animal literature sits alongside almost no human interventional data, and secondary sources routinely merge the two.",
+      "researchersAreTryingToUnderstand": "What is actually known in humans, as distinct from what has been observed in cells and rodents.",
+      "currentEvidence": "The honest summary is narrow. In humans: exercise induces endogenous MOTS-c expression in skeletal muscle and circulation, and circulating levels vary with several clinical states in observational cohorts. Separately, an analogue of MOTS-c — CB4211, developed by CohBar and described by its sponsor as \"a novel and improved analog of MOTS-c\" — completed a Phase 1a/1b study in non-alcoholic steatohepatitis and obesity, with sponsor-reported topline results in 2021 covering 65 healthy adults in Phase 1a and 20 obese subjects with non-alcoholic fatty liver disease in Phase 1b.",
+      "importantLimitation": "CB4211 is a different molecule from MOTS-c, was studied in a small early-phase trial, and has not been approved for any indication. It is not this product, and its results do not transfer to this product. MOTS-c itself has no approved human use, and there is no established human safety or efficacy profile for administered MOTS-c. Reviews in the field state plainly that no effective method of applying MOTS-c clinically has been developed."
+    }
+  ],
+
+  "scientificBackground": {
+    "heading": "Scientific Background — Mechanism and Biology",
+    "origin": "MOTS-c is translated from a short open reading frame located within the mitochondrial 12S rRNA gene. This places it outside the 37 recognised genes of the human mitochondrial genome and inside the small group of mitochondrial-derived peptides identified since humanin.",
+    "proposedIntracellularMechanism": "The route most consistently described involves the folate–methionine cycle. MOTS-c has been reported to disrupt that cycle at the level of 5-methyltetrahydrofolate, impeding de novo purine biosynthesis and raising endogenous AICAR, which in turn activates AMPK. Downstream reports include phosphorylation of acetyl-CoA carboxylase and increased fatty acid oxidation.",
+    "mitochondrialNuclearCommunication": "Under metabolic stress, experimental work reports rapid transfer of the peptide from mitochondria to the nucleus, with regulation of nuclear gene expression described as AMPK-dependent and with binding to antioxidant-response elements reported. Work in a lung ischaemia–reperfusion model described nuclear transport requiring MYH9 phosphorylation at Ser1943 via CK2A, with antioxidant gene promoters implicated by ChIP-seq.",
+    "reportedMolecularInteractions": "STAT3 is described as the first gene product reported to interact directly with MOTS-c, via the peptide's YIFY region, with reduced STAT3 transcriptional activity reported in muscle cell work. Other pathway associations reported across models include ERK signalling in adipose thermogenesis, TGF-β/Smad in osteoblast work, and NRG1–ErbB4 in a diabetic rat cardiac model.",
+    "whatIsNotEstablished": "No receptor has been defined. The complete nuclear gene set influenced by the peptide has not been mapped. Whether MOTS-c acts principally as a hormone in circulation, as a cell-autonomous intracellular signal, or as both in different contexts remains under discussion. Findings drawn from different tissues, species and stressors should not be assembled into one mechanism."
+  },
+
+  "evidenceHierarchy": {
+    "heading": "What The Research Actually Shows — Evidence Hierarchy",
+    "note": "These tiers are reported separately and should not be combined.",
+    "inVitroCellCulture": "Reported work includes glucose uptake and GLUT4 translocation in muscle cell systems; folate-cycle disruption, AICAR accumulation and AMPK activation; nuclear translocation under metabolic stress with binding to antioxidant-response elements; direct interaction with STAT3 via the YIFY region; increased intracellular NAD+; and — in the opposite direction — exacerbation of the senescence-associated secretory phenotype in senescent cells, with increased IL-6, IL-1β, IL-8, IL-10 and TNF-α secretion.",
+    "animalPreclinical": "Reported findings in rodent models include prevention of age-dependent and high-fat-diet-induced insulin resistance and diet-induced obesity in mice; improved hyperglycaemia and insulin sensitivity in a gestational diabetes mouse model with reported protection of pancreatic β-cells against streptozotocin injury; enhanced cold tolerance with upregulated brown adipose thermogenic gene expression and white fat browning via ERK phosphorylation; attenuated vascular calcification in a vitamin D3/nicotine rat model with increased phosphorylated AMPK and reduced AT-1 and ET-B receptor expression; suppressed osteoclast differentiation and improved bone metabolism; suppression of autoimmune diabetes in non-obese diabetic mice via T-cell effects; attenuated lung ischaemia–reperfusion injury in rats; and enhanced physical performance across young, middle-aged and old mice, with increased physical capacity and healthspan when intermittent treatment began late in life.",
+    "human": "Substantially narrower, and almost entirely non-interventional. Exercise induces endogenous MOTS-c expression in human skeletal muscle and in circulation. Observational studies report lower serum levels in obstructive sleep apnoea, decreasing with severity and correlating inversely with apnoea–hypopnoea index and BMI; lower levels in obese male children and adolescents, without the equivalent relationship in females; and post-cardiopulmonary-bypass serum increments evaluated as an ARDS predictor. Separately, the MOTS-c analogue CB4211 completed a small Phase 1a/1b study with sponsor-reported topline results; that compound is not MOTS-c and is not approved for any indication.",
+    "theGapStatedPlainly": "There is no robust human clinical evidence that administering MOTS-c produces any therapeutic outcome, and no approved human use of MOTS-c. Reviews of this compound state that no effective method of clinical application has been developed. Anyone reading a source that presents the rodent metabolic findings as human outcomes is reading an inaccurate source."
+  },
+
+  "safetyResearch": {
+    "heading": "MOTS-C Safety Research — What Is And Is Not Known",
+    "directAnswer": "There is no established human safety profile for administered MOTS-c. This page does not present a side-effect list, because a credible one does not exist for this compound in humans, and inventing one would be worse than saying so.",
+    "points": [
+      {
+        "title": "Safety findings belong to their model",
+        "text": "Observations in mice, rats or cell culture describe what happened under those conditions, at those concentrations, by those experimental routes. They are not transferable to humans, and they are not transferable between species or dose ranges without justification."
+      },
+      {
+        "title": "Speculation appears in the secondary literature",
+        "text": "Some reviews argue that because MOTS-c is an endogenous peptide it is unlikely to provoke an immune response and should be non-toxic at appropriate concentrations. That is reasoning from first principles, not safety data, and it should be read as the authors' argument rather than as evidence."
+      },
+      {
+        "title": "Conflicting findings exist",
+        "text": "The reported exacerbation of the senescence-associated secretory phenotype is a relevant counterweight to a purely protective reading of this compound's biology."
+      },
+      {
+        "title": "Research-grade material is not established as safe for human administration",
+        "text": "A compound with no approved human use, supplied as a research material, has no established safe administration. This product is not for human or veterinary use, and no administration instruction of any kind is provided on this page."
+      },
+      {
+        "title": "Material quality is a laboratory safety matter in its own right",
+        "text": "Impurities, residual synthesis reagents, incorrect sequence and degradation products all affect both experimental validity and laboratory handling. That is the practical reason batch documentation matters."
+      }
+    ]
+  },
+
+  "dosageSearchIntent": {
+    "heading": "MOTS-C Dosage Search Intent — Answered Without A Protocol",
+    "directAnswer": "No dosage is provided. This product is supplied for laboratory research only, so no human dosage, dosing schedule, cycle, protocol or administration instruction is given here — and no dosage chart exists on this page.",
+    "intro": "Queries such as \"MOTS-C dosage\", \"MOTS-C dosing protocol\", \"MOTS-C dosage per week\" and \"MOTS-C peptide dosage chart\" appear frequently in search. The honest answer is that figures circulating online for those queries are not derived from established human research, and this page will not reproduce or paraphrase them.",
+    "legitimateResearchConsiderations": [
+      {
+        "title": "Concentration selection",
+        "text": "Follows the validated protocol for the assay or model in use, and is established by the research team against its own controls — not read off a product page."
+      },
+      {
+        "title": "Controls",
+        "text": "Matter more than usual for a compound whose mechanism is concentration-sensitive. Published work indicates that metabolic routing differs at higher concentrations, so a concentration series is generally more informative than a single point."
+      },
+      {
+        "title": "Model choice",
+        "text": "Determines what a result means. Findings from muscle cell lines, whole-animal metabolic models and senescent-cell systems are not interchangeable."
+      },
+      {
+        "title": "Analytical verification",
+        "text": "Of identity, purity and peptide content should precede quantitative work, because a concentration is only as good as the material's stated content."
+      },
+      {
+        "title": "Reproducibility",
+        "text": "Requires that lot, concentration, carrier, storage history and handling be recorded, since these are the variables most likely to explain a result that does not replicate."
+      }
+    ]
+  },
+
+  "researchProductInformation": {
+    "heading": "Research Product Information",
+    "fields": {
+      "compound": "MOTS-c",
+      "alternativeNamesInUse": "MOTS-C, MOTS C peptide, mitochondrial open reading frame of the 12S rRNA-c",
+      "aminoAcidSequence": "Met-Arg-Trp-Gln-Glu-Met-Gly-Tyr-Ile-Phe-Tyr-Pro-Arg-Lys-Leu-Arg (MRWQEMGYIFYPRKLR)",
+      "residueCount": "16",
+      "calculatedFormulaFreePeptide": "C101H152N28O22S2",
+      "calculatedAverageMassFreePeptide": "≈ 2174.6 Da",
+      "saltCounterionForm": "Not publicly specified by Veracue — confirm against batch documentation",
+      "productFormat": "Spray (container format only; no administration route implied)",
+      "concentration": "Not publicly specified by Veracue",
+      "fillVolume": "Not publicly specified by Veracue",
+      "carrierExcipients": "Not publicly specified by Veracue",
+      "purity": "Not publicly specified by Veracue for this spray format",
+      "analyticalMethods": "Not publicly specified by Veracue for this spray format",
+      "lotNumber": "Batch-specific — refer to product documentation",
+      "coa": "Request batch documentation from Veracue",
+      "sku": "Not publicly specified by Veracue",
+      "price": "[INSERT CURRENT PRICE]",
+      "researchClassification": "Research Use Only",
+      "storageAndHandling": "Refer to the product label and batch documentation for applicable storage and handling requirements"
+    },
+    "note": "The sequence, residue count, formula and calculated mass are properties of the MOTS-c molecule as established in the published literature, with the formula and mass calculated from that reference sequence. Everything below the salt-form field is a property of a specific manufactured product and is therefore left unstated until Veracue publishes or supplies it."
+  },
+
+  "analyticalQualitySection": {
+    "heading": "Analytical Quality And COA Review",
+    "intro": "Veracue's certificate library is published at /certificates. At the time of writing it lists no reports, with a notice that batch-specific COAs are in the process of being added. This page therefore does not claim that a certificate is downloadable for this product. Batch documentation should be requested from the Veracue team.",
+    "whatToReview": [
+      {
+        "title": "Identity",
+        "text": "Does the certificate name the compound and state the sequence, and does that sequence match MRWQEMGYIFYPRKLR? A trade name alone is not an identity."
+      },
+      {
+        "title": "Mass confirmation",
+        "text": "Does a measured mass appear, and by what method? Compare it against the calculated free-peptide average mass of approximately 2174.6 Da, and account for the salt form before concluding there is a discrepancy."
+      },
+      {
+        "title": "Purity and the method behind it",
+        "text": "A purity figure means little without the analytical method, the detection wavelength and the chromatographic conditions that produced it. A percentage on its own is not data."
+      },
+      {
+        "title": "Peptide content versus purity",
+        "text": "These are different quantities. Chromatographic purity does not tell you how much peptide there is per unit mass once counterion and residual water are accounted for."
+      },
+      {
+        "title": "Chromatographic data",
+        "text": "Is a trace included, or only a summary figure? A trace lets a reviewer see resolution, baseline and secondary peaks. Given two methionines and a tryptophan in this sequence, oxidation-related peaks are worth looking for specifically."
+      },
+      {
+        "title": "Lot number and traceability",
+        "text": "Does the lot on the certificate match the lot on the container in hand? A certificate for a different lot is not documentation of your material."
+      },
+      {
+        "title": "Test date and laboratory",
+        "text": "When was the analysis performed, by which laboratory, and does the date sit sensibly relative to the manufacture date?"
+      },
+      {
+        "title": "Formulation data for a liquid product",
+        "text": "For a solution or spray presentation, concentration and carrier composition are part of the analytical picture, not optional extras."
+      }
+    ],
+    "cautions": "Documentation belonging to one product does not describe another — figures published for Veracue's separate vial-format MOTS-C listing are that product's figures, not this one's. This page does not assert HPLC or mass-spectrometry testing, a purity percentage, third-party verification or any ISO standard for this spray format, because no such documentation is published for it at the time of writing."
+  },
+
+  "researcherChecklist": {
+    "heading": "How To Evaluate A MOTS-C Research Product",
+    "items": [
+      "Confirm the sequence, not the name. MOTS-c should be MRWQEMGYIFYPRKLR. Market names are not identity.",
+      "Establish the salt form. Acetate, trifluoroacetate and free peptide differ in measured mass and in peptide content per unit mass.",
+      "Get the exact product specification. For a liquid or spray presentation: concentration, fill volume, carrier and excipients.",
+      "Read the batch-specific COA, matched to the lot in hand. A certificate for another lot documents another material.",
+      "Check the analytical method behind every number. A purity figure without a method is not verifiable.",
+      "Separate peptide content from chromatographic purity. Quantitative work depends on the former.",
+      "Look for degradation-prone positions. Two methionine residues and one tryptophan make oxidation products worth examining in the trace.",
+      "Confirm lot traceability from container label to certificate to supplier record.",
+      "Confirm RUO classification and that the supplier's documentation is consistent with it.",
+      "Check storage and handling against the product label, not against general assumptions about peptides.",
+      "Treat unsupported biological claims as a quality signal. A supplier describing MOTS-c as clinically proven, therapeutic or approved is describing something that does not exist.",
+      "Record everything you will need to reproduce the work: lot, concentration, carrier, storage history, handling and date of first opening."
+    ]
+  },
+
+  "comparisonSection": {
+    "heading": "MOTS-C In Relation To Other Research Compounds",
+    "intro": "Different research compounds exist to answer different biological questions. This section distinguishes them; it does not rank them, and no compound here is presented as better or more effective than another.",
+    "byBiologicalOrigin": "MOTS-c is unusual among research peptides in being encoded within mitochondrial DNA rather than nuclear DNA. Humanin and the small humanin-like peptides share that origin. Most synthetic research peptides are analogues or fragments of nuclear-encoded proteins, which puts them in a different class regardless of any functional overlap.",
+    "byResearchPathway": "MOTS-c research centres on the folate cycle, AICAR accumulation, AMPK activation and mitochondrial–nuclear signalling. SS-31 is also studied in mitochondrial biology but through an entirely different route, with research focused on the inner mitochondrial membrane and cardiolipin rather than on nuclear gene regulation. Shared subject matter is not a shared mechanism.",
+    "byMolecularClass": "MOTS-c is a defined 16-residue peptide with a single established reference sequence — which is more than can be said for several commercially traded research compounds whose market names cover more than one molecular identity.",
+    "byEvidenceLevel": "The MOTS-c literature is deep in cell and rodent work and thin in human interventional data. Compounds with approved pharmaceutical counterparts sit at a different evidence tier entirely, and conflating the two is one of the more common errors in this product category.",
+    "alsoOnVeracueCatalog": "MOTS-C is also listed in a vial format, and SS-31 and NAD+ appear under the same mitochondrial and cellular energy research category. Each listing carries its own specifications and its own documentation."
+  },
+
+  "whoThisIsFor": {
+    "heading": "Who This Product Is For — And Who It Is Not For",
+    "intendedContext": "This product is intended for qualified laboratory research environments, and for researchers investigating peptide biology, mitochondrial signalling, cellular metabolism, metabolic pathways or related experimental questions. Purchasers are responsible for ensuring their intended use is lawful and appropriate to their setting.",
+    "notFor": [
+      "Human use",
+      "Veterinary use",
+      "Ingestion",
+      "Injection",
+      "Administration by any route",
+      "Diagnosis",
+      "Treatment",
+      "Cure or prevention of any disease"
+    ],
+    "closingStatement": "This product is not a medicine, supplement, therapeutic product, wellness product or cosmetic. It has no approved human use, and no administration instruction appears anywhere on this page."
+  },
+
+  "faq": [
+    {
+      "id": "q1",
+      "question": "What is MOTS-C?",
+      "answer": "MOTS-c is a 16-amino-acid peptide encoded by a short open reading frame within the 12S rRNA region of mitochondrial DNA, with the sequence MRWQEMGYIFYPRKLR. It is classified as a mitochondrial-derived peptide and is studied in cellular metabolism, energy-sensing and stress-response research. It was first described in 2015."
+    },
+    {
+      "id": "q2",
+      "question": "What is MOTS-C peptide, and is MOTS-C a peptide?",
+      "answer": "Yes — MOTS-c is a peptide, specifically a 16-residue one. \"MOTS-C\" and \"MOTS-C peptide\" refer to the same molecule; the second form is simply how the compound is commonly searched. The name is an acronym for mitochondrial open reading frame of the 12S rRNA type-c."
+    },
+    {
+      "id": "q3",
+      "question": "What is MOTS-C studied for?",
+      "answer": "It is studied primarily as a signalling molecule in mitochondrial biology — how a peptide encoded in mitochondrial DNA influences nuclear gene expression under metabolic stress. Associated research areas include cellular energy regulation, the folate cycle and AMPK activation, glucose handling in muscle models, adipose thermogenesis, bone metabolism, immune signalling and age-associated cellular biology. Almost all of this work is preclinical."
+    },
+    {
+      "id": "q4",
+      "question": "What does MOTS-C do?",
+      "answer": "In experimental systems, the mechanism most consistently reported involves disruption of the folate–methionine cycle at 5-methyltetrahydrofolate, which raises endogenous AICAR and activates AMPK. Studies also report translocation to the nucleus under metabolic stress and binding to antioxidant-response elements. What MOTS-c does in humans when administered is not established, and this page makes no such claim."
+    },
+    {
+      "id": "q5",
+      "question": "Why are researchers interested in MOTS-C?",
+      "answer": "Because it provides evidence for retrograde signalling — mitochondria influencing nuclear gene expression rather than only responding to it. That makes it mechanistically interesting independent of any application. Reported findings across metabolic, muscle, bone, immune and aging models have broadened that interest."
+    },
+    {
+      "id": "q6",
+      "question": "What does current MOTS-C research show?",
+      "answer": "A large body of cell and rodent work, and very little human interventional data. Rodent studies report effects on insulin resistance, obesity, thermogenesis, vascular calcification, bone metabolism and physical performance. In humans, exercise has been shown to induce endogenous MOTS-c expression in skeletal muscle and circulation, and observational studies report altered circulating levels in several clinical states. Findings are not uniformly positive — published work also reports that MOTS-c exacerbates the senescence-associated secretory phenotype in senescent cells."
+    },
+    {
+      "id": "q7",
+      "question": "Is MOTS-C approved for human use?",
+      "answer": "No. MOTS-c has no regulatory approval for human use anywhere, and there is no established human safety or efficacy profile for administered MOTS-c. An analogue, CB4211, completed a small early-phase clinical study, but that is a different molecule and it has not been approved for any indication."
+    },
+    {
+      "id": "q8",
+      "question": "Is this MOTS-C Spray product intended for human consumption?",
+      "answer": "No. This product is supplied for laboratory research use only. It is not for human or veterinary use, and not intended for ingestion, injection, administration, diagnosis, treatment, cure or prevention of disease. The spray format describes the container only and implies no administration route."
+    },
+    {
+      "id": "q9",
+      "question": "What does Research Use Only mean?",
+      "answer": "It means the material is supplied for laboratory investigation and nothing else. It is not a medicine, supplement or consumer product; it has not been evaluated or approved for use in humans or animals; and no dosage, administration route or protocol for such use is provided. Purchasers are responsible for using the material lawfully and appropriately in a research setting."
+    },
+    {
+      "id": "q10",
+      "question": "Does this product come with a COA, and what should I check on it?",
+      "answer": "Veracue's certificate library at /certificates currently shows no published reports, with batch-specific COAs noted as being added, so this page does not claim a downloadable certificate — batch documentation should be requested from the Veracue team. When reviewing one, check that the sequence matches MRWQEMGYIFYPRKLR; that the lot matches the container in hand; that any purity figure is accompanied by its analytical method and chromatographic data; that measured mass is reconciled against the calculated free-peptide average of approximately 2174.6 Da with the salt form accounted for; and that test date and testing laboratory are stated."
+    },
+    {
+      "id": "q11",
+      "question": "Does this product provide a human dosage?",
+      "answer": "No. No human dosage, dosing schedule, cycle, protocol or administration instruction is provided, and no dosage chart appears on this page. Concentrations used in research are selected by the research team according to its own validated protocol and controls."
+    },
+    {
+      "id": "q12",
+      "question": "What is known about MOTS-C safety, and what should researchers verify before purchasing?",
+      "answer": "There is no established human safety profile for administered MOTS-c, and this page does not publish a side-effect list because no credible human one exists. Safety observations in the literature belong to the model and concentration in which they were made. Before purchasing, verify compound identity by sequence, the salt or counterion form, the exact product specification including concentration and carrier for a liquid format, the batch-specific COA and the analytical methods behind it, lot traceability, storage requirements per the product label, and the RUO classification."
+    }
+  ],
+
+  "internalLinks": [
+    { "anchorText": "review our batch-specific COA documentation", "destination": "/certificates", "placement": "Analytical quality section, FAQ 10" },
+    { "anchorText": "request batch documentation from the Veracue team", "destination": "/contact-us", "placement": "Hero secondary CTA, analytical quality section" },
+    { "anchorText": "explore the Veracue research catalog", "destination": "/shop", "placement": "Comparison section, page footer" },
+    { "anchorText": "MOTS-C in vial format", "destination": "/product/mots-c", "placement": "Comparison section, product information note" },
+    { "anchorText": "SS-31", "destination": "/product/ss-31", "placement": "Comparison section, research pathway paragraph" },
+    { "anchorText": "NAD+", "destination": "/product/nad-plus", "placement": "Comparison section, catalog note" },
+    { "anchorText": "read our research articles", "destination": "/blog", "placement": "Scientific background section close" },
+    { "anchorText": "about Veracue", "destination": "/about-us", "placement": "Analytical quality section" },
+    { "anchorText": "frequently asked questions", "destination": "/faq", "placement": "Below the product FAQ" },
+    { "anchorText": "medical disclaimer", "destination": "/medical-disclaimer", "placement": "Compliance notice" },
+    { "anchorText": "terms and conditions", "destination": "/terms-and-conditions", "placement": "Compliance notice" }
+  ],
+  "internalLinksAvoid": "No link should be created to a Quality Standards page or a dedicated Research Use Only explainer, as neither exists on the live site at the time of writing.",
+
+  "imageSeo": {
+    "primary": {
+      "filename": "mots-c-spray-research-peptide.png",
+      "altText": "MOTS-C Spray research peptide bottle from Veracue Peptides"
+    },
+    "additional": [
+      { "filename": "mots-c-spray-research-compound.png", "altText": "MOTS-C Spray research compound container with Research Use Only labelling" },
+      { "filename": "mots-c-spray-veracue-peptides.png", "altText": "Veracue Peptides MOTS-C Spray research product" },
+      { "filename": "mots-c-research-peptide-spray.png", "altText": "MOTS-C research peptide in spray format" },
+      { "filename": "mots-c-peptide-sequence-diagram.png", "altText": "Diagram of the 16-residue MOTS-c peptide sequence MRWQEMGYIFYPRKLR" },
+      { "filename": "mots-c-coa-research-documentation.png", "altText": "Certificate of analysis documentation for MOTS-C research material" }
+    ],
+    "note": "Alt text describes only what is visible. No image alt text asserts concentration, volume, purity or testing status, since none of those can be verified from a photograph."
+  },
+
+  "structuredData": {
+    "productSchema": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "MOTS-C Spray",
+      "alternateName": ["MOTS-c Spray", "MOTS C Spray"],
+      "description": "MOTS-C Spray supplies MOTS-c, a 16-residue mitochondrial-derived peptide (sequence MRWQEMGYIFYPRKLR), in a liquid spray format for laboratory research use only. Not for human or veterinary use.",
+      "category": "Research Peptides",
+      "image": "https://veracue-peptides.vercel.app/images/mots-c-spray-research-peptide.png",
+      "sku": "[INSERT VERIFIED SKU]",
+      "brand": { "@type": "Brand", "name": "Veracue Peptides" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "Research classification", "value": "Research Use Only — not for human or veterinary use" },
+        { "@type": "PropertyValue", "name": "Amino acid sequence", "value": "MRWQEMGYIFYPRKLR" },
+        { "@type": "PropertyValue", "name": "Residue count", "value": "16" },
+        { "@type": "PropertyValue", "name": "Calculated molecular formula (free peptide)", "value": "C101H152N28O22S2" },
+        { "@type": "PropertyValue", "name": "Calculated average mass (free peptide)", "value": "approximately 2174.6 Da" },
+        { "@type": "PropertyValue", "name": "Product format", "value": "Spray — container format only; no administration route implied" }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://veracue-peptides.vercel.app/product/mots-c-spray",
+        "priceCurrency": "USD",
+        "price": "[INSERT CURRENT PRICE]",
+        "availability": "[INSERT VERIFIED AVAILABILITY — must resolve to a real schema.org value, e.g. https://schema.org/InStock]",
+        "seller": { "@type": "Organization", "name": "Veracue Peptides" }
+      },
+      "note": "No aggregateRating, review or rating field is included, because no verified review data exists for this product. No medical or health-related schema type is used. The sku, price and availability fields carry placeholders and must be replaced with verified values before publishing — the availability field in particular must be a real schema.org enumeration URL, not a placeholder concatenated into one."
+    },
+    "faqPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What is MOTS-C?", "acceptedAnswer": { "@type": "Answer", "text": "MOTS-c is a 16-amino-acid peptide encoded by a short open reading frame within the 12S rRNA region of mitochondrial DNA, with the sequence MRWQEMGYIFYPRKLR. It is classified as a mitochondrial-derived peptide and is studied in cellular metabolism, energy-sensing and stress-response research. It was first described in 2015." } },
+        { "@type": "Question", "name": "What is MOTS-C peptide, and is MOTS-C a peptide?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — MOTS-c is a peptide, specifically a 16-residue one. \"MOTS-C\" and \"MOTS-C peptide\" refer to the same molecule; the second form is simply how the compound is commonly searched. The name is an acronym for mitochondrial open reading frame of the 12S rRNA type-c." } },
+        { "@type": "Question", "name": "What is MOTS-C studied for?", "acceptedAnswer": { "@type": "Answer", "text": "It is studied primarily as a signalling molecule in mitochondrial biology — how a peptide encoded in mitochondrial DNA influences nuclear gene expression under metabolic stress. Associated research areas include cellular energy regulation, the folate cycle and AMPK activation, glucose handling in muscle models, adipose thermogenesis, bone metabolism, immune signalling and age-associated cellular biology. Almost all of this work is preclinical." } },
+        { "@type": "Question", "name": "What does MOTS-C do?", "acceptedAnswer": { "@type": "Answer", "text": "In experimental systems, the mechanism most consistently reported involves disruption of the folate–methionine cycle at 5-methyltetrahydrofolate, which raises endogenous AICAR and activates AMPK. Studies also report translocation to the nucleus under metabolic stress and binding to antioxidant-response elements. What MOTS-c does in humans when administered is not established, and this page makes no such claim." } },
+        { "@type": "Question", "name": "Why are researchers interested in MOTS-C?", "acceptedAnswer": { "@type": "Answer", "text": "Because it provides evidence for retrograde signalling — mitochondria influencing nuclear gene expression rather than only responding to it. That makes it mechanistically interesting independent of any application. Reported findings across metabolic, muscle, bone, immune and aging models have broadened that interest." } },
+        { "@type": "Question", "name": "What does current MOTS-C research show?", "acceptedAnswer": { "@type": "Answer", "text": "A large body of cell and rodent work, and very little human interventional data. Rodent studies report effects on insulin resistance, obesity, thermogenesis, vascular calcification, bone metabolism and physical performance. In humans, exercise has been shown to induce endogenous MOTS-c expression in skeletal muscle and circulation, and observational studies report altered circulating levels in several clinical states. Findings are not uniformly positive — published work also reports that MOTS-c exacerbates the senescence-associated secretory phenotype in senescent cells." } },
+        { "@type": "Question", "name": "Is MOTS-C approved for human use?", "acceptedAnswer": { "@type": "Answer", "text": "No. MOTS-c has no regulatory approval for human use anywhere, and there is no established human safety or efficacy profile for administered MOTS-c. An analogue, CB4211, completed a small early-phase clinical study, but that is a different molecule and it has not been approved for any indication." } },
+        { "@type": "Question", "name": "Is this MOTS-C Spray product intended for human consumption?", "acceptedAnswer": { "@type": "Answer", "text": "No. This product is supplied for laboratory research use only. It is not for human or veterinary use, and not intended for ingestion, injection, administration, diagnosis, treatment, cure or prevention of disease. The spray format describes the container only and implies no administration route." } },
+        { "@type": "Question", "name": "What does Research Use Only mean?", "acceptedAnswer": { "@type": "Answer", "text": "It means the material is supplied for laboratory investigation and nothing else. It is not a medicine, supplement or consumer product; it has not been evaluated or approved for use in humans or animals; and no dosage, administration route or protocol for such use is provided. Purchasers are responsible for using the material lawfully and appropriately in a research setting." } },
+        { "@type": "Question", "name": "Does this product come with a COA, and what should I check on it?", "acceptedAnswer": { "@type": "Answer", "text": "Veracue's certificate library at /certificates currently shows no published reports, with batch-specific COAs noted as being added, so this page does not claim a downloadable certificate — batch documentation should be requested from the Veracue team. When reviewing one, check that the sequence matches MRWQEMGYIFYPRKLR; that the lot matches the container in hand; that any purity figure is accompanied by its analytical method and chromatographic data; that measured mass is reconciled against the calculated free-peptide average of approximately 2174.6 Da with the salt form accounted for; and that test date and testing laboratory are stated." } },
+        { "@type": "Question", "name": "Does this product provide a human dosage?", "acceptedAnswer": { "@type": "Answer", "text": "No. No human dosage, dosing schedule, cycle, protocol or administration instruction is provided, and no dosage chart appears on this page. Concentrations used in research are selected by the research team according to its own validated protocol and controls." } },
+        { "@type": "Question", "name": "What is known about MOTS-C safety, and what should researchers verify before purchasing?", "acceptedAnswer": { "@type": "Answer", "text": "There is no established human safety profile for administered MOTS-c, and this page does not publish a side-effect list because no credible human one exists. Safety observations in the literature belong to the model and concentration in which they were made. Before purchasing, verify compound identity by sequence, the salt or counterion form, the exact product specification including concentration and carrier for a liquid format, the batch-specific COA and the analytical methods behind it, lot traceability, storage requirements per the product label, and the RUO classification." } }
+      ],
+      "note": "Every question and answer above appears verbatim on the visible page in the faq array. No hidden FAQ content has been created for schema purposes."
+    },
+    "breadcrumbSchema": {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://veracue-peptides.vercel.app/" },
+        { "@type": "ListItem", "position": 2, "name": "Shop", "item": "https://veracue-peptides.vercel.app/shop" },
+        { "@type": "ListItem", "position": 3, "name": "MOTS-C Spray", "item": "https://veracue-peptides.vercel.app/product/mots-c-spray" }
+      ],
+      "note": "Brief suggested Home → Research Peptides → MOTS-C Spray. Live site's catalog route is /shop, with 'Mitochondrial & Cellular Energy' used as an on-site research category label rather than a URL segment, so the breadcrumb above reflects the live structure instead."
+    }
+  },
+
+  "scientificSources": [
+    { "id": 1, "citation": "Lee C, Zeng J, Drew BG, et al. The mitochondrial-derived peptide MOTS-c promotes metabolic homeostasis and reduces obesity and insulin resistance. Cell Metab. 2015;21(3):443–54.", "doi": "https://doi.org/10.1016/j.cmet.2015.02.009" },
+    { "id": 2, "citation": "Reynolds JC, Lai RW, Woodhead JST, et al. MOTS-c is an exercise-induced mitochondrial-encoded regulator of age-dependent physical decline and muscle homeostasis. Nat Commun. 2021;12(1):470.", "doi": "https://doi.org/10.1038/s41467-020-20790-0" },
+    { "id": 3, "citation": "Gao Y, Wei X, Wei P, et al. MOTS-c Functionally Prevents Metabolic Disorders. Metabolites. 2023;13(1):125.", "doi": "https://doi.org/10.3390/metabo13010125" },
+    { "id": 4, "citation": "Zheng Y, Wei Z, Wang T. MOTS-c: A promising mitochondrial-derived peptide for therapeutic exploitation. Front Endocrinol. 2023;14:1120533.", "doi": "https://doi.org/10.3389/fendo.2023.1120533" },
+    { "id": 5, "citation": "Mendelsohn AR, Larrick JW. Mitochondrial-Derived Peptides Exacerbate Senescence. Rejuvenation Res. 2018;21(4):369–373.", "doi": "https://doi.org/10.1089/rej.2018.2114" },
+    { "id": 6, "citation": "Yin Y, Pan Y, He J, et al. The mitochondrial-derived peptide MOTS-c relieves hyperglycemia and insulin resistance in gestational diabetes mellitus. Pharmacol Res. 2021;175:105987.", "doi": "https://doi.org/10.1016/j.phrs.2021.105987" },
+    { "id": 7, "citation": "Lu H, Tang S, Xue C, et al. Mitochondrial-Derived Peptide MOTS-c Increases Adipose Thermogenic Activation to Promote Cold Adaptation. Int J Mol Sci. 2019;20(10):2456.", "doi": "https://doi.org/10.3390/ijms20102456" },
+    { "id": 8, "citation": "Wei M, Gan L, Liu Z, et al. Mitochondrial-Derived Peptide MOTS-c Attenuates Vascular Calcification and Secondary Myocardial Remodeling via AMPK Signaling Pathway. Cardiorenal Med. 2019;10(1):42–50.", "doi": "https://doi.org/10.1159/000503224" },
+    { "id": 9, "citation": "Baylan FA, Yarar E. Relationship between the mitochondria-derived peptide MOTS-c and insulin resistance in obstructive sleep apnea. Sleep Breath. 2021;25(2):861–866.", "doi": "https://doi.org/10.1007/s11325-020-02273-0" },
+    { "id": 10, "citation": "Li X, Zhan F, Qiu G, et al. MOTS-c attenuates lung ischemia-reperfusion injury via MYH9-dependent nuclear translocation and transcriptional activation of antioxidant genes. Redox Biol. 2025;84:103681.", "doi": "https://doi.org/10.1016/j.redox.2025.103681" },
+    { "id": 11, "citation": "CohBar, Inc. Announces Positive Topline Results from the Phase 1a/1b Study of CB4211. GlobeNewswire, 10 August 2021.", "note": "Sponsor-reported topline data; CB4211 is an analogue of MOTS-c and is not approved for any indication." },
+    { "id": 12, "citation": "Kumagai H, Natsume T, Kim SJ, et al. The MOTS-c K14Q polymorphism in the mtDNA is associated with muscle fiber composition and muscular performance. Biochim Biophys Acta Gen Subj. 2021;1866(2):130048.", "doi": "https://doi.org/10.1016/j.bbagen.2021.130048" }
+  ],
+  "sourcesNote": "Molecular formula (C101H152N28O22S2) and calculated average mass (≈2174.6 Da) were computed from the published reference sequence for the free, non-salt peptide."
+}

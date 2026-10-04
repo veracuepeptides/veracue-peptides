@@ -9,10 +9,11 @@ import { Footer } from '@/components/shared/Footer'
 import { SmoothScroll } from '@/components/shared/SmoothScroll'
 import { Toaster } from '@/components/ui/sonner'
 import { GlobalNavigationSpinner } from '@/components/shared/GlobalNavigationSpinner'
-import { CustomScrollbar } from '@/components/shared/CustomScrollbar'
 import { AgeGate } from '@/components/shared/AgeGate'
 import { HomePreloaderWrapper } from '@/components/home/HomePreloaderWrapper'
 import { getOgImageUrl } from '@/lib/utils'
+import { fontVariables } from '@/lib/fonts'
+import { pickMessages, GLOBAL_MESSAGE_KEYS } from '@/lib/i18n/pickMessages'
 
 import '@/app/globals.css'
 
@@ -24,7 +25,7 @@ export async function generateMetadata() {
     metadataBase: new URL(process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'),
     title: {
       default: 'Veracue Peptides | High-Purity Research Peptides',
-      template: '%s | Veracue',
+      template: '%s | Veracue Peptides',
     },
     description: t('siteTagline'),
     icons: {
@@ -66,29 +67,19 @@ export async function generateMetadata() {
 }
 
 export default async function FrontendLayout({ children }: { children: React.ReactNode }) {
+  // Only the translations needed by components mounted on every page (header, footer,
+  // age gate, mobile menu, search overlay, cart drawer) are sent to the client here.
+  // Each route additionally scopes in its own page-specific namespaces via a nested
+  // NextIntlClientProvider around its own content — see src/lib/i18n/pickMessages.ts.
+  // getMessages() is request-memoized (React cache()), so calling it again per-page
+  // costs nothing extra; this only reduces what gets serialized to the browser.
   const messages = await getMessages()
+  const globalMessages = pickMessages(messages, GLOBAL_MESSAGE_KEYS)
 
   return (
-    <html lang="en" translate="no" className="min-h-screen notranslate" suppressHydrationWarning>
+    <html lang="en" translate="no" className={`min-h-screen notranslate ${fontVariables}`} suppressHydrationWarning>
       <head>
         <meta name="google" content="notranslate" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/site.webmanifest" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://pub-0b0f2f98407442588d161ae09cb84207.r2.dev" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Sora:wght@100..800&family=Syne:wght@500;600;700;800&family=Tenor+Sans&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Space+Grotesk:wght@300..700&family=Big+Shoulders+Display:wght@100..900&family=Alex+Brush&family=Pinyon+Script&display=swap"
-          rel="stylesheet"
-        />
-        <link 
-          href="https://db.onlinewebfonts.com/c/f54f980c88361538e9f438bddf5eb509?family=GERALDINE+PERSONAL+USE+Italic" 
-          rel="stylesheet" 
-          type="text/css" 
-        />
         {GA_MEASUREMENT_ID && (
           <>
             <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} strategy="afterInteractive" />
@@ -116,14 +107,17 @@ export default async function FrontendLayout({ children }: { children: React.Rea
       </head>
       <body className="min-h-screen antialiased" suppressHydrationWarning>
         <AuthSessionProvider>
-          <NextIntlClientProvider messages={messages}>
+          <NextIntlClientProvider messages={globalMessages}>
             <div className="min-h-screen bg-[#f0efeb] text-[#20221c] font-sans antialiased print:bg-white print:min-h-0">
-              <AgeGate />
               <React.Suspense fallback={null}>
                 <GlobalNavigationSpinner />
               </React.Suspense>
               <SmoothScroll>
-                <CustomScrollbar />
+                {/* Rendered inside SmoothScroll (not as a layout sibling) so its
+                    useLenis() call resolves a real instance instead of null — it needs
+                    to actually pause Lenis's own scroll loop while the gate is open,
+                    not just rely on the overflow:hidden it also sets directly. */}
+                <AgeGate />
                 <LayoutClientWrapper header={<Header />} footer={<Footer />}>
                   <HomePreloaderWrapper>{children}</HomePreloaderWrapper>
                 </LayoutClientWrapper>

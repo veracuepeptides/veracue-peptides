@@ -61,7 +61,7 @@ const TRENDING_SEARCHES = [
   'Glutathione',
 ]
 
-const DEFAULT_VERACUE_VIAL = '/veracue-images/veracue-research-grade-50mg-studio-portrait.png'
+const DEFAULT_VERACUE_VIAL = '/veracue-images/veracue-research-grade-studio-portrait.webp'
 const VERACUE_FLATLAY = '/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp'
 
 export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverlayProps) {
@@ -198,7 +198,12 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
   return (
     <AnimatePresence>
       {isOpen && (
-        <div className="fixed inset-0 z-[100] flex items-start sm:items-center justify-center p-2 sm:p-4 md:p-6 lg:p-8 pointer-events-auto">
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label="Search products"
+          className="fixed inset-0 z-[100] flex items-start sm:items-center justify-center p-2 sm:p-4 md:p-6 lg:p-8 pointer-events-auto"
+        >
           {/* Deep Frosted Luxury Backdrop */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -376,7 +381,7 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
                     <div className="p-3.5 rounded-xl bg-[#20221c]/5 border border-[#20221c]/10 flex items-center gap-3">
                       <ShieldCheck className="w-5 h-5 text-[#a5a58d] shrink-0" />
                       <div className="text-[11px] leading-relaxed text-[#20221c]/70">
-                        <strong className="text-[#20221c] font-semibold">Verified ≥99% HPLC Purity:</strong> Every Veracue batch includes an authentic third-party Certificate of Analysis.
+                        <strong className="text-[#20221c] font-semibold">HPLC Tested Per Batch:</strong> Every Veracue batch has a Certificate of Analysis showing its purity result.
                       </div>
                     </div>
                   </div>
@@ -424,7 +429,7 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
                       {filteredResults.map((product, idx) => {
                         const isSelected = idx === selectedIndex
                         const displayPrice = product.salePrice ?? product.price
-                        const purityTag = product.coaPurity ? `${product.coaPurity}% HPLC` : '≥99% HPLC'
+                        const purityTag = product.coaPurity ? `${product.coaPurity}% HPLC` : 'HPLC Tested'
 
                         return (
                           <div
@@ -530,7 +535,7 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
                           {activeProduct.name}
                         </h3>
                         <p className="text-xs text-[#20221c]/65 mt-1 line-clamp-2">
-                          {activeProduct.description || activeProduct.descriptor || 'High-grade laboratory research peptide synthesized under strict analytical standards.'}
+                          {activeProduct.description || activeProduct.descriptor || 'Laboratory research peptide, HPLC tested with a COA for each batch.'}
                         </p>
                       </div>
 
@@ -539,13 +544,13 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
                         <div className="flex justify-between py-0.5 border-b border-[#20221c]/5">
                           <span className="text-[#20221c]/60">Purity Rating</span>
                           <span className="font-sans font-bold text-[#20221c]">
-                            {activeProduct.coaPurity ? `${activeProduct.coaPurity}%` : '≥99.0%'} (HPLC)
+                            {activeProduct.coaPurity ? `${activeProduct.coaPurity}% (HPLC)` : 'See COA'}
                           </span>
                         </div>
                         <div className="flex justify-between py-0.5 border-b border-[#20221c]/5">
                           <span className="text-[#20221c]/60">Batch Reference</span>
                           <span className="font-sans font-semibold text-[#20221c]">
-                            {activeProduct.coaBatchNumber || 'VER-2026-HQ'}
+                            {activeProduct.coaBatchNumber || 'See COA'}
                           </span>
                         </div>
                         <div className="flex justify-between py-0.5 border-b border-[#20221c]/5">
@@ -554,7 +559,7 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
                         </div>
                         <div className="flex justify-between py-0.5">
                           <span className="text-[#20221c]/60">Recommended Storage</span>
-                          <span className="text-[#20221c] font-medium">-20°C Cryo Storage</span>
+                          <span className="text-[#20221c] font-medium">Store Cold, Per Label</span>
                         </div>
                       </div>
                     </div>
@@ -587,7 +592,7 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
                         <span className="px-2.5 py-1 rounded-full bg-[#20221c] text-[#f0efeb] text-[10px] font-bold uppercase tracking-[0.15em]">
                           Analytical Standard
                         </span>
-                        <span className="text-[10px] font-sans text-[#20221c]/50 font-medium">ISO 17025 Compliant</span>
+                        <span className="text-[10px] font-sans text-[#20221c]/50 font-medium">COA Per Batch</span>
                       </div>
 
                       <div className="relative w-full h-48 rounded-2xl overflow-hidden border border-[#20221c]/10 shadow-sm">
@@ -600,17 +605,17 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                         <div className="absolute bottom-3 left-3 right-3 text-white">
-                          <p className="text-[10px] font-sans uppercase tracking-widest text-[#f0efeb]/80 font-medium">Synthesis Integrity</p>
-                          <h4 className="text-sm font-serif font-bold text-white leading-tight">Zero Degradation Packaging</h4>
+                          <p className="text-[10px] font-sans uppercase tracking-widest text-[#f0efeb]/80 font-medium">Careful Handling</p>
+                          <h4 className="text-sm font-serif font-bold text-white leading-tight">Sealed, Insulated Packaging</h4>
                         </div>
                       </div>
 
                       <div className="space-y-2">
                         <h4 className="text-xs font-bold uppercase tracking-wider text-[#20221c]">
-                          Third-Party Laboratory Assurance
+                          Analytical Testing
                         </h4>
                         <p className="text-xs text-[#20221c]/70 leading-relaxed">
-                          All Veracue research compounds undergo rigorous RP-HPLC and mass spectrometry testing to guarantee ≥99.0% purity before release.
+                          All Veracue research compounds are HPLC-tested, with a COA per batch showing the purity result.
                         </p>
                       </div>
                     </div>
@@ -642,7 +647,7 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
 
               <div className="flex items-center gap-1.5 text-[10px] font-sans font-medium text-[#20221c]/70">
                 <ShieldCheck className="w-3.5 h-3.5 text-[#a5a58d]" />
-                <span>Veracue Peptides • ≥99% HPLC Verified Research Grade</span>
+                <span>Veracue Peptides • HPLC Tested Research Grade</span>
               </div>
             </div>
           </motion.div>

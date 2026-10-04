@@ -1,0 +1,579 @@
+{
+  "route": "/product/epithalon-spray",
+  "seo": {
+    "title": "Epithalon Research Peptide (Epitalon) | Veracue",
+    "metaDescription": "Epithalon (Epitalon) research spray: AEDG sequence, molecular identity, published cell and animal research, evidence limits, and RUO documentation.",
+    "canonical": "https://veracue-peptides.vercel.app/product/epithalon-spray",
+    "primaryKeyword": "epithalon peptide",
+    "secondaryKeywords": [
+      "epitalon peptide",
+      "epitalon",
+      "epithalon",
+      "epitalon benefits",
+      "epitalon peptide benefits",
+      "epitalon dosage",
+      "epitalon peptide dosage",
+      "epithalon 10mg",
+      "epitalon spray",
+      "epithalon spray",
+      "epitalon sequence",
+      "epitalon molecular weight",
+      "epitalon coa",
+      "epitalon research",
+      "epitalon telomere research"
+    ],
+    "suggestedUrl": "/product/epithalon-spray",
+    "ogTitle": "Epithalon Spray (Epitalon) | Research Peptide | Veracue",
+    "ogDescription": "Molecular identity, published research, and RUO documentation for Veracue's Epithalon (Epitalon) spray-format research material."
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "Shop",
+      "url": "/shop"
+    },
+    {
+      "name": "Epithalon Spray",
+      "url": "/product/epithalon-spray"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Research Use Only",
+    "h1": "Epithalon Spray",
+    "subtitle": "A spray-format research preparation of Epitalon (Epithalon), the synthetic AEDG tetrapeptide studied for its role in cellular aging, telomere biology, and pineal/circadian research.",
+    "description": "Epitalon, also written Epithalon or Epithalone, is a four-residue synthetic peptide, AEDG, first developed within a research tradition built around the pineal gland and aging biology. Over the past two decades it has been examined in cultured human cells, in several rodent aging models, and in a smaller body of historical human-oriented research. This page sets out what Epitalon is as a molecule, what that literature has actually reported, and what is and isn't established about Veracue's own spray-format material. It's written for researchers, and it doesn't describe a treatment, supplement, or wellness product."
+  },
+  "aeoAnswer": {
+    "question": "What is Epithalon?",
+    "answer": "Epithalon (also spelled Epitalon or Epithalone) is a synthetic tetrapeptide, Ala-Glu-Asp-Gly (AEDG), developed within the same research tradition as Epithalamin, a pineal gland peptide extract, though Epitalon itself is a distinct, defined synthetic compound rather than a biological extract. Research on Epitalon includes cultured-cell studies of telomerase activity and telomere length, chromatin and gene-expression observations, rodent aging studies, and a smaller body of historical human-oriented literature. Veracue's Epithalon Spray is supplied strictly for laboratory research, not for human or veterinary use."
+  },
+  "productSnapshot": {
+    "molecularFacts": [
+      {
+        "property": "Name",
+        "value": "Epitalon / Epithalon (Epithalone)"
+      },
+      {
+        "property": "Sequence",
+        "value": "AEDG"
+      },
+      {
+        "property": "Full peptide notation",
+        "value": "H-Ala-Glu-Asp-Gly-OH"
+      },
+      {
+        "property": "Residues",
+        "value": "4"
+      },
+      {
+        "property": "Molecular formula",
+        "value": "C14H22N4O9"
+      },
+      {
+        "property": "Average molecular weight",
+        "value": "390.35 g/mol"
+      },
+      {
+        "property": "Exact / monoisotopic mass",
+        "value": "390.13867829 Da"
+      },
+      {
+        "property": "PubChem CID",
+        "value": "219042"
+      }
+    ],
+    "identifierNote": "CAS identifiers associated with Epitalon include 64082-79-7 and 307297-39-8 in public chemical databases; researchers should verify the identifier attached to the specific material or lot rather than treating either number as the single universal registration. A separate PubChem record also exists for an Epithalon TFA (trifluoroacetate) salt, which carries its own distinct measured mass and should not be assumed to describe this product.",
+    "productFieldsNote": "Concentration, fill volume, carrier, purity, storage conditions, shelf life, SKU, price, stock status, and lot number are product- and lot-specific details. They are not publicly specified on the current Veracue product listing and should be confirmed directly through Veracue or a current Certificate of Analysis."
+  },
+  "molecularIdentity": {
+    "heading": "Molecular Identity",
+    "body": [
+      "Epitalon is a linear tetrapeptide made of four amino acids, alanine, glutamic acid, aspartic acid, and glycine, shortened to AEDG or written in full as H-Ala-Glu-Asp-Gly-OH. That notation simply marks the unmodified free amino and carboxyl ends of the chain, and it is the reference form used for molecular-identity purposes; it does not necessarily describe the exact chemical state of any given formulated product.",
+      "From that sequence follow the molecule's formula, C14H22N4O9, its average molecular weight of 390.35 g/mol, and its exact (monoisotopic) mass of 390.13867829 Da. The average weight is a composite calculated across each element's natural isotope mixture, while the monoisotopic mass uses the most abundant isotope of each atom; the two numbers are close for a peptide this size but aren't interchangeable in analytical work, particularly in mass spectrometry.",
+      "PubChem's record for Epitalon, CID 219042, is the clearest single reference point for confirming this identity. It's worth remembering, though, that matching a molecular weight or a chromatographic retention time to the published literature tells you a sample behaves like Epitalon under that assay; it doesn't confirm that a specific vial meets its label. That distinction is what lot-specific documentation is for, covered later on this page."
+    ]
+  },
+  "epitalonVsEpithalamin": {
+    "heading": "Epitalon vs. Epithalamin",
+    "body": "It's easy to conflate these two names, and worth keeping them separate. Epithalamin is the earlier material: a peptide preparation extracted from bovine pineal tissue and studied in Russian gerontology research from the 1970s onward. Epitalon was designed afterward, based on the amino-acid composition identified in that extract, but it is a single, defined synthetic tetrapeptide, not a biological extract itself. The two share a research lineage, and some of Epitalon's early rationale rests on findings from Epithalamin studies, but they are not chemically interchangeable, and results reported for one should not be assumed to transfer automatically to the other."
+  },
+  "researchContext": {
+    "heading": "What Researchers Study",
+    "intro": "Epitalon's literature clusters around a handful of related questions in aging biology. Each finding below belongs to the model that produced it, cell culture, animal, or historical human-oriented research, and none of it should be read as an established clinical effect.",
+    "sections": [
+      {
+        "title": "Telomerase and telomere-related research",
+        "body": "The foundational work here comes from cultured human fibroblasts: a 2003 study reported that Epitalon exposure induced telomerase catalytic subunit expression, measurable telomerase activity, and telomere elongation in telomerase-negative cells, and a 2004 follow-up reported that treated fibroblasts underwent additional population doublings before reaching replicative senescence. A more recent 2025 study extended this line of work into normal and cancer-derived human cell lines, reporting dose-dependent telomere lengthening through hTERT and telomerase upregulation in normal cells, and through an alternative lengthening of telomeres (ALT) pathway specifically in the cancer cell lines tested. These are cell-culture findings, consistent across three separate studies, but they describe what happened to specific cultured cell populations. They shouldn't be read as evidence that Epitalon lengthens telomeres in a living person."
+      },
+      {
+        "title": "Chromatin and gene expression",
+        "body": "A related line of research has looked at chromatin structure directly. One study examined cultured lymphocytes from people aged 76-80 and reported that Epitalon activated ribosomal genes and reduced condensation of heterochromatin regions associated with aging. That's a specific, interesting finding, but the field still treats Epitalon's broader gene-regulatory mechanism as proposed rather than settled; reviewers of this literature have noted that questions about how the peptide interacts with chromatin and which pathways carry that effect remain open."
+      },
+      {
+        "title": "Pineal function and circadian rhythm",
+        "body": "Because of Epitalon's roots in pineal-gland research, it has also been studied for effects on melatonin and circadian physiology. A study in aged rhesus monkeys and in elderly people reported that Epitalon and Epithalamin helped restore nighttime melatonin release and normalize its circadian rhythm in subjects with reduced pineal function. This is a genuine strand of human-oriented and animal research, but it comes from an older, narrower literature rather than a modern circadian-medicine trial."
+      },
+      {
+        "title": "Lifespan and aging biomarkers in rodents",
+        "body": "Several rodent studies reported changes in lifespan-related measures and aging-associated biomarkers under specific experimental conditions, including altered lighting regimens designed to accelerate aging in the study animals. Results were not uniform: effects on maximum lifespan didn't always track with effects on mean lifespan, and outcomes varied by sex and lighting condition. These findings are model-specific and shouldn't be extrapolated into a statement about human life extension."
+      }
+    ]
+  },
+  "evidenceHierarchy": {
+    "heading": "Evidence Boundaries",
+    "intro": "Epitalon's literature spans several different kinds of evidence, and the single most common way this compound gets oversold online is by blending them together. Worth keeping distinct:",
+    "levels": [
+      {
+        "level": "Chemical identity",
+        "body": "Well established: sequence (AEDG), formula (C14H22N4O9), molecular weight, and PubChem's CID 219042 record."
+      },
+      {
+        "level": "Cell-culture research",
+        "body": "The largest share of the mechanistic literature, covering telomerase activity, telomere length, proliferative capacity, and chromatin/gene-expression observations in cultured human cells."
+      },
+      {
+        "level": "Animal research",
+        "body": "Rodent studies of lifespan, aging biomarkers, and tumor incidence, plus a primate study of circadian melatonin restoration. These describe outcomes in the species studied, not in humans."
+      },
+      {
+        "level": "Historical human-oriented research",
+        "body": "It would be inaccurate to say there are no human studies. A small, older body of clinical and human-oriented literature exists, including a 2002 clinical study in patients with retinitis pigmentosa and human arms of pineal-melatonin research in elderly subjects. This literature is limited in scale compared with the cell-based and animal work, predates modern clinical-trial standards, and does not amount to large-scale clinical evidence establishing longevity, rejuvenation, or broad anti-aging outcomes. It should be read as historical and interpreted cautiously rather than treated as current clinical validation."
+      },
+      {
+        "level": "Product-specific evidence",
+        "body": "Nothing in the published literature above was conducted using Veracue's material, and this page doesn't treat the molecule's research history and this specific product as interchangeable."
+      }
+    ]
+  },
+  "sprayFormatClarification": {
+    "heading": "Spray Format Is Not a Route of Administration",
+    "body": [
+      "Veracue's Epithalon material is packaged and presented in a spray format. That's a statement about how the liquid is dispensed, not a claim about intranasal use, mucosal absorption, systemic exposure, pharmacokinetics, or dose; peptide bioavailability by any given route is a separate pharmacological question from the container it ships in.",
+      "That said, the point isn't that mucosal or spray-based peptide delivery has never been studied anywhere in the literature, only that historical research on Epitalon and related pineal peptide preparations, most of it using injected or cell-culture protocols, shouldn't be used to infer the pharmacokinetic or clinical properties of this specific spray-format product. This page doesn't provide spray counts, frequency, technique, titration, reconstitution, or dilution guidance, and any verified formulation or delivery detail should be sourced directly from Veracue's current product documentation rather than inferred from the packaging format."
+    ]
+  },
+  "problemSolutionSections": [
+    {
+      "heading": "1. How do I confirm what Epithalon / Epitalon actually is?",
+      "problem": "Researchers run into multiple spellings, commercial descriptions, and references to Epithalamin, and it isn't always obvious whether these all mean the same thing.",
+      "solution": "Epitalon and Epithalon (also written Epithalone) are the same defined synthetic tetrapeptide, AEDG, and PubChem's identity record (CID 219042) is the clearest reference point for confirming that. Epithalamin is a different, earlier material, a bovine pineal-gland peptide extract that informed Epitalon's design. Epitalon is a single synthetic compound; Epithalamin is an extract mixture. They're related by research history, not chemical identity."
+    },
+    {
+      "heading": "2. What is the correct Epitalon sequence and molecular weight?",
+      "problem": "Supplier pages and search results sometimes list inconsistent chemical details for the same compound name.",
+      "solution": "The verified sequence is Ala-Glu-Asp-Gly (AEDG), written in full as H-Ala-Glu-Asp-Gly-OH, with molecular formula C14H22N4O9, average molecular weight 390.35 g/mol, and exact/monoisotopic mass 390.13867829 Da, matching PubChem CID 219042. Confirming these values against a listing tells you the description is internally consistent with the known molecule; it doesn't tell you a specific lot meets that description, which is what analytical documentation is for."
+    },
+    {
+      "heading": "3. Why is Epitalon associated so strongly with aging research?",
+      "problem": "\"Anti-aging peptide\" language circulating online can make the underlying research sound more conclusive, and more clinical, than it is.",
+      "solution": "The connection is genuine and goes back to Epitalon's origin as a synthetic counterpart to Epithalamin, studied for decades in aging-biology research focused on the pineal gland, cellular senescence, and rodent lifespan models. That historical depth is real. It doesn't mean the accumulated findings amount to a proven anti-aging treatment, and this page keeps the research history and the marketing language it has attracted separate from each other."
+    },
+    {
+      "heading": "4. What does the Epitalon telomerase and telomere research actually show?",
+      "problem": "Search results often turn cell-culture telomerase findings into claims about human longevity or anti-aging effects.",
+      "solution": "A 2003 study in cultured human fibroblasts reported telomerase catalytic subunit expression, telomerase activity, and telomere elongation, and a 2004 follow-up reported extended proliferative capacity in the same cell type. A 2025 study extended this into additional human cell lines, reporting telomere lengthening through telomerase upregulation in normal cells and through ALT activity specifically in cancer cell lines. All three are cell-culture studies. They describe what happened to cultured cells under laboratory conditions, and they don't establish that Epitalon lengthens telomeres in a living human being."
+    },
+    {
+      "heading": "5. What does Epitalon research actually show about lifespan and longevity?",
+      "problem": "Animal lifespan findings are frequently presented online as proof of human life extension.",
+      "solution": "Rodent studies have reported effects on lifespan-related measures and aging biomarkers, often under altered lighting conditions designed to accelerate aging in the study animals. The effects weren't uniform, changes in maximum lifespan didn't always track with mean lifespan, and results varied by sex and lighting regimen. These are species-specific, model-specific findings that don't extrapolate into a statement about human longevity."
+    },
+    {
+      "heading": "6. What does Epitalon research suggest about chromatin and gene expression?",
+      "problem": "Technical language about \"epigenetic effects\" is easy to overstate into a settled mechanism.",
+      "solution": "A study in cultured lymphocytes from older adults reported that Epitalon activated ribosomal genes and reduced age-associated heterochromatin condensation, which is a genuinely interesting finding. The broader mechanism by which Epitalon might influence gene expression is still described as proposed and investigated rather than settled, and no single receptor or molecular target has been established as the definitive explanation."
+    },
+    {
+      "heading": "7. What does \"Epitalon benefits\" mean in a research context?",
+      "problem": "Searchers often use \"benefits\" as shorthand for established, real-world benefits.",
+      "solution": "In the literature, \"benefits\" refers to specific measured outcomes in a given model, telomerase activity and telomere elongation in cultured cells, or lifespan and biomarker changes in rodents, not a demonstrated benefit for a human end user. Reading an \"Epitalon benefits\" claim is mostly a matter of asking which study produced it and in what model."
+    },
+    {
+      "heading": "8. What do \"Epitalon dosage\" and \"Epithalon 10mg\" searches actually mean?",
+      "problem": "Dosage-intent searches often assume a historical study dose translates directly into a usable protocol.",
+      "solution": "Published studies used doses, schedules, and routes designed for their own experimental protocols, and a package size like \"10mg\" is a quantity of material, not a validated dose or protocol. Study dose, product formulation, administration route, and package quantity are four separate variables that don't determine one another. This page doesn't provide human dosing, a dosing protocol, or reconstitution instructions, since none of that fits a Research Use Only material."
+    },
+    {
+      "heading": "9. How is Epitalon different from DSIP, Pinealon, Semax and Selank?",
+      "problem": "These compounds show up together often enough in catalogs and search results that their identities blur.",
+      "solution": "Epitalon (AEDG) is a four-residue tetrapeptide studied mainly in cellular-aging and longevity models. DSIP is a structurally unrelated nonapeptide studied in sleep-related physiology. Pinealon is a separate short peptide bioregulator from the same broader research tradition, with its own sequence and a research focus centered more on neuroprotection. Semax and Selank are both heptapeptides, distinct from each other and from Epitalon, studied mainly in neurological and behavioral contexts. They share a research lineage and sometimes a catalog; none of them is presented here as better or preferable to another."
+    },
+    {
+      "heading": "10. What should I verify on an Epitalon COA?",
+      "problem": "A product name on a label doesn't establish the identity or quality of a specific lot.",
+      "solution": "A Certificate of Analysis for a peptide research material may include the product name, a lot number, an identity result, the analytical method used, a purity or assay result, molecular-weight or mass confirmation, a testing date, and the testing laboratory's information. Not every COA includes every one of these; treat this as a checklist for what to look for. Current COA availability and content for this Veracue product should be confirmed through the certificates resource rather than assumed."
+    },
+    {
+      "heading": "11. How should I interpret Epitalon mass-spectrometry data?",
+      "problem": "It's easy to confuse a molecule's theoretical molecular weight with the observed mass-to-charge ratio an instrument reports.",
+      "solution": "Epitalon's average molecular weight (390.35 g/mol) is a composite value based on standard atomic weights, while its exact or monoisotopic mass (390.13867829 Da) uses the most abundant isotope of each element; the two are close but distinct. Mass spectrometry typically reports m/z rather than a bare molecular weight, since ionization produces charged species, and a peptide can appear as different charge states or adducts depending on the ionization method and instrument used. There's no single ion that should be assumed dominant as a matter of general fact; that depends on the specific analytical method behind a given result."
+    },
+    {
+      "heading": "12. What can a Veracue Epithalon Spray page establish, and what requires lot-specific documentation?",
+      "problem": "A product page can explain molecular identity and summarize published research, but it can't substitute for lot-level analytical work.",
+      "solution": "Four things are worth keeping separate: what Epitalon is as a molecule, drawn from PubChem and the chemical literature; what independent published research has investigated, with its evidence level attached; what Veracue's current listing actually states about this product, which at present doesn't include verified concentration, purity, or pricing; and what only a current lot-specific Certificate of Analysis can establish, meaning identity confirmation and purity results for the exact material a researcher receives. Questions in that last category belong with Veracue's current product documentation, not with inference from this page."
+    }
+  ],
+  "comparisonTable": {
+    "heading": "How Epitalon Compares to Related Research Peptides",
+    "columns": [
+      "Material",
+      "Core identity",
+      "Main research context",
+      "Evidence type"
+    ],
+    "rows": [
+      [
+        "Epitalon (Epithalon)",
+        "Synthetic tetrapeptide, AEDG",
+        "Cellular aging, telomerase/telomere biology, rodent longevity, pineal/circadian research",
+        "Cell-culture, animal, and limited historical human-oriented research"
+      ],
+      [
+        "DSIP",
+        "Synthetic nonapeptide",
+        "Sleep-related physiology and stress research",
+        "Primarily animal and early human-oriented literature"
+      ],
+      [
+        "Pinealon",
+        "Short synthetic peptide bioregulator",
+        "Neuroprotection-related and CNS aging research",
+        "Primarily preclinical and cell-based literature"
+      ],
+      [
+        "Semax",
+        "Synthetic heptapeptide (ACTH-fragment analog)",
+        "Neurological and cognitive-function research",
+        "Preclinical literature and human-oriented studies from its country of origin"
+      ],
+      [
+        "Selank",
+        "Synthetic heptapeptide (tuftsin analog)",
+        "Anxiolytic and behavioral research",
+        "Preclinical literature and human-oriented studies from its country of origin"
+      ]
+    ],
+    "note": "This table is for scientific differentiation, not ranking. No material listed here is presented as better, stronger, or more effective than another."
+  },
+  "whatCurrentResearchDoesNotEstablish": {
+    "heading": "What Current Research Does Not Establish",
+    "intro": "Based on the literature covered on this page, current evidence does not establish that a Veracue Epithalon Spray:",
+    "items": [
+      "extends human lifespan",
+      "reverses aging",
+      "reproduces the retinal or circadian outcomes reported in the older human-oriented studies discussed above",
+      "produces clinical rejuvenation in humans",
+      "treats any disease",
+      "has a clinically validated intranasal or mucosal effect",
+      "has an established human dosing protocol"
+    ],
+    "closing": "This is limited to the literature reviewed here and to this specific product; it isn't a claim about the entirety of the scientific record on Epitalon."
+  },
+  "coaQualitySection": {
+    "heading": "COA and Analytical Documentation",
+    "body": [
+      "A Certificate of Analysis for a peptide research material may include the product name, a lot number, identity-test results, the analytical method used (HPLC or mass spectrometry, for example), a purity or assay value, molecular-weight or mass confirmation, a testing date, and information identifying the testing laboratory.",
+      "Veracue's current, lot-specific COA content and test results for this product aren't established on this page, and nothing here should be read as a claim of a specific purity percentage, HPLC or MS verification, GMP status, or pharmaceutical-grade status. Researchers who need that documentation should check the current certificates resource or request the Certificate of Analysis for the specific lot they intend to use."
+    ]
+  },
+  "productSpecificTransparency": {
+    "heading": "What This Page Establishes, By Category",
+    "categories": [
+      {
+        "label": "Known molecular information",
+        "body": "Epitalon's sequence (AEDG), formula (C14H22N4O9), average and monoisotopic mass, and PubChem identity (CID 219042), drawn from PubChem and the peer-reviewed chemical literature."
+      },
+      {
+        "label": "Published research",
+        "body": "Independent literature on Epitalon covering cell-culture telomerase and telomere findings, chromatin observations, rodent longevity studies, and historical human-oriented research, cited by author and year in the references below."
+      },
+      {
+        "label": "Veracue product information",
+        "body": "Limited to what Veracue's listing currently states. Concentration, purity, formulation, price, SKU, and stock status for this product are not publicly specified as of this writing."
+      },
+      {
+        "label": "Lot-specific documentation",
+        "body": "Identity confirmation and purity results for a specific lot, available only through a current Certificate of Analysis, not through this page."
+      }
+    ]
+  },
+  "ruoCompliance": {
+    "heading": "Research Use Only",
+    "statement": "For laboratory research use only. Not intended for human or veterinary use.",
+    "body": "Epitalon, and Veracue's Epithalon Spray specifically, are presented here strictly as research materials. This page discusses what published studies investigated, including their conditions and outcomes, but it doesn't convert that into dosing, administration technique, spray frequency, titration, reconstitution, dilution, or treatment guidance, and it doesn't frame this material as a medicine, supplement, cosmetic, or approved longevity intervention. Researchers are responsible for using this material in line with applicable laws, institutional policy, and their own protocols."
+  },
+  "faq": [
+    {
+      "q": "What is Epithalon / Epitalon?",
+      "a": "Epithalon, also spelled Epitalon or Epithalone, is a synthetic tetrapeptide, Ala-Glu-Asp-Gly (AEDG), studied for its role in cellular aging and pineal/circadian biology. It's listed under PubChem CID 219042 and supplied by Veracue strictly for laboratory research."
+    },
+    {
+      "q": "What is the Epitalon sequence?",
+      "a": "Ala-Glu-Asp-Gly, abbreviated AEDG, written in full peptide notation as H-Ala-Glu-Asp-Gly-OH."
+    },
+    {
+      "q": "What is Epitalon's molecular weight?",
+      "a": "Epitalon has the formula C14H22N4O9, an average molecular weight of 390.35 g/mol, and an exact/monoisotopic mass of 390.13867829 Da. A separate PubChem record exists for a TFA salt form, which carries a different measured mass."
+    },
+    {
+      "q": "Is Epitalon the same as Epithalamin?",
+      "a": "No. Epithalamin is a bovine pineal-gland peptide extract from earlier gerontology research; Epitalon is a defined synthetic tetrapeptide designed based on its amino-acid composition. They're related historically, not chemically interchangeable."
+    },
+    {
+      "q": "What is Epitalon researched for?",
+      "a": "Cultured-cell studies of telomerase activity and telomere length, chromatin and gene-expression observations, rodent studies of lifespan and aging biomarkers, and a smaller body of historical human-oriented research on pineal and circadian function."
+    },
+    {
+      "q": "What does Epitalon telomere research actually show?",
+      "a": "Studies in cultured human fibroblasts and, more recently, additional human cell lines have reported telomerase activity and telomere elongation following Epitalon exposure. These are cell-culture findings and don't establish the same effect in living humans."
+    },
+    {
+      "q": "Does Epitalon research prove human life extension?",
+      "a": "No. The lifespan findings come from rodent studies under specific experimental conditions and weren't uniform across those conditions. Current evidence doesn't establish that Epitalon extends human lifespan."
+    },
+    {
+      "q": "What does \"Epitalon benefits\" mean?",
+      "a": "It refers to measured outcomes in a specific study model, cell-culture or rodent, rather than an established benefit for a human end user."
+    },
+    {
+      "q": "What does \"Epitalon dosage\" mean in research?",
+      "a": "It typically refers to doses used in published animal or cell-culture protocols, which don't translate into a human dosing recommendation. This page doesn't provide dosing or reconstitution instructions."
+    },
+    {
+      "q": "How is Epitalon different from DSIP, Pinealon, Semax and Selank?",
+      "a": "Each is a chemically distinct peptide with its own sequence and research focus. Epitalon is a four-residue tetrapeptide studied mainly in aging biology; the others are structurally unrelated compounds studied in sleep, neuroprotection, and behavioral contexts respectively."
+    },
+    {
+      "q": "What should I look for on an Epitalon COA?",
+      "a": "Product name, lot number, identity-test results, analytical method, purity/assay value, molecular-weight confirmation, testing date, and laboratory information. Confirm current COA availability directly through Veracue."
+    },
+    {
+      "q": "What does the Veracue Epithalon Spray page establish?",
+      "a": "It establishes Epitalon's molecular identity and summarizes independent published research with its evidence level noted. It doesn't establish product-specific concentration, purity, or pricing, which require Veracue's current listing or a lot-specific Certificate of Analysis."
+    }
+  ],
+  "references": [
+    {
+      "citation": "PubChem. Compound Summary for CID 219042, Epithalon. National Center for Biotechnology Information, U.S. National Library of Medicine.",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/219042"
+    },
+    {
+      "citation": "Araj SK, Brzezik J, Mądra-Gackowska K, Szeleszczuk Ł. Overview of Epitalon-Highly Bioactive Pineal Tetrapeptide with Promising Properties. Int J Mol Sci. 2025;26(6):2691.",
+      "pmid": "40141333",
+      "doi": "10.3390/ijms26062691"
+    },
+    {
+      "citation": "Khavinson VKh, Bondarev IE, Butyugov AA. Epithalon peptide induces telomerase activity and telomere elongation in human somatic cells. Bull Exp Biol Med. 2003;135(6):590-592.",
+      "pmid": "12937682",
+      "doi": "10.1023/a:1025493705728"
+    },
+    {
+      "citation": "Khavinson VKh, Bondarev IE, Butyugov AA, Smirnova TD. Peptide promotes overcoming of the division limit in human somatic cell. Bull Exp Biol Med. 2004;137(5):503-506.",
+      "pmid": "15455129",
+      "doi": "10.1023/b:bebm.0000038164.49947.8c"
+    },
+    {
+      "citation": "Al-Dulaimi S, Thomas R, Matta S, Roberts T. Epitalon increases telomere length in human cell lines through telomerase upregulation or ALT activity. Biogerontology. 2025;26(5):178.",
+      "pmid": "40908429",
+      "doi": "10.1007/s10522-025-10315-x"
+    },
+    {
+      "citation": "Khavinson VKh, Lezhava TA, Monaselidze JR, et al. Peptide Epitalon activates chromatin at the old age. Neuro Endocrinol Lett. 2003;24(5):329-333.",
+      "pmid": "14647006"
+    },
+    {
+      "citation": "Vinogradova IA, Bukalev AV, Zabezhinski MA, Semenchenko AV, Khavinson VKh, Anisimov VN. Effect of Ala-Glu-Asp-Gly peptide on life span and development of spontaneous tumors in female rats exposed to different illumination regimes. Bull Exp Biol Med. 2007;144(6):825-830.",
+      "pmid": "18856211",
+      "doi": "10.1007/s10517-007-0441-z"
+    },
+    {
+      "citation": "Vinogradova IA, Bukalev AV, Zabezhinski MA, Semenchenko AV, Khavinson VKh, Anisimov VN. Geroprotective effect of Ala-Glu-Asp-Gly peptide in male rats exposed to different illumination regimens. Bull Exp Biol Med. 2008;145(4):472-477.",
+      "pmid": "19110597",
+      "doi": "10.1007/s10517-008-0121-7"
+    },
+    {
+      "citation": "Khavinson V, Razumovsky M, Trofimova S, Grigorian R, Razumovskaya A. Pineal-regulating tetrapeptide epitalon improves eye retina condition in retinitis pigmentosa. Neuro Endocrinol Lett. 2002;23(4):365-368.",
+      "pmid": "12195242"
+    },
+    {
+      "citation": "Korkushko OV, Lapin BA, Goncharova ND, Khavinson VKh, et al. Normalizing effect of the pineal gland peptides on the daily melatonin rhythm in old monkeys and elderly people. Adv Gerontol. 2007;20(1):74-85.",
+      "pmid": "17969590"
+    }
+  ],
+  "internalLinks": [
+    {
+      "label": "Shop all research peptides",
+      "url": "/shop"
+    },
+    {
+      "label": "Certificates of Analysis",
+      "url": "/certificates"
+    },
+    {
+      "label": "Research FAQ",
+      "url": "/faq"
+    },
+    {
+      "label": "Contact our team",
+      "url": "/contact-us"
+    },
+    {
+      "label": "About Veracue",
+      "url": "/about-us"
+    },
+    {
+      "label": "Medical disclaimer",
+      "url": "/medical-disclaimer"
+    },
+    {
+      "label": "Terms and conditions",
+      "url": "/terms-and-conditions"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://veracue-peptides.vercel.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Shop",
+            "item": "https://veracue-peptides.vercel.app/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Epithalon Spray",
+            "item": "https://veracue-peptides.vercel.app/product/epithalon-spray"
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://veracue-peptides.vercel.app/product/epithalon-spray",
+        "url": "https://veracue-peptides.vercel.app/product/epithalon-spray",
+        "name": "Epithalon Research Peptide (Epitalon) | Veracue",
+        "description": "Epithalon (Epitalon) research spray: AEDG sequence, molecular identity, published cell and animal research, evidence limits, and RUO documentation.",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@type": "WebSite",
+          "url": "https://veracue-peptides.vercel.app/",
+          "name": "Veracue"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Epithalon / Epitalon?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Epithalon, also spelled Epitalon or Epithalone, is a synthetic tetrapeptide, Ala-Glu-Asp-Gly (AEDG), studied for its role in cellular aging and pineal/circadian biology. It's listed under PubChem CID 219042 and supplied by Veracue strictly for laboratory research."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the Epitalon sequence?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ala-Glu-Asp-Gly, abbreviated AEDG, written in full peptide notation as H-Ala-Glu-Asp-Gly-OH."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Epitalon's molecular weight?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Epitalon has the formula C14H22N4O9, an average molecular weight of 390.35 g/mol, and an exact/monoisotopic mass of 390.13867829 Da. A separate PubChem record exists for a TFA salt form, which carries a different measured mass."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Epitalon the same as Epithalamin?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Epithalamin is a bovine pineal-gland peptide extract from earlier gerontology research; Epitalon is a defined synthetic tetrapeptide designed based on its amino-acid composition. They're related historically, not chemically interchangeable."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Epitalon researched for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cultured-cell studies of telomerase activity and telomere length, chromatin and gene-expression observations, rodent studies of lifespan and aging biomarkers, and a smaller body of historical human-oriented research on pineal and circadian function."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does Epitalon telomere research actually show?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Studies in cultured human fibroblasts and, more recently, additional human cell lines have reported telomerase activity and telomere elongation following Epitalon exposure. These are cell-culture findings and don't establish the same effect in living humans."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Epitalon research prove human life extension?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The lifespan findings come from rodent studies under specific experimental conditions and weren't uniform across those conditions. Current evidence doesn't establish that Epitalon extends human lifespan."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does \"Epitalon benefits\" mean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It refers to measured outcomes in a specific study model, cell-culture or rodent, rather than an established benefit for a human end user."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does \"Epitalon dosage\" mean in research?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It typically refers to doses used in published animal or cell-culture protocols, which don't translate into a human dosing recommendation. This page doesn't provide dosing or reconstitution instructions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is Epitalon different from DSIP, Pinealon, Semax and Selank?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Each is a chemically distinct peptide with its own sequence and research focus. Epitalon is a four-residue tetrapeptide studied mainly in aging biology; the others are structurally unrelated compounds studied in sleep, neuroprotection, and behavioral contexts respectively."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I look for on an Epitalon COA?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Product name, lot number, identity-test results, analytical method, purity/assay value, molecular-weight confirmation, testing date, and laboratory information. Confirm current COA availability directly through Veracue."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does the Veracue Epithalon Spray page establish?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It establishes Epitalon's molecular identity and summarizes independent published research with its evidence level noted. It doesn't establish product-specific concentration, purity, or pricing, which require Veracue's current listing or a lot-specific Certificate of Analysis."
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

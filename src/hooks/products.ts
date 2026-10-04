@@ -6,9 +6,10 @@ export const productsBeforeChange: CollectionBeforeChangeHook = async ({
   operation,
   originalDoc,
 }) => {
-  // Ensure slug from English name if not provided
-  if (data.name && typeof data.name === 'object' && data.name.en && !data.slug) {
-    data.slug = slugify(data.name.en, { lower: true, strict: true })
+  // Ensure slug from the name if not provided (name may be a plain string or a locale object)
+  if (data.name && !data.slug) {
+    const rawName = typeof data.name === 'string' ? data.name : data.name.en
+    if (rawName) data.slug = slugify(rawName, { lower: true, strict: true })
   }
 
   // Safely check variants to avoid crashing on partial updates

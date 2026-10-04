@@ -1,0 +1,543 @@
+{
+  "_readme": "Corrected final content package for Veracue /product/hcg. It replaces the earlier hcg-final.json. Veracue product facts appear only where the live site confirms them: the sitewide Research Use Only policy, the footer routes, and the house short-description sentence 'Veracue supplies it as a research material for laboratory work' (copied from the live AHK-Cu page). All other statements are general scientific information about hCG. This is a content source; it has not been implemented in the Veracue codebase, and its field layout is not tied to any confirmed Veracue schema.",
+  "route": "/product/hcg",
+  "seo": {
+    "metaTitle": "HCG Research Peptide (Chorionic Gonadotropin) | Veracue",
+    "metaDescription": "HCG, a glycoprotein hormone with alpha and beta subunits, for lab research: molecular identity, LHCGR signaling, HCG vs LH, beta-hCG assays, and COA checks.",
+    "h1": "HCG Research Material",
+    "canonical": "https://veracue-peptides.vercel.app/product/hcg",
+    "openGraph": {
+      "title": "HCG Research Peptide (Chorionic Gonadotropin) | Veracue",
+      "description": "HCG, a glycoprotein hormone with alpha and beta subunits, for lab research: molecular identity, LHCGR signaling, HCG vs LH, beta-hCG assays, and COA checks.",
+      "type": "website",
+      "url": "https://veracue-peptides.vercel.app/product/hcg",
+      "siteName": "Veracue Peptides"
+    }
+  },
+  "hero": {
+    "h1": "HCG Research Material",
+    "subtitle": "Human Chorionic Gonadotropin (hCG)",
+    "summary": "HCG (human chorionic gonadotropin) is a glycoprotein hormone with a 92-amino-acid α subunit and a 145-amino-acid β subunit that activates the luteinizing hormone/choriogonadotropin receptor (LHCGR). Veracue supplies it as a research material for laboratory work. One directly relevant published study (Scientific Reports, 2017) compared hCG and LH in HEK293 cells and mouse Leydig tumor cells, which is in vitro evidence only. Although \"HCG peptide\" is a common search term, hCG is a glycosylated protein of roughly 37 kDa, not a short peptide, and this material does not establish any effect, dose or safety in people or animals.",
+    "ruoIndicator": "Research Use Only. For laboratory and scientific research only. Not for human or veterinary use."
+  },
+  "sections": [
+    {
+      "id": "what-is-hcg",
+      "heading": "What Is HCG?",
+      "kind": "content",
+      "html": "<p>Human chorionic gonadotropin (hCG) is a glycoprotein hormone that the placenta makes during pregnancy, and it activates the luteinizing hormone/choriogonadotropin receptor (LHCGR). Researchers write it as hCG, and the capitalised form HCG appears in catalogues and search queries.</p><p>First, the molecule has two chains. The α subunit has 92 amino acids, and LH, FSH and TSH share the same α chain. The β subunit has 145 amino acids, and it gives hCG its specificity. The chains associate without covalent bonds. In addition, sugar chains make up roughly 30% of the mass.</p><p>Because hCG and LH act on the same receptor, studies of LHCGR often examine both hormones. Its glycan structure, its several molecular forms and its role as an analytical target also make it a subject in reproductive endocrinology, glycoprotein chemistry and assay development.</p>"
+    },
+    {
+      "id": "is-hcg-a-peptide",
+      "heading": "Is HCG a Peptide?",
+      "kind": "content",
+      "html": "<p>Not in the conventional sense. hCG is a glycosylated, heterodimeric protein hormone. People often search for \"HCG peptide\", so the phrase appears here, but it works as market shorthand rather than a precise classification.</p><p>The numbers show the difference. Across its two subunits, hCG has 237 amino acids. Its mass is near 37 kDa, and about 30% of that mass is carbohydrate. Short synthetic peptides, by comparison, are much smaller and typically carry no sugar chains.</p><p>As a result, several peptide conventions do not carry over. Molecular weight is a range rather than one value. Potency is usually expressed in international units. Mass-spectrometry identity reflects a distribution of glycoforms instead of one exact mass.</p>"
+    },
+    {
+      "id": "molecular-identity",
+      "heading": "Molecular Identity",
+      "kind": "content",
+      "html": "<p><strong>General scientific data.</strong> The values below describe hCG as a molecule. They do not describe any specific Veracue preparation.</p><table><thead><tr><th>Property</th><th>General scientific value</th></tr></thead><tbody><tr><td>Molecular class</td><td>Heterodimeric glycoprotein hormone</td></tr><tr><td>α subunit</td><td>92 amino acids; shared with LH, FSH and TSH</td></tr><tr><td>β subunit</td><td>145 amino acids; specific to hCG</td></tr><tr><td>Amino acids, both subunits</td><td>237 (polypeptide backbone only)</td></tr><tr><td>Glycosylation</td><td>α: 2 N-linked chains (Asn52, Asn78). β: 2 N-linked chains (Asn13, Asn30) and 4 O-linked chains (Ser121, Ser127, Ser132, Ser138). Mature-subunit numbering</td></tr><tr><td>Carbohydrate share</td><td>About 30% of mass (reported range 25 to 40%)</td></tr><tr><td>Approximate molecular mass</td><td>About 37 kDa; published values run from roughly 36 to 39 kDa depending on source and glycoform</td></tr><tr><td>Receptor</td><td>LHCGR, a 675-amino-acid class A G protein-coupled receptor</td></tr><tr><td>Genes</td><td>CGA for the α subunit (chromosome 6); a CGB gene cluster for the β subunit (chromosome 19)</td></tr><tr><td>Potency unit</td><td>International Unit (IU), defined by WHO International Standards</td></tr></tbody></table><p>The β chain is about 80% homologous to LH-β. It also carries a C-terminal extension that LH-β lacks, and that extension holds the O-linked glycans. Sources give the extension as roughly 24 to 34 residues, depending on where they draw its boundary.</p><p>Sugar chains vary from molecule to molecule, so no single molecular weight fits every preparation. Reviews also describe several forms with the same amino acid sequence: regular hCG, hyperglycosylated hCG, sulfated hCG, the free β-subunit and a hyperglycosylated free β-subunit. Nicked forms and the β-core fragment circulate as well. Among circulating forms, the intact dimer is the one described as retaining hormonal activity.</p>"
+    },
+    {
+      "id": "receptor-level",
+      "heading": "How HCG Works at the Receptor Level",
+      "kind": "content",
+      "html": "<p><strong>Short answer:</strong> hCG binds LHCGR, and the receptor couples mainly to Gαs, which raises intracellular cAMP.</p><p>LHCGR is a class A G protein-coupled receptor with a large extracellular domain that binds both hCG and LH. When it activates, it couples to Gαs, which drives adenylyl cyclase, cAMP and protein kinase A signaling. It can also activate ERK and AKT pathways. At high hormone and receptor levels, it additionally couples to Gαq, which raises intracellular calcium.</p><p>In one HEK293 model that expressed LHCGR, either hCG or LH raised cAMP within five minutes. Separate work also compared recombinant hCG and LH in HEK293 cells and in mouse Leydig tumor cells. It reported differences in cAMP, β-arrestin 2 and steroidogenic responses.</p><p>For endocrine context, one review describes hCG as maintaining corpus luteum steroidogenic activity during the first months of pregnancy and as triggering steroidogenesis in fetal gonads. LHCGR expression outside the gonads is contested. One study of human endometrial stromal cells found transcripts undetectable in bulk data, with a small subpopulation of cells as the exception.</p>"
+    },
+    {
+      "id": "why-researchers-study",
+      "heading": "Why Researchers Study HCG",
+      "kind": "content",
+      "html": "<ul><li><strong>Reproductive endocrinology:</strong> hCG and LH act on one receptor with different physiological roles, which makes the pair a standing comparison.</li><li><strong>LHCGR signaling:</strong> receptor-expressing cell lines let researchers measure cAMP, β-arrestin recruitment and related readouts.</li><li><strong>Gonadal signaling and steroidogenesis:</strong> Leydig-cell models and fetal-gonad biology examine how receptor activation leads to steroid production.</li><li><strong>Placental biology:</strong> reviews describe roles in trophoblast differentiation, and they assign hyperglycosylated hCG to invasive cytotrophoblast cells.</li><li><strong>Biomarker research:</strong> hCG measurements appear in pregnancy detection, gestational trophoblastic disease and testicular germ cell tumor monitoring.</li><li><strong>Assay research:</strong> WHO reference materials exist for hCG and for several of its molecular forms, and laboratories test how assays recognise each form.</li><li><strong>Glycoprotein characterization:</strong> sialic acid and other glycan features change receptor binding, activity and clearance, so glycoform analysis is a research field of its own.</li></ul>"
+    },
+    {
+      "id": "hcg-vs-lh",
+      "heading": "HCG vs LH",
+      "kind": "content",
+      "html": "<p>This comparison is descriptive. It does not rank either hormone.</p><table><thead><tr><th>Feature</th><th>hCG</th><th>LH</th></tr></thead><tbody><tr><td>Structure</td><td>α/β glycoprotein heterodimer</td><td>α/β glycoprotein heterodimer</td></tr><tr><td>Subunits</td><td>Shared α (92 amino acids); β of 145 amino acids</td><td>Shared α (92 amino acids); a different β chain</td></tr><tr><td>β chain</td><td>Carries a C-terminal extension with O-linked glycans</td><td>About 80% homologous to hCG-β, without that extension</td></tr><tr><td>Main source in the literature</td><td>Placental syncytiotrophoblast; the pituitary makes a sulfated form at low levels</td><td>Anterior pituitary gonadotropes</td></tr><tr><td>Receptor</td><td>LHCGR</td><td>LHCGR</td></tr><tr><td>Signaling</td><td>Cell studies report different cAMP, β-arrestin 2 and steroidogenic responses from LH</td><td>Cell studies report different responses from hCG in the same readouts</td></tr><tr><td>Glycosylation</td><td>4 N-linked and 4 O-linked chains; about 30% carbohydrate</td><td>Sugar composition differs from hCG, which affects bioactivity and degradation rate</td></tr><tr><td>Research context</td><td>Placental biology, LHCGR signaling, assay calibration, biomarker work</td><td>Pituitary-gonadal axis, ovulation and Leydig-cell signaling</td></tr><tr><td>Circulating persistence</td><td>One review gives a half-life of about 36 hours</td><td>Described as shorter than hCG</td></tr><tr><td>Key difference</td><td>The β extension and its glycans</td><td>Pituitary origin and a different β chain</td></tr></tbody></table>"
+    },
+    {
+      "id": "beta-hcg-testing",
+      "heading": "Beta-hCG and the Testing Search Intent",
+      "kind": "content",
+      "html": "<p><strong>Short answer:</strong> hCG is measurable because it is a distinct protein that reaches blood and urine, and antibodies can recognise its β chain.</p><p>Many searches for \"hCG\" concern pregnancy tests or hormone levels, but this page does not interpret any personal result, and it gives no pregnancy-week ranges or diagnostic guidance. Instead, it explains the analytical science only.</p><p><strong>Why it is measurable.</strong> First, the placenta makes hCG, and it enters blood and urine. Second, the β chain differs from LH-β, so antibodies aimed at it can separate hCG from LH. However, the two β chains are about 80% homologous, and early polyclonal assays suffered LH interference for that reason.</p><p><strong>What \"beta-hCG\" means.</strong> In testing, the term usually refers to assays directed at the β chain. However, some assays detect intact hCG only, and others detect intact hCG plus the free β-subunit, which laboratories call total β-hCG. Method labels therefore matter.</p><p><strong>Qualitative and quantitative assays.</strong> A qualitative assay reports presence above a cutoff, whereas a quantitative assay reports a concentration. One qualitative test manual notes that its test does not reliably detect free β-subunit or β-core fragments, and that quantitative assays may detect those products and disagree with it.</p><p><strong>Why laboratories distinguish forms.</strong> WHO holds reference reagents for several molecular forms of hCG, and assays recognise those forms differently. For example, in one proficiency-style study, 9.3% of participating laboratories (22 of 235) reported intact hCG results as total β-hCG. Conversely, 13.1% (8 of 61) reported total β-hCG as intact hCG.</p><p>By contrast, research material sold under Research Use Only terms is a laboratory reagent. It is not a diagnostic test.</p>"
+    },
+    {
+      "id": "hcg-men-research",
+      "heading": "HCG for Men: What the Research Examines",
+      "kind": "content",
+      "html": "<p><strong>Short answer:</strong> research on hCG in male endocrine biology mostly examines receptor signaling in Leydig cells and the steroidogenic response that follows.</p><p>LH stimulates Leydig cells in the testis to make testosterone, and hCG acts on the same receptor. Cell studies therefore compare the two hormones directly. For example, one study measured cAMP, β-arrestin 2 activation and steroidogenesis in mouse Leydig tumor cells and in HEK293 cells. NCBI's gene summary also notes that LHCGR variants link to Leydig cell hypoplasia and other disorders of male sexual development.</p><p>This page gives no dosage, fertility protocol, testosterone protocol, bodybuilding protocol, post-cycle protocol or cycle instruction. It also makes no claim about outcomes in people.</p>"
+    },
+    {
+      "id": "hcg-dosage-research",
+      "heading": "HCG Dosage in Research Literature",
+      "kind": "content",
+      "html": "<p><strong>Short answer:</strong> in scientific literature, a dose is a study-specific experimental parameter, not a recommendation.</p><p>A published dose depends on the preparation, the route, the study design, the species or population, the endpoint and the duration. Changing any one of them changes what the number means. Units add another layer. Potency is usually given in international units, which measure biological activity rather than mass, and the same WHO standard carries different values by assay method.</p><p>Evidence points the same way. The 5th WHO International Standard for hCG carries 162 IU per ampoule by bioassay and 179 IU per ampoule by immunoassay. In a first-in-human study, two recombinant hCG preparations gave different exposure in men. Numbers from one study therefore do not transfer to another.</p><p>This page contains no dosage table and gives no personal-use dosage information.</p>"
+    },
+    {
+      "id": "hcg-injection-research",
+      "heading": "HCG Injection in Research Literature",
+      "kind": "content",
+      "html": "<p><strong>Short answer:</strong> research on injected (parenteral) hCG asks pharmacokinetic questions, compares preparations and measures experimental endpoints.</p><p>Pharmacokinetic studies follow how concentration changes over time and how quickly the body clears the hormone. Preparation studies compare sources, such as urine-derived and recombinant hCG, because glycosylation influences clearance. Endpoint studies then link exposure to a measured response in a defined model.</p><p>For example, a first-in-human trial of a novel recombinant hCG enrolled 84 healthy adults. In women, the mean terminal half-life was about 45 hours. In men, exposure (AUC) was 1.5-fold greater for the novel preparation than for choriogonadotropin alfa. However, that result describes one investigational preparation in one study.</p><p>This page does not cover injection technique, sites, preparation, reconstitution, concentrations, schedules or any personal-use instruction.</p>"
+    },
+    {
+      "id": "evidence-table",
+      "heading": "Research Evidence Table",
+      "kind": "content",
+      "html": "<p>Evidence types are labelled. Mouse-derived cell lines count as cell-level evidence, and the table includes no animal in vivo studies.</p><table><thead><tr><th>Research question</th><th>Study / model</th><th>Observation</th><th>Evidence type</th><th>Limitation</th></tr></thead><tbody><tr><td>What is hCG's structure?</td><td>Protein chemistry and WHO documentation</td><td>α of 92 and β of 145 amino acids; 4 N-linked and 4 O-linked glycans; about 30% carbohydrate</td><td>Biochemical</td><td>Glycoforms vary, so values are approximate</td></tr><tr><td>Do the subunits act alone?</td><td>Subunit dissociation and reassociation</td><td>Isolated subunits are inactive; recombining them restores nearly full activity</td><td>Biochemical</td><td>Foundational work; not a description of any one preparation</td></tr><tr><td>Does hCG activate LHCGR?</td><td>HEK293 cells expressing human LHCGR</td><td>Robust cAMP rise within five minutes with hCG or LH</td><td>Cell / in vitro</td><td>Engineered overexpression; short time course</td></tr><tr><td>Do hCG and LH signal identically?</td><td>HEK293 cells and mouse Leydig tumor cells</td><td>Different cAMP, β-arrestin 2 and steroidogenic responses</td><td>Cell / in vitro</td><td>Recombinant hormones; rodent and human cells behave differently</td></tr><tr><td>Does sialic acid change activity?</td><td>Purified and crude urinary hCG in cells expressing the TSH receptor</td><td>Less-sialylated urinary variants showed higher TSH-receptor activity; desialylation made purified forms nearly equipotent</td><td>Cell / in vitro</td><td>Non-cognate receptor; one group</td></tr><tr><td>Do laboratories report hCG consistently?</td><td>Split samples sent to laboratories using various immunoassays</td><td>9.3% reported intact hCG as total β-hCG; 13.1% reported total β-hCG as intact</td><td>Analytical / diagnostic</td><td>Measures reporting practice, not assay accuracy</td></tr><tr><td>How does the IU depend on method?</td><td>WHO 5th International Standard, 19 laboratories in 11 countries</td><td>162 IU per ampoule by bioassay; 179 IU by immunoassay</td><td>Analytical / standards</td><td>Applies to one standard</td></tr><tr><td>How does a recombinant hCG behave in humans?</td><td>First-in-human study, 84 healthy adults</td><td>About 45 hours mean terminal half-life in women; 1.5-fold AUC versus choriogonadotropin alfa in men</td><td>Human pharmacokinetic, controlled</td><td>Investigational preparation; healthy volunteers; no efficacy conclusion</td></tr><tr><td>Where is hCG measured as a biomarker?</td><td>Review of hCG assay applications</td><td>Pregnancy detection, gestational trophoblastic disease and testicular germ cell tumor monitoring are listed</td><td>Analytical / diagnostic review</td><td>Author review; assay and variant dependent</td></tr></tbody></table>"
+    },
+    {
+      "id": "limitations",
+      "heading": "What HCG Research Does Not Establish",
+      "kind": "content",
+      "html": "<ul><li><strong>Mechanism does not equal clinical benefit.</strong> A receptor-level finding does not show that hCG helps or harms in any setting.</li><li><strong>In vitro results do not equal human outcomes.</strong> Cell-line responses depend on receptor level, cell type and species.</li><li><strong>Animal results do not equal human results.</strong> Rodent and human gonadotropin-responsive cells already behave differently.</li><li><strong>Assay results depend on method.</strong> Intact-hCG, total β-hCG and qualitative assays measure different things.</li><li><strong>Preparations may not be interchangeable.</strong> Recombinant and urine-derived hCG differ in glycosylation, and crude urinary material has shown extra activity at the TSH receptor.</li><li><strong>Study parameters are not instructions.</strong> A dose, route or schedule in a paper belongs to that experiment.</li><li><strong>General research does not establish the quality of a specific lot.</strong> Only lot-specific analytical documentation can describe a particular material.</li></ul>"
+    },
+    {
+      "id": "evaluate-material",
+      "heading": "How Researchers Should Evaluate an HCG Research Material",
+      "kind": "content",
+      "html": "<p>This is general guidance, so it does not describe any specific Veracue lot. Where documentation is missing for an attribute, treat that attribute as unverified.</p><p><strong>What a COA tells you.</strong> A certificate of analysis reports the tests that a laboratory ran on one lot, with the methods and results it chooses to show. It links a report to a lot number, and it states values such as purity by a named method, potency by a named assay and, where run, endotoxin or sterility results.</p><p><strong>What a COA does not tell you.</strong> However, it does not show that the lot performs in your assay, that another lot matches it or that the material suits your model. Likewise, a purity percentage alone cannot describe glycoform distribution or potency.</p><table><thead><tr><th>Attribute</th><th>What to check</th><th>Why it matters for hCG</th></tr></thead><tbody><tr><td>Identity</td><td>Method and result that match hCG</td><td>Intact mass is a glycoform distribution, so one exact mass is not expected</td></tr><tr><td>Source</td><td>Urine-derived, recombinant or other</td><td>Glycosylation follows the source and affects activity and clearance</td></tr><tr><td>Purity</td><td>The named method behind the figure</td><td>A single percentage does not describe glycoform pattern or biological activity</td></tr><tr><td>Potency</td><td>The unit and the assay type</td><td>IU values differ between bioassay and immunoassay</td></tr><tr><td>Protein content</td><td>Amount in the stated unit</td><td>IU and mass are not interchangeable without the preparation's specific activity</td></tr><tr><td>Formulation</td><td>Excipients and carrier</td><td>Some reference preparations contain albumin and buffer salts, so vial mass differs from hormone mass</td></tr><tr><td>Variant information</td><td>Intact dimer versus free subunits or fragments</td><td>Assays and cell responses treat variants differently</td></tr><tr><td>Endotoxin and sterility</td><td>Reported results, if relevant</td><td>Matters for cell-based work</td></tr><tr><td>Lot traceability</td><td>A lot number on the report that matches the label</td><td>Ties the data to the material in hand</td></tr><tr><td>Analytical method</td><td>Named method, laboratory and date</td><td>Lets you judge whether the result fits your use</td></tr></tbody></table>"
+    },
+    {
+      "id": "ruo-notice",
+      "heading": "Research Use Only",
+      "kind": "compliance",
+      "html": "<p>Research Use Only means laboratory and scientific research only. Veracue's site policy states that its products are offered for research and laboratory purposes only and are not intended for human or veterinary use, ingestion, injection or any form of administration. hCG is not a diagnostic test, and nothing on this page is medical advice.</p><p>In the United States, hCG products for human use are regulated as prescription medicines. The scientific information here describes published studies, so it is not a statement of safety or efficacy, and it gives no dosing, injection or treatment instructions.</p>"
+    }
+  ],
+  "researchQuestions": [
+    {
+      "question": "What exactly is human chorionic gonadotropin?",
+      "problem": "The terms hCG, HCG, β-hCG and \"HCG peptide\" are used loosely, so it is often unclear which molecule a study or listing means.",
+      "directAnswer": "hCG is a heterodimeric glycoprotein hormone made of an α and a β subunit that activates LHCGR.",
+      "explanation": "The α subunit has 92 amino acids and is shared with LH, FSH and TSH. The β subunit has 145 amino acids and is specific to hCG. Sugar chains add roughly 30% of the mass.",
+      "evidence": "Protein chemistry and WHO reference documentation describe hCG as a heterodimeric glycoprotein hormone of about 36 to 37 kDa.",
+      "limitation": "Glycosylation varies between preparations, so this general description does not define any particular material."
+    },
+    {
+      "question": "Is HCG a peptide or a glycoprotein hormone?",
+      "problem": "\"HCG peptide\" is a common search phrase, yet it can imply a short synthetic chain.",
+      "directAnswer": "hCG is a glycoprotein hormone. \"HCG peptide\" is market shorthand.",
+      "explanation": "It has 237 amino acids across two chains, a mass near 37 kDa and about 30% carbohydrate. Short synthetic peptides are far smaller and usually carry no sugar chains.",
+      "evidence": "The subunit lengths, glycosylation sites and carbohydrate share come from structural studies and reviews.",
+      "limitation": "Published molecular-mass values range from roughly 36 to 39 kDa because glycoforms differ."
+    },
+    {
+      "question": "How is HCG different from LH?",
+      "problem": "The two hormones share a receptor and an α chain, so they are easy to conflate.",
+      "directAnswer": "They share the α subunit and LHCGR. They differ in the β chain, the sugar structures, the tissue of origin and reported signaling patterns.",
+      "explanation": "hCG-β is about 80% homologous to LH-β and carries a C-terminal extension with O-linked glycans. The placenta makes hCG, whereas the pituitary makes LH.",
+      "evidence": "In HEK293 cells and mouse Leydig tumor cells, recombinant hCG and LH produced different cAMP, β-arrestin 2 and steroidogenic responses.",
+      "limitation": "These are recombinant hormones in cell lines, and rodent and human cells respond differently."
+    },
+    {
+      "question": "What receptor does HCG activate?",
+      "problem": "Researchers need to know which receptor a readout reflects.",
+      "directAnswer": "hCG activates LHCGR, the luteinizing hormone/choriogonadotropin receptor.",
+      "explanation": "LHCGR is a 675-amino-acid class A G protein-coupled receptor with a large extracellular domain. It also responds to LH.",
+      "evidence": "Gene-level and cell-based work identify LHCGR as the receptor for both hormones.",
+      "limitation": "LHCGR expression outside the gonads is contested, for example in the endometrium."
+    },
+    {
+      "question": "How does HCG signaling work?",
+      "problem": "A single readout, such as cAMP, can hide other pathways.",
+      "directAnswer": "LHCGR couples mainly to Gαs, which raises cAMP and activates protein kinase A.",
+      "explanation": "It can also activate ERK and AKT. At high hormone and receptor levels it couples to Gαq and raises intracellular calcium. Hormone-specific patterns also involve β-arrestin 2.",
+      "evidence": "HEK293 cells expressing LHCGR showed a robust cAMP rise within five minutes with either hormone.",
+      "limitation": "Which pathway dominates depends on receptor level, cell type and the hormone used."
+    },
+    {
+      "question": "What are the alpha and beta subunits, and why do they matter?",
+      "problem": "Analytical results change depending on which chain an assay or a study addresses.",
+      "directAnswer": "The α chain is common to four glycoprotein hormones, and the β chain makes hCG specific.",
+      "explanation": "The chains associate without covalent bonds. Isolated subunits do not act on the receptor, and recombining them restores nearly full activity. A free β-subunit also circulates as a variant.",
+      "evidence": "Dissociation and reassociation experiments underpin this description.",
+      "limitation": "Free subunits behave differently in assays and cell models from the intact dimer."
+    },
+    {
+      "question": "Why is beta-hCG important in analytical testing?",
+      "problem": "The label \"beta-hCG\" appears on many assays that do not measure the same thing.",
+      "directAnswer": "Because the β chain is specific to hCG, most routine immunoassays target it.",
+      "explanation": "hCG-β and LH-β share about 80% homology, which caused LH interference in early polyclonal assays. Some assays detect intact hCG, and others detect intact hCG plus free β-subunit.",
+      "evidence": "In a split-sample study, 9.3% of laboratories reported intact hCG as total β-hCG, and 13.1% reported total β-hCG as intact hCG.",
+      "limitation": "The finding concerns reporting practice. It does not rank assays by accuracy."
+    },
+    {
+      "question": "Why is HCG used as a pregnancy biomarker?",
+      "problem": "People ask why a single hormone underlies pregnancy testing.",
+      "directAnswer": "Placental tissue makes hCG, and it enters blood and urine, so immunoassays can detect it.",
+      "explanation": "Its concentration rises quickly in early pregnancy. Qualitative tests report presence above a cutoff, and quantitative tests report concentration.",
+      "evidence": "A review of hCG assays lists pregnancy detection, outcome monitoring and gestational trophoblastic disease among the applications.",
+      "limitation": "This page does not interpret any individual result, and assays differ in what they detect."
+    },
+    {
+      "question": "What does HCG research in male endocrine biology actually examine?",
+      "problem": "Searches for \"HCG for men\" mix consumer questions with research questions.",
+      "directAnswer": "The research examines LHCGR signaling in Leydig cells and the steroidogenic response that follows.",
+      "explanation": "LH stimulates testicular Leydig cells to make testosterone, and hCG acts on the same receptor. NCBI's gene summary links LHCGR variants to Leydig cell hypoplasia.",
+      "evidence": "Cell studies in mouse Leydig tumor cells measured cAMP, β-arrestin 2 and steroidogenesis after hCG or LH.",
+      "limitation": "The models are cell lines, and this page gives no dosing or protocols."
+    },
+    {
+      "question": "What does \"HCG dosage\" mean in research literature?",
+      "problem": "A number in a paper can be mistaken for a general recommendation.",
+      "directAnswer": "A dose in the literature is a study-specific experimental parameter.",
+      "explanation": "It depends on the preparation, route, design, species or population, endpoint and duration. Units matter too, because international units measure activity rather than mass.",
+      "evidence": "The 5th WHO standard carries 162 IU per ampoule by bioassay and 179 IU by immunoassay.",
+      "limitation": "Nothing in a single study transfers to another setting, and none of it is an instruction."
+    },
+    {
+      "question": "Why can HCG preparations differ?",
+      "problem": "Two materials labelled hCG can behave differently.",
+      "directAnswer": "Source, glycosylation, purity and formulation can all differ.",
+      "explanation": "Recombinant hCG made in CHO cells is reported to have a narrower range of glycan structures than urine-derived hCG. CHO cells add sialic acid through one linkage type, whereas natural hCG carries a mix.",
+      "evidence": "Crude urinary hCG contained less-sialylated variants with higher TSH-receptor activity in a cell model. In humans, two recombinant preparations gave different exposure in men.",
+      "limitation": "Each example concerns specific preparations, and the differences may not apply to another one."
+    },
+    {
+      "question": "What should researchers check before using an HCG research material?",
+      "problem": "A label alone does not show what a vial contains or how it will behave.",
+      "directAnswer": "Check identity, source, potency with its assay, amount with its unit, purity method, formulation and lot traceability.",
+      "explanation": "Ask for the analytical method, the laboratory and the date. Ask whether the figure is in international units or mass, and what else is in the vial.",
+      "evidence": "WHO standards assign hCG activity by both bioassay and immunoassay, and the values differ, so the method belongs with the number.",
+      "limitation": "Documentation describes a lot. It does not guarantee performance in your assay, so validate the material in your own system."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is HCG?",
+      "answer": "HCG, or human chorionic gonadotropin, is a glycoprotein hormone made of an α subunit (92 amino acids) and a β subunit (145 amino acids). It activates the luteinizing hormone/choriogonadotropin receptor (LHCGR)."
+    },
+    {
+      "question": "Is HCG a peptide?",
+      "answer": "Not in the conventional sense. \"HCG peptide\" is common search shorthand, but hCG is a glycosylated heterodimeric protein hormone of about 237 amino acids, roughly 37 kDa and about 30% carbohydrate."
+    },
+    {
+      "question": "What is beta-HCG?",
+      "answer": "Beta-hCG, or hCG-β, is the β subunit of the hormone. It is the hCG-specific chain, so many assays target it. Intact hCG contains both subunits, and a free β-subunit also circulates as a variant."
+    },
+    {
+      "question": "How does HCG differ from LH?",
+      "answer": "Both are α/β glycoprotein hormones that share an α subunit and act on LHCGR. However, the β chains differ, hCG-β carries a C-terminal extension with O-linked glycans, and cell studies report different signaling responses."
+    },
+    {
+      "question": "What receptor does HCG activate?",
+      "answer": "LHCGR, a class A G protein-coupled receptor that also responds to LH. It couples mainly to Gαs and cAMP, and it can engage ERK, AKT and, at high levels, Gαq pathways."
+    },
+    {
+      "question": "Why is HCG measured in pregnancy testing?",
+      "answer": "The placenta makes hCG, and it enters blood and urine, so immunoassays can detect it. This page does not interpret any personal test result, and Research Use Only material is not a diagnostic test."
+    },
+    {
+      "question": "What does HCG research in men examine?",
+      "answer": "It examines LHCGR signaling in Leydig cells and the resulting steroidogenic response, mostly in cell models. This page gives no dosing, fertility, testosterone or bodybuilding protocols."
+    },
+    {
+      "question": "What does HCG dosage mean in research?",
+      "answer": "A dose in the literature is a study-specific experimental parameter. It depends on the preparation, route, design, species or population, endpoint and duration, so it is not a recommendation."
+    },
+    {
+      "question": "What does HCG injection research examine?",
+      "answer": "It examines pharmacokinetics, differences between preparations and experimental endpoints. This page does not cover technique, sites, preparation, reconstitution, concentrations or schedules."
+    },
+    {
+      "question": "What does IU mean for HCG?",
+      "answer": "IU stands for international unit, a measure of biological activity rather than mass. WHO International Standards define it, and values depend on the assay: the 5th standard carries 162 IU by bioassay and 179 IU by immunoassay."
+    },
+    {
+      "question": "What should researchers check on an HCG COA?",
+      "answer": "Check the lot number, the source (urine-derived or recombinant), potency with its assay, the amount with its unit, the purity method, excipients and identity data. A COA describes one lot and does not guarantee performance in your assay."
+    },
+    {
+      "question": "What does Research Use Only mean?",
+      "answer": "Research Use Only means laboratory and scientific research only. Veracue's site policy states that its products are not intended for human or veterinary use, and this material is not a diagnostic test or medicine."
+    }
+  ],
+  "productSpecifications": [],
+  "omittedUnconfirmedFields": [
+    "price",
+    "SKU",
+    "purity",
+    "vial size",
+    "quantity",
+    "IU amount",
+    "mg amount",
+    "formulation",
+    "recombinant or urinary-derived source",
+    "lot number",
+    "COA",
+    "HPLC or mass spectrometry results",
+    "sterility",
+    "endotoxin",
+    "manufacturing location",
+    "certifications",
+    "stock status",
+    "shipping claims",
+    "product badges"
+  ],
+  "cta": "Use the site's existing product CTA only if the product record carries confirmed price and stock data.",
+  "internalLinks": [
+    {
+      "anchor": "Shop",
+      "href": "/shop",
+      "status": "present in the live site footer on veracue-peptides.vercel.app"
+    },
+    {
+      "anchor": "Certificates (COA archive)",
+      "href": "/certificates",
+      "status": "present in the live site footer on veracue-peptides.vercel.app"
+    },
+    {
+      "anchor": "Help & FAQ",
+      "href": "/faq",
+      "status": "present in the live site footer on veracue-peptides.vercel.app"
+    },
+    {
+      "anchor": "Contact Us",
+      "href": "/contact-us",
+      "status": "present in the live site footer on veracue-peptides.vercel.app"
+    },
+    {
+      "anchor": "Research Articles",
+      "href": "/blog",
+      "status": "present in the live site footer on veracue-peptides.vercel.app"
+    },
+    {
+      "anchor": "Medical Disclaimer",
+      "href": "/medical-disclaimer",
+      "status": "present in the live site footer on veracue-peptides.vercel.app"
+    }
+  ],
+  "references": [
+    {
+      "citation": "Broksø Kyhl et al. First-in-human trial of a novel recombinant human chorionic gonadotropin in healthy women and men. Clin Transl Sci 2021",
+      "url": "https://ascpt.onlinelibrary.wiley.com/doi/full/10.1111/cts.13037"
+    },
+    {
+      "citation": "Cole LA. hCG, the wonder of today's science. Reprod Biol Endocrinol 2012;10:24",
+      "url": "https://link.springer.com/doi/10.1186/1477-7827-10-24"
+    },
+    {
+      "citation": "Cole LA. New discoveries on the biology and detection of human chorionic gonadotropin. PubMed 19171054",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19171054/"
+    },
+    {
+      "citation": "Human luteinizing hormone and chorionic gonadotropin display biased agonism at the LH and LH/CG receptors. Sci Rep 2017",
+      "url": "https://www.nature.com/articles/s41598-017-01078-8"
+    },
+    {
+      "citation": "Expression and function of the luteinizing hormone choriogonadotropin receptor in human endometrial stromal cells. Sci Rep 2022",
+      "url": "https://www.nature.com/articles/s41598-022-12495-9"
+    },
+    {
+      "citation": "Crude urinary human chorionic gonadotropin contains variant forms of HCG with low sialic acid content that exhibit an increased thyrotropic activity in CHO cells expressing the human TSH receptor. PubMed 7584519",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7584519/"
+    },
+    {
+      "citation": "Human chorionic gonadotropin: different glycoforms and biological activity depending on its source of production. Ann Endocrinol 2016",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0003426616300294"
+    },
+    {
+      "citation": "NIBSC / WHO. Instructions for use: 5th International Standard for chorionic gonadotrophin, 07/364",
+      "url": "https://nibsc.org/documents/ifu/07-364.pdf"
+    },
+    {
+      "citation": "NIBSC / WHO. 6th International Standard for chorionic gonadotrophin, 18/244",
+      "url": "https://nibsc.org/documents/ifu/18-244.pdf"
+    },
+    {
+      "citation": "NIBSC / WHO. Reference reagent 99/688, human chorionic gonadotrophin (purified)",
+      "url": "https://nibsc.org/documents/ifu/99-688.pdf"
+    },
+    {
+      "citation": "WHO Expert Committee on Biological Standardization. WHO/BS/2020.2395, proposed 6th IS for hCG",
+      "url": "https://www.who.int/docs/default-source/biologicals/ecbs/reference-materials/2020/bs-2020-2395-6th-is-hcg-ecbs-2020-moore-nibsc.pdf?sfvrsn=901b4398_2"
+    },
+    {
+      "citation": "Are laboratories reporting serum quantitative hCG results correctly? (split-sample study of laboratory reporting)",
+      "url": "https://www.researchgate.net/publication/5478112_Are_Laboratories_Reporting_Serum_Quantitative_hCG_Results_Correctly"
+    },
+    {
+      "citation": "NCBI Gene / Genetic Testing Registry: LHCGR (Gene ID 3973)",
+      "url": "https://www.ncbi.nlm.nih.gov/gtr/genes/3973/"
+    },
+    {
+      "citation": "StatPearls. Physiology, Luteinizing Hormone",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK539692/"
+    },
+    {
+      "citation": "Medscape. Human chorionic gonadotropin (hCG): reference range, interpretation, collection and panels",
+      "url": "https://emedicine.medscape.com/article/2089158-overview"
+    },
+    {
+      "citation": "FDA consumer update. HCG diet products are illegal",
+      "url": "https://www.drugs.com/fda-consumer/hcg-diet-products-are-illegal-204.html"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://veracue-peptides.vercel.app/product/hcg#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://veracue-peptides.vercel.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Shop",
+            "item": "https://veracue-peptides.vercel.app/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "HCG",
+            "item": "https://veracue-peptides.vercel.app/product/hcg"
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://veracue-peptides.vercel.app/product/hcg#webpage",
+        "url": "https://veracue-peptides.vercel.app/product/hcg",
+        "name": "HCG Research Peptide (Chorionic Gonadotropin) | Veracue",
+        "description": "HCG, a glycoprotein hormone with alpha and beta subunits, for lab research: molecular identity, LHCGR signaling, HCG vs LH, beta-hCG assays, and COA checks.",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Veracue Peptides",
+          "url": "https://veracue-peptides.vercel.app/"
+        },
+        "breadcrumb": {
+          "@id": "https://veracue-peptides.vercel.app/product/hcg#breadcrumb"
+        },
+        "mainEntity": {
+          "@id": "https://veracue-peptides.vercel.app/product/hcg#product"
+        }
+      },
+      {
+        "@type": "Product",
+        "@id": "https://veracue-peptides.vercel.app/product/hcg#product",
+        "name": "HCG Research Material",
+        "alternateName": [
+          "Human Chorionic Gonadotropin",
+          "hCG"
+        ],
+        "description": "HCG (human chorionic gonadotropin) is a glycoprotein hormone with a 92-amino-acid α subunit and a 145-amino-acid β subunit that activates the luteinizing hormone/choriogonadotropin receptor (LHCGR). Veracue supplies it as a research material for laboratory work. One directly relevant published study (Scientific Reports, 2017) compared hCG and LH in HEK293 cells and mouse Leydig tumor cells, which is in vitro evidence only. Although \"HCG peptide\" is a common search term, hCG is a glycosylated protein of roughly 37 kDa, not a short peptide, and this material does not establish any effect, dose or safety in people or animals.",
+        "url": "https://veracue-peptides.vercel.app/product/hcg",
+        "brand": {
+          "@type": "Brand",
+          "name": "Veracue"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://veracue-peptides.vercel.app/product/hcg#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is HCG?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HCG, or human chorionic gonadotropin, is a glycoprotein hormone made of an α subunit (92 amino acids) and a β subunit (145 amino acids). It activates the luteinizing hormone/choriogonadotropin receptor (LHCGR)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is HCG a peptide?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not in the conventional sense. \"HCG peptide\" is common search shorthand, but hCG is a glycosylated heterodimeric protein hormone of about 237 amino acids, roughly 37 kDa and about 30% carbohydrate."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is beta-HCG?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Beta-hCG, or hCG-β, is the β subunit of the hormone. It is the hCG-specific chain, so many assays target it. Intact hCG contains both subunits, and a free β-subunit also circulates as a variant."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does HCG differ from LH?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Both are α/β glycoprotein hormones that share an α subunit and act on LHCGR. However, the β chains differ, hCG-β carries a C-terminal extension with O-linked glycans, and cell studies report different signaling responses."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What receptor does HCG activate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "LHCGR, a class A G protein-coupled receptor that also responds to LH. It couples mainly to Gαs and cAMP, and it can engage ERK, AKT and, at high levels, Gαq pathways."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is HCG measured in pregnancy testing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The placenta makes hCG, and it enters blood and urine, so immunoassays can detect it. This page does not interpret any personal test result, and Research Use Only material is not a diagnostic test."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does HCG research in men examine?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It examines LHCGR signaling in Leydig cells and the resulting steroidogenic response, mostly in cell models. This page gives no dosing, fertility, testosterone or bodybuilding protocols."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does HCG dosage mean in research?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A dose in the literature is a study-specific experimental parameter. It depends on the preparation, route, design, species or population, endpoint and duration, so it is not a recommendation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does HCG injection research examine?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It examines pharmacokinetics, differences between preparations and experimental endpoints. This page does not cover technique, sites, preparation, reconstitution, concentrations or schedules."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does IU mean for HCG?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "IU stands for international unit, a measure of biological activity rather than mass. WHO International Standards define it, and values depend on the assay: the 5th standard carries 162 IU by bioassay and 179 IU by immunoassay."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should researchers check on an HCG COA?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Check the lot number, the source (urine-derived or recombinant), potency with its assay, the amount with its unit, the purity method, excipients and identity data. A COA describes one lot and does not guarantee performance in your assay."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does Research Use Only mean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Research Use Only means laboratory and scientific research only. Veracue's site policy states that its products are not intended for human or veterinary use, and this material is not a diagnostic test or medicine."
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

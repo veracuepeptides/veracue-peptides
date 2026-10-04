@@ -1,0 +1,823 @@
+{
+  "productPage": {
+    "slug": "/product/5-amino-1mq-spray",
+    "productName": "5-Amino-1MQ Spray",
+    "category": "Research Compounds — Metabolic Research",
+    "eyebrow": "Research Use Only",
+    "h1": "5-Amino-1MQ Spray",
+    "subtitle": "A quaternary quinolinium small molecule studied as an inhibitor of nicotinamide N-methyltransferase (NNMT), supplied by Veracue strictly for laboratory research.",
+    "heroCopy": "5-Amino-1MQ is short for 5-amino-1-methylquinolinium. Despite how often it is searched alongside research peptides, it is not a peptide: it has no amino acid sequence and no peptide backbone. It is a small, positively charged quinolinium molecule, and almost all of the published work on it concerns a single enzyme, nicotinamide N-methyltransferase.\n\nNNMT sits at the junction of two cellular currencies — nicotinamide, which feeds NAD+ production, and S-adenosylmethionine, the cell's main methyl donor. Interest in NNMT grew after knockdown work in mice linked the enzyme to adiposity and energy expenditure, and methylquinolinium inhibitors were designed to test that link pharmacologically. That is why researchers meet this compound in metabolic, adipocyte and muscle-regeneration studies rather than in peptide literature.\n\n\"Spray\" here describes the listing format Veracue supplies, nothing more. It carries no route, absorption or delivery claim, and the material is offered for laboratory and research use only — not for human or veterinary use, administration, ingestion, or any diagnostic or therapeutic purpose.",
+    "heroCtas": [
+      { "label": "Browse the catalog", "url": "/shop", "style": "primary" },
+      { "label": "Certificates of analysis", "url": "/certificates", "style": "secondary" },
+      { "label": "Request product documentation", "url": "/contact-us", "style": "tertiary" }
+    ],
+
+    "quickResearchSummary": {
+      "scientificIdentity": "5-amino-1-methylquinolinium, a methylated quinolinium cation (PubChem CID 950107, formula C10H11N2+, molecular weight approximately 159.21 g/mol for the cation alone). Commonly handled in the laboratory as a distinct iodide salt record (PubChem CID 66522933; CAS 42464-96-0; formula C10H11IN2; molecular weight 286.11 g/mol; Sigma-Aldrich SML2832). These are different chemical records for different chemical entities — the salt is not simply the cation restated.",
+      "classification": "Small-molecule enzyme inhibitor. Not a peptide, not a protein, not an NAD+ precursor or NAD+ product.",
+      "primaryResearchTarget": "Nicotinamide N-methyltransferase (NNMT), a cytosolic SAM-dependent methyltransferase that methylates nicotinamide to 1-methylnicotinamide.",
+      "mainResearchAreas": [
+        "Adipocyte lipogenesis and intracellular NAD+/SAM levels",
+        "Diet-induced obesity models in mice (body weight, fat mass, glucose tolerance, insulin)",
+        "Hepatic steatosis and liver biochemistry in diet-induced obese mice",
+        "Aged skeletal muscle stem cell activity and regeneration after injury",
+        "Cell-line proliferation work in oncology contexts"
+      ],
+      "evidenceMaturity": "Published work is biochemical, cell-based and rodent. No registered human interventional study of 5-Amino-1MQ was identified in the sources reviewed for this page.",
+      "productDataStatus": "Veracue has not published product-level specifications for this listing. Concentration, fill volume, route, purity, lot and storage are not publicly specified on the current Veracue product information."
+    },
+
+    "quickAnswers": [
+      {
+        "question": "What is 5-Amino-1MQ?",
+        "answer": "5-Amino-1MQ is the short name for 5-amino-1-methylquinolinium, a small organic molecule built on a quinoline ring that carries a methyl group on its ring nitrogen and an amine at the 5-position. That methylation leaves the ring nitrogen positively charged. In published research it is used as a membrane-permeable inhibitor of the enzyme nicotinamide N-methyltransferase, and it is usually handled in the laboratory as its iodide salt."
+      },
+      {
+        "question": "Is 5-Amino-1MQ a peptide?",
+        "answer": "No. Peptides are chains of amino acids joined by amide bonds, and 5-Amino-1MQ has neither amino acids nor a peptide backbone. Its cation formula is C10H11N2+ — a single small ring system. The phrase \"5-Amino-1MQ peptide\" is common in search queries because the compound is sold and discussed beside research peptides, but the search wording does not change its molecular classification."
+      },
+      {
+        "question": "What is NNMT?",
+        "answer": "NNMT is nicotinamide N-methyltransferase, a cytosolic enzyme that transfers a methyl group from S-adenosylmethionine onto nicotinamide, producing 1-methylnicotinamide. Because nicotinamide feeds NAD+ salvage and S-adenosylmethionine is the cell's principal methyl donor, NNMT activity touches both NAD+ availability and methylation capacity. It is expressed most heavily in liver and adipose tissue, which is why metabolic researchers study it."
+      },
+      {
+        "question": "What does 5-Amino-1MQ target?",
+        "answer": "Published work uses it to inhibit NNMT. Neelakantan and colleagues tested methylquinolinium analogues against structurally related SAM-dependent methyltransferases and against enzymes of the NAD+ salvage pathway, and reported that the analogues did not inhibit those off-target enzymes. In cultured adipocytes, treatment lowered the NNMT reaction product 1-methylnicotinamide, which is the readout usually taken as evidence of target engagement."
+      },
+      {
+        "question": "What has 5-Amino-1MQ research investigated?",
+        "answer": "Four main areas. First, biochemical and cell work on selectivity, permeability and adipocyte lipogenesis. Second, diet-induced obesity models in mice measuring body weight, fat mass, glucose tolerance and insulin. Third, liver histology and serum markers in those same obese mouse models. Fourth, muscle stem cell activity and regeneration in aged mice after an induced muscle injury. Separate cell-line studies have examined proliferation in cancer lines."
+      },
+      {
+        "question": "What are 5-Amino-1MQ benefits according to research?",
+        "answer": "Research does not report benefits; it reports measured endpoints in defined models. In diet-induced obese mice, published studies reported reduced body weight and white adipose mass, smaller adipocytes, lower plasma total cholesterol, improved oral glucose tolerance and reduced hepatic steatosis. Those are rodent findings under specific feeding and dosing conditions. They are not human outcomes and should not be restated as effects in people."
+      },
+      {
+        "question": "Has 5-Amino-1MQ been studied in humans?",
+        "answer": "No direct human interventional study of 5-Amino-1MQ was identified in the sources reviewed for this page, which covered PubMed-indexed literature. A 2025 review of NNMT in cardiovascular disease states that no clinical trials have yet targeted NNMT specifically in that setting. The published 5-Amino-1MQ record is biochemical, cell-based and rodent, so human efficacy and human safety remain uncharacterised."
+      },
+      {
+        "question": "What does 5-Amino-1MQ dosage mean in research?",
+        "answer": "In the literature, a dose is a condition of one experiment — a species, a route, a schedule and a duration chosen to test a hypothesis. For example, one aged-mouse muscle study administered 5 and 10 mg/kg for one week after an induced injury. Values like that describe that study only. They are not conversions, protocols or instructions, and Veracue does not publish human dosing for any research material."
+      },
+      {
+        "question": "What are 5-Amino-1MQ side effects?",
+        "answer": "There is no human side-effect profile, because there is no human interventional dataset to build one from. In the mouse obesity study by Neelakantan and colleagues, the authors reported that administration did not change total food intake and produced no observable adverse effects under their conditions. That is one rodent observation at defined doses and duration, not a general safety characterisation and not a claim of tolerability."
+      },
+      {
+        "question": "Is 5-Amino-1MQ the same as an NAD+ product?",
+        "answer": "No. NAD+ precursors such as nicotinamide, nicotinamide riboside or NMN supply raw material to the NAD+ salvage pathway. 5-Amino-1MQ does not supply anything; it inhibits an enzyme that consumes nicotinamide. In cultured adipocytes, inhibitor treatment was reported to raise intracellular NAD+ and SAM, but the mechanism and the molecules involved are different, and the two categories should not be conflated."
+      },
+      {
+        "question": "What does \"5-Amino-1MQ Spray\" mean?",
+        "answer": "It is the format designation for this Veracue listing. Veracue has not published the concentration, fill volume, formulation, delivery device or intended route for the product, so the word describes packaging only. It does not establish nasal, oral, sublingual, buccal or topical use, and nothing about absorption, bioavailability, onset or systemic delivery should be inferred from it."
+      },
+      {
+        "question": "Is the Veracue 5-Amino-1MQ Spray intended for human use?",
+        "answer": "No. Veracue supplies this material for laboratory and research use only. It is not intended for human or veterinary use, administration, ingestion, or for diagnosing, treating, curing, mitigating or preventing any condition. The page addresses search questions about dosage, benefits and side effects as research context, and provides no administration guidance of any kind."
+      }
+    ],
+
+    "productIdentity": {
+      "preferredName": "5-Amino-1-methylquinolinium",
+      "commonResearchAbbreviations": ["5-Amino-1MQ", "5A1MQ", "5MQ", "NNMTi"],
+      "searchVariants": ["5-amino-1mq", "5 amino 1mq", "5-amino-1mq peptide", "5 amino 1mq peptide"],
+      "chemicalClass": "Quaternary N-methylated quinolinium cation (small molecule)",
+      "isPeptide": false,
+      "peptideClarification": "Although 5-Amino-1MQ is frequently searched alongside research peptides, its scientific classification follows its molecular identity rather than the wording used in search queries. It contains no amino acid residues and no peptide bonds.",
+      "cation": {
+        "name": "5-Amino-1-methylquinolinium",
+        "molecularFormula": "C10H11N2+",
+        "molecularWeight": "approximately 159.21 g/mol (cation only)",
+        "pubchemCid": "950107",
+        "source": "PubChem compound record CID 950107 for the 5-Amino-1-methylquinolinium cation"
+      },
+      "commonSaltForm": {
+        "name": "5-Amino-1-methylquinolinium iodide",
+        "pubchemCid": "66522933",
+        "casNumber": "42464-96-0",
+        "molecularFormula": "C10H11IN2",
+        "molecularWeight": "286.11 g/mol",
+        "source": "PubChem compound record CID 66522933, corroborated by Sigma-Aldrich catalog entry SML2832, 5-Amino-1-methylquinolinium iodide, ≥98% (HPLC)"
+      },
+      "nomenclatureNote": "Public listings for this compound quote two different masses because they are two different PubChem records for two different chemical entities, not two descriptions of the same thing. CID 950107 is the bare cation, C10H11N2+, roughly 159.21 g/mol. CID 66522933 is the isolable iodide salt, C10H11IN2 (CAS 42464-96-0), 286.11 g/mol. Neither figure should be presented as the Veracue product's molecular weight, and the Veracue listing should not be assumed to be the iodide salt, because Veracue has not published the chemical form or salt used in this listing.",
+      "targetEnzyme": "Nicotinamide N-methyltransferase (NNMT; EC 2.1.1.1)",
+      "researchHistory": "Methylquinolinium NNMT inhibitors were characterised for permeability, selectivity and metabolic effects by Neelakantan and colleagues in 2018, following earlier genetic work by Kraus and colleagues in 2014 showing that Nnmt knockdown protected mice against diet-induced obesity. Subsequent rodent work extended to aged muscle regeneration (2019), gut microbiome composition (2022) and pharmacokinetics with liver endpoints (2024)."
+    },
+
+    "researchSections": [
+      {
+        "number": 1,
+        "heading": "What Exactly Is 5-Amino-1MQ?",
+        "researchProblem": "Researchers meet this compound on peptide catalogs, under a peptide-shaped search term, and reasonably assume it belongs in the same chemical family as BPC-157 or MOTS-c. Listings then quote two different molecular weights, which makes the identity feel unsettled before any experiment begins.",
+        "researchQuestion": "What is the verified molecular identity of 5-Amino-1MQ, and which chemical class does it belong to?",
+        "evidence": "PubChem holds two distinct records for this chemistry. CID 950107 is the cation, 5-Amino-1-methylquinolinium, formula C10H11N2+, roughly 159.21 g/mol. CID 66522933 is the separately catalogued iodide salt, formula C10H11IN2, CAS 42464-96-0, 286.11 g/mol — the same salt Sigma-Aldrich lists under SML2832. These are two different chemical records for two different entities, not one compound reported inconsistently. The published NNMT literature refers to the same underlying chemistry under the names 5-amino-1-methylquinolinium, 5-amino-1MQ, 5A1MQ and 5MQ. Every one of those names describes a single fused bicyclic ring system carrying a methyl group on the ring nitrogen and an amine substituent at position 5.",
+        "practicalInterpretation": "The two masses in circulation are not a contradiction, but they are also not interchangeable labels for the same product. CID 950107 describes the cation alone; CID 66522933 describes the isolated iodide salt. Reading a listing means checking which record it is quoting, and not assuming a Veracue product is the iodide salt unless Veracue's own documentation says so. Because the molecule has no amino acid residues and no amide backbone, it is a small-molecule enzyme inhibitor regardless of which salt form is involved — the category that determines how it is stored, weighed, dissolved and interpreted.",
+        "limitation": "The identity established here is the identity of the compound in the literature. It does not confirm the chemical form, salt, counterion or content of any particular commercial product, including this Veracue listing."
+      },
+      {
+        "number": 2,
+        "heading": "What Is NNMT and Why Is It a Research Target?",
+        "researchProblem": "NNMT gets described in vendor copy as an enzyme that \"blocks fat burning,\" which tells a researcher nothing about what the enzyme does or why anyone thought inhibiting it was worth testing.",
+        "researchQuestion": "What reaction does NNMT catalyse, and what made it a target of metabolic research?",
+        "evidence": "NNMT is a cytosolic methyltransferase that takes a methyl group from S-adenosylmethionine and transfers it to nicotinamide, yielding 1-methylnicotinamide. Kraus and colleagues reported in Nature in 2014 that Nnmt was the most strongly reciprocally regulated gene when comparing white adipose tissue from adipose-specific Glut4-knockout and Glut4-overexpressing mice, that NNMT expression was raised in adipose tissue and liver of obese and diabetic mice, and that knocking Nnmt down in those tissues protected mice against diet-induced obesity by increasing cellular energy expenditure. They further reported that NNMT inhibition raised adipose SAM and NAD+ levels and increased polyamine flux.",
+        "practicalInterpretation": "The rationale is a metabolic accounting argument. Nicotinamide feeds NAD+ salvage and S-adenosylmethionine is the cell's main methyl donor, so an enzyme that consumes both is positioned to influence NAD+ availability, methylation capacity and downstream NAD+-dependent signalling. Raising NNMT expression in obese tissue made it a candidate worth testing pharmacologically.",
+        "limitation": "This section describes the target, not the compound. Genetic knockdown of Nnmt and small-molecule inhibition of NNMT are different interventions with different kinetics and different off-target profiles, and findings from one do not transfer automatically to the other."
+      },
+      {
+        "number": 3,
+        "heading": "How Does 5-Amino-1MQ Relate to NNMT?",
+        "researchProblem": "\"NNMT inhibitor\" is asserted constantly and demonstrated rarely. A researcher needs to know what was actually measured to support the label.",
+        "researchQuestion": "What direct evidence shows that 5-Amino-1MQ engages NNMT, and how selective is that engagement?",
+        "evidence": "Neelakantan and colleagues characterised a series of small-molecule NNMT inhibitors in Biochemical Pharmacology in 2018. They reported that methylquinolinium scaffolds bearing primary amine substitutions showed high permeability in both parallel artificial membrane permeability and Caco-2 cell assays, and that the methylquinolinium analogues did not inhibit related SAM-dependent methyltransferases or enzymes in the NAD+ salvage pathway. In cultured adipocytes, the inhibitors reduced intracellular 1-methylnicotinamide — the NNMT reaction product — while raising intracellular NAD+ and SAM.",
+        "practicalInterpretation": "The fall in 1-methylnicotinamide is the important number. It is a direct product readout, so it supports target engagement inside a cell rather than inferring it from a downstream phenotype. Paired with the counter-screens against related methyltransferases, that is a reasonable basis for calling the scaffold a selective, membrane-permeable NNMT inhibitor.",
+        "limitation": "Selectivity was tested against a defined panel, not against the proteome. Cell-level target engagement in adipocytes does not establish the degree, duration or tissue distribution of NNMT inhibition in any other system, and it says nothing about what is inside a commercial product."
+      },
+      {
+        "number": 4,
+        "heading": "What Has Preclinical Research Actually Found With 5-Amino-1MQ?",
+        "researchProblem": "Summaries collapse cell work, mouse work and mechanism into one paragraph, so it becomes impossible to tell which finding came from which system.",
+        "researchQuestion": "Separated by model, what has been reported in studies that tested this compound directly?",
+        "evidence": "In cultured adipocytes, Neelakantan and colleagues (2018) reported reduced intracellular 1-methylnicotinamide, increased NAD+ and SAM, and suppressed lipogenesis. In diet-induced obese mice in the same paper, treatment with a potent inhibitor of the series significantly reduced body weight and white adipose mass, decreased adipocyte size and lowered plasma total cholesterol, without changing total food intake. Babula and colleagues (2024, Diabetes, Obesity and Metabolism) dosed diet-induced obese mice with 5A1MQ once daily for 28 days and reported dose-dependent limits on body weight and fat mass gain, improved oral glucose tolerance and insulin sensitivity, suppressed hyperinsulinaemia, attenuated hepatic steatosis and macrophage infiltration on liver histology, reduced liver weight, size and triglyceride levels, and normalised circulating alanine transaminase, aspartate transaminase and ketone bodies. They also characterised plasma pharmacokinetics and tissue distribution after intravenous, oral and subcutaneous dosing. In aged mice, Neelakantan and colleagues (2019) reported increased muscle stem cell proliferation and fusion after an induced muscle injury. In HeLa cells, Akar and colleagues (2021) reported concentration- and time-dependent inhibition of proliferation with decreased phospho-Akt and SIRT1 expression.",
+        "practicalInterpretation": "Read as a set, the rodent metabolic findings are consistent across two independent reports from overlapping groups, and the food-intake result matters: weight change in those models was not explained by the animals eating less. The cell work and the animal work are answering different questions and should be cited as such.",
+        "limitation": "Every finding above is preclinical. None of it demonstrates an effect in humans, and dose, route, duration, diet and strain were chosen by each study's design. Results from a cancer cell line address proliferation biology, not metabolic outcomes."
+      },
+      {
+        "number": 5,
+        "heading": "What Does Research Say About 5-Amino-1MQ and Metabolic Biology?",
+        "researchProblem": "The compound is described as \"boosting metabolism,\" a phrase that corresponds to no measurable endpoint and cannot be checked against a paper.",
+        "researchQuestion": "Which specific metabolic endpoints have been measured, and in what direction did they move?",
+        "evidence": "Reported endpoints, by study: intracellular 1-methylnicotinamide, NAD+ and SAM levels and lipogenesis in cultured adipocytes; body weight, white adipose mass, adipocyte size, plasma total cholesterol and food intake in diet-induced obese mice (Neelakantan et al., 2018); body composition, blood glucose, plasma insulin, oral glucose tolerance, liver histology, liver weight and triglycerides, serum ALT and AST, and ketone bodies in diet-induced obese mice over 28 days (Babula et al., 2024). Dimet-Wiley and colleagues (2022) additionally profiled the cecal microbiome of diet-induced obese mice given the inhibitor alongside a low-fat diet switch, reporting decreased Erysipelatoclostridium and increased Lactobacillus relative abundances compared with vehicle counterparts.",
+        "practicalInterpretation": "These are defined, quantifiable readings in a defined model, which is what makes them usable. Where a study also reports what did not change — food intake, for example — that negative result carries real interpretive weight and is worth keeping in any summary.",
+        "limitation": "Improved glucose tolerance in a diet-induced obese mouse is not improved insulin sensitivity in a person. Microbiome findings in that 2022 study were obtained with a concurrent diet switch, so the diet change and the compound cannot be separated as explanations."
+      },
+      {
+        "number": 6,
+        "heading": "Has 5-Amino-1MQ Been Studied in Humans?",
+        "researchProblem": "Consumer pages imply a clinical record that a researcher cannot locate, and cautious pages sometimes overstate the opposite by declaring that no research exists at all.",
+        "researchQuestion": "Does direct human evidence for 5-Amino-1MQ exist, and if so, of what type?",
+        "evidence": "No direct human interventional study of 5-Amino-1MQ was identified in the sources reviewed for this page, which comprised PubMed-indexed literature searched under the names 5-amino-1-methylquinolinium, 5-amino-1MQ and 5A1MQ. Every identified study testing the compound used biochemical assays, cultured cells or rodents. A 2025 review of NNMT in cardiovascular disease (Jawaria et al., Biomolecules) states that no clinical trials have yet targeted NNMT specifically in that setting. A 2025 review of NNMT in non-alcoholic fatty liver disease (Zhang et al., Archives of Biochemistry and Biophysics) notes that clinical translation of NNMT-targeted small molecules remains hindered by limited selectivity and poor in vivo stability.",
+        "practicalInterpretation": "The honest position is an absence of identified evidence rather than proof of absence. For anyone designing work or evaluating claims, the practical consequence is the same: human efficacy, human dosing and human safety for this compound are uncharacterised in the published record.",
+        "limitation": "This statement describes the sources reviewed at the time of writing. Unindexed, unpublished, non-English or newly registered work would not appear in it, and the position should be re-checked rather than treated as permanent."
+      },
+      {
+        "number": 7,
+        "heading": "What Do \"5-Amino-1MQ Benefits\" Actually Mean in Research?",
+        "researchProblem": "\"Benefits\" is a consumer word applied to a preclinical dataset. It converts a measurement made in a mouse into an expectation held by a person.",
+        "researchQuestion": "Which reported outcomes sit behind the benefits query, and how strong is each one?",
+        "evidence": "The outcomes most often repackaged as benefits are the rodent metabolic results: reduced body weight and white adipose mass, decreased adipocyte size and lowered plasma total cholesterol (Neelakantan et al., 2018); limited body weight and fat mass gain, improved oral glucose tolerance and insulin sensitivity, suppressed hyperinsulinaemia and attenuated hepatic steatosis (Babula et al., 2024); and, from muscle work in 24-month-old mice, roughly two-fold greater myofiber cross-sectional area and about 70% greater peak torque in the injured tibialis anterior compared with controls (Neelakantan et al., 2019). Each came from a controlled experiment with a stated model, dose and duration.",
+        "practicalInterpretation": "Restated accurately, these are reproducible measurements in obese or aged mice under specific dosing. That is genuinely informative — it is why the target attracted continued investment — and it is a different claim from saying the compound does any of those things in people.",
+        "limitation": "None of these endpoints has been tested in a human interventional study identified here. Effect sizes in rodent models are model-specific and do not scale or convert. Muscle findings followed a chemically induced injury and describe recovery in that setting, not muscle growth generally."
+      },
+      {
+        "number": 8,
+        "heading": "What Does \"5-Amino-1MQ Dosage\" Mean in Research?",
+        "researchProblem": "Dosage is one of the strongest search intents around this compound, and most of what surfaces is a human protocol assembled from rodent numbers.",
+        "researchQuestion": "How is dose used in the published literature, and what can and cannot be taken from it?",
+        "evidence": "Published doses are experimental conditions attached to a species, route, schedule and duration. Neelakantan and colleagues (2019) treated 24-month-old mice with low and high doses of an NNMT inhibitor — 5 and 10 mg/kg — for one week after an acute muscle injury, with a further arm at the high dose for three weeks. Babula and colleagues (2024) administered 5A1MQ once daily for 28 days to diet-induced obese mice and separately characterised plasma and tissue pharmacokinetics after intravenous, oral and subcutaneous dosing. The figures differ between studies because the questions differ.",
+        "practicalInterpretation": "A published dose is a description of one experiment, cited as such. Reading it that way makes the literature usable: it tells you what exposure produced a reported endpoint in that model, which is what you need to compare studies or design one.",
+        "limitation": "These values are not recommendations, conversions or protocols, and no allometric scaling to any other species is implied or supported. This page provides no dosing schedule, cycle, administration route, spray-per-use figure, reconstitution method or concentration calculation, and Veracue does not publish human dosing for research materials."
+      },
+      {
+        "number": 9,
+        "heading": "What Is Known About 5-Amino-1MQ Safety and Side Effects?",
+        "researchProblem": "Search results present a confident side-effect list for a compound with no human dataset, while the underlying papers are quieter and more specific.",
+        "researchQuestion": "What safety-relevant observations have actually been reported, and at what level of evidence?",
+        "evidence": "In the 2018 diet-induced obesity study, Neelakantan and colleagues reported that administration of the NNMT inhibitor did not affect total food intake and produced no observable adverse effects under the conditions tested. Babula and colleagues (2024) reported that 28 days of 5A1MQ in diet-induced obese mice normalised circulating alanine transaminase, aspartate transaminase and ketone bodies, which the authors described as supporting overall improvement in liver and metabolic function. In cell work, Akar and colleagues (2021) reported that 5MQ inhibited HeLa proliferation without apparently affecting proliferation of HEK-293 cells. No human safety dataset for this compound was identified in the sources reviewed.",
+        "practicalInterpretation": "What exists is a small set of specific observations in defined rodent and cell systems, each tied to its own doses and duration. Cited that way they are useful context. Aggregated into a general safety statement they would be misleading.",
+        "limitation": "An absence of observed adverse effects in a mouse study is not a safety characterisation, and none of these findings support words such as safe, well tolerated or side-effect free. No human tolerability, interaction or long-term exposure data was identified. Nothing here is medical advice, and the material is not for human use."
+      },
+      {
+        "number": 10,
+        "heading": "How Does 5-Amino-1MQ Compare With Related Metabolic Research Compounds?",
+        "researchProblem": "The compound is grouped on catalogs and in search results with peptides and with NAD+ products, which blurs three genuinely different categories.",
+        "researchQuestion": "Where does 5-Amino-1MQ sit relative to other NNMT-directed interventions, NAD+-related compounds and metabolic research peptides?",
+        "evidence": "5-Amino-1MQ is a small-molecule inhibitor of NNMT. Other NNMT-directed interventions in the literature work differently: Kraus and colleagues (2014) used antisense-mediated Nnmt knockdown, which removes the enzyme rather than inhibiting it, and the 2025 NAFLD review by Zhang and colleagues describes NNMT-targeted oligonucleotide therapies and small-molecule inhibitors as separate strategies with distinct translational obstacles. NAD+-related compounds such as nicotinamide, nicotinamide riboside and NMN are precursors that supply the salvage pathway; 5-Amino-1MQ supplies nothing and instead inhibits an enzyme that consumes nicotinamide. Metabolic research peptides are a third category entirely, defined by amino acid sequence and typically acting at receptors rather than on a cytosolic methyltransferase.",
+        "practicalInterpretation": "The useful distinction is the mechanism class. Grouping by search adjacency puts an enzyme inhibitor, a substrate precursor and a receptor-active peptide in one bucket, which makes the literature harder to read rather than easier.",
+        "limitation": "This comparison explains category, not relative performance. No ranking, equivalence or interchangeability between these compounds is stated or implied, and no head-to-head comparison supporting one over another was identified."
+      },
+      {
+        "number": 11,
+        "heading": "What Should Researchers Verify About a 5-Amino-1MQ Spray Product?",
+        "researchProblem": "Published literature describes a defined compound. A commercial listing describes a physical item. The two get read as one document, and the literature ends up standing in for documentation the product does not have.",
+        "researchQuestion": "Which product-level attributes need first-party documentation before a research material can be used or compared?",
+        "evidence": "The attributes that determine how a material behaves in an experiment are product-level, not literature-level: the chemical form and counterion actually supplied, the stated concentration, the fill volume, the formulation and any excipients, the analytical method used for identity and purity, the reported purity value, the lot identifier the result belongs to, the testing laboratory and date, and the storage and handling conditions. None of these can be read out of a paper. Veracue has not published these specifications for this listing, and at the time of writing the Veracue certificates library shows no published reports, with certificates described as being added and available on request.",
+        "practicalInterpretation": "The practical step is to request lot-specific documentation directly and to check that the identity and purity result names the same lot as the material received. A COA that does not match the lot is not documentation for that material.",
+        "limitation": "Nothing in the scientific literature substitutes for product documentation, and specifications published for one Veracue product do not describe another. Product-specific fields on this page remain unspecified until Veracue publishes them."
+      }
+    ],
+
+    "evidenceTable": [
+      {
+        "researchQuestion": "Do methylquinolinium NNMT inhibitors engage NNMT selectively and cross membranes?",
+        "compound": "Methylquinolinium NNMT inhibitor series (includes 5-amino-1MQ scaffold)",
+        "evidenceType": "Tier 1 — direct, biochemical and cell-based",
+        "modelOrPopulation": "Parallel artificial membrane and Caco-2 permeability assays; cultured adipocytes; enzyme counter-screens",
+        "studyDesign": "In vitro characterisation of permeability, selectivity and intracellular metabolite levels",
+        "mainFinding": "High passive and active permeability; no inhibition of related SAM-dependent methyltransferases or NAD+ salvage enzymes; reduced intracellular 1-methylnicotinamide with increased NAD+ and SAM; suppressed lipogenesis in adipocytes",
+        "limitation": "Selectivity assessed against a defined panel only; cell-level engagement does not predict tissue-level inhibition",
+        "source": "Neelakantan H, et al. Biochem Pharmacol. 2018;147:141-152. https://doi.org/10.1016/j.bcp.2017.11.007"
+      },
+      {
+        "researchQuestion": "Does NNMT inhibition affect adiposity in diet-induced obese mice?",
+        "compound": "Potent methylquinolinium NNMT inhibitor",
+        "evidenceType": "Tier 1 — direct, animal",
+        "modelOrPopulation": "Diet-induced obese mice fed a high-fat diet",
+        "studyDesign": "Systemic administration with longitudinal body composition and plasma lipid measures",
+        "mainFinding": "Significantly reduced body weight and white adipose mass, decreased adipocyte size and lowered plasma total cholesterol; no change in total food intake and no observable adverse effects reported",
+        "limitation": "Rodent model under controlled high-fat feeding; not a human efficacy or safety finding",
+        "source": "Neelakantan H, et al. Biochem Pharmacol. 2018;147:141-152. https://doi.org/10.1016/j.bcp.2017.11.007"
+      },
+      {
+        "researchQuestion": "What happens to metabolic and liver endpoints with 28 days of 5A1MQ?",
+        "compound": "5A1MQ (5-amino-1-methylquinolinium)",
+        "evidenceType": "Tier 1 — direct, animal with pharmacokinetics",
+        "modelOrPopulation": "Diet-induced obese mice; age- and strain-matched mice for PK",
+        "studyDesign": "Vehicle-controlled once-daily dosing for 28 days; longitudinal body composition, glucose and insulin; terminal liver histology and serum markers; PK after intravenous, oral and subcutaneous dosing",
+        "mainFinding": "Dose-dependent limits on body weight and fat mass gain; improved oral glucose tolerance and insulin sensitivity; suppressed hyperinsulinaemia; attenuated hepatic steatosis and macrophage infiltration; reduced liver weight, size and triglycerides; normalised ALT, AST and ketone bodies; distribution to adipose, muscle and liver after subcutaneous dosing",
+        "limitation": "Preclinical; endpoints and exposures are specific to the mouse model and dosing schedule used",
+        "source": "Babula JJ, et al. Diabetes Obes Metab. 2024;26(11):5272-5282. https://doi.org/10.1111/dom.15879"
+      },
+      {
+        "researchQuestion": "Does NNMT inhibition affect regeneration in aged skeletal muscle?",
+        "compound": "NNMT inhibitor (methylquinolinium series)",
+        "evidenceType": "Tier 1 — direct, animal and cell",
+        "modelOrPopulation": "24-month-old mice with acute barium chloride injury to the tibialis anterior; C2C12 myoblasts in vitro",
+        "studyDesign": "Saline control versus 5 and 10 mg/kg for one week post-injury, and control versus high dose for three weeks; in vivo contractile function and myofiber cross-sectional area",
+        "mainFinding": "Increased muscle stem cell proliferation and fusion; nearly two-fold greater myofiber cross-sectional area; peak torque of the tibialis anterior increased by approximately 70% versus controls; enhanced myoblast differentiation in vitro",
+        "limitation": "Aged-mouse injury model; describes recovery after induced injury, not muscle growth in general, and not a human finding",
+        "source": "Neelakantan H, et al. Biochem Pharmacol. 2019;163:481-492. https://doi.org/10.1016/j.bcp.2019.02.008"
+      },
+      {
+        "researchQuestion": "Does NNMT inhibition alongside a diet switch alter the gut microbiome?",
+        "compound": "5-amino-1-methylquinolinium",
+        "evidenceType": "Tier 1 — direct, animal",
+        "modelOrPopulation": "Diet-induced obese mice switched to a low-fat diet, with lean and obese controls",
+        "studyDesign": "Cecal microbiome profiling with alpha/beta diversity and k-means clustering of amplicon sequence variants",
+        "mainFinding": "Inhibitor-treated diet-switched mice showed a distinct microbiome pattern with decreased Erysipelatoclostridium and increased Lactobacillus relative abundances versus vehicle counterparts",
+        "limitation": "Compound effect is confounded with the concurrent low-fat diet switch; descriptive microbiome study without causal attribution",
+        "source": "Dimet-Wiley A, et al. Sci Rep. 2022;12(1):484. https://doi.org/10.1038/s41598-021-03670-5"
+      },
+      {
+        "researchQuestion": "What are the effects of the compound on cancer cell proliferation in vitro?",
+        "compound": "5MQ (5-amino-1-methylquinolinium)",
+        "evidenceType": "Tier 1 — direct, cell-based",
+        "modelOrPopulation": "HeLa cervical cancer cell line; HEK-293 cells as comparator",
+        "studyDesign": "0.1–500 µM exposure with MTT viability, qRT-PCR and Western blotting",
+        "mainFinding": "Concentration- and time-dependent inhibition of HeLa proliferation with morphological signs of apoptosis; decreased phospho-Akt and SIRT1 protein expression; HEK-293 proliferation not apparently affected",
+        "limitation": "Single cell line at high in vitro concentrations; no in vivo or human relevance established",
+        "source": "Akar S, et al. J Obstet Gynaecol. 2021;41(8):1240-1245. https://doi.org/10.1080/01443615.2020.1854696"
+      },
+      {
+        "researchQuestion": "Does the iodide salt of the compound affect tumour growth in vivo?",
+        "compound": "5-Amino-1-methylquinolinium iodide",
+        "evidenceType": "Tier 1 — direct, animal",
+        "modelOrPopulation": "Urothelial bladder cancer mouse models",
+        "studyDesign": "Inhibitor treatment alone and combined with anti-PD-L1 antibody, within a broader study of NNMT in cancer-associated fibroblasts",
+        "mainFinding": "Treatment significantly reduced tumour growth and enhanced the apoptotic effects of the anti-PD-L1 antibody",
+        "limitation": "Oncology model outside the metabolic research context; does not inform metabolic endpoints or human use",
+        "source": "Yang M, et al. J Immunother Cancer. 2024;12(7):e009281. https://doi.org/10.1136/jitc-2024-009281"
+      },
+      {
+        "researchQuestion": "What established NNMT as a metabolic target in the first place?",
+        "compound": "None — antisense knockdown of Nnmt",
+        "evidenceType": "Tier 2 — target biology, not 5-Amino-1MQ evidence",
+        "modelOrPopulation": "Mice, white adipose tissue and liver",
+        "studyDesign": "DNA array comparison in adipose-specific Glut4 knockout and overexpressing mice, followed by antisense knockdown in diet-induced obesity",
+        "mainFinding": "Nnmt expression raised in adipose and liver of obese and diabetic mice; knockdown protected against diet-induced obesity by augmenting energy expenditure, raised adipose SAM and NAD+, and increased polyamine flux",
+        "limitation": "Genetic knockdown is a different intervention from small-molecule inhibition; this supports the target, not the compound",
+        "source": "Kraus D, et al. Nature. 2014;508(7495):258-262. https://doi.org/10.1038/nature13198"
+      },
+      {
+        "researchQuestion": "What is the current clinical status of NNMT-directed compounds?",
+        "compound": "NNMT inhibitors as a class",
+        "evidenceType": "Tier 4 — narrative review",
+        "modelOrPopulation": "Literature review across preclinical cardiovascular studies",
+        "studyDesign": "Narrative review of NNMT biology and therapeutic prospects",
+        "mainFinding": "Small-molecule NNMT inhibitors and RNA interference have shown cardiometabolic benefits in preclinical models, but no clinical trials have yet targeted NNMT specifically in cardiovascular disease",
+        "limitation": "Review-level synthesis; specific to the cardiovascular setting and does not substitute for a trial registry search",
+        "source": "Jawaria, et al. Biomolecules. 2025;15(9):1281. https://doi.org/10.3390/biom15091281"
+      },
+      {
+        "researchQuestion": "What obstacles stand between NNMT inhibitors and clinical use?",
+        "compound": "NNMT-targeted small molecules and oligonucleotides",
+        "evidenceType": "Tier 4 — narrative review",
+        "modelOrPopulation": "Literature review across preclinical NAFLD models",
+        "studyDesign": "Narrative review of NNMT mechanisms and therapeutic strategies in non-alcoholic fatty liver disease",
+        "mainFinding": "NNMT-targeted oligonucleotide therapies and small-molecule inhibitors show anti-steatotic and anti-fibrotic potential preclinically, while clinical translation remains hindered by limited selectivity and poor in vivo stability",
+        "limitation": "Review-level synthesis; class-level statements do not describe any individual compound's properties",
+        "source": "Zhang CY, et al. Arch Biochem Biophys. 2025;772:110558. https://doi.org/10.1016/j.abb.2025.110558"
+      }
+    ],
+
+    "evidenceHierarchy": {
+      "tier1": {
+        "label": "Direct 5-Amino-1MQ research",
+        "description": "Studies that tested 5-amino-1-methylquinolinium, its iodide salt, or the methylquinolinium inhibitor series containing it.",
+        "entries": [
+          "Neelakantan H, et al. Biochem Pharmacol. 2018;147:141-152 — selectivity, permeability, adipocyte metabolites, diet-induced obesity in mice",
+          "Babula JJ, et al. Diabetes Obes Metab. 2024;26(11):5272-5282 — 5A1MQ in diet-induced obese mice, liver endpoints and pharmacokinetics",
+          "Neelakantan H, et al. Biochem Pharmacol. 2019;163:481-492 — aged mouse muscle stem cells and regeneration after injury",
+          "Dimet-Wiley A, et al. Sci Rep. 2022;12(1):484 — cecal microbiome with concurrent low-fat diet switch",
+          "Akar S, et al. J Obstet Gynaecol. 2021;41(8):1240-1245 — HeLa proliferation in vitro",
+          "Yang M, et al. J Immunother Cancer. 2024;12(7):e009281 — iodide salt in urothelial bladder cancer mouse models"
+        ]
+      },
+      "tier2": {
+        "label": "Authoritative NNMT target biology",
+        "description": "Research on the enzyme itself, needed to interpret what an NNMT inhibitor is expected to do. It is not evidence about the compound.",
+        "entries": [
+          "Kraus D, et al. Nature. 2014;508(7495):258-262 — Nnmt knockdown protects against diet-induced obesity"
+        ]
+      },
+      "tier3": {
+        "label": "Other NNMT-directed interventions",
+        "description": "Knockdown, antisense and oligonucleotide approaches, and other inhibitor chemotypes. These act on the same target by different means and are not interchangeable with 5-Amino-1MQ.",
+        "entries": [
+          "Antisense-mediated Nnmt knockdown as described by Kraus D, et al. Nature. 2014",
+          "NNMT-targeted oligonucleotide strategies as summarised by Zhang CY, et al. Arch Biochem Biophys. 2025;772:110558"
+        ]
+      },
+      "tier4": {
+        "label": "Scientific reviews",
+        "description": "Synthesis of the field, useful for context and for status statements, never a substitute for a primary result.",
+        "entries": [
+          "Jawaria, et al. Biomolecules. 2025;15(9):1281 — NNMT in cardiovascular disease",
+          "Zhang CY, et al. Arch Biochem Biophys. 2025;772:110558 — NNMT in non-alcoholic fatty liver disease"
+        ]
+      },
+      "tier5": {
+        "label": "Secondary industry sources",
+        "description": "Supplier catalogs and chemical databases, used on this page only for compound identity and never for biological claims.",
+        "entries": [
+          "PubChem compound record CID 950107 — 5-Amino-1-methylquinolinium cation, C10H11N2+, ~159.21 g/mol",
+          "PubChem compound record CID 66522933 — 5-Amino-1-methylquinolinium iodide, C10H11IN2, CAS 42464-96-0, 286.11 g/mol",
+          "Sigma-Aldrich catalog entry SML2832 — 5-Amino-1-methylquinolinium iodide, CAS 42464-96-0, ≥98% (HPLC)"
+        ]
+      },
+      "interpretationRule": "Tier 2 through Tier 5 material explains the target, the field or the chemistry. None of it is evidence that 5-Amino-1MQ produces a given outcome, and it is never presented on this page as equivalent to Tier 1."
+    },
+
+    "evidenceLimitations": [
+      "The published record for 5-Amino-1MQ is biochemical, cell-based and rodent. No direct human interventional study was identified in the sources reviewed.",
+      "Rodent metabolic findings come from diet-induced obesity models under controlled high-fat feeding; they do not transfer to human physiology.",
+      "Genetic knockdown of Nnmt and pharmacological inhibition by a small molecule are separate interventions and are reported separately on this page.",
+      "Microbiome findings were obtained with a concurrent low-fat diet switch, so compound and diet cannot be separated in that dataset.",
+      "Cell-line proliferation results were produced at in vitro concentrations that carry no in vivo interpretation.",
+      "Compound identity data describes the compound in the literature and in chemical catalogs, not the contents of any commercial product.",
+      "Product-level specifications for this Veracue listing are not publicly specified, and no published certificate of analysis for it was found."
+    ],
+
+    "comparison": {
+      "title": "Categories that get grouped together in search but differ in mechanism",
+      "note": "This table separates mechanism classes. It does not rank compounds, imply equivalence, or suggest that any one is preferable.",
+      "columns": ["Attribute", "5-Amino-1MQ", "NNMT knockdown / oligonucleotide approaches", "NAD+ precursor compounds", "Metabolic research peptides"],
+      "rows": [
+        {
+          "attribute": "Molecular class",
+          "fiveAmino1MQ": "Small molecule — methylated quinolinium cation, C10H11N2+",
+          "nnmtKnockdown": "Nucleic acid — antisense oligonucleotide or RNA interference construct",
+          "nadRelated": "Small molecules — nicotinamide and related pyridine nucleotide precursors",
+          "metabolicPeptides": "Amino acid chains defined by sequence"
+        },
+        {
+          "attribute": "Relationship to NNMT",
+          "fiveAmino1MQ": "Inhibits the enzyme; reduced its product 1-methylnicotinamide in cultured adipocytes",
+          "nnmtKnockdown": "Reduces expression of the enzyme rather than inhibiting the protein",
+          "nadRelated": "No direct relationship; nicotinamide is NNMT's substrate",
+          "metabolicPeptides": "No relationship to NNMT"
+        },
+        {
+          "attribute": "Direction of action on the pathway",
+          "fiveAmino1MQ": "Blocks consumption of nicotinamide and SAM",
+          "nnmtKnockdown": "Removes the consuming enzyme",
+          "nadRelated": "Supplies substrate to the NAD+ salvage pathway",
+          "metabolicPeptides": "Typically acts at receptors, not on this cytosolic pathway"
+        },
+        {
+          "attribute": "Evidence level identified here",
+          "fiveAmino1MQ": "Biochemical, cell and rodent; no human interventional study identified",
+          "nnmtKnockdown": "Rodent genetic and antisense studies",
+          "nadRelated": "Outside the scope of this page",
+          "metabolicPeptides": "Outside the scope of this page"
+        },
+        {
+          "attribute": "Interchangeable?",
+          "fiveAmino1MQ": "No",
+          "nnmtKnockdown": "No — different modality, different kinetics and off-target profile",
+          "nadRelated": "No — opposite position in the pathway",
+          "metabolicPeptides": "No — different chemical class entirely"
+        }
+      ]
+    },
+
+    "productSpecifications": {
+      "productName": "5-Amino-1MQ Spray",
+      "productType": "Research material supplied in a spray-format listing",
+      "molecularIdentity": "The literature compound is the 5-amino-1-methylquinolinium cation (PubChem CID 950107; C10H11N2+; ~159.21 g/mol), commonly isolated for laboratory use as a separately catalogued iodide salt (PubChem CID 66522933; CAS 42464-96-0; C10H11IN2; 286.11 g/mol). These are two distinct chemical records. The chemical form actually supplied in this Veracue listing is not publicly specified, and should not be assumed to be the iodide salt.",
+      "chemicalForm": "Not publicly specified on the current Veracue product information.",
+      "concentration": "Not publicly specified on the current Veracue product information.",
+      "amountPerSpray": "Not publicly specified on the current Veracue product information.",
+      "fillVolume": "Not publicly specified on the current Veracue product information.",
+      "purity": "Not publicly specified on the current Veracue product information.",
+      "analyticalTesting": "Not publicly specified on the current Veracue product information.",
+      "lotNumber": "Not publicly specified on the current Veracue product information.",
+      "coaAvailability": "No certificate of analysis for this product was found in the Veracue certificates library at the time of writing. Veracue states that certificates are being added and can be requested.",
+      "storage": "Not publicly specified on the current Veracue product information.",
+      "packaging": "Spray-format listing. Container, closure and delivery device are not publicly specified on the current Veracue product information.",
+      "availability": "Not publicly specified on the current Veracue product information.",
+      "classification": "Research Use Only"
+    },
+
+    "productFormat": {
+      "format": "Spray-format listing",
+      "route": "Not publicly specified on the current Veracue product information. The word \"Spray\" describes the product format only and establishes no administration route — not nasal, intranasal, oral, sublingual, buccal or topical — and nothing about absorption, bioavailability, systemic delivery, onset or convenience should be inferred from it.",
+      "concentration": "Not publicly specified on the current Veracue product information.",
+      "amountPerSpray": "Not publicly specified on the current Veracue product information.",
+      "fillVolume": "Not publicly specified on the current Veracue product information.",
+      "formulation": "Not publicly specified on the current Veracue product information.",
+      "deliveryDevice": "Not publicly specified on the current Veracue product information.",
+      "meteredDose": "Not publicly specified on the current Veracue product information."
+    },
+
+    "coaAndDocumentation": {
+      "summary": "Product documentation is what connects a physical container to an analytical result. It is separate from the scientific literature and cannot be inferred from it.",
+      "whatToReview": [
+        "Compound identity as supplied, including chemical form and counterion",
+        "Lot or batch identifier, and whether it matches the material received",
+        "Analytical method used for identity and purity determination",
+        "Reported purity value for that lot",
+        "Date of testing",
+        "Testing laboratory",
+        "Any additional product documentation Veracue provides for the lot"
+      ],
+      "currentStatus": "At the time of writing, the Veracue certificates library lists no published reports and states that certificates are being added. No certificate of analysis for 5-Amino-1MQ Spray was found there.",
+      "howToObtain": "Documentation can be requested from Veracue directly via the contact page. Veracue states it maintains records for earlier batches and will furnish analytical documentation on request.",
+      "cautions": [
+        "A certificate issued for a different product or a different lot does not document this material.",
+        "No analytical result is stated or implied anywhere on this page.",
+        "Literature values for the compound are not product specifications."
+      ],
+      "documentationLink": "/certificates"
+    },
+
+    "storageAndHandling": {
+      "storageConditions": "Storage conditions are not publicly specified on the current Veracue product information.",
+      "handling": "Handling requirements are not publicly specified on the current Veracue product information.",
+      "stability": "Stability and shelf life are not publicly specified on the current Veracue product information.",
+      "guidance": "Storage and handling conditions for a research material should come from the supplier's own documentation for the lot supplied. Conditions published for other products do not apply to this listing, and none are transferred to it here.",
+      "generalNote": "Material supplied for research use should be handled under the laboratory's own procedures and applicable institutional requirements."
+    },
+
+    "whatResearchDoesNotShow": [
+      "Preclinical results do not establish efficacy in humans. Every reported outcome for this compound comes from a biochemical assay, a cell culture or a rodent model.",
+      "NNMT biology does not prove any specific 5-Amino-1MQ outcome. Evidence that the enzyme matters is not evidence that this inhibitor produces a given result.",
+      "Other NNMT-directed interventions are not interchangeable with this compound. Knockdown and oligonucleotide approaches act differently and were tested separately.",
+      "Research findings are not product validation. No study on this page tested any commercial material, and none supports a purity, identity or content claim for this listing.",
+      "Product purity, chemical form and formulation require lot-specific documentation from Veracue, which is separate from anything the literature can supply.",
+      "No published dose is a protocol. Experimental doses describe the study they came from and do not convert to any other species or setting."
+    ],
+
+    "ruoNotice": {
+      "heading": "Research Use Only",
+      "statement": "This material is supplied by Veracue for laboratory and research use only. It is not intended for human use, veterinary use, administration, ingestion, or for diagnosing, treating, curing, mitigating or preventing any condition. It is not a food, supplement, cosmetic or drug product, and nothing on this page constitutes medical advice or administration guidance.",
+      "audience": "Qualified researchers and laboratory professionals.",
+      "noDosingGuidance": "This page provides no human dosing, dosing schedule, cycle, administration route, reconstitution instruction or concentration calculation."
+    },
+
+    "faq": [
+      {
+        "question": "Why is 5-Amino-1MQ listed alongside research peptides if it isn't one?",
+        "answer": "Because catalogs are organised around how researchers search, and the compound came into circulation through the same channels as metabolic research peptides. That is a commercial adjacency, not a chemical one. Its structure is a single small ring system with the cation formula C10H11N2+, so it belongs with small-molecule enzyme inhibitors regardless of where a listing places it."
+      },
+      {
+        "question": "Which molecular weight is correct — 159 or 286?",
+        "answer": "Both, for different things. Approximately 159.21 g/mol is PubChem CID 950107, the bare cation, formula C10H11N2+. 286.11 g/mol is PubChem CID 66522933, the separately catalogued iodide salt, CAS 42464-96-0, formula C10H11IN2. They are two different chemical records, not two figures for one compound. Neither describes the Veracue product, since the chemical form actually supplied in this listing is not publicly specified."
+      },
+      {
+        "question": "What does NNMT do in a cell?",
+        "answer": "It transfers a methyl group from S-adenosylmethionine to nicotinamide, producing 1-methylnicotinamide. Because nicotinamide is a precursor for NAD+ salvage and S-adenosylmethionine is the main cellular methyl donor, the reaction draws on two pools that matter for energy metabolism and for methylation. NNMT is expressed strongly in liver and adipose tissue."
+      },
+      {
+        "question": "How do researchers know the compound actually inhibits NNMT?",
+        "answer": "The most direct published readout is a fall in intracellular 1-methylnicotinamide, the enzyme's own reaction product, measured in cultured adipocytes by Neelakantan and colleagues. The same work reported that the methylquinolinium analogues did not inhibit related SAM-dependent methyltransferases or NAD+ salvage enzymes, which is what supports calling the engagement selective."
+      },
+      {
+        "question": "What metabolic endpoints have moved in animal studies?",
+        "answer": "In diet-induced obese mice, published studies reported reduced body weight and white adipose mass, smaller adipocytes, lower plasma total cholesterol, improved oral glucose tolerance and insulin sensitivity, suppressed hyperinsulinaemia, and attenuated hepatic steatosis with reduced liver triglycerides. Circulating ALT, AST and ketone bodies were reported as normalised in the 28-day study."
+      },
+      {
+        "question": "Are the mouse weight results explained by the animals eating less?",
+        "answer": "In the 2018 study the authors reported that administration did not affect total food intake, so the observed reductions in body weight and adipose mass were not attributable to reduced feeding in that experiment. That is a single reported observation in one model, and it should be cited as such rather than generalised."
+      },
+      {
+        "question": "What did the muscle research find?",
+        "answer": "In 24-month-old mice given an acute chemically induced injury to the tibialis anterior, NNMT inhibitor treatment was reported to increase muscle stem cell proliferation and fusion, produce nearly two-fold greater myofiber cross-sectional area, and raise peak torque of that muscle by roughly 70% versus controls. It is a recovery-after-injury model in aged animals."
+      },
+      {
+        "question": "Is there any human research on 5-Amino-1MQ?",
+        "answer": "None was identified in the sources reviewed for this page. The searches covered PubMed-indexed literature under 5-amino-1-methylquinolinium, 5-amino-1MQ and 5A1MQ, and all identified studies were biochemical, cell-based or rodent. A 2025 review notes that no clinical trials have yet targeted NNMT specifically in cardiovascular disease."
+      },
+      {
+        "question": "What should I make of the dosage figures I find online?",
+        "answer": "Published figures such as 5 and 10 mg/kg in aged mice describe the conditions of one experiment — that species, that route, that schedule. They are not conversions and not protocols. Numbers presented online as human dosing are not derived from any human study of this compound, because no such study was identified here."
+      },
+      {
+        "question": "Have any side effects been reported?",
+        "answer": "There is no human side-effect dataset. In the 2018 mouse study the authors reported no observable adverse effects and no change in food intake under their conditions, and in HeLa work the compound inhibited that line's proliferation without apparently affecting HEK-293 proliferation. Those are model-specific observations and do not support words like safe or well tolerated."
+      },
+      {
+        "question": "Does \"Spray\" mean this is a nasal spray?",
+        "answer": "No. The word describes the format of the listing. Veracue has not published a route, formulation, delivery device, concentration or fill volume for this product, so no nasal, oral, sublingual, buccal or topical use is established, and no absorption or delivery characteristic follows from the format name."
+      },
+      {
+        "question": "Can I see a certificate of analysis for this product?",
+        "answer": "No certificate for 5-Amino-1MQ Spray was found in the Veracue certificates library at the time of writing, and that library currently shows no published reports. Veracue states certificates are being added and can be requested directly. A certificate is only documentation for the specific lot it names."
+      }
+    ],
+
+    "internalLinks": [
+      { "label": "Shop all research materials", "url": "/shop", "context": "Catalog of currently listed Veracue products" },
+      { "label": "Certificates of analysis", "url": "/certificates", "context": "Where published lot documentation appears and can be requested" },
+      { "label": "Contact Veracue", "url": "/contact-us", "context": "Request product documentation or lot-specific information" },
+      { "label": "Help and FAQ", "url": "/faq", "context": "Ordering, documentation and research-use questions" },
+      { "label": "Research articles", "url": "/blog", "context": "Longer-form research background" },
+      { "label": "About Veracue", "url": "/about-us", "context": "Company information and research-use positioning" }
+    ],
+
+    "seo": {
+      "primaryKeyword": "5-Amino-1MQ peptide",
+      "secondaryKeywords": [
+        "5-Amino-1MQ",
+        "5 amino 1mq",
+        "5-Amino-1MQ Spray",
+        "5-Amino-1MQ research compound",
+        "5-Amino-1MQ dosage",
+        "5-Amino-1MQ benefits",
+        "5 amino 1mq side effects",
+        "what is 5-Amino-1MQ",
+        "what does 5-Amino-1MQ do",
+        "NNMT inhibitor",
+        "nicotinamide N-methyltransferase inhibitor",
+        "5-amino-1-methylquinolinium"
+      ],
+      "keywordTreatment": "The primary keyword reflects how researchers search, not how the compound is classified. The page uses it where it reads naturally and corrects the underlying assumption in the identity section rather than adopting it as a classification.",
+      "searchIntent": {
+        "primary": "Informational-commercial — identify the compound, understand what research exists, and evaluate a listed research product",
+        "supportingIntents": [
+          "Identity and classification — is 5-Amino-1MQ a peptide",
+          "Mechanism — what NNMT is and what the compound does to it",
+          "Benefits — what research has measured",
+          "Dosage — what published doses mean",
+          "Side effects — what safety information exists",
+          "Product format — what a spray listing does and does not establish"
+        ]
+      },
+      "title": "5-Amino-1MQ Spray | NNMT Research Compound | Veracue",
+      "metaDescription": "5-Amino-1MQ Spray from Veracue: molecular identity, NNMT mechanism, preclinical evidence, dosage context, safety findings and product documentation. Research use only.",
+      "canonical": "https://veracue-peptides.vercel.app/product/5-amino-1mq-spray",
+      "suggestedSlug": "/product/5-amino-1mq-spray",
+      "slugNote": "Verified unclaimed at the time of writing and consistent with Veracue's /product/<name> convention."
+    },
+
+    "geo": {
+      "primaryEntity": {
+        "name": "5-Amino-1-methylquinolinium",
+        "type": "Chemical compound — small molecule",
+        "identifiers": {
+          "pubchemCid": "950107",
+          "cationFormula": "C10H11N2+",
+          "commonSaltCas": "42464-96-0",
+          "commonSaltFormula": "C10H11N2·I",
+          "commonSaltMolecularWeight": "286.11 g/mol"
+        },
+        "aliases": ["5-Amino-1MQ", "5A1MQ", "5MQ"]
+      },
+      "secondaryEntities": [
+        { "name": "Nicotinamide N-methyltransferase (NNMT)", "type": "Enzyme", "note": "Cytosolic SAM-dependent methyltransferase, EC 2.1.1.1" },
+        { "name": "Nicotinamide", "type": "Chemical compound", "note": "NNMT substrate and NAD+ salvage precursor" },
+        { "name": "S-adenosylmethionine (SAM)", "type": "Chemical compound", "note": "Methyl donor consumed by the NNMT reaction" },
+        { "name": "1-Methylnicotinamide", "type": "Chemical compound", "note": "NNMT reaction product used as a target-engagement readout" },
+        { "name": "NAD+", "type": "Chemical compound", "note": "Cofactor whose salvage pathway shares nicotinamide with NNMT" },
+        { "name": "Veracue", "type": "Organization", "note": "Supplier of research-use-only materials" }
+      ],
+      "entityRelationships": [
+        "5-Amino-1MQ → is a → small-molecule research compound",
+        "5-Amino-1MQ → is not a → peptide",
+        "5-Amino-1MQ → inhibits → NNMT",
+        "NNMT → expands to → nicotinamide N-methyltransferase",
+        "NNMT → methylates → nicotinamide",
+        "NNMT → consumes → S-adenosylmethionine",
+        "NNMT → produces → 1-methylnicotinamide",
+        "Nicotinamide → is a precursor for → NAD+ salvage",
+        "5-Amino-1MQ Spray → is a → product format listing supplied by Veracue",
+        "5-Amino-1MQ Spray → is classified as → Research Use Only"
+      ],
+      "scientificCategory": "Small-molecule methyltransferase inhibitor studied in metabolic research",
+      "researchTopics": [
+        "NNMT inhibition",
+        "NAD+ and methyl-donor metabolism",
+        "Adipocyte lipogenesis",
+        "Diet-induced obesity models",
+        "Hepatic steatosis in rodent models",
+        "Aged skeletal muscle regeneration"
+      ],
+      "terminology": {
+        "preferredScientificName": "5-amino-1-methylquinolinium",
+        "acceptedAbbreviations": ["5-Amino-1MQ", "5A1MQ", "5MQ"],
+        "searchTerminology": ["5-amino-1mq peptide", "5 amino 1mq", "5-amino-1mq dosage", "5 amino 1mq side effects"],
+        "avoidedTerminology": ["peptide (as a classification)", "NAD+ booster", "fat burner", "metabolism booster"]
+      },
+      "ambiguityNotes": [
+        "The search phrase \"5-Amino-1MQ peptide\" does not indicate peptide classification; it reflects the catalogs and communities where the compound circulates.",
+        "Two molecular weights appear in public sources because one describes the cation and the other the iodide salt; the difference is the counterion.",
+        "\"NNMT inhibitor\" covers several chemotypes and modalities, including antisense knockdown; findings attach to specific interventions, not to the label.",
+        "\"Spray\" in this listing is a format designation and carries no route, delivery or absorption meaning."
+      ]
+    },
+
+    "aeo": {
+      "directAnswers": [
+        { "question": "What is 5-Amino-1MQ?", "answer": "A small-molecule quinolinium compound, 5-amino-1-methylquinolinium, studied as an inhibitor of the enzyme nicotinamide N-methyltransferase." },
+        { "question": "Is 5-Amino-1MQ a peptide?", "answer": "No. It has no amino acids and no peptide bonds; its cation formula is C10H11N2+." },
+        { "question": "What does it target?", "answer": "Nicotinamide N-methyltransferase (NNMT), a cytosolic SAM-dependent methyltransferase." },
+        { "question": "Has it been tested in humans?", "answer": "No direct human interventional study was identified in the sources reviewed for this page." },
+        { "question": "Is the Veracue product for human use?", "answer": "No. It is supplied for laboratory and research use only." }
+      ],
+      "keyDefinitions": [
+        { "term": "5-Amino-1MQ", "definition": "Shorthand for 5-amino-1-methylquinolinium, a methylated quinolinium cation used in research as an NNMT inhibitor." },
+        { "term": "NNMT", "definition": "Nicotinamide N-methyltransferase; transfers a methyl group from S-adenosylmethionine to nicotinamide, producing 1-methylnicotinamide." },
+        { "term": "1-Methylnicotinamide", "definition": "The product of the NNMT reaction; its intracellular level is used as a readout of NNMT inhibition." },
+        { "term": "Research Use Only", "definition": "Supplied for laboratory research; not for human or veterinary use, administration, or any diagnostic or therapeutic purpose." },
+        { "term": "Spray (format)", "definition": "A packaging designation for this listing; it establishes no administration route or delivery characteristic." }
+      ],
+      "researchQuestions": [
+        "What is the verified molecular identity of 5-Amino-1MQ?",
+        "What evidence supports NNMT target engagement?",
+        "Which metabolic endpoints have been measured in animal models?",
+        "What is known about muscle regeneration findings in aged mice?",
+        "Does human evidence exist for this compound?",
+        "What product documentation should be requested before use?"
+      ],
+      "dosageIntent": {
+        "userQuestion": "What is the dosage of 5-Amino-1MQ?",
+        "answer": "Published doses are experimental conditions rather than instructions. One aged-mouse study used 5 and 10 mg/kg for a week after an induced injury; another gave once-daily dosing to obese mice for 28 days. These describe those experiments only.",
+        "boundary": "No human dosing, schedule, cycle, route, reconstitution method or per-spray figure is provided on this page or by Veracue."
+      },
+      "benefitsIntent": {
+        "userQuestion": "What are the benefits of 5-Amino-1MQ?",
+        "answer": "Research reports measured endpoints, not benefits. In obese mice: reduced body weight and adipose mass, smaller adipocytes, lower plasma cholesterol, improved glucose tolerance and reduced hepatic steatosis. In aged injured mice: greater myofiber cross-sectional area and peak torque.",
+        "boundary": "All of these are preclinical findings in defined models and are not human outcomes."
+      },
+      "safetyIntent": {
+        "userQuestion": "What are the side effects of 5-Amino-1MQ?",
+        "answer": "No human safety dataset was identified. One mouse study reported no observable adverse effects and unchanged food intake under its conditions; a cell study reported no apparent effect on HEK-293 proliferation at concentrations that inhibited HeLa proliferation.",
+        "boundary": "These observations do not support claims that the compound is safe, well tolerated or free of side effects."
+      },
+      "productFormatIntent": {
+        "userQuestion": "Is the 5-Amino-1MQ Spray a nasal spray?",
+        "answer": "The route is not publicly specified on the current Veracue product information. \"Spray\" describes the listing format only.",
+        "boundary": "No nasal, oral, sublingual, buccal or topical use, and no absorption or bioavailability characteristic, is established by the format name."
+      }
+    },
+
+    "schema": {
+      "product": {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "5-Amino-1MQ Spray",
+        "alternateName": "5-Amino-1-methylquinolinium Spray",
+        "category": "Research Use Only material",
+        "description": "5-Amino-1MQ Spray supplied by Veracue for laboratory and research use only. 5-Amino-1MQ is 5-amino-1-methylquinolinium, a small-molecule inhibitor of nicotinamide N-methyltransferase (NNMT). Not for human or veterinary use.",
+        "brand": { "@type": "Brand", "name": "Veracue" },
+        "url": "https://veracue-peptides.vercel.app/product/5-amino-1mq-spray",
+        "additionalProperty": [
+          { "@type": "PropertyValue", "name": "Intended use", "value": "Research Use Only" },
+          { "@type": "PropertyValue", "name": "Product format", "value": "Spray-format listing; administration route not specified" }
+        ]
+      },
+      "webPage": {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "5-Amino-1MQ Spray | NNMT Research Compound | Veracue",
+        "url": "https://veracue-peptides.vercel.app/product/5-amino-1mq-spray",
+        "description": "Molecular identity, NNMT mechanism, tiered preclinical evidence, dosage context, safety findings and product documentation guidance for Veracue's 5-Amino-1MQ Spray. Research use only.",
+        "inLanguage": "en",
+        "isPartOf": { "@type": "WebSite", "name": "Veracue", "url": "https://veracue-peptides.vercel.app/" },
+        "about": { "@type": "Thing", "name": "5-Amino-1-methylquinolinium", "sameAs": "https://pubchem.ncbi.nlm.nih.gov/compound/950107" },
+        "mentions": [
+          { "@type": "Thing", "name": "Nicotinamide N-methyltransferase" },
+          { "@type": "Thing", "name": "1-Methylnicotinamide" },
+          { "@type": "Thing", "name": "S-adenosylmethionine" }
+        ]
+      },
+      "breadcrumbList": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://veracue-peptides.vercel.app/" },
+          { "@type": "ListItem", "position": 2, "name": "Shop", "item": "https://veracue-peptides.vercel.app/shop" },
+          { "@type": "ListItem", "position": 3, "name": "5-Amino-1MQ Spray", "item": "https://veracue-peptides.vercel.app/product/5-amino-1mq-spray" }
+        ]
+      },
+      "faqPage": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Why is 5-Amino-1MQ listed alongside research peptides if it isn't one?", "acceptedAnswer": { "@type": "Answer", "text": "Because catalogs are organised around how researchers search, and the compound came into circulation through the same channels as metabolic research peptides. That is a commercial adjacency, not a chemical one. Its structure is a single small ring system with the cation formula C10H11N2+, so it belongs with small-molecule enzyme inhibitors regardless of where a listing places it." } },
+          { "@type": "Question", "name": "Which molecular weight is correct — 159 or 286?", "acceptedAnswer": { "@type": "Answer", "text": "Both, for different things. Around 159 corresponds to the bare cation described in PubChem CID 950107, while 286.11 g/mol is the isolable iodide salt, CAS 42464-96-0, formula C10H11N2·I. Listings differ because they quote different entities. Neither describes the Veracue product, since the chemical form in this listing is not publicly specified." } },
+          { "@type": "Question", "name": "What does NNMT do in a cell?", "acceptedAnswer": { "@type": "Answer", "text": "It transfers a methyl group from S-adenosylmethionine to nicotinamide, producing 1-methylnicotinamide. Because nicotinamide is a precursor for NAD+ salvage and S-adenosylmethionine is the main cellular methyl donor, the reaction draws on two pools that matter for energy metabolism and for methylation. NNMT is expressed strongly in liver and adipose tissue." } },
+          { "@type": "Question", "name": "How do researchers know the compound actually inhibits NNMT?", "acceptedAnswer": { "@type": "Answer", "text": "The most direct published readout is a fall in intracellular 1-methylnicotinamide, the enzyme's own reaction product, measured in cultured adipocytes by Neelakantan and colleagues. The same work reported that the methylquinolinium analogues did not inhibit related SAM-dependent methyltransferases or NAD+ salvage enzymes, which is what supports calling the engagement selective." } },
+          { "@type": "Question", "name": "What metabolic endpoints have moved in animal studies?", "acceptedAnswer": { "@type": "Answer", "text": "In diet-induced obese mice, published studies reported reduced body weight and white adipose mass, smaller adipocytes, lower plasma total cholesterol, improved oral glucose tolerance and insulin sensitivity, suppressed hyperinsulinaemia, and attenuated hepatic steatosis with reduced liver triglycerides. Circulating ALT, AST and ketone bodies were reported as normalised in the 28-day study." } },
+          { "@type": "Question", "name": "Are the mouse weight results explained by the animals eating less?", "acceptedAnswer": { "@type": "Answer", "text": "In the 2018 study the authors reported that administration did not affect total food intake, so the observed reductions in body weight and adipose mass were not attributable to reduced feeding in that experiment. That is a single reported observation in one model, and it should be cited as such rather than generalised." } },
+          { "@type": "Question", "name": "What did the muscle research find?", "acceptedAnswer": { "@type": "Answer", "text": "In 24-month-old mice given an acute chemically induced injury to the tibialis anterior, NNMT inhibitor treatment was reported to increase muscle stem cell proliferation and fusion, produce nearly two-fold greater myofiber cross-sectional area, and raise peak torque of that muscle by roughly 70% versus controls. It is a recovery-after-injury model in aged animals." } },
+          { "@type": "Question", "name": "Is there any human research on 5-Amino-1MQ?", "acceptedAnswer": { "@type": "Answer", "text": "None was identified in the sources reviewed for this page. The searches covered PubMed-indexed literature under 5-amino-1-methylquinolinium, 5-amino-1MQ and 5A1MQ, and all identified studies were biochemical, cell-based or rodent. A 2025 review notes that no clinical trials have yet targeted NNMT specifically in cardiovascular disease." } },
+          { "@type": "Question", "name": "What should I make of the dosage figures I find online?", "acceptedAnswer": { "@type": "Answer", "text": "Published figures such as 5 and 10 mg/kg in aged mice describe the conditions of one experiment — that species, that route, that schedule. They are not conversions and not protocols. Numbers presented online as human dosing are not derived from any human study of this compound, because no such study was identified here." } },
+          { "@type": "Question", "name": "Have any side effects been reported?", "acceptedAnswer": { "@type": "Answer", "text": "There is no human side-effect dataset. In the 2018 mouse study the authors reported no observable adverse effects and no change in food intake under their conditions, and in HeLa work the compound inhibited that line's proliferation without apparently affecting HEK-293 proliferation. Those are model-specific observations and do not support words like safe or well tolerated." } },
+          { "@type": "Question", "name": "Does \"Spray\" mean this is a nasal spray?", "acceptedAnswer": { "@type": "Answer", "text": "No. The word describes the format of the listing. Veracue has not published a route, formulation, delivery device, concentration or fill volume for this product, so no nasal, oral, sublingual, buccal or topical use is established, and no absorption or delivery characteristic follows from the format name." } },
+          { "@type": "Question", "name": "Can I see a certificate of analysis for this product?", "acceptedAnswer": { "@type": "Answer", "text": "No certificate for 5-Amino-1MQ Spray was found in the Veracue certificates library at the time of writing, and that library currently shows no published reports. Veracue states certificates are being added and can be requested directly. A certificate is only documentation for the specific lot it names." } }
+        ]
+      }
+    },
+
+    "references": [
+      { "tier": 1, "citation": "Neelakantan H, Vance V, Wetzel MD, Wang HL, McHardy SF, Finnerty CC, Hommel JD, Watowich SJ. Selective and membrane-permeable small molecule inhibitors of nicotinamide N-methyltransferase reverse high fat diet-induced obesity in mice. Biochem Pharmacol. 2018;147:141-152.", "doi": "https://doi.org/10.1016/j.bcp.2017.11.007", "pmid": "29155147" },
+      { "tier": 1, "citation": "Babula JJ, Bui D, Stevenson HL, Watowich SJ, Neelakantan H. Nicotinamide N-methyltransferase inhibition mitigates obesity-related metabolic dysfunction. Diabetes Obes Metab. 2024;26(11):5272-5282.", "doi": "https://doi.org/10.1111/dom.15879", "pmid": "39161060" },
+      { "tier": 1, "citation": "Neelakantan H, Brightwell CR, Graber TG, Maroto R, Wang HL, McHardy SF, Papaconstantinou J, Fry CS, Watowich SJ. Small molecule nicotinamide N-methyltransferase inhibitor activates senescent muscle stem cells and improves regenerative capacity of aged skeletal muscle. Biochem Pharmacol. 2019;163:481-492.", "doi": "https://doi.org/10.1016/j.bcp.2019.02.008", "pmid": "30753815" },
+      { "tier": 1, "citation": "Dimet-Wiley A, Wu Q, Wiley JT, Eswar A, Neelakantan H, Savidge T, Watowich S. Reduced calorie diet combined with NNMT inhibition establishes a distinct microbiome in DIO mice. Sci Rep. 2022;12(1):484.", "doi": "https://doi.org/10.1038/s41598-021-03670-5", "pmid": "35013352" },
+      { "tier": 1, "citation": "Akar S, Duran T, Azzawri AA, Koçak N, Çelik Ç, Yıldırım Hİ. Small molecule inhibitor of nicotinamide N-methyltransferase shows anti-proliferative activity in HeLa cells. J Obstet Gynaecol. 2021;41(8):1240-1245.", "doi": "https://doi.org/10.1080/01443615.2020.1854696", "pmid": "33645410" },
+      { "tier": 1, "citation": "Yang M, Wang B, Hou W, et al. NAD metabolism enzyme NNMT in cancer-associated fibroblasts drives tumor progression and resistance to immunotherapy by modulating macrophages in urothelial bladder cancer. J Immunother Cancer. 2024;12(7):e009281.", "doi": "https://doi.org/10.1136/jitc-2024-009281", "pmid": "39067875" },
+      { "tier": 2, "citation": "Kraus D, Yang Q, Kong D, et al. Nicotinamide N-methyltransferase knockdown protects against diet-induced obesity. Nature. 2014;508(7495):258-262.", "doi": "https://doi.org/10.1038/nature13198", "pmid": "24717514" },
+      { "tier": 4, "citation": "Jawaria, Zarlashat Y, Philippovich M, Dósa E. Nicotinamide N-Methyltransferase in Cardiovascular Diseases: Metabolic Regulator and Emerging Therapeutic Target. Biomolecules. 2025;15(9):1281.", "doi": "https://doi.org/10.3390/biom15091281", "pmid": "41008588" },
+      { "tier": 4, "citation": "Zhang CY, Zhu XJ, Sun WD, Bi SZ, Lai SY, An-Liu, Li JH. Nicotinamide N-methyltransferase in non-alcoholic fatty liver disease: Mechanistic insights and emerging therapeutic strategies. Arch Biochem Biophys. 2025;772:110558.", "doi": "https://doi.org/10.1016/j.abb.2025.110558", "pmid": "40706948" },
+      { "tier": 5, "citation": "PubChem Compound Summary for CID 950107, 5-Amino-1-methylquinolinium. National Center for Biotechnology Information.", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/950107" },
+      { "tier": 5, "citation": "Sigma-Aldrich product SML2832, 5-Amino-1-methylquinolinium iodide, ≥98% (HPLC). CAS 42464-96-0; C10H11N2·I; 286.11 g/mol.", "url": "https://www.sigmaaldrich.com/US/en/product/sigma/sml2832" }
+    ],
+
+    "qualityAudit": {
+      "scientificIdentity": {
+        "classifiedCorrectly": "Yes — described throughout as a small-molecule methylated quinolinium cation, never as a peptide in its identity.",
+        "peptideTermHandling": "The phrase '5-Amino-1MQ peptide' is retained as the primary search keyword and explicitly corrected in the identity section, quick answers and FAQ.",
+        "nnmtRelationshipAccuracy": "Target engagement is supported by the reported fall in intracellular 1-methylnicotinamide and the reported counter-screens, cited to Neelakantan et al. 2018.",
+        "identityVerification": "Cation formula and CID from PubChem CID 950107; salt CAS, formula and molecular weight from the Sigma-Aldrich SML2832 catalog entry. The two-mass discrepancy is explained rather than resolved by selection.",
+        "evidenceSeparation": "Direct, target-biology, other-modality, review and catalog material are separated by tier in evidenceHierarchy and labelled per row in evidenceTable."
+      },
+      "evidence": {
+        "originalSourcesPrioritised": "Six Tier 1 primary studies; reviews used only for field status and translational obstacles.",
+        "humanAndPreclinicalSeparated": "Yes — no human interventional study identified, stated as absence of identified evidence rather than proof of absence.",
+        "otherInterventionsSeparated": "Antisense knockdown and oligonucleotide approaches are kept in Tiers 2 and 3 and never cited as compound evidence.",
+        "claimsTiedToStudies": "Every reported endpoint names its model, design and source.",
+        "limitationsStated": "Each research section and every evidence-table row carries its own limitation."
+      },
+      "product": {
+        "sprayTreatedAsFormatOnly": "Yes — route disclaimed once in productFormat, with brief reinforcement in the format quick answer and FAQ only.",
+        "routeUnknown": "Yes",
+        "concentrationUnknown": "Yes",
+        "purityUnknown": "Yes",
+        "coaStatusAccurate": "Yes — Veracue certificates library verified as showing no published reports at the time of writing; no certificate claimed for this product.",
+        "storageAccurate": "Yes — no temperature range invented and none transferred from another product.",
+        "noVialDataTransferred": "Yes — no specifications from any other Veracue listing appear on this page."
+      },
+      "seo": {
+        "peptideQueryAddressed": "Yes — primary keyword used naturally, classification corrected.",
+        "dosageQueryAddressed": "Yes — Section 8, quick answer 8, dosageIntent, FAQ 9.",
+        "benefitsQueryAddressed": "Yes — Section 7, quick answer 6, benefitsIntent, FAQ 5.",
+        "sideEffectsQueryAddressed": "Yes — Section 9, quick answer 9, safetyIntent, FAQ 10.",
+        "keywordStuffingAvoided": "Unrelated workbook peptide terms are excluded; related compounds appear only where they clarify category."
+      },
+      "geo": {
+        "primaryEntityDefined": "Yes, with PubChem CID and catalog identifiers.",
+        "nnmtDefined": "Yes, with reaction, substrates and product.",
+        "relatedCompoundsNotConfused": "NAD+ precursors, knockdown modalities and metabolic peptides are separated in Section 10 and the comparison table."
+      },
+      "aeo": {
+        "directAnswersNearTop": "Twelve quick answers precede the research sections.",
+        "answersConcise": "Each quick answer falls within the 40–90 word target.",
+        "questionsAlignedToIntent": "Derived from the workbook's identity, dosage, benefits and side-effect query clusters."
+      },
+      "ruo": {
+        "humanUseExcluded": "Stated in the hero, ruoNotice, quick answer 12 and product blocks.",
+        "dosingGuidanceExcluded": "No human dose, schedule, cycle, conversion, reconstitution or per-spray figure appears anywhere.",
+        "administrationGuidanceExcluded": "Yes",
+        "therapeuticClaimsExcluded": "Yes — all outcomes attributed to their model and study."
+      },
+      "regulatoryLanguage": "No approval, non-approval, legality or prescription-status claims are made. Compliance positioning rests on Research Use Only.",
+      "schema": {
+        "productPresent": true,
+        "webPagePresent": true,
+        "breadcrumbListPresent": true,
+        "faqPagePresent": true,
+        "propertiesNote": "No SKU, price, availability, rating, review, dosage or concentration properties are asserted. No offers node is included because no product-level pricing or availability is published."
+      },
+      "keywordWorkbookUse": "The workbook's relative search-interest columns informed topic priority only — identity, dosage, benefits and side effects lead the architecture. No absolute search-volume claim is made anywhere on the page.",
+      "internalLinks": "All six destinations verified as live on the current Veracue site; no invented URLs.",
+      "structuralCompliance": {
+        "researchSections": 11,
+        "quickAnswers": 12,
+        "faqs": 12,
+        "evidenceTableEntries": 10
+      }
+    }
+  }
+}

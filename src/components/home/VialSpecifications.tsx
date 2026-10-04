@@ -26,25 +26,25 @@ const SPEC_CARDS: SpecificationCard[] = [
     id: 'hplc-purity',
     step: '01',
     category: 'CHROMATOGRAPHY',
-    badge: 'RP-HPLC ≥99%',
-    title: '≥99% HPLC Certified Purity',
-    pointerLabel: 'Pure Lyophilized Cake (≥99%)',
+    badge: 'RP-HPLC TESTED',
+    title: 'HPLC Purity Per Batch',
+    pointerLabel: 'Lyophilized Cake (HPLC Tested)',
     pointerTargetY: '74%',
-    description: 'Every synthesis lot undergoes high-resolution reverse-phase chromatography (RP-HPLC) testing. Peak separation verifies minimum 99.0% chemical purity with zero truncated sequences.',
-    technicalSpec: 'USP Analytical Standards • Single Sharp Peak',
+    description: 'Each batch is analyzed by reverse-phase HPLC, and the purity result for that batch is reported on its Certificate of Analysis.',
+    technicalSpec: 'Batch HPLC Data • Purity on Every COA',
     column: 'left',
     icon: Microscope,
   },
   {
     id: 'lyophilization',
     step: '02',
-    category: 'CLEANROOM FORMULATION',
-    badge: 'ISO-7 / CLASS 10K',
-    title: 'Sterile Lyophilization Matrix',
-    pointerLabel: 'N₂ Gas High-Vacuum Butyl Stopper',
+    category: 'VIAL FORMAT',
+    badge: 'LYOPHILIZED',
+    title: 'Lyophilized Vial Format',
+    pointerLabel: 'Sealed Vial Stopper',
     pointerTargetY: '14%',
-    description: 'Formulated in ISO-7 cleanroom laboratories and freeze-dried into a uniform lyophilized cake. Capped under high-vacuum nitrogen with butyl stoppers to eliminate moisture hydrolysis.',
-    technicalSpec: 'Moisture <1.5% • High-Vacuum Nitrogen Shield',
+    description: 'Peptides are supplied freeze-dried as a lyophilized cake in a stoppered glass vial, a format used to keep the compound stable until reconstitution.',
+    technicalSpec: 'Freeze-Dried Powder • Sealed Vial',
     column: 'left',
     icon: Layers,
   },
@@ -54,23 +54,23 @@ const SPEC_CARDS: SpecificationCard[] = [
     category: 'MASS SPECTROMETRY',
     badge: 'ESI-MS IDENTITY',
     title: 'ESI-MS Identity Validation',
-    pointerLabel: 'Type-I Borosilicate Glass • ±0.5 Da',
+    pointerLabel: 'Glass Vial • Identity Check',
     pointerTargetY: '46%',
-    description: 'Electrospray Ionization Mass Spectrometry (ESI-MS) measures empirical molecular mass against theoretical sequence within ±0.5 Da, validating structural authenticity.',
-    technicalSpec: 'Sequence Authenticated • Zero Isomers Confirmed',
+    description: 'Mass spectrometry compares the measured molecular mass of the compound with its expected value, giving an identity check alongside the HPLC data.',
+    technicalSpec: 'Identity Check • Reported Per Batch',
     column: 'right',
     icon: ShieldCheck,
   },
   {
     id: 'batch-coa',
     step: '04',
-    category: 'COLD CHAIN & COA',
-    badge: 'SERIALIZED LOT',
-    title: 'Traceable Batch COA & Cold Chain',
-    pointerLabel: 'Tamper-Evident Serial QR Code',
+    category: 'BATCH COA',
+    badge: 'LOT COA',
+    title: 'Traceable Batch COA',
+    pointerLabel: 'Lot Label',
     pointerTargetY: '62%',
-    description: 'Every vial includes a tamper-evident label with a unique serial lot QR code linking to public analytical reports. Maintained at -20°C with insulated temperature protection.',
-    technicalSpec: '100% Chain-of-Custody • -20°C Desiccated Storage',
+    description: 'Each vial is labeled with its lot number, and the Certificate of Analysis for that batch can be looked up in our COA archive before you order.',
+    technicalSpec: 'Lot-Specific COA • Shipped From the USA',
     column: 'right',
     icon: QrCode,
   },
@@ -187,7 +187,7 @@ export function VialSpecifications() {
 
           {/* Subtitle */}
           <p className="text-neutral-900/85 text-sm sm:text-base md:text-lg leading-relaxed font-sans mt-3 sm:mt-4 max-w-2xl mx-auto">
-            Before a vial ships, it's sealed under high-vacuum nitrogen, run through third-party HPLC testing, and checked for sequence identity. Nothing skips a step.
+            Each batch is HPLC tested and checked for identity, and the results are published on its Certificate of Analysis before you order.
           </p>
         </div>
 
@@ -251,10 +251,9 @@ export function VialSpecifications() {
                 {/* Large Heroic Vial Image */}
                 <div className="w-[190px] xs:w-[220px] sm:w-[260px] md:w-[290px] lg:w-[305px] xl:w-[330px] aspect-[2/3] relative filter drop-shadow-[0_18px_32px_rgba(25,27,20,0.2)] transition-transform duration-500 hover:scale-[1.02]">
                   <Image
-                    src="/veracue-images/veracue-research-grade-50mg-droplets-portrait.png"
+                    src="/veracue-images/veracue-research-grade-droplets-portrait.webp"
                     alt="Veracue Research Grade 50mg Lyophilized Peptide Vial"
                     fill
-                    priority
                     sizes="(max-width: 640px) 220px, (max-width: 1024px) 290px, 330px"
                     className="object-contain select-none pointer-events-none"
                   />

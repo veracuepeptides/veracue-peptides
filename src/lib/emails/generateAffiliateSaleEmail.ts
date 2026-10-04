@@ -7,7 +7,7 @@ export async function generateAffiliateSaleEmail(affiliate: any, commissionAmoun
   const name = escapeHtml(affiliate.displayName || 'Partner')
   const accent = isVoid ? BRAND.stone : BRAND.olive
 
-  return `${shellOpen({ title: isVoid ? 'Sale Tracked (Voided) — Veracue Partners' : 'New Sale Tracked — Veracue Partners', headerColor: BRAND.olive, headerWaveInto: '#ffffff' })}
+  return `${shellOpen({ title: isVoid ? 'Sale Tracked (Voided) | Veracue Partners' : 'New Sale Tracked | Veracue Partners', headerColor: BRAND.olive, headerWaveInto: '#ffffff' })}
           <tr>
             <td style="background-color:#ffffff;padding:8px 24px 36px;text-align:center;">
               ${iconBadge(isVoid ? 'x-circle' : 'coin', BRAND.charcoal)}

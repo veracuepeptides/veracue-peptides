@@ -25,7 +25,7 @@ const STEPS: StepItem[] = [
     label: 'SOURCING & SYNTHESIS',
     subtitle: 'Where Purity Starts',
     description: 'CAREFUL SCREENING OF EVERY RAW MATERIAL BATCH FOR MAXIMUM MOLECULAR PURITY.',
-    detail: 'HPLC-verified amino acid precursors synthesized under certified cleanroom standards with zero truncated peptide sequences.',
+    detail: 'Purity begins with the starting materials, and each finished batch is then analyzed by HPLC to see how it turned out.',
     image: '/veracue-images/veracue-epithalon-50mg-water-bamboo.webp',
     tag: 'PURITY FOUNDATION',
     icon: Microscope,
@@ -33,10 +33,10 @@ const STEPS: StepItem[] = [
   {
     id: 2,
     number: '2',
-    label: '3RD-PARTY TESTING',
+    label: 'ANALYTICAL TESTING',
     subtitle: 'Analytical Validation',
-    description: 'INDEPENDENT LAB VERIFICATION CERTIFYING IDENTITY, PURITY, AND MASS CONFORMANCE.',
-    detail: 'Double-blind RP-HPLC chromatography and ESI-MS spectrometry verification with publicly accessible batch COA documentation.',
+    description: 'HPLC ANALYSIS OF EVERY BATCH, WITH THE PURITY RESULT REPORTED ON ITS COA.',
+    detail: 'Each batch is analyzed by HPLC and the result is published on its Certificate of Analysis for you to review.',
     image: '/veracue-images/veracue-nad-plus-500mg-sunlight-branches.webp',
     tag: 'INDEPENDENT AUDIT',
     icon: ShieldCheck,
@@ -44,10 +44,10 @@ const STEPS: StepItem[] = [
   {
     id: 3,
     number: '3',
-    label: 'COLD-CHAIN PACKAGING',
-    subtitle: 'Cryogenic Protection',
-    description: 'VACUUM-SEALED TEMPERATURE-CONTROLLED PACKAGING PRESERVING PEPTIDE INTEGRITY.',
-    detail: 'Vacuum-lyophilized under nitrogen in ISO-7 cleanrooms with butyl stoppers and thermal insulation to eliminate hydrolysis.',
+    label: 'PROTECTIVE PACKAGING',
+    subtitle: 'Careful Handling',
+    description: 'SEALED VIALS PACKED WITH INSULATION TO PROTECT THE PEPTIDE DURING TRANSIT.',
+    detail: 'Peptides are supplied lyophilized in stoppered vials and packed with insulation for transit.',
     image: '/veracue-images/veracue-ghk-cu-50mg-ice-bed-warm.webp',
     tag: 'THERMAL SHIELD',
     icon: ThermometerSnowflake,
@@ -57,8 +57,8 @@ const STEPS: StepItem[] = [
     number: '4',
     label: 'LABORATORY DISPATCH',
     subtitle: 'Tracked Direct Delivery',
-    description: 'FAST, TRACKED EXPEDITION IN INSULATED CONTAINERS DIRECT TO ACCREDITED INSTITUTES.',
-    detail: 'Same-day priority dispatch with real-time courier telemetry, verified cold packaging, and tamper-evident custody seals.',
+    description: 'TRACKED SHIPMENTS FROM THE USA, PACKED IN INSULATED CONTAINERS FOR RESEARCH USE.',
+    detail: 'Orders ship from the USA with tracking, in protective packaging, so you can follow each parcel to your door.',
     image: '/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp',
     tag: 'SECURE CUSTODY',
     icon: Truck,
@@ -152,7 +152,6 @@ export function JourneySection() {
                       src={currentStep.image}
                       alt={currentStep.label}
                       fill
-                      priority
                       className="object-cover object-center"
                       sizes="(max-width: 1024px) 100vw, 45vw"
                     />
@@ -296,7 +295,7 @@ export function JourneySection() {
             {/* ------------------------------------------------------------ */}
             <div className="py-4 sm:py-5 px-6 sm:px-10 lg:px-16 flex flex-col sm:flex-row items-center justify-between gap-2 text-center bg-[#f0efeb]">
               <span className="text-[10px] sm:text-[11px] font-sans font-medium tracking-[0.2em] uppercase text-neutral-500">
-                VERACUE ANALYTICAL WORKFLOW • ISO-7 CLEANROOM STANDARDS
+                VERACUE ANALYTICAL WORKFLOW • HPLC TESTED PER BATCH
               </span>
               
               <Link

@@ -1,0 +1,176 @@
+{
+  "product_slug": "oxytocin-spray",
+  "product_name": "Oxytocin Spray",
+  "primary_keyword": "oxytocin spray",
+  "secondary_keywords": [
+    "oxytocin peptide",
+    "oxytocin hormone",
+    "oxytocin nasal spray",
+    "oxytocin acetate peptide",
+    "intranasal oxytocin",
+    "what is oxytocin"
+  ],
+  "classification": "Research Use Only (RUO) laboratory research material. Not a drug, medicine, therapeutic, dietary supplement, food, cosmetic, or consumer wellness product. Not for human or animal use.",
+  "meta": {
+    "title": "Oxytocin Spray Research Peptide (OT) | Veracue",
+    "description": "Covers oxytocin's structure, synthesis, receptor biology, and research applications, and explains what Veracue's Oxytocin Spray listing does and does not specify.",
+    "title_char_count": 54,
+    "description_char_count": 160
+  },
+  "top_of_page_blurb": "Oxytocin is a nine-amino-acid neuropeptide hormone synthesized in the hypothalamus and released from the posterior pituitary, studied for its roles in uterine contractility, lactation physiology, and social and stress-related behavior research. Veracue's Oxytocin Spray is a Research Use Only laboratory material. The word \"Spray\" is part of the product name; it does not by itself confirm container type, formulation, concentration, or any delivery mechanism, and this page does not assume or recommend an administration route. This page also distinguishes the endogenous hormone, this research listing, and FDA-approved synthetic oxytocin drug products (Pitocin, Syntocinon), which are separate items not sold by Veracue.",
+  "product_at_a_glance": {
+    "compound": "Oxytocin (OT)",
+    "chemical_class": "Cyclic nonapeptide hormone (neurohypophysial peptide family, alongside vasopressin)",
+    "sequence": "Cys-Tyr-Ile-Gln-Asn-Cys-Pro-Leu-Gly-NH2, cyclized by a disulfide bond between the cysteine residues at positions 1 and 6",
+    "molecular_formula": "C43H66N12O12S2 (free base)",
+    "molecular_weight": "Approximately 1007.19 g/mol (free base). Commercial peptide stock is often supplied as an acetate salt, which carries additional mass from the acetate counterion; the salt form of this specific listing is not publicly specified on the current Veracue product information.",
+    "cas_number": "50-56-6 (oxytocin, free base)",
+    "closest_related_compound": "Vasopressin (arginine vasopressin / AVP) — a structurally related nonapeptide differing at two residues, with distinct receptor selectivity",
+    "product_format": "Not publicly specified on the current Veracue product information. The word \"Spray\" in the product name should not be read as confirming a nasal, intranasal, metered-dose, sterile, preservative-free, or any other specific container, formulation, or delivery attribute.",
+    "sku_fill_volume_concentration_price_purity_lot_coa": "Not publicly specified on the current Veracue product information.",
+    "research_designation": "Research Use Only (RUO) — not for human or animal use, not a drug, cosmetic, supplement, or food"
+  },
+  "what_it_is_not": [
+    "Not confirmed to be a nasal-administration or intranasal product — the word \"Spray\" in the product name does not by itself establish container type, delivery mechanism, or any administration route",
+    "Not Pitocin or Syntocinon — these are FDA-approved synthetic oxytocin injection products manufactured and labeled under pharmaceutical regulatory approval for human obstetric use; this research material is not an alternative, generic, or substitute for them",
+    "Not a fertility, labor-induction, or postpartum-care product",
+    "Not a treatment for anxiety, depression, autism spectrum conditions, or any other mental health or neurodevelopmental condition",
+    "Not a bonding, relationship, or sexual-enhancement product",
+    "Not a weight-loss or performance-enhancement product",
+    "Not a dietary supplement, cosmetic, or consumer wellness product",
+    "Not evidence that effects reported for endogenously released oxytocin transfer to this or any administered research material — formulation, purity, and exposure route can all affect research outcomes"
+  ],
+  "research_context_and_mechanism": {
+    "heading": "Research Focus & Mechanism Overview",
+    "subsections": [
+      {
+        "title": "Molecular Identity and Synthesis",
+        "body": "Oxytocin is synthesized as part of a larger precursor protein, preprooxytocin-neurophysin I, produced mainly in magnocellular neurons of the paraventricular and supraoptic nuclei of the hypothalamus. Enzymatic processing yields the mature nine-residue peptide, packaged with its carrier protein neurophysin I and transported to the posterior pituitary for calcium-dependent release into circulation. Oxytocin is also synthesized locally in other tissues studied in the literature, including the uterus, and oxytocinergic projections extend to numerous brain regions, making central versus peripheral oxytocin signaling a distinct research question rather than a single unified system."
+      },
+      {
+        "title": "Receptor Biology",
+        "body": "Oxytocin acts through the oxytocin receptor (OXTR), a class A G-protein-coupled receptor coupled mainly to Gq/11 signaling, activating phospholipase C and downstream calcium mobilization in tissues such as the myometrium and mammary myoepithelial cells. OXTR is expressed in the brain, uterus, mammary gland, heart, kidney, and other peripheral tissues, with expression patterns that vary by species and individual. Oxytocin also binds the structurally related vasopressin V1a receptor with lower affinity, a cross-reactivity noted in pharmacological studies of both peptides."
+      },
+      {
+        "title": "Central Versus Peripheral Access",
+        "body": "A recurring methodological question in the literature is whether peripherally administered oxytocin meaningfully reaches central nervous system receptor populations, since oxytocin does not readily cross the blood–brain barrier the way small lipophilic molecules do. Some human studies using intranasal delivery report behavioral or neuroimaging changes, while others report inconsistent or non-significant central effects; proposed explanations include olfactory/trigeminal nerve pathways, saturable transport, and indirect peripheral signaling, without full consensus. This discussion describes findings from the general scientific literature on oxytocin administration and is not a statement about Veracue's Oxytocin Spray, whose formulation and delivery characteristics are not publicly specified."
+      },
+      {
+        "title": "Why Formulation and Documentation Matter for Research Use",
+        "body": "Peptide stability, potential degradation or aggregation, container-material interactions, and consistency of delivered amounts are all recognized variables in peptide research generally. Because Veracue has not published concentration, fill volume, salt form, or stability data for this specific listing, researchers should request current documentation directly from Veracue and should not assume that values reported for other Veracue oxytocin listings, or general peptide literature, apply to this product."
+      }
+    ]
+  },
+  "problem_solution_sections": [
+    {
+      "problem": "I need to know whether \"Oxytocin Spray\" and Veracue's other oxytocin listings refer to the same molecule before requesting documentation.",
+      "solution": "The active molecule referenced is the same nonapeptide hormone (sequence Cys-Tyr-Ile-Gln-Asn-Cys-Pro-Leu-Gly-NH2) referenced across Veracue's oxytocin-related listings. The product name \"Spray\" distinguishes this listing but does not by itself confirm salt form, concentration, or formulation — confirm these details directly with Veracue before assuming they match any other listing."
+    },
+    {
+      "problem": "I want to distinguish this research material from the FDA-approved oxytocin drugs used in obstetric medicine before citing it in a literature review.",
+      "solution": "Pitocin and Syntocinon are brand-name synthetic oxytocin injection products approved by the FDA and other regulators for human obstetric use, manufactured under pharmaceutical Good Manufacturing Practice with clinically established dosing guidance. Veracue's Oxytocin Spray is a separate, non-pharmaceutical research item, not manufactured, labeled, or approved for that purpose, and the two should not be cited as equivalent evidence for one another."
+    },
+    {
+      "problem": "I assumed \"Spray\" meant this is a nasal-delivery product and need to confirm that before writing a methods section.",
+      "solution": "That assumption is not supported. The word \"Spray\" is part of the product name only; Veracue has not published the container type, delivery mechanism, or any administration route for this listing. Do not describe it as a nasal, intranasal, or any other specific delivery-route product without direct confirmation from Veracue."
+    },
+    {
+      "problem": "I'm designing an experiment and need to understand why oxytocin research findings on social behavior are described as inconsistent across studies.",
+      "solution": "Meta-analyses and systematic reviews of intranasal oxytocin studies in humans have repeatedly noted substantial heterogeneity in effect sizes and directions, attributable to dose, single- versus repeated-dose design, participant sex, baseline traits, the specific outcome measured, and whether central delivery was independently confirmed. Treat any single study's effect as conditional on its specific design rather than a generalizable property of oxytocin administration."
+    },
+    {
+      "problem": "I need a citable explanation of oxytocin's role in uterine physiology without overstating it as a treatment mechanism.",
+      "solution": "Endogenous oxytocin binds OXTR on myometrial smooth muscle, triggering intracellular calcium release and contraction — a mechanism well established in reproductive physiology research and the basis for clinical use of approved synthetic oxytocin drugs. That clinical use concerns a separate, regulator-approved pharmaceutical product administered by clinicians; it is not a claim about Veracue's research material, which carries no administration guidance."
+    },
+    {
+      "problem": "I keep seeing oxytocin referred to as the \"bonding hormone\" and need the more precise research framing for a paper.",
+      "solution": "The \"bonding hormone\" framing summarizes animal research (notably in prairie voles) and human studies linking oxytocin signaling to attachment and some social-cognition measures, but the underlying literature describes context-, species-, and paradigm-dependent effects rather than one universal action. Technical writing generally avoids the shorthand for this reason."
+    },
+    {
+      "problem": "I want to know if lactation-related oxytocin research applies to this product.",
+      "solution": "Oxytocin's role in the milk-ejection reflex — binding OXTR on mammary myoepithelial cells to trigger contraction — is a well-characterized area of endocrine physiology research describing the endogenous hormone's function. It is not a claim about Veracue's Oxytocin Spray, which is not manufactured, tested, or offered for any use in lactation or infant feeding."
+    },
+    {
+      "problem": "I need to explain why \"oxytocin spray\" shows high consumer search interest even though this is a research listing.",
+      "solution": "Keyword and search-trend data show substantial public search volume around terms like \"oxytocin spray,\" \"oxytocin nasal spray,\" and general questions about oxytocin's function, reflecting consumer interest in oxytocin's behavioral associations rather than demand for a laboratory reagent. Where a query has medical or personal-use intent, this page answers educationally and restates the RUO boundary rather than offering personal-use guidance."
+    },
+    {
+      "problem": "I need the correct terminology for the disulfide-bridged cyclic structure when describing the molecule in a methods section.",
+      "solution": "Oxytocin is a cyclic nonapeptide: a six-residue ring closed by a disulfide bond between the cysteines at positions 1 and 6, with a three-residue C-terminal tail (Pro-Leu-Gly-NH2) carrying a C-terminal amide. Disulfide reduction or loss of the C-terminal amide would represent a distinct, degraded species — relevant to interpreting any future analytical or COA data for this listing."
+    },
+    {
+      "problem": "I want to understand how oxytocin relates to vasopressin before comparing receptor-binding data across the two peptides.",
+      "solution": "Oxytocin and arginine vasopressin (AVP) are evolutionarily related nonapeptides differing at two amino acid positions, each binding its own primary receptor (OXTR for oxytocin; V1a/V1b/V2 for vasopressin) with documented lower-affinity cross-reactivity. This structural similarity is a frequent confound in binding-assay interpretation, and researchers typically report assay-specific cross-reactivity data rather than assuming full receptor specificity for either peptide."
+    },
+    {
+      "problem": "I'm trying to determine whether stress and HPA-axis research on oxytocin supports any anxiolytic claim for this product.",
+      "solution": "Preclinical and some human research has examined oxytocin's interaction with the HPA stress axis and amygdala-mediated fear circuits, with some studies reporting attenuated cortisol or fear responses under specific conditions. These findings describe an active, condition-dependent research area, not an established therapeutic effect, and Veracue does not position Oxytocin Spray as anxiolytic or stress-reducing."
+    },
+    {
+      "problem": "I need to know what a Certificate of Analysis on this listing would and would not establish, before I request one.",
+      "solution": "A COA, if published, would be expected to report a lot number and an HPLC purity result tied to that lot, ideally with an identity-confirming method such as mass spectrometry. No lot or COA record for this listing currently appears in Veracue's catalog or COA archive. A COA establishes lot-specific analytical results; it does not by itself establish safety, efficacy, or suitability for any research protocol."
+    }
+  ],
+  "compliance_notice": {
+    "heading": "Compliance Notice",
+    "subheading": "Research Use Only Notice",
+    "body": "Oxytocin Spray supplied by Veracue is intended solely for laboratory research. It is not a drug, medicine, therapeutic, cosmetic, dietary supplement, or food, and it must not be given to humans or animals. The word \"Spray\" is part of the product name only; container type, formulation, concentration, and delivery mechanism are not publicly specified on the current Veracue product information, and no administration route is recommended, implied, or endorsed. This material has not been evaluated or approved by the FDA and is not intended to diagnose, treat, cure, or prevent any disease."
+  },
+  "faq": [
+    {
+      "q": "What is Oxytocin Spray?",
+      "a": "Oxytocin Spray is Veracue's listing of the oxytocin research peptide — a cyclic nonapeptide hormone (sequence Cys-Tyr-Ile-Gln-Asn-Cys-Pro-Leu-Gly-NH2) — supplied strictly for laboratory research use. \"Spray\" is part of the product name; container, formulation, and delivery details are not publicly specified."
+    },
+    {
+      "q": "Does \"Spray\" mean this is a nasal spray?",
+      "a": "No. The product name does not confirm a nasal, intranasal, metered-dose, or any other specific delivery attribute. Veracue has not publicly specified the container type or delivery mechanism for this listing."
+    },
+    {
+      "q": "Is this the same as Pitocin or Syntocinon?",
+      "a": "No. Pitocin and Syntocinon are FDA-approved synthetic oxytocin injection drugs manufactured and labeled for human obstetric use under pharmaceutical regulatory approval. Veracue does not sell either product; this is a separate, non-pharmaceutical research item."
+    },
+    {
+      "q": "Is oxytocin a peptide or a hormone?",
+      "a": "Both: oxytocin is a peptide hormone — a short amino acid chain (nonapeptide) that functions as a hormone when released into circulation from the posterior pituitary, and as a neuropeptide when released within the brain."
+    },
+    {
+      "q": "What is the molecular sequence and formula of oxytocin?",
+      "a": "Sequence: Cys-Tyr-Ile-Gln-Asn-Cys-Pro-Leu-Gly-NH2, cyclized by a disulfide bond between the two cysteine residues. Molecular formula: C43H66N12O12S2 (free base), molecular weight approximately 1007.19 g/mol. Commercial peptide stock is often an acetate salt with higher total mass than the free base."
+    },
+    {
+      "q": "What is the CAS number for oxytocin?",
+      "a": "The CAS number for oxytocin (free base) is 50-56-6."
+    },
+    {
+      "q": "How is oxytocin different from vasopressin?",
+      "a": "Oxytocin and arginine vasopressin are structurally related nonapeptides differing at two amino acid positions. They bind distinct primary receptors (OXTR for oxytocin; V1a/V1b/V2 for vasopressin) with some documented lower-affinity cross-reactivity, and are studied for different, though sometimes overlapping, physiological roles."
+    },
+    {
+      "q": "Does intranasal oxytocin reach the brain?",
+      "a": "This is actively debated in the research literature. Oxytocin does not readily cross the blood–brain barrier the way small lipophilic molecules do, and studies on central effects of peripherally or intranasally delivered oxytocin report inconsistent results depending on dose, timing, species, and measurement method. There is no scientific consensus on a reliable route to central nervous system access."
+    },
+    {
+      "q": "What sizes, concentration, or price does Veracue offer for Oxytocin Spray?",
+      "a": "Not publicly specified on the current Veracue product information. Confirm current fill volume, concentration, salt form, SKU, and pricing directly with Veracue."
+    },
+    {
+      "q": "Is a Certificate of Analysis available for this listing?",
+      "a": "No published lot or COA record currently appears in Veracue's catalog or COA archive for this listing. Request current documentation directly from Veracue before use in any research protocol."
+    },
+    {
+      "q": "Does Veracue provide dosing, administration, or usage instructions for this product?",
+      "a": "No. Veracue does not provide human or animal dosing, administration routes, frequency of use, reconstitution instructions for use, treatment protocols, or any other usage guidance for this or any research material. It is supplied strictly for qualified laboratory research."
+    },
+    {
+      "q": "What does \"Research Use Only\" mean for Oxytocin Spray?",
+      "a": "It means this product is supplied exclusively for use by qualified researchers in laboratory settings. It is not a drug, cosmetic, dietary supplement, or food; it has not been evaluated or approved by the FDA; and it must not be administered to humans or animals for any purpose, including any use implied by the word \"Spray\" in its name."
+    }
+  ],
+  "sources_referenced_categories": [
+    "Endocrine/neuropeptide physiology literature (hypothalamic synthesis, posterior pituitary release, OXTR receptor pharmacology) — established physiology",
+    "Systematic reviews/meta-analyses of intranasal oxytocin behavioral studies — heterogeneous/inconsistent effect sizes",
+    "Reproductive and lactation physiology research — uterine OXTR-mediated contraction, milk-ejection reflex",
+    "Comparative peptide pharmacology (oxytocin vs. vasopressin structural and receptor relationships)",
+    "PubChem/CAS registry data for identity fields (CAS 50-56-6, molecular formula/weight)"
+  ]
+}

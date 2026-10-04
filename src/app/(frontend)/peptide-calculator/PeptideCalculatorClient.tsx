@@ -90,7 +90,7 @@ export default function PeptideCalculatorPage() {
   ]
 
   return (
-    <main className="bg-[#f0efeb] min-h-screen relative overflow-x-clip font-sans text-neutral-900 selection:bg-[#a5a58d]/30">
+    <div className="bg-[#f0efeb] min-h-screen relative overflow-x-clip font-sans text-neutral-900 selection:bg-[#a5a58d]/30">
       
       {/* ==================================================================== */}
       {/* 1. HERO SECTION (Full-Viewport, Homepage Architecture)               */}
@@ -1005,6 +1005,6 @@ export default function PeptideCalculatorPage() {
         </div>
       </div>
 
-    </main>
+    </div>
   )
 }

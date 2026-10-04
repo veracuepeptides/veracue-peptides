@@ -1,0 +1,239 @@
+{
+  "product": "GHRP-6",
+  "target_url": "/product/ghrp-6",
+  "status": "First-party Veracue catalog record not yet live (checked /product/ghrp-6 — 404). SKU, price, purity %, vial size, lot/COA are omitted pending Veracue data.",
+  "seo": {
+    "title": "GHRP-6 Research Peptide (GH-Releasing Hexapeptide) | Veracue",
+    "meta_description": "GHRP-6 research peptide: molecular identity, GHS-R1a mechanism, GHRP-2 comparison, dosage/side-effect literature, and COA verification guidance. RUO only.",
+    "canonical": "https://veracue-peptides.vercel.app/product/ghrp-6",
+    "h1": "GHRP-6 Research Peptide",
+    "breadcrumbs": ["Home", "Shop", "Growth Hormone Secretagogues", "GHRP-6"],
+    "primary_keywords": ["ghrp-6", "ghrp 6", "ghrp-6 peptide", "what is ghrp-6", "ghrp-6 side effects", "ghrp-6 dosage", "ghrp-2 vs ghrp-6"],
+    "secondary_entities": ["ipamorelin", "cjc-1295", "hexarelin", "sermorelin", "tesamorelin", "ghs-r1a", "ghrelin"]
+  },
+  "hero": {
+    "category": "Growth Hormone Secretagogues",
+    "h1": "GHRP-6 Research Peptide",
+    "subtitle": "A first-generation ghrelin-receptor (GHS-R1a) agonist supplied for laboratory investigation of growth-hormone secretagogue pharmacology. Not a drug, supplement, or treatment.",
+    "badges": ["HPLC Verified", "ISO-7 Cleanroom", "Batch COA Included", "USA Synthesized"],
+    "ruo_flag": "Research Use Only — sold strictly for laboratory and analytical research. Not for human or veterinary use, ingestion, injection, or any form of administration.",
+    "quick_facts": {
+      "peptide_class": "Growth hormone secretagogue",
+      "receptor_target": "GHS-R1a (ghrelin receptor)",
+      "chain_length": "6 residues",
+      "status": "Research Use Only"
+    }
+  },
+  "fact_strip": {
+    "sequence": "His-D-Trp-Ala-Trp-D-Phe-Lys-NH2",
+    "molecular_formula": "C46H56N12O6",
+    "molecular_weight": "872.45 g/mol (free peptide)",
+    "cas_number": "87616-84-0 (free peptide)"
+  },
+  "sections": [
+    {
+      "id": "what-is-ghrp-6",
+      "heading": "What Is GHRP-6?",
+      "answer_first": "GHRP-6 is a synthetic hexapeptide growth hormone secretagogue that binds the ghrelin receptor, GHS-R1a, and has been used in laboratory and clinical-research settings to study pulsatile growth hormone release from the pituitary. It was one of the first compounds in the GHRP family, developed from earlier enkephalin-derived screening work in the 1980s, and it remains a reference compound in secretagogue pharmacology research rather than a marketed medicine.",
+      "body": [
+        "The term \"GHRP\" — growth hormone-releasing peptide — describes a class of synthetic secretagogues that act at a receptor distinct from the one used by growth hormone-releasing hormone (GHRH). GHRP-6 was among the earliest members of that class to be characterized, and its receptor, later identified as GHS-R1a, turned out to be the same receptor subsequently shown to bind the endogenous hormone ghrelin. That shared receptor pharmacology is the reason GHRP-6 continues to appear in ghrelin-signaling and appetite-research literature, decades after its initial synthesis.",
+        "Within the broader \"GHRP\" umbrella, researchers distinguish GHRP-6 from later analogs — GHRP-2, hexarelin, ipamorelin — by differences in receptor selectivity and off-target hormone effects, discussed in the comparison sections below. Veracue supplies GHRP-6 as a lyophilized research material; it is not formulated, labeled, or sold for any diagnostic, therapeutic, or consumer purpose."
+      ]
+    },
+    {
+      "id": "molecular-identity",
+      "heading": "Molecular Identity",
+      "note": "Reference data for the free peptide. Salt form (commonly acetate or TFA) changes the measured molecular weight.",
+      "table": {
+        "common_name": "GHRP-6",
+        "full_name": "Growth Hormone-Releasing Peptide-6 (growth hormone-releasing hexapeptide)",
+        "developmental_code": "SKF-110679",
+        "sequence": "His-D-Trp-Ala-Trp-D-Phe-Lys-NH2 (C-terminally amidated hexapeptide)",
+        "molecular_formula": "C46H56N12O6 (free peptide)",
+        "molecular_weight": "872.45 g/mol (free peptide). Acetate and TFA salt forms report a higher nominal weight because the counter-ion mass is included.",
+        "cas_number": "87616-84-0 (free peptide); 145177-42-0 listed for the acetate salt in supplier chemical databases",
+        "molecular_target": "GHS-R1a (ghrelin receptor); CD36 reported as a secondary binding site in cardiovascular and wound-healing research models",
+        "peptide_class": "Synthetic growth hormone secretagogue (GHRP family)",
+        "related_compounds": ["GHRP-2", "hexarelin", "ipamorelin", "CJC-1295", "sermorelin", "tesamorelin"]
+      }
+    },
+    {
+      "id": "mechanism",
+      "heading": "How GHRP-6 Is Studied in Research",
+      "body": [
+        "Published pharmacology describes GHRP-6 as a GHS-R1a agonist: it binds the same receptor as endogenous ghrelin on pituitary somatotrophs and on a subset of hypothalamic arcuate-nucleus neurons. Receptor activation engages Gq/phospholipase-C signaling and downstream calcium mobilization, which research models link to pulsatile GH secretion — a pathway distinct from the cAMP-driven signaling used by GHRH-receptor agonists.",
+        "Because ghrelin, GHRP-6, and GHRH converge on GH release through separate receptors, several comparative human studies have administered them side by side to characterize how each pathway behaves under different physiological conditions, including altered cortisol states."
+      ],
+      "pathway_comparison": {
+        "ghs_r1a_pathway_ghrp6": "Receptor expressed on somatotrophs and arcuate-nucleus neurons; activation is linked in the literature to GH pulsatility, and — via the same arcuate circuitry — to appetite-related (AgRP/NPY) neuronal activation.",
+        "ghrh_receptor_pathway": "A structurally separate receptor system used by CJC-1295, sermorelin, and tesamorelin, reported to act primarily through adenylate-cyclase/cAMP signaling on somatotrophs, without the same appetite-circuit engagement described for GHS-R1a agonists."
+      }
+    },
+    {
+      "id": "why-researchers-study",
+      "heading": "Why Researchers Study GHRP-6",
+      "items": [
+        {"title": "GHS-R1a receptor pharmacology", "text": "As one of the earliest characterized GHS-R1a agonists, GHRP-6 is used as a reference ligand in receptor-binding and signaling studies."},
+        {"title": "Ghrelin-signaling research", "text": "Because GHS-R1a is also the ghrelin receptor, GHRP-6 is used experimentally to probe ghrelin-pathway biology independent of endogenous ghrelin."},
+        {"title": "Pulsatile GH secretion models", "text": "Human and animal studies have used GHRP-6 to characterize pituitary GH-release dynamics and to compare secretagogue pathways against GHRH."},
+        {"title": "Feeding / appetite-circuit research", "text": "Rodent studies report that central and peripheral GHRP-6 administration activates arcuate-nucleus AgRP/NPY neurons and increases food intake."},
+        {"title": "Comparative secretagogue pharmacology", "text": "Clinical-research comparisons of GHRP-6 against ghrelin, GHRH, and other GHRPs are used to map shared and divergent hormone-release profiles."},
+        {"title": "Cytoprotection / wound-model research", "text": "Preclinical wound-healing studies have investigated GHRP-6 signaling through CD36 as a secondary target, separate from its pituitary GHS-R1a activity."}
+      ]
+    },
+    {
+      "id": "research-questions",
+      "heading": "Research Questions Worth Answering Directly",
+      "qa": [
+        {"q": "Are GHRP-2 and GHRP-6 the same compound?", "a": "No. They are structurally distinct hexapeptides that share a receptor. GHRP-6 (His-D-Trp-Ala-Trp-D-Phe-Lys-NH2) and GHRP-2 (D-Ala-D-2-Nal-Ala-Trp-D-Phe-Lys-NH2) differ at the first two positions, and published comparisons report GHRP-2 as the more potent GH secretagogue of the two, dose for dose."},
+        {"q": "What does GHRP-6 actually bind to?", "a": "Its primary documented target is GHS-R1a, the same receptor activated by endogenous ghrelin. Preclinical cardiovascular and wound-healing research has also reported CD36 as an additional binding site, studied in a different experimental context from GH release."},
+        {"q": "Does GHRP-6 increase appetite in research models?", "a": "Rodent studies report that GHRP-6 activates arcuate-nucleus neurons co-expressing AgRP and Ghsr, and that both central and intranasal administration increase food intake in mice by raising meal frequency and size."},
+        {"q": "Does GHRP-6 raise cortisol in research subjects?", "a": "Human comparative studies (in Cushing's disease patients, controls, and people with type 1 diabetes) have measured ACTH and cortisol alongside GH after GHRP-6 administration and reported measurable increases in some populations, generally smaller than those seen with ghrelin itself."},
+        {"q": "What does \"GHRP-6 dosage\" mean when it appears in a paper?", "a": "It reflects the specific amount and route used within a single study's protocol — a study parameter, not a validated, generalizable amount for any other purpose."},
+        {"q": "How is GHRP-6 different from GHRH-class compounds like CJC-1295 or sermorelin?", "a": "GHRP-6 acts on GHS-R1a, a receptor pharmacologically separate from the GHRH receptor used by CJC-1295, sermorelin, and tesamorelin. Some research has examined whether combining a GHS-R1a agonist with a GHRH-receptor agonist produces an additive response."},
+        {"q": "Is GHRP-6 the same thing as ghrelin?", "a": "No. Ghrelin is the endogenous 28-amino-acid hormone that GHS-R1a naturally responds to; GHRP-6 is a synthetic hexapeptide that activates the same receptor, though studies note the two do not always produce identical hormone-release magnitudes."},
+        {"q": "Has GHRP-6 been studied in humans, or only in animals?", "a": "Both. Early GH-releasing characterization and later comparative endocrinology work (Cushing's-disease and type 1 diabetes studies) were conducted in humans, alongside substantial rodent and in vitro work."},
+        {"q": "Which claims about GHRP-6 online are actually supported by research?", "a": "This page separates peer-reviewed pharmacology from unsourced consumer commentary — molecular identity and mechanism are drawn from chemical databases and peer-reviewed papers cited in the sources list; anything not traceable to a source of that kind is left out."},
+        {"q": "What should a researcher verify before relying on a GHRP-6 research material?", "a": "Independent analytical confirmation — HPLC purity, mass-spectrometry identity, and lot-specific COA documentation — rather than a vendor's descriptive claims."}
+      ]
+    },
+    {
+      "id": "ghrp6-vs-ghrp2",
+      "heading": "GHRP-6 vs. GHRP-2",
+      "intro": "GHRP-2 and GHRP-6 are the two most-referenced compounds in growth hormone secretagogue literature. They are related, not interchangeable; the comparison below is descriptive, not a ranking.",
+      "comparison_table": [
+        {"parameter": "Sequence", "ghrp6": "His-D-Trp-Ala-Trp-D-Phe-Lys-NH2", "ghrp2": "D-Ala-D-2-Nal-Ala-Trp-D-Phe-Lys-NH2"},
+        {"parameter": "Molecular weight", "ghrp6": "872.45 g/mol (free peptide)", "ghrp2": "~818 g/mol (free peptide)"},
+        {"parameter": "Generation", "ghrp6": "First-generation GHRP", "ghrp2": "Second-generation GHRP"},
+        {"parameter": "Receptor", "ghrp6": "GHS-R1a; CD36 reported as secondary target", "ghrp2": "GHS-R1a"},
+        {"parameter": "Published human evidence", "ghrp6": "Used in comparative GH/ACTH/cortisol studies (e.g., Cushing's disease, type 1 diabetes cohorts)", "ghrp2": "Studied clinically in Japan as a diagnostic agent for GH deficiency; approved there for that use by PMDA"},
+        {"parameter": "Feeding-related research", "ghrp6": "Rodent studies report pronounced food-intake and arcuate-nucleus activation effects", "ghrp2": "Also reported to increase food intake in human studies, alongside GH release"},
+        {"parameter": "Documented differences", "ghrp6": "Positions 1-2 of the sequence (His / D-Trp)", "ghrp2": "D-Ala / D-2-Nal substitution associated in the literature with a stronger GH-release response per dose"}
+      ],
+      "limitation_note": "Study populations, routes of administration, and assay methods differ across the cited papers, so potency and hormone-response figures are not directly interchangeable between studies."
+    },
+    {
+      "id": "ghrp6-vs-ghrh-class",
+      "heading": "GHRP-6 vs. GHRH-Class Compounds",
+      "intro": "CJC-1295, sermorelin, and tesamorelin are GHRH-receptor agonists — a mechanistically separate class from GHS-R1a agonists like GHRP-6.",
+      "table": {
+        "receptor": "GHRP-6 acts on GHS-R1a. CJC-1295, sermorelin, and tesamorelin act on the GHRH receptor — a distinct receptor system on the same pituitary somatotroph cells.",
+        "signaling": "GHS-R1a agonists are reported to primarily engage Gq/PLC/calcium signaling; GHRH-receptor agonists are reported to primarily engage Gs/adenylate-cyclase/cAMP signaling.",
+        "why_studied_together": "Because the two pathways converge on GH release through independent mechanisms, some research protocols administer both within the same study to characterize whether their effects on GH secretion are additive.",
+        "scope_note": "Describes receptor-level relationships reported in the literature only. Not a recommendation to combine compounds; Veracue does not provide combination protocols."
+      }
+    },
+    {
+      "id": "research-areas-evidence-table",
+      "heading": "What Has GHRP-6 Been Studied For?",
+      "evidence_table": [
+        {"question": "Does GHRP-6 stimulate GH release?", "study_context": "Human pharmacology and comparative endocrinology studies", "finding": "Administration is reported to produce a measurable GH pulse, generally lower in magnitude than ghrelin at comparable doses", "limitation": "Response magnitude varies by population; results in specific patient groups (e.g., Cushing's disease) differ from healthy controls"},
+        {"question": "How does GHRP-6 compare with GHRH on GH release?", "study_context": "Head-to-head human studies administering ghrelin, GHRP-6, and GHRH separately", "finding": "Each agent produced GH release through its own receptor pathway, with different peak magnitudes across groups studied", "limitation": "Small cohort sizes in the cited studies (roughly 9-10 subjects per group)"},
+        {"question": "Does GHRP-6 affect appetite/food intake?", "study_context": "Rodent feeding-behavior studies (central and intranasal administration)", "finding": "Increased food intake via increased meal frequency and size; arcuate-nucleus AgRP/NPY neuron activation reported", "limitation": "Animal model findings; not established as a generalizable human appetite effect"},
+        {"question": "Does GHRP-6 have receptor activity beyond GHS-R1a?", "study_context": "Preclinical cardiovascular and cutaneous wound-healing research", "finding": "CD36 identified as an additional binding site linked to cytoprotective and wound-healing signaling in these models", "limitation": "Distinct experimental context from GH-release research; not evidence of a therapeutic wound treatment"},
+        {"question": "What is GHRP-6's pharmacokinetic profile in humans?", "study_context": "A published pharmacokinetic study in nine healthy male volunteers", "finding": "Characterized absorption and clearance parameters following administration under study conditions", "limitation": "Single study population (healthy adult males); not generalized to other groups"}
+      ]
+    },
+    {
+      "id": "side-effects-search-intent",
+      "heading": "What the Research Literature Reports About GHRP-6",
+      "intro": "\"GHRP-6 side effects\" is a common search, but the underlying literature is reporting physiological effects observed under controlled study conditions — not a consumer adverse-event list.",
+      "documented_effects": "Published comparative studies report that GHRP-6 administration, alongside its GH-releasing effect, is associated with measurable increases in ACTH and cortisol in some subject groups, and with increased appetite/food intake in feeding-behavior research. These are pharmacodynamic observations recorded during monitored research protocols.",
+      "limitations_of_evidence": "A physiological response measured in a structured clinical-research or animal study is not the same as a validated safety profile for unsupervised use. None of the cited studies evaluated GHRP-6 as a consumer product."
+    },
+    {
+      "id": "dosage-search-intent",
+      "heading": "What Does \"GHRP-6 Dosage\" Mean in Research Literature?",
+      "answer_first": "In published research, \"dosage\" refers to the specific amount and route used within a single study's protocol — for example, a defined µg/kg intravenous bolus in a human pharmacology trial. It is a study parameter, not a validated recommendation, and does not transfer between species, routes of administration, or study designs.",
+      "body": "Animal-study doses (often reported per kilogram of body weight, administered centrally or intranasally) and human clinical-research doses are defined under different experimental conditions and monitored by research personnel. Veracue does not publish, and this page does not provide, a dosing schedule, reconstitution instructions, or administration protocol."
+    },
+    {
+      "id": "evidence-limitations",
+      "heading": "What GHRP-6 Research Does Not Establish",
+      "items": [
+        "Research findings on receptor binding, GH release, or appetite circuits are not, by themselves, treatment or efficacy evidence.",
+        "Rodent and in vitro findings cannot be automatically generalized to human physiology.",
+        "Several of the cited human studies involve small cohorts (roughly 9-10 subjects), which limits how broadly their results apply.",
+        "Older pharmacology studies may not reflect current analytical methods or reporting standards.",
+        "A measured pharmacodynamic effect (e.g., a hormone pulse) does not, on its own, establish a clinical benefit or a safety profile.",
+        "Doses reported in published studies are experimental parameters, not personal-use instructions.",
+        "None of the research summarized here evaluated Veracue's research material specifically — literature findings describe the compound in general, not any particular vendor's lot."
+      ]
+    },
+    {
+      "id": "material-verification",
+      "heading": "Evaluating a GHRP-6 Research Material",
+      "what_a_coa_tells_you": {
+        "hplc_purity": "Reverse-phase chromatography peak data indicating chemical purity and the presence of truncated or related sequences.",
+        "mass_spectrometry": "Confirmation that the measured molecular mass matches the expected sequence (typically within a tight mass-accuracy window).",
+        "lot_batch_traceability": "A specific lot number linking the material in hand to its own test report, rather than a generic or catalog-wide document.",
+        "net_peptide_content_and_salt_form": "Net peptide content (as distinct from total vial mass) and the counter-ion/salt form, since both affect molecular weight and concentration calculations."
+      },
+      "what_a_coa_does_not_establish": [
+        "Sterility, endotoxin levels, or suitability for any particular assay design.",
+        "That the exact vial received matches a generic or non-lot-specific certificate — always match lot numbers.",
+        "Biological activity in a specific assay — that is established separately, in the researcher's own experimental work."
+      ]
+    },
+    {
+      "id": "product-specifications",
+      "heading": "Product Specifications",
+      "table": {
+        "form": "Lyophilized powder",
+        "classification": "Growth hormone secretagogue (GHRP family) — Research Use Only",
+        "intended_use": "Laboratory and analytical research only. Not for human or veterinary use.",
+        "certificate_of_analysis": "Batch-specific COA provided; view the current archive on the Certificates page once this lot is listed.",
+        "storage": "Store lyophilized material at -20°C, protected from light and moisture, per standard peptide handling practice.",
+        "pending_first_party_data": ["SKU", "price", "vial size", "purity %", "lot/batch number", "stock status"]
+      }
+    }
+  ],
+  "faq": [
+    {"q": "What is GHRP-6?", "a": "A synthetic hexapeptide growth hormone secretagogue that activates GHS-R1a, the ghrelin receptor, and has been used in research to study pituitary GH release and ghrelin-pathway signaling."},
+    {"q": "Is GHRP-6 a peptide?", "a": "Yes — a six-amino-acid, C-terminally amidated peptide (His-D-Trp-Ala-Trp-D-Phe-Lys-NH2)."},
+    {"q": "What receptor does GHRP-6 act on?", "a": "Primarily GHS-R1a (the ghrelin receptor). Preclinical research has also reported CD36 as a secondary binding site in cardiovascular and wound-healing studies."},
+    {"q": "What is GHRP-6 studied for?", "a": "GHS-R1a receptor pharmacology, ghrelin-signaling research, pulsatile GH-secretion models, feeding/appetite-circuit research, and comparative secretagogue studies."},
+    {"q": "What is the difference between GHRP-6 and GHRP-2?", "a": "Both bind GHS-R1a but differ in sequence at positions 1-2, in reported GH-release potency, and in their published human-research history."},
+    {"q": "What does \"GHRP-6 dosage\" mean in research?", "a": "It refers to the specific amount and route used in a given study's protocol — a study parameter, not a usage recommendation. Veracue does not provide dosing guidance."},
+    {"q": "What does the literature report about GHRP-6 side effects?", "a": "Comparative human studies report measurable cortisol/ACTH increases in some subject groups and appetite-stimulating effects in feeding research. These are study observations, not a validated safety profile."},
+    {"q": "How does GHRP-6 differ from CJC-1295?", "a": "GHRP-6 acts on GHS-R1a; CJC-1295 acts on the separate GHRH receptor, engaging different intracellular signaling pathways toward the same downstream outcome, GH release."},
+    {"q": "What should researchers verify on a GHRP-6 COA?", "a": "HPLC purity, mass-spectrometry identity, lot-specific traceability, net peptide content, and salt form — matched to the exact lot received."},
+    {"q": "What does Research Use Only mean?", "a": "The material is intended strictly for laboratory and scientific research, not for human or veterinary consumption, diagnosis, or treatment, and has not been evaluated by the FDA for those uses."},
+    {"q": "Is GHRP-6 the same as ghrelin?", "a": "No. Ghrelin is the endogenous hormone; GHRP-6 is a synthetic peptide that activates the same receptor (GHS-R1a) but is a structurally distinct molecule."}
+  ],
+  "internal_links": {
+    "growth_hormone_secretagogues_category": "/shop?category=Growth%20Hormone%20Secretagogues",
+    "shop": "/shop",
+    "certificates": "/certificates",
+    "peptide_calculator": "/peptide-calculator",
+    "faq": "/faq",
+    "contact": "/contact-us",
+    "note": "Only live, confirmed routes included. /product/ghrp-2, /product/ipamorelin, /product/cjc-1295 etc. were NOT linked because those SKUs are not yet confirmed live in the catalog."
+  },
+  "compliance_notice": "Research Use Only. The content on this page has not been evaluated or approved by the U.S. Food and Drug Administration. GHRP-6 is offered by Veracue for research and laboratory purposes only and is not intended to diagnose, treat, cure, or prevent any disease. It is not for human or veterinary use, and is not intended for ingestion, injection, or any form of administration. Nothing on this page is dosing guidance, a treatment protocol, or medical advice. Purity levels may vary by product and lot.",
+  "schema_org": {
+    "breadcrumb_list": ["Home", "Shop", "Growth Hormone Secretagogues", "GHRP-6"],
+    "product_additional_property": {
+      "sequence": "His-D-Trp-Ala-Trp-D-Phe-Lys-NH2",
+      "molecular_formula": "C46H56N12O6",
+      "molecular_weight": "872.45 g/mol (free peptide)",
+      "cas_number": "87616-84-0 (free peptide)",
+      "intended_use": "Research Use Only"
+    },
+    "offers": "Intentionally omitted — no confirmed price/availability data exists for this SKU yet."
+  },
+  "sources": [
+    "Bowers CY, Momany FA, Reynolds GA, Hong A. On the in vitro and in vivo activity of a new synthetic hexapeptide that acts on the pituitary to specifically release growth hormone. Endocrinology. 1984;114(5):1537-1545.",
+    "Howard AD, Feighner SD, Cully DF, et al. A receptor in pituitary and hypothalamus that functions in growth hormone release. Science. 1996;273(5277):974-977.",
+    "Cabrales A, Gil J, Fernández E, et al. Pharmacokinetic study of Growth Hormone-Releasing Peptide 6 (GHRP-6) in nine male healthy volunteers. European Journal of Pharmaceutical Sciences. 2013;48(1-2):40-46.",
+    "Popovic V, et al. Decreased GH secretion and enhanced ACTH and cortisol release after ghrelin administration in Cushing's disease: comparison with GHRP-6 and GHRH. PubMed PMID 16832586.",
+    "Effects of ghrelin, GHRP-6, and GHRH on GH, ACTH, and cortisol release in type 1 diabetes mellitus. Metabolism (ScienceDirect).",
+    "Mendoza Marí Y, Fernández Mayola M, Aguilera Barreto A, et al. Growth Hormone-Releasing Peptide 6 Enhances the Healing Process and Improves the Esthetic Outcome of the Wounds. International Journal of Peptides. 2016. PMC4854984.",
+    "Intranasal Delivery of a Ghrelin Mimetic Engages the Brain Ghrelin Signaling System in Mice. PMC11795113.",
+    "Bodart V, Febbraio M, Demers A, et al. CD36 mediates cardiovascular action of growth hormone-releasing peptides in the heart. Circulation Research. 2002;90:844-849.",
+    "GHRP-6 (acetate) product monograph. Cayman Chemical, CAS 145177-42-0.",
+    "Growth Hormone Releasing Peptide 6 (GHRP-6) product data. Echelon Biosciences.",
+    "Pralmorelin (GHRP-2) chemical data, CAS 158861-67-7. PubChem / supplier chemical databases."
+  ],
+  "note_on_figures": "Figures reflect the free-peptide form unless a salt form is stated. Where sources reported slightly different values for the same parameter, the most consistently cited figure across chemical-database and peer-reviewed sources was used."
+}

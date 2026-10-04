@@ -1,0 +1,240 @@
+{
+  "route": "/product/tesamorelin-spray",
+  "status": "publication-ready copy — commerce fields (price, SKU, concentration, route, COA) still need Veracue first-party data before launch",
+
+  "seo": {
+    "title": "Tesamorelin Spray Research Peptide (TH-9507) | Veracue",
+    "meta_description": "Tesamorelin Spray, the GHRH analogue TH-9507, for lab research: molecular identity, what EGRIFTA WR trials tested, tesamorelin vs sermorelin, and COA checks.",
+    "slug": "/product/tesamorelin-spray",
+    "canonical": "https://veracue-peptides.vercel.app/product/tesamorelin-spray",
+    "h1": "Tesamorelin Spray",
+    "open_graph": {
+      "og:title": "Tesamorelin Spray Research Peptide (TH-9507) | Veracue",
+      "og:description": "Tesamorelin Spray, the GHRH analogue TH-9507, for lab research: molecular identity, what EGRIFTA WR trials tested, tesamorelin vs sermorelin, and COA checks.",
+      "og:type": "product",
+      "og:url": "https://veracue-peptides.vercel.app/product/tesamorelin-spray"
+    }
+  },
+
+  "catalog_card_blurb": "Tesamorelin is a 44-residue synthetic analogue of human growth hormone-releasing hormone (GHRH), also referenced as TH-9507. Veracue supplies Tesamorelin Spray as a research material for laboratory work. The most directly relevant published evidence comes from clinical trials of EGRIFTA WR, the FDA-approved subcutaneous injectable studied in HIV-infected adults with lipodystrophy — human clinical evidence, but for a different formulation and route than this spray. No spray-specific clinical or preclinical evidence was identified, so this material does not establish an effect, safety profile, or dosing in people.",
+
+  "page_content": {
+
+    "1_hero": {
+      "eyebrow": "RESEARCH USE ONLY",
+      "h1": "Tesamorelin Spray",
+      "supporting_line": "Tesamorelin Peptide · TH-9507",
+      "body": "Tesamorelin is a 44-residue synthetic analogue of human growth hormone-releasing hormone (GHRH), studied for its role in GHRH-receptor signaling and the downstream growth hormone/IGF-1 axis. Tesamorelin Spray is Veracue's research-grade material built around this compound, supplied strictly for laboratory use. It is a separate research product from EGRIFTA WR, the FDA-approved subcutaneous injectable tesamorelin product — this page keeps that line clear throughout.",
+      "ctas": [
+        {"label": "View Documentation", "target": "/certificates"},
+        {"label": "Talk to Our Research Team", "target": "/contact-us"}
+      ]
+    },
+
+    "2_product_snapshot": {
+      "heading": "Product Snapshot",
+      "fields": {
+        "product_name": "Tesamorelin Spray",
+        "research_designation": "Research Use Only (RUO)",
+        "compound": "Tesamorelin",
+        "scientific_synonyms": "TH-9507, TH9507",
+        "product_form": "Not publicly specified in the current Veracue product information",
+        "reference_identity": "44-residue GHRH(1-44) analogue, N-terminal trans-3-hexenoic acid modification",
+        "molecular_formula": "C221H366N72O67S",
+        "molecular_weight": "5136 g/mol",
+        "cas": "218949-48-5 (tesamorelin)",
+        "pubchem_cid": "16137828",
+        "concentration": "Not publicly specified in the current Veracue product information",
+        "package_size": "Not publicly specified in the current Veracue product information",
+        "storage": "Not publicly specified in the current Veracue product information",
+        "coa": "Not yet published — will link here once available"
+      }
+    },
+
+    "3_what_is_tesamorelin": {
+      "heading": "What Is Tesamorelin?",
+      "body": "Tesamorelin is a synthetic peptide built on the 44-amino-acid sequence of human growth hormone-releasing hormone (GHRH), with a trans-3-hexenoic acid group added at the N-terminus. That modification is what distinguishes it from native GHRH — it's reported to make the peptide more resistant to enzymatic breakdown, which is part of why it became a viable candidate for pharmaceutical development. Tesamorelin is the active compound in EGRIFTA WR, an FDA-approved subcutaneous injectable — a distinct pharmaceutical product with its own formulation, indication, and regulatory status, separate from the Veracue research material described here."
+    },
+
+    "4_scientific_identity": {
+      "heading": "Scientific Identity",
+      "sequence": "(trans-3-hexenoic acid)-Tyr-Ala-Asp-Ala-Ile-Phe-Thr-Asn-Ser-Tyr-Arg-Lys-Val-Leu-Gly-Gln-Leu-Ser-Ala-Arg-Lys-Leu-Leu-Gln-Asp-Ile-Met-Ser-Arg-Gln-Gln-Gly-Glu-Ser-Asn-Gln-Glu-Arg-Gly-Ala-Arg-Ala-Arg-Leu-NH2",
+      "amino_acid_length": "44 residues, C-terminally amidated, matching the human GHRH(1-44) backbone",
+      "molecular_formula": "C221H366N72O67S",
+      "molecular_weight": "5136 g/mol",
+      "cas": "218949-48-5",
+      "pubchem_cid": "16137828",
+      "synonyms": ["Tesamorelin", "TH-9507", "TH9507"],
+      "note": "The N-terminal trans-3-hexenoic acid modification is the single structural difference from native human GHRH(1-44); this is what's referenced by the sequence and reference identity above, not a separate salt or product-specific form."
+    },
+
+    "5_mechanism": {
+      "heading": "How Is Tesamorelin Studied in Growth-Hormone Signaling Research?",
+      "body": "Tesamorelin is studied as an agonist of the GHRH receptor (GHRHR) on pituitary somatotroph cells. GHRH-receptor activation is associated in the literature with pulsatile growth hormone release, and researchers commonly track circulating IGF-1 as a downstream pharmacodynamic marker in tesamorelin studies. Published research examining body-composition endpoints — particularly visceral adipose tissue — has looked at this signaling pathway in the context of the approved injectable formulation. That mechanistic and clinical picture describes the tesamorelin molecule and EGRIFTA WR specifically; it isn't a description of the Veracue Spray's own behavior in a research system, which hasn't been characterized as its own formulation."
+    },
+
+    "6_clinical_evidence": {
+      "heading": "What Does the Tesamorelin Research Actually Show?",
+      "body": "The clinical evidence for tesamorelin centers on EGRIFTA WR, a subcutaneous injectable studied in HIV-infected adults with lipodystrophy. Trials supporting FDA approval measured reduction in visceral adipose tissue in that population. The label is specific about the boundaries of that finding: long-term cardiovascular safety hasn't been established, and the product is not indicated for weight-loss management, since it has a reported weight-neutral effect. Tesamorelin's broader literature also covers GHRH-receptor pharmacodynamics — GH and IGF-1 response — independent of the lipodystrophy indication. No tesamorelin spray-specific clinical or preclinical evidence was identified in the literature reviewed for this page; the evidence above describes the injectable route and the studied population, not a spray-format research material."
+    },
+
+    "7_evidence_table": {
+      "heading": "Evidence Summary",
+      "columns": ["Research area", "Evidence type", "Population/model", "Route/formulation studied", "What was evaluated", "Main finding", "Important limitation"],
+      "rows": [
+        {
+          "research_area": "Abdominal fat reduction in HIV lipodystrophy",
+          "evidence_type": "Randomized controlled trials (FDA approval basis)",
+          "population_model": "HIV-infected adults with lipodystrophy",
+          "route_formulation": "Subcutaneous injection (EGRIFTA WR)",
+          "evaluated": "Visceral adipose tissue, waist circumference",
+          "main_finding": "Approved for reduction of excess abdominal fat in this population",
+          "limitation": "Not indicated for weight-loss management; long-term cardiovascular safety not established"
+        },
+        {
+          "research_area": "GH/IGF-1 axis pharmacodynamics",
+          "evidence_type": "Clinical pharmacology",
+          "population_model": "Human subjects (varies by study)",
+          "route_formulation": "Subcutaneous injection",
+          "evaluated": "GH pulsatility, circulating IGF-1",
+          "main_finding": "GHRH-receptor agonism reported to increase GH release and downstream IGF-1",
+          "limitation": "Pharmacodynamic marker data, not a standalone clinical outcome"
+        },
+        {
+          "research_area": "Spray-route evidence",
+          "evidence_type": "Not identified",
+          "population_model": "—",
+          "route_formulation": "—",
+          "evaluated": "—",
+          "main_finding": "No tesamorelin spray-specific clinical or preclinical evidence was identified in the literature reviewed for this page",
+          "limitation": "A spray-route claim would need its own dedicated evidence base"
+        }
+      ]
+    },
+
+    "8_researcher_guidance": {
+      "heading": "Researcher Guidance",
+      "subsections": [
+        {
+          "heading": "Terminology: Tesamorelin and TH-9507",
+          "body": "Tesamorelin and TH-9507 refer to the same molecule — TH-9507 was its development-stage designation before approval. You'll see both used interchangeably across supplier and research literature."
+        },
+        {
+          "heading": "Molecule vs. Product Specification",
+          "body": "The name 'Tesamorelin Spray' identifies the active compound and product category, not its concentration, vehicle, or route. Section 11 lists exactly which formulation details are confirmed and which aren't — don't infer a route or dose from the product name itself."
+        },
+        {
+          "heading": "Approved Injectable vs. Research Spray",
+          "body": "EGRIFTA WR is an FDA-approved subcutaneous injectable with its own dosing, safety data, and regulatory status. Tesamorelin Spray is a separate, unapproved research material. Evidence generated for one doesn't carry over to the other."
+        },
+        {
+          "heading": "Reading Evidence by Model Type",
+          "body": "The table above labels each finding by where it came from — human trial data for the approved injectable versus mechanistic pharmacodynamic research. Treating all tesamorelin literature as one undifferentiated body overstates what's actually established for any single formulation."
+        },
+        {
+          "heading": "Purity, Assay, and Biological Activity",
+          "body": "HPLC purity tells you how much of a sample is the intended compound relative to impurities. Assay confirms how much material is present relative to the labeled amount. Neither is a measure of biological activity — they're analytical chemistry results, not a statement about how a compound performs in a research system."
+        },
+        {
+          "heading": "Reading a Tesamorelin COA",
+          "body": "See Section 12 for the fields a complete COA should include. No lot-specific COA is published for this product yet; it will link directly from this page once available, matching how COAs are linked across the Veracue catalog."
+        },
+        {
+          "heading": "Dosage Questions and the RUO Boundary",
+          "body": "A large share of public search interest in tesamorelin concerns dosage and administration. This page doesn't answer those as consumer-use questions — Section 6 covers what the clinical literature has evaluated, and Section 14 explains why this product carries no dosing or administration guidance."
+        }
+      ]
+    },
+
+    "9_tesamorelin_vs_sermorelin": {
+      "heading": "Tesamorelin vs. Sermorelin",
+      "body": "Sermorelin is GRF(1-29)-NH2 — the first 29 amino acids of human GHRH. Tesamorelin uses the full 44-residue sequence with the added trans-3-hexenoic acid modification for greater resistance to enzymatic breakdown. Both are studied as GHRH-receptor agonists, but they're distinct molecules with different sequence lengths, developed and evaluated through separate research and clinical programs. This comparison is for scientific clarity only, not a ranking or a recommendation."
+    },
+
+    "10_tesamorelin_vs_ipamorelin": {
+      "heading": "Tesamorelin vs. Ipamorelin",
+      "body": "Tesamorelin and ipamorelin both come up in growth-hormone research, but they work through different receptors. Tesamorelin is a GHRH analogue studied as a GHRH-receptor (GHRHR) agonist. Ipamorelin is a pentapeptide studied as a selective ghrelin/GHS-receptor agonist — a mechanistically distinct pathway that also converges on growth hormone release. This page doesn't describe them as a stack or combination protocol; each has its own evidence base."
+    },
+
+    "11_formulation": {
+      "heading": "Tesamorelin Spray Formulation",
+      "intro": "The specifics below are shown transparently as confirmed or not yet confirmed, rather than inferred from the product name.",
+      "fields": {
+        "route": "Not publicly specified in the current Veracue product information",
+        "concentration": "Not publicly specified in the current Veracue product information",
+        "vehicle": "Not publicly specified in the current Veracue product information",
+        "excipients": "Not publicly specified in the current Veracue product information",
+        "ph": "Not publicly specified in the current Veracue product information",
+        "fill_volume": "Not publicly specified in the current Veracue product information",
+        "actuation_volume": "Not publicly specified in the current Veracue product information",
+        "package_size": "Not publicly specified in the current Veracue product information",
+        "storage": "Not publicly specified in the current Veracue product information"
+      }
+    },
+
+    "12_coa": {
+      "heading": "How to Read a Tesamorelin COA",
+      "body": "A complete COA for a tesamorelin research material confirms identity (typically by mass spectrometry and/or HPLC retention time against a reference standard), reports purity by HPLC, states assayed quantity against the labeled amount, and records the lot number, analysis date, and testing laboratory. For a formulated product, it should also document formulation-relevant details for that specific batch. No lot-specific COA is currently published for Tesamorelin Spray — this section will link directly to it once available."
+    },
+
+    "13_what_research_does_not_establish": {
+      "heading": "What the Research Does Not Establish",
+      "points": [
+        "Evidence generated with the approved injectable doesn't establish the pharmacokinetics, safety, or effect of a spray-format research material.",
+        "The clinical evidence base is specific to HIV-infected adults with lipodystrophy evaluated for excess abdominal fat — not weight loss generally, and not other populations.",
+        "GHRH-receptor mechanistic evidence doesn't by itself establish a specific clinical outcome.",
+        "A certificate of analysis documents a specific lot's chemistry — it's separate from, and doesn't substitute for, the published clinical literature."
+      ]
+    },
+
+    "14_ruo": {
+      "heading": "Research Use Only",
+      "body": "Tesamorelin Spray is supplied strictly for laboratory research. It is not for human or veterinary administration, not a weight-loss or wellness product, not a treatment for any condition, and not a dietary supplement. Nothing on this page is medical advice, and the published tesamorelin literature — including data on the approved injectable — is discussed here as scientific literature, not as a description of this research material's effects."
+    },
+
+    "15_faq": {
+      "heading": "Frequently Asked Questions",
+      "items": [
+        {"q": "What is tesamorelin?", "a": "Tesamorelin is a synthetic peptide analogue of human growth hormone-releasing hormone (GHRH), built on the 44-amino-acid GHRH(1-44) sequence with an added N-terminal trans-3-hexenoic acid group."},
+        {"q": "What is Tesamorelin Spray?", "a": "A Veracue Research Use Only research material built around the tesamorelin molecule. Its route, concentration, and formulation details are listed in Section 11 as confirmed or not yet confirmed."},
+        {"q": "What is tesamorelin peptide?", "a": "The same molecule referred to as 'tesamorelin' — also known by its earlier development designation, TH-9507."},
+        {"q": "What is TH-9507?", "a": "TH-9507 is tesamorelin's development-stage name, used interchangeably with 'tesamorelin' in research and supplier literature."},
+        {"q": "How many amino acids are in tesamorelin?", "a": "44 residues, matching the length of native human GHRH(1-44), with a C-terminal amide."},
+        {"q": "What is the tesamorelin peptide sequence?", "a": "(trans-3-hexenoic acid)-Tyr-Ala-Asp-Ala-Ile-Phe-Thr-Asn-Ser-Tyr-Arg-Lys-Val-Leu-Gly-Gln-Leu-Ser-Ala-Arg-Lys-Leu-Leu-Gln-Asp-Ile-Met-Ser-Arg-Gln-Gln-Gly-Glu-Ser-Asn-Gln-Glu-Arg-Gly-Ala-Arg-Ala-Arg-Leu-NH2."},
+        {"q": "What is the molecular weight of tesamorelin?", "a": "5136 g/mol, with molecular formula C221H366N72O67S."},
+        {"q": "How does tesamorelin relate to GHRH?", "a": "Tesamorelin is a direct structural analogue of human GHRH, using the same 44-residue sequence with an N-terminal modification for stability, and is studied as an agonist of the GHRH receptor (GHRHR)."},
+        {"q": "What does tesamorelin research investigate?", "a": "GHRH-receptor pharmacodynamics — GH and IGF-1 response — and, for the approved injectable, clinical outcomes in visceral fat reduction among HIV-infected adults with lipodystrophy."},
+        {"q": "What is known about tesamorelin clinical research?", "a": "Trials supporting FDA approval evaluated the subcutaneous injectable in HIV-infected adults with lipodystrophy, measuring visceral fat reduction; the label states long-term cardiovascular safety hasn't been established and the product isn't indicated for weight-loss management."},
+        {"q": "Is Tesamorelin Spray the same as approved tesamorelin injection?", "a": "No. Tesamorelin Spray is a separate, unapproved research material — it shouldn't be assumed to share EGRIFTA WR's formulation, route, concentration, or safety profile."},
+        {"q": "How is tesamorelin different from sermorelin?", "a": "Sermorelin is the shorter GRF(1-29)-NH2 fragment of GHRH; tesamorelin uses the full 44-residue sequence with an added stability modification. Both are GHRH-receptor agonists but are distinct molecules."},
+        {"q": "How is tesamorelin different from ipamorelin?", "a": "Tesamorelin acts on the GHRH receptor; ipamorelin is a pentapeptide studied as a selective ghrelin/GHS-receptor agonist — a different receptor pathway entirely."},
+        {"q": "What should a Tesamorelin COA contain?", "a": "Identity confirmation, HPLC purity, assayed quantity, lot number, analysis date, and testing laboratory. No lot-specific COA is published for this product yet."},
+        {"q": "What does tesamorelin purity mean?", "a": "Purity, typically reported by HPLC, is the proportion of a sample that's the intended compound relative to detectable impurities — a separate metric from assayed quantity or biological activity."},
+        {"q": "What does Research Use Only mean for Tesamorelin Spray?", "a": "The product is supplied strictly for laboratory research — not for human or veterinary use, self-administration, or any therapeutic purpose."}
+      ]
+    },
+
+    "16_references": {
+      "heading": "References",
+      "items": [
+        "PubChem CID 16137828 — tesamorelin sequence, formula, molecular weight, CAS",
+        "FDA EGRIFTA WR Prescribing Information (accessdata.fda.gov/drugsatfda_docs/label/2025/022505s020lbl.pdf) — indication, limitations of use",
+        "DrugBank DB08869 — TH-9507 synonym, GHRHR target"
+      ]
+    }
+  },
+
+  "schema": {
+    "types": ["Product", "WebPage", "BreadcrumbList", "FAQPage"],
+    "notes": "Populate Product schema with name, description, and category only — omit sku, offers/price, availability, gtin, aggregateRating, and review until real commerce data exists. FAQPage schema must match the visible Section 15 text exactly."
+  },
+
+  "internal_linking": ["/shop", "/certificates", "/contact-us", "/faq"],
+
+  "open_blockers": [
+    "Route, concentration, vehicle, fill/actuation volume — needs Veracue first-party confirmation",
+    "SKU, price, stock status",
+    "Lot-specific COA to link from Section 12",
+    "Confirmed product photography (do not use an EGRIFTA WR/injectable image or a fabricated bottle mockup)"
+  ]
+}

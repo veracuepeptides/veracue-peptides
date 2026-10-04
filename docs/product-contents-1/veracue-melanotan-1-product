@@ -1,0 +1,912 @@
+{
+  "meta": {
+    "route": "/product/melanotan-1",
+    "canonical": "https://veracue-peptides.vercel.app/product/melanotan-1",
+    "title": "Melanotan 1 Research Peptide (Afamelanotide) | Veracue",
+    "meta_description": "Melanotan 1, the α-MSH analogue also known as afamelanotide, for lab research: molecular identity, the Scenesse distinction, Melanotan 1 vs 2, and COA checks.",
+    "robots": "index, follow",
+    "og": {
+      "type": "product",
+      "site_name": "Veracue Peptides",
+      "title": "Melanotan 1 Research Peptide (Afamelanotide) | Veracue",
+      "description": "Melanotan 1, the α-MSH analogue also known as afamelanotide, for lab research: molecular identity, the Scenesse distinction, Melanotan 1 vs 2, and COA checks.",
+      "url": "https://veracue-peptides.vercel.app/product/melanotan-1",
+      "image": null,
+      "image_note": "Intentionally unset. Add og:image only once a genuine Veracue Melanotan 1 product photograph exists."
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Melanotan 1 Research Peptide (Afamelanotide) | Veracue",
+      "description": "Melanotan 1, the α-MSH analogue also known as afamelanotide, for lab research: molecular identity, the Scenesse distinction, Melanotan 1 vs 2, and COA checks."
+    },
+    "short_blurb": "Melanotan 1 (MT-1) is a synthetic peptide analogue of a-melanocyte-stimulating hormone, studied in melanocortin and pigmentation research. The name is closely associated with afamelanotide in scientific and regulatory records. This page presents Melanotan 1 as a Research Use Only research reference; product-specific specifications come from Veracue's own lot documentation."
+  },
+  "hero": {
+    "eyebrow": "Research Use Only",
+    "h1": "Melanotan 1",
+    "subtitle": "Melanotan 1 / Afamelanotide Research Peptide · α-MSH Analogue",
+    "intro": "Melanotan 1 is a synthetic peptide built on the framework of α-melanocyte-stimulating hormone (α-MSH), studied for its interaction with melanocortin receptors and pigmentation biology. In scientific and regulatory literature, the same molecule is also known as afamelanotide. That name also belongs to Scenesse, a specific prescription medicine — a separate product with its own approval, formulation and manufacturer. This page presents Melanotan 1 as a Research Use Only research reference. Product-specific details for the material Veracue supplies are established through Veracue's own documentation, not through this reference background.",
+    "primary_cta": {
+      "label": "Contact Veracue for Product Documentation",
+      "href": "/contact-us"
+    },
+    "secondary_cta": {
+      "label": "Browse Research Catalog",
+      "href": "/shop"
+    }
+  },
+  "ruo_notice": {
+    "heading": "Research Use Only",
+    "body": "Research Use Only. For laboratory research purposes only. Not for human or animal use, and not for ingestion, injection or any form of administration. This page does not provide dosing, reconstitution, administration or treatment guidance.",
+    "links": [
+      {
+        "label": "Medical Disclaimer",
+        "href": "/medical-disclaimer"
+      },
+      {
+        "label": "Terms & Conditions",
+        "href": "/terms-and-conditions"
+      }
+    ]
+  },
+  "product_snapshot": {
+    "heading": "Product Snapshot",
+    "intro": "Reference identity describes the molecule as authoritative scientific sources define it. Product documentation describes the specific material and lot Veracue supplies. The two are related but distinct, and only the second is specific to what ships in a vial.",
+    "reference_identity": [
+      {
+        "field": "Common name",
+        "value": "Melanotan 1 (also written Melanotan-1, Melanotan-I)"
+      },
+      {
+        "field": "Abbreviations in use",
+        "value": "MT-1, MT1"
+      },
+      {
+        "field": "Substance name",
+        "value": "Afamelanotide"
+      },
+      {
+        "field": "Structural name",
+        "value": "[Nle4, D-Phe7]-α-MSH"
+      },
+      {
+        "field": "Peptide class",
+        "value": "Synthetic melanocortin peptide; α-MSH analogue"
+      },
+      {
+        "field": "Length",
+        "value": "13 residues"
+      },
+      {
+        "field": "Sequence",
+        "value": "Ac-Ser-Tyr-Ser-Nle-Glu-His-D-Phe-Arg-Trp-Gly-Lys-Pro-Val-NH₂"
+      },
+      {
+        "field": "Molecular formula",
+        "value": "C₇₈H₁₁₁N₂₁O₁₉"
+      },
+      {
+        "field": "Reference molecular weight",
+        "value": "Approximately 1,646.8 g/mol"
+      },
+      {
+        "field": "CAS number",
+        "value": "75921-69-6"
+      },
+      {
+        "field": "Reference databases",
+        "value": "FDA substance registry, PubChem"
+      }
+    ],
+    "reference_note": "Reference molecular information is provided for research identification and recordkeeping. Supplier-specific analytical results must be verified independently through lot documentation.",
+    "product_documentation": {
+      "note": "The fields below are supplier-specific and are not publicly specified on the current Veracue product information for this compound.",
+      "fields": [
+        {
+          "field": "Salt or counterion form",
+          "value": "Not publicly specified on the current Veracue product information."
+        },
+        {
+          "field": "Net peptide content and vial size",
+          "value": "Not publicly specified on the current Veracue product information."
+        },
+        {
+          "field": "Purity result and analytical method",
+          "value": "Confirm through applicable Veracue lot documentation."
+        },
+        {
+          "field": "Lot number and certificate of analysis",
+          "value": "Confirm through applicable Veracue lot documentation."
+        },
+        {
+          "field": "Storage and handling conditions",
+          "value": "Confirm through applicable Veracue lot documentation."
+        }
+      ],
+      "cta": {
+        "label": "Contact Veracue for Product Documentation",
+        "href": "/contact-us"
+      }
+    }
+  },
+  "sections": [
+    {
+      "id": "what-is-melanotan-1",
+      "heading": "What Is Melanotan 1?",
+      "answer_first": "Melanotan 1 is a synthetic melanocortin peptide analogue built on the structure of α-MSH, studied for how it engages melanocortin receptors and pigmentation pathways.",
+      "body": [
+        "It carries two changes relative to the native hormone: norleucine in place of methionine at position 4, and D-phenylalanine in place of phenylalanine at position 7. Together, those substitutions give the peptide much greater resistance to enzymatic breakdown than α-MSH itself, which is part of why it became a useful research tool in the first place — native α-MSH degrades too quickly to study easily under controlled conditions.",
+        "In the scientific and regulatory literature, this same molecule is also referred to as afamelanotide. That name appears on substance registries, in clinical publications, and as the active substance of an approved prescription medicine discussed later on this page. The research name and the substance name point to the same underlying peptide; what differs is the product built around it.",
+        "For research purposes, Melanotan 1 belongs to melanocortin receptor and melanogenesis research — the study of how MC1R signalling and pigment synthesis are regulated at the cellular level. Veracue's material is presented here as a research reference, intended strictly for laboratory use."
+      ]
+    },
+    {
+      "id": "scientific-identity",
+      "heading": "Scientific Identity & Molecular Reference",
+      "intro": "The values below are reference identity, drawn from authoritative scientific sources. They support research identification and recordkeeping. They are not analytical results for any specific Veracue lot.",
+      "table": {
+        "columns": [
+          "Attribute",
+          "Reference"
+        ],
+        "rows": [
+          [
+            "Common name",
+            "Melanotan 1 / Melanotan-I"
+          ],
+          [
+            "Substance name",
+            "Afamelanotide"
+          ],
+          [
+            "Structural name",
+            "[Nle4, D-Phe7]-α-MSH"
+          ],
+          [
+            "Class",
+            "Synthetic melanocortin peptide / α-MSH analogue"
+          ],
+          [
+            "Length",
+            "13 residues"
+          ],
+          [
+            "Sequence",
+            "Ac-Ser-Tyr-Ser-Nle-Glu-His-D-Phe-Arg-Trp-Gly-Lys-Pro-Val-NH₂"
+          ],
+          [
+            "Molecular formula",
+            "C₇₈H₁₁₁N₂₁O₁₉"
+          ],
+          [
+            "Reference molecular weight",
+            "Approximately 1,646.8 g/mol"
+          ],
+          [
+            "CAS",
+            "75921-69-6"
+          ],
+          [
+            "Reference databases",
+            "FDA / PubChem"
+          ]
+        ]
+      },
+      "closing": "Molecular-mass conventions can differ slightly depending on how a source reports them — average versus monoisotopic mass, or free peptide versus a salt form. When comparing figures across sources, check which convention is being used rather than assuming they match. Reference molecular information is provided for research identification and recordkeeping; supplier-specific analytical results must be verified independently through lot documentation."
+    },
+    {
+      "id": "melanotan-1-vs-afamelanotide",
+      "heading": "Is Melanotan 1 the Same as Afamelanotide?",
+      "answer_first": "Melanotan-I / Melanotan-1 are listed as synonyms of afamelanotide in authoritative substance records, so at the molecular level the two names refer to the same peptide.",
+      "body": [
+        "That shared identity is a fact about chemistry, not about products. A medicine is a molecule built into a defined dosage form, manufactured under a registered quality system, and approved for a stated use. Afamelanotide is the active substance in Scenesse, a specific prescription medicine discussed in more detail below. A Veracue Research Use Only material carries no relationship to that product beyond sharing the underlying molecular entity, and it must be evaluated from its own documentation."
+      ],
+      "table": {
+        "columns": [
+          "Name",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "Melanotan 1",
+            "Common name for the peptide"
+          ],
+          [
+            "Afamelanotide",
+            "Established substance name"
+          ],
+          [
+            "Scenesse",
+            "Specific prescription pharmaceutical containing afamelanotide"
+          ],
+          [
+            "Veracue Melanotan 1",
+            "RUO research material requiring its own product documentation"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "melanogenesis-research",
+      "heading": "Melanotan 1 and Melanogenesis Research",
+      "answer_first": "The research interest in Melanotan 1 comes down to one receptor and one pathway: MC1R signalling and its downstream effect on melanin production.",
+      "body": [
+        "Melanocytes carry the melanocortin 1 receptor (MC1R), which responds to α-MSH and its analogues. When the receptor is activated, intracellular cyclic AMP rises, and that signal drives the enzyme tyrosinase and the broader machinery of melanin synthesis. The result studied in this literature is a shift toward eumelanin, the darker and more UV-resistant of the two pigment types the skin produces.",
+        "MC1R is also of interest because it varies naturally between individuals, and those variants affect how strongly the receptor signals — a recurring theme in pigmentation genetics research. A stable α-MSH analogue like Melanotan 1 gives researchers a practical tool for probing that pathway under controlled conditions.",
+        "Mechanistic rationale explains why the peptide is studied; it does not by itself establish a human outcome or product-specific efficacy."
+      ]
+    },
+    {
+      "id": "melanotan-1-vs-melanotan-2",
+      "heading": "Melanotan 1 vs Melanotan 2",
+      "answer_first": "Melanotan 1 and Melanotan 2 are different molecules that share a receptor-recognition motif. This comparison is scientific, not a recommendation — neither compound is presented as preferable, and neither is offered for use in people.",
+      "table": {
+        "columns": [
+          "Attribute",
+          "Melanotan 1",
+          "Melanotan 2"
+        ],
+        "rows": [
+          [
+            "Molecular class",
+            "Linear α-MSH analogue",
+            "Cyclic α-MSH analogue"
+          ],
+          [
+            "Structure",
+            "Linear tridecapeptide",
+            "Cyclic heptapeptide (lactam-bridged)"
+          ],
+          [
+            "Sequence",
+            "Ac-Ser-Tyr-Ser-Nle-Glu-His-D-Phe-Arg-Trp-Gly-Lys-Pro-Val-NH₂",
+            "Ac-Nle-cyclo[Asp-His-D-Phe-Arg-Trp-Lys]-NH₂"
+          ],
+          [
+            "Approximate molecular weight",
+            "1,646.8 g/mol",
+            "1,024.2 g/mol"
+          ],
+          [
+            "α-MSH relationship",
+            "Full-length analogue with Nle4 and D-Phe7 substitutions",
+            "Truncated, cyclised analogue retaining the His-D-Phe-Arg-Trp core"
+          ],
+          [
+            "Receptor research context",
+            "Described in the literature as acting predominantly at MC1R",
+            "Described in the literature as active across multiple melanocortin receptor subtypes"
+          ],
+          [
+            "Regulatory context",
+            "Associated with afamelanotide and the Scenesse approval context described above",
+            "Does not share the afamelanotide / Scenesse approval context described above"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "tanning-peptide",
+      "heading": "Why Is Melanotan 1 Called a \"Tanning Peptide\"?",
+      "answer_first": "The phrase reflects the pathway the molecule engages — MC1R activation and eumelanin synthesis — not a claim about what a research vial does to skin.",
+      "body": [
+        "Melanocortin signalling is the biological reason this compound shows up in pigmentation research, and it is also the reason unregulated marketing adopted \"tanning peptide\" as a shorthand decades ago. Those are two different sources for the same phrase: one is a description of receptor biology, the other is consumer terminology that grew up around it without the qualifications research evidence actually carries.",
+        "Veracue makes no cosmetic, appearance-related or photoprotective claim for this material. It is not a tanning product and is not a substitute for sun protection. The search term reflects real interest in the underlying science; it is not treated here as a product benefit."
+      ]
+    },
+    {
+      "id": "regulatory-context",
+      "heading": "Afamelanotide in Clinical and Regulatory Literature",
+      "answer_first": "Afamelanotide is the active substance in Scenesse, a prescription medicine authorised for adults with erythropoietic protoporphyria (EPP), a rare inherited photodermatosis.",
+      "body": [
+        "The FDA approved Scenesse in the United States in October 2019 to increase pain-free light exposure in adults with a history of phototoxic reactions from EPP. The EMA authorised Scenesse in the European Union in December 2014 for the prevention of phototoxicity in adults with EPP. Both authorisations are specific to that product and that indication.",
+        "The supporting clinical evidence — including randomised, placebo-controlled trials published in the New England Journal of Medicine — evaluated a particular manufactured dosage form in diagnosed patients under medical supervision. That evidence belongs to the pharmaceutical product it studied."
+      ],
+      "callout": "Clinical evidence for afamelanotide in a defined pharmaceutical formulation should not be represented as evidence for an independently supplied RUO Melanotan 1 material."
+    },
+    {
+      "id": "dosage-question",
+      "heading": "What About Melanotan 1 Dosage?",
+      "answer_first": "This page does not provide a human dosage for Melanotan 1.",
+      "body": [
+        "Published dosing regimens belong to a specific clinical study or an approved pharmaceutical formulation — they are not a universal property of the molecule itself. A dose only means something alongside the formulation, route, population and monitoring it was studied with.",
+        "Numbers that circulate informally often add a further problem: many originate with Melanotan 2, a structurally different molecule with a different mass, so carrying a figure across from one compound to the other is not a safe approximation. Veracue's RUO material does not receive a clinical dosing recommendation from this page or from any other Melanotan-related source."
+      ]
+    },
+    {
+      "id": "interpreting-research",
+      "heading": "How to Interpret Melanotan 1 Research",
+      "subsections": [
+        {
+          "heading": "What the Research Actually Tells Us",
+          "intro": "Different kinds of evidence answer different questions. Reading them as interchangeable is how a receptor finding becomes an outcome claim.",
+          "table": {
+            "columns": [
+              "Evidence type",
+              "What it tells us",
+              "What it does not prove"
+            ],
+            "rows": [
+              [
+                "Molecular / biochemical",
+                "Structural identity and chemical behaviour",
+                "Any biological or human outcome"
+              ],
+              [
+                "Receptor / cellular",
+                "Activity in a defined laboratory system",
+                "Clinical efficacy in an organism"
+              ],
+              [
+                "Human clinical studies",
+                "Outcomes in the population and formulation studied",
+                "Equivalence of any other supplier's material"
+              ],
+              [
+                "Regulatory approval",
+                "The status of one specific pharmaceutical product",
+                "Any status or quality for an RUO material"
+              ],
+              [
+                "Certificate of analysis",
+                "Lot-specific analytical results by the stated method",
+                "Biological activity or fitness for use in people"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "How Should Safety Information Be Interpreted?",
+          "body": [
+            "Safety findings are tied to the formulation, route, exposure, population and study design in which they were generated. Clinical evidence for afamelanotide belongs to the pharmaceutical context it was studied in and does not establish the safety of a Veracue RUO material. Melanotan II literature should likewise not be used as evidence for Melanotan 1 — they are different molecules with separate evidence bases."
+          ]
+        }
+      ]
+    }
+  ],
+  "problem_solution_sections": {
+    "heading": "Research Problems and How to Resolve Them",
+    "intro": "Twelve recurring questions researchers bring to this compound, answered directly.",
+    "count": 12,
+    "items": [
+      {
+        "number": "01",
+        "problem": "What exactly is Melanotan 1?",
+        "solution": "Melanotan 1 is a synthetic thirteen-residue analogue of α-melanocyte-stimulating hormone, carrying two substitutions — norleucine at position 4 and D-phenylalanine at position 7 — that make it far more stable than the native hormone. That stability is what made it useful as a research tool in the first place. The same molecule is recorded under the substance name afamelanotide in scientific and regulatory literature, and both names point to the same underlying peptide."
+      },
+      {
+        "number": "02",
+        "problem": "Is Melanotan 1 the same as afamelanotide?",
+        "solution": "At the molecular level, yes — substance records list Melanotan-1 and Melanotan-I as synonyms of afamelanotide, sharing CAS number 75921-69-6. What differs is the product built around that molecule. Afamelanotide is also the active substance in Scenesse, a specific approved medicine, and a research material sharing the molecular identity carries none of that product's manufacturing, formulation or approval status. Evaluate a research material on its own documentation, not on the substance name alone."
+      },
+      {
+        "number": "03",
+        "problem": "Is Melanotan 1 actually a peptide?",
+        "solution": "Yes. It is a linear chain of thirteen amino acid residues with an acetylated N-terminus and an amidated C-terminus, placing it in the peptide class rather than among small molecules. That classification describes chemical structure and synthesis considerations — it says nothing about the purity, grade or specification of any particular supplier's material. Those details come only from a supplier's own lot documentation."
+      },
+      {
+        "number": "04",
+        "problem": "What is the difference between Melanotan 1 and Melanotan 2?",
+        "solution": "They are structurally distinct compounds. Melanotan 1 is a linear peptide at roughly 1,646.8 g/mol; Melanotan 2 is a shorter, cyclic peptide at roughly 1,024.2 g/mol, closed by a lactam bridge, and described in the literature as active across a broader set of melanocortin receptors. Their regulatory contexts differ too — Melanotan 2 does not share the afamelanotide / Scenesse approval context. For research records, treat them as separate entities: mass calculations, published findings and identity checks do not carry across from one to the other."
+      },
+      {
+        "number": "05",
+        "problem": "Why is Melanotan 1 associated with tanning?",
+        "solution": "The association traces back to MC1R signalling: activating the receptor raises cyclic AMP, which drives tyrosinase activity and a shift toward eumelanin production. That mechanism is the genuine research context. The consumer phrase \"tanning peptide\" grew separately, out of unregulated marketing that borrowed the science without its qualifications. Veracue makes no cosmetic or photoprotective claim for this compound."
+      },
+      {
+        "number": "06",
+        "problem": "Which molecular identity should I use in a research record?",
+        "solution": "Record the reference identity first: Melanotan 1, cross-referenced to the substance name afamelanotide, the structural notation [Nle4, D-Phe7]-α-MSH, the full sequence, and CAS 75921-69-6. Abbreviations like MT-1 are fine as shorthand once that identity is established, but they are ambiguous standing alone. Separately, record the supplier, lot number and any analytical documentation supplied with the specific material used — that is a different entry from the reference identity above."
+      },
+      {
+        "number": "07",
+        "problem": "Does pharmaceutical afamelanotide evidence apply to an RUO peptide?",
+        "solution": "No. A clinical trial or approval is bound to the specific manufactured product it evaluated — its formulation, manufacturing controls and administration conditions — not to the molecule in the abstract. A research material from an independent supplier shares the molecular entity and nothing else that was actually tested. Citing pharmaceutical outcomes as evidence for a research reference material misrepresents both the study and the material."
+      },
+      {
+        "number": "08",
+        "problem": "How should I interpret sequence and molecular-mass information?",
+        "solution": "Reference values — the published formula and the approximately 1,646.8 g/mol reference weight — describe the intended molecule, not a measurement of any particular vial. A supplier's analytical result is a separate claim, tied to a specific lot and method. When comparing mass figures across sources, note whether a value is an average or monoisotopic mass, and whether it refers to the free peptide or a salt form — mismatched conventions can look like identity discrepancies when they are not."
+      },
+      {
+        "number": "09",
+        "problem": "What should I look for on a Melanotan 1 COA?",
+        "solution": "Confirm that the product name and lot number on the certificate match the material in hand, not a representative batch. Then check how identity was established, what the assay or purity result specifically measures, which method and date were used, and which laboratory performed the testing. A specification, where stated, shows what the result was judged against. Veracue-specific analytical results should be confirmed through applicable lot documentation."
+      },
+      {
+        "number": "10",
+        "problem": "What does the scientific evidence actually establish?",
+        "solution": "Each evidence type answers a narrower question than it's often given credit for. Biochemical data establishes molecular identity. Receptor and cellular studies establish activity in a defined system. Human clinical trials establish outcomes for the specific formulation and population studied. A regulatory approval establishes the status of one product. None of these layers substitutes for the one below it, and none of them establishes anything about a research material that was not itself tested."
+      },
+      {
+        "number": "11",
+        "problem": "Why should a dosage search not be treated as a research protocol?",
+        "solution": "A dose is not a standalone property of a molecule — it only means something alongside the formulation, route, population and monitoring it was studied under. Numbers found informally often come from Melanotan 2 rather than Melanotan 1, which compounds the error with a mass mismatch on top of a context mismatch. In a laboratory setting, experimental parameters are set by the investigator under the governing protocol, not sourced from a product page or search result."
+      },
+      {
+        "number": "12",
+        "problem": "What can I reasonably conclude from a Melanotan 1 product page?",
+        "solution": "Scientific background is checkable against substance databases and primary literature. Regulatory context is checkable against agency records and belongs to the specific product named. Product-specific facts — purity, lot, storage — are verifiable only against a supplier's own documentation. Any claim about human use sits outside all three categories for a Research Use Only material and should be treated as a signal to look elsewhere, not as information to act on."
+      }
+    ]
+  },
+  "coa_section": {
+    "id": "coa",
+    "heading": "How to Read a Melanotan 1 COA",
+    "intro": "A certificate of analysis is one of the key documents linking a set of analytical results to a specific lot.",
+    "table": {
+      "columns": [
+        "COA field",
+        "What to verify"
+      ],
+      "rows": [
+        [
+          "Product name",
+          "Matches the material"
+        ],
+        [
+          "Lot number",
+          "Matches the supplied lot"
+        ],
+        [
+          "Identity",
+          "Shows how identity was evaluated"
+        ],
+        [
+          "Assay / purity",
+          "Defines exactly what was measured"
+        ],
+        [
+          "Analytical method",
+          "Identifies the method"
+        ],
+        [
+          "Analysis date",
+          "Establishes testing date"
+        ],
+        [
+          "Laboratory",
+          "Identifies testing source"
+        ],
+        [
+          "Specification",
+          "Shows acceptance criterion where applicable"
+        ]
+      ]
+    },
+    "note": "Veracue-specific analytical results should be confirmed through applicable lot documentation.",
+    "links": [
+      {
+        "label": "View COA Archive",
+        "href": "/certificates"
+      },
+      {
+        "label": "Request Lot Documentation",
+        "href": "/contact-us"
+      }
+    ]
+  },
+  "storage_section": {
+    "id": "storage",
+    "heading": "Storage & Handling",
+    "body": "Product-specific storage and handling conditions should be confirmed from the applicable Veracue documentation. Conditions for another Veracue peptide, or for the pharmaceutical product Scenesse, should not be transferred to this material.",
+    "cta": {
+      "label": "Contact Veracue for Product Documentation",
+      "href": "/contact-us"
+    }
+  },
+  "does_not_establish": {
+    "id": "not-established",
+    "heading": "What This Page Does Not Establish",
+    "intro": "This page does not establish:",
+    "items": [
+      "Human or veterinary use of Veracue Melanotan 1",
+      "Any cosmetic or tanning claim",
+      "Protection against UV exposure or sunburn",
+      "Dosing or administration guidance",
+      "Pharmaceutical equivalence to Scenesse",
+      "Regulatory approval of the Veracue material",
+      "Safety or efficacy of the Veracue material in people"
+    ]
+  },
+  "faq": {
+    "heading": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "What is Melanotan 1?",
+        "answer": "Melanotan 1 is a synthetic α-MSH analogue studied in melanocortin and pigmentation research. It carries two substitutions relative to the native hormone — norleucine at position 4 and D-phenylalanine at position 7 — which make it far more stable for laboratory use. Veracue supplies it as a Research Use Only material."
+      },
+      {
+        "question": "Is Melanotan 1 the same as afamelanotide?",
+        "answer": "Melanotan-1 and Melanotan-I are listed as synonyms of afamelanotide in authoritative substance records, sharing the same molecular identity. Afamelanotide is also the active substance in a specific prescription medicine. The molecular identity is shared; the pharmaceutical identity is not."
+      },
+      {
+        "question": "Is Melanotan 1 a peptide?",
+        "answer": "Yes — a synthetic linear peptide of thirteen amino acid residues, related to α-MSH. Peptide classification describes the molecule's chemical class, not the grade or specification of any supplier's material."
+      },
+      {
+        "question": "What is Melanotan 1 vs Melanotan 2?",
+        "answer": "Different molecules. Melanotan 1 is linear, at roughly 1,646.8 g/mol. Melanotan 2 is a shorter cyclic peptide at roughly 1,024.2 g/mol, described as active across a broader set of melanocortin receptors. Neither is presented here as preferable."
+      },
+      {
+        "question": "Why is Melanotan 1 called a tanning peptide?",
+        "answer": "The phrase reflects the MC1R / melanogenesis pathway it engages, later picked up by unregulated consumer marketing. It is a description of research context, not a product claim — Veracue makes no cosmetic or tanning claim for this material."
+      },
+      {
+        "question": "Is Melanotan 1 the same thing as Scenesse?",
+        "answer": "No. Scenesse is a specific prescription pharmaceutical product containing afamelanotide, approved for a defined rare-disease indication. A Veracue RUO research material must be evaluated from its own documentation, not from Scenesse's approval."
+      },
+      {
+        "question": "What research exists on afamelanotide / Melanotan 1?",
+        "answer": "The literature includes receptor and cellular pharmacology, preclinical melanogenesis work, and human clinical trials of the pharmaceutical formulation of afamelanotide in erythropoietic protoporphyria, including randomised trials published in the New England Journal of Medicine."
+      },
+      {
+        "question": "What should I look for on a Melanotan 1 COA?",
+        "answer": "Check that the product name and lot number match your material, then review how identity was confirmed, what the assay result measures, the method and date used, and the testing laboratory."
+      },
+      {
+        "question": "Does pharmaceutical afamelanotide research apply to RUO Melanotan 1?",
+        "answer": "No. Clinical evidence is bound to the specific manufactured product it evaluated. A research material shares the molecular entity and nothing else that was tested."
+      },
+      {
+        "question": "Does Veracue Melanotan 1 have a human dosage?",
+        "answer": "No. This page provides no human dosing or administration guidance. Published regimens belong to specific clinical or pharmaceutical contexts, not to a research material."
+      },
+      {
+        "question": "Is Veracue Melanotan 1 intended for human use?",
+        "answer": "No. This Veracue research material is designated Research Use Only — not for human or animal use, ingestion, injection or any form of administration."
+      },
+      {
+        "question": "What does the Melanotan 1 sequence and structure tell me?",
+        "answer": "The sequence and formula confirm reference molecular identity for recordkeeping. They are not a substitute for lot-specific analytical confirmation, which comes only from a supplier's own documentation."
+      }
+    ]
+  },
+  "compliance": {
+    "heading": "Research Use Only · Compliance",
+    "body": "Research Use Only. For laboratory research purposes only. Not for human or animal use. This Veracue research material is not a drug, supplement, cosmetic or food, and is not intended to diagnose, treat, cure or prevent any disease. Veracue is not a compounding pharmacy. Statements on this page have not been evaluated by the U.S. Food and Drug Administration. Product specifications, purity results and storage conditions are established by Veracue's own lot documentation, which should be requested and reviewed before use.",
+    "links": [
+      {
+        "label": "Medical Disclaimer",
+        "href": "/medical-disclaimer"
+      },
+      {
+        "label": "Terms & Conditions",
+        "href": "/terms-and-conditions"
+      },
+      {
+        "label": "Help & FAQ",
+        "href": "/faq"
+      }
+    ]
+  },
+  "final_cta": {
+    "heading": "Review the Documentation Before You Evaluate the Material",
+    "body": "Scientific identity for Melanotan 1 is well established in public references. Everything specific to a vial — salt form, net content, purity, lot and storage — comes from Veracue's own documentation. Request it and review it against the checklist above.",
+    "buttons": [
+      {
+        "label": "Contact Veracue for Product Documentation",
+        "href": "/contact-us",
+        "style": "primary"
+      },
+      {
+        "label": "View Product Documentation",
+        "href": "/certificates",
+        "style": "secondary"
+      },
+      {
+        "label": "Browse Research Catalog",
+        "href": "/shop",
+        "style": "tertiary"
+      }
+    ]
+  },
+  "entity_map": {
+    "heading": "Entity and Terminology Map",
+    "table": {
+      "columns": [
+        "Search term",
+        "Relationship"
+      ],
+      "rows": [
+        [
+          "Melanotan 1",
+          "Core product and search name"
+        ],
+        [
+          "Melanotan-I / Melanotan-1",
+          "Variant spellings"
+        ],
+        [
+          "MT-1 / MT1",
+          "Common abbreviations"
+        ],
+        [
+          "Afamelanotide",
+          "Established substance name for the same molecular entity"
+        ],
+        [
+          "[Nle4, D-Phe7]-α-MSH",
+          "Structural nomenclature for the two substitutions relative to α-MSH"
+        ],
+        [
+          "Scenesse",
+          "Prescription medicine containing afamelanotide; not the Veracue product"
+        ],
+        [
+          "Melanotan 2 / MT-2",
+          "A structurally different molecule, not a variant name"
+        ]
+      ]
+    }
+  },
+  "internal_links": {
+    "links": [
+      {
+        "label": "Research Catalog",
+        "href": "/shop"
+      },
+      {
+        "label": "Certificates of Analysis",
+        "href": "/certificates"
+      },
+      {
+        "label": "Help & FAQ",
+        "href": "/faq"
+      },
+      {
+        "label": "Contact Us",
+        "href": "/contact-us"
+      },
+      {
+        "label": "About Veracue",
+        "href": "/about-us"
+      },
+      {
+        "label": "Medical Disclaimer",
+        "href": "/medical-disclaimer"
+      },
+      {
+        "label": "Terms & Conditions",
+        "href": "/terms-and-conditions"
+      }
+    ]
+  },
+  "references": [
+    {
+      "source": "U.S. Food and Drug Administration",
+      "title": "Substance registry record for afamelanotide (UNII QW68W3J66U), listing Melanotan-1 / Melanotan-I synonyms",
+      "url": "https://precision.fda.gov/uniisearch/srs/unii/QW68W3J66U"
+    },
+    {
+      "source": "U.S. Food and Drug Administration",
+      "title": "SCENESSE (afamelanotide) NDA 210797 approval, approved 8 October 2019",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2019/210797Orig1s000Approv.pdf"
+    },
+    {
+      "source": "European Medicines Agency",
+      "title": "Scenesse (afamelanotide) European public assessment report",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/scenesse"
+    },
+    {
+      "source": "PubChem (NCBI)",
+      "title": "Melanotan-I, CID 16164658",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/Melanotan-I"
+    },
+    {
+      "source": "PubChem (NCBI)",
+      "title": "Melanotan II, CID 92432",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/92432"
+    },
+    {
+      "source": "New England Journal of Medicine",
+      "title": "Langendonk JG, Balwani M, Anderson KE, et al. Afamelanotide for Erythropoietic Protoporphyria. N Engl J Med. 2015;373(1):48-59.",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1411481"
+    }
+  ],
+  "json_ld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Melanotan 1 Research Peptide | Afamelanotide Reference | Veracue",
+      "description": "Melanotan 1, the α-MSH analogue also known as afamelanotide, for lab research: molecular identity, the Scenesse distinction, Melanotan 1 vs 2, and COA checks.",
+      "url": "https://veracue-peptides.vercel.app/product/melanotan-1",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Veracue Peptides",
+        "url": "https://veracue-peptides.vercel.app"
+      },
+      "about": [
+        {
+          "@type": "ChemicalSubstance",
+          "@id": "https://veracue-peptides.vercel.app/product/melanotan-1#reference-identity",
+          "name": "Melanotan 1",
+          "alternateName": [
+            "Melanotan-1",
+            "Melanotan-I",
+            "MT-1",
+            "MT1",
+            "Afamelanotide",
+            "[Nle4, D-Phe7]-alpha-MSH"
+          ],
+          "description": "Reference scientific identity: a synthetic linear tridecapeptide analogue of α-melanocyte-stimulating hormone, studied in melanocortin receptor and melanogenesis research.",
+          "molecularFormula": "C78H111N21O19",
+          "identifier": [
+            {
+              "@type": "PropertyValue",
+              "propertyID": "CAS",
+              "value": "75921-69-6"
+            },
+            {
+              "@type": "PropertyValue",
+              "propertyID": "PubChem CID",
+              "value": "16164658"
+            },
+            {
+              "@type": "PropertyValue",
+              "propertyID": "FDA UNII",
+              "value": "QW68W3J66U"
+            }
+          ],
+          "sameAs": [
+            "https://pubchem.ncbi.nlm.nih.gov/compound/16164658",
+            "https://precision.fda.gov/uniisearch/srs/unii/QW68W3J66U"
+          ]
+        }
+      ],
+      "mainEntity": {
+        "@id": "https://veracue-peptides.vercel.app/product/melanotan-1#research-material"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://veracue-peptides.vercel.app/product/melanotan-1#research-material",
+      "name": "Melanotan 1",
+      "url": "https://veracue-peptides.vercel.app/product/melanotan-1",
+      "description": "Veracue Melanotan 1 is a Research Use Only research material referencing the scientific identity described above. Not for human or animal use. Product-specific specifications are established by Veracue's own lot documentation, and this listing implies no pharmaceutical status or approval.",
+      "category": "Research Use Only research material",
+      "brand": {
+        "@type": "Brand",
+        "name": "Veracue Peptides"
+      },
+      "isRelatedTo": {
+        "@id": "https://veracue-peptides.vercel.app/product/melanotan-1#reference-identity"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Intended use",
+          "value": "Research Use Only — laboratory research purposes only; not for human or animal use"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://veracue-peptides.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Shop",
+          "item": "https://veracue-peptides.vercel.app/shop"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Melanotan 1",
+          "item": "https://veracue-peptides.vercel.app/product/melanotan-1"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Melanotan 1?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Melanotan 1 is a synthetic α-MSH analogue studied in melanocortin and pigmentation research. It carries two substitutions relative to the native hormone — norleucine at position 4 and D-phenylalanine at position 7 — which make it far more stable for laboratory use. Veracue supplies it as a Research Use Only material."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Melanotan 1 the same as afamelanotide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Melanotan-1 and Melanotan-I are listed as synonyms of afamelanotide in authoritative substance records, sharing the same molecular identity. Afamelanotide is also the active substance in a specific prescription medicine. The molecular identity is shared; the pharmaceutical identity is not."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Melanotan 1 a peptide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — a synthetic linear peptide of thirteen amino acid residues, related to α-MSH. Peptide classification describes the molecule's chemical class, not the grade or specification of any supplier's material."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Melanotan 1 vs Melanotan 2?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Different molecules. Melanotan 1 is linear, at roughly 1,646.8 g/mol. Melanotan 2 is a shorter cyclic peptide at roughly 1,024.2 g/mol, described as active across a broader set of melanocortin receptors. Neither is presented here as preferable."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is Melanotan 1 called a tanning peptide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The phrase reflects the MC1R / melanogenesis pathway it engages, later picked up by unregulated consumer marketing. It is a description of research context, not a product claim — Veracue makes no cosmetic or tanning claim for this material."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Melanotan 1 the same thing as Scenesse?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Scenesse is a specific prescription pharmaceutical product containing afamelanotide, approved for a defined rare-disease indication. A Veracue RUO research material must be evaluated from its own documentation, not from Scenesse's approval."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What research exists on afamelanotide / Melanotan 1?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The literature includes receptor and cellular pharmacology, preclinical melanogenesis work, and human clinical trials of the pharmaceutical formulation of afamelanotide in erythropoietic protoporphyria, including randomised trials published in the New England Journal of Medicine."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I look for on a Melanotan 1 COA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check that the product name and lot number match your material, then review how identity was confirmed, what the assay result measures, the method and date used, and the testing laboratory."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does pharmaceutical afamelanotide research apply to RUO Melanotan 1?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Clinical evidence is bound to the specific manufactured product it evaluated. A research material shares the molecular entity and nothing else that was tested."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Veracue Melanotan 1 have a human dosage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. This page provides no human dosing or administration guidance. Published regimens belong to specific clinical or pharmaceutical contexts, not to a research material."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Veracue Melanotan 1 intended for human use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. This Veracue research material is designated Research Use Only — not for human or animal use, ingestion, injection or any form of administration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Melanotan 1 sequence and structure tell me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The sequence and formula confirm reference molecular identity for recordkeeping. They are not a substitute for lot-specific analytical confirmation, which comes only from a supplier's own documentation."
+          }
+        }
+      ]
+    }
+  ]
+}

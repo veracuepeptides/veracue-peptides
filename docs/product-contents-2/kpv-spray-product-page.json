@@ -1,0 +1,369 @@
+{
+  "route": "/product/kpv-spray",
+  "seo": {
+    "title": "KPV Peptide Spray | KPV Research Peptide | Veracue",
+    "meta_description": "KPV Spray: tripeptide identity, sequence and molecular data, its relationship to α-MSH, evidence-level research summary, and COA guidance. Research Use Only.",
+    "canonical_url": "https://veracue-peptides.vercel.app/product/kpv-spray",
+    "robots": "index, follow",
+    "og_title": "KPV Peptide Spray | Veracue Research Peptides",
+    "og_description": "A research-grade identity page for KPV Spray — sequence, molecular data, evidence-level research summaries, and COA verification guidance."
+  },
+
+  "breadcrumbs": [
+    { "label": "Home", "url": "/" },
+    { "label": "Shop", "url": "/shop" },
+    { "label": "KPV Spray", "url": "/product/kpv-spray" }
+  ],
+
+  "hero": {
+    "eyebrow": "Research Use Only (RUO)",
+    "heading": "KPV Spray",
+    "subheading": "KPV (Lys-Pro-Val) research peptide, spray-format listing",
+    "short_description": "KPV is a small, well-characterized tripeptide — the C-terminal fragment of α-MSH. This page lays out its confirmed chemical identity, walks through what the published research actually shows and at what evidence level, and explains what to look for on a Certificate of Analysis. KPV Spray is a spray-format research listing; formulation specifics for the applicable SKU or lot should be confirmed directly through Veracue documentation.",
+    "primary_cta": { "label": "View Certificates (COA)", "url": "/certificates" },
+    "secondary_cta": { "label": "Contact our team", "url": "/contact-us" }
+  },
+
+  "overview": {
+    "body": "KPV is three amino acids — lysine, proline, and valine — in that order. It isn't a novel synthetic invention; the sequence is the C-terminal tripeptide of alpha-melanocyte-stimulating hormone (α-MSH), a much larger 13-residue peptide hormone. Because it's so short, KPV is comparatively easy to verify analytically: a defined, three-residue structure gives you one clear molecular signal to match against, rather than the more complex profile of a multi-component blend.\n\nKPV Spray is Veracue's spray-format listing for this material, supplied strictly for laboratory and research use. \"Spray\" describes how the product is packaged and dispensed — it says nothing about how it's meant to be used, and that distinction is worth taking seriously; it comes up again later on this page. As with everything in Veracue's catalog, this is not a drug, supplement, cosmetic, or treatment, and nothing here amounts to usage instructions."
+  },
+
+  "product_snapshot": {
+    "product_name": "KPV Spray",
+    "compound": "KPV (Lys-Pro-Val)",
+    "category": "Melanocortin-derived research tripeptide",
+    "format": "Spray-format research listing (dispensing format only — administration route not established)",
+    "sku": "Not publicly specified",
+    "size_volume": "Requires product/lot-specific confirmation",
+    "concentration": "Not publicly specified",
+    "carrier_excipients": "Not publicly specified",
+    "salt_counterion_form": "Not publicly specified",
+    "price": "Not publicly specified",
+    "storage_conditions": "Not publicly specified",
+    "stock_status": "Not publicly specified",
+    "coa_availability": "Requires product/lot-specific confirmation",
+    "intended_use": "Research and laboratory use only. Not for human or veterinary use, not a drug, supplement, or cosmetic."
+  },
+
+  "scientific_identity": {
+    "intro": "A small, defined tripeptide like KPV is refreshingly simple to pin down — there's one sequence, one expected mass, and no ambiguity about how many components should be present.",
+    "identity_table": [
+      { "field": "Compound name", "value": "KPV" },
+      { "field": "Full designation", "value": "Lys-Pro-Val; catalogued in chemical databases as \"MSH (11–13)\"" },
+      { "field": "Sequence", "value": "Lysine – Proline – Valine (K-P-V)" },
+      { "field": "Residue count", "value": "3 amino acids" },
+      { "field": "Molecular formula (free-acid reference form)", "value": "C16H30N4O4" },
+      { "field": "Average molecular weight", "value": "≈342.44 g/mol" },
+      { "field": "Monoisotopic mass (calculated)", "value": "≈342.23 Da" },
+      { "field": "CAS number", "value": "67727-97-3" },
+      { "field": "PubChem CID", "value": "125672" },
+      { "field": "Relationship to α-MSH", "value": "Corresponds to the C-terminal tripeptide (residues 11–13) of the 13-residue α-MSH sequence" },
+      { "field": "Veracue-specific salt/counterion form", "value": "Not publicly specified" }
+    ],
+    "note": "Those figures describe the free-acid reference structure. Salt forms — acetate, TFA, or otherwise — shift the measured mass, sometimes by a meaningful amount, so any analytical comparison should be checked against the specific form actually supplied rather than the generic reference weight above."
+  },
+
+  "kpv_vs_alpha_msh": {
+    "heading": "KPV and α-MSH are related — not interchangeable",
+    "body": "α-MSH is a complete 13-residue melanocortin hormone with its own receptor pharmacology. KPV is its final three residues, studied on its own as a much smaller molecule. Shared ancestry isn't the same as shared function: a three-residue fragment doesn't automatically carry the receptor-binding behavior of the full peptide it came from, and it would be a mistake to read KPV as simply \"α-MSH in miniature.\"\n\nSome of the KPV-specific literature proposes that part of its activity may not require classical melanocortin receptor engagement at all — an intriguing thread, but one the field still describes as a proposed mechanism rather than settled pharmacology. Where a finding was generated with full-length α-MSH rather than KPV itself, this page says so directly instead of folding the two literatures together."
+  },
+
+  "research_focus": {
+    "intro": "KPV's research footprint sits almost entirely in the lab, not the clinic. A handful of themes recur across the published work:",
+    "themes": [
+      "Inflammatory signaling at the cellular level",
+      "Intestinal and epithelial biology, including gut uptake via the PepT1 transporter",
+      "Keratinocyte and skin-cell research involving oxidative stress and MAPK/NF-κB signaling",
+      "Broader melanocortin-system research connected to inflammatory pathways"
+    ],
+    "caveat": "These are recurring research themes, not a confirmed effects list for the Veracue product — and they vary a good deal by model. The table below breaks each one down by evidence level."
+  },
+
+  "problem_solution_sections": [
+    {
+      "id": "identity-confirmation",
+      "heading": "What is KPV peptide, and how do I confirm its identity?",
+      "body": "KPV is shorthand for the tripeptide Lys-Pro-Val — lysine, proline, and valine, in that sequence. You'll sometimes see it listed in chemical databases as \"MSH (11–13),\" a nod to its origin as the last three residues of α-MSH. Being only three amino acids long works in its favor: standard mass spectrometry and HPLC retention analysis can confirm its identity with a level of confidence that's much harder to achieve for a multi-peptide blend. The most reliable way to check any given lot is to line up its CAS number (67727-97-3) and PubChem CID (125672) against the certificate of analysis for that specific batch, rather than taking the general product description at face value."
+    },
+    {
+      "id": "chemical-identity",
+      "heading": "What is the correct KPV sequence, molecular weight, and chemical identity?",
+      "body": "Sequence: Lys-Pro-Val (K-P-V). For the free-acid reference form, that works out to a molecular formula of C16H30N4O4, an average molecular weight of about 342.44 g/mol, and a calculated monoisotopic mass near 342.23 Da. Those last two numbers measure slightly different things — average weight accounts for the natural mix of isotopes, monoisotopic mass reflects only the most common one — and analytical reports don't always make that distinction obvious.\n\nHere's the part worth flagging: peptides are commonly supplied as salts, and a salt form shifts the measured mass relative to the free-acid figure above. Veracue hasn't published which salt or counterion form applies to KPV Spray, so treat 342.44 g/mol as a reference point, not a guarantee of what a given lot will weigh in analysis."
+    },
+    {
+      "id": "kpv-vs-alpha-msh",
+      "heading": "How is KPV different from full-length α-MSH?",
+      "body": "α-MSH is the full 13-residue hormone; KPV is just its last three residues, isolated and studied in its own right. That's a structural relationship, not a functional guarantee — the fragment doesn't inherit the parent hormone's full receptor-binding profile simply by virtue of sharing a sequence with it.\n\nSome KPV research points toward effects that may occur independent of classical melanocortin receptor signaling, but that remains an open, actively investigated question rather than an accepted mechanism. It's worth checking, whenever you read a claim about KPV, whether the underlying study actually used KPV or used full-length α-MSH instead — the two bodies of evidence are connected but not interchangeable, and this page keeps them separate rather than blending them together."
+    },
+    {
+      "id": "inflammatory-signaling",
+      "heading": "What does KPV research actually show about inflammatory signaling?",
+      "body": "Most of the KPV-specific inflammation research is preclinical — cell culture and animal models, not clinical trials. Published work has looked at how KPV interacts with inflammatory signaling, including oxidative-stress responses and pathways like MAPK/NF-κB in cultured keratinocytes, and separately, at intestinal inflammation markers in animal models.\n\nThat distinction matters: an observation in cultured cells or a mouse model tells you what happened under those specific experimental conditions, not whether the same effect shows up in a person. Nothing here should be read as suggesting KPV treats, prevents, or cures inflammation of any kind."
+    },
+    {
+      "id": "gi-epithelial-research",
+      "heading": "What does the KPV literature actually show in gastrointestinal and epithelial research?",
+      "body": "One of the more distinctive threads in KPV research runs through PepT1, the intestinal peptide transporter that appears to carry KPV across epithelial cells. A widely cited 2008 study looked at this uptake pathway alongside markers of intestinal inflammation in animal and cell-based models, and it's a research area that keeps coming up in melanocortin-related gut literature since. It's a specific, model-dependent line of inquiry rather than evidence of a general digestive benefit, and none of it speaks to any particular method of taking KPV."
+    },
+    {
+      "id": "benefits-search-intent",
+      "heading": "What does \"KPV peptide benefits\" actually mean in a research context?",
+      "body": "Searching \"KPV benefits\" usually reflects a reasonable question, just phrased the wrong way. The more useful version isn't \"what does KPV do,\" but a handful of sharper ones: What effect was actually measured? In what model — cultured cells, animal tissue, a whole organism? Under what conditions? Was KPV itself the compound tested, or a related molecule like α-MSH?\n\nAnswering those for a specific study tells you far more than any generic benefits list, and it keeps a documented lab observation from quietly turning into a health claim. Veracue doesn't use \"benefits\" language to describe therapeutic outcomes for this or any RUO material."
+    },
+    {
+      "id": "evidence-by-model",
+      "heading": "What does the evidence say about KPV in cell, animal, and human research?",
+      "body": "The direct KPV literature clusters at the cell and animal level: keratinocyte studies on oxidative stress and inflammatory signaling, rodent studies on intestinal inflammation and epithelial transport. We didn't find controlled human clinical trials establishing KPV itself as an effective treatment for anything, and where human-relevant research does exist, it more often concerns the broader melanocortin system or α-MSH rather than KPV specifically. That's a statement about the literature reviewed here — not a claim that no such study exists anywhere or ever will."
+    },
+    {
+      "id": "dosage-search-intent",
+      "heading": "What does \"KPV dosage\" and \"KPV peptide dosage\" mean when reading research literature?",
+      "body": "Search interest around \"KPV dosage\" is almost always curiosity about what concentrations or exposure times a particular study used — figures that belong to that experiment's design, not to a usage recommendation. Those numbers vary by model, objective, and formulation, and they don't translate into instructions for handling a research product. Veracue doesn't publish dosing information for KPV Spray or anything else in the catalog."
+    },
+    {
+      "id": "comparison-context",
+      "heading": "How is KPV different from BPC-157, GHK-Cu, KLOW and TB-500?",
+      "body": "These names show up together constantly, in search behavior and in supplier catalogs alike, but they're not variations on a theme. BPC-157 is a distinct synthetic peptide fragment studied mostly in gastrointestinal and tissue-repair contexts. GHK-Cu is a copper-binding tripeptide complex with its own separate literature, largely dermal and connective-tissue focused. KLOW isn't a single molecule at all — it's a blend name, commonly associated with a mix that includes KPV, GHK-Cu, BPC-157, and TB-500. TB-500 is a commercial label that's been applied inconsistently across suppliers, sometimes to a short synthetic fragment and sometimes to full-length Thymosin Beta-4, so its identity is worth confirming at the listing level every time.\n\nShowing up in the same blend or the same comparison table doesn't mean shared mechanism or shared evidence. The table further down lays these differences out side by side."
+    },
+    {
+      "id": "coa-verification",
+      "heading": "What should I verify on a KPV Spray Certificate of Analysis?",
+      "body": "A COA for a defined tripeptide like KPV should tie a specific lot to specific results: product and compound name, lot/batch number, test date, testing laboratory, analytical method, chromatographic purity data, and mass-spectrometry identity confirmation, measured against a stated specification. Because KPV is structurally simple, that identity check is more straightforward than it would be for a blend. Veracue hasn't posted a KPV Spray-specific COA result here, so confirm purity, testing lab, and lot details for the exact lot in question through the certificates page rather than assuming they match."
+    },
+    {
+      "id": "mass-spec-interpretation",
+      "heading": "How should I interpret KPV mass-spectrometry and analytical data?",
+      "body": "For a compound this small, mass spectrometry does one job well: it confirms that the observed mass-to-charge signal lines up with what's expected for KPV — a value in the neighborhood of 342 g/mol for the free-acid form, adjusted for whatever salt form is actually present. A matching signal tells you the identity checks out. It doesn't, on its own, tell you anything about purity, potency, biological activity, or suitability for a given use — those are separate measurements, usually purity via HPLC peak area and potency via a distinct bioassay. No lot-specific m/z values or testing protocols are published on this page; that belongs on the COA for the exact lot involved."
+    },
+    {
+      "id": "page-scope",
+      "heading": "What can a Veracue KPV Spray page establish, and what requires lot-specific documentation?",
+      "body": "This page can speak to KPV's chemical identity, its structural relationship to α-MSH, and an honest summary of the research, sorted by evidence level. What it can't do — because Veracue hasn't published this for the KPV Spray SKU — is confirm concentration, carrier, volume, storage conditions, pricing, or COA results for this exact product. If you're evaluating this material for research purposes, request that lot-specific documentation directly rather than assuming it mirrors another Veracue listing or another supplier's KPV product."
+    }
+  ],
+
+  "evidence_summary_table": {
+    "columns": ["Research area", "Evidence level", "Model", "What was observed", "Important limitation"],
+    "rows": [
+      ["Intestinal inflammation / epithelial transport", "ANIMAL / PRECLINICAL", "Animal and cell models", "PepT1-mediated uptake of KPV studied alongside markers of intestinal inflammation", "Model-dependent; not evidence of a treatment effect in humans"],
+      ["Skin / keratinocyte oxidative-stress signaling", "CELL / IN-VITRO", "Cultured keratinocytes", "KPV examined for effects on oxidative-stress and MAPK/NF-κB-related signaling under particulate-stressor exposure", "In-vitro finding under specific stressor conditions; not generalized skin-benefit evidence"],
+      ["Melanocortin system and inflammatory bowel disease research", "MECHANISTIC / REVIEW", "Mixed preclinical and review literature", "Reviews discuss melanocortin-pathway involvement in IBD research, citing KPV as one investigated tripeptide", "Much of this literature addresses the melanocortin system broadly; KPV-specific findings are called out separately from α-MSH-level findings"],
+      ["Direct human clinical evidence for KPV", "HUMAN", "Not identified", "No robust controlled human clinical trial establishing KPV as an effective treatment was found in the sources reviewed", "Absence of identified evidence isn't the same as a worldwide claim that none exists"]
+    ]
+  },
+
+  "comparison_section": {
+    "heading": "KPV compared with related research peptides",
+    "intro": "These molecules turn up together constantly in supplier catalogs and search behavior. The comparison below sticks to verifiable, factual dimensions — it isn't a ranking, and it doesn't suggest one material is more effective, safer, or superior to another.",
+    "table_columns": ["Compound", "Molecular identity", "Single peptide or blend", "Sequence / composition", "Typical research context", "Evidence type"],
+    "rows": [
+      {
+        "compound": "KPV",
+        "molecular_identity": "Defined tripeptide, C16H30N4O4, ≈342.44 g/mol",
+        "single_or_blend": "Single peptide",
+        "sequence_composition": "Lys-Pro-Val (C-terminal fragment of α-MSH)",
+        "typical_context": "Inflammatory signaling, intestinal/epithelial, dermal cell research",
+        "evidence_type": "Primarily preclinical (cell and animal)"
+      },
+      {
+        "compound": "BPC-157",
+        "molecular_identity": "Synthetic 15-residue peptide fragment",
+        "single_or_blend": "Single peptide",
+        "sequence_composition": "Derived from a fragment of body protection compound (BPC)",
+        "typical_context": "Gastrointestinal and tissue-repair-related research",
+        "evidence_type": "Primarily preclinical"
+      },
+      {
+        "compound": "GHK-Cu",
+        "molecular_identity": "Copper-binding tripeptide complex; multiple forms reported in databases",
+        "single_or_blend": "Single peptide-metal complex",
+        "sequence_composition": "Gly-His-Lys tripeptide bound to a copper ion",
+        "typical_context": "Dermal and connective-tissue research",
+        "evidence_type": "Mixed preclinical and some human dermal research"
+      },
+      {
+        "compound": "KLOW",
+        "molecular_identity": "Not a single molecule",
+        "single_or_blend": "Blend (product/market name)",
+        "sequence_composition": "Commonly associated with KPV + GHK-Cu + BPC-157 + TB-500 in market listings",
+        "typical_context": "Combined research-peptide product marketed under one name",
+        "evidence_type": "Evidence applies to individual components, not the blend as a unit"
+      },
+      {
+        "compound": "Glow",
+        "molecular_identity": "Not a single molecule",
+        "single_or_blend": "Blend (product/market name)",
+        "sequence_composition": "Commonly associated with GHK-Cu + BPC-157 + TB-500 in market listings",
+        "typical_context": "Combined research-peptide product marketed under one name",
+        "evidence_type": "Evidence applies to individual components, not the blend as a unit"
+      },
+      {
+        "compound": "TB-500",
+        "molecular_identity": "Commercial name used inconsistently across suppliers",
+        "single_or_blend": "Single peptide (identity varies by listing)",
+        "sequence_composition": "Sometimes a short synthetic fragment, sometimes full-length Thymosin Beta-4",
+        "typical_context": "Tissue-repair-related research",
+        "evidence_type": "Preclinical; identity should be confirmed per listing"
+      }
+    ],
+    "closing_note": "Sharing a comparison table, or a blend, doesn't mean sharing a mechanism or an evidence base. Each of these is worth evaluating on its own documentation."
+  },
+
+  "coa_section": {
+    "heading": "Reading a KPV Spray Certificate of Analysis",
+    "body": "A COA for KPV Spray would typically include the product and compound name, lot/batch number, test date, testing laboratory, analytical method, chromatographic identity and purity data, and mass-spectrometry identity confirmation, measured against a stated specification. Because KPV is a single, defined tripeptide, confirming its identity is a simpler exercise than it would be for a blend — there's one expected molecular signal to match rather than several. Veracue hasn't published a KPV Spray-specific COA result, purity figure, testing laboratory, or lot number on this page; confirm those details for the exact lot in question through the certificates page.",
+    "link": "/certificates"
+  },
+
+  "mass_spectrometry_section": {
+    "heading": "Identity, purity, and potency are three different questions",
+    "body": "Mass spectrometry confirms identity by matching an observed signal against the expected value for the compound — for KPV's free-acid form, something near 342 g/mol, adjusted for whatever salt form is present. Purity is usually assessed separately, often through HPLC peak-area analysis, and describes how much of a sample is the target compound versus everything else. Potency — whether the material produces a given biological effect at a given level — is a different measurement again, and a clean analytical signal doesn't by itself speak to biological activity, safety, formulation suitability, or how a product might be administered. Specific m/z values and testing protocols aren't published here; they belong on the COA for the applicable lot."
+  },
+
+  "spray_format_clarification": {
+    "heading": "\"Spray\" describes a format, not a route",
+    "body": "KPV Spray describes how this listing is packaged and dispensed — as a liquid in a spray-format container. It doesn't establish nasal, intranasal, oral, buccal, sublingual, topical, inhalation, or any other administration route, and it shouldn't be read that way just because of the name. Veracue doesn't specify a route for this product, and this page doesn't offer dosing, reconstitution, dilution, or any other usage instructions."
+  },
+
+  "ruo_notice": {
+    "heading": "Research Use Only",
+    "body": "KPV Spray is supplied strictly for laboratory and research use — not as a drug, medicine, treatment, supplement, or cosmetic, and not for human or veterinary use. Nothing on this page provides dosing, administration, reconstitution, dilution, cycling, or protocol guidance of any kind. Researchers remain responsible for complying with the laws and institutional policies that govern how they handle research compounds."
+  },
+
+  "faqs": [
+    {
+      "question": "What is KPV peptide?",
+      "answer": "A tripeptide made of lysine, proline, and valine, corresponding to the C-terminal three residues of alpha-melanocyte-stimulating hormone (α-MSH)."
+    },
+    {
+      "question": "What is the KPV sequence?",
+      "answer": "Lys-Pro-Val (K-P-V) — three amino acids, in that order."
+    },
+    {
+      "question": "What is the molecular weight of KPV?",
+      "answer": "The free-acid reference form has an average molecular weight of about 342.44 g/mol (formula C16H30N4O4). The actual mass of a given lot depends on its salt or counterion form, which Veracue hasn't specified for this SKU."
+    },
+    {
+      "question": "What does KPV peptide do in research?",
+      "answer": "Published research has mainly examined KPV in cell and animal models tied to inflammatory signaling, intestinal/epithelial biology, and keratinocyte oxidative-stress pathways — model-specific observations rather than an established human mechanism."
+    },
+    {
+      "question": "What are the reported KPV peptide benefits?",
+      "answer": "In the literature, this is better understood as biological effects observed in particular experimental models rather than a list of established clinical benefits. Veracue doesn't make benefit or efficacy claims for this RUO material."
+    },
+    {
+      "question": "Is KPV the same as α-MSH?",
+      "answer": "No. KPV is only the C-terminal three-residue fragment of the 13-residue α-MSH peptide and shouldn't be treated as pharmacologically identical to it."
+    },
+    {
+      "question": "What has KPV been studied for?",
+      "answer": "Mostly inflammatory signaling, intestinal/epithelial transport, and dermal or keratinocyte oxidative-stress research — almost entirely in cell and animal models."
+    },
+    {
+      "question": "Is there human research on KPV?",
+      "answer": "We didn't find controlled human clinical trials establishing KPV itself as a treatment for anything. Most direct KPV evidence is preclinical."
+    },
+    {
+      "question": "What does KPV dosage mean in research?",
+      "answer": "References to \"KPV dosage\" usually describe the concentrations or experimental conditions used in a particular study, not a usage recommendation. Veracue doesn't publish dosing information for this product."
+    },
+    {
+      "question": "How is KPV different from BPC-157, GHK-Cu, KLOW or TB-500?",
+      "answer": "Each is a distinct molecular entity, or in KLOW's case, a blend name rather than a single molecule. The comparison table on this page breaks it down factually, without ranking them."
+    },
+    {
+      "question": "What should I look for on a KPV Spray COA?",
+      "answer": "Product and compound identity, lot/batch number, test date, testing laboratory, analytical method, and purity/mass-spectrometry results, matched to the exact lot you're evaluating. Veracue hasn't published a KPV Spray-specific COA result here."
+    },
+    {
+      "question": "Is KPV Spray necessarily a nasal spray?",
+      "answer": "No. \"Spray\" describes the dispensing format only — Veracue doesn't establish or imply any administration route for this product."
+    }
+  ],
+
+  "internal_links": [
+    { "label": "Shop all research peptides", "url": "/shop" },
+    { "label": "Certificates of Analysis", "url": "/certificates" },
+    { "label": "Help & FAQ", "url": "/faq" },
+    { "label": "Contact our team", "url": "/contact-us" },
+    { "label": "About Veracue", "url": "/about-us" },
+    { "label": "Medical disclaimer", "url": "/medical-disclaimer" },
+    { "label": "Terms and conditions", "url": "/terms-and-conditions" }
+  ],
+
+  "references": [
+    {
+      "source": "PubChem",
+      "label": "MSH (11-13) / KPV — CID 125672",
+      "note": "Chemical identity: molecular formula C16H30N4O4"
+    },
+    {
+      "source": "CAS Registry",
+      "label": "CAS 67727-97-3",
+      "note": "CAS number associated with the KPV / MSH(11-13) tripeptide"
+    },
+    {
+      "source": "Primary research literature",
+      "label": "PepT1-mediated tripeptide KPV uptake and intestinal inflammation research (2008)",
+      "note": "Preclinical/cell-transport study; cited for the PepT1-uptake and intestinal-inflammation research area, not as evidence of a treatment effect"
+    },
+    {
+      "source": "Primary research literature",
+      "label": "KPV effects on keratinocyte oxidative stress and MAPK/NF-κB signaling (2025)",
+      "note": "In-vitro keratinocyte study; cited for the skin/cellular signaling research area"
+    },
+    {
+      "source": "Review literature",
+      "label": "Melanocortin system in inflammatory bowel disease research (review)",
+      "note": "Discusses the broader melanocortin pathway; KPV-specific findings are distinguished from α-MSH-level findings on this page"
+    },
+    {
+      "source": "Veracue first-party data",
+      "label": "Live KPV (vial) product page — /product/kpv",
+      "note": "Source for verified chemical-identity fields shared with the KPV Spray SKU (sequence, formula, average MW, CAS number)"
+    }
+  ],
+
+  "json_ld": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Veracue",
+        "url": "https://veracue-peptides.vercel.app/"
+      },
+      {
+        "@type": "WebPage",
+        "name": "KPV Peptide Spray | KPV Research Peptide | Veracue",
+        "url": "https://veracue-peptides.vercel.app/product/kpv-spray",
+        "description": "KPV Spray: tripeptide identity, sequence and molecular data, its relationship to α-MSH, evidence-level research summary, and COA guidance. Research Use Only.",
+        "isPartOf": { "@type": "WebSite", "url": "https://veracue-peptides.vercel.app/" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://veracue-peptides.vercel.app/" },
+          { "@type": "ListItem", "position": 2, "name": "Shop", "item": "https://veracue-peptides.vercel.app/shop" },
+          { "@type": "ListItem", "position": 3, "name": "KPV Spray", "item": "https://veracue-peptides.vercel.app/product/kpv-spray" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "What is KPV peptide?", "acceptedAnswer": { "@type": "Answer", "text": "A tripeptide made of lysine, proline, and valine, corresponding to the C-terminal three residues of alpha-melanocyte-stimulating hormone (α-MSH)." } },
+          { "@type": "Question", "name": "What is the KPV sequence?", "acceptedAnswer": { "@type": "Answer", "text": "Lys-Pro-Val (K-P-V) — three amino acids, in that order." } },
+          { "@type": "Question", "name": "What is the molecular weight of KPV?", "acceptedAnswer": { "@type": "Answer", "text": "The free-acid reference form has an average molecular weight of about 342.44 g/mol (formula C16H30N4O4). The actual mass of a given lot depends on its salt or counterion form, which Veracue hasn't specified for this SKU." } },
+          { "@type": "Question", "name": "What does KPV peptide do in research?", "acceptedAnswer": { "@type": "Answer", "text": "Published research has mainly examined KPV in cell and animal models tied to inflammatory signaling, intestinal/epithelial biology, and keratinocyte oxidative-stress pathways — model-specific observations rather than an established human mechanism." } },
+          { "@type": "Question", "name": "What are the reported KPV peptide benefits?", "acceptedAnswer": { "@type": "Answer", "text": "In the literature, this is better understood as biological effects observed in particular experimental models rather than a list of established clinical benefits. Veracue doesn't make benefit or efficacy claims for this RUO material." } },
+          { "@type": "Question", "name": "Is KPV the same as α-MSH?", "acceptedAnswer": { "@type": "Answer", "text": "No. KPV is only the C-terminal three-residue fragment of the 13-residue α-MSH peptide and shouldn't be treated as pharmacologically identical to it." } },
+          { "@type": "Question", "name": "What has KPV been studied for?", "acceptedAnswer": { "@type": "Answer", "text": "Mostly inflammatory signaling, intestinal/epithelial transport, and dermal or keratinocyte oxidative-stress research — almost entirely in cell and animal models." } },
+          { "@type": "Question", "name": "Is there human research on KPV?", "acceptedAnswer": { "@type": "Answer", "text": "We didn't find controlled human clinical trials establishing KPV itself as a treatment for anything. Most direct KPV evidence is preclinical." } },
+          { "@type": "Question", "name": "What does KPV dosage mean in research?", "acceptedAnswer": { "@type": "Answer", "text": "References to \"KPV dosage\" usually describe the concentrations or experimental conditions used in a particular study, not a usage recommendation. Veracue doesn't publish dosing information for this product." } },
+          { "@type": "Question", "name": "How is KPV different from BPC-157, GHK-Cu, KLOW or TB-500?", "acceptedAnswer": { "@type": "Answer", "text": "Each is a distinct molecular entity, or in KLOW's case, a blend name rather than a single molecule. The comparison table on this page breaks it down factually, without ranking them." } },
+          { "@type": "Question", "name": "What should I look for on a KPV Spray COA?", "acceptedAnswer": { "@type": "Answer", "text": "Product and compound identity, lot/batch number, test date, testing laboratory, analytical method, and purity/mass-spectrometry results, matched to the exact lot you're evaluating. Veracue hasn't published a KPV Spray-specific COA result here." } },
+          { "@type": "Question", "name": "Is KPV Spray necessarily a nasal spray?", "acceptedAnswer": { "@type": "Answer", "text": "No. \"Spray\" describes the dispensing format only — Veracue doesn't establish or imply any administration route for this product." } }
+        ]
+      }
+    ]
+  }
+}

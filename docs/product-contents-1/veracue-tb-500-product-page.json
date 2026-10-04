@@ -1,0 +1,583 @@
+{
+  "page_meta": {
+    "route": "/product/tb-500",
+    "canonical": "https://veracue-peptides.vercel.app/product/tb-500",
+    "product_entity": "TB-500",
+    "category": "Cellular Repair & Healing",
+    "positioning": "Research Use Only (RUO) — not for human or veterinary use",
+    "meta_title": "TB-500 Research Peptide (Ac-LKKTETQ) | Veracue",
+    "meta_description": "TB-500, the Ac-LKKTETQ fragment of thymosin beta-4, for lab research: molecular identity, the thymosin beta-4 distinction, purity checks, and COA guidance.",
+    "primary_keyword": "tb-500 peptide",
+    "h1": "TB-500 Peptide"
+  },
+  "catalog_blurb": "TB-500 is the common name for a synthetic heptapeptide, Ac-LKKTETQ, corresponding to residues 17–23 of thymosin beta-4. Veracue supplies it as a research material for laboratory work. TB-500 is frequently confused with full-length thymosin beta-4, a much larger protein studied separately in its own research and clinical literature. No published human study of TB-500 itself was identified, so this material does not establish tissue repair, treatment effect or safety in people.",
+  "hero": {
+    "eyebrow": "Research Use Only",
+    "h1": "TB-500 Peptide",
+    "subhead": "Ac-LKKTETQ — the thymosin beta-4 (17–23) fragment, for laboratory research",
+    "body": "Researchers looking into TB-500 usually run into thymosin beta-4 almost immediately, and it's easy to see why: TB-500 is built from a short stretch of that protein's sequence. But the two are not the same material. TB-500 refers to a synthetic seven-residue peptide, Ac-Leu-Lys-Lys-Thr-Glu-Thr-Gln, carrying the region found at positions 17 through 23 of thymosin beta-4 along with an added acetyl group. It is a smaller, separately characterized molecule with its own identity, its own mass, and its own — much thinner — body of published research. This page walks through what TB-500 is, how it relates to thymosin beta-4, and what a researcher should look for when evaluating a specific lot. Veracue supplies TB-500 strictly for laboratory research, not for human or veterinary use."
+  },
+  "aeo_direct_answer": {
+    "question": "What is TB-500 peptide?",
+    "answer": "TB-500 is the common name for a synthetic peptide, Ac-LKKTETQ, made up of seven amino acids acetylated at the N-terminus. Its sequence corresponds to residues 17–23 of thymosin beta-4, a much larger 43-residue protein — so TB-500 is related to thymosin beta-4 but is not the same substance and should not be treated as interchangeable with it. Veracue supplies TB-500 as a research material for laboratory use only, not for human or veterinary administration."
+  },
+  "product_snapshot": {
+    "molecular_identity": {
+      "heading": "Molecular Reference",
+      "note": "Published identity of the compound, drawn from chemical databases and regulatory documentation — not a Veracue lot result.",
+      "fields": [
+        {
+          "label": "Common name",
+          "value": "TB-500"
+        },
+        {
+          "label": "Sequence",
+          "value": "Ac-Leu-Lys-Lys-Thr-Glu-Thr-Gln-OH (Ac-LKKTETQ)"
+        },
+        {
+          "label": "Length",
+          "value": "7 residues"
+        },
+        {
+          "label": "Terminal modification",
+          "value": "N-terminal acetylation; free C-terminal acid"
+        },
+        {
+          "label": "Molecular formula (free base)",
+          "value": "C38H68N10O14"
+        },
+        {
+          "label": "Molecular weight (free base)",
+          "value": "≈889.01 g/mol"
+        },
+        {
+          "label": "CAS number",
+          "value": "885340-08-9 (free base)"
+        },
+        {
+          "label": "PubChem CID",
+          "value": "62707662 (free base)"
+        },
+        {
+          "label": "Relationship to thymosin beta-4",
+          "value": "Corresponds to residues 17–23 of the 43-residue protein; a fragment of it, not another name for it"
+        }
+      ]
+    },
+    "veracue_product_data": {
+      "heading": "Veracue Product Information",
+      "note": "Only values Veracue has published for this material appear below.",
+      "fields": [
+        {
+          "label": "SKU",
+          "value": "Not publicly specified on the current Veracue product information."
+        },
+        {
+          "label": "Vial size(s)",
+          "value": "Not publicly specified on the current Veracue product information."
+        },
+        {
+          "label": "Physical form",
+          "value": "Not publicly specified on the current Veracue product information."
+        },
+        {
+          "label": "Purity",
+          "value": "Not publicly specified on the current Veracue product information."
+        },
+        {
+          "label": "Salt / counterion",
+          "value": "Not publicly specified on the current Veracue product information."
+        },
+        {
+          "label": "Storage conditions",
+          "value": "Not publicly specified on the current Veracue product information."
+        },
+        {
+          "label": "Lot / batch",
+          "value": "Not publicly specified on the current Veracue product information."
+        },
+        {
+          "label": "Certificate of Analysis",
+          "value": "Not publicly specified on the current Veracue product information."
+        },
+        {
+          "label": "Price",
+          "value": "Not publicly specified on the current Veracue product information."
+        },
+        {
+          "label": "Stock status",
+          "value": "Not publicly specified on the current Veracue product information."
+        }
+      ]
+    }
+  },
+  "overview": {
+    "heading": "Overview",
+    "body": [
+      "TB-500 is a name that comes from the research and supplement world rather than from formal chemical nomenclature, and that's worth knowing up front. Behind the name is a specific, well-defined molecule: Ac-Leu-Lys-Lys-Thr-Glu-Thr-Gln, a synthetic peptide built from the amino acid stretch found at positions 17 to 23 of thymosin beta-4, with an acetyl group added at the N-terminus.",
+      "The sequence was first synthesized and characterized as its own analytical entity in a 2012 study aimed at detecting it in equine drug testing — which is a useful reminder that TB-500's documented history is shorter and narrower than thymosin beta-4's. Because TB-500 has no official pharmaceutical name — no USAN, INN, or IUPAC designation — different suppliers have, at times, used the name for different salt forms of the molecule. That makes identity confirmation more important here than it is for many other research peptides.",
+      "This page focuses on what is publicly documented about TB-500 itself, keeps that clearly separated from what is known about thymosin beta-4, and states plainly where Veracue has not yet published product-specific information."
+    ]
+  },
+  "intended_use": {
+    "heading": "Intended Use",
+    "body": "TB-500 supplied by Veracue is intended for in vitro and laboratory research — for example, work in cytoskeletal biology, cell migration, peptide chemistry, or analytical method development. It is not a drug, cosmetic, dietary supplement, or food, and it is not intended for administration to humans or animals. This page does not provide dosing, reconstitution-for-administration, or treatment information, and none should be inferred from anything described here.",
+    "highlights": [
+      "Synthetic peptide, Ac-LKKTETQ, corresponding to thymosin beta-4 residues 17–23",
+      "A distinct molecule from full-length thymosin beta-4",
+      "No published human study of TB-500 was identified in the sources reviewed",
+      "Supplied for laboratory research use only"
+    ]
+  },
+  "molecular_identity": {
+    "heading": "TB-500 and Thymosin Beta-4: Two Related but Different Molecules",
+    "body": [
+      "The distinction worth holding onto is this: thymosin beta-4 is a naturally occurring, 43-residue protein found throughout the body, including in blood, wound fluid, and platelets. TB-500 is a synthetic fragment built from just seven of those residues. They share a sequence overlap, not an identity.",
+      "The size difference is substantial — thymosin beta-4 weighs roughly 4,963 g/mol, while TB-500 comes in at about 889 g/mol, a little over a fifth of the mass. Regulatory review of TB-500 has noted directly that although many sources describe TB-500 as a synthetic version of thymosin beta-4 and use the names interchangeably, this is not accurate — they are separate substances.",
+      "There's a further wrinkle worth flagging. TB-500 contains LKKTET, the sequence conventionally described as thymosin beta-4's actin-binding motif. But structural work using X-ray crystallography suggests that essentially the full length of the parent protein makes contact with actin, not just this short stretch. So while TB-500 carries the named motif, that alone doesn't establish that it reproduces the parent protein's full functional behavior — this remains an open question rather than a settled one.",
+      "A related and easy-to-miss distinction: some of the wound-repair literature people cite for TB-500 actually used a non-acetylated version of the same seven-residue sequence. Acetylation changes a peptide's charge, size, and behavior, so findings for the non-acetylated form should not be assumed to carry over to acetylated TB-500."
+    ],
+    "regulatory_context": "TB-500 has no monograph in the US Pharmacopeia–National Formulary and is not recognized in the European or Japanese Pharmacopeias. It is not a component of any FDA-approved drug product. A 2026 FDA review of TB-500 as a candidate compounding ingredient found the available identity, historical-use, and safety data insufficient to support that use and did not recommend adding it to the list of substances eligible for pharmacy compounding. That review is a useful reference point for understanding TB-500's regulatory status, but it isn't necessary to read it to use this page."
+  },
+  "comparison": {
+    "heading": "TB-500 vs. Full-Length Thymosin Beta-4",
+    "intro": "The table below lines the two molecules up side by side. It isn't a ranking — no controlled study comparing the two on a biological endpoint has been identified, so neither can fairly be called stronger, safer, or more effective than the other.",
+    "table": {
+      "columns": [
+        "Attribute",
+        "TB-500",
+        "Full-length thymosin beta-4"
+      ],
+      "rows": [
+        [
+          "Sequence",
+          "Ac-LKKTETQ (residues 17–23)",
+          "43-residue full sequence"
+        ],
+        [
+          "Length",
+          "7 residues",
+          "43 residues"
+        ],
+        [
+          "Molecular weight",
+          "≈889 g/mol",
+          "≈4,963 g/mol"
+        ],
+        [
+          "Chemical form",
+          "Synthetic fragment, N-acetylated",
+          "Naturally occurring protein"
+        ],
+        [
+          "Direct research evidence",
+          "Limited — mostly analytical and metabolic studies",
+          "Larger body of preclinical and some human research"
+        ],
+        [
+          "Human evidence",
+          "No published human study identified",
+          "Topical ophthalmic formulations studied in human trials, with mixed results"
+        ],
+        [
+          "Regulatory / monograph status",
+          "No pharmacopeial monograph",
+          "No pharmacopeial monograph"
+        ]
+      ]
+    }
+  },
+  "research_context": {
+    "heading": "Why TB-500 Comes Up in Cell Biology Research",
+    "body": [
+      "Researchers usually encounter TB-500 through actin biology. Thymosin beta-4 and related peptides play a role in regulating unpolymerized (G-actin) versus filamentous (F-actin) actin, a balance that underlies cell shape, motility, and related cellular processes. That's the biological backdrop that brings TB-500 into conversations about cell migration, tissue remodeling, and wound biology.",
+      "The specific hypothesis behind TB-500 is that, by binding G-actin, the short LKKTETQ sequence might share some of the actin-buffering behavior seen in the full-length protein. That idea is documented in the literature, but it remains a hypothesis rather than an established mechanism — whether actin binding alone accounts for the broader effects reported for thymosin beta-4-derived peptides is still an open research question.",
+      "The material below is organized so that what was actually studied — and in what system — stays visible, rather than folding everything into a single undifferentiated claim."
+    ]
+  },
+  "evidence_hierarchy": {
+    "heading": "How the Evidence Breaks Down",
+    "intro": "Not all evidence carries the same weight, and for TB-500 in particular, it matters which material and which system produced a given finding.",
+    "tiers": [
+      {
+        "tier": "Molecular and biochemical",
+        "summary": "The actin-binding role of the LKKTET motif is well documented for thymosin beta-4 and related short sequences. This is the most solid layer of evidence, and it applies primarily to the parent protein and its characterized fragments."
+      },
+      {
+        "tier": "Cell culture (in vitro)",
+        "summary": "Studies here are mixed in terms of which material was tested. Some scratch-wound and migration assays used thymosin beta-4 or the non-acetylated fragment. One study testing TB-500 free base directly in a fibroblast scratch-wound assay did not find a statistically significant effect on wound closure, though a related metabolite did show a small effect."
+      },
+      {
+        "tier": "Animal studies",
+        "summary": "Most of the animal work often cited for TB-500 was actually conducted with full-length thymosin beta-4 or the non-acetylated fragment, in topical wound-repair models. Animal studies of TB-500 itself have focused mainly on how the compound is metabolized and cleared, rather than on efficacy."
+      },
+      {
+        "tier": "Human evidence",
+        "summary": "Human data exists for full-length thymosin beta-4, primarily as a topical ophthalmic formulation studied for corneal healing and dry eye. Results across those trials have been mixed, with some studies showing a positive trend that didn't reach statistical significance and at least one later trial not meeting its primary endpoint. No published human study of TB-500 was identified in the sources reviewed."
+      }
+    ]
+  },
+  "problem_solution_sections": [
+    {
+      "number": 1,
+      "heading": "How do I confirm what “TB-500” actually refers to?",
+      "problem": "TB-500 is a common name rather than a regulated chemical designation, so the same label has occasionally been used by different suppliers for different salt forms of the underlying peptide.",
+      "solution": "The most consistent way to confirm identity is to anchor on chemical identifiers rather than the trade name alone: sequence (Ac-LKKTETQ), CAS number (885340-08-9 for the free base), and molecular formula (C38H68N10O14). When those details are stated together, they describe a specific, verifiable molecule rather than a label."
+    },
+    {
+      "number": 2,
+      "heading": "Is TB-500 the same molecule as full-length thymosin beta-4?",
+      "problem": "TB-500 and thymosin beta-4 are frequently used interchangeably in informal writing, which can lead researchers to assume the two share an identical evidence base.",
+      "solution": "They don't share an identity. TB-500 is a synthetic seven-residue fragment drawn from thymosin beta-4's sequence; the parent protein has 43 residues and is roughly five times heavier. Research findings on one should not be treated as automatically applicable to the other."
+    },
+    {
+      "number": 3,
+      "heading": "What is the commonly referenced TB-500 sequence and chemical form?",
+      "problem": "A sequence alone isn't enough to do useful molar or mass calculations — the terminal chemistry and salt form both change the numbers.",
+      "solution": "The reference sequence is Ac-Leu-Lys-Lys-Thr-Glu-Thr-Gln-OH: acetylated at the N-terminal leucine, with a free acid at the C-terminus. The free-base form has a molecular weight of approximately 889.01 g/mol. Salt forms — such as an acetate — carry a different mass, so knowing which form a given material represents is a necessary first step before comparing any numbers."
+    },
+    {
+      "number": 4,
+      "heading": "Why do different sources list different molecular weights for TB-500?",
+      "problem": "Comparing a few supplier pages can turn up several different molecular weights for what's labeled as the same compound.",
+      "solution": "Most of this comes down to which form is being described. The free base is around 889 g/mol; adding a salt such as acetate raises that figure. The non-acetylated version of the same seven-residue sequence is a separate compound, about 42 g/mol lighter. When a listed number doesn't match, it's usually because the form wasn't specified — not because the chemistry is inconsistent."
+    },
+    {
+      "number": 5,
+      "heading": "How can I tell whether a study actually tested TB-500 rather than thymosin beta-4?",
+      "problem": "TB-500 reference lists often cite studies that, on closer reading, tested a different material entirely.",
+      "solution": "Checking the methods section rather than the abstract usually resolves this quickly. Look for an explicit statement of acetylation, the residue count used (43 residues signals the full-length protein), and the concentration and route described — topical or ophthalmic percentage-based dosing is a strong signal for full-length thymosin beta-4 work rather than TB-500."
+    },
+    {
+      "number": 6,
+      "heading": "What does the thymosin beta-4 literature actually show about tissue and cellular biology?",
+      "problem": "Because thymosin beta-4 has a substantial literature, it's tempting to treat that body of work as settled and directly relevant to TB-500.",
+      "solution": "At the molecular level, thymosin beta-4's role in actin regulation is well characterized. At the human level, the picture is more mixed: topical ophthalmic formulations have been studied in clinical trials with some encouraging trends that didn't always reach statistical significance, and later trials have had inconsistent results. This is informative background on the parent protein — it isn't evidence about TB-500 itself."
+    },
+    {
+      "number": 7,
+      "heading": "What do TB-500 searches about wound healing, cell migration and repair actually mean?",
+      "problem": "A lot of TB-500 search activity centers on repair-related language, which can create an impression of a stronger evidence base than currently exists.",
+      "solution": "The underlying biology — actin dynamics and cell migration — is a genuine and active research area. But direct evidence for TB-500 itself promoting wound repair is limited; one in vitro study testing TB-500 directly did not find a significant effect on wound closure in the model used. The interest in these topics reflects a real research question, not a demonstrated outcome for TB-500."
+    },
+    {
+      "number": 8,
+      "heading": "What does “TB-500 benefits” mean in a research context?",
+      "problem": "“Benefits” language frames TB-500 as though outcomes have been demonstrated in people, when the material has mainly been studied analytically and in laboratory systems.",
+      "solution": "In a research setting, it's more accurate to describe TB-500 as a defined peptide containing a well-known actin-binding motif, with a developing but still limited evidence base and no established human outcome data. That framing keeps the compound's research interest intact without overstating what has actually been shown."
+    },
+    {
+      "number": 9,
+      "heading": "How should I interpret TB-500 vs thymosin beta-4 claims?",
+      "problem": "Comparison claims circulate in both directions — some treat the two as equivalent, others claim TB-500 is an improved or longer-lasting version.",
+      "solution": "Neither framing holds up well. No study directly comparing TB-500 and full-length thymosin beta-4 on a biological outcome has been identified, so claims of equivalence or superiority aren't currently supported. The accurate description is that they are related, structurally distinct molecules with separate evidence bases."
+    },
+    {
+      "number": 10,
+      "heading": "What should I verify on a TB-500 COA?",
+      "problem": "A purity percentage alone doesn't confirm what material is actually in a vial, particularly for a compound with more than one circulating salt form.",
+      "solution": "A useful certificate of analysis states the exact chemical form (free base or a named salt), an identity result showing both expected and observed mass, chromatographic purity along with the detection method used, and the lot number, testing laboratory, and test date. Confirming the stated form before comparing purity or mass figures avoids most mismatches."
+    },
+    {
+      "number": 11,
+      "heading": "How should I interpret TB-500 mass-spectrometry results?",
+      "problem": "Average molecular weight and the mass observed in a spectrometry result aren't quite the same figure, and that gap can look like a discrepancy when it isn't.",
+      "solution": "The average molecular weight of TB-500 free base is about 889 g/mol, while the monoisotopic mass — the figure mass spectrometry typically reports from — is closer to 888.5 Da, with the observed ion mass shifting further depending on charge state. Comparing results on the same chemical-form basis, and accounting for charge, resolves most apparent mismatches."
+    },
+    {
+      "number": 12,
+      "heading": "What can a Veracue TB-500 product page establish versus lot-specific documentation?",
+      "problem": "A product page and a certificate of analysis answer different questions, and treating one as a substitute for the other can create a false sense of confirmation.",
+      "solution": "This page describes the published identity of TB-500 and summarizes what the research literature does and doesn't show. It does not establish the purity, form, or specifications of any individual vial — those are lot-specific properties, confirmed through the certificate of analysis and label accompanying that lot."
+    }
+  ],
+  "coa_guidance": {
+    "heading": "Reading a TB-500 Certificate of Analysis",
+    "body": "A lot-specific COA may include the material's stated chemical form, an identity result comparing expected and observed mass, chromatographic purity along with the detection conditions used, peptide content or assay results where reported, counterion information where a salt form applies, water content, and the testing laboratory and test date. Not every certificate reports every one of these — which fields are included varies by supplier and by lot, so it's worth checking a specific document rather than assuming a standard set of tests was run.",
+    "checklist": [
+      "Chemical form is stated explicitly (free base or a named salt)",
+      "Molecular weight matches the stated form",
+      "Identity method is named, with expected and observed mass both shown",
+      "Purity method and detection conditions are described",
+      "Lot number, testing laboratory, and test date are included"
+    ]
+  },
+  "mass_spec_guidance": {
+    "heading": "A Short Note on Mass Spectrometry",
+    "body": "A few concepts come up often when reviewing TB-500 mass-spec data. Average molecular weight and monoisotopic mass are related but distinct figures, and the mass an instrument reports (m/z) depends on the ion's charge state — a doubly charged ion, for instance, appears at roughly half the singly charged mass. Salt or counterion choice shifts the observed mass as well, and the non-acetylated version of the LKKTETQ sequence is a separate, lighter compound rather than a minor variant. Comparing an expected mass against an observed one only makes sense once both are referenced to the same chemical form.",
+    "reference_table": {
+      "columns": [
+        "Form",
+        "Average molecular weight"
+      ],
+      "rows": [
+        [
+          "TB-500 free base (Ac-LKKTETQ)",
+          "≈889.01 g/mol"
+        ],
+        [
+          "Non-acetylated LKKTETQ",
+          "≈846.98 g/mol"
+        ]
+      ]
+    }
+  },
+  "storage_and_handling": {
+    "heading": "Storage & Handling",
+    "body": "Storage conditions are not publicly specified on the current Veracue product information. Follow the applicable lot documentation and product label when provided, and handle the material as a laboratory chemical with appropriate personal protective equipment."
+  },
+  "what_research_does_not_establish": {
+    "heading": "What the Current Research Does Not Establish",
+    "items": [
+      "That TB-500 has been shown to heal, repair, or regenerate tissue in humans",
+      "That findings for full-length thymosin beta-4 apply directly to TB-500",
+      "That findings for non-acetylated LKKTETQ apply directly to acetylated TB-500",
+      "That TB-500 has demonstrated efficacy for any specific outcome in a published human study",
+      "That TB-500 is equivalent, superior, or inferior to full-length thymosin beta-4"
+    ]
+  },
+  "faqs": [
+    {
+      "q": "What is TB-500 peptide?",
+      "a": "TB-500 is the common name for a synthetic seven-residue peptide, Ac-LKKTETQ, corresponding to a region of thymosin beta-4. Veracue supplies it as a laboratory research material only."
+    },
+    {
+      "q": "Is TB-500 the same as thymosin beta-4?",
+      "a": "No. Thymosin beta-4 is a naturally occurring 43-residue protein; TB-500 is a synthetic 7-residue fragment related to it, with a different mass and a separate evidence base."
+    },
+    {
+      "q": "What is the TB-500 sequence?",
+      "a": "Ac-Leu-Lys-Lys-Thr-Glu-Thr-Gln-OH, corresponding to residues 17–23 of thymosin beta-4."
+    },
+    {
+      "q": "What is the molecular weight of TB-500?",
+      "a": "The free-base form has a molecular weight of approximately 889.01 g/mol. Salt forms carry a different mass."
+    },
+    {
+      "q": "What is the CAS number for TB-500?",
+      "a": "885340-08-9 is the CAS number associated with TB-500 free base in chemical databases."
+    },
+    {
+      "q": "Why do different sources list different molecular weights for TB-500?",
+      "a": "Mainly because sources describe different chemical forms — the free base, a salt form, or the non-acetylated version of the sequence — each of which has its own mass."
+    },
+    {
+      "q": "Are there human clinical studies of TB-500?",
+      "a": "No published human study of TB-500 was identified in the sources reviewed. Human data exists for full-length thymosin beta-4, primarily in topical ophthalmic research, which is a different molecule and delivery route."
+    },
+    {
+      "q": "Does thymosin beta-4 research apply to TB-500?",
+      "a": "Not automatically. Several studies often cited for TB-500 actually tested full-length thymosin beta-4 or the non-acetylated fragment, and those findings shouldn't be assumed to transfer directly to TB-500."
+    },
+    {
+      "q": "What does the LKKTET motif mean?",
+      "a": "LKKTET is the sequence conventionally described as the actin-binding region of thymosin beta-4, and it's part of what TB-500 is built from. Containing this motif doesn't by itself confirm that TB-500 reproduces every function of the full-length protein."
+    },
+    {
+      "q": "What should a TB-500 COA contain?",
+      "a": "Useful fields include the stated chemical form, an identity result with expected and observed mass, purity method and detection conditions, and the lot number, testing laboratory, and test date."
+    },
+    {
+      "q": "How should TB-500 mass-spectrometry data be interpreted?",
+      "a": "Compare expected and observed mass on the same chemical-form basis, and account for the ion's charge state, since observed m/z shifts with charge."
+    },
+    {
+      "q": "What does Research Use Only mean for this product?",
+      "a": "It means the material is supplied strictly for laboratory and scientific research, not for human or veterinary use, diagnosis, treatment, or prevention of any disease."
+    }
+  ],
+  "compliance_notice": "TB-500 supplied by Veracue is intended solely for laboratory research. It is not a drug, cosmetic, dietary supplement, or food, and it is not intended to diagnose, treat, cure, or prevent any disease. It must not be administered to humans or animals. This page does not provide dosing, administration, or reconstitution-for-use instructions. The scientific information here describes published research and is not medical advice or a statement of efficacy or safety.",
+  "internal_links": [
+    {
+      "label": "Shop all research peptides",
+      "url": "/shop"
+    },
+    {
+      "label": "Certificates of Analysis",
+      "url": "/certificates"
+    },
+    {
+      "label": "Help & FAQ",
+      "url": "/faq"
+    },
+    {
+      "label": "About Veracue",
+      "url": "/about-us"
+    },
+    {
+      "label": "Contact our research team",
+      "url": "/contact-us"
+    },
+    {
+      "label": "Selank research peptide",
+      "url": "/product/selank"
+    }
+  ],
+  "schema_jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "TB-500 Research Peptide (Ac-LKKTETQ) | Veracue",
+      "description": "TB-500 (Ac-LKKTETQ) research peptide from Veracue. Sequence, molecular weight, the thymosin beta-4 distinction, and COA guidance for laboratory research.",
+      "url": "https://veracue-peptides.vercel.app/product/tb-500",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Veracue Peptides",
+        "url": "https://veracue-peptides.vercel.app"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Peptide sequence",
+          "value": "Ac-Leu-Lys-Lys-Thr-Glu-Thr-Gln-OH"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Molecular formula (free base)",
+          "value": "C38H68N10O14"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Molecular weight (free base)",
+          "value": "≈889.01 g/mol"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "CAS number",
+          "value": "885340-08-9"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "PubChem CID",
+          "value": "62707662"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://veracue-peptides.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Shop",
+          "item": "https://veracue-peptides.vercel.app/shop"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "TB-500",
+          "item": "https://veracue-peptides.vercel.app/product/tb-500"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is TB-500 peptide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TB-500 is the common name for a synthetic seven-residue peptide, Ac-LKKTETQ, corresponding to a region of thymosin beta-4. Veracue supplies it as a laboratory research material only."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is TB-500 the same as thymosin beta-4?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Thymosin beta-4 is a naturally occurring 43-residue protein; TB-500 is a synthetic 7-residue fragment related to it, with a different mass and a separate evidence base."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the TB-500 sequence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ac-Leu-Lys-Lys-Thr-Glu-Thr-Gln-OH, corresponding to residues 17–23 of thymosin beta-4."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the molecular weight of TB-500?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The free-base form has a molecular weight of approximately 889.01 g/mol. Salt forms carry a different mass."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the CAS number for TB-500?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "885340-08-9 is the CAS number associated with TB-500 free base in chemical databases."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do different sources list different molecular weights for TB-500?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mainly because sources describe different chemical forms — the free base, a salt form, or the non-acetylated version of the sequence — each of which has its own mass."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there human clinical studies of TB-500?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No published human study of TB-500 was identified in the sources reviewed. Human data exists for full-length thymosin beta-4, primarily in topical ophthalmic research, which is a different molecule and delivery route."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does thymosin beta-4 research apply to TB-500?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not automatically. Several studies often cited for TB-500 actually tested full-length thymosin beta-4 or the non-acetylated fragment, and those findings shouldn't be assumed to transfer directly to TB-500."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the LKKTET motif mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "LKKTET is the sequence conventionally described as the actin-binding region of thymosin beta-4, and it's part of what TB-500 is built from. Containing this motif doesn't by itself confirm that TB-500 reproduces every function of the full-length protein."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should a TB-500 COA contain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Useful fields include the stated chemical form, an identity result with expected and observed mass, purity method and detection conditions, and the lot number, testing laboratory, and test date."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How should TB-500 mass-spectrometry data be interpreted?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Compare expected and observed mass on the same chemical-form basis, and account for the ion's charge state, since observed m/z shifts with charge."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does Research Use Only mean for this product?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It means the material is supplied strictly for laboratory and scientific research, not for human or veterinary use, diagnosis, treatment, or prevention of any disease."
+          }
+        }
+      ]
+    }
+  ]
+}

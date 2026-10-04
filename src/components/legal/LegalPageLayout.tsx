@@ -102,7 +102,7 @@ export function LegalPageLayout({
   }
 
   return (
-    <main className="w-full overflow-x-clip lg:overflow-x-visible bg-[#f0efeb] min-h-screen text-[#20221c] font-sans pt-[76px] sm:pt-[92px] md:pt-[110px] pb-20 sm:pb-28 relative">
+    <div className="w-full overflow-x-clip lg:overflow-x-visible bg-[#f0efeb] min-h-screen text-[#20221c] font-sans pt-[76px] sm:pt-[92px] md:pt-[110px] pb-20 sm:pb-28 relative">
       {/* Left Flank Continuation Vector Art (visible on desktop) */}
       <div
         aria-hidden="true"
@@ -208,6 +208,6 @@ export function LegalPageLayout({
           />
         </div>
       ) : null}
-    </main>
+    </div>
   )
 }

@@ -7,6 +7,21 @@ import { syncCartToPayload, getAutoAddAccessoryItems } from '@/app/(frontend)/ac
 // accessories, so adding one shouldn't add another copy of itself alongside it.
 const ACCESSORY_PRODUCT_SLUGS = ['bac-water', '10-needles'] as const
 
+const CART_STORAGE_KEY = 'veracue-cart-storage'
+
+// One-time migration of a cart persisted under the previous storage key.
+if (typeof window !== 'undefined') {
+  try {
+    const legacy = window.localStorage.getItem('Helix Bio-cart-storage')
+    if (legacy && !window.localStorage.getItem(CART_STORAGE_KEY)) {
+      window.localStorage.setItem(CART_STORAGE_KEY, legacy)
+    }
+    if (legacy) window.localStorage.removeItem('Helix Bio-cart-storage')
+  } catch {
+    // storage unavailable; ignore
+  }
+}
+
 function generateLineId() {
   return typeof crypto !== 'undefined' && crypto.randomUUID
     ? crypto.randomUUID()
@@ -81,7 +96,7 @@ export const useCartStore = create<CartState>()(
         })
 
         if (addedNames.length > 0) {
-          toast.success(`Added ${addedNames.join(' & ')} — required for reconstitution`)
+          toast.success(`Added ${addedNames.join(' & ')}, required for reconstitution`)
         }
       }
 
@@ -168,7 +183,7 @@ export const useCartStore = create<CartState>()(
       }
     },
     {
-      name: 'Helix Bio-cart-storage',
+      name: CART_STORAGE_KEY,
     },
   ),
 )

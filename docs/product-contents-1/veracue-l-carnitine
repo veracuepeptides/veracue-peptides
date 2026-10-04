@@ -1,0 +1,1356 @@
+{
+  "deliverable": "Veracue L-Carnitine product page (RUO), final production JSON",
+  "prepared_for": "Veracue Peptides",
+  "research_date": "2026-09-24",
+  "customer_facing": {
+    "seo": {
+      "url_path": "/product/l-carnitine",
+      "canonical": "https://veracue-peptides.vercel.app/product/l-carnitine",
+      "title": "L-Carnitine Research Compound (Levocarnitine) | Veracue",
+      "meta_description": "L-Carnitine (levocarnitine) for lab research: molecular identity, the carnitine shuttle, L-carnitine vs acetyl-L-carnitine, and COA checks. Research Use Only.",
+      "og_title": "L-Carnitine Research Compound (Levocarnitine) | Veracue",
+      "og_description": "L-Carnitine (levocarnitine) for lab research: molecular identity, the carnitine shuttle, L-carnitine vs acetyl-L-carnitine, and COA checks. Research Use Only.",
+      "primary_keyword": "L-Carnitine",
+      "secondary_keywords": [
+        "L-carnitine research",
+        "L-carnitine research compound",
+        "levocarnitine",
+        "L-carnitine molecular weight",
+        "L-carnitine formula",
+        "what is L-carnitine",
+        "what does L-carnitine do",
+        "carnitine shuttle",
+        "L-carnitine mitochondrial research",
+        "L-carnitine vs acetyl-L-carnitine",
+        "L-carnitine COA"
+      ],
+      "title_length": 55,
+      "meta_description_length": 158
+    },
+    "short_blurb": "L-Carnitine, also known as levocarnitine, is the naturally occurring L-form of carnitine, a small molecule that carries long-chain fatty acyl groups into mitochondria through the carnitine shuttle. Veracue supplies it as a research material for laboratory work. The best-established evidence is biochemical (Longo et al., 2016), describing carnitine's role in mitochondrial fatty-acid transport. Human supplementation studies have reported mixed results using other materials, so this material does not establish weight loss, performance or any other effect in people. The exact form should be confirmed from the product documentation.",
+    "page": {
+      "h1": "L-Carnitine Research Compound",
+      "hero": {
+        "eyebrow": "Research Use Only",
+        "h1": "L-Carnitine Research Compound",
+        "subtitle": "Levocarnitine · Small-molecule metabolite involved in carnitine-dependent fatty-acid transport",
+        "paragraph": "L-Carnitine, also called levocarnitine, is a naturally occurring small molecule that cells make from the amino acids lysine and methionine. It carries long-chain fatty acyl groups into mitochondria, where they can be oxidized, so it is a standard reference point in studies of mitochondrial metabolism, fatty-acid oxidation and carnitine transport. Veracue lists L-Carnitine as a Research Use Only laboratory material. Below you will find its molecular identity, the research context around it and the documentation to review before laboratory use.",
+        "identity_chips": [
+          "PubChem CID 10917",
+          "CAS 541-15-1",
+          "C7H15NO3",
+          "161.20 g/mol"
+        ],
+        "ruo_label": "Not for human or veterinary use.",
+        "ctas": [
+          {
+            "label": "View Research Specifications",
+            "href": "#snapshot"
+          },
+          {
+            "label": "View Product Documentation",
+            "href": "/certificates"
+          }
+        ],
+        "commerce_fields": "Hidden until Veracue supplies a product record (SKU, size options, price, stock status)."
+      },
+      "sections": [
+        {
+          "id": "snapshot",
+          "level": 2,
+          "heading": "Product snapshot",
+          "blocks": [
+            {
+              "type": "table",
+              "columns": [
+                "Field",
+                "Reference information"
+              ],
+              "rows": [
+                [
+                  "Name",
+                  "L-Carnitine / Levocarnitine"
+                ],
+                [
+                  "Chemical type",
+                  "Small molecule"
+                ],
+                [
+                  "PubChem CID",
+                  "10917"
+                ],
+                [
+                  "CAS",
+                  "541-15-1"
+                ],
+                [
+                  "Molecular formula",
+                  "C7H15NO3"
+                ],
+                [
+                  "Molecular weight",
+                  "161.20 g/mol"
+                ],
+                [
+                  "Exact mass",
+                  "161.1052 Da, calculated"
+                ]
+              ]
+            },
+            {
+              "type": "p",
+              "text": "These values describe the reference molecule, so the exact form and lot-specific specifications should be confirmed from applicable product documentation."
+            },
+            {
+              "type": "callout",
+              "text": "Form, physical state, package size, purity or assay, analytical methods, lot number, storage conditions and certificate of analysis: Not publicly specified on the current Veracue product information. The specific salt/formulation details should be confirmed from the applicable product documentation or lot-specific COA.",
+              "label": "Product documentation"
+            },
+            {
+              "type": "cta",
+              "label": "View Product Documentation",
+              "href": "/certificates"
+            }
+          ]
+        },
+        {
+          "id": "what-is-l-carnitine",
+          "level": 2,
+          "heading": "What is L-Carnitine?",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "L-Carnitine is the naturally occurring L-form of carnitine, and levocarnitine is the same molecule under its pharmacopeial name. It is a small quaternary ammonium compound that cells build from lysine and methionine, and it is found across mammalian species (Reuter and Evans, 2012). It is a single small molecule, not a peptide: there is no amino acid chain and there are no peptide bonds."
+            },
+            {
+              "type": "p",
+              "text": "Its best-known job is transport. Long-chain fatty acids cannot enter the mitochondrial matrix on their own, so carnitine carries their acyl groups across the inner membrane, where they can be broken down by β-oxidation. Without carnitine, those acyl groups cannot make the crossing. That relay is called the carnitine shuttle."
+            },
+            {
+              "type": "p",
+              "text": "Researchers study carnitine because it sits where fatty-acid metabolism meets cellular energy. Heart and skeletal muscle lean heavily on fatty-acid oxidation, and they hold most of the body's carnitine (NIH ODS). The same molecule also anchors work on carnitine transporters and on the acylcarnitine profiles that laboratories measure to read metabolic state (Longo et al., 2016). That makes it a useful thread through several otherwise separate areas of metabolic research."
+            }
+          ]
+        },
+        {
+          "id": "molecular-identity",
+          "level": 2,
+          "heading": "Molecular identity and related forms",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "L-Carnitine has the formula C7H15NO3 and an average molecular weight of 161.20 g/mol, and PubChem lists it as CID 10917. Its systematic name is (R)-3-carboxy-2-hydroxy-N,N,N-trimethyl-1-propanaminium, inner salt (InChIKey PHIQHXFUZVPYII-ZCFIWIBFSA-N). It is a zwitterion with one stereocenter, and the L-form is the (R)-enantiomer."
+            },
+            {
+              "type": "table",
+              "columns": [
+                "Form",
+                "Formula",
+                "Molecular weight",
+                "CAS"
+              ],
+              "rows": [
+                [
+                  "L-Carnitine (levocarnitine)",
+                  "C7H15NO3",
+                  "161.20 g/mol",
+                  "541-15-1"
+                ],
+                [
+                  "L-Carnitine hydrochloride",
+                  "C7H16ClNO3",
+                  "197.66 g/mol",
+                  "6645-46-1"
+                ],
+                [
+                  "L-Carnitine L-tartrate (2:1)",
+                  "C18H36N2O12",
+                  "472.49 g/mol",
+                  "36687-82-8"
+                ],
+                [
+                  "Acetyl-L-carnitine",
+                  "C9H17NO4",
+                  "203.24 g/mol",
+                  "3040-38-8"
+                ]
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Salts and derivatives have their own formulas and weights, so a molecular weight alone cannot tell you which form a material is. Related forms are not automatically equivalent to free L-carnitine."
+            }
+          ]
+        },
+        {
+          "id": "what-does-l-carnitine-do",
+          "level": 2,
+          "heading": "What does L-Carnitine do?",
+          "blocks": [
+            {
+              "type": "callout",
+              "text": "L-Carnitine participates in the transport of long-chain fatty acyl groups into mitochondria, where they can enter β-oxidation. Researchers therefore study carnitine in mitochondrial metabolism, fatty-acid oxidation, transport biology and related metabolic systems.",
+              "label": "Short answer"
+            },
+            {
+              "type": "p",
+              "text": "Carnitine also helps cells handle excess acyl groups and keep free coenzyme A available (Longo et al., 2016; Reuter and Evans, 2012). That is the established biology."
+            },
+            {
+              "type": "p",
+              "text": "What happens when people take carnitine as a dietary supplement is a separate question. Results there are mixed and depend on the population, the form and the study design, so the evidence section treats the two separately."
+            }
+          ]
+        },
+        {
+          "id": "carnitine-shuttle",
+          "level": 2,
+          "heading": "The carnitine shuttle in brief",
+          "blocks": [
+            {
+              "type": "flow",
+              "steps": [
+                "Long-chain fatty acid",
+                "Acyl-CoA",
+                "Carnitine shuttle",
+                "Mitochondrial matrix",
+                "β-oxidation"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Mitochondria cannot import long-chain acyl-CoA directly, so the acyl group is handed to carnitine and carried across (Longo et al., 2016). Three proteins do the work:"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "CPT1, on the outer mitochondrial membrane, transfers the acyl group from coenzyme A to carnitine to form an acylcarnitine.",
+                "CACT, the carnitine–acylcarnitine translocase, moves the acylcarnitine across the inner membrane in exchange for free carnitine.",
+                "CPT2, on the inner membrane, hands the acyl group back to coenzyme A inside the matrix, ready for β-oxidation."
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Free carnitine then returns to the cytoplasm through CACT for another round, while the acyl-CoA enters β-oxidation. Tissues that rely heavily on fatty-acid oxidation, such as heart and skeletal muscle, depend on this route (Longo et al., 2016)."
+            },
+            {
+              "type": "p",
+              "text": "Medium- and short-chain fatty acids largely follow a different route. That is one reason simple one-line descriptions of carnitine miss most of the biochemistry."
+            }
+          ]
+        },
+        {
+          "id": "research-applications",
+          "level": 2,
+          "heading": "Where L-Carnitine is studied",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "These are research areas in which the molecule is studied, so they describe the science, not an outcome from Veracue material."
+            },
+            {
+              "type": "cards",
+              "items": [
+                {
+                  "title": "Mitochondrial metabolism",
+                  "text": "Carnitine sits upstream of β-oxidation and oxidative phosphorylation. Acylcarnitine levels reflect the balance of acyl-CoA to free coenzyme A inside mitochondria, so the carnitine pool gives researchers one window onto mitochondrial function. Disturbances in mitochondrial metabolism can also show up in measured acylcarnitine profiles (Reuter and Evans, 2012)."
+                },
+                {
+                  "title": "Fatty-acid oxidation",
+                  "text": "Long-chain fatty-acid oxidation depends on the carnitine shuttle. Carnitine availability is therefore a natural variable in studies of substrate use, fasting metabolism and inherited defects of the pathway, while medium- and short-chain oxidation largely follows a different route. Researchers also examine how the shuttle is regulated, for example through malonyl-CoA inhibition of CPT1."
+                },
+                {
+                  "title": "Carnitine transport",
+                  "text": "Cells accumulate carnitine through the high-affinity OCTN2 transporter, encoded by SLC22A5. Transport assays, transporter variants and animal models of lost uptake all use carnitine as the substrate under study. Because sodium drives the uptake, and loss of OCTN2 function reduces intracellular carnitine, transporter biology is a research field of its own."
+                },
+                {
+                  "title": "Skeletal muscle metabolism",
+                  "text": "Skeletal muscle holds a large share of the body's carnitine and cannot finish its synthesis, so it relies on uptake. That makes muscle a natural setting for questions about carnitine content, fuel selection and exercise metabolism. Studies comparing vegetarians and omnivores, for example, have examined how muscle carnitine responds to supplementation."
+                },
+                {
+                  "title": "Metabolic biochemistry",
+                  "text": "Fatty-acid oxidation, glucose handling and insulin resistance are closely linked in muscle biology. Carnitine features in research on how these pathways interact and how they are measured, including glycemic markers in supplementation studies. The findings are mixed, however, and interpretation depends on the population and the measures used."
+                },
+                {
+                  "title": "Acylcarnitine and metabolomics research",
+                  "text": "Acylcarnitines are esters of carnitine with fatty acids of different chain lengths. Laboratories profile them by tandem mass spectrometry as markers of fatty-acid metabolism, reporting free carnitine as C0 and the esters by chain length. Because a profile reflects many pathways at once, it is widely used in metabolomics-related research."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "evidence-summary",
+          "level": 2,
+          "heading": "What the research shows, and what it does not",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Evidence comes in different strengths, and each level answers a different question. As a result, none of it speaks directly for a specific research material."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Biochemical: how the molecule behaves in defined systems.",
+                "Cellular: mechanisms and kinetics in cultured cells.",
+                "Preclinical: effects in animal models.",
+                "Observational: associations in real populations.",
+                "Human interventional: effects of a specific intervention in a specific group.",
+                "Product-specific: facts about one lot, from its own documentation."
+              ]
+            },
+            {
+              "type": "table",
+              "columns": [
+                "Research area",
+                "Evidence",
+                "What was studied",
+                "Key takeaway",
+                "Limitation"
+              ],
+              "rows": [
+                [
+                  "Mitochondrial fatty-acid transport",
+                  "Biochemical",
+                  "How carnitine moves long-chain fatty acids into mitochondria",
+                  "Fatty acids must be conjugated to carnitine to cross the inner membrane (Longo et al., 2016)",
+                  "Describes endogenous physiology, not an added material"
+                ],
+                [
+                  "Carnitine transport",
+                  "Cellular and preclinical",
+                  "OCTN2 uptake in cells and in mouse models of lost transport",
+                  "Uptake is high-affinity and sodium-dependent; loss of transport in mice produced a severe deficiency phenotype (Longo et al., 2016; Sonne et al., 2012)",
+                  "Cell and mouse findings do not transfer directly to other systems"
+                ],
+                [
+                  "Skeletal muscle",
+                  "Human interventional",
+                  "Oral supplementation and muscle carnitine content",
+                  "Muscle carnitine rose in vegetarians but not omnivores, with no significant change in performance measures (Novakova et al., 2016)",
+                  "One small trial, one population and design"
+                ],
+                [
+                  "Exercise performance and recovery",
+                  "Human interventional",
+                  "Supplementation and exercise outcomes across reviews",
+                  "Results are mixed: some studies report changes in lactate, VO2max or recovery, others none (Fielding et al., 2018; Mielgo-Ayuso et al., 2021)",
+                  "Designs, forms and populations differ"
+                ],
+                [
+                  "Glycemic markers",
+                  "Human interventional",
+                  "Supplementation and glucose-related measures",
+                  "A meta-analysis reported lower fasting glucose, insulin resistance and HbA1c, with no change in serum insulin (Zamani et al., 2023)",
+                  "Participants mostly had metabolic conditions; more trials are needed"
+                ],
+                [
+                  "Weight-related outcomes",
+                  "Human interventional",
+                  "Body weight and body composition",
+                  "Meta-analyses report small average differences versus control (Pooyandjoo et al., 2016; Talenezhad et al., 2020)",
+                  "Variable results; weight was often a secondary outcome"
+                ],
+                [
+                  "Clinical and disease-specific research",
+                  "Human observational and clinical",
+                  "Carnitine in deficiency states, cardiovascular biology and other clinical settings",
+                  "Findings are mixed and specific to each condition",
+                  "Different regulatory and research contexts; not evidence for this material"
+                ],
+                [
+                  "Product-specific evidence",
+                  "Product-specific",
+                  "Veracue L-Carnitine",
+                  "None cited",
+                  "Lot facts come only from product documentation"
+                ]
+              ]
+            },
+            {
+              "type": "h3",
+              "text": "What these studies do not establish"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "An RUO material is not a treatment, therapy or supplement.",
+                "Published studies do not validate a specific Veracue lot. Only lot documentation does.",
+                "Clinical levocarnitine products and disease-specific studies involve different regulatory and research contexts and should not be treated as evidence for this RUO material.",
+                "Supplementation research does not establish weight loss, exercise performance or any other effect for Veracue material.",
+                "Related forms such as acetyl-L-carnitine, the hydrochloride and the tartrate are not automatically equivalent to free L-carnitine."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "weight-loss-research",
+          "level": 2,
+          "heading": "L-Carnitine and Weight-Loss Research",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Some human trials and meta-analyses report small average weight differences between adults taking L-carnitine supplements and adults given placebo or control. The findings, however, vary from study to study, and they describe dietary supplementation, not a laboratory material."
+            },
+            {
+              "type": "p",
+              "text": "Researchers looked at carnitine because it carries fatty acids into mitochondria for oxidation. That rationale is biochemical, so it does not by itself predict what supplementation does in people. In most studies, though, weight was a secondary outcome, and NIH ODS describes the overall results as equivocal."
+            },
+            {
+              "type": "p",
+              "text": "A 2016 meta-analysis reported an average difference of about 1.3 kg against control, and it found that the difference shrank with longer duration (Pooyandjoo et al., 2016). A larger 2020 analysis reported about 1.2 kg and called the effect modest. It found no significant change in waist circumference or body-fat percentage (Talenezhad et al., 2020)."
+            },
+            {
+              "type": "p",
+              "text": "Results also differ by population, form and study design, because participants have included adults with overweight, obesity and type 2 diabetes. NIH ODS concludes that larger studies are needed. None of this establishes an effect for Veracue material, and none of it is guidance for use."
+            }
+          ]
+        },
+        {
+          "id": "vs-acetyl-l-carnitine",
+          "level": 2,
+          "heading": "L-Carnitine vs Acetyl-L-Carnitine",
+          "blocks": [
+            {
+              "type": "table",
+              "columns": [
+                "Feature",
+                "L-Carnitine",
+                "Acetyl-L-Carnitine"
+              ],
+              "rows": [
+                [
+                  "Identity",
+                  "The naturally occurring L-form of carnitine (levocarnitine)",
+                  "An acetylated derivative of L-carnitine"
+                ],
+                [
+                  "Chemical relationship",
+                  "The parent molecule",
+                  "The O-acetyl ester of L-carnitine"
+                ],
+                [
+                  "Formula",
+                  "C7H15NO3",
+                  "C9H17NO4"
+                ],
+                [
+                  "Molecular weight",
+                  "161.20 g/mol",
+                  "203.24 g/mol"
+                ],
+                [
+                  "Research distinction",
+                  "Free carnitine (C0) in acylcarnitine profiling; central to the shuttle",
+                  "A short-chain acylcarnitine (C2) with its own research literature"
+                ]
+              ]
+            },
+            {
+              "type": "p",
+              "text": "The two compounds are related through metabolism, but they should not be treated as interchangeable. A finding about one does not carry over to the other, so the same caution applies to salt forms."
+            }
+          ]
+        },
+        {
+          "id": "research-questions",
+          "level": 2,
+          "heading": "Common research questions when evaluating L-Carnitine",
+          "blocks": [
+            {
+              "type": "accordion",
+              "expandable": true,
+              "items": [
+                {
+                  "number": "01",
+                  "question": "Which form is actually being described?",
+                  "problem": "“L-Carnitine” can mean the free molecule, a hydrochloride, a tartrate or a liquid preparation, and listings rarely say which.",
+                  "solution": "Start with the form named in the product documentation or lot COA. The reference data here describes free L-carnitine (C7H15NO3, 161.20 g/mol). Any other form has its own formula and weight."
+                },
+                {
+                  "number": "02",
+                  "question": "Is L-Carnitine a peptide?",
+                  "problem": "Search results place it beside research peptides, so it is easy to assume it belongs to that family.",
+                  "solution": "It does not. L-Carnitine is a single small molecule of 161.20 g/mol, and peptide-style checks such as sequence confirmation do not apply. Look for identity, assay and form instead, as you would for any small-molecule reagent."
+                },
+                {
+                  "number": "03",
+                  "question": "Does the molecular weight identify the product?",
+                  "problem": "A molecular weight is easy to look up, so it can feel like proof of what is in a vial.",
+                  "solution": "It is reference information about the molecule, not a lot result. Materials with the same molecular weight can still differ in form, water content or purity. Only lot-specific analysis speaks to the material you actually hold."
+                },
+                {
+                  "number": "04",
+                  "question": "How does L-Carnitine differ from acetyl-L-carnitine?",
+                  "problem": "Both appear in the same searches, and the names read like variations of one another.",
+                  "solution": "They are different compounds. Acetyl-L-carnitine is the O-acetyl ester of L-carnitine (C9H17NO4, 203.24 g/mol against 161.20). They are linked through metabolism, but each has its own research literature, so do not carry findings from one across to the other."
+                },
+                {
+                  "number": "05",
+                  "question": "What does the carnitine shuttle actually mean?",
+                  "problem": "The shuttle is often reduced to a slogan about fat, which hides what it does.",
+                  "solution": "It is a three-protein relay (CPT1, CACT and CPT2) that moves long-chain fatty acyl groups into the mitochondrial matrix. Medium- and short-chain fatty acids largely bypass it. The shuttle describes transport, not a metabolic outcome."
+                },
+                {
+                  "number": "06",
+                  "question": "Can supplementation research be applied to an RUO material?",
+                  "problem": "Published studies are often quoted as if they describe every carnitine material.",
+                  "solution": "They do not. Supplementation trials tested particular forms in particular people, so their results belong to those studies. They give context for the biology, but they cannot stand in for lot-specific evidence about an RUO material, so treat them as background reading."
+                },
+                {
+                  "number": "07",
+                  "question": "What does the weight-loss literature actually show?",
+                  "problem": "Weight-loss claims around carnitine are common, and they rarely arrive with the study populations and caveats attached.",
+                  "solution": "Meta-analyses report small average differences versus control, with variable results and weight often a secondary outcome. That is supplementation research in adults. It does not establish an effect for Veracue material, and NIH ODS notes that larger studies are still needed."
+                },
+                {
+                  "number": "08",
+                  "question": "How should a researcher evaluate a salt or form?",
+                  "problem": "Free carnitine, the hydrochloride and the tartrate are all called L-carnitine in casual use.",
+                  "solution": "Match the CAS number and formula on the documentation to the form you intend: 541-15-1 for free L-carnitine, 6645-46-1 for the hydrochloride and 36687-82-8 for the tartrate. Formula weights differ, so compare like with like, and confirm from the documentation rather than the product name."
+                },
+                {
+                  "number": "09",
+                  "question": "What should be checked on the COA?",
+                  "problem": "A certificate lists many fields, and a pass mark alone does not say what was measured.",
+                  "solution": "Check the material identity and form, the lot number, the assay or purity with its method, and the testing date and laboratory. Confirm that the lot number matches your vial or order, then compare any stated specification with the result."
+                },
+                {
+                  "number": "10",
+                  "question": "Which claims are molecule-level and which are product-specific?",
+                  "problem": "Reference data, literature findings and product facts can blur together on a product page.",
+                  "solution": "Formula, weight and biology are molecule-level. Purity, form, storage and test results belong to a specific lot and come only from its documentation. However, a statement that traces to neither of those sources deserves caution until you can confirm it."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "documentation",
+          "level": 2,
+          "heading": "How to read an L-Carnitine COA",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "A certificate of analysis ties a lot to measured results, so these six fields matter most."
+            },
+            {
+              "type": "table",
+              "columns": [
+                "COA field",
+                "What to look for"
+              ],
+              "rows": [
+                [
+                  "Material identity",
+                  "The name and CAS number should match the compound you intend to use."
+                ],
+                [
+                  "Form / salt",
+                  "Free L-carnitine, the hydrochloride, the tartrate and acetyl-L-carnitine have different formulas. Confirm which one the certificate describes."
+                ],
+                [
+                  "Lot number",
+                  "It should match the lot on your vial or order."
+                ],
+                [
+                  "Assay or purity, if reported",
+                  "Note the value, the basis it is reported on (as received or anhydrous) and whether a specification appears beside it."
+                ],
+                [
+                  "Analytical method",
+                  "The certificate should name the method actually used, such as titration, HPLC or mass spectrometry."
+                ],
+                [
+                  "Testing date and laboratory",
+                  "Confirm when the analysis was done and who performed it, if reported."
+                ]
+              ]
+            },
+            {
+              "type": "callout",
+              "text": "A molecular formula found in PubChem is reference information; it is not a lot-specific quality result."
+            },
+            {
+              "type": "p",
+              "text": "Lot documentation is available through the certificates page. If the certificate for your lot is not listed there yet, you can request it through Contact Veracue.",
+              "links": [
+                {
+                  "anchor": "certificates page",
+                  "href": "/certificates"
+                },
+                {
+                  "anchor": "Contact Veracue",
+                  "href": "/contact-us"
+                }
+              ]
+            },
+            {
+              "type": "cta",
+              "label": "View Product Documentation",
+              "href": "/certificates"
+            }
+          ]
+        },
+        {
+          "id": "compliance",
+          "level": 2,
+          "heading": "Research Use Only",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Veracue Peptides offers L-Carnitine for laboratory research only. It is not a drug, dietary supplement, food or cosmetic, and it is not for human or veterinary use, ingestion, injection or any form of administration. Because statements here describe published research and reference data, they are not medical advice, and the FDA has not evaluated them. See the Medical Disclaimer and the Terms & Conditions.",
+              "links": [
+                {
+                  "anchor": "Medical Disclaimer",
+                  "href": "/medical-disclaimer"
+                },
+                {
+                  "anchor": "Terms & Conditions",
+                  "href": "/terms-and-conditions"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "faq",
+          "level": 2,
+          "heading": "L-Carnitine research FAQ",
+          "blocks": [
+            {
+              "type": "faq"
+            },
+            {
+              "type": "p",
+              "text": "For questions that apply to the whole catalog, see the Help & FAQ page.",
+              "links": [
+                {
+                  "anchor": "Help & FAQ",
+                  "href": "/faq"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "final_cta": {
+        "id": "final-cta",
+        "level": 2,
+        "heading": "Review the available research documentation",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "Research documentation first"
+          },
+          {
+            "type": "p",
+            "text": "Review the available product documentation and lot-specific information before using this material in laboratory work."
+          },
+          {
+            "type": "cta",
+            "label": "View Product Documentation",
+            "href": "/certificates"
+          },
+          {
+            "type": "cta",
+            "label": "Contact Veracue",
+            "href": "/contact-us"
+          },
+          {
+            "type": "cta",
+            "label": "Browse Research Catalog",
+            "href": "/shop"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "What is L-Carnitine?",
+          "answer": "L-Carnitine is the naturally occurring L-form of carnitine, a small molecule (C7H15NO3) that cells make from lysine and methionine. It carries long-chain fatty acyl groups into mitochondria so they can enter β-oxidation, and researchers study it in mitochondrial metabolism, fatty-acid oxidation and carnitine transport."
+        },
+        {
+          "question": "Is L-Carnitine the same as levocarnitine?",
+          "answer": "Yes. Levocarnitine is the pharmacopeial name for L-carnitine, the (R)-enantiomer (CAS 541-15-1, PubChem CID 10917). Salts such as the hydrochloride and tartrate, and derivatives such as acetyl-L-carnitine, are related forms with different formulas and weights. The name alone does not tell you which form a material is."
+        },
+        {
+          "question": "Is L-Carnitine a peptide?",
+          "answer": "No. L-Carnitine is a single small molecule with no amino acid chain or peptide bonds. Cells make it from the amino acids lysine and methionine, but that origin does not make it a peptide. Its documentation should list identity and assay, not a peptide sequence."
+        },
+        {
+          "question": "What is the molecular formula of L-Carnitine?",
+          "answer": "The molecular formula of L-carnitine is C7H15NO3. That describes the free molecule. The hydrochloride (C7H16ClNO3), the 2:1 tartrate (C18H36N2O12) and acetyl-L-carnitine (C9H17NO4) each have a different formula, so confirm which form applies from the product documentation. This is reference information rather than a lot result."
+        },
+        {
+          "question": "What is the molecular weight of L-Carnitine?",
+          "answer": "The average molecular weight of L-carnitine is 161.20 g/mol, and its calculated exact mass is 161.1052 Da. Salts weigh more, for example about 197.66 for the hydrochloride, and acetyl-L-carnitine is 203.24. These are reference values, so use them to check documentation, not as a product specification."
+        },
+        {
+          "question": "What does L-Carnitine do biologically?",
+          "answer": "L-Carnitine carries long-chain fatty acyl groups across the inner mitochondrial membrane so they can be oxidized in β-oxidation. It also helps cells handle excess acyl groups and keep coenzyme A available. This is endogenous biology and does not describe an effect of any product."
+        },
+        {
+          "question": "How does L-Carnitine relate to mitochondria?",
+          "answer": "Mitochondria cannot import long-chain acyl-CoAs directly. Carnitine accepts the acyl group at the outer membrane through CPT1, crosses the inner membrane with CACT, and releases it inside through CPT2. Heart and skeletal muscle, which rely heavily on fatty-acid oxidation, hold most of the body's carnitine."
+        },
+        {
+          "question": "Is L-Carnitine the same as acetyl-L-carnitine?",
+          "answer": "No. Acetyl-L-carnitine is the O-acetyl ester of L-carnitine, with the formula C9H17NO4 and a molecular weight of 203.24 g/mol. The two are related through metabolism but are different compounds with separate research literatures, so they should not be treated as interchangeable."
+        },
+        {
+          "question": "What does research say about L-Carnitine and weight loss?",
+          "answer": "Meta-analyses of supplementation trials in adults report small average differences against control, about 1.2 to 1.3 kg, with variable results across studies. That is supplementation research. It does not establish an effect for this research material, and NIH ODS notes that larger studies are needed."
+        },
+        {
+          "question": "What should I look for on an L-Carnitine COA?",
+          "answer": "Check the material identity and form, the lot number, the assay or purity and its method, and the testing date and laboratory. Make sure the lot number matches your vial or order. A PubChem formula is reference information, not a lot result."
+        },
+        {
+          "question": "Is this material intended for human use?",
+          "answer": "No. Veracue lists L-Carnitine for laboratory research only. It is not for human or veterinary use, and it is not intended for ingestion, injection or any form of administration. It is not a drug, dietary supplement, food or cosmetic, and laboratory research is its only intended purpose."
+        },
+        {
+          "question": "What does Research Use Only mean?",
+          "answer": "Research Use Only means the material is supplied for laboratory investigation. It is not a drug, dietary supplement, food or cosmetic, and the FDA has not evaluated it for those uses. It is not intended to diagnose, treat, cure or prevent any disease."
+        }
+      ],
+      "references": [
+        {
+          "id": "R1",
+          "citation": "PubChem. (−)-Carnitine (levocarnitine), CID 10917. National Library of Medicine.",
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/10917"
+        },
+        {
+          "id": "R2",
+          "citation": "PubChem records for related forms: L-carnitine hydrochloride (CID 10219816), L-carnitine tartrate (CID 56973705), acetyl-L-carnitine (CID 7045767).",
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/Acetyl-L-Carnitine"
+        },
+        {
+          "id": "R3",
+          "citation": "DrugBank. Levocarnitine (DB00583).",
+          "url": "https://go.drugbank.com/drugs/DB00583"
+        },
+        {
+          "id": "R4",
+          "citation": "NIH Office of Dietary Supplements. Carnitine: Fact Sheet for Health Professionals (updated April 17, 2023).",
+          "url": "https://ods.od.nih.gov/factsheets/Carnitine-HealthProfessional/"
+        },
+        {
+          "id": "R5",
+          "citation": "Longo N, Frigeni M, Pasquali M. Carnitine transport and fatty acid oxidation. Biochim Biophys Acta. 2016;1863(10):2422–2435. doi:10.1016/j.bbamcr.2016.01.023. PMID 26828774.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26828774/"
+        },
+        {
+          "id": "R6",
+          "citation": "Reuter SE, Evans AM. Carnitine and acylcarnitines: pharmacokinetic, pharmacological and clinical aspects. Clin Pharmacokinet. 2012;51(9):553–572. doi:10.1007/BF03261931. PMID 22804748.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22804748/"
+        },
+        {
+          "id": "R7",
+          "citation": "Pooyandjoo M, Nouhi M, Shab-Bidar S, Djafarian K, Olyaeemanesh A. The effect of (L-)carnitine on weight loss in adults: a systematic review and meta-analysis of randomized controlled trials. Obes Rev. 2016;17(10):970–976. doi:10.1111/obr.12436. PMID 27335245.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27335245/"
+        },
+        {
+          "id": "R8",
+          "citation": "Talenezhad N, Mohammadi M, Ramezani-Jolfaie N, Mozaffari-Khosravi H, Salehi-Abargouei A. Effects of L-carnitine supplementation on weight loss and body composition: a systematic review and meta-analysis of 37 randomized controlled clinical trials with dose-response analysis. Clin Nutr ESPEN. 2020;37:9–23. doi:10.1016/j.clnesp.2020.03.008. PMID 32359762.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32359762/"
+        },
+        {
+          "id": "R9",
+          "citation": "Zamani M, Pahlavani N, Nikbaf-Shandiz M, et al. The effects of L-carnitine supplementation on glycemic markers in adults: a systematic review and dose-response meta-analysis. Front Nutr. 2023;9:1082097. PMID 36704801.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36704801/"
+        },
+        {
+          "id": "R10",
+          "citation": "Novakova K, Kummer O, Bouitbir J, et al. Effect of L-carnitine supplementation on the body carnitine pool, skeletal muscle energy metabolism and physical performance in male vegetarians. Eur J Nutr. 2016;55:207–217. PMID 25612929.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25612929/"
+        },
+        {
+          "id": "R11",
+          "citation": "Fielding R, Riede L, Lugo JP, Bellamine A. L-carnitine supplementation in recovery after exercise. Nutrients. 2018;10:349. PMID 29534031.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29534031/"
+        },
+        {
+          "id": "R12",
+          "citation": "Mielgo-Ayuso J, Pietrantonio L, Viribay A, et al. Effect of acute and chronic oral L-carnitine supplementation on exercise performance based on the exercise intensity: a systematic review. Nutrients. 2021;13:4359. PMID 34959912.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34959912/"
+        },
+        {
+          "id": "R13",
+          "citation": "Sonne S, Shekhawat PS, Matern D, Ganapathy V, Ignatowicz L. Carnitine deficiency in OCTN2−/− newborn mice leads to a severe gut and immune phenotype with widespread atrophy, apoptosis and a pro-inflammatory response. PLoS One. 2012;7(10):e47729. PMID 23112839.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23112839/"
+        }
+      ]
+    },
+    "internal_links": [
+      {
+        "anchor": "View Product Documentation",
+        "href": "/certificates",
+        "location": "snapshot, COA section, final CTA, hero"
+      },
+      {
+        "anchor": "Contact Veracue",
+        "href": "/contact-us",
+        "location": "COA section, final CTA"
+      },
+      {
+        "anchor": "Browse Research Catalog",
+        "href": "/shop",
+        "location": "final CTA; breadcrumb label 'Shop'"
+      },
+      {
+        "anchor": "Help & FAQ",
+        "href": "/faq",
+        "location": "end of FAQ"
+      },
+      {
+        "anchor": "Medical Disclaimer",
+        "href": "/medical-disclaimer",
+        "location": "Research Use Only section"
+      },
+      {
+        "anchor": "Terms & Conditions",
+        "href": "/terms-and-conditions",
+        "location": "Research Use Only section"
+      }
+    ],
+    "structured_data": {
+      "json_ld": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https://veracue-peptides.vercel.app/product/l-carnitine#webpage",
+            "url": "https://veracue-peptides.vercel.app/product/l-carnitine",
+            "name": "L-Carnitine Research Compound (Levocarnitine) | Veracue",
+            "description": "L-Carnitine (levocarnitine) for lab research: molecular identity, the carnitine shuttle, L-carnitine vs acetyl-L-carnitine, and COA checks. Research Use Only.",
+            "inLanguage": "en-US",
+            "isPartOf": {
+              "@type": "WebSite",
+              "name": "Veracue Peptides",
+              "url": "https://veracue-peptides.vercel.app/"
+            },
+            "about": {
+              "@type": "Thing",
+              "name": "L-Carnitine",
+              "alternateName": [
+                "Levocarnitine"
+              ],
+              "sameAs": [
+                "https://pubchem.ncbi.nlm.nih.gov/compound/10917"
+              ]
+            },
+            "breadcrumb": {
+              "@id": "https://veracue-peptides.vercel.app/product/l-carnitine#breadcrumb"
+            },
+            "mainEntity": {
+              "@id": "https://veracue-peptides.vercel.app/product/l-carnitine#product"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://veracue-peptides.vercel.app/product/l-carnitine#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://veracue-peptides.vercel.app/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Shop",
+                "item": "https://veracue-peptides.vercel.app/shop"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "L-Carnitine",
+                "item": "https://veracue-peptides.vercel.app/product/l-carnitine"
+              }
+            ]
+          },
+          {
+            "@type": "Product",
+            "@id": "https://veracue-peptides.vercel.app/product/l-carnitine#product",
+            "name": "L-Carnitine",
+            "url": "https://veracue-peptides.vercel.app/product/l-carnitine",
+            "description": "L-Carnitine (levocarnitine) offered by Veracue as a Research Use Only laboratory research material. Form, lot and quality details are published only where Veracue documentation supports them.",
+            "brand": {
+              "@type": "Brand",
+              "name": "Veracue"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://veracue-peptides.vercel.app/product/l-carnitine#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is L-Carnitine?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "L-Carnitine is the naturally occurring L-form of carnitine, a small molecule (C7H15NO3) that cells make from lysine and methionine. It carries long-chain fatty acyl groups into mitochondria so they can enter β-oxidation, and researchers study it in mitochondrial metabolism, fatty-acid oxidation and carnitine transport."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is L-Carnitine the same as levocarnitine?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Levocarnitine is the pharmacopeial name for L-carnitine, the (R)-enantiomer (CAS 541-15-1, PubChem CID 10917). Salts such as the hydrochloride and tartrate, and derivatives such as acetyl-L-carnitine, are related forms with different formulas and weights. The name alone does not tell you which form a material is."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is L-Carnitine a peptide?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. L-Carnitine is a single small molecule with no amino acid chain or peptide bonds. Cells make it from the amino acids lysine and methionine, but that origin does not make it a peptide. Its documentation should list identity and assay, not a peptide sequence."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the molecular formula of L-Carnitine?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The molecular formula of L-carnitine is C7H15NO3. That describes the free molecule. The hydrochloride (C7H16ClNO3), the 2:1 tartrate (C18H36N2O12) and acetyl-L-carnitine (C9H17NO4) each have a different formula, so confirm which form applies from the product documentation. This is reference information rather than a lot result."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the molecular weight of L-Carnitine?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The average molecular weight of L-carnitine is 161.20 g/mol, and its calculated exact mass is 161.1052 Da. Salts weigh more, for example about 197.66 for the hydrochloride, and acetyl-L-carnitine is 203.24. These are reference values, so use them to check documentation, not as a product specification."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does L-Carnitine do biologically?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "L-Carnitine carries long-chain fatty acyl groups across the inner mitochondrial membrane so they can be oxidized in β-oxidation. It also helps cells handle excess acyl groups and keep coenzyme A available. This is endogenous biology and does not describe an effect of any product."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does L-Carnitine relate to mitochondria?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Mitochondria cannot import long-chain acyl-CoAs directly. Carnitine accepts the acyl group at the outer membrane through CPT1, crosses the inner membrane with CACT, and releases it inside through CPT2. Heart and skeletal muscle, which rely heavily on fatty-acid oxidation, hold most of the body's carnitine."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is L-Carnitine the same as acetyl-L-carnitine?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Acetyl-L-carnitine is the O-acetyl ester of L-carnitine, with the formula C9H17NO4 and a molecular weight of 203.24 g/mol. The two are related through metabolism but are different compounds with separate research literatures, so they should not be treated as interchangeable."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does research say about L-Carnitine and weight loss?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Meta-analyses of supplementation trials in adults report small average differences against control, about 1.2 to 1.3 kg, with variable results across studies. That is supplementation research. It does not establish an effect for this research material, and NIH ODS notes that larger studies are needed."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What should I look for on an L-Carnitine COA?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Check the material identity and form, the lot number, the assay or purity and its method, and the testing date and laboratory. Make sure the lot number matches your vial or order. A PubChem formula is reference information, not a lot result."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is this material intended for human use?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Veracue lists L-Carnitine for laboratory research only. It is not for human or veterinary use, and it is not intended for ingestion, injection or any form of administration. It is not a drug, dietary supplement, food or cosmetic, and laboratory research is its only intended purpose."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does Research Use Only mean?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Research Use Only means the material is supplied for laboratory investigation. It is not a drug, dietary supplement, food or cosmetic, and the FDA has not evaluated it for those uses. It is not intended to diagnose, treat, cure or prevent any disease."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "internal_notes": {
+    "read_me": "Everything under internal_notes is for the Belk Digital / Veracue team only. None of it belongs on the public page.",
+    "revision_from_v1": [
+      "Hero shortened to ~100 words; subtitle simplified; systematic name moved to the molecular identity section; no weight-loss wording.",
+      "Ten-row 'not specified' table replaced by a 7-row reference snapshot plus one compact Product documentation block.",
+      "'Not a peptide' is stated once in the body (What is L-Carnitine?); the question cards and FAQ answer it briefly because they are search questions.",
+      "Shuttle section cut to a flow line plus three protein lines. Research areas now six short cards.",
+      "Evidence table cut from 10 rows with counts, kinetics and CIs to 8 rows with takeaways only. TMAO, prescription-product detail, primary-deficiency detail and mitochondrial-disorder detail removed.",
+      "Weight-loss section cut to ~190 words. Alzheimer's/dementia sentence, salt mass-percentage sentence, USP monograph detail, 205 nm, m/z 162.11 and the pharmacopeial illustration removed from public copy.",
+      "Problem→solution block renamed 'Common research questions when evaluating L-Carnitine' and rewritten as 10 expandable cards (titles as specified).",
+      "COA section reduced to six practical fields plus the PubChem-versus-lot-result line.",
+      "Final CTA changed from 'before you order' to 'Review the available research documentation'; shop link labeled 'Research Catalog'.",
+      "References trimmed to PubChem, NIH ODS and peer-reviewed sources actually used in the visible copy. USP, DailyMed, PMD fact sheet, TMAO papers and supplier listings are now internal only."
+    ],
+    "documents_kept_out_of_public_references": [
+      "USP 35 Levocarnitine monograph (test list, 205 nm injection assay, anhydrous-basis assay).",
+      "DailyMed levocarnitine and Carnitor labeling (prescription products are FDA-regulated drug products).",
+      "NIH ODS primary mitochondrial disorders fact sheet; Koeth 2013 and Johri 2022 (TMAO/cardiovascular).",
+      "Supplier reference-standard listings used only to cross-check CAS numbers and weights for the hydrochloride, tartrate and acetyl-L-carnitine."
+    ],
+    "verification_ledger": [
+      {
+        "claim": "PubChem CID 10917, formula C7H15NO3, CAS 541-15-1, MW 161.20, USP chemical name",
+        "source": "PubChem; USP 35 monograph; DailyMed label",
+        "status": "verified"
+      },
+      {
+        "claim": "InChIKey PHIQHXFUZVPYII-ZCFIWIBFSA-N; (R)-enantiomer",
+        "source": "DrugBank DB00583; supplier EP standard listing",
+        "status": "verified"
+      },
+      {
+        "claim": "Exact mass 161.1052 Da",
+        "source": "Calculated from monoisotopic masses (161.10519)",
+        "status": "verified (derived)"
+      },
+      {
+        "claim": "L-carnitine = levocarnitine; found in all mammals; carries long-chain fatty acids into mitochondria",
+        "source": "Reuter and Evans 2012",
+        "status": "verified"
+      },
+      {
+        "claim": "Shuttle: CPT1 outer membrane, CACT (SLC25A20), CPT2 inner membrane; medium/short-chain largely independent; OCTN2/SLC22A5; muscle cannot complete synthesis; acylcarnitines profiled by tandem MS; free carnitine = C0; CoA balance",
+        "source": "Longo et al. 2016",
+        "status": "verified"
+      },
+      {
+        "claim": "Heart and skeletal muscle hold most body carnitine; conditionally essential",
+        "source": "NIH ODS fact sheet",
+        "status": "verified"
+      },
+      {
+        "claim": "Related forms: HCl C7H16ClNO3 / 197.66 / 6645-46-1; 2:1 tartrate C18H36N2O12 / 472.49 / 36687-82-8; acetyl-L-carnitine C9H17NO4 / 203.24 / 3040-38-8",
+        "source": "PubChem records; supplier reference-standard listings; weights re-added from atomic masses",
+        "status": "verified"
+      },
+      {
+        "claim": "Weight: about 1.3 kg (2016, 9 trials) and about 1.2 kg (2020, 37 trials); shrank with duration; modest; no waist/body-fat % effect; weight often secondary outcome; larger studies needed",
+        "source": "Pooyandjoo 2016 and Talenezhad 2020 abstracts; NIH ODS",
+        "status": "verified"
+      },
+      {
+        "claim": "Glycemic markers meta-analysis; Novakova muscle result; exercise reviews mixed",
+        "source": "NIH ODS summaries of Zamani 2023, Novakova 2016, Fielding 2018, Mielgo-Ayuso 2021",
+        "status": "verified (secondary)"
+      },
+      {
+        "claim": "OCTN2-null mouse phenotype",
+        "source": "PubMed listing for Sonne 2012",
+        "status": "verified (title-level)"
+      },
+      {
+        "claim": "Certificates page offers a COA request route via Contact; shop lists 3 compounds, none L-Carnitine; footer disclaimer wording",
+        "source": "Live pages read 24 Sep 2026",
+        "status": "verified"
+      }
+    ],
+    "verification_limits": [
+      "PubMed and PMC returned a CAPTCHA to the fetch tool; abstracts were confirmed through search snippets and publisher pages, and several trial details rely on NIH ODS's summaries.",
+      "'C2' for acetylcarnitine is a standard metabolomics convention, not quoted from a fetched source.",
+      "/product/l-carnitine could not be loaded directly; absence of a record is inferred from /shop and search."
+    ],
+    "open_items": {
+      "needed_from_veracue": [
+        "Exact form (free, hydrochloride, tartrate, other salt, solution)",
+        "Physical form, package size(s), SKU, price, stock, images",
+        "Lot-specific COA (identity method, assay/purity with basis and method, lot number, date, laboratory)",
+        "Storage and any manufacturing statements Veracue wants published",
+        "Category placement ('Mitochondrial & Cellular Energy' is the closest existing category)"
+      ],
+      "site_issues": [
+        "Certificates page describes peptide-only testing (Fmoc synthesis, C18 at 214 nm, sequence identity, ±0.05 Da) and the homepage says ±0.5 Da; neither applies to L-carnitine and they disagree.",
+        "Sitewide 'USP Grade', '≥99% HPLC on every batch' and lyophilized-cake claims are not reused here because nothing documents them for L-carnitine.",
+        "Product pages say a COA is 'on file for every lot' while the public archive lists 0 reports.",
+        "Site chrome says 'Shop All Peptides' and 'Peptide Calculator'. This page uses 'Research Catalog' and does not link the calculator."
+      ],
+      "implementation": [
+        "JSON-LD uses the vercel.app host. If production runs on another domain (support email suggests veracuepeptides.com), replace the base URL in every @id, url and breadcrumb item consistently.",
+        "Organization and WebSite schema are omitted to avoid duplicating global markup; WebSite appears only as isPartOf on the WebPage node. Remove that isPartOf if it conflicts with global markup.",
+        "Publish the Product node only when a real product record exists. It has no price, offers, SKU, rating or image, so optional-field warnings are expected.",
+        "FAQPage mirrors the visible FAQ verbatim. Treat it as machine-readable structure; Google limits FAQ rich results to a narrow set of sites.",
+        "Formulas are plain text. Render C7H15NO3 with subscripts.",
+        "Block types: p, h3, ul, table, callout, cta, flow (shuttle line), cards (research areas), accordion (10 expandable questions), faq."
+      ]
+    },
+    "keyword_map": [
+      {
+        "intent": "Definition / entity",
+        "target": "hero; what-is-l-carnitine; FAQ 1–2",
+        "keywords": [
+          {
+            "query": "what is l-carnitine",
+            "search_interest": 100
+          },
+          {
+            "query": "what is levocarnitine",
+            "search_interest": 100
+          },
+          {
+            "query": "what is l carnitine",
+            "search_interest": 50
+          },
+          {
+            "query": "what is carnitine",
+            "search_interest": 15
+          },
+          {
+            "query": "carnitine",
+            "search_interest": 78
+          },
+          {
+            "query": "l-carnitine",
+            "search_interest": 28
+          }
+        ]
+      },
+      {
+        "intent": "Function / uses / benefits",
+        "target": "what-does-l-carnitine-do (short answer); evidence-summary; FAQ 6–7",
+        "keywords": [
+          {
+            "query": "what does l-carnitine do",
+            "search_interest": 18
+          },
+          {
+            "query": "what does l carnitine do",
+            "search_interest": 22
+          },
+          {
+            "query": "levocarnitine uses",
+            "search_interest": 69
+          },
+          {
+            "query": "l-carnitine uses",
+            "search_interest": 10
+          },
+          {
+            "query": "what is l-carnitine good for",
+            "search_interest": 10
+          },
+          {
+            "query": "l-carnitine benefits",
+            "search_interest": 72
+          },
+          {
+            "query": "l carnitine benefits",
+            "search_interest": 77
+          },
+          {
+            "query": "benefits of l-carnitine",
+            "search_interest": 24
+          },
+          {
+            "query": "levocarnitine benefits",
+            "search_interest": 19
+          },
+          {
+            "query": "does l-carnitine work",
+            "search_interest": 11
+          }
+        ]
+      },
+      {
+        "intent": "Weight loss / fat loss",
+        "target": "weight-loss-research; question 07; FAQ 9 (kept out of hero and title)",
+        "keywords": [
+          {
+            "query": "l-carnitine weight loss",
+            "search_interest": 62
+          },
+          {
+            "query": "l-carnitine for weight loss",
+            "search_interest": 29
+          },
+          {
+            "query": "l-carnitine weight loss results",
+            "search_interest": 9
+          },
+          {
+            "query": "l carnitine fat loss",
+            "search_interest": 11
+          },
+          {
+            "query": "levocarnitine for weight loss",
+            "search_interest": 9
+          },
+          {
+            "query": "does l carnitine burn fat",
+            "search_interest": 5
+          }
+        ]
+      },
+      {
+        "intent": "Related forms",
+        "target": "molecular-identity (forms table); vs-acetyl-l-carnitine; questions 01, 04, 08; FAQ 8",
+        "keywords": [
+          {
+            "query": "acetyl l carnitine",
+            "search_interest": 100
+          },
+          {
+            "query": "l acetyl carnitine",
+            "search_interest": 96
+          },
+          {
+            "query": "acetyl l-carnitine",
+            "search_interest": 80
+          },
+          {
+            "query": "l-carnitine vs acetyl l-carnitine",
+            "search_interest": 10
+          },
+          {
+            "query": "l-carnitine tartrate",
+            "search_interest": 25
+          },
+          {
+            "query": "l-carnitine l-tartrate",
+            "search_interest": 21
+          },
+          {
+            "query": "acetyl l-carnitine hcl",
+            "search_interest": 6
+          },
+          {
+            "query": "what is acetyl l carnitine",
+            "search_interest": 9
+          }
+        ]
+      },
+      {
+        "intent": "Peptide confusion",
+        "target": "what-is (one clear statement); question 02; FAQ 3",
+        "keywords": [
+          {
+            "query": "l carnitine peptide",
+            "search_interest": 11
+          }
+        ]
+      },
+      {
+        "intent": "Physical form",
+        "target": "product documentation block; question 01",
+        "keywords": [
+          {
+            "query": "liquid l-carnitine",
+            "search_interest": 81
+          },
+          {
+            "query": "l-carnitine liquid",
+            "search_interest": 80
+          },
+          {
+            "query": "l-carnitine powder",
+            "search_interest": 35
+          }
+        ]
+      },
+      {
+        "intent": "Deficiency / clinical terminology",
+        "target": "evidence table row 7 and 'what these studies do not establish' (kept short)",
+        "keywords": [
+          {
+            "query": "carnitine deficiency",
+            "search_interest": 31
+          },
+          {
+            "query": "levocarnitine use",
+            "search_interest": 37
+          },
+          {
+            "query": "levocarnitine injection",
+            "search_interest": 60
+          },
+          {
+            "query": "l-carnitine injection",
+            "search_interest": 24
+          }
+        ]
+      }
+    ],
+    "keywords_not_targeted": [
+      {
+        "group": "Dosing, timing and administration",
+        "queries": [
+          "l carnitine dosage",
+          "how to take l carnitine",
+          "when to take l carnitine",
+          "l-carnitine 3000",
+          "l carnitine 500mg"
+        ],
+        "reason": "Would require dosing or administration content."
+      },
+      {
+        "group": "Safety, side effects and human-use audiences",
+        "queries": [
+          "l-carnitine side effects",
+          "is l-carnitine safe",
+          "levocarnitine side effects",
+          "l carnitine benefits for men"
+        ],
+        "reason": "Human-use guidance is outside a laboratory-material page."
+      },
+      {
+        "group": "Retail, brands and reviews",
+        "queries": [
+          "gnc l-carnitine",
+          "now l-carnitine",
+          "carnipure l-carnitine",
+          "best l-carnitine supplement",
+          "l-carnitine supplement",
+          "l carnitine reviews",
+          "l carnitine reddit",
+          "l carnitine near me"
+        ],
+        "reason": "Consumer-supplement intent."
+      },
+      {
+        "group": "Animal use",
+        "queries": [
+          "l-carnitine for dogs"
+        ],
+        "reason": "Not for veterinary use."
+      },
+      {
+        "group": "Unrelated compounds and drugs",
+        "queries": [
+          "tirzepatide",
+          "semaglutide",
+          "semaglutide levocarnitine",
+          "retatrutide",
+          "kpv peptide",
+          "tesamorelin",
+          "bpc 157",
+          "gabapentin",
+          "valproic acid",
+          "creatine",
+          "coq10",
+          "taurine",
+          "alpha lipoic acid"
+        ],
+        "reason": "No scientific basis for comparison on a single-compound page."
+      }
+    ]
+  }
+}

@@ -4,7 +4,7 @@ export async function generateForgotPasswordEmail(url: string, user?: any): Prom
   const name = user?.firstName || 'there'
   const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
 
-  return `${shellOpen({ title: 'Reset Your Password — Veracue', headerColor: BRAND.olive, headerWaveInto: '#ffffff' })}
+  return `${shellOpen({ title: 'Reset Your Password | Veracue Peptides', headerColor: BRAND.olive, headerWaveInto: '#ffffff' })}
           <tr>
             <td style="background-color:#ffffff;padding:8px 24px 36px;text-align:center;">
               ${iconBadge('lock')}

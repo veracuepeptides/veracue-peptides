@@ -128,6 +128,7 @@ export function FaqClient() {
             />
             <input
               type="text"
+              aria-label="Search frequently asked questions"
               placeholder="Search questions by keyword, compound, purity, or shipping..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
@@ -192,7 +193,7 @@ export function FaqClient() {
         )}
 
         {/* 3. Main Accordion Content */}
-        <main className="w-full pb-20">
+        <div className="w-full pb-20">
           {filteredFaqData.length > 0 ? (
             filteredFaqData.map((categoryData, i) => (
               <div
@@ -233,7 +234,7 @@ export function FaqClient() {
               <div className="flex items-start gap-4 sm:gap-5">
                 <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-full overflow-hidden border-2 border-white shadow-md bg-[#eddcd2] shrink-0">
                   <Image
-                    src="/veracue-images/support-avatar.jpg"
+                    src="/veracue-images/support-avatar.webp"
                     alt="Veracue Research Specialist"
                     fill
                     className="object-cover"
@@ -277,7 +278,7 @@ export function FaqClient() {
               </div>
             </div>
           </div>
-        </main>
+        </div>
       </div>
     </div>
   )

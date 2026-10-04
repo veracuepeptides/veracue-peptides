@@ -1,0 +1,755 @@
+{
+  "productPage": {
+    "slug": "/product/tb-500-spray",
+    "productName": "TB-500 Spray",
+    "category": "Cellular Repair & Healing",
+    "eyebrow": "Research Use Only",
+    "h1": "TB-500 Spray",
+    "subtitle": "A Spray-format Research Use Only listing of TB-500, a name used in the peptide research market for material analytically identified as a synthetic fragment of thymosin beta-4.",
+    "heroSection": {
+      "eyebrow": "Research Use Only",
+      "h1": "TB-500 Spray",
+      "subtitle": "A Spray-format Research Use Only listing of TB-500, a name used in the peptide research market for material analytically identified as a synthetic fragment of thymosin beta-4.",
+      "paragraph": "TB-500 is one of the most-searched names in the peptide research market, and also one of the most confused. Independent analytical chemistry work has identified commercial \"TB-500\" material as a synthetic, N-acetylated 7-amino-acid fragment of thymosin beta-4 (Ac-LKKTETQ) rather than the full 43-residue protein, even though the two names are frequently used as if interchangeable. This page keeps that distinction in view throughout, separates what has actually been studied under each name, and documents what Veracue does and does not currently specify for this Spray-format listing. Strictly for laboratory and research use.",
+      "cta": [
+        {
+          "label": "View Certificates of Analysis",
+          "url": "/certificates"
+        },
+        {
+          "label": "Contact Our Research Team",
+          "url": "/contact-us"
+        }
+      ]
+    },
+    "quickResearchSummary": {
+      "scientificIdentity": {
+        "commonMarketName": "TB-500",
+        "analyticallyConfirmedIdentity": "N-acetylated fragment of thymosin beta-4, residues 17-23 (Ac-LKKTETQ), 7 amino acids",
+        "relationshipToThymosinBeta4": "Thymosin beta-4 (Tb4) is a naturally occurring 43-amino-acid actin-regulatory protein. TB-500, as analytically characterized in independent doping-control studies, corresponds to a short synthetic fragment covering Tb4's actin-binding region, not the intact 43-residue protein. Commercial and review-level sources are inconsistent: some use \"TB-500\" as a market synonym for synthetic full-length Tb4, while chemical-identity testing of TB-500 products has found the short fragment.",
+        "sequenceIfVerified": "Ac-Leu-Lys-Lys-Thr-Glu-Thr-Gln (Ac-LKKTETQ), corresponding to Tb4 residues 17-23",
+        "residueCountIfVerified": "7 (as the fragment analytically identified in TB-500 products); 43 for full-length thymosin beta-4 for comparison"
+      },
+      "researchFocus": "Actin binding, cell migration, angiogenesis-related and tissue-repair-related signaling, studied predominantly through the parent protein thymosin beta-4 and in a smaller set of studies using material labeled TB-500",
+      "evidenceScope": "Preclinical: in vitro and animal models (rodent, equine, and cell-culture systems). No verified TB-500-specific human clinical trial was identified in this research pass.",
+      "humanResearchStatus": "No direct TB-500-specific human trial was identified. Broader reviews covering TB-500 alongside other musculoskeletal-research peptides describe human data across this compound class as limited and heterogeneous.",
+      "sprayFormatStatus": "Spray is a product-format / dispensing descriptor only for this listing. Route, concentration, dose per spray, and formulation are not publicly specified for this Spray listing.",
+      "ruoStatus": "Research Use Only. Not for human use, veterinary use, ingestion, injection, or any form of administration."
+    },
+    "quickAnswers": [
+      {
+        "question": "What is TB-500?",
+        "answer": "TB-500 is a market name for a research peptide that independent analytical chemistry studies have identified as a synthetic, N-acetylated 7-amino-acid fragment of thymosin beta-4 (Ac-LKKTETQ), corresponding to the actin-binding region of the parent protein."
+      },
+      {
+        "question": "What is TB-500 peptide?",
+        "answer": "As a research peptide, TB-500 is sold and discussed as material related to thymosin beta-4's actin-binding domain. Analytical testing of commercial TB-500 preparations has confirmed the short Ac-LKKTETQ fragment rather than the full 43-residue protein, though vendor and secondary-source naming is inconsistent."
+      },
+      {
+        "question": "Is TB-500 the same as thymosin beta-4?",
+        "answer": "Not established as identical. Thymosin beta-4 is a 43-amino-acid protein. Chemical-identity testing of commercial TB-500 material has found a short 7-residue fragment of that protein, not the intact molecule, though some secondary sources use the two names interchangeably. Researchers should verify the exact identity of any specific lot rather than assume synonymy."
+      },
+      {
+        "question": "What is the TB-500 sequence?",
+        "answer": "Analytical studies of commercial TB-500 material identify Ac-Leu-Lys-Lys-Thr-Glu-Thr-Gln (Ac-LKKTETQ), the N-acetylated form of thymosin beta-4 residues 17-23. This is the sequence documented in independent chemistry literature, not a Veracue-specific claim."
+      },
+      {
+        "question": "Why is TB-500 associated with thymosin beta-4?",
+        "answer": "The name and market narrative around TB-500 derive from thymosin beta-4's actin-binding domain, and the fragment identified in TB-500 products sits within that domain. The association is therefore a structural and naming one, not proof that TB-500 and thymosin beta-4 produce identical biological effects."
+      },
+      {
+        "question": "What has TB-500 actually been studied for?",
+        "answer": "Material specifically labeled TB-500 has appeared in a limited number of studies, including analytical identity work and preclinical animal research on tendon healing. Most of the broader mechanistic and regenerative literature cited in TB-500 marketing was generated using thymosin beta-4 itself, not TB-500."
+      },
+      {
+        "question": "What does TB-500 research show?",
+        "answer": "Analytical chemistry work confirms TB-500's chemical identity as a Tb4-derived fragment. A small number of animal studies using material labeled TB-500 report preclinical findings in tissue models. This evidence base is preclinical and limited; it does not establish clinical efficacy in humans."
+      },
+      {
+        "question": "What does \"TB-500 benefits\" mean scientifically?",
+        "answer": "The search phrase reflects consumer interest rather than an established clinical benefits list. Translated into research terms, it points to endpoints such as cell migration, angiogenesis-related signaling, and tissue-model outcomes studied mainly for thymosin beta-4, with a smaller direct evidence base for TB-500 itself."
+      },
+      {
+        "question": "What does TB-500 dosage mean in research?",
+        "answer": "In published research, \"dosage\" refers to the amount and schedule used in a specific animal study protocol, not a human recommendation. Experimental doses reported for TB-500 or thymosin beta-4 in animal models are not translatable into a human dose and Veracue does not provide one."
+      },
+      {
+        "question": "What is known about TB-500 safety?",
+        "answer": "TB-500-specific human safety data were not identified in this research. Preclinical animal work and broader peptide-safety reviews note that unapproved research peptides in this category generally have limited, heterogeneous human safety data. This is not a safety guarantee and is not a basis for human use."
+      },
+      {
+        "question": "What is TB-500 vs BPC-157?",
+        "answer": "TB-500 and BPC-157 are chemically distinct research peptides from different structural families and different discovery histories. Both appear together in search interest and in some animal studies, but they are not the same compound and one is not a substitute or synonym for the other."
+      },
+      {
+        "question": "What does TB-500 Spray mean?",
+        "answer": "For this Veracue listing, \"Spray\" describes the product's dispensing format only. It does not establish a route of administration (nasal, oral, topical, or otherwise), a concentration, or a dose per spray unless Veracue's own product documentation confirms it, which is not currently the case for this listing."
+      }
+    ],
+    "productIdentity": {
+      "commonName": "TB-500",
+      "alternateNames": [
+        "Thymosin Beta-4 Fragment (17-23)",
+        "Tb4 Frag 17-23",
+        "Ac-LKKTETQ"
+      ],
+      "scientificName": "N-acetyl-Leu-Lys-Lys-Thr-Glu-Thr-Gln (analytically identified composition of commercial TB-500 material)",
+      "classification": "Synthetic peptide fragment associated with the actin-binding domain of thymosin beta-4",
+      "sequence": "Ac-Leu-Lys-Lys-Thr-Glu-Thr-Gln (as identified in independent analytical studies of TB-500 products)",
+      "residueCount": "7 (fragment identified in TB-500 products)",
+      "molecularFormula": "Not publicly specified with independent verification in this research pass",
+      "molecularWeight": "Not publicly specified with independent verification in this research pass",
+      "CAS": "Not publicly specified with independent verification in this research pass for the Ac-LKKTETQ fragment specifically",
+      "structuralDescription": "A short, N-terminally acetylated linear peptide corresponding to residues 17-23 of human thymosin beta-4, the region of the parent protein responsible for actin binding",
+      "thymosinBeta4Relationship": "Structurally derived from thymosin beta-4's actin-binding domain, but not established as identical to the full 43-residue protein (CAS 77591-33-4, molecular formula C212H350N56O78S, molecular weight approximately 4963.5 g/mol for the N-acetylated free peptide). Terminology in the commercial and secondary literature is inconsistent, with some sources using \"TB-500\" as a synonym for synthetic full-length thymosin beta-4.",
+      "researchAssociation": "Cell migration, actin dynamics, and angiogenesis-related signaling research, studied predominantly through thymosin beta-4 itself, with a smaller body of work using material specifically labeled TB-500"
+    },
+    "researchSections": [
+      {
+        "title": "What Exactly Is TB-500?",
+        "researchProblem": "Researchers encounter \"TB-500\" as a widely sold market name without a single, consistently documented chemical identity.",
+        "researchQuestion": "What has independent analytical chemistry actually found inside products sold as TB-500?",
+        "evidenceShows": "Independent doping-control chemistry studies analyzed commercial TB-500 preparations and identified the N-acetylated 17-23 fragment of thymosin beta-4 (Ac-LKKTETQ), a 7-residue peptide, using HPLC and mass spectrometry (Esposito et al., 2012, Drug Test Anal; Ho et al., 2012, J Chromatogr A).",
+        "practicalInterpretation": "Researchers should treat \"TB-500\" as a market name whose analytically confirmed content, in the studies available, is a short actin-binding-domain fragment rather than full-length thymosin beta-4, and should verify the identity of any specific product rather than assume the name guarantees a particular sequence.",
+        "limitation": "These identity studies characterized specific tested preparations at a point in time; they do not certify the composition of every product sold under the TB-500 name across vendors and time periods."
+      },
+      {
+        "title": "How Is TB-500 Related to Thymosin Beta-4?",
+        "researchProblem": "Marketing copy and some secondary sources use \"TB-500\" and \"thymosin beta-4\" interchangeably, which can mislead researchers about what evidence actually applies.",
+        "researchQuestion": "Where does the terminology genuinely overlap, and where does it diverge?",
+        "evidenceShows": "Thymosin beta-4 is a well-characterized 43-amino-acid actin-sequestering protein (CAS 77591-33-4). Analytical studies of TB-500 products identify only the 17-23 actin-binding fragment of that protein. However, some recent secondary literature (for example, a 2026 narrative review in Sports Medicine) labels TB-500 simply as \"thymosin beta-4 fragment,\" while at least one 2026 animal study refers to its TB-500 material as \"synthetic thymosin beta-4,\" illustrating that even current peer-reviewed sources do not use the terms consistently.",
+        "practicalInterpretation": "Because terminology is not standardized across the literature, a researcher should check the molecular identity documentation of the specific material in hand rather than relying on the product name alone to infer whether it is the fragment, the full protein, or an unverified analog.",
+        "limitation": "This ambiguity is a naming and documentation problem rather than a resolved scientific question, and it means findings generated under one name cannot be assumed to transfer to material sold under the other without independent verification."
+      },
+      {
+        "title": "What Biological Research Is Associated With Thymosin Beta-4 and TB-500?",
+        "researchProblem": "Research themes such as cell migration, actin dynamics, and tissue biology are frequently cited in TB-500 marketing without stating which compound was actually used in the underlying studies.",
+        "researchQuestion": "Which specific compound has been studied in these biological research themes?",
+        "evidenceShows": "The large majority of mechanistic and tissue-biology research in this area - actin sequestration, epicardial and endothelial cell migration, podocyte cytoskeletal regulation - has been conducted with thymosin beta-4 itself (e.g., Smart & Riley, 2009, Curr Protoc Stem Cell Biol; Vasilopoulou et al., 2016, Kidney Int). Direct TB-500-labeled research is comparatively sparse and concentrated in analytical-identity and a small number of animal-tissue studies.",
+        "practicalInterpretation": "A researcher citing actin-binding or cell-migration biology for TB-500 should identify whether the underlying study used thymosin beta-4 or TB-500-labeled material, since the two evidence bases are not equivalent in size or in confirmed compound identity.",
+        "limitation": "Mechanistic plausibility based on shared sequence homology with the actin-binding domain does not establish that TB-500-labeled material reproduces the full biological activity of thymosin beta-4."
+      },
+      {
+        "title": "What Does Research Actually Show About Angiogenesis and Cell Migration?",
+        "researchProblem": "\"Angiogenesis\" is a frequently searched term alongside TB-500, often implied to be a proven effect of the product itself.",
+        "researchQuestion": "What does the angiogenesis and cell-migration literature actually document, and for which compound?",
+        "evidenceShows": "Thymosin beta-4 has been studied for its role in endothelial and epicardial cell migration and vascular-related processes in animal models, including a 2021 mouse myocardial-infarction model in which a thymosin beta-4-releasing scaffold was associated with increased angiogenesis, lymphangiogenesis, and myocardial regeneration markers (Wang et al., 2021, Theranostics). TB-500-specific angiogenesis data are more limited and are referenced mainly in analytical and veterinary doping-control literature describing the compound's proposed mechanism rather than dedicated angiogenesis endpoints.",
+        "practicalInterpretation": "Angiogenesis-related findings in the literature are strongest for thymosin beta-4 in animal models; researchers should not present these as established, direct TB-500 findings, and none of this constitutes evidence of a therapeutic angiogenic effect in humans.",
+        "limitation": "Animal-model angiogenesis markers are mechanistic and preclinical; they do not demonstrate a clinical or therapeutic outcome and have not been established for TB-500 specifically."
+      },
+      {
+        "title": "What Have Animal Studies Investigated?",
+        "researchProblem": "Researchers need to know which specific animal models and endpoints have actually been reported, rather than a generalized claim of \"animal evidence.\"",
+        "researchQuestion": "What representative animal studies exist for thymosin beta-4 and for TB-500-labeled material?",
+        "evidenceShows": "Representative examples: (1) Compound: thymosin beta-4; Model: mouse myocardial infarction; Endpoint: epicardial activation, angiogenesis, myocardial regeneration (Wang et al., 2021, Theranostics, PMID 33754060). (2) Compound: thymosin beta-4; Model: mouse nephrotoxic nephritis; Endpoint: podocyte migration, fibrosis severity (Vasilopoulou et al., 2016, Kidney Int, PMID 27575556). (3) Compound: material labeled TB-500 (described by the authors as synthetic thymosin beta-4), alone and combined with BPC-157; Model: rat Achilles tendon transection; Endpoint: biomechanical load-to-failure and histopathological scoring, intraperitoneal dosing of 60 micrograms/kg/day for four weeks (Bicer et al., 2026, Jt Dis Relat Surg, PMID 42542926).",
+        "practicalInterpretation": "Animal findings differ by species, injury model, compound identity, and route, and should be read as model-specific rather than generalized to \"TB-500 works for tissue repair.\"",
+        "limitation": "Animal models, including rodent injury models, do not reliably predict human outcomes, and intraperitoneal dosing in a rat study does not establish an equivalent route, dose, or effect in any other context."
+      },
+      {
+        "title": "What Human Research Actually Exists?",
+        "researchProblem": "Marketing narratives sometimes imply human evidence for TB-500 by citing thymosin beta-4 trials or general peptide-recovery claims.",
+        "researchQuestion": "Is there direct human research on TB-500, and how does it compare to human research on thymosin beta-4?",
+        "evidenceShows": "No TB-500-specific human clinical trial was identified in this research pass. A 2026 scoping review in the American Journal of Sports Medicine covering TB-500 alongside BPC-157, CJC-1295, MK-677, ipamorelin, and GHK-Cu found human clinical studies across this peptide group to be few in number, frequently lacking robust controls, and yielding heterogeneous, at-best-modest results (Tewari et al., 2026, Am J Sports Med, PMID 42578445). This research pass did not independently verify a thymosin beta-4-specific human trial either.",
+        "practicalInterpretation": "Claims that TB-500 is \"clinically proven\" or already validated in human studies are not supported by the evidence identified here; any such claim should be treated with skepticism until a specific, verifiable trial is cited.",
+        "limitation": "Absence of identified evidence in this research pass is not the same as proof that no human research exists anywhere; researchers should independently verify against primary literature before relying on this summary."
+      },
+      {
+        "title": "What Does \"TB-500 Benefits\" Actually Mean Scientifically?",
+        "researchProblem": "The high search volume around \"TB-500 benefits\" and \"TB500 benefits\" often gets translated into consumer-style claims that are not supported by the underlying evidence.",
+        "researchQuestion": "What research endpoints and model-specific observations sit behind the \"benefits\" search intent?",
+        "evidenceShows": "The endpoints studied under the thymosin beta-4 / TB-500 umbrella include cell migration rates, actin dynamics, angiogenesis-related markers, and, for one TB-500-labeled rat study, tendon biomechanical load-to-failure and histopathological scoring (Bicer et al., 2026, Jt Dis Relat Surg, PMID 42542926). These are laboratory measurements in specific preclinical models, not documented outcomes in human recovery or performance.",
+        "practicalInterpretation": "\"Benefits\" search intent is better understood as interest in these specific research endpoints rather than a validated list of effects; Veracue does not represent any of these findings as established human benefits.",
+        "limitation": "Model-specific preclinical endpoints do not establish real-world efficacy, and extrapolating them into a consumer benefits list would misstate the evidence."
+      },
+      {
+        "title": "What Does \"TB-500 Dosage\" Mean in Research?",
+        "researchProblem": "\"TB-500 dosage\" and \"TB500 dosage\" are high-interest search terms, and researchers may look to this page for dosing guidance.",
+        "researchQuestion": "What dosing information exists in the literature, and how should it be interpreted?",
+        "evidenceShows": "The one identified animal study using TB-500-labeled material administered 60 micrograms per kilogram per day by intraperitoneal injection to rats for four weeks as part of an Achilles tendon repair protocol (Bicer et al., 2026, Jt Dis Relat Surg, PMID 42542926). This is a study-specific experimental parameter in a single rodent model.",
+        "practicalInterpretation": "This figure describes what was used in one controlled rat experiment. It is not a human dose, is not a recommendation, has not been converted or scaled for any other species, and Veracue does not provide dosing, reconstitution, or administration guidance for any product.",
+        "limitation": "Experimental animal dosing cannot be directly converted to a human dose, and doing so would be scientifically unsupported and outside the scope of RUO positioning."
+      },
+      {
+        "title": "What Is Known About TB-500 Safety and Tolerability?",
+        "researchProblem": "Researchers and prospective buyers frequently search for TB-500 safety information, and the absence of a clear answer can be filled by unsupported marketing claims.",
+        "researchQuestion": "What does the literature say about safety and tolerability for TB-500 versus thymosin beta-4?",
+        "evidenceShows": "No TB-500-specific human safety or adverse-effect dataset was identified in this research pass. The animal literature identified here did not report systematic adverse-effect monitoring as a primary endpoint. Broader 2026 reviews of unapproved research peptides in this category (including TB-500) describe human safety data as scarce and note the potential for harm precisely because rigorous human safety evaluation is lacking (Mendias & Awan, 2026, Sports Med, PMID 41966639; Tewari et al., 2026, Am J Sports Med, PMID 42578445).",
+        "practicalInterpretation": "TB-500 should not be described as safe, well-tolerated, or free of risk; the accurate statement is that adequate human safety data were not identified, which is itself a limitation for any research use.",
+        "limitation": "Lack of reported adverse effects in limited animal studies is not evidence of human safety, and no product-specific unknowns (formulation, purity, contaminants) for this Spray listing have been independently verified."
+      },
+      {
+        "title": "How Does TB-500 Compare With BPC-157?",
+        "researchProblem": "\"BPC-157 and TB-500\" and \"TB-500 and BPC-157\" are among the highest-interest search phrases in the workbook, often implying the two are interchangeable or that combining them is standard practice.",
+        "researchQuestion": "What are the factual similarities and differences between TB-500 and BPC-157?",
+        "evidenceShows": "BPC-157 is a synthetic pentadecapeptide derived from a fragment of a protein identified in human gastric juice, structurally and historically distinct from thymosin beta-4 and from the Ac-LKKTETQ fragment identified in TB-500 products. Both are unapproved research compounds studied mainly in preclinical animal models; one identified rat study administered both compounds separately and in combination for Achilles tendon repair and found no additive biomechanical benefit from combining them over TB-500 alone (Bicer et al., 2026, Jt Dis Relat Surg, PMID 42542926).",
+        "practicalInterpretation": "TB-500 and BPC-157 are different molecules with different origins and should be evaluated on their own separate evidence bases; the one identified combination study does not support a claim that combining them improves outcomes.",
+        "limitation": "This is a neutral identity and evidence-type comparison only. It is not a ranking, a recommendation to use either compound, and not guidance on combining or stacking research materials."
+      },
+      {
+        "title": "What Should Researchers Verify About a TB-500 Spray Product?",
+        "researchProblem": "A researcher evaluating this specific Veracue Spray listing needs to know what has and has not been documented for this exact product.",
+        "researchQuestion": "What product-level information should be checked before using material from this listing in a research setting?",
+        "evidenceShows": "For this Spray listing, Veracue has not published a molecular-identity confirmation, purity data, analytical method, lot number, Certificate of Analysis, concentration, formulation, route, or storage specification distinct from this page. No vial-format TB-500 product exists on the current Veracue catalog to compare specifications against, so no vial-to-spray transfer of specifications is possible or appropriate.",
+        "practicalInterpretation": "Researchers should request current lot-specific documentation directly from Veracue (contact details below) before relying on this listing for any laboratory protocol, and should not assume identity, purity, or concentration based on the product name alone.",
+        "limitation": "Absence of published specification is a documentation gap, not confirmation of either adequate or inadequate quality; it should be resolved by requesting first-party data rather than by assumption in either direction."
+      }
+    ],
+    "evidenceTable": [
+      {
+        "researchArea": "Chemical identity",
+        "compoundStudied": "TB-500 (commercial product)",
+        "modelOrPopulation": "Analytical chemistry, HPLC/HRMS",
+        "studyDesign": "Analytical identification and doping-control method development",
+        "keyFinding": "Commercial TB-500 material contains N-acetylated Tb4 fragment 17-23 (Ac-LKKTETQ)",
+        "evidenceType": "Analytical evidence / Direct TB-500 evidence",
+        "limitation": "Characterizes tested samples only, not every product sold as TB-500",
+        "source": "Esposito et al., 2012, Drug Test Anal, DOI 10.1002/dta.1402"
+      },
+      {
+        "researchArea": "Chemical identity / doping control",
+        "compoundStudied": "TB-500 (Ac-LKKTETQ)",
+        "modelOrPopulation": "Equine (horse) urine and plasma",
+        "studyDesign": "LC-MS detection method development after single-dose administration",
+        "keyFinding": "Confirmed presence and metabolites of N-acetylated LKKTETQ following TB-500 administration in horses",
+        "evidenceType": "Analytical evidence / Direct TB-500 evidence",
+        "limitation": "Equine pharmacokinetics; not a human or efficacy study",
+        "source": "Ho et al., 2012, J Chromatogr A, DOI 10.1016/j.chroma.2012.09.043"
+      },
+      {
+        "researchArea": "Tendon repair",
+        "compoundStudied": "TB-500 (described by study authors as synthetic thymosin beta-4), BPC-157, combination",
+        "modelOrPopulation": "Rat, Achilles tendon transection model (n=32)",
+        "studyDesign": "Randomized controlled animal study, 4-week intraperitoneal dosing, biomechanical and histopathological analysis",
+        "keyFinding": "TB-500 group showed significantly higher biomechanical load-to-failure and improved histopathological scores vs. control; combination showed no additive effect",
+        "evidenceType": "Preclinical evidence / Direct TB-500-labeled evidence",
+        "limitation": "Small rodent sample, single injury model, authors' own TB-500/Tb4 terminology is itself inconsistent with fragment-identity studies",
+        "source": "Bicer et al., 2026, Jt Dis Relat Surg, DOI 10.52312/jdrs.2026.2951"
+      },
+      {
+        "researchArea": "Cardiac repair / angiogenesis",
+        "compoundStudied": "Thymosin beta-4",
+        "modelOrPopulation": "Mouse, myocardial infarction model",
+        "studyDesign": "Controlled animal study, scaffold-delivered Tb4, 4-week follow-up",
+        "keyFinding": "Increased epicardial activation, angiogenesis and lymphangiogenesis markers, and myocardial regeneration indicators",
+        "evidenceType": "Thymosin beta-4 evidence / Mechanistic evidence",
+        "limitation": "Mouse model; not conducted with TB-500-labeled material; not evidence of human cardiac benefit",
+        "source": "Wang et al., 2021, Theranostics, DOI 10.7150/thno.52309"
+      },
+      {
+        "researchArea": "Cell migration / kidney biology",
+        "compoundStudied": "Thymosin beta-4",
+        "modelOrPopulation": "Mouse, nephrotoxic nephritis model; cultured podocytes",
+        "studyDesign": "Knockout and in vitro migration assay",
+        "keyFinding": "Endogenous thymosin beta-4 loss increased podocyte migration and worsened glomerular disease severity",
+        "evidenceType": "Thymosin beta-4 evidence / Mechanistic evidence",
+        "limitation": "Studies endogenous protein loss, not exogenous TB-500 administration; mouse and cell-culture model only",
+        "source": "Vasilopoulou et al., 2016, Kidney Int, DOI 10.1016/j.kint.2016.06.032"
+      },
+      {
+        "researchArea": "Human safety and efficacy landscape",
+        "compoundStudied": "TB-500, BPC-157, CJC-1295, MK-677, ipamorelin, GHK-Cu",
+        "modelOrPopulation": "Systematic literature scoping review (human and animal)",
+        "studyDesign": "PRISMA-guided scoping review",
+        "keyFinding": "67% of identified publications were preclinical animal studies; human data were limited, heterogeneous, and showed at-best-modest effects; risks documented for some compounds in the group",
+        "evidenceType": "Human evidence / Related-compound evidence",
+        "limitation": "Aggregate, multi-compound review; does not isolate TB-500-specific human findings",
+        "source": "Tewari et al., 2026, Am J Sports Med, DOI 10.1177/03635465261464420"
+      },
+      {
+        "researchArea": "Search interest",
+        "compoundStudied": "Not applicable (search-term data)",
+        "modelOrPopulation": "Aggregate search-query data supplied by the client",
+        "studyDesign": "Keyword/search-intent workbook",
+        "keyFinding": "High and rising search interest in \"tb-500 peptide,\" \"tb-500 and bpc-157,\" \"tb-500 dosage,\" and \"tb-500 benefits\"",
+        "evidenceType": "Search-intent evidence",
+        "limitation": "Reflects search popularity only; not scientific, safety, or efficacy evidence",
+        "source": "Client-supplied keyword workbook (TB-500 KEYWORDS)"
+      }
+    ],
+    "evidenceLimitations": {
+      "summary": "TB-500 terminology is inconsistent across commercial, review, and even recent peer-reviewed sources, so identity should be verified rather than assumed. Thymosin beta-4 research is not automatically TB-500 evidence, and TB-500-labeled animal research is not automatically human evidence. Mechanistic and cell-based findings do not establish clinical benefit, and no dosing figure in this page is a recommendation. BPC-157 findings are never treated as TB-500 findings, and the Spray format here has not been shown to establish a route of administration, concentration, or bioavailability. Product-specific claims about this listing require Veracue's own documentation, which is not yet published for this Spray."
+    },
+    "references": [
+      {
+        "title": "Synthesis and characterization of the N-terminal acetylated 17-23 fragment of thymosin beta 4 identified in TB-500, a product suspected to possess doping potential",
+        "authors": "Esposito S, Deventer K, Goeman J, Van der Eycken J, Van Eenoo P",
+        "year": 2012,
+        "journal": "Drug Testing and Analysis",
+        "doi": "10.1002/dta.1402",
+        "pmid": "22962027",
+        "relevance": "Primary analytical identification of TB-500's chemical composition",
+        "evidenceType": "Direct TB-500 evidence / Analytical evidence"
+      },
+      {
+        "title": "Doping control analysis of TB-500, a synthetic version of an active region of thymosin beta-4, in equine urine and plasma by liquid chromatography-mass spectrometry",
+        "authors": "Ho ENM, Kwok WH, Lau MY, Wong ASY, Wan TSM, Lam KKH, Schiff PJ, Stewart BD",
+        "year": 2012,
+        "journal": "Journal of Chromatography A",
+        "doi": "10.1016/j.chroma.2012.09.043",
+        "pmid": "23084823",
+        "relevance": "Independent confirmation of TB-500's identity as the Ac-LKKTETQ fragment, with pharmacokinetic detection data",
+        "evidenceType": "Direct TB-500 evidence / Analytical evidence"
+      },
+      {
+        "title": "Effects of BPC-157 and TB-500 on Achilles tendon healing in rats: A histopathological and biomechanical study",
+        "authors": "Bicer O, Adanir O, Guleryuz Y, Balci EC, Dincel YM, Yenigun MY, Aydin C, Bayrak BY",
+        "year": 2026,
+        "journal": "Joint Diseases and Related Surgery",
+        "doi": "10.52312/jdrs.2026.2951",
+        "pmid": "42542926",
+        "relevance": "Animal study using material labeled TB-500, with dosing and outcome detail",
+        "evidenceType": "Preclinical evidence / Direct TB-500-labeled evidence"
+      },
+      {
+        "title": "Thymosin beta-4 released from functionalized self-assembling peptide activates epicardium and enhances repair of infarcted myocardium",
+        "authors": "Wang YL, Yu SN, Shen HR, Wang HJ, Wu XP, Wang QL, Zhou B, Tan YZ",
+        "year": 2021,
+        "journal": "Theranostics",
+        "doi": "10.7150/thno.52309",
+        "pmid": "33754060",
+        "relevance": "Representative thymosin beta-4 animal evidence on angiogenesis and cardiac repair, kept separate from TB-500",
+        "evidenceType": "Thymosin beta-4 evidence / Mechanistic evidence"
+      },
+      {
+        "title": "Loss of endogenous thymosin beta-4 accelerates glomerular disease",
+        "authors": "Vasilopoulou E, Kolatsi-Joannou M, Lindenmeyer MT, White KE, Robson MG, Cohen CD, Sebire NJ, Riley PR, Winyard PJ, Long DA",
+        "year": 2016,
+        "journal": "Kidney International",
+        "doi": "10.1016/j.kint.2016.06.032",
+        "pmid": "27575556",
+        "relevance": "Thymosin beta-4 mechanistic evidence on cell migration and actin regulation",
+        "evidenceType": "Thymosin beta-4 evidence / Mechanistic evidence"
+      },
+      {
+        "title": "Safety and Efficacy of Approved and Unapproved Peptide Therapies for Musculoskeletal Injuries and Athletic Performance",
+        "authors": "Mendias CL, Awan TM",
+        "year": 2026,
+        "journal": "Sports Medicine",
+        "doi": "10.1007/s40279-026-02437-0",
+        "pmid": "41966639",
+        "relevance": "Current narrative review distinguishing Tb4 and TB-500 and summarizing safety/evidence gaps",
+        "evidenceType": "Related review evidence"
+      },
+      {
+        "title": "Peptide Supplements and Their Therapeutic Applications in Sports Medicine",
+        "authors": "Tewari K, Liu TP, Im C, Hamad C, Petrigliano F, Cheung EC, Kremen TJ",
+        "year": 2026,
+        "journal": "The American Journal of Sports Medicine",
+        "doi": "10.1177/03635465261464420",
+        "pmid": "42578445",
+        "relevance": "PRISMA scoping review covering TB-500 and BPC-157 human/animal evidence quality",
+        "evidenceType": "Human evidence / Related-compound evidence"
+      }
+    ],
+    "comparison": {
+      "title": "TB-500 vs. BPC-157: A Neutral Comparison",
+      "intro": "BPC-157 and TB-500 appear together constantly in research-peptide search activity. They are unrelated molecules studied for different reasons, and neither is ranked above the other here.",
+      "rows": [
+        {
+          "attribute": "Chemical identity",
+          "tb500": "Market name for material analytically identified as a synthetic 7-residue fragment (Ac-LKKTETQ) of thymosin beta-4; terminology inconsistently applied across sources",
+          "bpc157": "Synthetic pentadecapeptide (15 residues) based on a fragment of a protein identified in human gastric juice"
+        },
+        {
+          "attribute": "Research origin",
+          "tb500": "Derived from the actin-binding domain of thymosin beta-4, a naturally occurring actin-regulatory protein",
+          "bpc157": "Derived from gastric-protective protein research distinct from the thymosin family"
+        },
+        {
+          "attribute": "Primary research themes",
+          "tb500": "Actin binding, cell migration, angiogenesis-related signaling (mostly via thymosin beta-4 studies)",
+          "bpc157": "Gastrointestinal, vascular, and tissue-repair-related preclinical research"
+        },
+        {
+          "attribute": "Human evidence",
+          "tb500": "No TB-500-specific human trial identified in this research pass",
+          "bpc157": "No BPC-157-specific human trial was verified in this research pass either; broader reviews describe human data for this compound class as limited"
+        },
+        {
+          "attribute": "Regulatory status",
+          "tb500": "Not FDA-approved; Research Use Only",
+          "bpc157": "Not FDA-approved; Research Use Only"
+        },
+        {
+          "attribute": "Terminology note",
+          "tb500": "\"TB-500\" is a market name, not a formally assigned INN or standardized chemical name",
+          "bpc157": "\"BPC-157\" is likewise a market/shorthand name rather than a formal INN"
+        }
+      ],
+      "note": "This comparison is descriptive only. It is not a ranking, a recommendation to use either compound, and not a stacking or combination protocol."
+    },
+    "productSpecifications": {
+      "moleculeReference": {
+        "note": "The following describes the molecule(s) associated with the TB-500 name in the scientific literature, not this specific Veracue product.",
+        "tb500Fragment": "Ac-LKKTETQ, 7 residues, as analytically identified in commercial TB-500 products (Esposito et al., 2012; Ho et al., 2012)",
+        "thymosinBeta4FullLength": "43 residues, CAS 77591-33-4, molecular formula C212H350N56O78S, molecular weight approximately 4963.5 g/mol (N-acetylated free peptide), for reference and comparison only"
+      },
+      "spraySpecificProductInformation": {
+        "format": "Spray (packaging/dispensing format only; route not established by the name)",
+        "concentration": "Not publicly specified for this Spray listing",
+        "fillVolume": "Not publicly specified for this Spray listing",
+        "sprayCount": "Not publicly specified for this Spray listing",
+        "dosePerSpray": "Not publicly specified for this Spray listing",
+        "formulation": "Not publicly specified for this Spray listing",
+        "route": "Not publicly specified for this Spray listing",
+        "excipients": "Not publicly specified for this Spray listing",
+        "storage": "Not publicly specified for this Spray listing",
+        "lot": "Not publicly specified for this Spray listing",
+        "analyticalTesting": "Not publicly specified for this Spray listing",
+        "documentation": "No Certificate of Analysis currently published for this specific Spray listing; see the Certificates page for lots that are documented"
+      }
+    },
+    "productFormat": {
+      "descriptor": "Spray",
+      "clarification": "\"Spray\" is used here strictly as a product-format / dispensing descriptor. It is not a claim of nasal, intranasal, oral, sublingual, buccal, topical, transdermal, or inhaled delivery, and it does not imply any specific bioavailability or pharmacokinetic profile unless Veracue's first-party documentation states otherwise."
+    },
+    "coaAndDocumentation": {
+      "intro": "Researchers evaluating a lot-specific TB-500 Certificate of Analysis (COA) may look for the following, where available:",
+      "fieldsToCheck": [
+        "identity confirmation method (e.g., HPLC, mass spectrometry)",
+        "purity percentage and analytical method used",
+        "lot number",
+        "test date",
+        "testing laboratory",
+        "any relevant analytical data (chromatograms, spectra) referenced in the COA"
+      ],
+      "currentStatus": "No lot-specific COA for this TB-500 Spray listing is currently published on Veracue's Certificates page. Researchers should request current documentation directly before use.",
+      "link": "/certificates"
+    },
+    "storageAndHandling": {
+      "statement": "Storage conditions for this Spray listing are not publicly specified. General peptide-storage practices vary by formulation and should not be assumed to apply to this specific product without confirmation from Veracue."
+    },
+    "whatItIsNot": [
+      "Not an FDA-approved drug or medical product",
+      "Not intended for human use",
+      "Not intended for veterinary use",
+      "Not for ingestion, injection, or any form of administration",
+      "Not a diagnostic, treatment, cure, or preventive product for any disease",
+      "Not confirmed to be identical to full-length thymosin beta-4",
+      "Not a recovery, healing, or performance supplement"
+    ],
+    "ruoNotice": "TB-500 Spray is sold by Veracue strictly for laboratory and research use. It is not for human use, veterinary use, diagnostic use, therapeutic use, or any form of administration to a living organism. This product has not been evaluated by the FDA for safety or efficacy for any use outside of laboratory research.",
+    "faq": [
+      {
+        "question": "What is TB-500?",
+        "answer": "TB-500 is a market name for a research peptide that independent analytical chemistry has identified as the N-acetylated 17-23 fragment of thymosin beta-4 (Ac-LKKTETQ), a short peptide from the actin-binding region of that larger protein."
+      },
+      {
+        "question": "Is TB-500 the same as thymosin beta-4?",
+        "answer": "Not established as identical. Analytical testing of commercial TB-500 material has found a 7-residue fragment of thymosin beta-4, not the full 43-residue protein, although some secondary sources use the two names interchangeably. Treat them as distinct unless a specific product's documentation confirms otherwise."
+      },
+      {
+        "question": "What is the TB-500 sequence?",
+        "answer": "Independent analytical studies identify Ac-Leu-Lys-Lys-Thr-Glu-Thr-Gln (Ac-LKKTETQ) as the sequence found in commercial TB-500 products."
+      },
+      {
+        "question": "What is TB-500 studied for?",
+        "answer": "The broader thymosin beta-4 literature covers actin regulation, cell migration, and angiogenesis-related signaling. Material specifically labeled TB-500 has a smaller evidence base, concentrated in chemical-identity studies and a limited number of animal tissue-repair studies."
+      },
+      {
+        "question": "What does TB-500 research show?",
+        "answer": "Analytical work confirms TB-500's chemical composition. A small number of preclinical animal studies using TB-500-labeled material report tissue-model findings, such as biomechanical and histological outcomes in a rat tendon-repair study. This is preclinical evidence and does not establish effects in humans."
+      },
+      {
+        "question": "What are TB-500 benefits in research?",
+        "answer": "Rather than a benefits list, the literature documents specific research endpoints: cell migration rates, actin-related signaling, and, in one animal study, tendon biomechanical and histopathological scores. These are laboratory findings in specific models, not confirmed human outcomes."
+      },
+      {
+        "question": "What does TB-500 dosage mean?",
+        "answer": "In the literature, TB-500 dosage refers to the amount used in a specific research protocol, such as the 60 micrograms/kg/day intraperitoneal dose used in one rat tendon study. It is not a human dose, and Veracue does not provide dosing or administration guidance."
+      },
+      {
+        "question": "What is known about TB-500 safety?",
+        "answer": "No TB-500-specific human safety data were identified in this research. Reviews of this peptide category generally describe human safety data as limited, which is a reason for caution, not a basis for assuming either safety or danger without direct evidence."
+      },
+      {
+        "question": "What is TB-500 vs BPC-157?",
+        "answer": "They are chemically distinct compounds with different origins and research histories. Both are unapproved research peptides studied mainly in animal models. Neither is presented here as superior, and this page does not recommend combining them."
+      },
+      {
+        "question": "Why is TB-500 associated with angiogenesis research?",
+        "answer": "The association comes from thymosin beta-4's role in cell migration and vascular-related signaling, since TB-500's identified fragment sits within thymosin beta-4's actin-binding domain. Most direct angiogenesis data in the literature were generated with thymosin beta-4, not TB-500 specifically."
+      },
+      {
+        "question": "What does TB-500 Spray mean?",
+        "answer": "For this listing, Spray describes the packaging and dispensing format only. It does not establish a route of administration, concentration, or dose, none of which are currently published for this product."
+      },
+      {
+        "question": "Is TB-500 Spray for human use?",
+        "answer": "No. This product is Research Use Only and is not intended for human use, veterinary use, ingestion, injection, or any form of administration."
+      }
+    ],
+    "internalLinks": [
+      {
+        "label": "Shop All Peptides",
+        "url": "/shop"
+      },
+      {
+        "label": "Certificates of Analysis",
+        "url": "/certificates"
+      },
+      {
+        "label": "Contact Our Research Team",
+        "url": "/contact-us"
+      },
+      {
+        "label": "Peptide Calculator",
+        "url": "/peptide-calculator"
+      },
+      {
+        "label": "Research Articles",
+        "url": "/blog"
+      },
+      {
+        "label": "KLOW (GHK-Cu / BPC-157 / TB-500 / KPV blend)",
+        "url": "/product/klow"
+      },
+      {
+        "label": "Glow (GHK-Cu / BPC-157 / TB-500 blend)",
+        "url": "/product/glow"
+      }
+    ],
+    "seo": {
+      "primaryKeyword": "TB-500 peptide",
+      "secondaryKeywords": [
+        "TB-500",
+        "TB500",
+        "TB-500 research",
+        "TB-500 benefits",
+        "TB-500 dosage",
+        "TB500 dosage",
+        "thymosin beta-4",
+        "TB-500 vs BPC-157",
+        "TB-500 and BPC-157",
+        "what is TB-500",
+        "what is TB500"
+      ],
+      "searchIntent": "Mixed informational and transactional: researchers and buyers searching for TB-500's identity, relationship to thymosin beta-4, research findings, dosage context, and comparison to BPC-157",
+      "title": "TB-500 Spray Research Peptide | Veracue",
+      "metaDescription": "TB-500 Spray, Research Use Only. Covers TB-500's identity vs. thymosin beta-4, what research shows, dosage context, safety data, and BPC-157 comparison.",
+      "canonicalUrl": "https://veracue-peptides.vercel.app/product/tb-500-spray",
+      "slug": "/product/tb-500-spray",
+      "socialTitle": "TB-500 Spray | Research Use Only | Veracue",
+      "socialDescription": "A Research Use Only look at TB-500: its analytically confirmed identity, its relationship to thymosin beta-4, and what the evidence actually shows.",
+      "imageAltText": "TB-500 Spray research peptide listing, Research Use Only, Veracue",
+      "headingArchitecture": "H1: TB-500 Spray; H2s for Quick Research Summary, Quick Answers, Product Identity, each of the 11 research sections, Evidence Table, BPC-157 Comparison, Product Specifications, COA & Documentation, Storage & Handling, RUO Notice, and FAQ"
+    },
+    "geo": {
+      "entityName": "TB-500",
+      "aliases": [
+        "TB500",
+        "TB-500 peptide",
+        "Thymosin Beta-4 Fragment 17-23",
+        "Ac-LKKTETQ"
+      ],
+      "moleculeIdentity": "Market name analytically identified in independent literature as the N-acetylated 17-23 fragment of thymosin beta-4 (7 residues); terminology applied inconsistently across sources",
+      "thymosinBeta4Relationship": "Structurally derived from thymosin beta-4's actin-binding domain; not established as identical to the full 43-residue protein; some sources conflate the two names",
+      "researchContext": "Preclinical peptide research on actin binding, cell migration, and angiogenesis-related signaling; predominantly studied via thymosin beta-4, with a smaller direct TB-500 evidence base",
+      "evidenceHierarchy": "Analytical identity studies > preclinical animal studies (TB-500-labeled) > thymosin beta-4 mechanistic/animal studies (related, not direct) > search-intent data (not scientific evidence)",
+      "BPC157Distinction": "BPC-157 is a chemically and historically distinct pentadecapeptide; not the same compound as TB-500, and not interchangeable with it",
+      "productFormat": "Spray is a packaging/dispensing descriptor only for this Veracue listing; no route or concentration established",
+      "uncertaintyFields": [
+        "TB-500's full identity across all commercial products",
+        "molecular formula/weight/CAS specific to the TB-500 fragment",
+        "any human efficacy or safety data specific to TB-500",
+        "all Spray-specific formulation and dosing details for this listing"
+      ]
+    },
+    "aeo": {
+      "directAnswerPlacement": "Quick Answers block immediately follows the hero and Quick Research Summary",
+      "questionBasedHeadings": "Each of the 11 research sections and the 12 FAQs use direct question-style headings matching common search phrasing",
+      "conciseDefinitions": "TB-500 and thymosin beta-4 are each given a short, direct definition before any mechanism or evidence discussion",
+      "evidenceBackedAnswers": "Every substantive claim in the Quick Answers, research sections, and FAQ is traceable to a cited source or explicitly marked as not publicly specified",
+      "entityClarity": "TB-500, thymosin beta-4, and BPC-157 are named and distinguished from one another in the hero, Quick Research Summary, Product Identity, and comparison sections",
+      "citationReadiness": "References include title, authors, year, journal, DOI, and PMID where available for generative and citation-based search systems",
+      "dosageIntentHandling": "Dosage search intent is answered with study-specific experimental data only, explicitly labeled as non-recommendatory",
+      "benefitsIntentHandling": "Benefits search intent is translated into named research endpoints rather than a consumer benefits list",
+      "safetyIntentHandling": "Safety search intent is answered by stating what data does and does not exist, without asserting either safety or danger unsupported by evidence",
+      "comparisonIntentHandling": "TB-500 vs. BPC-157 intent is answered with a neutral, non-ranked attribute comparison"
+    },
+    "schema": {
+      "product": {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "TB-500 Spray",
+        "description": "TB-500 Spray, a Research Use Only listing of TB-500, a market name for material analytically identified as a synthetic fragment of thymosin beta-4.",
+        "url": "https://veracue-peptides.vercel.app/product/tb-500-spray",
+        "brand": {
+          "@type": "Brand",
+          "name": "Veracue"
+        },
+        "category": "Research Peptides",
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "Intended Use",
+            "value": "Research Use Only - not for human or veterinary use"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Format",
+            "value": "Spray (packaging/dispensing descriptor only)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Analytically Identified Composition",
+            "value": "Ac-LKKTETQ, thymosin beta-4 residues 17-23 (per independent literature; not a Veracue lot-specific claim)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Identity Verification Status",
+            "value": "Not independently confirmed by Veracue for this specific Spray listing; see Quick Research Summary and Evidence Table"
+          }
+        ]
+      },
+      "webPage": {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "TB-500 Spray Research Peptide | Veracue",
+        "description": "TB-500 Spray, Research Use Only. Covers TB-500's identity vs. thymosin beta-4, what research shows, dosage context, safety data, and BPC-157 comparison.",
+        "url": "https://veracue-peptides.vercel.app/product/tb-500-spray",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Veracue",
+          "url": "https://veracue-peptides.vercel.app/"
+        }
+      },
+      "breadcrumbList": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://veracue-peptides.vercel.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Shop",
+            "item": "https://veracue-peptides.vercel.app/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "TB-500 Spray",
+            "item": "https://veracue-peptides.vercel.app/product/tb-500-spray"
+          }
+        ]
+      },
+      "faqPage": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is TB-500?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "TB-500 is a market name for a research peptide that independent analytical chemistry has identified as the N-acetylated 17-23 fragment of thymosin beta-4 (Ac-LKKTETQ), a short peptide from the actin-binding region of that larger protein."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is TB-500 the same as thymosin beta-4?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not established as identical. Analytical testing of commercial TB-500 material has found a 7-residue fragment of thymosin beta-4, not the full 43-residue protein, although some secondary sources use the two names interchangeably."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the TB-500 sequence?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Independent analytical studies identify Ac-Leu-Lys-Lys-Thr-Glu-Thr-Gln (Ac-LKKTETQ) as the sequence found in commercial TB-500 products."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is TB-500 studied for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The broader thymosin beta-4 literature covers actin regulation, cell migration, and angiogenesis-related signaling. Material specifically labeled TB-500 has a smaller evidence base, concentrated in chemical-identity studies and a limited number of animal tissue-repair studies."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does TB-500 research show?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Analytical work confirms TB-500's chemical composition. A small number of preclinical animal studies using TB-500-labeled material report tissue-model findings. This is preclinical evidence and does not establish effects in humans."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are TB-500 benefits in research?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Rather than a benefits list, the literature documents specific research endpoints such as cell migration, actin-related signaling, and tendon biomechanical/histopathological scores in one animal study."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does TB-500 dosage mean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "TB-500 dosage in the literature refers to study-specific research protocol amounts, such as the dose used in one rat tendon study. It is not a human dose, and Veracue does not provide dosing or administration guidance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is known about TB-500 safety?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No TB-500-specific human safety data were identified in this research. Reviews of this peptide category generally describe human safety data as limited."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is TB-500 vs BPC-157?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "They are chemically distinct compounds with different origins and research histories, both unapproved and studied mainly in animal models. This page does not rank or recommend combining them."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is TB-500 associated with angiogenesis research?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "TB-500's identified fragment sits within thymosin beta-4's actin-binding domain, and most direct angiogenesis data in the literature were generated with thymosin beta-4, not TB-500 specifically."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does TB-500 Spray mean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spray describes the packaging and dispensing format only for this listing. It does not establish a route of administration, concentration, or dose."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is TB-500 Spray for human use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. This product is Research Use Only and is not intended for human use, veterinary use, ingestion, injection, or any form of administration."
+            }
+          }
+        ]
+      }
+    },
+    "qualityAudit": {
+      "scientificAccuracy": "TB-500 identity claims are grounded in two independent analytical chemistry studies (Esposito et al., 2012; Ho et al., 2012) rather than vendor naming; thymosin beta-4's CAS, formula, and sequence are drawn from a chemical reference database; ambiguity across secondary sources is explicitly disclosed rather than resolved by assumption.",
+      "evidenceQuality": "Evidence is tiered by compound (TB-500-labeled vs. thymosin beta-4 vs. BPC-157) and by study type (analytical, preclinical animal, review); no TB-500-specific human evidence was identified, and this is stated directly rather than substituted with thymosin beta-4 human data.",
+      "seo": "Primary keyword 'TB-500 peptide' and natural secondary variants are used without stuffing; search-intent themes from the supplied keyword workbook (benefits, dosage, BPC-157 pairing) are addressed as content, not inserted as raw keyword strings.",
+      "geo": "TB-500, thymosin beta-4, and BPC-157 are each explicitly named and distinguished across the hero, identity, research, and comparison sections for generative-search entity clarity.",
+      "aeo": "Direct, concise answers are placed near the top of the page and mirrored in question-style FAQ and schema entries matching common search phrasing.",
+      "ruoCompliance": "No therapeutic, healing, or performance claims are made for TB-500; all research findings are framed as preclinical or analytical; no human dosing, reconstitution, or administration instructions are provided.",
+      "noFabrication": "No invented sequence, CAS, molecular weight, spray concentration, dose-per-spray, formulation, route, storage condition, price, availability, or COA is included; all such fields are marked not publicly specified where Veracue first-party data does not exist.",
+      "humanization": "Copy uses varied sentence rhythm and concise paragraphs, avoids repeating stock disclaimer phrases, and places scientific caveats where they are substantively relevant rather than after every sentence."
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next'
 
-// Paths that exist under the application.
-const LOCALIZED_PRIVATE_PATHS = [
+// Private, transactional pages. These also carry a noindex meta tag; the disallow saves crawl budget.
+const PRIVATE_PATHS = [
   '/account',
   '/cart',
   '/checkout',
@@ -14,26 +14,29 @@ const LOCALIZED_PRIVATE_PATHS = [
   '/reset-password',
 ]
 
-// Global paths
-const GLOBAL_PRIVATE_PATHS = [
+// Internal and non-content paths
+const INTERNAL_PATHS = [
   '/admin',
   '/api',
-  '/my-route',
   '/ref',
+  '/the-upside-down',
+  '/monitoring',
+  '/email-preview',
 ]
 
 export default function robots(): MetadataRoute.Robots {
   const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
 
   const disallow = [
-    ...GLOBAL_PRIVATE_PATHS,
-    ...LOCALIZED_PRIVATE_PATHS,
+    ...INTERNAL_PATHS,
+    ...PRIVATE_PATHS,
   ]
 
   return {
     rules: {
       userAgent: '*',
-      allow: '/',
+      // /api/og generates social share images and must stay crawlable.
+      allow: ['/', '/api/og'],
       disallow,
     },
     sitemap: `${baseUrl}/sitemap.xml`,

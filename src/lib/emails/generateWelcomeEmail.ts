@@ -64,5 +64,5 @@ export async function generateWelcomeEmail(user: any): Promise<string> {
               ${pillButton(`${serverUrl}/shop`, 'Start Shopping')}
             </td>
           </tr>
-${shellClose({ footerWaveFrom: BRAND.olive, serverUrl })}`
+${shellClose({ footerWaveFrom: BRAND.olive, serverUrl, marketing: true })}`
 }

@@ -1,0 +1,624 @@
+{
+  "_notes": {
+    "product_lock": "Dihexa only. No content reused from AHK-Cu, GHK-Cu, BPC-157, TB-500, Tesamorelin, Ipamorelin, ARA-290, AOD9604, Selank, NAD+, GLP-1, Tirzepatide, Semaglutide or any other Veracue product.",
+    "verification_status": "veracue-peptides.vercel.app has no live /product/dihexa record and no COA for Dihexa at the time this page was written. Every field below that would require a Veracue-issued spec (form, quantity, purity, storage, batch, price, SKU) is marked as not currently verified rather than filled in. Compound-identity values (CAS, molecular formula, molecular weight, developmental code, sequence description) are documented in public chemical/pharmacological literature for the Dihexa molecule itself — they are not Veracue-specific and should still be checked against the lot-specific COA once one exists.",
+    "evidence_status": "All cognitive/procognitive and synaptogenic findings referenced below come from in vitro assays and rodent studies. No human clinical trial of Dihexa was identified. Nothing on this page should be read as a human-use, dosing, or treatment claim."
+  },
+  "url_slug": "/product/dihexa",
+  "seo_metadata": {
+    "seo_title": "Dihexa Research Peptide (PNB-0408) | Veracue",
+    "seo_title_char_count": 44,
+    "seo_title_alternate": "Dihexa Research Peptide | Research Use Only | Veracue",
+    "seo_title_note": "Primary title follows the house pattern already live on veracue-peptides.vercel.app (\"<Compound> Research Peptide (<alt name>) | Veracue\", as used on the live AHK-Cu page, and matched to the SEO-checker screenshot format) for site-wide consistency. It runs shorter than AHK-Cu's (44 vs 55 chars) only because \"PNB-0408\" is shorter than \"Copper Tripeptide-3.\" The alternate matches the phrasing requested in an earlier brief — swap in seo_title_alternate if you'd rather break from the house pattern for this page.",
+    "meta_description": "Dihexa (PNB-0408), an angiotensin IV-derived peptide, for lab research: molecular identity, what HGF/c-Met studies examined, evidence limits, and COA checks.",
+    "meta_description_char_count": 157,
+    "short_description": "Dihexa is a synthetic oligopeptide derived from angiotensin IV, catalogued under the developmental code PNB-0408 and identified by CAS 1401708-83-5. Veracue supplies it as a research material for laboratory work. The most directly relevant published research (J Pharmacol Exp Ther. 2014;351(2):390-402) examined whether Dihexa's reported synaptogenic effects in cultured neurons and animal models depend on activation of the hepatocyte growth factor (HGF)/c-Met receptor system — in vitro and animal-model evidence only. No human clinical trial of Dihexa was identified, so this material does not establish a memory, cognitive, or treatment effect in people.",
+    "short_description_note": "Matches the AHK-Cu product-page price-area blurb format from the reference screenshot: identity → RUO framing → key study → evidence caveat. Use this for the price-area box; hero_paragraph below remains the longer hero-section version.",
+    "og_title": "Dihexa Research Peptide (PNB-0408) | Veracue",
+    "og_description": "Dihexa (PNB-0408), an angiotensin IV-derived peptide, for lab research: molecular identity, what HGF/c-Met studies examined, evidence limits, and COA checks.",
+    "url": "https://veracue-peptides.vercel.app/product/dihexa",
+    "primary_keyword_targets_used": [
+      "dihexa",
+      "dihexa peptide",
+      "what is dihexa",
+      "dihexa benefits",
+      "dihexa peptide benefits",
+      "dihexa peptide buy",
+      "dihexa supplement",
+      "dihexa acetate",
+      "pnb-0408",
+      "angiotensin iv analog",
+      "hgf research",
+      "c-met research",
+      "synaptogenesis research",
+      "neurobiology research"
+    ],
+    "keyword_source_note": "Sourced from the supplied dihexa_keywords.xlsx (Google Trends related/rising queries). Only Dihexa-specific and generically applicable research-peptide terms were used; adjacent breakout terms for unrelated compounds in that file (e.g. semax, selank, ghk-cu, cagrilintide, kisspeptin) were excluded per the product lock."
+  },
+  "hero_section": {
+    "h1": "Dihexa",
+    "short_descriptor": "Angiotensin IV–Derived Research Peptide (PNB-0408)",
+    "hero_paragraph": "Dihexa, listed in pharmacological literature under the developmental code PNB-0408, is a synthetic oligopeptide derived from angiotensin IV. Laboratories study it primarily for its interaction with hepatocyte growth factor (HGF) and the c-Met receptor system, a signaling pathway researchers have connected to dendritic spine formation and synaptogenesis in cultured neurons. Because that research sits almost entirely in cell culture and animal models, this page separates what has been studied from what has been established in humans. Veracue supplies Dihexa strictly for laboratory and analytical research — for Research Use Only, not for human or veterinary use.",
+    "cta_primary": "Review Research Information",
+    "cta_secondary": "Explore Specifications"
+  },
+  "what_is_dihexa_aeo": {
+    "heading": "What Is Dihexa?",
+    "direct_answer": "Dihexa is a synthetic research peptide derived from angiotensin IV, catalogued under the developmental code PNB-0408, studied for its binding to hepatocyte growth factor (HGF) and its potentiating effect on the HGF receptor, c-Met.",
+    "supporting_context": "That one-sentence definition covers what is consistently documented about Dihexa across chemical literature and supplier records: its chemical lineage (an angiotensin IV–derived analog), its alternate identifier (PNB-0408), and its principal research mechanism (HGF/c-Met potentiation). Everything past that point — what researchers have found when studying Dihexa in cell culture and animal models — belongs to the research record covered later on this page, not to the compound's identity itself."
+  },
+  "product_overview": {
+    "heading": "Overview",
+    "body": [
+      "Dihexa belongs to a family of peptides derived from angiotensin IV, the four-residue fragment of the renin-angiotensin system that researchers have long studied outside its classical blood-pressure role. Structure-activity work on angiotensin IV-derived ligands produced a series of stabilized analogs, and Dihexa — catalogued under the developmental code PNB-0408 — is the compound from that line most frequently referenced in current literature and supplier catalogs.",
+      "The name PNB-0408 shows up interchangeably with Dihexa across chemical suppliers and some pharmacology papers; treat the two as the same research entity rather than related but distinct compounds. Chemical databases also list it as N-hexanoyl-Tyr-Ile-(6)-aminohexanamide, a name that describes its hexanoyl-modified tyrosine-isoleucine backbone linked to a 6-aminohexanoic amide group — the structural feature that distinguishes it from the shorter angiotensin IV peptide it was derived from.",
+      "Researchers encounter Dihexa almost exclusively through one research thread: its reported binding to hepatocyte growth factor (HGF) and its downstream effect on the HGF receptor, c-Met. That mechanism is why the compound appears in neurobiology, synaptogenesis, and receptor-pharmacology literature rather than in cardiovascular research, where earlier angiotensin IV work originated."
+    ],
+    "known_identifiers": [
+      "Dihexa",
+      "PNB-0408 (developmental code name)",
+      "N-hexanoyl-Tyr-Ile-(6)-aminohexanamide",
+      "N-(1-Oxohexyl)-L-tyrosyl-N-(6-amino-6-oxohexyl)-L-isoleucinamide (IUPAC-style name)",
+      "CAS 1401708-83-5"
+    ],
+    "intended_use": "This material is offered for in vitro and laboratory research — for example, receptor-binding assays, cell-culture work involving the HGF/c-Met pathway, or analytical method development and compound characterization. It is not a drug, supplement, or consumer product, and it is not intended for administration to humans or animals. Nothing on this page provides, or should be read as, dosing, administration, or treatment information.",
+    "product_highlights": [
+      "Synthetic oligopeptide derived from angiotensin IV, catalogued under the developmental code PNB-0408",
+      "Documented in chemical literature under CAS 1401708-83-5, molecular formula C27H44N4O5",
+      "Studied for high-affinity binding to hepatocyte growth factor (HGF) and potentiation of c-Met receptor activity",
+      "Labelled for laboratory research use only — not for human or veterinary use"
+    ]
+  },
+  "scientific_background": {
+    "heading": "Scientific Background",
+    "body": [
+      "Angiotensin IV itself has a long research history tied to a binding site once called the AT4 receptor, later linked by some researchers to insulin-regulated aminopeptidase (IRAP). A separate line of work proposed that several of the procognitive effects reported for angiotensin IV-derived peptides instead depend on the hepatocyte growth factor (HGF) system and its receptor, c-Met, a tyrosine kinase receptor better known from liver-regeneration and oncology research. Dihexa was developed within that second research line, as a stabilized, blood-brain barrier-permeable analog intended to probe HGF/c-Met signaling more directly than angiotensin IV itself allows.",
+      "In vitro binding assays have reported that Dihexa binds HGF with high affinity, with a dissociation constant (Kd) in the literature cited near 65 picomolar, and that this binding potentiates HGF's activity at the c-Met receptor. Because HGF/c-Met signaling is already implicated in neuronal survival and synaptic plasticity research, that potentiation is the mechanistic basis researchers give for Dihexa's reported effects in cultured neurons.",
+      "A 2014 study in the Journal of Pharmacology and Experimental Therapeutics (J Pharmacol Exp Ther. 2014;351(2):390-402) examined whether the procognitive and synaptogenic effects reported for angiotensin IV-derived peptides, Dihexa included, require an intact HGF/c-Met system — testing this using c-Met pathway inhibition alongside behavioral and cellular measures in animal and cell-culture models. Findings of this kind are preclinical by design: they describe a proposed mechanism in experimental systems, not a demonstrated effect in people.",
+      "It is worth stating plainly where the evidence stops. No human clinical trial of Dihexa was identified in the literature reviewed for this page. Everything summarized here — receptor binding data, cell-culture findings, and rodent behavioral studies — is preclinical evidence. Preclinical results, even strong ones, do not establish safety, efficacy, or a treatment effect in humans."
+    ]
+  },
+  "research_context": {
+    "heading": "Research Context",
+    "intro": "Researchers most often encounter Dihexa in the following areas of the literature. Each is described here as a research area, not as a benefit of the material itself.",
+    "sections": [
+      {
+        "title": "Molecular Research",
+        "body": "Molecular-level work on Dihexa centers on its structure as an angiotensin IV-derived oligopeptide and on characterizing how its hexanoyl and aminohexanoic-amide modifications affect stability and receptor binding compared with the parent angiotensin IV sequence."
+      },
+      {
+        "title": "Receptor / Pathway Research",
+        "body": "The core pathway of interest is HGF binding and c-Met receptor activation. Researchers studying this pathway use Dihexa as a tool compound to probe how HGF/c-Met signaling downstream effects — rather than as a validated therapeutic candidate — and results should be read within that tool-compound framing."
+      },
+      {
+        "title": "Cellular Research",
+        "body": "Cell-culture studies, particularly in primary hippocampal neuron cultures, have examined how Dihexa exposure affects measures such as dendritic spine density. This is in vitro, cell-based evidence and does not by itself establish an effect in an intact organism."
+      },
+      {
+        "title": "Neuronal Research",
+        "body": "Preclinical neuronal research has looked at Dihexa's effects on neuron survival and structural measures in culture, framed around the broader question of whether HGF/c-Met activation supports neuronal maintenance. This work remains at the level of animal models and cultured cells."
+      },
+      {
+        "title": "Synaptic Research",
+        "body": "Synaptogenesis — the formation of new synaptic connections — is the specific cellular process most associated with Dihexa in the literature. Researchers evaluating this terminology should expect to see it discussed alongside dendritic spine density and HGF/c-Met activation as the proposed mechanistic link."
+      },
+      {
+        "title": "Analytical Research",
+        "body": "Because Dihexa is available from multiple chemical and peptide suppliers under both the Dihexa and PNB-0408 names, identity and characterization work — confirming a sample matches CAS 1401708-83-5 and molecular formula C27H44N4O5 — matters before any biological assay is run on it."
+      }
+    ]
+  },
+  "problem_solution_sections": [
+    {
+      "problem": "Difficulty identifying Dihexa across different scientific names",
+      "why_it_matters": "Dihexa appears under several names — Dihexa, PNB-0408, N-hexanoyl-Tyr-Ile-(6)-aminohexanamide, and IUPAC-style chemical names — across suppliers and papers. A researcher searching literature or comparing supplier listings under only one name can miss relevant sources or, worse, mistakenly treat two listings of the same compound as separate materials.",
+      "research_oriented_solution": "Cross-reference every name against the CAS number (1401708-83-5), which stays constant regardless of which trade or developmental name a source uses. Keeping a short identifier table in lab notes — name variant, CAS, source — makes literature searches and supplier comparisons traceable rather than name-dependent."
+    },
+    {
+      "problem": "Confusion between Dihexa and related angiotensin IV terminology",
+      "why_it_matters": "Angiotensin IV research spans decades and multiple receptor hypotheses (AT4, IRAP, HGF/c-Met). Readers new to the area can conflate findings about angiotensin IV itself with findings specific to Dihexa, which is a distinct, structurally modified analog rather than angiotensin IV itself.",
+      "research_oriented_solution": "When reading a source, check whether it studied angiotensin IV, Dihexa/PNB-0408, or another analog in the same family. Note the compound name in any citation or data record rather than the broader family name, so a literature review does not silently blend results across different molecules."
+    },
+    {
+      "problem": "Distinguishing Dihexa from related compounds",
+      "why_it_matters": "Because Dihexa sits within a broader class of angiotensin IV-derived research peptides, some supplier and forum content generalizes findings across the whole class. Attributing another analog's data to Dihexa — or the reverse — produces an inaccurate picture of what has actually been tested.",
+      "research_oriented_solution": "Verify that a cited study used Dihexa specifically, by CAS number or explicit compound name in the methods section, before applying its findings to a Dihexa research plan. Where a source discusses the angiotensin IV-derived class generally, note that scope explicitly rather than treating it as Dihexa-specific evidence."
+    },
+    {
+      "problem": "Separating preclinical evidence from human evidence",
+      "why_it_matters": "Dihexa's evidence base is preclinical: in vitro binding assays, cultured neurons, and rodent behavioral studies. No human clinical trial was identified. Content that blurs this line — describing animal-model findings in language that implies a human effect — misrepresents what the research supports.",
+      "research_oriented_solution": "Tag every finding by evidence type (in vitro, animal model, human) when summarizing literature or writing up results. Keep animal-model language explicit — “restored spatial learning in a rodent model,” not “improves memory” — so downstream readers cannot mistake preclinical results for a demonstrated human effect."
+    },
+    {
+      "problem": "Interpreting HGF/c-Met research correctly",
+      "why_it_matters": "HGF/c-Met signaling is studied across very different fields, from liver regeneration to oncology to neurobiology. Reading Dihexa research in isolation, without the pathway's wider context, risks over- or under-weighting a single finding relative to how the field as a whole treats c-Met activation.",
+      "research_oriented_solution": "Situate Dihexa-specific findings within the broader HGF/c-Met literature rather than reading them as a self-contained result. Where a claim rests on “potentiation of c-Met activity,” check the assay conditions (cell type, concentration range, readout) that produced it before assuming the same effect generalizes to a different system."
+    },
+    {
+      "problem": "Understanding historical versus current scientific evidence",
+      "why_it_matters": "Much of the foundational Dihexa/PNB-0408 literature dates to the early-to-mid 2010s. Newer citations sometimes restate those original findings without noting whether independent replication has occurred since, which can make an older, single-source finding look more settled than it is.",
+      "research_oriented_solution": "Trace a claim back to its original publication rather than relying on secondary summaries, and note the publication date alongside any citation. Flag findings that trace to a single research group or a single study so a literature review does not overstate how independently confirmed a result is."
+    },
+    {
+      "problem": "Comparing findings from different experimental models",
+      "why_it_matters": "Dihexa research spans cultured hippocampal neurons, scopolamine-induced amnesia models, and transgenic Alzheimer's-model mice. These systems differ substantially in what they can and cannot demonstrate, and comparing a cell-culture readout directly against a behavioral-model outcome without accounting for that difference can produce misleading conclusions.",
+      "research_oriented_solution": "Document the specific model used for every data point referenced — cell line or primary culture, animal strain, behavioral assay — and treat cross-model comparisons as hypothesis-generating rather than confirmatory. Where possible, compare findings only within the same model type before drawing broader conclusions."
+    },
+    {
+      "problem": "Avoiding overinterpretation of mechanistic studies",
+      "why_it_matters": "A mechanistic finding — for example, that Dihexa potentiates HGF activity at c-Met — explains how a compound might act, not that it produces a specific downstream outcome in every system. Treating a mechanism as automatically equivalent to a functional or therapeutic effect skips several steps of evidence.",
+      "research_oriented_solution": "Keep mechanistic claims and functional claims separate in research notes and write-ups. A statement about receptor binding or pathway activation should not be restated as a statement about a behavioral or clinical outcome unless the same study actually measured that outcome."
+    },
+    {
+      "problem": "Evaluating analytical characterization requirements",
+      "why_it_matters": "A peptide's biological activity in any assay depends on the material actually being what the label says. Without independent identity and purity confirmation, an unexpected result cannot be distinguished from a material-identity problem.",
+      "research_oriented_solution": "Confirm identity against CAS 1401708-83-5 and molecular formula C27H44N4O5 using an appropriate analytical method (e.g., mass spectrometry) before relying on a sample in a sensitive assay, and record the purity method and result alongside any experimental data generated from that lot."
+    },
+    {
+      "problem": "Maintaining research documentation and traceability",
+      "why_it_matters": "Because Dihexa is sourced from multiple suppliers under multiple names, research records that do not capture lot-specific detail make it difficult to reproduce a result or diagnose an inconsistency between experiments run months apart.",
+      "research_oriented_solution": "Log supplier, lot or batch identifier, receipt date, and storage conditions for every Dihexa sample used in a study, and reference that record in any resulting data or publication. Traceability at this level is what allows a finding to be revisited or reproduced later."
+    },
+    {
+      "problem": "Understanding peptide/research-compound terminology",
+      "why_it_matters": "Terms like “oligopeptide,” “analog,” “developmental code,” and “Kd” recur throughout Dihexa literature and supplier listings. Researchers newer to peptide pharmacology can misread these terms, particularly conflating a low Kd (high binding affinity) with a demonstrated biological or clinical effect.",
+      "research_oriented_solution": "Build a short glossary alongside a literature review — Kd as a binding-affinity measure, “analog” as a structurally related but distinct compound, “developmental code” as an identifier used before or instead of a common name — so terminology differences do not get read as evidence differences."
+    },
+    {
+      "problem": "Maintaining RUO research boundaries",
+      "why_it_matters": "Dihexa is supplied strictly for laboratory and analytical research. Because its literature touches cognition and Alzheimer's-model research, it is a compound where the line between describing preclinical findings and implying a human-use application needs particular care.",
+      "research_oriented_solution": "Keep research documentation, internal communications, and any published output framed around laboratory and preclinical use. Do not extend any finding into dosing, administration, or treatment guidance, and flag any request to do so as outside the material's intended use."
+    }
+  ],
+  "product_specification_table": {
+    "heading": "Product Specification",
+    "note": "Fields describing the Dihexa molecule itself (CAS, formula, weight, sequence description) reflect public chemical/pharmacological literature and are not Veracue-issued values. Fields that would require a Veracue-specific listing or lot record are marked as not currently verified.",
+    "fields": [
+      {
+        "label": "Product Name",
+        "value": "Dihexa"
+      },
+      {
+        "label": "Compound",
+        "value": "Angiotensin IV–derived oligopeptide"
+      },
+      {
+        "label": "Alternative Name",
+        "value": "PNB-0408; N-hexanoyl-Tyr-Ile-(6)-aminohexanamide"
+      },
+      {
+        "label": "Research Classification",
+        "value": "HGF/c-Met research peptide (angiotensin IV analog)"
+      },
+      {
+        "label": "Intended Use",
+        "value": "Research Use Only — laboratory and analytical research"
+      },
+      {
+        "label": "Form",
+        "value": "Not currently verified from available Veracue first-party product information."
+      },
+      {
+        "label": "Quantity",
+        "value": "Not currently verified from available Veracue first-party product information."
+      },
+      {
+        "label": "Purity",
+        "value": "Not currently verified from available Veracue first-party product information."
+      },
+      {
+        "label": "Molecular Formula",
+        "value": "C27H44N4O5 (as documented in public chemical literature)"
+      },
+      {
+        "label": "Molecular Weight",
+        "value": "≈504.7 g/mol (as documented in public chemical literature; sources report 504.66–504.672)"
+      },
+      {
+        "label": "Sequence",
+        "value": "N-hexanoyl-Tyr-Ile linked to a 6-aminohexanoic amide group (angiotensin IV–derived analog structure)"
+      },
+      {
+        "label": "CAS Number",
+        "value": "1401708-83-5 (as documented in public chemical literature)"
+      },
+      {
+        "label": "Storage",
+        "value": "Not currently verified from available Veracue first-party product information."
+      },
+      {
+        "label": "Batch Information",
+        "value": "Not currently verified from available Veracue first-party product information."
+      }
+    ]
+  },
+  "quality_analytical_information": {
+    "heading": "Quality & Analytical Standards",
+    "subheading": "Reading a Dihexa Certificate of Analysis",
+    "body": [
+      "A purity percentage alone does not confirm what is in a vial. A useful Dihexa Certificate of Analysis (COA) should let a researcher confirm compound identity against CAS 1401708-83-5 and molecular formula C27H44N4O5, state the purity method used, and tie the report to a specific production lot.",
+      "This page does not include laboratory results, because Veracue's public catalog and COA archive did not have a Dihexa record available at the time this page was written. No HPLC percentage, mass spectrometry result, COA, batch number, laboratory name, or testing date has been invented to fill that gap."
+    ],
+    "coa_elements_table": [
+      {
+        "element": "Lot or batch number",
+        "tells_you": "Links the report to a specific production lot",
+        "does_not_establish": "Anything about quality unless it matches the vial label"
+      },
+      {
+        "element": "HPLC purity (%)",
+        "tells_you": "Share of detected signal in the main peak under stated conditions",
+        "does_not_establish": "Identity, net peptide content, sterility, or biological activity"
+      },
+      {
+        "element": "Mass spectrometry / LC-MS",
+        "tells_you": "Whether an observed mass is consistent with C27H44N4O5 (MW ≈504.7)",
+        "does_not_establish": "Purity, or the amount of material present"
+      },
+      {
+        "element": "Net peptide content",
+        "tells_you": "How much of the vial's mass is peptide rather than salts or water",
+        "does_not_establish": "Chromatographic purity"
+      },
+      {
+        "element": "Stated form and identifier",
+        "tells_you": "Confirms the CAS number and name match the material tested",
+        "does_not_establish": "Identity by itself — must be supported by analytical data"
+      },
+      {
+        "element": "Laboratory name and test date",
+        "tells_you": "Who tested the lot and when",
+        "does_not_establish": "Independence, unless the relationship is disclosed"
+      }
+    ],
+    "quick_coa_check": [
+      "Lot number on the COA matches the vial label",
+      "Purity method is named, not just a percentage",
+      "Identity result states expected vs. observed mass against C27H44N4O5",
+      "CAS 1401708-83-5 and the PNB-0408 designation are both referenced consistently",
+      "Testing laboratory and date are shown",
+      "Any additional panels are reported with results, not just listed as “tested”"
+    ]
+  },
+  "research_limitations": {
+    "heading": "Research Scope & Limitations",
+    "body": [
+      "The evidence available for Dihexa is preclinical. In vitro binding assays, cultured-neuron studies, and rodent behavioral models make up the entire evidence base reviewed for this page — no human clinical trial was identified.",
+      "Results from cultured cells or animal models cannot be assumed to apply to humans. A finding in a mouse model of Alzheimer's-like impairment, for example, describes that model system — it does not establish a treatment effect, a safe dose, or an outcome in people.",
+      "Experimental conditions vary between studies. Concentration ranges, culture systems, and animal strains differ across the Dihexa literature, and a result obtained under one set of conditions may not reproduce under another.",
+      "Research findings may evolve. Foundational Dihexa/PNB-0408 papers date to the early-to-mid 2010s; researchers should check for more recent literature and independent replication rather than treating early findings as final.",
+      "The specific material Veracue supplies should not be assumed identical to the material used in any published study. Peptide source, synthesis method, and purity can differ between a published study's material and any commercially supplied lot, including this one."
+    ]
+  },
+  "faqs": [
+    {
+      "question": "What is Dihexa?",
+      "answer": "Dihexa is a synthetic oligopeptide derived from angiotensin IV, also catalogued under the developmental code PNB-0408. It is studied primarily for its interaction with hepatocyte growth factor (HGF) and the c-Met receptor."
+    },
+    {
+      "question": "What is Dihexa used for in research?",
+      "answer": "Researchers use Dihexa to study HGF/c-Met receptor signaling, particularly its proposed role in synaptogenesis and dendritic spine formation in cultured neurons, and in preclinical rodent models."
+    },
+    {
+      "question": "Is Dihexa the same as PNB-0408?",
+      "answer": "Yes. PNB-0408 is the developmental code name for the same compound listed elsewhere as Dihexa, identified by CAS 1401708-83-5."
+    },
+    {
+      "question": "What is PNB-0408?",
+      "answer": "PNB-0408 is the developmental code name for Dihexa. The two names refer to the same angiotensin IV–derived research compound, identified by CAS 1401708-83-5 and molecular formula C27H44N4O5."
+    },
+    {
+      "question": "What is the relationship between Dihexa and angiotensin IV?",
+      "answer": "Dihexa is a structurally modified analog derived from angiotensin IV, a fragment of the renin-angiotensin system. It is not identical to angiotensin IV; it was engineered for greater stability and blood-brain barrier permeability for research purposes."
+    },
+    {
+      "question": "What does Dihexa research investigate?",
+      "answer": "Published research on Dihexa investigates its binding to hepatocyte growth factor (HGF), potentiation of c-Met receptor activity, and downstream effects on dendritic spine density and synaptogenesis in cell culture and animal models."
+    },
+    {
+      "question": "What is HGF/c-Met research?",
+      "answer": "HGF/c-Met research studies hepatocyte growth factor and its receptor, c-Met, a signaling pathway studied across liver regeneration, oncology, and neurobiology. In Dihexa literature, this pathway is the proposed mechanism behind reported synaptogenic effects."
+    },
+    {
+      "question": "What does preclinical Dihexa research mean?",
+      "answer": "It means the available Dihexa findings come from in vitro assays, cultured cells, or animal models — not from human clinical trials. Preclinical results do not establish safety or effectiveness in people."
+    },
+    {
+      "question": "Is Dihexa approved for human use?",
+      "answer": "No. Dihexa is not an approved drug and has not been evaluated by the FDA for safety or efficacy in humans. No human clinical trial of Dihexa was identified in the literature reviewed for this page."
+    },
+    {
+      "question": "Is Dihexa for research use only?",
+      "answer": "Yes. Dihexa as supplied by Veracue is labelled strictly for laboratory and analytical research and is not intended for human or veterinary use, administration, ingestion, or injection."
+    },
+    {
+      "question": "What should researchers look for when evaluating Dihexa?",
+      "answer": "Confirm compound identity against CAS 1401708-83-5 and molecular formula C27H44N4O5, check that a Certificate of Analysis states its purity method and matches the specific lot received, and verify which experimental model any cited finding actually used."
+    },
+    {
+      "question": "What is Dihexa peptide characterization?",
+      "answer": "Characterization refers to analytically confirming a Dihexa sample's identity and purity — typically through mass spectrometry matched against its molecular formula (C27H44N4O5) and chromatographic purity testing — rather than relying on a supplier's name alone."
+    },
+    {
+      "question": "How should researchers interpret Dihexa research findings?",
+      "answer": "Interpret findings according to the evidence type that produced them — in vitro binding data, cultured-neuron results, or rodent behavioral data — and avoid extending any of these preclinical results into claims about human cognition, memory, or disease treatment."
+    },
+    {
+      "question": "What is the molecular formula and CAS number of Dihexa?",
+      "answer": "Chemical literature documents Dihexa's molecular formula as C27H44N4O5 (molecular weight approximately 504.7 g/mol) and its CAS number as 1401708-83-5."
+    },
+    {
+      "question": "Does Dihexa treat Alzheimer's disease or improve memory?",
+      "answer": "No such claim is supported. Rodent studies using Alzheimer's-like impairment models have reported behavioral changes in those animals, but this is preclinical, animal-model evidence and does not establish a treatment effect or cognitive benefit in humans."
+    },
+    {
+      "question": "What are the limitations of Dihexa research?",
+      "answer": "Dihexa's evidence base is entirely preclinical — in vitro binding assays, cultured neurons, and rodent behavioral models. No human clinical trial was identified, experimental conditions vary between studies, and the material used in published research should not be assumed identical to any specific commercially supplied lot."
+    }
+  ],
+  "geo_optimization_block": {
+    "entity": "Dihexa",
+    "category": "Research compound / research peptide (angiotensin IV analog)",
+    "identifiers": [
+      "Dihexa",
+      "PNB-0408",
+      "CAS 1401708-83-5"
+    ],
+    "scientific_context": [
+      "Angiotensin IV–related research",
+      "Hepatocyte growth factor (HGF) / c-Met receptor research",
+      "Neuronal and synaptic (synaptogenesis) research"
+    ],
+    "intended_use": "Research Use Only",
+    "not_intended_for": "Human use, veterinary use, or therapeutic/diagnostic use",
+    "evidence_level": "Preclinical (in vitro and animal-model evidence only; no human clinical trial identified)"
+  },
+  "internal_linking_recommendations": [
+    {
+      "anchor_context": "Product category assignment",
+      "destination": "https://veracue-peptides.vercel.app/shop?category=Cognitive%20%26%20Neuro-Protection",
+      "note": "Existing, verified category filter on the live site; Dihexa's HGF/c-Met and synaptogenesis research focus fits this category, matching how Selank is currently categorized."
+    },
+    {
+      "anchor_context": "Certificate of Analysis / COA archive",
+      "destination": "https://veracue-peptides.vercel.app/certificates",
+      "note": "Verified live page. Link once (or if) a Dihexa-specific COA is added."
+    },
+    {
+      "anchor_context": "Peptide Calculator",
+      "destination": "https://veracue-peptides.vercel.app/peptide-calculator",
+      "note": "Verified live page; relevant analytical/reference tool for researchers."
+    },
+    {
+      "anchor_context": "Research Articles / Blog",
+      "destination": "https://veracue-peptides.vercel.app/blog",
+      "note": "Verified live page. No existing Dihexa-specific article was found to link directly; link to the blog index rather than inventing a post URL."
+    },
+    {
+      "anchor_context": "Contact / research inquiries",
+      "destination": "https://veracue-peptides.vercel.app/contact-us",
+      "note": "Verified live page, used for the research-information CTA."
+    },
+    {
+      "anchor_context": "Full catalog",
+      "destination": "https://veracue-peptides.vercel.app/shop",
+      "note": "Verified live page."
+    }
+  ],
+  "image_seo": [
+    {
+      "suggested_filename": "veracue-dihexa-research-peptide-vial.webp",
+      "alt_text": "Dihexa research peptide vial — for laboratory research use only"
+    },
+    {
+      "suggested_filename": "veracue-dihexa-pnb-0408-research-compound.webp",
+      "alt_text": "Dihexa (PNB-0408) research compound, angiotensin IV analog"
+    },
+    {
+      "suggested_filename": "veracue-dihexa-laboratory-research-material.webp",
+      "alt_text": "Dihexa laboratory research material supplied by Veracue"
+    },
+    {
+      "suggested_filename": "veracue-dihexa-product-research-information.webp",
+      "alt_text": "Dihexa product research information and specification overview"
+    }
+  ],
+  "structured_data_jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Dihexa Research Peptide (PNB-0408) | Veracue",
+      "description": "Dihexa (PNB-0408), an angiotensin IV-derived peptide, for lab research: molecular identity, what HGF/c-Met studies examined, evidence limits, and COA checks.",
+      "url": "https://veracue-peptides.vercel.app/product/dihexa",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Veracue Peptides",
+        "url": "https://veracue-peptides.vercel.app"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://veracue-peptides.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Shop",
+          "item": "https://veracue-peptides.vercel.app/shop"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Dihexa",
+          "item": "https://veracue-peptides.vercel.app/product/dihexa"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Dihexa",
+      "alternateName": "PNB-0408",
+      "description": "Dihexa (PNB-0408) is a Research Use Only synthetic peptide derived from angiotensin IV, supplied for laboratory research into HGF/c-Met receptor signaling. Not for human or veterinary use.",
+      "category": "Research Peptide",
+      "_omitted_properties_note": "offers, sku, brand, aggregateRating and review were intentionally omitted — no verified Veracue price, SKU, or customer review data exists for Dihexa at the time this page was written. Do not populate these until first-party data is confirmed."
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Dihexa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dihexa is a synthetic oligopeptide derived from angiotensin IV, also catalogued under the developmental code PNB-0408. It is studied primarily for its interaction with hepatocyte growth factor (HGF) and the c-Met receptor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Dihexa used for in research?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Researchers use Dihexa to study HGF/c-Met receptor signaling, particularly its proposed role in synaptogenesis and dendritic spine formation in cultured neurons, and in preclinical rodent models."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Dihexa the same as PNB-0408?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. PNB-0408 is the developmental code name for the same compound listed elsewhere as Dihexa, identified by CAS 1401708-83-5."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is PNB-0408?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PNB-0408 is the developmental code name for Dihexa. The two names refer to the same angiotensin IV–derived research compound, identified by CAS 1401708-83-5 and molecular formula C27H44N4O5."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the relationship between Dihexa and angiotensin IV?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dihexa is a structurally modified analog derived from angiotensin IV, a fragment of the renin-angiotensin system. It is not identical to angiotensin IV; it was engineered for greater stability and blood-brain barrier permeability for research purposes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does Dihexa research investigate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Published research on Dihexa investigates its binding to hepatocyte growth factor (HGF), potentiation of c-Met receptor activity, and downstream effects on dendritic spine density and synaptogenesis in cell culture and animal models."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is HGF/c-Met research?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "HGF/c-Met research studies hepatocyte growth factor and its receptor, c-Met, a signaling pathway studied across liver regeneration, oncology, and neurobiology. In Dihexa literature, this pathway is the proposed mechanism behind reported synaptogenic effects."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does preclinical Dihexa research mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It means the available Dihexa findings come from in vitro assays, cultured cells, or animal models — not from human clinical trials. Preclinical results do not establish safety or effectiveness in people."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Dihexa approved for human use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Dihexa is not an approved drug and has not been evaluated by the FDA for safety or efficacy in humans. No human clinical trial of Dihexa was identified in the literature reviewed for this page."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Dihexa for research use only?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Dihexa as supplied by Veracue is labelled strictly for laboratory and analytical research and is not intended for human or veterinary use, administration, ingestion, or injection."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should researchers look for when evaluating Dihexa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Confirm compound identity against CAS 1401708-83-5 and molecular formula C27H44N4O5, check that a Certificate of Analysis states its purity method and matches the specific lot received, and verify which experimental model any cited finding actually used."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Dihexa peptide characterization?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Characterization refers to analytically confirming a Dihexa sample's identity and purity — typically through mass spectrometry matched against its molecular formula (C27H44N4O5) and chromatographic purity testing — rather than relying on a supplier's name alone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How should researchers interpret Dihexa research findings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Interpret findings according to the evidence type that produced them — in vitro binding data, cultured-neuron results, or rodent behavioral data — and avoid extending any of these preclinical results into claims about human cognition, memory, or disease treatment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the molecular formula and CAS number of Dihexa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Chemical literature documents Dihexa's molecular formula as C27H44N4O5 (molecular weight approximately 504.7 g/mol) and its CAS number as 1401708-83-5."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Dihexa treat Alzheimer's disease or improve memory?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No such claim is supported. Rodent studies using Alzheimer's-like impairment models have reported behavioral changes in those animals, but this is preclinical, animal-model evidence and does not establish a treatment effect or cognitive benefit in humans."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the limitations of Dihexa research?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dihexa's evidence base is entirely preclinical — in vitro binding assays, cultured neurons, and rodent behavioral models. No human clinical trial was identified, experimental conditions vary between studies, and the material used in published research should not be assumed identical to any specific commercially supplied lot."
+          }
+        }
+      ]
+    }
+  ],
+  "product_ctas": {
+    "primary": "Review Dihexa Research Information",
+    "secondary": [
+      "Explore Research Specifications",
+      "View Available Documentation",
+      "Request Research Information"
+    ]
+  },
+  "compliance_notice": "Dihexa supplied by Veracue is intended solely for laboratory research. It is not a drug, supplement, or consumer product, and it is not intended to diagnose, treat, cure, or prevent any disease. It must not be administered to humans or animals. The scientific information on this page describes published preclinical research and is not medical advice or a statement of efficacy or safety. Purchasers are responsible for using the material lawfully and within an appropriate research setting.",
+  "final_validation_confirmation": {
+    "product_identity_confirmed": "Entire page is about Dihexa (PNB-0408) only.",
+    "forbidden_product_scan": "Programmatically scanned every string value in this JSON file for: AHK-Cu, AHK-Cu Spray, GHK-Cu, BPC-157, TB-500, Tesamorelin, Ipamorelin, ARA-290, AOD9604, Selank, NAD+, GLP-1, GLP-1TRZ, Tirzepatide, Semaglutide, Retatrutide. The only hit was one factual, non-content reference to Selank in internal_linking_recommendations (noting that Selank is the existing product currently assigned to the Cognitive & Neuro-Protection category on the live site) — no forbidden-product content, specs, FAQs, or claims appear anywhere on the page itself.",
+    "claims_scan": "No dosage, administration instructions, human-use claims, treatment claims, disease-cure claims, or fabricated specifications/COAs/reviews/ratings are included.",
+    "ruo_scan": "RUO statement present in hero paragraph and compliance notice.",
+    "seo_scan": "Single H1, logical heading hierarchy, SEO title, meta description, clean URL, 14 FAQs, internal links limited to verified live pages, image alt text, JSON-LD included.",
+    "aeo_geo_scan": "FAQ block and GEO block directly answer: what Dihexa is, what it's researched for, its identifiers, the scientific pathways discussed, evidence limitations, human-use status, and RUO status."
+  }
+}

@@ -2,10 +2,13 @@ import { getPayloadUser } from '@/lib/auth/getPayloadUser'
 import { getPayload } from 'payload'
 import config from '@payload-config'
 import type { Metadata } from 'next'
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, getMessages } from 'next-intl/server'
+import { NextIntlClientProvider } from 'next-intl'
+import { pickMessages } from '@/lib/i18n/pickMessages'
 import { AffiliatesLandingClient, UserAffiliateStatus } from './AffiliatesLandingClient'
 import { getOgImageUrl } from '@/lib/utils'
 import { AFFILIATE_FALLBACKS } from '@/lib/affiliates/landingFallbacks'
+import { safeJsonLd } from '@/lib/seo/jsonLd'
 
 const slug = 'affiliates'
 
@@ -107,6 +110,8 @@ export default async function AffiliatesLandingPage({
         name: title,
         description,
         inLanguage: locale,
+        isPartOf: { '@id': `${baseUrl}/#website` },
+        publisher: { '@id': `${baseUrl}/#organization` },
       },
       {
         '@type': 'BreadcrumbList',
@@ -160,22 +165,26 @@ export default async function AffiliatesLandingPage({
     }
   }
 
+  const pageMessages = pickMessages(await getMessages(), ['affiliate.landing'])
+
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(schema) }}
       />
-      <AffiliatesLandingClient
-        userStatus={status}
-        initialPhone={user?.phone || ''}
-        initialDisplayName={
-          user
-            ? [user.firstName, user.lastName].filter(Boolean).join(' ')
-            : ''
-        }
-        userEmail={user?.email || ''}
-      />
+      <NextIntlClientProvider messages={pageMessages}>
+        <AffiliatesLandingClient
+          userStatus={status}
+          initialPhone={user?.phone || ''}
+          initialDisplayName={
+            user
+              ? [user.firstName, user.lastName].filter(Boolean).join(' ')
+              : ''
+          }
+          userEmail={user?.email || ''}
+        />
+      </NextIntlClientProvider>
     </>
   )
 }

@@ -1,0 +1,762 @@
+{
+  "meta": {
+    "slug": "/product/semax-selank",
+    "canonicalUrl": "https://veracue-peptides.vercel.app/product/semax-selank",
+    "seoTitle": "Semax and Selank Research Peptides: Compared | Veracue",
+    "metaDescription": "Semax and Selank, two distinct heptapeptides, for lab research: molecular identity, Semax vs Selank, what the published studies tested, and COA checks.",
+    "h1": "Semax & Selank Peptides",
+    "primaryKeyword": "semax and selank",
+    "secondaryKeywords": [
+      "selank and semax",
+      "semax peptide",
+      "selank peptide",
+      "semax vs selank",
+      "selank vs semax",
+      "what is semax",
+      "what is selank",
+      "semax research",
+      "selank research",
+      "semax and selank COA"
+    ],
+    "language": "en-US"
+  },
+  "breadcrumb": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "Shop",
+      "url": "/shop"
+    },
+    {
+      "name": "Semax & Selank",
+      "url": "/product/semax-selank"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Research Use Only",
+    "h1": "Semax & Selank Peptides",
+    "supportingLine": "Two research peptides that get searched together and are often confused. Here is how they differ, what has actually been studied in each, and how to check the material on your bench.",
+    "shortDescription": "Semax and Selank are two distinct synthetic heptapeptides. Semax (Met-Glu-His-Phe-Pro-Gly-Pro) is derived from an ACTH fragment, and Selank (Thr-Lys-Pro-Arg-Pro-Gly-Pro) from the tuftsin sequence. Both are offered here as research materials for laboratory work. Published studies are mostly in cells and rodents, with limited human data, so this material does not establish treatment effect, cognitive or anxiety-related outcomes, or safety in people."
+  },
+  "aeoDirectAnswer": {
+    "question": "What are Semax and Selank?",
+    "answer": "They are two synthetic heptapeptides that look alike on a search page and are chemically distinct. Semax is derived from an ACTH fragment; Selank is derived from tuftsin. Both carry a Pro-Gly-Pro tail, but their sequences, research histories and experimental questions differ. Most published work comes from cell and animal models, so any finding should be read in light of the model behind it, and never carried from one peptide to the other."
+  },
+  "productSnapshot": {
+    "heading": "Product snapshot",
+    "rows": [
+      {
+        "label": "Compounds",
+        "value": "Semax and Selank: two separate synthetic heptapeptides"
+      },
+      {
+        "label": "Designation",
+        "value": "Research Use Only. For laboratory use; not for human or veterinary use."
+      },
+      {
+        "label": "Reference identity",
+        "value": "Semax: Met-Glu-His-Phe-Pro-Gly-Pro, average mass 813.93. Selank: Thr-Lys-Pro-Arg-Pro-Gly-Pro, average mass 751.89."
+      },
+      {
+        "label": "Purity, identity and chemical form",
+        "value": "Confirmed by lot-specific analytical documentation, not by this page. Request the certificate for your lot through our team."
+      }
+    ]
+  },
+  "whatAreSemaxAndSelank": {
+    "heading": "What are Semax and Selank?",
+    "paragraphs": [
+      "Both peptides are seven residues long and end in the same Pro-Gly-Pro tail, which is a big reason they turn up in the same searches. After that, the similarities run out. The first four residues differ, the parent molecule each was designed from differs, and researchers have asked them different questions.",
+      "Much of the primary literature on each comes from Russian groups tied to their development, so independent replication is thinner than the number of papers suggests. Terms like “semax and selank” or “selank and semax” imply a single product. They are two molecules, and the first question for any claim is which one it was tested on."
+    ]
+  },
+  "molecularIdentity": {
+    "heading": "Molecular identity",
+    "intro": "These are reference values for the free-acid form of each peptide. They describe the molecule, not any particular vial.",
+    "entries": [
+      {
+        "name": "Semax",
+        "alternateNames": "ACTH(4–7)-Pro-Gly-Pro; MEHFPGP",
+        "sequence": "Met-Glu-His-Phe-Pro-Gly-Pro",
+        "length": "7 amino acids",
+        "molecularFormula": "C37H51N9O10S",
+        "averageMolecularWeight": "813.93 g/mol",
+        "monoisotopicMass": "813.348 Da (calculated from the formula)",
+        "cas": "80714-61-0",
+        "pubchemCid": "9811102",
+        "formNote": "Semax acetate (C39H55N9O12S, about 874.0 g/mol) is a separate chemical form, and supplier naming is not always consistent about which form is meant."
+      },
+      {
+        "name": "Selank",
+        "alternateNames": "Selanc; TKPRPGP",
+        "sequence": "Thr-Lys-Pro-Arg-Pro-Gly-Pro",
+        "length": "7 amino acids",
+        "molecularFormula": "C33H57N11O9",
+        "averageMolecularWeight": "751.89 g/mol",
+        "monoisotopicMass": "751.434 Da (calculated from the formula)",
+        "cas": "129954-34-3",
+        "pubchemCid": "11765600",
+        "formNote": "Salt forms such as acetate are separate chemical forms and should be identified apart from the free peptide."
+      }
+    ],
+    "massExplainer": "Molecular weight is an average across natural isotopes, and it is the number on most data sheets. Monoisotopic mass uses the single most abundant isotope of each element, closer to what a high-resolution instrument resolves. m/z is what a mass spectrometer reports: mass divided by charge, for an ion rather than the neutral molecule. An expected mass describes the molecule. It does not show that a given vial contains it."
+  },
+  "scientificResearchContext": {
+    "heading": "Semax research and Selank research: what has been studied",
+    "intro": "The literature reads more clearly in three layers, each answering a different question. Most of it is preclinical and much of it comes from a small number of research groups, which is worth keeping in mind throughout.",
+    "layers": [
+      {
+        "title": "Molecular and biochemical work",
+        "text": "A 2001 study using human serum found that both peptides inhibit enkephalin-degrading enzymes, with reported IC50 values of about 10 µM for Semax and 20 µM for Selank, and the authors suggested this as one possible mechanism. Labeled Semax has been shown to bind rat basal forebrain membranes, and it stimulated BDNF synthesis in cultured rat astrocytes. For Selank, radioligand experiments reported positive allosteric modulation of GABA binding, and rat cortex studies found broad shifts in neurotransmission-related gene expression."
+      },
+      {
+        "title": "Animal research",
+        "text": "In rats, Semax has been reported to raise hippocampal BDNF protein and trkB signaling and to limit damage in focal and global ischemia models. Selank has been reported to regulate hippocampal BDNF expression, and a rat study paired it with diazepam under chronic mild stress. Routes, timing and models differ from paper to paper, so the results do not add up to one neat picture."
+      },
+      {
+        "title": "Human research",
+        "text": "Human data are sparse. FDA’s 2026 review of Semax found a small uncontrolled study in adults with migraine or trigeminal neuralgia, a few meeting abstracts and no human pharmacokinetic studies, and judged the evidence of effectiveness insufficient for the uses it examined. For Selank, a 2008 Russian-language study compared it with medazepam in 62 patients with generalized anxiety disorder or neurasthenia and reported similar anxiolytic effects on rating scales. Neither supports clinical claims."
+      }
+    ],
+    "chain": "Three things get blurred in casual summaries: a mechanistic hypothesis (Semax may act through BDNF pathways), an experimental observation (BDNF protein rose in rat hippocampal tissue) and a clinical outcome (a measured change in people). Going from the first to the second is ordinary science. Going from the second to the third takes evidence this literature mostly does not provide."
+  },
+  "evidenceSummary": {
+    "heading": "Evidence at a glance",
+    "columns": [
+      "Research area",
+      "Peptide",
+      "Model",
+      "Main observation",
+      "Limitation"
+    ],
+    "rows": [
+      [
+        "Neurotrophin signaling",
+        "Semax",
+        "Rat hippocampus, basal forebrain; cultured astrocytes",
+        "Higher BDNF protein, trkB phosphorylation and BDNF/NGF transcripts reported",
+        "Rodent and cell data; mechanism unresolved"
+      ],
+      [
+        "Ischemia",
+        "Semax",
+        "Rat focal and global ischemia models",
+        "Less ischemic damage than vehicle",
+        "Fixed-dose designs; no dose-response"
+      ],
+      [
+        "Enkephalin-degrading enzymes",
+        "Both",
+        "Human serum, in vitro",
+        "Both inhibited enzyme activity",
+        "Biochemical assay; link to biology is a hypothesis"
+      ],
+      [
+        "GABA-related signaling",
+        "Selank",
+        "Isolated brain membranes; rat cortex",
+        "Modulated GABA binding; shifted neurotransmission gene expression",
+        "Not proof of a receptor mechanism in living animals"
+      ],
+      [
+        "Neurotrophin signaling",
+        "Selank",
+        "Rat hippocampus",
+        "Reported regulation of BDNF expression",
+        "Brief report; single research network"
+      ],
+      [
+        "Stress-related behavior",
+        "Selank",
+        "Rats, elevated plus maze, chronic mild stress",
+        "Anxiety indicators with diazepam matched pre-stress values",
+        "Single-lab design; mixed pattern without stress"
+      ],
+      [
+        "Human studies",
+        "Semax",
+        "Small adult studies",
+        "Most participants did not report resolved pain in one uncontrolled study",
+        "No control group; no human pharmacokinetics"
+      ],
+      [
+        "Human studies",
+        "Selank",
+        "62 patients, anxiety disorder or neurasthenia",
+        "Effects similar to medazepam on rating scales",
+        "Russian-language, small, one comparator"
+      ]
+    ]
+  },
+  "problemSolution": [
+    {
+      "problem": "How do I confirm whether I am looking at Semax or Selank?",
+      "solution": "Start with the sequence, not the label. Semax is Met-Glu-His-Phe-Pro-Gly-Pro, about 813.9 average mass. Selank is Thr-Lys-Pro-Arg-Pro-Gly-Pro, about 751.9. Length will not separate them, since both are heptapeptides ending in Pro-Gly-Pro, but composition will: Semax contains sulfur through methionine and Selank does not. Look for the sequence, formula and CAS number in the lot’s own documentation, and be wary of shorthand names.",
+      "evidenceContext": "Identity values from PubChem."
+    },
+    {
+      "problem": "What is the actual difference between Semax and Selank?",
+      "solution": "They differ in structure and in research history. Semax pairs an ACTH-derived fragment with Pro-Gly-Pro; Selank pairs the tuftsin sequence with the same tail. Semax work leans toward neurotrophin signaling and ischemia models, while Selank work leans toward GABA-related signaling, stress-related behavior and inflammatory gene expression. The comparison table below sets them side by side without ranking either.",
+      "evidenceContext": "Two literatures, not a head-to-head trial."
+    },
+    {
+      "problem": "How should I interpret the Semax–ACTH terminology?",
+      "solution": "“ACTH-derived” describes ancestry, not identity. ACTH is a 39-residue hormone, and ACTH(4–10) is the seven-residue fragment Met-Glu-His-Phe-Arg-Trp-Gly. Semax keeps the first four residues of that fragment and swaps the last three for Pro-Gly-Pro. It is reported to lack ACTH’s hormonal activity. Semax is not ACTH, and it is not ACTH(4–10).",
+      "evidenceContext": "Sequences per PubChem and the ACTH literature."
+    },
+    {
+      "problem": "How should I interpret the Selank–tuftsin relationship?",
+      "solution": "Tuftsin is a naturally occurring tetrapeptide, Thr-Lys-Pro-Arg, cut from the heavy chain of immunoglobulin G. Selank is that sequence extended with Pro-Gly-Pro, a change described as improving metabolic stability. It is an analog: related in origin, different as a molecule. Tuftsin data should not be assumed for Selank, and Selank results are not tuftsin results.",
+      "evidenceContext": "Design rationale as described by the developing group."
+    },
+    {
+      "problem": "What does Semax research actually show about BDNF and neurobiological signaling?",
+      "solution": "Several rat studies report that Semax shifts BDNF-related readouts: more hippocampal BDNF protein, more trkB phosphorylation and higher BDNF and NGF transcripts within hours. Those are observations about tissue chemistry. Whether they explain any behavioral or cognitive change is still a hypothesis, and the human reports available do not establish BDNF change as a clinical outcome.",
+      "evidenceContext": "Rodent and cell data."
+    },
+    {
+      "problem": "What does Selank research actually show about neurobehavioral or stress-related effects?",
+      "solution": "Selank studies gather around three ideas: GABA-related signaling, enkephalin-degrading enzymes and stress-related behavior in rodents. The rat study pairing it with diazepam under chronic mild stress reported a mixed pattern. A small Russian-language comparison in patients with generalized anxiety disorder is the main human report, and it is historical. None of it supports a consumer-style claim.",
+      "evidenceContext": "Animal and cell findings are not human outcomes."
+    },
+    {
+      "problem": "What should I understand when I see “Semax benefits” or “Selank benefits” in search results?",
+      "solution": "“Benefits” is a search word, not a scientific category. In the papers it becomes specific measured endpoints: BDNF protein in rat tissue, infarct size in rodent ischemia models, enzyme inhibition in serum, scale scores in small human studies. None is a promised outcome. The useful questions are what was measured, in which model, against what comparator, and what stayed uncertain.",
+      "evidenceContext": "Search intent translated into documented endpoints."
+    },
+    {
+      "problem": "How should I interpret Semax or Selank dosage searches?",
+      "solution": "Dosage is among the most searched terms for both peptides, and a research-use page is the wrong place to answer it. This page gives no human or animal dosing, no routes of administration and no preparation instructions. Doses in published papers belong to those studies’ designs and species and do not transfer. Experimental parameters come from a researcher’s own protocol and institutional oversight.",
+      "evidenceContext": "Informational only."
+    },
+    {
+      "problem": "How is Semax different from other ACTH-derived peptides and related analogs?",
+      "solution": "Names near Semax can mislead. ACTH(4–10) is the parent fragment, ACTH(4–7) is a four-residue piece, and Pro-Gly-Pro is a tripeptide that also appears as a Semax metabolite. Acetate salts and acetylated variants are different chemical entities again. In the 2001 serum study, the pentapeptide His-Phe-Pro-Gly-Pro inhibited enkephalin-degrading enzymes while tri-, tetra- and hexapeptide fragments did not. Related fragments do not behave alike.",
+      "evidenceContext": "Kost et al., 2001."
+    },
+    {
+      "problem": "How is Selank different from Semax?",
+      "solution": "Read them as two separate bodies of work. Semax: rodent neurotrophin and ischemia studies, with mechanisms that remain poorly understood. Selank: GABA-related and gene-expression studies, rodent stress-behavior models and one small human comparison. Only one 2001 serum study tested both. Beyond that, different models and endpoints mean the results cannot be lined up head to head.",
+      "evidenceContext": "No direct comparison across endpoints exists."
+    },
+    {
+      "problem": "What should I look for on a Semax or Selank COA?",
+      "solution": "A COA is lot-specific and may include the lot number, peptide name, analytical method, HPLC result, mass spectrometry result, reported purity, test date, laboratory details and chemical form. Check that the lot matches your vial and that the named peptide and sequence match what you expect. HPLC speaks to purity, not identity. Mass spectrometry speaks to identity, not purity. Neither alone settles it.",
+      "evidenceContext": "Scope varies between laboratories."
+    },
+    {
+      "problem": "What can a Veracue Semax / Selank product page establish, and what requires lot-specific documentation?",
+      "solution": "A product page can share general information: sequences, formulas and published literature. It cannot prove that a given lot has a particular identity or purity, because that takes analytical records tied to the lot. Molecular facts belong to the molecule; analytical facts belong to the lot. Ask for the documentation for your lot before treating any figure as verified.",
+      "evidenceContext": "General information versus lot evidence."
+    }
+  ],
+  "comparisonTable": {
+    "heading": "Semax vs Selank: a side-by-side comparison",
+    "columns": [
+      "Feature",
+      "Semax",
+      "Selank"
+    ],
+    "rows": [
+      [
+        "Molecular identity",
+        "Heptapeptide, C37H51N9O10S, average mass 813.93 (free acid)",
+        "Heptapeptide, C33H57N11O9, average mass 751.89 (free acid)"
+      ],
+      [
+        "Sequence",
+        "Met-Glu-His-Phe-Pro-Gly-Pro",
+        "Thr-Lys-Pro-Arg-Pro-Gly-Pro"
+      ],
+      [
+        "Peptide length",
+        "7 amino acids",
+        "7 amino acids"
+      ],
+      [
+        "Derived from",
+        "ACTH(4–7) fragment plus Pro-Gly-Pro",
+        "Tuftsin (Thr-Lys-Pro-Arg) plus Pro-Gly-Pro"
+      ],
+      [
+        "Research context",
+        "Neurotrophin signaling, ischemia and neuroprotection models",
+        "GABA-related signaling, stress-related behavior, inflammatory gene expression"
+      ],
+      [
+        "Evidence types",
+        "Cell and rodent studies; a few small human reports",
+        "Cell and rodent studies; a small human comparison"
+      ],
+      [
+        "Mechanistic certainty",
+        "Low; mechanisms remain poorly understood",
+        "Proposed GABA and enzyme-inhibition mechanisms; not established in living systems"
+      ],
+      [
+        "Chemical form of a given lot",
+        "Set by the lot’s documentation",
+        "Set by the lot’s documentation"
+      ]
+    ]
+  },
+  "relatedTerminology": {
+    "heading": "Related peptide terminology",
+    "items": [
+      {
+        "term": "ACTH",
+        "meaning": "The 39-residue pituitary hormone from which Semax’s design derives."
+      },
+      {
+        "term": "ACTH(4–10)",
+        "meaning": "The seven-residue fragment Met-Glu-His-Phe-Arg-Trp-Gly. Not Semax."
+      },
+      {
+        "term": "Pro-Gly-Pro",
+        "meaning": "A tripeptide tail shared by both peptides, and a Semax metabolite."
+      },
+      {
+        "term": "Tuftsin",
+        "meaning": "Thr-Lys-Pro-Arg, an immunoglobulin G fragment. Not Selank."
+      },
+      {
+        "term": "Acetate forms",
+        "meaning": "Salts of the same peptide, with a different formula and mass."
+      },
+      {
+        "term": "N-acetyl variants",
+        "meaning": "Names like “N-acetyl Semax” describe chemically modified compounds, which this page does not cover."
+      }
+    ]
+  },
+  "coaQualityDocumentation": {
+    "heading": "What a Semax or Selank COA can tell you",
+    "intro": "A certificate of analysis is lot-specific documentation. It describes one manufacturing run, not the compound in general. Depending on the laboratory, it may include:",
+    "fields": [
+      "lot or batch identifier",
+      "peptide name, sequence or formula",
+      "analytical method and conditions",
+      "HPLC chromatogram and purity result",
+      "mass spectrometry identity result",
+      "test date and laboratory information",
+      "chemical form, and sometimes counterion or water content"
+    ],
+    "closing": "The two main tests answer different questions. HPLC shows how much of the material elutes as the target peak, but cannot say the peak is the right molecule. Mass spectrometry shows whether a detected mass fits the expected molecule, but does not quantify purity. A COA that ties both results to a lot number matching your vial gives much firmer assurance than one that does not."
+  },
+  "massSpectrometry": {
+    "heading": "Reading mass spectrometry results",
+    "text": "A mass spectrometer detects ions, not vials. A peptide can carry one or more charges, so one molecule can show up at several m/z values, and observed signals will not match the molecular weight on a data sheet. Adducts, counterions and chemical modifications can shift or add signals, and methionine-containing peptides such as Semax can oxidize. Interpretation belongs to the analytical record and its method conditions, which is why this page lists no expected peak values."
+  },
+  "whatResearchDoesNotEstablish": {
+    "heading": "What this page does not establish",
+    "intro": "The research described here does not establish:",
+    "items": [
+      "human therapeutic efficacy or treatment of any disease",
+      "anxiety treatment, cognitive enhancement or nootropic effects",
+      "dosing, administration, nasal-use, injection or reconstitution guidance",
+      "safety for human or veterinary use",
+      "any synergy or combined effect between the two peptides",
+      "the purity or identity of a specific lot"
+    ],
+    "closing": "Findings for one peptide also cannot be transferred to the other unless a study tested both."
+  },
+  "regulatoryContext": {
+    "heading": "Regulatory and pharmaceutical context",
+    "text": "Research material and a regulated pharmaceutical product are different things. A drug has a defined formulation, manufacturing controls, labeling and regulatory review for a stated use; a research peptide supplied as a powder has none of that attached. Neither peptide is marketed as an FDA-approved drug in the United States, and Semax is a registered drug in Russia. In July 2026, an FDA advisory committee voted to recommend Semax for the pharmacy compounding list. That vote was non-binding and concerns compounding, not research materials. Regulatory status changes, and none of it transfers to Veracue’s research material."
+  },
+  "faq": [
+    {
+      "question": "What is Semax?",
+      "answer": "Semax is a synthetic heptapeptide with the sequence Met-Glu-His-Phe-Pro-Gly-Pro, designed from an ACTH fragment. Published work, mostly in rodents and cell systems, has examined its effects on BDNF signaling and in ischemia models. Its mechanisms are poorly understood and the human evidence is limited. As a research material, it carries no treatment claims."
+    },
+    {
+      "question": "What is Selank?",
+      "answer": "Selank is a synthetic heptapeptide, Thr-Lys-Pro-Arg-Pro-Gly-Pro, built from the tuftsin sequence with a Pro-Gly-Pro tail. Published work has examined GABA-related signaling, enkephalin-degrading enzymes, gene expression and stress-related behavior in rodents, plus small historical human studies. Findings describe experimental systems, not effects of a research material."
+    },
+    {
+      "question": "What is the difference between Semax and Selank?",
+      "answer": "Their sequences, parent peptides and research literatures differ. Semax derives from an ACTH fragment and is mostly studied for neurotrophin signaling and ischemia models; Selank derives from tuftsin and is mostly studied for GABA-related signaling and stress-related behavior. They share a Pro-Gly-Pro tail and were tested together in one 2001 serum enzyme study. Neither is ranked here."
+    },
+    {
+      "question": "Is there evidence that combining Semax and Selank does anything different?",
+      "answer": "Nothing in the published work reviewed here demonstrates a combined or synergistic effect. Each peptide has its own literature, and a combination would be a separate experimental question with its own design and controls. This page does not recommend combinations or describe how to use them."
+    },
+    {
+      "question": "What are the sequences and molecular weights of Semax and Selank?",
+      "answer": "Semax is Met-Glu-His-Phe-Pro-Gly-Pro, C37H51N9O10S, average mass 813.93 g/mol. Selank is Thr-Lys-Pro-Arg-Pro-Gly-Pro, C33H57N11O9, average mass 751.89 g/mol. These are reference values for the free peptides. They do not confirm the identity of any particular lot; only lot-specific analytical records, read alongside the stated chemical form, can do that."
+    },
+    {
+      "question": "What has research reported about Semax and BDNF?",
+      "answer": "In rats, Semax was reported to raise hippocampal BDNF protein, increase trkB phosphorylation and raise BDNF and NGF transcripts, and it stimulated BDNF synthesis in cultured astrocytes. These are tissue-level observations. They do not show a cognitive or clinical outcome, and the molecular mechanism remains unresolved."
+    },
+    {
+      "question": "What does the human research on Semax and Selank show?",
+      "answer": "It is small and historical. FDA’s 2026 review found few English-language Semax reports and no human pharmacokinetic data, and judged the evidence of effectiveness insufficient. For Selank, a 2008 Russian-language study compared it with medazepam in 62 patients and reported similar scale results. Neither supports clinical claims."
+    },
+    {
+      "question": "What should I make of “Semax benefits” or “Selank side effects” searches?",
+      "answer": "Those are consumer-style queries that a research page should translate rather than answer. In the literature, “benefits” means measured endpoints in specific models, and safety for human or veterinary use has not been established here. This page offers no outcome or safety claims."
+    },
+    {
+      "question": "Is there a Semax or Selank dosage on this page?",
+      "answer": "No. Dosage is a common search query, but a research-use page should not provide human or animal dosing, administration routes or preparation steps. Doses in published papers reflect their own designs and species. Researchers set experimental parameters through their own protocols and institutional oversight."
+    },
+    {
+      "question": "Is this page about a Semax or Selank nasal spray?",
+      "answer": "No. “Nasal spray” is a frequent search term for both peptides, but this is a research-use page. It describes no product preparation and no use by any route, and nothing here should be read as guidance for administering either peptide. Published papers that used intranasal delivery in animals describe their own experimental designs."
+    },
+    {
+      "question": "What should a Semax or Selank COA show, and does chemical form matter?",
+      "answer": "A COA may include the lot number, method, HPLC purity, mass spectrometry identity, test date, laboratory and chemical form. Form matters because a free peptide and an acetate salt have different formulas and masses. Semax acetate, for example, is about 874.0 g/mol against 813.93 for the free form. Confirm the form is stated."
+    },
+    {
+      "question": "Are Semax and Selank FDA-approved or regulated as drugs?",
+      "answer": "Neither is marketed as an FDA-approved drug in the US, though Semax is a registered drug in Russia. In July 2026 an FDA advisory committee voted, non-bindingly, to recommend Semax for the pharmacy compounding list. That concerns compounding and not research-use material, which is not a drug and carries no approved use."
+    }
+  ],
+  "references": [
+    {
+      "id": 1,
+      "citation": "PubChem. Selank, CID 11765600. National Library of Medicine.",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/Selank"
+    },
+    {
+      "id": 2,
+      "citation": "PubChem. ACTH (4-7), Pro-Gly-Pro- (Semax), CID 9811102. National Library of Medicine.",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/9811102"
+    },
+    {
+      "id": 3,
+      "citation": "U.S. FDA. Briefing Document, Pharmacy Compounding Advisory Committee, July 23–24, 2026: Semax-related bulk drug substances (Semax free base and Semax acetate). May 11, 2026.",
+      "url": "https://www.fda.gov/media/193348/download"
+    },
+    {
+      "id": 4,
+      "citation": "U.S. FDA. July 23–24, 2026: Meeting of the Pharmacy Compounding Advisory Committee.",
+      "url": "https://www.fda.gov/advisory-committees/advisory-committee-calendar/july-23-24-2026-meeting-pharmacy-compounding-advisory-committee-07232026"
+    },
+    {
+      "id": 5,
+      "citation": "NCPA. FDA advisory committee nominates six peptides for pharmacies to compound. July 31, 2026.",
+      "url": "https://ncpa.org/newsroom/qam/2026/07/31/fda-advisory-committee-nominates-six-peptides-pharmacies-compound"
+    },
+    {
+      "id": 6,
+      "citation": "Kost NV, et al. Semax and Selank inhibit the enkephalin-degrading enzymes from human serum. Bioorg Khim. 2001;27(3):180–183. PMID 11443939.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11443939/"
+    },
+    {
+      "id": 7,
+      "citation": "Dolotov OV, et al. Semax, an analog of ACTH(4-10) with cognitive effects, regulates BDNF and trkB expression in the rat hippocampus. Brain Res. 2006;1117(1):54–60.",
+      "url": "https://www.unboundmedicine.com/medline/citation/16996037/Semax_an_analog_of_ACTH_4_10__with_cognitive_effects_regulates_BDNF_and_trkB_expression_in_the_rat_hippocampus_"
+    },
+    {
+      "id": 8,
+      "citation": "Dolotov OV, et al. Semax, an analogue of adrenocorticotropin (4–10), binds specifically and increases levels of brain-derived neurotrophic factor protein in rat basal forebrain. J Neurochem. 2006;97 Suppl 1:82–86.",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1471-4159.2006.03658.x"
+    },
+    {
+      "id": 9,
+      "citation": "Volkova A, et al. Selank administration affects the expression of some genes involved in GABAergic neurotransmission. Front Pharmacol. 2016;7:31. PMID 26924987.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26924987/"
+    },
+    {
+      "id": 10,
+      "citation": "Peptide-based anxiolytics: the molecular aspects of heptapeptide Selank biological activity. Protein Pept Lett. 2018;25(10):914–923. PMID 30255741.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30255741/"
+    },
+    {
+      "id": 11,
+      "citation": "Filatova E, et al. GABA, Selank, and olanzapine affect the expression of genes involved in GABAergic neurotransmission in IMR-32 cells. Front Pharmacol. 2017;8:89. PMID 28293190.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28293190/"
+    },
+    {
+      "id": 12,
+      "citation": "Inozemtseva LS, et al. Intranasal administration of the peptide Selank regulates BDNF expression in the rat hippocampus in vivo. Dokl Biol Sci. 2008;421:241–243.",
+      "url": "https://link.springer.com/article/10.1134/S0012496608040066"
+    },
+    {
+      "id": 13,
+      "citation": "Kasian A, et al. Peptide Selank enhances the effect of diazepam in reducing anxiety in unpredictable chronic mild stress conditions in rats. Behav Neurol. 2017;2017:5091027. PMID 28280289.",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5322660/"
+    },
+    {
+      "id": 14,
+      "citation": "Zozulya AA, et al. Efficacy and possible mechanisms of action of a new peptide anxiolytic selank in the therapy of generalized anxiety disorders and neurasthenia. Zh Nevrol Psikhiatr Im S S Korsakova. 2008;108(4):38–48. PMID 18454096.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18454096/"
+    }
+  ],
+  "internalLinks": [
+    {
+      "anchor": "certificates archive",
+      "url": "/certificates"
+    },
+    {
+      "anchor": "Veracue’s Selank listing",
+      "url": "/product/selank"
+    },
+    {
+      "anchor": "research catalog",
+      "url": "/shop"
+    },
+    {
+      "anchor": "Help & FAQ",
+      "url": "/faq"
+    },
+    {
+      "anchor": "contact our team",
+      "url": "/contact-us"
+    },
+    {
+      "anchor": "about Veracue",
+      "url": "/about-us"
+    },
+    {
+      "anchor": "Medical Disclaimer",
+      "url": "/medical-disclaimer"
+    },
+    {
+      "anchor": "Terms & Conditions",
+      "url": "/terms-and-conditions"
+    }
+  ],
+  "cta": {
+    "heading": "Next steps for researchers",
+    "text": "Browse the certificates archive, look at the Selank listing, or contact our team with a question about a specific lot.",
+    "buttons": [
+      {
+        "label": "View certificates",
+        "url": "/certificates"
+      },
+      {
+        "label": "View Selank",
+        "url": "/product/selank"
+      },
+      {
+        "label": "Contact our team",
+        "url": "/contact-us"
+      }
+    ]
+  },
+  "ruoComplianceNotice": {
+    "heading": "Research Use Only",
+    "text": "Semax and Selank are offered for laboratory research and analytical use only. They are not intended for human or veterinary use, for ingestion, injection or any form of administration, or to diagnose, treat, cure or prevent any disease. Statements on this page have not been evaluated by the U.S. Food and Drug Administration. Veracue is not a compounding pharmacy. See the Medical Disclaimer and Terms & Conditions."
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://veracue-peptides.vercel.app/#organization",
+        "name": "Veracue Peptides",
+        "legalName": "Veracue Peptides LLC",
+        "url": "https://veracue-peptides.vercel.app/",
+        "logo": "https://veracue-peptides.vercel.app/veracue-images/logo-header.png",
+        "email": "support@veracuepeptides.com",
+        "telephone": "+1-800-837-2283"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://veracue-peptides.vercel.app/#website",
+        "url": "https://veracue-peptides.vercel.app/",
+        "name": "Veracue Peptides",
+        "publisher": {
+          "@id": "https://veracue-peptides.vercel.app/#organization"
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://veracue-peptides.vercel.app/product/semax-selank#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://veracue-peptides.vercel.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Shop",
+            "item": "https://veracue-peptides.vercel.app/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Semax & Selank",
+            "item": "https://veracue-peptides.vercel.app/product/semax-selank"
+          }
+        ]
+      },
+      {
+        "@type": "MolecularEntity",
+        "@id": "https://veracue-peptides.vercel.app/product/semax-selank#semax",
+        "name": "Semax",
+        "alternateName": [
+          "ACTH(4-7)-Pro-Gly-Pro",
+          "MEHFPGP"
+        ],
+        "molecularFormula": "C37H51N9O10S",
+        "molecularWeight": "813.93 g/mol",
+        "monoisotopicMolecularWeight": "813.348 g/mol",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "CAS Registry Number",
+          "value": "80714-61-0"
+        },
+        "sameAs": "https://pubchem.ncbi.nlm.nih.gov/compound/9811102",
+        "description": "Synthetic heptapeptide Met-Glu-His-Phe-Pro-Gly-Pro (free-acid reference form)."
+      },
+      {
+        "@type": "MolecularEntity",
+        "@id": "https://veracue-peptides.vercel.app/product/semax-selank#selank",
+        "name": "Selank",
+        "alternateName": [
+          "Selanc",
+          "TKPRPGP"
+        ],
+        "molecularFormula": "C33H57N11O9",
+        "molecularWeight": "751.89 g/mol",
+        "monoisotopicMolecularWeight": "751.434 g/mol",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "CAS Registry Number",
+          "value": "129954-34-3"
+        },
+        "sameAs": "https://pubchem.ncbi.nlm.nih.gov/compound/11765600",
+        "description": "Synthetic heptapeptide Thr-Lys-Pro-Arg-Pro-Gly-Pro (free-acid reference form)."
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://veracue-peptides.vercel.app/product/semax-selank#webpage",
+        "url": "https://veracue-peptides.vercel.app/product/semax-selank",
+        "name": "Semax and Selank Research Peptides: Compared | Veracue",
+        "description": "Semax and Selank, two distinct heptapeptides, for lab research: molecular identity, Semax vs Selank, what the published studies tested, and COA checks.",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@id": "https://veracue-peptides.vercel.app/#website"
+        },
+        "publisher": {
+          "@id": "https://veracue-peptides.vercel.app/#organization"
+        },
+        "breadcrumb": {
+          "@id": "https://veracue-peptides.vercel.app/product/semax-selank#breadcrumb"
+        },
+        "about": [
+          {
+            "@id": "https://veracue-peptides.vercel.app/product/semax-selank#semax"
+          },
+          {
+            "@id": "https://veracue-peptides.vercel.app/product/semax-selank#selank"
+          }
+        ],
+        "dateModified": "2026-09-25"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://veracue-peptides.vercel.app/product/semax-selank#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Semax?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Semax is a synthetic heptapeptide with the sequence Met-Glu-His-Phe-Pro-Gly-Pro, designed from an ACTH fragment. Published work, mostly in rodents and cell systems, has examined its effects on BDNF signaling and in ischemia models. Its mechanisms are poorly understood and the human evidence is limited. As a research material, it carries no treatment claims."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Selank?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Selank is a synthetic heptapeptide, Thr-Lys-Pro-Arg-Pro-Gly-Pro, built from the tuftsin sequence with a Pro-Gly-Pro tail. Published work has examined GABA-related signaling, enkephalin-degrading enzymes, gene expression and stress-related behavior in rodents, plus small historical human studies. Findings describe experimental systems, not effects of a research material."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between Semax and Selank?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Their sequences, parent peptides and research literatures differ. Semax derives from an ACTH fragment and is mostly studied for neurotrophin signaling and ischemia models; Selank derives from tuftsin and is mostly studied for GABA-related signaling and stress-related behavior. They share a Pro-Gly-Pro tail and were tested together in one 2001 serum enzyme study. Neither is ranked here."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there evidence that combining Semax and Selank does anything different?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nothing in the published work reviewed here demonstrates a combined or synergistic effect. Each peptide has its own literature, and a combination would be a separate experimental question with its own design and controls. This page does not recommend combinations or describe how to use them."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the sequences and molecular weights of Semax and Selank?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Semax is Met-Glu-His-Phe-Pro-Gly-Pro, C37H51N9O10S, average mass 813.93 g/mol. Selank is Thr-Lys-Pro-Arg-Pro-Gly-Pro, C33H57N11O9, average mass 751.89 g/mol. These are reference values for the free peptides. They do not confirm the identity of any particular lot; only lot-specific analytical records, read alongside the stated chemical form, can do that."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What has research reported about Semax and BDNF?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In rats, Semax was reported to raise hippocampal BDNF protein, increase trkB phosphorylation and raise BDNF and NGF transcripts, and it stimulated BDNF synthesis in cultured astrocytes. These are tissue-level observations. They do not show a cognitive or clinical outcome, and the molecular mechanism remains unresolved."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does the human research on Semax and Selank show?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It is small and historical. FDA’s 2026 review found few English-language Semax reports and no human pharmacokinetic data, and judged the evidence of effectiveness insufficient. For Selank, a 2008 Russian-language study compared it with medazepam in 62 patients and reported similar scale results. Neither supports clinical claims."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I make of “Semax benefits” or “Selank side effects” searches?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Those are consumer-style queries that a research page should translate rather than answer. In the literature, “benefits” means measured endpoints in specific models, and safety for human or veterinary use has not been established here. This page offers no outcome or safety claims."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a Semax or Selank dosage on this page?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Dosage is a common search query, but a research-use page should not provide human or animal dosing, administration routes or preparation steps. Doses in published papers reflect their own designs and species. Researchers set experimental parameters through their own protocols and institutional oversight."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is this page about a Semax or Selank nasal spray?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. “Nasal spray” is a frequent search term for both peptides, but this is a research-use page. It describes no product preparation and no use by any route, and nothing here should be read as guidance for administering either peptide. Published papers that used intranasal delivery in animals describe their own experimental designs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should a Semax or Selank COA show, and does chemical form matter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A COA may include the lot number, method, HPLC purity, mass spectrometry identity, test date, laboratory and chemical form. Form matters because a free peptide and an acetate salt have different formulas and masses. Semax acetate, for example, is about 874.0 g/mol against 813.93 for the free form. Confirm the form is stated."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are Semax and Selank FDA-approved or regulated as drugs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Neither is marketed as an FDA-approved drug in the US, though Semax is a registered drug in Russia. In July 2026 an FDA advisory committee voted, non-bindingly, to recommend Semax for the pharmacy compounding list. That concerns compounding and not research-use material, which is not a drug and carries no approved use."
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

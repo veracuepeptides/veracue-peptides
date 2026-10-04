@@ -10,21 +10,21 @@ import { HeroButton } from '@/components/ui/hero-button'
 const RESEARCH_PILLARS = [
   {
     id: 'purity',
-    badge: '≥99% PURITY',
+    badge: 'HPLC TESTED',
     scriptTitle: 'Pure Synthesis',
-    heading: 'HPLC & Mass Spec Verified',
-    description: 'Chromatography isolates a single clean peak for every compound we test, the signature of a high-purity batch.',
-    spec: 'USP Grade • ≥99% Confirmed',
+    heading: 'HPLC Tested Per Batch',
+    description: 'Chromatography separates a sample into its components, and the resulting purity figure is reported on the Certificate of Analysis for each batch.',
+    spec: 'Batch HPLC Data • Purity on Every COA',
     image: '/veracue-images/veracue-klow-50mg-sunlit-water-ripples.webp',
     icon: ShieldCheck,
   },
   {
     id: 'formulation',
-    badge: 'ISO-7 CLEANROOM',
+    badge: 'USA SHIPPED',
     scriptTitle: 'Precision Batch',
-    heading: 'Controlled Formulation',
-    description: 'Synthesized in certified United States laboratories under strictly regulated laminar flow hoods and sterile cleanroom controls.',
-    spec: 'Cleanroom Synthesis • Sterile Vialing',
+    heading: 'Batch-Level Records',
+    description: 'Each vial is labeled with a lot number so its analytical results can be matched to the exact batch you received.',
+    spec: 'Lot Labeled • Shipped From the USA',
     image: '/veracue-images/veracue-nad-plus-500mg-sunlight-branches.webp',
     icon: PackageCheck,
   },
@@ -33,8 +33,8 @@ const RESEARCH_PILLARS = [
     badge: 'BATCH TESTED',
     scriptTitle: 'Scientific Rigor',
     heading: 'Lyophilized Stability',
-    description: 'Every batch is optimized for molecular integrity, lyophilization cake density, and cold-chain resilience.',
-    spec: 'Cold-Chain Preserved • Lot COA',
+    description: 'Peptides are supplied as lyophilized powder, a stable format for storage until reconstitution.',
+    spec: 'Lyophilized Powder • Lot COA',
     image: '/veracue-images/veracue-epithalon-50mg-water-bamboo.webp',
     icon: Award,
   },
@@ -63,14 +63,14 @@ export function DifferenceSection() {
         {/* ==================================================================== */}
         {/* BACKGROUND: Giant Marquee Typography that ONLY translates on scroll */}
         {/* ==================================================================== */}
-        <div className="absolute inset-0 flex flex-col justify-between py-2 sm:py-4 pointer-events-none select-none overflow-hidden opacity-90 z-0">
+        <div aria-hidden="true" className="absolute inset-0 flex flex-col justify-between py-2 sm:py-4 pointer-events-none select-none overflow-hidden opacity-90 z-0">
           {/* Row 1: Left-to-Right Scroll Translation */}
           <motion.div 
             style={{ x: x1 }}
             className="whitespace-nowrap will-change-transform"
           >
             <span className="font-heading font-black text-[5.5rem] xs:text-[7rem] sm:text-[9.5rem] md:text-[11.5rem] lg:text-[13.5rem] xl:text-[15rem] text-[#fff1e6]/85 uppercase tracking-tighter leading-[0.82] block">
-              RESEARCH STANDARDS • HPLC CERTIFIED • 99%+ PURITY • VERACUE PEPTIDES • RESEARCH STANDARDS •
+              RESEARCH STANDARDS • HPLC TESTED • COA PER BATCH • VERACUE PEPTIDES • RESEARCH STANDARDS •
             </span>
           </motion.div>
 
@@ -80,7 +80,7 @@ export function DifferenceSection() {
             className="whitespace-nowrap will-change-transform"
           >
             <span className="font-heading font-black text-[5.5rem] xs:text-[7rem] sm:text-[9.5rem] md:text-[11.5rem] lg:text-[13.5rem] xl:text-[15rem] text-[#fff1e6]/85 uppercase tracking-tighter leading-[0.82] block">
-              PURITY VERIFIED • BATCH COA • CLEANROOM SYNTHESIS • TRACEABLE • PURITY VERIFIED •
+              HPLC TESTED • BATCH COA • LOT LABELED • TRACEABLE • HPLC TESTED •
             </span>
           </motion.div>
 
@@ -90,7 +90,7 @@ export function DifferenceSection() {
             className="whitespace-nowrap will-change-transform"
           >
             <span className="font-heading font-black text-[5.5rem] xs:text-[7rem] sm:text-[9.5rem] md:text-[11.5rem] lg:text-[13.5rem] xl:text-[15rem] text-[#fff1e6]/85 uppercase tracking-tighter leading-[0.82] block">
-              RESEARCH STANDARDS • HPLC CERTIFIED • ISO-7 CLEANROOM • VERACUE PEPTIDES • RESEARCH STANDARDS •
+              RESEARCH STANDARDS • HPLC TESTED • SHIPPED FROM THE USA • VERACUE PEPTIDES • RESEARCH STANDARDS •
             </span>
           </motion.div>
         </div>
@@ -142,10 +142,10 @@ export function DifferenceSection() {
                   {/* Bottom: Research Specification Solid Dock */}
                   <div className="relative z-10 bg-white rounded-[20px] sm:rounded-[22px] p-4 sm:p-5 border border-neutral-200/90 shadow-[0_10px_28px_rgba(0,0,0,0.14)]">
                     <div className="flex items-center justify-between gap-2 mb-1.5">
-                      <h3 className="font-heading font-bold text-sm sm:text-base text-neutral-950 leading-snug tracking-tight flex items-center gap-2">
+                      <h2 className="font-heading font-bold text-sm sm:text-base text-neutral-950 leading-snug tracking-tight flex items-center gap-2">
                         <Sparkles className="w-4 h-4 text-[#cb997e] shrink-0" />
                         {pillar.heading}
-                      </h3>
+                      </h2>
                     </div>
                     
                     <p className="text-xs sm:text-[13px] text-neutral-800 leading-relaxed font-sans line-clamp-2 mb-2.5 font-normal">

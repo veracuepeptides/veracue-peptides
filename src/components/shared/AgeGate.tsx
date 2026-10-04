@@ -1,12 +1,12 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence, type Variants } from 'framer-motion'
 import Image from 'next/image'
 import { Lock, Check } from 'lucide-react'
 import { useLenis } from 'lenis/react'
 import { useTranslations } from 'next-intl'
-import { Link, usePathname } from '@/i18n/navigation'
+import { Link } from '@/i18n/navigation'
 import { FluidButton } from '@/components/ui/fluid-button'
 
 // Matches the site's signature "out-quart" easing (tailwind.config.ts) used across
@@ -33,40 +33,28 @@ export function AgeGate() {
   const t = useTranslations('ageGate')
   const [isVisible, setIsVisible] = useState(false)
   const [hasHydrated, setHasHydrated] = useState(false)
-  const [waitingForPreloader, setWaitingForPreloader] = useState(false)
   const [isDenied, setIsDenied] = useState(false)
   const [isConfirming, setIsConfirming] = useState(false)
 
   const lenis = useLenis()
-  const pathname = usePathname()
+  const primaryActionRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     setHasHydrated(true)
-    const isVerified = document.cookie.includes('age_verified=true')
-
+    const isVerified = /(?:^|;\s*)age_verified=true(?:;|$)/.test(document.cookie)
     if (!isVerified) {
-      if (pathname === '/') {
-        setWaitingForPreloader(true)
-        const handleDone = () => {
-          if (!document.cookie.includes('age_verified=true')) {
-            setWaitingForPreloader(false)
-            setIsVisible(true)
-          }
-        }
-        window.addEventListener('preloader-done', handleDone)
-
-        // Fallback to show it eventually if event is missed
-        const timeout = setTimeout(handleDone, 8000)
-
-        return () => {
-          window.removeEventListener('preloader-done', handleDone)
-          clearTimeout(timeout)
-        }
-      } else {
-        setIsVisible(true)
-      }
+      setIsVisible(true)
     }
-  }, [pathname])
+  }, [])
+
+  // Move focus into the dialog (primary action) once it is shown
+  useEffect(() => {
+    if (!isVisible) return
+    const id = window.setTimeout(() => {
+      primaryActionRef.current?.querySelector('button')?.focus()
+    }, 60)
+    return () => window.clearTimeout(id)
+  }, [isVisible])
 
   // Lock scroll and videos globally when visible
   useEffect(() => {
@@ -93,7 +81,8 @@ export function AgeGate() {
   const handleVerify = () => {
     if (isConfirming) return
     setIsConfirming(true)
-    document.cookie = 'age_verified=true; max-age=31536000; path=/'
+    const secure = window.location.protocol === 'https:' ? '; Secure' : ''
+    document.cookie = `age_verified=true; max-age=31536000; path=/; SameSite=Lax${secure}`
     // Let the confirm micro-interaction (checkmark swap) read before the curtain lifts
     setTimeout(() => {
       setIsVisible(false)
@@ -104,12 +93,15 @@ export function AgeGate() {
 
   const handleGoBack = () => setIsDenied(false)
 
-  if (!hasHydrated || waitingForPreloader) return null
+  if (!hasHydrated) return null
 
   return (
     <AnimatePresence>
       {isVisible && (
         <motion.div
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby={isDenied ? 'age-gate-denied-title' : 'age-gate-title'}
           className="fixed inset-0 z-[999999] pointer-events-auto flex flex-col lg:flex-row bg-white overflow-y-auto lg:overflow-hidden"
           data-lenis-prevent="true"
           initial={{ y: 0, scale: 1 }}
@@ -126,7 +118,6 @@ export function AgeGate() {
               src="/veracue-images/veracue-glow-50mg-water-splash-portrait.webp"
               alt="Veracue Laboratory Synthesis"
               fill
-              priority
               className={`object-cover transition-[transform,opacity,filter] duration-1000 will-change-[transform,opacity,filter] ${isDenied ? 'opacity-30 scale-110 grayscale blur-md' : 'opacity-90 hover:scale-105'}`}
             />
             <div className="absolute inset-0 bg-black/25 pointer-events-none" />
@@ -142,10 +133,9 @@ export function AgeGate() {
               className="absolute top-6 left-6 md:top-12 md:left-12 w-36 md:w-56 h-10 md:h-16 pointer-events-none"
             >
               <Image
-                src="/veracue-images/logo-header.png"
+                src="/veracue-images/logo-header.webp"
                 alt="Veracue Logo"
                 fill
-                priority
                 className="object-contain drop-shadow-2xl brightness-0 invert"
               />
             </motion.div>
@@ -183,14 +173,14 @@ export function AgeGate() {
                     <motion.p variants={itemVariants} className="font-bold tracking-[0.3em] uppercase text-[#20221c]/60 text-[10px] md:text-sm mb-3">
                       {t('restrictedAccess')}
                     </motion.p>
-                    <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl lg:text-7xl font-black text-[#20221c] mb-6 tracking-tighter font-heading uppercase leading-none">
+                    <motion.h2 id="age-gate-title" variants={itemVariants} className="text-4xl md:text-5xl lg:text-7xl font-black text-[#20221c] mb-6 tracking-tighter font-heading uppercase leading-none">
                       {t('titleLine1')}<br /> {t('titleLine2')}
                     </motion.h2>
 
                     <motion.div variants={itemVariants} className="w-12 h-[4px] bg-[#cb997e] mb-8 origin-left" />
 
                     <motion.div variants={itemVariants} className="flex flex-col sm:flex-row w-full gap-4 max-w-lg mb-10">
-                      <div className="flex-1">
+                      <div className="flex-1" ref={primaryActionRef}>
                         <FluidButton
                           onClick={handleVerify}
                           text={t('confirmButton')}
@@ -242,7 +232,7 @@ export function AgeGate() {
                       <Lock className="w-12 h-12 text-white" />
                     </motion.div>
 
-                    <h2 className="text-5xl md:text-7xl font-black text-[#8c2f2f] mb-6 tracking-tighter font-heading uppercase leading-none">
+                    <h2 id="age-gate-denied-title" className="text-5xl md:text-7xl font-black text-[#8c2f2f] mb-6 tracking-tighter font-heading uppercase leading-none">
                       {t('deniedTitle')}
                     </h2>
 

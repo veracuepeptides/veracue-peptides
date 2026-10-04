@@ -80,7 +80,7 @@ export function ComplianceStatement() {
           className="whitespace-nowrap will-change-transform opacity-10"
         >
           <span className="font-heading font-black text-[5.5rem] sm:text-[8rem] md:text-[10rem] lg:text-[12rem] text-white uppercase tracking-tighter leading-none block">
-            VERACUE CHEMICAL SUPPLY • ISO-7 CLEANROOM • INDEPENDENT HPLC CERTIFIED • ZERO CLINICAL CLAIMS •
+            VERACUE CHEMICAL SUPPLY • RESEARCH USE ONLY • HPLC TESTED • ZERO CLINICAL CLAIMS •
           </span>
         </motion.div>
       </div>

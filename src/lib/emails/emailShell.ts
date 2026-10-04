@@ -12,6 +12,25 @@
 // now lives only in the eyebrow text, status pill, and the closing accent section, never the logo
 // band.
 
+import { getSiteIdentity } from '@/lib/site/identity'
+
+export const MARKETING_OPT_OUT_TEXT =
+  'Prefer not to receive these emails? Reply with the word unsubscribe or write to support@veracuepeptides.com and we will remove you.'
+
+export const MARKETING_EMAIL_HEADERS = {
+  'List-Unsubscribe': '<mailto:support@veracuepeptides.com?subject=Unsubscribe>',
+}
+
+function escapeText(v: string): string {
+  return v.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+}
+
+/** "Veracue Peptides LLC, <address>" when COMPANY_POSTAL_ADDRESS is set, otherwise an empty string. */
+export function companyAddressLine(): string {
+  const { legalName, postalAddress } = getSiteIdentity()
+  return postalAddress ? `${escapeText(legalName)}, ${escapeText(postalAddress)}` : ''
+}
+
 export const BRAND = {
   terracotta: '#cb997e',
   almond: '#eddcd2',
@@ -192,7 +211,16 @@ export function shellOpen({
           </tr>`
 }
 
-export function shellClose({ footerWaveFrom, serverUrl }: { footerWaveFrom: string; serverUrl: string }): string {
+export function shellClose({
+  footerWaveFrom,
+  serverUrl,
+  marketing = false,
+}: {
+  footerWaveFrom: string
+  serverUrl: string
+  marketing?: boolean
+}): string {
+  const addressLine = companyAddressLine()
   return `
           ${wave(footerWaveFrom, BRAND.charcoal, 44)}
           <tr>
@@ -204,7 +232,9 @@ export function shellClose({ footerWaveFrom, serverUrl }: { footerWaveFrom: stri
                 <a href="${serverUrl}/account" style="color:rgba(255,241,230,0.75);text-decoration:none;margin:0 10px;">Account</a>
                 <a href="${serverUrl}/contact-us" style="color:rgba(255,241,230,0.75);text-decoration:none;margin:0 10px;">Support</a>
               </p>
-              <p style="margin:0;font-size:10px;color:rgba(255,241,230,0.35);">&copy; ${new Date().getFullYear()} Veracue. Research Use Only (RUO).</p>
+              ${marketing ? `<p style="margin:0 0 10px;font-size:10px;color:rgba(255,241,230,0.5);">${MARKETING_OPT_OUT_TEXT}</p>` : ''}
+              ${addressLine ? `<p style="margin:0 0 10px;font-size:10px;color:rgba(255,241,230,0.35);">${addressLine}</p>` : ''}
+              <p style="margin:0;font-size:10px;color:rgba(255,241,230,0.35);">&copy; ${new Date().getFullYear()} Veracue Peptides. Research Use Only (RUO).</p>
             </td>
           </tr>
         </table>

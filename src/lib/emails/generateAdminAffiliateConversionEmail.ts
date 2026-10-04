@@ -16,7 +16,7 @@ export function generateAdminAffiliateConversionEmail(order: any, affiliate: any
   const customerEmail = (typeof order.owner === 'object' && order.owner !== null ? order.owner.email : order.guestEmail) || 'N/A'
   const adminUrl = `${serverUrl}/admin/collections/orders/${order.id}`
 
-  return `${shellOpen({ title: 'New Affiliate Conversion — Veracue Admin', headerColor: BRAND.olive, headerWaveInto: '#ffffff' })}
+  return `${shellOpen({ title: 'New Affiliate Conversion | Veracue Admin', headerColor: BRAND.olive, headerWaveInto: '#ffffff' })}
           <tr>
             <td style="background-color:#ffffff;padding:8px 24px 8px;text-align:center;">
               ${iconBadge('bolt')}

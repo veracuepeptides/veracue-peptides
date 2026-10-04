@@ -23,13 +23,13 @@ export function BlogPostCard({
   date?: string
 }) {
   return (
-    <Link href={`/${slug}`} className="group block h-full select-none">
+    <Link href={`/blog/${slug}`} className="group block h-full select-none">
       <article className="bg-white rounded-2xl sm:rounded-[22px] p-3 sm:p-4 border border-[#eddcd2]/80 shadow-[0_4px_20px_rgba(32,34,28,0.03)] hover:shadow-[0_12px_36px_rgba(32,34,28,0.08)] hover:-translate-y-1.5 transition-all duration-500 h-full flex flex-col">
         {/* Visual Thumbnail */}
         <div className="relative w-full aspect-[16/10] rounded-xl sm:rounded-[18px] overflow-hidden mb-4 sm:mb-5 bg-zinc-900 border border-[#eddcd2]/50">
           <Image
             src={imageSrc}
-            alt={title}
+            alt=""
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out opacity-95 group-hover:opacity-100"

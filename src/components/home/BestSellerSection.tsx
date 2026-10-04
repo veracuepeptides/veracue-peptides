@@ -7,99 +7,12 @@ import { HeroButton } from '@/components/ui/hero-button'
 import { useTranslations } from 'next-intl'
 import { ProductCard } from '@/components/shared/ProductCard'
 
-const FALLBACK_PRODUCTS = [
-  {
-    key: "tb500",
-    name: "TB-500 5mg",
-    categories: [{ title: "Muscle Repair" }],
-    meta: { description: "Potent synthetic peptide researched for its role in cellular migration, actin regulation, and wound healing." },
-    price: "55",
-    images: [{ image: { url: "/veracue-images/vp-product-vial.jpeg" } }],
-    imageUrl: "/veracue-images/vp-product-vial.jpeg",
-    slug: "tb-500",
-  },
-  {
-    key: "bpc157",
-    name: "BPC-157 5mg",
-    categories: [{ title: "Recovery & Healing" }],
-    meta: { description: "A highly purified synthetic peptide widely studied for its profound effects on tissue regeneration and angiogenesis." },
-    price: "45",
-    images: [{ image: { url: "/veracue-images/vp-product-vial2.jpeg" } }],
-    imageUrl: "/veracue-images/vp-product-vial2.jpeg",
-    slug: "bpc-157",
-  },
-  {
-    key: "semaglutide",
-    name: "Semaglutide 5mg",
-    categories: [{ title: "Metabolic Research" }],
-    meta: { description: "A GLP-1 receptor agonist actively researched for its mechanisms in glycemic control and metabolic regulation." },
-    price: "85",
-    images: [{ image: { url: "/veracue-images/vp-product-vial.jpeg" } }],
-    imageUrl: "/veracue-images/vp-product-vial.jpeg",
-    slug: "semaglutide",
-  },
-  {
-    key: "ghkCu",
-    name: "GHK-Cu 50mg",
-    categories: [{ title: "Cellular Aging" }],
-    meta: { description: "A naturally occurring copper complex peptide frequently studied for its role in collagen synthesis and anti-aging." },
-    price: "35",
-    images: [{ image: { url: "/veracue-images/vp-product-vial2.jpeg" } }],
-    imageUrl: "/veracue-images/vp-product-vial2.jpeg",
-    slug: "ghk-cu",
-  },
-  {
-    key: "retatrutide",
-    name: "Retatrutide 10mg",
-    categories: [{ title: "Metabolic Research" }],
-    meta: { description: "Triple receptor agonist under active investigation for obesity and glycemic control." },
-    price: "115",
-    images: [{ image: { url: "/veracue-images/vp-product-vial.jpeg" } }],
-    imageUrl: "/veracue-images/vp-product-vial.jpeg",
-    slug: "retatrutide",
-  },
-  {
-    key: "tirzepatide",
-    name: "Tirzepatide 20mg",
-    categories: [{ title: "Metabolic Research" }],
-    meta: { description: "Dual GIP and GLP-1 receptor agonist studied for metabolic balance." },
-    price: "95",
-    images: [{ image: { url: "/veracue-images/vp-product-vial2.jpeg" } }],
-    imageUrl: "/veracue-images/vp-product-vial2.jpeg",
-    slug: "tirzepatide",
-  },
-  {
-    key: "epitalon",
-    name: "Epitalon 50mg",
-    categories: [{ title: "Longevity & Telomeres" }],
-    meta: { description: "Synthetic tetrapeptide researched for telomerase activation and cellular longevity." },
-    price: "65",
-    images: [{ image: { url: "/veracue-images/vp-product-vial.jpeg" } }],
-    imageUrl: "/veracue-images/vp-product-vial.jpeg",
-    slug: "epitalon",
-  },
-  {
-    key: "aod9604",
-    name: "AOD-9604 5mg",
-    categories: [{ title: "Lipolytic Research" }],
-    meta: { description: "Modified form of amino acids 177-191 of human growth hormone." },
-    price: "48",
-    images: [{ image: { url: "/veracue-images/vp-product-vial2.jpeg" } }],
-    imageUrl: "/veracue-images/vp-product-vial2.jpeg",
-    slug: "aod-9604",
-  }
-]
-
 export function BestSellerSection({ products = [] }: { products?: any[] }) {
   const t = useTranslations('home.bestSeller')
   const scrollContainerRef = useRef<HTMLDivElement>(null)
 
-  const sourceProducts = products.length > 0 ? products : FALLBACK_PRODUCTS;
-
-  // Make sure we have 8 products for the carousel showcase
-  const displayProducts = sourceProducts.length >= 8 
-    ? sourceProducts.slice(0, 8) 
-    : [...sourceProducts, ...FALLBACK_PRODUCTS].slice(0, 8);
+  // Real products only (the caller already tops up with other live products).
+  const displayProducts = products.slice(0, 8)
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollContainerRef.current) {
@@ -118,6 +31,7 @@ export function BestSellerSection({ products = [] }: { products?: any[] }) {
   const isHovered = useRef(false);
 
   useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     const interval = setInterval(() => {
       // Pause auto-scroll when user is dragging or hovering over any card
       if (!isDown.current && !isHovered.current && scrollContainerRef.current) {
@@ -170,6 +84,8 @@ export function BestSellerSection({ products = [] }: { products?: any[] }) {
     scrollContainerRef.current.scrollLeft = scrollLeft.current - walk;
   };
 
+  if (displayProducts.length === 0) return null
+
   return (
     <section className="font-sans relative z-30 py-10 sm:py-14 md:py-18 px-3 sm:px-6 md:px-10 bg-[#f0efeb]">
       <div className="bg-[#eddcd2]/30 border border-[#eddcd2] rounded-2xl md:rounded-[18px] p-5 sm:p-8 md:p-12 lg:p-14 w-full mx-auto overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.02)]">
@@ -178,7 +94,7 @@ export function BestSellerSection({ products = [] }: { products?: any[] }) {
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-8 sm:mb-12 md:mb-14 gap-5 sm:gap-6">
           <div className="max-w-2xl">
             <div className="inline-block border border-[#eddcd2] rounded-full max-w-full px-3 sm:px-4 py-1.5 mb-4 sm:mb-5 bg-white shadow-sm">
-              <span className="text-[#a5a58d] text-[9px] xs:text-[9.5px] sm:text-xs font-bold tracking-[0.02em] xs:tracking-[0.06em] sm:tracking-[0.2em] uppercase font-editorial whitespace-nowrap">{t('eyebrow')}</span>
+              <span className="text-[#6b705c] text-[9px] xs:text-[9.5px] sm:text-xs font-bold tracking-[0.02em] xs:tracking-[0.06em] sm:tracking-[0.2em] uppercase font-editorial whitespace-nowrap">{t('eyebrow')}</span>
             </div>
             <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-neutral-900 leading-[1.08] tracking-tight uppercase">
               {t('title')}

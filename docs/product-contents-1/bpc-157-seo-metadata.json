@@ -1,0 +1,19 @@
+{
+  "product_slug": "bpc-157",
+  "product_name": "BPC-157",
+  "seo_metadata": {
+    "title": "BPC-157 Research Peptide (Pentadecapeptide) | Veracue",
+    "title_char_count": 53,
+    "description": "BPC-157, the synthetic 15-residue pentadecapeptide, for lab research: molecular identity, the 1993 origin study, free base vs acetate form, and COA checks.",
+    "description_char_count": 155,
+    "url": "https://veracue-peptides.vercel.app/product/bpc-157",
+    "canonical": "https://veracue-peptides.vercel.app/product/bpc-157",
+    "lang": "en"
+  },
+  "reference_pattern": {
+    "matched_from": "AHK-Cu SEO summary (55-char title, 156-char description)",
+    "title_structure": "<Compound> Research Peptide (<descriptor>) | Veracue",
+    "description_structure": "<Compound>, the <identity clause>, for lab research: molecular identity, <what the originating study tested>, <distinguishing clause>, and COA checks.",
+    "deviation_note": "AHK-Cu's third clause was a same-category comparison (AHK-Cu vs GHK-Cu), matching a comparison section that exists on that page. BPC-157's page has no TB-500 comparison section, so 'free base vs acetate form' was used instead — it maps to the chemical-form section that does exist on the BPC-157 page."
+  }
+}

@@ -8,22 +8,22 @@ import { HeroButton } from '@/components/ui/hero-button'
 const FAQ_HERO_IMAGES = [
   {
     src: '/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp',
-    alt: 'Veracue Compound Selection and Orders',
+    alt: 'Veracue research peptide vials arranged in a flat lay collection',
     topic: 'Orders & Documentation',
   },
   {
     src: '/veracue-images/veracue-klow-50mg-pool-water-ripples.webp',
-    alt: 'Veracue Quality Assurance and Scientific Support',
+    alt: 'Veracue research peptide vial resting on rippling pool water',
     topic: 'Quality Assurance & Support',
   },
   {
     src: '/veracue-images/veracue-ghk-cu-50mg-ice-bed-white.webp',
-    alt: 'Veracue Lyophilized Peptide Chemistry',
+    alt: 'Veracue research peptide vial on an ice bed',
     topic: 'Lyophilized Compounds',
   },
   {
     src: '/veracue-images/veracue-epithalon-50mg-water-ripples-landscape.webp',
-    alt: 'Veracue Laboratory Protocols and Handling',
+    alt: 'Veracue research peptide vial on rippling water',
     topic: 'Laboratory Protocols',
   },
 ]
@@ -35,6 +35,7 @@ export function FaqHero() {
 
   // Auto-advance hero slides every 5.5 seconds with smooth crossfade
   useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
     const timer = setInterval(() => {
       setCurrentImageIndex((prev) => (prev + 1) % FAQ_HERO_IMAGES.length)
     }, 5500)
@@ -178,9 +179,9 @@ export function FaqHero() {
 
           {/* Bottom-Right Overlay */}
           <div className="absolute bottom-12 xs:bottom-14 sm:bottom-12 md:bottom-14 right-3 sm:right-7 md:right-10 z-20 text-white text-right sm:text-left max-w-[135px] xs:max-w-[170px] sm:max-w-[300px] md:max-w-[360px]">
-            <h3 className="text-xs xs:text-sm sm:text-xl md:text-2xl lg:text-[26px] font-extrabold tracking-tight text-white leading-tight mb-0.5 sm:mb-2 drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] font-heading">
+            <p className="text-xs xs:text-sm sm:text-xl md:text-2xl lg:text-[26px] font-extrabold tracking-tight text-white leading-tight mb-0.5 sm:mb-2 drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] font-heading">
               A Real Chemist<br className="sm:hidden" /> Answers
-            </h3>
+            </p>
             <p className="hidden xs:block sm:hidden text-[9px] text-white/85 leading-snug line-clamp-2 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
               Direct technical guidance, not a script.
             </p>
@@ -229,26 +230,26 @@ export function FaqHero() {
                 <div className="flex items-center gap-3 sm:gap-8 md:gap-12 shrink-0 pr-3 sm:pr-8 md:pr-12">
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="text-neutral-950 font-bold text-[9px] xs:text-[10px] sm:text-base leading-none">✦</span>
-                    <span className="font-extrabold text-neutral-950">100%</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">COA Verified</span>
+                    <span className="font-extrabold text-neutral-950">Batch</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">COA Included</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full border border-neutral-950 bg-neutral-950 inline-block shrink-0" />
-                    <span className="font-extrabold text-neutral-950">Same-Day</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Dispatch</span>
+                    <span className="font-extrabold text-neutral-950">Ships</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">From USA</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="text-neutral-950 font-bold text-[9px] xs:text-[10px] sm:text-base leading-none">✦</span>
-                    <span className="font-extrabold text-neutral-950">Cold-Chain</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Shipped</span>
+                    <span className="font-extrabold text-neutral-950">Insulated</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Packaging</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full border-[1.5px] sm:border-[2px] border-neutral-950 inline-block shrink-0" />
-                    <span className="font-extrabold text-neutral-950">&lt; 2HR</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Response Time</span>
+                    <span className="font-extrabold text-neutral-950">Email</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Support</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
@@ -259,8 +260,8 @@ export function FaqHero() {
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full bg-gradient-to-r from-neutral-950 to-transparent border border-neutral-950 inline-block shrink-0" />
-                    <span className="font-extrabold text-neutral-950">ISO 17025</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Accredited</span>
+                    <span className="font-extrabold text-neutral-950">HPLC</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Tested</span>
                   </div>
                 </div>
 
@@ -268,26 +269,26 @@ export function FaqHero() {
                 <div className="flex items-center gap-3 sm:gap-8 md:gap-12 shrink-0 pr-3 sm:pr-8 md:pr-12" aria-hidden="true">
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="text-neutral-950 font-bold text-[9px] xs:text-[10px] sm:text-base leading-none">✦</span>
-                    <span className="font-extrabold text-neutral-950">100%</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">COA Verified</span>
+                    <span className="font-extrabold text-neutral-950">Batch</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">COA Included</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full border border-neutral-950 bg-neutral-950 inline-block shrink-0" />
-                    <span className="font-extrabold text-neutral-950">Same-Day</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Dispatch</span>
+                    <span className="font-extrabold text-neutral-950">Ships</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">From USA</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="text-neutral-950 font-bold text-[9px] xs:text-[10px] sm:text-base leading-none">✦</span>
-                    <span className="font-extrabold text-neutral-950">Cold-Chain</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Shipped</span>
+                    <span className="font-extrabold text-neutral-950">Insulated</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Packaging</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full border-[1.5px] sm:border-[2px] border-neutral-950 inline-block shrink-0" />
-                    <span className="font-extrabold text-neutral-950">&lt; 2HR</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Response Time</span>
+                    <span className="font-extrabold text-neutral-950">Email</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Support</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
@@ -298,8 +299,8 @@ export function FaqHero() {
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full bg-gradient-to-r from-neutral-950 to-transparent border border-neutral-950 inline-block shrink-0" />
-                    <span className="font-extrabold text-neutral-950">ISO 17025</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Accredited</span>
+                    <span className="font-extrabold text-neutral-950">HPLC</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Tested</span>
                   </div>
                 </div>
               </div>

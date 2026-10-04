@@ -8,22 +8,22 @@ import { HeroButton } from '@/components/ui/hero-button'
 const AFFILIATE_HERO_IMAGES = [
   {
     src: '/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp',
-    alt: 'Veracue Lyophilized Research Peptides Catalog Collection',
+    alt: 'Veracue research peptide vials arranged in a flat lay collection',
     topic: 'Catalog Collection',
   },
   {
-    src: '/veracue-images/veracue-military-veteran-researcher.jpg',
-    alt: 'Veracue Research Partners and Laboratory Investigators',
+    src: '/veracue-images/veracue-military-veteran-researcher.webp',
+    alt: 'Veracue Peptides research partner photography',
     topic: 'Partner Network',
   },
   {
-    src: '/veracue-images/veracue-research-grade-50mg-gloved-hand.png',
-    alt: 'Veracue Solid-Phase Peptide Synthesis and Quality Control',
+    src: '/veracue-images/veracue-research-grade-gloved-hand.webp',
+    alt: 'Gloved hand holding a Veracue research peptide vial',
     topic: 'Synthesis & QA',
   },
   {
-    src: '/veracue-images/veracue-research-grade-50mg-dish-leaf-droplets.png',
-    alt: 'Veracue Cellular Investigation and Analytical Assays',
+    src: '/veracue-images/veracue-research-grade-dish-leaf-droplets.webp',
+    alt: 'Veracue research peptide vial in a dish with a leaf and water droplets',
     topic: 'Cellular Assays',
   },
 ]
@@ -35,6 +35,7 @@ export function AffiliateHero() {
 
   // Auto-advance hero slides every 5.5 seconds with smooth crossfade
   useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
     const timer = setInterval(() => {
       setCurrentImageIndex((prev) => (prev + 1) % AFFILIATE_HERO_IMAGES.length)
     }, 5500)
@@ -78,7 +79,7 @@ export function AffiliateHero() {
 
         {/* 3. Sub-headline / Supporting Description */}
         <p className="text-neutral-500 text-[11.5px] sm:text-[13px] md:text-[14.5px] max-w-2xl leading-relaxed mb-2.5 sm:mb-4 font-normal px-1 line-clamp-3 sm:line-clamp-none">
-          Share &ge;99% HPLC-verified research peptides with your audience and earn 15% on every order, scaling up to 20% at volume, with a 7-day tracking window and payouts every month.
+          Share HPLC-tested research peptides, each with a batch COA, and earn 15% on every order, scaling up to 20% at volume, with a 7-day tracking window and payouts every month.
         </p>
 
         {/* 4. Action HeroButtons */}
@@ -169,9 +170,9 @@ export function AffiliateHero() {
 
           {/* Bottom-Right Overlay (Attribution & Features) */}
           <div className="absolute bottom-12 xs:bottom-14 sm:bottom-12 md:bottom-14 right-3 sm:right-7 md:right-10 z-20 text-white text-right sm:text-left max-w-[135px] xs:max-w-[170px] sm:max-w-[300px] md:max-w-[360px]">
-            <h3 className="text-xs xs:text-sm sm:text-xl md:text-2xl lg:text-[26px] font-extrabold tracking-tight text-white leading-tight mb-0.5 sm:mb-2 drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] font-heading">
+            <p className="text-xs xs:text-sm sm:text-xl md:text-2xl lg:text-[26px] font-extrabold tracking-tight text-white leading-tight mb-0.5 sm:mb-2 drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] font-heading">
               Transparent<br className="sm:hidden" /> Telemetry
-            </h3>
+            </p>
             <p className="hidden xs:block sm:hidden text-[9px] text-white/85 leading-snug line-clamp-2 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
               Real-time attribution &amp; live conversion logs.
             </p>
@@ -244,7 +245,7 @@ export function AffiliateHero() {
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="text-neutral-950 font-bold text-[9px] xs:text-[10px] sm:text-base leading-none">✦</span>
-                    <span className="font-extrabold text-neutral-950">&ge;99%</span>
+                    <span className="font-extrabold text-neutral-950">Per Batch</span>
                     <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">HPLC Purity</span>
                   </div>
 
@@ -283,7 +284,7 @@ export function AffiliateHero() {
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="text-neutral-950 font-bold text-[9px] xs:text-[10px] sm:text-base leading-none">✦</span>
-                    <span className="font-extrabold text-neutral-950">&ge;99%</span>
+                    <span className="font-extrabold text-neutral-950">Per Batch</span>
                     <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">HPLC Purity</span>
                   </div>
 

@@ -1,0 +1,394 @@
+{
+  "page": {
+    "slug": "sermorelin-spray",
+    "productName": "Sermorelin Spray",
+    "category": "Growth Hormone Secretagogues",
+    "metaTitle": "Sermorelin Spray Research Peptide | Veracue",
+    "metaDescription": "Sermorelin Spray from Veracue: GHRH(1-29) identity, GH-axis research, dosage and tolerability literature, and how it compares to Tesamorelin, Ipamorelin, and CJC-1295. Research Use Only.",
+    "canonicalPath": "/product/sermorelin-spray",
+    "heroSection": {
+      "eyebrow": "Growth Hormone Secretagogues · Research Use Only",
+      "h1": "Sermorelin Spray",
+      "subtitle": "A spray-format Research Use Only listing built on Sermorelin, the well-characterized 29-residue fragment of growth hormone-releasing hormone.",
+      "paragraphs": [
+        "Sermorelin is one of the most studied GHRH analogs in endocrine research, with a research history spanning pediatric growth studies to work in aging adults. Veracue's Sermorelin Spray presents this peptide in a spray-dispensed format for laboratory and research settings.",
+        "\"Spray\" here describes how the material is packaged and dispensed. It is not a statement about route, concentration, or formulation — those specifics belong to Veracue's own product documentation, confirmed independently of the product name."
+      ],
+      "ctaPrimary": { "label": "Contact our team", "target": "Support / Contact" },
+      "ctaSecondary": { "label": "Explore research catalogue", "target": "Shop — All Peptides" },
+      "ruoStatement": "For laboratory and research use only. Not for human or veterinary use, and not intended for ingestion, injection, or any form of administration."
+    },
+    "quickResearchSummary": {
+      "whatItIs": "A synthetic 29-amino-acid peptide corresponding to the active N-terminal fragment of human GHRH, carrying a C-terminal amide.",
+      "researchFocus": "GH secretion and pulsatility, IGF-I signaling, and related endocrine and body-composition endpoints.",
+      "evidenceSpan": "Human research spanning pediatric GH-deficiency trials of the 1990s through placebo-controlled work in aging adults.",
+      "productFormat": "Spray-dispensed Research Use Only listing. Concentration, fill volume, and dose-per-spray: not publicly specified on the current Veracue product information.",
+      "classification": "GHRH-receptor agonist — distinct from growth hormone itself and from ghrelin-receptor secretagogues such as ipamorelin."
+    },
+    "aeoQuickAnswers": [
+      { "question": "What is Sermorelin?", "answer": "Sermorelin is a synthetic peptide made up of the first 29 amino acids of human growth hormone-releasing hormone (GHRH), with a C-terminal amide. It's the shortest GHRH fragment shown to retain the hormone's full receptor-binding activity, which is why it became the basis for decades of GH-axis research." },
+      { "question": "What is Sermorelin peptide?", "answer": "\"Sermorelin peptide\" and \"Sermorelin\" describe the same molecule, GHRH(1-29)-NH2. The word \"peptide\" simply refers to its chemical class — a short chain of amino acids — rather than indicating a different substance." },
+      { "question": "What does Sermorelin research study?", "answer": "Research on Sermorelin centers on the GH axis: how GHRH-receptor stimulation affects growth hormone pulsatility, downstream IGF-I levels, and — in specific study populations — body composition, skin thickness, and metabolic markers." },
+      { "question": "Is Sermorelin the same as HGH?", "answer": "No. Sermorelin acts on the pituitary to prompt its own GH release; it doesn't supply GH directly. Growth hormone itself is a 191-amino-acid protein that acts on GH receptors throughout the body, a different molecule with a different mechanism." },
+      { "question": "How does Sermorelin relate to GHRH?", "answer": "Sermorelin is a synthetic, truncated version of native GHRH — the first 29 of GHRH's 44 amino acids, amidated at the C-terminus. It was developed because this fragment retains essentially the same GHRH-receptor activity as the full-length hormone." },
+      { "question": "What is Sermorelin Spray?", "answer": "Sermorelin Spray is Veracue's spray-dispensed listing of the Sermorelin research peptide. \"Spray\" refers to the packaging format; concentration, fill volume, and other product-specific details are documented separately from the molecule's identity." },
+      { "question": "Does \"Spray\" mean nasal?", "answer": "Not by default. The term describes how the product is dispensed, not a confirmed administration route. A nasal or intranasal route would need explicit confirmation in Veracue's first-party product documentation." },
+      { "question": "What does Sermorelin dosage mean in research literature?", "answer": "Published studies use dosage to describe a specific experimental variable — for example, micrograms per kilogram administered under a defined clinical protocol. These figures describe study conditions, not usage instructions for any research material." },
+      { "question": "What does Sermorelin research report about GH and IGF-I?", "answer": "Controlled human trials have reported measurable increases in nocturnal GH secretion and serum IGF-I following repeated GHRH(1-29) administration, with the size and pattern of change varying by study population and protocol (Khorram et al., 1997, DOI: 10.1210/jcem.82.5.3943)." },
+      { "question": "What are Sermorelin side effects in published research?", "answer": "Across the cited human trials, GHRH(1-29) has generally been well tolerated, with injection-site reactions and, in one trial, transient hyperlipidemia as the notable findings. These come from specific, monitored clinical protocols, not a general safety profile for any commercial product." },
+      { "question": "How is Sermorelin different from Tesamorelin?", "answer": "Both are GHRH-receptor agonists, but Tesamorelin is built on the longer GHRH(1-44) backbone with an N-terminal trans-3-hexenoyl modification, while Sermorelin is the unmodified 29-residue fragment. They're related by mechanism but structurally and pharmacologically distinct." },
+      { "question": "How is Sermorelin different from Ipamorelin or CJC-1295?", "answer": "Sermorelin and CJC-1295 both act through the GHRH receptor, though they're chemically distinct molecules. Ipamorelin works through an entirely separate pathway — the ghrelin (GH secretagogue) receptor — making it mechanistically different from both." }
+    ],
+    "productIdentity": {
+      "commonName": "Sermorelin",
+      "aliases": ["GRF(1-29)", "GHRH(1-29)-NH2", "Sermorelin acetate (salt form, where applicable)"],
+      "sequence": "Tyr-Ala-Asp-Ala-Ile-Phe-Thr-Asn-Ser-Tyr-Arg-Lys-Val-Leu-Gly-Gln-Leu-Ser-Ala-Arg-Lys-Leu-Leu-Gln-Asp-Ile-Met-Ser-Arg-NH2 (YADAIFTNSYRKVLGQLSARKLLQDIMSR-NH2)",
+      "residueCount": 29,
+      "terminalModification": "C-terminal amide; free N-terminus",
+      "molecularWeight": "~3357.9 g/mol (free-base reference)",
+      "casNumber": "86168-78-7",
+      "relationshipToGHRH": "Corresponds to the N-terminal 29 residues of native 44-amino-acid human GHRH, the fragment shown to retain full receptor activity.",
+      "receptorMechanism": "GHRH-receptor (GHRHR) agonist on pituitary somatotrophs, signaling through a cAMP-mediated pathway to promote GH synthesis and release.",
+      "identityNote": "This identity data describes the Sermorelin molecule as characterized in scientific and regulatory records. It does not, on its own, describe the formulation, salt form, or concentration of Veracue's Sermorelin Spray listing — those are separate, product-level facts confirmed independently."
+    },
+    "researchSections": [
+      {
+        "id": 1,
+        "heading": "What Exactly Is Sermorelin?",
+        "problem": "\"Sermorelin,\" \"peptide sermorelin,\" and \"GRF 1-29\" all get used for the same molecule, but the terminology and structure behind them aren't always explained clearly.",
+        "researchQuestion": "What is Sermorelin's verified structure, and how does its naming relate to native GHRH?",
+        "evidence": "Sermorelin is a linear 29-residue peptide, sequence YADAIFTNSYRKVLGQLSARKLLQDIMSR-NH2, molecular weight approximately 3357.9 g/mol (free-base reference), registered under CAS 86168-78-7. It has no disulfide bonds or branching.",
+        "whatResearchersObserved": "Early structure-activity work established that this 29-residue fragment of the 44-amino-acid native GHRH molecule retained essentially the hormone's full GH-releasing potency, which is what made it a practical basis for synthesis and study rather than the complete, harder-to-produce 44-residue hormone.",
+        "practicalInterpretation": "Sermorelin is best understood as a fragment analog of a natural human hormone — not an unrelated designed peptide, and not growth hormone itself.",
+        "limitation": "This section describes the Sermorelin molecule's verified chemical identity, which is separate from the formulation of any specific commercial listing, including Veracue's Spray.",
+        "sources": ["PMID 8772599", "CAS 86168-78-7"]
+      },
+      {
+        "id": 2,
+        "heading": "How Does Sermorelin Relate to the GHRH–GH Axis?",
+        "problem": "Readers often want to know exactly where Sermorelin fits mechanistically, rather than treating it as a vague \"GH peptide.\"",
+        "researchQuestion": "What receptor does Sermorelin engage, and how does that translate into GH release?",
+        "evidence": "Sermorelin binds the GHRH receptor on pituitary somatotroph cells — the same receptor native GHRH uses — activating a cAMP-dependent signaling cascade that drives GH synthesis and pulsatile secretion.",
+        "whatResearchersObserved": "In controlled human studies, GHRH(1-29)-NH2 administration produced a measurable rise in circulating GH within minutes, with IGF-I increasing over the following weeks of repeated dosing (Khorram, Laughlin & Yen, J Clin Endocrinol Metab, 1997; DOI: 10.1210/jcem.82.5.3943).",
+        "practicalInterpretation": "Sermorelin sits upstream of growth hormone itself — it prompts the pituitary's own secretion rather than supplying GH directly, which is the core distinction that separates it from GH-based interventions.",
+        "limitation": "The GH response depends on pituitary reserve and somatotroph responsiveness, which is why effect size differs across the study populations in the cited literature.",
+        "sources": ["DOI 10.1210/jcem.82.5.3943", "PMID 9141536"]
+      },
+      {
+        "id": 3,
+        "heading": "Is Sermorelin the Same as HGH?",
+        "problem": "\"Sermorelin\" and \"HGH\" circle the same physiological system, which leads to the two terms getting used interchangeably.",
+        "researchQuestion": "Does Sermorelin supply growth hormone, or work through a separate mechanism?",
+        "evidence": "Recombinant human growth hormone is the 191-amino-acid hormone itself, acting directly on GH receptors throughout the body. Sermorelin is a 29-residue GHRH fragment that acts on the pituitary to prompt its own GH release — it doesn't contain or mimic the GH molecule.",
+        "whatResearchersObserved": "Studies administering GHRH(1-29) depend on an intact, responsive pituitary gland to produce a GH rise — an indirect, pituitary-mediated effect, unlike direct GH administration, which bypasses the pituitary entirely (Thorner et al., J Clin Endocrinol Metab, 1996; DOI: 10.1210/jcem.81.3.8772599).",
+        "practicalInterpretation": "Sermorelin and GH occupy different points on the same axis — GHRH/Sermorelin upstream, GH itself downstream. Research findings about one don't automatically transfer to the other.",
+        "limitation": "Because the effect is pituitary-dependent, its relevance differs in contexts of impaired versus intact somatotroph function — the literature treats this distinction carefully rather than assuming a uniform response.",
+        "sources": ["DOI 10.1210/jcem.81.3.8772599", "PMID 8772599"]
+      },
+      {
+        "id": 4,
+        "heading": "What Does \"Sermorelin Spray\" Actually Mean?",
+        "problem": "Search behavior around \"sermorelin nasal spray\" can lead readers to assume a specific delivery route that hasn't actually been confirmed for this listing.",
+        "researchQuestion": "Does the word \"Spray\" establish a route, concentration, or formulation?",
+        "evidence": "\"Spray\" is a packaging and dispensing descriptor. It doesn't, by itself, specify a nasal, oral, sublingual, or any other route, and it doesn't fix a concentration or fill volume — those require explicit first-party documentation.",
+        "whatResearchersObserved": "Across the peptide research market, \"spray\" is applied inconsistently to describe varying formulations and concentrations by different sellers, which is exactly why the term alone can't be read as a technical specification.",
+        "practicalInterpretation": "Treat \"Sermorelin Spray\" as a format category on Veracue's catalog rather than a route or concentration claim. Route, sprays-per-bottle, and dose-per-spray are not publicly specified on the current Veracue product information.",
+        "limitation": "This addresses terminology only — it neither confirms nor rules out a specific formulation for this listing.",
+        "sources": ["First-party product terminology review"]
+      },
+      {
+        "id": 5,
+        "heading": "What Does Sermorelin Research Actually Measure?",
+        "problem": "\"Sermorelin benefits\" searches assume a defined list of outcomes, when the actual literature is built around specific measured endpoints.",
+        "researchQuestion": "What has Sermorelin research actually set out to measure?",
+        "evidence": "The core endpoints across the literature are GH secretion (typically as 12-hour integrated nocturnal GH), GH pulse amplitude, IGF-I and IGFBP-3 levels, and — in specific trials — secondary measures like lean body mass, skin thickness, and insulin sensitivity.",
+        "whatResearchersObserved": "In a placebo-controlled trial of age-advanced adults, 16 weeks of GHRH(1-29) administration increased integrated nocturnal GH and IGF-I/IGFBP-3, with additional effects on skin thickness in both sexes and on lean mass, insulin sensitivity, and well-being reaching significance in men specifically (Khorram, Laughlin & Yen, 1997; DOI: 10.1210/jcem.82.5.3943).",
+        "practicalInterpretation": "\"Benefits\" in the research sense means these specific, measured endpoints under a specific protocol — not a general wellness claim. The sex-divergent findings are themselves part of the result, not a detail to gloss over.",
+        "limitation": "Nineteen participants and one dosing protocol is a narrow evidence base; the measured endpoints don't extend automatically to other populations, doses, or delivery formats.",
+        "sources": ["DOI 10.1210/jcem.82.5.3943", "PMID 9141536"]
+      },
+      {
+        "id": 6,
+        "heading": "What Have Human Studies Reported?",
+        "problem": "Readers want a straight account of what human trials actually found — population, design, and result — rather than vague references to \"clinical studies.\"",
+        "researchQuestion": "What do the identifiable human trials of GHRH(1-29) show?",
+        "evidence": "Several controlled human trials exist: a 19-person placebo-controlled trial in adults aged 55–71 (16 weeks, nightly subcutaneous GHRH(1-29), DOI: 10.1210/jcem.82.5.3943); a companion immune-function analysis in the same cohort (DOI: 10.1210/jcem.82.11.4363); a 110-patient multicenter trial in GH-deficient children (12 months, daily subcutaneous dosing, DOI: 10.1210/jcem.81.3.8772599); and a smaller study in children with radiation-induced GH deficiency (DOI: 10.1046/j.1365-2265.1997.1790998.x).",
+        "whatResearchersObserved": "Across these trials, GHRH(1-29) reliably increased GH secretion and IGF-I under monitored subcutaneous-injection protocols, with height-velocity gains in the pediatric studies and metabolic/body-composition changes in the adult trial.",
+        "practicalInterpretation": "This is real, peer-reviewed human evidence — but it's evidence for GHRH(1-29) given by injection under clinical supervision, in specific, fairly small populations. None of these trials evaluated a spray-format research material.",
+        "limitation": "Small sample sizes, specific populations (pediatric GH deficiency, older adults), and injection-based dosing limit how directly these results apply outside the studied conditions.",
+        "sources": ["DOI 10.1210/jcem.82.5.3943", "DOI 10.1210/jcem.82.11.4363", "DOI 10.1210/jcem.81.3.8772599", "DOI 10.1046/j.1365-2265.1997.1790998.x"]
+      },
+      {
+        "id": 7,
+        "heading": "What Does \"Sermorelin Dosage\" Mean in Research?",
+        "problem": "Dosage figures from clinical papers are frequently read as usage instructions rather than as parameters of a specific study.",
+        "researchQuestion": "What dosing protocols appear in the literature, and what do they actually represent?",
+        "evidence": "Published protocols include 10 µg/kg administered nightly by subcutaneous injection in adults (Khorram et al., 1997; DOI: 10.1210/jcem.82.5.3943) and 30 µg/kg/day in GH-deficient children (Thorner et al., 1996; DOI: 10.1210/jcem.81.3.8772599).",
+        "whatResearchersObserved": "Dosing varies by study population, administration schedule, and endpoint — each figure belongs to a specific clinical-trial protocol with its own monitoring conditions.",
+        "practicalInterpretation": "These numbers describe a controlled experimental variable, not a usage recommendation for any product. They can't be converted into spray-dosing or serving-size guidance.",
+        "limitation": "No dosing, reconstitution, or administration instructions for Veracue's Sermorelin Spray are provided on this page, and none should be inferred from clinical-trial figures.",
+        "sources": ["DOI 10.1210/jcem.82.5.3943", "DOI 10.1210/jcem.81.3.8772599"]
+      },
+      {
+        "id": 8,
+        "heading": "What Has Published Research Reported About Tolerability?",
+        "problem": "\"Sermorelin side effects\" is a high-intent search term, and it deserves a direct, evidence-based answer rather than a blanket reassurance.",
+        "researchQuestion": "What adverse findings have controlled trials of GHRH(1-29) actually reported?",
+        "evidence": "In the 16-week adult trial, the only adverse finding was transient hyperlipidemia that resolved by study end (DOI: 10.1210/jcem.82.5.3943). The companion immune-function analysis in the same cohort reported no adverse effects (DOI: 10.1210/jcem.82.11.4363). The 110-patient pediatric multicenter trial found no adverse changes in safety laboratory measures over 12 months (DOI: 10.1210/jcem.81.3.8772599). A separate long-acting PEG-GHRH comparison noted injection-site reactions as the main tolerability finding, described as mild and transient (Munafo et al., Eur J Endocrinol, 2005; DOI: 10.1530/eje.1.01965).",
+        "whatResearchersObserved": "Where reported, tolerability findings for GHRH(1-29) were generally mild and specific to the injection route and monitored clinical setting used in each trial.",
+        "practicalInterpretation": "These findings describe subcutaneous-injection protocols under medical monitoring in defined patient populations — they say nothing about the safety profile of a spray-format research material used outside a clinical setting.",
+        "limitation": "None of the cited trials evaluated a spray format, and study-reported tolerability doesn't establish the safety profile of any Veracue product.",
+        "sources": ["DOI 10.1210/jcem.82.5.3943", "DOI 10.1210/jcem.82.11.4363", "DOI 10.1210/jcem.81.3.8772599", "DOI 10.1530/eje.1.01965"]
+      },
+      {
+        "id": 9,
+        "heading": "Sermorelin vs Tesamorelin",
+        "problem": "\"Sermorelin vs tesamorelin\" is a consistently searched comparison, and the two peptides are often assumed to be interchangeable.",
+        "researchQuestion": "What actually distinguishes Sermorelin from Tesamorelin at the molecular and research level?",
+        "evidence": "Sermorelin is GHRH(1-29)-NH2, the 29-residue fragment of native GHRH. Tesamorelin is built on the longer GHRH(1-44) backbone, with an added N-terminal trans-3-hexenoyl group designed to improve resistance to enzymatic breakdown. Both act on the GHRH receptor.",
+        "whatResearchersObserved": "The two peptides have been developed and studied through separate research programs — Tesamorelin's pharmaceutical form has been studied specifically in contexts like HIV-associated lipodystrophy, while Sermorelin's research history centers more on pediatric GH deficiency and adult aging studies.",
+        "practicalInterpretation": "They're related by receptor mechanism but structurally distinct, with different modification strategies and different bodies of supporting research. This comparison is for identity clarity, not a recommendation either way.",
+        "limitation": "Molecular and research-history differences don't extend to a claim about either compound's respective Veracue listing, which carries its own separate documentation.",
+        "sources": ["Molecular identity review", "GHRH-receptor pharmacology literature"]
+      },
+      {
+        "id": 10,
+        "heading": "Sermorelin vs Ipamorelin vs CJC-1295",
+        "problem": "Sermorelin, Ipamorelin, and CJC-1295 often get grouped together as \"GH peptides\" despite working through different mechanisms.",
+        "researchQuestion": "What receptor systems do these three peptides actually engage?",
+        "evidence": "Sermorelin acts on the GHRH receptor. Ipamorelin is a pentapeptide that selectively activates the ghrelin (GH secretagogue) receptor — a separate pathway entirely. CJC-1295 is itself a modified GHRH-receptor agonist, chemically distinct from Sermorelin but part of the same receptor family.",
+        "whatResearchersObserved": "Because Ipamorelin and GHRH-receptor agonists act through different pathways, mechanistic research has sometimes examined them together to look at potential additive effects on GH pulsatility — a finding specific to those experimental combinations.",
+        "practicalInterpretation": "Sermorelin and CJC-1295 share a receptor family but differ chemically; Sermorelin and Ipamorelin differ at the receptor level entirely. None of the three is presented as stronger or preferred.",
+        "limitation": "This is a molecular and mechanistic comparison, not a peptide-stacking guide, and it doesn't describe or endorse combined use of Veracue products.",
+        "sources": ["Ghrelin-receptor pharmacology literature", "GHRH-receptor pharmacology literature"]
+      },
+      {
+        "id": 11,
+        "heading": "How Should Researchers Verify a Sermorelin Research Material?",
+        "problem": "Identity claims on a product label aren't the same as verified identity — researchers evaluating any Sermorelin listing need to know what actually confirms it.",
+        "researchQuestion": "What analytical methods establish a research peptide's identity and purity?",
+        "evidence": "Identity and purity are typically established through reverse-phase HPLC for chromatographic purity, paired with mass spectrometry (ESI-MS or MALDI-TOF) to confirm molecular identity. A lot-specific Certificate of Analysis pairing both results is the standard researchers look for.",
+        "whatResearchersObserved": "Across the peptide research field, COAs that combine HPLC purity data with MS identity confirmation are the accepted way to verify that a given lot matches its labeled peptide, rather than relying on the product name alone.",
+        "practicalInterpretation": "Researchers evaluating Sermorelin Spray should request lot-specific HPLC and MS documentation directly from Veracue rather than assuming purity or salt form from the listing name.",
+        "limitation": "Whether this specific Spray listing is supplied as an acetate salt, free-base, or another form, and its current purity, is not publicly specified on the current Veracue product information.",
+        "sources": ["Analytical chemistry / COA standards"]
+      }
+    ],
+    "evidenceTable": [
+      {
+        "study": "Khorram, Laughlin & Yen (1997)",
+        "population": "19 adults, aged 55–71 (10 women, 9 men)",
+        "design": "Single-blind, placebo-controlled",
+        "duration": "4-week placebo run-in + 16 weeks GHRH(1-29)",
+        "administration": "Nightly subcutaneous injection, 10 µg/kg",
+        "primaryEndpoint": "12-hour integrated nocturnal GH, IGF-I, IGFBP-3",
+        "result": "Significant increases in GH and IGF-I/IGFBP-3; lean mass, insulin sensitivity, and well-being improved in men only; skin thickness increased in both sexes; transient hyperlipidemia only adverse finding",
+        "citation": "J Clin Endocrinol Metab. 1997;82(5):1472-9. DOI: 10.1210/jcem.82.5.3943. PMID: 9141536"
+      },
+      {
+        "study": "Khorram, Yeung, Vu & Yen (1997)",
+        "population": "Same 19-adult cohort as above",
+        "design": "Single-blind, placebo-controlled",
+        "duration": "4-week placebo + 16 weeks GHRH analog",
+        "administration": "Nightly subcutaneous injection, 10 µg/kg",
+        "primaryEndpoint": "Immune cell subsets and function",
+        "result": "Increases in B- and T-cell markers and mitogen responsiveness; no adverse effects reported",
+        "citation": "J Clin Endocrinol Metab. 1997;82(11):3590-6. DOI: 10.1210/jcem.82.11.4363. PMID: 9360512"
+      },
+      {
+        "study": "Thorner et al., Geref International Study Group (1996)",
+        "population": "110 prepubertal GH-deficient children (86 evaluable)",
+        "design": "Multicenter, open-label",
+        "duration": "12 months",
+        "administration": "Once-daily subcutaneous injection, 30 µg/kg",
+        "primaryEndpoint": "Height velocity, bone age progression, safety labs",
+        "result": "Height velocity increased from 4.1 to 8.0 cm/yr at 6 months; no adverse biochemical/hormonal changes",
+        "citation": "J Clin Endocrinol Metab. 1996;81(3):1189-96. DOI: 10.1210/jcem.81.3.8772599. PMID: 8772599"
+      },
+      {
+        "study": "Ogilvy-Stuart et al. (1997)",
+        "population": "9 children with radiation-induced GH deficiency",
+        "design": "Multicenter, within-subject comparison",
+        "duration": "1 year GHRH, followed by 1 year GH therapy",
+        "administration": "Twice-daily subcutaneous injection, 15 µg/kg",
+        "primaryEndpoint": "Height velocity",
+        "result": "Height velocity increased significantly with GHRH, though less than subsequent GH therapy; no attributable adverse events",
+        "citation": "Clin Endocrinol (Oxf). 1997;46(5):571-8. DOI: 10.1046/j.1365-2265.1997.1790998.x. PMID: 9231053"
+      },
+      {
+        "study": "Munafo et al. (2005)",
+        "population": "12 young healthy men; 20 elderly men and women (>60 years)",
+        "design": "Placebo-controlled, dose-ranging",
+        "duration": "Single-dose and repeated-dose phases",
+        "administration": "Subcutaneous injection (PEG-conjugated long-acting GHRH, referenced against GHRH(1-29))",
+        "primaryEndpoint": "Safety, tolerability, GH/IGF-I pharmacodynamics",
+        "result": "Clear GH increase vs placebo; injection-site reactions more frequent but mild/transient; other adverse events comparable to placebo",
+        "citation": "Eur J Endocrinol. 2005;153(2):249-56. DOI: 10.1530/eje.1.01965. PMID: 16061831"
+      }
+    ],
+    "comparisonTables": {
+      "sermorelinVsTesamorelin": {
+        "note": "Comparison provided for identity and research-context clarification only.",
+        "rows": [
+          { "attribute": "Backbone", "sermorelin": "29 residues (GHRH 1-29)", "tesamorelin": "44 residues (GHRH 1-44 backbone)" },
+          { "attribute": "Terminal modification", "sermorelin": "C-terminal amide; unmodified N-terminus", "tesamorelin": "N-terminal trans-3-hexenoyl group" },
+          { "attribute": "Receptor", "sermorelin": "GHRH receptor", "tesamorelin": "GHRH receptor" },
+          { "attribute": "Primary research context", "sermorelin": "Pediatric GH deficiency; adult aging studies", "tesamorelin": "HIV-associated lipodystrophy research (pharmaceutical form)" }
+        ]
+      },
+      "sermorelinVsIpamorelinVsCjc1295": {
+        "note": "Comparison provided for mechanistic clarification only.",
+        "rows": [
+          { "attribute": "Peptide class", "sermorelin": "GHRH fragment analog (29 aa)", "ipamorelin": "Pentapeptide GH secretagogue", "cjc1295": "Modified GHRH-receptor agonist" },
+          { "attribute": "Receptor/pathway", "sermorelin": "GHRH receptor", "ipamorelin": "Ghrelin (GH secretagogue) receptor", "cjc1295": "GHRH receptor" },
+          { "attribute": "Structural relation to Sermorelin", "sermorelin": "—", "ipamorelin": "Distinct receptor pathway", "cjc1295": "Same receptor family, different structure" }
+        ]
+      }
+    },
+    "productDocumentationBlock": {
+      "productName": "Sermorelin Spray",
+      "sku": "Not publicly specified on the current Veracue product information.",
+      "size": "Not publicly specified on the current Veracue product information.",
+      "price": "Not publicly specified on the current Veracue product information.",
+      "concentration": "Not publicly specified on the current Veracue product information.",
+      "fillVolume": "Not publicly specified on the current Veracue product information.",
+      "spraysPerBottle": "Not publicly specified on the current Veracue product information.",
+      "amountPerSpray": "Not publicly specified on the current Veracue product information.",
+      "route": "Not publicly specified for this listing.",
+      "formulation": "Not publicly specified on the current Veracue product information.",
+      "carrierExcipients": "Not publicly specified on the current Veracue product information.",
+      "saltCounterion": "Not publicly specified for this listing.",
+      "purity": "Not publicly specified on the current Veracue product information.",
+      "sequence": "YADAIFTNSYRKVLGQLSARKLLQDIMSR-NH2",
+      "molecularWeight": "~3357.9 g/mol (free-base reference)",
+      "casNumber": "86168-78-7",
+      "coa": "Not publicly specified on the current Veracue product information.",
+      "storage": "Not publicly specified on the current Veracue product information.",
+      "designation": "Research Use Only",
+      "relatedListing": "Veracue's existing Sermorelin vial listing (SKU SERM-10MG) provides separate product documentation for that format. Its specifications are not transferable to this Spray listing."
+    },
+    "coaGuidance": {
+      "intro": "A Certificate of Analysis for a Sermorelin research material should pair identity confirmation with a purity assay, tied to a specific lot.",
+      "whatToLookFor": [
+        "Peptide identity confirmed by mass spectrometry (ESI-MS or MALDI-TOF)",
+        "Chromatographic purity from reverse-phase HPLC",
+        "Lot number matching the product received",
+        "Test date and analytical method disclosed",
+        "Testing laboratory identified"
+      ],
+      "currentStatus": "A Spray-specific Certificate of Analysis is not publicly available at this time. Researchers should request current lot documentation directly from Veracue before relying on any purity or identity claim."
+    },
+    "storageAndHandling": {
+      "statement": "Storage conditions are not publicly specified on the current Veracue product information.",
+      "note": "Storage requirements should not be inferred from Veracue's vial-format Sermorelin listing or from general peptide-storage assumptions; they should be confirmed directly with Veracue."
+    },
+    "whatItIsNot": [
+      "Not growth hormone itself",
+      "Not Tesamorelin, Ipamorelin, or CJC-1295",
+      "Not confirmed as nasal, intranasal, or any other specific route based on the word \"Spray\" alone",
+      "Not a clinical-use or dosing instruction",
+      "Not evidence that this listing has itself been clinically tested"
+    ],
+    "faq": [
+      { "question": "What is Sermorelin?", "answer": "A synthetic 29-amino-acid peptide corresponding to the active fragment of human growth hormone-releasing hormone (GHRH), used in research to study GH-axis signaling." },
+      { "question": "What is Sermorelin Spray?", "answer": "Veracue's spray-dispensed Research Use Only listing of the Sermorelin peptide. \"Spray\" describes the packaging format; product-specific details are documented separately from the molecule's identity." },
+      { "question": "Is Sermorelin the same as HGH?", "answer": "No. Sermorelin prompts the pituitary to release its own growth hormone rather than supplying GH directly — it works upstream of GH, not in place of it." },
+      { "question": "What does Sermorelin do in research?", "answer": "It's used to study GHRH-receptor activation and its downstream effects on GH pulsatility, IGF-I levels, and related endocrine and metabolic measures." },
+      { "question": "What is Sermorelin used to study?", "answer": "Primarily the GH–IGF-I axis — how stimulating the GHRH receptor affects growth hormone secretion, and, in specific trials, related outcomes like body composition and insulin sensitivity." },
+      { "question": "What does Sermorelin dosage mean?", "answer": "In the literature, it refers to the amount used in a specific clinical-trial protocol (for example, micrograms per kilogram). It's a study variable, not usage guidance for any product." },
+      { "question": "What are Sermorelin side effects in research?", "answer": "Published human trials have generally reported good tolerability, with injection-site reactions and, in one study, transient hyperlipidemia as the notable findings — specific to monitored, injection-based clinical protocols." },
+      { "question": "Is Sermorelin the same as Tesamorelin?", "answer": "No. Both engage the GHRH receptor, but Tesamorelin is a longer, chemically modified analog with its own separate research and development history." },
+      { "question": "Is Sermorelin the same as Ipamorelin?", "answer": "No. Sermorelin acts on the GHRH receptor, while Ipamorelin acts on the ghrelin (GH secretagogue) receptor — a different pathway entirely." },
+      { "question": "Is Sermorelin the same as CJC-1295?", "answer": "No, though they're related. Both are GHRH-receptor agonists, but they're distinct molecules with different structures." },
+      { "question": "Does Spray mean nasal?", "answer": "Not automatically. \"Spray\" describes the dispensing format; a nasal route would need explicit confirmation in Veracue's own product documentation." },
+      { "question": "Is this product for human use?", "answer": "No. Sermorelin Spray is offered strictly for laboratory and research use, not for human or veterinary administration." },
+      { "question": "What documentation is available for this listing?", "answer": "Molecule-level identity data (sequence, CAS number, molecular weight) is documented on this page. Spray-specific product documentation, including COA and lot data, is not publicly available at this time and should be requested directly from Veracue." },
+      { "question": "Where can researchers find current product specifications?", "answer": "Current SKU, pricing, and formulation details for Sermorelin Spray should be confirmed directly with Veracue's team, as they are not yet published on the live catalog." }
+    ],
+    "complianceFooter": "Sermorelin Spray is supplied by Veracue strictly for laboratory and research use. It is not intended to diagnose, treat, cure, or prevent any disease, and is not for human or veterinary use. The human studies referenced on this page describe research conducted with injected GHRH(1-29) under specific clinical protocols; they do not constitute testing or evidence regarding this or any Veracue product.",
+    "seo": {
+      "primaryKeyword": "Sermorelin Spray",
+      "secondaryKeywords": [
+        "Sermorelin peptide",
+        "Sermorelin research peptide",
+        "Sermorelin GHRH 1-29",
+        "what is Sermorelin",
+        "Sermorelin research",
+        "Sermorelin benefits research",
+        "Sermorelin side effects research",
+        "Sermorelin dosage research",
+        "Sermorelin vs Tesamorelin",
+        "Sermorelin vs Ipamorelin",
+        "Sermorelin vs CJC-1295",
+        "Sermorelin acetate",
+        "Sermorelin sequence",
+        "Sermorelin molecular weight",
+        "Sermorelin CAS number"
+      ],
+      "searchIntent": "Mixed informational and transactional intent: researchers comparing GHRH-based peptides, verifying Sermorelin's identity and research history, and evaluating a spray-format RUO listing before purchase.",
+      "suggestedInternalLinks": [
+        "Sermorelin (vial listing)",
+        "Tesamorelin product page",
+        "Certificates of Analysis / documentation",
+        "Research catalogue — Growth Hormone Secretagogues"
+      ]
+    },
+    "internalLinks": [
+      { "label": "Sermorelin (vial listing)", "target": "Existing Veracue Sermorelin product page" },
+      { "label": "Tesamorelin", "target": "Existing Veracue Tesamorelin product page" },
+      { "label": "Certificates of Analysis", "target": "Veracue COA / documentation section" },
+      { "label": "Shop — Growth Hormone Secretagogues", "target": "Veracue shop category page" }
+    ],
+    "references": [
+      { "authors": "Khorram O, Laughlin GA, Yen SS", "title": "Endocrine and metabolic effects of long-term administration of [Nle27]growth hormone-releasing hormone-(1-29)-NH2 in age-advanced men and women", "journal": "J Clin Endocrinol Metab", "year": "1997", "doi": "10.1210/jcem.82.5.3943", "pmid": "9141536", "source": "PubMed" },
+      { "authors": "Khorram O, Yeung M, Vu L, Yen SS", "title": "Effects of [norleucine27]growth hormone-releasing hormone (GHRH) (1-29)-NH2 administration on the immune system of aging men and women", "journal": "J Clin Endocrinol Metab", "year": "1997", "doi": "10.1210/jcem.82.11.4363", "pmid": "9360512", "source": "PubMed" },
+      { "authors": "Thorner M, Rochiccioli P, Colle M, et al. (Geref International Study Group)", "title": "Once daily subcutaneous growth hormone-releasing hormone therapy accelerates growth in growth hormone-deficient children during the first year of therapy", "journal": "J Clin Endocrinol Metab", "year": "1996", "doi": "10.1210/jcem.81.3.8772599", "pmid": "8772599", "source": "PubMed" },
+      { "authors": "Ogilvy-Stuart AL, Stirling HF, Kelnar CJ, et al.", "title": "Treatment of radiation-induced growth hormone deficiency with growth hormone-releasing hormone", "journal": "Clin Endocrinol (Oxf)", "year": "1997", "doi": "10.1046/j.1365-2265.1997.1790998.x", "pmid": "9231053", "source": "PubMed" },
+      { "authors": "Munafo A, Nguyen TXQ, Papasouliotis O, et al.", "title": "Polyethylene glycol-conjugated growth hormone-releasing hormone is long acting and stimulates GH in healthy young and elderly subjects", "journal": "Eur J Endocrinol", "year": "2005", "doi": "10.1530/eje.1.01965", "pmid": "16061831", "source": "PubMed" },
+      { "authors": "Tuilpakov AN, Bulatov AA, Peterkova VA, et al.", "title": "Growth hormone (GH)-releasing effects of synthetic peptide GH-releasing peptide-2 and GH-releasing hormone (1-29NH2) in children with GH insufficiency and idiopathic short stature", "journal": "Metabolism", "year": "1995", "doi": "10.1016/0026-0495(95)90016-0", "pmid": "7666796", "source": "PubMed" }
+    ],
+    "schema": {
+      "product": {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Sermorelin Spray",
+        "description": "Spray-dispensed Research Use Only listing of Sermorelin, a synthetic GHRH(1-29) peptide. For laboratory and research use only.",
+        "category": "Growth Hormone Secretagogues / Research Peptides",
+        "brand": { "@type": "Brand", "name": "Veracue" },
+        "additionalProperty": [
+          { "@type": "PropertyValue", "name": "CAS Number", "value": "86168-78-7" },
+          { "@type": "PropertyValue", "name": "Sequence", "value": "YADAIFTNSYRKVLGQLSARKLLQDIMSR-NH2" },
+          { "@type": "PropertyValue", "name": "Molecular Weight", "value": "~3357.9 g/mol (free-base reference)" },
+          { "@type": "PropertyValue", "name": "Designation", "value": "Research Use Only" }
+        ]
+      },
+      "webPage": {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Sermorelin Spray Research Peptide | Veracue",
+        "description": "Sermorelin Spray from Veracue: GHRH(1-29) identity, GH-axis research, dosage and tolerability literature, and how it compares to Tesamorelin, Ipamorelin, and CJC-1295. Research Use Only.",
+        "url": "/product/sermorelin-spray"
+      },
+      "breadcrumbList": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "/" },
+          { "@type": "ListItem", "position": 2, "name": "Shop", "item": "/shop" },
+          { "@type": "ListItem", "position": 3, "name": "Growth Hormone Secretagogues", "item": "/shop/growth-hormone-secretagogues" },
+          { "@type": "ListItem", "position": 4, "name": "Sermorelin Spray", "item": "/product/sermorelin-spray" }
+        ]
+      },
+      "faqPage": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "What is Sermorelin?", "acceptedAnswer": { "@type": "Answer", "text": "A synthetic 29-amino-acid peptide corresponding to the active fragment of human growth hormone-releasing hormone (GHRH), used in research to study GH-axis signaling." } },
+          { "@type": "Question", "name": "Is Sermorelin the same as HGH?", "acceptedAnswer": { "@type": "Answer", "text": "No. Sermorelin prompts the pituitary to release its own growth hormone rather than supplying GH directly." } },
+          { "@type": "Question", "name": "Does Spray mean nasal?", "acceptedAnswer": { "@type": "Answer", "text": "Not automatically. \"Spray\" describes the dispensing format; a nasal route would need explicit confirmation in Veracue's own product documentation." } },
+          { "@type": "Question", "name": "Is this product for human use?", "acceptedAnswer": { "@type": "Answer", "text": "No. Sermorelin Spray is offered strictly for laboratory and research use, not for human or veterinary administration." } }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,467 @@
+{
+  "deliverable": "Veracue Selank \u2014 RUO-Only Product Page Rewrite (with verification placeholders)",
+  "status": "READY FOR DEVELOPER/EDITOR \u2014 replace [VERIFY]/[ADD] placeholders with confirmed Veracue product data before publishing; keep noindex until resolved",
+  "rewrite_note": "This version removes the human-clinical-trial discussion (Zozulya 2008 / Uchakina 2008) and Russian regulatory-approval framing from the prior draft, per the new RUO-only brief. Those studies are not cited or summarized here; only a brief, generic evidence-boundary statement remains, as instructed.",
+  "A_product_data_verification": {
+    "confirmed_general_chemistry_not_veracue_specific": [
+      "Selank is a synthetic heptapeptide, sequence Thr-Lys-Pro-Arg-Pro-Gly-Pro, structurally classified as a tuftsin analog",
+      "Approximate molecular weight ~751 g/mol"
+    ],
+    "veracue_specific_not_yet_verified": [
+      "Whether Selank is currently a live, orderable Veracue SKU (not found on /shop, which currently lists only AHK-Cu and NAD+; not found in the 12-lot /certificates archive)",
+      "Vial size(s) offered",
+      "Purity and identity test results specific to a Veracue Selank lot",
+      "Lot number, testing lab, test date",
+      "COA link",
+      "Storage conditions specific to this listing",
+      "Price, availability, SKU/MPN",
+      "URL slug and product category tag"
+    ]
+  },
+  "B_selank_keyword_analysis": {
+    "targeted_research_intent_terms": [
+      "selank peptide",
+      "selank peptide research",
+      "what is selank",
+      "selank research peptide",
+      "selank COA",
+      "selank purity testing",
+      "selank identity testing",
+      "how to verify selank",
+      "selank research material",
+      "research peptide documentation",
+      "peptide certificate of analysis"
+    ],
+    "human_use_terms_present_in_keyword_data": [
+      "selank dosage",
+      "selank benefits",
+      "selank spray",
+      "selank nasal spray",
+      "semax and selank nasal spray",
+      "selank side effects"
+    ],
+    "handling": "These terms carry real search volume but are not targeted as direct-answer headings. Where addressed at all, they're handled through the single 'Note on Search Terms Referencing Human Use' section, which states plainly that Veracue provides no dosing or administration guidance, without repeating the query terms as headings or supplying any actual dosage/administration content.",
+    "comparison_terms": "selank vs semax / semax vs selank \u2014 not addressed in this version, since a factual comparison would require Veracue-specific data for both products that isn't available, and the prior draft's comparison section leaned toward consumer-comparison framing inconsistent with this brief."
+  },
+  "C_seo_geo_aeo_strategy": {
+    "approach": "Answer-first headings kept for AEO/GEO extraction. All content restricted to molecular identity, analytical characterization, and documentation \u2014 no clinical, regulatory, or consumer-benefit content to draw extraction toward a human-use framing.",
+    "evidence_language": "Every reference to published research uses hedged, research-only phrasing ('researchers have investigated,' 'studies have examined') and is confined to a single evidence-boundary paragraph rather than a detailed literature review."
+  },
+  "D_seo_metadata": {
+    "seo_title": "Selank Research Peptide (Tuftsin Analog) | Veracue Peptides",
+    "meta_description": "Selank, the tuftsin-derived heptapeptide, for lab research: identity, GABA-A receptor studies, HPLC testing, and COA checks.",
+    "url_slug": "/product/selank",
+    "canonical_url": "https://veracue-peptides.vercel.app/product/selank",
+    "og_title": "Selank Peptide \u2014 Research Use Only | Veracue",
+    "og_description": "Molecular identity, analytical testing, and documentation for Veracue's Selank research material.",
+    "primary_keyword": "selank peptide",
+    "secondary_keywords": [
+      "selank research peptide",
+      "what is selank",
+      "selank COA",
+      "selank purity testing",
+      "selank identity testing"
+    ],
+    "long_tail_keywords": [
+      "how to verify selank identity",
+      "selank research material documentation",
+      "how is selank purity measured",
+      "what does a selank COA show"
+    ],
+    "semantic_entities": [
+      "heptapeptide",
+      "tuftsin analog",
+      "HPLC",
+      "mass spectrometry",
+      "certificate of analysis",
+      "Research Use Only",
+      "lot-specific testing",
+      "analytical characterization"
+    ]
+  },
+  "E_complete_ruo_product_page": {
+    "breadcrumb": "Shop > Selank",
+    "hero": {
+      "h1": "Veracue Selank",
+      "amount_line": "[VERIFY PRODUCT AMOUNT]",
+      "description": "Selank is a synthetic heptapeptide structurally derived from tuftsin, extended with a Pro-Gly-Pro sequence beyond tuftsin's four-residue core. Veracue supplies it as a research material for laboratory work. Published research has examined it at the receptor level, including modulation of GABA-A receptor binding \u2014 mechanistic and preclinical evidence only, so this material does not establish a cognitive or behavioral effect in people.",
+      "product_info_panel": {
+        "Product": "Selank",
+        "Amount": "[VERIFY]",
+        "Form": "[VERIFY \u2014 expected lyophilized powder, consistent with site-wide convention]",
+        "Purity": "[ADD SELANK-SPECIFIC RESULT]",
+        "Identity Testing": "[ADD SELANK-SPECIFIC RESULT]",
+        "COA": "[ADD VERIFIED SELANK COA LINK]",
+        "Research Designation": "Research Use Only",
+        "Availability": "[VERIFY]"
+      },
+      "ruo_notice": "Research Use Only. Intended exclusively for laboratory research, scientific investigation, and analytical characterization. Not intended for human or veterinary use, ingestion, injection, or any form of administration. Not evaluated by the FDA for safety or efficacy.",
+      "cta": "Request Research Documentation"
+    },
+    "sections": [
+      {
+        "heading": "What Is Selank?",
+        "body": "Selank is a synthetic peptide studied in laboratory research, classified structurally as a heptapeptide \u2014 a chain of seven amino acid residues. Its published sequence is Thr-Lys-Pro-Arg-Pro-Gly-Pro, with an approximate molecular weight of 751 g/mol. It is described in chemical reference literature as a structural analog of tuftsin, a shorter, naturally occurring peptide. That sequence and molecular weight are properties of the Selank molecule itself and are independently verifiable through standard analytical chemistry, regardless of which laboratory or supplier a given sample originates from. What that identity does not establish is anything about a specific commercial vial \u2014 purity, testing history, or documentation are properties of an individual research material, not of the molecule's published structure.\n\n[VERIFY WITH VERACUE \u2014 CONFIRM CURRENT SELANK LISTING STATUS AND AVAILABLE VIAL SIZE(S)]"
+      },
+      {
+        "heading": "What Researchers Study About Selank",
+        "body": "Selank's published research profile spans a few connected areas of laboratory investigation: receptor-level interactions, including work characterizing it as a modulator of GABA-A receptor binding in radioligand-based experiments; neurobiological signaling pathways, including studies on enkephalin-degrading enzyme activity and hippocampal BDNF expression in animal models; and broader peptide-signaling research connected to its structural relationship with tuftsin. These are research areas, not outcomes. A finding that a molecule interacts with a receptor in an isolated binding assay, or produces a measurable change in an animal model, describes that specific experimental system \u2014 it does not describe what happens in a human being, and it does not describe the properties of any particular research vial sold under the Selank name. This page uses precise language for this reason: research has investigated, studies have examined, findings have been reported in specific experimental models \u2014 never that Selank does something for a person."
+      },
+      {
+        "heading": "Evidence Boundaries",
+        "body": "Published literature exists on Selank, spanning cell-based, animal, and observational research contexts, but findings generated under those specific research conditions should not be interpreted as evidence that a commercial research material is suitable for, or intended for, human use. This page does not attempt to summarize that literature comprehensively or present it as a case for any outcome; researchers working with the primary literature should evaluate study design, species, and methodology directly rather than relying on a supplier's summary of it. Veracue's own documentation for a specific Selank lot \u2014 purity and identity testing \u2014 is a separate matter from that published literature, addressed later on this page."
+      },
+      {
+        "heading": "Molecular Identity vs. Product-Specific Verification",
+        "body": "It's worth separating two questions that are easy to conflate. The first is: what is Selank, structurally? That question has a stable, published answer \u2014 a heptapeptide with a defined sequence and molecular weight, independent of supplier. The second is: has this specific Veracue research material been tested and confirmed to match that structure, at a stated purity? That question can only be answered by lot-specific analytical documentation, and it has not yet been established for this listing. A well-documented molecule does not make a specific vial self-verifying \u2014 the chemistry describes the target; the testing describes the sample.\n\n[ADD SELANK-SPECIFIC PURITY AND IDENTITY RESULTS ONCE PUBLISHED]"
+      },
+      {
+        "heading": "Analytical Characterization: HPLC and Mass Spectrometry",
+        "body": "Two analytical methods do most of the work in characterizing a research peptide, and they answer different questions. High-performance liquid chromatography (HPLC), typically run in reverse-phase mode for peptides, characterizes chromatographic purity \u2014 the proportion of material in a sample that resolves as a single, well-defined peak, distinct from impurities or incomplete synthesis byproducts. It's usually reported as a percentage of peak area. Mass spectrometry (commonly ESI-MS or MALDI-TOF for peptides) is used separately to evaluate whether the measured molecular mass of the sample is consistent with the intended peptide's theoretical mass \u2014 for Selank, approximately 751 g/mol \u2014 typically within a stated tolerance. Neither test substitutes for the other: an HPLC result describes cleanliness, not identity; a mass-spec result describes identity, not necessarily overall sample purity. Complete analytical characterization for a given lot reports both. Veracue's confirmed, site-wide standard for its published products applies a minimum 99.0% HPLC threshold and mass-spectrometry confirmation within roughly 0.5 Da of theoretical mass, using named third-party laboratories \u2014 that describes Veracue's general testing approach, not a stated Selank-specific result.\n\nPurity: [ADD SELANK-SPECIFIC RESULT]\nIdentity testing: [ADD SELANK-SPECIFIC RESULT]"
+      },
+      {
+        "heading": "How to Evaluate a Selank COA",
+        "body": "A certificate of analysis documents one specific manufacturing lot \u2014 it is not a general statement about the compound Selank, and it should not be treated as valid for a different lot than the one it names. When reviewing any Selank COA, the fields worth checking are: the product name and lot/batch number, matched against the number on the physical vial; the test date and testing laboratory; the specification the sample was tested against, referencing Selank's known sequence and molecular weight; the reported HPLC result against that specification; and the reported mass spectrometry result, including stated tolerance. A document that doesn't tie these results to a specific, matching lot number provides materially weaker assurance than one that does, even when the printed figures look identical.\n\n[ADD VERIFIED SELANK COA LINK]"
+      },
+      {
+        "heading": "Documented vs. Not Yet Verified for the Veracue Product",
+        "body": "Stating this plainly matters for research procurement. Documented, as general molecular chemistry independent of any supplier: Selank's amino acid sequence, its classification as a synthetic heptapeptide, and its approximate molecular weight. Not yet verified, specific to Veracue's listing: whether Selank is currently available as an ordered SKU, the purity and identity test results for any Veracue lot, lot number, testing laboratory, test date, COA availability, storage conditions specific to this product, and price or availability. Treating the first category as if it answered the second \u2014 assuming that a well-documented molecule implies a verified product \u2014 would misstate what is actually known about this specific listing."
+      },
+      {
+        "heading": "Problem: Unclear Product Identity",
+        "body": "THE PROBLEM: a listing can use a well-known peptide name without the researcher being able to confirm that the specific material offered matches that molecule's known structure. WHY IT MATTERS IN RESEARCH: using an unverified material in an experimental protocol risks contaminating results with an unknown or mismatched compound. WHAT TO VERIFY: a mass-spectrometry identity result tied to the specific lot being purchased, matched against Selank's known molecular weight. HOW VERACUE DOCUMENTATION ADDRESSES IT: [VERIFY WHETHER A SELANK-SPECIFIC IDENTITY RESULT IS PUBLISHED]."
+      },
+      {
+        "heading": "Problem: Product Labels Without Supporting Analytical Evidence",
+        "body": "THE PROBLEM: a product label naming a peptide and a purity percentage is not itself evidence \u2014 it's a claim. WHY IT MATTERS IN RESEARCH: unverified purity claims can compromise reproducibility if the actual material differs from the labeled specification. WHAT TO VERIFY: an actual chromatogram or HPLC report supporting the stated purity figure, not the figure alone. HOW VERACUE DOCUMENTATION ADDRESSES IT: [VERIFY WHETHER A SELANK-SPECIFIC HPLC REPORT IS AVAILABLE]."
+      },
+      {
+        "heading": "Problem: Purity Claims Without a Supporting Result",
+        "body": "THE PROBLEM: a purity percentage stated in marketing copy, without a linked laboratory report, cannot be independently checked. WHY IT MATTERS IN RESEARCH: purity figures affect concentration calculations and downstream experimental accuracy. WHAT TO VERIFY: the underlying HPLC data, method, and date behind any stated purity figure. HOW VERACUE DOCUMENTATION ADDRESSES IT: [VERIFY]."
+      },
+      {
+        "heading": "Problem: Generic COAs Not Tied to a Specific Lot",
+        "body": "THE PROBLEM: some suppliers publish a single certificate representing the compound in general, reused across batches, rather than a lot-specific document. WHY IT MATTERS IN RESEARCH: a generic certificate cannot confirm that the material actually received matches the tested batch. WHAT TO VERIFY: a lot number on the COA that matches the lot number printed on the physical vial. HOW VERACUE DOCUMENTATION ADDRESSES IT: [VERIFY WHETHER A LOT-SPECIFIC SELANK COA EXISTS]."
+      },
+      {
+        "heading": "Problem: Confusing Purity With Identity",
+        "body": "THE PROBLEM: a high purity percentage is often read as confirmation that a sample is the correct compound. WHY IT MATTERS IN RESEARCH: purity and identity are independent measurements \u2014 a sample can be highly pure and still be the wrong molecule if it was never separately identity-tested. WHAT TO VERIFY: that both an HPLC purity result and a mass spectrometry identity result are reported, not purity alone. HOW VERACUE DOCUMENTATION ADDRESSES IT: [VERIFY BOTH RESULTS FOR THIS LISTING]."
+      },
+      {
+        "heading": "Problem: Difficulty Verifying Molecular Identity Independently",
+        "body": "THE PROBLEM: researchers without in-house analytical equipment often have to rely entirely on supplier-provided documentation to confirm identity. WHY IT MATTERS IN RESEARCH: without an independent or third-party-verified identity result, the researcher is trusting the supplier's claim rather than confirming it. WHAT TO VERIFY: whether identity testing was performed by a named, independent third-party laboratory rather than an in-house or unnamed source. HOW VERACUE DOCUMENTATION ADDRESSES IT: Veracue's site-wide standard uses named third-party laboratories for confirmed products; [VERIFY WHETHER THIS APPLIES TO A SELANK-SPECIFIC LOT]."
+      },
+      {
+        "heading": "Problem: Lack of Batch Traceability",
+        "body": "THE PROBLEM: without a lot number system, there's no way to trace which manufacturing run a given vial came from, or to compare results across batches over time. WHY IT MATTERS IN RESEARCH: batch-to-batch variability is a real consideration in reproducible research, and traceability is what allows it to be checked. WHAT TO VERIFY: a serialized or otherwise unique lot number printed on both the vial and its COA. HOW VERACUE DOCUMENTATION ADDRESSES IT: [VERIFY LOT-NUMBERING SYSTEM FOR SELANK SPECIFICALLY]."
+      },
+      {
+        "heading": "Problem: Missing Storage Documentation",
+        "body": "THE PROBLEM: unclear or absent storage guidance makes it difficult to judge whether a lyophilized peptide has been maintained under conditions consistent with its expected stability. WHY IT MATTERS IN RESEARCH: storage conditions affect molecular integrity and can compromise experimental results if not properly documented and followed. WHAT TO VERIFY: explicit, product-specific storage temperature and handling guidance from the supplier, rather than an assumption carried over from a different product. HOW VERACUE DOCUMENTATION ADDRESSES IT: [VERIFY SELANK-SPECIFIC STORAGE REQUIREMENTS \u2014 DO NOT ASSUME ANOTHER VERACUE PRODUCT'S STORAGE INFORMATION APPLIES]."
+      },
+      {
+        "heading": "Problem: Confusing Published Research With Supplier-Specific Evidence",
+        "body": "THE PROBLEM: research literature describing what has been studied about Selank as a molecule can be mistaken for evidence about a specific commercial product. WHY IT MATTERS IN RESEARCH: these are different categories of information \u2014 one describes the compound under study conditions, the other describes whether a given vial has been independently tested and verified. WHAT TO VERIFY: whether a supplier clearly distinguishes 'here is what has been published about Selank' from 'here is what we have tested about this specific lot.' HOW VERACUE DOCUMENTATION ADDRESSES IT: this page keeps those two categories in separate sections throughout, rather than blending them."
+      },
+      {
+        "heading": "Problem: Search Results Mixing Research Literature With Consumer Framing",
+        "body": "THE PROBLEM: a search for information about Selank often returns a mix of scientific literature, general reference material, and consumer-oriented retail content that frames the compound around personal use. WHY IT MATTERS IN RESEARCH: consumer framing can obscure the boundaries of what the underlying research evidence actually supports. WHAT TO VERIFY: whether a given source distinguishes laboratory/experimental findings from consumer-use claims, and avoid sources that don't. HOW VERACUE DOCUMENTATION ADDRESSES IT: this page is written exclusively for a laboratory research audience and does not include consumer-use framing."
+      },
+      {
+        "heading": "Problem: Difficulty Evaluating a Research Peptide Supplier Generally",
+        "body": "THE PROBLEM: with limited standardization across suppliers, researchers often lack a consistent framework for comparing documentation quality. WHY IT MATTERS IN RESEARCH: inconsistent supplier standards make it harder to select materials appropriate for a given study's rigor requirements. WHAT TO VERIFY: a documented, stated testing standard (method, threshold, and testing lab) applied consistently across a supplier's catalog, not just claimed for the specific product being viewed. HOW VERACUE DOCUMENTATION ADDRESSES IT: Veracue publishes a stated site-wide testing standard covering its confirmed catalog; whether this listing's Selank material has been tested to that standard remains to be confirmed."
+      },
+      {
+        "heading": "Problem: Missing Documentation for Laboratory Procurement",
+        "body": "THE PROBLEM: institutional or laboratory purchasing processes often require documentation beyond a product description \u2014 COA, safety data, sourcing information \u2014 before a material can be approved for use. WHY IT MATTERS IN RESEARCH: incomplete documentation can delay or block procurement approval regardless of the material's actual quality. WHAT TO VERIFY: whether the requested documentation set is available on request, and in what format. HOW VERACUE DOCUMENTATION ADDRESSES IT: [VERIFY WHAT DOCUMENTATION PACKAGE IS AVAILABLE ON REQUEST FOR THIS LISTING]."
+      },
+      {
+        "heading": "A Note on Search Terms Referencing Human Use",
+        "body": "Searches referencing dosage, administration, or personal use of Selank are common, and it's worth addressing that directly rather than ignoring it. For a Research Use Only product, Veracue does not provide human dosing, administration, or usage guidance of any kind; researchers determine experimental concentrations and protocols through their own validated study design, not through supplier-provided instructions. This page focuses exclusively on molecular identity, published research context, and analytical documentation."
+      }
+    ],
+    "tables": [
+      {
+        "title": "Selank at a Glance",
+        "rows": [
+          {
+            "field": "Compound",
+            "value": "Selank (synthetic heptapeptide)"
+          },
+          {
+            "field": "Sequence",
+            "value": "Thr-Lys-Pro-Arg-Pro-Gly-Pro"
+          },
+          {
+            "field": "Approx. molecular weight",
+            "value": "~751 g/mol"
+          },
+          {
+            "field": "Veracue amount",
+            "value": "[VERIFY]"
+          },
+          {
+            "field": "Veracue purity",
+            "value": "[VERIFY]"
+          },
+          {
+            "field": "Veracue COA",
+            "value": "[VERIFY]"
+          },
+          {
+            "field": "Research designation",
+            "value": "Research Use Only"
+          }
+        ]
+      },
+      {
+        "title": "What a COA Tells You",
+        "rows": [
+          {
+            "field": "Lot/batch number",
+            "tells_you": "Which specific manufacturing run the result applies to"
+          },
+          {
+            "field": "HPLC result",
+            "tells_you": "Chromatographic purity \u2014 proportion resolving as a single clean peak"
+          },
+          {
+            "field": "Mass spectrometry result",
+            "tells_you": "Whether measured mass is consistent with Selank's theoretical mass (~751 g/mol)"
+          },
+          {
+            "field": "Testing lab and date",
+            "tells_you": "Who performed the test and how current it is"
+          }
+        ]
+      },
+      {
+        "title": "Documented vs. Not Yet Verified for the Veracue Product",
+        "rows": [
+          {
+            "documented": "Selank's amino acid sequence and molecular weight",
+            "not_yet_verified": "Whether Veracue currently offers Selank as a live SKU"
+          },
+          {
+            "documented": "General classification as a tuftsin-structural-analog peptide",
+            "not_yet_verified": "Purity and identity test results for any Veracue Selank lot"
+          },
+          {
+            "documented": "Veracue's site-wide HPLC/MS testing standard",
+            "not_yet_verified": "Whether a Selank-specific lot has been tested to it"
+          },
+          {
+            "documented": "N/A",
+            "not_yet_verified": "Lot number, testing lab, test date, COA link, storage conditions, price, availability"
+          }
+        ]
+      },
+      {
+        "title": "Research Peptide Evaluation Checklist",
+        "rows": [
+          {
+            "item": "Exact product identity and labeled amount",
+            "status": "Check against listing"
+          },
+          {
+            "item": "Lot-specific COA (not generic)",
+            "status": "[VERIFY]"
+          },
+          {
+            "item": "HPLC result",
+            "status": "[VERIFY]"
+          },
+          {
+            "item": "Mass spectrometry identity result",
+            "status": "[VERIFY]"
+          },
+          {
+            "item": "Storage/handling conditions stated",
+            "status": "[VERIFY]"
+          },
+          {
+            "item": "Explicit Research Use Only designation",
+            "status": "Confirmed, site-wide"
+          }
+        ]
+      }
+    ],
+    "approx_word_count_core_content_excluding_faq": 2099
+  },
+  "F_faqs": [
+    {
+      "q": "What is Selank?",
+      "a": "Selank is a synthetic peptide studied in laboratory research, classified as a heptapeptide with the sequence Thr-Lys-Pro-Arg-Pro-Gly-Pro."
+    },
+    {
+      "q": "What is Selank peptide?",
+      "a": "See above \u2014 'Selank' and 'Selank peptide' refer to the same synthetic heptapeptide research compound."
+    },
+    {
+      "q": "What is the molecular identity of Selank?",
+      "a": "A heptapeptide with an approximate molecular weight of 751 g/mol, structurally classified as an analog of tuftsin."
+    },
+    {
+      "q": "What is the Selank peptide sequence?",
+      "a": "Thr-Lys-Pro-Arg-Pro-Gly-Pro."
+    },
+    {
+      "q": "What is Selank studied for in laboratory research?",
+      "a": "Published research has examined Selank in relation to GABA-A receptor binding, enkephalin-degrading enzyme activity, and BDNF expression, primarily in cell-based and animal research models. This describes research areas, not outcomes."
+    },
+    {
+      "q": "How do researchers verify Selank identity?",
+      "a": "Through mass spectrometry, comparing a sample's measured molecular mass against Selank's known theoretical mass, ideally tied to a specific lot number."
+    },
+    {
+      "q": "What does HPLC tell you about Selank?",
+      "a": "It characterizes chromatographic purity \u2014 the proportion of a sample resolving as a single, clean peak, distinct from impurities."
+    },
+    {
+      "q": "What does mass spectrometry tell you?",
+      "a": "It evaluates whether a sample's measured molecular mass is consistent with Selank's theoretical mass, which is a separate question from purity."
+    },
+    {
+      "q": "What is a Selank COA?",
+      "a": "A certificate of analysis documenting the testing results \u2014 HPLC and mass spectrometry \u2014 for one specific manufacturing lot."
+    },
+    {
+      "q": "Why does lot-specific testing matter?",
+      "a": "Because a certificate tied to a different lot than the one physically received doesn't confirm the material in hand; matching lot numbers is what makes a COA meaningful."
+    },
+    {
+      "q": "What is the difference between peptide purity and identity?",
+      "a": "Purity describes how clean a sample is relative to impurities; identity confirms the sample is actually the intended molecule. A complete analytical picture reports both."
+    },
+    {
+      "q": "Does Veracue provide a Selank COA?",
+      "a": "Not currently on file in Veracue's published certificate archive. [ADD VERIFIED SELANK COA LINK]"
+    },
+    {
+      "q": "What does Research Use Only mean?",
+      "a": "It means the material is intended strictly for laboratory research, scientific investigation, and analytical characterization \u2014 not for human or veterinary use, and not evaluated by the FDA for safety or efficacy."
+    },
+    {
+      "q": "Can Selank research findings be treated as evidence for a commercial research product?",
+      "a": "No. Published findings describe results under specific experimental conditions; they do not confirm the identity, purity, or documentation status of any individual commercial material, including Veracue's."
+    },
+    {
+      "q": "How should researchers evaluate a Selank supplier?",
+      "a": "By reviewing lot-specific COA documentation, confirming both HPLC and mass spectrometry results, checking stated storage conditions, and confirming a consistent, named third-party testing standard."
+    },
+    {
+      "q": "How should a Selank research material be documented?",
+      "a": "With a lot number matching the physical vial, a dated COA from a named testing laboratory, and reported HPLC and mass spectrometry results referencing Selank's known specification."
+    },
+    {
+      "q": "Does Veracue provide dosing or usage guidance for Selank?",
+      "a": "No. As a Research Use Only product, Veracue does not provide human dosing, administration, or usage guidance of any kind. Researchers determine experimental parameters through their own validated study design."
+    }
+  ],
+  "G_internal_linking_plan": [
+    {
+      "url": "/shop",
+      "anchor_text": "full research catalog",
+      "placement": "Breadcrumb and footer",
+      "purpose": "Confirmed, existing page; routes researchers to the broader catalog"
+    },
+    {
+      "url": "/certificates",
+      "anchor_text": "COA archive",
+      "placement": "Hero CTA and 'How to Evaluate a Selank COA'",
+      "purpose": "Confirmed page; shows Veracue's testing standard while Selank-specific data is pending"
+    },
+    {
+      "url": "/faq",
+      "anchor_text": "Research Use Only FAQ",
+      "placement": "RUO notice in hero",
+      "purpose": "Confirmed page; reinforces RUO positioning"
+    },
+    {
+      "url": "/about-us",
+      "anchor_text": "Veracue's analytical standards",
+      "placement": "'Analytical Characterization' section",
+      "purpose": "Confirmed page describing site-wide testing standard"
+    },
+    {
+      "url": "/contact-us",
+      "anchor_text": "request documentation",
+      "placement": "Hero CTA and 'Missing Documentation for Laboratory Procurement' section",
+      "purpose": "Confirmed page; direct path to request data not yet published"
+    }
+  ],
+  "H_image_seo": {
+    "note": "No Selank-specific product image found on the live site at time of writing.",
+    "recommendation": "A neutral product/vial photograph consistent with Veracue's existing style (e.g., lyophilized vial on a plain or lab-adjacent background) is recommended, with no lifestyle, administration, or benefit-oriented imagery.",
+    "recommended_alt_text": "Veracue Selank research peptide vial",
+    "suggested_filename": "veracue-selank-[amount]-research-vial.webp",
+    "title": "Veracue Selank",
+    "caption_if_used": "Selank \u2014 Research Use Only"
+  },
+  "I_json_ld_schema": {
+    "note": "Product schema omits price, availability, SKU, MPN, GTIN, and rating/review markup \u2014 none confirmed. Offer schema is included only as a placeholder structure, to be populated solely once price and availability are verified. FAQPage schema is safe to implement now.",
+    "BreadcrumbList": {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Shop",
+          "item": "https://veracue-peptides.vercel.app/shop"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Selank",
+          "item": "https://veracue-peptides.vercel.app/product/selank"
+        }
+      ]
+    },
+    "Product": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Selank",
+      "description": "Research Use Only synthetic heptapeptide intended for laboratory research. [EXPAND WITH VERACUE-SPECIFIC AMOUNT/FORM ONCE CONFIRMED]",
+      "sku": "[VERIFY \u2014 DO NOT FABRICATE]",
+      "brand": {
+        "@type": "Brand",
+        "name": "Veracue"
+      },
+      "offers": "[OMIT ENTIRELY UNTIL PRICE AND AVAILABILITY ARE CONFIRMED \u2014 do not publish with fabricated values]"
+    },
+    "FAQPage": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": "[Generate one Question/acceptedAnswer pair per entry in section F]"
+    }
+  },
+  "J_technical_seo_implementation": [
+    "H1: single instance, 'Veracue Selank'. Each section in E is an H2.",
+    "Canonical: https://veracue-peptides.vercel.app/product/selank once slug is confirmed.",
+    "Robots/indexing: noindex until product-info-panel and testing placeholders are replaced with real data.",
+    "Breadcrumbs: Shop > Selank, matching /product/ghk-cu and /product/ahk-cu conventions.",
+    "Internal links: implement per section G.",
+    "Image: use the recommendation in section H; avoid any lifestyle or administration-suggestive imagery.",
+    "JSON-LD: BreadcrumbList and FAQPage safe to implement now; Product schema's offers field stays omitted until real data exists.",
+    "FAQ implementation: expandable/collapsible pattern matching /shop and /certificates.",
+    "Mobile tables: collapse to stacked key/value pairs below ~480px given the number of '[VERIFY]' cells.",
+    "Semantic HTML: wrap the product info panel in a <dl> for field/value pairs."
+  ],
+  "K_final_ruo_compliance_audit": [
+    "[x] Product presented strictly as Research Use Only throughout",
+    "[x] No human dosage, dose ranges, or administration guidance anywhere on the page",
+    "[x] No nasal spray or injection instructions",
+    "[x] No reconstitution-for-human-use instructions",
+    "[x] No treatment, patient-suitability, or medical-advice language",
+    "[x] No consumer-wellness, biohacking, cognitive-enhancement, mood, or sleep framing",
+    "[x] No pharmaceutical-approval selling angle \u2014 Russian regulatory status and clinical trial detail from the prior draft removed, replaced with a single generic evidence-boundary statement",
+    "[x] Human studies not cited or used as product-selling claims (Zozulya/Uchakina references removed from this version)",
+    "[x] Selank's molecular facts (sequence, MW) kept clearly separate from Veracue-specific product facts (purity, identity result, COA, availability) \u2014 see section 'Documented vs. Not Yet Verified'",
+    "[x] Dosage/spray/administration-related keywords addressed only through a single non-instructional clarification paragraph, not as headings with real guidance",
+    "[ ] Confirm final published word count against the live page once placeholders are replaced (current draft: see approx_word_count_core_content_excluding_faq in section E)",
+    "[ ] No fabricated COA, lab results, storage claims, price, SKU, or availability \u2014 confirm no drift when placeholders are filled in by the editor",
+    "[ ] Schema populated only with confirmed data before publish",
+    "[ ] Page moved from noindex/draft to indexable only after all [VERIFY]/[ADD] placeholders are resolved"
+  ]
+}

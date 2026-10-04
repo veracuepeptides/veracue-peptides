@@ -191,7 +191,7 @@ export function OrderDetailClient({ order }: OrderDetailProps) {
                 const title = product.title || product.name || t('unknownProduct')
                 const price = (typeof item.price === 'number' ? item.price : (product.basePrice || product.price || 0))
                 let displayVariant = item.variant || t('standardVariant');
-                let imageUrl = product.images?.[0]?.image?.url || product.images?.[0]?.url || '/veracue-images/veracue-research-grade-50mg-studio-portrait.png'
+                let imageUrl = product.images?.[0]?.image?.url || product.images?.[0]?.url || '/veracue-images/veracue-research-grade-studio-portrait.webp'
 
                 if (product?.variants?.length) {
                   const matchedVariant = product.variants.find((v: any) => v.sku === item.variant || (item.variant && item.variant.includes(v.sku)))

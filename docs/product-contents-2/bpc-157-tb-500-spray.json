@@ -1,0 +1,421 @@
+{
+  "seoMetadata": {
+    "seoTitle": "BPC-157 / TB-500 Spray | Research Peptide | Veracue",
+    "metaDescription": "Molecular identity, TB-500 nomenclature, research context, spray-format notes, and COA guidance for Veracue's BPC-157 / TB-500 Spray. Research Use Only.",
+    "canonicalUrl": "https://veracue-peptides.vercel.app/product/bpc-157-tb-500-spray",
+    "primaryKeyword": "BPC-157 TB-500 Spray",
+    "secondaryKeywords": [
+      "BPC-157 peptide",
+      "TB-500 peptide",
+      "BPC-157 and TB-500",
+      "BPC-157 TB-500",
+      "BPC-157 spray",
+      "TB-500 spray",
+      "BPC-157 research",
+      "TB-500 research",
+      "BPC-157 COA",
+      "TB-500 COA",
+      "BPC-157 sequence",
+      "TB-500 sequence",
+      "BPC-157 molecular weight",
+      "TB-500 molecular weight",
+      "BPC-157 benefits",
+      "TB-500 benefits",
+      "what is BPC-157",
+      "what is TB-500"
+    ]
+  },
+  "hero": {
+    "eyebrow": "Research Use Only",
+    "h1": "BPC-157 / TB-500 Spray",
+    "subtitle": "Veracue's BPC-157 / TB-500 Spray brings together two of the most-searched names in peptide research in a single spray-dispensed product. BPC-157 has a clearly documented sequence and reference identity. TB-500 is different — it's a market name used inconsistently across suppliers, sometimes for a short thymosin beta-4 fragment and sometimes for material described using full-length thymosin beta-4 data. This page walks through what's actually established about each compound, what the published research does and doesn't show, and how to read this product's documentation once it's published. It does not include dosing, administration, or treatment guidance — this is a Research Use Only material, intended for laboratory and analytical work."
+  },
+  "aeoDirectAnswer": {
+    "question": "What is Veracue's BPC-157 / TB-500 Spray?",
+    "answer": "It's a Research Use Only material that pairs two named research subjects in one spray-dispensed format: BPC-157, a peptide with an established sequence and reference data, and material marketed under the name \"TB-500,\" which suppliers apply inconsistently across the industry. \"Spray\" describes how the product is dispensed, not a confirmed route of administration. Composition, concentration, and analytical results for this specific product come from Veracue's own documentation, not from general literature on either compound."
+  },
+  "productSnapshot": {
+    "intro": "The fields below reflect what's currently confirmed about this product. Where Veracue hasn't published first-party documentation for a field, that's stated directly rather than filled in from general BPC-157 or TB-500 market listings.",
+    "fields": {
+      "Format": "Spray (dispensing format; route of administration not established by this page)",
+      "Research subjects": "BPC-157 and material marketed under the name \"TB-500\"",
+      "Intended use": "Laboratory research use only — not for human or veterinary use",
+      "Concentration / fill volume": "Not publicly specified in the current Veracue product documentation.",
+      "Carrier / excipients": "Not publicly specified in the current Veracue product documentation.",
+      "TB-500 identity confirmation": "Not publicly specified in the current Veracue product documentation.",
+      "Purity (HPLC)": "Not publicly specified in the current Veracue product documentation.",
+      "Lot / COA": "Not publicly specified in the current Veracue product documentation.",
+      "Storage conditions": "Not publicly specified in the current Veracue product documentation."
+    }
+  },
+  "bpc157MolecularIdentity": {
+    "heading": "BPC-157: A Well-Documented Reference Molecule",
+    "body": "BPC-157 is a synthetic pentadecapeptide — a chain of 15 amino acids — with a well-established identity: the sequence Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val (GEPPPGKPADDAGLV), CAS number 137525-51-0, PubChem CID 9941957, molecular formula C62H98N16O22, and an average molecular weight of approximately 1,419.5 g/mol. These are reference characteristics of the molecule as recorded in chemical databases — the benchmark a batch's HPLC and mass-spectrometry results are compared against. On their own, they say nothing about the composition, purity, or specification of a particular Veracue lot; that information comes from the product's own analytical documentation."
+  },
+  "tb500Identity": {
+    "heading": "TB-500: A Name That Needs Its Own Verification",
+    "body": "Commercial use of the name \"TB-500\" is not standardized enough to identify a material from the name alone, and that's worth understanding before reading anything else about this product. A commonly cited TB-500 reference is the N-acetylated 7-residue sequence Ac-LKKTETQ, corresponding to residues 17–23 of thymosin beta-4 and running roughly 800–900 g/mol; it was characterized in an anti-doping analytical study (Esposito et al., 2012) as the fragment carrying the actin-binding activity discussed in the broader literature. Other supplier listings instead attach the \"TB-500\" name to the sequence and roughly 4,963 g/mol molecular weight of full-length thymosin beta-4 — a distinct 43-residue protein with its own separate research history. Full-length thymosin beta-4 and the commonly cited Ac-LKKTETQ fragment are chemically distinct, and neither should be assumed from the name alone. The actual identity of any specific TB-500-labeled material — including this one — has to come from its own documentation rather than from the name it's sold under; that confirmation is not yet publicly specified for this product."
+  },
+  "researchEvidence": {
+    "heading": "What the Published Research Actually Studied",
+    "intro": "Both compounds sit almost entirely in preclinical literature at this point, which is worth knowing going in rather than repeating after every finding below. It's more useful to know what to check in a given study: the species and experimental model, the tissue and endpoint measured, the study design, and — especially for TB-500 — which exact sequence or form was actually tested. That last point matters as much as any other, since a finding on full-length thymosin beta-4 doesn't automatically say anything about a short-fragment product, or the reverse.",
+    "bpc157": "BPC-157 research centers on rodent models, most of it from a single Croatian research group. Reported work spans gastrointestinal mucosal integrity, tendon and ligament healing, and vascular and angiogenesis-related markers, with a handful of nervous-system injury models — useful signals within their own experimental context, best read with the checklist above in mind rather than as a general summary of effects.",
+    "tb500": "The thymosin-beta-4 literature splits along the same line as the identity question above. Full-length Tβ4 has been studied for actin-sequestering activity, cell migration, and angiogenesis-related signaling, including some human ophthalmic research, while the shorter Ac-LKKTETQ fragment has a narrower, mostly in-vitro record centered on its actin-binding motif. Findings on one form aren't a substitute for data on the other, and neither describes this specific Veracue product on its own."
+  },
+  "humanEvidenceLimitations": {
+    "heading": "Where Human Evidence Comes From",
+    "body": "The human literature touching on BPC-157 mostly involves earlier compound names — PL 14736 and Bepecin appear in older inflammatory bowel disease research — and those studies shouldn't be treated as direct evidence for a modern, research-grade BPC-157 material; they were conducted under a different compound designation, in a specific patient population, using methods that don't carry over here. On the thymosin beta-4 side, the more substantial human research involves full-length protein formulations in ophthalmic studies, not the shorter fragment commonly sold under the TB-500 name. Neither body of human evidence offers dosing or administration information relevant to this product, and none is implied by referencing it here."
+  },
+  "problemSolutionSections": [
+    {
+      "heading": "1. How do I confirm what BPC-157 and TB-500 actually are?",
+      "body": "It's natural to assume a product name tells you exactly what's in the vial. For BPC-157, that assumption usually holds — the sequence and reference data are well established and consistent across sources. For TB-500, it doesn't, since the name has been applied to more than one molecular entity in the market. The practical move is to treat the product name as something to verify rather than a specification: check the sequence, formula, or mass reported on a lot's own documentation against the reference values on this page, and request that documentation directly if it isn't already published."
+    },
+    {
+      "heading": "2. Why is TB-500's molecular identity harder to verify than BPC-157's?",
+      "body": "BPC-157 was defined early with a consistent sequence, CAS number, and PubChem entry the market has largely converged on. \"TB-500\" grew out of commercial shorthand rather than a formal chemical designation, and different manufacturers have used it for different thymosin-beta-4-related materials — a short synthetic fragment in some cases, full-length protein data in others. Rather than picking a definition and assuming it applies, look for the actual sequence or mass reported for the specific lot in question; the name alone won't settle it."
+    },
+    {
+      "heading": "3. What does BPC-157 research actually show?",
+      "body": "The literature is concentrated in rodent studies, most from a single research group, covering gastrointestinal, tendon, ligament, and vascular models. Reading it well means checking the exact species, model, and endpoint in each paper rather than taking a summary at face value, and holding that information separately from any general claim a listing might make about the compound's effects."
+    },
+    {
+      "heading": "4. What does the thymosin beta-4 literature actually tell us about TB-500?",
+      "body": "Most of the substantive thymosin-beta-4 work — including the human ophthalmic research — was done on the full-length 43-residue protein, not the shorter fragment commonly sold as TB-500. The fragment's own characterization is comparatively limited, centered on its actin-binding motif in vitro. Full-length Tβ4 findings are useful background on the parent biology, but they're not direct evidence for a TB-500-labeled research material unless a specific product's documentation confirms it contains the full-length protein."
+    },
+    {
+      "heading": "5. What does \"BPC-157 and TB-500 benefits\" mean in a research context?",
+      "body": "In scientific literature, \"benefit\" refers to a measured change on a defined endpoint within a specific experimental model — a shift in a tissue marker, a migration-assay result, a healing-time comparison in rodents. It isn't shorthand for a confirmed general effect in humans. The more useful question when researching either compound is which endpoint, in which model, under which conditions was actually reported."
+    },
+    {
+      "heading": "6. Why do so many BPC-157 and TB-500 claims come from preclinical research?",
+      "body": "Neither compound is approved for human therapeutic use, so the available literature is concentrated in animal and in-vitro models rather than controlled human trials. That's a structural feature of where the research currently stands, not a hidden detail. It's worth expecting preclinical data to dominate the literature on both compounds, and weighing conclusions accordingly rather than treating volume of publications as clinical validation."
+    },
+    {
+      "heading": "7. What should I know about BPC-157 and TB-500 tissue-repair research?",
+      "body": "Tissue-repair findings for BPC-157 come mainly from rodent tendon, ligament, and gastrointestinal models, while thymosin-beta-4-related tissue-repair data centers on full-length protein studies in wound and corneal models. The two literatures examine related but distinct biology, so it's worth reviewing each compound's tissue-repair studies on their own terms — species, tissue type, and model — rather than folding them into one narrative."
+    },
+    {
+      "heading": "8. How should I interpret BPC-157, TB-500 and angiogenesis-related research?",
+      "body": "Angiogenesis-related endpoints show up in both the BPC-157 and thymosin-beta-4 literatures, typically as vascular marker changes in rodent or cell-culture models. These findings describe a measured biological signal in a specific system rather than a demonstrated therapeutic angiogenic effect. As with tissue repair, treat BPC-157 and thymosin-beta-4-related angiogenesis findings as separate bodies of evidence connected by a shared area of biology, not as confirmation of one another."
+    },
+    {
+      "heading": "9. How is BPC-157 different from TB-500, KPV, GHK-Cu and other research peptides?",
+      "body": "BPC-157, TB-500-labeled material, KPV, and GHK-Cu are chemically distinct research subjects with separate sequences or structures and separate literatures, even though they're frequently sold alongside each other and discussed in similar contexts. GHK-Cu is a copper-binding tripeptide studied mainly for collagen-related signaling; KPV is a short tripeptide associated with anti-inflammatory signaling models. Grouping compounds under a shared marketing narrative doesn't make their evidence interchangeable — each is worth evaluating on its own documented identity and its own literature."
+    },
+    {
+      "heading": "10. What should I verify on a BPC-157 / TB-500 COA?",
+      "body": "A useful certificate of analysis identifies the lot or batch number, states the identity method used, and reports the observed molecular mass alongside the expected reference mass for the sequence claimed. For TB-500-labeled material, the COA's stated sequence or mass is what actually resolves the identity question raised above — without it, a \"TB-500\" label alone tells you very little. HPLC purity, testing laboratory, and test date are also worth checking for, though not every COA includes every field."
+    },
+    {
+      "heading": "11. How should I interpret BPC-157 / TB-500 mass-spectrometry data?",
+      "body": "A peptide's neutral molecular weight isn't the same number that shows up directly on a mass spectrometer readout — peptides commonly ionize as multiply charged species, and observed mass-to-charge ratios need to be read alongside charge state and any adduct effects before being compared to a reference mass. Close agreement between observed and expected mass supports identity, but mass agreement alone isn't a purity measurement. For TB-500-labeled material specifically, the expected mass depends entirely on which sequence the documentation claims — there's no single \"TB-500 mass\" to check against."
+    },
+    {
+      "heading": "12. What can a Veracue BPC-157 / TB-500 Spray page establish, and what requires lot-specific documentation?",
+      "body": "This page can establish BPC-157's reference identity, explain the nomenclature issue surrounding TB-500, and summarize what the published literature has and hasn't studied. It can't establish this product's concentration, formulation, purity, or which specific TB-500-related sequence, if any, is present — those facts belong to Veracue's own product and lot documentation, and that's the right place to look once it's published, rather than general literature on either compound."
+    }
+  ],
+  "comparisonTable": {
+    "heading": "Related Research Materials: A Neutral Comparison",
+    "note": "This table distinguishes named research materials by molecular identity and general research context. It isn't a ranking, and it doesn't imply that combining materials produces any additional or synergistic effect.",
+    "columns": [
+      "Research material",
+      "Molecular identity",
+      "Main research context",
+      "Evidence type"
+    ],
+    "rows": [
+      {
+        "Research material": "BPC-157",
+        "Molecular identity": "Synthetic 15-residue peptide (GEPPPGKPADDAGLV), CAS 137525-51-0",
+        "Main research context": "GI mucosal integrity, tendon/ligament healing, angiogenesis markers",
+        "Evidence type": "Predominantly rodent preclinical; limited historical human data under other compound names"
+      },
+      {
+        "Research material": "Commonly cited TB-500 reference (Ac-LKKTETQ fragment)",
+        "Molecular identity": "Synthetic 7-residue fragment of thymosin beta-4 (residues 17–23), ~800–900 g/mol",
+        "Main research context": "Actin-binding motif characterization, in-vitro cytoskeletal studies",
+        "Evidence type": "Limited in-vitro/analytical characterization"
+      },
+      {
+        "Research material": "Full-length thymosin beta-4",
+        "Molecular identity": "Naturally occurring 43-residue protein, ~4,963 g/mol",
+        "Main research context": "Actin sequestration, cell migration, angiogenesis, ophthalmic wound healing",
+        "Evidence type": "Preclinical plus some human ophthalmic research"
+      },
+      {
+        "Research material": "KPV",
+        "Molecular identity": "Synthetic tripeptide (Lys-Pro-Val)",
+        "Main research context": "Anti-inflammatory-associated signaling models",
+        "Evidence type": "Preclinical, in-vitro and rodent"
+      },
+      {
+        "Research material": "GHK-Cu",
+        "Molecular identity": "Copper(II)-binding tripeptide complex",
+        "Main research context": "Collagen synthesis, dermal signaling research",
+        "Evidence type": "Preclinical and some ex-vivo/in-vitro human tissue studies"
+      }
+    ],
+    "combinationNote": "BPC-157 and TB-500-labeled material are frequently sold and searched together, but frequent online pairing doesn't itself establish combined evidence or a synergistic effect between the two. No claim of combination efficacy is made on this page."
+  },
+  "sprayFormatClarification": {
+    "heading": "What \"Spray\" Describes — and What It Doesn't",
+    "body": "\"Spray\" on this page refers to the product's physical dispensing mechanism, not a confirmed route of administration. A spray format doesn't, by itself, establish nasal, oral, topical, buccal, sublingual, or inhaled use, and it doesn't establish systemic absorption or bioavailability. This page doesn't provide spray count, frequency, dosing, administration technique, or absorption guidance. Any route-specific claim about this product would need to come from Veracue's own first-party documentation, which isn't currently published for this field."
+  },
+  "coaSection": {
+    "heading": "Reading a BPC-157 / TB-500 Certificate of Analysis",
+    "body": "A well-constructed COA typically includes a lot or batch number, the analytical method used to confirm identity, the sequence or reference identity claimed, expected versus observed molecular mass, HPLC purity, the testing laboratory, and the test date. Not every COA in the market includes every field, and a COA's absence of a field shouldn't be read as proof the product lacks that property — only that the documentation doesn't confirm it. For TB-500-labeled material specifically, the sequence or reference-identity field carries extra weight, since it's the detail that resolves which molecular entity the product actually contains. No public COA for this specific Veracue product is referenced here unless and until one is confirmed."
+  },
+  "massSpectrometrySection": {
+    "heading": "Interpreting Mass Spectrometry Results",
+    "body": "A peptide's neutral molecular weight and its observed electrospray-ionization mass-to-charge (m/z) reading aren't automatically the same figure. Peptides frequently appear as multiply charged ions, and adducts can shift an observed m/z relative to the underlying mass, so charge state has to be accounted for before comparing a result to a reference value. Close agreement between expected and observed mass supports molecular identity, but mass agreement is a separate measurement from purity and doesn't substitute for it. For BPC-157, the reference mass is well established at approximately 1,419.5 g/mol. For TB-500-labeled material, no single reference mass applies — the correct expected value depends entirely on which sequence the product's own documentation claims, whether that's the commonly cited fragment or a full-length identity — and no observed mass for this Veracue product is asserted here."
+  },
+  "whatResearchDoesNotEstablish": {
+    "heading": "What the Current Research Does Not Establish",
+    "points": [
+      "Preclinical, animal-model findings don't automatically establish human efficacy or safety.",
+      "Literature on full-length thymosin beta-4 doesn't automatically validate every product labeled \"TB-500.\"",
+      "A product name doesn't, by itself, prove a specific molecular identity — sequence and mass verification are required.",
+      "A spray dispensing format doesn't establish a delivery route, absorption profile, or bioavailability.",
+      "Reference molecular data describes the compound in general, not the purity or composition of any specific lot.",
+      "This page provides no dosing, administration, or treatment guidance."
+    ]
+  },
+  "ruoCompliance": {
+    "heading": "Research Use Only",
+    "body": "Veracue's BPC-157 / TB-500 Spray is intended solely for laboratory and scientific research use. It's not intended for human administration, veterinary administration, diagnosis, treatment, prevention of disease, cosmetic use, or dietary supplementation. Research Use Only status describes the product's intended market and regulatory positioning; it isn't a determination of safety or a claim of effectiveness for any use. Researchers should consult their own institution's protocols and applicable regulations before working with this material."
+  },
+  "faqs": [
+    {
+      "question": "What is BPC-157?",
+      "answer": "BPC-157 is a synthetic 15-amino-acid peptide (sequence GEPPPGKPADDAGLV, CAS 137525-51-0, C62H98N16O22) studied mainly in rodent preclinical models for gastrointestinal, tendon, and vascular-related endpoints."
+    },
+    {
+      "question": "What is TB-500?",
+      "answer": "TB-500 is a commercial name applied inconsistently across the market — sometimes to a short thymosin-beta-4 fragment commonly cited as Ac-LKKTETQ, sometimes to material described with full-length thymosin beta-4 data. The name alone doesn't confirm which identity a given product contains."
+    },
+    {
+      "question": "Is TB-500 the same as thymosin beta-4?",
+      "answer": "Not necessarily. Full-length thymosin beta-4 is a distinct 43-residue protein. Some \"TB-500\" products reference only a short 7-residue fragment of it. The two are chemically distinct, with separate sequences, masses, and research histories, so they shouldn't be treated as interchangeable."
+    },
+    {
+      "question": "What is the BPC-157 sequence?",
+      "answer": "Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val, commonly written as GEPPPGKPADDAGLV, with a molecular formula of C62H98N16O22 and an average molecular weight of approximately 1,419.5 g/mol."
+    },
+    {
+      "question": "Why is TB-500 identity sometimes difficult to verify?",
+      "answer": "Because \"TB-500\" is a market name rather than a single standardized chemical designation, different suppliers have applied it to different thymosin-beta-4-related materials. Verifying identity means checking the actual sequence or mass reported on a specific lot's documentation."
+    },
+    {
+      "question": "What has BPC-157 been studied for?",
+      "answer": "Preclinical rodent research has examined BPC-157 in models related to gastrointestinal mucosal integrity, tendon and ligament healing, and vascular/angiogenesis-related markers — preclinical signals, not confirmed human clinical outcomes."
+    },
+    {
+      "question": "What has TB-500 or thymosin beta-4 been studied for?",
+      "answer": "Full-length thymosin beta-4 has been studied for actin-sequestering activity, cell migration, and angiogenesis-related signaling, including some human ophthalmic research. The commonly cited TB-500 fragment has narrower, largely in-vitro characterization."
+    },
+    {
+      "question": "What does \"BPC-157 and TB-500 benefits\" mean?",
+      "answer": "In research literature, \"benefit\" refers to a measured change on a specific endpoint within a defined experimental model — not a confirmed general effect in humans. Each reported finding should be read in the context of its own study design."
+    },
+    {
+      "question": "Is BPC-157 the same as KPV or GHK-Cu?",
+      "answer": "No. BPC-157, KPV, and GHK-Cu are chemically distinct peptides with separate sequences or structures and separate research literatures, even though they're often sold and discussed together."
+    },
+    {
+      "question": "What should a BPC-157 / TB-500 COA contain?",
+      "answer": "Useful fields include the lot number, identity-testing method, sequence or reference identity, expected versus observed molecular mass, HPLC purity, testing laboratory, and test date, though not every COA includes every field."
+    },
+    {
+      "question": "How should BPC-157 / TB-500 mass-spectrometry results be interpreted?",
+      "answer": "Observed m/z values need to be read alongside charge state and possible adducts before comparing to a reference mass. Mass agreement supports identity but isn't itself a purity measurement, and no single reference mass applies to all TB-500-labeled material."
+    },
+    {
+      "question": "What does the Veracue BPC-157 / TB-500 Spray page establish?",
+      "answer": "This page establishes BPC-157's reference identity and clarifies the TB-500 nomenclature issue. It doesn't establish this product's concentration, formulation, or purity — those require Veracue's own lot-specific documentation."
+    }
+  ],
+  "references": [
+    "Sikiric P, et al. Pentadecapeptide BPC 157 and its effects in gastrointestinal and tissue-repair rodent models (various publications).",
+    "Esposito S, Deventer K, Goeman J, Van der Eycken J, Van Eenoo P. Synthesis and characterization of the N-terminal acetylated 17-23 fragment of thymosin beta 4 identified in TB-500. Drug Test Anal. 2012;4(9):733-738.",
+    "Sosne G, et al. Clinical research on full-length thymosin beta-4 formulations in ophthalmic wound-healing contexts.",
+    "PubChem Compound Summary for CID 9941957 (BPC-157).",
+    "Reference chemical database entries for CAS 137525-51-0 (BPC-157) and thymosin beta-4-related identifiers."
+  ],
+  "internalLinks": [
+    {
+      "label": "Shop All Peptides",
+      "url": "/shop"
+    },
+    {
+      "label": "Certificates (COA)",
+      "url": "/certificates"
+    },
+    {
+      "label": "Help & FAQ",
+      "url": "/faq"
+    },
+    {
+      "label": "Contact Us",
+      "url": "/contact-us"
+    },
+    {
+      "label": "About Veracue",
+      "url": "/about-us"
+    },
+    {
+      "label": "Medical Disclaimer",
+      "url": "/medical-disclaimer"
+    },
+    {
+      "label": "Terms & Conditions",
+      "url": "/terms-and-conditions"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://veracue-peptides.vercel.app/#website",
+        "url": "https://veracue-peptides.vercel.app/",
+        "name": "Veracue Peptides"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://veracue-peptides.vercel.app/product/bpc-157-tb-500-spray#webpage",
+        "url": "https://veracue-peptides.vercel.app/product/bpc-157-tb-500-spray",
+        "name": "BPC-157 / TB-500 Spray | Research Peptide | Veracue",
+        "description": "Molecular identity, TB-500 nomenclature, research context, spray-format notes, and COA guidance for Veracue's BPC-157 / TB-500 Spray. Research Use Only.",
+        "isPartOf": {
+          "@id": "https://veracue-peptides.vercel.app/#website"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://veracue-peptides.vercel.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Shop",
+            "item": "https://veracue-peptides.vercel.app/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "BPC-157 / TB-500 Spray",
+            "item": "https://veracue-peptides.vercel.app/product/bpc-157-tb-500-spray"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is BPC-157?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "BPC-157 is a synthetic 15-amino-acid peptide (sequence GEPPPGKPADDAGLV, CAS 137525-51-0, C62H98N16O22) studied mainly in rodent preclinical models for gastrointestinal, tendon, and vascular-related endpoints."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is TB-500?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "TB-500 is a commercial name applied inconsistently across the market — sometimes to a short thymosin-beta-4 fragment commonly cited as Ac-LKKTETQ, sometimes to material described with full-length thymosin beta-4 data. The name alone doesn't confirm which identity a given product contains."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is TB-500 the same as thymosin beta-4?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not necessarily. Full-length thymosin beta-4 is a distinct 43-residue protein. Some \"TB-500\" products reference only a short 7-residue fragment of it. The two are chemically distinct, with separate sequences, masses, and research histories, so they shouldn't be treated as interchangeable."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the BPC-157 sequence?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val, commonly written as GEPPPGKPADDAGLV, with a molecular formula of C62H98N16O22 and an average molecular weight of approximately 1,419.5 g/mol."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is TB-500 identity sometimes difficult to verify?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Because \"TB-500\" is a market name rather than a single standardized chemical designation, different suppliers have applied it to different thymosin-beta-4-related materials. Verifying identity means checking the actual sequence or mass reported on a specific lot's documentation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What has BPC-157 been studied for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Preclinical rodent research has examined BPC-157 in models related to gastrointestinal mucosal integrity, tendon and ligament healing, and vascular/angiogenesis-related markers — preclinical signals, not confirmed human clinical outcomes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What has TB-500 or thymosin beta-4 been studied for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Full-length thymosin beta-4 has been studied for actin-sequestering activity, cell migration, and angiogenesis-related signaling, including some human ophthalmic research. The commonly cited TB-500 fragment has narrower, largely in-vitro characterization."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does \"BPC-157 and TB-500 benefits\" mean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In research literature, \"benefit\" refers to a measured change on a specific endpoint within a defined experimental model — not a confirmed general effect in humans. Each reported finding should be read in the context of its own study design."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is BPC-157 the same as KPV or GHK-Cu?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. BPC-157, KPV, and GHK-Cu are chemically distinct peptides with separate sequences or structures and separate research literatures, even though they're often sold and discussed together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should a BPC-157 / TB-500 COA contain?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Useful fields include the lot number, identity-testing method, sequence or reference identity, expected versus observed molecular mass, HPLC purity, testing laboratory, and test date, though not every COA includes every field."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How should BPC-157 / TB-500 mass-spectrometry results be interpreted?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Observed m/z values need to be read alongside charge state and possible adducts before comparing to a reference mass. Mass agreement supports identity but isn't itself a purity measurement, and no single reference mass applies to all TB-500-labeled material."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does the Veracue BPC-157 / TB-500 Spray page establish?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This page establishes BPC-157's reference identity and clarifies the TB-500 nomenclature issue. It doesn't establish this product's concentration, formulation, or purity — those require Veracue's own lot-specific documentation."
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

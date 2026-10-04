@@ -6,8 +6,37 @@ import {
 } from '@payloadcms/richtext-lexical/react'
 import { CalloutBox } from './CalloutBox'
 
-const jsxConverters: JSXConvertersFunction = ({ defaultConverters }) => ({
+function nodeText(node: any): string {
+  if (!node) return ''
+  if (typeof node.text === 'string') return node.text
+  if (Array.isArray(node.children)) return node.children.map(nodeText).join('')
+  return ''
+}
+
+// Same slug rules as TableOfContents so ids match, but generated at render time
+// (server HTML) rather than after hydration.
+const slugifyHeading = (text: string) =>
+  text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '')
+
+const createConverters = (): JSXConvertersFunction => {
+  const seen = new Set<string>()
+  return ({ defaultConverters }) => ({
   ...defaultConverters,
+  heading: ({ node, nodesToJSX }) => {
+    const Tag = (node as any).tag as 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
+    const base = slugifyHeading(nodeText(node))
+    let id: string | undefined
+    if (base) {
+      id = base
+      let counter = 1
+      while (seen.has(id)) {
+        id = `${base}-${counter}`
+        counter++
+      }
+      seen.add(id)
+    }
+    return <Tag id={id}>{nodesToJSX({ nodes: node.children })}</Tag>
+  },
   upload: ({ node }) => {
     const value = node.value as any
     if (!value?.url) return null
@@ -62,9 +91,10 @@ const jsxConverters: JSXConvertersFunction = ({ defaultConverters }) => ({
       </Tag>
     )
   },
-})
+  })
+}
 
 export function PostRichText({ content }: { content: any }) {
   if (!content) return null
-  return <RichText data={content} converters={jsxConverters} className="prose-article" />
+  return <RichText data={content} converters={createConverters()} className="prose-article" />
 }

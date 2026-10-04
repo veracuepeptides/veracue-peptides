@@ -104,7 +104,7 @@ export default function MedicalDisclaimerPage() {
             <span>Analytical Purity &amp; Identity Documentation</span>
           </div>
           <p className="text-xs sm:text-[13px] text-[#20221c]/75 leading-relaxed">
-            Every batch distributed by Veracue Peptides LLC ships with a public, third-party HPLC and MS analytical report. These reports confirm identity and purity. They don't imply or constitute regulatory authorization for human or veterinary use.
+            Every batch distributed by Veracue Peptides LLC ships with a public HPLC and MS analytical report. These reports confirm identity and purity. They don't imply or constitute regulatory authorization for human or veterinary use.
           </p>
         </div>
       </LegalSection>

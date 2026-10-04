@@ -1,0 +1,890 @@
+{
+  "productPage": {
+    "slug": "/product/ss-31-spray",
+    "productName": "SS-31 Spray",
+    "category": "Mitochondrial & Cellular Energy",
+    "eyebrow": "Research Use Only",
+    "h1": "SS-31 Spray",
+    "subtitle": "A spray-format Research Use Only listing of SS-31 (elamipretide), a mitochondria-targeted tetrapeptide studied for its interaction with cardiolipin across cellular, animal, and human research.",
+    "heroSection": {
+      "eyebrow": "Research Use Only",
+      "h1": "SS-31 Spray",
+      "subtitle": "A spray-format Research Use Only listing of SS-31 (elamipretide), a mitochondria-targeted tetrapeptide studied for its interaction with cardiolipin across cellular, animal, and human research.",
+      "heroParagraph": "SS-31 is a synthetic tetrapeptide developed to concentrate in the inner mitochondrial membrane, where it has been studied for its interaction with the phospholipid cardiolipin. Under the name elamipretide, the same molecule has been investigated in laboratory models and in human clinical trials spanning cardiac, skeletal muscle, renal, and ocular research. This listing covers SS-31 in a spray-format packaging for laboratory and research use only; it is not intended for human or veterinary use, and Veracue does not represent the spray format as establishing any particular route, concentration, or bioavailability.",
+      "ctas": [
+        {
+          "label": "View Research Catalogue",
+          "url": "/shop"
+        },
+        {
+          "label": "Contact Our Team",
+          "url": "/contact-us"
+        }
+      ]
+    },
+    "quickResearchSummary": {
+      "compoundFacts": {
+        "identity": "SS-31 is the laboratory designation for the synthetic tetrapeptide also developed under the name elamipretide (MTP-131).",
+        "aliases": [
+          "SS-31",
+          "elamipretide",
+          "MTP-131",
+          "Bendavia"
+        ],
+        "peptideClass": "Synthetic aromatic-cationic tetrapeptide (mitochondria-targeted, cell-penetrating peptide)",
+        "residueCount": "4 residues",
+        "sequence": "D-Arg-Dmt-Lys-Phe-NH2 (D-arginine, 2',6'-dimethyltyrosine, L-lysine, L-phenylalanine-amide)",
+        "mitochondrialResearchFocus": "Studied for selective accumulation in the inner mitochondrial membrane and interaction with the phospholipid cardiolipin, with downstream research interest in mitochondrial bioenergetics, membrane integrity, and oxidative stress",
+        "evidenceScope": "Evidence spans biophysical/structural studies, cell culture models, animal disease models, and multiple human clinical trials conducted under the elamipretide development program",
+        "humanResearchStatus": "Elamipretide has been evaluated in human trials for Barth syndrome, heart failure with reduced ejection fraction, primary mitochondrial myopathy, and dry age-related macular degeneration, with mixed results across indications (see Section 6 and the evidence table below)"
+      },
+      "productFacts": {
+        "sprayFormatStatus": "Not publicly specified for this Spray listing — Veracue has not published route, concentration, dose-per-spray, or formulation data for this product",
+        "ruoStatus": "Strictly Research Use Only; not for human or veterinary use, ingestion, injection, or any form of administration"
+      }
+    },
+    "quickAnswers": [
+      {
+        "question": "What is SS-31?",
+        "answer": "SS-31 is a synthetic tetrapeptide designed to concentrate in the inner mitochondrial membrane, where research has focused on its interaction with the phospholipid cardiolipin. It is the same molecule developed pharmaceutically under the name elamipretide."
+      },
+      {
+        "question": "What is SS-31 peptide?",
+        "answer": "As a peptide, SS-31 is a short chain of four amino acid residues — D-arginine, 2',6'-dimethyltyrosine, lysine, and a phenylalanine amide — arranged to alternate positive charge and aromatic bulk, a design intended to help the molecule cross membranes and accumulate in mitochondria."
+      },
+      {
+        "question": "Is SS-31 the same as elamipretide?",
+        "answer": "Yes. SS-31 is the original research designation for the compound; elamipretide is the International Nonproprietary Name used once the molecule entered pharmaceutical development (also referenced in the literature as MTP-131 or Bendavia). They refer to the same tetrapeptide structure."
+      },
+      {
+        "question": "What is SS-31 made of?",
+        "answer": "SS-31 is composed of four linked amino acid residues: D-arginine, 2',6'-dimethyltyrosine (Dmt), L-lysine, and a C-terminal phenylalanine amide, giving it the molecular formula C32H49N9O5 and a molecular weight of approximately 639.8 g/mol."
+      },
+      {
+        "question": "What is the SS-31 sequence?",
+        "answer": "The sequence is D-Arg-Dmt-Lys-Phe-NH2, using the non-standard residue 2',6'-dimethyltyrosine (Dmt) in place of a conventional tyrosine."
+      },
+      {
+        "question": "Why is SS-31 studied in mitochondrial research?",
+        "answer": "SS-31 is studied because its alternating charged and aromatic residues allow it to concentrate in the inner mitochondrial membrane and associate with cardiolipin, a phospholipid central to how the electron transport chain is organized. Researchers have used this property to investigate mitochondrial membrane stability, bioenergetics, and oxidative stress across multiple disease models."
+      },
+      {
+        "question": "What does SS-31 research show?",
+        "answer": "Preclinical work has reported that SS-31 binds cardiolipin-containing membranes, influences membrane surface charge, and supports mitochondrial quality-control processes like mitophagy in cell models. Animal studies report reduced oxidative stress and tissue-specific protective effects. Human trials have produced mixed results — some positive, some null — depending on the population and endpoint studied."
+      },
+      {
+        "question": "What human studies have investigated SS-31?",
+        "answer": "Elamipretide has been evaluated in randomized, placebo-controlled human trials in Barth syndrome (TAZPOWER), heart failure with reduced ejection fraction (PROGRESS-HF and an earlier infusion study), primary mitochondrial myopathy (MMPOWER-3), and dry age-related macular degeneration (the ReCLAIM program)."
+      },
+      {
+        "question": "What does \"SS-31 dosage\" mean in research?",
+        "answer": "In published trials, \"dosage\" refers to the specific amount and route used in that study protocol — for example, 40 mg administered subcutaneously once daily in the Barth syndrome and mitochondrial myopathy trials. This is study-specific experimental information, not a usage recommendation, and it does not describe this Veracue Spray listing, which has no established route, concentration, or dosing of its own."
+      },
+      {
+        "question": "What are the reported SS-31 benefits in research?",
+        "answer": "Rather than a single \"benefit,\" the literature reports specific measured outcomes in specific models: improved six-minute walk test distance and cardiac volumes in a small long-term Barth syndrome cohort, reduced plaque area and oxidative markers in an atherosclerosis mouse model, and improved retinal ellipsoid-zone preservation in one AMD trial — alongside several trials, including the larger heart failure and mitochondrial myopathy studies, that did not meet their primary endpoints."
+      },
+      {
+        "question": "What is known about SS-31 safety?",
+        "answer": "Across human trials, elamipretide has generally been reported as tolerable, with injection-site reactions (pain, erythema, pruritus, bruising) as the most frequently reported adverse events. This tolerability profile applies to the clinical-trial dosing regimens studied and has not been established for this Spray-format research listing."
+      },
+      {
+        "question": "What does SS-31 Spray mean?",
+        "answer": "For this Veracue listing, \"Spray\" describes a product-format and dispensing descriptor only. It does not imply a nasal, oral, sublingual, topical, or any other specific route of delivery unless Veracue publishes first-party documentation establishing that characteristic."
+      }
+    ],
+    "productIdentity": {
+      "commonName": "SS-31",
+      "alternateNames": [
+        "Elamipretide",
+        "MTP-131",
+        "Bendavia"
+      ],
+      "scientificName": "D-Arg-2',6'-dimethyltyrosine-Lys-Phe-NH2",
+      "classification": "Synthetic aromatic-cationic tetrapeptide; mitochondria-targeted, cell-penetrating peptide",
+      "sequence": "D-Arg-Dmt-Lys-Phe-NH2",
+      "residueCount": "4",
+      "molecularFormula": "C32H49N9O5",
+      "molecularWeight": "639.79 g/mol (approx. 639.8 g/mol)",
+      "CAS": "736992-21-5",
+      "structuralDescription": "A four-residue peptide alternating a cationic residue (D-arginine, lysine) with an aromatic residue (2',6'-dimethyltyrosine, phenylalanine), amidated at the C-terminus. The alternating charge/aromatic pattern is the structural basis proposed for its membrane-partitioning and cardiolipin-binding behavior.",
+      "SS31ElamipretideRelationship": "SS-31 and elamipretide refer to the same tetrapeptide. \"SS-31\" is the designation used in the compound's original academic research literature; \"elamipretide\" is the International Nonproprietary Name adopted once the molecule (developed by Stealth BioTherapeutics) entered pharmaceutical development and clinical trials. Both names appear throughout the scientific literature, often in the same paper, and are not competing or unrelated substances.",
+      "researchAssociation": "Mitochondrial membrane research, cardiolipin biology, bioenergetics, and oxidative-stress models; clinically investigated in Barth syndrome, heart failure, primary mitochondrial myopathy, and dry age-related macular degeneration"
+    },
+    "researchSections": [
+      {
+        "heading": "What Exactly Is SS-31?",
+        "researchProblem": "Because SS-31 appears in the literature under several names, researchers new to the compound can struggle to pin down a single, verified identity.",
+        "researchQuestion": "What is the confirmed molecular identity of SS-31, and how does it relate to elamipretide?",
+        "evidenceShows": "SS-31 is a four-residue synthetic peptide, D-Arg-Dmt-Lys-Phe-NH2, with molecular formula C32H49N9O5 and a molecular weight of approximately 639.8 g/mol, registered under CAS 736992-21-5. The non-standard residue 2',6'-dimethyltyrosine (Dmt) distinguishes it from a conventional tyrosine-containing peptide. This same molecule is referred to as elamipretide in its pharmaceutical development program, and has also appeared in the literature as MTP-131 and Bendavia.",
+        "practicalInterpretation": "A researcher encountering \"SS-31,\" \"elamipretide,\" \"MTP-131,\" or \"Bendavia\" in different sources is very likely looking at the same compound rather than four separate substances. The naming differences track where and when the compound is being discussed — foundational academic papers tend to use \"SS-31,\" while regulatory and later clinical literature tends to use \"elamipretide.\"",
+        "limitation": "Identity confirmation at the molecular level does not extend to any specific commercial preparation. A vendor's SS-31 product is only as verified as its own lot-specific analytical documentation."
+      },
+      {
+        "heading": "Why Has SS-31 Become Important in Mitochondrial Research?",
+        "researchProblem": "Mitochondrial dysfunction is implicated in a wide range of research areas, from rare genetic disease to aging biology, but few compounds are designed specifically to act at the mitochondrial membrane itself.",
+        "researchQuestion": "What property of SS-31 made it a research focus for mitochondrial biology specifically, rather than general antioxidant research?",
+        "evidenceShows": "SS-31's alternating cationic/aromatic structure allows it to concentrate selectively in the inner mitochondrial membrane, where it has been reported to associate with cardiolipin — a phospholipid largely unique to mitochondrial membranes that helps organize electron transport chain complexes. This selective localization is what separates SS-31 research from broader, non-targeted antioxidant compounds (Chavez et al., 2020, PNAS).",
+        "practicalInterpretation": "The research interest in SS-31 is tied specifically to cardiolipin and inner-membrane biology, not to a general claim of 'fighting oxidative stress' in the way that phrase is often used in consumer contexts. Findings about SS-31 are most meaningfully read in the context of cardiolipin-related mitochondrial function.",
+        "limitation": "Selective mitochondrial accumulation and cardiolipin association are structural and biochemical observations; they describe where the molecule goes and what it binds, not a guaranteed downstream physiological outcome."
+      },
+      {
+        "heading": "How Is SS-31 Thought to Interact With Mitochondrial Membranes?",
+        "researchProblem": "Knowing that SS-31 binds cardiolipin does not, on its own, explain how that binding is proposed to affect mitochondrial function.",
+        "researchQuestion": "What is the proposed molecular mechanism connecting SS-31's cardiolipin binding to changes in mitochondrial membrane behavior?",
+        "evidenceShows": "Structural studies using NMR and molecular dynamics show that SS-31 partitions into cardiolipin-containing membranes and alters membrane surface electrostatics, with binding behavior that differs across closely related tetrapeptide analogs (Mitchell et al., 2022, eLife). Separately, chemical cross-linking with mass spectrometry in mouse heart mitochondria identified SS-31 in close proximity to proteins that are themselves known cardiolipin binders, including components of the oxidative phosphorylation pathway (Chavez et al., 2020, PNAS).",
+        "practicalInterpretation": "The working hypothesis in the literature is that SS-31 stabilizes cardiolipin-protein interactions in the inner membrane, rather than acting as a conventional free-radical scavenger. This is a mechanistic model supported by structural and interactome data, not a mechanism confirmed through direct causal testing in every downstream pathway it has been associated with.",
+        "limitation": "These are biophysical and interactome findings in isolated membranes or ex vivo mouse tissue. They describe a plausible mechanism; they do not, by themselves, establish that this mechanism accounts for any specific clinical outcome observed in human trials."
+      },
+      {
+        "heading": "What Does Research Actually Show About Mitochondrial Function?",
+        "researchProblem": "\"Mitochondrial function\" covers several distinct, separately measured endpoints, and results on one endpoint do not automatically apply to the others.",
+        "researchQuestion": "Which specific mitochondrial function endpoints have been studied with SS-31, and what was observed for each?",
+        "evidenceShows": "In INS1 beta-cell culture, elamipretide increased engulfment of mitochondria into autophagosomes (a mitophagy-related process) and prevented nutrient-excess-induced mitochondrial fragmentation, without producing broad changes to mitochondrial membrane potential in unstressed cells; the same study found no benefit on lysosomal defects or insulin secretion under nutrient excess (Petcherski et al., 2018, J Mol Biol). Separately, cross-linking work associated SS-31 with proteins involved in ATP production via oxidative phosphorylation and in 2-oxoglutarate metabolism (Chavez et al., 2020, PNAS).",
+        "practicalInterpretation": "The endpoints studied are specific and model-dependent: mitophagosome formation in a pancreatic beta-cell line is not the same finding as a change in ATP output in cardiac tissue. Readers should track which endpoint, in which model, is being referenced rather than treating 'improves mitochondrial function' as one uniform result.",
+        "limitation": "These findings come from specific cell-culture systems under specific stress conditions (e.g., nutrient excess). They do not establish that the same functional changes occur in intact human tissue or across all cell types."
+      },
+      {
+        "heading": "What Have Animal Studies Investigated?",
+        "researchProblem": "Animal research on SS-31 spans several unrelated disease contexts, which can make the overall evidence base look broader than any single study supports.",
+        "researchQuestion": "What have representative animal studies of SS-31 actually measured, and in which disease models?",
+        "evidenceShows": "In ApoE knockout mice fed a Western diet, 12 weeks of subcutaneous SS-31 (1–3 mg/kg/day) reduced atherosclerotic plaque area, markers of oxidative stress, and systemic inflammatory markers (Zhang et al., 2017, PLoS ONE). In a type 2 diabetes mouse model of diabetic kidney disease, elamipretide (MTP-131) reduced albuminuria, preserved renal superoxide production, and lowered lysocardiolipin accumulation (Miyamoto et al., 2020, J Biol Chem). In a mouse model of spinal cord injury, SS-31 reduced injury-associated cardiolipin loss, limited neuronal death in cell culture, and improved behavioral recovery, though it did not significantly reduce overall tissue damage (Ravenscraft et al., 2025, Int J Mol Sci).",
+        "practicalInterpretation": "Each animal study addresses a distinct disease model with its own endpoints — vascular plaque composition, renal biomarkers, and post-injury motor recovery are not interchangeable measures. Positive findings in one model should not be read as evidence for a different model or disease context.",
+        "limitation": "Rodent disease models do not automatically translate to human physiology or human disease progression. None of these studies evaluated the Spray-format product Veracue lists here."
+      },
+      {
+        "heading": "What Have Human Studies Actually Investigated?",
+        "researchProblem": "Elamipretide has a genuinely substantial human clinical trial history, but the results vary sharply by indication, and treating that history as a single verdict misrepresents it.",
+        "researchQuestion": "What did the major human clinical trials of elamipretide study, and what did each one actually find?",
+        "evidenceShows": "In Barth syndrome, the Phase 2 TAZPOWER trial and its 168-week open-label extension followed a small cohort (12 enrolled; 8–10 continuing into extension) receiving daily subcutaneous elamipretide (40 mg), reporting sustained improvement in six-minute walk test distance, reduced fatigue scores, and improved left ventricular volumes and cardiolipin-related biomarkers over long-term follow-up; a retrospective comparison against an untreated natural-history cohort reported similar directional benefit (Thompson et al., 2024, Genet Med; Hornby et al., 2022, Orphanet J Rare Dis). In heart failure with reduced ejection fraction, the Phase 2 PROGRESS-HF trial (n=71) found no significant difference from placebo in left ventricular volumes at 4 weeks, while an earlier, smaller ascending-dose infusion study reported acute volume reductions at the highest dose tested (Butler et al., 2020, J Card Fail; Daubert et al., 2017, Circ Heart Fail). In primary mitochondrial myopathy, the Phase 3 MMPOWER-3 trial (n=218) did not meet its primary endpoints for walk distance or fatigue in the overall population, though a post hoc subgroup with specific nuclear-DNA replisome variants showed a trend toward improved walk distance (Karaa et al., 2023, Neurology; Karaa et al., 2024, Orphanet J Rare Dis). In dry age-related macular degeneration, the ReCLAIM-2 trial did not meet its primary visual-acuity or atrophy-area endpoints, but reported a reduction in progressive photoreceptor-layer degradation on optical coherence tomography (Ehlers et al., 2024, Ophthalmology Science).",
+        "practicalInterpretation": "This is clinical research, not clinical proof of efficacy for a general population. The clearest positive signal is in the small, genetically defined Barth syndrome population; the larger, more heterogeneous mitochondrial myopathy and heart failure trials were largely negative on their primary endpoints, and the AMD trial was mixed. Results in one disease population do not generalize to another.",
+        "limitation": "The Barth syndrome evidence comes from a very small, open-label-extended cohort without a randomized comparator in its longer follow-up. The negative trials remain negative regardless of the positive results elsewhere; subgroup findings (as in MMPOWER-3) are exploratory and require confirmatory trials before they can be treated as established."
+      },
+      {
+        "heading": "What Does \"SS-31 Benefits\" Actually Mean Scientifically?",
+        "researchProblem": "Search interest in \"SS-31 benefits\" often implies a single, generalized health claim, which is not how the underlying research is structured.",
+        "researchQuestion": "When the literature describes an SS-31 finding as beneficial, what specific, measured outcome is actually being reported?",
+        "evidenceShows": "Depending on the study, a reported benefit refers to one specific measured endpoint: six-minute walk test distance and fatigue scores in Barth syndrome; plaque area and oxidative-stress markers in an atherosclerosis mouse model; albuminuria and renal superoxide levels in a diabetic kidney disease mouse model; ellipsoid-zone photoreceptor preservation in an AMD trial. None of these studies reported a general, whole-body 'anti-aging' or 'energy' outcome.",
+        "practicalInterpretation": "Translating \"benefits\" correctly means naming the specific endpoint, the specific model or population, and the specific study — not compressing several distinct findings into one general claim of effectiveness.",
+        "limitation": "A measured improvement on one endpoint, in one model, under one dosing regimen, does not establish a broader health benefit, and several major trials measuring analogous endpoints in other populations did not find a significant effect."
+      },
+      {
+        "heading": "What Does \"SS-31 Dosage\" Mean in Research?",
+        "researchProblem": "Search interest in SS-31 dosing is high, but published research dosing is frequently misread as a usage recommendation.",
+        "researchQuestion": "What dosing information actually appears in the SS-31/elamipretide literature, and what does it establish?",
+        "evidenceShows": "Published human trials used specific, protocol-defined dosing: 40 mg administered once daily by subcutaneous injection in the Barth syndrome, mitochondrial myopathy, and AMD trials, and ascending intravenous infusion doses (0.005–0.25 mg/kg/hr) in an early heart failure study. Preclinical rodent studies used subcutaneous doses in the 1–3 mg/kg/day range.",
+        "practicalInterpretation": "These figures describe what was administered, by which route, to which study population, under a specific clinical or preclinical protocol — they are study-specific experimental information tied to a particular trial design, not a general-purpose dose.",
+        "limitation": "This information is not a recommendation, a protocol, or usage guidance for any product, and it does not describe Veracue's Spray-format listing, which has no established route, concentration, or dosing information of its own. Doses cannot be converted between administration routes without data this literature does not provide for every route."
+      },
+      {
+        "heading": "What Is Known About SS-31 Safety and Tolerability?",
+        "researchProblem": "Search interest in \"SS-31 side effects\" needs a substantive answer, but the available information is scattered across separate trials with their own populations and dosing.",
+        "researchQuestion": "What have human and animal studies actually reported about elamipretide's tolerability and adverse effects?",
+        "evidenceShows": "Across the human trials reviewed here, elamipretide was generally reported as tolerable at the doses studied. The most frequently reported adverse events were injection-site reactions — pain, erythema, pruritus, and bruising — reported in the majority of treated participants in some trials (for example, 86% of elamipretide-treated participants in the ReCLAIM-2 AMD trial, versus 71% on placebo, largely driven by injection-site effects). No trial reviewed here reported a signal for serious systemic adverse events attributable to the study drug. Preclinical studies did not report toxicity findings within the scope reviewed here.",
+        "practicalInterpretation": "The tolerability data that exists applies to the specific clinical dosing regimens in specific patient populations, primarily via subcutaneous injection. It says nothing about the safety profile of any other formulation, concentration, or route, including this Spray-format listing.",
+        "limitation": "No Spray-specific safety or tolerability data exists for this listing. Absence of a reported serious-adverse-event signal in these trials is not equivalent to a general safety guarantee, and long-term safety data beyond the trial periods reviewed is limited."
+      },
+      {
+        "heading": "How Is SS-31 Different From Other Mitochondrial Peptides?",
+        "researchProblem": "SS-31 is frequently searched alongside other mitochondria-associated compounds, particularly MOTS-c, which can blur the distinct research identities of each.",
+        "researchQuestion": "How does SS-31's identity and research basis differ from MOTS-c and from non-peptide mitochondrial agents like MitoQ?",
+        "evidenceShows": "SS-31 is a fully synthetic tetrapeptide engineered to bind cardiolipin at the inner mitochondrial membrane. MOTS-c, by contrast, is a peptide encoded within the mitochondrial genome itself (derived from the 12S rRNA region) that has been studied as a signaling molecule capable of translocating to the nucleus and influencing gene expression under metabolic stress — a different origin and a different proposed mechanism from SS-31's membrane-binding action. MitoQ is a different chemical class entirely: a ubiquinone (coenzyme Q10) derivative conjugated to a lipophilic cation, studied as a mitochondria-targeted antioxidant rather than a cardiolipin-binding peptide.",
+        "practicalInterpretation": "All three compounds are studied under the broad heading of 'mitochondrial research,' but they are structurally distinct molecules with separate evidence bases. A finding reported for MOTS-c or MitoQ is not evidence for SS-31, and vice versa.",
+        "limitation": "This is a comparison of research identity and mechanism, not a ranking of effectiveness. No head-to-head human trial directly comparing SS-31/elamipretide against MOTS-c or MitoQ was identified within the sources reviewed here."
+      },
+      {
+        "heading": "What Should Researchers Verify About an SS-31 Spray Product?",
+        "researchProblem": "A product listing and a verified, documented product are not the same thing, and researchers need a concrete checklist rather than a general caution.",
+        "researchQuestion": "What specific information should a researcher confirm before relying on any SS-31 Spray product for laboratory work?",
+        "evidenceShows": "Relevant verification points include: confirmed molecular identity (sequence, CAS, molecular formula and weight) matching the compound as described here; a lot-specific Certificate of Analysis showing purity by an analytical method such as HPLC, with supporting mass spectrometry data; the testing laboratory and test date; and, for the Spray format specifically, documentation of concentration, fill volume, dose-per-actuation, formulation/excipients, and storage conditions — none of which Veracue has published for this listing at the time of writing.",
+        "practicalInterpretation": "Absent first-party documentation on these points, a researcher should treat compound identity as unconfirmed at the product level, even where the underlying molecule (SS-31) has a well-established identity in the literature. Identity of the molecule and identity of a specific product lot are two separate verification tasks.",
+        "limitation": "This section describes what to check, not a substitute for checking it. Veracue's current listing does not include Spray-specific analytical documentation, and this page does not represent that such documentation exists."
+      }
+    ],
+    "evidenceHierarchy": {
+      "tier1_directCompoundEvidence": "Studies directly administering or testing SS-31/elamipretide (structural, cell, animal, and human trials listed in this page).",
+      "tier2_mechanisticEvidence": "Studies of cardiolipin, mitochondrial membrane biology, and bioenergetics that inform the proposed mechanism but do not themselves test SS-31.",
+      "tier3_relatedCompoundEvidence": "Findings about MOTS-c, MitoQ, or other mitochondrial agents, included only as an explicit, labeled comparison and never as evidence for SS-31 itself.",
+      "tier4_searchIntentData": "Keyword and search-volume data from the supplied workbook, used only to shape which questions this page answers — never treated as scientific or safety evidence."
+    },
+    "evidenceTable": [
+      {
+        "researchArea": "Membrane binding / structure",
+        "compoundStudied": "SS-31 and structural analogs",
+        "modelOrPopulation": "Liposomes; NMR and molecular dynamics models",
+        "studyDesign": "Biophysical/structural study",
+        "keyFinding": "SS-31 partitions into cardiolipin-containing membranes and alters membrane surface electrostatics; differs from analogs in binding behavior",
+        "evidenceType": "Direct SS-31 evidence / Mechanistic",
+        "limitation": "Model membranes, not living cells or tissue; does not establish a clinical effect",
+        "source": "Mitchell et al., 2022, eLife, DOI 10.7554/eLife.75531"
+      },
+      {
+        "researchArea": "Mitochondrial protein interactome",
+        "compoundStudied": "SS-31",
+        "modelOrPopulation": "Mouse heart mitochondria (ex vivo)",
+        "studyDesign": "Chemical cross-linking with mass spectrometry",
+        "keyFinding": "SS-31 associates with cardiolipin-binding proteins involved in oxidative phosphorylation and 2-oxoglutarate metabolism",
+        "evidenceType": "Direct SS-31 evidence / Mechanistic",
+        "limitation": "Ex vivo mouse tissue; mechanism inferred from proximity data",
+        "source": "Chavez et al., 2020, PNAS, DOI 10.1073/pnas.2002250117"
+      },
+      {
+        "researchArea": "Mitophagy / mitochondrial quality control",
+        "compoundStudied": "Elamipretide",
+        "modelOrPopulation": "INS1 pancreatic beta-cell line",
+        "studyDesign": "Cell culture study",
+        "keyFinding": "Increased mitochondrial engulfment into autophagosomes; prevented nutrient-excess-induced mitochondrial fragmentation; no benefit on insulin secretion under nutrient excess",
+        "evidenceType": "Direct elamipretide evidence / Preclinical (cell)",
+        "limitation": "Single cell line; stress model may not reflect in vivo conditions",
+        "source": "Petcherski et al., 2018, J Mol Biol, DOI 10.1016/j.jmb.2018.10.020"
+      },
+      {
+        "researchArea": "Atherosclerosis",
+        "compoundStudied": "SS-31",
+        "modelOrPopulation": "ApoE knockout mice, Western diet",
+        "studyDesign": "Controlled preclinical study, subcutaneous dosing, 12 weeks",
+        "keyFinding": "Reduced atherosclerotic plaque area, oxidative stress markers, and systemic inflammatory markers",
+        "evidenceType": "Direct SS-31 evidence / Preclinical (animal)",
+        "limitation": "Mouse model; not directly generalizable to human atherosclerosis",
+        "source": "Zhang et al., 2017, PLoS ONE, DOI 10.1371/journal.pone.0185688"
+      },
+      {
+        "researchArea": "Diabetic kidney disease",
+        "compoundStudied": "Elamipretide (MTP-131)",
+        "modelOrPopulation": "Type 2 diabetes mouse model",
+        "studyDesign": "Preclinical intervention study",
+        "keyFinding": "Reduced albuminuria, preserved renal superoxide production, reduced lysocardiolipin accumulation",
+        "evidenceType": "Direct elamipretide evidence / Preclinical (animal)",
+        "limitation": "Mouse model of renal disease; human renal superoxide biology may differ",
+        "source": "Miyamoto et al., 2020, J Biol Chem, DOI 10.1074/jbc.RA119.011110"
+      },
+      {
+        "researchArea": "Spinal cord injury / neuroprotection",
+        "compoundStudied": "SS-31",
+        "modelOrPopulation": "Mouse primary spinal neurons; C57Bl/6 mice, contusion SCI",
+        "studyDesign": "In vitro and in vivo preclinical study",
+        "keyFinding": "Reduced cardiolipin loss and neuronal death; improved behavioral recovery; no significant effect on overall tissue damage",
+        "evidenceType": "Direct SS-31 evidence / Preclinical (animal)",
+        "limitation": "Dose-dependent effects; null result on tissue-damage endpoint despite behavioral improvement",
+        "source": "Ravenscraft et al., 2025, Int J Mol Sci, DOI 10.3390/ijms26073327"
+      },
+      {
+        "researchArea": "Barth syndrome (cardiac/skeletal muscle)",
+        "compoundStudied": "Elamipretide",
+        "modelOrPopulation": "Genetically confirmed Barth syndrome patients (n=12 Phase 2; n=8–10 to week 168)",
+        "studyDesign": "Phase 2 RCT crossover + open-label extension + retrospective natural-history comparison",
+        "keyFinding": "Sustained improvement in six-minute walk test distance, reduced fatigue score, improved left ventricular volumes and cardiolipin-related biomarkers over long-term follow-up",
+        "evidenceType": "Direct elamipretide evidence / Human evidence",
+        "limitation": "Very small sample; open-label extension unblinded; natural-history comparator is retrospective, not randomized",
+        "source": "Thompson et al., 2024, Genet Med, DOI 10.1016/j.gim.2024.101138; Hornby et al., 2022, Orphanet J Rare Dis, DOI 10.1186/s13023-022-02469-5"
+      },
+      {
+        "researchArea": "Heart failure with reduced ejection fraction",
+        "compoundStudied": "Elamipretide",
+        "modelOrPopulation": "Adults with HFrEF (n=71 PROGRESS-HF; n=36 ascending-dose infusion study)",
+        "studyDesign": "Phase 2 double-blind, placebo-controlled RCTs",
+        "keyFinding": "No significant difference from placebo in left ventricular volumes at 4 weeks (PROGRESS-HF); acute LV volume reduction at highest dose in a single-infusion study",
+        "evidenceType": "Direct elamipretide evidence / Human evidence",
+        "limitation": "Primary endpoint not met in the larger trial; short study durations; inconsistent results across dosing approaches",
+        "source": "Butler et al., 2020, J Card Fail, DOI 10.1016/j.cardfail.2020.02.001; Daubert et al., 2017, Circ Heart Fail, DOI 10.1161/CIRCHEARTFAILURE.117.004389"
+      },
+      {
+        "researchArea": "Primary mitochondrial myopathy",
+        "compoundStudied": "Elamipretide",
+        "modelOrPopulation": "Adults with genetically confirmed PMM (n=218, MMPOWER-3)",
+        "studyDesign": "Phase 3 double-blind, placebo-controlled RCT",
+        "keyFinding": "Primary endpoints (six-minute walk test, fatigue score) not met in the overall population; post hoc subgroup with nuclear-DNA replisome variants showed a trend toward improved walk distance",
+        "evidenceType": "Direct elamipretide evidence / Human evidence",
+        "limitation": "Primary trial negative; subgroup finding is exploratory/post hoc and requires confirmatory trial",
+        "source": "Karaa et al., 2023, Neurology, DOI 10.1212/WNL.0000000000207402; Karaa et al., 2024, Orphanet J Rare Dis, DOI 10.1186/s13023-024-03421-5"
+      },
+      {
+        "researchArea": "Dry age-related macular degeneration",
+        "compoundStudied": "Elamipretide",
+        "modelOrPopulation": "Adults ≥55 with dry AMD and geographic atrophy (n=176, ReCLAIM-2)",
+        "studyDesign": "Phase 2 double-masked, placebo-controlled RCT",
+        "keyFinding": "Primary endpoints (visual acuity, atrophy area) not met; reduced progression of photoreceptor ellipsoid-zone degradation observed on OCT",
+        "evidenceType": "Direct elamipretide evidence / Human evidence",
+        "limitation": "Primary endpoints missed; ellipsoid-zone finding is a secondary/surrogate measure",
+        "source": "Ehlers et al., 2024, Ophthalmology Science, DOI 10.1016/j.xops.2024.100628"
+      },
+      {
+        "researchArea": "Mitochondrial signaling peptide (comparison only)",
+        "compoundStudied": "MOTS-c",
+        "modelOrPopulation": "Various preclinical models",
+        "studyDesign": "N/A — included for identity comparison only",
+        "keyFinding": "MOTS-c is a distinct, mitochondrial-DNA-encoded peptide studied for nuclear gene-expression signaling under metabolic stress; mechanistically unrelated to SS-31's cardiolipin-binding action",
+        "evidenceType": "Related-compound evidence (not SS-31 evidence)",
+        "limitation": "Included only to clarify that MOTS-c findings do not apply to SS-31",
+        "source": "General mitochondrial-peptide literature; see Section 10"
+      }
+    ],
+    "evidenceLimitations": {
+      "title": "What the Research Does Not Show",
+      "points": [
+        "Animal findings on plaque reduction, renal protection, or neuroprotection do not establish that the same effects occur in humans.",
+        "Mechanistic findings about cardiolipin binding do not by themselves establish a clinical benefit in any specific condition.",
+        "Positive results in a narrow, genetically defined population (Barth syndrome) do not generalize to the larger, more heterogeneous populations studied in the heart failure and mitochondrial myopathy trials, where primary endpoints were not met.",
+        "Study-specific experimental dosing reported in clinical trials is not a usage recommendation for any product.",
+        "Findings about MOTS-c, MitoQ, or other mitochondrial-research compounds are not evidence for SS-31, and are presented here only as explicit, labeled comparisons.",
+        "The word 'Spray' describes packaging format only and does not establish route of administration, absorption, or bioavailability for this listing.",
+        "Product-level specifications — concentration, purity, formulation, storage — require product-level documentation that Veracue has not published for this Spray listing."
+      ]
+    },
+    "references": [
+      {
+        "title": "Structure-activity relationships of mitochondria-targeted tetrapeptide pharmacological compounds",
+        "authors": "Mitchell W, Tamucci JD, Ng EL, et al.",
+        "year": "2022",
+        "journal": "eLife",
+        "doi": "10.7554/eLife.75531",
+        "pmid": "35913044",
+        "relevance": "Structural/mechanistic basis for cardiolipin binding",
+        "evidenceType": "Mechanistic evidence"
+      },
+      {
+        "title": "Mitochondrial protein interaction landscape of SS-31",
+        "authors": "Chavez JD, Tang X, Campbell MD, et al.",
+        "year": "2020",
+        "journal": "Proceedings of the National Academy of Sciences",
+        "doi": "10.1073/pnas.2002250117",
+        "pmid": "32554501",
+        "relevance": "Protein interactome supporting proposed mechanism",
+        "evidenceType": "Mechanistic / Direct SS-31 evidence"
+      },
+      {
+        "title": "Elamipretide Promotes Mitophagosome Formation and Prevents Its Reduction Induced by Nutrient Excess in INS1 β-cells",
+        "authors": "Petcherski A, Trudeau KM, Wolf DM, et al.",
+        "year": "2018",
+        "journal": "Journal of Molecular Biology",
+        "doi": "10.1016/j.jmb.2018.10.020",
+        "pmid": "30389435",
+        "relevance": "Cell-model evidence on mitophagy/mitochondrial quality control",
+        "evidenceType": "Preclinical (cell) evidence"
+      },
+      {
+        "title": "Chronic administration of mitochondrion-targeted peptide SS-31 prevents atherosclerotic development in ApoE knockout mice fed Western diet",
+        "authors": "Zhang M, Zhao H, Cai J, et al.",
+        "year": "2017",
+        "journal": "PLoS ONE",
+        "doi": "10.1371/journal.pone.0185688",
+        "pmid": "28961281",
+        "relevance": "Animal model evidence, atherosclerosis",
+        "evidenceType": "Preclinical (animal) evidence"
+      },
+      {
+        "title": "Restoring mitochondrial superoxide levels with elamipretide (MTP-131) protects mice against progression of diabetic kidney disease",
+        "authors": "Miyamoto S, Zhang G, Hall D, et al.",
+        "year": "2020",
+        "journal": "Journal of Biological Chemistry",
+        "doi": "10.1074/jbc.RA119.011110",
+        "pmid": "32277051",
+        "relevance": "Animal model evidence, diabetic kidney disease",
+        "evidenceType": "Preclinical (animal) evidence"
+      },
+      {
+        "title": "Mitochondrial Cardiolipin-Targeted Tetrapeptide, SS-31, Exerts Neuroprotective Effects Within In Vitro and In Vivo Models of Spinal Cord Injury",
+        "authors": "Ravenscraft B, Lee DH, Dai H, et al.",
+        "year": "2025",
+        "journal": "International Journal of Molecular Sciences",
+        "doi": "10.3390/ijms26073327",
+        "pmid": "40244206",
+        "relevance": "Animal/cell model evidence, spinal cord injury",
+        "evidenceType": "Preclinical (animal/cell) evidence"
+      },
+      {
+        "title": "Long-term efficacy and safety of elamipretide in patients with Barth syndrome: 168-week open-label extension results of TAZPOWER",
+        "authors": "Thompson WR, Manuel R, Abbruscato A, et al.",
+        "year": "2024",
+        "journal": "Genetics in Medicine",
+        "doi": "10.1016/j.gim.2024.101138",
+        "pmid": "38602181",
+        "relevance": "Human clinical evidence, Barth syndrome",
+        "evidenceType": "Human evidence (direct)"
+      },
+      {
+        "title": "Natural history comparison study to assess the efficacy of elamipretide in patients with Barth syndrome",
+        "authors": "Hornby B, Thompson WR, Almuqbil M, et al.",
+        "year": "2022",
+        "journal": "Orphanet Journal of Rare Diseases",
+        "doi": "10.1186/s13023-022-02469-5",
+        "pmid": "36056411",
+        "relevance": "Human clinical evidence, Barth syndrome, natural history comparison",
+        "evidenceType": "Human evidence (direct)"
+      },
+      {
+        "title": "Effects of Elamipretide on Left Ventricular Function in Patients With Heart Failure With Reduced Ejection Fraction: The PROGRESS-HF Phase 2 Trial",
+        "authors": "Butler J, Khan MS, Anker SD, et al.",
+        "year": "2020",
+        "journal": "Journal of Cardiac Failure",
+        "doi": "10.1016/j.cardfail.2020.02.001",
+        "pmid": "32068002",
+        "relevance": "Human clinical evidence, heart failure (null primary endpoint)",
+        "evidenceType": "Human evidence (direct)"
+      },
+      {
+        "title": "Novel Mitochondria-Targeting Peptide in Heart Failure Treatment: A Randomized, Placebo-Controlled Trial of Elamipretide",
+        "authors": "Daubert MA, Yow E, Dunn G, et al.",
+        "year": "2017",
+        "journal": "Circulation: Heart Failure",
+        "doi": "10.1161/CIRCHEARTFAILURE.117.004389",
+        "pmid": "29217757",
+        "relevance": "Human clinical evidence, heart failure, acute infusion dosing",
+        "evidenceType": "Human evidence (direct)"
+      },
+      {
+        "title": "Efficacy and Safety of Elamipretide in Individuals With Primary Mitochondrial Myopathy: The MMPOWER-3 Randomized Clinical Trial",
+        "authors": "Karaa A, et al.",
+        "year": "2023",
+        "journal": "Neurology",
+        "doi": "10.1212/WNL.0000000000207402",
+        "pmid": "37268435",
+        "relevance": "Human clinical evidence, primary mitochondrial myopathy (negative primary endpoint)",
+        "evidenceType": "Human evidence (direct)"
+      },
+      {
+        "title": "Genotype-specific effects of elamipretide in patients with primary mitochondrial myopathy: a post hoc analysis of the MMPOWER-3 trial",
+        "authors": "Karaa A, et al.",
+        "year": "2024",
+        "journal": "Orphanet Journal of Rare Diseases",
+        "doi": "10.1186/s13023-024-03421-5",
+        "pmid": "39574155",
+        "relevance": "Human clinical evidence, post hoc genotype subgroup analysis",
+        "evidenceType": "Human evidence (direct, exploratory)"
+      },
+      {
+        "title": "ReCLAIM-2: A Randomized Phase II Clinical Trial Evaluating Elamipretide in Age-related Macular Degeneration, Geographic Atrophy Growth, Visual Function, and Ellipsoid Zone Preservation",
+        "authors": "Ehlers JP, et al.",
+        "year": "2024",
+        "journal": "Ophthalmology Science",
+        "doi": "10.1016/j.xops.2024.100628",
+        "pmid": "39605874",
+        "relevance": "Human clinical evidence, dry AMD/geographic atrophy",
+        "evidenceType": "Human evidence (direct)"
+      },
+      {
+        "title": "Phase 1 Clinical Trial of Elamipretide in Intermediate Age-Related Macular Degeneration and High-Risk Drusen: ReCLAIM High-Risk Drusen Study",
+        "authors": "Allingham MJ, et al.",
+        "year": "2021",
+        "journal": "Ophthalmology Science",
+        "doi": "10.1016/j.xops.2021.100095",
+        "pmid": "36246187",
+        "relevance": "Human clinical evidence, intermediate AMD, Phase 1 safety/exploratory efficacy",
+        "evidenceType": "Human evidence (direct)"
+      }
+    ],
+    "comparison": {
+      "title": "SS-31 vs. MOTS-c",
+      "note": "Presented as an explicit, labeled comparison only. Findings for one compound are not evidence for the other.",
+      "dimensions": [
+        {
+          "dimension": "Molecular origin",
+          "ss31": "Fully synthetic tetrapeptide, not naturally encoded in the genome",
+          "motsc": "Peptide encoded within mitochondrial DNA (12S rRNA region)"
+        },
+        {
+          "dimension": "Proposed mechanism",
+          "ss31": "Binds cardiolipin at the inner mitochondrial membrane",
+          "motsc": "Proposed signaling role, including translocation affecting nuclear gene expression under metabolic stress"
+        },
+        {
+          "dimension": "Evidence type",
+          "ss31": "Structural, cell, animal, and multiple human clinical trials",
+          "motsc": "Primarily preclinical and early-stage research"
+        },
+        {
+          "dimension": "Human clinical evidence",
+          "ss31": "Multiple Phase 2/3 trials across several conditions (mixed results)",
+          "motsc": "Limited direct human clinical trial data available in the literature reviewed"
+        },
+        {
+          "dimension": "Research scope",
+          "ss31": "Cardiac, skeletal muscle, renal, and ocular research contexts",
+          "motsc": "Primarily metabolic and cellular-stress signaling research"
+        }
+      ],
+      "conclusion": "SS-31 and MOTS-c are both discussed under the umbrella of mitochondrial research but represent distinct molecules with separate mechanisms and separate evidence bases; neither is presented here as superior to the other."
+    },
+    "productSpecifications": {
+      "moleculeReferenceData": {
+        "sequence": "D-Arg-Dmt-Lys-Phe-NH2",
+        "molecularFormula": "C32H49N9O5",
+        "molecularWeight": "639.79 g/mol",
+        "CAS": "736992-21-5",
+        "note": "These molecule-level facts describe the SS-31/elamipretide compound generally, based on published chemical reference data, and do not by themselves confirm the identity or purity of any specific Veracue lot."
+      },
+      "spraySpecificProductData": {
+        "format": "Not publicly specified for this Spray listing",
+        "concentration": "Not publicly specified for this Spray listing",
+        "purity": "Not publicly specified for this Spray listing",
+        "fillVolume": "Not publicly specified for this Spray listing",
+        "sprayCount": "Not publicly specified for this Spray listing",
+        "dosePerSpray": "Not publicly specified for this Spray listing",
+        "formulation": "Not publicly specified for this Spray listing",
+        "route": "Not publicly specified for this Spray listing",
+        "excipients": "Not publicly specified for this Spray listing",
+        "storage": "Not publicly specified for this Spray listing",
+        "lot": "Not publicly specified for this Spray listing",
+        "analyticalTesting": "Not publicly specified for this Spray listing",
+        "documentation": "Not publicly specified for this Spray listing",
+        "note": "Veracue's existing vial-format SS-31 listing (SKU SS31-10MG) carries its own separately documented specifications; those figures are specific to the vial product and are not transferred to this Spray listing."
+      }
+    },
+    "productFormat": {
+      "descriptor": "Spray",
+      "scopeOfMeaning": "For this listing, 'Spray' is used strictly as a product-format and dispensing descriptor.",
+      "whatItDoesNotEstablish": [
+        "Route of administration (nasal, oral, sublingual, buccal, topical, transdermal, or inhaled)",
+        "Concentration or dose per spray actuation",
+        "Number of sprays, spray volume, or fill volume",
+        "Formulation, solvent, excipients, or pH",
+        "Absorption, bioavailability, or pharmacokinetics"
+      ],
+      "note": "Any of these characteristics would require first-party Veracue documentation to establish, and none has been published for this listing at the time of writing."
+    },
+    "coaAndDocumentation": {
+      "note": "Veracue has not published a lot-specific Certificate of Analysis for this Spray listing, and this page does not claim that one exists.",
+      "whatResearchersMayLookFor": [
+        "Researchers evaluating a lot-specific SS-31 COA may look for confirmed molecular identity matching the sequence, formula, and molecular weight described on this page",
+        "Researchers evaluating a lot-specific SS-31 COA may look for HPLC-based purity data with supporting chromatograms",
+        "Researchers evaluating a lot-specific SS-31 COA may look for mass spectrometry data confirming molecular weight",
+        "Researchers evaluating a lot-specific SS-31 COA may look for the analytical method used, the testing laboratory, and the test date",
+        "Researchers evaluating a lot-specific SS-31 COA may look for a lot number that traces to the specific unit purchased"
+      ]
+    },
+    "storageAndHandling": {
+      "statement": "Storage conditions for this Spray listing are not publicly specified.",
+      "note": "Storage and handling guidance for a different SS-31 product format, such as Veracue's existing vial listing, is not assumed to apply to this Spray listing."
+    },
+    "whatItIsNot": [
+      "Not a substitute for, or equivalent to, FORZINITY (elamipretide), the FDA-approved pharmaceutical product indicated for Barth syndrome",
+      "Not intended for human or veterinary use, ingestion, injection, diagnosis, treatment, prevention, or cure of any disease",
+      "Not a source of dosing, administration, or protocol guidance for any use",
+      "Not evidence that this Spray format has been clinically studied — the human trials described on this page used subcutaneous injection or intravenous infusion of elamipretide, not a spray product"
+    ],
+    "ruoNotice": "SS-31 Spray is offered by Veracue strictly for laboratory and research use only (RUO). It is not intended for human use, veterinary use, ingestion, injection, or any other form of administration, and is not intended to diagnose, treat, cure, or prevent any disease. This listing is distinct from FORZINITY (elamipretide), the FDA-approved pharmaceutical product for Barth syndrome, and from any other regulated pharmaceutical form of this molecule.",
+    "faq": [
+      {
+        "question": "What is SS-31?",
+        "answer": "SS-31 is a synthetic tetrapeptide (D-Arg-Dmt-Lys-Phe-NH2) designed to accumulate in the inner mitochondrial membrane, where research has focused on its interaction with the phospholipid cardiolipin."
+      },
+      {
+        "question": "Is SS-31 the same as elamipretide?",
+        "answer": "Yes — SS-31 and elamipretide refer to the same molecule. SS-31 is the earlier research designation; elamipretide is the name used once the compound entered pharmaceutical development, and it has also been referenced as MTP-131 or Bendavia in the literature."
+      },
+      {
+        "question": "What is the SS-31 sequence?",
+        "answer": "The sequence is D-Arg-Dmt-Lys-Phe-NH2, using D-arginine, the non-standard residue 2',6'-dimethyltyrosine (Dmt), L-lysine, and a C-terminal phenylalanine amide."
+      },
+      {
+        "question": "Why is SS-31 studied in mitochondria?",
+        "answer": "Its alternating charged/aromatic structure lets it concentrate in the inner mitochondrial membrane and interact with cardiolipin, a phospholipid central to mitochondrial membrane organization and bioenergetics."
+      },
+      {
+        "question": "What does SS-31 research show?",
+        "answer": "Structural and cell studies report cardiolipin binding and effects on mitochondrial quality-control processes; animal studies report tissue-specific protective findings in models of atherosclerosis, diabetic kidney disease, and spinal cord injury; human trials show mixed results that vary substantially by condition studied."
+      },
+      {
+        "question": "What human studies have investigated SS-31?",
+        "answer": "Randomized, placebo-controlled trials of elamipretide have been conducted in Barth syndrome (TAZPOWER), heart failure with reduced ejection fraction (PROGRESS-HF and an earlier infusion study), primary mitochondrial myopathy (MMPOWER-3), and dry age-related macular degeneration (the ReCLAIM program)."
+      },
+      {
+        "question": "What does SS-31 dosage mean?",
+        "answer": "Published dosages describe what was used in a specific research protocol — for example, 40 mg subcutaneously once daily in several clinical trials. This is study-specific experimental information, not a usage recommendation, and it does not describe this Veracue Spray listing."
+      },
+      {
+        "question": "What are SS-31 benefits in research?",
+        "answer": "Reported findings are specific to the endpoint and model studied — improved walk test performance and cardiac measures in a small Barth syndrome cohort, reduced oxidative and inflammatory markers in an atherosclerosis mouse model, and slowed photoreceptor degradation in one AMD trial — alongside several larger trials that did not meet their primary endpoints."
+      },
+      {
+        "question": "What is known about SS-31 safety?",
+        "answer": "In the human trials reviewed, elamipretide was generally tolerated, with injection-site reactions as the most commonly reported adverse event. No serious systemic safety signal was reported in the trials reviewed here. This applies to the clinical dosing and routes studied, not to this Spray-format listing."
+      },
+      {
+        "question": "Is SS-31 the same as MOTS-c?",
+        "answer": "No. SS-31 is a fully synthetic peptide that binds cardiolipin at the mitochondrial membrane, while MOTS-c is a peptide encoded in mitochondrial DNA studied for a signaling role affecting gene expression. They are structurally and mechanistically distinct."
+      },
+      {
+        "question": "What does SS-31 Spray mean?",
+        "answer": "In this listing, 'Spray' describes the product's packaging and dispensing format only. It does not indicate a nasal, oral, or any other specific route of administration unless Veracue publishes documentation establishing that."
+      },
+      {
+        "question": "Is SS-31 Spray for human use?",
+        "answer": "No. This listing is strictly Research Use Only. It is not intended for human use, veterinary use, ingestion, injection, or any form of administration."
+      }
+    ],
+    "internalLinks": [
+      {
+        "label": "SS-31 (vial listing)",
+        "url": "/product/ss-31"
+      },
+      {
+        "label": "MOTS-c",
+        "url": "/product/mots-c"
+      },
+      {
+        "label": "Shop All Research Peptides",
+        "url": "/shop"
+      },
+      {
+        "label": "Certificates (COA)",
+        "url": "/certificates"
+      },
+      {
+        "label": "Contact Our Team",
+        "url": "/contact-us"
+      }
+    ],
+    "seo": {
+      "primaryKeyword": "SS-31 peptide",
+      "secondaryKeywords": [
+        "SS-31",
+        "SS31",
+        "SS 31",
+        "SS-31 peptide dosage",
+        "elamipretide",
+        "what is SS31 peptide",
+        "SS-31 research",
+        "SS-31 mitochondrial research",
+        "SS31 protocol",
+        "SS-31 mechanism",
+        "SS-31 spray"
+      ],
+      "searchIntent": "Informational/research intent — researchers looking to understand SS-31/elamipretide identity, mechanism, evidence, and this Spray-format listing; secondary commercial intent around sourcing a documented research compound",
+      "title": "SS-31 Spray Research Peptide (Elamipretide) | Veracue",
+      "metaDescription": "SS-31 Spray research listing covering elamipretide identity, cardiolipin mechanism, evidence-tiered animal and human research, and RUO product documentation.",
+      "canonicalUrl": "/product/ss-31-spray",
+      "slug": "/product/ss-31-spray",
+      "socialTitle": "SS-31 Spray | Elamipretide Research Peptide | Veracue",
+      "socialDescription": "A Research Use Only look at SS-31 (elamipretide) — molecular identity, mitochondrial mechanism, and evidence-tiered research findings — for Veracue's Spray-format listing.",
+      "imageAltText": "SS-31 Spray research peptide listing, Veracue, Research Use Only",
+      "headingArchitecture": "H1: SS-31 Spray; H2s for Quick Research Summary, each of the 11 research sections, Evidence Table, Comparison, Product Specifications, COA & Documentation, Storage & Handling, FAQ"
+    },
+    "geo": {
+      "entityName": "SS-31 (elamipretide)",
+      "aliases": [
+        "SS-31",
+        "elamipretide",
+        "MTP-131",
+        "Bendavia"
+      ],
+      "moleculeIdentity": "Synthetic tetrapeptide, D-Arg-Dmt-Lys-Phe-NH2, C32H49N9O5, MW 639.79 g/mol, CAS 736992-21-5",
+      "SS31ElamipretideRelationship": "Same molecule; SS-31 is the original research name, elamipretide the pharmaceutical development name, both used interchangeably in the literature depending on context",
+      "mitochondrialResearchContext": "Studied for accumulation in the inner mitochondrial membrane and interaction with cardiolipin, with downstream research in bioenergetics, oxidative stress, and mitochondrial quality control",
+      "evidenceHierarchy": "Direct SS-31/elamipretide evidence (structural, cell, animal, human) kept separate from mechanistic-only evidence and from related-compound evidence (MOTS-c, MitoQ)",
+      "distinctionFromMOTSc": "MOTS-c is a mitochondrial-DNA-encoded signaling peptide with a distinct mechanism from SS-31's cardiolipin-binding action; findings for one are not evidence for the other",
+      "productFormat": "Spray-format packaging descriptor only, with no established route, concentration, or dosing for this specific listing",
+      "uncertaintyFields": [
+        "Spray concentration",
+        "Dose per spray",
+        "Formulation/excipients",
+        "Storage conditions",
+        "Lot-specific COA availability"
+      ]
+    },
+    "aeo": {
+      "directAnswerPlacement": "Quick Answers block near the top of the page, before the detailed research sections",
+      "questionBasedHeadings": "Each of the 11 research sections and all FAQ entries are phrased as direct researcher questions",
+      "conciseDefinitions": "Identity, sequence, and SS-31/elamipretide relationship are defined in 1–3 sentences in the Quick Research Summary and Product Identity blocks",
+      "evidenceBackedAnswers": "Every substantive claim in the Quick Answers and FAQ sections is traceable to a specific study in the Evidence Table or References",
+      "entityClarity": "SS-31, elamipretide, MTP-131, and Bendavia are explicitly identified as the same entity; MOTS-c and FORZINITY are explicitly identified as distinct entities",
+      "citationReadiness": "References include DOI and PMID identifiers for AI and academic citation systems",
+      "dosageIntentHandling": "Dosage search intent is answered with study-specific experimental dosing only, explicitly labeled as non-recommendatory",
+      "benefitsIntentHandling": "Benefits search intent is translated into specific measured endpoints per study rather than a general claim",
+      "safetyIntentHandling": "Safety search intent is answered with tolerability findings from named trials, explicitly scoped to those trials' dosing and routes"
+    },
+    "schema": {
+      "product": {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "SS-31 Spray",
+        "alternateName": [
+          "Elamipretide Spray",
+          "MTP-131 Spray"
+        ],
+        "description": "SS-31 Spray is a Research Use Only spray-format listing of SS-31 (elamipretide), a mitochondria-targeted tetrapeptide studied for its interaction with cardiolipin.",
+        "category": "Mitochondrial & Cellular Energy Research Peptide",
+        "brand": {
+          "@type": "Brand",
+          "name": "Veracue"
+        },
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "CAS Number",
+            "value": "736992-21-5"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Molecular Formula",
+            "value": "C32H49N9O5"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Molecular Weight",
+            "value": "639.79 g/mol"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Sequence",
+            "value": "D-Arg-Dmt-Lys-Phe-NH2"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Intended Use",
+            "value": "Research Use Only (RUO)"
+          }
+        ]
+      },
+      "webPage": {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "SS-31 Spray Research Peptide (Elamipretide) | Veracue",
+        "description": "SS-31 Spray research listing covering elamipretide identity, cardiolipin mechanism, evidence-tiered animal and human research, and RUO product documentation.",
+        "url": "https://veracue-peptides.vercel.app/product/ss-31-spray",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Veracue",
+          "url": "https://veracue-peptides.vercel.app/"
+        }
+      },
+      "breadcrumbList": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://veracue-peptides.vercel.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Shop",
+            "item": "https://veracue-peptides.vercel.app/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "SS-31 Spray",
+            "item": "https://veracue-peptides.vercel.app/product/ss-31-spray"
+          }
+        ]
+      },
+      "faqPage": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is SS-31?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SS-31 is a synthetic tetrapeptide (D-Arg-Dmt-Lys-Phe-NH2) designed to accumulate in the inner mitochondrial membrane, where research has focused on its interaction with the phospholipid cardiolipin."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is SS-31 the same as elamipretide?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes — SS-31 and elamipretide refer to the same molecule. SS-31 is the earlier research designation; elamipretide is the name used once the compound entered pharmaceutical development, and it has also been referenced as MTP-131 or Bendavia in the literature."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the SS-31 sequence?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The sequence is D-Arg-Dmt-Lys-Phe-NH2, using D-arginine, the non-standard residue 2',6'-dimethyltyrosine (Dmt), L-lysine, and a C-terminal phenylalanine amide."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is SS-31 studied in mitochondria?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Its alternating charged/aromatic structure lets it concentrate in the inner mitochondrial membrane and interact with cardiolipin, a phospholipid central to mitochondrial membrane organization and bioenergetics."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does SS-31 research show?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Structural and cell studies report cardiolipin binding and effects on mitochondrial quality-control processes; animal studies report tissue-specific protective findings in models of atherosclerosis, diabetic kidney disease, and spinal cord injury; human trials show mixed results that vary substantially by condition studied."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What human studies have investigated SS-31?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Randomized, placebo-controlled trials of elamipretide have been conducted in Barth syndrome (TAZPOWER), heart failure with reduced ejection fraction (PROGRESS-HF and an earlier infusion study), primary mitochondrial myopathy (MMPOWER-3), and dry age-related macular degeneration (the ReCLAIM program)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does SS-31 dosage mean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Published dosages describe what was used in a specific research protocol — for example, 40 mg subcutaneously once daily in several clinical trials. This is study-specific experimental information, not a usage recommendation, and it does not describe this Veracue Spray listing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are SS-31 benefits in research?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Reported findings are specific to the endpoint and model studied — improved walk test performance and cardiac measures in a small Barth syndrome cohort, reduced oxidative and inflammatory markers in an atherosclerosis mouse model, and slowed photoreceptor degradation in one AMD trial — alongside several larger trials that did not meet their primary endpoints."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is known about SS-31 safety?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In the human trials reviewed, elamipretide was generally tolerated, with injection-site reactions as the most commonly reported adverse event. No serious systemic safety signal was reported in the trials reviewed here. This applies to the clinical dosing and routes studied, not to this Spray-format listing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is SS-31 the same as MOTS-c?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. SS-31 is a fully synthetic peptide that binds cardiolipin at the mitochondrial membrane, while MOTS-c is a peptide encoded in mitochondrial DNA studied for a signaling role affecting gene expression. They are structurally and mechanistically distinct."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does SS-31 Spray mean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In this listing, 'Spray' describes the product's packaging and dispensing format only. It does not indicate a nasal, oral, or any other specific route of administration unless Veracue publishes documentation establishing that."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is SS-31 Spray for human use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. This listing is strictly Research Use Only. It is not intended for human use, veterinary use, ingestion, injection, or any form of administration."
+            }
+          }
+        ]
+      }
+    },
+    "qualityAudit": {
+      "scientificAccuracy": "Molecular identity (sequence, CAS 736992-21-5, formula C32H49N9O5, MW 639.79 g/mol) cross-checked against the live Veracue SS-31 vial page and an independent supplier reference datasheet; SS-31/elamipretide/MTP-131/Bendavia relationship and FORZINITY distinction confirmed via literature and FDA approval reporting.",
+      "evidenceQuality": "11 primary sources retrieved directly from PubMed with verified DOI/PMID; evidence explicitly tiered into direct/mechanistic/preclinical/human/related-compound categories; no MOTS-c or MitoQ data presented as SS-31 evidence; negative and mixed human trial results (PROGRESS-HF, MMPOWER-3, ReCLAIM-2) reported alongside positive findings rather than omitted.",
+      "seo": "Primary keyword 'SS-31 peptide' and workbook-derived secondary terms used naturally across headings and answers without keyword stuffing; dosage and benefits search intent addressed without therapeutic claims.",
+      "geo": "SS-31/elamipretide entity clarity established; explicit distinction maintained from MOTS-c and from FORZINITY.",
+      "aeo": "12 direct-answer Quick Answers placed near the top; all research sections and FAQs phrased as researcher questions with concise, evidence-traceable answers.",
+      "ruoCompliance": "No therapeutic, diagnostic, or human-use claims made; RUO notice present; no dosing, administration, or protocol guidance provided; study dosing explicitly labeled as non-recommendatory experimental information.",
+      "noFabrication": "No product-level Spray specifications invented; all left as 'Not publicly specified for this Spray listing'; no fabricated studies, DOIs, or PMIDs; live-site check confirmed /product/ss-31-spray does not currently exist (404) and /product/ss-31 vial page does exist with its own separate SKU.",
+      "humanization": "Varied sentence structure; problem-driven section framing; limitations integrated into each section rather than repeated as boilerplate disclaimers."
+    }
+  }
+}

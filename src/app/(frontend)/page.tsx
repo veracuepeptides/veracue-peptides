@@ -13,8 +13,12 @@ import { DifferenceSection } from '@/components/home/DifferenceSection'
 import { BestSellerSection } from '@/components/home/BestSellerSection'
 import { MilitaryDiscountSection } from '@/components/home/MilitaryDiscountSection'
 import { Metadata } from 'next'
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, getMessages } from 'next-intl/server'
+import { NextIntlClientProvider } from 'next-intl'
+import { pickMessages } from '@/lib/i18n/pickMessages'
 import { getOgImageUrl } from '@/lib/utils'
+import { safeJsonLd } from '@/lib/seo/jsonLd'
+import { getOrganizationIdentityFields } from '@/lib/site/identity'
 import { getPayload } from 'payload'
 import configPromise from '@payload-config'
 import { getFeaturedImageUrl, formatPostDate } from '@/lib/blog/postDisplay'
@@ -27,7 +31,8 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const locale = 'en'
   const t = await getTranslations('home')
-  const title = t('metaTitle')
+  // The root layout's title template does not apply to the page in the same segment, so add the brand here.
+  const title = `${t('metaTitle')} | Veracue Peptides`
   const description = t('metaDescription')
   const path = true ? '/' : `/${locale}`
 
@@ -141,76 +146,87 @@ export default async function Homepage() {
     console.error("Failed to fetch featured products", e)
   }
 
+  const pageMessages = pickMessages(await getMessages(), [
+    'home.bestSeller',
+    'home.blogSection',
+    'home.faqSection',
+    'home.militaryDiscount',
+    'home.whyChooseUs',
+    'home.trustBadges',
+  ])
+
   return (
     <>
-      <div className="flex flex-col w-full min-h-screen relative z-10 bg-black overflow-x-clip">
-        <Hero />
-        <BestSellerSection products={products} />
-        <DifferenceSection />
-        <WhatSetsUsApart />
-        <VialSpecifications />
-        <CategoriesSection categories={categories} />
-        <TrustBadges />
-        <MilitaryDiscountSection />
-        <JourneySection />
-        <WhyChooseUs />
-        <BlogSection posts={blogPosts} />
-        <FaqSection />
-      </div>
+      <NextIntlClientProvider messages={pageMessages}>
+        <div className="flex flex-col w-full min-h-screen relative z-10 bg-black overflow-x-clip">
+          <Hero />
+          <BestSellerSection products={products} />
+          <DifferenceSection />
+          <WhatSetsUsApart />
+          <VialSpecifications />
+          <CategoriesSection categories={categories} />
+          <TrustBadges />
+          <MilitaryDiscountSection />
+          <JourneySection />
+          <WhyChooseUs />
+          <BlogSection posts={blogPosts} />
+          <FaqSection />
+        </div>
+      </NextIntlClientProvider>
 
       {/* JSON-LD Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([
-            {
-              "@context": "https://schema.org",
-              "@type": "WebPage",
-              "@id": `${serverUrl}/#webpage`,
-              "url": `${serverUrl}/`,
-              "name": title,
-              "description": description
-            },
-            {
-              "@context": "https://schema.org",
-              "@type": "BreadcrumbList",
-              "@id": `${serverUrl}/#breadcrumb`,
-              "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": `${serverUrl}/` }
-              ]
-            },
-            {
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": faqJsonLd
-            },
-            {
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "@id": `${serverUrl}/#organization`,
-              "name": "Veracue Peptides",
-              "url": serverUrl,
-              "description": "USA-based supplier of research-use-only synthetic peptides for laboratory research.",
-              "email": "support@veracuepeptides.com",
-              "logo": {
-                "@type": "ImageObject",
-                "url": `${serverUrl}/veracue-images/logo-header.png`
-              }
-            },
-            {
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              "url": serverUrl,
-              "potentialAction": {
-                "@type": "SearchAction",
-                "target": {
-                  "@type": "EntryPoint",
-                  "urlTemplate": `${serverUrl}/shop?q={search_term_string}`
+          __html: safeJsonLd({
+            '@context': 'https://schema.org',
+            '@graph': [
+              {
+                '@type': 'Organization',
+                '@id': `${serverUrl}/#organization`,
+                name: 'Veracue Peptides',
+                legalName: 'Veracue Peptides LLC',
+                url: serverUrl,
+                description: 'Supplier of research-use-only synthetic peptides for laboratory research.',
+                email: 'support@veracuepeptides.com',
+                logo: {
+                  '@type': 'ImageObject',
+                  '@id': `${serverUrl}/#logo`,
+                  url: `${serverUrl}/veracue-images/logo-header.png`,
                 },
-                "query-input": "required name=search_term_string"
-              }
-            }
-          ])
+                contactPoint: {
+                  '@type': 'ContactPoint',
+                  contactType: 'customer support',
+                  email: 'support@veracuepeptides.com',
+                  availableLanguage: ['English'],
+                },
+                ...getOrganizationIdentityFields(),
+              },
+              {
+                '@type': 'WebSite',
+                '@id': `${serverUrl}/#website`,
+                url: serverUrl,
+                name: 'Veracue Peptides',
+                inLanguage: 'en',
+                publisher: { '@id': `${serverUrl}/#organization` },
+              },
+              {
+                '@type': 'WebPage',
+                '@id': `${serverUrl}/#webpage`,
+                url: `${serverUrl}/`,
+                name: title,
+                description,
+                inLanguage: 'en',
+                isPartOf: { '@id': `${serverUrl}/#website` },
+                about: { '@id': `${serverUrl}/#organization` },
+              },
+              {
+                '@type': 'FAQPage',
+                '@id': `${serverUrl}/#faq`,
+                mainEntity: faqJsonLd,
+              },
+            ],
+          }),
         }}
       />
     </>

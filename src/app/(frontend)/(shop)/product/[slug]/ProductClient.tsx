@@ -245,11 +245,9 @@ export function ProductClient({ product }: ProductClientProps) {
   const selectedVariant = product.variants.find(v => v.id === selectedVariantId) || product.variants[0]
   const currentStock = selectedVariant?.inStock ? 50 : 0 // Fake stock level for testing
 
-  // Combine variant-specific images (first) with common product images (second). Remove duplicates.
-  const allImages = [
-    ...(selectedVariant?.images || []),
-    ...(product.images || [])
-  ]
+  // Each variant shows its own photos. The product-level images (kept for listings, search and
+  // wishlist thumbnails) are only used when the selected variant has none of its own.
+  const allImages = selectedVariant?.images?.length ? selectedVariant.images : (product.images || [])
   const galleryImages = Array.from(new Set(allImages)).filter(Boolean)
 
   useEffect(() => {
@@ -532,7 +530,9 @@ export function ProductClient({ product }: ProductClientProps) {
           </div>
 
           {/* Variant Selector — no card wrapper */}
-          {product.variants.length > 1 && (
+          {/* Also shown for a single real variant (e.g. "10mg") so the size is always visible.
+              Products without variants get a placeholder variant titled "Standard", which stays hidden. */}
+          {(product.variants.length > 1 || (product.variants.length === 1 && product.variants[0].title !== 'Standard')) && (
             <div className="mb-7">
               <div className="flex items-center justify-between mb-3">
                 <span className="text-[11px] font-bold text-[#20221c]/50 uppercase tracking-widest">{t('selectSize')}</span>
@@ -746,7 +746,7 @@ export function ProductClient({ product }: ProductClientProps) {
           style={{ y: watermarkY, scale: watermarkScale, opacity: watermarkOpacity }}
           className="absolute right-0 top-1/2 -translate-y-1/2 font-display font-bold text-white select-none pointer-events-none leading-none tracking-tighter text-[140px] sm:text-[240px] lg:text-[380px] pr-4"
         >
-          99.9
+          HPLC
         </motion.div>
 
         <div className="max-w-[1440px] mx-auto px-5 sm:px-10 lg:px-16 py-16 sm:py-20 lg:py-28 relative z-10">
@@ -786,7 +786,7 @@ export function ProductClient({ product }: ProductClientProps) {
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-6 sm:gap-x-8 gap-y-10 lg:gap-x-0 lg:divide-x lg:divide-white/20">
             {[
-              { value: '≥99%',    label: t('statVerifiedPurityLabel'),  desc: t('statVerifiedPurityDesc')          },
+              { value: 'HPLC',    label: t('statVerifiedPurityLabel'),  desc: t('statVerifiedPurityDesc')          },
               { value: t('statLabTestedValue'), label: t('statLabTestedLabel'),       desc: t('statLabTestedDesc')    },
               { value: t('statGradeQualityValue'),  label: t('statGradeQualityLabel'),    desc: t('statGradeQualityDesc')        },
               { value: 'COA',       label: t('statDocumentedLabel'),       desc: t('statDocumentedDesc')       },

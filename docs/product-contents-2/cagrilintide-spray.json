@@ -1,0 +1,251 @@
+{
+  "slug": "cagrilintide-spray",
+  "route": "/product/cagrilintide-spray",
+  "canonical_url": "https://veracue-peptides.vercel.app/product/cagrilintide-spray",
+  "meta": {
+    "title": "Cagrilintide Spray Research Peptide | Veracue",
+    "description": "Cagrilintide spray documentation: amylin analogue identity, CagriSema distinction, human research context, and COA guidance for laboratory researchers."
+  },
+  "product": {
+    "display_name": "Cagrilintide Spray",
+    "compound_name": "Cagrilintide",
+    "format_note": "\"Spray\" describes the liquid packaging format this research material is supplied in. It is not a statement about, or endorsement of, any route of administration, and this page contains no usage or administration guidance.",
+    "sku": "Not publicly specified by Veracue.",
+    "category": "Metabolic & Amylin Research",
+    "form": "Liquid spray. Concentration, carrier, solvent, and fill volume are not publicly specified by Veracue.",
+    "concentration": "Not publicly specified by Veracue.",
+    "fill_volume": "Not publicly specified by Veracue.",
+    "available_sizes": "Not publicly specified by Veracue.",
+    "price": "Not publicly specified by Veracue.",
+    "purity": "Not publicly specified by Veracue. Purity is a lot-specific analytical result and should be verified on the Certificate of Analysis for the exact lot received.",
+    "salt_or_counterion_form": "Not publicly specified by Veracue. The molecular reference data on this page describes the free-peptide research standard, not a confirmed salt form of this product.",
+    "storage": "Not publicly specified by Veracue.",
+    "appearance": "Not publicly specified by Veracue.",
+    "coa_availability": "Not publicly specified by Veracue. Lot-specific analytical documentation should be verified directly with Veracue before relying on any product-specific purity or identity data.",
+    "quality_grade": "Research Use Only (RUO)",
+    "intended_use": "Laboratory and analytical research only — not for human or veterinary use.",
+    "shipping": "Not publicly specified by Veracue."
+  },
+  "hero": {
+    "eyebrow": "Research Use Only · Amylin Research Peptide",
+    "headline": "Cagrilintide Spray",
+    "subheadline": "Cagrilintide, in liquid spray packaging, supplied for laboratory and analytical research only.",
+    "blurb": "Cagrilintide is a long-acting analogue of human amylin, studied for its ability to sustain amylin-receptor activity well beyond that of the native hormone. It's a distinct research subject from GLP-1-pathway compounds like semaglutide and tirzepatide, and a distinct subject from CagriSema, the investigational cagrilintide-plus-semaglutide combination studied separately by Novo Nordisk. This page walks through cagrilintide's chemical identity, what the published research record actually shows, and how to read the documentation on a specific lot — supplied strictly for research use, with no dosing or administration guidance."
+  },
+  "direct_answer": {
+    "question": "What is cagrilintide?",
+    "answer": "Cagrilintide is a synthetic, long-acting analogue of human amylin, a hormone the pancreas releases alongside insulin. Rather than acting on the GLP-1 receptor pathway used by compounds like semaglutide, cagrilintide is studied through the amylin-receptor system, where it is designed to produce more sustained receptor activity than native amylin's short half-life allows. It has been investigated both on its own and, separately, as one half of the cagrilintide-plus-semaglutide combination known as CagriSema. Veracue supplies cagrilintide as a liquid spray strictly for laboratory research — this page does not describe or endorse any use in humans or animals."
+  },
+  "compound_profile": {
+    "heading": "What Cagrilintide Is",
+    "body": "Cagrilintide is a synthetic peptide built as a long-acting analogue of amylin (also called islet amyloid polypeptide), a hormone co-secreted with insulin by the pancreas. Reference chemical sources describe it as a distinct amylin-receptor research compound, developed to produce more prolonged amylin-receptor activity than native amylin's short circulating half-life allows. It is a separate molecular entity from GLP-1 receptor agonists, and Veracue does not describe or market it as one.",
+    "at_a_glance": {
+      "heading": "Molecular Reference Data",
+      "disclaimer": "The values below are published chemical-reference data for cagrilintide as a molecule — not analytical results for Veracue's product. Lot-specific purity, identity, and composition results come only from that lot's own Certificate of Analysis.",
+      "compound_type": "Long-acting amylin analogue (research peptide)",
+      "cas_number": "1415456-99-3",
+      "pubchem_cid": "171397054",
+      "molecular_formula": "C194H312N54O59S2",
+      "molecular_weight": "approximately 4409 g/mol",
+      "exact_mass": "approximately 4408.258 Da",
+      "monoisotopic_mass": "approximately 4406.252 Da",
+      "reference_sequence": "XKCNTATCATQRLAEFLRHSSNNFGPILPPTNVGSNTP",
+      "receptor_system": "Studied through the amylin-receptor system — see \"Receptor Biology\" below for what that actually means",
+      "research_designation": "Research Use Only (RUO); not for human or veterinary use"
+    },
+    "sequence_notation_note": "That leading \"X\" in the reference sequence isn't one of the twenty standard amino acid letters — it's database shorthand for a non-standard, chemically modified residue position (a lysine carrying a fatty-acid conjugation, the same general design principle used in other long-acting peptide therapeutics). A single-letter sequence string like this is a useful reference, but it doesn't fully communicate cagrilintide's complete modified chemical structure. Researchers who need the full structure should go to the compound's PubChem record and primary literature rather than treating the letter sequence as a complete definition.",
+    "what_it_is_not": [
+      "Not a GLP-1 peptide or GLP-1 receptor agonist",
+      "Not semaglutide, tirzepatide, or any other incretin-based compound",
+      "Not CagriSema — CagriSema is a separate, two-component combination (see below)",
+      "Not confirmed by Veracue to be a specific salt or counterion form (e.g., acetate) unless stated on lot documentation",
+      "Not a consumer product, supplement, or finished pharmaceutical",
+      "Not intended for human or animal use of any kind"
+    ]
+  },
+  "research_focus_and_mechanism": {
+    "heading": "Amylin Biology & Receptor System",
+    "biological_context": "Amylin is a hormone the pancreas releases alongside insulin after eating. Published research on amylin and its analogues has looked at its role in postprandial physiology — including signaling connected to gastric emptying and short-term satiety — as part of the broader field of glucose-regulation research. Cagrilintide's longer circulating half-life relative to native amylin is what has made it a subject of interest for researchers studying sustained amylin-receptor activity over time.",
+    "receptor_biology": "It's worth being precise about the receptor system here, since \"amylin receptor\" can sound like a single, simple target. In practice, amylin doesn't act on one dedicated receptor protein — its pharmacology is studied through receptor complexes formed by the calcitonin receptor paired with accessory proteins called receptor activity-modifying proteins (RAMPs). Different RAMP pairings produce different amylin-receptor subtypes. Cagrilintide's activity is studied against this receptor-complex system, not against a GLP-1-type single receptor, which is one of the clearest mechanistic distinctions between it and incretin-pathway compounds.",
+    "mechanism_framing": [
+      "Cagrilintide is studied in relation to amylin-receptor complex activation, not GLP-1 receptor activity.",
+      "Published research has investigated its effects on markers connected to gastric-emptying-related physiology.",
+      "Its pharmacology has been characterized largely through comparison with native human amylin and with other amylin-receptor agonists in development.",
+      "These findings describe receptor engagement and downstream signaling reported in published studies — they are not evidence of, or a substitute for, any therapeutic outcome, and Veracue makes no such claim about this product."
+    ],
+    "distinguishing_from_incretins": "Because cagrilintide keeps showing up alongside GLP-1 receptor agonists in metabolic-research coverage, it's worth stating plainly: cagrilintide works through the amylin-receptor complex system described above, not the GLP-1 receptor. Semaglutide and tirzepatide are GLP-1-pathway compounds (tirzepatide also engages the GIP receptor); cagrilintide doesn't share that mechanism. Any comparison between them in the literature is a comparison between mechanistically distinct compounds, not a comparison of equivalent molecules."
+  },
+  "cagrisema_distinction": {
+    "heading": "Cagrilintide Is Not CagriSema",
+    "body": "CagriSema is the name Novo Nordisk uses for an investigational combination of cagrilintide and semaglutide, studied together in its own clinical development program (the REDEFINE trial series). Cagrilintide is one component studied within that combination; it is not a synonym for it, and cagrilintide on its own is not CagriSema.",
+    "clarifications": [
+      "Cagrilintide and CagriSema are distinct research subjects. CagriSema refers specifically to the cagrilintide-plus-semaglutide combination studied in Novo Nordisk's clinical development program.",
+      "Results reported for CagriSema describe the combination and should not be assumed to apply to cagrilintide studied or used on its own.",
+      "This Veracue page should not be interpreted as documentation of a CagriSema formulation, and Veracue makes no claim about the composition of this product beyond what is stated here.",
+      "Novo Nordisk continues to describe CagriSema as an investigational combination; its clinical and regulatory status is separate from, and should not be read across to, cagrilintide as a standalone research compound."
+    ]
+  },
+  "human_clinical_research_context": {
+    "heading": "What the Published Research Actually Shows",
+    "framing_note": "One correction worth making up front: cagrilintide is not a preclinical-only compound. There is a substantial body of published human clinical research on it. The summary below stays at that level — population, study type, broad endpoint, and general finding — without reproducing dose levels, titration schedules, or administration instructions from those trials, and none of it should be interpreted as evidence about Veracue's RUO material.",
+    "monotherapy_research": "Published clinical studies have investigated cagrilintide on its own (without semaglutide) in randomized, placebo- and active-comparator-controlled trials involving adults with overweight or obesity. These trials compared cagrilintide against placebo and against an approved active comparator, using change in body weight over a fixed, multi-month period as the primary outcome. The findings reported in this studied clinical population described greater mean weight reduction with cagrilintide than with placebo, with a tolerability profile broadly consistent with other peptide hormone analogues studied in this research area. This page summarizes design and outcome shape only, and the results should not be interpreted as evidence about Veracue's RUO material.",
+    "combination_research_cagrisema": "Separately, cagrilintide has been studied in combination with semaglutide under the CagriSema program, including the REDEFINE series of Phase 3 trials in adults with obesity or overweight, and in adults with type 2 diabetes. These trials used randomized, controlled designs comparing the combination against placebo and, in at least one head-to-head design, against another approved GLP-1/GIP-pathway therapy, with body-weight and glycemic endpoints assessed over a defined treatment period. Published trials have reported outcomes that varied by trial — some described statistically greater weight reduction for the combination versus its individual components or placebo, while at least one head-to-head trial against an active comparator did not meet its pre-specified primary endpoint. This is combination-drug evidence, noted here only to correct the misconception that cagrilintide is preclinical-only. It describes CagriSema, not cagrilintide alone, and none of it should be read as a claim about Veracue's research material.",
+    "evidence_limitations": [
+      "Clinical-trial results describe a specific patient population, clinical formulation, and clinical protocol — none of which apply to a laboratory research reagent.",
+      "Monotherapy findings and CagriSema combination findings are not interchangeable and shouldn't be cited for one another.",
+      "Published trial data reflect a pharmaceutical-grade, clinically administered product, not Veracue's RUO research material.",
+      "None of this evidence establishes safety, efficacy, or appropriate use for any purpose outside a controlled clinical trial."
+    ]
+  },
+  "regulatory_status_note": {
+    "heading": "Current Development Status",
+    "body": "Cagrilintide and the CagriSema combination remain in active clinical development, with regulatory review status varying by jurisdiction and indication. Veracue does not make claims about approval status in any market, does not predict regulatory outcomes, and does not represent this research material as equivalent to, or interchangeable with, any pharmaceutical product under review or in development. For current status, researchers should consult primary regulatory sources such as the FDA and EMA, along with Novo Nordisk's own public disclosures."
+  },
+  "quality_and_purity_standards": {
+    "heading": "Reading a Cagrilintide Certificate of Analysis",
+    "coa_guidance_intro": "Cagrilintide is a large, chemically modified peptide — its molecular weight runs roughly ten times that of a typical short research peptide — which makes analytical documentation especially worth understanding before you rely on it. A well-documented COA lets you independently verify what's actually in the vial before it enters any protocol; a thin one doesn't.",
+    "coa_elements": [
+      {
+        "element": "Lot number",
+        "what_it_establishes": "Links the report to the specific production batch on the vial label — the starting point for any documentation check."
+      },
+      {
+        "element": "HPLC purity",
+        "what_it_establishes": "The proportion of detected signal attributable to the main peak under the stated method. On its own, it doesn't establish sterility, endotoxin status, or biological activity."
+      },
+      {
+        "element": "Identity by mass spectrometry",
+        "what_it_establishes": "Confirms the observed mass is consistent with the expected molecular structure. Given cagrilintide's size and its lipidated modification, mass confirmation matters more here than it would for a short, unmodified peptide — it's what actually distinguishes intact material from truncated or degraded material."
+      },
+      {
+        "element": "Net peptide content",
+        "what_it_establishes": "Quantifies peptide mass versus residual salts, counterions, or water content — relevant if you're calculating concentrations from a vial."
+      },
+      {
+        "element": "Molecular form declared",
+        "what_it_establishes": "States which chemical form (free peptide vs. a specific salt) the reported data applies to, since molecular weight and calculated concentrations shift depending on form."
+      }
+    ],
+    "quick_checklist": [
+      "Lot number on the COA matches the lot number on the vial label",
+      "The purity method (e.g., HPLC) is named, not just a bare percentage",
+      "Identity confirmation states both the expected and observed mass",
+      "The molecular form the data applies to is explicitly declared",
+      "The testing laboratory and test date are shown",
+      "Any additional panels performed (e.g., endotoxin, microbial) report actual results rather than a pass/fail claim alone"
+    ],
+    "documentation_access": "Lot-specific analytical documentation for this product is not publicly specified on this page. Verify purity, identity, and composition directly with Veracue for the exact lot you receive before it enters any protocol."
+  },
+  "problem_solution_sections": [
+    {
+      "problem": "I keep seeing cagrilintide described as a GLP-1 peptide in search results and marketing copy, and I'm not sure that's accurate.",
+      "solution": "It isn't. Cagrilintide is studied through the amylin-receptor complex system, not the GLP-1 receptor. It shares a research context with GLP-1-pathway compounds like semaglutide and tirzepatide because they're frequently studied together in metabolic research, but the receptor targets are mechanistically distinct."
+    },
+    {
+      "problem": "I can't tell whether 'cagrilintide' and 'CagriSema' refer to the same thing when I'm reading through supplier listings and news coverage.",
+      "solution": "They don't. CagriSema is Novo Nordisk's name for an investigational combination of cagrilintide plus semaglutide, studied as its own clinical program. Cagrilintide alone — the compound on this page — is one component studied within that combination, not the combination itself. Findings reported for CagriSema shouldn't be read across to cagrilintide as a standalone research subject."
+    },
+    {
+      "problem": "Different sources cite different molecular weights for cagrilintide, and I need a reliable figure for calculations.",
+      "solution": "Molecular weight can shift slightly depending on whether a source is reporting free-peptide mass, exact mass, monoisotopic mass, or a specific salt form. This page states the free-peptide reference values from PubChem (molecular weight ~4409 g/mol, exact mass ~4408.258 Da, monoisotopic mass ~4406.252 Da) so you know exactly which figure you're working from — and it's molecular reference data, not a confirmed salt form of Veracue's product."
+    },
+    {
+      "problem": "The reference sequence for cagrilintide starts with an 'X', and I don't know what that represents.",
+      "solution": "The 'X' marks a non-standard residue position in the database shorthand — a modified lysine carrying a fatty-acid conjugation, not one of the twenty canonical amino acids. Treat a single-letter sequence string as a partial reference, not a complete structural description, and consult the compound's PubChem record or primary literature for the full modified structure."
+    },
+    {
+      "problem": "I've read claims that cagrilintide has only been tested in animal models, which doesn't match what I've seen cited in the metabolic-research literature.",
+      "solution": "That claim doesn't hold up. Cagrilintide has a substantial human clinical-trial record — both as a standalone compound in earlier trials and as part of the CagriSema combination in later-phase trials. This page summarizes the shape of that evidence (population, design, comparator, general finding) without reproducing dosing details, so you can go into the primary literature with accurate context."
+    },
+    {
+      "problem": "When I look up cagrilintide trial data, I can't easily tell whether a given result is about cagrilintide alone or about the CagriSema combination.",
+      "solution": "Check the trial name and design before citing a figure. Monotherapy studies compare cagrilintide alone against placebo and an active comparator; the REDEFINE series evaluates the cagrilintide-plus-semaglutide combination. This page keeps the two bodies of evidence separate for that exact reason — worth doing the same in your own notes."
+    },
+    {
+      "problem": "I need to interpret a Certificate of Analysis for a large, chemically modified peptide like cagrilintide, and I'm not sure what to check beyond a purity percentage.",
+      "solution": "For a modified peptide this size, purity alone doesn't tell you much. Confirm mass spectrometry identity data is present (to verify observed mass against the expected modified structure), that the declared molecular form matches your calculations, and that the lot number on the document matches your vial before you rely on any of it."
+    },
+    {
+      "problem": "I'm not sure what 'spray' means for this product, and whether it implies an intended method of use.",
+      "solution": "'Spray' here refers strictly to the liquid packaging format this research material is supplied in — it isn't a statement about, or endorsement of, any route of administration. This page contains no usage, dosing, or administration guidance for this or any other purpose."
+    },
+    {
+      "problem": "I want to understand amylin-receptor biology generally before I read cagrilintide-specific literature.",
+      "solution": "Amylin is a hormone co-secreted with insulin, studied in connection with postprandial physiology, including gastric-emptying-related signaling and satiety-related research. Its receptor system isn't one dedicated protein — it's a complex formed by the calcitonin receptor and accessory RAMP proteins. Cagrilintide's research interest largely comes from sustaining engagement with that receptor system longer than native amylin's short half-life allows."
+    },
+    {
+      "problem": "I don't know whether Veracue's cagrilintide is a specific salt form (like an acetate), and that matters for how I calculate concentrations.",
+      "solution": "Veracue has not publicly specified a salt or counterion form for this product. The chemical reference data on this page describes the free-peptide research standard, not a stated salt form of the Veracue material. Get lot-specific documentation before doing any concentration calculation, and don't assume a salt form that isn't explicitly documented."
+    },
+    {
+      "problem": "I keep encountering unsupported regulatory claims — 'approved,' 'banned,' 'clinically proven' — attached to cagrilintide online, and I want to know what's actually established.",
+      "solution": "Cagrilintide and CagriSema remain in active clinical development and regulatory review, with status varying by jurisdiction and indication. Veracue doesn't make approval claims in either direction and doesn't predict outcomes. For current regulatory status, go to primary sources like FDA and EMA disclosures and Novo Nordisk's own public statements rather than secondary marketing content."
+    },
+    {
+      "problem": "I need documentation (COA, identity confirmation) for the exact lot I've received before it goes into any laboratory workflow, and this page doesn't show one.",
+      "solution": "That's expected — lot-specific analytical documentation isn't published on this page. Contact Veracue directly for the documentation tied to the exact lot you receive, and confirm the lot number on that document matches your vial before proceeding."
+    }
+  ],
+  "faq": [
+    {
+      "question": "What is cagrilintide?",
+      "answer": "Cagrilintide is a synthetic, long-acting analogue of human amylin, a hormone naturally co-secreted with insulin. It's studied through the amylin-receptor system and supplied by Veracue strictly for laboratory and analytical research use."
+    },
+    {
+      "question": "Is cagrilintide the same as CagriSema?",
+      "answer": "No. CagriSema is Novo Nordisk's name for an investigational combination of cagrilintide and semaglutide studied together in its own clinical program. Cagrilintide is one component studied within that combination, not the combination itself."
+    },
+    {
+      "question": "Is cagrilintide a GLP-1 peptide, or the same as semaglutide or tirzepatide?",
+      "answer": "No. Cagrilintide is studied through the amylin-receptor complex system, which is mechanistically distinct from the GLP-1 receptor pathway that semaglutide and tirzepatide engage. It's frequently discussed alongside those compounds in the research literature, but it isn't one of them."
+    },
+    {
+      "question": "Does Veracue's Cagrilintide Spray contain semaglutide?",
+      "answer": "Veracue has not publicly documented the exact composition of this product. Cagrilintide and CagriSema are distinct research subjects, and this page should not be interpreted as documentation of a CagriSema (cagrilintide-plus-semaglutide) formulation. Verify formulation details directly with Veracue."
+    },
+    {
+      "question": "What is cagrilintide's molecular formula and weight?",
+      "answer": "Published reference data lists the molecular formula as C194H312N54O59S2, with a molecular weight of approximately 4409 g/mol, an exact mass of approximately 4408.258 Da, and a monoisotopic mass of approximately 4406.252 Da for the free-peptide form (CAS 1415456-99-3, PubChem CID 171397054). These are molecular reference values, not analytical results for a specific Veracue lot."
+    },
+    {
+      "question": "What does the CAS number 1415456-99-3 refer to?",
+      "answer": "It's the CAS Registry Number associated with cagrilintide's free-peptide reference structure in authoritative chemical databases. A CAS number identifies a chemical entity; it doesn't by itself confirm a particular supplier's salt form, purity, or manufacturing details, which should be verified separately on lot documentation."
+    },
+    {
+      "question": "What does the reference sequence XKCNTATCATQRLAEFLRHSSNNFGPILPPTNVGSNTP mean, and what is the 'X'?",
+      "answer": "This is the published single-letter reference sequence for cagrilintide. The leading 'X' denotes a non-standard, chemically modified lysine residue rather than one of the twenty standard amino acids — the sequence string alone doesn't fully capture the molecule's complete modified structure."
+    },
+    {
+      "question": "Has cagrilintide only been tested in animals, or is there human research too?",
+      "answer": "There's a substantial human clinical-trial record for cagrilintide — both studied on its own in earlier trials and in combination with semaglutide (CagriSema) in later-phase trials, including the REDEFINE program. Describing cagrilintide as preclinical-only isn't accurate."
+    },
+    {
+      "question": "What is CagriSema's current regulatory status, and does it apply to this product?",
+      "answer": "CagriSema remains in active clinical development and regulatory review, with status varying by jurisdiction. That status describes Novo Nordisk's investigational combination product — it doesn't describe, and shouldn't be assumed to apply to, Veracue's RUO cagrilintide research material."
+    },
+    {
+      "question": "Does 'spray' mean this product is intended for human use?",
+      "answer": "No. 'Spray' describes only the liquid packaging format this research material is supplied in. This page provides no dosing, administration, or usage guidance, and the product isn't intended for human or veterinary use of any kind."
+    },
+    {
+      "question": "What should I look for on a Certificate of Analysis for a peptide this size?",
+      "answer": "A lot number matching your vial, a named purity method (like HPLC), mass spectrometry identity confirmation with both expected and observed mass, the declared molecular form, and the testing laboratory and date. For a large, modified peptide like cagrilintide, identity confirmation by mass spec matters more than it would for a shorter, unmodified peptide."
+    },
+    {
+      "question": "Can Veracue provide dosing, reconstitution, or usage instructions for this product?",
+      "answer": "No. Veracue doesn't provide dosing, titration, administration, or usage guidance for any product, including this one. Everything on this page is limited to chemical identity, research context, and documentation guidance for laboratory use."
+    }
+  ],
+  "compliance_notice": {
+    "heading": "Research Use Only",
+    "body": [
+      "This product is offered by Veracue for laboratory and analytical research use only. It is not a drug, cosmetic, dietary supplement, or food, and it is not intended to diagnose, treat, cure, or prevent any disease.",
+      "This product is not for human or veterinary use and is not intended for ingestion, injection, or any form of administration to a person or animal.",
+      "This page contains no dosing, administration, reconstitution, or usage guidance of any kind. Purchase and use are restricted to qualified researchers operating within appropriate institutional and legal frameworks.",
+      "The FDA has not evaluated this product for human or veterinary use. See Veracue's Medical Disclaimer and Terms & Conditions for complete terms."
+    ]
+  },
+  "related_products": {
+    "note": "Not publicly specified by Veracue."
+  }
+}

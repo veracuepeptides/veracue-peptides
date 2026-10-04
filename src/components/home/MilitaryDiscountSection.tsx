@@ -35,7 +35,7 @@ export function MilitaryDiscountSection() {
 
   // Dignified US Flag & Great Seal Military Honor Image (Zero Human Faces)
   const usFlagImage = {
-    src: '/veracue-images/veracue-military-us-flag.jpg',
+    src: '/veracue-images/veracue-military-us-flag.webp',
     alt: 'Dignified American US flag with embroidered stars and bronze military seal honoring service members'
   };
 
@@ -160,7 +160,6 @@ export function MilitaryDiscountSection() {
                   fill 
                   sizes="(max-width: 1024px) 100vw, 42vw"
                   className="object-cover object-center filter brightness-[0.88] contrast-[1.05] transition-transform duration-1000 group-hover:scale-105"
-                  priority
                 />
               </div>
 
@@ -179,7 +178,7 @@ export function MilitaryDiscountSection() {
 
                 <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#a5a58d] text-[#fff1e6] text-xs font-black tracking-widest uppercase shadow-md">
                   <Award className="w-3.5 h-3.5 text-[#fff1e6]" />
-                  <span>30% OFF</span>
+                  <span>15% OFF</span>
                 </div>
               </div>
 
@@ -203,11 +202,11 @@ export function MilitaryDiscountSection() {
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center justify-between gap-2 mb-1">
-                      <h4 className="text-xs sm:text-sm font-black text-[#20221c] tracking-wider uppercase font-heading">
+                      <p className="text-xs sm:text-sm font-black text-[#20221c] tracking-wider uppercase font-heading">
                         {t('privacyNoticeTitle')}
-                      </h4>
+                      </p>
                       <span className="text-[9px] sm:text-[10px] font-sans font-bold tracking-widest text-[#a5a58d] uppercase px-2 py-0.5 rounded bg-[#f0efeb]">
-                        AES-256
+                        SECURE
                       </span>
                     </div>
                     <p className="text-[11px] sm:text-[12px] leading-relaxed text-[#20221c]/80 font-medium">
@@ -227,7 +226,7 @@ export function MilitaryDiscountSection() {
                         <CheckCircle2 className="w-3 h-3 text-[#a5a58d]" /> Zero Archival
                       </span>
                       <span className="inline-flex items-center gap-1">
-                        <Clock className="w-3 h-3 text-[#a5a58d]" /> &lt;2h Review
+                        <Clock className="w-3 h-3 text-[#a5a58d]" /> Prompt Review
                       </span>
                     </div>
                   </div>
@@ -501,11 +500,11 @@ export function MilitaryDiscountSection() {
                     <div className="flex flex-wrap items-center justify-between gap-2 py-1 border-t border-[#20221c]/10 text-[10px] sm:text-[11px] font-bold text-[#20221c]/75 uppercase tracking-wide">
                       <div className="flex items-center gap-1.5">
                         <Clock className="w-3 h-3 text-[#a5a58d] shrink-0" />
-                        <span>&lt;2h Review</span>
+                        <span>Prompt Review</span>
                       </div>
                       <div className="flex items-center gap-1.5">
                         <Award className="w-3 h-3 text-[#a5a58d] shrink-0" />
-                        <span>Standing 30%</span>
+                        <span>Standing 15%</span>
                       </div>
                       <div className="flex items-center gap-1.5">
                         <Shield className="w-3 h-3 text-[#a5a58d] shrink-0" />
@@ -537,7 +536,7 @@ export function MilitaryDiscountSection() {
                     {/* Micro Security Footnote */}
                     <div className="text-center">
                       <p className="text-[10px] text-[#20221c]/50 font-medium">
-                        Your ID is AES-256 encrypted the moment it's uploaded, and permanently deleted once your discount code is generated.
+                        Your ID is used only to verify your eligibility for the discount and is deleted once your code is generated.
                       </p>
                     </div>
 
@@ -571,7 +570,7 @@ export function MilitaryDiscountSection() {
 
                     <div className="p-3.5 rounded-xl bg-[#f0efeb]/60 border border-[#20221c]/10 text-xs text-[#20221c]/80 font-medium max-w-sm mb-6 space-y-1 text-left">
                       <div className="font-bold text-[#20221c] uppercase tracking-wider text-[11px]">What happens next?</div>
-                      <div className="text-[11px]">Our verification team will review your credentials within 2 hours and email your private 30% discount code.</div>
+                      <div className="text-[11px]">Our verification team will review your credentials and email your private 15% discount code.</div>
                     </div>
 
                     <button

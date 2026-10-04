@@ -166,7 +166,7 @@ function FormLeftFlank() {
           PEPTIDE LATTICE // RUO-01
         </text>
         <text x="35" y="68" fill="currentColor" opacity="0.38" fontSize="7" fontFamily="monospace">
-          HPLC SEQ: 99%+ ACCREDITED
+          HPLC SEQ: COA PER BATCH
         </text>
         <text x="85" y="565" fill="currentColor" opacity="0.45" fontSize="8" fontFamily="monospace" letterSpacing="0.16em">
           BATCH: LAB VERIFIED
@@ -184,12 +184,12 @@ function FormLeftFlank() {
               STANDARD
             </span>
             <span className="text-xs font-bold text-neutral-900 font-heading">
-              ≥99% HPLC Purity
+              HPLC Purity Per Batch
             </span>
           </div>
         </div>
         <p className="text-[11px] text-neutral-600 leading-relaxed font-normal">
-          Every peptide cataloged with transparent third-party HPLC and MS testing.
+          Every peptide cataloged with transparent HPLC and MS testing data on its COA.
         </p>
       </div>
     </div>
@@ -649,7 +649,7 @@ export function AffiliatesLandingClient({
       tag: t('step2Tag'),
       microcopy: t('step2Microcopy'),
       icon: LinkIcon,
-      image: '/veracue-images/veracue-research-grade-50mg-gloved-hand.png',
+      image: '/veracue-images/veracue-research-grade-gloved-hand.webp',
     },
     {
       id: 2,
@@ -658,7 +658,7 @@ export function AffiliatesLandingClient({
       tag: t('step3Tag'),
       microcopy: t('step3Microcopy'),
       icon: Share2,
-      image: '/veracue-images/veracue-research-grade-50mg-dish-leaf-droplets.png',
+      image: '/veracue-images/veracue-research-grade-dish-leaf-droplets.webp',
     },
     {
       id: 3,
@@ -667,7 +667,7 @@ export function AffiliatesLandingClient({
       tag: t('step4Tag'),
       microcopy: t('step4Microcopy'),
       icon: DollarSign,
-      image: '/veracue-images/veracue-research-grade-50mg-ice-dropper.png',
+      image: '/veracue-images/veracue-research-grade-ice-dropper.webp',
     },
   ]
 

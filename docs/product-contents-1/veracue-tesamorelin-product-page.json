@@ -1,0 +1,554 @@
+{
+  "deliverable": "Tesamorelin — Product Page Content Package",
+  "client": "Veracue Peptides",
+  "site": "https://veracue-peptides.vercel.app/",
+  "prepared_by": "Belk Digital",
+  "date_prepared": "2026-09-18",
+  "status": "CONTENT COMPLETE — PUBLISHING BLOCKED. See publishing_dependencies. No Tesamorelin product record exists in the live Veracue catalog, and no Tesamorelin lot COA exists in the live certificate archive. All product-specific commercial fields are omitted rather than invented.",
+
+  "verification_audit": {
+    "method": "Every high-value claim was checked against primary or regulatory sources rather than against the supplied research report. The report was treated as a lead list, not as verified copy.",
+    "corrections_to_supplied_research_report": [
+      {
+        "claim_in_report": "Tesamorelin acetate CAS 804475-66-9",
+        "finding": "NOT SUPPORTED. No authoritative source returns 804475-66-9 for tesamorelin acetate.",
+        "verified_value": "CAS 901758-09-6 (UNII LGW5H38VE3), per DrugBank salt record DBSALT001835, FDA GSRS/precisionFDA, and Wikipedia's drug identifier box.",
+        "action": "Report value rejected. Verified value used on the page."
+      },
+      {
+        "claim_in_report": "Molecular weight 5136 g/mol average; 5134.72 Da exact; 5132.72 Da monoisotopic",
+        "finding": "PARTIALLY SUPPORTED. Average mass verifies as 5135.86–5135.9 g/mol. The 5134.72 Da 'exact mass' figure could not be reproduced from any authoritative source and appears to be an error.",
+        "verified_value": "Average molecular weight 5135.9 g/mol (free base), formula C221H366N72O67S, PubChem CID 16137828.",
+        "action": "Page publishes the average mass only, and explains the mass-convention issue instead of printing three competing numbers. The monoisotopic figure is described qualitatively, not asserted numerically, because only vendor sources carried it."
+      },
+      {
+        "claim_in_report": "Second pivotal trial cited as 'Falutz et al., 2010 (JAIDS)'",
+        "finding": "NOT CONFIRMED as described. The 2010 Falutz publication that verifies is the pooled analysis of two Phase 3 trials in J Clin Endocrinol Metab 2010;95:4291-304 (PMID 20554713). The second standalone Phase 3 report is Falutz 2008, AIDS 2008;22:1719-1728.",
+        "action": "Page cites NEJM 2007 and the JCEM 2010 pooled analysis. The JAIDS attribution is dropped."
+      },
+      {
+        "claim_in_report": "2026 meta-analysis, '4 RCTs (909 patients), VAT MD -21.47 cm², higher discontinuation RR 2.25', PMID 42538058",
+        "finding": "PARTIALLY SUPPORTED. A 2026 systematic review and meta-analysis reporting a 21.47 cm² mean VAT reduction does exist (PMC13428105). The trial count, patient count, discontinuation risk ratio and the cited PMID could not be independently confirmed.",
+        "action": "The VAT figure is used with the PMC identifier. The unconfirmed sample size and RR 2.25 are omitted."
+      },
+      {
+        "claim_in_report": "Author attribution 'Badran et al.' for the Obesity Research & Clinical Practice 2026 meta-analysis",
+        "finding": "Paper verified (PMID 41545261), author attribution not verified.",
+        "action": "Cited by journal, year and PMID without author name."
+      },
+      {
+        "claim_in_report": "Visceral adipocytes express higher GH receptor density than subcutaneous adipocytes; lipolysis via HSL and ATGL upregulation",
+        "finding": "NOT VERIFIED. The Lancet HIV editorial accompanying Stanley 2019 states tesamorelin can stimulate lipolysis through increased endogenous GH but explicitly notes multiple mechanisms may be involved.",
+        "action": "Both mechanistic claims removed. The page states plainly that the reason for visceral selectivity is not fully established. This is treated as an information-gain point, since competitor pages assert the receptor-density explanation as settled fact."
+      },
+      {
+        "claim_in_report": "'Prevents runaway GH secretion' via intact negative feedback",
+        "finding": "NOT VERIFIED as a supported claim in this form.",
+        "action": "Removed. The page limits itself to the verified distinction between stimulating endogenous GH release and administering recombinant GH."
+      }
+    ],
+    "third_party_sequence_error_caught": {
+      "issue": "At least one vendor page in circulation publishes the tesamorelin sequence with D-Ala at position 2 (Tyr-DAla-Asp-...).",
+      "finding": "INCORRECT. FDA GSRS substance record MQG94M5EEO gives the subunit as YADAIFTNSYRKVLGQLSARKLLQDIMSRQQGESNQERGARARL, matching native human GRF(1-44) with L-Ala at position 2. The D-Ala2 substitution belongs to CJC-1295 and modified GRF(1-29), not tesamorelin.",
+      "action": "Verified sequence published. Flagged here so it is never copied from a vendor source in future Veracue pages."
+    },
+    "site_copy_issue_flagged_to_client": {
+      "location": "https://veracue-peptides.vercel.app/certificates — Stage 03 Identity",
+      "existing_claim": "ESI-MS or MALDI-TOF confirms the molecular weight matches theoretical target mass within ±0.05 Da tolerance.",
+      "concern": "For a peptide of roughly 5,136 Da, a ±0.05 Da mass-accuracy window is well beyond what routine ESI-MS or MALDI-TOF delivers. That tolerance is realistic for small molecules, not for a 5 kDa peptide. A knowledgeable researcher will notice.",
+      "recommendation": "Have Veracue restate the tolerance in ppm, or as a mass-match window appropriate to the instrument and molecular size. This sits outside the Tesamorelin page but would undermine the analytical credibility the page is built on."
+    },
+    "verified_and_carried_through": [
+      "Tesamorelin is a synthetic 44-amino-acid analogue of human growth hormone-releasing factor with an N-terminal trans-3-hexenoyl group and a C-terminal amide — FDA label description and GSRS.",
+      "Development code TH9507 — confirmed across regulatory and database sources.",
+      "Molecular formula C221H366N72O67S; PubChem CID 16137828; free-base CAS 218949-48-5; UNII MQG94M5EEO; ChEBI 63626; KEGG D09015; ChemSpider 34982925.",
+      "Elimination half-life 26–38 minutes; subcutaneous bioavailability ≤4%.",
+      "ATC code H01AC06.",
+      "EGRIFTA WR (tesamorelin) for injection, Theratechnologies, initial U.S. approval 2010, label revised March 2025 — DailyMed setid 839334d3-8c1d-4c26-9036-2ab524a6ea75.",
+      "Approved indication: reduction of excess abdominal fat in HIV-infected adult patients with lipodystrophy.",
+      "Label limitations: not indicated for weight loss management as it has a weight neutral effect; long-term cardiovascular safety not established; no data support improved antiretroviral compliance.",
+      "EGRIFTA WR and EGRIFTA SV are not substitutable — stated on the WR label.",
+      "Falutz 2007, NEJM 357:2359-70, PMID 18057338: 412 randomized (275 tesamorelin / 137 placebo), 26 weeks, VAT -15.2% vs +5.0% placebo.",
+      "Falutz 2010 pooled Phase 3 analysis, JCEM 95:4291-304, PMID 20554713.",
+      "Stanley 2014, JAMA 312:380-89, PMID 25038357: 50 participants, 6 months.",
+      "Stanley 2019, Lancet HIV 6(12):e821-e830, PMID 31611038: 61 participants, 12 months, hepatic fat fraction -4.1% absolute / -37% relative, 35% vs 4% reached HFF under 5%.",
+      "Obesity Research & Clinical Practice 2026 meta-analysis, PMID 41545261: 5 RCTs; VAT MD -27.71 cm²; trunk fat -1.18 kg; limb fat -0.22 kg; hepatic fat -4.28%; waist circumference -1.61 cm; lean body mass +1.42 kg; no significant change in subcutaneous adipose tissue, BMI or CD4+ counts."
+    ]
+  },
+
+  "publishing_dependencies": [
+    {
+      "item": "Tesamorelin product record",
+      "status": "MISSING",
+      "detail": "The live shop returns two compounds only: AHK-Cu and NAD+. There is no Tesamorelin listing, so SKU, vial size, price, stock status and product image do not exist.",
+      "blocks": "Product schema Offer node, hero pricing, specifications table rows marked pending, add-to-cart CTA."
+    },
+    {
+      "item": "Tesamorelin batch COA",
+      "status": "MISSING",
+      "detail": "The certificate archive lists 12 reports (BPC-157, TB-500, GHK-Cu, NAD+, Semaglutide, Tirzepatide, Epithalon, CJC-1295, Ipamorelin, AOD-9604, MOTS-c). None is Tesamorelin.",
+      "blocks": "Any lot-specific purity figure, lot number, analytical laboratory name, test date, or 'COA included' claim for this product."
+    },
+    {
+      "item": "Salt form of the Veracue material",
+      "status": "UNCONFIRMED",
+      "detail": "Research-grade tesamorelin is commonly supplied as the acetate, but Veracue has published nothing confirming the counterion for its own material.",
+      "blocks": "Any statement that the Veracue product is the acetate form. The page explains free base versus acetate generically and asks the reader to confirm against the lot documentation."
+    },
+    {
+      "item": "Category placement",
+      "status": "DECISION NEEDED",
+      "detail": "The nearest existing site category is Growth Hormone Secretagogues. That label is a loose fit: tesamorelin acts at the GHRH receptor, while 'secretagogue' in peptide usage often implies ghrelin-receptor agonists such as ipamorelin. The page handles this by stating the receptor distinction explicitly.",
+      "recommendation": "Keep the existing category for navigation, and let the page copy carry the precision."
+    }
+  ],
+
+  "seo": {
+    "title_tag": "Tesamorelin Research Peptide | Veracue Peptides",
+    "title_tag_length": 47,
+    "meta_description": "Tesamorelin (TH9507) research peptide reference from Veracue: verified sequence, CAS and molecular identity, GHRH receptor mechanism, and what HPLC and LC-MS each establish.",
+    "meta_description_length": 172,
+    "meta_description_note": "Trim to under 160 for display if required. Shorter variant: 'Tesamorelin (TH9507) research peptide from Veracue: verified sequence, CAS and molecular identity, GHRH mechanism, and what HPLC and LC-MS each establish.' (154 characters). No purity figure, COA promise or certification appears in either variant, because none is verifiable for this product yet.",
+    "suggested_url": "https://veracue-peptides.vercel.app/product/tesamorelin",
+    "url_rationale": "Matches the existing /product/{slug} pattern used by /product/ahk-cu and /product/nad-plus.",
+    "canonical": "Self-canonical to /product/tesamorelin. One canonical product URL only. Do not create separate URLs for 'tesamorelin acetate' or 'TH9507'; both are the same entity and are handled as aliases in body copy and schema.",
+    "primary_keyword": "tesamorelin research peptide",
+    "secondary_keywords": [
+      "tesamorelin peptide",
+      "tesamorelin research grade",
+      "tesamorelin sequence",
+      "tesamorelin molecular weight",
+      "tesamorelin CAS",
+      "tesamorelin mechanism",
+      "tesamorelin receptor",
+      "tesamorelin acetate",
+      "tesamorelin COA",
+      "tesamorelin HPLC",
+      "tesamorelin LC-MS",
+      "TH9507"
+    ],
+    "entity_set": [
+      "Tesamorelin",
+      "TH9507",
+      "Tesamorelin acetate",
+      "Growth hormone-releasing factor (GHRF) analogue",
+      "GHRH receptor",
+      "Growth hormone",
+      "IGF-1",
+      "Visceral adipose tissue",
+      "HIV-associated lipodystrophy",
+      "EGRIFTA WR",
+      "Theratechnologies",
+      "RP-HPLC",
+      "LC-MS",
+      "Certificate of Analysis"
+    ],
+    "search_intent": "Commercial procurement with a heavy scientific-verification overlay. The buyer is confirming molecular identity and analytical documentation before purchase, not researching a treatment. Secondary intent is identity lookup (sequence, CAS, molecular weight) and the regulatory question of how research material differs from the approved prescription product.",
+    "cannibalization_control": "This URL owns: tesamorelin research peptide, product identity, Veracue-specific analytical documentation, and high-level research context. Future supporting URLs should own the deeper clinical evidence write-up, GHRH class mechanism, tesamorelin versus sermorelin, tesamorelin versus CJC-1295, and general COA interpretation. Do not expand this page into a GHRH class guide."
+  },
+
+  "page": {
+    "breadcrumb": {
+      "trail": "Home > Shop > Growth Hormone Secretagogues > Tesamorelin",
+      "urls": [
+        "https://veracue-peptides.vercel.app/",
+        "https://veracue-peptides.vercel.app/shop",
+        "https://veracue-peptides.vercel.app/shop",
+        "https://veracue-peptides.vercel.app/product/tesamorelin"
+      ],
+      "note": "Category filtering runs off /shop on the current build, so the category crumb points there until a dedicated category URL exists."
+    },
+
+    "h1": "Tesamorelin Research Peptide",
+
+    "hero": {
+      "eyebrow": "TH9507 · GHRF Analogue · Research Use Only",
+      "summary": "Tesamorelin is a synthetic 44-amino-acid analogue of human growth hormone-releasing factor, carrying a trans-3-hexenoyl group on the N-terminal tyrosine and an amide at the C-terminus. That single modification is what separates it from native GRF(1-44), and it is the reason the molecule survives long enough in circulation to be studied. Veracue supplies it as research material for laboratory work. It is not a medicine, and it is not the approved prescription product that shares its name.",
+      "cta_primary": "Request lot documentation",
+      "cta_primary_url": "https://veracue-peptides.vercel.app/contact-us",
+      "cta_secondary": "View certificate archive",
+      "cta_secondary_url": "https://veracue-peptides.vercel.app/certificates",
+      "cta_note": "Add-to-cart replaces the primary CTA once a Tesamorelin product record and lot COA exist. Until then the honest action is a documentation request, not a purchase button."
+    },
+
+    "quick_answer": {
+      "heading": "What tesamorelin actually is",
+      "body": "Tesamorelin, development code TH9507, is a growth hormone-releasing factor analogue. It binds the GHRH receptor on pituitary somatotroph cells and prompts the pituitary to release its own growth hormone. Growth hormone then drives hepatic IGF-1 production. The molecule does not supply growth hormone directly, which is the main thing that separates it from recombinant GH.\n\nThe human evidence behind tesamorelin is unusually strong for a research peptide. It is also unusually narrow. Every pivotal trial studied adults living with HIV who had excess abdominal fat, using a specific pharmaceutical formulation. None of that evidence transfers automatically to a research-grade powder, to a different population, or to general weight loss. The approved label says so in plain terms."
+    },
+
+    "specifications": {
+      "heading": "Specifications",
+      "intro": "Molecular fields below are verified against public chemical and regulatory databases. Product fields describe the Veracue material and are marked where Veracue documentation does not yet exist.",
+      "rows": [
+        { "field": "Product name", "value": "Tesamorelin", "source": "Veracue", "status": "pending product record" },
+        { "field": "Alias", "value": "TH9507", "source": "regulatory and database records", "status": "verified" },
+        { "field": "Compound class", "value": "Growth hormone-releasing factor (GHRF) analogue", "source": "FDA pharmacologic class", "status": "verified" },
+        { "field": "Receptor target", "value": "GHRH receptor (GHRHR), pituitary somatotrophs", "source": "primary literature", "status": "verified" },
+        { "field": "Molecular formula", "value": "C221H366N72O67S (free base)", "source": "PubChem CID 16137828", "status": "verified" },
+        { "field": "Molecular weight", "value": "5135.9 g/mol (average, free base)", "source": "PubChem / DrugBank", "status": "verified" },
+        { "field": "CAS (free base)", "value": "218949-48-5", "source": "PubChem", "status": "verified" },
+        { "field": "CAS (acetate salt)", "value": "901758-09-6", "source": "DrugBank DBSALT001835, FDA GSRS", "status": "verified" },
+        { "field": "UNII", "value": "MQG94M5EEO (free base); LGW5H38VE3 (acetate)", "source": "FDA GSRS", "status": "verified" },
+        { "field": "Sequence length", "value": "44 amino acids", "source": "FDA GSRS subunit record", "status": "verified" },
+        { "field": "Form", "value": "Lyophilized powder", "source": "Veracue", "status": "pending product record" },
+        { "field": "Vial size", "value": "—", "source": "Veracue", "status": "not published" },
+        { "field": "Purity", "value": "—", "source": "Veracue lot COA", "status": "not published — no Tesamorelin lot in the certificate archive" },
+        { "field": "Lot / batch", "value": "—", "source": "Veracue lot COA", "status": "not published" },
+        { "field": "Analytical laboratory", "value": "—", "source": "Veracue lot COA", "status": "not published" },
+        { "field": "Salt form supplied", "value": "—", "source": "Veracue lot COA", "status": "not published — confirm counterion before publishing" },
+        { "field": "Research use", "value": "Laboratory research only. Not for human or veterinary use.", "source": "Veracue site policy", "status": "verified" }
+      ]
+    },
+
+    "chemical_identity": {
+      "heading": "Chemical identity and how to check it",
+      "body": "Two CAS numbers circulate for this molecule, and confusing them is the most common identity error on vendor pages. The free peptide is CAS 218949-48-5. The acetate salt is CAS 901758-09-6, which is also the form used in the approved prescription product. Both describe the same 44-residue peptide. The difference is the counterion sitting alongside it, not the sequence.\n\nPubChem CID 16137828 is the reference entry for the free base, with molecular formula C221H366N72O67S and an average molecular weight of 5135.9 g/mol. A laboratory receiving material can cross-check that record on arrival.",
+      "mass_convention_note": "Pages that print several different molecular weights without explaining them cause avoidable confusion. The 5135.9 figure is an average mass, calculated across natural isotope abundance. A mass spectrometry report usually matches a monoisotopic or exact mass instead, which is lower, because it uses the single most abundant isotope of each element. Neither number is wrong. They answer different questions, and a COA should state which convention its measured mass is compared against."
+    },
+
+    "sequence": {
+      "heading": "The sequence, and the one part of it people get wrong",
+      "one_letter": "YADAIFTNSYRKVLGQLSARKLLQDIMSRQQGESNQERGARARL-NH2",
+      "three_letter": "Tyr-Ala-Asp-Ala-Ile-Phe-Thr-Asn-Ser-Tyr-Arg-Lys-Val-Leu-Gly-Gln-Leu-Ser-Ala-Arg-Lys-Leu-Leu-Gln-Asp-Ile-Met-Ser-Arg-Gln-Gln-Gly-Glu-Ser-Asn-Gln-Glu-Arg-Gly-Ala-Arg-Ala-Arg-Leu-NH2",
+      "modification_notation": "trans-3-hexenoyl-[GRF(1-44)]-NH2. The acyl group sits on the N-terminal tyrosine; the C-terminus is amidated.",
+      "body": "Tesamorelin keeps the complete native human GRF(1-44) backbone. Nothing inside the chain is substituted. The only non-native element is the trans-3-hexenoyl group attached at the N-terminus, which slows enzymatic breakdown and gives the molecule a circulating half-life of roughly 26 to 38 minutes rather than the couple of minutes native GHRH manages.\n\nOne correction worth making, because it appears on live vendor pages: position 2 is L-alanine, not D-alanine. The D-Ala2 substitution belongs to CJC-1295 and modified GRF(1-29). Copying it onto tesamorelin describes a different molecule. The FDA substance record gives the subunit as YADAIFTNSYRKVLGQLSARKLLQDIMSRQQGESNQERGARARL, and that is what an identity check should be run against.",
+      "presentation_note": "Render the sequence in a monospaced block with the N-terminal modification labelled above it. The modification is part of the molecular identity, not a footnote."
+    },
+
+    "salt_form": {
+      "heading": "Free base or acetate, and why it changes the number on the vial",
+      "body": "Synthetic peptides are almost always isolated as a salt. For tesamorelin that salt is normally the acetate, with acetate counterions paired to the basic residues in the chain. The peptide sequence is identical either way. A counterion does not change which molecule you have.\n\nWhat it does change is arithmetic. A vial filled by total mass contains peptide plus counterion plus residual water, so net peptide content is lower than the fill weight. How much lower depends on how many acetate counterions the lot carries and how much moisture it holds. That figure is lot-specific and belongs on the certificate, not in a general description.\n\nTrifluoroacetate is the other counterion researchers encounter, usually left over from purification. TFA is heavier than acetate and carries its own handling considerations, so labs running cell-based work often specify acetate or a TFA-removal step. If the counterion matters to a protocol, it should be confirmed against the lot documentation rather than assumed from the product name.",
+      "boundary_note": "This section deliberately stops at analytical interpretation. No preparation arithmetic, no worked volumes, no concentration walkthrough. Adding those to a product page moves it toward administration guidance, which is outside research-use positioning."
+    },
+
+    "mechanism": {
+      "heading": "How it works at the receptor",
+      "chain": "Tesamorelin → GHRH receptor on pituitary somatotrophs → endogenous growth hormone release → hepatic IGF-1 production → downstream GH effects including lipolysis",
+      "body": "Tesamorelin binds the GHRH receptor, a class B G-protein-coupled receptor on the somatotroph cells of the anterior pituitary. Receptor activation prompts those cells to release stored growth hormone in pulses, the way the pituitary normally does. Growth hormone then acts on the liver to raise IGF-1, which is the biomarker used throughout the clinical program to confirm the axis has been engaged.\n\nThat indirect route is the defining feature. Recombinant growth hormone delivers the hormone itself. Tesamorelin prompts the body to release its own, which is why trial reports describe restored pulsatile secretion rather than continuous exposure.\n\nOne thing the literature does not settle: why the fat loss lands so specifically on the visceral compartment. Several vendor pages explain it with a receptor-density argument presented as established fact. The editorial accompanying the 2019 Lancet HIV trial is more careful, noting that tesamorelin can stimulate lipolysis through increased endogenous growth hormone while multiple mechanisms may be at play. The selectivity is well documented in outcome data. The explanation for it is still open."
+    },
+
+    "clinical_evidence": {
+      "heading": "What the human trials found, and in whom",
+      "body": "Tesamorelin sits apart from most compounds in a research catalog because it carries genuine randomized human evidence rather than cell and animal work alone. Being precise about that evidence matters more than amplifying it.\n\nThe pivotal study randomized 412 adults living with HIV who had accumulated abdominal fat, assigning 275 to tesamorelin and 137 to placebo for 26 weeks. Visceral adipose tissue fell 15.2 percent in the treatment arm while rising 5.0 percent on placebo. A pooled analysis of the two Phase 3 trials followed in 2010, with safety extension data.\n\nLiver fat came later. A 12-month randomized trial in 61 participants with HIV and hepatic steatosis reported a 4.1 percentage-point absolute reduction in hepatic fat fraction against placebo, a 37 percent relative reduction. After a year, 35 percent of the tesamorelin group had hepatic fat below 5 percent, compared with 4 percent on placebo.\n\nA 2026 meta-analysis pooled five randomized trials. Visceral adipose tissue fell by a mean 27.71 cm², trunk fat by 1.18 kg, hepatic fat by 4.28 percentage points, waist circumference by 1.61 cm. Lean body mass rose 1.42 kg. Subcutaneous fat and BMI did not change significantly, and neither did CD4+ counts. A separate 2026 systematic review reported a mean visceral reduction of 21.47 cm² with the same pattern of central selectivity."
+    },
+
+    "evidence_table": {
+      "heading": "Evidence at a glance",
+      "columns": ["Research area", "Population / model", "Finding", "Evidence level", "Limitation"],
+      "rows": [
+        {
+          "area": "Visceral adipose tissue",
+          "population": "Adults with HIV and excess abdominal fat",
+          "finding": "-15.2% vs +5.0% placebo at 26 weeks (Falutz 2007); pooled mean difference -27.71 cm² across 5 RCTs (2026)",
+          "level": "Human randomized clinical evidence",
+          "limitation": "One clinical population and one pharmaceutical formulation. Whether the effect persists after stopping was raised as an open question in the accompanying Lancet HIV editorial."
+        },
+        {
+          "area": "Hepatic fat",
+          "population": "Adults with HIV and hepatic fat fraction ≥5%",
+          "finding": "-4.1 percentage points absolute, -37% relative at 12 months; 35% vs 4% reached HFF under 5% (Stanley 2019)",
+          "level": "Human randomized clinical evidence",
+          "limitation": "61 participants. Long-term liver histology outcomes not established."
+        },
+        {
+          "area": "IGF-1 / GH axis",
+          "population": "Adults with HIV across the trial program",
+          "finding": "IGF-1 rises consistently, confirming axis engagement",
+          "level": "Human randomized clinical evidence",
+          "limitation": "The approved label treats sustained IGF-1 elevation as a monitoring concern, not a benefit. Long-term effects of prolonged elevation are stated as unknown."
+        },
+        {
+          "area": "Lean body mass",
+          "population": "Pooled RCT participants",
+          "finding": "+1.42 kg (2026 meta-analysis)",
+          "level": "Human randomized clinical evidence",
+          "limitation": "A body-composition measurement. It is not a measure of strength or function."
+        },
+        {
+          "area": "Subcutaneous fat and BMI",
+          "population": "Pooled RCT participants",
+          "finding": "No significant change",
+          "level": "Human randomized clinical evidence",
+          "limitation": "This is the finding most often left off vendor pages. The effect is compartment-specific, not general fat loss."
+        },
+        {
+          "area": "Cardiovascular outcomes",
+          "population": "Not studied to an outcome endpoint",
+          "finding": "Not established",
+          "level": "Insufficient evidence",
+          "limitation": "The approved label states long-term cardiovascular safety has not been established."
+        },
+        {
+          "area": "General obesity, anti-aging, athletic use",
+          "population": "None",
+          "finding": "No supporting randomized evidence identified",
+          "level": "Insufficient evidence",
+          "limitation": "The approved label states the product is not indicated for weight loss management, as it has a weight neutral effect."
+        },
+        {
+          "area": "Research-material quality",
+          "population": "Laboratory characterization",
+          "finding": "Established by lot-level chromatography and mass spectrometry",
+          "level": "Analytical evidence",
+          "limitation": "Analytical purity describes the contents of a vial. It says nothing about clinical performance, and clinical trial results say nothing about the quality of a given lot."
+        }
+      ]
+    },
+
+    "what_the_evidence_does_not_show": {
+      "heading": "Where the evidence stops",
+      "bullets": [
+        "Every pivotal trial enrolled adults living with HIV and excess abdominal fat. Nothing in that program establishes what happens in healthy adults or in general obesity.",
+        "Total body weight did not meaningfully change. The approved label describes the effect as weight neutral and states the product is not indicated for weight loss management.",
+        "Subcutaneous fat was largely unaffected across pooled trials.",
+        "Long-term cardiovascular safety has not been established, per the current label.",
+        "Whether the visceral fat effect holds after discontinuation was raised as an open question in the editorial published alongside the 2019 liver-fat trial.",
+        "The trials used a specific pharmaceutical formulation. Research-grade material is a different product with a different regulatory status and different documentation.",
+        "The mechanism behind visceral selectivity is documented in outcomes but not settled in explanation."
+      ]
+    },
+
+    "analytical": {
+      "heading": "What the testing actually proves",
+      "intro": "Purity claims do most of the persuading in this market and explain the least. Two methods appear on nearly every peptide COA, and they answer different questions. Reading them as interchangeable is where researchers get caught out.",
+      "method_table": {
+        "columns": ["Method", "What it establishes", "What it does not establish"],
+        "rows": [
+          {
+            "method": "RP-HPLC (UV detection)",
+            "establishes": "Chromatographic purity as percentage peak area. Separates the target peak from related peptides, truncated sequences and process impurities.",
+            "does_not": "Identity. A peak at the expected retention time is consistent with the target compound, not proof of it. Co-eluting species and compounds with weak UV absorbance can be missed."
+          },
+          {
+            "method": "LC-MS / mass spectrometry",
+            "establishes": "Molecular identity, by comparing measured mass against theoretical mass. Detects many sequence variants and modifications.",
+            "does_not": "A full impurity quantification. Species that ionize poorly may be underrepresented. A mass match also does not distinguish every isomeric possibility."
+          },
+          {
+            "method": "Net peptide content (e.g. amino acid analysis)",
+            "establishes": "How much of the vial mass is actually peptide, separate from counterion and residual water.",
+            "does_not": "Sequence correctness or the presence of modifications."
+          },
+          {
+            "method": "Ion chromatography",
+            "establishes": "Which counterion is present and in what proportion.",
+            "does_not": "Peptide purity or identity."
+          },
+          {
+            "method": "Endotoxin (LAL)",
+            "establishes": "Bacterial endotoxin load, which matters for cell-based work.",
+            "does_not": "Anything about identity, purity or potency."
+          }
+        ]
+      },
+      "orthogonality_note": "Run together, chromatography and mass spectrometry cover each other's blind spots. That combination is why a figure like 99 percent by HPLC should be read as one measurement among several rather than a summary verdict on quality. It does not speak to sterility, endotoxin, counterion, net peptide content or biological activity.",
+      "veracue_program": {
+        "heading": "How Veracue documents a lot",
+        "body": "Veracue publishes a four-stage process on its certificate archive: solid-phase synthesis in ISO-7 conditions, reverse-phase HPLC with peak area normalization at 214 nm against a ≥99.0 percent threshold, mass spectrometry for identity, and lyophilization under nitrogen backfill. Batch certificates from independent US laboratories are published in the archive and can be requested for a specific lot.",
+        "mandatory_disclosure": "No Tesamorelin certificate currently sits in that archive. Until a lot is synthesized, tested and documented, this page must not state a purity figure, name a testing laboratory, or promise a COA for this compound. Veracue's own site disclaimer also notes purity varies by product and lot, and that some items may test below 99 percent.",
+        "publishing_instruction": "When a Tesamorelin lot COA is issued, replace this block with the lot number, test date, laboratory name, measured purity, and the mass convention used for the identity match. Do not populate any of those fields from another compound's certificate."
+      }
+    },
+
+    "regulatory": {
+      "heading": "The approved product is not this product",
+      "body": "Tesamorelin is the active ingredient in an FDA-approved prescription product, and that fact gets misused constantly. Keeping the two apart is the single most important boundary on this page.\n\nEGRIFTA WR (tesamorelin) for injection, manufactured by Theratechnologies, is approved for reduction of excess abdominal fat in HIV-infected adult patients with lipodystrophy. Initial U.S. approval was 2010, and the current label was revised in March 2025. The label states plainly that the product is not indicated for weight loss management, that long-term cardiovascular safety has not been established, and that EGRIFTA WR and EGRIFTA SV are not substitutable for one another.\n\nApproval attaches to that specific product, from that manufacturer, made and released under pharmaceutical controls, for that population. It does not travel with the molecule. Research-grade tesamorelin is not an approved drug, is not interchangeable with any EGRIFTA formulation, and carries no pharmaceutical approval of any kind. Veracue is not the manufacturer of any approved tesamorelin product.",
+      "classification_table": {
+        "columns": ["Statement", "Classification"],
+        "rows": [
+          { "statement": "EGRIFTA WR is indicated for reduction of excess abdominal fat in HIV-infected adult patients with lipodystrophy.", "classification": "FDA approval / label" },
+          { "statement": "EGRIFTA WR is not indicated for weight loss management as it has a weight neutral effect.", "classification": "FDA label limitation of use" },
+          { "statement": "Long-term cardiovascular safety has not been established.", "classification": "FDA label statement" },
+          { "statement": "EGRIFTA WR and EGRIFTA SV are not substitutable.", "classification": "FDA label statement" },
+          { "statement": "Tesamorelin is a growth hormone-releasing factor analogue that acts at the GHRH receptor.", "classification": "Scientific finding" },
+          { "statement": "Research-grade tesamorelin is not FDA approved for any use.", "classification": "Regulatory fact" },
+          { "statement": "Veracue supplies this material for laboratory research only and is not a compounding facility under Section 503A.", "classification": "Company policy, consistent with the site's published disclaimer" }
+        ]
+      },
+      "omitted_deliberately": "The supplied research brief contained prescription dosing, vial concentration and reconstitution detail for EGRIFTA WR. None of it appears on this page. Reproducing label dosing on a research-product page converts regulatory context into administration instructions, whatever the disclaimer says."
+    },
+
+    "ruo_statement": {
+      "heading": "Research use only",
+      "body": "Tesamorelin supplied by Veracue is intended strictly for in vitro and laboratory research by qualified personnel. It is not a drug, supplement, cosmetic or food. It is not approved by the FDA or any other regulatory body for human or veterinary use, diagnosis, treatment, cure or prevention of any condition. It must not be administered to humans or animals. Nothing on this page is medical advice, and no statement here should be read as a therapeutic claim. Purchasers confirm they are acquiring this material for lawful research purposes and accept responsibility for compliance with applicable local, state and federal regulations."
+    }
+  },
+
+  "faq": [
+    {
+      "q": "What is tesamorelin?",
+      "a": "Tesamorelin is a synthetic 44-amino-acid analogue of human growth hormone-releasing factor. It carries a trans-3-hexenoyl group on its N-terminal tyrosine and an amide at the C-terminus, which slow enzymatic breakdown. It acts at the GHRH receptor on pituitary cells. Veracue supplies it as research material only."
+    },
+    {
+      "q": "What is TH9507?",
+      "a": "TH9507 is the development code for tesamorelin, used in early trial reports and regulatory documents. It refers to the same molecule, not a different compound or a variant."
+    },
+    {
+      "q": "What is the tesamorelin sequence?",
+      "a": "In one-letter code: YADAIFTNSYRKVLGQLSARKLLQDIMSRQQGESNQERGARARL-NH2, with a trans-3-hexenoyl group on the N-terminal tyrosine. It is the complete native human GRF(1-44) backbone with no internal substitutions. Position 2 is L-alanine. Sources showing D-alanine at position 2 are describing CJC-1295 or modified GRF(1-29), not tesamorelin."
+    },
+    {
+      "q": "What is the molecular weight of tesamorelin?",
+      "a": "The average molecular weight of the free base is 5135.9 g/mol, with molecular formula C221H366N72O67S. A mass spectrometry report may compare against a monoisotopic or exact mass instead, which is a lower figure. Both are legitimate; a certificate should state which convention it used."
+    },
+    {
+      "q": "What is the CAS number for tesamorelin?",
+      "a": "The free peptide is CAS 218949-48-5. The acetate salt is CAS 901758-09-6. Both refer to the same peptide sequence. Some vendor pages circulate other numbers for the acetate form that do not resolve to an authoritative record."
+    },
+    {
+      "q": "Is tesamorelin acetate different from tesamorelin?",
+      "a": "The peptide is identical. Acetate is a counterion paired with the peptide during isolation. It affects solubility, handling and how much of the vial mass is actually peptide. It does not change the sequence or which molecule you have."
+    },
+    {
+      "q": "How does tesamorelin work?",
+      "a": "It binds the GHRH receptor on somatotroph cells in the anterior pituitary, prompting release of the body's own growth hormone in pulses. Growth hormone then raises hepatic IGF-1. Tesamorelin does not supply growth hormone directly, which distinguishes it from recombinant GH."
+    },
+    {
+      "q": "What receptor does tesamorelin act on?",
+      "a": "The GHRH receptor (GHRHR), a class B G-protein-coupled receptor on pituitary somatotrophs. This is worth separating from ghrelin-receptor agonists such as ipamorelin, which reach growth hormone release through a different receptor entirely."
+    },
+    {
+      "q": "What does the clinical research show?",
+      "a": "In adults living with HIV and excess abdominal fat, a 412-participant randomized trial found visceral adipose tissue fell 15.2 percent over 26 weeks against a 5.0 percent rise on placebo. A 12-month trial in 61 participants found hepatic fat fraction fell 4.1 percentage points against placebo. A 2026 meta-analysis of five randomized trials found a mean visceral reduction of 27.71 cm² with no significant change in subcutaneous fat or BMI. All of this evidence comes from one clinical population using a pharmaceutical formulation."
+    },
+    {
+      "q": "Does tesamorelin cause general weight loss?",
+      "a": "The randomized evidence does not support that. Pooled trials found no significant change in BMI or subcutaneous fat, and the approved prescription label states the product is not indicated for weight loss management because the effect is weight neutral. The documented change is compartment-specific, not a reduction in total body mass."
+    },
+    {
+      "q": "What does a tesamorelin COA show?",
+      "a": "A useful certificate identifies the lot, the test date, the testing laboratory, the analytical methods, chromatographic purity by HPLC, and an identity result comparing measured mass against theoretical mass. Stronger certificates also report net peptide content and counterion. A certificate that reports only a purity percentage leaves most of the quality question unanswered."
+    },
+    {
+      "q": "Does a 99 percent HPLC result mean the material is 99 percent pure in every sense?",
+      "a": "No. HPLC reports chromatographic purity as percentage peak area under one set of conditions. It does not confirm identity, quantify species that absorb weakly in UV, or account for counterion and residual water in the vial mass. Pairing it with mass spectrometry and a net peptide content figure gives a far more complete picture."
+    },
+    {
+      "q": "Is tesamorelin FDA approved, and does that apply to this material?",
+      "a": "Tesamorelin is the active ingredient in EGRIFTA WR, approved for reduction of excess abdominal fat in HIV-infected adult patients with lipodystrophy. That approval belongs to that specific prescription product from its manufacturer. Research-grade tesamorelin is not an approved drug, is not interchangeable with any EGRIFTA formulation, and carries no pharmaceutical approval. Veracue does not manufacture any approved tesamorelin product."
+    }
+  ],
+
+  "internal_linking": {
+    "note": "Only URLs confirmed live on the current Veracue build are listed. No speculative URLs.",
+    "links": [
+      { "anchor": "certificate archive", "url": "https://veracue-peptides.vercel.app/certificates", "placement": "Analytical section and hero secondary CTA", "why": "Every analytical claim on the page resolves to lot documentation. This is the most important link on the page." },
+      { "anchor": "request lot documentation", "url": "https://veracue-peptides.vercel.app/contact-us", "placement": "Hero CTA and analytical section", "why": "The honest conversion action while no Tesamorelin product record exists." },
+      { "anchor": "research catalog", "url": "https://veracue-peptides.vercel.app/shop", "placement": "Breadcrumb and related products", "why": "Category-level navigation and topical grouping." },
+      { "anchor": "research articles", "url": "https://veracue-peptides.vercel.app/blog", "placement": "Further reading", "why": "Destination for the supporting evidence and mechanism articles recommended below." },
+      { "anchor": "about Veracue", "url": "https://veracue-peptides.vercel.app/about-us", "placement": "Analytical section", "why": "Supports E-E-A-T behind the testing program description." },
+      { "anchor": "shipping policy", "url": "https://veracue-peptides.vercel.app/shipping-policy", "placement": "Footer of product block", "why": "Cold-chain handling is referenced sitewide; the policy page carries current specifics." },
+      { "anchor": "help and FAQ", "url": "https://veracue-peptides.vercel.app/faq", "placement": "Below FAQ block", "why": "Extends question coverage without duplicating it on the product page." }
+    ],
+    "deliberately_excluded": [
+      {
+        "url": "https://veracue-peptides.vercel.app/peptide-calculator",
+        "reason": "The Helix benchmark page links a reconstitution calculator from its product page. On a tesamorelin page that link reads differently. Tesamorelin has an approved human formulation with a published daily dose, so a reconstitution tool sitting next to clinical efficacy figures moves the page toward administration guidance. Recommend omitting here. Worth a separate review of whether that tool should be linked from any compound page with an approved human analogue."
+      },
+      {
+        "url": "/product/sermorelin, /product/cjc-1295, /product/ipamorelin",
+        "reason": "These do not exist in the live catalog. CJC-1295 and Ipamorelin appear in the certificate archive but have no product pages. Add related-product links once the records exist."
+      }
+    ],
+    "future_supporting_pages": [
+      "Tesamorelin clinical evidence in HIV-associated lipodystrophy (deep evidence write-up)",
+      "How to read a peptide certificate of analysis (site-wide analytical guide)",
+      "GHRH receptor versus ghrelin receptor: why ipamorelin and tesamorelin are not the same class",
+      "Counterions in synthetic peptides: acetate, TFA and net peptide content"
+    ]
+  },
+
+  "external_references": [
+    { "label": "PubChem CID 16137828 — Tesamorelin", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/Tesamorelin", "use": "Molecular formula, average mass, identifiers" },
+    { "label": "DailyMed — EGRIFTA WR (tesamorelin) prescribing information", "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=839334d3-8c1d-4c26-9036-2ab524a6ea75", "use": "Approved indication, limitations of use, non-substitutability" },
+    { "label": "FDA GSRS substance record MQG94M5EEO — Tesamorelin", "url": "https://gsrs.ncats.nih.gov/ginas/app/beta/substances/MQG94M5EEO", "use": "Authoritative 44-residue sequence and acetate salt linkage" },
+    { "label": "DrugBank salt record — Tesamorelin acetate", "url": "https://go.drugbank.com/salts/DBSALT001835", "use": "Acetate CAS 901758-09-6 and UNII LGW5H38VE3" },
+    { "label": "Falutz J et al. NEJM 2007;357:2359-70 (PMID 18057338)", "url": "https://pubmed.ncbi.nlm.nih.gov/18057338/", "use": "Pivotal Phase 3 visceral adipose tissue result" },
+    { "label": "Falutz J et al. pooled Phase 3 analysis, JCEM 2010;95:4291-304 (PMID 20554713)", "url": "https://pubmed.ncbi.nlm.nih.gov/20554713/", "use": "Pooled Phase 3 data with safety extension" },
+    { "label": "Stanley TL et al. Lancet HIV 2019;6(12):e821-e830 (PMID 31611038)", "url": "https://pubmed.ncbi.nlm.nih.gov/31611038/", "use": "Hepatic fat fraction outcomes" },
+    { "label": "Obesity Research & Clinical Practice 2026 meta-analysis (PMID 41545261)", "url": "https://pubmed.ncbi.nlm.nih.gov/41545261/", "use": "Pooled body composition, hepatic fat and safety outcomes across five RCTs" }
+  ],
+
+  "image_seo": [
+    {
+      "image": "Hero product vial",
+      "filename": "tesamorelin-research-peptide-lyophilized-vial-veracue.jpg",
+      "alt": "Tesamorelin research peptide lyophilized powder vial supplied by Veracue for laboratory research use",
+      "title": "Tesamorelin Research Peptide Vial",
+      "caption": "Tesamorelin is supplied as a lyophilized powder for laboratory research use only.",
+      "status": "Awaiting product photography. Do not reuse the AHK-Cu or NAD+ vial image, which would misrepresent the product."
+    },
+    {
+      "image": "Molecular identity card",
+      "filename": "tesamorelin-th9507-sequence-molecular-identity.png",
+      "alt": "Tesamorelin TH9507 molecular identity showing 44 amino acid sequence, formula C221H366N72O67S and CAS 218949-48-5",
+      "title": "Tesamorelin Molecular Identity",
+      "caption": "Tesamorelin retains the full native GRF(1-44) backbone with an N-terminal trans-3-hexenoyl group."
+    },
+    {
+      "image": "Mechanism diagram",
+      "filename": "tesamorelin-ghrh-receptor-growth-hormone-igf1-pathway.png",
+      "alt": "Diagram showing tesamorelin binding the GHRH receptor, triggering endogenous growth hormone release and hepatic IGF-1 production",
+      "title": "Tesamorelin GHRH Receptor Pathway",
+      "caption": "Tesamorelin acts at the GHRH receptor rather than supplying growth hormone directly."
+    }
+  ],
+
+  "schema": {
+    "note": "Product schema is drafted without an offers node because no price, SKU or availability exists. Publishing an offers node with placeholder values would be fabrication and a structured-data violation. No aggregateRating or review. FAQPage is included for answer coverage; Google's 2026 documentation limits FAQ rich results to a narrow set of authoritative sites, so do not expect a rich result from it.",
+    "json_ld": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://veracue-peptides.vercel.app/" },
+            { "@type": "ListItem", "position": 2, "name": "Shop", "item": "https://veracue-peptides.vercel.app/shop" },
+            { "@type": "ListItem", "position": 3, "name": "Tesamorelin", "item": "https://veracue-peptides.vercel.app/product/tesamorelin" }
+          ]
+        },
+        {
+          "@type": "Product",
+          "name": "Tesamorelin Research Peptide",
+          "alternateName": "TH9507",
+          "description": "Tesamorelin (TH9507) is a synthetic 44-amino-acid growth hormone-releasing factor analogue with an N-terminal trans-3-hexenoyl modification, supplied by Veracue as research material for laboratory use only.",
+          "category": "Research Peptide",
+          "brand": { "@type": "Brand", "name": "Veracue" },
+          "url": "https://veracue-peptides.vercel.app/product/tesamorelin",
+          "additionalProperty": [
+            { "@type": "PropertyValue", "name": "CAS Number (free base)", "value": "218949-48-5" },
+            { "@type": "PropertyValue", "name": "CAS Number (acetate)", "value": "901758-09-6" },
+            { "@type": "PropertyValue", "name": "PubChem CID", "value": "16137828" },
+            { "@type": "PropertyValue", "name": "Molecular Formula", "value": "C221H366N72O67S" },
+            { "@type": "PropertyValue", "name": "Molecular Weight", "value": "5135.9 g/mol" },
+            { "@type": "PropertyValue", "name": "Sequence Length", "value": "44 amino acids" }
+          ],
+          "pending_fields_do_not_publish_until_available": ["sku", "image", "offers.price", "offers.availability", "offers.priceCurrency"]
+        },
+        {
+          "@type": "WebPage",
+          "name": "Tesamorelin Research Peptide | Veracue Peptides",
+          "url": "https://veracue-peptides.vercel.app/product/tesamorelin",
+          "isPartOf": { "@type": "WebSite", "name": "Veracue", "url": "https://veracue-peptides.vercel.app/" }
+        },
+        {
+          "@type": "Organization",
+          "name": "Veracue",
+          "url": "https://veracue-peptides.vercel.app/",
+          "email": "support@veracuepeptides.com",
+          "telephone": "+1-800-837-2283"
+        }
+      ]
+    }
+  },
+
+  "quality_gate": {
+    "search_intent": "Single job: identify and evaluate tesamorelin research material. No drift into treatment content.",
+    "information_gain": "Five things competitors get wrong or skip, all corrected here: the acetate CAS, the D-Ala2 sequence error, the mass-convention confusion, the unsupported receptor-density explanation for visceral selectivity, and the absence of any subcutaneous fat or BMI effect.",
+    "aeo": "Every FAQ and every section opens with a direct answer before explanation.",
+    "geo": "Entity chain stated explicitly and defensibly: Tesamorelin → TH9507 → GHRF analogue → GHRH receptor → growth hormone → IGF-1 → visceral adipose tissue → HIV-associated lipodystrophy → analytical verification.",
+    "regulatory": "Approved prescription product separated from research material in a dedicated section with a claim-classification table. No label dosing reproduced.",
+    "ruo": "No dosing, no reconstitution arithmetic, no protocols, no human outcome framing. Calculator link deliberately withheld.",
+    "unresolved": "The page cannot go live until a Tesamorelin product record and lot COA exist. Everything else is publish-ready."
+  }
+}

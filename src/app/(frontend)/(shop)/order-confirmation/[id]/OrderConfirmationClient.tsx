@@ -9,6 +9,7 @@ import { HeroButton } from '@/components/ui/hero-button'
 import { useTranslations } from 'next-intl'
 import { useCartStore } from '@/lib/cart/store'
 import { toast } from 'sonner'
+import { ZELLE_RECIPIENT_PHONE } from '@/lib/payments/zelle'
 
 type OrderItem = {
   id: string
@@ -51,7 +52,6 @@ type OrderData = {
   paymentMethod: 'stripe' | 'zelle' | 'amex' | 'circoflows' | 'stripe_link'
 }
 
-const ZELLE_RECIPIENT_PHONE = '832-705-9377'
 
 const CONFETTI_PIECES = [
   { x: -80, y: -60, color: '#cb997e', delay: 0.0, rotation: 45, scale: 1.2 },
@@ -250,7 +250,7 @@ export function OrderConfirmationClient({ order }: { order: OrderData }) {
             <div className="flex items-start justify-between pb-6 mb-10 border-b-2 border-black">
               <div className="flex items-center gap-3">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/veracue-images/logo-header.png" alt="Veracue" className="h-9 w-auto object-contain" />
+                <img src="/veracue-images/logo-header.webp" alt="Veracue" className="h-9 w-auto object-contain" />
               </div>
               <div className="text-right">
                 <p className="text-xl font-bold text-black uppercase tracking-wide mb-1">{t('receipt')}</p>

@@ -1,0 +1,175 @@
+{
+  "_implementation_note": "Built by matching the LIVE rendered structure of https://veracue-peptides.vercel.app/product/ahk-cu field-for-field (Overview, Intended Use, Product Highlights, Research Focus table, Molecular Identity table, Evidence tables, Quality & Purity, Compliance Notice, FAQ, related-product module). This is content-complete and ready to paste into the CMS/product database as the record for the /product/thymosin-alpha-1 route. Fields marked NOT_AVAILABLE are the only genuinely missing pieces: I confirmed via the live site that Thymosin Alpha-1 has zero COA reports in the Certificates library and is not one of the 3 SKUs currently in /shop, so price, SKU, vial sizes, and lot-specific purity are Veracue first-party data that does not exist yet — not something to invent.",
+
+  "route": "/product/thymosin-alpha-1",
+  "status": "content-complete, pending first-party commerce data (see open_questions_for_veracue at bottom)",
+
+  "meta": {
+    "title": "Thymosin Alpha-1 Research Peptide (Thymalfasin) | Veracue",
+    "description": "Thymosin Alpha-1, the 28-residue thymic peptide Tα1, for lab research: molecular identity, the 2025 sepsis trial findings, TA1 vs thymalfasin, and COA checks.",
+    "og_image_alt": "Veracue Thymosin Alpha-1 Research Peptide"
+  },
+
+  "breadcrumb": ["Home", "Shop", "Thymosin Alpha-1"],
+  "category": "Immune Modulation",
+
+  "hero": {
+    "compound_name": "Thymosin Alpha-1",
+    "subtitle": "Thymalfasin (TA1, Tα1)",
+    "price": "NOT_AVAILABLE — no SKU exists yet; do not publish a price until Veracue supplies one",
+    "sku": "NOT_AVAILABLE — suggest pattern TA1-<mg>MG following AHKCU-50MG convention",
+    "weight": "NOT_AVAILABLE — depends on vial size Veracue chooses to stock",
+    "sizes": "NOT_AVAILABLE — common market sizes are 5mg/10mg vials, but Veracue's actual vial sizes must come from first-party data, not assumed",
+    "teaser_short_description": "Thymosin Alpha-1 is a 28-amino-acid synthetic peptide corresponding to the thymic peptide Tα1, known pharmaceutically as thymalfasin. Veracue supplies it as a research material for laboratory work. The most rigorous published evidence (the TESTS phase 3 trial, BMJ 2025) tested Tα1 against placebo in 1,106 adults with sepsis — a randomized, controlled clinical trial — and found no clear reduction in 28-day mortality. Earlier trials and pooled analyses have reported mixed results, so this material does not establish a treatment effect or immune benefit in people."
+  },
+
+  "compound_profile_stats": [
+    { "label": "Verified Purity", "value": "≥99%", "sub": "Confirmed by independent HPLC assay" },
+    { "label": "Lab Tested", "value": "3rd Party", "sub": "No self-reported results, ever" },
+    { "label": "Grade Quality", "value": "Research", "sub": "One uncompromising standard, every batch" },
+    { "label": "Documented", "value": "COA", "sub": "On file for every lot, every time" }
+  ],
+
+  "product_details": {
+    "overview": "Thymosin Alpha-1 (Tα1) is a 28-amino-acid acidic peptide, Nα-acetylated at the serine terminus, originally isolated from calf thymus extract (\"thymosin fraction 5\") in 1977 and later shown to be a proteolytic fragment of the precursor protein prothymosin alpha. The synthetic version is known by the international non-proprietary name thymalfasin, marketed outside the United States under the brand name Zadaxin. Veracue supplies Thymosin Alpha-1 as a research material for laboratory immunology work — not as thymalfasin, Zadaxin, or any pharmaceutical product.\n\nTα1 is one of the more clinically studied synthetic peptides in the research-peptide space: it has regulatory approval or registration in roughly three dozen countries (primarily for chronic hepatitis B and as a vaccine/immune adjuvant) and U.S. FDA orphan-drug designations for several indications, but it does not hold full FDA approval and is not sold in the United States as a drug. That regulatory history outside the U.S. is a fact about the molecule's development, not a claim about this research product, which is labeled Research Use Only and is not for human or veterinary administration.",
+
+    "intended_use": "This material is offered for in vitro and laboratory research — for example, immune-cell signaling studies, toll-like-receptor (TLR) pathway work, dendritic-cell maturation assays, T-cell differentiation research, or analytical method development. It is not a drug, supplement, or food, and it is not intended for administration to humans or animals.\n\nResearch-use positioning is not only a label. Nothing on this page provides, or should be read as, dosing, reconstitution-for-administration, or treatment information.",
+
+    "product_highlights": [
+      "28-amino-acid, Nα-acetylated synthetic peptide corresponding to human Thymosin Alpha-1 (Tα1)",
+      "Also referenced in the literature as thymalfasin (INN) or by the brand name Zadaxin outside RUO/research contexts",
+      "Supplied as a lyophilized research powder — vial sizes to be confirmed against Veracue's stocked SKU(s)",
+      "Labelled for laboratory research use only — not for human or veterinary use"
+    ]
+  },
+
+  "research_focus_table": {
+    "title": "Research Focus & Mechanism Overview",
+    "rows": [
+      { "Name": "Thymosin Alpha-1", "field": "Thymosin Alpha-1" },
+      { "field": "Other names", "value": "Thymalfasin (INN); Tα1; TA1; brand name Zadaxin (outside RUO context)" },
+      { "field": "Peptide length", "value": "28 amino acids, Nα-acetylated at the N-terminal serine" },
+      { "field": "Parent protein", "value": "Proteolytic fragment of prothymosin alpha" },
+      { "field": "Primary research pathways", "value": "TLR2 and TLR9 signaling on dendritic cells and other innate immune cells; T-cell maturation/differentiation; NK-cell activity; cytokine modulation" },
+      { "field": "Direct evidence base", "value": "Extensive — decades of in vitro, animal, and human clinical research across sepsis, chronic viral hepatitis, and vaccine-adjuvant contexts" },
+      { "field": "Most recent large trial", "value": "TESTS phase 3 RCT (BMJ, 2025) in adult sepsis — found no clear mortality benefit" }
+    ]
+  },
+
+  "molecular_identity": {
+    "narrative": "Thymosin Alpha-1 is the first 28 residues of prothymosin alpha, with the N-terminal serine acetylated. Unlike many research peptides where suppliers report several competing molecular-weight values for different salt or complex forms, Tα1's identity is well standardized in the literature: essentially every source (PubChem, ChemicalBook, peptide-synthesis vendors, and the primary isolation literature) converges on the same sequence, formula, and mass.",
+    "sequence_one_letter": "Ac-SDAAVDTSSEITTKDLKEKKEVVEEAEN-OH",
+    "sequence_three_letter": "Ac-Ser-Asp-Ala-Ala-Val-Asp-Thr-Ser-Ser-Glu-Ile-Thr-Thr-Lys-Asp-Leu-Lys-Glu-Lys-Lys-Glu-Val-Val-Glu-Glu-Ala-Glu-Asn-OH",
+    "identity_table": [
+      { "Representation": "Molecular formula", "value": "C129H215N33O55" },
+      { "Representation": "Average molecular weight", "value": "3108.3 g/mol" },
+      { "Representation": "Monoisotopic mass", "value": "3106.50 Da" },
+      { "Representation": "CAS Number", "value": "62304-98-7" },
+      { "Representation": "PubChem CID", "value": "16130571" },
+      { "Representation": "Isoelectric point (pI)", "value": "Approximately 4.0–4.3 (acidic peptide)" }
+    ],
+    "note": "These are reference-chemistry values for the Thymosin Alpha-1 molecule as documented across chemical databases and the synthesis literature — not a Veracue-specific analytical result. Veracue's own lot-specific purity, net peptide content, and any Certificate of Analysis must come from first-party testing once a batch is produced and listed."
+  },
+
+  "what_the_research_shows": {
+    "intro": "Tα1 has a genuinely large clinical literature compared with most research peptides in this catalog — this section separates what different tiers of that evidence actually show, because a molecule with decades of study still has areas of real uncertainty, and evidence for the molecule is not the same as evidence for this specific research material.",
+
+    "mechanism_summary": "Preclinical and mechanistic studies describe Tα1 acting through Toll-like receptor signaling — primarily TLR9 (via the MyD88-dependent pathway, contributing to type I interferon production) and TLR2 (via MyD88- and TRIF-dependent pathways) on dendritic cells and other innate immune cells. Downstream of this, laboratory studies report dendritic-cell maturation (increased CD80/CD86 and MHC class I/II expression), modulation of Th1-associated cytokines such as IL-2 and IFN-γ, and effects on T-cell differentiation and NK-cell activity. Some studies also describe a regulatory/tolerogenic arm — TLR9-dependent induction of indoleamine 2,3-dioxygenase (IDO) leading to regulatory T-cell generation — indicating the peptide's immune effects are better described as modulatory than simply stimulatory.",
+
+    "clinical_evidence_by_indication": [
+      {
+        "indication": "Sepsis / severe sepsis",
+        "evidence_type": "Multiple randomized controlled trials plus a 2025 phase 3 trial and meta-analyses",
+        "summary": "Earlier, smaller randomized trials (e.g., the ETASS trial, 2013) and several meta-analyses have reported reduced 28-day mortality with Tα1 as an adjunct in severe sepsis. However, the largest and most recent trial — TESTS, a multicentre, double-blind, placebo-controlled phase 3 trial in 1,106 adults (BMJ, 2025; corrected 2025) — found no clear evidence that Tα1 reduces 28-day all-cause mortality (23.4% Tα1 vs 24.1% placebo; hazard ratio 0.99, 95% CI 0.77–1.27). A 2025 updated systematic review and trial-sequential meta-analysis pooling 11 RCTs reported a statistically significant reduction in 28-day mortality (OR 0.73, 95% CI 0.59–0.90) but explicitly flagged that the required information size had not been reached and that heterogeneity across trials was high, with a prespecified subgroup analysis in TESTS itself suggesting the effect (if any) may differ by age and diabetes status.",
+        "current_read": "The evidence is genuinely mixed. Older, smaller trials and some pooled analyses lean positive; the largest, most rigorous single trial to date does not confirm a mortality benefit. This should not be presented as either 'proven to help' or 'proven not to work' — both a positive and a negative claim currently go beyond what the totality of evidence supports."
+      },
+      {
+        "indication": "Chronic hepatitis B / hepatitis C",
+        "evidence_type": "Multiple clinical trials outside the U.S.; basis for regulatory approvals in other countries",
+        "summary": "Tα1 (as thymalfasin) has been studied as an antiviral adjunct in chronic hepatitis B and C, including in combination with interferon, and this indication underlies its approval/registration in roughly three dozen countries outside the United States.",
+        "current_read": "This body of evidence concerns a pharmaceutical product (thymalfasin) administered under medical supervision in specific patient populations — it says nothing about the safety, purity, or handling of a research-grade RUO material sourced from a different manufacturer."
+      },
+      {
+        "indication": "Vaccine adjuvant / immune response enhancement",
+        "evidence_type": "In vitro dendritic-cell studies and some clinical vaccine-response data",
+        "summary": "In vitro work shows Tα1 modulates human dendritic-cell responses to viral and bacterial TLR agonists (enhancing HLA-I/II expression and IL-6/TNF-α/IL-8 secretion in some contexts), and it has been investigated clinically as a vaccine-response enhancer.",
+        "current_read": "This is a research-supported mechanism with some human data, but findings vary by stimulus, cell type, and study design — it is not a general claim that the peptide boosts immunity in every context."
+      },
+      {
+        "indication": "Oncology-adjunct / cancer immunotherapy support",
+        "evidence_type": "Preclinical and some clinical investigation, including in combination with checkpoint inhibitors in patent literature",
+        "summary": "Tα1 has been studied for its potential to reduce hematologic toxicity of cytotoxic chemotherapy and as a potential combination agent with immune checkpoint inhibitors.",
+        "current_read": "This remains an active but not definitively established research area; it is not evidence of anticancer efficacy for this research material."
+      }
+    ],
+
+    "what_this_research_does_not_show": [
+      "That Thymosin Alpha-1 is proven to reduce mortality in sepsis — the largest phase 3 trial to date did not confirm this",
+      "That findings from thymalfasin/Zadaxin (a regulated pharmaceutical product used under medical supervision) apply to this or any other RUO research material",
+      "That the molecule's TLR/dendritic-cell mechanism translates into a general claim of 'boosting the immune system' in any uncontrolled setting",
+      "That Veracue's specific research material has been independently tested — that data does not yet exist and will be published once available"
+    ],
+
+    "evidence_summary_table": [
+      { "question": "Does Tα1 affect TLR2/TLR9 signaling and dendritic-cell maturation in laboratory studies?", "evidence_type": "In vitro, human and animal", "finding": "Multiple studies report activation and downstream cytokine/co-stimulatory changes", "limitation": "Mechanistic/cellular findings, not a clinical outcome by themselves" },
+      { "question": "Does Tα1 reduce 28-day mortality in adult sepsis?", "evidence_type": "Multiple RCTs + 2025 phase 3 trial + meta-analyses", "finding": "Mixed — pooled analyses lean positive, but the largest single trial found no clear benefit", "limitation": "High heterogeneity across trials; required information size not yet reached per 2025 meta-analysis" },
+      { "question": "Is thymalfasin approved to treat any condition?", "evidence_type": "Regulatory record", "finding": "Approved/registered in roughly 35 countries (chiefly for chronic hepatitis B), not FDA-approved in the U.S.", "limitation": "Concerns a pharmaceutical product, not this RUO research material" },
+      { "question": "Has Veracue's specific Thymosin Alpha-1 lot been independently tested?", "evidence_type": "First-party COA", "finding": "Not yet published — 0 certificates currently in the Veracue COA library", "limitation": "Product-specific data pending" }
+    ]
+  },
+
+  "quality_and_purity": {
+    "reading_a_coa": "A purity percentage on its own answers only one question. A useful Thymosin Alpha-1 Certificate of Analysis (COA) should let you confirm what the material is, how pure it is by a stated method, how much is actually in the vial, and that the report belongs to the lot you received. Because Tα1 is a 28-residue peptide, mass-spectrometry identity confirmation and net peptide content are particularly informative alongside HPLC purity, since single amino-acid deletions or truncations are the most common synthesis impurity in a peptide this length.",
+    "coa_element_table": [
+      { "element": "Lot or batch number", "tells_you": "Links the report to a specific production lot", "does_not_establish": "Anything about quality unless it matches the vial label" },
+      { "element": "HPLC purity (%)", "tells_you": "Share of detected signal in the main peak under stated conditions", "does_not_establish": "Identity, net peptide content, sterility, or biological activity" },
+      { "element": "Mass spectrometry / LC-MS", "tells_you": "Whether the observed mass matches the expected 3108.3 Da (or 3106.50 Da monoisotopic) species", "does_not_establish": "Purity, or the amount of material present" },
+      { "element": "Net peptide content", "tells_you": "How much of the vial's mass is peptide rather than salts, counter-ions, or water", "does_not_establish": "Chromatographic purity" },
+      { "element": "Laboratory name and test date", "tells_you": "Who tested the lot and when", "does_not_establish": "Independence, unless the relationship is disclosed" }
+    ],
+    "quick_coa_check": [
+      "Lot number on the COA matches the vial label",
+      "Purity method is named, not just a percentage",
+      "Identity result states expected vs. observed mass (~3108 Da average) and the method used",
+      "Net peptide content is reported, not just chromatographic purity",
+      "Testing laboratory and date are shown"
+    ],
+    "storage_and_handling": "Store according to the conditions stated on this lot's documentation and label. Handle as a laboratory chemical using appropriate personal protective equipment."
+  },
+
+  "compliance_notice": "Thymosin Alpha-1 supplied by Veracue is intended solely for laboratory research. It is not a drug, cosmetic, dietary supplement, or food, and it is not intended to diagnose, treat, cure, or prevent any disease. It must not be administered to humans or animals. The scientific information on this page describes published laboratory and clinical studies of the Thymosin Alpha-1 molecule and thymalfasin and is not medical advice or a statement of efficacy or safety for this research product. Purchasers are responsible for using the material lawfully and within an appropriate research setting.",
+
+  "faq": [
+    { "q": "What is Thymosin Alpha-1?", "a": "Thymosin Alpha-1 (Tα1) is a 28-amino-acid, Nα-acetylated peptide fragment of the precursor protein prothymosin alpha, studied in immunology research. Veracue supplies it as a laboratory research material only." },
+    { "q": "Is Thymosin Alpha-1 the same as thymalfasin or Zadaxin?", "a": "Thymalfasin is the international non-proprietary name for synthetic Thymosin Alpha-1, marketed outside the U.S. under the brand name Zadaxin as a regulated pharmaceutical. Veracue's product is a separate research-grade material and is not sold, labeled, or intended as that pharmaceutical product." },
+    { "q": "What is the amino acid sequence and molecular weight of Thymosin Alpha-1?", "a": "The sequence is Ac-Ser-Asp-Ala-Ala-Val-Asp-Thr-Ser-Ser-Glu-Ile-Thr-Thr-Lys-Asp-Leu-Lys-Glu-Lys-Lys-Glu-Val-Val-Glu-Glu-Ala-Glu-Asn-OH (molecular formula C129H215N33O55), with an average molecular weight of 3108.3 g/mol and a monoisotopic mass of 3106.50 Da (CAS 62304-98-7)." },
+    { "q": "What does Thymosin Alpha-1 research focus on?", "a": "Research on Tα1 centers on its interaction with Toll-like receptors TLR2 and TLR9 on dendritic cells, its effects on dendritic-cell maturation and antigen presentation, T-cell differentiation, NK-cell activity, and modulation of cytokine networks such as IL-2, IFN-γ, and IFN-α." },
+    { "q": "Does thymosin alpha-1 research show a benefit in sepsis?", "a": "The evidence is mixed. Some earlier randomized trials and pooled meta-analyses report a reduction in 28-day sepsis mortality, but the largest and most recent phase 3 trial (TESTS, BMJ 2025, n=1,106) found no clear evidence of a mortality benefit. Neither a clear positive nor a clear negative conclusion is currently supported." },
+    { "q": "What was the 2025 BMJ TESTS trial?", "a": "TESTS was a multicentre, double-blind, placebo-controlled phase 3 trial across 22 centres in China (1,106 adults with sepsis) that compared subcutaneous Tα1 with placebo. 28-day all-cause mortality was 23.4% in the Tα1 group versus 24.1% with placebo (hazard ratio 0.99, 95% CI 0.77–1.27) — the trial concluded there was no clear evidence that Tα1 decreases 28-day mortality in adults with sepsis." },
+    { "q": "Has Thymosin Alpha-1 been studied in humans?", "a": "Yes. As thymalfasin, it has been studied in thousands of patients across clinical trials for chronic hepatitis B and C, sepsis, and as a vaccine adjuvant, and is approved or registered in roughly three dozen countries outside the United States — though it does not hold full FDA approval and is not sold as a drug in the U.S." },
+    { "q": "Is Thymosin Alpha-1 FDA approved?", "a": "No. It is not FDA-approved as a drug in the United States, though it has received FDA orphan-drug designation for several indications and full marketing approval in other countries. Veracue's material is supplied strictly as a Research Use Only laboratory compound." },
+    { "q": "What is the difference between Thymosin Alpha-1 and Thymosin Beta-4 / TB-500?", "a": "They are unrelated peptides from the same historical thymus-extract fraction family. Thymosin Alpha-1 is a 28-residue immune-signaling peptide acting through TLR pathways. Thymosin Beta-4 is a distinct, larger actin-binding peptide involved in cell migration and tissue repair, and TB-500 is a synthetic fragment used as its research analog." },
+    { "q": "What should a Thymosin Alpha-1 Certificate of Analysis include?", "a": "A useful COA states the lot number, the HPLC purity method and result, mass-spectrometry identity confirmation against the expected ~3108 Da mass, net peptide content, and the testing laboratory and date." },
+    { "q": "What does Research Use Only mean for this product?", "a": "Research Use Only means the compound is intended strictly for laboratory and scientific research — not for human or veterinary consumption, diagnosis, or treatment. It has not been evaluated by the FDA for safety or efficacy in those other contexts." }
+  ],
+
+  "related_products_module": {
+    "note_for_implementer": "The live 'Also Considered' module on other product pages links a same-category or evidence-adjacent product. Veracue currently has no other live SKU in the Immune Modulation category, so there is no like-for-like cross-sell yet. Recommend either omitting this module until a second Immune Modulation product ships, or linking Selank (Cognitive & Neuro-Protection) as the nearest evidence-heavy, RUO-strict page currently live.",
+    "suggested_fallback_link": "/product/selank"
+  },
+
+  "open_questions_for_veracue": [
+    "SKU code and vial size(s) to stock (market-common sizes are 5mg/10mg, but this must be Veracue's own decision)",
+    "Price per size",
+    "Lot-specific HPLC purity and mass-spec identity result, once a batch is produced (feeds both the product page spec table and the Certificates/COA library, which currently has 0 reports)",
+    "Product photography (vial shot(s) matching the vp-product-vial.jpeg / vp-product-vial2.jpeg style already used elsewhere)",
+    "Confirmation of category assignment as 'Immune Modulation' (matches the nav taxonomy already on the site)"
+  ],
+
+  "keyword_usage_notes": {
+    "source": "Thymosin_Alpha-1_KEYWORDS.xlsx (Google Trends related-queries export)",
+    "primary_terms_used_naturally": ["thymosin alpha 1", "thymosin peptide", "thymosin alpha 1 peptide", "thymalfasin", "TA1", "Tα1"],
+    "terms_addressed_via_FAQ_rather_than_body_copy": ["thymosin alpha 1 benefits", "thymosin alpha 1 dosage", "thymosin alpha 1 side effects", "zadaxin"],
+    "note": "Per the brief's own rule ('do not force exact-match keywords into every heading'), dosage/side-effects/benefits intent is answered honestly through the evidence-review and FAQ sections rather than as promotional headers, since Veracue's RUO positioning prohibits dosing or benefit-claim language."
+  }
+}

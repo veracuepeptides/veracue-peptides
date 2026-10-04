@@ -1,0 +1,1 @@
+export const ZELLE_RECIPIENT_PHONE = '832-705-9377'

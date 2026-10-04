@@ -1,9 +1,12 @@
 import React from 'react'
 import { Metadata } from 'next'
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, getMessages } from 'next-intl/server'
+import { NextIntlClientProvider } from 'next-intl'
+import { pickMessages } from '@/lib/i18n/pickMessages'
 import { ContactClient } from '@/components/contact/ContactClient'
 import { getOgImageUrl } from '@/lib/utils'
 import { CONTACT_FAQS } from '@/lib/contact/contactFaqs'
+import { safeJsonLd } from '@/lib/seo/jsonLd'
 
 const slug = 'contact-us'
 
@@ -66,12 +69,14 @@ export default async function ContactPage({
     '@context': 'https://schema.org',
     '@graph': [
       {
-        '@type': 'WebPage',
+        '@type': 'ContactPage',
         '@id': `${url}#webpage`,
         url,
         name: title,
         description,
         inLanguage: locale,
+        isPartOf: { '@id': `${baseUrl}/#website` },
+        about: { '@id': `${baseUrl}/#organization` },
       },
       {
         '@type': 'BreadcrumbList',
@@ -79,23 +84,6 @@ export default async function ContactPage({
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Home', item: baseUrl },
           { '@type': 'ListItem', position: 2, name: 'Contact Us' },
-        ],
-      },
-      {
-        '@type': 'Organization',
-        '@id': `${baseUrl}/#organization`,
-        name: 'Veracue Peptides',
-        url: baseUrl,
-        email: 'support@veracuepeptides.com',
-
-        contactPoint: [
-          {
-            '@type': 'ContactPoint',
-            contactType: 'scientific support',
-            email: 'support@veracuepeptides.com',
-            areaServed: 'US',
-            availableLanguage: ['English'],
-          },
         ],
       },
       {
@@ -113,13 +101,20 @@ export default async function ContactPage({
     ],
   }
 
+  const pageMessages = pickMessages(await getMessages(), [
+    'content.contactForm',
+    'home.trustBadges',
+  ])
+
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(schema) }}
       />
-      <ContactClient />
+      <NextIntlClientProvider messages={pageMessages}>
+        <ContactClient />
+      </NextIntlClientProvider>
     </>
   )
 }

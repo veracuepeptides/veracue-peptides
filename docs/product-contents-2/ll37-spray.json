@@ -1,0 +1,263 @@
+{
+  "page": {
+    "url": "https://veracue-peptides.vercel.app/product/ll-37-spray",
+    "seo": {
+      "title": "LL-37 Spray | Cathelicidin Research Peptide | Veracue",
+      "meta_description": "LL-37 (cathelicidin) research spray from Veracue. Background on antimicrobial peptide research, scientific identity, and RUO documentation for laboratory use.",
+      "canonical_url": "https://veracue-peptides.vercel.app/product/ll-37-spray",
+      "primary_keyword": "LL-37 peptide",
+      "secondary_keywords": [
+        "LL37 peptide",
+        "cathelicidin LL-37",
+        "LL-37",
+        "LL37",
+        "LL 37 peptide",
+        "LL-37 research peptide",
+        "LL-37 spray",
+        "antimicrobial peptide research",
+        "cathelicidin research",
+        "host-defense peptide research"
+      ],
+      "image_alt_text": [
+        "Veracue LL-37 Spray — Research Use Only peptide packaging",
+        "LL-37 cathelicidin peptide molecular structure diagram",
+        "Veracue Peptides research documentation icon"
+      ]
+    },
+    "breadcrumb": ["Home", "Research Peptides", "LL-37 Spray"],
+    "h1": "LL-37 Spray",
+    "hero_intro": "LL-37 is one of the most extensively studied peptides in antimicrobial and innate immune research — the only cathelicidin-derived antimicrobial peptide found in humans. Veracue's LL-37 Spray makes this peptide available in a research-grade format intended strictly for laboratory use, supporting work in antimicrobial peptide biology, host-defense signaling, and related areas of peptide science. This page is written for researchers and technically informed readers evaluating LL-37 as a subject of study. It is not a guide to human or animal use, and nothing on this page should be read as medical, therapeutic, or wellness guidance.",
+    "ruo_notice": "For Research Use Only. This material is intended exclusively for laboratory research and is not intended for human or veterinary use, self-administration, diagnosis, treatment, cure, mitigation, or prevention of disease. It is not a drug, dietary supplement, or cosmetic ingredient, and should be handled only by qualified personnel in a controlled research setting.",
+
+    "quick_scientific_overview": [
+      { "label": "Peptide", "value": "LL-37 — a 37-residue, cationic, amphipathic peptide" },
+      { "label": "Origin", "value": "Cleaved from the C-terminal domain of hCAP-18, the precursor protein encoded by the human CAMP gene" },
+      { "label": "Classification", "value": "The sole cathelicidin-family antimicrobial peptide identified in humans" },
+      { "label": "Research relevance", "value": "Studied in antimicrobial peptide biology, innate immune signaling, membrane interaction, and epithelial/wound-repair research" },
+      { "label": "Status", "value": "Supplied by Veracue strictly for Research Use Only (RUO); not intended for human or veterinary use" }
+    ],
+
+    "sections": [
+      {
+        "heading": "What Is LL-37?",
+        "body": "LL-37 takes its name from the two leucine residues at the start of its sequence and its length of 37 amino acids. It is generated when proteolytic enzymes cleave the C-terminal end of hCAP-18 (human cationic antimicrobial protein, 18 kDa), the precursor protein produced from the CAMP gene. Once released, LL-37 behaves differently depending on its environment: in aqueous solution it exists largely without fixed structure, but on contact with lipid membranes it folds into an amphipathic alpha-helix, arranging its charged and hydrophobic residues into distinct faces. That structural switch is central to nearly everything researchers have learned about how LL-37 interacts with bacterial membranes and immune cells.\n\nLL-37 is produced naturally by neutrophils, monocytes, macrophages, and epithelial cells in tissues such as skin and the respiratory tract, where it functions as part of the body's innate immune response. That natural origin — rather than a fully synthetic design — is part of why LL-37 is such a frequently cited reference peptide in antimicrobial and host-defense research."
+      },
+      {
+        "heading": "LL-37 Scientific Identity",
+        "body": "LL-37 corresponds to residues 134–170 of the hCAP-18 precursor, released by proteinase 3 and related serine proteases during immune cell activation. Its reference sequence — LLGDFFRKSKEKIGKEFKRIVQRIKDFLRNLVPRTES — is well documented across peptide and protein databases, giving LL-37 a more consistently defined identity than many synthetic research peptides, whose composition can vary more between suppliers.\n\nThat said, 'well documented' does not mean 'uniform in practice.' Synthetic production methods, salt or counterion form, and purification standards can still differ from one manufacturer to the next, which is why identity and purity should always be confirmed for the specific research lot in hand rather than assumed from the peptide's general literature profile."
+      },
+      {
+        "heading": "LL-37 and the Cathelicidin Family",
+        "body": "Cathelicidins are a family of host-defense peptides found throughout mammals, birds, fish, and reptiles. They share a conserved N-terminal 'cathelin-like' domain attached to a variable C-terminal antimicrobial peptide segment, which is cleaved off and activated when needed. Many species — cattle and pigs among them — carry several cathelicidin genes, each producing a different peptide. Humans carry only one: the CAMP gene, whose protein product is processed into LL-37.\n\nThis single-gene arrangement is part of why LL-37 sits at the center of human cathelicidin research. It is a cathelicidin — but it is also the only one humans have, which makes it the default reference point whenever human cathelicidin biology is discussed. Researchers working across species should keep this distinction in mind: findings from multi-cathelicidin animal models do not automatically map onto LL-37 alone."
+      },
+      {
+        "heading": "Why LL-37 Is Studied",
+        "body": "LL-37 draws sustained research interest because it sits at the intersection of several active fields. Antimicrobial peptide research has examined its activity against a range of Gram-positive and Gram-negative bacteria, largely through membrane-permeabilization assays. Innate immune research has investigated LL-37 as a signaling molecule, with some studies pointing to interactions with formyl peptide receptors and effects on immune cell chemotaxis and cytokine release. Epithelial biology research has explored its involvement in processes tied to keratinocyte migration and tissue repair in cell and animal models. Structural biology continues to refine understanding of how LL-37's helical folding changes with membrane composition and peptide concentration.\n\nAcross all of these areas, the language in the literature is intentionally careful — LL-37 is described as studied, investigated, or examined in a given process, not as something that treats, heals, prevents, or cures a condition. That distinction matters, and this page maintains it throughout."
+      },
+      {
+        "heading": "What Research Has Investigated About LL-37",
+        "body": "Search interest around 'LL-37 peptide benefits' reflects genuine curiosity about what has been studied, and that curiosity deserves a straight answer grounded in the literature rather than a marketing rebrand. What the research actually shows is a set of laboratory-stage findings: LL-37 has been examined for its antimicrobial activity in cell-free and cell-culture systems, for its potential role in modulating immune cell behavior, and for effects on keratinocyte migration relevant to wound-repair models. These are legitimate and active areas of study. None of them constitute evidence of a therapeutic, cosmetic, or wellness effect in humans, and none of them support a 'benefits' claim in the consumer sense — they support continued laboratory investigation."
+      },
+      {
+        "heading": "LL-37 Research Context",
+        "body": "Not all LL-37 evidence carries the same weight, and conflating evidence levels is one of the more common ways this literature gets misread. In vitro studies — bacterial cultures, cell lines, isolated membranes — form the bulk of the published work and are useful for probing mechanism under tightly controlled conditions. Animal-model studies extend some of these findings into living systems, most often in the context of infection or wound-repair models. Human observational research, where it exists, has generally measured naturally occurring LL-37 levels in tissue or fluid samples rather than testing administered LL-37 as an intervention. Clinical interventional data — trials testing LL-37 itself as a treatment — is limited.\n\nA finding from one of these levels should not be read as evidence at another. An in vitro membrane result does not establish an animal-model effect, and an animal-model result does not establish anything about human physiology. Readers evaluating LL-37 literature will get a more accurate picture by tracking which level a given study actually operates at."
+      },
+      {
+        "heading": "LL-37 Spray — Research Product Context",
+        "body": "Veracue supplies LL-37 Spray as a Research Use Only material intended to support laboratory investigation of the peptide described above. 'Spray' refers here to the packaging and delivery format of the research material itself — it describes how the product is packaged, not a recommendation or instruction for any route of use in a human or animal subject.\n\nExact formulation details, concentration, and packaging specifications for this listing have not yet been verified against current first-party Veracue documentation. Researchers should verify current lot-specific product documentation for this specification before incorporating the material into any protocol, and should rely on their own institutional guidelines for how a research material of this kind is handled in an experimental setting."
+      },
+      {
+        "heading": "What Researchers Should Verify",
+        "body": "Before using any LL-37 research material, it's worth confirming a short list of details rather than taking a product listing at face value:",
+        "list": [
+          "Identity — confirmed by mass spectrometry, ideally lot-specific",
+          "Purity — determined by HPLC, with the analytical method disclosed",
+          "Salt or counterion form — affects molarity calculations and cross-study comparability",
+          "Molecular characterization — including aggregation state where relevant to membrane-based assays",
+          "Lot-specific documentation — a Certificate of Analysis matching the actual lot shipped, not a generic product-page specification",
+          "Storage information — supplier-specific guidance rather than general peptide-storage assumptions",
+          "Formulation details — carrier, packaging, and any excipients present"
+        ],
+        "closing_note": "Veracue does not currently have verified, lot-specific documentation published for this LL-37 Spray listing. Please verify the current lot-specific product documentation for this specification directly with Veracue before use."
+      }
+    ],
+
+    "research_challenge_sections": [
+      {
+        "title": "Distinguishing LL-37 From hCAP-18",
+        "research_challenge": "Supplier and search content often use 'LL-37' and 'hCAP-18' interchangeably, blurring the line between the active peptide and its precursor protein.",
+        "what_to_verify": "Confirm whether a given source is describing the intact hCAP-18 precursor or the cleaved, 37-residue LL-37 peptide before comparing findings across sources.",
+        "why_it_matters": "Precursor-level and peptide-level data describe different molecules with different behavior; treating them as interchangeable produces incorrect conclusions."
+      },
+      {
+        "title": "Full-Length LL-37 vs. Peptide Fragments",
+        "research_challenge": "Studies sometimes use truncated LL-37 fragments (such as LL-37[18–37]) or scrambled control sequences, which can be mistaken for full-length LL-37 in casual reading.",
+        "what_to_verify": "Check whether the peptide used in a cited study was full-length LL-37, a defined fragment, or a scrambled control designed for comparison.",
+        "why_it_matters": "Fragment and control-sequence studies are often built specifically to isolate structure-function relationships; their results should not be generalized to full-length LL-37 without that context."
+      },
+      {
+        "title": "Interpreting Purity Data",
+        "research_challenge": "A purity percentage is frequently presented without the analytical method used to generate it.",
+        "what_to_verify": "Look for HPLC-based purity figures with the detection method specified, rather than accepting an unqualified number.",
+        "why_it_matters": "Different analytical methods can report different purity values for the same material, so the number alone isn't sufficient context."
+      },
+      {
+        "title": "Confirming Peptide Identity",
+        "research_challenge": "A high purity figure can create a false sense of confidence about what's actually in the vial.",
+        "what_to_verify": "Look for mass spectrometry data confirming molecular identity alongside — not instead of — HPLC purity data.",
+        "why_it_matters": "Purity describes homogeneity, not identity. A sample can be highly pure and still be the wrong molecule."
+      },
+      {
+        "title": "Understanding Salt and Counterion Information",
+        "research_challenge": "Peptide products can be supplied as different salt or counterion forms (such as acetate or trifluoroacetate), which is not always disclosed clearly.",
+        "what_to_verify": "Confirm the salt form used and how it factors into molarity or concentration calculations for a given research lot.",
+        "why_it_matters": "Counterion mass contributes to total molecular weight, so overlooking it introduces error into concentration-dependent experiments."
+      },
+      {
+        "title": "Separating Preclinical Findings From Human Evidence",
+        "research_challenge": "In vitro and animal-model findings are sometimes cited as if they carry the same weight as human clinical evidence.",
+        "what_to_verify": "Track the evidence level of each cited finding — in vitro, animal, or human — and weigh conclusions accordingly.",
+        "why_it_matters": "Evidence levels differ substantially in relevance to human biology; collapsing them into a single narrative overstates what's actually established."
+      },
+      {
+        "title": "Interpreting Antimicrobial Assay Results",
+        "research_challenge": "Antimicrobial activity demonstrated in one assay format (for example, a specific bacterial strain and growth medium) is sometimes generalized to 'antimicrobial activity' broadly.",
+        "what_to_verify": "Check the specific organism, assay conditions, and peptide concentration used before generalizing a reported antimicrobial effect.",
+        "why_it_matters": "Antimicrobial peptide activity is often strain- and condition-specific; broad generalization can misrepresent what was actually demonstrated."
+      },
+      {
+        "title": "Understanding Membrane-Interaction Studies",
+        "research_challenge": "Membrane-interaction data is technical and can be easy to misinterpret without background in biophysical methods.",
+        "what_to_verify": "Note the membrane model used (synthetic liposomes vs. live cells) and the specific readout (permeabilization, binding, structural change) before drawing conclusions.",
+        "why_it_matters": "Findings from simplified synthetic-membrane models don't always transfer directly to the complexity of live-cell membranes."
+      },
+      {
+        "title": "Comparing Results Across Different Experimental Conditions",
+        "research_challenge": "Because LL-37 is amphipathic and membrane-active, small changes in buffer composition, peptide concentration, or the presence of serum proteins can shift assay outcomes substantially.",
+        "what_to_verify": "Compare experimental conditions closely before treating two studies' results as directly comparable.",
+        "why_it_matters": "This sensitivity to conditions is a recognized and well-documented source of variability in the LL-37 literature."
+      },
+      {
+        "title": "Understanding Storage and Formulation Differences",
+        "research_challenge": "Storage recommendations for lyophilized versus reconstituted peptide vary by product, and generic peptide-storage advice doesn't always apply.",
+        "what_to_verify": "Confirm supplier-specific storage guidance, including temperature, light sensitivity, and reconstitution stability window.",
+        "why_it_matters": "Amphipathic peptides can be prone to aggregation or degradation under suboptimal storage, which can affect assay reproducibility."
+      },
+      {
+        "title": "Reviewing Lot-Specific Documentation",
+        "research_challenge": "Product-page specifications can lag behind what's actually shipped for a given order.",
+        "what_to_verify": "Request the Certificate of Analysis for the exact lot being supplied, rather than relying on general product-page claims.",
+        "why_it_matters": "Only lot-specific documentation confirms what was actually received and tested."
+      },
+      {
+        "title": "Avoiding Unsupported Conclusions From the Literature",
+        "research_challenge": "It's easy to read a mechanistic or preliminary finding and extend it further than the data supports.",
+        "what_to_verify": "Keep interpretation scoped to what a study's specific conditions and endpoints actually tested.",
+        "why_it_matters": "Overextending a narrow finding creates a misleading impression of how established a result actually is."
+      }
+    ],
+
+    "product_specifications": {
+      "Product Name": "LL-37 Spray",
+      "Peptide": "LL-37 (cathelicidin-derived antimicrobial peptide)",
+      "Format": "Verify current product documentation.",
+      "Sequence": "LLGDFFRKSKEKIGKEFKRIVQRIKDFLRNLVPRTES (reference sequence; confirm against lot-specific Certificate of Analysis)",
+      "Molecular Information": "Verify current product documentation.",
+      "Purity": "Verify current product documentation.",
+      "Quantity": "Verify current product documentation.",
+      "Storage": "Verify current product documentation.",
+      "Lot/Batch": "Verify current product documentation.",
+      "SKU": "Verify current product documentation.",
+      "Documentation": "Verify current product documentation.",
+      "Research Use": "For Research Use Only. Not for human or veterinary use."
+    },
+
+    "research_limitations": "The bulk of published LL-37 research comes from in vitro and animal-model work. These studies are valuable for identifying mechanisms and generating hypotheses, but they describe behavior under controlled laboratory conditions — they do not establish safety, effectiveness, or suitability for any human health application. Where human data exists, it largely reflects observational measurement of naturally occurring LL-37 levels in patient samples rather than trials of administered LL-37. Readers should treat any extrapolation from laboratory findings to human outcomes as unsupported by the current evidence base.",
+
+    "faq": [
+      { "question": "What is LL-37 peptide?", "answer": "LL-37 is a 37-amino-acid peptide derived from the C-terminal region of the human cathelicidin precursor hCAP-18. It is widely studied in antimicrobial peptide and innate immune research." },
+      { "question": "What is LL-37 also known as?", "answer": "LL-37 is sometimes discussed alongside terms like 'cathelicidin' or 'human cathelicidin antimicrobial peptide.' Technically, hCAP-18 refers to the larger precursor protein, while LL-37 is the active peptide cleaved from it." },
+      { "question": "What is cathelicidin LL-37?", "answer": "'Cathelicidin LL-37' refers to LL-37 as the human representative of the cathelicidin family of host-defense peptides — the only one encoded in the human genome." },
+      { "question": "Why is LL-37 studied in research?", "answer": "LL-37 is studied for its antimicrobial activity, its role in innate immune signaling, and its relevance to epithelial and wound-related biology, making it a frequently referenced peptide in host-defense research." },
+      { "question": "What is the relationship between LL-37 and hCAP-18?", "answer": "LL-37 is the C-terminal fragment released when proteolytic enzymes cleave hCAP-18, the full-length precursor protein encoded by the CAMP gene." },
+      { "question": "What research areas involve LL-37?", "answer": "Antimicrobial peptide biology, innate immune signaling, membrane interaction studies, epithelial biology, and peptide structure-function research all involve LL-37." },
+      { "question": "Is LL-37 a research peptide?", "answer": "Yes. As supplied through research channels, LL-37 is offered strictly as a Research Use Only material for laboratory investigation, not as a human or veterinary product." },
+      { "question": "What does RUO mean?", "answer": "RUO stands for Research Use Only — a designation indicating a material is intended solely for laboratory research, not for diagnostic, therapeutic, veterinary, or human consumption purposes." },
+      { "question": "Is LL-37 Spray intended for human use?", "answer": "No. LL-37 Spray is manufactured and supplied strictly for research use and is not intended for human or veterinary administration, self-use, diagnosis, or treatment of any condition." },
+      { "question": "What should researchers verify before using LL-37?", "answer": "Peptide identity (via mass spectrometry), purity (via HPLC), salt/counterion form, and lot-specific documentation should all be confirmed before designing an experiment." },
+      { "question": "How should peptide identity be evaluated?", "answer": "Through a lot-specific Certificate of Analysis showing mass spectrometry-confirmed identity and HPLC-determined purity — not general product-page specifications alone." },
+      { "question": "Why is lot-specific documentation important?", "answer": "Because product-page specifications can lag behind what's actually shipped, only documentation tied to the specific lot received confirms what was actually supplied." },
+      { "question": "How should researchers interpret preclinical LL-37 findings?", "answer": "As mechanistic or associative findings generated under specific laboratory conditions — informative for guiding further research, but not evidence of human safety or effectiveness." },
+      { "question": "What is the difference between LL-37 and other cathelicidins?", "answer": "Other species, such as cattle and pigs, carry multiple cathelicidin genes producing different peptides. Humans carry only the CAMP gene, which is processed into LL-37 alone." }
+    ],
+
+    "internal_links": [
+      { "label": "Research Peptides / antimicrobial category page", "url": "URL requires verification before publication." },
+      { "label": "Documentation / COA verification page", "url": "URL requires verification before publication." },
+      { "label": "RUO / compliance policy page", "url": "URL requires verification before publication." }
+    ],
+
+    "scientific_references": [
+      { "authors": "Durr UH, Sudheendra US, Ramamoorthy A.", "title": "LL-37, the only human member of the cathelicidin family of antimicrobial peptides.", "journal": "Biochimica et Biophysica Acta (BBA) – Biomembranes", "year": 2006, "identifier": "DOI: 10.1016/j.bbamem.2006.03.030", "type": "review" },
+      { "authors": "Vandamme D, Landuyt B, Luyten W, Schoofs L.", "title": "A comprehensive summary of LL-37, the factotum human cathelicidin peptide.", "journal": "Cellular Immunology", "year": 2012, "identifier": "DOI: 10.1016/j.cellimm.2012.11.009", "type": "review" },
+      { "authors": "Steinstraesser L, Kraneburg U, Jacobsen F, Al-Benna S.", "title": "Host defense peptides and their antimicrobial-immunomodulatory duet.", "journal": "Immunobiology", "year": 2011, "identifier": "DOI: 10.1016/j.imbio.2010.07.003", "type": "review" },
+      { "authors": "Ramos R, Silva JP, Rodrigues AC, et al.", "title": "Wound healing activity of the human antimicrobial peptide LL37.", "journal": "Peptides", "year": 2011, "identifier": "DOI: 10.1016/j.peptides.2011.06.005", "type": "primary research (in vitro/animal model; not a human efficacy claim)" },
+      { "authors": "National Center for Biotechnology Information (NCBI).", "title": "CAMP gene reference entry — cathelicidin antimicrobial peptide.", "journal": "NCBI Gene database", "year": null, "identifier": null, "type": "database/reference" }
+    ]
+  },
+
+  "schema": {
+    "webpage": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "LL-37 Spray | Cathelicidin Research Peptide | Veracue",
+      "description": "LL-37 (cathelicidin) research spray from Veracue. Background on antimicrobial peptide research, scientific identity, and RUO documentation for laboratory use.",
+      "url": "https://veracue-peptides.vercel.app/product/ll-37-spray"
+    },
+    "breadcrumb_list": {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://veracue-peptides.vercel.app/" },
+        { "@type": "ListItem", "position": 2, "name": "Research Peptides", "item": "URL requires verification before publication." },
+        { "@type": "ListItem", "position": 3, "name": "LL-37 Spray", "item": "https://veracue-peptides.vercel.app/product/ll-37-spray" }
+      ]
+    },
+    "product": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "LL-37 Spray",
+      "description": "LL-37 (cathelicidin) research peptide spray, supplied strictly for Research Use Only.",
+      "brand": { "@type": "Brand", "name": "Veracue" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "Intended Use", "value": "Research Use Only" }
+      ]
+    },
+    "organization": {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Veracue",
+      "url": "https://veracue-peptides.vercel.app/"
+    },
+    "faq_page": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What is LL-37 peptide?", "acceptedAnswer": { "@type": "Answer", "text": "LL-37 is a 37-amino-acid peptide derived from the C-terminal region of the human cathelicidin precursor hCAP-18. It is widely studied in antimicrobial peptide and innate immune research." } },
+        { "@type": "Question", "name": "What is LL-37 also known as?", "acceptedAnswer": { "@type": "Answer", "text": "LL-37 is sometimes discussed alongside terms like 'cathelicidin' or 'human cathelicidin antimicrobial peptide.' Technically, hCAP-18 refers to the larger precursor protein, while LL-37 is the active peptide cleaved from it." } },
+        { "@type": "Question", "name": "What is cathelicidin LL-37?", "acceptedAnswer": { "@type": "Answer", "text": "'Cathelicidin LL-37' refers to LL-37 as the human representative of the cathelicidin family of host-defense peptides — the only one encoded in the human genome." } },
+        { "@type": "Question", "name": "Why is LL-37 studied in research?", "acceptedAnswer": { "@type": "Answer", "text": "LL-37 is studied for its antimicrobial activity, its role in innate immune signaling, and its relevance to epithelial and wound-related biology, making it a frequently referenced peptide in host-defense research." } },
+        { "@type": "Question", "name": "What is the relationship between LL-37 and hCAP-18?", "acceptedAnswer": { "@type": "Answer", "text": "LL-37 is the C-terminal fragment released when proteolytic enzymes cleave hCAP-18, the full-length precursor protein encoded by the CAMP gene." } },
+        { "@type": "Question", "name": "What research areas involve LL-37?", "acceptedAnswer": { "@type": "Answer", "text": "Antimicrobial peptide biology, innate immune signaling, membrane interaction studies, epithelial biology, and peptide structure-function research all involve LL-37." } },
+        { "@type": "Question", "name": "Is LL-37 a research peptide?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. As supplied through research channels, LL-37 is offered strictly as a Research Use Only material for laboratory investigation, not as a human or veterinary product." } },
+        { "@type": "Question", "name": "What does RUO mean?", "acceptedAnswer": { "@type": "Answer", "text": "RUO stands for Research Use Only — a designation indicating a material is intended solely for laboratory research, not for diagnostic, therapeutic, veterinary, or human consumption purposes." } },
+        { "@type": "Question", "name": "Is LL-37 Spray intended for human use?", "acceptedAnswer": { "@type": "Answer", "text": "No. LL-37 Spray is manufactured and supplied strictly for research use and is not intended for human or veterinary administration, self-use, diagnosis, or treatment of any condition." } },
+        { "@type": "Question", "name": "What should researchers verify before using LL-37?", "acceptedAnswer": { "@type": "Answer", "text": "Peptide identity (via mass spectrometry), purity (via HPLC), salt/counterion form, and lot-specific documentation should all be confirmed before designing an experiment." } },
+        { "@type": "Question", "name": "How should peptide identity be evaluated?", "acceptedAnswer": { "@type": "Answer", "text": "Through a lot-specific Certificate of Analysis showing mass spectrometry-confirmed identity and HPLC-determined purity — not general product-page specifications alone." } },
+        { "@type": "Question", "name": "Why is lot-specific documentation important?", "acceptedAnswer": { "@type": "Answer", "text": "Because product-page specifications can lag behind what's actually shipped, only documentation tied to the specific lot received confirms what was actually supplied." } },
+        { "@type": "Question", "name": "How should researchers interpret preclinical LL-37 findings?", "acceptedAnswer": { "@type": "Answer", "text": "As mechanistic or associative findings generated under specific laboratory conditions — informative for guiding further research, but not evidence of human safety or effectiveness." } },
+        { "@type": "Question", "name": "What is the difference between LL-37 and other cathelicidins?", "acceptedAnswer": { "@type": "Answer", "text": "Other species, such as cattle and pigs, carry multiple cathelicidin genes producing different peptides. Humans carry only the CAMP gene, which is processed into LL-37 alone." } }
+      ]
+    }
+  }
+}

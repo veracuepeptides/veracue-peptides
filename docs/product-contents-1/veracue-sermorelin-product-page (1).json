@@ -1,0 +1,1271 @@
+{
+  "deliverable": "Veracue — Sermorelin product page package (revised)",
+  "revision": "v2, 2026-09-19",
+  "site_reviewed": "veracue-peptides.vercel.app home, /shop, /certificates, /product/selank (2026-09-19)",
+  "A_page_positioning": {
+    "summary": "A premium Research Use Only product page for Sermorelin peptide (GHRH 1-29). It explains what the molecule is, what makes it distinct, how a lot is verified, what Veracue does and does not publicly document, and how Sermorelin differs from Ipamorelin, Tesamorelin and CJC-1295. Consumer-intent searches are answered briefly and redirected to research context.",
+    "audience": [
+      "Laboratory researchers",
+      "Procurement and purchasing teams",
+      "Analytical and QC scientists",
+      "Research professionals comparing GHRH-axis tools"
+    ],
+    "differentiator": "Ranking Sermorelin pages are mostly telehealth or compounding pages written around human use. A documentation-first page can own the informational research results and be the source AI answer engines quote for identity, structure, characterization and comparison questions.",
+    "content_balance_target": "~40% product/research explanation, ~25% identity and characterization, ~20% procurement and documentation, ~15% search-intent and comparison answers.",
+    "entity_chain": "Sermorelin → GHRH(1-29) peptide → GHRH receptor → growth-hormone-axis research → molecular characterization → HPLC/MS → lot documentation → Research Use Only",
+    "product_data_status": "At review (19 Sep 2026) the live catalog had no Sermorelin listing and the public COA archive had no Sermorelin lot. All Veracue lot fields therefore read: Not publicly specified on the current Veracue product information."
+  },
+  "B_primary_keyword": {
+    "primary_keyword": "sermorelin peptide",
+    "close_variants": [
+      "peptide sermorelin",
+      "sermorelin peptides"
+    ],
+    "usage_note": "Used in title, H1, first sentence of the hero, What Is section and one AEO block. Not forced elsewhere."
+  },
+  "C_secondary_keyword_clusters": {
+    "clusters": [
+      {
+        "cluster": "Core identity",
+        "keywords": [
+          "sermorelin peptide",
+          "sermorelin",
+          "what is sermorelin",
+          "what is sermorelin peptide",
+          "GRF 1-29",
+          "GHRH 1-29"
+        ],
+        "placement": "Title, H1, hero, What Is, snapshot, schema"
+      },
+      {
+        "cluster": "Chemical form",
+        "keywords": [
+          "sermorelin acetate",
+          "sermorelin acetate peptide"
+        ],
+        "placement": "Identity and Structure; salt-form problem section; FAQ; AEO"
+      },
+      {
+        "cluster": "Comparisons",
+        "keywords": [
+          "sermorelin vs ipamorelin",
+          "ipamorelin vs sermorelin",
+          "sermorelin vs tesamorelin",
+          "tesamorelin vs sermorelin",
+          "cjc 1295 vs sermorelin",
+          "cjc-1295",
+          "ipamorelin peptide",
+          "tesamorelin peptide"
+        ],
+        "placement": "Comparison section and table; AEO; FAQ"
+      },
+      {
+        "cluster": "Consumer intent, answered within RUO",
+        "keywords": [
+          "sermorelin benefits",
+          "sermorelin peptide benefits",
+          "sermorelin side effects",
+          "sermorelin dosage",
+          "sermorelin results",
+          "does sermorelin work",
+          "sermorelin injections",
+          "sermorelin therapy"
+        ],
+        "placement": "Four short search-intent sections; FAQ. No numbers, protocols or outcomes."
+      },
+      {
+        "cluster": "Regulatory",
+        "keywords": [
+          "is sermorelin fda approved"
+        ],
+        "placement": "One sentence in Compliance Notice; one FAQ"
+      },
+      {
+        "cluster": "Broad",
+        "keywords": [
+          "hgh peptides",
+          "growth hormone peptides"
+        ],
+        "placement": "Handled by stating Sermorelin is not HGH; no category claims"
+      }
+    ],
+    "excluded": {
+      "terms": [
+        "everlife / male md / readyrx / embody (brand terms)",
+        "sermorelin near me",
+        "buy sermorelin / sermorelin cost",
+        "how to take sermorelin",
+        "how much sermorelin should i take",
+        "sermorelin weight loss",
+        "sermorelin for women",
+        "peptides for muscle growth",
+        "sermorelin reviews / reddit",
+        "sermorelin oral / tablets / nasal spray",
+        "sermorelin before and after",
+        "subcutaneous injection",
+        "sermorelin ghk"
+      ],
+      "reason": "Competitor brands, personal-use or body-composition intent, reviews Veracue does not have, or route questions that cannot be served on an RUO page."
+    }
+  },
+  "D_search_intent_map": [
+    {
+      "query": "what is sermorelin / sermorelin peptide",
+      "intent": "Definition",
+      "answer_location": "What Is Sermorelin?; AEO 1"
+    },
+    {
+      "query": "sermorelin acetate",
+      "intent": "Understand salt form",
+      "answer_location": "Identity and Structure; Problem 6; AEO 2"
+    },
+    {
+      "query": "sermorelin vs ipamorelin / tesamorelin / cjc-1295",
+      "intent": "Comparison",
+      "answer_location": "Comparison section + table; AEO 5–6; FAQ"
+    },
+    {
+      "query": "sermorelin COA / purity / HPLC",
+      "intent": "Verify before purchase",
+      "answer_location": "Analytical Characterization; COA section; AEO 4, 7"
+    },
+    {
+      "query": "sermorelin benefits",
+      "intent": "What it does",
+      "answer_location": "Search intent: benefits (research interest, no outcomes)"
+    },
+    {
+      "query": "sermorelin side effects",
+      "intent": "Safety",
+      "answer_location": "Search intent: side effects (out of scope, no medical guide)"
+    },
+    {
+      "query": "sermorelin dosage / injections",
+      "intent": "Personal use",
+      "answer_location": "Search intent: dosage (no numbers, no administration)"
+    },
+    {
+      "query": "does sermorelin work / sermorelin results",
+      "intent": "Outcome expectations",
+      "answer_location": "Search intent: results (model and endpoint dependency)"
+    },
+    {
+      "query": "is sermorelin fda approved",
+      "intent": "Regulatory status",
+      "answer_location": "Compliance Notice sentence; FAQ"
+    }
+  ],
+  "E_seo_title": {
+    "seo_title": "Sermorelin Research Peptide (GRF 1-29) | Veracue",
+    "note": "House pattern from the live AHK-Cu page: '<Compound> Research Peptide (<alt name>) | Veracue'."
+  },
+  "F_meta_description": {
+    "meta_description": "Sermorelin, the GHRH(1-29) amide, for lab research: molecular identity, what the 1999 review found, Sermorelin vs Ipamorelin and Tesamorelin, and COA checks.",
+    "note": "Mirrors the AHK-Cu description pattern. 'The 1999 review' is Prakash & Goa, cited in the What Is section."
+  },
+  "G_url_slug": {
+    "url_slug": "/product/sermorelin",
+    "full_url": "https://veracue-peptides.vercel.app/product/sermorelin"
+  },
+  "H_h1": {
+    "h1": "Sermorelin Peptide",
+    "subheading": "GRF(1-29) / GHRH(1-29) research reference material"
+  },
+  "I_product_page_copy": {
+    "hero": {
+      "eyebrow": "Research Use Only",
+      "h1": "Sermorelin Peptide",
+      "subheading": "GRF(1-29) / GHRH(1-29) research reference material",
+      "short_description": "Sermorelin is the synthetic 29-amino-acid fragment of human growth hormone-releasing hormone, GHRH(1-29), ending in a C-terminal amide. Researchers use it as a reference GHRH-receptor ligand in growth-hormone-axis studies. Veracue supplies it as a Research Use Only material for laboratory work. Published literature describes the molecule, not this material, so it does not establish purity, treatment effect or safety for any research lot.",
+      "ctas": [
+        {
+          "label": "Review Research Specifications",
+          "href": "#specifications"
+        },
+        {
+          "label": "View Product Documentation",
+          "href": "/certificates"
+        }
+      ]
+    },
+    "product_snapshot": {
+      "anchor_id": "specifications",
+      "h2": "Research Specifications",
+      "columns": [
+        "Specification",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Product name",
+          "Sermorelin"
+        ],
+        [
+          "Research identity",
+          "GHRH(1-29) amide (GRF 1-29)"
+        ],
+        [
+          "Peptide length",
+          "29 residues, linear, C-terminal amide"
+        ],
+        [
+          "Sequence",
+          "YADAIFTNSYRKVLGQLSARKLLQDIMSR-NH2"
+        ],
+        [
+          "Chemical form",
+          "Not publicly specified on the current Veracue product information."
+        ],
+        [
+          "Molecular formula (free-base reference value)",
+          "C149H246N44O42S"
+        ],
+        [
+          "Molecular weight (free-base reference value)",
+          "≈3357.9 g/mol (average)"
+        ],
+        [
+          "CAS number (sermorelin)",
+          "86168-78-7"
+        ],
+        [
+          "PubChem CID",
+          "16132413"
+        ],
+        [
+          "Research designation",
+          "Research Use Only"
+        ]
+      ],
+      "footnote": "Free-base values; a salt form has a different formula weight."
+    },
+    "what_is_sermorelin": {
+      "h2": "What Is Sermorelin?",
+      "body": [
+        "Sermorelin is a synthetic peptide consisting of the first 29 amino acids of human growth hormone-releasing hormone (GHRH), with a C-terminal amide. Native GHRH has 44 residues. The 1–29 fragment has been described as the shortest synthetic peptide with the full biological activity of GHRH (Prakash & Goa, 1999), which made it a standard reference sequence.",
+        "In laboratory research, Sermorelin is studied as an agonist ligand for the GHRH receptor on anterior pituitary somatotroph cells, within growth-hormone-axis research. It is not growth hormone (HGH), which is a much larger protein. Research findings describe defined experimental systems and do not imply any human use."
+      ]
+    },
+    "scientific_background": {
+      "h2": "Scientific Background",
+      "subsections": [
+        {
+          "h3": "Identity and Structure",
+          "body": "Sermorelin is a single linear chain without cysteine or disulfide bonds. Its sequence carries three arginines, two lysines and a free N-terminal amine, plus one methionine at position 27. Sermorelin acetate is the acetate salt of this same peptide: the sequence is identical, but the salt adds counterion mass. For that reason, the form on a lot's documentation determines which formula weight applies."
+        },
+        {
+          "h3": "GHRH Receptor Context",
+          "body": "The GHRH receptor is a G protein-coupled receptor on pituitary somatotrophs, related to the receptors for VIP and secretin. It signals mainly through adenylyl cyclase and cyclic AMP. By contrast, the ghrelin (GHS) receptor couples to phospholipase C and calcium. Sermorelin therefore belongs on the GHRH side of growth-hormone-axis research."
+        },
+        {
+          "h3": "Why Researchers Characterize It",
+          "body": "Native GHRH is cleaved at its N-terminus in plasma to an inactive fragment, so the unmodified 1–29 sequence is enzymatically labile. Its methionine can oxidize, and its basic residues bind counterions. Each of these features can change what is actually in a vial, which is why identity, purity and peptide content are verified lot by lot."
+        }
+      ]
+    },
+    "analytical_characterization": {
+      "h2": "Analytical Characterization",
+      "body": [
+        "Reverse-phase HPLC reports chromatographic purity: the share of detected material eluting as the main peak. However, it does not confirm identity, and a closely related peptide can give an equally clean trace. It also reflects only what the detector sees at the chosen wavelength.",
+        "Mass spectrometry, usually ESI-MS or MALDI-TOF, checks whether the measured mass matches Sermorelin's theoretical value. Yet an intact mass cannot prove sequence order, so tandem MS or another orthogonal method adds confidence where it matters. ESI spectra usually show several multiply charged ions, so reported masses are typically deconvoluted values. Mass data can also flag modified species; methionine oxidation is one example.",
+        "Finally, net peptide content, from amino acid or elemental analysis, shows how much of the powder is peptide rather than counterions and water. It is a separate figure from HPLC purity, and both matter."
+      ],
+      "table": {
+        "columns": [
+          "Method",
+          "Tells a researcher",
+          "Does not prove by itself"
+        ],
+        "rows": [
+          [
+            "RP-HPLC",
+            "Chromatographic purity (area %)",
+            "Identity"
+          ],
+          [
+            "ESI-MS / MALDI-TOF",
+            "Mass consistent with Sermorelin",
+            "Sequence order; purity"
+          ],
+          [
+            "Tandem MS",
+            "Sequence evidence",
+            "Quantity or purity"
+          ],
+          [
+            "Amino acid or elemental analysis",
+            "Net peptide content",
+            "Identity of impurities"
+          ]
+        ]
+      },
+      "veracue_scope_note": "Veracue's site describes a general approach that pairs RP-HPLC purity with mass spectrometry identity, using third-party laboratories named in its COA archive. That is a site-wide practice, not a Sermorelin result."
+    },
+    "coa_and_lot_documentation": {
+      "h2": "COA and Lot-Specific Documentation",
+      "body": [
+        "A certificate of analysis describes one lot, never the compound in general. So the first check is simple: the lot number on the COA should match the vial and the order record.",
+        "A complete Sermorelin COA separates product identity, lot number, chemical form, HPLC result with chromatogram, MS result with observed and theoretical mass, test date and testing laboratory. Net peptide content adds value when concentration accuracy matters. Together, they make results traceable.",
+        "Veracue's public COA archive lists lot numbers, laboratories and test dates for documented compounds; a Sermorelin lot is not yet listed. Lot documentation can be requested through the contact page."
+      ],
+      "lot_table": {
+        "h3": "Lot-Specific Documentation",
+        "columns": [
+          "Field",
+          "Status"
+        ],
+        "rows": [
+          [
+            "Lot-specific Sermorelin COA",
+            "Not publicly specified on the current Veracue product information."
+          ],
+          [
+            "Lot number, laboratory and test date",
+            "Not publicly specified on the current Veracue product information."
+          ],
+          [
+            "HPLC and mass spectrometry results",
+            "Not publicly specified on the current Veracue product information."
+          ],
+          [
+            "Chemical form",
+            "Not publicly specified on the current Veracue product information."
+          ],
+          [
+            "Amount per vial",
+            "Not publicly specified on the current Veracue product information."
+          ],
+          [
+            "Storage conditions",
+            "Not publicly specified on the current Veracue product information."
+          ]
+        ]
+      }
+    },
+    "comparison": {
+      "h2": "Sermorelin vs. Ipamorelin, Tesamorelin and CJC-1295",
+      "body": "Sermorelin, Tesamorelin and CJC-1295 act at the GHRH receptor; Ipamorelin acts at the ghrelin receptor. They are distinct molecules and not interchangeable. The table compares documented structure and receptor context only, with no ranking.",
+      "table_ref": "K_comparison_table"
+    },
+    "search_intent": [
+      {
+        "h2": "Sermorelin Peptide Benefits: Research Interest, Not Outcomes",
+        "body": "Searches for Sermorelin benefits usually ask what the peptide does. The well-documented property is narrow: Sermorelin stimulates growth hormone release from the anterior pituitary via the GHRH receptor. Research interest therefore centers on receptor pharmacology, somatotroph signaling and analog design. A measurable change in a cell or animal model is not an established clinical outcome, and this page makes no health, body-composition or anti-aging claims."
+      },
+      {
+        "h2": "Sermorelin Side Effects: Outside the Scope of This Page",
+        "body": "Human safety information is outside the scope of a Research Use Only product page. Published observations exist, but each belongs to its own study design, population, formulation and exposure conditions. Reading them outside that context can mislead. This page therefore does not summarize adverse events, offer medical advice or provide human-use guidance. Clinical questions belong with a licensed healthcare professional."
+      },
+      {
+        "h2": "Sermorelin Dosage: Not Provided",
+        "body": "Veracue does not provide human dosing, administration, reconstitution or scheduling information for Sermorelin, and this page contains none. In laboratory settings, experimental conditions come from a researcher's own validated study design, informed by the primary literature for the model in use and by the documented identity and peptide content of the actual lot. A supplier's product page cannot replace that validation work."
+      },
+      {
+        "h2": "Does Sermorelin Work? How Results Are Interpreted",
+        "body": "Research results depend on the experimental model, the biological endpoint, exposure conditions, assay method and species. Peptide stability in the test system matters too. A GH-release readout in cultured pituitary cells answers a different question from a receptor-binding assay, and neither predicts outcomes in people. Accordingly, before-and-after claims found online are not research results, and this page presents none."
+      }
+    ],
+    "storage_handling": {
+      "h3": "Storage & Handling",
+      "body": "Follow the storage and handling information supplied with the applicable lot documentation and product labeling."
+    },
+    "compliance_notice": {
+      "h3": "Compliance Notice",
+      "body": "Research Use Only. Sermorelin is supplied for laboratory research and analytical characterization. It is not for human or veterinary use, ingestion, injection or any form of administration. Sermorelin acetate has a documented history as the active ingredient in a previously approved drug product; that approval applied only to that drug product and does not constitute approval of Veracue's research material."
+    },
+    "closing_ctas": [
+      {
+        "label": "View Product Documentation",
+        "href": "/certificates"
+      },
+      {
+        "label": "Explore Related Peptides",
+        "href": "/shop"
+      },
+      {
+        "label": "Contact Veracue",
+        "href": "/contact-us"
+      }
+    ]
+  },
+  "J_problem_research_solution_sections": [
+    {
+      "n": 1,
+      "title": "Similar names, different molecules",
+      "research_problem": "Sermorelin appears as sermorelin, GRF(1-29)NH2 and hGHRH(1-29)-NH2. Meanwhile, Mod GRF 1-29 and CJC-1295 share its backbone but are different compounds.",
+      "practical_approach": "Anchor identity to the sequence, not the name. Sermorelin is the unmodified 1–29 amide, YADAIFTNSYRKVLGQLSARKLLQDIMSR-NH2. Any substitution, D-amino acid or added group makes it a different molecule, even when the product name looks similar. A label or COA should therefore state the exact sequence or an unambiguous name, and it should match across listing, vial and certificate."
+    },
+    {
+      "n": 2,
+      "title": "High purity does not prove identity",
+      "research_problem": "A single sharp HPLC peak is reassuring, but it only shows that most detected material elutes together. A related peptide could produce the same clean trace.",
+      "practical_approach": "Treat purity and identity as separate questions. An HPLC result should be paired with a mass spectrometry result from the same lot, reported as observed against theoretical mass. Documentation that offers only one of the two is incomplete, however high the purity figure."
+    },
+    {
+      "n": 3,
+      "title": "What mass data can and cannot show",
+      "research_problem": "Intact mass confirms that a sample fits the expected formula. Still, a rearranged sequence with the same composition would give the same mass.",
+      "practical_approach": "For routine procurement, intact mass plus HPLC is the usual baseline. Where sequence certainty matters, tandem MS or another orthogonal method adds evidence. Mass data also help flag minor modified species; because Sermorelin contains methionine, oxidation is one example that characterization can detect."
+    },
+    {
+      "n": 4,
+      "title": "Weighed powder is not all peptide",
+      "research_problem": "With five basic residues and a free N-terminus, Sermorelin binds counterions. Lyophilized peptide powders also retain some water, so gross weight overstates the peptide present.",
+      "practical_approach": "Net peptide content, measured by amino acid analysis or nitrogen elemental analysis, quantifies the peptide fraction. It is a separate figure from HPLC purity. When concentration accuracy matters, researchers look for it on the COA or request it from the supplier. Without it, two lots with identical purity can still differ in actual peptide amount."
+    },
+    {
+      "n": 5,
+      "title": "Free base or salt: the form must be stated",
+      "research_problem": "Sermorelin and Sermorelin acetate share one sequence but not one formula weight. If the form is unstated, mass-based calculations can carry a silent error.",
+      "practical_approach": "Confirm the chemical form on the lot's COA and use the matching formula weight. Treat the free-base values on this page as reference values only. Where documentation does not state the form, record it as unknown rather than assuming one."
+    },
+    {
+      "n": 6,
+      "title": "Generic certificates versus lot-specific COAs",
+      "research_problem": "Some documents are specification sheets or certificates reused across batches. Neither describes the vial actually on the bench.",
+      "practical_approach": "A useful COA names a lot that matches the vial, gives a test date and a named laboratory, and reports measured results rather than target specifications. Keeping it with the relevant notebook entry links each result to its starting material. If questions arise later, the certificate and the data can be compared directly, lot against lot."
+    },
+    {
+      "n": 7,
+      "title": "The native sequence is enzymatically labile",
+      "research_problem": "Native GHRH is cleaved at its N-terminus in plasma, leaving an inactive fragment. Unrecognized degradation can look like a weak or inconsistent response.",
+      "practical_approach": "Researchers therefore treat stability in their chosen system as an experimental variable rather than an assumption, and they document preparation and handling conditions consistently across experiments. That awareness also explains why later GHRH analogs, such as CJC-1295, were designed for greater enzymatic resistance, and why they cannot stand in for Sermorelin."
+    },
+    {
+      "n": 8,
+      "title": "Choosing a comparator for the right pathway",
+      "research_problem": "Sermorelin and Ipamorelin are often discussed together, yet they act at different receptors with different signaling. Mixing them up blurs what an experiment is actually testing.",
+      "practical_approach": "Matching comparators to the question keeps interpretation clean: GHRH-receptor ligands for GHRH-pathway questions, GHS-receptor ligands for ghrelin-pathway questions. Naming each molecule precisely in methods sections, including any substitutions or modifications, also makes the work reproducible and easier to compare with published studies."
+    },
+    {
+      "n": 9,
+      "title": "Literature is not a product claim",
+      "research_problem": "Much published Sermorelin work involved a licensed drug product in clinical settings. It is easy to read those findings as statements about a research chemical.",
+      "practical_approach": "Keep three things apart: what a study showed, in which model and formulation, and what a specific lot has been shown to be. Literature can inform hypotheses, endpoints and assay design. It cannot establish the identity, purity or suitability of any commercial research material."
+    },
+    {
+      "n": 10,
+      "title": "A procurement record that holds up later",
+      "research_problem": "Months later, a result may need to be traced to its starting material. Without organized records, that is rarely possible.",
+      "practical_approach": "For each lot, a defensible record keeps the listing snapshot, lot-specific COA, stated chemical form, net peptide content if available, receipt date, labeled storage conditions and the experiments that used it. Consistent records make lot-to-lot differences visible and allow unexpected results to be traced back quickly rather than reconstructed from memory."
+    }
+  ],
+  "K_comparison_table": {
+    "title": "Sermorelin vs. Ipamorelin vs. Tesamorelin vs. CJC-1295",
+    "columns": [
+      "Feature",
+      "Sermorelin",
+      "Ipamorelin",
+      "Tesamorelin",
+      "CJC-1295"
+    ],
+    "rows": [
+      [
+        "Structure",
+        "Unmodified GHRH(1-29) amide",
+        "Synthetic pentapeptide (Aib-His-D-2-Nal-D-Phe-Lys-NH2)",
+        "GHRH(1-44) with N-terminal trans-3-hexenoyl group",
+        "GHRH(1-29) with four substitutions plus an albumin-binding modified lysine"
+      ],
+      [
+        "Peptide length",
+        "29 residues",
+        "5 residues",
+        "44 residues",
+        "29 residues plus modified lysine"
+      ],
+      [
+        "Receptor",
+        "GHRH receptor",
+        "Ghrelin (GHS) receptor",
+        "GHRH receptor",
+        "GHRH receptor"
+      ],
+      [
+        "Signaling context",
+        "Adenylyl cyclase / cAMP",
+        "Phospholipase C / calcium",
+        "Adenylyl cyclase / cAMP",
+        "Adenylyl cyclase / cAMP"
+      ],
+      [
+        "Research role",
+        "Reference GHRH-receptor agonist",
+        "Selective GH secretagogue at the GHS receptor",
+        "Stabilized full-length GHRH analog",
+        "Long-acting GHRH analog"
+      ]
+    ],
+    "note": "No ranking or recommendation implied. 'CJC-1295 without DAC' (Mod GRF 1-29) keeps the four substitutions without the albumin-binding group and is a separate compound."
+  },
+  "L_aeo_direct_answers": [
+    {
+      "q": "What is Sermorelin peptide?",
+      "a": "Sermorelin peptide is a synthetic 29-amino-acid fragment of human growth hormone-releasing hormone, GHRH(1-29), with a C-terminal amide. Its free-base formula is C149H246N44O42S, about 3357.9 g/mol. Researchers use it as a reference agonist for the GHRH receptor in growth-hormone-axis studies. Veracue supplies it for Research Use Only."
+    },
+    {
+      "q": "What is Sermorelin acetate?",
+      "a": "Sermorelin acetate is the acetate salt of the same 29-residue peptide. The sequence is identical, but acetate counterions add mass, so its formula weight differs from the free-base value. Researchers should use the formula weight matching the chemical form stated on the lot's certificate of analysis."
+    },
+    {
+      "q": "What is Sermorelin used for in research?",
+      "a": "Sermorelin is used in laboratory research as a defined ligand for the GHRH receptor on anterior pituitary somatotroph cells. It supports receptor-signaling studies, serves as the parent sequence when comparing GHRH analogs, and is a model for peptide-stability work. These are research applications, not human uses."
+    },
+    {
+      "q": "How is Sermorelin characterized analytically?",
+      "a": "Sermorelin is characterized mainly by reverse-phase HPLC, which reports chromatographic purity, and mass spectrometry, which checks the measured mass against the theoretical value. Tandem MS adds sequence evidence. Amino acid or elemental analysis measures net peptide content, which accounts for counterions and water in the powder."
+    },
+    {
+      "q": "How is Sermorelin different from Ipamorelin?",
+      "a": "Sermorelin is a 29-residue GHRH fragment acting at the GHRH receptor, which signals mainly through cAMP. Ipamorelin is an unrelated synthetic pentapeptide acting at the ghrelin (GHS) receptor, which couples to phospholipase C and calcium. They are separate research tools, not variants of one another."
+    },
+    {
+      "q": "How is Sermorelin different from Tesamorelin?",
+      "a": "Sermorelin is the unmodified 1–29 fragment of human GHRH. Tesamorelin uses the full 44-amino-acid GHRH sequence with a trans-3-hexenoyl group on its N-terminal tyrosine. Both act at the GHRH receptor, but they differ in length, mass and N-terminal chemistry, so they are distinct research materials."
+    },
+    {
+      "q": "What should a researcher look for in a Sermorelin COA?",
+      "a": "A Sermorelin COA should state product identity, chemical form, a lot number matching the vial, test date and testing laboratory. It should report an HPLC result with chromatogram and a mass spectrometry result with observed and theoretical mass. Net peptide content is a useful addition."
+    }
+  ],
+  "M_faq": [
+    {
+      "q": "What is Sermorelin?",
+      "a": "Sermorelin is a synthetic peptide made of the first 29 amino acids of human GHRH, with a C-terminal amide. It is studied in laboratory research as a reference agonist for the GHRH receptor."
+    },
+    {
+      "q": "What is Sermorelin peptide made of?",
+      "a": "Its sequence is YADAIFTNSYRKVLGQLSARKLLQDIMSR-NH2. The free-base formula is C149H246N44O42S, with an average molecular weight of about 3357.9 g/mol."
+    },
+    {
+      "q": "What is Sermorelin acetate?",
+      "a": "The acetate salt of the same peptide. Its formula weight includes acetate counterions, so it differs from the free-base value."
+    },
+    {
+      "q": "Is Sermorelin the same as HGH?",
+      "a": "No. Growth hormone is a much larger pituitary protein. Sermorelin is a 29-residue fragment of GHRH, the hypothalamic peptide that acts on the GHRH receptor."
+    },
+    {
+      "q": "How is Sermorelin characterized?",
+      "a": "Mainly by RP-HPLC for purity and mass spectrometry for identity, with tandem MS and net peptide content analysis adding further confidence."
+    },
+    {
+      "q": "What does HPLC show?",
+      "a": "Chromatographic purity: the share of detected material eluting as the main peak. It does not confirm identity."
+    },
+    {
+      "q": "What does mass spectrometry show?",
+      "a": "Whether the measured mass matches Sermorelin's theoretical mass. It does not prove sequence order or overall purity on its own."
+    },
+    {
+      "q": "What is a Sermorelin COA?",
+      "a": "A certificate of analysis for one specific lot, reporting identity, chemical form, HPLC and MS results, test date and testing laboratory."
+    },
+    {
+      "q": "How is Sermorelin different from Ipamorelin?",
+      "a": "Sermorelin acts at the GHRH receptor; Ipamorelin is an unrelated pentapeptide acting at the ghrelin (GHS) receptor."
+    },
+    {
+      "q": "How is Sermorelin different from Tesamorelin?",
+      "a": "Tesamorelin is the full 44-residue GHRH sequence with an N-terminal hexenoyl group; Sermorelin is the unmodified 1–29 fragment."
+    },
+    {
+      "q": "How is Sermorelin different from CJC-1295?",
+      "a": "CJC-1295 has four amino-acid substitutions and, in its original form, an albumin-binding group. Neither version is Sermorelin."
+    },
+    {
+      "q": "Is Sermorelin FDA approved?",
+      "a": "Sermorelin acetate was the active ingredient in a previously approved drug product that has since been discontinued. That approval covered that product only. Veracue's Sermorelin is a research material and is not FDA-approved."
+    },
+    {
+      "q": "Does Veracue provide a Sermorelin COA?",
+      "a": "A lot-specific Sermorelin COA is not publicly specified on the current Veracue product information. Lot documentation can be requested through the contact page."
+    },
+    {
+      "q": "Does Veracue provide dosage instructions?",
+      "a": "No. Veracue provides no human dosing, administration or reconstitution information for Sermorelin."
+    },
+    {
+      "q": "How should Sermorelin be stored?",
+      "a": "Follow the storage and handling information supplied with the applicable lot documentation and product labeling."
+    },
+    {
+      "q": "What does Research Use Only mean?",
+      "a": "The material is supplied only for laboratory research and analysis. It is not for human or veterinary use, ingestion, injection or any form of administration."
+    }
+  ],
+  "N_internal_linking": {
+    "verified_on": "2026-09-19",
+    "links": [
+      {
+        "url": "/certificates",
+        "anchor": "Veracue's COA archive",
+        "placement": "COA section; hero and closing CTA"
+      },
+      {
+        "url": "/contact-us",
+        "anchor": "request lot documentation",
+        "placement": "COA section; FAQ; closing CTA"
+      },
+      {
+        "url": "/shop",
+        "anchor": "research peptide catalog",
+        "placement": "Closing CTA 'Explore Related Peptides'"
+      },
+      {
+        "url": "/about-us",
+        "anchor": "Veracue's testing approach",
+        "placement": "Analytical Characterization (site-wide scope note)"
+      },
+      {
+        "url": "/faq",
+        "anchor": "Help & FAQ",
+        "placement": "Below product FAQ"
+      },
+      {
+        "url": "/product/selank",
+        "anchor": "Selank research peptide",
+        "placement": "'Also Considered' module"
+      },
+      {
+        "url": "/product/ahk-cu",
+        "anchor": "AHK-Cu research peptide",
+        "placement": "'Also Considered' module"
+      },
+      {
+        "url": "/blog",
+        "anchor": "peptide research articles",
+        "placement": "'Further Reading' module"
+      }
+    ],
+    "not_linked": [
+      {
+        "url": "/shop?category=Growth%20Hormone%20Secretagogues",
+        "reason": "The filter currently returns Selank, AHK-Cu and NAD+. Do not link until the category mapping is fixed."
+      },
+      {
+        "url": "/peptide-calculator",
+        "reason": "Reads as dosing support next to Sermorelin content."
+      }
+    ],
+    "add_when_live": [
+      "Ipamorelin product page (COA lot VR-IPA-2602A exists in archive)",
+      "CJC-1295 (No DAC) product page (COA lot VR-CJC-2601A exists)",
+      "Tesamorelin product page"
+    ]
+  },
+  "O_image_seo": [
+    {
+      "use": "Primary product image",
+      "file_name": "veracue-sermorelin-grf-1-29-research-peptide.webp",
+      "alt": "Veracue Sermorelin GRF(1-29) research peptide vial labeled Research Use Only",
+      "title": "Sermorelin Peptide — Veracue",
+      "caption": "Sermorelin (GHRH 1-29), supplied for laboratory research use only.",
+      "note": "No mg amount in file name or alt text until vial size is confirmed. Asset not yet uploaded."
+    },
+    {
+      "use": "Sequence diagram",
+      "file_name": "sermorelin-ghrh-1-29-sequence-diagram.svg",
+      "alt": "Sequence of Sermorelin, residues 1 to 29 of human GHRH ending in a C-terminal amide",
+      "title": "Sermorelin GHRH(1-29) sequence",
+      "caption": "The 29-residue sequence, with methionine 27 and the basic residues marked."
+    },
+    {
+      "use": "Comparison graphic",
+      "file_name": "sermorelin-vs-ipamorelin-tesamorelin-cjc-1295.webp",
+      "alt": "Structural and receptor comparison of Sermorelin, Ipamorelin, Tesamorelin and CJC-1295",
+      "title": "Sermorelin vs related research peptides",
+      "caption": "Structure and receptor context only; no ranking implied."
+    }
+  ],
+  "P_json_ld": {
+    "currently_published_schema": "None. No Sermorelin product page exists on the live site as of 2026-09-19.",
+    "implementation_ready_schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Product",
+          "@id": "https://veracue-peptides.vercel.app/product/sermorelin#product",
+          "name": "Sermorelin",
+          "alternateName": [
+            "Sermorelin Peptide",
+            "GRF(1-29)",
+            "GHRH(1-29) amide"
+          ],
+          "description": "Sermorelin is the synthetic 29-amino-acid fragment of human growth hormone-releasing hormone, GHRH(1-29), ending in a C-terminal amide. Veracue supplies it as a Research Use Only material for laboratory work.",
+          "url": "https://veracue-peptides.vercel.app/product/sermorelin",
+          "brand": {
+            "@type": "Brand",
+            "name": "Veracue"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "Sequence",
+              "value": "YADAIFTNSYRKVLGQLSARKLLQDIMSR-NH2"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Molecular formula (free-base reference value)",
+              "value": "C149H246N44O42S"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Molecular weight (free-base reference value)",
+              "value": "3357.9",
+              "unitText": "g/mol"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "CAS number",
+              "value": "86168-78-7"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Research designation",
+              "value": "Research Use Only"
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://veracue-peptides.vercel.app/product/sermorelin#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://veracue-peptides.vercel.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shop",
+              "item": "https://veracue-peptides.vercel.app/shop"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Sermorelin",
+              "item": "https://veracue-peptides.vercel.app/product/sermorelin"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://veracue-peptides.vercel.app/product/sermorelin#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is Sermorelin?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sermorelin is a synthetic peptide made of the first 29 amino acids of human GHRH, with a C-terminal amide. It is studied in laboratory research as a reference agonist for the GHRH receptor."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is Sermorelin peptide made of?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Its sequence is YADAIFTNSYRKVLGQLSARKLLQDIMSR-NH2. The free-base formula is C149H246N44O42S, with an average molecular weight of about 3357.9 g/mol."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is Sermorelin acetate?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The acetate salt of the same peptide. Its formula weight includes acetate counterions, so it differs from the free-base value."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Sermorelin the same as HGH?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Growth hormone is a much larger pituitary protein. Sermorelin is a 29-residue fragment of GHRH, the hypothalamic peptide that acts on the GHRH receptor."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Sermorelin characterized?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Mainly by RP-HPLC for purity and mass spectrometry for identity, with tandem MS and net peptide content analysis adding further confidence."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does HPLC show?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Chromatographic purity: the share of detected material eluting as the main peak. It does not confirm identity."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does mass spectrometry show?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Whether the measured mass matches Sermorelin's theoretical mass. It does not prove sequence order or overall purity on its own."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is a Sermorelin COA?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A certificate of analysis for one specific lot, reporting identity, chemical form, HPLC and MS results, test date and testing laboratory."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Sermorelin different from Ipamorelin?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sermorelin acts at the GHRH receptor; Ipamorelin is an unrelated pentapeptide acting at the ghrelin (GHS) receptor."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Sermorelin different from Tesamorelin?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Tesamorelin is the full 44-residue GHRH sequence with an N-terminal hexenoyl group; Sermorelin is the unmodified 1–29 fragment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Sermorelin different from CJC-1295?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "CJC-1295 has four amino-acid substitutions and, in its original form, an albumin-binding group. Neither version is Sermorelin."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Sermorelin FDA approved?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sermorelin acetate was the active ingredient in a previously approved drug product that has since been discontinued. That approval covered that product only. Veracue's Sermorelin is a research material and is not FDA-approved."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Veracue provide a Sermorelin COA?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A lot-specific Sermorelin COA is not publicly specified on the current Veracue product information. Lot documentation can be requested through the contact page."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Veracue provide dosage instructions?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Veracue provides no human dosing, administration or reconstitution information for Sermorelin."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How should Sermorelin be stored?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Follow the storage and handling information supplied with the applicable lot documentation and product labeling."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Research Use Only mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The material is supplied only for laboratory research and analysis. It is not for human or veterinary use, ingestion, injection or any form of administration."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "rules": [
+      "Deploy only when the page goes live; every value mirrors visible page text.",
+      "No image, offers, price, availability, SKU, GTIN, review or aggregateRating: none are verified. Add 'image' only with the real uploaded asset URL, and an Offer only from live catalog data.",
+      "No purity, COA or chemical-form properties until a Sermorelin lot COA is published.",
+      "Without offers/reviews the page will not earn product rich results; the markup still supports entity understanding and AI answer engines.",
+      "Canonical host is currently veracue-peptides.vercel.app; swap to the production domain at launch."
+    ]
+  },
+  "Q_scientific_references": [
+    {
+      "id": 1,
+      "citation": "Prakash A, Goa KL. Sermorelin: a review of its use in the diagnosis and treatment of children with idiopathic growth hormone deficiency. BioDrugs. 1999;12(2):139–157. doi:10.2165/00063030-199912020-00007. PMID: 18031173.",
+      "used_for": "29-residue GHRH analog; shortest synthetic peptide with full GHRH activity; stimulates pituitary GH secretion"
+    },
+    {
+      "id": 2,
+      "citation": "PubChem Compound Summary, CID 16132413: Sermorelin. National Center for Biotechnology Information. https://pubchem.ncbi.nlm.nih.gov/compound/Sermorelin",
+      "used_for": "Compound identity and formula"
+    },
+    {
+      "id": 3,
+      "citation": "The Merck Index Online. Sermorelin monograph. Royal Society of Chemistry. https://merckindex.rsc.org/monographs/m9870",
+      "used_for": "C149H246N44O42S; MW 3357.93"
+    },
+    {
+      "id": 4,
+      "citation": "DrugBank Online. Sermorelin (DB00010). https://go.drugbank.com/drugs/DB00010",
+      "used_for": "CAS 86168-78-7; target GHRHR"
+    },
+    {
+      "id": 5,
+      "citation": "Cunha SR, Mayo KE. Ghrelin and growth hormone (GH) secretagogues potentiate GH-releasing hormone (GHRH)-induced cyclic adenosine 3',5'-monophosphate production in cells expressing transfected GHRH and GH secretagogue receptors. Endocrinology. 2002;143(12):4570–4582. doi:10.1210/en.2002-220670.",
+      "used_for": "GHRH receptor → adenylyl cyclase/cAMP; GHS receptor → phospholipase C/calcium; GHRH receptor related to VIP and secretin receptors"
+    },
+    {
+      "id": 6,
+      "citation": "Miller TL, Godfrey PA, DeAlmeida VI, Mayo KE. The rat growth hormone-releasing hormone receptor gene: structure, regulation, and generation of receptor isoforms with different signaling properties. Endocrinology. 1999;140(9):4152–4165. doi:10.1210/endo.140.9.6977. PMID: 10465288.",
+      "used_for": "GHRH receptor is a GPCR on somatotrophs"
+    },
+    {
+      "id": 7,
+      "citation": "Frohman LA, et al. Rapid enzymatic degradation of growth hormone-releasing hormone by plasma in vitro and in vivo to a biologically inactive product cleaved at the NH2 terminus. J Clin Invest. 1986;78(4):906–913. doi:10.1172/JCI112679. PMID: 3093533.",
+      "used_for": "N-terminal cleavage of GHRH to an inactive product"
+    },
+    {
+      "id": 8,
+      "citation": "Jetté L, Léger R, Thibaudeau K, et al. Human growth hormone-releasing factor (hGRF)1–29-albumin bioconjugates activate the GRF receptor on the anterior pituitary in rats: identification of CJC-1295 as a long-lasting GRF analog. Endocrinology. 2005;146(7):3052–3058. doi:10.1210/en.2004-1286. PMID: 15817669.",
+      "used_for": "CJC-1295 structure; albumin binding; DPP-IV-stable conjugates"
+    },
+    {
+      "id": 9,
+      "citation": "Raun K, Hansen BS, Johansen NL, et al. Ipamorelin, the first selective growth hormone secretagogue. Eur J Endocrinol. 1998;139(5):552–561. doi:10.1530/eje.0.1390552. PMID: 9849822.",
+      "used_for": "Ipamorelin as selective GH secretagogue pentapeptide"
+    },
+    {
+      "id": 10,
+      "citation": "EGRIFTA SV / EGRIFTA WR (tesamorelin for injection) prescribing information, NDA 022505, Section 11 Description. https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/022505s020lbl.pdf",
+      "used_for": "Tesamorelin = 44-residue human GRF sequence with hexenoyl group on N-terminal Tyr"
+    },
+    {
+      "id": 11,
+      "citation": "U.S. Food and Drug Administration. Determination that GEREF (sermorelin acetate) injection ... were not withdrawn from sale for reasons of safety or effectiveness. Federal Register. 2013;78(42):14095–14096. FR Doc. 2013-04827.",
+      "used_for": "Sermorelin acetate as active ingredient of a previously approved, discontinued drug product (background only)"
+    },
+    {
+      "id": 12,
+      "citation": "Bachem. Quality control of amino acids & peptides: a guide. Bachem Knowledge Center, 29 Jan 2025. https://www.bachem.com/knowledge-center/quality-control-of-amino-acids-peptides-a-guide/",
+      "used_for": "Net peptide content vs purity; counterions on basic residues; elemental analysis"
+    },
+    {
+      "id": 13,
+      "citation": "Iris Biotech. Modifications of methionine (technical note). https://www.iris-biotech.de/blog/modifications-of-methionine/",
+      "used_for": "Methionine oxidation detectable by MS"
+    },
+    {
+      "id": 14,
+      "citation": "Almac Group. LC-MS/MS identification of impurities present in synthetic peptide drugs (application note, 2025).",
+      "used_for": "Multiply charged ions and MS/MS for locating modifications"
+    }
+  ],
+  "R_claim_verification_table": {
+    "columns": [
+      "Claim",
+      "Source",
+      "Verified?",
+      "Safe to publish?"
+    ],
+    "rows": [
+      [
+        "Sequence YADAIFTNSYRKVLGQLSARKLLQDIMSR-NH2 (29 residues, C-terminal amide)",
+        "PubChem [2]; Prakash & Goa [1]",
+        "Yes",
+        "Yes"
+      ],
+      [
+        "Formula C149H246N44O42S (free base)",
+        "Merck Index [3]; PubChem [2]; recalculated from sequence",
+        "Yes",
+        "Yes, labeled free-base reference value"
+      ],
+      [
+        "Average MW ≈3357.9 g/mol (free base)",
+        "Merck Index 3357.93 [3]; DrugBank 3357.882 [4]; recalculated 3357.88",
+        "Yes",
+        "Yes, labeled free-base reference value"
+      ],
+      [
+        "CAS 86168-78-7",
+        "DrugBank [4]",
+        "Yes",
+        "Yes"
+      ],
+      [
+        "PubChem CID 16132413",
+        "PubChem [2]",
+        "Yes",
+        "Yes"
+      ],
+      [
+        "Acetate-salt CAS number",
+        "Registries conflict",
+        "No",
+        "Removed"
+      ],
+      [
+        "'Sermorelin is often supplied as the acetate salt'",
+        "No authoritative source",
+        "No",
+        "Removed"
+      ],
+      [
+        "Sermorelin acetate = acetate salt of the same peptide",
+        "Federal Register [11] (GEREF sermorelin acetate); Cayman formula notation C149H246N44O42S·xC2H4O2",
+        "Yes",
+        "Yes"
+      ],
+      [
+        "Shortest synthetic peptide with full GHRH biological activity",
+        "Prakash & Goa [1]",
+        "Yes",
+        "Yes, attributed"
+      ],
+      [
+        "Stimulates GH secretion from the anterior pituitary",
+        "Prakash & Goa [1]",
+        "Yes",
+        "Yes"
+      ],
+      [
+        "GHRH receptor is a GPCR, related to VIP/secretin receptors, signaling via adenylyl cyclase/cAMP",
+        "Cunha & Mayo [5]; Miller et al. [6]",
+        "Yes",
+        "Yes"
+      ],
+      [
+        "GHS (ghrelin) receptor couples to phospholipase C and calcium",
+        "Cunha & Mayo [5]",
+        "Yes",
+        "Yes"
+      ],
+      [
+        "Three Arg, two Lys, one Met (27), no Cys",
+        "Counted from sequence",
+        "Yes",
+        "Yes"
+      ],
+      [
+        "Native GHRH cleaved at N-terminus in plasma to inactive fragment",
+        "Frohman et al. [7]",
+        "Yes",
+        "Yes"
+      ],
+      [
+        "Methionine oxidation detectable by MS",
+        "Iris Biotech [13]",
+        "Yes",
+        "Yes, as a brief example only"
+      ],
+      [
+        "RP-HPLC reports area % purity and cannot confirm identity",
+        "Standard analytical practice; Bachem [12]",
+        "Yes",
+        "Yes"
+      ],
+      [
+        "Net peptide content ≠ purity; measured by AAA or elemental analysis",
+        "Bachem [12]",
+        "Yes",
+        "Yes"
+      ],
+      [
+        "Tesamorelin = 44-residue GHRH + trans-3-hexenoyl on N-terminal Tyr",
+        "EGRIFTA label [10]",
+        "Yes",
+        "Yes"
+      ],
+      [
+        "CJC-1295 = tetrasubstituted GRF(1-29) + maleimidopropionamide lysine; albumin binding",
+        "Jetté et al. [8]",
+        "Yes",
+        "Yes"
+      ],
+      [
+        "Mod GRF 1-29 = substitutions without albumin-binding group",
+        "Secondary (encyclopedic) supporting Jetté naming",
+        "Secondary",
+        "Kept only as a naming note"
+      ],
+      [
+        "Ipamorelin = Aib-His-D-2-Nal-D-Phe-Lys-NH2; selective GH secretagogue at GHS receptor",
+        "Raun et al. [9]",
+        "Yes",
+        "Yes"
+      ],
+      [
+        "Growth hormone is a much larger protein than Sermorelin",
+        "Textbook endocrinology",
+        "Yes",
+        "Yes, no figures"
+      ],
+      [
+        "Sermorelin acetate was active ingredient of a previously approved, since-discontinued drug product",
+        "Federal Register [11]",
+        "Yes",
+        "Yes, one sentence plus FAQ"
+      ],
+      [
+        "GEREF 'not withdrawn for safety or effectiveness'",
+        "Federal Register [11]",
+        "Yes",
+        "Omitted from page to avoid implying safety"
+      ],
+      [
+        "Veracue COA archive lists lots, labs and dates",
+        "veracue /certificates, 2026-09-19",
+        "Yes",
+        "Yes"
+      ],
+      [
+        "Veracue site-wide approach: RP-HPLC + MS via named third-party labs",
+        "veracue homepage and /certificates",
+        "Yes (site-wide)",
+        "Yes, scoped as site-wide"
+      ],
+      [
+        "No Sermorelin listing or COA on live site",
+        "veracue /shop, /certificates, 2026-09-19",
+        "Yes",
+        "Yes, as 'Not publicly specified'"
+      ],
+      [
+        "Lot documentation can be requested via contact page",
+        "veracue /certificates",
+        "Yes",
+        "Yes"
+      ],
+      [
+        "Veracue Sermorelin purity, form, vial size, storage, price, stock, SKU",
+        "Not available",
+        "No",
+        "Not published"
+      ]
+    ]
+  },
+  "S_final_ruo_and_accuracy_audit": {
+    "ruo_audit": [
+      [
+        "Human dose, mg/mcg, schedules, frequency",
+        "None",
+        "Pass"
+      ],
+      [
+        "Reconstitution, mixing, administration, injection",
+        "None; dosage section states none provided",
+        "Pass"
+      ],
+      [
+        "Treatment, therapeutic, bodybuilding, weight-loss, anti-aging claims",
+        "None",
+        "Pass"
+      ],
+      [
+        "Personal protocols, stacks, cycles",
+        "None",
+        "Pass"
+      ],
+      [
+        "'Users', 'patients', 'you should take/use'",
+        "None; copy uses researchers, laboratory studies, experimental models",
+        "Pass"
+      ],
+      [
+        "Superlatives: best, guaranteed, pharmaceutical grade, premium",
+        "None",
+        "Pass"
+      ],
+      [
+        "Fabricated COA, purity, lot, form, storage, price, availability",
+        "None; all read 'Not publicly specified on the current Veracue product information.'",
+        "Pass"
+      ],
+      [
+        "Regulatory history implying validation",
+        "One bounded sentence; 'not withdrawn for safety' wording omitted",
+        "Pass"
+      ],
+      [
+        "Category used as scientific claim",
+        "Uses 'GHRH / growth-hormone-axis research'; GHS filter not linked",
+        "Pass"
+      ],
+      [
+        "Storage specifics",
+        "None; defers to lot documentation and labeling",
+        "Pass"
+      ]
+    ],
+    "accuracy_audit": [
+      "Every scientific statement maps to a row in R and a reference in Q.",
+      "Cunha & Mayo 2002 now fully verified from the published PDF (Endocrinology 143(12):4570–4582, doi:10.1210/en.2002-220670).",
+      "Free-base labels applied wherever formula or weight appears.",
+      "No Veracue-specific statement exceeds what the live site shows."
+    ],
+    "quality_test": {
+      "seo": "'Sermorelin peptide' appears in title-adjacent H1, hero, What Is, AEO 1 and schema; not stuffed.",
+      "aeo": "Seven direct answers of 40–80 words, each opening with the answer.",
+      "geo": "Entity chain Sermorelin → GHRH(1-29) → GHRH receptor → GH-axis research → HPLC/MS → lot documentation → RUO is explicit in hero, background and COA sections.",
+      "non_generic": "Content depends on Sermorelin-specific facts: sequence, Met27, five basic residues, N-terminal lability, GHRH vs GHS receptor, CJC/Mod GRF naming."
+    },
+    "site_issues_to_fix_separately": [
+      "MS tolerance stated as ±0.5 Da (homepage) vs ±0.05 Da (/certificates).",
+      "'Growth Hormone Secretagogues' filter returns non-GHS products.",
+      "Homepage absolute claims ('guaranteeing', 'zero isomers', 'c-GMP Compliant') conflict with footer caveat that some items may test below 99%.",
+      "Contact links alternate between /contact and /contact-us."
+    ]
+  },
+  "open_items_for_client": [
+    "Sermorelin lot data: chemical form, amount per vial, lot number, HPLC and MS results, lab, test date, storage conditions.",
+    "Publish the Sermorelin COA in /certificates, then update the Lot-Specific Documentation table and the sentence 'A Sermorelin lot is not yet among them'.",
+    "Price, SKU and stock for an Offer block.",
+    "Product image asset URL."
+  ],
+  "qa_stats": {
+    "visible_main_content_words": 2190,
+    "breakdown": {
+      "I_visible": 1238,
+      "J_visible": 835,
+      "K_table": 117
+    },
+    "problem_section_words": [
+      81,
+      75,
+      73,
+      86,
+      73,
+      79,
+      80,
+      75,
+      75,
+      78
+    ],
+    "search_intent_section_words": [
+      72,
+      69,
+      66,
+      66
+    ],
+    "what_is_words": 103,
+    "aeo_words": [
+      46,
+      46,
+      46,
+      46,
+      45,
+      45,
+      45
+    ],
+    "faq_count": 16,
+    "title_chars": 48,
+    "meta_chars": 157
+  }
+}

@@ -15,7 +15,7 @@ export function generateMilitaryAdminEmail(rawName: string, rawEmail: string, ra
   const email = escapeHtml(rawEmail)
   const branch = escapeHtml(rawBranch)
 
-  return `${shellOpen({ title: 'Military Verification Request — Veracue Admin', headerColor: BRAND.olive, headerWaveInto: '#ffffff' })}
+  return `${shellOpen({ title: 'Military Verification Request | Veracue Admin', headerColor: BRAND.olive, headerWaveInto: '#ffffff' })}
           <tr>
             <td style="background-color:#ffffff;padding:8px 24px 8px;text-align:center;">
               ${iconBadge('shield', BRAND.charcoal)}

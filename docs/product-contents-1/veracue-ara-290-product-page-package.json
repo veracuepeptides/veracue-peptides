@@ -1,0 +1,736 @@
+{
+  "meta": {
+    "seo_title": "ARA-290 Peptide (Cibinetide) Research | Veracue",
+    "meta_description": "ARA-290 (cibinetide), an EPO-derived peptide, for lab research: identity, sequence, human trial evidence, the proposed repair-receptor model, and COA checks.",
+    "canonical": "https://veracue-peptides.vercel.app/product/ara-290",
+    "slug": "/product/ara-290",
+    "suggested_category": "Cellular Repair & Healing",
+    "category_note": "Pending client confirmation. Chosen from Veracue's existing live category set (Weight Loss & Metabolic, Cellular Repair & Healing, Longevity & Anti-Aging, Cognitive & Neuro-Protection, Growth Hormone Secretagogues, Immune Modulation, Mitochondrial & Cellular Energy) as the closest scientific fit -- ARA-290's direct literature centers on nerve-fiber and tissue-protective signaling, the same shelf as BPC-157/TB-500/AHK-Cu. 'Cognitive & Neuro-Protection' is a reasonable alternative given the neuropathy/nerve-fiber endpoints. This is a suggestion, not a final assignment -- confirm with the client before publishing.",
+    "sku": "Not publicly specified by Veracue at the time of publication.",
+    "price": "Not publicly specified by Veracue at the time of publication.",
+    "availability": "Not publicly specified by Veracue at the time of publication.",
+    "char_counts": {
+      "title": 47,
+      "description": 157,
+      "reference_note": "Matched against the confirmed live AHK-Cu title (55 chars) / description (156 chars) format from the site's SEO checker screenshot."
+    }
+  },
+  "page_positioning": {
+    "eyebrow": "Research Use Only",
+    "h1": "ARA-290 Peptide",
+    "subtitle": "Cibinetide · 11-amino-acid EPO-derived peptide · pEQLERALNSS",
+    "hero_copy": "ARA-290, also known as cibinetide, is an 11-amino-acid peptide built from the helix B surface of erythropoietin (EPO). Veracue supplies it as a research material for laboratory work. Unlike many research peptides, ARA-290 has real human evidence behind it -- it has been studied in Phase 2 clinical trials in sarcoidosis-associated neuropathy and type 2 diabetes, though those findings are specific to those patient populations. It is not FDA-approved, not intact EPO, and this material establishes no treatment effect or safety in people generally."
+  },
+  "research_snapshot": [
+    {
+      "field": "Compound",
+      "value": "ARA-290"
+    },
+    {
+      "field": "INN",
+      "value": "Cibinetide"
+    },
+    {
+      "field": "Also known as",
+      "value": "ARA290, ARA 290, pHBSP, PHBSP, Pyroglutamate Helix B Surface Peptide"
+    },
+    {
+      "field": "Sequence",
+      "value": "pEQLERALNSS (pE = pyroglutamate; pE-Glu-Gln-Leu-Glu-Arg-Ala-Leu-Asn-Ser-Ser)"
+    },
+    {
+      "field": "Length",
+      "value": "11 amino acids"
+    },
+    {
+      "field": "Molecular formula",
+      "value": "C51H84N16O21"
+    },
+    {
+      "field": "Average molecular weight",
+      "value": "1257.3 g/mol (1257.324 g/mol per PubChem)"
+    },
+    {
+      "field": "CAS number",
+      "value": "1208243-50-8"
+    },
+    {
+      "field": "FDA UNII",
+      "value": "9W5677JKDA"
+    },
+    {
+      "field": "PubChem CID",
+      "value": "91810664"
+    },
+    {
+      "field": "Structural origin",
+      "value": "Modeled on the helix B surface domain of erythropoietin (EPO)"
+    },
+    {
+      "field": "Human research status",
+      "value": "Investigated in multiple Phase 2 human studies (sarcoidosis-associated small-fiber neuropathy; type 2 diabetes with painful neuropathy)"
+    }
+  ],
+  "sections": {
+    "what_is_ara_290": {
+      "heading": "What Is ARA-290?",
+      "body": [
+        "ARA-290 is a synthetic 11-amino-acid peptide with the sequence pEQLERALNSS, built around the helix B surface region of erythropoietin (EPO). Cibinetide is the International Nonproprietary Name associated with the same molecule (CAS 1208243-50-8, PubChem CID 91810664) -- ARA-290 was its development code name, and both terms describe one compound.",
+        "It was designed by Araim Pharmaceuticals to investigate whether the tissue-protective signaling associated with EPO could be studied separately from EPO's classical erythropoietic activity -- the signaling that stimulates red blood cell production. That research question, not a marketed product, is why ARA-290 exists as a distinct compound in the literature rather than simply being studied as EPO.",
+        "ARA-290 is not erythropoietin. It is not recombinant EPO, and it is not a growth-hormone peptide. It is a short peptide fragment built around one surface region of a much larger 165-amino-acid glycoprotein hormone, and the literature treats it as pharmacologically distinct from EPO."
+      ]
+    },
+    "sequence_and_identity": {
+      "heading": "ARA-290 Sequence, Molecular Identity and Specifications",
+      "intro": "The values below describe the reference molecule as characterized in PubChem and the FDA Global Substance Registration System (GSRS). They identify the parent molecule -- confirming the identity of a specific physical lot requires that lot's own analytical documentation (mass spectrometry, chromatographic purity, and traceable batch records), not these reference values alone.",
+      "table": [
+        {
+          "property": "Expanded sequence",
+          "value": "pE-Glu-Gln-Leu-Glu-Arg-Ala-Leu-Asn-Ser-Ser (pEQLERALNSS)"
+        },
+        {
+          "property": "Peptide length",
+          "value": "11 amino acids"
+        },
+        {
+          "property": "N-terminus",
+          "value": "N-terminal pyroglutamate (pE / pGlu), a cyclized glutamine residue"
+        },
+        {
+          "property": "Molecular formula",
+          "value": "C51H84N16O21"
+        },
+        {
+          "property": "Average molecular weight",
+          "value": "1257.3 g/mol (1257.324 g/mol, PubChem)"
+        },
+        {
+          "property": "CAS Number",
+          "value": "1208243-50-8"
+        },
+        {
+          "property": "FDA UNII",
+          "value": "9W5677JKDA"
+        },
+        {
+          "property": "PubChem CID",
+          "value": "91810664"
+        },
+        {
+          "property": "INN",
+          "value": "Cibinetide"
+        }
+      ],
+      "note": "Salt form note: ARA-290 is sometimes listed as an acetate salt, which carries a different molecular weight than the free peptide (a commonly cited acetate figure is roughly 1,317 g/mol). The 1257.3 g/mol figure above is the free-peptide value. Which form a given vial contains is a Veracue-specific product fact -- see Product Specifications below -- and should never be assumed from the parent molecular weight alone."
+    },
+    "why_researchers_study": {
+      "heading": "Why Researchers Study ARA-290",
+      "body": "ARA-290 occupies an unusual position among research peptides because of its structure-function research history: a defined design rationale (a fragment built from one surface of a known protein), an active area of receptor-biology debate, and an actual human clinical research record. Interest in the literature centers on a specific structural and translational research question -- whether EPO's tissue-protective signaling can be studied apart from its erythropoietic signaling -- which is why ARA-290 shows up in neurobiology, small-fiber research, tissue-protection signaling, and analytical peptide-characterization work rather than in hematology."
+    },
+    "mechanism": {
+      "heading": "ARA-290 Mechanism and the Proposed Innate Repair Receptor",
+      "body": [
+        "Erythropoietin's classical, erythropoietic effect is mediated through the EPO receptor homodimer (EPOR/EPOR) on erythroid precursor cells. Separately, EPO has also been reported to act on non-hematopoietic cells -- endothelial, neural, and cardiac tissue among others -- at higher concentrations than those needed for erythropoiesis, and researchers proposed that a different receptor complex might mediate these effects.",
+        "That proposed complex -- EPOR paired with the beta-common receptor (βcR/CD131) -- has been referred to in the literature as the innate repair receptor (IRR). ARA-290 was developed around this IRR model: a peptide built from the EPO helix B surface region, intended to engage IRR-linked signaling without engaging the EPOR homodimer responsible for erythropoiesis.",
+        "This receptor model is central to the ARA-290 literature, but it is not settled biology. A 2018 biophysical study (Cheung Tung Shing et al., Scientific Reports) tested the extracellular domains of EPOR and the beta-common receptor directly -- with and without EPO, and with and without ARA-290 -- using surface plasmon resonance, microscale thermophoresis, size-exclusion chromatography, pull-down assays, and analytical ultracentrifugation. Across all of these methods, the study found no detectable physical association between the two receptors' extracellular domains, and reported no requirement for the beta-common receptor in an in vivo mouse model of anemic stress recovery. The authors concluded that a direct extracellular EPOR-βc interaction was not supported by their data, while noting that transmembrane or intracellular regions of the receptors, not tested in that study, remain a possible site of interaction.",
+        "In short: IRR-linked signaling is a well-established research framework that has organized several decades of ARA-290 and cibinetide studies, including the human trials described below, but whether EPOR and the beta-common receptor physically associate at the molecular level remains an open, actively discussed question rather than confirmed receptor biology."
+      ],
+      "language_note": "This page uses 'proposed', 'has been reported', and 'research model' when describing IRR biology, rather than presenting it as an established receptor mechanism -- because the underlying molecular evidence is genuinely contested."
+    },
+    "human_clinical_research": {
+      "heading": "Human Clinical Research",
+      "intro": "ARA-290/cibinetide has an actual human clinical research history -- it has been investigated in randomized, controlled Phase 2 studies. The summary below describes specific published findings, not a claim that ARA-290 is an established or approved treatment for any condition.",
+      "evidence_table": [
+        {
+          "study_context": "Sarcoidosis-associated small-fiber neuropathy (pilot study)",
+          "population": "Adults with biopsy-confirmed sarcoidosis and small-fiber neuropathy (n=22)",
+          "design": "Randomized, double-blind, placebo-controlled pilot study; intravenous ARA-290",
+          "endpoint_finding": "Significant improvement on the Small Fiber Neuropathy Screening List (SFNSL) versus placebo, with improvement in some SF-36 quality-of-life dimensions",
+          "key_limitation": "Small pilot cohort (n=22); pain-intensity improvement was similar between ARA-290 and placebo groups",
+          "citation": "Heij L, et al. Safety and efficacy of ARA 290 in sarcoidosis patients with symptoms of small fiber neuropathy. Mol Med. 2012.",
+          "pubmed": "https://pubmed.ncbi.nlm.nih.gov/23168581/"
+        },
+        {
+          "study_context": "Sarcoidosis-associated small nerve fiber loss and corneal nerve fiber density",
+          "population": "Adults with sarcoidosis-associated small nerve fiber loss",
+          "design": "Randomized, controlled study measuring symptom scores and corneal confocal microscopy",
+          "endpoint_finding": "Reported symptom improvement and increased corneal nerve fiber density versus comparator",
+          "key_limitation": "Corneal nerve fiber density is a surrogate imaging endpoint, not a direct measure of clinical disease resolution",
+          "citation": "ARA 290 improves symptoms in patients with sarcoidosis-associated small nerve fiber loss and increases corneal nerve fiber density. Mol Med. 2013.",
+          "pubmed": "https://pubmed.ncbi.nlm.nih.gov/24136731/"
+        },
+        {
+          "study_context": "Type 2 diabetes with painful neuropathy",
+          "population": "Adults with type 2 diabetes and painful neuropathy",
+          "design": "Phase 2 study of daily subcutaneous ARA-290 versus placebo, evaluating metabolic and neuropathic endpoints",
+          "endpoint_finding": "Reported improvements in metabolic control markers and neuropathic symptom measures during the study period",
+          "key_limitation": "Diabetic-neuropathy population only; not generalizable to non-diabetic or healthy populations",
+          "citation": "ARA 290, a nonerythropoietic peptide engineered from erythropoietin, improves metabolic control and neuropathic symptoms in patients with type 2 diabetes. Mol Med. 2014.",
+          "pubmed": "https://pubmed.ncbi.nlm.nih.gov/25387363/"
+        },
+        {
+          "study_context": "Corneal nerve fiber abundance, sarcoidosis-associated small nerve fiber loss and neuropathic pain (Phase 2b)",
+          "population": "Adults with sarcoidosis-associated small nerve fiber loss and neuropathic pain (n=64 across dose arms)",
+          "design": "Randomized, placebo-controlled Phase 2b trial of daily subcutaneous cibinetide (multiple dose arms) over 28 days",
+          "endpoint_finding": "Dose-dependent increase in corneal nerve fiber area and regenerating intraepidermal nerve fibers at specific dose levels versus placebo",
+          "key_limitation": "Findings were dose- and endpoint-specific, not uniform across all dose arms; imaging/biomarker endpoints, not a broad efficacy claim",
+          "citation": "Cibinetide improves corneal nerve fiber abundance in patients with sarcoidosis-associated small nerve fiber loss and neuropathic pain. J Clin Med. 2018.",
+          "pubmed": "https://pubmed.ncbi.nlm.nih.gov/28475703/"
+        }
+      ],
+      "interpretation": "Taken together, these studies establish that ARA-290/cibinetide has been investigated in controlled human trials and that specific endpoints changed in specific, indication-defined populations under specific dosing regimens. They do not establish that ARA-290 is an approved therapy, that it is safe or effective outside those studied populations and regimens, or that a Veracue research vial is equivalent to the investigational drug product used in these trials."
+    },
+    "preclinical_research": {
+      "heading": "Preclinical Research",
+      "intro": "Preclinical (animal and in-vitro) findings are laboratory findings -- not evidence of a therapeutic effect in humans.",
+      "themes": [
+        {
+          "theme": "Nerve injury models",
+          "note": "Rodent models of peripheral nerve injury have examined functional and histological endpoints after ARA-290 administration."
+        },
+        {
+          "theme": "Tissue-protective signaling",
+          "note": "Cell and organ-level studies have examined IRR-linked signaling in models of ischemic and inflammatory injury."
+        },
+        {
+          "theme": "Inflammatory signaling",
+          "note": "In-vitro work has explored anti-inflammatory and anti-apoptotic signaling proposed to run through IRR-linked pathways."
+        },
+        {
+          "theme": "Cell survival / apoptosis",
+          "note": "Studies in endothelial colony-forming cells and pancreatic islet models have examined proliferation, migration and resistance to stress-induced apoptosis."
+        },
+        {
+          "theme": "Vascular and repair models",
+          "note": "Animal wound-healing and endothelial/vascular regeneration models have been reported in the preclinical literature."
+        }
+      ],
+      "rule_note": "No preclinical or animal finding on this page should be read as proof of a human therapeutic benefit."
+    },
+    "what_evidence_does_not_establish": {
+      "heading": "What the ARA-290 Evidence Does Not Establish",
+      "bullets": [
+        "That ARA-290 is an FDA-approved treatment for sarcoidosis, neuropathy, diabetes, or any other condition",
+        "That findings from sarcoidosis or type 2 diabetes clinical populations apply to healthy individuals",
+        "That preclinical/animal findings translate to a demonstrated human effect",
+        "That the innate repair receptor is settled receptor biology -- direct EPOR-βc association has been questioned by later biophysical work",
+        "That corneal nerve fiber density, neuropathy screening scores, or metabolic markers measured in these trials amount to a proven functional cure",
+        "That FDA or EMA orphan designation is the same as marketing authorization",
+        "That a Veracue RUO research vial is equivalent to the investigational drug product used in any cited clinical trial",
+        "That peptide-identity data (CAS, PubChem, UNII) alone establishes a specific lot's purity or quality"
+      ]
+    },
+    "researcher_considerations": {
+      "heading": "Researcher Considerations When Evaluating ARA-290",
+      "intro": "Practical information, analytical, procurement and evidence-interpretation points researchers actually run into with this compound.",
+      "items": [
+        {
+          "problem": "ARA-290 appears under several names across papers, databases and vendor listings.",
+          "solution": "ARA-290, ARA290, ARA 290 and cibinetide all refer to the same molecule: sequence pEQLERALNSS, CAS 1208243-50-8, PubChem CID 91810664."
+        },
+        {
+          "problem": "ARA-290 can be confused with erythropoietin (EPO) itself, since it is described as 'EPO-derived.'",
+          "solution": "ARA-290 is a short 11-amino-acid peptide built from one surface region of the much larger EPO protein. It is not intact EPO and not recombinant EPO."
+        },
+        {
+          "problem": "The pyroglutamate notation (pE, pGlu) at the N-terminus can be unfamiliar or ambiguous.",
+          "solution": "pE denotes pyroglutamate, a cyclized glutamine residue at position 1 of the sequence. Reference sources sometimes write the sequence with an 'X' placeholder for this residue -- pEQLERALNSS and XEQLERALNSS describe the same molecule."
+        },
+        {
+          "problem": "Different peptide forms -- free peptide versus acetate or other salt forms -- produce different molecular-weight values.",
+          "solution": "The 1257.3 g/mol figure on this page is the free-peptide molecular weight. Salt forms carry a different mass. Confirm which form a specific vial contains against that lot's own documentation rather than assuming."
+        },
+        {
+          "problem": "The 'innate repair receptor' is sometimes presented as an established, uncontested drug target.",
+          "solution": "Treat IRR biology as a research model, not settled fact. It organizes much of the ARA-290 literature, but a 2018 biophysical study found no direct association between the EPOR and beta-common receptor extracellular domains -- see the Mechanism section above for the specific finding."
+        },
+        {
+          "problem": "Findings from animal or in-vitro tissue-protection models can be cited as if they were human results.",
+          "solution": "Keep animal, in-vitro and human evidence in clearly separate categories. This page's evidence tables label each study's population and design for exactly that reason."
+        },
+        {
+          "problem": "Results from small Phase 2 clinical studies get generalized into broad efficacy claims online.",
+          "solution": "Check the population (sarcoidosis, type 2 diabetes), the study design (pilot vs. Phase 2b, sample size), and the specific endpoint measured before repeating any human finding -- the Human Clinical Research table gives all three for each cited study."
+        },
+        {
+          "problem": "Searches for 'ARA-290 benefits' mostly surface promotional summaries rather than what was actually measured.",
+          "solution": "Read a 'benefits' claim as a question about a specific measured endpoint -- which symptom score, imaging measure, or lab marker changed, in which population, under which regimen -- not as a general wellness outcome."
+        },
+        {
+          "problem": "Historical clinical-trial dosing protocols can be mistaken for instructions for using a research vial.",
+          "solution": "Trial dosing described in the literature is study-design context only. It is not administration guidance for any Veracue material, which is not for human or animal use."
+        },
+        {
+          "problem": "Molecule identity and lot identity are not the same thing.",
+          "solution": "PubChem/CAS/UNII data describe the reference molecule in general. A specific vial's identity and purity can only be confirmed by that lot's own analytical documentation -- sequence/mass-spec match, HPLC purity, and lot number together."
+        },
+        {
+          "problem": "A purity percentage on a COA doesn't by itself establish that a vial contains ARA-290.",
+          "solution": "Purity and identity are separate questions. A useful COA states the analytical method, reports an observed mass or sequence-identity result, and ties both to a specific lot number and test date."
+        },
+        {
+          "problem": "Procurement teams need to know exactly what Veracue has and hasn't documented for this material.",
+          "solution": "See the Product Specifications table below. Every field is either a first-party Veracue fact or is marked as not yet published -- nothing is filled in from a competitor listing or a generic reference value."
+        }
+      ]
+    },
+    "comparison": {
+      "heading": "ARA-290 Compared With Related Research Compounds",
+      "intro": "For scientific orientation only -- this does not rank the compounds, declare a preferred choice, or transfer evidence from one molecule to another.",
+      "table": [
+        {
+          "compound": "ARA-290 (Cibinetide)",
+          "molecule_type": "11-amino-acid EPO-derived peptide",
+          "structural_origin": "Helix B surface region of erythropoietin",
+          "research_focus": "Proposed innate repair receptor / tissue-protective and nerve-fiber signaling",
+          "evidence_type": "Preclinical (animal/in-vitro) plus multiple Phase 2 human trials in defined patient populations",
+          "key_distinction": "Reference compound for this page; has a human clinical record among the most developed of any research peptide on this site"
+        },
+        {
+          "compound": "BPC-157",
+          "molecule_type": "15-amino-acid pentadecapeptide",
+          "structural_origin": "Derived from a gastric protective protein fragment",
+          "research_focus": "Tissue and angiogenesis research, primarily animal gastrointestinal and musculoskeletal injury models",
+          "evidence_type": "Predominantly preclinical/animal; limited controlled human data",
+          "key_distinction": "Different sequence and receptor biology from ARA-290; research literature is almost entirely preclinical"
+        },
+        {
+          "compound": "KPV",
+          "molecule_type": "3-amino-acid tripeptide (Lys-Pro-Val)",
+          "structural_origin": "Derived from alpha-MSH",
+          "research_focus": "Anti-inflammatory signaling research, largely in cell and animal models",
+          "evidence_type": "Preclinical/in-vitro and animal models",
+          "key_distinction": "Much shorter peptide, unrelated structural origin (alpha-MSH, not EPO), no comparable human trial record"
+        },
+        {
+          "compound": "TB-500",
+          "molecule_type": "Market name covering either a 7-residue Thymosin Beta-4 fragment or full-length Thymosin Beta-4, depending on source",
+          "structural_origin": "Thymosin Beta-4",
+          "research_focus": "Cell migration, actin regulation and wound-healing research",
+          "evidence_type": "Predominantly preclinical/animal",
+          "key_distinction": "Actin-binding mechanism unrelated to EPO/IRR biology; identity itself varies by supplier"
+        },
+        {
+          "compound": "MOTS-c",
+          "molecule_type": "16-amino-acid mitochondrial-derived peptide",
+          "structural_origin": "Encoded within the mitochondrial genome",
+          "research_focus": "Metabolic and mitochondrial signaling research",
+          "evidence_type": "Predominantly preclinical/animal",
+          "key_distinction": "Mitochondrial-genome origin and metabolic signaling focus, unrelated to ARA-290's EPO-surface design"
+        }
+      ]
+    },
+    "product_specifications": {
+      "heading": "Veracue ARA-290 Product Specifications",
+      "intro": "Only fields Veracue has published for this specific product are filled in below. Everything else is marked as not yet published rather than filled in from a generic reference value or a competitor listing.",
+      "table": [
+        {
+          "field": "Product name",
+          "value": "ARA-290 Peptide"
+        },
+        {
+          "field": "Intended use",
+          "value": "Laboratory research use only. Not for human or animal use, ingestion, injection or any form of administration."
+        },
+        {
+          "field": "Molecule identity (reference)",
+          "value": "Cibinetide / ARA-290, C51H84N16O21, 1257.3 g/mol, CAS 1208243-50-8 -- see Sequence & Molecular Identity above"
+        },
+        {
+          "field": "Physical form",
+          "value": "Not publicly specified by Veracue at the time of publication."
+        },
+        {
+          "field": "Vial size",
+          "value": "Not publicly specified by Veracue at the time of publication."
+        },
+        {
+          "field": "Net peptide amount",
+          "value": "Not publicly specified by Veracue at the time of publication."
+        },
+        {
+          "field": "Salt / counterion",
+          "value": "Not publicly specified by Veracue at the time of publication."
+        },
+        {
+          "field": "Purity",
+          "value": "Not publicly specified by Veracue at the time of publication."
+        },
+        {
+          "field": "Analytical methods used",
+          "value": "Not publicly specified by Veracue at the time of publication."
+        },
+        {
+          "field": "Lot / batch number",
+          "value": "Not publicly specified by Veracue at the time of publication."
+        },
+        {
+          "field": "Storage",
+          "value": "Not publicly specified by Veracue at the time of publication -- follow the conditions stated on the lot's own documentation and label."
+        },
+        {
+          "field": "Shipping",
+          "value": "Not publicly specified by Veracue at the time of publication."
+        },
+        {
+          "field": "SKU",
+          "value": "Not publicly specified by Veracue at the time of publication."
+        },
+        {
+          "field": "Price",
+          "value": "Not publicly specified by Veracue at the time of publication."
+        },
+        {
+          "field": "Availability",
+          "value": "Not publicly specified by Veracue at the time of publication."
+        }
+      ],
+      "implementation_note": "Drop this table in as-is and update field-by-field once Veracue supplies physical form, vial size, purity, lot and pricing data -- do not populate any pending field from PubChem, a competitor site, or an assumed default before that data is supplied."
+    },
+    "coa_guidance": {
+      "heading": "ARA-290 COA and Analytical Documentation",
+      "veracue_coa_status": "Veracue's public Certificate of Analysis archive does not currently list an ARA-290 record (the archive states certificates are still being added). If you have ordered ARA-290 and need lot-specific documentation, request it directly through Veracue's contact page rather than assuming a COA exists.",
+      "body": "A purity percentage alone does not establish that a vial contains ARA-290. A useful COA ties together identity, purity, and lot traceability -- not just a number.",
+      "include_fields": [
+        "Peptide identity",
+        "Sequence (pEQLERALNSS)",
+        "Lot/batch number",
+        "Purity method (e.g., RP-HPLC)",
+        "Mass spectrometry / identity result",
+        "Testing laboratory",
+        "Test date",
+        "Salt/counterion, if applicable",
+        "Net peptide content, where documented"
+      ],
+      "critical_boundary": "1257.3 g/mol is a reference molecular-weight value for the free peptide, not an observed lot-specific mass-spectrometry result. A COA should report what was actually measured for that lot.",
+      "quick_checklist": [
+        "Does the lot number on the COA match the product label?",
+        "Does the stated identity correspond to ARA-290/cibinetide specifically?",
+        "Does the stated sequence match pEQLERALNSS?",
+        "Is the analytical method (e.g., RP-HPLC, ESI-MS) named rather than just a result?",
+        "Does the observed mass correspond to the molecular form actually in the vial (free peptide vs. salt)?",
+        "Are the testing laboratory and test date identified?"
+      ]
+    },
+    "storage_and_handling": {
+      "heading": "Storage and Handling",
+      "body": "Store according to the conditions stated on this lot's own documentation and label. Handle as a laboratory chemical using appropriate personal protective equipment. Veracue has not published ARA-290-specific storage parameters at the time of this page's publication -- treat any storage figure quoted elsewhere online as generic peptide-handling guidance, not a Veracue-confirmed specification for this product."
+    },
+    "ruo_notice": {
+      "heading": "Research Use Only Notice",
+      "body": "ARA-290 supplied by Veracue is intended solely for laboratory and analytical research. It is not a drug, dietary supplement, cosmetic or food, and it is not intended to diagnose, treat, cure or prevent any disease. It must not be administered to humans or animals, and is not for ingestion, injection, or any form of administration. The clinical and preclinical research summarized on this page describes findings from published third-party studies of the investigational compound cibinetide and is not medical advice, a statement of safety or efficacy for this research material, or dosing/administration guidance. Purchasers are responsible for using this material lawfully and within an appropriate research setting."
+    }
+  },
+  "faq": [
+    {
+      "question": "What is ARA-290?",
+      "answer": "ARA-290 is a synthetic 11-amino-acid peptide (sequence pEQLERALNSS) built from the helix B surface region of erythropoietin (EPO), studied as a non-erythropoietic research compound."
+    },
+    {
+      "question": "Is ARA-290 the same as cibinetide?",
+      "answer": "Yes. Cibinetide is the International Nonproprietary Name for the peptide historically developed and studied as ARA-290 -- they share the same CAS number (1208243-50-8) and PubChem record (CID 91810664)."
+    },
+    {
+      "question": "What is the ARA-290 sequence?",
+      "answer": "pEQLERALNSS -- an 11-residue sequence with an N-terminal pyroglutamate (pE), corresponding to pE-Glu-Gln-Leu-Glu-Arg-Ala-Leu-Asn-Ser-Ser."
+    },
+    {
+      "question": "What is the molecular weight of ARA-290?",
+      "answer": "The free peptide has an average molecular weight of 1257.3 g/mol (molecular formula C51H84N16O21). Salt forms, such as an acetate, carry a different molecular weight -- confirm which form applies to a specific lot before using this figure in calculations."
+    },
+    {
+      "question": "What is ARA-290 derived from?",
+      "answer": "It is built around the helix B surface domain of erythropoietin (EPO) -- a defined structural region of the much larger EPO protein -- rather than being EPO itself."
+    },
+    {
+      "question": "How does ARA-290 relate to erythropoietin?",
+      "answer": "ARA-290 was designed to investigate whether the tissue-protective signaling associated with EPO could be studied separately from EPO's classical erythropoietic activity. It is not intact EPO and is not recombinant EPO."
+    },
+    {
+      "question": "What is the proposed innate repair receptor?",
+      "answer": "A receptor complex proposed in the literature as the erythropoietin receptor (EPOR) paired with the beta-common receptor (βcR/CD131), hypothesized to mediate non-erythropoietic, tissue-protective signaling. Direct physical association between the two receptors' extracellular domains has not been confirmed and was specifically not detected in a 2018 biophysical study -- it remains an active area of scientific discussion rather than settled receptor biology."
+    },
+    {
+      "question": "What human research has investigated ARA-290?",
+      "answer": "Randomized, controlled Phase 2 human studies have investigated ARA-290/cibinetide in sarcoidosis-associated small-fiber neuropathy and in type 2 diabetes with painful neuropathy, measuring endpoints such as neuropathy symptom scores, corneal nerve fiber density, and metabolic markers."
+    },
+    {
+      "question": "What did the sarcoidosis studies report?",
+      "answer": "Published studies reported improved small-fiber neuropathy symptom scores and increased corneal nerve fiber density versus placebo or comparator in sarcoidosis patients with small nerve fiber loss -- findings specific to that population and study design, not a general treatment claim."
+    },
+    {
+      "question": "What did the type 2 diabetes study report?",
+      "answer": "A Phase 2 study in adults with type 2 diabetes and painful neuropathy reported improvements in metabolic control markers and neuropathic symptom measures during the study period -- a finding specific to that population."
+    },
+    {
+      "question": "Is ARA-290 FDA approved?",
+      "answer": "No. ARA-290/cibinetide is not an FDA-approved drug. FDA orphan drug designation for sarcoidosis was granted on June 13, 2016, and EU orphan designations followed in 2013 and 2016, but orphan designation is a development incentive, not a marketing authorization."
+    },
+    {
+      "question": "What should an ARA-290 COA contain?",
+      "answer": "A useful Certificate of Analysis states the analytical method used, reports an observed identity/mass result rather than just the theoretical reference mass, and ties both to a specific lot number and test date -- see the COA guidance section above for a full checklist."
+    }
+  ],
+  "references": [
+    {
+      "label": "PubChem — Cibinetide (CID 91810664)",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/Cibinetide"
+    },
+    {
+      "label": "FDA GSRS / UNII record (9W5677JKDA)",
+      "url": "https://precision.fda.gov/uniisearch/srs/unii/9w5677jkda"
+    },
+    {
+      "label": "FDA Office of Orphan Products Development — official orphan designation record (sarcoidosis, designated 6/13/2016; not FDA approved for the orphan indication)",
+      "url": "https://www.accessdata.fda.gov/scripts/opdlisting/oopd/detailedIndex.cfm?cfgridkey=523816"
+    },
+    {
+      "label": "EMA orphan designation EU/3/13/1191 — cibinetide for sarcoidosis (2013)",
+      "url": "https://www.ema.europa.eu/en/medicines/human/orphan-designations/eu-3-13-1191"
+    },
+    {
+      "label": "EMA orphan designation EU/3/16/1721 — cibinetide for prevention of graft loss in pancreatic islet transplantation (2016)",
+      "url": "https://www.ema.europa.eu/en/medicines/human/orphan-designations/eu3161721"
+    },
+    {
+      "label": "Heij L, et al. Safety and efficacy of ARA 290 in sarcoidosis patients with symptoms of small fiber neuropathy. Mol Med. 2012.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23168581/"
+    },
+    {
+      "label": "ARA 290 improves symptoms in patients with sarcoidosis-associated small nerve fiber loss and increases corneal nerve fiber density. Mol Med. 2013.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24136731/"
+    },
+    {
+      "label": "ARA 290, a nonerythropoietic peptide engineered from erythropoietin, improves metabolic control and neuropathic symptoms in patients with type 2 diabetes. Mol Med. 2014.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25387363/"
+    },
+    {
+      "label": "Cibinetide improves corneal nerve fiber abundance in patients with sarcoidosis-associated small nerve fiber loss and neuropathic pain. J Clin Med. 2018.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28475703/"
+    },
+    {
+      "label": "Cheung Tung Shing KS, et al. EPO does not promote interaction between the erythropoietin and beta-common receptors. Sci Rep. 2018;8:12457.",
+      "url": "https://www.nature.com/articles/s41598-018-29865-x"
+    }
+  ],
+  "internal_links": [
+    {
+      "anchor": "Shop / catalog",
+      "url": "https://veracue-peptides.vercel.app/shop",
+      "verified_live": true
+    },
+    {
+      "anchor": "Certificates (COA archive)",
+      "url": "https://veracue-peptides.vercel.app/certificates",
+      "verified_live": true
+    },
+    {
+      "anchor": "FAQ",
+      "url": "https://veracue-peptides.vercel.app/faq",
+      "verified_live": true
+    },
+    {
+      "anchor": "Contact Us",
+      "url": "https://veracue-peptides.vercel.app/contact-us",
+      "verified_live": true
+    },
+    {
+      "anchor": "Medical Disclaimer",
+      "url": "https://veracue-peptides.vercel.app/medical-disclaimer",
+      "verified_live": true
+    }
+  ],
+  "implementation_notes": [
+    "This is a revision of the prior ARA-290 package: corrected the mechanism section to reflect the disputed EPOR/beta-common receptor interaction (Cheung Tung Shing et al. 2018), removed the unsupported 'lyophilized' product-form claim, softened the erythropoietic-activity design claim to design-rationale language, removed the unsupported pyroglutamate functional claim, replaced 'INN/USAN' with 'INN', removed Wikipedia from references in favor of PubChem/FDA/EMA/PubMed/Nature primary sources, and reframed the suggested category as pending client confirmation rather than a final assignment.",
+    "Site inspection basis unchanged from the prior pass: no /product/ara-290 page exists yet; /certificates currently shows 0 published COAs; /shop, /certificates, /faq, /contact-us, /medical-disclaimer are all live.",
+    "AHK-Cu's page pattern remains the structural/tonal reference: eyebrow + H1 + subtitle hero, a compact snapshot table, an evidence table separating study context/population/design/finding/limitation, a compound comparison table, a Quick COA Check list, and a closing RUO/Compliance notice.",
+    "All product-specific fields remain placeholder-flagged pending first-party Veracue data."
+  ],
+  "json_ld": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://veracue-peptides.vercel.app/product/ara-290#webpage",
+        "url": "https://veracue-peptides.vercel.app/product/ara-290",
+        "name": "ARA-290 Peptide (Cibinetide) Research | Veracue",
+        "description": "ARA-290 (cibinetide), an EPO-derived peptide, for lab research: identity, sequence, human trial evidence, the proposed repair-receptor model, and COA checks.",
+        "isPartOf": {
+          "@id": "https://veracue-peptides.vercel.app/#website"
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://veracue-peptides.vercel.app/product/ara-290#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://veracue-peptides.vercel.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Shop",
+            "item": "https://veracue-peptides.vercel.app/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "ARA-290",
+            "item": "https://veracue-peptides.vercel.app/product/ara-290"
+          }
+        ]
+      },
+      {
+        "@type": "Product",
+        "@id": "https://veracue-peptides.vercel.app/product/ara-290#product",
+        "name": "ARA-290 Peptide",
+        "alternateName": [
+          "ARA290",
+          "ARA 290",
+          "Cibinetide",
+          "pHBSP"
+        ],
+        "description": "ARA-290 (cibinetide) is a synthetic 11-amino-acid peptide built from the helix B surface of erythropoietin, supplied by Veracue as a Research Use Only laboratory material. Not for human or animal use.",
+        "category": "Cellular Repair & Healing",
+        "brand": {
+          "@type": "Brand",
+          "name": "Veracue"
+        },
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "CAS Number",
+            "value": "1208243-50-8"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "PubChem CID",
+            "value": "91810664"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Molecular Formula",
+            "value": "C51H84N16O21"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Molecular Weight",
+            "value": "1257.3 g/mol"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Sequence",
+            "value": "pEQLERALNSS"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://veracue-peptides.vercel.app/product/ara-290#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is ARA-290?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ARA-290 is a synthetic 11-amino-acid peptide (sequence pEQLERALNSS) built from the helix B surface region of erythropoietin (EPO), studied as a non-erythropoietic research compound."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is ARA-290 the same as cibinetide?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Cibinetide is the International Nonproprietary Name for the peptide historically developed and studied as ARA-290 -- they share the same CAS number (1208243-50-8) and PubChem record (CID 91810664)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the ARA-290 sequence?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "pEQLERALNSS -- an 11-residue sequence with an N-terminal pyroglutamate (pE), corresponding to pE-Glu-Gln-Leu-Glu-Arg-Ala-Leu-Asn-Ser-Ser."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the molecular weight of ARA-290?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The free peptide has an average molecular weight of 1257.3 g/mol (molecular formula C51H84N16O21). Salt forms, such as an acetate, carry a different molecular weight -- confirm which form applies to a specific lot before using this figure in calculations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is ARA-290 derived from?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It is built around the helix B surface domain of erythropoietin (EPO) -- a defined structural region of the much larger EPO protein -- rather than being EPO itself."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does ARA-290 relate to erythropoietin?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ARA-290 was designed to investigate whether the tissue-protective signaling associated with EPO could be studied separately from EPO's classical erythropoietic activity. It is not intact EPO and is not recombinant EPO."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the proposed innate repair receptor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A receptor complex proposed in the literature as the erythropoietin receptor (EPOR) paired with the beta-common receptor (βcR/CD131), hypothesized to mediate non-erythropoietic, tissue-protective signaling. Direct physical association between the two receptors' extracellular domains has not been confirmed and was specifically not detected in a 2018 biophysical study -- it remains an active area of scientific discussion rather than settled receptor biology."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What human research has investigated ARA-290?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Randomized, controlled Phase 2 human studies have investigated ARA-290/cibinetide in sarcoidosis-associated small-fiber neuropathy and in type 2 diabetes with painful neuropathy, measuring endpoints such as neuropathy symptom scores, corneal nerve fiber density, and metabolic markers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What did the sarcoidosis studies report?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Published studies reported improved small-fiber neuropathy symptom scores and increased corneal nerve fiber density versus placebo or comparator in sarcoidosis patients with small nerve fiber loss -- findings specific to that population and study design, not a general treatment claim."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What did the type 2 diabetes study report?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A Phase 2 study in adults with type 2 diabetes and painful neuropathy reported improvements in metabolic control markers and neuropathic symptom measures during the study period -- a finding specific to that population."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is ARA-290 FDA approved?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. ARA-290/cibinetide is not an FDA-approved drug. FDA orphan drug designation for sarcoidosis was granted on June 13, 2016, and EU orphan designations followed in 2013 and 2016, but orphan designation is a development incentive, not a marketing authorization."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should an ARA-290 COA contain?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A useful Certificate of Analysis states the analytical method used, reports an observed identity/mass result rather than just the theoretical reference mass, and ties both to a specific lot number and test date -- see the COA guidance section above for a full checklist."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "json_ld_note": "Product schema intentionally omits offers/sku/gtin/mpn/aggregateRating/price/availability -- none of these are published by Veracue for this product yet. No mechanism/receptor claims are placed in Product schema -- the proposed IRR model lives only in page copy (Mechanism section, FAQ), never as a structured therapeutic-fact property. Add an Offer object only once first-party price/availability data exists."
+}

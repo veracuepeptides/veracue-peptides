@@ -1,0 +1,370 @@
+{
+  "_deliverable": {
+    "client": "Veracue Peptides",
+    "page": "Glow 50mg Research Peptide",
+    "prepared_by": "Belk Digital",
+    "date": "2026-09-18",
+    "status": "COMPOSITION PENDING CLIENT CONFIRMATION",
+    "how_to_use": "Every field containing [CONFIRM] requires a first-party Veracue value before publication. All other copy is verified and publication-ready. Component science was verified against PubChem, Wikipedia chemical records, primary literature and FDA compounding documentation on 2026-09-18.",
+    "blocking_inputs": [
+      "Component list — confirm Glow 50mg contains GHK-Cu, BPC-157 and TB-500 (assumed from the product name only, not from any Veracue source)",
+      "Milligram split per component (must total 50mg)",
+      "Whether 50mg is total vial mass or total net peptide content",
+      "Salt/counterion form per component (acetate vs TFA changes net peptide content)",
+      "Which TB-500 species is supplied — Ac-LKKTETQ heptapeptide (~889 Da) or full-length thymosin beta-4 (~4963 Da). This changes the page materially.",
+      "Purity figure, method, and whether reported per component or as one blend number",
+      "Whether a Glow lot COA exists, and the testing laboratory",
+      "Price, vial sizes, SKU, packaging, storage statement"
+    ]
+  },
+
+  "seo": {
+    "primary_keyword": "glow 50mg research peptide",
+    "secondary_keywords": [
+      "glow peptide blend",
+      "glow research peptide",
+      "glow 50mg",
+      "what peptides are in glow",
+      "glow peptide COA",
+      "glow blend purity",
+      "GHK-Cu BPC-157 TB-500 blend",
+      "glow peptide HPLC",
+      "glow peptide LC-MS"
+    ],
+    "semantic_keywords": [
+      "co-lyophilized blend",
+      "net peptide content",
+      "counterion",
+      "area normalization",
+      "component-level purity",
+      "actin-binding motif",
+      "copper tripeptide-1",
+      "pentadecapeptide",
+      "research use only"
+    ],
+    "search_intent": "Mixed — commercial procurement plus scientific identification. The dominant unanswered question in this SERP is what is actually in the vial and in what amounts, not what the blend supposedly does.",
+    "title_tag": "Glow 50mg Research Peptide Blend | Veracue",
+    "title_tag_length": 43,
+    "meta_description": "Glow 50mg research peptide blend from Veracue. Component identity, per-component evidence, what a blend COA can and cannot verify. Laboratory research use only.",
+    "meta_description_length": 158,
+    "canonical": "https://veracue-peptides.vercel.app/product/glow",
+    "suggested_url": "/product/glow",
+    "cannibalization_note": "This page owns Glow-specific and blend-analysis queries. Component-level queries (GHK-Cu research, BPC-157 research, TB-500 vs thymosin beta-4) belong to the individual product pages once they exist. Do not repeat full component science here beyond the identity table and the evidence matrix. A future Klow page must be differentiated at the composition level, not by rewording the same blend copy."
+  },
+
+  "breadcrumb": ["Home", "Shop", "Glow"],
+
+  "h1": "Glow 50mg",
+  "h1_subtitle": "[CONFIRM] Research peptide blend",
+
+  "short_product_summary": "Glow is a vendor blend name, not a single molecule. Veracue supplies it as a co-lyophilized research powder containing [CONFIRM: components and mg per component], totalling 50mg per vial. Because the name is a market convention rather than a defined chemical entity, formulations sold as Glow differ between suppliers, and the amounts on this page describe the Veracue product only. No study has evaluated this combination as a combination. Everything known about it comes from research on the individual components, which is set out separately below.",
+
+  "sections": [
+    {
+      "h2": "What Glow actually is",
+      "body": [
+        "Glow is a name the research peptide market uses for a co-lyophilized mixture, usually built around copper tripeptide and two tissue-repair peptides. It is not a registered compound. There is no CAS number for Glow, no molecular weight for Glow, and no single formulation that every supplier follows.",
+        "That matters more than it sounds. Two vials labelled Glow 50mg from two suppliers can hold different peptides in different ratios. Some vendors publish only the total milligrams. Others publish a split that differs from the one next to it on a comparison site. The label alone tells a researcher very little.",
+        "The Veracue formulation is stated in the composition table below, and those figures describe this product. They should not be read across to any other vendor's Glow, and another vendor's figures should not be read onto this one."
+      ]
+    },
+    {
+      "h2": "Composition",
+      "table": {
+        "columns": ["Component", "Amount per vial", "Chemical entity supplied", "Salt form"],
+        "rows": [
+          ["[CONFIRM]", "[CONFIRM] mg", "[CONFIRM]", "[CONFIRM]"],
+          ["[CONFIRM]", "[CONFIRM] mg", "[CONFIRM]", "[CONFIRM]"],
+          ["[CONFIRM]", "[CONFIRM] mg", "[CONFIRM]", "[CONFIRM]"],
+          ["Total", "50 mg", "Co-lyophilized blend", "—"]
+        ]
+      },
+      "body": [
+        "[CONFIRM] State here whether 50mg refers to total vial mass or total net peptide content. The two are not the same. Synthetic peptides are normally supplied as acetate or trifluoroacetate salts, and residual counterion and water are part of the weighed mass. A vial holding 50mg of material contains less than 50mg of peptide, and how much less depends on the salt form and the drying process.",
+        "This is the first thing a researcher planning a molar calculation needs, and it is the thing most blend listings leave out."
+      ]
+    },
+    {
+      "h2": "Component identity",
+      "intro": "Each component is a separate compound with its own identifiers. A blend does not inherit a molecular weight from its parts, so identity has to be established component by component.",
+      "table": {
+        "columns": ["Component", "Sequence or structure", "Formula", "Molecular weight", "CAS", "Also listed as"],
+        "rows": [
+          ["GHK-Cu", "Gly-His-Lys coordinated to Cu(II)", "C14H22CuN6O4 (complex)", "~403.9 g/mol (complex); 340.38 g/mol free peptide", "89030-95-5 (complex); 49557-75-7 (free peptide)", "Copper Tripeptide-1, Cu-GHK"],
+          ["BPC-157", "Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val (GEPPPGKPADDAGLV), 15 residues", "C62H98N16O22", "~1419.5 g/mol", "137525-51-0", "Body Protection Compound-157, PL 14736, Bepecin"],
+          ["TB-500", "Ac-Leu-Lys-Lys-Thr-Glu-Thr-Gln (Ac-LKKTETQ), 7 residues", "C38H68N10O14", "~889.0 g/mol", "885340-08-9", "Thymosin beta-4 fragment (17-23)"]
+        ]
+      },
+      "notes": [
+        "GHK-Cu carries two commonly cited weights because sources describe different species: the free tripeptide at 340.38, and the copper(II) complex at roughly 403.9. A COA should say which one its identity result was matched against.",
+        "BPC-157 corresponds to a partial sequence of a protein originally characterised in human gastric juice. It is produced by solid-phase synthesis, not extraction.",
+        "GHK was first isolated from human plasma in 1973 by Pickart and Thaler."
+      ]
+    },
+    {
+      "h2": "The TB-500 problem worth knowing about before you order",
+      "body": [
+        "TB-500 is the single most ambiguous label in this blend, and it trips up more laboratory purchases than anything else on a peptide COA.",
+        "The defined chemical entity TB-500 is a seven-residue acetylated fragment, Ac-LKKTETQ, weighing about 889 Da. That sequence is the actin-binding motif of thymosin beta-4, corresponding to residues 17 to 23 of the parent protein.",
+        "Full-length thymosin beta-4 is a different molecule. It is a 43-residue protein of roughly 4963 Da with its own PubChem record, and it carries functional regions the heptapeptide does not contain, including the Ac-SDKP sequence at its N-terminus.",
+        "Products sold as TB-500 are sometimes the fragment and sometimes the full protein. The mass spectrometry result on the lot certificate is what settles it: an observed mass near 889 Da is the heptapeptide, and a mass near 4963 Da is the full protein. If a certificate reports no molecular weight, the question stays open.",
+        "The distinction is not academic. Most published thymosin beta-4 research used the full-length protein rather than the seven-residue fragment, so a study cited under the name TB-500 may not have used the molecule in the vial."
+      ]
+    },
+    {
+      "h2": "What the research on each component shows",
+      "intro": "Evidence belongs to the component that was studied, at the evidence level it was studied at. Nothing below was measured on the Glow combination.",
+      "table": {
+        "columns": ["Component", "Strongest evidence type identified", "What that research examined", "What it does not establish"],
+        "rows": [
+          [
+            "GHK-Cu",
+            "In vitro and animal models, plus dermatological and cosmetic research on the peptide",
+            "Copper-dependent extracellular matrix work in fibroblast and wound models: collagen and glycosaminoglycan synthesis, matrix metalloproteinase expression, and broad gene-expression modulation reported by Pickart and colleagues",
+            "That any of it transfers to a co-formulated blend, or to any outcome in a person"
+          ],
+          [
+            "BPC-157",
+            "Animal and in vitro only",
+            "Cytoprotection, gut-barrier and tendon, ligament and muscle repair models in rodents; reported interaction with the nitric oxide system and VEGFR2 signalling",
+            "Human efficacy. No high-affinity receptor for BPC-157 has been identified, which remains the central open question in its pharmacology."
+          ],
+          [
+            "TB-500 (Ac-LKKTETQ)",
+            "In vitro, and largely by extension from full-length thymosin beta-4",
+            "G-actin binding and cell migration work rooted in the actin-binding motif",
+            "That fragment results match full-protein results. Most of the cited literature used the 43-residue protein, not the heptapeptide."
+          ],
+          [
+            "Glow (the combination)",
+            "None identified",
+            "No controlled study of these three components co-administered was identified",
+            "Any combined, additive or synergistic effect"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "What this product does not establish",
+      "bullets": [
+        "That the three components together produce any effect the individual components have been studied for",
+        "That concentrations used in cell culture correspond to any real-world amount or route",
+        "That any component is safe or effective in humans or animals",
+        "That a purity percentage says anything about biological activity, sterility or endotoxin level",
+        "That research published under the name TB-500 used the molecule in this vial"
+      ]
+    },
+    {
+      "h2": "Reading a certificate of analysis for a blend",
+      "body": [
+        "A single purity percentage is the standard way blends are documented and the least useful way to document them. Area normalization on one chromatogram tells you how the detected signal distributes across peaks. On a three-component blend, a well-resolved run produces three main peaks, and one number stated as overall purity leaves open which peak is which and whether any component is short.",
+        "Identity and quantity are separate questions from purity, and a blend needs all three answered per component.",
+        "[CONFIRM] Describe here what the Veracue Glow COA actually reports, per component. If no Glow lot has been tested yet, this section should say the COA is issued per lot and link to the archive rather than describe content that does not exist."
+      ],
+      "table": {
+        "columns": ["COA element", "What it establishes for a blend", "What it does not establish"],
+        "rows": [
+          ["HPLC purity, single figure", "Share of detected signal in the main peaks under stated conditions", "Which component each peak is, or whether the ratio matches the label"],
+          ["HPLC with per-component assignment", "Separation and relative area of each named component, if the method is validated for this blend", "Absolute amount of each component without reference standards"],
+          ["LC-MS or ESI-MS", "Whether observed masses are consistent with each expected component", "Purity, ratio, or how much material is present"],
+          ["Quantitative LC-MS against standards", "Amount of each component, so the stated ratio can be checked", "Sterility, endotoxin or biological activity"],
+          ["Net peptide content", "How much of the vial mass is peptide rather than counterion and water", "The split between components"],
+          ["Copper content", "Whether copper is present at the expected ratio to the GHK peptide", "Purity of the peptide portion"],
+          ["Lot number and test date", "That the report belongs to the vial in hand", "Anything at all, unless it matches the vial label"]
+        ]
+      },
+      "checklist_h3": "Quick check before you buy a blend",
+      "checklist": [
+        "Lot number on the COA matches the number on the vial",
+        "Each component is named on the report, not just the blend",
+        "Observed mass is stated for each component, with the species it was matched against",
+        "For TB-500, the observed mass distinguishes the heptapeptide from full-length thymosin beta-4",
+        "Purity method and conditions are named, not just a percentage",
+        "Salt form and net peptide content are stated, so total mass can be converted to peptide mass",
+        "Testing laboratory and date appear on the report"
+      ]
+    },
+    {
+      "h2": "Regulatory position",
+      "body": [
+        "None of the components in this blend is an FDA-approved drug, and no approved indication exists for any of them. Glow itself has no regulatory status of any kind, because it is a supplier naming convention rather than a recognised product.",
+        "The compounding lists are a separate question that is often quoted incorrectly. In September 2023 the FDA placed BPC-157, the thymosin beta-4 fragment LKKTETQ, and GHK-Cu for injectable routes into category 2 of the 503A interim policy, the group it considers to raise significant safety concerns. In April 2026 several of those substances were removed from category 2 after their nominations were withdrawn, which is not the same as being permitted. Review of these substances continued through the Pharmacy Compounding Advisory Committee in July 2026 and the outcome is still being finalised.",
+        "None of that applies to material sold for laboratory research. The 503A lists govern what a compounding pharmacy may use to prepare a medication for a patient. They say nothing about research-use supply, and a change in category is not an endorsement of a research product.",
+        "Because this area is moving, the statement on this page should be checked against the FDA's current bulk drug substances page before each content refresh."
+      ]
+    },
+    {
+      "h2": "Intended use",
+      "body": [
+        "This material is supplied for in vitro and laboratory research. It is not a drug, cosmetic, supplement or food, and it is not intended for administration to humans or animals.",
+        "Nothing on this page provides dosing, administration, reconstitution-for-administration or treatment information, and none of it should be read as such."
+      ]
+    },
+    {
+      "h2": "Storage and handling",
+      "body": [
+        "[CONFIRM] Store according to the conditions stated on this lot's documentation and label. Handle as a laboratory chemical using appropriate personal protective equipment. Replace with the Veracue-specific storage statement once confirmed."
+      ]
+    }
+  ],
+
+  "product_highlights": [
+    "[CONFIRM] Co-lyophilized research blend containing [components] at [mg split], 50mg total per vial",
+    "[CONFIRM] Supplied as a lyophilized powder in a sealed vial",
+    "Component identity documented individually rather than as a single blend figure",
+    "Labelled for laboratory research use only, not for human or veterinary use"
+  ],
+
+  "compliance_notice": "Glow supplied by Veracue is intended solely for laboratory research. It is not a drug, cosmetic, dietary supplement or food, and it is not intended to diagnose, treat, cure or prevent any disease. It must not be administered to humans or animals. The scientific information on this page describes published laboratory studies of the individual components and is not medical advice or a statement of efficacy or safety. Purchasers are responsible for using the material lawfully and within an appropriate research setting.",
+
+  "faqs": [
+    {
+      "q": "What is Glow 50mg?",
+      "a": "Glow is a blend name used across the research peptide market, not a single compound. The Veracue product is a co-lyophilized powder containing [CONFIRM: components and amounts] totalling 50mg per vial. There is no CAS number or molecular weight for Glow as such, because it is a mixture rather than a defined chemical entity."
+    },
+    {
+      "q": "Is Glow a single peptide or a blend?",
+      "a": "A blend. It contains [CONFIRM] separate compounds, each with its own sequence, molecular weight and CAS number. Any identity or purity result has to be reported per component to mean anything."
+    },
+    {
+      "q": "How much of each component is in the vial?",
+      "a": "[CONFIRM: per-component mg]. The total is 50mg. Ratios differ between suppliers who use the Glow name, so the figures here describe the Veracue product and should not be assumed to match another vendor's vial of the same name."
+    },
+    {
+      "q": "Is Veracue's Glow the same as a 70mg Glow sold elsewhere?",
+      "a": "No. Glow is a naming convention, and the amounts vary by supplier. A 70mg configuration commonly quoted in the market has a different total and a different split from this product. Compare the stated composition rather than the name."
+    },
+    {
+      "q": "Does 50mg mean 50mg of peptide?",
+      "a": "[CONFIRM] Not necessarily. Synthetic peptides are usually supplied as acetate or trifluoroacetate salts, and the weighed mass includes counterion and residual water. Net peptide content is the figure that answers this, and it should appear on the lot certificate."
+    },
+    {
+      "q": "What does a single HPLC purity percentage tell me about a blend?",
+      "a": "Less than it appears to. Area normalization describes how detected signal distributes across peaks under the stated conditions. On a three-component blend it does not say which peak is which component, and it does not confirm that the ratio matches the label. Component-level reporting is what answers those questions."
+    },
+    {
+      "q": "Can LC-MS confirm every component in the blend?",
+      "a": "It can confirm identity, because the components have distinct molecular weights and each produces its own signal. Detecting a component is not the same as quantifying it. Establishing how much of each is present requires a quantitative method run against reference standards."
+    },
+    {
+      "q": "Which TB-500 is in this product, the fragment or the full protein?",
+      "a": "[CONFIRM]. The defined entity TB-500 is the acetylated heptapeptide Ac-LKKTETQ at about 889 Da, corresponding to residues 17 to 23 of thymosin beta-4. Full-length thymosin beta-4 is a separate 43-residue protein of roughly 4963 Da. Products under this name are sometimes one and sometimes the other, and the observed mass on the certificate is what distinguishes them."
+    },
+    {
+      "q": "Why do sources list two different molecular weights for GHK-Cu?",
+      "a": "Because they describe different species. The free tripeptide Gly-His-Lys is 340.38 g/mol with CAS 49557-75-7. The copper(II) complex is roughly 403.9 g/mol with CAS 89030-95-5. A certificate should state which form its identity result was matched against."
+    },
+    {
+      "q": "Does research on GHK-Cu, BPC-157 or TB-500 apply to the Glow combination?",
+      "a": "No. Each body of research describes the compound that was actually studied, at the evidence level it was studied at. No controlled study of these components co-administered was identified, so combined, additive or synergistic effects are not established by the component literature."
+    },
+    {
+      "q": "Is Glow FDA approved?",
+      "a": "No. None of the individual components is an FDA-approved drug, and Glow itself has no regulatory status because it is a supplier naming convention rather than a recognised product."
+    },
+    {
+      "q": "I've seen news about the FDA changing peptide categories. Does that apply here?",
+      "a": "Not to research-use material. Those changes concern the 503A bulk drug substances lists, which govern what a compounding pharmacy may use to prepare a medication for a patient. Removal from a restricted category is not approval, and none of it speaks to laboratory research supply."
+    },
+    {
+      "q": "What does research use only mean for this product?",
+      "a": "It means the material is manufactured, labelled and sold for laboratory and in vitro research. It is not for human or veterinary use, not for diagnostic procedures, and not for compounding into any drug product."
+    }
+  ],
+
+  "internal_links": [
+    {"anchor": "Certificates of analysis", "url": "/certificates", "reason": "Lot COA archive referenced in the analytical section. Verified live."},
+    {"anchor": "Peptide calculator", "url": "/peptide-calculator", "reason": "Supports the net peptide content discussion. Verified live."},
+    {"anchor": "Shop all peptides", "url": "/shop", "reason": "Breadcrumb parent. Verified live."},
+    {"anchor": "About Veracue", "url": "/about-us", "reason": "E-E-A-T support for testing and manufacturing claims. Verified live."},
+    {"anchor": "Help and FAQ", "url": "/faq", "reason": "Extends COA and storage Q&A. Verified live."},
+    {"anchor": "Medical disclaimer", "url": "/medical-disclaimer", "reason": "Referenced from the compliance notice. Verified live."},
+    {"anchor": "Shipping policy", "url": "/shipping-policy", "reason": "Referenced if a shipping section is added. Verified live."},
+    {"anchor": "Contact the analytical team", "url": "/contact-us", "reason": "Route for lot-specific COA requests. Verified live."},
+    {"anchor": "GHK-Cu 50mg", "url": "/product/ghk-cu", "reason": "PENDING — link only once the product record is live. Currently 404s; the catalog holds two compounds."},
+    {"anchor": "BPC-157", "url": "/product/bpc-157", "reason": "PENDING — same condition."},
+    {"anchor": "TB-500", "url": "/product/tb-500", "reason": "PENDING — same condition."}
+  ],
+
+  "external_references": [
+    {"anchor": "PubChem", "url": "https://pubchem.ncbi.nlm.nih.gov", "reason": "Component identity records: BPC-157 CID 9941957, TB-500 CID 62707662, thymosin beta-4 CID 45382195"},
+    {"anchor": "PubMed", "url": "https://pubmed.ncbi.nlm.nih.gov", "reason": "Primary literature for each component"},
+    {"anchor": "FDA bulk drug substances used in compounding", "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks", "reason": "Primary source for the 503A category statements. Re-check before each content refresh."}
+  ],
+
+  "image_seo": [
+    {
+      "image": "Hero product vial",
+      "filename": "veracue-glow-50mg-research-peptide-blend-vial.webp",
+      "alt": "Veracue Glow 50mg co-lyophilized research peptide blend vial",
+      "title": "Glow 50mg Research Peptide Blend",
+      "caption": "Glow is supplied as a lyophilized powder for laboratory research use only.",
+      "note": "The existing asset veracue-glow-50mg-underwater-seabed.webp is a lifestyle shot, not a product vial. Keep it as a secondary image with its own descriptive alt text and add a true product photo as the hero."
+    },
+    {
+      "image": "Composition graphic",
+      "filename": "veracue-glow-50mg-blend-composition-breakdown.webp",
+      "alt": "Composition breakdown of Veracue Glow 50mg showing each component and its amount",
+      "title": "Glow 50mg Composition",
+      "caption": "Each component is documented individually rather than as a single blend figure.",
+      "note": "PENDING composition confirmation."
+    }
+  ],
+
+  "schema_jsonld": {
+    "_note": "Product schema is drafted without offers, price, availability, SKU or aggregateRating. Add offers only once live price and stock data is accurate. Do not add aggregateRating without genuine review data.",
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Product",
+        "name": "Glow 50mg",
+        "description": "[CONFIRM] Co-lyophilized research peptide blend containing [components] at [amounts], 50mg total per vial. Supplied for laboratory research use only.",
+        "brand": {"@type": "Brand", "name": "Veracue"},
+        "category": "Research Peptide Blend",
+        "url": "https://veracue-peptides.vercel.app/product/glow"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://veracue-peptides.vercel.app/"},
+          {"@type": "ListItem", "position": 2, "name": "Shop", "item": "https://veracue-peptides.vercel.app/shop"},
+          {"@type": "ListItem", "position": 3, "name": "Glow"}
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "name": "Glow 50mg Research Peptide Blend | Veracue",
+        "url": "https://veracue-peptides.vercel.app/product/glow"
+      }
+    ]
+  },
+
+  "verification_report": {
+    "veracue_claims_verified": [
+      "Site is live and reachable as of 2026-09-18 (the supplied Perplexity report recorded it as inaccessible)",
+      "Live catalog contains two compounds only: AHK-Cu and NAD+",
+      "No Glow product record exists at any URL",
+      "COA archive holds 12 lot reports, none for Glow or Klow",
+      "Real internal URLs confirmed: /shop, /certificates, /peptide-calculator, /about-us, /faq, /contact-us, /blog, /shipping-policy, /medical-disclaimer",
+      "Site-wide RUO and FDA disclaimer wording confirmed in the footer"
+    ],
+    "veracue_claims_excluded_as_unverifiable": [
+      "Composition, component identity, per-component amounts, ratio, salt form",
+      "Purity figure and testing method for this product",
+      "COA existence, lot number, testing laboratory",
+      "Price, vial sizes, SKU, stock status, packaging, storage statement"
+    ],
+    "science_verified_2026_09_18": [
+      "GHK-Cu: Gly-His-Lys with Cu(II); complex C14H22CuN6O4, ~403.9 g/mol, CAS 89030-95-5; free peptide 340.38 g/mol, CAS 49557-75-7; isolated from human plasma 1973",
+      "BPC-157: GEPPPGKPADDAGLV, C62H98N16O22, ~1419.5 g/mol, CAS 137525-51-0, PubChem CID 9941957; no characterised receptor",
+      "TB-500: Ac-LKKTETQ, C38H68N10O14, ~889.0 g/mol, CAS 885340-08-9, PubChem CID 62707662, residues 17-23 of thymosin beta-4; full-length thymosin beta-4 is 43 residues, ~4963 g/mol, CID 45382195",
+      "No FDA approval for any component; 503A category 2 additions September 2023, removals April 2026, PCAC review July 2026 with outcome still being finalised"
+    ],
+    "biggest_seo_opportunity": "Per-component composition and net peptide content. Competing Glow listings publish a total and little else.",
+    "biggest_geo_opportunity": "A clean entity hierarchy that keeps Glow-level claims separate from component-level claims, with each component tied to its own identifiers.",
+    "biggest_aeo_opportunity": "Direct answers to what is in Glow, how much of each, and whether component research applies to the blend.",
+    "biggest_information_gain": "The TB-500 fragment versus full-protein distinction, and the explanation of why one blend purity percentage cannot verify a three-component vial.",
+    "biggest_scientific_caution": "No study evaluated this combination. All component evidence is animal, in vitro or ex vivo except parts of the GHK-Cu literature.",
+    "biggest_regulatory_caution": "The 503A compounding category changes are widely misquoted as FDA validation. They do not apply to research-use supply, and the page should say so rather than stay silent."
+  }
+}

@@ -23,7 +23,7 @@ const PILLARS_CONFIG: PillarData[] = [
     key: 'hplcPurity',
     number: '01.',
     tag: 'PURITY SPECIFICATION',
-    spec: 'RP-HPLC Confirmed • ≥99.0% Peak',
+    spec: 'HPLC Tested • Purity Per Batch COA',
     icon: CheckCircle2,
     media: '/veracue-images/veracue-epithalon-50mg-water-ripples-landscape.webp',
     alt: 'High-Performance Liquid Chromatography analytical purity verification for Veracue research peptides',
@@ -106,7 +106,7 @@ export function WhyChooseUs() {
           {/* Narrative & Quick Access Action */}
           <div className="flex flex-col items-start md:items-end gap-5 max-w-md">
             <p className="text-neutral-600 text-xs sm:text-sm md:text-base leading-relaxed text-left md:text-right font-sans">
-              Every synthetic peptide supplied by Veracue is manufactured to verified analytical thresholds &mdash; with publicly accessible third-party chromatograms and mass spectrometry documentation published before you purchase.
+              Each Veracue peptide is HPLC tested, and the Certificate of Analysis for its batch shows the purity result, so you can read the data before you buy.
             </p>
 
             {/* Signature Luxury Pill Button */}
@@ -227,7 +227,6 @@ export function WhyChooseUs() {
                   src={currentPillar.media}
                   alt={currentPillar.alt}
                   fill
-                  priority
                   className="object-cover object-center select-none"
                   sizes="(max-width: 1024px) 100vw, 60vw"
                 />
@@ -258,7 +257,7 @@ export function WhyChooseUs() {
                   {t(`items.${currentPillar.key}.title`)}
                 </h4>
                 <p className="text-white/80 text-[11px] sm:text-xs font-sans leading-relaxed">
-                  {currentPillar.spec} &mdash; cross-referenced with independent batch chromatograms.
+                  {currentPillar.spec}, cross-referenced with independent batch chromatograms.
                 </p>
               </div>
 

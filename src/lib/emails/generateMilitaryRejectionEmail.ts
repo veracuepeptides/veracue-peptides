@@ -5,7 +5,7 @@ export function generateMilitaryRejectionEmail(name: string): string {
   const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
   const safeName = escapeHtml(name)
 
-  return `${shellOpen({ title: 'Verification Update — Veracue', headerColor: BRAND.olive, headerWaveInto: '#ffffff' })}
+  return `${shellOpen({ title: 'Verification Update | Veracue Peptides', headerColor: BRAND.olive, headerWaveInto: '#ffffff' })}
           <tr>
             <td style="background-color:#ffffff;padding:8px 24px 8px;text-align:center;">
               ${iconBadge('alert', BRAND.charcoal)}

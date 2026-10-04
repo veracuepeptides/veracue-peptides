@@ -17,17 +17,17 @@ export interface ProductCardProps {
 }
 
 export function ProductCard({ product }: ProductCardProps) {
-  // Resolve lifestyle editorial images alternating between vp-product-vial.jpeg and vp-product-vial2.jpeg
+  // Use the product's own photo when it has one. Only when there is no image at all do we fall back
+  // to the stock lifestyle images, alternating between vp-product-vial.webp and vp-product-vial2.webp.
   const getImageUrl = (prod: any) => {
-    if (prod.imageUrl?.includes('vp-product-vial') || prod.image?.includes('vp-product-vial')) {
-      return prod.imageUrl || prod.image
-    }
+    const own = prod.imageUrl || prod.image
+    if (typeof own === 'string' && own) return own
     const str = String(prod.slug || prod.key || prod.name || prod.id || '')
     let hash = 0
     for (let i = 0; i < str.length; i++) hash += str.charCodeAt(i)
     return hash % 2 === 0 
-      ? '/veracue-images/vp-product-vial.jpeg' 
-      : '/veracue-images/vp-product-vial2.jpeg'
+      ? '/veracue-images/vp-product-vial.webp' 
+      : '/veracue-images/vp-product-vial2.webp'
   }
 
   const getCategory = (prod: any) => prod.category || prod.categories?.[0]?.title || 'RESEARCH PEPTIDE'
@@ -40,12 +40,14 @@ export function ProductCard({ product }: ProductCardProps) {
 
   // Clean price values
   const rawPrice = prodPrice(product)
-  const priceVal = typeof rawPrice === 'string' ? parseFloat(rawPrice.replace(/[^0-9.]/g, '')) : Number(rawPrice) || 45
-  const compareVal = product.compareAtPrice 
-    ? Number(product.compareAtPrice) 
-    : Math.round(priceVal * 1.25)
-  const discountPercent = Math.round(((compareVal - priceVal) / compareVal) * 100)
-  const discountBadge = discountPercent > 0 ? `-${discountPercent}%` : 'BESTSELLER'
+  const priceVal = typeof rawPrice === 'string' ? parseFloat(rawPrice.replace(/[^0-9.]/g, '')) || 0 : Number(rawPrice) || 0
+  // Only a real, higher compare-at price produces a strikethrough and discount badge.
+  const rawCompare = product.compareAtPrice ?? product.originalPrice
+  const compareParsed =
+    typeof rawCompare === 'string' ? parseFloat(rawCompare.replace(/[^0-9.]/g, '')) : Number(rawCompare)
+  const compareVal = Number.isFinite(compareParsed) && compareParsed > priceVal ? compareParsed : 0
+  const discountPercent = compareVal > 0 ? Math.round(((compareVal - priceVal) / compareVal) * 100) : 0
+  const discountBadge = discountPercent > 0 ? `-${discountPercent}%` : product.isBestSeller ? 'BESTSELLER' : null
 
   const addWishlistItem = useWishlistStore(state => state.addItem)
   const removeWishlistItem = useWishlistStore(state => state.removeItem)
@@ -129,8 +131,9 @@ export function ProductCard({ product }: ProductCardProps) {
         draggable={false}
         href={`/product/${product.slug}`}
         className="absolute inset-0 z-10 rounded-[28px] sm:rounded-[34px]"
-        aria-label={product.name}
-      />
+      >
+        <span className="sr-only">{product.name}</span>
+      </Link>
 
       {/* Inner Image Canvas */}
       <div className="relative w-full aspect-[1/1.08] rounded-[20px] sm:rounded-[24px] bg-[#f0efeb] overflow-hidden">
@@ -148,11 +151,13 @@ export function ProductCard({ product }: ProductCardProps) {
         </div>
 
         {/* Floating Top-Left Discount Badge */}
-        <div className="absolute top-2.5 left-2.5 sm:top-3.5 sm:left-3.5 z-20 pointer-events-none">
-          <span className="bg-[#20221c]/90 backdrop-blur-sm text-[#fff1e6] px-2.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold tracking-wide shadow-md">
-            {discountBadge}
-          </span>
-        </div>
+        {discountBadge && (
+          <div className="absolute top-2.5 left-2.5 sm:top-3.5 sm:left-3.5 z-20 pointer-events-none">
+            <span className="bg-[#20221c]/90 backdrop-blur-sm text-[#fff1e6] px-2.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold tracking-wide shadow-md">
+              {discountBadge}
+            </span>
+          </div>
+        )}
 
         {/* Signature Scooped Corner Dock (Bottom-Right) */}
         <div className="absolute bottom-0 right-0 z-20 bg-white pt-2.5 pl-2.5 sm:pt-3 sm:pl-3 rounded-tl-[18px] sm:rounded-tl-[22px]">
@@ -217,7 +222,7 @@ export function ProductCard({ product }: ProductCardProps) {
 
           {/* Right Column: Pricing */}
           <div className="shrink-0 text-right flex flex-col items-end pt-0.5">
-            {compareVal > priceVal && (
+            {compareVal > 0 && (
               <span className="text-[11px] sm:text-xs text-neutral-400 line-through font-medium leading-none mb-1">
                 ${compareVal}
               </span>
@@ -239,5 +244,5 @@ export function ProductCard({ product }: ProductCardProps) {
 
 function prodPrice(prod: any) {
   if (prod.isFrom && prod.price) return prod.price
-  return prod.priceRange ?? prod.price ?? 45
+  return prod.priceRange ?? prod.price ?? 0
 }

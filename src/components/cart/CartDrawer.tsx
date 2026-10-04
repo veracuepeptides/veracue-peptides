@@ -170,7 +170,7 @@ export function CartDrawer() {
 
             {items.length === 0 ? (
               /* --- 2. Empty State (Clean, Warm, Minimal) --- */
-              <div className="flex-1 min-h-0 flex flex-col items-center justify-center px-4 sm:px-6 py-12 text-center overflow-y-auto">
+              <div data-lenis-prevent="true" className="flex-1 min-h-0 flex flex-col items-center justify-center px-4 sm:px-6 py-12 text-center overflow-y-auto">
                 <div className="w-16 h-16 sm:w-18 sm:h-18 rounded-full bg-[#fff1e6] border border-[#eddcd2] flex items-center justify-center mb-4 text-[#cb997e] shadow-2xs">
                   <ShoppingBag size={26} strokeWidth={1.5} />
                 </div>
@@ -256,7 +256,7 @@ export function CartDrawer() {
                 )}
 
                 {/* Items List (Natural Organic Spacing, No Stretched Gaps) */}
-                <div className="flex-1 min-h-0 overflow-y-auto px-4 sm:px-6 overscroll-contain bg-[#f0efeb]">
+                <div data-lenis-prevent="true" className="flex-1 min-h-0 overflow-y-auto px-4 sm:px-6 overscroll-contain bg-[#f0efeb]">
                   <AnimatePresence initial={false}>
                     {items.map((item) => {
                       return (

@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect } from 'react'
+import React, { useLayoutEffect } from 'react'
 import Image from 'next/image'
 import { motion, AnimatePresence, Variants } from 'framer-motion'
 import {
@@ -100,7 +100,7 @@ const PRIMARY_NAV = [
   {
     key: 'shopFormulations',
     title: 'Shop All Peptides',
-    subtitle: 'Browse 40+ research compounds with ≥99% HPLC purity',
+    subtitle: 'Browse 40+ HPLC-tested research compounds with batch COAs',
     href: '/shop',
     icon: FlaskConical,
     iconBg: 'bg-[#a5a58d]/15 text-[#282a21]',
@@ -108,7 +108,7 @@ const PRIMARY_NAV = [
   {
     key: 'peptideCalculator',
     title: 'Peptide Calculator',
-    subtitle: 'Reconstitution, volume, vial dilution & research dosing tool',
+    subtitle: 'Reconstitution, volume & vial dilution tool',
     href: '/peptide-calculator',
     icon: Calculator,
     iconBg: 'bg-[#eddcd2]/50 text-[#282a21]',
@@ -124,7 +124,7 @@ const PRIMARY_NAV = [
   {
     key: 'ourLaboratory',
     title: 'Purity & Standards',
-    subtitle: 'ISO-7 cleanroom synthesis, 3rd party testing & COA lookup',
+    subtitle: 'Our testing standards, HPLC data & COA lookup',
     href: '/about-us',
     icon: ShieldCheck,
     iconBg: 'bg-[#E8EFE3] text-[#55724a]',
@@ -135,7 +135,7 @@ const QUICK_MODULES = [
   {
     title: 'Best Sellers',
     sub: 'Demanded peptides',
-    href: '/shop?sort=popular',
+    href: '/shop',
     icon: Flame,
     color: 'text-[#cb997e]',
     bg: 'bg-[#cb997e]/10',
@@ -174,7 +174,10 @@ export function MobileMenu({
   categories = [],
 }: MobileMenuProps) {
   const t = useTranslations('mobileMenu')
-  const cartStore = useCartStore()
+  // Scoped selectors only — subscribing to the whole store (as this used to) re-renders
+  // the menu, mid-animation, on every unrelated cart change (quantity edits, background
+  // sync, etc.), which was a real contributor to the open/close jank on mobile.
+  const openCart = useCartStore((state) => state.openCart)
   const cartItems = useCartStore((state) => state.items)
   const cartCount = cartItems?.reduce((total, item) => total + item.quantity, 0) || 0
 
@@ -183,7 +186,7 @@ export function MobileMenu({
 
   const displayCategories = categories && categories.length > 0 ? categories : FALLBACK_CATEGORIES
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden'
       document.body.classList.add('mobile-menu-open')
@@ -281,15 +284,24 @@ export function MobileMenu({
   return (
     <AnimatePresence>
       {isOpen && (
-        <div className="fixed inset-0 z-[100] flex justify-end pointer-events-auto select-none overflow-hidden font-sans">
-          {/* Ambient Dimmed / Blurred Backdrop */}
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label="Navigation menu"
+          className="fixed inset-0 z-[100] flex justify-end pointer-events-auto select-none overflow-hidden font-sans"
+        >
+          {/* Ambient Dimmed Backdrop. No backdrop-blur here: animating its opacity while
+              blurring everything behind it is one of the most common causes of mobile
+              drawer jank (the browser has to recompute the blur region every frame for
+              the whole duration of the fade, on top of the drawer's own slide/spring). A
+              plain darker scrim reads almost identically and costs nothing to animate. */}
           <motion.div
             variants={backdropVariants}
             initial="closed"
             animate="open"
             exit="closed"
             onClick={onClose}
-            className="absolute inset-0 bg-black/40 backdrop-blur-sm"
+            className="absolute inset-0 bg-black/55"
             aria-hidden="true"
           />
 
@@ -302,7 +314,7 @@ export function MobileMenu({
             className="relative w-full sm:max-w-[440px] h-full bg-[#f0efeb] flex flex-col z-10 shadow-[-12px_0_40px_rgba(0,0,0,0.15)] overflow-hidden"
           >
             {/* Top Sticky Header */}
-            <div className="h-[64px] sm:h-[70px] px-4 sm:px-6 flex items-center justify-between shrink-0 relative z-30 bg-[#f0efeb]/95 backdrop-blur-md border-b border-[#282a21]/10">
+            <div className="h-[64px] sm:h-[70px] px-4 sm:px-6 flex items-center justify-between shrink-0 relative z-30 bg-[#f0efeb] border-b border-[#282a21]/10">
               {/* Logo */}
               <Link
                 href="/"
@@ -311,7 +323,7 @@ export function MobileMenu({
                 aria-label="Veracue Home"
               >
                 <Image
-                  src="/veracue-images/logo-header.png"
+                  src="/veracue-images/logo-header.webp"
                   alt="Veracue"
                   width={140}
                   height={40}
@@ -387,7 +399,7 @@ export function MobileMenu({
                     type="button"
                     onClick={() => {
                       onClose()
-                      cartStore.openCart()
+                      openCart()
                     }}
                     className="flex items-center justify-center gap-2 py-2.5 px-3 rounded-2xl bg-white border border-[#282a21]/8 hover:border-[#282a21]/20 active:bg-black/5 transition-all shadow-[0_1px_4px_rgba(0,0,0,0.02)] cursor-pointer"
                   >
@@ -448,9 +460,9 @@ export function MobileMenu({
                             <Icon size={20} strokeWidth={2} />
                           </div>
                           <div className="min-w-0">
-                            <h2 className="text-[16px] sm:text-[16.5px] font-bold text-[#282a21] tracking-tight group-hover:text-[#cb997e] transition-colors leading-snug">
+                            <span className="block text-[16px] sm:text-[16.5px] font-bold text-[#282a21] tracking-tight group-hover:text-[#cb997e] transition-colors leading-snug">
                               {t(`links.${item.key}`) || item.title}
-                            </h2>
+                            </span>
                             <p className="text-[12px] text-[#282a21]/60 font-normal leading-normal mt-0.5 truncate max-w-[210px] xs:max-w-[260px] sm:max-w-xs">
                               {item.subtitle}
                             </p>
@@ -502,7 +514,7 @@ export function MobileMenu({
 
                         <div className="absolute inset-0 p-3.5 sm:p-4 flex flex-col justify-between">
                           <div className="flex items-center justify-start">
-                            <span className="text-[9px] font-sans font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-white/20 backdrop-blur-md text-white border border-white/30">
+                            <span className="text-[9px] font-sans font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-black/35 text-white border border-white/30">
                               {visual.tag}
                             </span>
                           </div>
@@ -615,7 +627,7 @@ export function MobileMenu({
 
                   {/* Military & Veteran Program */}
                   <Link
-                    href="/about-us#military-discount"
+                    href="/#military-discount"
                     onClick={onClose}
                     className="group flex items-center justify-between p-3.5 rounded-2xl hover:bg-[#f0efeb]/70 active:bg-[#f0efeb] transition-colors"
                   >

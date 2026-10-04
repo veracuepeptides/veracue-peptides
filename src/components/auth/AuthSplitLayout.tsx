@@ -10,37 +10,37 @@ const LAB_SLIDES = [
   {
     id: 0,
     tag: "RP-HPLC & ESI-MS SPECIFICATION",
-    title: "Certified ≥99% analytical purity on every lyophilized lot.",
-    description: "Reverse-phase high-performance liquid chromatography and mass spectrometry verified by accredited independent testing laboratories.",
+    title: "HPLC purity reported on every lyophilized lot.",
+    description: "Each batch is analyzed by reverse-phase HPLC, and the result is published on its Certificate of Analysis.",
     image: "/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp",
     stats: [
-      { label: "Purity", value: "≥99.0% HPLC" },
-      { label: "Accreditation", value: "ISO 17025" },
+      { label: "Purity", value: "Per Batch COA" },
+      { label: "Testing", value: "HPLC + MS" },
       { label: "Designation", value: "RUO Grade" }
     ]
   },
   {
     id: 1,
     tag: "BATCH-LEVEL COA ARCHIVE",
-    title: "Documented chain-of-custody and analytical transparency.",
-    description: "Public third-party certificates of analysis with raw spectrometry peaks and lot-specific quality assurance data published for research validation.",
-    image: "/veracue-images/veracue-research-grade-50mg-gloved-hand.png",
+    title: "Analytical transparency for every batch.",
+    description: "Certificates of analysis with chromatography and mass spectrometry data are published by lot for research review.",
+    image: "/veracue-images/veracue-research-grade-gloved-hand.webp",
     stats: [
-      { label: "Testing", value: "Third-Party" },
+      { label: "Testing", value: "HPLC + MS" },
       { label: "Verification", value: "Lot-Specific" },
-      { label: "Excipients", value: "Zero (0%)" }
+      { label: "Archive", value: "Public COAs" }
     ]
   },
   {
     id: 2,
-    tag: "CONTROLLED CRYOGENIC LYOPHILIZATION",
-    title: "Freeze-dried under sterile inert nitrogen blanket seal.",
-    description: "Processed in cleanroom suites to prevent ambient moisture hydrolysis, sequence cleavage, and oxidation during storage and transit.",
+    tag: "LYOPHILIZED VIAL FORMAT",
+    title: "Supplied freeze-dried in sealed glass vials.",
+    description: "Lyophilized powder is a stable format for storage and transit until the compound is reconstituted for research.",
     image: "/veracue-images/veracue-ghk-cu-50mg-ice-bed-warm.webp",
     stats: [
-      { label: "Moisture", value: "<1.5% KF" },
-      { label: "Atmosphere", value: "Inert N₂ Seal" },
-      { label: "Stability", value: "-20°C Stable" }
+      { label: "Format", value: "Lyophilized" },
+      { label: "Packaging", value: "Sealed Vial" },
+      { label: "Shipping", value: "From the USA" }
     ]
   }
 ]
@@ -73,7 +73,7 @@ export function AuthSplitLayout({ children, mode }: AuthSplitLayoutProps) {
         <div className="flex items-center justify-between shrink-0 pb-3 sm:pb-4 w-full">
           <Link href="/" className="inline-block hover:opacity-85 transition-opacity">
             <Image 
-              src="/veracue-images/logo-header.png" 
+              src="/veracue-images/logo-header.webp" 
               alt="Veracue Peptides" 
               width={160} 
               height={38} 
@@ -167,12 +167,12 @@ export function AuthSplitLayout({ children, mode }: AuthSplitLayoutProps) {
             <span className="text-[#20221c]/25 text-[10px]">&bull;</span>
             <div className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#20221c]">
               <Award size={13} className="text-[#20221c]/80 shrink-0" />
-              <span>≥99% HPLC</span>
+              <span>HPLC Tested</span>
             </div>
             <span className="text-[#20221c]/25 text-[10px]">&bull;</span>
             <div className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#20221c]">
               <Lock size={13} className="text-[#20221c]/80 shrink-0" />
-              <span>ISO 17025</span>
+              <span>Batch COAs</span>
             </div>
           </div>
 
@@ -193,8 +193,8 @@ export function AuthSplitLayout({ children, mode }: AuthSplitLayoutProps) {
                 <Award size={13} className="text-[#20221c]" />
               </div>
               <div>
-                <p className="text-xs font-bold text-[#20221c] tracking-tight uppercase font-sans">≥99% HPLC</p>
-                <p className="text-[10px] text-[#20221c]/60 font-medium leading-tight font-sans">Analytical Purity</p>
+                <p className="text-xs font-bold text-[#20221c] tracking-tight uppercase font-sans">HPLC Tested</p>
+                <p className="text-[10px] text-[#20221c]/60 font-medium leading-tight font-sans">Purity Per Batch</p>
               </div>
             </div>
 
@@ -203,8 +203,8 @@ export function AuthSplitLayout({ children, mode }: AuthSplitLayoutProps) {
                 <Lock size={13} className="text-[#20221c]" />
               </div>
               <div>
-                <p className="text-xs font-bold text-[#20221c] tracking-tight uppercase font-sans">ISO 17025</p>
-                <p className="text-[10px] text-[#20221c]/60 font-medium leading-tight font-sans">Certified Testing</p>
+                <p className="text-xs font-bold text-[#20221c] tracking-tight uppercase font-sans">Batch COAs</p>
+                <p className="text-[10px] text-[#20221c]/60 font-medium leading-tight font-sans">Lot-Specific Testing</p>
               </div>
             </div>
           </div>

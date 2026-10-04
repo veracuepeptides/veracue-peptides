@@ -1,0 +1,821 @@
+{
+  "meta": {
+    "product": "AHK-Cu Spray",
+    "route": "/product/ahk-cu-spray",
+    "site": "https://veracue-peptides.vercel.app",
+    "revisionOf": "veracue-ahk-cu-spray-page.json (previous attempt)",
+    "generatedDate": "2026-09-22",
+    "changesFromPreviousVersion": [
+      "Removed all implied route (topical/nasal), form, concentration, vehicle, pH, excipient, fill/actuation and storage claims; these are now shown only in the specification table as unspecified.",
+      "COA language changed from 'on request' to 'availability should be confirmed with Veracue'; no certificate existence is implied.",
+      "Removed the 0.1% w/v illustrative concentration example and the million-fold comparison entirely.",
+      "Evidence language now says 'no human clinical trial / no animal study was identified in the literature reviewed for this page' instead of an absolute universal claim.",
+      "GHK-Cu comparison shortened to sequence, naming and evidence-size distinction; the multi-paragraph aqueous-speciation tangent was removed.",
+      "13 sections consolidated into 6 focused sections plus hero, snapshot, FAQ and references, each doing one job rather than repeating limitations.",
+      "RUO stated once briefly near the hero and once in a dedicated closing section, not in every module.",
+      "Dosing question reframed as a redirect to documentation rather than an extended 'excluded keyword' explainer."
+    ],
+    "identityEvidence": "Checked 2026-09-22: live /shop lists 3 products (Selank, AHK-Cu, NAD+). The live AHK-Cu listing (/product/ahk-cu, SKU AHKCU-50MG) is a lyophilized powder in 50mg/100mg vials; no AHK-Cu Spray record exists. /certificates shows 0 published reports.",
+    "keywordSource": "AHK-Cu_Spray_SEO_GEO_AEO_Keywords.xlsx (153 keywords, 25 AEO questions, 20 excluded terms)",
+    "repositoryAccess": false,
+    "repositoryAccessNote": "No GitHub or Vercel connector is available in this session, so the Veracue codebase could not be opened or edited directly; this is the production-ready content and schema for a developer (or a connected session) to implement at /product/ahk-cu-spray.",
+    "visibleEditorialWordCount": 1762
+  },
+  "seo": {
+    "title": "AHK-Cu Spray Formulation (Copper Tripeptide-3) | Veracue",
+    "titleLength": 56,
+    "metaDescription": "AHK-Cu Spray, a research formulation for AHK-Cu (Copper Tripeptide-3): molecular identity, the 2007 hair follicle study, AHK-Cu vs GHK-Cu, and COA checks.",
+    "metaDescriptionLength": 154,
+    "canonical": "https://veracue-peptides.vercel.app/product/ahk-cu-spray",
+    "slug": "ahk-cu-spray",
+    "h1": "AHK-Cu Spray",
+    "primaryKeyword": "AHK-Cu Spray",
+    "secondaryKeywords": [
+      "AHK-Cu spray research",
+      "AHK-Cu research peptide",
+      "AHK-Cu peptide",
+      "AHK-Cu copper peptide",
+      "AHK-Cu research",
+      "AHK-Cu research formulation",
+      "AHK-Cu hair follicle research",
+      "AHK-Cu dermal papilla",
+      "AHK-Cu ex vivo research",
+      "AHK-Cu in vitro research",
+      "AHK-Cu vs GHK-Cu",
+      "AHK-Cu Spray COA",
+      "AHK-Cu certificate of analysis",
+      "AHK-Cu purity"
+    ],
+    "keywordOwnership": "The live /product/ahk-cu page owns molecule-level long-tail terms (full molecular-weight table, CAS disambiguation). This page targets the product/spray and evidence-summary terms and links back rather than duplicating that depth.",
+    "excludedKeywordsHonoured": true,
+    "openGraph": {
+      "title": "AHK-Cu Spray (Copper Tripeptide-3) | Veracue",
+      "description": "AHK-Cu Spray, a research formulation for AHK-Cu (Copper Tripeptide-3): molecular identity, the 2007 hair follicle study, AHK-Cu vs GHK-Cu, and COA checks.",
+      "type": "product",
+      "url": "https://veracue-peptides.vercel.app/product/ahk-cu-spray",
+      "image": "Use existing site /api/og generator pattern"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "AHK-Cu Spray (Copper Tripeptide-3) | Veracue",
+      "description": "AHK-Cu Spray, a research formulation for AHK-Cu (Copper Tripeptide-3): molecular identity, the 2007 hair follicle study, AHK-Cu vs GHK-Cu, and COA checks."
+    },
+    "robots": "noindex, follow",
+    "robotsNote": "Recommended until formulation fields and a lot COA exist for this specific product; then switch to 'index, follow'."
+  },
+  "hero": {
+    "eyebrow": "RESEARCH USE ONLY",
+    "h1": "AHK-Cu Spray",
+    "subtitle": "Copper Tripeptide-3 · Research Formulation",
+    "shortDescription": "AHK-Cu Spray is a Veracue Research Use Only product built around AHK-Cu, the copper(II) complex of the tripeptide L-alanyl-L-histidyl-L-lysine (Ala-His-Lys), listed by many ingredient suppliers as Copper Tripeptide-3. The most directly relevant published study (Pyo et al., 2007) tested AHK-Cu on isolated human scalp hair follicles and cultured human dermal papilla cells — ex vivo and in vitro evidence only. No human clinical trial of AHK-Cu was identified, so this material does not establish hair growth, treatment effect or safety in people.",
+    "ruoNotice": "For laboratory research use only. Not for human or veterinary use.",
+    "ctas": [
+      {
+        "text": "View documentation",
+        "href": "/certificates"
+      },
+      {
+        "text": "Ask a research specialist",
+        "href": "/contact-us"
+      }
+    ],
+    "image": {
+      "useExistingFallback": true,
+      "altIfFallbackRendered": "Veracue AHK-Cu Spray research product supplied for Research Use Only",
+      "rule": "Do not reuse the AHK-Cu powder vial images and do not create or present a fictional spray bottle image. Use an authentic first-party product image if one exists in the repository; otherwise the site's existing neutral fallback pattern."
+    },
+    "commerceControls": {
+      "render": false,
+      "reason": "No verified price, SKU, stock or package options."
+    },
+    "keyFacts": [
+      "AHK-Cu is the copper(II) complex of Ala-His-Lys, also listed as Copper Tripeptide-3",
+      "Primary direct evidence: a 2007 study in ex vivo human hair follicles and in vitro dermal papilla cells",
+      "No animal study or human clinical trial of AHK-Cu was identified in the literature reviewed for this page",
+      "AHK-Cu is a different compound from GHK-Cu; findings are not interchangeable",
+      "Formulation details for this spray are not yet published; confirm with Veracue before relying on them"
+    ]
+  },
+  "productSnapshot": {
+    "renderRule": "Render only these verified fields; link to the formulation transparency table for everything else.",
+    "fields": [
+      {
+        "label": "Product name",
+        "value": "Veracue AHK-Cu Spray"
+      },
+      {
+        "label": "Named compound",
+        "value": "AHK-Cu (Copper Tripeptide-3)"
+      },
+      {
+        "label": "Research designation",
+        "value": "Research Use Only (RUO)"
+      },
+      {
+        "label": "Format",
+        "value": "Spray-format product"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "number": 1,
+      "id": "what-is-ahk-cu",
+      "heading": "What Is AHK-Cu?",
+      "headingLevel": "h2",
+      "paragraphs": [
+        "AHK-Cu is the copper(II) complex of the tripeptide L-alanyl-L-histidyl-L-lysine, written Ala-His-Lys or A-H-K. Ingredient suppliers commonly list it as Copper Tripeptide-3, distinct from Copper Tripeptide-1, the trade name used for GHK-Cu.",
+        "The name itself describes the chemistry: three amino acids, alanine, histidine and lysine, joined into a short peptide chain that binds a copper(II) ion. That single-amino-acid difference from GHK-Cu, alanine in place of glycine at the first position, is enough to make AHK-Cu a distinct chemical entity. Its own published evidence base is, in turn, much smaller.",
+        "AHK-Cu Spray is a Veracue Research Use Only product named around AHK-Cu. The molecule and the finished product are not the same thing. AHK-Cu has a defined chemical identity and a small published literature. The Veracue formulation, including its concentration, vehicle and other properties, is set by that product's own documentation, not by the molecule's literature.",
+        "Sources also report more than one molecular weight for AHK-Cu. That happens because they describe different forms of the same compound: the free peptide, the neutral copper complex, or a hydrochloride salt. The reference values below are for the compound itself, not a claim about the Veracue formulation."
+      ],
+      "terminologyMap": {
+        "heading": "AHK-Cu Terminology at a Glance",
+        "rows": [
+          {
+            "term": "AHK-Cu",
+            "note": "Shorthand used across the literature and by suppliers"
+          },
+          {
+            "term": "Copper Tripeptide-3",
+            "note": "Common ingredient-supplier name"
+          },
+          {
+            "term": "Ala-His-Lys / A-H-K",
+            "note": "Peptide sequence: alanine–histidine–lysine"
+          },
+          {
+            "term": "L-alanyl-L-histidyl-L-lysine-Cu2+",
+            "note": "Formal name used in the primary literature"
+          },
+          {
+            "term": "CAS 682809-81-0",
+            "note": "Widely listed; at least one supplier assigns this specifically to the hydrochloride form"
+          },
+          {
+            "term": "CAS 767286-83-9",
+            "note": "Listed by the same supplier as the free-base form"
+          }
+        ]
+      },
+      "referenceCompoundData": {
+        "heading": "AHK-Cu Reference Data",
+        "label": "Reference values for the molecule, by form. Not a Veracue product specification.",
+        "rows": [
+          {
+            "label": "Uncomplexed peptide (no copper)",
+            "formula": "C15H26N6O4",
+            "mw": "354.41 g/mol"
+          },
+          {
+            "label": "Neutral Cu(II) complex",
+            "formula": "C15H24CuN6O4",
+            "mw": "415.94 g/mol"
+          },
+          {
+            "label": "Hydrochloride form",
+            "formula": "C15H25ClCuN6O4",
+            "mw": "452.40 g/mol"
+          }
+        ]
+      },
+      "links": [
+        {
+          "text": "AHK-Cu listing",
+          "href": "/product/ahk-cu"
+        }
+      ],
+      "references": [
+        1,
+        3
+      ]
+    },
+    {
+      "number": 2,
+      "id": "ahk-cu-vs-ghk-cu",
+      "heading": "AHK-Cu vs GHK-Cu",
+      "headingLevel": "h2",
+      "paragraphs": [
+        "AHK-Cu and GHK-Cu are different compounds. Both are copper(II) complexes of a tripeptide ending in histidine-lysine, but AHK-Cu starts with alanine while GHK-Cu starts with glycine.",
+        "GHK-Cu was first identified in human plasma and carries a much larger research literature. AHK-Cu's direct evidence centres on a single 2007 study. No head-to-head comparison of the two was identified. Findings reported for GHK-Cu should not be applied to AHK-Cu, and neither compound can be called stronger on the strength of the other's literature."
+      ],
+      "table": {
+        "columns": [
+          "Attribute",
+          "AHK-Cu",
+          "GHK-Cu"
+        ],
+        "rows": [
+          [
+            "Sequence",
+            "Ala-His-Lys + Cu(II)",
+            "Gly-His-Lys + Cu(II)"
+          ],
+          [
+            "Common ingredient name",
+            "Copper Tripeptide-3",
+            "Copper Tripeptide-1"
+          ],
+          [
+            "Direct evidence base",
+            "One 2007 ex vivo/in vitro study",
+            "Large; decades of research"
+          ]
+        ]
+      },
+      "references": [
+        1,
+        4
+      ]
+    },
+    {
+      "number": 3,
+      "id": "reading-ahk-cu-research",
+      "heading": "Reading AHK-Cu Research Accurately",
+      "headingLevel": "h2",
+      "paragraphs": [
+        "Online material about AHK-Cu often blends three different things. It mixes findings about GHK-Cu, marketing claims from consumer AHK-Cu scalp serums, and the narrow ex vivo and in vitro evidence base for AHK-Cu itself. For research purposes, it helps to keep these separate.",
+        "Consumer AHK-Cu hair serums and scalp sprays are formulated cosmetic products, positioned and evaluated on different terms than a laboratory research material. Veracue AHK-Cu Spray is not compared with, or evaluated against, those products. Marketing claims made for consumer formulations do not transfer to this Research Use Only material.",
+        "When a source discusses AHK-Cu, it is worth checking whether it is citing the Pyo et al. (2007) study, the primary direct evidence, or restating claims that actually trace back to GHK-Cu research instead. The comparison in the section above exists so that distinction is easy to make."
+      ]
+    },
+    {
+      "number": 4,
+      "id": "intended-applications",
+      "heading": "Intended Research Applications",
+      "headingLevel": "h2",
+      "paragraphs": [
+        "AHK-Cu Spray is offered for in vitro and laboratory research: for example, cell-culture and tissue-culture work in hair-follicle and dermal papilla biology, copper-peptide chemistry, or analytical method development. It is not a drug, cosmetic, supplement or food, and it is not intended for administration to humans or animals.",
+        "Research-use positioning is not only a label. Nothing on this page provides, or should be read as, dosing, application, reconstitution-for-administration or treatment information."
+      ]
+    },
+    {
+      "number": 5,
+      "id": "research-evidence",
+      "heading": "What the Published Research Investigated",
+      "headingLevel": "h2",
+      "paragraphs": [
+        "The primary direct evidence reviewed here is from ex vivo human hair follicles and in vitro dermal papilla cells. It comes from a single study led by a dermatology group at Seoul National University (Pyo et al., 2007). That study added AHK-Cu to culture medium in two linked experiments.",
+        "Isolated human scalp hair follicles were maintained in organ culture for 12 days, 240 follicles from three donors, and exposed to AHK-Cu across a concentration range. Cultured human dermal papilla cells, the specialised fibroblasts at the follicle base, were tested separately for proliferation and markers of apoptosis."
+      ],
+      "evidenceTable": {
+        "heading": "Research Evidence Summary",
+        "columns": [
+          "Model",
+          "Evidence type",
+          "Finding"
+        ],
+        "rows": [
+          [
+            "Ex vivo human hair follicle organ culture",
+            "Ex vivo, human tissue",
+            "Follicle elongation increased at 10⁻¹² to 10⁻⁹ M compared with vehicle"
+          ],
+          [
+            "In vitro human dermal papilla cells",
+            "In vitro, human cells",
+            "Proliferation increased at 10⁻¹² to 10⁻⁹ M; at 10⁻⁹ M the Bcl-2/Bax ratio rose and cleaved caspase-3 and PARP fell, alongside a reduction in apoptotic cells that was not statistically significant"
+          ],
+          [
+            "Animal",
+            "—",
+            "No animal study was identified in the literature reviewed for this page"
+          ],
+          [
+            "Human clinical",
+            "—",
+            "No human clinical trial was identified in the literature reviewed for this page"
+          ]
+        ]
+      },
+      "closing": "These findings describe AHK-Cu added directly to culture medium, not a finished spray product. They also have not been independently replicated in the sources reviewed for this page. Ex vivo and in vitro results indicate biological activity worth further study. On their own, they do not establish an effect in living people.",
+      "extraParagraph": "Evidence about AHK-Cu the molecule is also not the same as evidence about a specific finished product. The 2007 study describes AHK-Cu dissolved directly in laboratory culture medium; it does not describe delivery through a spray device, a vehicle or human skin. Confirming that a formulation delivers AHK-Cu at a given concentration, or that it behaves the same way the molecule did in culture, requires dedicated formulation testing. That testing is not part of the current documentation. The study authors proposed that AHK-Cu promotes hair follicle growth through its effects on dermal papilla cell proliferation and apoptosis. That proposal is a mechanistic hypothesis put forward by the researchers, not a demonstrated clinical outcome.",
+      "references": [
+        1,
+        2
+      ]
+    },
+    {
+      "number": 6,
+      "id": "formulation-transparency",
+      "heading": "AHK-Cu Spray Formulation Transparency",
+      "headingLevel": "h2",
+      "paragraphs": [
+        "Veracue publishes what it has confirmed about this product and is direct about what it has not yet published. The fields below reflect the current state of Veracue's public product information for AHK-Cu Spray.",
+        "A spray format describes how a product is packaged and dispensed. On its own, it does not specify the compound's concentration, the vehicle it is dissolved in, or the route the packaging was designed for. Those specifics belong in the product's own documentation, once published, not in general AHK-Cu literature.",
+        "Publishing these fields once they are confirmed benefits researchers directly: a stated concentration and vehicle let a study be designed and reported accurately, and a stated pH and salt form let a reader judge whether findings from one lot are likely to generalise to another."
+      ],
+      "specTable": {
+        "heading": "Product Specification Status",
+        "verified": [
+          {
+            "label": "Product name",
+            "value": "Veracue AHK-Cu Spray"
+          },
+          {
+            "label": "Named compound",
+            "value": "AHK-Cu (Copper Tripeptide-3)"
+          },
+          {
+            "label": "Research designation",
+            "value": "Research Use Only (RUO)"
+          },
+          {
+            "label": "Format",
+            "value": "Spray-format product"
+          }
+        ],
+        "unspecified": [
+          "Route of application",
+          "AHK-Cu form / salt",
+          "Concentration",
+          "Vehicle",
+          "pH",
+          "Excipients",
+          "Preservative system",
+          "Fill volume",
+          "Actuation volume",
+          "Storage conditions",
+          "SKU",
+          "Price",
+          "Availability"
+        ],
+        "unspecifiedNote": "Not publicly specified in the current Veracue product information. Confirm any of these fields against first-party documentation and lot records before relying on them."
+      },
+      "closing": "For copper-peptide formulations, pH and the peptide-to-copper ratio can affect which chemical form is present in solution. That is one reason formulation details belong in the product's own documentation rather than in general AHK-Cu literature."
+    },
+    {
+      "number": 7,
+      "id": "coa-documentation",
+      "heading": "COA & Analytical Documentation",
+      "headingLevel": "h2",
+      "paragraphs": [
+        "A certificate of analysis, not the product name, establishes what is actually in a container. COA availability for AHK-Cu Spray should be confirmed with Veracue; a useful COA for this product would let a researcher check the points below."
+      ],
+      "checklist": [
+        {
+          "label": "Product identity",
+          "detail": "AHK-Cu named clearly, with the molecular form or salt used."
+        },
+        {
+          "label": "Concentration or assay",
+          "detail": "Measured AHK-Cu content of the finished spray, with units, distinct from raw-material purity."
+        },
+        {
+          "label": "Purity method",
+          "detail": "The analytical method named, alongside the result."
+        },
+        {
+          "label": "Identity testing",
+          "detail": "Expected and observed values, and which chemical species was matched."
+        },
+        {
+          "label": "Copper content",
+          "detail": "Where tested, copper relative to peptide."
+        },
+        {
+          "label": "Lot number",
+          "detail": "Matching the number on the container."
+        },
+        {
+          "label": "Testing date and laboratory",
+          "detail": "Where supplied."
+        },
+        {
+          "label": "Storage information",
+          "detail": "Conditions stated for a liquid formulation."
+        }
+      ],
+      "closing": "Purity and concentration answer different questions. A purity figure describes the main peak's share of a detected signal under stated test conditions. An assay describes how much AHK-Cu the finished product actually contains, and neither result, on its own, establishes sterility, biological activity or human safety.",
+      "extraParagraph": "Before ordering, it is reasonable to ask Veracue directly whether a lot-specific COA is currently available for this product. Requesting the identity and assay results in advance is also reasonable if a study design depends on a known concentration. The Certificates page explains how lot documentation is organised across the catalog.",
+      "links": [
+        {
+          "text": "Certificates",
+          "href": "/certificates"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "id": "research-use-only",
+      "heading": "Research Use Only",
+      "headingLevel": "h2",
+      "paragraphs": [
+        "AHK-Cu Spray is supplied for laboratory research use only. It is not a cosmetic, hair-care, therapeutic or consumer product. It is not intended for human or veterinary use, and it is not intended for ingestion, injection or any form of administration. It has not been evaluated by the FDA.",
+        "Veracue does not provide human dosage, spray counts, frequency or application instructions for this product, and none should be inferred from the AHK-Cu literature discussed above. Researchers should follow their own approved laboratory procedures and this product's documentation. Contact our team if a protocol requires formulation information the current documentation does not include.",
+        "Store and handle the product according to the conditions stated in its own documentation and label. Handle it as a laboratory chemical, using appropriate personal protective equipment."
+      ],
+      "links": [
+        {
+          "text": "Medical Disclaimer",
+          "href": "/medical-disclaimer"
+        },
+        {
+          "text": "contact our team",
+          "href": "/contact-us"
+        }
+      ],
+      "references": [
+        5
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "What is AHK-Cu Spray?",
+      "answer": "AHK-Cu Spray is a Veracue Research Use Only product named around AHK-Cu, the copper(II) complex of the tripeptide Ala-His-Lys. It is supplied for laboratory research, and product-specific formulation details should be taken from current first-party documentation."
+    },
+    {
+      "question": "What is AHK-Cu?",
+      "answer": "AHK-Cu is the copper(II) complex of L-alanyl-L-histidyl-L-lysine. It is commonly listed by ingredient suppliers as Copper Tripeptide-3."
+    },
+    {
+      "question": "Is AHK-Cu the same as GHK-Cu?",
+      "answer": "No. AHK-Cu starts with alanine and GHK-Cu starts with glycine. They are different compounds, and GHK-Cu's much larger literature should not be applied to AHK-Cu."
+    },
+    {
+      "question": "What did the published AHK-Cu research actually investigate?",
+      "answer": "The primary direct evidence is a 2007 study that added AHK-Cu to culture medium bathing isolated human hair follicles and cultured human dermal papilla cells. It is ex vivo and in vitro evidence."
+    },
+    {
+      "question": "What did the AHK-Cu hair follicle research find?",
+      "answer": "Isolated human scalp hair follicles, cultured for 12 days, showed increased elongation at AHK-Cu concentrations of 10⁻¹² to 10⁻⁹ M compared with vehicle."
+    },
+    {
+      "question": "What did the AHK-Cu dermal papilla cell research find?",
+      "answer": "Cultured human dermal papilla cells showed increased proliferation over the same concentration range. At 10⁻⁹ M, apoptosis-related markers also shifted, though the drop in apoptotic cell count was not statistically significant."
+    },
+    {
+      "question": "Are there animal studies of AHK-Cu?",
+      "answer": "No animal study was identified in the literature reviewed for this page."
+    },
+    {
+      "question": "Are there human clinical trials of AHK-Cu?",
+      "answer": "No human clinical trial was identified in the literature reviewed for this page. The available evidence is ex vivo and in vitro."
+    },
+    {
+      "question": "Is AHK-Cu proven to grow hair?",
+      "answer": "No. The ex vivo and in vitro findings described above indicate biological activity worth further study. On their own, they do not establish hair growth, treatment effect or safety in people."
+    },
+    {
+      "question": "What ingredients or concentration are in Veracue AHK-Cu Spray?",
+      "answer": "Route, form, concentration, vehicle, pH, excipients and related formulation details are not publicly specified in Veracue's current product information. They should be confirmed against first-party documentation and lot records."
+    },
+    {
+      "question": "Is a certificate of analysis available for AHK-Cu Spray?",
+      "answer": "COA availability for this product should be confirmed with Veracue. A useful COA states identity, concentration or assay, purity method, lot number, testing date and storage conditions."
+    },
+    {
+      "question": "What does AHK-Cu purity mean, and how is it different from concentration?",
+      "answer": "Purity describes the share of a detected signal that belongs to the AHK-Cu peak under stated test conditions. Concentration, or assay, describes how much AHK-Cu the finished product actually contains; the two are not interchangeable."
+    },
+    {
+      "question": "Does Veracue provide dosage or application instructions for AHK-Cu Spray?",
+      "answer": "No. Veracue does not provide human dosage, spray counts or application instructions for this Research Use Only product."
+    },
+    {
+      "question": "What does Research Use Only mean for AHK-Cu Spray?",
+      "answer": "It means the product is supplied for laboratory research only and is not a cosmetic or therapeutic product. It is also not for human or veterinary use, and it is not intended for any form of administration."
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "/product/ahk-cu",
+      "anchor": "AHK-Cu listing"
+    },
+    {
+      "href": "/shop",
+      "anchor": "Research catalog"
+    },
+    {
+      "href": "/certificates",
+      "anchor": "Certificates"
+    },
+    {
+      "href": "/contact-us",
+      "anchor": "contact our team"
+    },
+    {
+      "href": "/faq",
+      "anchor": "Help & FAQ"
+    },
+    {
+      "href": "/medical-disclaimer",
+      "anchor": "Medical Disclaimer"
+    }
+  ],
+  "references": [
+    {
+      "id": 1,
+      "citation": "Pyo HK, Yoo HG, Won CH, Lee SH, Kang YJ, Eun HC, Cho KH, Kim KH. The effect of tripeptide-copper complex on human hair growth in vitro. Arch Pharm Res. 2007;30(7):834–839. doi:10.1007/BF02978833. PMID 17703734.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17703734/"
+    },
+    {
+      "id": 2,
+      "citation": "Pyo et al., 2007, full text (Fig. 1 methods: organ culture for 12 days, 240 follicles from 3 donors, 30 per condition, tested 10⁻¹³ to 10⁻⁷ M).",
+      "url": "https://link.springer.com/content/pdf/10.1007/BF02978833.pdf"
+    },
+    {
+      "id": 3,
+      "citation": "BOC Sciences. Copper Tripeptide-3 hydrochloride, CAS 682809-81-0; related CAS 767286-83-9 (free base). Supplier listing.",
+      "url": "https://aapep.bocsci.com/product/copper-tripeptide-3-hydrochloride-cas-682809-81-0-92582.html"
+    },
+    {
+      "id": 4,
+      "citation": "ClinicalTrials.gov NCT07437586. Topical GHK-Cu gel for acute skin wound healing (lists GHK-Cu as copper tripeptide-1).",
+      "url": "https://clinicaltrials.gov/study/NCT07437586"
+    },
+    {
+      "id": 5,
+      "citation": "Veracue. Medical Disclaimer and site-wide RUO disclaimer.",
+      "url": "https://veracue-peptides.vercel.app/medical-disclaimer"
+    }
+  ],
+  "structuredData": {
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://veracue-peptides.vercel.app/product/ahk-cu-spray#webpage",
+          "url": "https://veracue-peptides.vercel.app/product/ahk-cu-spray",
+          "name": "AHK-Cu Spray Formulation (Copper Tripeptide-3) | Veracue",
+          "description": "AHK-Cu Spray, a research formulation for AHK-Cu (Copper Tripeptide-3): molecular identity, the 2007 hair follicle study, AHK-Cu vs GHK-Cu, and COA checks.",
+          "isPartOf": {
+            "@id": "https://veracue-peptides.vercel.app/#website"
+          },
+          "breadcrumb": {
+            "@id": "https://veracue-peptides.vercel.app/product/ahk-cu-spray#breadcrumb"
+          },
+          "mainEntity": {
+            "@id": "https://veracue-peptides.vercel.app/product/ahk-cu-spray#product"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://veracue-peptides.vercel.app/product/ahk-cu-spray#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://veracue-peptides.vercel.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shop",
+              "item": "https://veracue-peptides.vercel.app/shop"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "AHK-Cu Spray",
+              "item": "https://veracue-peptides.vercel.app/product/ahk-cu-spray"
+            }
+          ]
+        },
+        {
+          "@type": "Product",
+          "@id": "https://veracue-peptides.vercel.app/product/ahk-cu-spray#product",
+          "name": "Veracue AHK-Cu Spray",
+          "alternateName": "Copper Tripeptide-3 Spray",
+          "description": "Research Use Only product from Veracue named around AHK-Cu (L-alanyl-L-histidyl-L-lysine copper(II) complex, Copper Tripeptide-3). Not for human or veterinary use.",
+          "brand": {
+            "@type": "Brand",
+            "name": "Veracue"
+          },
+          "url": "https://veracue-peptides.vercel.app/product/ahk-cu-spray",
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "Research designation",
+              "value": "Research Use Only (RUO)"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Format",
+              "value": "Spray-format product"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Named compound",
+              "value": "AHK-Cu (Copper Tripeptide-3)"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://veracue-peptides.vercel.app/product/ahk-cu-spray#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is AHK-Cu Spray?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AHK-Cu Spray is a Veracue Research Use Only product named around AHK-Cu, the copper(II) complex of the tripeptide Ala-His-Lys. It is supplied for laboratory research, and product-specific formulation details should be taken from current first-party documentation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is AHK-Cu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AHK-Cu is the copper(II) complex of L-alanyl-L-histidyl-L-lysine. It is commonly listed by ingredient suppliers as Copper Tripeptide-3."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is AHK-Cu the same as GHK-Cu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. AHK-Cu starts with alanine and GHK-Cu starts with glycine. They are different compounds, and GHK-Cu's much larger literature should not be applied to AHK-Cu."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What did the published AHK-Cu research actually investigate?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The primary direct evidence is a 2007 study that added AHK-Cu to culture medium bathing isolated human hair follicles and cultured human dermal papilla cells. It is ex vivo and in vitro evidence."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What did the AHK-Cu hair follicle research find?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Isolated human scalp hair follicles, cultured for 12 days, showed increased elongation at AHK-Cu concentrations of 10⁻¹² to 10⁻⁹ M compared with vehicle."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What did the AHK-Cu dermal papilla cell research find?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cultured human dermal papilla cells showed increased proliferation over the same concentration range. At 10⁻⁹ M, apoptosis-related markers also shifted, though the drop in apoptotic cell count was not statistically significant."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are there animal studies of AHK-Cu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No animal study was identified in the literature reviewed for this page."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are there human clinical trials of AHK-Cu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No human clinical trial was identified in the literature reviewed for this page. The available evidence is ex vivo and in vitro."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is AHK-Cu proven to grow hair?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. The ex vivo and in vitro findings described above indicate biological activity worth further study. On their own, they do not establish hair growth, treatment effect or safety in people."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What ingredients or concentration are in Veracue AHK-Cu Spray?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Route, form, concentration, vehicle, pH, excipients and related formulation details are not publicly specified in Veracue's current product information. They should be confirmed against first-party documentation and lot records."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is a certificate of analysis available for AHK-Cu Spray?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "COA availability for this product should be confirmed with Veracue. A useful COA states identity, concentration or assay, purity method, lot number, testing date and storage conditions."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does AHK-Cu purity mean, and how is it different from concentration?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Purity describes the share of a detected signal that belongs to the AHK-Cu peak under stated test conditions. Concentration, or assay, describes how much AHK-Cu the finished product actually contains; the two are not interchangeable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Veracue provide dosage or application instructions for AHK-Cu Spray?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Veracue does not provide human dosage, spray counts or application instructions for this Research Use Only product."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does Research Use Only mean for AHK-Cu Spray?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It means the product is supplied for laboratory research only and is not a cosmetic or therapeutic product. It is also not for human or veterinary use, and it is not intended for any form of administration."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "typesImplemented": [
+      "WebPage",
+      "BreadcrumbList",
+      "Product",
+      "FAQPage"
+    ],
+    "notes": [
+      "Product omits offers, sku, image, gtin, aggregateRating and review: none are verified for this product. Not eligible for product rich results until real commerce data exists.",
+      "FAQPage text matches the visible FAQ exactly.",
+      "Confirm the site's existing #website @id before shipping."
+    ]
+  },
+  "designGuidance": {
+    "layout": "Match existing Veracue product-page visual system (see /product/ahk-cu for reference).",
+    "components": [
+      "Terminology map: small reference card or table, not a wall of text",
+      "Research evidence table: scannable table with model / evidence type / finding columns",
+      "Formulation transparency: two-column card — verified fields with values, unspecified fields with 'Not publicly specified' — not a warning box",
+      "COA checklist: compact bullet list, not repeated disclaimer copy",
+      "Single RUO line near hero; full RUO section only once, near the bottom",
+      "Short paragraphs throughout; avoid long unbroken text blocks"
+    ],
+    "imageRule": "See hero.image.rule above."
+  },
+  "siteIssuesCarriedForward": [
+    {
+      "severity": "medium",
+      "issue": "/certificates currently shows 0 published reports. The COA section reflects this by pointing researchers to confirm availability with Veracue rather than implying a report already exists."
+    },
+    {
+      "severity": "low",
+      "issue": "Sitewide copy elsewhere describes catalog items as a lyophilized solid cake in a sealed vial; that description does not apply to a spray-format product and should not be pulled into this page's shared modules."
+    }
+  ],
+  "claimAudit": [
+    {
+      "statement": "AHK-Cu is the Cu(II) complex of L-alanyl-L-histidyl-L-lysine; commonly listed as Copper Tripeptide-3",
+      "class": "Chemical fact / nomenclature",
+      "support": "Ref 1; supplier listings"
+    },
+    {
+      "statement": "CAS 682809-81-0 (assigned by at least one supplier to the hydrochloride) and 767286-83-9 (free base, same supplier)",
+      "class": "Supplier data",
+      "support": "Ref 3"
+    },
+    {
+      "statement": "12-day organ culture, 240 follicles, 3 donors, 30 per condition; concentration range tested 10⁻¹³–10⁻⁷ M",
+      "class": "Literature finding (methods)",
+      "support": "Ref 2, Fig. 1 legend"
+    },
+    {
+      "statement": "Elongation and dermal papilla cell proliferation increased at 10⁻¹²–10⁻⁹ M; Bcl-2/Bax up and cleaved caspase-3/PARP down at 10⁻⁹ M; apoptotic-cell decrease not statistically significant",
+      "class": "Literature finding (ex vivo / in vitro)",
+      "support": "Ref 1 abstract"
+    },
+    {
+      "statement": "AHK-Cu (alanine-first) and GHK-Cu (glycine-first) are different compounds with different evidence bases; no head-to-head comparison identified",
+      "class": "Chemical fact / literature gap",
+      "support": "Ref 1; Ref 4"
+    },
+    {
+      "statement": "No animal study of AHK-Cu identified; no human clinical trial of AHK-Cu identified",
+      "class": "Literature finding (search result)",
+      "support": "Web and PubMed-indexed searches, 2026-09-22"
+    },
+    {
+      "statement": "No AHK-Cu Spray record exists on the live site; the AHK-Cu listing is a lyophilized powder in vials",
+      "class": "Product fact",
+      "support": "Live /product/ahk-cu and /shop, 2026-09-22"
+    },
+    {
+      "statement": "No concentration, route, dosing, benefit, safety-in-humans or delivery-to-follicle claim is made",
+      "class": "Marketing / medical claim",
+      "support": "None made"
+    }
+  ],
+  "missingFirstPartyData": [
+    "route of application",
+    "AHK-Cu form / salt",
+    "concentration",
+    "vehicle",
+    "pH",
+    "excipients",
+    "preservative system",
+    "fill volume",
+    "actuation volume",
+    "storage conditions",
+    "SKU",
+    "price",
+    "availability",
+    "product image",
+    "lot COA",
+    "category assignment"
+  ]
+}

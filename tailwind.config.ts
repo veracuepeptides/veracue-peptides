@@ -6,9 +6,12 @@ const config: Config = {
     extend: {
       colors: {
         background: '#000000',
+        // primary/gold were the old brand's logo-blue accent (#92DCE5); both now point at
+        // the approved Veracue palette's terracotta accent (see `aesthetic` below), which
+        // AGENTS.md designates for CTA hover states and conversion highlights, matching how
+        // these tokens are actually used (star ratings, hover accents, icon highlights).
         primary: {
-          DEFAULT: '#92DCE5', // Helix Bio Logo Blue
-          dark: '#0284c7', // sky-600 (keeping dark shade for contrast if needed)
+          DEFAULT: '#cb997e',
         },
         'card-bg': 'rgba(255, 255, 255, 0.05)',
         // Backgrounds
@@ -25,10 +28,7 @@ const config: Config = {
           subtle: '#8A8A8A',
         },
         gold: {
-          DEFAULT: '#92DCE5', // Replaced with logo blue
-          light: '#38bdf8',
-          dark: '#0284c7',
-          deep: '#0369a1',
+          DEFAULT: '#cb997e',
         },
         success: { DEFAULT: '#6B8E5E', bg: '#E8EFE3' },
         error: { DEFAULT: '#B85450', bg: '#F5E3E1' },
@@ -52,16 +52,16 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['"Plus Jakarta Sans"', 'Outfit', 'Inter', 'sans-serif'],
-        heading: ['"Sora"', '"Plus Jakarta Sans"', 'sans-serif'],
-        price: ['"Inter"', '"Plus Jakarta Sans"', 'sans-serif'],
-        sora: ['"Sora"', 'sans-serif'],
-        syne: ['"Syne"', 'sans-serif'],
-        editorial: ['"Tenor Sans"', '"Plus Jakarta Sans"', 'sans-serif'],
-        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
-        display: ['"Space Grotesk"', 'sans-serif'],
-        script: ['"GERALDINE PERSONAL USE Italic"', '"Pinyon Script"', '"Alex Brush"', 'cursive'],
-        mono: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+        sans: ['var(--font-jakarta)', 'var(--font-inter)', 'sans-serif'],
+        heading: ['var(--font-sora)', 'var(--font-jakarta)', 'sans-serif'],
+        price: ['var(--font-inter)', 'var(--font-jakarta)', 'sans-serif'],
+        sora: ['var(--font-sora)', 'sans-serif'],
+        syne: ['var(--font-sora)', 'sans-serif'],
+        editorial: ['var(--font-tenor)', 'var(--font-jakarta)', 'sans-serif'],
+        serif: ['var(--font-cormorant)', 'Georgia', 'serif'],
+        display: ['var(--font-space-grotesk)', 'sans-serif'],
+        script: ['"GERALDINE PERSONAL USE Italic"', 'cursive'],
+        mono: ['var(--font-jakarta)', 'var(--font-inter)', 'sans-serif'],
       },
       fontSize: {
         // Display

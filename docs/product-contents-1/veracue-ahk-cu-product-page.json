@@ -1,0 +1,461 @@
+{
+  "document": {
+    "client": "Veracue",
+    "pageType": "Product page",
+    "entity": "AHK-Cu",
+    "status": "draft",
+    "publicationGate": "Do not publish until every field marked [VERIFY] is replaced with data from a Veracue AHK-Cu product record or batch COA. Science copy is publishable once product fields are resolved.",
+    "primarySearchJob": "Help a laboratory buyer or researcher evaluate documented AHK-Cu research material: chemical identity, analytical verification, what the direct evidence actually tested, and its limits.",
+    "preparedDate": "2026-09-17"
+  },
+
+  "seo": {
+    "metaTitle": "AHK-Cu Research Peptide (Copper Tripeptide-3) | Veracue",
+    "metaTitleLength": 55,
+    "metaDescription": "AHK-Cu, the copper complex of Ala-His-Lys, for lab research: molecular identity, what the 2007 hair follicle study tested, AHK-Cu vs GHK-Cu, and COA checks.",
+    "metaDescriptionLength": 156,
+    "urlSlug": "[VERIFY: match Veracue's live product URL pattern, e.g. /product/ahk-cu]",
+    "suggestedCanonical": "[VERIFY: https://<veracue-domain>/<product-path>/ahk-cu — self-referencing canonical; if separate size URLs exist, canonicalise them to this one]",
+    "h1": "AHK-Cu Research Peptide",
+    "breadcrumb": ["Home", "Shop", "[VERIFY: Veracue category name]", "AHK-Cu"],
+    "focusKeyphrase": "AHK-Cu research peptide",
+    "primaryEntity": "AHK-Cu",
+    "secondaryKeywords": [
+      "AHK-Cu peptide",
+      "Copper Tripeptide-3",
+      "AHK-Cu COA",
+      "AHK-Cu purity",
+      "AHK-Cu HPLC",
+      "AHK-Cu mass spectrometry",
+      "AHK-Cu vs GHK-Cu",
+      "AHK-Cu hair follicle study",
+      "AHK-Cu dermal papilla cells",
+      "AHK-Cu molecular weight",
+      "AHK-Cu CAS",
+      "Ala-His-Lys copper"
+    ],
+    "sizeKeywordsConditional": "Use 'AHK-Cu 50 mg' / 'AHK-Cu 100 mg' in title, variant labels and schema ONLY if Veracue confirms those net quantities. Do not add them to copy speculatively."
+  },
+
+  "heroSummary": "AHK-Cu is the copper(II) complex of the tripeptide L-alanyl-L-histidyl-L-lysine (Ala-His-Lys), listed by many ingredient suppliers as Copper Tripeptide-3. It is supplied here as a research material for laboratory work. The most directly relevant published study (Pyo et al., 2007) tested AHK-Cu on isolated human scalp hair follicles kept alive in culture and on cultured human dermal papilla cells. That is ex vivo and in vitro evidence. No human clinical trial of AHK-Cu was identified, so the research does not establish hair growth, treatment effect or safety in people.",
+
+  "purchaseArea": {
+    "productName": "AHK-Cu",
+    "variants": "[VERIFY: net quantity per vial for each variant]",
+    "price": "[VERIFY: price per variant]",
+    "availability": "[VERIFY: stock status]",
+    "sku": "[VERIFY: SKU per variant]",
+    "trustBadges": "[VERIFY: show only badges backed by this product's lot documentation, e.g. a linked batch COA. Do not reuse site-wide purity or testing badges unless the AHK-Cu COA supports them.]",
+    "ruoLine": "For laboratory research use only. Not for human or veterinary use."
+  },
+
+  "compoundProfile": {
+    "heading": "AHK-Cu at a Glance",
+    "rows": [
+      { "field": "Name", "value": "AHK-Cu" },
+      { "field": "Other names", "value": "Copper Tripeptide-3; Ala-His-Lys-Cu; L-alanyl-L-histidyl-L-lysine copper(II)" },
+      { "field": "Peptide sequence", "value": "Ala-His-Lys (A-H-K), three amino acids" },
+      { "field": "Metal", "value": "Copper(II)" },
+      { "field": "Closest relative", "value": "GHK-Cu (Gly-His-Lys copper), differing only in the first amino acid" },
+      { "field": "Direct evidence base", "value": "One 2007 study: ex vivo human hair follicles and in vitro dermal papilla cells" },
+      { "field": "Human clinical data", "value": "None identified" },
+      { "field": "Molecular weight", "value": "Form-dependent — see the molecular form table. Product-specific value: [VERIFY from COA]" }
+    ]
+  },
+
+  "pageCopy": {
+    "overview": {
+      "heading": "What Is AHK-Cu?",
+      "body": [
+        "AHK-Cu is a small copper peptide: the tripeptide alanine-histidine-lysine bound to a copper(II) ion. The name is simply the one-letter codes of its three amino acids plus the metal. Ingredient suppliers commonly list it under the cosmetic ingredient name Copper Tripeptide-3, which keeps it distinct from Copper Tripeptide-1, the name used for GHK-Cu.",
+        "Researchers usually encounter AHK-Cu through hair-follicle biology. Its single most-cited paper, published in Archives of Pharmacal Research in 2007 by a dermatology group at Seoul National University, examined how AHK-Cu affected human hair follicles in organ culture and cultured dermal papilla cells — the specialised fibroblasts at the base of the follicle.",
+        "That narrow evidence base is the most important thing to understand about the compound. A large share of what circulates online about AHK-Cu — collagen synthesis, wound repair, extracellular matrix remodelling, broad signalling pathways — comes from research on GHK-Cu or copper peptides as a class, not from studies of AHK-Cu itself. This page separates the two."
+      ]
+    },
+
+    "molecularIdentity": {
+      "heading": "Molecular Identity and Composition",
+      "body": [
+        "The peptide portion is L-alanyl-L-histidyl-L-lysine. Chemical database nomenclature for the copper complex describes copper(II) bound through nitrogen atoms of the alanine terminus and the histidine residue, with two of the peptide's N–H protons removed as the metal binds.",
+        "There is no single molecular weight for 'AHK-Cu' that applies to every product. Published values differ because sources describe different forms: the free peptide, the copper complex written with different proton counts, or a hydrochloride salt. PubChem's AHK-Cu record (CID 168431292) is a hydrochloride-associated entry. The table below shows how each common representation produces a different number, so a researcher can match a COA or catalogue value to the form it actually describes."
+      ],
+      "informationAsset": {
+        "title": "Why AHK-Cu Molecular Weights Differ: Form-by-Form Reference",
+        "columns": ["Representation", "Formula", "Molecular weight (g/mol)", "Where you will see it"],
+        "rows": [
+          ["Uncomplexed tripeptide (AHK, no copper)", "C15H26N6O4", "354.41", "Peptide-only calculations"],
+          ["Neutral Cu(II) complex, two N–H protons removed", "C15H24CuN6O4", "415.94", "Some catalogue listings (~416)"],
+          ["Cu(II) complex written with one additional proton", "C15H25CuN6O4", "416.95", "Common '~416.9' listing value"],
+          ["Hydrochloride form, PubChem CID 168431292 formula", "C15H24ClCuN6O4", "451.39", "PubChem and several supplier pages"],
+          ["Hydrochloride form, alternative hydrogen count", "C15H25ClCuN6O4", "452.40", "Some chemical supplier listings"]
+        ],
+        "footnote": "Weights calculated from IUPAC standard atomic weights (C 12.011, H 1.008, N 14.007, O 15.999, Cl 35.45, Cu 63.546). Hydrates and other counter-ions would change these values again. The Veracue product value must come from the lot's documented form: [VERIFY]."
+      },
+      "casNote": "CAS 682809-81-0 is widely listed by suppliers for AHK-Cu, and at least one chemical supplier assigns it specifically to the hydrochloride while listing a separate CAS for the free base. Because suppliers attach these numbers to different forms, a CAS number should only be displayed when it is tied to the exact form stated on Veracue's COA. [VERIFY before display]"
+    },
+
+    "purposeAndIntendedUse": {
+      "heading": "Intended Use",
+      "body": [
+        "This material is offered for in vitro and laboratory research — for example, cell-culture and tissue-culture work in hair-follicle and dermal biology, copper-peptide chemistry, or analytical method development. It is not a drug, cosmetic, supplement or food, and it is not intended for administration to humans or animals.",
+        "Research-use positioning is not only a label. Nothing on this page provides, or should be read as, dosing, application, reconstitution-for-administration or treatment information."
+      ]
+    },
+
+    "keyFeatures": {
+      "heading": "Product Highlights",
+      "items": [
+        "Copper(II) complex of the tripeptide Ala-His-Lys (AHK-Cu)",
+        "Supplied as: [VERIFY form, e.g. lyophilized powder]",
+        "Net quantity options: [VERIFY]",
+        "Batch-specific Certificate of Analysis: [VERIFY that an AHK-Cu lot COA exists and is linked]",
+        "Analytical methods on the COA: [VERIFY — list only methods actually reported for this lot]",
+        "Labelled for laboratory research use only"
+      ],
+      "editorNote": "Every highlight except the first and last depends on Veracue product data. Delete any line that cannot be verified rather than softening it into a generic claim."
+    },
+
+    "researchEvidence": {
+      "heading": "What the AHK-Cu Research Actually Shows",
+      "quickAnswer": "The direct evidence for AHK-Cu is laboratory evidence. In a 2007 study, AHK-Cu at 10⁻¹² to 10⁻⁹ M stimulated elongation of isolated human hair follicles in culture and increased proliferation of cultured human dermal papilla cells. The authors proposed that AHK-Cu promotes follicle growth through dermal papilla cell proliferation and reduced apoptosis. None of this was tested in living people.",
+      "studyDetail": {
+        "heading": "The 2007 Pyo et al. Study, Step by Step",
+        "citation": "Pyo HK, Yoo HG, Won CH, Lee SH, Kang YJ, Eun HC, Cho KH, Kim KH. The effect of tripeptide-copper complex on human hair growth in vitro. Arch Pharm Res. 2007;30(7):834–839.",
+        "body": [
+          "Hair follicle organ culture (ex vivo). Individual follicles isolated from human scalp were maintained in culture and exposed to AHK-Cu across a range of concentrations. According to the paper's figure legend, 240 follicles from three donors were cultured for 12 days, with 30 follicles per condition. Follicle elongation increased at 10⁻¹² to 10⁻⁹ M compared with vehicle.",
+          "Dermal papilla cell proliferation (in vitro). Cultured human dermal papilla cells showed increased proliferation over the same 10⁻¹² to 10⁻⁹ M range, measured with an MTT viability-based assay.",
+          "Apoptosis (in vitro). At 10⁻⁹ M, flow cytometry with Annexin V/propidium iodide showed fewer apoptotic dermal papilla cells, but the authors report that this decrease was not statistically significant.",
+          "Apoptosis-related proteins (in vitro). At 10⁻⁹ M, the Bcl-2/Bax ratio rose and cleaved caspase-3 and cleaved PARP fell — molecular markers consistent with, but not proof of, reduced apoptotic signalling.",
+          "Note the title says 'in vitro', but the follicle experiments are more precisely described as ex vivo organ culture. Both are laboratory models."
+        ]
+      },
+      "vegfClarification": {
+        "heading": "A Common Misattribution: VEGF and TGF-β1",
+        "body": "Many pages state that AHK-Cu raised VEGF and lowered TGF-β1 in dermal papilla cells. In the published abstract, those effects appear as background on 'the tripeptide-copper complex' in dermal fibroblasts, citing earlier work — not as endpoints the study reports measuring in dermal papilla cells. Unless the full text shows otherwise, VEGF and TGF-β1 changes should not be presented as findings of AHK-Cu in dermal papilla cells."
+      },
+      "evidenceTable": {
+        "title": "AHK-Cu Evidence Map: Direct vs Extrapolated",
+        "columns": ["Question", "Evidence located", "Evidence type", "Finding", "Limitation"],
+        "rows": [
+          ["Does AHK-Cu affect human hair follicle length in culture?", "Pyo et al., 2007", "Ex vivo human tissue", "Elongation increased at 10⁻¹²–10⁻⁹ M", "Isolated follicles from three donors; no blood supply, immune system or hormonal environment; single laboratory"],
+          ["Does it affect dermal papilla cell proliferation?", "Pyo et al., 2007", "In vitro human cells", "Proliferation increased at 10⁻¹²–10⁻⁹ M", "Cultured cells; short-term viability-based assay"],
+          ["Does it reduce dermal papilla cell apoptosis?", "Pyo et al., 2007", "In vitro human cells", "Fewer apoptotic cells at 10⁻⁹ M, not statistically significant; Bcl-2/Bax ratio up, cleaved caspase-3 and PARP down", "Marker changes are not a demonstrated functional outcome"],
+          ["Does it change VEGF or TGF-β1 in dermal papilla cells?", "Not reported as a study endpoint in the abstract", "Background statement about dermal fibroblasts", "No direct AHK-Cu dermal papilla finding identified", "Frequently misattributed online"],
+          ["Does it grow hair in people?", "No human study identified", "Insufficient evidence", "Not established", "No clinical trial, dose, duration or safety data"],
+          ["Does it increase collagen or aid wound repair?", "Mainly GHK-Cu and copper-peptide class literature", "Extrapolated", "Not established for AHK-Cu specifically", "GHK-Cu findings do not transfer automatically to a different peptide"],
+          ["Is AHK-Cu better than GHK-Cu?", "No controlled head-to-head study identified", "Evidence gap", "No superiority conclusion possible", "Different research histories, not a measured difference in effect"]
+        ]
+      },
+      "whatTheEvidenceDoesNotShow": {
+        "heading": "What This Research Does Not Show",
+        "items": [
+          "That AHK-Cu grows hair, prevents hair loss or treats any condition in humans",
+          "That concentrations effective in culture medium translate to any real-world amount or route",
+          "That AHK-Cu is safe for human or animal use",
+          "That the 2007 findings have been independently replicated — no replication was identified during this review",
+          "That collagen, wound-healing or gene-expression findings reported for GHK-Cu apply to AHK-Cu"
+        ]
+      }
+    },
+
+    "comparison": {
+      "heading": "AHK-Cu vs GHK-Cu",
+      "quickAnswer": "AHK-Cu and GHK-Cu are not the same compound. Both are copper(II) complexes of a tripeptide ending in histidine-lysine, but AHK-Cu starts with alanine and GHK-Cu starts with glycine. GHK-Cu is a naturally occurring human plasma peptide with a far larger literature; AHK-Cu's direct literature centres on one hair-follicle study. No controlled study comparing the two was identified, so neither can be called stronger or better.",
+      "table": {
+        "columns": ["Attribute", "AHK-Cu", "GHK-Cu"],
+        "rows": [
+          ["Sequence", "Ala-His-Lys + Cu(II)", "Gly-His-Lys + Cu(II)"],
+          ["Common ingredient name", "Copper Tripeptide-3", "Copper Tripeptide-1"],
+          ["Origin in the literature", "Studied as a tripeptide-copper complex; no endogenous-peptide literature identified in this review", "Identified in human plasma; described in the literature since 1973"],
+          ["Size of direct evidence base", "Small — principally Pyo et al., 2007", "Large — decades of in vitro, animal and some human research, reviewed by Pickart & Margolina (2018)"],
+          ["Dominant direct research model", "Ex vivo human hair follicles; in vitro dermal papilla cells", "Wide range, including skin cells, wound models and gene-expression studies"],
+          ["Head-to-head comparison", "None identified", "None identified"],
+          ["Transferability", "GHK-Cu findings should not be assumed to apply", "AHK-Cu hair-follicle data should not be assumed to apply"]
+        ]
+      },
+      "editorNote": "Link to the Veracue GHK-Cu product page only if it exists. Avoid 'hair peptide vs skin peptide' framing — it describes where each was studied, not a proven specialisation."
+    },
+
+    "productSpecifications": {
+      "heading": "Product Specifications",
+      "rows": [
+        { "field": "Product name", "value": "AHK-Cu" },
+        { "field": "Chemical description", "value": "Copper(II) complex of L-alanyl-L-histidyl-L-lysine" },
+        { "field": "Net quantity per vial", "value": "[VERIFY]" },
+        { "field": "Physical form", "value": "[VERIFY, e.g. lyophilized powder]" },
+        { "field": "Salt / counter-ion form", "value": "[VERIFY from COA — determines molecular weight]" },
+        { "field": "Molecular formula (this product)", "value": "[VERIFY from COA]" },
+        { "field": "Molecular weight (this product)", "value": "[VERIFY from COA]" },
+        { "field": "CAS number", "value": "[VERIFY — display only if tied to the documented form]" },
+        { "field": "HPLC purity (current lot)", "value": "[VERIFY — state figure and lot number]" },
+        { "field": "Identity method", "value": "[VERIFY — e.g. MS or LC-MS, and the species matched]" },
+        { "field": "Lot number", "value": "[VERIFY]" },
+        { "field": "Testing laboratory and date", "value": "[VERIFY]" },
+        { "field": "Appearance", "value": "[VERIFY from COA]" },
+        { "field": "Storage (unopened)", "value": "[VERIFY — product-specific]" },
+        { "field": "Packaging", "value": "[VERIFY]" },
+        { "field": "Intended use", "value": "Laboratory research use only; not for human or veterinary use" }
+      ]
+    },
+
+    "analyticalQuality": {
+      "heading": "Reading an AHK-Cu Certificate of Analysis",
+      "intro": [
+        "A purity percentage on its own answers only one question. A useful AHK-Cu COA should let you confirm what the material is, how pure it is by a stated method, how much is actually in the vial, and that the report belongs to the lot you received.",
+        "Copper complexes add a wrinkle: the expected mass and molecular weight depend on whether a result refers to the free peptide, the copper complex or a salt form. A report should state which species its identity result was matched against."
+      ],
+      "interpretationTable": {
+        "title": "What Each COA Element Establishes — and What It Does Not",
+        "columns": ["COA element", "What it tells you", "What it does not establish"],
+        "rows": [
+          ["Lot or batch number", "Links the report to a specific production lot", "Anything about quality unless it matches the vial label"],
+          ["HPLC purity (%)", "The share of detected signal in the main peak under the stated method conditions", "Identity, net peptide content, water or counter-ion content, sterility, endotoxin level or biological activity"],
+          ["Mass spectrometry / LC-MS", "Whether an observed mass is consistent with the expected species", "Purity, or the amount of material present"],
+          ["Net peptide content", "How much of the vial's mass is peptide rather than salts, water or other components", "Chromatographic purity"],
+          ["Copper content (if tested)", "Whether copper is present at the expected ratio to peptide", "Purity of the peptide portion"],
+          ["Stated form and formula", "Which molecular weight applies to the material", "Identity by itself — it must be supported by analytical data"],
+          ["Laboratory name and test date", "Who tested the lot and when", "Independence, unless the relationship is disclosed"],
+          ["Additional panels (endotoxin, microbial, heavy metals, residual solvents)", "Results for those specific attributes, only where listed", "Any attribute that was not tested"]
+        ]
+      },
+      "checklist": {
+        "heading": "Quick COA Check",
+        "items": [
+          "Lot number on the COA matches the vial label",
+          "Purity method is named, not just a percentage",
+          "Identity result states the expected and observed values and the species matched",
+          "Molecular form (free complex, hydrochloride, other) is stated",
+          "Testing laboratory and date are shown",
+          "Any extra panels are reported with results, not just listed as 'tested'"
+        ]
+      },
+      "veracueLotDocumentation": "[VERIFY: embed or link the current AHK-Cu lot COA here. Do not state an AHK-Cu purity figure, method or laboratory until this document exists. Site-wide Veracue testing statements must not be restated as AHK-Cu results.]"
+    },
+
+    "storageAndHandling": {
+      "heading": "Storage and Handling",
+      "status": "BLOCKED — no product-specific storage or stability data available",
+      "publishableInterimCopy": "Store according to the conditions stated on this lot's documentation and label. Handle as a laboratory chemical using appropriate personal protective equipment.",
+      "replaceWith": "[VERIFY: unopened storage temperature, light/moisture protection and any stability period supported by Veracue data]"
+    },
+
+    "researchBoundary": {
+      "heading": "Research Use Only",
+      "body": "AHK-Cu supplied by Veracue is intended solely for laboratory research. It is not a drug, cosmetic, dietary supplement or food, and it is not intended to diagnose, treat, cure or prevent any disease. It must not be administered to humans or animals. The scientific information on this page describes published laboratory studies and is not medical advice or a statement of efficacy or safety. Purchasers are responsible for using the material lawfully and within an appropriate research setting."
+    },
+
+    "furtherReading": {
+      "heading": "Further Research",
+      "items": [
+        "[VERIFY: link only to existing Veracue articles — e.g. a copper-peptide research overview, AHK-Cu vs GHK-Cu comparison, or a COA/testing explainer]"
+      ]
+    }
+  },
+
+  "faqs": [
+    {
+      "question": "What is AHK-Cu?",
+      "answer": "AHK-Cu is the copper(II) complex of the tripeptide alanine-histidine-lysine (Ala-His-Lys). It is often listed as Copper Tripeptide-3 and is supplied here as a laboratory research material."
+    },
+    {
+      "question": "Is AHK-Cu the same as GHK-Cu?",
+      "answer": "No. They share the histidine-lysine end and both bind copper, but AHK-Cu starts with alanine and GHK-Cu starts with glycine. Their evidence bases are separate, and GHK-Cu findings should not be applied to AHK-Cu."
+    },
+    {
+      "question": "What is Copper Tripeptide-3?",
+      "answer": "Copper Tripeptide-3 is the ingredient name commonly used for AHK-Cu, while Copper Tripeptide-1 is used for GHK-Cu. Because suppliers may sell different salt forms under the same name, the COA — not the name — should confirm what a specific product contains."
+    },
+    {
+      "question": "What does the published AHK-Cu research show?",
+      "answer": "A 2007 study found that AHK-Cu at 10⁻¹² to 10⁻⁹ M lengthened isolated human hair follicles in culture and increased proliferation of cultured dermal papilla cells. It also reported apoptosis-related protein changes at 10⁻⁹ M, although the reduction in apoptotic cells was not statistically significant."
+    },
+    {
+      "question": "Is AHK-Cu proven to grow hair?",
+      "answer": "No. The evidence comes from ex vivo follicles and in vitro cells, not living people. It does not establish hair growth, treatment of hair loss or safety in humans."
+    },
+    {
+      "question": "Are there clinical trials of AHK-Cu?",
+      "answer": "No published human clinical trial or registered trial specifically of AHK-Cu was identified during this review. Researchers should check ClinicalTrials.gov and PubMed directly for any newer records."
+    },
+    {
+      "question": "Did the AHK-Cu study show increased VEGF in dermal papilla cells?",
+      "answer": "Not according to the published abstract. VEGF and TGF-β1 are mentioned there as earlier findings for the tripeptide-copper complex in dermal fibroblasts, not as results measured in dermal papilla cells in this study."
+    },
+    {
+      "question": "Why do sources list different molecular weights for AHK-Cu?",
+      "answer": "Because they describe different forms. The free AHK peptide is about 354.4 g/mol, the copper complex about 416 g/mol depending on how protons are counted, and the hydrochloride form about 451–452 g/mol. The correct value for a product is the one matching the form stated on its COA."
+    },
+    {
+      "question": "What is the CAS number for AHK-Cu?",
+      "answer": "CAS 682809-81-0 is the number most often listed by suppliers, and some assign it to the hydrochloride form with a different number for the free base. A CAS number is only meaningful when it is tied to the exact documented form of the material."
+    },
+    {
+      "question": "What should an AHK-Cu Certificate of Analysis include?",
+      "answer": "At minimum: a lot number matching the vial, a named purity method and result, an identity result with expected and observed values, the molecular form, and the testing laboratory and date. Net peptide content and copper content add useful context where reported."
+    },
+    {
+      "question": "Does high HPLC purity mean AHK-Cu is safe or biologically active?",
+      "answer": "No. HPLC purity measures the proportion of detected signal in the main chromatographic peak. It does not confirm identity on its own, and it says nothing about sterility, endotoxin, biological activity or suitability for any use in living organisms."
+    },
+    {
+      "question": "What does research use only mean for this product?",
+      "answer": "It means the material is supplied for laboratory and in vitro research, not for human or veterinary administration, diagnosis or treatment. The page therefore provides no dosing or application guidance."
+    }
+  ],
+
+  "internalLinking": {
+    "rule": "Only publish links to URLs confirmed live on Veracue. No Veracue URL could be verified during preparation, so every target below is a placeholder.",
+    "recommendations": [
+      { "anchorText": "GHK-Cu research peptide", "targetUrl": "[VERIFY: Veracue GHK-Cu product URL]", "placement": "AHK-Cu vs GHK-Cu section", "reason": "Primary disambiguation entity; readers comparing the two need both pages" },
+      { "anchorText": "how to read a peptide Certificate of Analysis", "targetUrl": "[VERIFY: Veracue COA/testing page]", "placement": "Analytical quality section intro", "reason": "Extends the COA table with site-wide testing context" },
+      { "anchorText": "copper peptide research", "targetUrl": "[VERIFY: Veracue category or research article]", "placement": "Overview, third paragraph", "reason": "Topical cluster hub for copper peptides" },
+      { "anchorText": "research use only policy", "targetUrl": "[VERIFY: Veracue terms/RUO page]", "placement": "Research boundary section", "reason": "Supports compliance positioning with first-party policy" },
+      { "anchorText": "[VERIFY category name]", "targetUrl": "[VERIFY: category URL]", "placement": "Breadcrumb", "reason": "Category-level topical grouping" }
+    ]
+  },
+
+  "externalReferences": [
+    {
+      "citationText": "Pyo HK, Yoo HG, Won CH, Lee SH, Kang YJ, Eun HC, Cho KH, Kim KH. The effect of tripeptide-copper complex on human hair growth in vitro. Arch Pharm Res. 2007;30(7):834–839. doi:10.1007/BF02978833. PMID: 17703734.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17703734/",
+      "usedFor": "All direct AHK-Cu hair follicle and dermal papilla findings"
+    },
+    {
+      "citationText": "PubChem Compound Summary, CID 168431292 (AHK-Cu, hydrochloride-associated record). National Center for Biotechnology Information.",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/168431292",
+      "usedFor": "Hydrochloride formula and chemical nomenclature"
+    },
+    {
+      "citationText": "Pickart L, Margolina A. Regenerative and Protective Actions of the GHK-Cu Peptide in the Light of the New Gene Data. Int J Mol Sci. 2018;19(7):1987. doi:10.3390/ijms19071987. PMID: 29986520.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6073405/",
+      "usedFor": "GHK-Cu identity, plasma origin and the scale of its separate literature (review authored by GHK-Cu researchers with an industry affiliation — cite for context, not as independent evaluation)"
+    },
+    {
+      "citationText": "ClinicalTrials.gov registry search",
+      "url": "https://clinicaltrials.gov/",
+      "usedFor": "Reader resource for checking trial registrations"
+    }
+  ],
+
+  "imageSeo": [
+    {
+      "image": "Hero product vial",
+      "fileName": "ahk-cu-research-peptide-vial-veracue.webp",
+      "altText": "AHK-Cu research peptide vial from Veracue labelled for laboratory research use only",
+      "caption": "AHK-Cu, supplied for laboratory research use only.",
+      "note": "Use a photograph of the actual Veracue AHK-Cu vial. Do not reuse another product's vial image."
+    },
+    {
+      "image": "Molecular form reference graphic",
+      "fileName": "ahk-cu-molecular-weight-by-form-chart.webp",
+      "altText": "Chart comparing AHK-Cu molecular weights for the free peptide, copper complex and hydrochloride forms",
+      "caption": "Why reported AHK-Cu molecular weights differ between sources."
+    },
+    {
+      "image": "AHK-Cu vs GHK-Cu sequence diagram",
+      "fileName": "ahk-cu-vs-ghk-cu-sequence-comparison.webp",
+      "altText": "Diagram showing AHK-Cu alanine-histidine-lysine and GHK-Cu glycine-histidine-lysine sequences bound to copper",
+      "caption": "AHK-Cu and GHK-Cu differ in their first amino acid."
+    },
+    {
+      "image": "Lot COA preview",
+      "fileName": "ahk-cu-certificate-of-analysis-lot-[VERIFY-lot].webp",
+      "altText": "Certificate of Analysis for Veracue AHK-Cu lot [VERIFY] showing purity and identity results",
+      "caption": "Current lot documentation.",
+      "note": "Publish only when a real AHK-Cu COA exists. Never use a sample or illustrative COA."
+    }
+  ],
+
+  "structuredData": {
+    "guidance": "Structured data must describe visible content only. No reviews, ratings or AggregateRating are included because none exist. FAQPage markup is optional: Google currently limits FAQ rich results to authoritative government and health sites, so treat it as descriptive markup, not a rich-result tactic.",
+    "breadcrumbList": {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "[VERIFY: https://<veracue-domain>/]" },
+        { "@type": "ListItem", "position": 2, "name": "Shop", "item": "[VERIFY: shop URL]" },
+        { "@type": "ListItem", "position": 3, "name": "[VERIFY: category]", "item": "[VERIFY: category URL]" },
+        { "@type": "ListItem", "position": 4, "name": "AHK-Cu" }
+      ]
+    },
+    "webPage": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "AHK-Cu Research Peptide (Copper Tripeptide-3) | Veracue",
+      "url": "[VERIFY: canonical URL]",
+      "about": { "@type": "Thing", "name": "AHK-Cu", "alternateName": ["Copper Tripeptide-3", "Ala-His-Lys-Cu"] },
+      "publisher": { "@type": "Organization", "name": "Veracue", "url": "[VERIFY: domain]" }
+    },
+    "productConditional": {
+      "condition": "Implement only after name, image, SKU, price and availability are verified and visible on the page. Omit any property that cannot be verified; omit Offer entirely if price or availability is unknown.",
+      "template": {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "AHK-Cu",
+        "description": "Copper(II) complex of the tripeptide Ala-His-Lys supplied for laboratory research use only.",
+        "image": "[VERIFY: real product image URL]",
+        "sku": "[VERIFY]",
+        "brand": { "@type": "Brand", "name": "Veracue" },
+        "offers": {
+          "@type": "Offer",
+          "price": "[VERIFY]",
+          "priceCurrency": "[VERIFY]",
+          "availability": "[VERIFY: https://schema.org/InStock or OutOfStock]",
+          "url": "[VERIFY: canonical URL]"
+        }
+      }
+    },
+    "faqPageOptional": {
+      "condition": "Mirror the 12 visible FAQs exactly if implemented.",
+      "@type": "FAQPage"
+    }
+  },
+
+  "verificationLog": [
+    { "claim": "AHK-Cu = Cu(II) complex of L-alanyl-L-histidyl-L-lysine", "source": "Pyo et al. 2007 abstract (PubMed 17703734); PubChem CID 168431292", "status": "VERIFIED" },
+    { "claim": "Follicle elongation and DPC proliferation at 10⁻¹²–10⁻⁹ M", "source": "Pyo et al. 2007 abstract", "status": "VERIFIED" },
+    { "claim": "Apoptotic DPC reduction at 10⁻⁹ M not statistically significant; Bcl-2/Bax up; cleaved caspase-3 and PARP down", "source": "Pyo et al. 2007 abstract", "status": "VERIFIED" },
+    { "claim": "240 follicles, 3 donors, 12-day culture, 30 follicles/condition; MTT assay for DPCs", "source": "Figure legends of the published paper, retrieved via a third-party-hosted copy (link now returns 404)", "status": "VERIFIED FROM PAPER TEXT — confirm against Springer full text before publication" },
+    { "claim": "VEGF/TGF-β1 statements are fibroblast background in the abstract, not DPC endpoints", "source": "Pyo et al. 2007 abstract", "status": "VERIFIED FOR ABSTRACT — full-text check recommended" },
+    { "claim": "Author affiliation: Department of Dermatology, Seoul National University", "source": "PubMed record", "status": "VERIFIED" },
+    { "claim": "No human clinical trial of AHK-Cu identified", "source": "Web and registry-oriented searches, September 2026", "status": "NEGATIVE SEARCH RESULT — phrased as 'identified during this review'; rerun a formal PubMed and ClinicalTrials.gov query before publication" },
+    { "claim": "No controlled AHK-Cu vs GHK-Cu comparison identified", "source": "Same searches", "status": "NEGATIVE SEARCH RESULT — phrased accordingly" },
+    { "claim": "No independent replication of Pyo 2007 identified", "source": "Same searches", "status": "NEGATIVE SEARCH RESULT — phrased accordingly" },
+    { "claim": "PubChem AHK-Cu record is hydrochloride-associated, CID 168431292, formula with Cl and Cu", "source": "PubChem page metadata", "status": "VERIFIED" },
+    { "claim": "Molecular weights 354.41 / 415.94 / 416.95 / 451.39 / 452.40", "source": "Calculated from IUPAC standard atomic weights; 451.39 and 452.40 match PubChem-derived and supplier-listed values", "status": "CALCULATED AND CROSS-CHECKED" },
+    { "claim": "CAS 682809-81-0 commonly listed; one supplier assigns it to the hydrochloride with a separate free-base CAS", "source": "Supplier listings only (BOC Sciences and others); not confirmed in CAS Registry", "status": "VENDOR-REPORTED — page copy says 'listed by suppliers'; do not display as a product fact" },
+    { "claim": "Copper Tripeptide-3 = AHK-Cu; Copper Tripeptide-1 = GHK-Cu", "source": "Consistent across multiple supplier and ingredient listings; not confirmed against the INCI dictionary or EU CosIng directly", "status": "WIDELY REPORTED — phrased as 'commonly listed'; confirm in CosIng if an authoritative citation is wanted" },
+    { "claim": "GHK-Cu identified in human plasma; literature since 1973", "source": "Pickart & Margolina 2018, Int J Mol Sci (PMID 29986520)", "status": "VERIFIED" },
+    { "claim": "Copper coordination via alanine terminal and histidine nitrogens", "source": "PubChem IUPAC name (azanidyl groups) and supplier CAS-style nomenclature", "status": "NOMENCLATURE-DERIVED — worded as 'database nomenclature describes', not as a structural determination" },
+    { "claim": "Any Veracue AHK-Cu size, price, SKU, purity, COA, lab, lot, storage, form, origin or packaging", "source": "None available; the Veracue site could not be located or fetched during preparation", "status": "NOT VERIFIED — all marked [VERIFY]; nothing invented" },
+    { "claim": "Veracue site-wide HPLC/MS/COA/RUO statements from the brief", "source": "Client brief only", "status": "NOT USED AS AHK-Cu CLAIMS" },
+    { "claim": "FAQ rich results limited to authoritative government and health sites", "source": "Client-supplied framework document stating Google's 2026 documentation update", "status": "CLIENT-SUPPLIED — not independently re-checked this session; affects implementation advice only" }
+  ],
+
+  "blockingDataRequests": [
+    "AHK-Cu product record: name, SKU(s), net quantity per vial, price, availability, product image",
+    "Current lot COA: lot number, purity method and result, identity method with expected/observed values, stated molecular form and formula, testing laboratory, test date",
+    "Product-specific storage conditions and any stability data",
+    "Packaging and physical form",
+    "Live Veracue URLs: domain, product path, category, GHK-Cu product page, COA/testing page, RUO/terms page",
+    "Any manufacturing or country-of-origin claim Veracue wants shown, with supporting documentation"
+  ],
+
+  "competitorGapNotes": [
+    "The 99 Purity AHK-Cu page and most vendor pages list broad pathway and ECM claims without AHK-Cu-specific sources; this page instead maps each claim to direct, extrapolated or absent evidence.",
+    "Vendor pages commonly attribute VEGF increases to AHK-Cu in dermal papilla cells; this page corrects the attribution against the abstract.",
+    "Vendor pages publish one unqualified molecular weight or CAS; this page explains the form-dependent values and ties display to the COA.",
+    "Vendor pages frequently omit that the apoptosis reduction was not statistically significant; this page states it."
+  ],
+
+  "optimizationNotes": {
+    "searchIntent": "Mixed commercial-verification intent served by product identity, COA interpretation and evidence qualification; consumer hair-loss and dosing intent deliberately excluded.",
+    "informationGain": "Two bookmarkable assets: the molecular-weight-by-form table and the direct-vs-extrapolated evidence map. The VEGF misattribution correction is not addressed by typical competing pages.",
+    "aeo": "Each major section opens with a self-contained answer passage (What Is AHK-Cu, research quick answer, comparison quick answer). FAQs answer in 1–3 standalone sentences.",
+    "geo": "Entities named explicitly with aliases; AHK-Cu and GHK-Cu disambiguated in a dedicated table; every scientific claim labelled by evidence type and linked to a primary source.",
+    "cannibalization": "Veracue's existing URLs could not be checked. Before launch, confirm no existing Veracue AHK-Cu article already targets 'AHK-Cu vs GHK-Cu' or 'AHK-Cu COA' as its primary query; if one exists, shorten the corresponding section here and link out.",
+    "keywordUse": "Primary entity appears in title, H1, hero, first heading and naturally throughout; no density targeting.",
+    "regulatory": "No dosing, administration, reconstitution-for-use, cycles, stacks or therapeutic claims. No FDA-status assertion is made because none was needed for this page; add one only from a verified current FDA source.",
+    "publishReadiness": "Science, comparison, COA-interpretation, FAQ and RUO copy: ready. Purchase area, specifications, storage, lot documentation, internal links, canonical and Product schema: blocked on Veracue data."
+  }
+}

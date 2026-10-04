@@ -1,0 +1,234 @@
+{
+  "product": "Selank Spray",
+  "slug": "/product/selank-spray",
+  "status": "Research Use Only",
+  "seo": {
+    "title": "Selank Spray Research Peptide (TKPRPGP) | Veracue",
+    "metaDescription": "Selank Spray (TKPRPGP): what the tuftsin-analog research actually shows, where the evidence stops, and what to verify before use. RUO only.",
+    "canonicalUrl": "https://veracue-peptides.vercel.app/product/selank-spray",
+    "h1": "Selank Spray",
+    "primaryKeyword": "selank spray",
+    "secondaryKeywords": [
+      "selank peptide",
+      "what is selank",
+      "selank vs semax",
+      "semax and selank",
+      "selank nasal spray",
+      "selank peptide benefits"
+    ],
+    "openGraph": {
+      "title": "Selank Spray Research Peptide (TKPRPGP) | Veracue",
+      "description": "RUO research overview of Selank Spray — tuftsin-analog identity, what the evidence shows, where it stops, and what to verify before use."
+    },
+    "keywordIntentHierarchy": {
+      "identityInformational": ["semax", "semax selank", "selank peptide", "peptide", "what is selank"],
+      "comparison": ["semax and selank", "selank and semax", "semax vs selank", "selank vs semax", "semax selank nasal spray"],
+      "format": ["selank spray", "selank nasal spray", "selank semax nasal spray"],
+      "riskUsageSearchDemandOnly": ["selank dosage", "selank benefits", "selank side effects"],
+      "excludedAdjacentCatalogTerms": ["klow", "glow", "mots c", "reta", "pt141", "bpc-157"]
+    }
+  },
+  "blurb": "Selank Spray is a Research Use Only research material containing the synthetic heptapeptide Selank (TKPRPGP), a tuftsin analogue. \"Spray\" describes packaging format only — no route of administration, dosing, or human/veterinary use is established or implied.",
+  "identity": {
+    "sequence": "Thr-Lys-Pro-Arg-Pro-Gly-Pro (TKPRPGP)",
+    "casNumber": "129954-34-3",
+    "molecularFormula": "C33H57N11O9",
+    "molecularWeight": "751.9 g/mol (approx.)",
+    "parentCompound": "Synthetic analogue of tuftsin, an endogenous four-residue immune peptide (Thr-Lys-Pro-Arg) derived from the Fc region of IgG",
+    "relatedCompound": "Developed at the same institute as Semax (an unrelated ACTH4-10 fragment peptide); frequently searched and sold together but not interchangeable",
+    "origin": "Developed at the Institute of Molecular Genetics, Russian Academy of Sciences"
+  },
+  "productDocumentation": {
+    "concentration": "Not publicly specified on the current Veracue product information.",
+    "carrierSolvent": "Not publicly specified on the current Veracue product information.",
+    "spraysPerUnit": "Not publicly specified on the current Veracue product information.",
+    "purity": "Not publicly specified on the current Veracue product information.",
+    "sku": "Not publicly specified on the current Veracue product information.",
+    "price": "Not publicly specified on the current Veracue product information.",
+    "lotCoa": "Not publicly specified on the current Veracue product information.",
+    "storageConditions": "Not publicly specified on the current Veracue product information.",
+    "routeOfAdministration": "Not established. \"Spray\" describes packaging format only and is not a confirmed administration route."
+  },
+  "sections": [
+    {
+      "heading": "What Selank Is",
+      "body": "Selank is a synthetic analogue of tuftsin, a naturally occurring four-residue immune peptide first identified as a fragment of the heavy chain of human IgG. Researchers at the Institute of Molecular Genetics of the Russian Academy of Sciences extended tuftsin's sequence (Thr-Lys-Pro-Arg) with a Pro-Gly-Pro addition to produce Selank, a modification intended to improve resistance to enzymatic breakdown relative to the parent peptide. The same institute developed Semax, a structurally unrelated ACTH-fragment peptide that shows up constantly alongside Selank in search activity and product catalogs — the two are studied together often enough that they're worth naming apart from the start: different parent molecule, different sequence, not interchangeable evidence."
+    },
+    {
+      "heading": "Why Researchers Look at Selank",
+      "body": "The published literature on Selank sits mostly in Russian pharmacology journals, with one English-language review and a modest handful of animal studies that have drawn attention outside Russia. Three threads run through it. Neurotrophic signaling: in rats maintained on ethanol as their sole fluid source for 30 weeks, daily intraperitoneal Selank (0.3 mg/kg for 7 days) produced a cognitive-stimulating effect in object-recognition testing and blunted the memory and attention deficits that developed during alcohol withdrawal; the same study found Selank prevented an ethanol-induced rise in BDNF content in the hippocampus and frontal cortex, tied by the authors to a neurotrophin-based mechanism (Kolik et al., 2019, doi:10.1007/s10517-019-04588-9). That's a specific dose in a specific rat model responding to a specific insult, not a general statement about what Selank does to BDNF at rest. Behavioral effects in rodent models: Selank has been tested in forced-swim and sucrose-preference assays across several rat strains and in BALB/c mice, with antidepressant-like effects reported at higher repeated doses in genetically anxious WAG/Rij rats and at lower single doses in mice (Sarkisova et al., 2008, PMID 18661785). A separate study found Selank restored learning and memory in rats with noradrenergic-system damage from disulfiram or 6-OHDA, attributing the recovery to stimulation of exploratory/search behavior rather than repair of the damaged pathway itself (Kozlovskii et al., 2008, PMID 18488898). A human comparative trial: sixty-two patients with generalized anxiety disorder or neurasthenia were split between Selank and the benzodiazepine medazepam in a controlled comparison; both groups showed similar anxiolytic response, with Selank additionally associated with antiasthenic and psychostimulant effects and with a rise in blood enkephalin-related markers that tracked symptom improvement (Zozulia et al., 2008, PMID 18454096). This trial used Russia's registered pharmaceutical Selank product under clinical-trial conditions — a different regulatory category entirely from an RUO research material, and not evidence about any specific supplier's material. Sitting above all of this, a 2021 clinical pharmacology review grouped Selank with phenibut as a 'poorly studied' Russian-origin compound with a proposed GABA-receptor mechanism, sold in the US as a supplement despite that gap in characterization (Doyno & White, 2021, doi:10.1002/jcph.1922). That's the honest ceiling on where this evidence base currently sits: real findings, real mechanisms proposed, but thin relative to how well-characterized drugs in the same functional space have been studied."
+    },
+    {
+      "heading": "Selank vs. Related Terms",
+      "body": "Selank vs. Semax: different parent molecules (tuftsin vs. an ACTH4-10 fragment), different sequences, developed by the same institute and frequently searched and sold as a pair. A finding about one doesn't transfer to the other. Selank vs. tuftsin: tuftsin is the four-residue original; Selank is the seven-residue synthetic extension built for stability. Tuftsin's classical immune-signaling role (phagocytosis stimulation) and Selank's studied CNS/behavioral effects are different research domains. Selank research vs. Russia's registered Selank pharmaceutical: a Selank-containing product is approved and sold as a prescription intranasal spray in Russia and Ukraine. That approval, manufacturing standard, and route belong to that specific regulated product. It says nothing about the formulation, purity, or intended use of Veracue's RUO material — only the underlying molecule's identity carries over."
+    },
+    {
+      "heading": "On the Word \"Spray\"",
+      "body": "Worth stating plainly, since it's one of the more common assumptions: naming a product 'Spray' describes its dispense format, not a confirmed route into a research subject. Concentration, carrier, volume per spray, sprays per unit, pH, and stability are all not publicly specified on the current Veracue product information. Nothing in this content should be read as administration guidance, and none is offered — for a person, an animal, or otherwise."
+    },
+    {
+      "heading": "What the Evidence Doesn't Establish",
+      "body": "Most of the cited literature is rodent data — specific strains, specific doses, specific insults (alcohol exposure, chemical lesions). None of it was generated on Veracue's material, and none of it certifies this product's identity, purity, or integrity. The one human trial used the approved pharmaceutical formulation under clinical-trial protocol, not a research-grade material purchased for lab use. Independent replication outside the original Russian pharmacology groups is thin; the 2021 review's 'poorly studied' characterization is the most recent outside assessment on record. A result obtained via intraperitoneal injection in a 30-week alcohol-exposure rat model doesn't transfer to a different route, species, or exposure condition by assumption — each cited study is bounded to its own protocol."
+    }
+  ],
+  "beforeUsingThisMaterial": [
+    "Identity confirmation (sequence/mass, e.g., HPLC or MS)",
+    "Concentration and total volume or mass per unit",
+    "Lot number with a matching certificate of analysis",
+    "Purity percentage and the method used to establish it",
+    "Carrier, solvent, and any excipients",
+    "Storage temperature and stability data"
+  ],
+  "ruoNotice": "This material is supplied for laboratory research by qualified professionals only. It is not intended for human consumption, self-administration, veterinary use, diagnosis, treatment, prevention of disease, or cosmetic use, and purchasing it does not imply authorization for any of those uses. No dosage, administration method, or usage protocol is provided, and none should be inferred from the research doses cited above — those describe what was done in a specific published study, not instructions for this product.",
+  "faqs": [
+    {
+      "question": "What is Selank?",
+      "answer": "A synthetic heptapeptide (TKPRPGP) built from the endogenous immune peptide tuftsin, studied in rodent and limited human literature for effects on anxiety-like behavior, mood-related behavior, and BDNF signaling."
+    },
+    {
+      "question": "Is Selank the same as Semax?",
+      "answer": "No — different parent molecule and sequence, despite coming from the same research institute and frequently appearing together in searches and product listings."
+    },
+    {
+      "question": "Is Selank naturally occurring?",
+      "answer": "No. It's a synthetic derivative of tuftsin, engineered for greater stability than the natural peptide."
+    },
+    {
+      "question": "What has Selank actually been studied for?",
+      "answer": "Monoamine and enkephalin-system modulation, BDNF changes under stress or toxic exposure in rats, anxiolytic- and antidepressant-like behavior across several rodent models, and one controlled human trial in generalized anxiety disorder and neurasthenia."
+    },
+    {
+      "question": "What's Selank's molecular identity?",
+      "answer": "CAS 129954-34-3, formula C33H57N11O9, MW approximately 751.9 g/mol, sequence TKPRPGP."
+    },
+    {
+      "question": "Does research establish how Selank works?",
+      "answer": "Proposed mechanisms include monoamine turnover modulation, inhibition of enzymes that break down endogenous peptides, and BDNF regulation — but a 2021 review flagged the compound as poorly characterized relative to established GABAergic agents."
+    },
+    {
+      "question": "What's still uncertain?",
+      "answer": "Independent replication is limited, dose-response varies by study, and no large international human trial has confirmed the single cited comparative trial's findings."
+    },
+    {
+      "question": "Is Selank Spray for human use?",
+      "answer": "No. Research Use Only — not for consumption, self-administration, or personal use of any kind."
+    },
+    {
+      "question": "Does this page give a dosage?",
+      "answer": "No. The research doses mentioned above describe published study protocols, not usage instructions for this product."
+    },
+    {
+      "question": "Does 'Spray' mean it's a nasal spray?",
+      "answer": "No. It names the packaging format only. No route is confirmed in current Veracue documentation."
+    },
+    {
+      "question": "Is this the same as the Selank sold as a pharmaceutical in Russia?",
+      "answer": "No — that's a separate, registered prescription product with its own formulation and regulatory status. This listing shares only the underlying molecule's identity."
+    },
+    {
+      "question": "What does RUO mean?",
+      "answer": "Research Use Only: intended for laboratory use by qualified professionals, not evaluated or approved for diagnostic, therapeutic, or preventive use in humans or animals."
+    },
+    {
+      "question": "What should I verify before using this material?",
+      "answer": "Identity, concentration, lot/COA, purity, formulation, and storage — request current documentation directly from Veracue."
+    },
+    {
+      "question": "Are Selank and tuftsin the same thing?",
+      "answer": "No. Tuftsin is the four-residue original; Selank is the seven-residue synthetic analogue built from it."
+    }
+  ],
+  "jsonLd": {
+    "product": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Selank Spray",
+      "description": "Selank Spray is a Research Use Only (RUO) research material containing the synthetic heptapeptide Selank (TKPRPGP), a tuftsin analogue. Not intended for human or veterinary use, ingestion, or administration.",
+      "category": "Research Use Only Peptide",
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "CAS Number", "value": "129954-34-3" },
+        { "@type": "PropertyValue", "name": "Molecular Formula", "value": "C33H57N11O9" },
+        { "@type": "PropertyValue", "name": "Molecular Weight", "value": "751.9 g/mol" },
+        { "@type": "PropertyValue", "name": "Sequence", "value": "Thr-Lys-Pro-Arg-Pro-Gly-Pro" },
+        { "@type": "PropertyValue", "name": "Intended Use", "value": "Research Use Only — not for human or veterinary use" }
+      ]
+    },
+    "faqPage": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Selank?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A synthetic heptapeptide (TKPRPGP) built from the endogenous immune peptide tuftsin, studied in rodent and limited human literature for effects on anxiety-like behavior, mood-related behavior, and BDNF signaling."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Selank the same as Semax?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No — different parent molecule and sequence, despite coming from the same research institute and frequently appearing together in searches and product listings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does 'Spray' mean it's a nasal spray?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It names the packaging format only. No route is confirmed in current Veracue documentation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Selank Spray for human use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Research Use Only — not for consumption, self-administration, or personal use of any kind."
+          }
+        }
+      ]
+    },
+    "breadcrumbList": {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://veracue-peptides.vercel.app/" },
+        { "@type": "ListItem", "position": 2, "name": "Shop", "item": "https://veracue-peptides.vercel.app/shop" },
+        { "@type": "ListItem", "position": 3, "name": "Selank Spray", "item": "https://veracue-peptides.vercel.app/product/selank-spray" }
+      ]
+    },
+    "webPage": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Selank Spray Research Peptide (TKPRPGP) | Veracue",
+      "description": "Selank Spray (TKPRPGP): what the tuftsin-analog research actually shows, where the evidence stops, and what to verify before use. RUO only.",
+      "url": "https://veracue-peptides.vercel.app/product/selank-spray"
+    }
+  },
+  "scientificReferences": [
+    {
+      "citation": "Doyno CR, White CM. Sedative-Hypnotic Agents That Impact Gamma-Aminobutyric Acid Receptors: Focus on Flunitrazepam, Gamma-Hydroxybutyric Acid, Phenibut, and Selank. J Clin Pharmacol. 2021 Aug;61(Suppl 2):S114-S128.",
+      "doi": "10.1002/jcph.1922"
+    },
+    {
+      "citation": "Kolik LG, Nadorova AV, Antipova TA, Kruglov SV, Kudrin VS, Durnev AD. Selank, Peptide Analogue of Tuftsin, Protects Against Ethanol-Induced Memory Impairment by Regulating of BDNF Content in the Hippocampus and Prefrontal Cortex in Rats. Bull Exp Biol Med. 2019;167(5):641-644.",
+      "doi": "10.1007/s10517-019-04588-9"
+    },
+    {
+      "citation": "Sarkisova KYu, Kozlovskiy II, Kozlovskaia MM. Effects of heptapeptide selank on genetically-based and situation-provoked symptoms of depression in behavior in WAG/Rij and Wistar rats, and in BALB/c mice. Zh Vyssh Nerv Deiat Im I P Pavlova. 2008;58(2):226-237.",
+      "pmid": "18661785"
+    },
+    {
+      "citation": "Kozlovskiy II, Belozertsev YuF, Semenova TP, Zuikov AV, Kozlovskaia MM. Compensatory effect of selank on the mnestic functions disturbed by neurotoxic damage of the noradrenergic system of the rat brain. Eksp Klin Farmakol. 2008;71(2):3-7.",
+      "pmid": "18488898"
+    },
+    {
+      "citation": "Zozulia AA, Neznamov GG, Siuniakov TS, et al. Efficacy and possible mechanisms of action of a new peptide anxiolytic selank in the therapy of generalized anxiety disorders and neurasthenia. Zh Nevrol Psikhiatr Im S S Korsakova. 2008;108(4):38-48.",
+      "pmid": "18454096"
+    }
+  ],
+  "internalNoteForClient": "Selank Spray does not exist on the live catalog (/product/selank-spray returns Product Not Found) or in the COA archive as of this writing. productDocumentation fields marked 'Not publicly specified on the current Veracue product information' must be filled from Veracue first-party data before publishing. This V2 supersedes the earlier selank-spray.json draft: tone tightened from a checklist/dossier structure into continuous product-page prose, and a keyword-intent hierarchy (seo.keywordIntentHierarchy) was added showing how the supplied keyword workbook was organized rather than stuffed into copy."
+}

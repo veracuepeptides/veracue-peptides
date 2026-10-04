@@ -101,7 +101,7 @@ export function CategoriesSection({ categories = [] }: CategoriesSectionProps) {
           <div>
             {/* Standardized Eyebrow Pill */}
             <div className="inline-block border border-[#eddcd2] rounded-full max-w-full px-3 sm:px-4 py-1.5 mb-3.5 bg-white shadow-sm">
-              <span className="text-[#a5a58d] text-[9px] xs:text-[9.5px] sm:text-xs font-bold tracking-[0.02em] xs:tracking-[0.06em] sm:tracking-[0.2em] uppercase font-editorial whitespace-nowrap">
+              <span className="text-[#6b705c] text-[9px] xs:text-[9.5px] sm:text-xs font-bold tracking-[0.02em] xs:tracking-[0.06em] sm:tracking-[0.2em] uppercase font-editorial whitespace-nowrap">
                 RESEARCH CLASSIFICATIONS
               </span>
             </div>
@@ -143,7 +143,6 @@ export function CategoriesSection({ categories = [] }: CategoriesSectionProps) {
                       fill
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1280px"
                       className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
-                      priority={index < 3}
                     />
                     {/* Deep Atmospheric Contrast Tint Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/25 to-black/35 group-hover:from-black/65 transition-colors duration-500" />

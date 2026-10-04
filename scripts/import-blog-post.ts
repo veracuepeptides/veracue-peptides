@@ -71,7 +71,9 @@ async function verifyInternalLinks(payload: any, content: string, warnings: stri
 
   for (const link of links) {
     const m = link.url.match(/^\/product\/([^/]+)$/)
+    const b = link.url.match(/^\/blog\/([^/]+)$/)
     if (m) productSlugs.add(m[1])
+    else if (b) postSlugs.add(b[1])
     else if (/^\/[^/]+$/.test(link.url) && !STATIC_ROUTES.has(link.url.slice(1))) {
       // Could be a blog post or a page — checked against both below.
       postSlugs.add(link.url.slice(1))
@@ -93,7 +95,7 @@ async function verifyInternalLinks(payload: any, content: string, warnings: stri
     ])
     const found = new Set([...posts.map((d: any) => d.slug), ...pages.map((d: any) => d.slug)])
     for (const slug of postSlugs) {
-      if (!found.has(slug)) warnings.push(`Broken internal link /${slug} — no matching post or page, left in place for manual review.`)
+      if (!found.has(slug)) warnings.push(`Broken internal link /${slug} — no matching post or page (posts live at /blog/<slug>), left in place for manual review.`)
     }
   }
 
@@ -170,10 +172,11 @@ async function run() {
     ? await resolveRelatedProducts(payload, draft.relatedProducts, warnings)
     : []
 
-  // 5. Fixed single author — the Helix Bio Team admin account
+  // 5. Fixed single author: the designated admin account (set its name/bio/photo once in
+  // the blog-author-profile global, not per post)
   const { docs: admins } = await payload.find({ collection: 'users', where: { role: { equals: 'admin' } }, limit: 1 })
   if (admins.length === 0) {
-    console.error('No admin user found — create/designate the Helix Bio Team admin account before importing.')
+    console.error('No admin user found. Create or designate an admin account before importing.')
     process.exit(1)
   }
   const authorUser = admins[0]
@@ -217,7 +220,7 @@ async function run() {
     for (const w of warnings) console.log(`  - ${w}`)
   }
 
-  console.log(`\nStatus: ${postData.status}. View it at: /${slug}`)
+  console.log(`\nStatus: ${postData.status}. View it at: /blog/${slug}`)
   process.exit(0)
 }
 

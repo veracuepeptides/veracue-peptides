@@ -10,17 +10,17 @@ import { HeroButton } from '@/components/ui/hero-button'
 const HERO_IMAGES = [
   {
     src: '/veracue-images/veracue-klow-50mg-pool-water-ripples.webp',
-    alt: 'Veracue Klow 50mg Research Peptide pool water ripples',
+    alt: 'Veracue research peptide vial resting on rippling pool water',
     compound: 'Klow 50mg',
   },
   {
     src: '/veracue-images/veracue-ghk-cu-50mg-ice-bed-white.webp',
-    alt: 'Veracue GHK-Cu 50mg Research Peptide on ice bed',
+    alt: 'Veracue research peptide vial on an ice bed',
     compound: 'GHK-Cu 50mg',
   },
   {
     src: '/veracue-images/veracue-glow-50mg-underwater-seabed.webp',
-    alt: 'Veracue Glow 50mg Research Peptide underwater seabed',
+    alt: 'Veracue research peptide vial on an underwater seabed',
     compound: 'Glow 50mg',
   },
 ]
@@ -32,6 +32,7 @@ export function Hero() {
 
   // Auto-advance hero slides every 5.5 seconds with smooth crossfade
   useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
     const timer = setInterval(() => {
       setCurrentImageIndex((prev) => (prev + 1) % HERO_IMAGES.length)
     }, 5500)
@@ -76,7 +77,7 @@ export function Hero() {
 
         {/* 3. Sub-headline / Supporting Description */}
         <p className="text-neutral-500 text-[11.5px] sm:text-[13px] md:text-[14.5px] max-w-2xl leading-relaxed mb-2.5 sm:mb-4 font-normal px-1 line-clamp-3 sm:line-clamp-none">
-          Each batch is checked by an independent lab using HPLC and mass spectrometry before it ever leaves our facility, so what's on the label matches what's in the vial.
+          Every batch is analyzed by HPLC and the result is published on its Certificate of Analysis, so you can check what is in the vial against what is on the label.
         </p>
 
         {/* 4. CTA Pill Button */}
@@ -156,23 +157,23 @@ export function Hero() {
           {/* Top-Left Overlay (Key Stat & Purity) */}
           <div className="absolute top-3.5 sm:top-7 md:top-9 left-3.5 sm:left-7 md:left-9 z-20 text-white text-left">
             <div className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-[68px] font-black tracking-[-0.03em] text-white leading-none drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] font-heading">
-              99%+
+              Per Batch
             </div>
             <p className="text-white/95 text-[10.5px] xs:text-xs sm:text-[13.5px] md:text-[15px] font-medium leading-snug mt-1 sm:mt-2.5 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)] max-w-[140px] sm:max-w-[240px]">
-              Purity Verified,<br />HPLC Tested
+              HPLC Purity on<br />Every COA
             </p>
           </div>
 
           {/* Bottom-Right Overlay (Third-Party Testing & Features) */}
           <div className="absolute bottom-12 xs:bottom-14 sm:bottom-12 md:bottom-14 right-3 sm:right-7 md:right-10 z-20 text-white text-right sm:text-left max-w-[125px] xs:max-w-[160px] sm:max-w-[300px] md:max-w-[360px]">
-            <h3 className="text-xs xs:text-sm sm:text-xl md:text-2xl lg:text-[26px] font-extrabold tracking-tight text-white leading-tight mb-0.5 sm:mb-2 drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] font-heading">
-              Third-Party<br className="sm:hidden" /> Verification
-            </h3>
+            <p className="text-xs xs:text-sm sm:text-xl md:text-2xl lg:text-[26px] font-extrabold tracking-tight text-white leading-tight mb-0.5 sm:mb-2 drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] font-heading">
+              Batch<br className="sm:hidden" /> Testing Data
+            </p>
             <p className="hidden xs:block sm:hidden text-[9px] text-white/85 leading-snug line-clamp-2 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
-              HPLC &amp; mass spectrometry tested.
+              HPLC tested, COA per batch.
             </p>
             <p className="hidden sm:block text-white/90 text-xs sm:text-[13px] md:text-[14.5px] font-normal leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
-              Every batch ships with independent HPLC &amp; mass spectrometry testing before it reaches your bench.
+              Every batch is HPLC tested and its Certificate of Analysis is available to review before you order.
             </p>
           </div>
 
@@ -216,8 +217,8 @@ export function Hero() {
                 <div className="flex items-center gap-3 sm:gap-8 md:gap-12 shrink-0 pr-3 sm:pr-8 md:pr-12">
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full border-[1.5px] sm:border-[2px] border-neutral-950 inline-block shrink-0" />
-                    <span className="font-extrabold text-neutral-950">ISO-7</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Cleanroom</span>
+                    <span className="font-extrabold text-neutral-950">Research</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Use Only</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
@@ -228,19 +229,19 @@ export function Hero() {
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full border border-neutral-950 bg-neutral-950 inline-block shrink-0" />
-                    <span className="font-extrabold text-neutral-950">3rd Party</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Tested</span>
+                    <span className="font-extrabold text-neutral-950">Analytical</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Testing</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full bg-gradient-to-r from-neutral-950 to-transparent border border-neutral-950 inline-block shrink-0" />
                     <span className="font-extrabold text-neutral-950">USA</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Synthesized</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Shipped</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="text-neutral-950 font-bold text-[9px] xs:text-[10px] sm:text-base leading-none">✦</span>
-                    <span className="font-extrabold text-neutral-950">99%+</span>
+                    <span className="font-extrabold text-neutral-950">Per Batch</span>
                     <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Purity</span>
                   </div>
 
@@ -255,8 +256,8 @@ export function Hero() {
                 <div className="flex items-center gap-3 sm:gap-8 md:gap-12 shrink-0 pr-3 sm:pr-8 md:pr-12" aria-hidden="true">
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full border-[1.5px] sm:border-[2px] border-neutral-950 inline-block shrink-0" />
-                    <span className="font-extrabold text-neutral-950">ISO-7</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Cleanroom</span>
+                    <span className="font-extrabold text-neutral-950">Research</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Use Only</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
@@ -267,19 +268,19 @@ export function Hero() {
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full border border-neutral-950 bg-neutral-950 inline-block shrink-0" />
-                    <span className="font-extrabold text-neutral-950">3rd Party</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Tested</span>
+                    <span className="font-extrabold text-neutral-950">Analytical</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Testing</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full bg-gradient-to-r from-neutral-950 to-transparent border border-neutral-950 inline-block shrink-0" />
                     <span className="font-extrabold text-neutral-950">USA</span>
-                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Synthesized</span>
+                    <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Shipped</span>
                   </div>
 
                   <div className="flex items-center gap-1 sm:gap-2.5 text-[10.5px] xs:text-[11.5px] sm:text-[14px] md:text-[15.5px] tracking-[-0.015em] tabular-nums whitespace-nowrap">
                     <span className="text-neutral-950 font-bold text-[9px] xs:text-[10px] sm:text-base leading-none">✦</span>
-                    <span className="font-extrabold text-neutral-950">99%+</span>
+                    <span className="font-extrabold text-neutral-950">Per Batch</span>
                     <span className="font-medium text-neutral-600 -ml-0.5 sm:-ml-1">Purity</span>
                   </div>
 

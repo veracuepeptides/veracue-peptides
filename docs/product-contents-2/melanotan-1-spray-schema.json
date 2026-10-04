@@ -1,0 +1,127 @@
+{
+  "product": {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Melanotan 1 Spray",
+    "alternateName": ["Melanotan-1", "Melanotan I", "MT-1", "MT1"],
+    "description": "Melanotan 1 Spray is a Research Use Only (RUO) material. Melanotan 1 is commonly described in the scientific literature as [Nle4, D-Phe7]-alpha-MSH, an alpha-MSH analog studied in connection with melanocortin receptor (MC1R) signaling and pigmentation research. Not for human or veterinary use.",
+    "category": "Research Peptides",
+    "brand": {
+      "@type": "Brand",
+      "name": "Veracue Peptides"
+    },
+    "url": "https://veracue-peptides.vercel.app/product/melanotan-1-spray",
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "Intended Use",
+        "value": "Research Use Only (RUO) — not for human or veterinary use"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Scientific Identity",
+        "value": "Commonly described in the literature as [Nle4, D-Phe7]-alpha-MSH (Melanotan-I / MT-1); verify against current Veracue product documentation"
+      }
+    ]
+  },
+  "_note_on_omitted_fields": "sku, gtin, price, availability, and any Offer/AggregateRating block are intentionally omitted rather than filled with null or placeholder values. Add an Offer block only once price/availability are confirmed against live Veracue data.",
+  "webPage": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Melanotan 1 Spray | Research Peptide (RUO)",
+    "url": "https://veracue-peptides.vercel.app/product/melanotan-1-spray",
+    "description": "Research information on Melanotan 1 (MT-1), its relationship to melanocortin receptor biology and afamelanotide, and documentation to verify before evaluating Veracue's Melanotan 1 Spray. Research Use Only.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Veracue Peptides",
+      "url": "https://veracue-peptides.vercel.app/"
+    }
+  },
+  "breadcrumbList": {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://veracue-peptides.vercel.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Shop",
+        "item": "https://veracue-peptides.vercel.app/shop"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Melanotan 1 Spray",
+        "item": "https://veracue-peptides.vercel.app/product/melanotan-1-spray"
+      }
+    ],
+    "_note": "Adjust 'item' values to match the live breadcrumb / category path of the deployed page."
+  },
+  "faqPage": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Melanotan 1?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A synthetic alpha-MSH analog, commonly described in the literature as [Nle4, D-Phe7]-alpha-MSH, studied for its interaction with the melanocortin 1 receptor and its role in pigmentation research."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Melanotan 1 the same as Melanotan II?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. They are structurally distinct alpha-MSH-derived analogs — MT-I is linear, MT-II is cyclic — with different reported receptor activity and different research histories."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Melanotan 1 the same as afamelanotide?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "They share the same core chemical structure. Afamelanotide specifically refers to the regulated pharmaceutical product; it is not a synonym for commercial research-market material sold as Melanotan 1."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is MC1R?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The melanocortin 1 receptor — a receptor expressed primarily on skin melanocytes that, when activated, drives the principal pigmentation signaling pathway in human skin."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does \"Spray\" mean for this research material?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It describes the packaging and delivery mechanism. It does not, by itself, indicate a route of administration, and no route is specified or assumed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does this page provide a human dosage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Dosage and administration information is outside the scope of this Research Use Only page and is not provided."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does RUO mean?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Research Use Only — the material is intended exclusively for laboratory research and is not intended for human or veterinary use."
+        }
+      }
+    ]
+  }
+}

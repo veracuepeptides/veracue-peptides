@@ -1,0 +1,375 @@
+{
+  "deliverable": "Kisspeptin-10 Product Page",
+  "client": "Veracue Peptides",
+  "site": "https://veracue-peptides.vercel.app",
+  "prepared_by": "Belk Digital",
+  "date": "2026-09-18",
+  "entity_decision": {
+    "form": "Kisspeptin-10 (KP-10)",
+    "status": "ASSUMED — product does not exist on live Veracue site",
+    "rationale": "KP-10 is the form research-use suppliers almost universally stock, and the form FDA reviewed by name in 2024. No live Veracue entity could be verified.",
+    "all_veracue_specific_fields": "marked VERIFY rather than invented"
+  },
+
+  "seo": {
+    "meta_title": "Kisspeptin-10 (KP-10) Research Peptide | Veracue",
+    "meta_title_length": 54,
+    "meta_description": "Kisspeptin-10 (KP-10) research peptide from Veracue. Verified sequence YNWNSFGLRF-NH2, MW 1302.45, CAS 374675-21-5, batch COA with HPLC and mass spec data.",
+    "meta_description_length": 156,
+    "url_slug": "/product/kisspeptin-10",
+    "slug_note": "Use the isoform in the slug, not /product/kisspeptin. A general kisspeptin page becomes a research guide at /blog/, never a second product URL.",
+    "canonical": "https://veracue-peptides.vercel.app/product/kisspeptin-10",
+    "primary_keyword": "kisspeptin-10 research peptide",
+    "secondary_keywords": [
+      "KP-10 peptide",
+      "kisspeptin-10 sequence",
+      "kisspeptin-10 molecular weight",
+      "kisspeptin-10 CAS",
+      "buy kisspeptin-10 research",
+      "kisspeptin-10 COA",
+      "kisspeptin-10 HPLC purity",
+      "kisspeptin-10 vs kisspeptin-54"
+    ],
+    "semantic_keywords": [
+      "KISS1R", "GPR54", "GnRH", "LH", "FSH", "metastin",
+      "lyophilized powder", "mass spectrometry", "amidated C-terminus",
+      "HPG axis", "research use only"
+    ],
+    "search_intent": "Mixed — commercial procurement plus scientific identification, with a strong analytical-verification secondary intent",
+    "word_count": "~2150 excluding tables and meta fields",
+    "reading_level": "Approx. Grade 9",
+    "cannibalization": "This page owns 'kisspeptin-10 research peptide'. A future blog guide owns 'kisspeptin-10 vs kisspeptin-54' and broader kisspeptin biology. Do not create a separate /product/kisspeptin URL for the same SKU."
+  },
+
+  "breadcrumbs": {
+    "trail": ["Home", "Shop", "[VERIFY: category]", "Kisspeptin-10"],
+    "blocker": "None of the seven live shop categories fit (Cellular Repair & Healing, Cognitive & Neuro-Protection, Growth Hormone Secretagogues, Immune Modulation, Longevity & Anti-Aging, Mitochondrial & Cellular Energy, Weight Loss & Metabolic). KP-10 acts upstream of the GnRH system and is not a GH secretagogue. Add 'Reproductive & Endocrine Research' before launch."
+  },
+
+  "h1": "Kisspeptin-10 (KP-10)",
+
+  "short_product_summary": "Kisspeptin-10 is the ten-residue C-terminal fragment of kisspeptin-54, the peptide product of the human KISS1 gene. Its sequence is Tyr-Asn-Trp-Asn-Ser-Phe-Gly-Leu-Arg-Phe-NH2, and that amidated C-terminal tail is the minimum structure needed to activate KISS1R, also called GPR54. Veracue supplies KP-10 as a lyophilized powder for laboratory research only. It is not intended for human consumption, diagnostic use, or any therapeutic application.",
+
+  "product_description": {
+    "overview": "Kisspeptin-10 sits at the top of the reproductive endocrine cascade. It binds KISS1R on GnRH neurons in the hypothalamus, which triggers GnRH release, which in turn drives LH and FSH secretion from the anterior pituitary. That upstream position is what makes it a reference compound in neuroendocrine research. Most peptides studied in this space act further down the chain.\n\nTwo things about KP-10 are worth stating plainly, because vendor pages routinely blur them.\n\nFirst, KP-10 is a fragment, not a separate molecule. It is residues 45 to 54 of kisspeptin-54, equivalent to residues 112 to 121 of the KISS1 gene product. Both forms bind the same receptor with comparable affinity. Published Ki values for KP-10 are 1.59 nM at the rat receptor and 2.33 nM at the human receptor.\n\nSecond, KP-10 and KP-54 behave very differently in circulation. Plasma half-life for KP-10 is roughly 4 minutes in humans, measured at 3.8 minutes in men and 4.1 minutes in women. KP-54 persists far longer at about 27.6 minutes. Study designs built around one form do not transfer cleanly to the other, and a good deal of the published human fertility work used KP-54 rather than KP-10.",
+    "composition": "Veracue's Kisspeptin-10 is supplied as a lyophilized powder, a single-chain synthetic decapeptide with a C-terminal amide. Lyophilization protects the peptide before reconstitution, which matters here because KP-10 is short, unstructured, and readily attacked by peptidases once it is in solution.\n\nSalt form is part of the product identity, not a footnote. Synthetic KP-10 is typically supplied as an acetate or trifluoroacetate salt, and the counterion affects both net peptide content and how the material behaves in buffer. The counterion for this lot is recorded on the batch COA. [VERIFY: confirm salt form with supplier before publishing]",
+    "purpose_and_intended_use": "This product exists to support in vitro and preclinical laboratory research only. It is manufactured, labeled and sold for research use only. It is not for human or veterinary use, not for diagnostic procedures, and not for compounding. It is intended for researchers working on GPR54 receptor pharmacology, hypothalamic-pituitary-gonadal axis models, and GnRH pulse regulation."
+  },
+
+  "product_highlights": [
+    "Isoform stated explicitly, with sequence, molecular weight and CAS number published on the page",
+    "Greater than or equal to 99% HPLC purity, verified per lot",
+    "Mass spectrometry confirmation of molecular mass on every batch",
+    "Batch-specific Certificate of Analysis available before purchase",
+    "Lyophilized format for stability prior to reconstitution",
+    "Cold-chain packaged, dispatched from US facilities"
+  ],
+
+  "key_features": [
+    "Synthetic human Kisspeptin-10, sequence YNWNSFGLRF-NH2, C-terminally amidated",
+    "Molecular weight 1302.45 g/mol, molecular formula C63H83N17O14, CAS 374675-21-5, PubChem CID 25240297",
+    "Minimal active fragment of kisspeptin-54, binding KISS1R with low-nanomolar affinity",
+    "Supplied as a lyophilized powder in a sealed vial",
+    "Purity verified by HPLC, identity supported by mass spectrometry",
+    "Lot-specific COA issued by an independent testing facility",
+    "Labeled strictly for research use only, not for human consumption"
+  ],
+
+  "why_choose_this_product": "The hardest problem with sourcing kisspeptin is not purity. It is knowing what you actually received.\n\nSearch for kisspeptin and most listings return a vial labeled simply \"Kisspeptin\", with no isoform, no sequence, and often no molecular weight. That is a real problem for a peptide family where the two commercial forms differ by 44 residues and by roughly sevenfold in circulating half-life. A researcher who plans around KP-54 pharmacokinetics and receives KP-10 has a failed experiment, not a minor variance.\n\nVeracue lists the isoform in the product name, publishes the full sequence and molecular identifiers on the page, and issues a batch COA carrying both HPLC purity and the measured mass. You can check the mass on the certificate against the expected 1302.45 before the vial leaves the box. That is the standard this listing is built around.",
+
+  "product_specifications": [
+    { "field": "Product Name", "detail": "Kisspeptin-10 (KP-10)", "verified": true },
+    { "field": "Category", "detail": "Research Peptide — KISS1R / GPR54 Agonist", "verified": true },
+    { "field": "Synonyms", "detail": "KP-10, Metastin (45-54), KISS-1 (112-121)", "verified": true },
+    { "field": "Sequence", "detail": "Tyr-Asn-Trp-Asn-Ser-Phe-Gly-Leu-Arg-Phe-NH2 (YNWNSFGLRF-NH2)", "verified": true },
+    { "field": "Residues", "detail": "10", "verified": true },
+    { "field": "Molecular Formula", "detail": "C63H83N17O14 (free base)", "verified": true },
+    { "field": "Molecular Weight", "detail": "1302.45 g/mol (free base)", "verified": true },
+    { "field": "CAS Number", "detail": "374675-21-5", "verified": true },
+    { "field": "PubChem CID", "detail": "25240297", "verified": true },
+    { "field": "Salt / Counterion", "detail": "[VERIFY] see lot COA", "verified": false },
+    { "field": "Form", "detail": "Lyophilized powder", "verified": true },
+    { "field": "Vial Size", "detail": "[VERIFY: mg per vial]", "verified": false },
+    { "field": "Purity", "detail": "Greater than or equal to 99% by HPLC, see current lot's COA for the exact figure", "verified": false },
+    { "field": "Appearance", "detail": "White to off-white lyophilized powder", "verified": true },
+    { "field": "Storage (unreconstituted)", "detail": "Store frozen, protected from light", "verified": true },
+    { "field": "Packaging", "detail": "Sealed glass vial, tamper-evident", "verified": false },
+    { "field": "Research Use", "detail": "Laboratory, in vitro and preclinical research only", "verified": true },
+    { "field": "Quality", "detail": "Independent third-party testing per batch", "verified": false },
+    { "field": "Lot Testing", "detail": "HPLC purity and mass spectrometry identity confirmation", "verified": false },
+    { "field": "Country of Origin", "detail": "United States", "verified": false },
+    { "field": "Price", "detail": "[VERIFY]", "verified": false },
+    { "field": "SKU", "detail": "[VERIFY]", "verified": false }
+  ],
+  "product_specifications_note": "Molecular weight is quoted for the free base. Salt forms carry additional counterion mass, so a COA reporting net peptide content will read lower than the vial's gross weight. State the convention used on the certificate.",
+
+  "purity_and_quality_standards": {
+    "body": "Every Kisspeptin-10 lot is tested by an independent laboratory using high-performance liquid chromatography and mass spectrometry, and each lot is issued its own Certificate of Analysis.\n\nThe two tests answer different questions, and treating them as interchangeable is one of the more common mistakes in this market.",
+    "analytical_methods": [
+      {
+        "method": "RP-HPLC",
+        "establishes": "Chromatographic purity as a percentage of total peak area, plus the presence of synthesis byproducts and degradation products",
+        "does_not_establish": "Molecular identity. A 99% peak says one species dominates, not which species it is"
+      },
+      {
+        "method": "Mass spectrometry",
+        "establishes": "Molecular mass, supporting identity. Distinguishes KP-10 near 1302 Da from KP-54 near 5857 Da without ambiguity",
+        "does_not_establish": "Full sequence order. Two peptides with the same composition share a mass"
+      },
+      {
+        "method": "MS/MS or peptide mapping",
+        "establishes": "Sequence-level confirmation from fragment ion patterns, and detection of truncations or modifications",
+        "does_not_establish": "Quantitative purity. It complements HPLC rather than replacing it"
+      },
+      {
+        "method": "Counterion analysis",
+        "establishes": "Salt identity and net peptide content",
+        "does_not_establish": "Sequence or purity"
+      }
+    ],
+    "closing": "For Kisspeptin-10 specifically, two things are worth checking on any certificate. Confirm the reported mass sits near 1302 Da rather than near 5857 Da, which separates KP-10 from KP-54 immediately. Then look for oxidation, since the tryptophan at position 3 is the residue most likely to pick up 16 Da.\n\nA purity figure on its own does not establish sterility, biological activity, or suitability for any use in humans. It describes one measurement of one lot."
+  },
+
+  "research_applications": [
+    { "area": "Receptor pharmacology", "detail": "Binding and activation at KISS1R / GPR54, including comparisons against KP-54 and truncated analogs" },
+    { "area": "GnRH pulse regulation", "detail": "How kisspeptin signaling shapes the frequency and amplitude of GnRH release" },
+    { "area": "Hypothalamic-pituitary-gonadal axis models", "detail": "Downstream LH and FSH responses in preclinical systems" },
+    { "area": "Steroid feedback research", "detail": "Kisspeptin neurons express estrogen and progesterone receptors, placing them in the feedback loop that regulates GnRH output" },
+    { "area": "Puberty onset research", "detail": "Loss-of-function KISS1R mutations produce hypogonadotropic hypogonadism, reported independently by two groups in 2003 and a foundation of the field" },
+    { "area": "Peptide stability research", "detail": "KP-10's very short circulating half-life makes it a useful model compound for proteolytic degradation work" }
+  ],
+
+  "human_evidence_table": [
+    {
+      "finding": "Acute LH, FSH and testosterone rise after IV infusion in healthy men",
+      "citation": "Dhillo, JCEM 2005",
+      "form_studied": "KP-54",
+      "evidence_level": "Human physiological study",
+      "limitation": "Small sample, single acute infusion"
+    },
+    {
+      "finding": "Dose-dependent LH rise after IV bolus",
+      "citation": "George, 2011",
+      "form_studied": "KP-10",
+      "evidence_level": "Human physiological study",
+      "limitation": "Acute response only, no clinical endpoint"
+    },
+    {
+      "finding": "Triggers oocyte maturation in IVF",
+      "citation": "Jayasena, J Clin Invest 2014; Abbara, Hum Reprod 2017",
+      "form_studied": "KP-54",
+      "evidence_level": "Phase 2 clinical trials",
+      "limitation": "KP-54 only, investigational, not approved"
+    },
+    {
+      "finding": "Twice-daily administration over 14 days blunted the LH response sharply",
+      "citation": "Jayasena, 2009",
+      "form_studied": "KP-54",
+      "evidence_level": "Human study",
+      "limitation": "Tachyphylaxis is the expected result of sustained exposure"
+    },
+    {
+      "finding": "Effects on sexual brain processing in HSDD",
+      "citation": "Comninos, JAMA Netw Open 2022; Thurston, 2023",
+      "form_studied": "Kisspeptin",
+      "evidence_level": "Randomized clinical trials",
+      "limitation": "Single monitored infusions, mechanistic endpoints"
+    },
+    {
+      "finding": "GPR54 loss-of-function causes failure of puberty",
+      "citation": "de Roux 2003; Seminara 2003",
+      "form_studied": "Genetic",
+      "evidence_level": "Human genetic evidence",
+      "limitation": "Establishes necessity, not that exogenous peptide treats anything"
+    }
+  ],
+  "human_evidence_note": "Most of the human fertility literature used kisspeptin-54, not KP-10. A KP-54 trial result is not evidence about a KP-10 product, and citing one on the other is the single most common accuracy failure on competitor pages.",
+
+  "what_this_research_does_not_show": [
+    "A receptor pathway is not a treatment. KISS1R activation raising LH is mechanism, not outcome.",
+    "An acute LH response is not a fertility result. Hormone movement over ninety minutes says nothing about pregnancy rates.",
+    "KP-54 clinical data does not transfer to KP-10. Different half-life, different exposure profile, different study design.",
+    "Animal findings do not establish human efficacy, and no kisspeptin form has an approved therapeutic indication.",
+    "Purity does not establish safety. HPLC describes the contents of a vial, nothing further."
+  ],
+
+  "regulatory_status": {
+    "body": "There is no FDA-approved kisspeptin drug product in the United States, in any isoform.\n\nKisspeptin-10 was reviewed by name at the FDA Pharmacy Compounding Advisory Committee meeting on October 29, 2024, nominated for the treatment of secondary hypogonadism in men. FDA recommended against including it on the 503A Bulks List, and the Committee voted unanimously against inclusion, 0 in favor and 11 opposed, citing a lack of convincing safety and efficacy data. That vote means KP-10 is not available to compounding pharmacies as a bulk drug substance.",
+    "distinctions": [
+      { "term": "FDA approval", "meaning": "An approved drug product exists. No kisspeptin form has one." },
+      { "term": "An advisory committee vote", "meaning": "A recommendation to FDA, not a rule. FDA retains the final decision on the bulks list." },
+      { "term": "Research-use-only labeling", "meaning": "A supply-chain status. It is not a regulatory endorsement of anything." }
+    ],
+    "closing": "Veracue is not a compounding pharmacy and does not operate as a compounding facility under Section 503A. This product is supplied as a research chemical only."
+  },
+
+  "storage_and_handling": [
+    "Store lyophilized KP-10 frozen and away from light until it is needed at the bench",
+    "Once reconstituted, keep refrigerated and use within your protocol's stability window. Reconstituted peptides degrade faster than lyophilized powder, and short unstructured peptides like KP-10 are particularly vulnerable",
+    "Aliquot after reconstitution so you avoid repeated freeze-thaw cycles",
+    "Add reconstitution solvent down the vial wall rather than directly onto the cake, and swirl instead of shaking",
+    "Handle with standard laboratory PPE appropriate for research-use chemical compounds"
+  ],
+
+  "who_this_product_is_for": {
+    "audiences": [
+      "Researchers studying GPR54 receptor pharmacology and kisspeptin signaling",
+      "Laboratories running in vitro or preclinical neuroendocrine research",
+      "Academic institutions conducting reproductive endocrinology research",
+      "Qualified professionals sourcing isoform-verified peptides for comparative protocols"
+    ],
+    "exclusion": "This product is not intended for individual consumers seeking to use it outside a research setting."
+  },
+
+  "shipping_and_packaging": "Kisspeptin-10 ships in a sealed, tamper-evident vial, cold-chain packaged to protect the lyophilized cake from temperature swings in transit. Carriers, transit times and packaging materials vary by order and season. Check Veracue's shipping policy page for current specifics before ordering.",
+
+  "important_disclaimer": "Kisspeptin-10 sold by Veracue is intended strictly for in vitro laboratory and preclinical research use. It is not a drug, dietary supplement, cosmetic or food product, and it has not been evaluated or approved by the FDA for human or veterinary use, diagnosis, treatment, cure or prevention of any disease or condition. This product must not be administered to humans or animals. Nothing on this page constitutes medical advice, and no statement here should be read as a therapeutic or health claim. By purchasing, the buyer confirms they are a qualified researcher, laboratory or institution acquiring it for lawful research purposes only, and accepts full responsibility for compliance with all applicable local, state and federal regulations governing research chemicals.",
+
+  "faq": [
+    {
+      "question": "Which kisspeptin isoform is this product?",
+      "answer": "This is Kisspeptin-10, the ten-residue fragment, sequence YNWNSFGLRF-NH2, CAS 374675-21-5. It is not Kisspeptin-54. The two are different chemical entities with different molecular weights, different CAS numbers and very different circulating half-lives, so check the isoform on any kisspeptin listing before ordering."
+    },
+    {
+      "question": "What is the difference between Kisspeptin-10 and Kisspeptin-54?",
+      "answer": "KP-10 is the C-terminal fragment of KP-54, residues 45 to 54. Both activate the same receptor with comparable affinity, because the amidated C-terminal tail they share is the part the receptor recognizes. The practical difference is stability. KP-10 has a plasma half-life near 4 minutes in humans while KP-54 runs close to 28 minutes. Molecular weights are 1302.45 and roughly 5857 respectively, which is why mass spectrometry separates them instantly."
+    },
+    {
+      "question": "Are KISS1, kisspeptin and KISS1R the same thing?",
+      "answer": "No, and conflating them is a frequent error. KISS1 is the gene that encodes the kisspeptin precursor protein. Kisspeptin is the peptide family produced when that precursor is cleaved, including KP-54, KP-14, KP-13 and KP-10. KISS1R, also called GPR54, is the receptor those peptides bind. A product cannot correctly be called \"KISS1 peptide\"."
+    },
+    {
+      "question": "How does Kisspeptin-10 work?",
+      "answer": "KP-10 binds KISS1R, a Gq/11-coupled receptor on GnRH neurons. Receptor activation drives phospholipase C, which generates IP3 and DAG, which raise intracellular calcium and activate protein kinase C. That combination depolarizes the neuron and promotes pulsatile GnRH release, which then stimulates LH and FSH secretion from the anterior pituitary. Kisspeptin acts on the hypothalamus, not directly on the pituitary."
+    },
+    {
+      "question": "Does a 99% HPLC result confirm this is Kisspeptin-10 and not another isoform?",
+      "answer": "No. HPLC measures chromatographic purity, meaning how much of the sample is one dominant species. It does not identify which species that is. Mass confirmation does that job, since KP-10 near 1302 Da and KP-54 near 5857 Da cannot be mistaken for each other by mass. Read the two results together, not separately."
+    },
+    {
+      "question": "What does mass spectrometry confirm, and what does it miss?",
+      "answer": "It confirms the molecular mass matches the expected value, which strongly supports identity and rules out the wrong isoform. It does not confirm the order of residues, because peptides with identical composition share a mass. Sequence-level confirmation needs MS/MS or peptide mapping, which not every research supplier provides."
+    },
+    {
+      "question": "What should I check on the Certificate of Analysis?",
+      "answer": "Confirm the lot number matches your vial, since a sample COA from a different batch tells you nothing about the material in hand. Check that the reported mass sits near 1302 Da. Check the HPLC purity figure and the method. Look at the testing date. Check whether a counterion is identified, because that affects net peptide content."
+    },
+    {
+      "question": "Why does the molecular weight on the COA differ from 1302.45?",
+      "answer": "1302.45 is the free base. Synthetic peptides are usually supplied as acetate or trifluoroacetate salts, and the counterion adds mass. A certificate reporting net peptide content will also read lower than the gross vial weight. Neither is an error, but the convention should be stated so figures can be compared."
+    },
+    {
+      "question": "Is Kisspeptin FDA approved?",
+      "answer": "No kisspeptin form has FDA approval for any indication. Kisspeptin-10 was reviewed by the FDA Pharmacy Compounding Advisory Committee on October 29, 2024, and the Committee voted unanimously, 0 to 11, against adding it to the 503A Bulks List, citing insufficient safety and efficacy data."
+    },
+    {
+      "question": "Has Kisspeptin-10 been studied in humans?",
+      "answer": "Yes, in physiological research. Intravenous KP-10 produces a dose-dependent rise in LH in healthy volunteers. The important caveat is that most of the well-known human fertility research, including the IVF oocyte maturation trials, used Kisspeptin-54 rather than KP-10. Check which form a paper used before applying it to a KP-10 protocol."
+    },
+    {
+      "question": "Why do most suppliers stock KP-10 rather than KP-54?",
+      "answer": "Synthesis cost and difficulty. A ten-residue peptide is straightforward to make at high purity. A 54-residue peptide is far harder and considerably more expensive, which is why KP-54 listings are rare and priced accordingly."
+    },
+    {
+      "question": "How should Kisspeptin-10 be stored?",
+      "answer": "Frozen and protected from light while lyophilized. After reconstitution, refrigerate, aliquot, and use within your protocol's stability window. Minimize freeze-thaw cycles, since KP-10's short unstructured sequence gives it little protection against degradation."
+    }
+  ],
+
+  "internal_linking": {
+    "links": [
+      { "anchor_text": "Certificates of Analysis", "url": "/certificates", "reason": "Directly supports the COA claims made in the purity section", "url_verified_live": true },
+      { "anchor_text": "Peptide calculator", "url": "/peptide-calculator", "reason": "Practical utility for researchers planning reconstitution volumes", "url_verified_live": true },
+      { "anchor_text": "Research articles", "url": "/blog", "reason": "Destination for the future KP-10 vs KP-54 deep dive", "url_verified_live": true },
+      { "anchor_text": "Help & FAQ", "url": "/faq", "reason": "Extends the Q&A depth on storage, COA and RUO questions", "url_verified_live": true },
+      { "anchor_text": "About Veracue", "url": "/about-us", "reason": "Supports E-E-A-T through testing and sourcing background", "url_verified_live": true },
+      { "anchor_text": "Shipping policy", "url": "/shipping-policy", "reason": "Referenced directly in the Shipping & Packaging section", "url_verified_live": true },
+      { "anchor_text": "Medical disclaimer", "url": "/medical-disclaimer", "reason": "Reinforces the research-use boundary", "url_verified_live": true },
+      { "anchor_text": "Shop all peptides", "url": "/shop", "reason": "Category-level navigation", "url_verified_live": true },
+      { "anchor_text": "Contact our team", "url": "/contact-us", "reason": "Procurement and bulk enquiry route", "url_verified_live": true }
+    ],
+    "note": "Add a category link once a Reproductive & Endocrine Research category exists. Do not link /product/ahk-cu or /product/nad-plus from this page, since neither is mechanistically related."
+  },
+
+  "external_linking": [
+    { "anchor_text": "PubChem — Kisspeptin-10", "destination": "pubchem.ncbi.nlm.nih.gov", "reason": "Authoritative source for formula, mass and CAS" },
+    { "anchor_text": "PubMed", "destination": "pubmed.ncbi.nlm.nih.gov", "reason": "Primary literature on KISS1R signaling" },
+    { "anchor_text": "FDA Pharmacy Compounding Advisory Committee", "destination": "fda.gov", "reason": "Primary source for the October 2024 kisspeptin-10 vote" },
+    { "anchor_text": "NCBI Bookshelf — kisspeptin and the HPG axis", "destination": "ncbi.nlm.nih.gov", "reason": "Peer-reviewed background on the GnRH pathway" },
+    { "anchor_text": "ClinicalTrials.gov", "destination": "clinicaltrials.gov", "reason": "Registered kisspeptin trial records" }
+  ],
+
+  "image_seo": [
+    {
+      "slot": "Image 1 — Hero Product Vial",
+      "file_name": "kisspeptin-10-kp-10-research-peptide-vial-veracue.jpg",
+      "alt_text": "Kisspeptin-10 KP-10 lyophilized research peptide vial from Veracue",
+      "title": "Kisspeptin-10 Research Peptide Vial",
+      "caption": "Kisspeptin-10 is supplied as a lyophilized powder for laboratory research use only."
+    },
+    {
+      "slot": "Image 2 — Certificate of Analysis",
+      "file_name": "kisspeptin-10-certificate-of-analysis-hplc-mass-spec.jpg",
+      "alt_text": "Kisspeptin-10 Certificate of Analysis showing HPLC purity and mass spectrometry results",
+      "title": "Kisspeptin-10 Certificate of Analysis",
+      "caption": "Each lot is issued a batch-specific Certificate of Analysis."
+    },
+    {
+      "slot": "Image 3 — Pathway Diagram",
+      "file_name": "kisspeptin-10-kiss1r-gnrh-lh-fsh-pathway-diagram.jpg",
+      "alt_text": "Diagram of the Kisspeptin-10 pathway from KISS1R activation through GnRH release to LH and FSH",
+      "title": "Kisspeptin-10 Mechanism of Action",
+      "caption": "KP-10 binds KISS1R on GnRH neurons, upstream of pituitary LH and FSH release."
+    }
+  ],
+  "image_seo_note": "Do not label a generic peptide structure image as the Veracue product unless it is genuinely the KP-10 structure.",
+
+  "schema_recommendations": [
+    { "type": "Product", "use": "yes", "detail": "name 'Kisspeptin-10 (KP-10)', description, SKU, brand, image" },
+    { "type": "Offer", "use": "conditional", "detail": "Nested in Product, only once live price and availability are accurate" },
+    { "type": "BreadcrumbList", "use": "yes", "detail": "Home > Shop > [category] > Kisspeptin-10" },
+    { "type": "FAQPage", "use": "yes", "detail": "For the 12-question block above" },
+    { "type": "Organization", "use": "yes", "detail": "Veracue legal entity, matching footer and contact usage" },
+    { "type": "WebPage", "use": "yes", "detail": "For the page itself" },
+    { "type": "AggregateRating", "use": "no", "detail": "Omit. No genuine review data exists for this product" }
+  ],
+
+  "verification_notes": {
+    "verified_against_primary_sources": [
+      "KP-10 sequence, formula C63H83N17O14, MW 1302.45, CAS 374675-21-5, PubChem CID 25240297 (PubChem, Tocris/Bio-Techne)",
+      "KP-10 Ki values 1.59 nM rat, 2.33 nM human (Tocris)",
+      "Half-lives: KP-10 3.8 min in men and 4.1 min in women (Jayasena 2011), KP-54 27.6 min (Dhillo 2005)",
+      "KP-54 identity: MW 5857.43, formula C258H401N79O78, CAS 374683-24-6, PubChem CID 71306396",
+      "FDA PCAC vote of 0 yes, 11 no, 0 abstain on October 29, 2024, from FDA's final summary minutes"
+    ],
+    "corrections_to_supplied_research_package": [
+      "KP-54 CAS listed as 388138-21-4 in the package. The correct number is 374683-24-6."
+    ],
+    "excluded_for_insufficient_evidence": [
+      "All estimated search volumes. These were third-party estimates, not Google Keyword Planner data, and are not stated as fact anywhere on the page.",
+      "Any claim that KP-54 clinical results apply to KP-10."
+    ],
+    "blockers_before_publication": [
+      "Product does not exist on the live site. Source it and confirm the isoform from supplier documentation.",
+      "No suitable shop category exists. Add Reproductive & Endocrine Research.",
+      "Vial size, price, SKU, salt form and COA availability all unverified.",
+      "The live shop FAQ claims Veracue carries BPC-157, TB-500, Semaglutide, Tirzepatide, Ipamorelin, CJC-1295, PT-141, Melanotan II, GHK-Cu, Thymosin Alpha-1, Epithalon, Selank and Semax. The catalog holds two products. Fix this before adding a third, since it undermines every trust claim this page makes.",
+      "The footer disclaimer says some items may test below 99% while the shop hero asserts 99% or higher on every batch. Pick one position."
+    ]
+  },
+
+  "kp54_swap_table": {
+    "note": "If the sourced product turns out to be Kisspeptin-54, swap these values and the page holds. The evidence table also flips: the IVF and hypothalamic amenorrhea trials become directly on-entity, and the KP-10 LH bolus work becomes the comparison point instead.",
+    "rows": [
+      { "field": "Product name", "kp10": "Kisspeptin-10 (KP-10)", "kp54": "Kisspeptin-54 (KP-54)" },
+      { "field": "Synonyms", "kp10": "Metastin (45-54), KISS-1 (112-121)", "kp54": "Metastin, KISS-1 (68-121)" },
+      { "field": "Residues", "kp10": "10", "kp54": "54" },
+      { "field": "Molecular formula", "kp10": "C63H83N17O14", "kp54": "C258H401N79O78" },
+      { "field": "Molecular weight", "kp10": "1302.45", "kp54": "5857.43" },
+      { "field": "CAS", "kp10": "374675-21-5", "kp54": "374683-24-6" },
+      { "field": "PubChem CID", "kp10": "25240297", "kp54": "71306396" },
+      { "field": "Plasma half-life", "kp10": "~4 min", "kp54": "~27.6 min" },
+      { "field": "Primary keyword", "kp10": "kisspeptin-10 research peptide", "kp54": "kisspeptin-54 research peptide" }
+    ]
+  }
+}

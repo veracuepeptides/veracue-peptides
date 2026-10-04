@@ -1,0 +1,889 @@
+{
+  "deliverable": {
+    "client": "Veracue Peptides",
+    "product": "AOD9604 Peptide",
+    "route": "/product/aod9604",
+    "revision": "v2 — polished, compact, aligned to the AHK-Cu house pattern",
+    "implementation_status": "Content package only; no repository access, so nothing has been implemented on the live site.",
+    "house_pattern_reference": "/product/ahk-cu (live)"
+  },
+  "data_status": {
+    "live_catalog_check": "The /shop page listed 3 compounds (Selank, AHK-Cu, NAD+) at the time of writing; no AOD9604 record.",
+    "coa_archive_check": "The /certificates page showed 'Certificates are being added' with 0 reports; no AOD9604 COA.",
+    "category_check": "'Weight Loss & Metabolic' exists in the live category filter and is the closest fit.",
+    "missing_first_party_fields": [
+      "vial size / net amount",
+      "form",
+      "salt/counterion",
+      "purity + method",
+      "MS result",
+      "lot / date / lab",
+      "excipients",
+      "storage",
+      "shipping",
+      "SKU / price / stock"
+    ]
+  },
+  "seo": {
+    "meta_title": "AOD9604 Research Peptide (Tyr-hGH 177-191) | Veracue",
+    "meta_description": "AOD9604 peptide for laboratory research: sequence, molecular identity, clinical-development history, evidence limits, and COA guidance. Research use only.",
+    "slug": "/product/aod9604",
+    "canonical": "https://veracue-peptides.vercel.app/product/aod9604",
+    "og_title": "AOD9604 Peptide: Identity, Research History and COA Guidance | Veracue",
+    "og_description": "Sequence, molecular weight, human trial history, and COA guidance for AOD9604. Research use only.",
+    "primary_keyword": "AOD9604 peptide",
+    "secondary_keywords_used": [
+      "what is aod9604",
+      "aod-9604 peptide",
+      "aod 9604",
+      "aod9604 sequence",
+      "aod9604 molecular weight",
+      "aod9604 clinical trial",
+      "aod9604 side effects",
+      "aod9604 coa",
+      "aod9604 research",
+      "aod9604 dosage",
+      "aod 9604 before and after"
+    ],
+    "avoided_terms": [
+      "fat burner",
+      "miracle peptide",
+      "best peptide for weight loss",
+      "peptides for weight loss (as a broad commercial target)"
+    ]
+  },
+  "page": {
+    "hero": {
+      "breadcrumb": [
+        "Home",
+        "Shop",
+        "AOD9604"
+      ],
+      "category_label": "Weight Loss & Metabolic",
+      "eyebrow": "Research Use Only",
+      "h1": "AOD9604 Peptide",
+      "subtitle_italic": "YLRIVQCRSVEGSCGF · 16 amino acids · Cys7–Cys14 disulfide",
+      "description_blurb": "AOD9604 is a synthetic 16-amino-acid peptide corresponding to residues 177-191 of human growth hormone with an added N-terminal tyrosine (Tyr-hGH 177-191), listed by some suppliers as HGH Fragment 176-191 or LAT8881. Veracue supplies it as a research material for laboratory work. The most directly relevant human data come from a 24-week Phase 2B trial (Metabolic Pharmaceuticals, 2007), the largest efficacy study of AOD9604 in adults with obesity. That trial did not find a statistically significant weight-loss benefit over placebo, so this material does not establish weight loss, treatment effect or safety in people.",
+      "commerce_fields": {
+        "price": null,
+        "sale_price": null,
+        "sku": null,
+        "size_options": null,
+        "weight": null,
+        "availability": null,
+        "render_rule": "Hide price, size selector, Add to Cart and Buy Now until Veracue supplies first-party values."
+      },
+      "compound_profile_tiles": {
+        "render_rule": "Suppress the template's 'Proof, Not Promises' tiles (Verified Purity ≥99%, 3rd Party, COA on file) until an AOD9604 lot COA is published.",
+        "replacement_tiles": [
+          {
+            "label": "Sequence",
+            "value": "16 aa",
+            "caption": "hGH 177–191 + Tyr"
+          },
+          {
+            "label": "Human trials",
+            "value": "6",
+            "caption": "2001–2006"
+          },
+          {
+            "label": "Key efficacy result",
+            "value": "Not significant",
+            "caption": "Phase 2B vs placebo"
+          },
+          {
+            "label": "Use",
+            "value": "RUO",
+            "caption": "Laboratory research only"
+          }
+        ]
+      },
+      "intended_use_box": "This material is offered for in vitro and laboratory research, such as peptide characterisation, stability studies or cell-based work in adipocyte biology. It is not a drug, supplement, food or cosmetic, and it is not intended for administration to humans or animals.",
+      "product_highlights": [
+        "Synthetic 16-residue peptide: hGH residues 177–191 plus an N-terminal tyrosine, one Cys7–Cys14 disulfide",
+        "Identity reference: PubChem CID 71300630; C78H123N23O23S2; 1815.1 g/mol (free base)",
+        "Supplied form, vial size and lot data: pending Veracue documentation",
+        "Labelled for laboratory research use only; not for human or veterinary use"
+      ]
+    },
+    "sections": [
+      {
+        "id": "research-snapshot",
+        "heading_level": "h2",
+        "heading": "Research Snapshot",
+        "evidence_label": "Reference",
+        "table": {
+          "columns": [
+            "Attribute",
+            "Detail"
+          ],
+          "rows": [
+            [
+              "Names",
+              "AOD9604, AOD-9604, AOD 9604 (also studied as LAT8881)"
+            ],
+            [
+              "Sequence",
+              "YLRIVQCRSVEGSCGF"
+            ],
+            [
+              "Length",
+              "16 amino acids"
+            ],
+            [
+              "Disulfide bond",
+              "Cys7–Cys14"
+            ],
+            [
+              "Molecular formula (free base)",
+              "C78H123N23O23S2"
+            ],
+            [
+              "Average molecular weight",
+              "1815.1 g/mol"
+            ],
+            [
+              "PubChem CID",
+              "71300630"
+            ],
+            [
+              "Status",
+              "Research Use Only. Not FDA-approved."
+            ]
+          ]
+        }
+      },
+      {
+        "id": "what-is-aod9604",
+        "heading_level": "h2",
+        "heading": "What Is AOD9604 Peptide?",
+        "evidence_label": "Reference",
+        "body": [
+          "AOD9604 is a synthetic peptide built from the tail end of human growth hormone (hGH): residues 177–191, with an extra tyrosine added at the front. One disulfide bond closes part of the chain into a loop. Metabolic Pharmaceuticals developed it in Australia as a candidate obesity drug, building on Monash University research into the C-terminal region of hGH. Later clinical protocols refer to the same peptide as LAT8881.",
+          "The name AOD9604 is sometimes used for the closely related sequence hGH Fragment 176-191. Native hGH residues 176–191 begin with phenylalanine (FLRIVQCRSVEGSCGF), while AOD9604 adds a tyrosine ahead of residues 177–191 (YLRIVQCRSVEGSCGF). Because vendors use the two names inconsistently, sequence, disulfide state, expected mass and lot-specific analytical data are the most reliable way to confirm which peptide a product actually is."
+        ]
+      },
+      {
+        "id": "molecular-identity",
+        "heading_level": "h2",
+        "heading": "Molecular Identity and Specifications",
+        "evidence_label": "Reference",
+        "body": [
+          "These values describe the AOD9604 molecule itself, checked against PubChem and FDA's 2024 evaluation. They are reference data, not a result from a specific Veracue lot."
+        ],
+        "table": {
+          "columns": [
+            "Property",
+            "Value"
+          ],
+          "rows": [
+            [
+              "Sequence",
+              "Tyr-Leu-Arg-Ile-Val-Gln-Cys-Arg-Ser-Val-Glu-Gly-Ser-Cys-Gly-Phe"
+            ],
+            [
+              "Length",
+              "16 amino acids"
+            ],
+            [
+              "Disulfide bond",
+              "Cys7–Cys14"
+            ],
+            [
+              "Molecular formula (free base)",
+              "C78H123N23O23S2"
+            ],
+            [
+              "Average molecular weight",
+              "1815.1 g/mol"
+            ],
+            [
+              "Monoisotopic mass",
+              "1813.860 Da"
+            ],
+            [
+              "CAS number",
+              "221231-10-3"
+            ],
+            [
+              "PubChem CID",
+              "71300630"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "why-researchers-study",
+        "heading_level": "h2",
+        "heading": "Why Researchers Study AOD9604",
+        "evidence_label": "Reference",
+        "body": [
+          "AOD9604 is a useful case study in isolating one part of a hormone from the rest. Growth hormone affects growth, glucose handling and fat metabolism together. The research programme behind AOD9604 asked whether a short C-terminal fragment could reproduce the fat-metabolism signal on its own.",
+          "It also has a documented, if mixed, translational record. Preclinical findings in rodents led to a full sequence of human trials and a clear efficacy result at the end. That makes it a useful reference for researchers examining how animal metabolic signals do or do not carry over to people. Its defined sequence and single disulfide bond also make it useful for method-development work, such as peptide characterisation and stability testing."
+        ]
+      },
+      {
+        "id": "mechanism",
+        "heading_level": "h2",
+        "heading": "Mechanism and Biological Research Context",
+        "evidence_label": "In Vitro + Animal + Human Clinical",
+        "body": [
+          "AOD9604's molecular target has not been established. In cell assays, it did not compete with hGH for growth-hormone-receptor binding and did not drive receptor-dependent cell growth. In human trials, serum IGF-1 did not differ from placebo. So it does not behave as a conventional GH secretagogue.",
+          "Preclinical work in obese mice found that AOD9604 raised expression of the β3-adrenergic receptor, the main lipolytic receptor in fat cells. Its chronic weight and lipolysis effects were absent in β3-AR knockout mice, though an acute rise in energy expenditure still occurred. These are mechanistic observations from specific models, not a confirmed pathway."
+        ]
+      },
+      {
+        "id": "human-clinical-history",
+        "heading_level": "h2",
+        "heading": "Human Clinical Research History",
+        "evidence_label": "Human Clinical",
+        "body": [
+          "AOD9604 has a genuine human research history. Between 2001 and 2006, its developer ran six randomised, placebo-controlled trials, moving from intravenous safety studies to oral efficacy trials in adults with obesity."
+        ],
+        "table": {
+          "columns": [
+            "Stage",
+            "Route",
+            "Population",
+            "Main takeaway"
+          ],
+          "rows": [
+            [
+              "Phase 1",
+              "Intravenous, single doses",
+              "Healthy men",
+              "Well tolerated; no serious adverse events"
+            ],
+            [
+              "Phase 2a",
+              "Intravenous and oral, single/short-term doses",
+              "Men with obesity",
+              "Well tolerated; no consistent weight signal"
+            ],
+            [
+              "Phase 2b, 12-week study",
+              "Oral, once daily",
+              "Adults with obesity",
+              "Positive weight-loss signal reported in a conference abstract; full data never published"
+            ],
+            [
+              "Phase 2b, OPTIONS study (24 weeks)",
+              "Oral, once daily, with diet and exercise",
+              "536 adults with obesity",
+              "No statistically significant weight loss vs placebo at 12 or 24 weeks; obesity programme ended in 2007"
+            ]
+          ]
+        },
+        "after_table": [
+          "The OPTIONS study was the decisive efficacy trial. It was the largest and longest of the six, and it directly tested weight loss against placebo. When it missed its endpoint, the developer terminated obesity development in February 2007. The earlier positive signal from the smaller 12-week study was never confirmed.",
+          "After 2007, a different sponsor, Lateral Pharma, carried the peptide forward under the name LAT8881. It was later studied in trials for neuropathic pain, acute migraine and lumbar radicular pain. Those studies are not summarised here, as they fall outside AOD9604's metabolic research history."
+        ]
+      },
+      {
+        "id": "side-effects",
+        "heading_level": "h2",
+        "heading": "AOD9604 Side Effects: What Human Studies Reported",
+        "evidence_label": "Human Clinical",
+        "body": [
+          "Published human safety data on AOD9604 are limited to the sponsor's six historical trials, summarised in one pooled 2013 paper. Headache was the most frequently reported adverse event, at rates similar to placebo. At the highest oral dose in a short 7-day study, participants reported diarrhoea and flatulence more often. In one intravenous study, a small number of participants reported euphoria. Across the trials, IGF-1 levels and glucose tolerance did not differ meaningfully from placebo, and no anti-AOD9604 antibodies were detected.",
+          "These findings describe a specific clinical-grade material given under trial supervision. They should not be read as describing the safety of any unspecified current research lot."
+        ]
+      },
+      {
+        "id": "preclinical",
+        "heading_level": "h2",
+        "heading": "Preclinical Evidence",
+        "evidence_label": "Animal + In Vitro",
+        "body": [
+          "Most of the early positive signal for AOD9604 comes from obese rodents. These findings describe what researchers observed in those models. They are not evidence of an effect in people, and the largest human trial did not reproduce them."
+        ],
+        "table": {
+          "columns": [
+            "Model",
+            "Reported finding"
+          ],
+          "rows": [
+            [
+              "Obese Zucker rats, oral dosing",
+              "Body-weight gain reduced by more than half vs control; higher adipose lipolytic activity; insulin sensitivity unchanged"
+            ],
+            [
+              "Obese and lean mice, chronic dosing",
+              "Less weight gain and more fat oxidation in obese mice; no GH-receptor binding or cell proliferation in vitro"
+            ],
+            [
+              "β3-AR knockout mice",
+              "Chronic weight and lipolysis effects absent, though an acute rise in energy expenditure still occurred"
+            ],
+            [
+              "Rabbit collagenase osteoarthritis model, intra-articular",
+              "Cartilage-repair outcomes reported, alone and combined with hyaluronic acid"
+            ]
+          ]
+        },
+        "after_table": [
+          "A related peptide, AOD9401, was studied separately in some of the same rodent models; those results belong to AOD9401, not AOD9604."
+        ]
+      },
+      {
+        "id": "evidence-limits",
+        "heading_level": "h2",
+        "heading": "What the Evidence Does Not Establish",
+        "evidence_label": "Evidence assessment",
+        "list": [
+          "That AOD9604 causes weight or fat loss in humans, given the null result of the largest efficacy trial",
+          "A confirmed mechanism of action",
+          "Safety or efficacy for subcutaneous or topical use, since no published human data cover those routes",
+          "Cartilage or joint repair in humans; that evidence is animal-only",
+          "Anything about the identity, purity or content of a specific vial, which requires lot-specific testing"
+        ]
+      },
+      {
+        "id": "researcher-notes",
+        "heading_level": "h2",
+        "heading": "Researcher Questions and Practical Notes",
+        "evidence_label": "Reference",
+        "problem_solution": [
+          {
+            "title": "Confirming AOD9604 identity across sources",
+            "problem": "Vendor listings use AOD9604, AOD-9604 and hGH Fragment 176-191 somewhat interchangeably, and they do not always describe the same peptide.",
+            "solution": "Confirm identity from sequence, disulfide state and expected mass together, cross-checked against a lot-specific analytical result, rather than from the product name alone."
+          },
+          {
+            "title": "Telling a molecule reference apart from a lot result",
+            "problem": "A correct formula and molecular weight on a product page say nothing about what is in a specific vial.",
+            "solution": "Treat PubChem-level identity data and a lot's certificate of analysis as two different things. Confirm purity and content only from the certificate that matches that lot."
+          },
+          {
+            "title": "Reading animal findings alongside human results",
+            "problem": "Rodent weight-loss findings and the human trial outcome are easy to blend into one impression.",
+            "solution": "Keep the two separate. Preclinical work reported metabolic effects in obese rodents, while the largest human efficacy trial did not find a significant weight-loss benefit over placebo."
+          },
+          {
+            "title": "Interpreting mechanism language",
+            "problem": "Terms such as 'stimulates lipolysis' can read as a demonstrated effect rather than an observation.",
+            "solution": "AOD9604's molecular target has not been established, so treat mechanism findings from specific cell and animal models as context, not as proof of a confirmed pathway."
+          },
+          {
+            "title": "What 'AOD9604 benefits' searches actually lead to",
+            "problem": "Search interest in AOD9604 benefits often points to promotional summaries rather than trial data.",
+            "solution": "The relevant research is a set of preclinical metabolic findings and a human trial programme whose primary efficacy result was not significant; that is what the evidence supports."
+          },
+          {
+            "title": "Reading historical trial protocols without using them as instructions",
+            "problem": "Clinical trial dose levels and schedules can look like usage guidance.",
+            "solution": "Trial design, route and population are described here for context only. Veracue does not provide dosing, reconstitution or administration guidance for any product."
+          },
+          {
+            "title": "Why a purity percentage alone is not enough",
+            "problem": "A single purity number does not confirm what a peptide is or how much is actually in a vial.",
+            "solution": "Look for a named method such as HPLC, a mass spectrometry result consistent with the expected species, a matching lot number, and the stated salt or counterion form."
+          },
+          {
+            "title": "Distinguishing AOD9604 from related sequences",
+            "problem": "AOD9604, native hGH 176-191 and AOD9401 are closely related but distinct peptides, and findings for one are sometimes applied to another.",
+            "solution": "Match on the printed sequence: AOD9604 begins Tyr-Leu-Arg..., native hGH 176-191 begins Phe-Leu-Arg..., and AOD9401 is a separate analogue studied in its own set of papers."
+          },
+          {
+            "title": "Checking what Veracue currently documents",
+            "problem": "Procurement teams need to know which specifications are actually confirmed before ordering.",
+            "solution": "The specification table below marks each field as either documented by Veracue or not yet published, without filling gaps from other vendors' listings."
+          },
+          {
+            "title": "Placing AOD9604 among other growth-hormone-related peptides",
+            "problem": "AOD9604 is often grouped with GH secretagogues and GLP-1-class compounds in casual comparisons.",
+            "solution": "Compare by mechanism, development stage and evidence type rather than by expected outcome. The table below does this without ranking compounds or transferring another molecule's approval to AOD9604."
+          }
+        ]
+      },
+      {
+        "id": "comparison",
+        "heading_level": "h2",
+        "heading": "AOD9604 Compared With Related Research Compounds",
+        "evidence_label": "Reference",
+        "body": [
+          "These compounds are often mentioned alongside AOD9604. They differ in target, development stage and evidence base, so the table compares those features rather than expected results."
+        ],
+        "table": {
+          "columns": [
+            "Compound",
+            "Molecule class",
+            "Primary target",
+            "Human evidence",
+            "Development status"
+          ],
+          "rows": [
+            [
+              "AOD9604",
+              "16-residue hGH C-terminal analogue",
+              "Not established",
+              "Phase 1–2b, oral and IV",
+              "Obesity programme ended 2007; not approved"
+            ],
+            [
+              "Tesamorelin",
+              "GHRH analogue",
+              "GHRH receptor",
+              "Phase 3",
+              "FDA-approved (Egrifta) for excess abdominal fat in HIV-associated lipodystrophy; not for weight loss"
+            ],
+            [
+              "Ipamorelin",
+              "Synthetic pentapeptide",
+              "Ghrelin receptor (GHS-R1a)",
+              "One Phase 2 trial (postoperative ileus)",
+              "Primary endpoint not met; not approved"
+            ],
+            [
+              "CJC-1295",
+              "GHRH(1-29) analogue",
+              "GHRH receptor",
+              "Early-phase studies in healthy adults",
+              "Sustained GH/IGF-1 rises reported; not approved"
+            ],
+            [
+              "Retatrutide",
+              "Multi-receptor agonist",
+              "GIP, GLP-1 and glucagon receptors",
+              "Phase 3 programme",
+              "Investigational; not FDA-approved as of publication"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "product-specifications",
+        "heading_level": "h2",
+        "heading": "Product Specifications",
+        "evidence_label": "Veracue product data",
+        "body": [
+          "The fields below cover what a researcher or procurement team would typically check before ordering. Veracue had not published AOD9604-specific values for these fields at the time of writing. Each will be completed from first-party lot documentation as it becomes available."
+        ],
+        "table": {
+          "columns": [
+            "Field",
+            "Status"
+          ],
+          "rows": [
+            [
+              "Vial size / net peptide amount",
+              "Not publicly specified by Veracue"
+            ],
+            [
+              "Physical form",
+              "Not publicly specified by Veracue"
+            ],
+            [
+              "Salt / counterion form",
+              "Not publicly specified by Veracue"
+            ],
+            [
+              "Purity and analytical method",
+              "Not publicly specified by Veracue"
+            ],
+            [
+              "Mass spectrometry identity result",
+              "Not publicly specified by Veracue"
+            ],
+            [
+              "Lot number, test date, testing laboratory",
+              "Not publicly specified by Veracue"
+            ],
+            [
+              "Excipients",
+              "Not publicly specified by Veracue"
+            ],
+            [
+              "Storage conditions",
+              "Not publicly specified by Veracue"
+            ],
+            [
+              "Shipping conditions",
+              "Not publicly specified by Veracue"
+            ],
+            [
+              "SKU, price, availability",
+              "Not publicly specified by Veracue"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "coa",
+        "heading_level": "h2",
+        "heading": "Reading an AOD9604 Certificate of Analysis",
+        "evidence_label": "Analytical guidance",
+        "body": [
+          "Veracue's public certificate library did not include an AOD9604 certificate of analysis at the time of writing. To request lot documentation for a specific order, contact the Veracue team.",
+          "A useful AOD9604 COA confirms what the material is, how pure it is by a named method, and that the report belongs to the lot in hand. Look for the peptide name and sequence, plus a lot number matching the vial. It should also give purity by a named method such as HPLC, a mass spectrometry result stated against an expected value, and the testing laboratory and test date.",
+          "For reference, the free base has a monoisotopic mass of about 1813.86 Da. A salt form will weigh more, so the COA should state which form was tested. This is reference information only, not a result from any specific lot."
+        ]
+      },
+      {
+        "id": "storage",
+        "heading_level": "h2",
+        "heading": "Storage and Handling",
+        "evidence_label": "Reference",
+        "body": [
+          "Store this material according to the conditions on its lot documentation and label, and handle it as a laboratory chemical with appropriate personal protective equipment."
+        ]
+      },
+      {
+        "id": "compliance",
+        "heading_level": "h2",
+        "heading": "Research Use Only Notice",
+        "evidence_label": "Compliance",
+        "body": [
+          "AOD9604 supplied by Veracue is intended solely for laboratory research. It is not a drug, dietary supplement, food or cosmetic, and it is not intended to diagnose, treat, cure or prevent any disease. It must not be administered to humans or animals.",
+          "The scientific information on this page summarises published research and is not medical advice or a statement of efficacy or safety. Purchasers are responsible for using the material lawfully and in an appropriate research setting. See the Medical Disclaimer for more detail."
+        ]
+      },
+      {
+        "id": "faq",
+        "heading_level": "h2",
+        "heading": "Frequently Asked Questions",
+        "evidence_label": "Mixed; see each answer",
+        "faq_ref": "faq"
+      }
+    ]
+  },
+  "faq": [
+    {
+      "question": "What is AOD9604?",
+      "answer": "AOD9604 is a synthetic 16-amino-acid peptide built from residues 177–191 of human growth hormone, with an added tyrosine at the N-terminus and one internal disulfide bond. Metabolic Pharmaceuticals developed it as a potential oral obesity drug in the 1990s and later studied it under the code LAT8881. Veracue supplies it for laboratory research only."
+    },
+    {
+      "question": "What is the sequence of AOD9604?",
+      "answer": "YLRIVQCRSVEGSCGF (Tyr-Leu-Arg-Ile-Val-Gln-Cys-Arg-Ser-Val-Glu-Gly-Ser-Cys-Gly-Phe), with a disulfide bond linking the cysteines at positions 7 and 14. That bond closes part of the chain into a loop."
+    },
+    {
+      "question": "What is the molecular weight of AOD9604?",
+      "answer": "The free base has the molecular formula C78H123N23O23S2, an average molecular weight of 1815.1 g/mol, and a monoisotopic mass of about 1813.86 Da. Salt forms weigh more, so always check which form a given document describes."
+    },
+    {
+      "question": "Is AOD9604 the same as hGH Fragment 176-191?",
+      "answer": "Not quite, though the names are often used interchangeably. Native hGH residues 176–191 begin with phenylalanine (FLRIVQCRSVEGSCGF). AOD9604 instead adds a tyrosine ahead of residues 177–191 (YLRIVQCRSVEGSCGF). Many vendors list the tyrosine sequence under the 176-191 name, so a certificate's sequence is a more reliable guide than the product name alone."
+    },
+    {
+      "question": "Does AOD9604 stimulate growth hormone release?",
+      "answer": "The cited research does not establish that. AOD9604 is a short fragment derived from the C-terminal end of hGH, not intact growth hormone. It did not compete with hGH for receptor binding in vitro. In human trials, serum IGF-1 did not differ from placebo, which is consistent with it not acting as a conventional GH secretagogue."
+    },
+    {
+      "question": "What did AOD9604 human trials show?",
+      "answer": "Six sponsor-funded trials tested AOD9604 in about 900 adults between 2001 and 2006, mostly with oral dosing. The early studies focused on safety and tolerability. The largest, a 24-week Phase 2B trial called OPTIONS, tested efficacy directly and did not find a statistically significant weight-loss benefit over placebo."
+    },
+    {
+      "question": "Did the Phase 2B AOD9604 trial show significant weight loss?",
+      "answer": "No. The OPTIONS study enrolled 536 adults with obesity and compared oral AOD9604 with placebo over 24 weeks alongside a supervised diet and exercise programme. The sponsor reported that weight loss versus placebo did not reach statistical significance at either the 12- or 24-week analysis, and it ended the obesity programme in February 2007. An earlier, smaller 12-week study had reported a positive signal in a conference abstract, but that result was never supported by full published data."
+    },
+    {
+      "question": "What side effects were reported in AOD9604 studies?",
+      "answer": "Headache was the most common adverse event across the trials, at rates similar to placebo. Diarrhoea and flatulence appeared more often at the highest oral dose in one short study, and a small number of participants reported euphoria during intravenous dosing. These findings come from historical clinical-grade material given under trial conditions, so they describe that programme, not any current research-grade lot."
+    },
+    {
+      "question": "Is AOD9604 FDA approved?",
+      "answer": "No. AOD-9604 is not an FDA-approved drug. In a 2024 evaluation, FDA weighed the available evidence against including AOD-9604-related substances on the 503A Bulks List used for pharmacy compounding. It cited incomplete characterisation and limited effectiveness and safety data."
+    },
+    {
+      "question": "What should an AOD9604 certificate of analysis include?",
+      "answer": "A useful COA names the peptide and its sequence, gives a lot number matching the vial, and reports purity by a named method such as HPLC. It should also give a mass spectrometry result consistent with the stated form, near 1813.86 Da monoisotopic for the free base. The testing laboratory and test date should appear too."
+    },
+    {
+      "question": "Does Veracue provide AOD9604 dosing information?",
+      "answer": "No. Veracue does not publish dosing, reconstitution or administration guidance for any product. Historical trial doses are described only where needed to explain study design, and they are not usage instructions."
+    },
+    {
+      "question": "Are there AOD9604 before-and-after results?",
+      "answer": "No controlled data show a reliable individual effect. The human results are group averages from placebo-controlled trials, and the largest trial found no significant difference from placebo. Veracue does not publish transformation images or testimonials."
+    }
+  ],
+  "references": [
+    {
+      "id": "R1",
+      "citation": "PubChem Compound Summary: AOD-9604, CID 71300630.",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/71300630"
+    },
+    {
+      "id": "R2",
+      "citation": "U.S. FDA. Evaluation of AOD-9604-Related Bulk Drug Substances (AOD-9604 (free base) and AOD-9604 acetate). Pharmacy Compounding Advisory Committee briefing document, December 4, 2024.",
+      "url": "https://www.fda.gov/media/183584/download"
+    },
+    {
+      "id": "R3",
+      "citation": "Stier H, Vos E, Kenley D. Safety and tolerability of the hexadecapeptide AOD9604 in humans. J Endocrinol Metab. 2013;3(1-2):7-15.",
+      "url": "https://jofem.org/index.php/jofem/article/view/157"
+    },
+    {
+      "id": "R4",
+      "citation": "Heffernan M, Summers RJ, Thorburn A, et al. The effects of human GH and its lipolytic fragment (AOD9604) on lipid metabolism following chronic treatment in obese mice and beta(3)-AR knock-out mice. Endocrinology. 2001;142(12):5182-5189.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11713213"
+    },
+    {
+      "id": "R5",
+      "citation": "Heffernan MA, Thorburn AW, Fam B, et al. Increase of fat oxidation and weight loss in obese mice caused by chronic treatment with human growth hormone or a modified C-terminal fragment. Int J Obes. 2001;25:1442-1449.",
+      "url": "https://doi.org/10.1038/sj.ijo.0801740"
+    },
+    {
+      "id": "R6",
+      "citation": "Ng FM, Sun J, Sharma L, et al. Metabolic studies of a synthetic lipolytic domain (AOD9604) of human growth hormone. Horm Res. 2000;53(6):274-278.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11146367/"
+    },
+    {
+      "id": "R7",
+      "citation": "Kwon DR, Park GY. Effect of intra-articular injection of AOD9604 with or without hyaluronic acid in rabbit osteoarthritis model. Ann Clin Lab Sci. 2015;45(4):426-432."
+    },
+    {
+      "id": "R8",
+      "citation": "Metabolic Pharmaceuticals. Phase 2B OPTIONS study design and results, as summarised in FDA's 2024 evaluation (R2), citing the company's ASX/SEC filing, February 2007."
+    },
+    {
+      "id": "R9",
+      "citation": "EGRIFTA WR (tesamorelin) prescribing information. U.S. FDA label, revised 3/2025.",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/022505s020lbl.pdf"
+    },
+    {
+      "id": "R10",
+      "citation": "Beck DE, Sweeney WB, McCarter MD. Prospective, randomized, controlled, proof-of-concept study of the ghrelin mimetic ipamorelin for the management of postoperative ileus in bowel resection patients. Int J Colorectal Dis. 2014;29(12):1527-1534.",
+      "url": "https://doi.org/10.1007/s00384-014-2030-8"
+    },
+    {
+      "id": "R11",
+      "citation": "Teichman SL, Neale A, Lawrence B, et al. Prolonged stimulation of GH and IGF-I secretion by CJC-1295, a long-acting analog of GH-releasing hormone, in healthy adults. J Clin Endocrinol Metab. 2006;91(3):799-805.",
+      "url": "https://doi.org/10.1210/jc.2005-1536"
+    }
+  ],
+  "internal_links": [
+    {
+      "anchor": "Shop all research peptides",
+      "href": "/shop",
+      "verified_live": true
+    },
+    {
+      "anchor": "Weight Loss & Metabolic",
+      "href": "/shop?category=Weight%20Loss%20%26%20Metabolic",
+      "verified_live": true
+    },
+    {
+      "anchor": "certificate library",
+      "href": "/certificates",
+      "verified_live": true
+    },
+    {
+      "anchor": "contact the Veracue team",
+      "href": "/contact-us",
+      "verified_live": true
+    },
+    {
+      "anchor": "Medical Disclaimer",
+      "href": "/medical-disclaimer",
+      "verified_live": true
+    },
+    {
+      "anchor": "Help & FAQ",
+      "href": "/faq",
+      "verified_live": true
+    }
+  ],
+  "structured_data": {
+    "json_ld": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://veracue-peptides.vercel.app/product/aod9604#webpage",
+          "url": "https://veracue-peptides.vercel.app/product/aod9604",
+          "name": "AOD9604 Research Peptide (Tyr-hGH 177-191) | Veracue",
+          "description": "AOD9604 peptide for laboratory research: sequence, molecular identity, clinical-development history, evidence limits, and COA guidance. Research use only.",
+          "isPartOf": {
+            "@type": "WebSite",
+            "@id": "https://veracue-peptides.vercel.app/#website",
+            "url": "https://veracue-peptides.vercel.app",
+            "name": "Veracue Peptides"
+          },
+          "breadcrumb": {
+            "@id": "https://veracue-peptides.vercel.app/product/aod9604#breadcrumb"
+          },
+          "mainEntity": {
+            "@id": "https://veracue-peptides.vercel.app/product/aod9604#product"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://veracue-peptides.vercel.app/product/aod9604#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://veracue-peptides.vercel.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shop",
+              "item": "https://veracue-peptides.vercel.app/shop"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "AOD9604",
+              "item": "https://veracue-peptides.vercel.app/product/aod9604"
+            }
+          ]
+        },
+        {
+          "@type": "Product",
+          "@id": "https://veracue-peptides.vercel.app/product/aod9604#product",
+          "name": "AOD9604 Peptide",
+          "url": "https://veracue-peptides.vercel.app/product/aod9604",
+          "brand": {
+            "@type": "Brand",
+            "name": "Veracue"
+          },
+          "category": "Weight Loss & Metabolic",
+          "description": "AOD9604 (sequence YLRIVQCRSVEGSCGF) is a synthetic 16-amino-acid peptide supplied by Veracue for laboratory research use only. Not for human or animal use.",
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "Sequence",
+              "value": "YLRIVQCRSVEGSCGF"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Molecular formula (free base)",
+              "value": "C78H123N23O23S2"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Molecular weight (free base)",
+              "value": "1815.1 g/mol"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "PubChem CID",
+              "value": "71300630"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Intended use",
+              "value": "Research use only"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://veracue-peptides.vercel.app/product/aod9604#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is AOD9604?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AOD9604 is a synthetic 16-amino-acid peptide built from residues 177–191 of human growth hormone, with an added tyrosine at the N-terminus and one internal disulfide bond. Metabolic Pharmaceuticals developed it as a potential oral obesity drug in the 1990s and later studied it under the code LAT8881. Veracue supplies it for laboratory research only."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the sequence of AOD9604?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "YLRIVQCRSVEGSCGF (Tyr-Leu-Arg-Ile-Val-Gln-Cys-Arg-Ser-Val-Glu-Gly-Ser-Cys-Gly-Phe), with a disulfide bond linking the cysteines at positions 7 and 14. That bond closes part of the chain into a loop."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the molecular weight of AOD9604?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The free base has the molecular formula C78H123N23O23S2, an average molecular weight of 1815.1 g/mol, and a monoisotopic mass of about 1813.86 Da. Salt forms weigh more, so always check which form a given document describes."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is AOD9604 the same as hGH Fragment 176-191?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Not quite, though the names are often used interchangeably. Native hGH residues 176–191 begin with phenylalanine (FLRIVQCRSVEGSCGF). AOD9604 instead adds a tyrosine ahead of residues 177–191 (YLRIVQCRSVEGSCGF). Many vendors list the tyrosine sequence under the 176-191 name, so a certificate's sequence is a more reliable guide than the product name alone."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does AOD9604 stimulate growth hormone release?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The cited research does not establish that. AOD9604 is a short fragment derived from the C-terminal end of hGH, not intact growth hormone. It did not compete with hGH for receptor binding in vitro. In human trials, serum IGF-1 did not differ from placebo, which is consistent with it not acting as a conventional GH secretagogue."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What did AOD9604 human trials show?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Six sponsor-funded trials tested AOD9604 in about 900 adults between 2001 and 2006, mostly with oral dosing. The early studies focused on safety and tolerability. The largest, a 24-week Phase 2B trial called OPTIONS, tested efficacy directly and did not find a statistically significant weight-loss benefit over placebo."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Did the Phase 2B AOD9604 trial show significant weight loss?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. The OPTIONS study enrolled 536 adults with obesity and compared oral AOD9604 with placebo over 24 weeks alongside a supervised diet and exercise programme. The sponsor reported that weight loss versus placebo did not reach statistical significance at either the 12- or 24-week analysis, and it ended the obesity programme in February 2007. An earlier, smaller 12-week study had reported a positive signal in a conference abstract, but that result was never supported by full published data."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What side effects were reported in AOD9604 studies?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Headache was the most common adverse event across the trials, at rates similar to placebo. Diarrhoea and flatulence appeared more often at the highest oral dose in one short study, and a small number of participants reported euphoria during intravenous dosing. These findings come from historical clinical-grade material given under trial conditions, so they describe that programme, not any current research-grade lot."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is AOD9604 FDA approved?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. AOD-9604 is not an FDA-approved drug. In a 2024 evaluation, FDA weighed the available evidence against including AOD-9604-related substances on the 503A Bulks List used for pharmacy compounding. It cited incomplete characterisation and limited effectiveness and safety data."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What should an AOD9604 certificate of analysis include?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A useful COA names the peptide and its sequence, gives a lot number matching the vial, and reports purity by a named method such as HPLC. It should also give a mass spectrometry result consistent with the stated form, near 1813.86 Da monoisotopic for the free base. The testing laboratory and test date should appear too."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Veracue provide AOD9604 dosing information?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Veracue does not publish dosing, reconstitution or administration guidance for any product. Historical trial doses are described only where needed to explain study design, and they are not usage instructions."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are there AOD9604 before-and-after results?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No controlled data show a reliable individual effect. The human results are group averages from placebo-controlled trials, and the largest trial found no significant difference from placebo. Veracue does not publish transformation images or testimonials."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "notes": [
+      "Single @graph block; do not duplicate Product schema from the template.",
+      "No offers, price, availability, SKU, GTIN, MPN, rating or review properties — none of this first-party data exists yet.",
+      "FAQPage text is generated from the same array as the visible FAQ, so they match exactly."
+    ]
+  },
+  "implementation_notes": [
+    "Reuse the /product/ahk-cu layout: Overview → Intended Use → Product Highlights → Research Snapshot → evidence sections → Product Specifications → COA → Storage → Compliance → FAQ.",
+    "One H1 only; all section headings are H2.",
+    "Wide tables (clinical history, comparison) need horizontal scroll on mobile."
+  ]
+}

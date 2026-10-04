@@ -1,8 +1,8 @@
 'use client'
 
-import React, { Suspense, useState, useEffect } from 'react'
+import React, { Suspense, use, useState, useEffect } from 'react'
 import { signIn } from 'next-auth/react'
-import { useRouter, useSearchParams } from 'next/navigation'
+import { notFound, useRouter, useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import { Eye, EyeOff, AlertCircle } from 'lucide-react'
 import { useForm } from 'react-hook-form'
@@ -263,7 +263,11 @@ function LoginForm() {
   )
 }
 
-export default function LoginPage() {
+export default function LoginPage({ params }: { params: Promise<{ rest?: string[] }> }) {
+  // Optional catch-all: only /login itself is valid, so /login/anything returns 404.
+  const { rest } = use(params)
+  if (rest && rest.length > 0) notFound()
+
   return (
     <AuthSplitLayout mode="login">
       <Suspense fallback={null}>

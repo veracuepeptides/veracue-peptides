@@ -1,0 +1,408 @@
+{
+  "deliverable": {
+    "client": "Veracue Peptides",
+    "site": "https://veracue-peptides.vercel.app/",
+    "asset_type": "Product page content package",
+    "compound": "DSIP (Delta Sleep-Inducing Peptide / Emideltide)",
+    "prepared_by": "Belk Digital",
+    "prepared_on": "2026-09-18",
+    "structural_reference": "Helix Bio product-page deliverable (structure only, no data carried over)",
+    "verification_note": "Every scientific, analytical and regulatory statement below was checked against primary or official sources on 2026-09-18. Veracue product fields could not be verified because the live catalog carries no DSIP listing. Those fields are marked PENDING_FIRST_PARTY and must be filled by Veracue before publication."
+  },
+
+  "seo": {
+    "meta_title": "DSIP Peptide (Emideltide) | Research Grade, Batch COA | Veracue",
+    "meta_title_characters": 63,
+    "meta_description": "DSIP peptide (Delta Sleep-Inducing Peptide, Emideltide) for laboratory research. Sequence WAGGDASGE, CAS 62568-57-4, batch COA with HPLC and MS data.",
+    "meta_description_characters": 149,
+    "canonical": "https://veracue-peptides.vercel.app/product/dsip",
+    "suggested_slug": "/product/dsip",
+    "suggested_category": "Cognitive & Neuro-Protection",
+    "category_note": "Verified as an existing Veracue shop filter on 2026-09-18. No 'Sleep' category exists on the live site, and creating one would push the page toward consumer sleep intent.",
+    "primary_keyword": "DSIP peptide",
+    "primary_search_intent": "Commercial / procurement, with a strong analytical and identity-verification sub-intent",
+    "secondary_keywords": [
+      "DSIP",
+      "DSIP research peptide",
+      "DSIP COA",
+      "DSIP purity",
+      "DSIP sequence",
+      "DSIP molecular weight",
+      "DSIP CAS",
+      "Emideltide",
+      "DSIP HPLC",
+      "DSIP LC-MS",
+      "DSIP research grade",
+      "DSIP mechanism",
+      "DSIP sleep research",
+      "DSIP FDA status"
+    ],
+    "entities": [
+      "DSIP",
+      "Delta Sleep-Inducing Peptide",
+      "Emideltide",
+      "WAGGDASGE",
+      "nonapeptide",
+      "CAS 62568-57-4",
+      "PubChem CID 68816",
+      "HPLC",
+      "LC-MS",
+      "Certificate of Analysis",
+      "FDA Pharmacy Compounding Advisory Committee",
+      "503A Bulks List",
+      "Research Use Only"
+    ],
+    "keywords_deliberately_not_targeted": [
+      "DSIP dosage",
+      "DSIP injection",
+      "DSIP reconstitution protocol",
+      "DSIP side effects",
+      "DSIP for insomnia treatment",
+      "DSIP cycle"
+    ]
+  },
+
+  "breadcrumb": "Home > Shop > Cognitive & Neuro-Protection > DSIP (Delta Sleep-Inducing Peptide)",
+
+  "h1": "DSIP Peptide (Delta Sleep-Inducing Peptide)",
+
+  "hero_summary": "DSIP is a nine-amino-acid peptide with the sequence WAGGDASGE, also indexed as Emideltide and catalogued under CAS 62568-57-4. A Basel research group isolated it in 1977 from the cerebral venous blood of rabbits given low-frequency thalamic stimulation, and named it for the delta EEG activity it appeared to produce. Nearly fifty years later, no DSIP gene, precursor protein or receptor has been identified, and the last controlled human trial was published in 1992. Veracue supplies DSIP as a research material for laboratory work only. The name describes what researchers were looking for in 1977. It does not establish that the peptide induces sleep in people.",
+
+  "sections": [
+    {
+      "h2": "What DSIP is, in one paragraph",
+      "body": "DSIP is a synthetic nonapeptide. Its amino acid sequence, written in single-letter code, is WAGGDASGE, or Trp-Ala-Gly-Gly-Asp-Ala-Ser-Gly-Glu in three-letter code. Both ends of the chain are free, so the peptide is neither acetylated at the N-terminus nor amidated at the C-terminus. PubChem lists the molecular formula as C35H48N10O15 and an average molecular weight of 848.8 g/mol. Regulatory and pharmacopeial records use the name Emideltide for the same molecule, which is why the FDA docket from July 2026 reads 'Emideltide (also referred to as delta sleeping inducing peptide (DSIP))'. Three names, one compound.",
+      "aeo_target": "What is DSIP?"
+    },
+    {
+      "h2": "Sequence, formula and identifiers",
+      "body": "Researchers who order DSIP usually check four things before anything else: the sequence, the mass, the CAS number and the database identifier. Those values are listed in the identity table below, and the same values should appear on the lot certificate you receive. If a supplier's paperwork disagrees with the public chemistry, that is worth resolving before the vial goes anywhere near an assay.\n\nOne quirk is worth knowing about. Commerce and chemical catalogs almost always use CAS 62568-57-4. The National Library of Medicine's MeSH indexing records for Delta Sleep-Inducing Peptide carry the registry number 69431-45-4 instead. Both point at the same peptide. Seeing the second number on an indexing record is not a red flag, but seeing an unexplained third number on a COA is.",
+      "aeo_target": "What is the DSIP sequence, molecular weight and CAS number?"
+    },
+    {
+      "h2": "Where the name came from",
+      "body": "In 1977 the Schoenenberger and Monnier group in Basel drew blood from the cerebral venous circulation of rabbits undergoing low-frequency electrical stimulation of the intralaminar thalamic nuclei. They isolated a peptide fraction from that blood and reported that infusing it produced delta and spindle EEG activity in recipient animals. The following year the same group published the amino acid analysis, the sequence and the synthesis of the nonapeptide.\n\nThat naming decision still shapes how the compound is marketed. A descriptive name given at the point of discovery is a hypothesis, not a result. The 2006 review in the Journal of Neurochemistry made a sharper version of this point: the original isolation and sequence determination were carried out once, and were never repeated with modern analytical methods.",
+      "aeo_target": "Who discovered DSIP and when?"
+    },
+    {
+      "h2": "Does DSIP actually induce sleep?",
+      "body": "The honest answer is that the human evidence is small, old and inconsistent, and it does not establish that DSIP induces sleep in people.\n\nSeven or eight human studies exist, published between 1981 and the 1990s. Most involved fewer than twenty participants, all used intravenous administration, and most came from or around the same Basel research network that discovered the peptide. Two results deserve attention because they cut against the marketing.\n\nMonti and colleagues ran a double-blind crossover polysomnography study in chronic insomniacs in 1987, using 25 nmol/kg intravenously. Total sleep time and NREM sleep time rose, but the increase was confined to stage 2. Slow wave sleep, meaning stages 3 and 4, was not modified, and none of the changes reached significance against baseline or against the placebo nights. A peptide named for delta sleep did not move delta sleep in that trial.\n\nBes and colleagues published the last controlled trial in 1992, a double-blind matched-pairs study in 16 chronic insomniacs. Sleep efficiency was higher and sleep latency shorter on DSIP. The authors then reported that the significant effects were weak and may partly reflect an incidental change in the placebo group, and concluded that short-term treatment of chronic insomnia with DSIP is unlikely to be of major therapeutic benefit.\n\nNo controlled trial of administered DSIP has been published since. That is thirty-four years of silence in a field that has otherwise not stopped studying sleep.",
+      "aeo_target": "Does DSIP actually induce sleep?"
+    },
+    {
+      "h2": "What the mechanism research has and has not established",
+      "body": "No receptor for DSIP has been identified. No precursor protein has been identified. No gene for either has been found. The 2006 review set out that list directly, and added a fifth problem: the DSIP amino acid sequence has not been detected in the DSIP-like immunoreactive material found in tissue, which raises the possibility that the immunoassay signal comes from something else.\n\nWhat does exist is a long catalog of indirect preclinical observations. Animal and in vitro work has reported interactions with opioid, GABAergic and dopaminergic signaling, effects on stress responses, and effects on circadian and locomotor patterns. Those are findings about pathways in models. They are not a mechanism of action in humans, and nothing published since 2006 has resolved the receptor question.\n\nPharmacokinetics compound the puzzle. Enzyme immunoassay work in animals measured plasma clearance on the order of minutes, driven by aminopeptidase cleavage of the N-terminal tryptophan. Any account of a durable overnight effect has to explain a molecule that leaves the plasma that quickly.",
+      "aeo_target": "What is the mechanism of DSIP?"
+    },
+    {
+      "h2": "Reading a DSIP certificate of analysis",
+      "body": "A COA answers narrow questions well and broad questions not at all. Splitting it into what each method establishes makes the document far more useful at the bench.\n\nHPLC separates the peptide from related substances and reports chromatographic purity as a percentage of peak area. It tells you how much of the detected material is the main peak. It does not tell you the net peptide content of the vial, because lyophilized peptides also contain counter-ions, residual solvent and water, and it does not identify the main peak.\n\nMass spectrometry supplies the identity half. An observed mass consistent with the expected monoisotopic or average mass supports the assignment. Support is not proof. Mass cannot distinguish between molecules of identical elemental composition, which matters for DSIP specifically.\n\nDSIP contains an aspartic acid residue at position five. Aspartyl residues in peptides are known to isomerize through a succinimide intermediate, producing isoaspartyl forms with the same elemental composition and therefore the same mass. Mass spectrometry alone will not separate those forms. Chromatography sometimes resolves them and sometimes does not, depending on method. If isomeric composition matters to your protocol, ask what method was used and whether it was validated to resolve those peaks. The FDA's own briefing material for the July 2026 review raised a related point, noting that the substance is not adequately characterized and can carry peptide-related impurities from incomplete coupling, truncation or side reactions during synthesis.\n\nLast, check that the lot number on the certificate matches the lot number on the vial in your hand. A generic COA for an unnamed batch documents nothing about your material.",
+      "aeo_target": "What does a DSIP COA show, and what does HPLC or LC-MS prove?"
+    },
+    {
+      "h2": "Where DSIP stands with the FDA right now",
+      "body": "The FDA's Pharmacy Compounding Advisory Committee met on July 23 and 24, 2026 to consider seven unapproved peptides for the Section 503A Bulks List. Emideltide was taken up on July 24, under the proposed uses of insomnia, narcotic dependence and opioid withdrawal. The committee voted against recommending it, 6 in favor and 7 against with one abstention. Six other peptides on the same docket were recommended. Emideltide was the only one turned down.\n\nFour distinctions matter here, and most competitor pages collapse them.\n\nFirst, the committee is advisory. Its vote is a recommendation to the FDA, not a rule, and the agency makes the final determination through notice-and-comment rulemaking.\n\nSecond, the 503A Bulks List governs whether a substance may be used by compounding pharmacies. It is not drug approval.\n\nThird, reviewed does not mean approved. DSIP has never been approved by the FDA for any use.\n\nFourth, a vote against inclusion is not a finding that the substance is dangerous. The FDA briefing cited insufficient evidence and inadequate characterization, which is a different statement from a safety determination.\n\nNone of this changes what Veracue sells. DSIP is supplied here as a research material, not as a compounded or therapeutic product, and Veracue is not a compounding pharmacy.",
+      "aeo_target": "What is the current regulatory status of DSIP? Is DSIP FDA approved?"
+    },
+    {
+      "h2": "Research use only means the whole page, not just the footer",
+      "body": "This listing exists to support in vitro and preclinical laboratory work. Veracue does not publish dosing protocols, administration instructions, reconstitution volumes for human use, or treatment schedules for DSIP, and no historical study described on this page should be read as one. The human trials from the 1980s and early 1990s are described here as research evidence, with their sizes, designs and limitations attached, because a buyer evaluating a compound needs to know how thin that record is.\n\nDSIP sold by Veracue is not a drug, supplement, cosmetic or food. It is not for human or veterinary use."
+    }
+  ],
+
+  "identity_table": {
+    "title": "DSIP identity and analytical reference",
+    "verification": "All values below verified against PubChem CID 68816 and NLM indexing records on 2026-09-18.",
+    "rows": [
+      { "field": "Compound name", "value": "Delta Sleep-Inducing Peptide (DSIP)" },
+      { "field": "Other names", "value": "Emideltide; delta-sleep-inducing peptide; DSIP nonapeptide" },
+      { "field": "Sequence (1-letter)", "value": "WAGGDASGE" },
+      { "field": "Sequence (3-letter)", "value": "Trp-Ala-Gly-Gly-Asp-Ala-Ser-Gly-Glu" },
+      { "field": "Residue count", "value": "9 (nonapeptide)" },
+      { "field": "Termini", "value": "Free N-terminus and free C-terminus; not acetylated, not amidated" },
+      { "field": "Molecular formula", "value": "C35H48N10O15" },
+      { "field": "Average molecular weight", "value": "848.8 g/mol" },
+      { "field": "CAS number", "value": "62568-57-4" },
+      { "field": "Additional registry number", "value": "69431-45-4 (appears in NLM MeSH substance indexing for the same peptide)" },
+      { "field": "PubChem CID", "value": "68816" },
+      { "field": "InChIKey", "value": "ZRZROXNBKJAOKB-GFVHOAGBSA-N" },
+      { "field": "Stereochemistry", "value": "L-amino acids" },
+      { "field": "Salt form supplied", "value": "PENDING_FIRST_PARTY — free acid or acetate must be confirmed by Veracue; acetate content shifts the mass on the COA" }
+    ]
+  },
+
+  "evidence_timeline": {
+    "title": "Fifty years of DSIP research, in order",
+    "rows": [
+      { "year": "1977", "event": "Isolated by the Schoenenberger and Monnier group in Basel from the cerebral venous blood of rabbits given low-frequency thalamic stimulation; delta and spindle EEG activity reported in recipient animals", "source": "Proc Natl Acad Sci U S A 1977, PMID 265572" },
+      { "year": "1978", "event": "Amino acid analysis, sequence, synthesis and activity of the nonapeptide published", "source": "Pflugers Arch 1978, PMID 568769" },
+      { "year": "1981", "event": "First published human sleep study, intravenous administration", "source": "Int J Clin Pharmacol Ther Toxicol 1981;19(8):341-5, PMID 6895513" },
+      { "year": "1983", "event": "Open uncontrolled withdrawal study, 67 patients enrolled and 49 evaluable, 25 nmol/kg IV, benefit reported in 48 of 49", "source": "Neuropsychobiology 1983;10(4):205-8, PMID 6328354" },
+      { "year": "1984", "event": "Graf and Kastin publish the first comprehensive review; a clinical pilot study in chronic pain is also published", "source": "PMID 6145137; Eur Neurol 1984;23(5):372-85" },
+      { "year": "1986", "event": "Sleep-normalization study in middle-aged and elderly chronic insomniacs; Graf and Kastin publish an updated review", "source": "Eur Neurol 1986;25(6):448-53, PMID 3792404; Peptides 1986;7(6):1165-87, PMID 3550726" },
+      { "year": "1987", "event": "Double-blind crossover polysomnography trial in chronic insomniacs. Gains confined to stage 2, slow wave sleep unchanged, no significant difference against placebo", "source": "Int J Clin Pharmacol Res 1987;7(2):105-10, PMID 3583493" },
+      { "year": "1992", "event": "Last controlled human trial identified. 16 chronic insomniacs, double-blind matched pairs. Weak effects, conclusion of no likely major therapeutic benefit", "source": "Neuropsychobiology 1992;26(4):193-7, PMID 1299794" },
+      { "year": "1995", "event": "Observational measurement of DSIP-like immunoreactivity in humans, including sleep apnea and narcolepsy patients. Measurement study, not an administration trial", "source": "Peptides 1995;16:1153-6" },
+      { "year": "2006", "event": "Critical review titled 'a still unresolved riddle'. No precursor, no gene, no receptor, and the original sequence determination never repeated with modern methods", "source": "J Neurochem 2006;97(2):303-9, PMID 16539679" },
+      { "year": "2021", "event": "Intranasal DSIP in a rat focal stroke model. Rotarod motor recovery improved significantly; infarct volume difference did not reach significance", "source": "Molecules 2021;26(17):5173, PMID 34500605" },
+      { "year": "July 24, 2026", "event": "FDA Pharmacy Compounding Advisory Committee votes 6-7 with one abstention against adding Emideltide to the 503A Bulks List", "source": "FDA PCAC meeting July 23-24, 2026; Docket FDA-2025-N-6895" }
+    ]
+  },
+
+  "evidence_table": {
+    "title": "What the evidence supports, claim by claim",
+    "note": "This is the page's primary information asset. Only entries verified against the primary record on 2026-09-18 are included.",
+    "columns": ["Claim", "Model", "Finding", "Evidence level", "Limitation"],
+    "rows": [
+      {
+        "claim": "Produces delta EEG activity",
+        "model": "Rabbit, intraventricular infusion, 1977-1978",
+        "finding": "Delta and spindle EEG activity with reduced motor activity",
+        "evidence_level": "Animal",
+        "limitation": "Founding studies from a single group; the isolation and sequencing were performed once and never repeated with modern methods"
+      },
+      {
+        "claim": "Increases slow wave sleep in humans",
+        "model": "Human, double-blind crossover, chronic insomniacs, 25 nmol/kg IV, 1987",
+        "finding": "Total sleep and NREM sleep rose, but the increase sat entirely in stage 2. Stages 3 and 4 were unchanged",
+        "evidence_level": "Human clinical, negative for the specific claim",
+        "limitation": "No significant difference against baseline or placebo nights; small sample"
+      },
+      {
+        "claim": "Improves sleep in chronic insomnia",
+        "model": "Human, double-blind matched pairs, n=16, 1992",
+        "finding": "Higher sleep efficiency and shorter latency, described by the authors as weak and possibly a placebo-group artifact",
+        "evidence_level": "Human clinical, weak",
+        "limitation": "Authors concluded short-term treatment is unlikely to give major therapeutic benefit. No controlled trial since"
+      },
+      {
+        "claim": "Relieves opioid or alcohol withdrawal",
+        "model": "Human, open and uncontrolled, 67 enrolled and 49 evaluable, 1983",
+        "finding": "Benefit reported in 48 of 49 evaluable patients",
+        "evidence_level": "Human observational",
+        "limitation": "No control group, no blinding, 27% of patients lost or unsuitable for evaluation, never replicated under control"
+      },
+      {
+        "claim": "Neuroprotective after ischemic injury",
+        "model": "Rat, intranasal, MCAO focal stroke model, 120 µg/kg, 2021",
+        "finding": "Rotarod motor performance recovered significantly",
+        "evidence_level": "Animal",
+        "limitation": "Infarct volume was smaller in treated animals but not significantly so. Single study, no human data"
+      },
+      {
+        "claim": "Acts as an endogenous sleep factor",
+        "model": "Immunoassay and sequence-detection work through 2006",
+        "finding": "DSIP-like immunoreactive material is detectable, but the DSIP sequence itself has not been detected within it",
+        "evidence_level": "Historical hypothesis, unconfirmed",
+        "limitation": "No gene, precursor or receptor identified in roughly fifty years"
+      },
+      {
+        "claim": "Raises growth hormone",
+        "model": "Inference from sleep architecture",
+        "finding": "No direct human measurement identified in this review",
+        "evidence_level": "Mechanistic and theoretical",
+        "limitation": "Inferring a hormonal outcome from an unconfirmed sleep effect stacks two unsupported steps"
+      },
+      {
+        "claim": "Reduces anxiety",
+        "model": "None identified",
+        "finding": "No dedicated trial identified",
+        "evidence_level": "Insufficient evidence",
+        "limitation": "Claim appears in vendor copy without a supporting study"
+      }
+    ]
+  },
+
+  "product_specifications": {
+    "note": "Veracue's live catalog carried no DSIP listing when this deliverable was prepared on 2026-09-18. Fields marked PENDING_FIRST_PARTY must be supplied by Veracue and must not be inferred from another supplier.",
+    "rows": [
+      { "field": "Product name", "value": "DSIP (Delta Sleep-Inducing Peptide)", "status": "recommended" },
+      { "field": "Category", "value": "Cognitive & Neuro-Protection", "status": "recommended, matches an existing live category" },
+      { "field": "Form", "value": "Lyophilized powder", "status": "PENDING_FIRST_PARTY — consistent with Veracue's site-wide format, still confirm for this SKU" },
+      { "field": "Vial size", "value": "", "status": "PENDING_FIRST_PARTY" },
+      { "field": "Price", "value": "", "status": "PENDING_FIRST_PARTY" },
+      { "field": "SKU", "value": "", "status": "PENDING_FIRST_PARTY" },
+      { "field": "Availability", "value": "", "status": "PENDING_FIRST_PARTY" },
+      { "field": "Salt form", "value": "", "status": "PENDING_FIRST_PARTY — free acid or acetate" },
+      { "field": "Appearance", "value": "", "status": "PENDING_FIRST_PARTY" },
+      { "field": "Purity", "value": "Veracue's stated standard is ≥99% by HPLC. The site's own disclaimer notes that purity varies by product and lot and that some items may test below 99%. Publish the lot figure from the COA rather than a blanket number.", "status": "verified site-wide claim, lot figure pending" },
+      { "field": "Identity testing", "value": "Mass spectrometry confirmation, per Veracue's published analytical standards", "status": "verified site-wide claim" },
+      { "field": "COA", "value": "Batch-specific certificate of analysis from an independent testing facility, issued before dispatch", "status": "verified site-wide claim" },
+      { "field": "Lot number", "value": "", "status": "PENDING_FIRST_PARTY" },
+      { "field": "Testing laboratory", "value": "", "status": "PENDING_FIRST_PARTY — do not name a laboratory without documentation" },
+      { "field": "Storage", "value": "", "status": "PENDING_FIRST_PARTY — confirm Veracue's stated storage condition for this SKU before publishing one" },
+      { "field": "Packaging and shipping", "value": "Cold-chain packaging, same-day dispatch from US fulfillment", "status": "verified site-wide claim" },
+      { "field": "Origin", "value": "USA formulated and tested", "status": "verified site-wide claim" },
+      { "field": "Research use", "value": "Research use only. Not for human or veterinary use. Veracue is not a compounding pharmacy under Section 503A.", "status": "verified site-wide claim" }
+    ]
+  },
+
+  "faqs": [
+    {
+      "q": "What is DSIP?",
+      "a": "DSIP is a nine-amino-acid peptide with the sequence WAGGDASGE, isolated in 1977 from the cerebral venous blood of rabbits during hypnogenic thalamic stimulation. It is also indexed as Emideltide. Veracue supplies it as a research material for laboratory use only."
+    },
+    {
+      "q": "Is Emideltide the same thing as DSIP?",
+      "a": "Yes. Emideltide is the nonproprietary name used in regulatory records for the same peptide. The FDA's July 2026 compounding docket listed it as 'Emideltide (also referred to as delta sleeping inducing peptide (DSIP))'. A shared name does not by itself confirm salt form, purity or isomeric composition, so still check the COA."
+    },
+    {
+      "q": "What is the DSIP sequence?",
+      "a": "Trp-Ala-Gly-Gly-Asp-Ala-Ser-Gly-Glu, written WAGGDASGE in single-letter code. Both termini are free rather than acetylated or amidated."
+    },
+    {
+      "q": "What is the molecular weight of DSIP?",
+      "a": "848.8 g/mol as an average mass, from the molecular formula C35H48N10O15. If your material is supplied as an acetate salt, the mass reported on the COA will differ, which is why the salt form should be stated."
+    },
+    {
+      "q": "What is the CAS number for DSIP?",
+      "a": "62568-57-4. Chemical suppliers and databases use that number. NLM indexing records for the same peptide also carry the registry number 69431-45-4, so both may appear in literature searches."
+    },
+    {
+      "q": "Does DSIP actually induce sleep?",
+      "a": "The evidence does not establish that it does in people. A 1987 double-blind crossover trial found gains confined to stage 2 sleep with slow wave sleep unchanged and no significant difference against placebo. The last controlled trial, published in 1992, reported weak effects and concluded that short-term treatment of chronic insomnia was unlikely to give major benefit."
+    },
+    {
+      "q": "Is there human research on DSIP?",
+      "a": "Yes, but it is small and old. Roughly seven or eight human studies were published between 1981 and the mid-1990s, most with fewer than twenty participants and all using intravenous administration. No controlled trial of administered DSIP has appeared since 1992."
+    },
+    {
+      "q": "What is the mechanism of DSIP?",
+      "a": "It has not been established. No DSIP receptor, precursor protein or gene has been identified, a gap the 2006 review in the Journal of Neurochemistry set out in detail. Preclinical work has reported indirect interactions with opioid, GABAergic and dopaminergic signaling, which describes pathway activity in models rather than a mechanism in humans."
+    },
+    {
+      "q": "What does a DSIP certificate of analysis show?",
+      "a": "It documents the analytical result for one specific batch. Typically that means chromatographic purity by HPLC, an identity result by mass spectrometry, and the lot number those results belong to. Check that the lot on the certificate matches the lot on the vial."
+    },
+    {
+      "q": "What does HPLC purity actually measure?",
+      "a": "It measures how much of the detected material appears in the main chromatographic peak, expressed as a percentage of peak area. It does not identify that peak, and it does not tell you net peptide content, since a lyophilized vial also holds counter-ions, residual water and residual solvent."
+    },
+    {
+      "q": "What does mass spectrometry confirm?",
+      "a": "It supports identity by showing that the observed mass matches the expected mass. It cannot separate molecules with identical elemental composition. DSIP has an aspartic acid residue that can isomerize to an isoaspartyl form with the same mass, so mass data alone will not resolve that question."
+    },
+    {
+      "q": "Is DSIP FDA approved?",
+      "a": "No. DSIP has never been approved by the FDA for any use. On July 24, 2026 the Pharmacy Compounding Advisory Committee voted 6 to 7 with one abstention against adding Emideltide to the Section 503A Bulks List. That vote is advisory, it concerns eligibility for pharmacy compounding rather than drug approval, and the FDA makes the final determination through rulemaking."
+    }
+  ],
+
+  "internal_links": [
+    { "anchor": "batch certificates of analysis", "url": "/certificates", "reason": "Direct proof for every analytical claim on the page. Verified live." },
+    { "anchor": "peptide calculator", "url": "/peptide-calculator", "reason": "Laboratory utility for researchers planning dilutions. Verified live." },
+    { "anchor": "AHK-Cu", "url": "/product/ahk-cu", "reason": "Existing product page written to the same evidence-qualified standard. Verified live." },
+    { "anchor": "research catalog", "url": "/shop", "reason": "Category-level authority and browse path. Verified live." },
+    { "anchor": "research articles", "url": "/blog", "reason": "Destination for a future DSIP research guide that owns the deep evidence review. Verified live." },
+    { "anchor": "about Veracue", "url": "/about-us", "reason": "E-E-A-T support for testing and sourcing statements. Verified live." },
+    { "anchor": "help and FAQ", "url": "/faq", "reason": "Covers COA interpretation, storage and handling questions site-wide. Verified live." },
+    { "anchor": "shipping policy", "url": "/shipping-policy", "reason": "Referenced by the packaging and dispatch claims. Verified live." },
+    { "anchor": "medical disclaimer", "url": "/medical-disclaimer", "reason": "Reinforces the research-use boundary. Verified live." }
+  ],
+
+  "internal_links_not_recommended": [
+    "Do not link to /product/semax, /product/selank or /product/epitalon. None exist on the live catalog as of 2026-09-18.",
+    "Do not build a separate 'DSIP research guide' page at launch. Until one exists, this product page should own DSIP identity, analytical verification and concise evidence context. If a guide is added later, it takes the deep history, full evidence review and mechanism discussion, and this page links to it."
+  ],
+
+  "external_references": [
+    { "anchor": "PubChem CID 68816", "url": "https://pubchem.ncbi.nlm.nih.gov/compound/68816", "reason": "Authoritative chemistry record for formula, mass and identifiers" },
+    { "anchor": "Kovalzon and Strekalova, 2006", "url": "https://pubmed.ncbi.nlm.nih.gov/16539679/", "reason": "The critical review underpinning the mechanism-uncertainty section" },
+    { "anchor": "Bes et al., 1992", "url": "https://pubmed.ncbi.nlm.nih.gov/1299794/", "reason": "Last controlled human trial" },
+    { "anchor": "Monti et al., 1987", "url": "https://pubmed.ncbi.nlm.nih.gov/3583493/", "reason": "Slow wave sleep unchanged; the strongest single counterweight to the compound's name" },
+    { "anchor": "Dick et al., 1983", "url": "https://pubmed.ncbi.nlm.nih.gov/6328354/", "reason": "The withdrawal study routinely cited without its design limitations" },
+    { "anchor": "Tukhovskaya et al., 2021", "url": "https://pubmed.ncbi.nlm.nih.gov/34500605/", "reason": "Most recent substantive preclinical study" },
+    { "anchor": "FDA Pharmacy Compounding Advisory Committee, July 23-24 2026", "url": "https://www.fda.gov/advisory-committees/advisory-committee-calendar/july-23-24-2026-meeting-pharmacy-compounding-advisory-committee-07232026", "reason": "Official source for the Emideltide review and docket FDA-2025-N-6895" }
+  ],
+
+  "image_seo": [
+    {
+      "image": "Hero product vial",
+      "file_name": "dsip-peptide-research-vial-veracue.jpg",
+      "alt": "DSIP peptide lyophilized research vial from Veracue",
+      "title": "DSIP Research Peptide Vial",
+      "caption": "DSIP is supplied as a research material for laboratory use only.",
+      "note": "Use a real photograph of the Veracue DSIP vial. Do not reuse the AHK-Cu or NAD+ product image."
+    },
+    {
+      "image": "Sequence and identity card",
+      "file_name": "dsip-sequence-waggdasge-molecular-weight.jpg",
+      "alt": "DSIP sequence WAGGDASGE with molecular formula C35H48N10O15 and CAS 62568-57-4",
+      "title": "DSIP Identity Reference",
+      "caption": "Sequence, formula, mass and CAS number for DSIP.",
+      "note": "Strong candidate for image search and AI citation because it carries the verified identifiers."
+    },
+    {
+      "image": "Certificate of analysis",
+      "file_name": "dsip-certificate-of-analysis-hplc-ms.jpg",
+      "alt": "DSIP certificate of analysis showing HPLC purity and mass spectrometry identity results",
+      "title": "DSIP Certificate of Analysis",
+      "caption": "Each lot ships with its own certificate of analysis.",
+      "note": "Use a real redacted Veracue COA. Do not mock one up."
+    }
+  ],
+
+  "schema_jsonld": {
+    "note": "Product schema is withheld until Veracue supplies SKU, price and availability. Publishing Product or Offer markup with placeholder values would misrepresent the page. BreadcrumbList and WebPage are safe now. No aggregateRating, no review, no author credentials unless a real named reviewer exists.",
+    "ready_now": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://veracue-peptides.vercel.app/" },
+          { "@type": "ListItem", "position": 2, "name": "Shop", "item": "https://veracue-peptides.vercel.app/shop" },
+          { "@type": "ListItem", "position": 3, "name": "DSIP (Delta Sleep-Inducing Peptide)", "item": "https://veracue-peptides.vercel.app/product/dsip" }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "DSIP Peptide (Delta Sleep-Inducing Peptide)",
+        "url": "https://veracue-peptides.vercel.app/product/dsip",
+        "description": "DSIP peptide research material: sequence WAGGDASGE, CAS 62568-57-4, batch certificate of analysis, evidence context and current regulatory status.",
+        "isPartOf": { "@type": "WebSite", "name": "Veracue", "url": "https://veracue-peptides.vercel.app/" }
+      }
+    ],
+    "pending_product_schema_template": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "DSIP (Delta Sleep-Inducing Peptide)",
+      "sku": "PENDING_FIRST_PARTY",
+      "brand": { "@type": "Brand", "name": "Veracue" },
+      "image": "PENDING_FIRST_PARTY",
+      "description": "Research-use-only DSIP peptide supplied with a batch-specific certificate of analysis.",
+      "offers": {
+        "@type": "Offer",
+        "price": "PENDING_FIRST_PARTY",
+        "priceCurrency": "USD",
+        "availability": "PENDING_FIRST_PARTY",
+        "url": "https://veracue-peptides.vercel.app/product/dsip"
+      }
+    },
+    "faq_schema_note": "FAQPage markup may be added for the 12 questions above, but Google no longer surfaces FAQ rich results broadly. Treat it as answer coverage, not a rich-result tactic."
+  },
+
+  "validation_notes": {
+    "strongest_information_gain": "The claim-by-claim evidence table, and specifically the 1987 finding that slow wave sleep was not modified. Competitor pages repeat the name 'delta sleep-inducing' as if it were a result. Almost none report the trial where delta sleep did not move.",
+    "strongest_seo_opportunity": "'DSIP peptide' with the analytical cluster underneath it. The SERP is vendor pages with thin evidence context, and identity plus COA depth is a defensible angle for a small site.",
+    "strongest_aeo_opportunity": "'Does DSIP actually induce sleep?' and 'Is DSIP FDA approved?'. Both have a clean, sourced, correctly qualified answer here, and both are commonly answered wrongly elsewhere.",
+    "strongest_geo_opportunity": "The DSIP to Emideltide to WAGGDASGE to CAS 62568-57-4 chain stated explicitly in one place, plus the regulatory distinction between an advisory vote, the 503A list and drug approval.",
+    "corrections_to_the_supplied_research_package": [
+      "The package dated the isolation paper to PMID 568769. That PMID is the 1978 Pflugers Arch sequence and synthesis paper. The 1977 PNAS characterization paper is PMID 265572.",
+      "The package listed a 1987 Schneider-Helmert double-blind study with n=14. The record found is Eur Neurol 1986;25(6):448-53 (PMID 3792404). The 1987 double-blind crossover trial is Monti et al., PMID 3583493, and its result was not significant against placebo.",
+      "The package's 1981 '+59% total sleep time' figure could not be traced to the primary paper and has been left out.",
+      "The package stated that only the alpha-aspartyl form is active and that the beta form is inactive. That activity claim could not be verified from a primary source, so the page discusses the isobaric isomer issue as an analytical limitation instead, which is well established peptide chemistry.",
+      "The package listed Russian approval, UNII and WADA status. None were independently confirmed here, so none appear on the page. Add them only after verification.",
+      "The package cited vendor and aggregator sites for chemical and clinical facts. Every value on this page was re-derived from PubChem, PubMed or FDA sources instead."
+    ],
+    "veracue_data_still_required_before_publishing": [
+      "SKU, vial size, price, availability",
+      "Salt form (free acid or acetate) and appearance",
+      "Lot number, testing laboratory and testing date for the launch batch",
+      "Lot HPLC purity figure and MS identity result",
+      "Stated storage condition for this SKU",
+      "Product photography of the actual DSIP vial"
+    ],
+    "publish_gate": "Do not publish with placeholder product values or Product schema. The identity, evidence, analytical and regulatory content is ready as written."
+  }
+}

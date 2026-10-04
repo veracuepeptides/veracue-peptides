@@ -1,0 +1,1216 @@
+{
+  "meta": {
+    "deliverable": "Veracue Glutathione Spray product page + SEO/GEO/AEO package",
+    "client": "Veracue Peptides",
+    "prepared_by": "Belk Digital",
+    "updated": "2026-09-30",
+    "status": "Pre-launch content package; the spray-specific product record, formulation and lot documentation must be confirmed before public product activation.",
+    "recommended_slug": "/product/glutathione-spray",
+    "primary_keyword": "glutathione",
+    "primary_product_phrase": "glutathione spray",
+    "ruo": "Research Use Only — not for human or veterinary use."
+  },
+  "keyword_source": {
+    "file": "Glutathione KEYWORDS.xlsx",
+    "interpretation": "Workbook values are relative search-interest signals, not absolute search volume.",
+    "highest_interest_terms": [
+      {
+        "query": "glutathione liposomal",
+        "search_interest": 100
+      },
+      {
+        "query": "liposomal",
+        "search_interest": 99
+      },
+      {
+        "query": "liposomal glutathione",
+        "search_interest": 99
+      },
+      {
+        "query": "glutathione benefits",
+        "search_interest": 66
+      },
+      {
+        "query": "what is glutathione",
+        "search_interest": 60
+      },
+      {
+        "query": "glutathione supplement",
+        "search_interest": 48
+      },
+      {
+        "query": "glutathione iv",
+        "search_interest": 26
+      },
+      {
+        "query": "glutathione injection",
+        "search_interest": 25
+      },
+      {
+        "query": "glutathione peptide",
+        "search_interest": 24
+      },
+      {
+        "query": "glutathione for skin",
+        "search_interest": 22
+      },
+      {
+        "query": "glutathione side effects",
+        "search_interest": 14
+      },
+      {
+        "query": "what does glutathione do",
+        "search_interest": 11
+      },
+      {
+        "query": "glutathione dosage",
+        "search_interest": 10
+      },
+      {
+        "query": "reduced glutathione",
+        "search_interest": 9
+      },
+      {
+        "query": "best liposomal glutathione",
+        "search_interest": 8
+      },
+      {
+        "query": "glutathione skin whitening",
+        "search_interest": 8
+      },
+      {
+        "query": "glutathione tablets",
+        "search_interest": 6
+      },
+      {
+        "query": "is glutathione safe",
+        "search_interest": 6
+      },
+      {
+        "query": "does glutathione work",
+        "search_interest": 6
+      },
+      {
+        "query": "glutathione peroxidase",
+        "search_interest": 5
+      },
+      {
+        "query": "glutathione shot",
+        "search_interest": 5
+      },
+      {
+        "query": "what is liposomal glutathione",
+        "search_interest": 6
+      }
+    ],
+    "excluded_or_deprioritized": [
+      "glutathione reddit",
+      "glutathione near me",
+      "competitor brand queries",
+      "peptide calculator",
+      "other unrelated peptide brands",
+      "consumer purchase-comparison language that would conflict with RUO positioning"
+    ]
+  },
+  "current_veracue_site_check": {
+    "site": "https://veracue-peptides.vercel.app/",
+    "verified_urls": [
+      "https://veracue-peptides.vercel.app/shop",
+      "https://veracue-peptides.vercel.app/certificates",
+      "https://veracue-peptides.vercel.app/about-us",
+      "https://veracue-peptides.vercel.app/contact-us",
+      "https://veracue-peptides.vercel.app/faq",
+      "https://veracue-peptides.vercel.app/medical-disclaimer",
+      "https://veracue-peptides.vercel.app/product/glutathione",
+      "https://veracue-peptides.vercel.app/product/glutathione-spray"
+    ],
+    "findings": [
+      "The public Certificates page currently shows 0 published reports (\"0 Reports Available\") while stating that batch-specific COAs are being added.",
+      "The site footer states that products are for research and laboratory purposes only and are not intended for human or veterinary use, ingestion, injection, or administration.",
+      "The public site uses /about-us and /contact-us paths.",
+      "/product/glutathione-spray returns a Product Not Found page as of 2026-09-30 — no spray-specific record, formulation, route, concentration or lot COA exists yet.",
+      "/product/glutathione IS already live as a separate, distinct SKU (GLUT-600MG, 600mg/1500mg vial format, listed at $54/$84, GSH form) — this spray listing must be kept clearly distinct from that existing product rather than presented as the same item in a different view."
+    ]
+  },
+  "seo": {
+    "title": "Glutathione Spray | Research Information | Veracue",
+    "meta_description": "Glutathione Spray research listing from Veracue: GSH/GSSG chemistry, redox biology, formulation distinctions and COA guidance. Research Use Only.",
+    "url_slug": "/product/glutathione-spray",
+    "canonical": "https://veracue-peptides.vercel.app/product/glutathione-spray",
+    "h1": "Glutathione Spray",
+    "subtitle": "A spray-format research listing of glutathione for laboratory redox and biochemical research.",
+    "primary_keyword": "glutathione",
+    "primary_product_phrase": "glutathione spray",
+    "secondary_keywords": [
+      "glutathione peptide",
+      "reduced glutathione",
+      "GSH",
+      "GSSG",
+      "glutathione research",
+      "what is glutathione",
+      "what does glutathione do",
+      "glutathione benefits",
+      "glutathione side effects",
+      "glutathione dosage",
+      "glutathione COA",
+      "glutathione purity",
+      "liposomal glutathione",
+      "glutathione for skin",
+      "glutathione injection",
+      "glutathione IV",
+      "glutathione tablets"
+    ],
+    "semantic_entities": [
+      "glutathione (GSH)",
+      "glutathione disulfide (GSSG)",
+      "glutamate",
+      "cysteine",
+      "glycine",
+      "gamma-glutamyl bond",
+      "glutathione peroxidase",
+      "glutathione reductase",
+      "glutathione S-transferase",
+      "redox homeostasis",
+      "oxidative stress",
+      "liposomal glutathione",
+      "HPLC",
+      "mass spectrometry",
+      "Certificate of Analysis",
+      "lot traceability"
+    ]
+  },
+  "product_positioning": {
+    "eyebrow": "Research Use Only",
+    "category": "Product category for the spray is not publicly specified; assign only after the live Veracue catalog confirms it.",
+    "h1": "Glutathione Spray",
+    "hero_subtitle": "A spray-format research listing of glutathione for laboratory redox and biochemical research.",
+    "hero_copy": "Glutathione is a small tripeptide at the center of cellular redox chemistry. This page separates the chemistry of glutathione itself from the formulation-specific facts of a spray product, so researchers can see what is established, what is formulation-dependent, and what Veracue has or has not publicly documented. The word \"spray\" does not establish concentration, route, carrier, excipients, or amount per actuation. Those are first-party product specifications. This spray listing is a distinct product from Veracue's existing vial-format Glutathione (GLUT-600MG) — the two should not be treated as the same item. No human-use dosing or administration guidance is provided.",
+    "product_status": "Pre-launch / product-specific data pending first-party confirmation.",
+    "product_specific_unknowns": [
+      "Reduced (GSH) vs oxidized (GSSG) form",
+      "Spray concentration",
+      "Amount per actuation",
+      "Total net content",
+      "Vehicle / carrier",
+      "Excipients / preservatives",
+      "Formulation type such as liposomal or non-liposomal",
+      "Route",
+      "pH",
+      "Purity",
+      "Lot number",
+      "COA",
+      "Testing laboratory",
+      "Storage conditions",
+      "SKU",
+      "Price",
+      "Availability"
+    ],
+    "ruo_notice": "RESEARCH USE ONLY — NOT FOR HUMAN OR VETERINARY USE. This page does not provide dosing, administration, reconstitution, dilution, injection, oral-use, nasal-use, or treatment instructions."
+  },
+  "page_sections": [
+    {
+      "id": "what-is-glutathione",
+      "heading": "What Is Glutathione?",
+      "copy": "Glutathione is a small tripeptide made from glutamate, cysteine, and glycine. Its structure contains an unusual gamma-glutamyl linkage and a reactive thiol group on cysteine, which is central to its role in cellular redox chemistry. Reduced glutathione is commonly abbreviated GSH. When two GSH molecules are linked through oxidation of their cysteine thiols, the resulting disulfide is glutathione disulfide, or GSSG. GSH and GSSG are related but chemically distinct species and should not be treated as interchangeable in product specifications or analytical records.",
+      "aeo_answer": "Glutathione (GSH) is a tripeptide composed of glutamate, cysteine, and glycine. Its cysteine thiol enables it to participate in cellular redox reactions."
+    },
+    {
+      "id": "what-does-glutathione-do",
+      "heading": "What Does Glutathione Do?",
+      "copy": "In cellular biochemistry, glutathione acts as a major redox buffer. Glutathione peroxidases use GSH in reactions that reduce hydrogen peroxide and lipid peroxides, while glutathione reductase converts GSSG back toward GSH using NADPH. Glutathione also participates in conjugation reactions mediated by glutathione S-transferases and in protein redox regulation through reversible glutathionylation. These are biochemical roles established across molecular and cellular research. They are different from broad consumer phrases such as \"detoxes the body\" or \"boosts immunity,\" which are not used here as product claims.",
+      "aeo_answer": "Glutathione participates in cellular redox buffering, peroxide reduction, conjugation reactions and redox regulation of proteins."
+    },
+    {
+      "id": "research-context",
+      "heading": "Glutathione Research Context",
+      "copy": "Glutathione is studied across redox biology, oxidative-stress research, thiol chemistry, mitochondrial biology, toxicology and cellular metabolism. Researchers may measure total glutathione, GSH, GSSG, or the GSH:GSSG relationship depending on the question being studied. Basic biochemical experiments ask how glutathione is synthesized, recycled and consumed. Human intervention studies ask a different question: whether a particular formulation and route changes a measurable outcome. Those evidence types should remain separate.",
+      "aeo_answer": "Glutathione research spans redox biology, oxidative stress, thiol chemistry, cellular metabolism and toxicology."
+    },
+    {
+      "id": "molecule-vs-formulation",
+      "heading": "Glutathione Spray: Molecule vs. Formulation",
+      "copy": "Glutathione is a defined chemical molecule. Glutathione Spray is a product formulation. The molecule's reference chemistry does not determine the concentration, amount per actuation, vehicle, preservative system, liposomal status, pH, stability, route or total net content of a commercial spray. Those properties are product-specific and should be taken from the first-party product record and applicable lot documentation. This spray listing is also a separate product from Veracue's existing vial-format Glutathione (GLUT-600MG) — the two are different SKUs and should not be assumed to share the same concentration, form, or COA.",
+      "table": {
+        "columns": [
+          "Property",
+          "Glutathione reference chemistry",
+          "Veracue spray product"
+        ],
+        "rows": [
+          [
+            "Molecule",
+            "Glutathione; form must be specified when relevant",
+            "Confirm from first-party documentation"
+          ],
+          [
+            "Reduced / oxidized state",
+            "GSH and GSSG are distinct species",
+            "Not publicly specified"
+          ],
+          [
+            "Formula",
+            "Reference chemistry",
+            "Product-specific form must be confirmed"
+          ],
+          [
+            "Concentration",
+            "Not implied by molecule identity",
+            "Not publicly specified"
+          ],
+          [
+            "Amount per actuation",
+            "Not implied by molecule identity",
+            "Not publicly specified"
+          ],
+          [
+            "Vehicle / excipients",
+            "Not a molecular property",
+            "Not publicly specified"
+          ],
+          [
+            "Liposomal status",
+            "Not inherent to glutathione",
+            "Not publicly specified"
+          ],
+          [
+            "Route",
+            "Not a molecular property",
+            "Not assumed from \"spray\""
+          ],
+          [
+            "Purity",
+            "Lot-specific analytical result",
+            "Not publicly specified"
+          ],
+          [
+            "COA",
+            "Product documentation",
+            "No spray-specific public lot COA identified"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "reference-chemistry",
+      "heading": "Glutathione Research Specifications",
+      "subsections": [
+        {
+          "heading": "A. Reference Chemistry — Reduced Glutathione (GSH)",
+          "table": {
+            "columns": [
+              "Field",
+              "Value",
+              "Source"
+            ],
+            "rows": [
+              [
+                "Common name",
+                "Glutathione; reduced glutathione (GSH)",
+                "PubChem CID 124886"
+              ],
+              [
+                "Composition",
+                "L-glutamate, L-cysteine, glycine",
+                "PubChem CID 124886"
+              ],
+              [
+                "Structure",
+                "Gamma-L-glutamyl-L-cysteinyl-glycine",
+                "PubChem CID 124886"
+              ],
+              [
+                "Molecular formula",
+                "C10H17N3O6S",
+                "PubChem CID 124886"
+              ],
+              [
+                "Molecular weight",
+                "307.32 g/mol",
+                "PubChem CID 124886 (matches the value shown on Veracue's live /product/glutathione page)"
+              ],
+              [
+                "CAS",
+                "70-18-8",
+                "PubChem / CAS-linked records"
+              ],
+              [
+                "PubChem CID",
+                "124886",
+                "PubChem"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "B. Veracue Product Specifications — Glutathione Spray",
+          "table": {
+            "columns": [
+              "Field",
+              "Status"
+            ],
+            "rows": [
+              [
+                "Product format",
+                "Spray-format research listing"
+              ],
+              [
+                "GSH/GSSG form",
+                "Not publicly specified on the current Veracue product information"
+              ],
+              [
+                "Spray concentration",
+                "Not publicly specified on the current Veracue product information"
+              ],
+              [
+                "Amount per actuation",
+                "Not publicly specified on the current Veracue product information"
+              ],
+              [
+                "Total net content",
+                "Not publicly specified on the current Veracue product information"
+              ],
+              [
+                "Vehicle / excipients",
+                "Not publicly specified on the current Veracue product information"
+              ],
+              [
+                "Liposomal / micellar / other formulation",
+                "Not publicly specified on the current Veracue product information"
+              ],
+              [
+                "Route",
+                "Not publicly specified; do not infer from \"spray\""
+              ],
+              [
+                "Purity",
+                "Not publicly specified; no spray-specific public lot result identified"
+              ],
+              [
+                "Lot / COA",
+                "Not publicly specified; no spray-specific public lot COA identified"
+              ],
+              [
+                "Testing laboratory",
+                "Not publicly specified"
+              ],
+              [
+                "Storage",
+                "Not publicly specified"
+              ],
+              [
+                "SKU / price / availability",
+                "Not publicly specified"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "gsh-vs-gssg",
+      "heading": "Reduced Glutathione (GSH) vs. Oxidized Glutathione (GSSG)",
+      "copy": "GSH and GSSG are two chemically distinct states connected by cellular redox cycling. GSH contains a free thiol on cysteine. Oxidation can join two GSH molecules through a disulfide bond to form GSSG. Researchers may measure either species directly or use their relationship as part of a redox assessment. A product specification that simply says \"glutathione\" without identifying the form leaves an important analytical question unanswered.",
+      "table": {
+        "columns": [
+          "Attribute",
+          "GSH",
+          "GSSG"
+        ],
+        "rows": [
+          [
+            "Chemical state",
+            "Reduced",
+            "Oxidized disulfide"
+          ],
+          [
+            "Molecular formula",
+            "C10H17N3O6S",
+            "C20H32N6O12S2"
+          ],
+          [
+            "Molecular weight",
+            "307.32 g/mol",
+            "612.6 g/mol"
+          ],
+          [
+            "CAS",
+            "70-18-8",
+            "27025-41-8"
+          ],
+          [
+            "PubChem CID",
+            "124886",
+            "65359"
+          ],
+          [
+            "Research context",
+            "Reduced thiol / redox chemistry",
+            "Oxidized counterpart / redox-state research"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "liposomal",
+      "heading": "Glutathione vs. Liposomal Glutathione",
+      "copy": "Glutathione is the molecule. Liposomal glutathione describes a formulation in which glutathione is associated with lipid vesicles. The formulation term does not change the identity of glutathione itself, but it does describe a product property that requires its own documentation. Because the current spray listing does not publicly specify a liposomal formulation, this page does not call it liposomal.",
+      "aeo_answer": "Liposomal glutathione is glutathione presented in a lipid-vesicle formulation; it is a formulation description, not a different glutathione molecule."
+    },
+    {
+      "id": "benefits-research",
+      "heading": "Glutathione Benefits: What Research Actually Shows",
+      "copy": "The search term \"glutathione benefits\" covers several different evidence levels. The useful way to present the science is to identify what was measured, in which model, and what the study did not establish.",
+      "table": {
+        "columns": [
+          "Research question",
+          "Evidence type",
+          "What was studied",
+          "Main limitation"
+        ],
+        "rows": [
+          [
+            "Does glutathione participate in antioxidant defense?",
+            "Biochemical / cellular",
+            "GSH participates in peroxide reduction through glutathione-dependent enzymes.",
+            "Mechanistic evidence does not by itself establish a clinical outcome."
+          ],
+          [
+            "Does oral glutathione change systemic glutathione measures?",
+            "Human studies",
+            "Several trials have examined oral glutathione, with findings that vary by formulation and study design.",
+            "Results are formulation- and duration-specific."
+          ],
+          [
+            "Has glutathione been studied in skin-pigmentation research?",
+            "Human topical/oral studies",
+            "Small studies have examined pigmentation-related outcomes.",
+            "Small samples and formulation-specific results limit generalization."
+          ],
+          [
+            "Has intravenous glutathione been studied?",
+            "Human intervention",
+            "Clinical research has examined plasma glutathione and other outcomes after IV administration.",
+            "Route-specific evidence does not validate a spray formulation."
+          ],
+          [
+            "Does glutathione research establish a benefit for this Veracue spray?",
+            "Not established",
+            "No spray-specific clinical efficacy claim is made on this page.",
+            "The Veracue formulation and product-specific evidence are not publicly documented."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "skin",
+      "heading": "Glutathione and Skin-Pigmentation Research",
+      "copy": "Glutathione has been studied in relation to melanogenesis and pigmentation, including small oral and topical trials. The evidence is formulation-specific and remains separate from the biochemical role of glutathione itself. This page therefore discusses skin research only as scientific context and does not present the Veracue spray as a cosmetic or skin-lightening product.",
+      "rule": "Do not use terms such as skin whitening, fairness, pigmentation treatment or cosmetic improvement as product claims."
+    },
+    {
+      "id": "side-effects",
+      "heading": "Glutathione Side Effects and Safety Research",
+      "copy": "Safety findings around glutathione vary with formulation, route, exposure, duration and study population. Evidence from oral, topical, intravenous or injectable studies should not be transferred directly to an unrelated spray formulation. This RUO page does not provide a consumer safety profile for Veracue's spray and does not give personal-use guidance."
+    },
+    {
+      "id": "dosage",
+      "heading": "Glutathione Dosage",
+      "copy": "Veracue's Research Use Only page does not provide human dosing, spray counts, daily or weekly amounts, cycles, or administration instructions. Study quantities reported in the literature are tied to specific formulations, routes, populations and experimental designs and should not be converted into generalized human-use instructions."
+    },
+    {
+      "id": "injection-iv",
+      "heading": "Glutathione Injection, IV, and Other Forms",
+      "copy": "Glutathione appears in research and clinical literature in several administered forms, including intravenous formulations. Those studies answer questions about those specific formulations and routes. They do not establish that Veracue's spray is injectable, IV-compatible, pharmacokinetically equivalent, or interchangeable with another product."
+    },
+    {
+      "id": "oral-tablets",
+      "heading": "Glutathione Tablets and Oral Forms",
+      "copy": "Oral glutathione has been studied in tablets, capsules and other oral formulations. Results from an oral formulation should remain separate from spray-format research because formulation, route and exposure conditions differ. This page does not recommend tablets, capsules or other consumer glutathione products."
+    },
+    {
+      "id": "analytical",
+      "heading": "Analytical Characterization of Glutathione",
+      "copy": "HPLC and mass spectrometry answer different analytical questions. HPLC can report chromatographic purity under a specific method, while mass spectrometry compares observed molecular mass with the expected chemical form. For glutathione, the analyst should also distinguish GSH from GSSG and account for the actual chemical form under test. A lot-specific chromatogram and mass result are more informative than a generic purity statement alone. Where exact redox state matters, appropriate GSH/GSSG-specific methods may be required.",
+      "subsections": [
+        {
+          "heading": "HPLC",
+          "copy": "Review the column, mobile phase, gradient, detection conditions and integration method. A purity percentage without method context is difficult to interpret."
+        },
+        {
+          "heading": "Mass Spectrometry",
+          "copy": "Confirm the expected and observed mass, chemical form and the mass convention used by the laboratory. Salt or other form differences can shift the measured value."
+        },
+        {
+          "heading": "GSH/GSSG Distinction",
+          "copy": "A generic \"glutathione\" label does not establish whether the sample is reduced GSH, oxidized GSSG, or another defined form. The COA should make the tested form clear."
+        },
+        {
+          "heading": "Orthogonal Methods",
+          "copy": "LC-MS/MS, enzymatic GSH/GSSG assays and other validated methods may provide additional evidence when redox state or concentration requires more than one measurement."
+        }
+      ]
+    },
+    {
+      "id": "coa",
+      "heading": "How to Read a Glutathione COA",
+      "copy": "A Certificate of Analysis is most useful when it is tied to the exact lot being researched. The goal is to connect identity, chemical form, analytical results and batch traceability.",
+      "table": {
+        "columns": [
+          "COA field",
+          "What it tells you",
+          "What it does not prove"
+        ],
+        "rows": [
+          [
+            "Product identity",
+            "Which material the report describes",
+            "Complete identity without supporting analytical data"
+          ],
+          [
+            "GSH/GSSG form",
+            "Which chemical state was tested",
+            "Purity by itself"
+          ],
+          [
+            "Lot number",
+            "Which batch was analyzed",
+            "Anything if it does not match the physical product"
+          ],
+          [
+            "HPLC result",
+            "Chromatographic purity under the stated method",
+            "Full molecular identity"
+          ],
+          [
+            "Mass spectrometry",
+            "Mass compatibility with the expected chemical form",
+            "Biological activity or clinical effect"
+          ],
+          [
+            "Testing laboratory",
+            "Who performed the analysis",
+            "Independence unless separately established"
+          ],
+          [
+            "Test date",
+            "When the batch was tested",
+            "Current status of a different lot"
+          ],
+          [
+            "Chromatogram / spectrum",
+            "Visual support for the reported analysis",
+            "Results for another batch"
+          ]
+        ]
+      },
+      "quick_check": [
+        "Match the lot number on the COA to the product label.",
+        "Confirm whether the material is identified specifically as GSH, GSSG, or another defined form.",
+        "Check that the HPLC method is named.",
+        "Check that the mass result identifies the chemical form and expected/observed values.",
+        "Confirm the testing laboratory and test date.",
+        "Do not substitute a generic or representative certificate for a lot-specific document."
+      ]
+    },
+    {
+      "id": "storage",
+      "heading": "Storage & Handling",
+      "copy": "Use only the storage conditions stated in the applicable Veracue product documentation and lot record. No fixed temperature, shelf life or freeze/thaw limit is published here for the spray listing. No reconstitution or administration instructions are provided."
+    },
+    {
+      "id": "disambiguation",
+      "heading": "What Glutathione Is Not",
+      "items": [
+        "Glutathione is not GHK-Cu.",
+        "Glutathione is not BPC-157.",
+        "Glutathione is not MOTS-c.",
+        "Glutathione is not NAD+.",
+        "GSH is not GSSG.",
+        "Glutathione is not automatically liposomal.",
+        "Glutathione Spray is not automatically nasal.",
+        "A product name is not proof of concentration, route, purity or formulation.",
+        "Glutathione Spray is not the same listing as Veracue's existing vial-format Glutathione (GLUT-600MG) — they are separate products."
+      ]
+    },
+    {
+      "id": "researcher-problems",
+      "heading": "Researcher Problems We Help You Avoid",
+      "modules": [
+        {
+          "number": 1,
+          "problem": "Confusing GSH with GSSG",
+          "why_it_matters": "They are distinct chemical species with different formulas and masses.",
+          "solution": "Record the exact redox form in procurement and analytical records."
+        },
+        {
+          "number": 2,
+          "problem": "Assuming \"glutathione\" means reduced GSH",
+          "why_it_matters": "A generic name does not establish the chemical state.",
+          "solution": "Require explicit GSH/GSSG identification in first-party documentation."
+        },
+        {
+          "number": 3,
+          "problem": "Assuming spray means nasal",
+          "why_it_matters": "Spray describes a format, not necessarily a route.",
+          "solution": "Treat route as product-specific until explicitly documented."
+        },
+        {
+          "number": 4,
+          "problem": "Assuming concentration from another supplier",
+          "why_it_matters": "Spray concentration and actuation volume vary between products.",
+          "solution": "Use only first-party concentration and net-content data for the product in hand."
+        },
+        {
+          "number": 5,
+          "problem": "Confusing glutathione with liposomal glutathione",
+          "why_it_matters": "Liposomal status is a formulation property, not a molecule identity.",
+          "solution": "Verify formulation type before using it as a product descriptor."
+        },
+        {
+          "number": 6,
+          "problem": "Treating HPLC purity as complete identity confirmation",
+          "why_it_matters": "Chromatographic purity and molecular identity are different analytical questions.",
+          "solution": "Review HPLC with a separate identity method such as mass spectrometry."
+        },
+        {
+          "number": 7,
+          "problem": "Using a generic COA",
+          "why_it_matters": "A generic certificate may describe another lot.",
+          "solution": "Match the COA lot number to the physical product."
+        },
+        {
+          "number": 8,
+          "problem": "Transferring injectable or oral research to a spray",
+          "why_it_matters": "Route and formulation affect exposure and interpretation.",
+          "solution": "Keep evidence tied to the exact route and formulation studied."
+        },
+        {
+          "number": 9,
+          "problem": "Turning redox mechanism into a human benefit claim",
+          "why_it_matters": "Biochemical function does not automatically establish a clinical outcome.",
+          "solution": "Keep mechanistic and clinical evidence clearly separated."
+        },
+        {
+          "number": 10,
+          "problem": "Confusing glutathione with unrelated peptides or metabolites",
+          "why_it_matters": "Similarity in search results does not mean chemical or biological equivalence.",
+          "solution": "Use formula, CAS or PubChem identifiers for disambiguation."
+        },
+        {
+          "number": 11,
+          "problem": "Assuming a published formulation equals the Veracue formulation",
+          "why_it_matters": "Published evidence can apply to a different product, concentration or vehicle.",
+          "solution": "Treat literature as molecule/formulation-specific evidence, not product certification."
+        },
+        {
+          "number": 12,
+          "problem": "Losing lot traceability",
+          "why_it_matters": "Later results may be impossible to tie back to the material used.",
+          "solution": "Record lot, COA, receipt date and storage documentation at intake."
+        }
+      ]
+    },
+    {
+      "id": "human-research",
+      "heading": "Human Research",
+      "copy": "Glutathione has substantial human research across different formulations and routes. Oral, topical and parenteral studies answer different questions and should be interpreted separately. A finding from one route does not validate another formulation, and human research on glutathione does not by itself establish efficacy or safety for Veracue's spray-format research material."
+    },
+    {
+      "id": "compliance",
+      "heading": "Research Use Only / Compliance",
+      "copy": "RESEARCH USE ONLY — NOT FOR HUMAN OR VETERINARY USE. This material is presented for scientific and laboratory research only. It is not presented as a drug, dietary supplement, food, cosmetic, treatment, or diagnostic product. No human dosage, administration, reconstitution, dilution, injection, nasal-use, oral-use, or treatment instructions are provided."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is glutathione?",
+      "a": "Glutathione is a tripeptide made from glutamate, cysteine and glycine. Its cysteine thiol enables it to participate in cellular redox chemistry."
+    },
+    {
+      "q": "What is glutathione peptide?",
+      "a": "Glutathione is itself a tripeptide, so \"glutathione peptide\" is a search phrase for glutathione rather than a separate compound."
+    },
+    {
+      "q": "What does glutathione do?",
+      "a": "Glutathione participates in redox buffering, peroxide reduction, protein redox regulation and conjugation reactions involving glutathione-dependent enzymes."
+    },
+    {
+      "q": "What is GSH?",
+      "a": "GSH is reduced glutathione, the form with a free thiol group on cysteine."
+    },
+    {
+      "q": "What is GSSG?",
+      "a": "GSSG is glutathione disulfide, the oxidized disulfide-linked form produced when two GSH molecules are joined through cysteine sulfur atoms."
+    },
+    {
+      "q": "What is the difference between GSH and GSSG?",
+      "a": "GSH is the reduced form with a free thiol, while GSSG is the oxidized disulfide form. They have different formulas, masses and chemical behavior."
+    },
+    {
+      "q": "What is reduced glutathione?",
+      "a": "Reduced glutathione is GSH, the thiol-containing form commonly studied in cellular redox biology."
+    },
+    {
+      "q": "What is liposomal glutathione?",
+      "a": "Liposomal glutathione is glutathione presented in a lipid-vesicle formulation. The term describes formulation, not a different glutathione molecule."
+    },
+    {
+      "q": "Is glutathione the same as liposomal glutathione?",
+      "a": "No. Glutathione is the molecule; liposomal glutathione is a particular formulation of that molecule."
+    },
+    {
+      "q": "What are glutathione benefits?",
+      "a": "Research has investigated glutathione in redox biology, oxidative stress, skin pigmentation, and other areas. Findings vary by model, route and formulation and are not presented here as product-specific health benefits."
+    },
+    {
+      "q": "What are glutathione side effects?",
+      "a": "Reported observations vary with formulation, route, exposure, duration and study population. This RUO page does not establish a product-specific human safety profile."
+    },
+    {
+      "q": "What is the glutathione dosage?",
+      "a": "This Research Use Only page does not provide human dosing, spray counts, administration schedules or protocols."
+    },
+    {
+      "q": "Is glutathione available as an injection?",
+      "a": "Injectable and intravenous glutathione appear in the broader literature, but that does not establish that a particular spray product is injectable or equivalent to an injectable formulation."
+    },
+    {
+      "q": "Is glutathione available in tablets or oral forms?",
+      "a": "Oral glutathione has been studied in tablets, capsules and other formulations. Oral findings are formulation-specific and do not establish the properties of a spray."
+    },
+    {
+      "q": "Is glutathione spray the same as intranasal glutathione?",
+      "a": "Not necessarily. \"Spray\" is a format description and does not by itself establish an intranasal route."
+    },
+    {
+      "q": "How is glutathione purity tested?",
+      "a": "HPLC can assess chromatographic purity, while mass spectrometry can compare observed molecular mass with the expected chemical form. GSH/GSSG state may require additional or specific analytical methods."
+    },
+    {
+      "q": "What should a glutathione COA contain?",
+      "a": "A useful COA should identify the tested form, lot number, HPLC result and method, mass-spectrometry data, testing laboratory and test date."
+    },
+    {
+      "q": "What does Research Use Only mean?",
+      "a": "Research Use Only means the material is supplied for laboratory and scientific research and is not intended for human or veterinary use or administration."
+    },
+    {
+      "q": "Is Glutathione Spray the same product as Veracue's Glutathione vials?",
+      "a": "No. Glutathione Spray is a separate, distinct listing from Veracue's existing vial-format Glutathione (GLUT-600MG, 600mg/1500mg). The two are different SKUs and should not be assumed to share the same concentration, redox form, or COA."
+    }
+  ],
+  "searchIntentMap": [
+    {
+      "cluster": "what is glutathione / what does glutathione do",
+      "answer_location": "Sections: What Is Glutathione? and What Does Glutathione Do?"
+    },
+    {
+      "cluster": "glutathione peptide",
+      "answer_location": "Definition section and FAQ."
+    },
+    {
+      "cluster": "glutathione benefits",
+      "answer_location": "Evidence table under Glutathione Benefits: What Research Actually Shows."
+    },
+    {
+      "cluster": "glutathione side effects / is glutathione safe",
+      "answer_location": "Glutathione Side Effects and Safety Research."
+    },
+    {
+      "cluster": "glutathione dosage",
+      "answer_location": "Glutathione Dosage; direct RUO scope answer with no numerical guidance."
+    },
+    {
+      "cluster": "glutathione liposomal / liposomal glutathione / what is liposomal glutathione",
+      "answer_location": "Glutathione vs. Liposomal Glutathione."
+    },
+    {
+      "cluster": "glutathione for skin / glutathione skin whitening",
+      "answer_location": "Glutathione and Skin-Pigmentation Research; informational only."
+    },
+    {
+      "cluster": "glutathione injection / IV / shot",
+      "answer_location": "Glutathione Injection, IV, and Other Forms."
+    },
+    {
+      "cluster": "glutathione tablets",
+      "answer_location": "Glutathione Tablets and Oral Forms."
+    },
+    {
+      "cluster": "reduced glutathione / GSH / GSSG",
+      "answer_location": "GSH vs. GSSG and Research Specifications."
+    },
+    {
+      "cluster": "glutathione COA / purity / HPLC / mass spectrometry",
+      "answer_location": "Analytical Characterization and COA Guide."
+    },
+    {
+      "cluster": "confusion between this spray and Veracue's existing Glutathione vial listing",
+      "answer_location": "Hero copy, Molecule vs. Formulation section, What Glutathione Is Not, and final FAQ entry."
+    }
+  ],
+  "internal_linking": [
+    {
+      "anchor": "browse the research catalog",
+      "url": "https://veracue-peptides.vercel.app/shop",
+      "purpose": "Main catalog navigation."
+    },
+    {
+      "anchor": "view Certificates (COA)",
+      "url": "https://veracue-peptides.vercel.app/certificates",
+      "purpose": "Lot documentation and analytical verification."
+    },
+    {
+      "anchor": "Help & FAQ",
+      "url": "https://veracue-peptides.vercel.app/faq",
+      "purpose": "General RUO and product-documentation questions."
+    },
+    {
+      "anchor": "About Veracue",
+      "url": "https://veracue-peptides.vercel.app/about-us",
+      "purpose": "Company and research-positioning context."
+    },
+    {
+      "anchor": "Contact Veracue",
+      "url": "https://veracue-peptides.vercel.app/contact-us",
+      "purpose": "Request product-specific documentation."
+    },
+    {
+      "anchor": "Medical Disclaimer",
+      "url": "https://veracue-peptides.vercel.app/medical-disclaimer",
+      "purpose": "Compliance context."
+    },
+    {
+      "anchor": "Glutathione (vial listing)",
+      "url": "https://veracue-peptides.vercel.app/product/glutathione",
+      "purpose": "Disambiguation — points to Veracue's existing, separate vial-format Glutathione product so researchers don't confuse the two SKUs."
+    }
+  ],
+  "imageSeo": [
+    {
+      "filename": "veracue-glutathione-spray-research-product.webp",
+      "alt": "Veracue Glutathione Spray research product, Research Use Only",
+      "title": "Veracue Glutathione Spray — Research Use Only",
+      "caption": "Glutathione Spray, presented for laboratory research only.",
+      "note": "Do not visually imply concentration, amount per spray or administration route unless confirmed by product documentation."
+    },
+    {
+      "filename": "glutathione-gsh-molecular-structure.svg",
+      "alt": "Chemical structure of reduced glutathione GSH, a tripeptide of glutamate cysteine and glycine",
+      "title": "Reduced Glutathione (GSH) Molecular Structure",
+      "caption": "Reference structure of reduced glutathione (GSH).",
+      "note": "Ensure the graphic depicts the correct gamma-glutamyl linkage."
+    },
+    {
+      "filename": "glutathione-gsh-gssg-redox-cycle-research.svg",
+      "alt": "Educational diagram showing the GSH and GSSG glutathione redox cycle",
+      "title": "GSH/GSSG Redox Cycle — Educational Research Illustration",
+      "caption": "Educational illustration of glutathione redox cycling.",
+      "note": "Not a product-performance diagram."
+    },
+    {
+      "filename": "glutathione-coa-hplc-ms-reference.svg",
+      "alt": "Illustrative HPLC and mass spectrometry concepts for glutathione analysis",
+      "title": "Glutathione Analytical Characterization — Illustrative",
+      "caption": "Illustrative analytical reference; not a Veracue lot result.",
+      "note": "Never fabricate a chromatogram, spectrum or COA."
+    }
+  ],
+  "schema": {
+    "product": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://veracue-peptides.vercel.app/product/glutathione-spray#product",
+      "name": "Glutathione Spray",
+      "description": "Spray-format glutathione research listing from Veracue. Research Use Only — not for human or veterinary use.",
+      "url": "https://veracue-peptides.vercel.app/product/glutathione-spray",
+      "image": "https://veracue-peptides.vercel.app/images/veracue-glutathione-spray-research-product.webp",
+      "brand": {
+        "@type": "Brand",
+        "name": "Veracue"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Reference form",
+          "value": "Glutathione; reduced GSH reference chemistry should be distinguished from oxidized GSSG."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Research designation",
+          "value": "Research Use Only — not for human or veterinary use"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Distinct SKU notice",
+          "value": "This spray listing is a separate product from Veracue's existing vial-format Glutathione (GLUT-600MG)."
+        }
+      ]
+    },
+    "breadcrumbList": {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://veracue-peptides.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Shop",
+          "item": "https://veracue-peptides.vercel.app/shop"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Glutathione Spray",
+          "item": "https://veracue-peptides.vercel.app/product/glutathione-spray"
+        }
+      ]
+    },
+    "faqPage": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://veracue-peptides.vercel.app/product/glutathione-spray#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is glutathione?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Glutathione is a tripeptide made from glutamate, cysteine and glycine. Its cysteine thiol enables it to participate in cellular redox chemistry."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is glutathione peptide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Glutathione is itself a tripeptide, so \"glutathione peptide\" is a search phrase for glutathione rather than a separate compound."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does glutathione do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Glutathione participates in redox buffering, peroxide reduction, protein redox regulation and conjugation reactions involving glutathione-dependent enzymes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is GSH?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GSH is reduced glutathione, the form with a free thiol group on cysteine."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is GSSG?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GSSG is glutathione disulfide, the oxidized disulfide-linked form produced when two GSH molecules are joined through cysteine sulfur atoms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between GSH and GSSG?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GSH is the reduced form with a free thiol, while GSSG is the oxidized disulfide form. They have different formulas, masses and chemical behavior."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is reduced glutathione?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Reduced glutathione is GSH, the thiol-containing form commonly studied in cellular redox biology."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is liposomal glutathione?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Liposomal glutathione is glutathione presented in a lipid-vesicle formulation. The term describes formulation, not a different glutathione molecule."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is glutathione the same as liposomal glutathione?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Glutathione is the molecule; liposomal glutathione is a particular formulation of that molecule."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are glutathione benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Research has investigated glutathione in redox biology, oxidative stress, skin pigmentation, and other areas. Findings vary by model, route and formulation and are not presented here as product-specific health benefits."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are glutathione side effects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Reported observations vary with formulation, route, exposure, duration and study population. This RUO page does not establish a product-specific human safety profile."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the glutathione dosage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This Research Use Only page does not provide human dosing, spray counts, administration schedules or protocols."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is glutathione available as an injection?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Injectable and intravenous glutathione appear in the broader literature, but that does not establish that a particular spray product is injectable or equivalent to an injectable formulation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is glutathione available in tablets or oral forms?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oral glutathione has been studied in tablets, capsules and other formulations. Oral findings are formulation-specific and do not establish the properties of a spray."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is glutathione spray the same as intranasal glutathione?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not necessarily. \"Spray\" is a format description and does not by itself establish an intranasal route."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is glutathione purity tested?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "HPLC can assess chromatographic purity, while mass spectrometry can compare observed molecular mass with the expected chemical form. GSH/GSSG state may require additional or specific analytical methods."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should a glutathione COA contain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A useful COA should identify the tested form, lot number, HPLC result and method, mass-spectrometry data, testing laboratory and test date."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does Research Use Only mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Research Use Only means the material is supplied for laboratory and scientific research and is not intended for human or veterinary use or administration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Glutathione Spray the same product as Veracue's Glutathione vials?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Glutathione Spray is a separate, distinct listing from Veracue's existing vial-format Glutathione (GLUT-600MG, 600mg/1500mg). The two are different SKUs and should not be assumed to share the same concentration, redox form, or COA."
+          }
+        }
+      ]
+    },
+    "schemaRules": [
+      "Do not add Offer until SKU, price and availability are confirmed.",
+      "Do not add purity, COA, lot or concentration properties without first-party lot documentation.",
+      "Do not add liposomal or route properties unless the live product record explicitly confirms them.",
+      "Keep FAQPage text synchronized with visible FAQ content."
+    ]
+  },
+  "scientificReferences": [
+    {
+      "citation": "PubChem. Glutathione, CID 124886.",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/124886",
+      "supports": "Reduced glutathione identity, formula C10H17N3O6S, molecular weight 307.32 g/mol, CAS 70-18-8, structural information."
+    },
+    {
+      "citation": "PubChem. Glutathione Disulfide, CID 65359.",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/65359",
+      "supports": "GSSG identity, formula C20H32N6O12S2, molecular weight 612.6 g/mol, CAS 27025-41-8."
+    },
+    {
+      "citation": "Lu SC. Glutathione synthesis. Biochim Biophys Acta. 2013;1830(5):3143-3153.",
+      "doi": "10.1016/j.bbagen.2012.09.008",
+      "pmid": "22995213",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22995213/",
+      "supports": "GSH synthesis, redox cycling, glutathione peroxidase/reductase biology and broader biochemical context."
+    },
+    {
+      "citation": "Pizzorno J. Glutathione! Integr Med (Encinitas). 2014;13(1):8-12.",
+      "pmid": "26770075",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4684116/",
+      "supports": "General glutathione biological context."
+    },
+    {
+      "citation": "Allen J, Bradley RD. Effects of oral glutathione supplementation on systemic oxidative stress biomarkers. J Altern Complement Med. 2011;17(9):827-833.",
+      "doi": "10.1089/acm.2010.0716",
+      "pmid": "21875351",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21875351/",
+      "supports": "Human oral glutathione research; keep conclusions formulation- and study-specific."
+    },
+    {
+      "citation": "Weschawalit S, Thongthip S, Phutrakool P, Asawanonda P. Glutathione and its antiaging and antimelanogenic effects. Clin Cosmet Investig Dermatol. 2017;10:147-153.",
+      "doi": "10.2147/CCID.S128339",
+      "pmid": "28490897",
+      "supports": "Topical/oral skin-pigmentation research context; do not turn into Veracue cosmetic claims."
+    }
+  ],
+  "claimVerification": {
+    "verified_reference_claims": [
+      "Glutathione is a tripeptide.",
+      "GSH is reduced glutathione.",
+      "GSSG is glutathione disulfide.",
+      "GSH contains a reactive cysteine thiol.",
+      "GSH participates in glutathione peroxidase and glutathione reductase redox cycling.",
+      "Glutathione participates in glutathione S-transferase-mediated conjugation reactions.",
+      "PubChem CID 124886 corresponds to reduced glutathione.",
+      "PubChem CID 65359 corresponds to glutathione disulfide.",
+      "/product/glutathione-spray returns Product Not Found on the live site as of 2026-09-30.",
+      "/product/glutathione is a separate, already-live Veracue product (GLUT-600MG) as of 2026-09-30.",
+      "The Veracue Certificates page shows 0 published reports as of 2026-09-30."
+    ],
+    "must_not_be_claimed_without_first_party_evidence": [
+      "The spray is specifically reduced GSH.",
+      "The spray is liposomal.",
+      "The spray is nasal, oral, buccal or sublingual.",
+      "The spray has a particular concentration or amount per actuation.",
+      "The spray has a specific purity percentage.",
+      "A specific lot has passed HPLC or MS.",
+      "A specific COA exists for the spray.",
+      "A specific storage temperature or shelf life applies.",
+      "The spray has the same formulation as Veracue's existing Glutathione vial product.",
+      "The spray has a specific clinical benefit or safety profile."
+    ]
+  },
+  "finalQA": {
+    "seo": "PASS — keyword coverage uses the supplied workbook without stuffing.",
+    "geo": "PASS — molecule, redox state and formulation are explicitly separated.",
+    "aeo": "PASS — direct answers and standalone FAQs are included.",
+    "ruo": "PASS — no human dosage, administration, reconstitution, injection, oral-use or treatment instructions.",
+    "factuality": "PASS — product-specific gaps are not filled from competitors or assumptions; confirmed live-site 404 and sibling-product status as of 2026-09-30.",
+    "scientificAccuracy": "PASS — GSH and GSSG are treated as separate chemical species; GSH molecular weight standardized to 307.32 g/mol to match Veracue's own live /product/glutathione page.",
+    "productStatus": "PASS — spray-specific product claims remain pending first-party documentation.",
+    "schema": "PASS — no fabricated price, SKU, offer, availability, purity, lot or COA. FAQPage schema now populated in full from the visible FAQ array (see schema.faqPage.mainEntity) rather than left as a placeholder instruction.",
+    "crossProductDisambiguation": "PASS (added in this final pass) — hero copy, the Molecule vs. Formulation section, the What Glutathione Is Not list, a dedicated FAQ entry, an internal link, and a Product-schema additionalProperty all now state explicitly that this spray listing is a separate SKU from Veracue's existing live vial-format Glutathione (GLUT-600MG)."
+  }
+}

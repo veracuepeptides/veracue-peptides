@@ -1,0 +1,437 @@
+{
+  "meta": {
+    "route": "/product/melanotan-2",
+    "canonical": "https://veracue-peptides.vercel.app/product/melanotan-2",
+    "seoTitle": "Melanotan 2 Research Peptide (Melanotan II) | Veracue",
+    "metaDescription": "Melanotan 2, the cyclic lactam analogue of alpha-MSH, for lab research: molecular identity, melanocortin receptor context, Melanotan 1 vs 2, and COA checks.",
+    "h1": "Melanotan 2 Peptide",
+    "primaryKeyword": "Melanotan 2 peptide",
+    "secondaryKeywords": [
+      "Melanotan II",
+      "MT2 peptide",
+      "Melanotan peptide",
+      "what is Melanotan 2",
+      "Melanotan 1 vs 2",
+      "Melanotan 2 sequence",
+      "Melanotan 2 molecular weight",
+      "Melanotan 2 formula",
+      "Melanotan 2 COA",
+      "tanning peptide"
+    ],
+    "breadcrumb": ["Home", "Shop", "Melanotan 2 Peptide"],
+    "intendedUse": "Research Use Only. Not for human or veterinary use."
+  },
+
+  "hero": {
+    "eyebrow": "Research Use Only",
+    "h1": "Melanotan 2 Peptide",
+    "subtitle": "Synthetic cyclic heptapeptide analogue of \u03b1-MSH \u00b7 Melanotan II / MT2 \u00b7 CAS 121062-08-6",
+    "intro": "Melanotan 2 is a synthetic cyclic heptapeptide studied within melanocortin pharmacology. It shares a family resemblance with several other melanocortin peptides and a good deal of its terminology, which makes precise identity information genuinely useful. This page covers the molecule's sequence and structure, its receptor context, what the published research supports, and the documentation worth reviewing when evaluating a research material.",
+    "complianceLine": "For laboratory research use only. Not for human or animal use.",
+    "ctas": [
+      { "label": "Certificates", "href": "/certificates" },
+      { "label": "Contact the research team", "href": "/contact-us" }
+    ]
+  },
+
+  "snapshot": {
+    "molecularReference": {
+      "heading": "Molecular reference data",
+      "note": "These values describe the Melanotan 2 molecule as recorded in public chemical databases. They are not a statement about the composition of any supplied material.",
+      "rows": [
+        { "label": "Compound name", "value": "Melanotan 2" },
+        { "label": "Also known as", "value": "Melanotan II, MT-II, MT2" },
+        { "label": "Peptide class", "value": "Synthetic cyclic heptapeptide analogue of \u03b1-melanocyte-stimulating hormone (\u03b1-MSH)" },
+        { "label": "Sequence", "value": "Ac-Nle-cyclo[Asp-His-D-Phe-Arg-Trp-Lys]-NH\u2082" },
+        { "label": "Cyclisation", "value": "Side-chain lactam bridge between Asp and Lys" },
+        { "label": "Molecular formula (free peptide)", "value": "C\u2085\u2080H\u2086\u2089N\u2081\u2085O\u2089" },
+        { "label": "Average molecular weight", "value": "\u2248 1024.2 g/mol" },
+        { "label": "Monoisotopic mass", "value": "\u2248 1023.5403 Da" },
+        { "label": "CAS Registry Number", "value": "121062-08-6" },
+        { "label": "PubChem CID", "value": "92432" },
+        { "label": "UNII (FDA substance registration)", "value": "UPF5CJ93X7 \u2014 a substance identifier, not a marketing approval" },
+        { "label": "ChEMBL", "value": "CHEMBL430239" }
+      ]
+    },
+    "productSpecifications": {
+      "heading": "Veracue product specifications",
+      "note": "These fields describe the supplied material rather than the molecule, and are populated only from Veracue's own documentation.",
+      "unspecifiedValue": "Not publicly specified in the current product documentation.",
+      "rows": [
+        { "label": "Formulation", "value": "Not publicly specified in the current product documentation." },
+        { "label": "Salt form / counterion", "value": "Not publicly specified in the current product documentation." },
+        { "label": "Vial or package size", "value": "Not publicly specified in the current product documentation." },
+        { "label": "Purity specification", "value": "Not publicly specified in the current product documentation." },
+        { "label": "HPLC result", "value": "Not publicly specified in the current product documentation." },
+        { "label": "Mass spectrometry result", "value": "Not publicly specified in the current product documentation." },
+        { "label": "Lot number", "value": "Not publicly specified in the current product documentation." },
+        { "label": "Storage conditions", "value": "Not publicly specified in the current product documentation." },
+        { "label": "Testing laboratory", "value": "Not publicly specified in the current product documentation." },
+        { "label": "SKU \u00b7 Price \u00b7 Availability", "value": "Not publicly specified in the current product documentation." }
+      ]
+    }
+  },
+
+  "sections": [
+    {
+      "id": "what-is-melanotan-2",
+      "heading": "What is Melanotan 2?",
+      "shortAnswer": "Melanotan 2 is a synthetic cyclic heptapeptide analogue of \u03b1-melanocyte-stimulating hormone, sequence Ac-Nle-cyclo[Asp-His-D-Phe-Arg-Trp-Lys]-NH\u2082, closed by a side-chain lactam bridge between aspartate and lysine. The pharmacology literature describes it as a non-selective agonist across the MC1R, MC3R, MC4R and MC5R melanocortin receptors. It is a distinct molecule from afamelanotide and from bremelanotide.",
+      "body": [
+        "The compound came out of work at the University of Arizona in the late 1980s on conformationally constrained \u03b1-MSH analogues. The design approach was to shorten the native sequence to its melanocortin core and then close that core into a ring, so the peptide holds a more defined conformation than a linear analogue of the same region.",
+        "Melanotan 2 was investigated in early pharmacological and clinical research, while later pharmaceutical development in the melanocortin field focused on other compounds. That history is the source of most of the naming confusion around it: Melanotan 1 is the historical development name associated with afamelanotide, a separate and longer peptide, and bremelanotide is a closely related but distinct molecule. The comparison tables below set out where each one differs."
+      ]
+    },
+    {
+      "id": "molecular-identity",
+      "heading": "Molecular identity and structure",
+      "body": [
+        "Melanotan 2 is a seven-residue peptide built around the His-Phe-Arg-Trp melanocortin core. Four modifications distinguish it from the corresponding fragment of the native hormone, and one structural feature defines its shape."
+      ],
+      "structureFeatures": [
+        { "feature": "N-terminal acetylation", "note": "The N-terminal amine is capped with an acetyl group, written Ac-, which removes a free charge at that end of the chain." },
+        { "feature": "Norleucine (Nle) substitution", "note": "Norleucine replaces methionine. It is closely similar in shape but carries no sulfur, so it is not subject to the oxidation that methionine undergoes." },
+        { "feature": "D-phenylalanine (D-Phe)", "note": "The phenylalanine residue is present as the D-enantiomer rather than the L-form. The substitution is part of the structural design associated with the compound's melanocortin activity and with resistance to proteolysis." },
+        { "feature": "C-terminal amidation", "note": "The chain ends in an amide (-NH\u2082) rather than a free carboxylic acid. This is the single point of difference from bremelanotide." },
+        { "feature": "Side-chain lactam bridge", "note": "The aspartate side-chain carboxyl and the lysine side-chain amine are joined by an amide bond, closing the ring. This is a lactam linkage between side chains, not a disulfide bond \u2014 Melanotan 2 contains no cysteine, and its molecular formula contains no sulfur." }
+      ],
+      "closingNote": "Written out, the reference sequence is Ac-Nle-cyclo[Asp-His-D-Phe-Arg-Trp-Lys]-NH\u2082. Literature often keeps the parent hormone's residue numbering \u2014 Nle\u2074, Asp\u2075, His\u2076, D-Phe\u2077, Arg\u2078, Trp\u2079, Lys\u00b9\u2070 \u2014 which is why a seven-residue peptide appears with positions running from 4 to 10."
+    },
+    {
+      "id": "receptor-context",
+      "heading": "Melanocortin receptor context",
+      "body": [
+        "The melanocortin system comprises five G protein-coupled receptors, MC1R through MC5R, which signal principally through Gs and adenylyl cyclase. Melanotan 2 is characterised in the receptor pharmacology literature as a non-selective agonist across MC1R, MC3R, MC4R and MC5R, with reported affinities and potencies varying between subtypes and between experimental systems. It is not described as an agonist at MC2R, which responds to ACTH rather than to MSH peptides.",
+        "Those findings come from binding assays and functional assays, typically cAMP measurement in receptor-expressing cell lines. They describe how the molecule behaves at a defined target in a defined system. Receptor activity on its own does not establish a physiological or therapeutic outcome in an intact organism, which depends on distribution, metabolism, tissue receptor expression, exposure and species \u2014 each of which has to be shown separately.",
+        "MC1R is expressed on melanocytes and participates in melanin synthesis; MC3R and MC4R are studied largely in central contexts including energy balance; MC5R is associated with exocrine tissue. A ligand active across several subtypes is useful as a pharmacological tool and correspondingly harder to interpret when an effect is observed, because more than one receptor may be involved."
+      ]
+    },
+    {
+      "id": "published-evidence",
+      "heading": "What the published research covers",
+      "body": [
+        "It helps to keep three categories of evidence separate, because they answer different questions."
+      ],
+      "tiers": [
+        {
+          "heading": "Human research",
+          "body": "Small early studies exist. A pilot Phase I evaluation was reported in Life Sciences in 1996, and a study of erectile response in a small group of men was reported in the Journal of Urology in 1998, with the human work reviewed subsequently in the International Journal of Impotence Research in 2000. These involved limited numbers of participants and reported transient effects including nausea, flushing, yawning and reduced appetite. No large controlled clinical study of Melanotan 2 was identified in the literature reviewed here."
+        },
+        {
+          "heading": "Preclinical research",
+          "body": "Cell and animal studies supply most of the pharmacological detail, including receptor binding and functional data and a range of model-specific findings. Results from these systems are informative about mechanism and do not transfer directly to outcomes in people."
+        },
+        {
+          "heading": "Uncontrolled reports",
+          "body": "A separate body of published case reports describes observations following self-administration of material obtained outside regulated supply. Composition, purity and exposure are generally unverified in these reports, which limits what can be drawn from them about the compound itself. They are a distinct evidence category and are not a substitute for controlled study."
+        }
+      ],
+      "closingNote": "Taken together, this literature does not amount to a comprehensive human safety or efficacy profile, and nothing in it can be applied to a specific research material without lot-level documentation."
+    }
+  ],
+
+  "evidenceHierarchy": {
+    "heading": "Evidence at a glance",
+    "columns": ["Evidence level", "What it addresses", "Status for Melanotan 2"],
+    "rows": [
+      ["Molecular / biochemical", "Structure, formula, mass, chemical identity", "Well documented; CAS, PubChem, UNII and ChEMBL records are consistent."],
+      ["Receptor pharmacology", "Binding and functional activity at defined targets", "Well documented across MC1R, MC3R, MC4R and MC5R."],
+      ["Cell research", "Behaviour in controlled cellular models", "Available and model-specific."],
+      ["Animal research", "Findings in particular experimental species", "Available, principally rodent; species and route dependent."],
+      ["Human research", "Findings in human participants", "Limited to small early studies."],
+      ["Uncontrolled reports", "Observations from unregulated self-administration", "Present in the literature; composition and exposure generally unverified."],
+      ["Regulatory evidence", "Safety and efficacy established under regulatory review", "No regulatory approval for Melanotan 2 was identified in the authoritative sources reviewed."],
+      ["Supplier documentation", "What holds for one specific physical lot", "Established only by lot-specific analytical documentation."]
+    ],
+    "closingNote": "These categories answer different questions and do not substitute for one another. Molecular characterisation says nothing about the purity of a given lot, and a lot certificate says nothing about biological effect."
+  },
+
+  "researcherProblems": {
+    "heading": "Twelve practical questions researchers ask",
+    "items": [
+      {
+        "number": 1,
+        "heading": "Confirming which compound you have",
+        "body": "Melanotan 2, Melanotan II, MT-II and MT2 all refer to the same molecule, while Melanotan and Melanotan-1 refer to a different one. Product titles vary between suppliers, so the more reliable check is the registry identifier: CAS 121062-08-6 and PubChem CID 92432 both resolve to the cyclic heptapeptide described here. Documentation that lists a compound name alongside a CAS number and a stated sequence can be matched against a reference record; documentation that gives only a trade-style product name cannot.",
+        "takeaway": "Match the CAS number and sequence before the product name."
+      },
+      {
+        "number": 2,
+        "heading": "Telling the molecule apart from the supplied material",
+        "body": "C\u2085\u2080H\u2086\u2089N\u2081\u2085O\u2089 and a molecular weight near 1024.2 g/mol describe the free peptide. Synthetic peptides containing basic residues are commonly isolated as salts, and different salt forms carry different formulas, different molecular weights and a different mass of peptide per milligram of solid. Chemical databases maintain separate records for salt forms for that reason, so a database formula describes the reference molecule rather than the contents of a particular vial. The salt form of Veracue's Melanotan 2 is not specified in the current product documentation and should not be assumed.",
+        "takeaway": "A database formula is reference data, not a specification of the supplied form."
+      },
+      {
+        "number": 3,
+        "heading": "Reading the cyclic structure correctly",
+        "body": "The ring in Melanotan 2 is closed by an amide bond between the aspartate and lysine side chains \u2014 a lactam, not a disulfide. The distinction has practical consequences for handling and method design, because lactam bridges are not cleaved by the reducing conditions used on disulfide-cyclised peptides. Documentation or method notes describing a disulfide in Melanotan 2 are worth querying, since they may have been written for a different compound.",
+        "takeaway": "Lactam ring; reduction protocols written for disulfide peptides do not apply."
+      },
+      {
+        "number": 4,
+        "heading": "Decoding the sequence notation",
+        "body": "Ac-Nle-cyclo[Asp-His-D-Phe-Arg-Trp-Lys]-NH\u2082 packs five separate pieces of information into one line. Ac- marks N-terminal acetylation. Nle is norleucine, standing in for methionine. The bracketed residues sit inside the ring. D-Phe is the D-enantiomer of phenylalanine, not an ordinary L-residue, and a supplier record that omits the stereochemistry has left out something that matters. The terminal -NH\u2082 indicates C-terminal amidation.",
+        "takeaway": "Check that stereochemistry and the terminal amide are both stated explicitly."
+      },
+      {
+        "number": 5,
+        "heading": "Interpreting receptor pharmacology",
+        "body": "An EC\u2085\u2080 or Ki reported for Melanotan 2 at a melanocortin receptor describes a measurement in a specific assay system, usually a transfected cell line. Values reported for the same receptor differ between laboratories and assay formats, so a single published figure is best read as one measurement rather than a fixed property. More importantly, receptor engagement is the beginning of a causal chain rather than the end of one, and the step from receptor activity to an outcome in a living system requires separate demonstration. Activity at four receptor subtypes makes that step harder to attribute, not easier.",
+        "takeaway": "Receptor activity describes the assay, not a physiological outcome."
+      },
+      {
+        "number": 6,
+        "heading": "Where the tanning terminology comes from",
+        "body": "Searches for Melanotan 2 frequently use tanning-related language. The association comes from MC1R's role in melanin synthesis and from the way the compound has been marketed through unregulated channels over the past two decades. That terminology reflects search behaviour and market history rather than a product category. Veracue supplies Melanotan 2 as a laboratory research chemical; it is not a cosmetic, a tanning product or a personal-care item, and no application, protocol or outcome of that kind is described on this page.",
+        "takeaway": "The search term is real; the product category it implies is not what is being supplied."
+      },
+      {
+        "number": 7,
+        "heading": "Melanotan 2, Melanotan 1 and afamelanotide",
+        "body": "Melanotan I is the historical development name associated with afamelanotide, a linear thirteen-residue \u03b1-MSH analogue also known as NDP-\u03b1-MSH. Melanotan 2 is a different molecular entity: shorter, cyclic, and with a broader receptor profile. The two have separate CAS registrations, separate formulas and a mass difference of more than 600 Da. Afamelanotide holds a pharmaceutical authorisation for a specific indication; that authorisation applies to that medicinal product and does not extend to Melanotan 2 or to any research material. Clinical evidence generated for afamelanotide likewise says nothing about Melanotan 2.",
+        "takeaway": "Different molecules, different registrations, and no transfer of evidence or approval."
+      },
+      {
+        "number": 8,
+        "heading": "Melanotan 2 and bremelanotide",
+        "body": "Bremelanotide shares the same ring as Melanotan 2 and differs at the C-terminus, which is a free carboxylic acid rather than an amide. That gives it a different molecular formula, C\u2085\u2080H\u2086\u2088N\u2081\u2084O\u2081\u2080, a separate CAS registration, and its own pharmaceutical and regulatory history. Because the two compounds are closely related in mass, identity confirmation is better based on an appropriate analytical method \u2014 chromatographic behaviour alongside spectrometric data, for example \u2014 than on a nominal mass comparison alone.",
+        "takeaway": "Related structures; confirm identity by method, not by approximate mass."
+      },
+      {
+        "number": 9,
+        "heading": "Reading the human literature",
+        "body": "Controlled human work on Melanotan 2 identified in the sources reviewed consists of small early studies from the 1990s, with limited participant numbers and transient reported effects. Alongside that sits a separate literature of case reports arising from unregulated self-administration, where the material's composition and the exposure were not verified. The two categories are often cited together, which can give an impression of a fuller evidence base than exists. Neither supports a general statement about safety, and neither can be supplemented by borrowing results generated for afamelanotide or bremelanotide.",
+        "takeaway": "Keep controlled studies and uncontrolled reports in separate columns."
+      },
+      {
+        "number": 10,
+        "heading": "Evaluating a certificate of analysis",
+        "body": "Analytical documentation varies with the methods a laboratory uses, so no single template fits every certificate. Useful documentation generally covers, where applicable: the product name and reference identity such as a CAS number; the lot or batch it applies to; the method used to confirm identity and the result obtained; a purity or assay result with the method behind it; the specification or acceptance criterion the result is judged against; the date of testing; and the testing laboratory. A specification sheet without a lot reference describes an intended standard rather than a tested batch.",
+        "takeaway": "Look for a lot reference, a named method and a measured result together."
+      },
+      {
+        "number": 11,
+        "heading": "Calculated mass versus measured m/z",
+        "body": "A monoisotopic mass of approximately 1023.5403 Da is calculated from the molecular formula for the neutral free peptide. Electrospray mass spectrometry measures ions rather than neutral molecules, and can produce singly and multiply charged species, so the observed m/z depends on charge state and on analytical conditions. Singly protonated [M+H]\u207a and doubly protonated [M+2H]\u00b2\u207a species, sodium or potassium adducts, and counterion-associated species may all appear depending on sample preparation and instrument settings. A spectrum is therefore read against the charge states and adducts the method would be expected to produce, not against the calculated neutral mass alone.",
+        "takeaway": "Interpret observed m/z with charge state and adducts accounted for."
+      },
+      {
+        "number": 12,
+        "heading": "What this page can and cannot tell you",
+        "body": "This page sets out reference identity for the Melanotan 2 molecule from public chemical databases, and summarises what the published literature covers and where its limits sit. It does not describe the composition, purity, identity, salt form or stability of any particular Veracue vial; those questions are answered by lot-specific analytical documentation, which is why the product specification fields above are marked as not publicly specified. Nothing here establishes safety, efficacy or suitability for use in humans or animals.",
+        "takeaway": "Reference information here; material-specific answers come from lot documentation."
+      }
+    ]
+  },
+
+  "comparisons": [
+    {
+      "id": "melanotan-2-vs-melanotan-1",
+      "heading": "Melanotan 2 vs Melanotan 1 (afamelanotide)",
+      "columns": ["", "Melanotan 2", "Melanotan 1 / afamelanotide"],
+      "rows": [
+        ["Names in use", "Melanotan II, MT-II, MT2", "Afamelanotide; Melanotan I as a historical development name; NDP-\u03b1-MSH"],
+        ["Structure", "Cyclic heptapeptide with a side-chain lactam bridge", "Linear tridecapeptide"],
+        ["Sequence", "Ac-Nle-cyclo[Asp-His-D-Phe-Arg-Trp-Lys]-NH\u2082", "Ac-Ser-Tyr-Ser-Nle-Glu-His-D-Phe-Arg-Trp-Gly-Lys-Pro-Val-NH\u2082"],
+        ["Formula", "C\u2085\u2080H\u2086\u2089N\u2081\u2085O\u2089", "C\u2087\u2088H\u2081\u2081\u2081N\u2082\u2081O\u2081\u2089"],
+        ["Average mass", "\u2248 1024.2 g/mol", "\u2248 1646.9 g/mol"],
+        ["CAS", "121062-08-6", "75921-69-6"],
+        ["Relationship to \u03b1-MSH", "Truncated and conformationally constrained analogue", "Full-length analogue with Nle\u2074 and D-Phe\u2077 substitutions"],
+        ["Receptor context", "Described as non-selective across MC1R, MC3R, MC4R and MC5R", "Reported as preferentially active at MC1R"],
+        ["Regulatory position", "No regulatory approval identified in the authoritative sources reviewed", "Authorised as a prescription medicine for a specific rare photosensitivity condition"]
+      ],
+      "closingNote": "Afamelanotide's authorisation attaches to that medicinal product under its approved indication and manufacturing controls. It does not extend to Melanotan 2, and clinical evidence generated for one does not apply to the other."
+    },
+    {
+      "id": "melanotan-2-vs-bremelanotide",
+      "heading": "Melanotan 2 vs bremelanotide",
+      "columns": ["", "Melanotan 2", "Bremelanotide"],
+      "rows": [
+        ["Names in use", "Melanotan II, MT-II, MT2", "Bremelanotide, PT-141"],
+        ["C-terminus", "Amide (-NH\u2082)", "Free acid (-OH)"],
+        ["Formula", "C\u2085\u2080H\u2086\u2089N\u2081\u2085O\u2089", "C\u2085\u2080H\u2086\u2088N\u2081\u2084O\u2081\u2080"],
+        ["Average mass", "\u2248 1024.2 g/mol", "\u2248 1025.2 g/mol"],
+        ["CAS", "121062-08-6", "189691-06-3"],
+        ["PubChem CID", "92432", "9941379"],
+        ["Regulatory position", "No regulatory approval identified in the authoritative sources reviewed", "Authorised as a prescription medicine for one specific indication in a defined population"]
+      ],
+      "closingNote": "The compounds share a ring and differ at one terminal group. Shared melanocortin terminology does not make them interchangeable: they are separate chemical entities with separate registrations and separate regulatory positions."
+    }
+  ],
+
+  "coaSection": {
+    "heading": "Analytical documentation",
+    "intro": "What a certificate of analysis contains depends on the methods used, so the list below describes what is generally worth looking for rather than a fixed standard.",
+    "columns": ["Field", "What it addresses, where applicable"],
+    "rows": [
+      ["Product name and reference identity", "Which molecule the document concerns, ideally with a CAS number"],
+      ["Lot or batch reference", "Which physical material the results apply to"],
+      ["Identity method and result", "How identity was confirmed and what was measured, depending on the analytical method"],
+      ["Purity or assay result", "The measured figure, reported with the method that produced it"],
+      ["Method detail", "Enough of the analytical conditions for the result to be interpretable"],
+      ["Specification", "The acceptance criterion the result is assessed against"],
+      ["Date of testing", "When the work was carried out"],
+      ["Testing laboratory", "Which laboratory produced the result"],
+      ["Analytical notes", "Impurity profile or observations the method could not resolve, where reported"]
+    ],
+    "body": [
+      "There is a published reason to take this seriously for Melanotan 2 specifically. An analysis in Drug Testing and Analysis examined Melanotan 2 vials purchased from three online vendors and found that material labelled as containing 10 mg contained between 4.32 and 8.84 mg, with unidentified impurities of 4.1 to 5.9 per cent in samples from two of the three. A label alone does not establish lot-specific identity or content; those questions are better addressed through appropriate analytical documentation.",
+      "Veracue's Certificates page is the appropriate place to review available lot documentation. No Melanotan 2 lot-specific certificate is publicly identified in the current archive, and no purity, identity or content claim for this compound should be inferred from the sitewide analytical standards or from the product listing in its absence."
+    ],
+    "link": { "label": "Certificates", "href": "/certificates" }
+  },
+
+  "doesNotEstablish": {
+    "heading": "What this page does not establish",
+    "body": [
+      "Human safety, therapeutic effect or suitability for use in people or animals. Any dosing figure, schedule or method of administration. Cosmetic or pigmentation outcomes. The purity, identity, sterility or stability of any individual lot in the absence of lot-specific documentation. Equivalence of any kind \u2014 pharmaceutical, analytical or regulatory \u2014 to afamelanotide, bremelanotide or any approved medicine.",
+      "Melanotan 2 supplied by Veracue is a laboratory research material. See the medical disclaimer and terms and conditions for the full position."
+    ],
+    "links": [
+      { "label": "medical disclaimer", "href": "/medical-disclaimer" },
+      { "label": "terms and conditions", "href": "/terms-and-conditions" }
+    ]
+  },
+
+  "faq": [
+    {
+      "question": "What is Melanotan 2?",
+      "answer": "Melanotan 2 is a synthetic cyclic heptapeptide analogue of alpha-melanocyte-stimulating hormone, sequence Ac-Nle-cyclo[Asp-His-D-Phe-Arg-Trp-Lys]-NH2, closed by a side-chain lactam bridge between aspartate and lysine. The pharmacology literature describes it as a non-selective agonist across MC1R, MC3R, MC4R and MC5R. Veracue supplies it for laboratory research use only."
+    },
+    {
+      "question": "What do MT2 and Melanotan II mean?",
+      "answer": "MT2, MT-II and Melanotan II are all names for the same compound as Melanotan 2. The Roman and Arabic numeral forms are used interchangeably across catalogues and literature, and all refer to CAS 121062-08-6 and PubChem CID 92432."
+    },
+    {
+      "question": "Is Melanotan 2 the same as Melanotan 1?",
+      "answer": "No. Melanotan I is the historical development name associated with afamelanotide, a linear thirteen-residue peptide with formula C78H111N21O19 and CAS 75921-69-6. Melanotan 2 is a cyclic seven-residue peptide, C50H69N15O9, CAS 121062-08-6. They differ in length, structure, mass and receptor profile."
+    },
+    {
+      "question": "Is Melanotan 2 the same as afamelanotide?",
+      "answer": "No. Afamelanotide is the approved name for the molecule earlier known in development as Melanotan I, and it is a different molecular entity from Melanotan 2. Its pharmaceutical authorisation applies to that medicinal product and does not extend to Melanotan 2 or to research material."
+    },
+    {
+      "question": "Is Melanotan 2 the same as bremelanotide?",
+      "answer": "No. Bremelanotide, also known as PT-141, has a free acid C-terminus where Melanotan 2 has an amide, giving formula C50H68N14O10 and CAS 189691-06-3. The two share a ring structure but are separate chemical entities with separate registrations and regulatory positions."
+    },
+    {
+      "question": "What is the Melanotan 2 sequence?",
+      "answer": "Ac-Nle-cyclo[Asp-His-D-Phe-Arg-Trp-Lys]-NH2. The ring is closed by a lactam bridge between the aspartate and lysine side chains, not by a disulfide bond."
+    },
+    {
+      "question": "What is the molecular weight and formula of Melanotan 2?",
+      "answer": "The free peptide has the molecular formula C50H69N15O9, an average molecular weight of approximately 1024.2 g/mol and a monoisotopic mass of approximately 1023.5403 Da. Salt forms carry different formulas and different molecular weights."
+    },
+    {
+      "question": "Why is Melanotan 2 described as a tanning peptide?",
+      "answer": "The term reflects search language and market history rather than a product category. MC1R, one of the receptors Melanotan 2 acts on, participates in melanin synthesis, and the compound has circulated through unregulated channels on that basis. Veracue supplies it as a research material, not as a tanning or cosmetic product."
+    },
+    {
+      "question": "What does the published research on Melanotan 2 cover?",
+      "answer": "Its structure and receptor pharmacology are well characterised. Controlled human work identified in the sources reviewed consists of small early studies from the 1990s. A separate literature of case reports describes observations following unregulated self-administration, where composition and exposure were generally unverified. Together these do not form a comprehensive human safety or efficacy profile."
+    },
+    {
+      "question": "Why does this page not show Melanotan 2 before and after results?",
+      "answer": "Visual before and after material cannot establish molecular identity, purity, lot quality, receptor pharmacology or analytical confirmation, which are the questions this page addresses. Veracue makes no pigmentation, appearance or outcome claims for a research material."
+    },
+    {
+      "question": "What should a Melanotan 2 certificate of analysis contain?",
+      "answer": "Depending on the analytical method, useful documentation generally covers the product name and reference identity, the lot reference, the identity method and its result, a purity or assay result with the method behind it, the applicable specification, the date of testing and the testing laboratory. Documentation without a lot reference describes an intended standard rather than a tested batch."
+    },
+    {
+      "question": "Does Veracue provide dosing information for Melanotan 2?",
+      "answer": "No. Veracue does not provide human or animal dosing, reconstitution or administration instructions, because this material is designated for laboratory research use only. Figures circulating online generally originate from self-administration contexts and do not apply to the handling of a research material."
+    }
+  ],
+
+  "references": [
+    "PubChem. Melanotan-II, CID 92432. National Center for Biotechnology Information.",
+    "Al-Obeidi F, Hadley ME, Pettitt BM, Hruby VJ. Potent and prolonged acting cyclic lactam analogues of \u03b1-melanotropin. J Med Chem. 1989;32(12):2555\u20132561. PMID 2555512.",
+    "IUPHAR/BPS Guide to PHARMACOLOGY. Melanocortin receptors.",
+    "Dorr RT, Lines R, Levine N, et al. Evaluation of melanotan-II, a superpotent cyclic melanotropic peptide, in a pilot phase-I clinical study. Life Sci. 1996;58(20):1777\u20131784. PMID 8637402.",
+    "Wessells H, Levine N, Hadley ME, Dorr R, Hruby V. Synthetic melanotropic peptide initiates erections in men with psychogenic erectile dysfunction: double-blind, placebo controlled crossover study. J Urol. 1998;160(2):389\u2013393.",
+    "Breindahl T, Evans-Brown M, Hindersson P, et al. Identification and characterization by LC-UV-MS/MS of melanotan II skin-tanning products sold illegally on the Internet. Drug Test Anal. 2015;7(2):164\u2013172. PMID 24771717.",
+    "FDA Global Substance Registration System. Melanotan II, UNII UPF5CJ93X7."
+  ],
+
+  "internalLinks": [
+    { "anchor": "Certificates", "href": "/certificates", "placement": "Hero CTA and analytical documentation section" },
+    { "anchor": "Contact the research team", "href": "/contact-us", "placement": "Hero CTA" },
+    { "anchor": "medical disclaimer", "href": "/medical-disclaimer", "placement": "What this page does not establish" },
+    { "anchor": "terms and conditions", "href": "/terms-and-conditions", "placement": "What this page does not establish" },
+    { "anchor": "research catalogue", "href": "/shop", "placement": "Breadcrumb and footer CTA" },
+    { "anchor": "general research FAQs", "href": "/faq", "placement": "Below FAQ section" }
+  ],
+
+  "complianceStatement": "Melanotan 2 supplied by Veracue is intended for laboratory research use only. It is not a medicine, supplement, cosmetic, tanning product or consumer good, and it has not been evaluated or approved by the U.S. Food and Drug Administration for any use. It is not for human or veterinary use and is not intended for ingestion, injection or any form of administration. Nothing on this page constitutes medical advice, a therapeutic claim, or guidance for use outside a controlled laboratory setting.",
+
+  "shopBlurb": "Melanotan 2 (Melanotan II, MT2) is a synthetic cyclic heptapeptide analogue of \u03b1-melanocyte-stimulating hormone, closed by a lactam bridge between the aspartate and lysine side chains and described in the pharmacology literature as a non-selective agonist across MC1R, MC3R, MC4R and MC5R. Veracue supplies it as a research material for laboratory work. The controlled human literature identified consists of small early studies (Dorr et al., 1996; Wessells et al., 1998), so this material does not establish pigmentation, treatment effect or safety in people.",
+
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://veracue-peptides.vercel.app/product/melanotan-2#webpage",
+        "url": "https://veracue-peptides.vercel.app/product/melanotan-2",
+        "name": "Melanotan 2 Research Peptide (Melanotan II) | Veracue",
+        "description": "Melanotan 2, the cyclic lactam analogue of alpha-MSH, for lab research: molecular identity, melanocortin receptor context, Melanotan 1 vs 2, and COA checks.",
+        "inLanguage": "en-US",
+        "isPartOf": { "@id": "https://veracue-peptides.vercel.app/#website" },
+        "mainEntity": { "@id": "https://veracue-peptides.vercel.app/product/melanotan-2#substance" },
+        "breadcrumb": { "@id": "https://veracue-peptides.vercel.app/product/melanotan-2#breadcrumb" },
+        "disambiguatingDescription": "Melanotan 2 is offered by Veracue as a laboratory research material. It is not for human or veterinary use."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://veracue-peptides.vercel.app/product/melanotan-2#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://veracue-peptides.vercel.app/" },
+          { "@type": "ListItem", "position": 2, "name": "Shop", "item": "https://veracue-peptides.vercel.app/shop" },
+          { "@type": "ListItem", "position": 3, "name": "Melanotan 2 Peptide", "item": "https://veracue-peptides.vercel.app/product/melanotan-2" }
+        ]
+      },
+      {
+        "@type": "ChemicalSubstance",
+        "@id": "https://veracue-peptides.vercel.app/product/melanotan-2#substance",
+        "name": "Melanotan 2",
+        "alternateName": ["Melanotan II", "MT-II", "MT2"],
+        "description": "A synthetic cyclic heptapeptide analogue of alpha-melanocyte-stimulating hormone, sequence Ac-Nle-cyclo[Asp-His-D-Phe-Arg-Trp-Lys]-NH2, cyclised by a side-chain lactam bridge between aspartate and lysine. Characterised in the pharmacology literature as a non-selective agonist across the melanocortin receptors MC1R, MC3R, MC4R and MC5R.",
+        "molecularFormula": "C50H69N15O9",
+        "molecularWeight": { "@type": "QuantitativeValue", "value": 1024.2, "unitText": "g/mol" },
+        "monoisotopicMolecularWeight": { "@type": "QuantitativeValue", "value": 1023.5403, "unitText": "Da" },
+        "identifier": [
+          { "@type": "PropertyValue", "propertyID": "CAS", "value": "121062-08-6" },
+          { "@type": "PropertyValue", "propertyID": "PubChem CID", "value": "92432" },
+          { "@type": "PropertyValue", "propertyID": "UNII", "value": "UPF5CJ93X7" },
+          { "@type": "PropertyValue", "propertyID": "ChEMBL", "value": "CHEMBL430239" }
+        ],
+        "additionalProperty": [
+          { "@type": "PropertyValue", "name": "Peptide sequence", "value": "Ac-Nle-cyclo[Asp-His-D-Phe-Arg-Trp-Lys]-NH2" },
+          { "@type": "PropertyValue", "name": "Cyclisation", "value": "Side-chain lactam bridge between aspartate and lysine" },
+          { "@type": "PropertyValue", "name": "Peptide length", "value": "7 residues" }
+        ],
+        "sameAs": ["https://pubchem.ncbi.nlm.nih.gov/compound/92432"],
+        "subjectOf": { "@id": "https://veracue-peptides.vercel.app/product/melanotan-2#webpage" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://veracue-peptides.vercel.app/product/melanotan-2#faq",
+        "mainEntity": [
+          { "@type": "Question", "name": "What is Melanotan 2?", "acceptedAnswer": { "@type": "Answer", "text": "Melanotan 2 is a synthetic cyclic heptapeptide analogue of alpha-melanocyte-stimulating hormone, sequence Ac-Nle-cyclo[Asp-His-D-Phe-Arg-Trp-Lys]-NH2, closed by a side-chain lactam bridge between aspartate and lysine. The pharmacology literature describes it as a non-selective agonist across MC1R, MC3R, MC4R and MC5R. Veracue supplies it for laboratory research use only." } },
+          { "@type": "Question", "name": "What do MT2 and Melanotan II mean?", "acceptedAnswer": { "@type": "Answer", "text": "MT2, MT-II and Melanotan II are all names for the same compound as Melanotan 2. The Roman and Arabic numeral forms are used interchangeably across catalogues and literature, and all refer to CAS 121062-08-6 and PubChem CID 92432." } },
+          { "@type": "Question", "name": "Is Melanotan 2 the same as Melanotan 1?", "acceptedAnswer": { "@type": "Answer", "text": "No. Melanotan I is the historical development name associated with afamelanotide, a linear thirteen-residue peptide with formula C78H111N21O19 and CAS 75921-69-6. Melanotan 2 is a cyclic seven-residue peptide, C50H69N15O9, CAS 121062-08-6. They differ in length, structure, mass and receptor profile." } },
+          { "@type": "Question", "name": "Is Melanotan 2 the same as afamelanotide?", "acceptedAnswer": { "@type": "Answer", "text": "No. Afamelanotide is the approved name for the molecule earlier known in development as Melanotan I, and it is a different molecular entity from Melanotan 2. Its pharmaceutical authorisation applies to that medicinal product and does not extend to Melanotan 2 or to research material." } },
+          { "@type": "Question", "name": "Is Melanotan 2 the same as bremelanotide?", "acceptedAnswer": { "@type": "Answer", "text": "No. Bremelanotide, also known as PT-141, has a free acid C-terminus where Melanotan 2 has an amide, giving formula C50H68N14O10 and CAS 189691-06-3. The two share a ring structure but are separate chemical entities with separate registrations and regulatory positions." } },
+          { "@type": "Question", "name": "What is the Melanotan 2 sequence?", "acceptedAnswer": { "@type": "Answer", "text": "Ac-Nle-cyclo[Asp-His-D-Phe-Arg-Trp-Lys]-NH2. The ring is closed by a lactam bridge between the aspartate and lysine side chains, not by a disulfide bond." } },
+          { "@type": "Question", "name": "What is the molecular weight and formula of Melanotan 2?", "acceptedAnswer": { "@type": "Answer", "text": "The free peptide has the molecular formula C50H69N15O9, an average molecular weight of approximately 1024.2 g/mol and a monoisotopic mass of approximately 1023.5403 Da. Salt forms carry different formulas and different molecular weights." } },
+          { "@type": "Question", "name": "Why is Melanotan 2 described as a tanning peptide?", "acceptedAnswer": { "@type": "Answer", "text": "The term reflects search language and market history rather than a product category. MC1R, one of the receptors Melanotan 2 acts on, participates in melanin synthesis, and the compound has circulated through unregulated channels on that basis. Veracue supplies it as a research material, not as a tanning or cosmetic product." } },
+          { "@type": "Question", "name": "What does the published research on Melanotan 2 cover?", "acceptedAnswer": { "@type": "Answer", "text": "Its structure and receptor pharmacology are well characterised. Controlled human work identified in the sources reviewed consists of small early studies from the 1990s. A separate literature of case reports describes observations following unregulated self-administration, where composition and exposure were generally unverified. Together these do not form a comprehensive human safety or efficacy profile." } },
+          { "@type": "Question", "name": "Why does this page not show Melanotan 2 before and after results?", "acceptedAnswer": { "@type": "Answer", "text": "Visual before and after material cannot establish molecular identity, purity, lot quality, receptor pharmacology or analytical confirmation, which are the questions this page addresses. Veracue makes no pigmentation, appearance or outcome claims for a research material." } },
+          { "@type": "Question", "name": "What should a Melanotan 2 certificate of analysis contain?", "acceptedAnswer": { "@type": "Answer", "text": "Depending on the analytical method, useful documentation generally covers the product name and reference identity, the lot reference, the identity method and its result, a purity or assay result with the method behind it, the applicable specification, the date of testing and the testing laboratory. Documentation without a lot reference describes an intended standard rather than a tested batch." } },
+          { "@type": "Question", "name": "Does Veracue provide dosing information for Melanotan 2?", "acceptedAnswer": { "@type": "Answer", "text": "No. Veracue does not provide human or animal dosing, reconstitution or administration instructions, because this material is designated for laboratory research use only. Figures circulating online generally originate from self-administration contexts and do not apply to the handling of a research material." } }
+        ]
+      }
+    ]
+  }
+}

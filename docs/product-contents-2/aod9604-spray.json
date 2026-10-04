@@ -1,0 +1,352 @@
+{
+  "page_meta": {
+    "route": "/product/aod9604-spray",
+    "title": "AOD9604 Spray | Research Peptide (hGH Fragment) | Veracue",
+    "metaDescription": "AOD9604 Spray, the hGH-derived research peptide: molecular identity, its clinical trial history, AOD9604 vs tesamorelin and semaglutide, and COA checks.",
+    "primaryKeyword": "aod9604 peptide",
+    "secondaryKeywords": [
+      "aod9604",
+      "aod-9604",
+      "aod 9604",
+      "what is aod9604",
+      "aod9604 spray",
+      "aod9604 benefits",
+      "aod9604 dosage",
+      "aod9604 side effects",
+      "aod9604 coa",
+      "aod9604 molecular weight",
+      "aod9604 sequence",
+      "aod9604 vs tesamorelin",
+      "aod9604 vs semaglutide",
+      "aod9604 vs tirzepatide",
+      "aod9604 vs retatrutide"
+    ]
+  },
+  "hero": {
+    "eyebrow": "Research Use Only",
+    "h1": "AOD9604 Spray",
+    "subtitle": "A 16-residue growth hormone-derived research peptide investigated in metabolic and adipose-tissue research."
+  },
+  "aeoDirectAnswer": {
+    "question": "What is AOD9604?",
+    "answer": "AOD9604 is a synthetic 16-amino-acid peptide structurally related to a region of human growth hormone, not full-length hGH itself. It has been studied across preclinical and human clinical research examining metabolic and adipose-tissue biology. AOD9604 progressed through a human clinical development program that was ultimately discontinued, and it is not FDA-approved for any therapeutic indication. Veracue supplies AOD9604 as a Research Use Only laboratory material, and this page does not establish therapeutic efficacy, human dosing, or safety for the Veracue formulation."
+  },
+  "productSnapshot": {
+    "molecularReferenceData": {
+      "productName": "AOD9604",
+      "commonNames": ["AOD-9604", "AOD 9604", "hGH Fragment 176-191"],
+      "chemicalClass": "Synthetic peptide fragment",
+      "originAndRelationship": "Structurally related to the C-terminal region of human growth hormone, differing from the native sequence by an N-terminal tyrosine substitution",
+      "sequence": "Tyr-Leu-Arg-Ile-Val-Gln-Cys-Arg-Ser-Val-Glu-Gly-Ser-Cys-Gly-Phe (YLRIVQCRSVEGSCGF), with a Cys7-Cys14 disulfide bridge",
+      "length": "16 amino acids",
+      "molecularFormula": "C78H123N23O23S2",
+      "molecularWeight": "approximately 1815.10 g/mol (average mass)",
+      "exactMonoisotopicMass": "approximately 1813.86 Da",
+      "cas": "221231-10-3",
+      "pubchemCID": "71300630"
+    },
+    "veracueSpecificData": {
+      "sprayFormulation": "Not publicly specified on the current Veracue product information.",
+      "concentration": "Not publicly specified on the current Veracue product information.",
+      "volumePerActuation": "Not publicly specified on the current Veracue product information.",
+      "carrierExcipients": "Not publicly specified on the current Veracue product information.",
+      "purity": "Not publicly specified on the current Veracue product information.",
+      "storage": "Not publicly specified on the current Veracue product information.",
+      "sku": "Not publicly specified on the current Veracue product information.",
+      "price": "Not publicly specified on the current Veracue product information.",
+      "note": "The molecular reference data above describes AOD9604 as a research compound in general. It does not describe, confirm, or guarantee the composition of any specific Veracue lot or bottle."
+    }
+  },
+  "whatAOD9604Is": "AOD9604 is a laboratory-synthesized peptide, not a naturally occurring hormone. Its sequence is built around a small stretch of human growth hormone, sixteen amino acids long, and it does not share hGH's overall three-dimensional structure or its 191-residue length. 'AOD9604,' 'AOD-9604,' and 'AOD 9604' all refer to the same registered compound — CAS 221231-10-3, PubChem CID 71300630 — and can be treated as interchangeable spellings of the same identity across suppliers and databases.",
+  "molecularIdentity": "The compound's fixed reference values are a 16-residue sequence (YLRIVQCRSVEGSCGF), a molecular formula of C78H123N23O23S2, an average molecular weight near 1815.10 g/mol, and an exact monoisotopic mass near 1813.86 Da, with a disulfide bond linking the cysteine at position 7 to the cysteine at position 14. These values come from chemical registries such as PubChem and describe the AOD9604 molecule itself. They are a reference point for identity confirmation — they do not speak to the purity, concentration, or formulation of any specific vial or spray bottle, which is a matter for lot-specific analytical documentation.",
+  "whyResearchTarget": "Growth hormone influences many systems in the body, including tissue growth, blood sugar regulation, and lipid metabolism. Research beginning at Monash University explored whether the region of hGH associated with fat metabolism could be studied somewhat independently of the hormone's other, more complex effects. AOD9604 was synthesized from that region, with an N-terminal tyrosine substitution in place of the native residue — a design choice described in the development literature — and evaluated for whether it retained activity relevant to fat metabolism on its own. That question, whether a small fragment can be meaningfully separated from a larger hormone's broader biology, is the throughline of AOD9604's research history.",
+  "evidence": {
+    "introduction": "AOD9604's evidence base spans several levels, and each answers a different question. A molecular formula confirms identity, not biological effect; a cell or animal study confirms an observation in that model, not a human outcome; and historical clinical trials confirm what was measured in specific patients under specific protocols, not current regulatory status. Keeping these levels separate is the most useful habit when reading claims about the compound.",
+    "layers": [
+      {
+        "level": "Molecular/biochemical",
+        "summary": "Confirms the compound's sequence, mass, and formula — the fixed chemical identity described above."
+      },
+      {
+        "level": "Cell/tissue and animal research",
+        "summary": "Early studies reported changes in body-weight and adiposity measures in specific animal models, and some studies noted changes in \u03b23-adrenergic receptor expression in adipose tissue under those experimental conditions. This did not establish AOD9604 as acting directly through \u03b23-adrenergic receptors, and the compound's precise mechanism of action remains incompletely established."
+      },
+      {
+        "level": "Human clinical research",
+        "summary": "AOD9604 progressed into a multi-phase human clinical program, summarized below. Findings from these trials are specific to the protocols and populations studied."
+      },
+      {
+        "level": "Regulatory/pharmaceutical context",
+        "summary": "AOD9604 is not FDA-approved for any therapeutic indication, and its historical obesity-development program was discontinued before reaching later-stage approval trials."
+      }
+    ]
+  },
+  "humanClinicalHistory": "AOD9604 is unusual among many research peptides in that it has a documented history of human clinical investigation. An Australian biotechnology company sponsored a development program that progressed through Phase I, Phase IIa, and a larger, placebo-controlled Phase IIb trial known as the OPTIONS study, registered with the Australian and New Zealand Clinical Trials Registry. Early studies examined tolerability and metabolic endpoints, including whether the compound affected blood glucose or growth-related markers. As the program advanced into larger, more rigorously controlled trials, the efficacy signal did not hold up sufficiently to support continued development, and the obesity program was discontinued. AOD9604 never advanced to Phase III trials and is not FDA-approved for any therapeutic indication. This history matters for how the compound should be read: it has been studied in humans, but that history did not culminate in an approved drug, and it says nothing about the composition or effects of any unrelated Research Use Only material sold today.",
+  "problemSolutionSections": [
+    {
+      "heading": "How do I confirm what AOD9604 actually is?",
+      "researcherProblem": "Descriptions of AOD9604 vary widely across vendor pages and forums, making it hard to identify a reliable reference.",
+      "scientificAnswer": "The compound has a fixed identity independent of any single source: CAS 221231-10-3, PubChem CID 71300630, formula C78H123N23O23S2, and sequence YLRIVQCRSVEGSCGF.",
+      "practicalSolution": "Cross-check any vendor's stated CAS number, formula, and sequence against PubChem directly. A mismatch on any of these fixed values is a reason to look elsewhere."
+    },
+    {
+      "heading": "Is AOD9604 the same as human growth hormone?",
+      "researcherProblem": "Because AOD9604 is described as related to growth hormone, it's easy to assume it shares hGH's full range of effects.",
+      "scientificAnswer": "It does not. Full-length human growth hormone is a 191-amino-acid protein with a complex structure and broad physiological roles. AOD9604 is a 16-amino-acid fragment, and research was designed in part to investigate whether selected metabolic activity associated with that region of hGH could be studied separately from the broader biology of the full-length hormone.",
+      "practicalSolution": "When reviewing literature, confirm whether a study used full-length recombinant hGH or the synthesized AOD9604 fragment. Findings from one should not be read onto the other without explicit confirmation in the source."
+    },
+    {
+      "heading": "Why is AOD9604 described as a growth hormone-derived peptide?",
+      "researcherProblem": "The \"derived\" language can read like marketing shorthand rather than a precise description.",
+      "scientificAnswer": "The description is structural. AOD9604's sequence corresponds to a region near the C-terminus of hGH, differing from the native sequence by an N-terminal tyrosine substitution \u2014 a modification discussed in the development literature in the context of the peptide's design, rather than a settled pharmacological finding.",
+      "practicalSolution": "Treat \"growth hormone-derived\" as a statement about sequence origin, not a claim about shared biological activity. Look for separate, explicit evidence before assuming any specific hGH effect applies to the fragment."
+    },
+    {
+      "heading": "What did preclinical studies of AOD9604 actually investigate?",
+      "researcherProblem": "Preclinical findings are often summarized as flat statements without naming the model or the actual result.",
+      "scientificAnswer": "Early animal studies, following the Monash University research that produced the compound, reported changes in body-weight and adiposity measures under specific experimental conditions. Some studies also noted changes in \u03b23-adrenergic receptor expression in adipose tissue; this did not establish that AOD9604 acts directly as a \u03b23-adrenergic receptor agonist, and the compound's precise mechanism remains incompletely established.",
+      "practicalSolution": "When a preclinical claim is cited, check the species, dose, duration, and endpoint actually measured, and avoid treating receptor-expression findings as proof of a specific mechanism of action."
+    },
+    {
+      "heading": "What did human studies of AOD9604 actually show?",
+      "researcherProblem": "Search results range from \"proven to work\" to \"never tested in people,\" and neither framing is accurate.",
+      "scientificAnswer": "AOD9604 progressed through Phase I, Phase IIa, and a placebo-controlled Phase IIb trial (the OPTIONS study). Early studies reported tolerability and a lack of measured effect on blood glucose or growth markers. As the program advanced into larger, controlled trials, the efficacy evidence was not sufficient to support continued development, and the obesity program was discontinued.",
+      "practicalSolution": "For any specific trial claim, check the study phase and whether it was placebo-controlled before treating the result as representative of the compound's overall clinical picture."
+    },
+    {
+      "heading": "What does \"AOD9604 benefits\" mean in a research context?",
+      "researcherProblem": "This is one of the most common search terms associated with the compound, often answered with unqualified consumer health claims.",
+      "scientificAnswer": "In the primary literature, \"benefit\" claims trace back to specific experimental endpoints \u2014 adiposity changes in animal models, or metabolic measures in early-phase human trials \u2014 each tied to a particular model, dose, and duration, and none constituting an established, generalizable human effect.",
+      "practicalSolution": "Ask which study, model, and endpoint any \"benefit\" claim is based on. A claim that can't be traced to a specific result should be treated as unverified."
+    },
+    {
+      "heading": "What does \"AOD9604 dosage\" mean, and why is there no Veracue dosing protocol?",
+      "researcherProblem": "Searchers frequently look for a specific dose to use, but Veracue does not provide one.",
+      "scientificAnswer": "Historical clinical studies evaluated AOD9604 under defined pharmaceutical trial protocols, including an oral tablet formulation. Those historical study parameters describe what was tested under clinical supervision in that specific formulation \u2014 they are not a usage recommendation for any other product, spray or otherwise.",
+      "practicalSolution": "Veracue's material is not labeled, tested, or supplied with human dosing information, and none should be inferred from historical trial parameters. This product is not intended for human or veterinary administration."
+    },
+    {
+      "heading": "How should I distinguish AOD9604 from other metabolic research peptides?",
+      "researcherProblem": "AOD9604 is frequently grouped with a broad set of \"weight loss peptides\" that act through entirely different mechanisms.",
+      "scientificAnswer": "The category spans several distinct chemical classes: growth-hormone-fragment peptides like AOD9604, GHRH analogues like tesamorelin, and incretin-receptor agonists like semaglutide, tirzepatide, and retatrutide. Grouping them by shared search terms obscures that their proposed biological targets have little in common.",
+      "practicalSolution": "Identify a compound's mechanistic class before comparing it to others in the category. A shared search phrase is not evidence of a shared mechanism."
+    },
+    {
+      "heading": "How is AOD9604 different from tesamorelin, semaglutide, tirzepatide and retatrutide?",
+      "researcherProblem": "These five names appear together constantly in search and vendor content, which can blur real mechanistic distinctions.",
+      "scientificAnswer": "AOD9604 is a growth-hormone-derived fragment investigated in adipose and lipolytic research, with a mechanism that remains incompletely established. Tesamorelin is a GHRH analogue that stimulates the body's own growth hormone release and is FDA-approved (as Egrifta) for HIV-associated lipodystrophy. Semaglutide, tirzepatide, and retatrutide act on incretin hormone receptors \u2014 GLP-1, and for tirzepatide and retatrutide, GIP and glucagon receptors as well \u2014 a family of targets unrelated to growth hormone biology. AOD9604 is not a GLP-1, GIP, or glucagon receptor agonist.",
+      "practicalSolution": "Use the comparison table on this page as a starting reference, then verify each compound's receptor target independently before drawing a mechanistic comparison in your own research notes."
+    },
+    {
+      "heading": "What should I verify on an AOD9604 COA?",
+      "researcherProblem": "Certificates of analysis vary widely in what they report, and a purity percentage alone doesn't confirm identity.",
+      "scientificAnswer": "A useful AOD9604 COA may include identity confirmation matched against the expected sequence and mass, the analytical method used, a lot or batch number, the testing laboratory, and the test date. Purity and identity are separate questions, and a complete COA addresses both.",
+      "practicalSolution": "Confirm that any COA you're given references the lot number on your vial, names its testing method rather than stating a bare percentage, and reports an observed mass alongside the expected value rather than an unexplained identity confirmation."
+    },
+    {
+      "heading": "How should I interpret AOD9604 mass-spectrometry data?",
+      "researcherProblem": "A reported mass on a COA doesn't mean much without context on how it was obtained.",
+      "scientificAnswer": "AOD9604's expected average mass is approximately 1815.10 g/mol, with an exact monoisotopic mass near 1813.86 Da. An observed mass spectrometry result depends on ionization method and charge state, and adduct formation can shift an observed m/z away from the base molecular mass.",
+      "practicalSolution": "When reviewing MS data, check which ionization method and charge state produced the reported value, and confirm the result is consistent with the expected mass once adducts and charge state are accounted for."
+    },
+    {
+      "heading": "What can a Veracue AOD9604 Spray page establish, and what requires lot-specific documentation?",
+      "researcherProblem": "It's easy to read a product page as if it confirms everything about the specific vial or bottle a researcher will receive.",
+      "scientificAnswer": "This page describes AOD9604 as a molecular research entity \u2014 its sequence, formula, mass, and general research history. It does not describe or confirm the composition, concentration, purity, or formulation of any specific Veracue lot, which is a matter for that lot's certificate of analysis.",
+      "practicalSolution": "Request the batch-specific COA for the lot you intend to use, and confirm the lot number on the documentation matches the lot number on the vial or bottle label before relying on any analytical value."
+    }
+  ],
+  "comparisonSection": {
+    "title": "AOD9604 in Context",
+    "note": "These compounds are frequently searched together but represent distinct chemical classes and research histories. This table is descriptive, not a ranking, and does not suggest interchangeability.",
+    "columns": ["Dimension", "AOD9604", "Tesamorelin", "Semaglutide", "Tirzepatide", "Retatrutide"],
+    "rows": [
+      {
+        "dimension": "Chemical class",
+        "AOD9604": "Growth-hormone-derived peptide fragment",
+        "Tesamorelin": "GHRH analogue peptide",
+        "Semaglutide": "GLP-1 receptor agonist peptide",
+        "Tirzepatide": "Dual GIP/GLP-1 receptor agonist peptide",
+        "Retatrutide": "Triple GIP/GLP-1/glucagon receptor agonist peptide"
+      },
+      {
+        "dimension": "Primary research context",
+        "AOD9604": "Investigated in adipose/lipolytic research; precise mechanism remains incompletely established",
+        "Tesamorelin": "Stimulates endogenous growth hormone release from the pituitary",
+        "Semaglutide": "GLP-1 receptor signaling related to glycemic and appetite regulation",
+        "Tirzepatide": "Combined GIP and GLP-1 receptor signaling",
+        "Retatrutide": "Combined GIP, GLP-1 and glucagon receptor signaling"
+      },
+      {
+        "dimension": "Human clinical development",
+        "AOD9604": "Phase I-IIb trials completed; discontinued after insufficient later-stage efficacy",
+        "Tesamorelin": "Phase III trials completed; supported approval",
+        "Semaglutide": "Extensive Phase III trials completed; supported approval",
+        "Tirzepatide": "Extensive Phase III trials completed; supported approval",
+        "Retatrutide": "Phase II/III trials ongoing; not yet complete"
+      },
+      {
+        "dimension": "Regulatory status",
+        "AOD9604": "Not FDA-approved for any therapeutic indication",
+        "Tesamorelin": "FDA-approved as Egrifta for HIV-associated lipodystrophy",
+        "Semaglutide": "FDA-approved for diabetes and weight management",
+        "Tirzepatide": "FDA-approved for diabetes and weight management",
+        "Retatrutide": "Investigational; not FDA-approved"
+      },
+      {
+        "dimension": "Relevance to research",
+        "AOD9604": "Case study in isolating proposed activity from a region of a larger hormone",
+        "Tesamorelin": "Reference compound for GHRH-analogue pharmacology",
+        "Semaglutide": "Reference compound for GLP-1 receptor pharmacology",
+        "Tirzepatide": "Reference compound for dual-incretin receptor pharmacology",
+        "Retatrutide": "Reference compound for triple-agonist incretin pharmacology"
+      }
+    ]
+  },
+  "sprayFormatSection": "\"Spray\" in this product's name identifies its presentation format \u2014 a liquid delivery format \u2014 and nothing more. It does not by itself establish a route of administration, absorption characteristics, bioavailability, or pharmacokinetics, and it should not be read as confirming nasal, oral, sublingual, buccal, or topical use. No spray count, actuation volume, concentration, or administration guidance is provided on this page, and none should be inferred from the product name. Veracue's AOD9604 Spray is not intended for human or veterinary administration.",
+  "coaSection": {
+    "title": "AOD9604 COA: What Researchers Should Verify",
+    "body": "A certificate of analysis ties general molecular reference data, like the values listed above, to an actual production lot. An AOD9604 COA may include identity and sequence confirmation, a lot or batch number, HPLC purity results, mass spectrometry identity confirmation, the test date, and the testing laboratory. Not every COA covers every field, and a report should be read for what it actually contains rather than assumed to cover items it doesn't mention. Molecular reference data is not the same thing as lot-specific analytical evidence.",
+    "publicAvailability": "A public, batch-specific COA for this AOD9604 Spray listing is not currently confirmed as available. Researchers should contact Veracue directly or check the certificates archive for the most current lot-specific documentation before relying on any analytical value.",
+    "checklistItems": [
+      "Lot number on the COA matches the label on the vial or spray bottle",
+      "Purity result names the analytical method used, not just a percentage",
+      "Identity result states both the expected and observed mass",
+      "Testing laboratory and test date are shown",
+      "Any additional panels are reported with actual results, not simply marked as tested"
+    ]
+  },
+  "massSpecSection": "AOD9604's expected average molecular mass is approximately 1815.10 g/mol; its exact monoisotopic mass is approximately 1813.86 Da. An observed mass spectrometry result depends on the ionization method and charge state of the detected ion, and adduct formation can shift an observed m/z away from the base mass. Peptide identity is best interpreted by comparing an observed mass against the expected value while accounting for these variables \u2014 a theoretical mass match is a reference point for interpreting analytical data, not evidence on its own that a specific Veracue lot carries that identity.",
+  "researchDoesNotEstablish": {
+    "title": "What This Page Does Not Establish",
+    "items": [
+      "Therapeutic efficacy of the Veracue AOD9604 Spray",
+      "Human dosing or administration protocols for this product",
+      "Human safety for this specific formulation",
+      "Formulation-specific pharmacokinetics or bioavailability",
+      "Lot-specific purity or identity for any particular batch",
+      "Guaranteed weight-loss or fat-loss outcomes",
+      "Superiority over any other compound listed in the comparison above"
+    ]
+  },
+  "regulatoryContext": "AOD9604 was investigated as a candidate obesity therapeutic through a multi-phase human clinical development program sponsored by an Australian biotechnology company. That program was discontinued before reaching Phase III trials, and AOD9604 is not FDA-approved for any therapeutic indication. This history of past clinical investigation does not translate into current regulatory status, and it does not describe the classification, purity, or intended use of Veracue's Research Use Only material, which is supplied strictly for laboratory and analytical research.",
+  "faqs": [
+    {
+      "question": "What is AOD9604?",
+      "answer": "AOD9604 is a synthetic 16-amino-acid peptide structurally related to a region of human growth hormone, investigated in preclinical and human studies related to metabolic and adipose-tissue biology."
+    },
+    {
+      "question": "Is AOD9604 derived from human growth hormone?",
+      "answer": "Yes. Its sequence corresponds to a region near the C-terminus of hGH, differing from the native sequence by an N-terminal tyrosine substitution. This describes structural origin, not equivalent biological activity."
+    },
+    {
+      "question": "Is AOD9604 the same as HGH?",
+      "answer": "No. Full-length hGH is a 191-amino-acid protein with broad physiological roles. AOD9604 is a 16-amino-acid fragment studied for a narrower proposed activity, separate from hGH's other effects."
+    },
+    {
+      "question": "What is AOD9604 studied for?",
+      "answer": "AOD9604 has been studied for its association with adipose-tissue and lipolytic biology, across animal and human clinical research contexts. Its precise mechanism remains incompletely established."
+    },
+    {
+      "question": "Has AOD9604 been studied in humans?",
+      "answer": "Yes. It progressed through Phase I, Phase IIa, and a placebo-controlled Phase IIb trial (the OPTIONS study) before its clinical development program was discontinued."
+    },
+    {
+      "question": "Is AOD9604 FDA approved?",
+      "answer": "No. AOD9604 is not FDA-approved for any therapeutic indication, and its clinical development program did not advance to Phase III trials."
+    },
+    {
+      "question": "What does \"AOD9604 benefits\" mean?",
+      "answer": "This search phrase generally refers to endpoints measured in specific studies \u2014 animal adiposity models or early-phase human trials \u2014 rather than an established, generalizable outcome."
+    },
+    {
+      "question": "What does \"AOD9604 dosage\" mean?",
+      "answer": "It typically refers to parameters used in historical clinical trials of an oral tablet formulation. Those parameters are not a usage recommendation for Veracue's research material."
+    },
+    {
+      "question": "What is the difference between AOD9604 and tesamorelin?",
+      "answer": "AOD9604 is a growth-hormone-derived fragment studied in adipose research. Tesamorelin is a GHRH analogue that stimulates the body's own growth hormone release and is FDA-approved for a specific indication. They act through different mechanisms."
+    },
+    {
+      "question": "How is AOD9604 different from semaglutide, tirzepatide and retatrutide?",
+      "answer": "Those compounds act on incretin hormone receptors \u2014 GLP-1, GIP, and glucagon receptors, depending on the compound. AOD9604 is unrelated to that receptor family and is studied through a different, growth-hormone-derived research pathway."
+    },
+    {
+      "question": "What should an AOD9604 COA contain?",
+      "answer": "A useful COA may include identity confirmation matched against sequence and mass, HPLC purity with its method named, mass spectrometry results, lot number, testing laboratory, and test date."
+    },
+    {
+      "question": "What does the Veracue AOD9604 Spray page establish?",
+      "answer": "This page establishes general molecular reference information about AOD9604 as a research entity. It does not establish product-specific formulation details, purity, or efficacy for any individual lot."
+    }
+  ],
+  "complianceNotice": "Veracue's AOD9604 Spray is intended solely for laboratory and analytical research. It is not a drug, cosmetic, dietary supplement, or food, and it is not intended to diagnose, treat, cure, or prevent any disease. It must not be administered to humans or animals. The scientific information on this page describes published research on the AOD9604 molecule and is not medical advice or a statement of efficacy or safety for this or any product. Purchasers are responsible for using this material lawfully and within an appropriate research setting.",
+  "internalLinks": [
+    { "label": "Shop All Peptides", "url": "/shop" },
+    { "label": "Certificates (COA)", "url": "/certificates" },
+    { "label": "FAQ", "url": "/faq" },
+    { "label": "About Veracue", "url": "/about-us" },
+    { "label": "Contact Us", "url": "/contact-us" },
+    { "label": "Medical Disclaimer", "url": "/medical-disclaimer" },
+    { "label": "Terms & Conditions", "url": "/terms-and-conditions" }
+  ],
+  "references": [
+    { "source": "PubChem, National Center for Biotechnology Information", "note": "AOD9604 compound record, CID 71300630" },
+    { "source": "Australian New Zealand Clinical Trials Registry", "note": "ACTRN12605000067673, Phase IIb \"OPTIONS\" study registration" },
+    { "source": "U.S. Food and Drug Administration", "note": "Referenced for current approval status statements" }
+  ],
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Veracue Peptides",
+      "url": "https://veracue-peptides.vercel.app"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Veracue",
+      "url": "https://veracue-peptides.vercel.app",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-800-837-2283",
+        "email": "support@veracuepeptides.com",
+        "contactType": "customer support"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "AOD9604 Spray | Research Peptide | Veracue",
+      "description": "AOD9604 Spray research material from Veracue. Molecular identity, evidence context, and COA guidance for a growth hormone-derived research peptide. Research Use Only.",
+      "url": "https://veracue-peptides.vercel.app/product/aod9604-spray"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://veracue-peptides.vercel.app/" },
+        { "@type": "ListItem", "position": 2, "name": "Shop", "item": "https://veracue-peptides.vercel.app/shop" },
+        { "@type": "ListItem", "position": 3, "name": "AOD9604 Spray", "item": "https://veracue-peptides.vercel.app/product/aod9604-spray" }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What is AOD9604?", "acceptedAnswer": { "@type": "Answer", "text": "AOD9604 is a synthetic 16-amino-acid peptide structurally related to a region of human growth hormone, investigated in preclinical and human studies related to metabolic and adipose-tissue biology." } },
+        { "@type": "Question", "name": "Is AOD9604 derived from human growth hormone?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Its sequence corresponds to a region near the C-terminus of hGH, differing from the native sequence by an N-terminal tyrosine substitution. This describes structural origin, not equivalent biological activity." } },
+        { "@type": "Question", "name": "Is AOD9604 the same as HGH?", "acceptedAnswer": { "@type": "Answer", "text": "No. Full-length hGH is a 191-amino-acid protein with broad physiological roles. AOD9604 is a 16-amino-acid fragment studied for a narrower proposed activity, separate from hGH's other effects." } },
+        { "@type": "Question", "name": "What is AOD9604 studied for?", "acceptedAnswer": { "@type": "Answer", "text": "AOD9604 has been studied for its association with adipose-tissue and lipolytic biology, across animal and human clinical research contexts. Its precise mechanism remains incompletely established." } },
+        { "@type": "Question", "name": "Has AOD9604 been studied in humans?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. It progressed through Phase I, Phase IIa, and a placebo-controlled Phase IIb trial (the OPTIONS study) before its clinical development program was discontinued." } },
+        { "@type": "Question", "name": "Is AOD9604 FDA approved?", "acceptedAnswer": { "@type": "Answer", "text": "No. AOD9604 is not FDA-approved for any therapeutic indication, and its clinical development program did not advance to Phase III trials." } },
+        { "@type": "Question", "name": "What does \"AOD9604 benefits\" mean?", "acceptedAnswer": { "@type": "Answer", "text": "This search phrase generally refers to endpoints measured in specific studies \u2014 animal adiposity models or early-phase human trials \u2014 rather than an established, generalizable outcome." } },
+        { "@type": "Question", "name": "What does \"AOD9604 dosage\" mean?", "acceptedAnswer": { "@type": "Answer", "text": "It typically refers to parameters used in historical clinical trials of an oral tablet formulation. Those parameters are not a usage recommendation for Veracue's research material." } },
+        { "@type": "Question", "name": "What is the difference between AOD9604 and tesamorelin?", "acceptedAnswer": { "@type": "Answer", "text": "AOD9604 is a growth-hormone-derived fragment studied in adipose research. Tesamorelin is a GHRH analogue that stimulates the body's own growth hormone release and is FDA-approved for a specific indication. They act through different mechanisms." } },
+        { "@type": "Question", "name": "How is AOD9604 different from semaglutide, tirzepatide and retatrutide?", "acceptedAnswer": { "@type": "Answer", "text": "Those compounds act on incretin hormone receptors \u2014 GLP-1, GIP, and glucagon receptors, depending on the compound. AOD9604 is unrelated to that receptor family and is studied through a different, growth-hormone-derived research pathway." } },
+        { "@type": "Question", "name": "What should an AOD9604 COA contain?", "acceptedAnswer": { "@type": "Answer", "text": "A useful COA may include identity confirmation matched against sequence and mass, HPLC purity with its method named, mass spectrometry results, lot number, testing laboratory, and test date." } },
+        { "@type": "Question", "name": "What does the Veracue AOD9604 Spray page establish?", "acceptedAnswer": { "@type": "Answer", "text": "This page establishes general molecular reference information about AOD9604 as a research entity. It does not establish product-specific formulation details, purity, or efficacy for any individual lot." } }
+      ]
+    }
+  ]
+}

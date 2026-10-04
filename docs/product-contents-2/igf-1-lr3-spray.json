@@ -1,0 +1,412 @@
+{
+  "route": "/product/igf-1-lr3-spray",
+  "seo": {
+    "title": "IGF-1 LR3 Peptide Spray | Long R3 IGF-1 Research | Veracue",
+    "metaDescription": "IGF-1 LR3 (Long R3 IGF-1) research spray from Veracue. Sequence, structural identity, and COA context for researchers evaluating this IGF-1 analogue — Research Use Only.",
+    "primaryKeyword": "IGF-1 LR3 peptide",
+    "secondaryKeywords": [
+      "IGF-1 LR3",
+      "IGF-1 LR3 sequence",
+      "IGF-1 LR3 molecular weight",
+      "Long R3 IGF-1",
+      "Long-(Arg3) IGF-I",
+      "IGF-1 analogue",
+      "IGF receptor research",
+      "IGF-1 research peptide",
+      "IGF-1 LR3 COA",
+      "IGF-1 LR3 spray",
+      "IGF-1 research",
+      "native IGF-1 vs IGF-1 LR3",
+      "IGF-1 LR3 vs mecasermin",
+      "IGF-1 LR3 dosage",
+      "IGF-1 LR3 side effects",
+      "IGF-1 LR3 1mg"
+    ]
+  },
+  "hero": {
+    "eyebrow": "Research Use Only",
+    "h1": "IGF-1 LR3 Spray",
+    "subheading": "Long R3 IGF-1 (Long-(Arg3) IGF-I) research material in a spray dispensing format, for researchers who want the molecular identity stated precisely and the product details kept to what Veracue has actually verified.",
+    "badges": [
+      "Research Use Only",
+      "Not for human use",
+      "Not for veterinary use"
+    ]
+  },
+  "overview": "IGF-1 LR3 is a modified analogue of human insulin-like growth factor I, most often written as Long R3 IGF-1, Long-(Arg3) IGF-I, or IGF-1 Long R3. It is built from the same core sequence as native IGF-1 but carries two specific structural changes: a 13-residue extension added to the N-terminus, and an arginine in place of the glutamic acid found at position 3 of the native hormone. Together these give the analogue 83 amino acids, against 70 in native mature human IGF-1. Veracue's IGF-1 LR3 Spray is a Research Use Only listing of this analogue in a spray-dispensed format. Spray describes how the material is packaged, not a confirmed administration route, and that distinction — along with what the current literature does and doesn't establish about the analogue — is the subject of this page.",
+  "productSnapshot": {
+    "moleculeLevel": {
+      "commonNames": [
+        "IGF-1 LR3",
+        "IGF-1 Long R3",
+        "Long R3 IGF-1",
+        "Long R3 IGF-I",
+        "Long-(Arg3) IGF-I"
+      ],
+      "fullName": "Long-(Arg3) insulin-like growth factor I",
+      "classification": "Modified IGF-1 analogue / research peptide",
+      "aminoAcidCount": 83,
+      "nativeComparisonAminoAcidCount": 70,
+      "approximateMass": "Approximately 9.1 kDa, consistent with the 83-residue sequence; treat more precise decimal figures as source-dependent",
+      "keyStructuralFeatures": [
+        "13-residue extension added to the N-terminus, relative to native human IGF-1",
+        "Arginine in place of glutamic acid at position 3 of the native sequence",
+        "83 total amino acid residues, versus 70 in native mature human IGF-1"
+      ],
+      "sequence": "MFPAMPLSSLFVNGPRTLCGAELVDALQFVCGDRGFYFNKPTGYGSSSRRAPQTGIVDECCFRSCDLRRLEMYCAPLKPAKSA",
+      "distinctFrom": [
+        "Native human IGF-1 (70 amino acids, endogenous growth factor)",
+        "Mecasermin (recombinant human IGF-1, an FDA-approved pharmaceutical product with its own regulatory status)"
+      ]
+    },
+    "veracueSpecific": {
+      "product": "IGF-1 LR3 Spray",
+      "format": "Spray",
+      "researchStatus": "Research Use Only",
+      "concentration": "Not publicly specified",
+      "amountPerSpray": "Not publicly specified",
+      "route": "Not publicly specified",
+      "packageSize": "Not publicly specified",
+      "purity": "Not publicly specified",
+      "formulation": "Not publicly specified",
+      "carrierExcipients": "Not publicly specified",
+      "storage": "Not publicly specified",
+      "lotCoa": "Not publicly specified for this listing — see /certificates for any lot documentation Veracue has published"
+    }
+  },
+  "problemSolutionSections": [
+    {
+      "heading": "How do I confirm what IGF-1 LR3 actually is?",
+      "body": "IGF-1 LR3 is Long-(Arg3) IGF-I, a structurally modified analogue of human insulin-like growth factor I — not an alternate name for IGF-1 itself. The confirming details are the 83-residue sequence, the 13-residue N-terminal extension, and the arginine substitution at position 3. A vendor listing or forum post that uses \"IGF-1 LR3\" without reference to these structural features is making a naming claim rather than a verifiable one. For researchers comparing IGF-related materials, checking the sequence against the published one above is the most direct way to confirm identity, independent of what any given label says."
+    },
+    {
+      "heading": "What is the IGF-1 LR3 sequence, molecular size, and structural difference from IGF-1?",
+      "body": "The published Long R3 IGF-1 sequence is MFPAMPLSSLFVNGPRTLCGAELVDALQFVCGDRGFYFNKPTGYGSSSRRAPQTGIVDECCFRSCDLRRLEMYCAPLKPAKSA — 83 residues, against the 70 residues of native mature human IGF-1. The size difference comes from the added N-terminal extension, and the analogue's mass is generally cited at approximately 9.1 kDa. This page doesn't cite additional identifiers such as an exact molecular formula or a single universal CAS number, since those figures vary between databases and vendor documentation in ways this page isn't positioned to adjudicate. The sequence and residue count are the reliable reference points for identity."
+    },
+    {
+      "heading": "Why is IGF-1 LR3 different from native IGF-1?",
+      "body": "Native IGF-1 → 70 residues. Long R3 IGF-1 → 83 residues, with an N-terminal extension and an Arg3 substitution layered on top of the native sequence. Those structural modifications are associated with reduced affinity for several IGF-binding proteins compared with native IGF-1 — proteins that normally regulate how much circulating IGF-1 is biologically available. That difference is an important part of why Long R3 IGF-I is studied as a distinct analogue rather than treated as interchangeable with the native hormone, though the exact biological consequences of reduced binding-protein affinity depend on the experimental system being used to study it."
+    },
+    {
+      "heading": "What does the IGF-1 LR3 literature actually show about IGF signaling?",
+      "body": "IGF-1 signaling runs primarily through the type 1 IGF receptor, a receptor tyrosine kinase that activates growth- and metabolism-related pathways once bound by IGF-1 or a sufficiently similar analogue. That receptor biology is well established at the native IGF-1 level. Studies that examine Long R3 IGF-I directly generally focus on how its altered binding-protein interaction changes the amount of analogue available to engage that receptor in a given system, rather than on a separate signaling mechanism unique to the analogue. Findings from native IGF-1 signaling research provide useful background, but they describe the native hormone's behavior, not a confirmed result for the modified analogue."
+    },
+    {
+      "heading": "How should I separate IGF-1 LR3 evidence from native IGF-1 evidence?",
+      "body": "The published literature is best read in three layers. Layer one is native human IGF-1 biology — receptor structure, binding-protein regulation, the broader GH/IGF axis — which is extensive and well characterized. Layer two is evidence that specifically studied Long R3 IGF-I, IGF-1 LR3, or Long-(Arg3) IGF-I by name; this body of work is smaller and concentrated in cell-culture and animal-model research. Layer three is mecasermin, a recombinant human IGF-1 pharmaceutical product that is useful only as a contextual comparison, since its FDA-approved indications, formulation, and clinical data belong to that product specifically and don't extend to Long R3 IGF-I. Keeping these three layers separate is the difference between an accurate reading of the science and an inflated one."
+    },
+    {
+      "heading": "What does reduced IGF-binding-protein interaction mean in IGF-1 LR3 research?",
+      "body": "IGF-binding proteins are the circulating proteins that bind native IGF-1 and control how much of it is free to interact with the IGF receptor at any given time. The structural modifications in Long R3 IGF-I reduce its affinity for several of these binding proteins relative to native IGF-1, which is why researchers studying the analogue often look at binding-protein interaction and receptor-related signaling as connected questions rather than separate ones. This doesn't translate into a claim that reduced binding-protein affinity produces greater biological activity, faster growth, or any specific outcome — the actual consequences of that reduced interaction are study- and model-dependent, and reported findings should be read as describing that specific experimental system rather than a general rule."
+    },
+    {
+      "heading": "What does \"IGF-1 LR3 benefits\" actually mean in a research context?",
+      "body": "Search queries phrased around \"benefits\" are usually asking what effects have been observed in a specific experimental system — a cell line, an animal model, an assay — under defined conditions, rather than requesting a general claim about the compound. Reported findings in the IGF-1 LR3 literature tend to describe changes in receptor-related signaling activity or binding-protein interaction within that specific study, and those results are tied to the model and method used to generate them. They are not a transferable list of effects, and they are not evidence of any outcome in humans, whether related to growth, recovery, body composition, or performance."
+    },
+    {
+      "heading": "What do \"IGF-1 LR3 dosage\" and \"IGF-1 LR3 1mg\" searches actually mean?",
+      "body": "Online references to \"1mg\" or similar figures typically describe a package quantity used across the research-peptide market, not a usage recommendation for any individual. Where a published study reports an amount administered in an experimental protocol, that figure describes the conditions of that specific study; it isn't intended as, and shouldn't be read as, dosing guidance for a commercial product. Veracue's IGF-1 LR3 Spray is Research Use Only, and this page does not provide dosing, reconstitution, dilution, or administration instructions of any kind."
+    },
+    {
+      "heading": "How is IGF-1 LR3 different from mecasermin, HGH, CJC-1295, tesamorelin and ipamorelin?",
+      "body": "Mecasermin is recombinant human IGF-1, an FDA-approved pharmaceutical product with its own indications, formulation, and clinical history — a different regulatory category from a research analogue like IGF-1 LR3, and one whose approved status does not extend to it. HGH, or growth hormone, is a separate protein hormone that sits upstream of IGF-1 in the GH/IGF axis rather than acting through the same receptor. CJC-1295, tesamorelin, and ipamorelin are structurally unrelated peptides studied through growth-hormone secretagogue or GHRH-related pathways rather than the IGF receptor directly. The comparison table below sets these side by side for identity clarification; it isn't a ranking, and no material is presented as more effective or safer than another."
+    },
+    {
+      "heading": "What does \"IGF-1 LR3 side effects\" mean when reading research literature?",
+      "body": "Safety observations in peptide research are specific to the molecule, the study design, the model system, and the exposure conditions used — findings reported for native IGF-1 or for mecasermin under its approved indications describe those materials, not IGF-1 LR3, and available literature reviewed for this page does not support building a combined safety profile across them. Nothing on this page is medical advice or a prediction of outcomes for any individual. Researchers with safety questions about a specific lot should look to that lot's documentation and to qualified professionals rather than to general search results."
+    },
+    {
+      "heading": "What should I verify on an IGF-1 LR3 COA and analytical report?",
+      "body": "Researchers evaluating a certificate of analysis would typically want to confirm product identity, lot number, the testing laboratory, the test date, the analytical method used, and how the specification compares against the result actually obtained — with mass spectrometry or chromatographic data included where the lab ran it. A COA may cover some of these points and not others; coverage depends on the material and the laboratory, not a fixed template. Identity, purity, mass confirmation, and lot traceability are each answering a different question, and confirming one doesn't confirm the rest. Veracue has not published a lot-specific COA for this listing at this time; current certificates are available at /certificates."
+    },
+    {
+      "heading": "What can a Veracue IGF-1 LR3 Spray page establish, and what requires lot-specific documentation?",
+      "body": "IGF-1 LR3 is easiest to identify by its sequence and structural changes, and that identity — along with what the published research literature does and doesn't support — is what this page sets out. Concentration, amount per spray, formulation, carrier, dispensing route, package size, and purity for this specific listing are product-level facts that depend on Veracue's own lot documentation rather than on general knowledge about the analogue, and they remain \"not publicly specified\" until that documentation confirms them. The product page and the paperwork answer different questions; one describes the molecule, the other describes the lot."
+    }
+  ],
+  "researchEvidence": {
+    "layerA_nativeIgf1Biology": "Established endocrinology and cell-signaling literature covering endogenous human IGF-1, the type 1 IGF receptor, IGF-binding proteins, and the broader GH/IGF axis. This is the deepest and best-characterized layer, and it describes the native hormone rather than the analogue.",
+    "layerB_igf1Lr3SpecificEvidence": "Studies that examine Long R3 IGF-I, IGF-1 LR3, or Long-(Arg3) IGF-I directly — concentrated in cell-culture and animal-model work on binding-protein interaction and receptor-related signaling. This layer is narrower than Layer A, and findings here are tied to the specific model and method used.",
+    "layerC_mecaserminPharmaceuticalContext": "Mecasermin's regulatory status, approved indications, and clinical history belong to that recombinant IGF-1 product specifically. It is referenced here only as a contextual comparison; none of its pharmaceutical, clinical, or regulatory characteristics are attributed to IGF-1 LR3 or to Veracue's material.",
+    "veracueProductEvidence": "Limited to what the live Veracue site and first-party documentation currently verify. Where no such documentation exists for this listing, product-specific fields are marked as not publicly specified rather than filled in from general market assumptions."
+  },
+  "comparison": {
+    "intro": "The table below places IGF-1 LR3 alongside compounds that come up in related searches, to keep their identities and research contexts distinct rather than to compare their effectiveness.",
+    "headers": [
+      "Material",
+      "Basic identity",
+      "Structural distinction",
+      "Main research context"
+    ],
+    "rows": [
+      [
+        "Native IGF-1",
+        "Endogenous IGF-1",
+        "70-amino-acid peptide",
+        "IGF biology"
+      ],
+      [
+        "IGF-1 LR3",
+        "Modified IGF-1 analogue",
+        "N-terminal extension + Arg3 substitution",
+        "Preclinical/analytical research"
+      ],
+      [
+        "Mecasermin",
+        "Recombinant human IGF-1",
+        "Native IGF-1 sequence/product context",
+        "Pharmaceutical/clinical context"
+      ],
+      [
+        "HGH/GH",
+        "Growth hormone",
+        "Different protein hormone",
+        "GH/IGF axis"
+      ],
+      [
+        "CJC-1295",
+        "Synthetic peptide analogue",
+        "Different peptide structure",
+        "GHRH-related research"
+      ],
+      [
+        "Ipamorelin",
+        "Synthetic peptide",
+        "GHS receptor agonist",
+        "Growth-hormone secretagogue research"
+      ],
+      [
+        "Tesamorelin",
+        "GHRH analogue",
+        "Different peptide",
+        "GH-axis research"
+      ]
+    ],
+    "note": "This table is for identity and context reference only. It does not rank these materials or suggest that any one is more effective, safer, or superior to another."
+  },
+  "coaSection": {
+    "heading": "Reading an IGF-1 LR3 Certificate of Analysis",
+    "body": "A COA for a research peptide may include product identity, lot number, testing laboratory, test date, purity data, mass spectrometry or chromatographic results, the specification tested against, the result actually obtained, and traceability linking the document to a specific lot. Not every COA covers every one of these — what's included depends on the material and the lab that performed the testing. Identity, purity, potency, and formulation are four distinct questions, so confirming one on a COA doesn't confirm the others, and route of administration is a separate question a COA typically doesn't address at all. Veracue has not published a lot-specific COA for the IGF-1 LR3 Spray listing at this time; current certificates for other products are available at /certificates."
+  },
+  "analyticalSection": {
+    "heading": "Mass Spectrometry and Analytical Data for IGF-1 LR3",
+    "body": "Mass spectrometry supports molecular identity by comparing an observed mass and charge-state profile against the expected characteristics for the sequence in question — for IGF-1 LR3, an expected mass of roughly 9.1 kDa. How much weight that comparison carries depends on the analytical method and sample preparation used, and identity confirmation is a separate question from purity: a spectrum that supports identity doesn't by itself establish how pure a sample is, and purity, in turn, is distinct from potency and from formulation or route. No specific spectrum, peak, or analytical result for Veracue's IGF-1 LR3 Spray is represented on this page; any material-specific analytical data would come from lot-specific documentation rather than from general reference content."
+  },
+  "faqs": [
+    {
+      "question": "What is IGF-1 LR3?",
+      "answer": "IGF-1 LR3 — also written Long R3 IGF-1 or Long-(Arg3) IGF-I — is a structurally modified analogue of human insulin-like growth factor I. It carries a 13-residue N-terminal extension and an arginine substitution at position 3, giving it 83 amino acids against 70 in native IGF-1. It is studied as a distinct research entity, not treated as a synonym for IGF-1 itself."
+    },
+    {
+      "question": "What is the IGF-1 LR3 sequence?",
+      "answer": "The published sequence is MFPAMPLSSLFVNGPRTLCGAELVDALQFVCGDRGFYFNKPTGYGSSSRRAPQTGIVDECCFRSCDLRRLEMYCAPLKPAKSA — 83 residues, including the N-terminal extension and Arg3 substitution that distinguish it from the 70-residue native IGF-1 sequence."
+    },
+    {
+      "question": "What is the molecular weight of IGF-1 LR3?",
+      "answer": "IGF-1 LR3 is generally cited at approximately 9.1 kDa, consistent with its 83-residue sequence. More precise decimal figures vary slightly across databases and reference sources, so this page treats the approximate value as the dependable one rather than presenting a single exact number as definitive."
+    },
+    {
+      "question": "How is IGF-1 LR3 different from native IGF-1?",
+      "answer": "Native IGF-1 has 70 amino acids; IGF-1 LR3 has 83, due to a 13-residue N-terminal extension and an arginine substitution at position 3. These structural changes are associated with reduced affinity for several IGF-binding proteins compared with native IGF-1, which is a meaningful pharmacological difference rather than a naming variation."
+    },
+    {
+      "question": "Is IGF-1 LR3 the same as mecasermin?",
+      "answer": "No. Mecasermin is recombinant human IGF-1, an FDA-approved pharmaceutical product with its own regulatory and clinical history. IGF-1 LR3 is a structurally distinct research analogue, and mecasermin's approved status, formulation, and clinical data do not extend to it."
+    },
+    {
+      "question": "What is IGF-1 LR3 researched for?",
+      "answer": "IGF-1 LR3 is studied mainly in cell-culture and animal-model research examining its altered IGF-binding-protein interaction and its relationship to IGF receptor signaling. This page describes that research context; it makes no treatment, performance, or outcome claims about the Veracue material."
+    },
+    {
+      "question": "What does \"IGF-1 LR3 benefits\" mean in research?",
+      "answer": "It generally refers to effects observed in a specific experimental model — a cell line or animal study — under defined conditions, not a general list of outcomes. Those findings are tied to the study that produced them and are not evidence of benefits in humans."
+    },
+    {
+      "question": "What do IGF-1 LR3 dosage searches mean?",
+      "answer": "These searches usually reflect curiosity about package quantities referenced across the research-peptide market, such as \"1mg\" listings, rather than a usage recommendation. This page does not provide dosing, reconstitution, or administration instructions; the material is Research Use Only."
+    },
+    {
+      "question": "What does IGF-1 LR3 side effects mean in research literature?",
+      "answer": "Safety observations are specific to the molecule, study design, and model system tested, and findings for native IGF-1 or mecasermin don't transfer to IGF-1 LR3. Available literature reviewed for this page does not support a combined safety profile, and nothing here is medical advice."
+    },
+    {
+      "question": "How is IGF-1 LR3 different from CJC-1295, ipamorelin or tesamorelin?",
+      "answer": "CJC-1295, ipamorelin, and tesamorelin are structurally unrelated peptides studied through growth-hormone secretagogue or GHRH-related pathways rather than the IGF receptor. IGF-1 LR3 is an IGF-1 analogue with a different sequence, mechanism, and research context from all three."
+    },
+    {
+      "question": "What should I look for on an IGF-1 LR3 COA?",
+      "answer": "Product identity, lot number, testing laboratory, test date, analytical method, purity data where applicable, mass spectrometry results where applicable, the specification versus the observed result, and lot traceability. Coverage varies by material and lab, and not every COA includes every test."
+    },
+    {
+      "question": "Is IGF-1 LR3 Spray necessarily a nasal spray?",
+      "answer": "No. \"Spray\" describes this listing's dispensing format, not a confirmed administration route. Nasal, oral, sublingual, or topical use should not be assumed unless Veracue's first-party documentation explicitly states a route, which it does not currently do."
+    }
+  ],
+  "complianceNotice": "IGF-1 LR3 Spray is Research Use Only — not for human use, not for veterinary use, and not a drug, dietary supplement, or medical device. Content on this page reflects published research on IGF-1 LR3 and related compounds and does not constitute medical advice, a treatment recommendation, or administration guidance.",
+  "internalLinks": [
+    "/",
+    "/shop",
+    "/certificates",
+    "/faq",
+    "/contact-us",
+    "/about-us",
+    "/medical-disclaimer",
+    "/terms-and-conditions"
+  ],
+  "references": {
+    "evidenceApproach": "Claims on this page are separated into three evidence layers — native IGF-1 biology, IGF-1 LR3-specific findings, and mecasermin's pharmaceutical/regulatory context — and findings are not carried across layers. A result reported for native IGF-1 or mecasermin is presented as describing that material, not as evidence about IGF-1 LR3, unless a source studied the analogue directly.",
+    "sourceTypes": [
+      "Peer-reviewed literature and public sequence/identity databases describing Long R3 IGF-I / Long-(Arg3) IGF-I",
+      "Established endocrinology literature on the IGF-1 receptor and IGF-binding proteins",
+      "FDA/official regulatory and labeling sources for mecasermin as a distinct pharmaceutical product",
+      "Veracue first-party site and documentation for product-specific claims"
+    ],
+    "note": "No specific PMID, DOI, or study result is fabricated or presented as page copy. Where a figure such as molecular weight varies across sources, that variability is stated directly rather than resolved by picking a single number and presenting it as settled."
+  },
+  "schemaNotes": "Structured data is limited to WebSite, WebPage, BreadcrumbList, and FAQPage. Product schema is omitted because the live Veracue product record does not currently provide verified price, SKU, availability, rating, review count, package size, purity, or image data for this listing. FAQPage entries match the twelve visible FAQs exactly, with no duplicates.",
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://veracue-peptides.vercel.app/#website",
+        "url": "https://veracue-peptides.vercel.app/",
+        "name": "Veracue"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://veracue-peptides.vercel.app/product/igf-1-lr3-spray#webpage",
+        "url": "https://veracue-peptides.vercel.app/product/igf-1-lr3-spray",
+        "name": "IGF-1 LR3 Peptide Spray | Long R3 IGF-1 Research | Veracue",
+        "description": "IGF-1 LR3 (Long R3 IGF-1) research spray from Veracue. Sequence, structural identity, and COA context for researchers evaluating this IGF-1 analogue — Research Use Only.",
+        "isPartOf": {
+          "@id": "https://veracue-peptides.vercel.app/#website"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://veracue-peptides.vercel.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Shop",
+            "item": "https://veracue-peptides.vercel.app/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "IGF-1 LR3 Spray",
+            "item": "https://veracue-peptides.vercel.app/product/igf-1-lr3-spray"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is IGF-1 LR3?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "IGF-1 LR3 — also written Long R3 IGF-1 or Long-(Arg3) IGF-I — is a structurally modified analogue of human insulin-like growth factor I. It carries a 13-residue N-terminal extension and an arginine substitution at position 3, giving it 83 amino acids against 70 in native IGF-1. It is studied as a distinct research entity, not treated as a synonym for IGF-1 itself."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the IGF-1 LR3 sequence?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The published sequence is MFPAMPLSSLFVNGPRTLCGAELVDALQFVCGDRGFYFNKPTGYGSSSRRAPQTGIVDECCFRSCDLRRLEMYCAPLKPAKSA — 83 residues, including the N-terminal extension and Arg3 substitution that distinguish it from the 70-residue native IGF-1 sequence."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the molecular weight of IGF-1 LR3?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "IGF-1 LR3 is generally cited at approximately 9.1 kDa, consistent with its 83-residue sequence. More precise decimal figures vary slightly across databases and reference sources, so this page treats the approximate value as the dependable one rather than presenting a single exact number as definitive."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is IGF-1 LR3 different from native IGF-1?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Native IGF-1 has 70 amino acids; IGF-1 LR3 has 83, due to a 13-residue N-terminal extension and an arginine substitution at position 3. These structural changes are associated with reduced affinity for several IGF-binding proteins compared with native IGF-1, which is a meaningful pharmacological difference rather than a naming variation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is IGF-1 LR3 the same as mecasermin?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Mecasermin is recombinant human IGF-1, an FDA-approved pharmaceutical product with its own regulatory and clinical history. IGF-1 LR3 is a structurally distinct research analogue, and mecasermin's approved status, formulation, and clinical data do not extend to it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is IGF-1 LR3 researched for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "IGF-1 LR3 is studied mainly in cell-culture and animal-model research examining its altered IGF-binding-protein interaction and its relationship to IGF receptor signaling. This page describes that research context; it makes no treatment, performance, or outcome claims about the Veracue material."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does \"IGF-1 LR3 benefits\" mean in research?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It generally refers to effects observed in a specific experimental model — a cell line or animal study — under defined conditions, not a general list of outcomes. Those findings are tied to the study that produced them and are not evidence of benefits in humans."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What do IGF-1 LR3 dosage searches mean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "These searches usually reflect curiosity about package quantities referenced across the research-peptide market, such as \"1mg\" listings, rather than a usage recommendation. This page does not provide dosing, reconstitution, or administration instructions; the material is Research Use Only."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does IGF-1 LR3 side effects mean in research literature?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Safety observations are specific to the molecule, study design, and model system tested, and findings for native IGF-1 or mecasermin don't transfer to IGF-1 LR3. Available literature reviewed for this page does not support a combined safety profile, and nothing here is medical advice."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is IGF-1 LR3 different from CJC-1295, ipamorelin or tesamorelin?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CJC-1295, ipamorelin, and tesamorelin are structurally unrelated peptides studied through growth-hormone secretagogue or GHRH-related pathways rather than the IGF receptor. IGF-1 LR3 is an IGF-1 analogue with a different sequence, mechanism, and research context from all three."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I look for on an IGF-1 LR3 COA?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Product identity, lot number, testing laboratory, test date, analytical method, purity data where applicable, mass spectrometry results where applicable, the specification versus the observed result, and lot traceability. Coverage varies by material and lab, and not every COA includes every test."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is IGF-1 LR3 Spray necessarily a nasal spray?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. \"Spray\" describes this listing's dispensing format, not a confirmed administration route. Nasal, oral, sublingual, or topical use should not be assumed unless Veracue's first-party documentation explicitly states a route, which it does not currently do."
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

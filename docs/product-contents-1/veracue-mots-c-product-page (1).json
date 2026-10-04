@@ -1,0 +1,1884 @@
+{
+  "meta": {
+    "deliverable": "Veracue MOTS-c product page + SEO/GEO/AEO package",
+    "client": "Veracue Peptides",
+    "prepared_by": "Belk Digital",
+    "prepared_on": "2026-09-19",
+    "live_site_checked": [
+      "/",
+      "/shop",
+      "/certificates",
+      "/product/ahk-cu",
+      "/product/retatrutide"
+    ],
+    "keyword_source": "MOTS-C_Keywords.xlsx (10 blocks, relative interest)",
+    "not_specified_wording": "Not publicly specified on the current Veracue product information."
+  },
+  "A_page_positioning": {
+    "summary": "A Research-Use-Only product page for MOTS-c that leads with verified molecular identity (16-residue sequence MRWQEMGYIFYPRKLR, formula, calculated masses, PubChem/CAS), separates three evidence tiers (cell culture, mouse, human endogenous-level observation), corrects the most common online misattributions, and gives analytical buyers a MOTS-c-specific COA checklist.",
+    "catalog_fit": "Existing live category 'Mitochondrial & Cellular Energy' (shop filter already exists; NAD+ is the only product in it today).",
+    "differentiators": [
+      "Calculated reference masses and ESI charge states for the free-acid peptide, plus the +16/+32 Da methionine-oxidation species, the +0.98 Da glutamine deamidation shift and the −0.98 Da C-terminal amide variant — details competing listings do not give.",
+      "Evidence table that labels every finding by system (cells, mice, human endogenous levels) instead of listing 'benefits'.",
+      "Misattribution corrections: nuclear translocation was Kim et al. 2018, not Lee et al. 2015; Lee et al. 2015 reported AICAR accumulation, not depletion; human exercise data measured the body's own MOTS-c, not administered material.",
+      "Disambiguation of search-adjacent compounds that are not the same thing: humanin, SS-31, NAD+ and AICAR (the last two are not peptides)."
+    ],
+    "house_pattern_followed": "Matches the live AHK-Cu page structure: H1 + subtitle, four-part short description, Overview / Intended Use / Product Highlights, Research Focus table, evidence table, 'What This Research Does Not Show', comparison, COA reading table + Quick COA Check, Storage & Handling, Compliance Notice, FAQ.",
+    "naming_note": "Copy uses 'MOTS-c' (lowercase c) because that is how the name is written in the original paper and PubChem. Search engines treat MOTS-c and MOTS-C identically; switch to 'MOTS-C' only if the catalog naming standard requires uppercase."
+  },
+  "B_primary_keyword": {
+    "primary_keyword": "MOTS-c peptide",
+    "evidence": "Top query in the workbook's main MOTS-c block (relative interest 100); 'peptide mots-c' (96) is the same intent and is covered by the same phrasing. The workbook is Google Trends-style relative interest (0–100 per block), not absolute search volume, so it ranks terms within a block but cannot be compared across blocks.",
+    "close_variants_used": [
+      "MOTS-c",
+      "MOTS-c peptide",
+      "MOTS c peptide",
+      "peptide MOTS-c",
+      "what is MOTS-c peptide",
+      "what does MOTS-c peptide do",
+      "MOTS-c peptide benefits",
+      "MOTS-c dosage",
+      "MOTS-c side effects"
+    ]
+  },
+  "C_secondary_keyword_clusters": {
+    "clusters": [
+      {
+        "cluster": "Core identity",
+        "terms": [
+          "mots-c peptide",
+          "peptide mots-c",
+          "mots c peptide",
+          "mots c peptides",
+          "mots-c",
+          "mots c",
+          "motsc",
+          "mot c",
+          "mot-c peptide",
+          "motc peptide",
+          "motsc peptide"
+        ],
+        "placement": "Title, H1, subtitle, short description, spec table, 'What is MOTS-c peptide?'"
+      },
+      {
+        "cluster": "Informational",
+        "terms": [
+          "what is mots c",
+          "what is mots c peptide",
+          "what does mots c do",
+          "what does mots-c peptide do (rising, +350% in one block)",
+          "what is mots-c peptide used for"
+        ],
+        "placement": "AEO blocks, dedicated H2 sections, FAQ"
+      },
+      {
+        "cluster": "Benefits (answered as research findings)",
+        "terms": [
+          "mots-c peptide benefits",
+          "mots-c benefits",
+          "mots c benefits",
+          "mots c peptide benefits (breakout)"
+        ],
+        "placement": "'MOTS-c Peptide Benefits: What the Research Has Investigated' + evidence table"
+      },
+      {
+        "cluster": "Dosage / protocol (answered with the RUO boundary, no figures)",
+        "terms": [
+          "mots-c dosage",
+          "mots c dosage",
+          "mots c dose",
+          "mots c dosing",
+          "mots-c dosing",
+          "mots c dosing protocol",
+          "mots c protocol",
+          "mots c cycle",
+          "mots-c dosage per week",
+          "mots-c dosage per day",
+          "mots-c dosage chart",
+          "mots-c peptide dosage chart"
+        ],
+        "placement": "Dosage and dosage-chart H2 sections, FAQ"
+      },
+      {
+        "cluster": "Safety",
+        "terms": [
+          "mots-c side effects",
+          "mots-c peptide side effects"
+        ],
+        "placement": "Side-effects H2 section, FAQ"
+      },
+      {
+        "cluster": "Form",
+        "terms": [
+          "mots-c tablets"
+        ],
+        "placement": "Tablets/oral H2 section, FAQ"
+      },
+      {
+        "cluster": "Mechanism-adjacent disambiguation",
+        "terms": [
+          "aicar peptide (breakout)"
+        ],
+        "placement": "Comparison table, FAQ ('Is AICAR a peptide?')"
+      },
+      {
+        "cluster": "Comparison",
+        "terms": [
+          "retatrutide",
+          "reta",
+          "reta peptide",
+          "reta and mots c (breakout)",
+          "tesamorelin",
+          "ss-31",
+          "ss31",
+          "nad",
+          "nad peptide",
+          "ghk-cu",
+          "bpc-157"
+        ],
+        "placement": "Comparison tables (section K), FAQ"
+      }
+    ],
+    "deliberately_excluded": {
+      "terms": [
+        "mots c reddit",
+        "bac water",
+        "bacteriostatic water",
+        "peptide calculator",
+        "peptide reconstitution calculator",
+        "peptide dosage calculator",
+        "mcg to mg",
+        "mots c 40mg",
+        "wolverine stack",
+        "klow",
+        "glow",
+        "peptides for weight loss",
+        "hgh peptides",
+        "amino club",
+        "protide health",
+        "apex peptides"
+      ],
+      "reason": "Reconstitution, dose-conversion and personal-use intent (incompatible with RUO), unrelated products, or competitor brand names. 'mots c 40mg' is a market vial-size term; using it would imply a Veracue vial size that is not specified."
+    }
+  },
+  "D_search_intent_map": {
+    "columns": [
+      "Query group",
+      "Underlying intent",
+      "Where answered",
+      "RUO handling"
+    ],
+    "rows": [
+      [
+        "mots-c peptide / what is mots-c",
+        "Identity and definition",
+        "Hero, spec table, 'What Is MOTS-c Peptide?', AEO 1–2",
+        "Answered fully — molecule-level facts only"
+      ],
+      [
+        "what does mots-c peptide do",
+        "Mechanism",
+        "'What Does MOTS-c Peptide Do?', AEO 3",
+        "Framed as findings in cells and mice; human effect stated as not established"
+      ],
+      [
+        "what is mots-c peptide used for",
+        "Application",
+        "'What Is MOTS-c Used For in Research?', AEO 4",
+        "Reinterpreted as research areas"
+      ],
+      [
+        "mots-c (peptide) benefits",
+        "Outcomes",
+        "Benefits section + evidence table, AEO 5",
+        "No benefit list; each finding labeled by system and limitation"
+      ],
+      [
+        "mots-c dosage / dosing / protocol / per week / cycle",
+        "Personal-use dosing",
+        "Dosage section, FAQ 7",
+        "Direct statement that human dosing is out of scope; redirect to study design, controls, net peptide content"
+      ],
+      [
+        "mots-c dosage chart",
+        "Personal-use dosing",
+        "Dosage-chart section, FAQ 8",
+        "No chart; explains why"
+      ],
+      [
+        "mots-c side effects",
+        "Human safety",
+        "Side-effects section, FAQ 9",
+        "No adverse-event list; explains limits of translating model data"
+      ],
+      [
+        "mots-c tablets",
+        "Oral product",
+        "Tablets section, FAQ 10",
+        "No formulation or route guidance"
+      ],
+      [
+        "reta and mots c / retatrutide / tesamorelin",
+        "Comparison, possibly combined use",
+        "Comparison tables, FAQ 16",
+        "Identity and mechanism class only; states the page does not address combined use"
+      ],
+      [
+        "aicar peptide",
+        "Mechanism confusion",
+        "Comparison table, FAQ 17",
+        "Clarifies AICAR is a nucleotide intermediate, not a peptide"
+      ],
+      [
+        "mots-c for sale",
+        "Procurement",
+        "CTAs, COA section",
+        "Handled through documentation and lot-traceability language, not 'buy' language"
+      ]
+    ]
+  },
+  "E_seo_title": {
+    "title": "MOTS-c Research Peptide (Mitochondrial 12S rRNA-c) | Veracue",
+    "length_chars": 60,
+    "pattern": "Matches the live AHK-Cu title tag pattern and length ('AHK-Cu Research Peptide (Copper Tripeptide-3) | Veracue', 55 chars) as read from the Sitechecker SEO summary the client supplied.",
+    "cms_note": "Enter exactly as above. The live AHK-Cu page's rendered <title> duplicates '| Veracue' due to a CMS template quirk; the Sitechecker summary shows the intended 55-char field value without the duplicate, which this title matches in form."
+  },
+  "F_meta_description": {
+    "text": "MOTS-c, the 16-amino-acid mitochondrial peptide, for lab research: molecular identity, what the 2015 metabolic study tested, MOTS-c vs humanin, and COA checks.",
+    "length_chars": 159,
+    "pattern": "Matches the live AHK-Cu meta description formula confirmed via Sitechecker: '<Compound>, the <plain-language identity>, for lab research: molecular identity, what the <year> <study type> study tested, <Compound> vs <closest comparison>, and COA checks.' (156 chars on AHK-Cu). Humanin is used as the comparison because it is MOTS-c's closest relative (another mitochondrial-derived peptide), the same role GHK-Cu plays for AHK-Cu."
+  },
+  "G_url_slug": {
+    "slug": "/product/mots-c",
+    "full_url": "https://veracue-peptides.vercel.app/product/mots-c",
+    "basis": "Live product URLs follow /product/<slug> (/product/ahk-cu, /product/nad-plus, /product/selank). The MOTS-c URL itself could not be checked because no MOTS-c product record exists in the live catalog."
+  },
+  "H_h1": {
+    "h1": "MOTS-c Peptide",
+    "subtitle": "Mitochondrial Open Reading Frame of the 12S rRNA-c · 16 amino acids"
+  },
+  "I_product_page_copy": {
+    "hero": {
+      "eyebrow": "Research Use Only",
+      "category_label": "Mitochondrial & Cellular Energy",
+      "h1": "MOTS-c Peptide",
+      "subtitle": "Mitochondrial Open Reading Frame of the 12S rRNA-c · 16 amino acids",
+      "short_description": "MOTS-c is a 16-amino-acid peptide (MRWQEMGYIFYPRKLR) encoded within the mitochondrial 12S rRNA gene, listed in reference databases as mitochondrial open reading frame of the 12S rRNA-c. Veracue supplies it as a research material for laboratory work. The most directly relevant published study (Lee et al., 2015) tested MOTS-c in cultured cells and diet-induced obese mice — cell-culture and animal evidence only. A Phase 2a human trial (NCT07505745) is currently recruiting, so this material does not yet establish metabolic, exercise or safety effects in people.",
+      "intro": "MOTS-c is a 16-amino-acid peptide encoded by a short open reading frame inside the mitochondrial 12S rRNA gene. Its discovery in 2015 drew attention for a simple reason: it suggested that mitochondria can signal to the cell with peptides from their own genome. Since then, researchers have studied it in cells and mice, mainly for metabolic signaling, AMPK and stress responses. For a peptide of this size, identity is not a formality. In particular, two oxidation-prone methionines and an arginine-rich sequence make analytical documentation central to any study. Accordingly, Veracue supplies MOTS-c strictly for laboratory research use.",
+      "ctas": [
+        {
+          "label": "Review Research Specifications",
+          "href": "#research-specifications"
+        },
+        {
+          "label": "View Product Documentation",
+          "href": "https://veracue-peptides.vercel.app/certificates"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "id": "overview",
+        "heading": "Overview",
+        "level": "h4",
+        "paragraphs": [
+          "MOTS-c stands for mitochondrial open reading frame of the 12S rRNA-c. The name describes where the sequence sits. It lies inside the gene for the smaller ribosomal RNA of human mitochondria, a stretch of DNA long assumed to encode RNA only. Lee and colleagues then reported the peptide in Cell Metabolism in 2015, following the earlier discovery of humanin in the neighboring 16S rRNA gene.",
+          "Most researchers meet MOTS-c through metabolic biology. The founding paper tied it to skeletal muscle, the folate cycle and AMPK. After that, later studies examined nuclear gene regulation and exercise. That literature is genuinely interesting; however, it is narrower than online summaries suggest. This page therefore separates what researchers measured in cells, in mice and in people."
+        ]
+      },
+      {
+        "id": "intended-use",
+        "heading": "Intended Use",
+        "level": "h4",
+        "paragraphs": [
+          "Veracue offers this material for in vitro and laboratory research. Typical examples include cell-culture work on mitochondrial signaling, AMPK and stress-response pathways, or analytical method development for mid-sized basic peptides. It is not a drug, supplement, food or cosmetic. Likewise, it is not intended for administration to humans or animals.",
+          "Research-use positioning is more than a label. For that reason, nothing on this page provides, or should be read as, dosing, administration, reconstitution-for-use or treatment information."
+        ]
+      },
+      {
+        "id": "product-highlights",
+        "heading": "Product Highlights",
+        "level": "h4",
+        "list": [
+          "16-amino-acid mitochondrial-derived peptide, sequence MRWQEMGYIFYPRKLR",
+          "Reference identifiers: PubChem CID 146675088; CAS 1627580-64-6",
+          "Vial size, salt form and lot purity: Not publicly specified on the current Veracue product information.",
+          "Labeled for laboratory research use only — not for human or veterinary use"
+        ]
+      },
+      {
+        "id": "research-specifications",
+        "heading": "Research Focus & Specifications",
+        "level": "h3",
+        "table": {
+          "columns": [
+            "Field",
+            "Value"
+          ],
+          "rows": [
+            [
+              "Product name",
+              "MOTS-c"
+            ],
+            [
+              "Full name",
+              "Mitochondrial open reading frame of the 12S rRNA-c"
+            ],
+            [
+              "Alternative names",
+              "MOTS-c peptide; MOTS-C; MOTSc"
+            ],
+            [
+              "Peptide length",
+              "16 amino acids"
+            ],
+            [
+              "Sequence (one-letter)",
+              "MRWQEMGYIFYPRKLR"
+            ],
+            [
+              "Sequence (three-letter)",
+              "H-Met-Arg-Trp-Gln-Glu-Met-Gly-Tyr-Ile-Phe-Tyr-Pro-Arg-Lys-Leu-Arg-OH"
+            ],
+            [
+              "Termini (reference structure)",
+              "Free N-terminal amine; free C-terminal carboxylic acid"
+            ],
+            [
+              "Molecular formula (free peptide)",
+              "C101H152N28O22S2"
+            ],
+            [
+              "Molecular weight (average, free peptide)",
+              "≈2174.6 g/mol"
+            ],
+            [
+              "Monoisotopic mass (free peptide, calculated)",
+              "2173.11 Da"
+            ],
+            [
+              "CAS number",
+              "1627580-64-6 (as listed in reference databases)"
+            ],
+            [
+              "PubChem CID",
+              "146675088"
+            ],
+            [
+              "Genomic origin",
+              "Short open reading frame within the mitochondrial 12S rRNA gene (MT-RNR1)"
+            ],
+            [
+              "Research category",
+              "Mitochondrial-derived peptide; mitochondrial and metabolic signaling research"
+            ],
+            [
+              "Direct evidence base",
+              "Cell culture and mouse studies; human studies of endogenous (naturally occurring) MOTS-c levels"
+            ],
+            [
+              "Research designation",
+              "Research Use Only — not for human or veterinary use"
+            ],
+            [
+              "Salt / counterion form",
+              "Not publicly specified on the current Veracue product information."
+            ],
+            [
+              "Vial amount",
+              "Not publicly specified on the current Veracue product information."
+            ],
+            [
+              "HPLC purity (lot)",
+              "Not publicly specified on the current Veracue product information."
+            ],
+            [
+              "Mass spectrometry identity result (lot)",
+              "Not publicly specified on the current Veracue product information."
+            ],
+            [
+              "Lot number / COA",
+              "Not publicly specified on the current Veracue product information."
+            ],
+            [
+              "Testing laboratory and date",
+              "Not publicly specified on the current Veracue product information."
+            ],
+            [
+              "Storage conditions",
+              "Not publicly specified on the current Veracue product information."
+            ]
+          ]
+        }
+      },
+      {
+        "id": "what-is-mots-c-peptide",
+        "heading": "What Is MOTS-c Peptide?",
+        "level": "h3",
+        "paragraphs": [
+          "MOTS-c is a 16-amino-acid peptide (MRWQEMGYIFYPRKLR) encoded within the mitochondrial genome, in a short open reading frame of the 12S rRNA gene. It belongs to a small group called mitochondrial-derived peptides, alongside humanin and the small humanin-like peptides. Researchers study it because it points to a less familiar role for mitochondria: producing signaling molecules, not only energy.",
+          "The founding 2015 study linked MOTS-c to the folate cycle, de novo purine synthesis and AMPK activation in cultured cells, and reported metabolic effects in mice. Later work then described its movement into the nucleus under cellular stress. Importantly, these are laboratory and animal findings. However, human studies so far have mainly measured the body's own MOTS-c, so no study has established a human outcome for administered MOTS-c."
+        ]
+      },
+      {
+        "id": "scientific-background",
+        "heading": "Scientific Background",
+        "level": "h3",
+        "subsections": [
+          {
+            "heading": "Molecular Identity and Structure",
+            "paragraphs": [
+              "MOTS-c is a linear peptide of 16 L-amino acids with a free amine at one end and a free carboxylic acid at the other. Notably, three arginines and a lysine, set against a single glutamate, give it a strongly basic character. In addition, two methionines (positions 1 and 6) and a tryptophan (position 3) are the residues most prone to oxidation. These features matter more at the bench than in a textbook, because they shape how the peptide behaves in chromatography, mass spectrometry and storage."
+            ]
+          },
+          {
+            "heading": "Mitochondrial Research Context",
+            "paragraphs": [
+              "Human mitochondrial DNA carries 37 genes: 13 for proteins, 22 for transfer RNAs and 2 for ribosomal RNAs. Humanin, reported in 2001 from the 16S rRNA region, showed that short open reading frames can hide inside those RNA genes. Building on that finding, Lee and colleagues reported MOTS-c from the 12S rRNA region in 2015."
+            ]
+          },
+          {
+            "heading": "Metabolic and Cellular Signaling Research",
+            "paragraphs": [
+              "In the 2015 study, MOTS-c inhibited the folate cycle and the de novo purine pathway tethered to it. As a result, the purine intermediate AICAR accumulated and AMPK became active. The authors proposed this route as partly responsible for the effects they saw. Meanwhile, skeletal muscle appeared to be the main target tissue. In mice, MOTS-c treatment prevented diet-induced obesity and both diet- and age-dependent insulin resistance.",
+              "A 2018 study then reported that, under metabolic stress in cultured cells, MOTS-c moved into the nucleus in an AMPK-dependent manner. Once there, it interacted with stress-responsive transcription factors such as NRF2 and regulated genes carrying antioxidant response elements."
+            ]
+          },
+          {
+            "heading": "What the Evidence Actually Establishes",
+            "paragraphs": [
+              "Taken together, the literature establishes a defined molecule, a mechanistic model and a set of mouse observations. It does not establish a human effect. Human studies have mostly measured endogenous MOTS-c. For example, levels rose in muscle and plasma during a cycling session in young men. In an ageing cohort, by contrast, plasma levels were lower in older men while muscle expression was higher. That split between tissues shows how much MOTS-c biology depends on where, and how, researchers measure it."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "what-does-mots-c-do",
+        "heading": "What Does MOTS-c Peptide Do?",
+        "level": "h3",
+        "paragraphs": [
+          "In research terms, experimental studies have investigated MOTS-c in relation to four connected processes. In cultured cells, it inhibited the folate cycle and the linked purine pathway, which raised AICAR and activated AMPK, the cell's energy-sensing kinase. Similarly, under glucose restriction and oxidative stress, it entered the nucleus and influenced stress-responsive genes. In mice, treatment altered glucose handling and diet-related weight gain and, in a later study, physical performance at young, middle and old ages. Even so, what MOTS-c does in an intact human body remains an open question."
+        ]
+      },
+      {
+        "id": "what-is-mots-c-used-for",
+        "heading": "What Is MOTS-c Used For in Research?",
+        "level": "h3",
+        "paragraphs": [
+          "Researchers use MOTS-c as a tool to study mitochondrial-to-nuclear signaling, folate metabolism and purine synthesis. In addition, it helps probe AMPK signaling and cellular responses to glucose restriction and oxidative stress. It also appears in rodent studies of skeletal-muscle metabolism and physical capacity, and in cell work on myoblast adaptation to metabolic stress. Human cohort studies, meanwhile, measure naturally occurring MOTS-c in exercise and ageing research. In every case, the application is a research question, not a use in people."
+        ]
+      },
+      {
+        "id": "mots-c-peptide-benefits",
+        "heading": "MOTS-c Peptide Benefits: What the Research Has Investigated",
+        "level": "h3",
+        "paragraphs": [
+          "Searches for MOTS-c peptide benefits usually expect a list. However, the honest answer is a table. Each row below names the question a study asked, the system it used and what it did not show. Above all, experimental activity in cells or mice is not the same as a benefit in people, and no row here should be read that way."
+        ],
+        "table": {
+          "columns": [
+            "Research question",
+            "Evidence type",
+            "Reported finding",
+            "Limitation"
+          ],
+          "rows": [
+            [
+              "Does MOTS-c affect folate and purine metabolism?",
+              "In vitro (cultured cells)",
+              "Folate-cycle and de novo purine pathway inhibition, AICAR accumulation, AMPK activation (Lee et al., 2015)",
+              "Cell-culture conditions; the authors describe the AMPK route as partly responsible"
+            ],
+            [
+              "Does MOTS-c enter the nucleus?",
+              "In vitro",
+              "AMPK-dependent nuclear translocation under metabolic stress; interaction with NRF2; regulation of ARE-containing genes (Kim et al., 2018)",
+              "In older men's muscle, MOTS-c expression was not associated with ARE-related genes (D'Souza et al., 2020)"
+            ],
+            [
+              "Does it change metabolism in animals?",
+              "Mouse models",
+              "Prevented diet-induced obesity and diet- and age-dependent insulin resistance (Lee et al., 2015)",
+              "Mice; not evidence of a human effect"
+            ],
+            [
+              "Does it change physical capacity in animals?",
+              "Mouse models",
+              "Enhanced physical performance in young, middle-aged and old mice (Reynolds et al., 2021)",
+              "Mice only"
+            ],
+            [
+              "Does exercise change MOTS-c in people?",
+              "Human, endogenous levels",
+              "Muscle and plasma MOTS-c rose with a cycling session in young men (Reynolds et al., 2021)",
+              "Measures the body's own peptide, not administered material"
+            ],
+            [
+              "Does MOTS-c change with age in people?",
+              "Human, cross-sectional",
+              "Plasma lower with age; muscle expression higher in middle-aged and older men (D'Souza et al., 2020)",
+              "Men only; association, not cause"
+            ],
+            [
+              "Does administered MOTS-c benefit people?",
+              "Not established",
+              "No human efficacy finding relied on by this page",
+              "No established human dose, duration or safety profile"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "misattributions",
+        "heading": "Common MOTS-c Misattributions",
+        "level": "h4",
+        "list": [
+          "Many pages credit nuclear translocation to the 2015 paper. In fact, Kim and colleagues reported it in 2018.",
+          "Some pages say MOTS-c depletes or reduces AICAR. The 2015 study reported the opposite: AICAR accumulated.",
+          "Online summaries often present the insulin-sensitivity findings as human results. They came from mice.",
+          "Exercise data are sometimes described as MOTS-c improving human endurance. The human data tracked the body's own MOTS-c rising during exercise; the performance effects came from mice.",
+          "'MOTS-c declines with age' is only half the picture. In men, plasma levels were lower with age while muscle expression was higher."
+        ]
+      },
+      {
+        "id": "does-not-show",
+        "heading": "What This Research Does Not Show",
+        "level": "h4",
+        "list": [
+          "That MOTS-c causes weight loss, treats diabetes or improves insulin sensitivity in people",
+          "That it improves endurance, strength or athletic performance in people",
+          "That it slows, prevents or reverses ageing, or extends human lifespan",
+          "That amounts used in cell or animal studies translate to any amount or route for people",
+          "That MOTS-c is safe for human or animal use"
+        ]
+      },
+      {
+        "id": "side-effects",
+        "heading": "MOTS-c Side Effects",
+        "level": "h3",
+        "paragraphs": [
+          "Human safety and adverse-event guidance for MOTS-c is outside the scope of this Research Use Only page, so this page gives none. Safety observations in the literature belong to specific designs — a cell line, a mouse strain, a formulation, a duration. Consequently, they cannot simply carry over to people. Instead, in the laboratory, handle MOTS-c as a research chemical, following the safety documentation supplied with the lot and your institution's procedures. This page is not medical advice."
+        ]
+      },
+      {
+        "id": "dosage",
+        "heading": "MOTS-c Dosage and Dosing Protocols",
+        "level": "h3",
+        "paragraphs": [
+          "Human dosage guidance for MOTS-c is outside the scope of this Research Use Only product page. This page gives no daily, weekly, per-cycle or 'protocol' figures. Amounts in animal studies depend on species, formulation, route and endpoint; they are not conversions for people.",
+          "For study design, the useful questions are different. Which published model matches your question? Which vehicle and pathway controls does it need? Does the documentation confirm the lot's identity and net peptide content, so that concentrations reflect peptide rather than salt and water? Finally, recording the lot number with every experiment makes results traceable and reproducible."
+        ]
+      },
+      {
+        "id": "dosage-chart",
+        "heading": "Why There Is No MOTS-c Dosage Chart",
+        "level": "h4",
+        "paragraphs": [
+          "A dosage chart would present human-use instructions for a material that is not intended for human use. Therefore this page does not provide one, in any unit. Instead, researchers who need the amounts used in a particular model should read that study's methods section directly. It also describes how the authors prepared and characterized their peptide."
+        ]
+      },
+      {
+        "id": "tablets-oral",
+        "heading": "MOTS-c Tablets and Oral Forms",
+        "level": "h4",
+        "paragraphs": [
+          "This listing is a research material, not a tablet, capsule, supplement or food. Questions about oral products, formulation or route of administration in people fall outside the scope of this page, so it offers no such guidance."
+        ]
+      },
+      {
+        "id": "related-compounds",
+        "heading": "MOTS-c vs Related Research Compounds",
+        "level": "h3",
+        "paragraphs": [
+          "People often search for MOTS-c alongside compounds it has little in common with. Humanin is its closest relative: another mitochondrial-derived peptide, from the 16S rRNA gene. SS-31, by contrast, is a synthetic tetrapeptide designed to bind cardiolipin, not a peptide encoded by mitochondria. Meanwhile, NAD+ and AICAR are not peptides at all. Retatrutide and tesamorelin act on cell-surface receptors, whereas MOTS-c research centers on intracellular metabolic pathways. For clarity, the tables below compare them on identity and research context only."
+        ]
+      },
+      {
+        "id": "analytical-characterization",
+        "heading": "Analytical Characterization of MOTS-c",
+        "level": "h3",
+        "subsections": [
+          {
+            "heading": "RP-HPLC",
+            "paragraphs": [
+              "Reversed-phase HPLC reports how much of the detected signal falls in the main peak under stated conditions. For MOTS-c, the method details matter. Detection near 214–220 nm reports peptide bonds, while tryptophan and tyrosine also absorb near 280 nm, so the wavelength changes relative responses. HPLC does not establish identity, counterion, water content or net peptide content, and closely related variants can co-elute with the main peak."
+            ]
+          },
+          {
+            "heading": "Mass Spectrometry",
+            "paragraphs": [
+              "Mass spectrometry tests whether the observed mass is consistent with MOTS-c. Because the peptide carries four basic side chains, electrospray spectra usually show several charge states. A COA should state whether it reports monoisotopic or average mass, since mixing them creates an apparent 1.5 Da discrepancy. Even so, intact mass alone cannot distinguish a scrambled sequence with the same composition, and it cannot detect D-amino-acid isomers at all."
+            ],
+            "table": {
+              "columns": [
+                "Species (calculated, free acid)",
+                "Value"
+              ],
+              "rows": [
+                [
+                  "Monoisotopic mass, M",
+                  "2173.11 Da"
+                ],
+                [
+                  "Average mass",
+                  "≈2174.6 Da"
+                ],
+                [
+                  "[M+2H]2+",
+                  "m/z 1087.56"
+                ],
+                [
+                  "[M+3H]3+",
+                  "m/z 725.38"
+                ],
+                [
+                  "[M+4H]4+",
+                  "m/z 544.28"
+                ],
+                [
+                  "One methionine oxidized (+O)",
+                  "2189.10 Da"
+                ],
+                [
+                  "Both methionines oxidized (+2O)",
+                  "2205.10 Da"
+                ],
+                [
+                  "C-terminal amide variant",
+                  "2172.12 Da"
+                ]
+              ]
+            },
+            "note": "Reference values calculated from the sequence for identification purposes. They are not Veracue lot results."
+          },
+          {
+            "heading": "Orthogonal Methods",
+            "paragraphs": [
+              "When a study depends on exact identity or concentration, additional evidence helps. Tandem MS fragmentation or Edman sequencing confirms residue order. Amino acid analysis, in turn, supports net peptide content. Counterion analysis then shows how much of the powder is trifluoroacetate or acetate. Finally, chiral amino acid analysis is the method that addresses D-isomer content."
+            ]
+          },
+          {
+            "heading": "Lot-Specific Documentation",
+            "paragraphs": [
+              "Analytical results only describe the lot that the laboratory tested. A purity figure from another lot says nothing certain about your vial. The same goes for a spectrum of a different peptide or a generic specification sheet. For that reason, the lot number on the COA should match the label."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "coa",
+        "heading": "Reading a MOTS-c Certificate of Analysis",
+        "level": "h3",
+        "paragraphs": [
+          "A useful MOTS-c Certificate of Analysis (COA) answers four questions. What is the material? How pure is it by a named method? How much peptide is actually present? And does the report belong to your lot? Note that a generic specification sheet is not a lot-specific COA. If the MOTS-c lot COA is not listed in Veracue's Certificates archive, request it through the contact page before the material enters a study."
+        ],
+        "table": {
+          "columns": [
+            "COA element",
+            "What it tells you",
+            "What it does not establish"
+          ],
+          "rows": [
+            [
+              "Exact product name and sequence",
+              "Which peptide the report claims to describe",
+              "Identity, unless supported by analytical data"
+            ],
+            [
+              "Chemical form (terminus, counterion)",
+              "Which mass and molecular weight apply",
+              "Net peptide content"
+            ],
+            [
+              "Lot or batch number",
+              "Links the report to a production lot",
+              "Anything, unless it matches the vial label"
+            ],
+            [
+              "HPLC purity (%) with method",
+              "Share of detected signal in the main peak",
+              "Identity, net content, sterility or biological activity"
+            ],
+            [
+              "Mass spectrometry result",
+              "Whether observed mass fits the expected species",
+              "Purity, sequence order or chirality"
+            ],
+            [
+              "Chromatogram and spectrum images",
+              "Whether the numbers are supported by raw data",
+              "Results for any other lot"
+            ],
+            [
+              "Net peptide content (if tested)",
+              "How much of the powder is peptide",
+              "Chromatographic purity"
+            ],
+            [
+              "Laboratory name and test date",
+              "Who tested the lot and when",
+              "Independence, unless the relationship is disclosed"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "quick-coa-check",
+        "heading": "Quick COA Check",
+        "level": "h4",
+        "list": [
+          "Lot number on the COA matches the vial label",
+          "COA states the sequence MRWQEMGYIFYPRKLR and the C-terminal form",
+          "COA names the purity method, not just a percentage",
+          "Mass result gives expected and observed values and says monoisotopic or average",
+          "COA addresses oxidized (+16 Da) species rather than ignoring them",
+          "Testing laboratory and date are shown"
+        ]
+      },
+      {
+        "id": "storage-handling",
+        "heading": "Storage & Handling",
+        "level": "h4",
+        "paragraphs": [
+          "Store according to the lot's documentation and label. For this product, storage conditions are not publicly specified on the current Veracue product information. Because MOTS-c contains two methionines and a tryptophan, it is also sensible to log exposure to air, light and repeated handling. Handle as a laboratory chemical with appropriate personal protective equipment."
+        ]
+      },
+      {
+        "id": "compliance",
+        "heading": "Compliance Notice",
+        "level": "h3",
+        "paragraphs": [
+          "Veracue supplies MOTS-c solely for laboratory research. It is not a drug, dietary supplement, food or cosmetic, and it is not intended to diagnose, treat, cure or prevent any disease. No one should administer it to humans or animals. Accordingly, the scientific information on this page describes published laboratory, animal and observational studies. It is not medical advice or a statement of efficacy or safety. Purchasers are responsible for using the material lawfully and within an appropriate research setting.",
+          "RESEARCH USE ONLY — NOT FOR HUMAN OR VETERINARY USE."
+        ]
+      },
+      {
+        "id": "closing-ctas",
+        "heading": "Continue Your Research",
+        "level": "h3",
+        "ctas": [
+          {
+            "label": "Review Research Specifications",
+            "href": "#research-specifications"
+          },
+          {
+            "label": "View Product Documentation",
+            "href": "https://veracue-peptides.vercel.app/certificates"
+          },
+          {
+            "label": "Explore Related Research Peptides",
+            "href": "https://veracue-peptides.vercel.app/shop?category=Mitochondrial%20%26%20Cellular%20Energy"
+          },
+          {
+            "label": "Contact Veracue",
+            "href": "https://veracue-peptides.vercel.app/contact-us"
+          }
+        ]
+      }
+    ]
+  },
+  "J_problem_research_solution": {
+    "intro": "Twelve research problems specific to working with MOTS-c, each with a practical approach. These describe analytical and documentation practice, not laboratory protocols or dosing.",
+    "modules": [
+      {
+        "n": 1,
+        "title": "Confusing MOTS-c With Other Mitochondrial Peptides",
+        "problem": "Humanin, the small humanin-like peptides, SS-31 and MOTS-c all turn up under 'mitochondrial peptide', and product listings sometimes blur them together.",
+        "research_approach": "Anchor the material to origin and sequence. MOTS-c comes from the 12S rRNA gene and is 16 residues long. Humanin comes from the 16S rRNA gene and is 24 residues when translated in the cytoplasm. SS-31 is not mitochondrial-derived at all; it is a synthetic tetrapeptide, D-Arg-Dmt-Lys-Phe-NH2, designed to bind cardiolipin. Writing the full sequence next to the name in lab records keeps the mix-up out of your data."
+      },
+      {
+        "n": 2,
+        "title": "Relying on the Name Instead of the Sequence",
+        "problem": "MOTS-c, MOTS-C, MOTSc and 'mot c' all point at the same target, but a name on a label is not evidence of what is in the vial.",
+        "research_approach": "Treat MRWQEMGYIFYPRKLR, not the product name, as the identity of the material. Then check that the COA states the sequence, the C-terminal form and the expected mass the laboratory compared its result against. For intact-mass results, confirm the expected value matches the free-acid peptide (monoisotopic 2173.11 Da) rather than a salt or a modified variant. If the COA omits the sequence entirely, ask for it before the lot enters a study."
+      },
+      {
+        "n": 3,
+        "title": "Treating Purity as Proof of Identity",
+        "problem": "A high HPLC purity result looks decisive, yet it only says that one peak dominates under one method.",
+        "research_approach": "Pair chromatographic purity with an identity method. HPLC can show a clean main peak for the wrong peptide, a truncated sequence or a variant that co-elutes. Mass spectrometry, ideally with fragmentation data, ties that main peak to the MOTS-c sequence. It also helps to ask whether the laboratory measured identity on the same lot as purity. If it did not, the two results cannot vouch for each other."
+      },
+      {
+        "n": 4,
+        "title": "Over-Reading an HPLC Chromatogram",
+        "problem": "Peak area at a single UV wavelength is easy to over-interpret for a 16-residue peptide that contains tryptophan and two tyrosines.",
+        "research_approach": "Read the method details: column, gradient, detection wavelength and integration settings. Detection near 214–220 nm reports peptide bonds, whereas aromatic residues also absorb near 280 nm, so the choice changes relative responses. Area percentage says nothing about counterion, water or net peptide content. Finally, a chromatogram image, not just a number, makes the result checkable. It shows shoulders, baseline noise and minor peaks that a single percentage hides."
+      },
+      {
+        "n": 5,
+        "title": "Assigning the Mass Spectrum Correctly",
+        "problem": "MOTS-c carries four basic side chains, so electrospray spectra often show several charge states rather than one obvious peak.",
+        "research_approach": "Expect multiply charged ions: calculated [M+2H]2+ near m/z 1087.56, [M+3H]3+ near 725.38 and [M+4H]4+ near 544.28 for the free acid. A deconvoluted mass should agree with 2173.11 Da (monoisotopic) or about 2174.6 Da (average), and the COA should say which. Mixing the two produces an apparent 1.5 Da 'error' that is not real. Checking every listed charge state against the calculated values guards against misassigned peaks."
+      },
+      {
+        "n": 6,
+        "title": "Missing Oxidation and Deamidation Products",
+        "problem": "Methionines at positions 1 and 6 and a tryptophan at position 3 make MOTS-c susceptible to oxidation during synthesis, handling and storage.",
+        "research_approach": "Look for species at +16 Da (one methionine sulfoxide, calculated 2189.10 Da) and +32 Da (2205.10 Da); on reversed-phase HPLC these commonly elute close to the main peak. Deamidation of glutamine-4 shifts mass by about +0.98 Da and needs high-resolution data to see reliably. Recording handling conditions also lets you trace any change between aliquots back to its cause."
+      },
+      {
+        "n": 7,
+        "title": "Overlooking the Terminus and Counterion",
+        "problem": "A C-terminal amide variant sits only 0.98 Da below native MOTS-c, and salts add weight to the powder without adding peptide.",
+        "research_approach": "Confirm the COA specifies a free C-terminal acid, matching the native sequence, or clearly states a modification. Next, ask which counterion is present, since trifluoroacetate and acetate are both common for synthetic basic peptides. Also ask whether the laboratory measured net peptide content. Without that figure, concentrations calculated from powder weight overstate the peptide actually present, and results become harder to compare between lots."
+      },
+      {
+        "n": 8,
+        "title": "Transferring Literature Results to a Commercial Lot",
+        "problem": "Published MOTS-c studies used material prepared and characterized by specific laboratories. A new commercial lot inherits none of that characterization.",
+        "research_approach": "Treat each lot as a new reagent. Compare its documented sequence, form and purity with the methods sections of the papers you are building on. Where a study used a modified analog or a sequence variant, note it before comparing results. Keep the lot COA with the experimental record so reviewers can see the match. That way, a surprising result can be traced to biology rather than to an undocumented change in material."
+      },
+      {
+        "n": 9,
+        "title": "Expecting Findings to Repeat Across Models",
+        "problem": "Stressed cultured cells, metabolically challenged mice and human cohorts do not measure the same thing, so MOTS-c results differ between them.",
+        "research_approach": "Define the model before choosing endpoints. For example, nuclear MOTS-c regulated antioxidant-response genes in stressed cells, yet muscle MOTS-c expression in older men showed no association with those genes. Specify the cell type, stressor and timing, and state whether you measure endogenous or added peptide. Report negative results with the same care, because they help define where MOTS-c findings hold and where they do not."
+      },
+      {
+        "n": 10,
+        "title": "Letting a Mechanism Become an Outcome Claim",
+        "problem": "AMPK activation in a dish is regularly rewritten online as 'improves insulin sensitivity' in people.",
+        "research_approach": "Keep each claim at the level of its evidence: 'activated AMPK in cultured cells', 'prevented diet-induced insulin resistance in mice', 'rose during exercise in human muscle'. Each statement is accurate on its own. Merging them into one human benefit is not. The same discipline helps when writing up your own MOTS-c data for review. Reviewers tend to trust a result more when its claims stay inside the system that produced it."
+      },
+      {
+        "n": 11,
+        "title": "Comparing MOTS-c With Other Metabolic Compounds",
+        "problem": "Search interest pairs MOTS-c with retatrutide, tesamorelin and AICAR, but these act through different biology.",
+        "research_approach": "Compare on identity and mechanism class rather than outcomes. Retatrutide is a lipidated 39-residue agonist at GIP, GLP-1 and glucagon receptors. Tesamorelin is a modified 44-residue GHRH analog. AICAR is a nucleotide intermediate, which MOTS-c raised in cells, not a peptide. Each needs its own controls and analytical checks. Because the molecules differ in size, charge and modification, their COAs will look different too. This page does not address combined use."
+      },
+      {
+        "n": 12,
+        "title": "Building a Defensible Procurement Record",
+        "problem": "Months later, a reviewer may ask exactly which material produced a result, and a product name will not answer that.",
+        "research_approach": "File the lot-specific COA, the vial-label lot number, the date received, storage records and any in-house identity checks together. Confirm the COA's lot matches the vial and names the testing laboratory and date. If the MOTS-c lot COA is not in Veracue's Certificates archive, request it through the contact page before the material enters a study. A complete file turns a later question into a quick lookup."
+      }
+    ]
+  },
+  "K_comparison_tables": {
+    "intro": "Comparisons use identity and research context only. They do not rank compounds, and none is recommended for any use in people.",
+    "tables": [
+      {
+        "title": "MOTS-c vs Other Mitochondrial-Context Compounds",
+        "columns": [
+          "Attribute",
+          "MOTS-c",
+          "Humanin",
+          "SS-31",
+          "NAD+"
+        ],
+        "rows": [
+          [
+            "Compound class",
+            "Mitochondrial-derived peptide",
+            "Mitochondrial-derived peptide",
+            "Synthetic aromatic-cationic tetrapeptide",
+            "Dinucleotide coenzyme (not a peptide)"
+          ],
+          [
+            "Origin",
+            "Short ORF in mitochondrial 12S rRNA gene",
+            "Short ORF in mitochondrial 16S rRNA gene",
+            "Designed synthetic peptide (Szeto-Schiller series)",
+            "Endogenous metabolite"
+          ],
+          [
+            "Size",
+            "16 amino acids",
+            "24 amino acids (cytoplasmic translation); 21 (mitochondrial translation)",
+            "4 residues: D-Arg-Dmt-Lys-Phe-NH2",
+            "Not applicable"
+          ],
+          [
+            "Unusual structural features",
+            "All L-amino acids; free C-terminal acid; two Met, one Trp",
+            "—",
+            "D-arginine, 2′,6′-dimethyltyrosine, C-terminal amide",
+            "Not applicable"
+          ],
+          [
+            "Main research context",
+            "Folate/purine metabolism, AMPK, nuclear stress signaling",
+            "Cytoprotection; first described in an Alzheimer's-related cell-death screen",
+            "Cardiolipin binding at the inner mitochondrial membrane",
+            "Redox cofactor in energy metabolism"
+          ],
+          [
+            "Year first reported",
+            "2015",
+            "2001",
+            "—",
+            "—"
+          ],
+          [
+            "Analytical note",
+            "Watch Met oxidation (+16 Da) and terminus (acid vs amide)",
+            "Length variant depends on translation context",
+            "Chirality (D-Arg) invisible to intact-mass MS",
+            "Mass depends on ionic form and hydration"
+          ]
+        ]
+      },
+      {
+        "title": "MOTS-c vs Metabolic-Research Compounds",
+        "columns": [
+          "Attribute",
+          "MOTS-c",
+          "Retatrutide (LY3437943)",
+          "Tesamorelin",
+          "AICAR"
+        ],
+        "rows": [
+          [
+            "Compound class",
+            "Mitochondrial-derived peptide",
+            "Synthetic lipidated peptide",
+            "Synthetic GHRH analog peptide",
+            "Nucleotide intermediate (not a peptide)"
+          ],
+          [
+            "Size / structure",
+            "16 amino acids, unmodified",
+            "39 amino acids on a GIP-based backbone with non-coded residues and a C20 fatty diacid",
+            "44 amino acids of human GHRH with an N-terminal trans-3-hexenoyl group",
+            "5-aminoimidazole-4-carboxamide ribonucleotide"
+          ],
+          [
+            "Primary target",
+            "Intracellular: folate cycle, purine synthesis, AMPK (proposed)",
+            "Cell-surface GIP, GLP-1 and glucagon receptors",
+            "Cell-surface GHRH receptor",
+            "AMPK (intracellular)"
+          ],
+          [
+            "Relationship to MOTS-c",
+            "—",
+            "None mechanistically; frequently co-searched",
+            "None mechanistically; frequently co-searched",
+            "MOTS-c raised AICAR levels in cells (Lee et al., 2015)"
+          ],
+          [
+            "Research context",
+            "Mitochondrial and metabolic signaling in cells and mice",
+            "Incretin/glucagon receptor pharmacology",
+            "Growth-hormone axis research",
+            "Pathway reference compound in AMPK research"
+          ],
+          [
+            "Analytical note",
+            "Basic 16-mer; multiple ESI charge states",
+            "Large lipidated peptide; lipid moiety affects retention",
+            "Large peptide; N-terminal acyl group affects mass",
+            "Small molecule; lab reagents sold as 'AICAR' are commonly the riboside, which cells convert to the ribonucleotide"
+          ]
+        ]
+      },
+      {
+        "title": "MOTS-c vs Frequently Co-Searched Catalog Peptides",
+        "columns": [
+          "Attribute",
+          "MOTS-c",
+          "GHK-Cu",
+          "BPC-157"
+        ],
+        "rows": [
+          [
+            "Identity",
+            "MRWQEMGYIFYPRKLR",
+            "Gly-His-Lys copper(II) complex",
+            "GEPPPGKPADDAGLV"
+          ],
+          [
+            "Size",
+            "16 amino acids",
+            "3 amino acids + copper",
+            "15 amino acids"
+          ],
+          [
+            "Origin",
+            "Encoded in mitochondrial DNA",
+            "Naturally occurring in human plasma",
+            "Partial sequence of a gastric protein"
+          ],
+          [
+            "Main research context",
+            "Mitochondrial and metabolic signaling",
+            "Copper-peptide, skin and gene-expression research",
+            "Preclinical gastrointestinal and tissue-response research"
+          ],
+          [
+            "Shared biology with MOTS-c",
+            "—",
+            "None identified",
+            "None identified"
+          ]
+        ]
+      }
+    ]
+  },
+  "L_aeo_direct_answers": {
+    "blocks": [
+      {
+        "q": "What is MOTS-c peptide?",
+        "a": "MOTS-c peptide is a 16-amino-acid peptide, MRWQEMGYIFYPRKLR, encoded in a short open reading frame of the mitochondrial 12S rRNA gene. First described in 2015, it is classed as a mitochondrial-derived peptide. Researchers study it in cell and animal models for its links to metabolic signaling, AMPK and cellular stress responses. It is supplied here for research use only."
+      },
+      {
+        "q": "What is MOTS-c?",
+        "a": "MOTS-c is short for mitochondrial open reading frame of the 12S rRNA-c. It is a linear peptide with the molecular formula C101H152N28O22S2 and an average molecular weight of about 2174.6 g/mol (PubChem CID 146675088). Unlike most peptides, its sequence is encoded in mitochondrial DNA rather than the nuclear genome."
+      },
+      {
+        "q": "What does MOTS-c peptide do?",
+        "a": "In cultured cells, MOTS-c inhibited the folate cycle and linked purine synthesis, raising AICAR and activating AMPK. Under metabolic stress, it moved into the nucleus and regulated stress-response genes. In mice, it prevented diet-induced obesity and insulin resistance and enhanced physical performance. What it does in people has not been established."
+      },
+      {
+        "q": "What is MOTS-c studied for?",
+        "a": "MOTS-c is studied as a research tool in mitochondrial-to-nuclear signaling, folate and purine metabolism, AMPK signaling and cellular stress responses. It also appears in mouse studies of muscle metabolism and physical capacity, and in human cohort studies that measure naturally occurring MOTS-c during exercise and ageing."
+      },
+      {
+        "q": "What are MOTS-c peptide benefits?",
+        "a": "No human benefit of MOTS-c has been established. Research has reported pathway effects in cultured cells (AMPK activation, nuclear gene regulation) and metabolic and physical-performance effects in mice. Human studies measured the body's own MOTS-c, not administered peptide. Experimental activity in cells or animals is not a health benefit in people."
+      },
+      {
+        "q": "How is MOTS-c characterized?",
+        "a": "MOTS-c is characterized by reversed-phase HPLC for chromatographic purity and mass spectrometry for identity. The expected monoisotopic mass of the free acid is 2173.11 Da, usually seen as multiply charged ions. Tandem MS confirms residue order, amino acid analysis supports net peptide content, and checks for +16 Da methionine oxidation are important."
+      },
+      {
+        "q": "What should a MOTS-c COA include?",
+        "a": "A MOTS-c COA should state the product name and sequence, chemical form (terminus and counterion), lot number, testing laboratory and date, HPLC purity with the method named, and a mass result giving expected and observed values. Chromatogram and spectrum images and net peptide content add confidence. The lot must match the vial label."
+      },
+      {
+        "q": "Is MOTS-c the same as other mitochondrial peptides?",
+        "a": "No. MOTS-c is a 16-residue peptide from the 12S rRNA gene. Humanin is a separate 24-residue peptide from the 16S rRNA gene, and the small humanin-like peptides come from that same region. SS-31 is a synthetic tetrapeptide that targets cardiolipin; it is not encoded by mitochondrial DNA."
+      },
+      {
+        "q": "Does Veracue provide MOTS-c dosage information?",
+        "a": "No. Veracue supplies MOTS-c for laboratory research only, and human dosage information is outside the scope of its product page. No daily, weekly, protocol or chart figures are provided. Researchers designing a study should work from the primary literature for their model and from the lot's analytical documentation."
+      },
+      {
+        "q": "What does Research Use Only mean?",
+        "a": "Research Use Only means a material is intended strictly for laboratory and scientific research. It is not for human or veterinary use, diagnosis or treatment, and it is not a drug, supplement or food. For MOTS-c, it means the published findings describe experiments, not uses in people."
+      }
+    ]
+  },
+  "M_faq": {
+    "faqs": [
+      {
+        "q": "What is MOTS-c?",
+        "a": "MOTS-c is a 16-amino-acid peptide (MRWQEMGYIFYPRKLR) encoded in a short open reading frame of the mitochondrial 12S rRNA gene. It was first described in 2015 and is classed as a mitochondrial-derived peptide."
+      },
+      {
+        "q": "What does MOTS-c stand for?",
+        "a": "Mitochondrial open reading frame of the 12S rRNA-c. The name records where the sequence is found: inside the mitochondrial gene for the small (12S) ribosomal RNA."
+      },
+      {
+        "q": "What does MOTS-c peptide do?",
+        "a": "In research, MOTS-c inhibited the folate cycle and purine synthesis in cultured cells, raising AICAR and activating AMPK, and moved into the nucleus under metabolic stress. Metabolic and physical-performance effects were reported in mice. Its effects in people have not been established."
+      },
+      {
+        "q": "What is MOTS-c used for?",
+        "a": "In the laboratory, MOTS-c is used to study mitochondrial-to-nuclear signaling, AMPK and folate metabolism, stress responses and muscle metabolism in cell and rodent models. This material is for research use only and is not for use in people or animals."
+      },
+      {
+        "q": "What are the benefits of MOTS-c peptide?",
+        "a": "No human benefit has been established. Reported findings are cell-culture pathway effects and mouse metabolic and performance effects. The evidence table on this page labels each finding by the system it came from and its main limitation."
+      },
+      {
+        "q": "Has MOTS-c been shown to work in humans?",
+        "a": "No human effect of administered MOTS-c has been established. The human studies cited here measured the body's own MOTS-c — for example, rising levels during exercise and different plasma and muscle levels with age."
+      },
+      {
+        "q": "What is the MOTS-c dosage?",
+        "a": "Human dosage guidance, including per-day or per-week amounts, is outside the scope of this Research Use Only page, and none is provided. Amounts used in animal studies are specific to species, formulation, route and endpoint, and are not conversions for people."
+      },
+      {
+        "q": "Is there a MOTS-c dosage chart or dosing protocol?",
+        "a": "No. A dosage chart or protocol would be human-use guidance for a material not intended for human use. Researchers should consult the methods of the published study that matches their model and confirm their lot's identity and net peptide content."
+      },
+      {
+        "q": "What are MOTS-c side effects?",
+        "a": "Human safety and side-effect guidance is outside the scope of this page. Safety observations in the literature belong to specific cell or animal study designs and cannot be applied to people. In the lab, handle MOTS-c as a research chemical under the lot's safety documentation."
+      },
+      {
+        "q": "Are MOTS-c tablets or oral forms available?",
+        "a": "This listing is a research material, not a tablet, capsule or supplement. Oral products, formulations and routes of administration for people are outside the scope of this page."
+      },
+      {
+        "q": "What is the molecular weight of MOTS-c?",
+        "a": "For the free peptide (C101H152N28O22S2), the average molecular weight is about 2174.6 g/mol and the calculated monoisotopic mass is 2173.11 Da. Salt forms such as acetate or trifluoroacetate change the weight of the powder, not of the peptide itself."
+      },
+      {
+        "q": "What is the CAS number and PubChem ID for MOTS-c?",
+        "a": "Reference databases list CAS 1627580-64-6 and PubChem CID 146675088 for MOTS-c. Suppliers do not always state which salt form a CAS number refers to, so check the chemical form on the lot's COA."
+      },
+      {
+        "q": "How is MOTS-c purity tested?",
+        "a": "Purity is usually reported from reversed-phase HPLC as the share of detected signal in the main peak under stated conditions. The figure does not confirm identity or net peptide content, so it should be read together with mass spectrometry and the method details."
+      },
+      {
+        "q": "How does mass spectrometry confirm MOTS-c identity?",
+        "a": "MS checks that the observed mass matches MOTS-c: 2173.11 Da monoisotopic for the free acid, often seen as 2+, 3+ and 4+ ions. Intact mass cannot confirm residue order or chirality, so tandem MS or other orthogonal methods add certainty."
+      },
+      {
+        "q": "Is MOTS-c the same as humanin or SS-31?",
+        "a": "No. Humanin is a different mitochondrial-derived peptide, 24 residues long, from the 16S rRNA gene. SS-31 is a synthetic cardiolipin-targeting tetrapeptide and is not encoded by mitochondria."
+      },
+      {
+        "q": "How are MOTS-c and retatrutide different?",
+        "a": "MOTS-c is a 16-residue mitochondrial-derived peptide studied in intracellular metabolic pathways. Retatrutide is a lipidated 39-residue synthetic agonist at GIP, GLP-1 and glucagon receptors. They are unrelated molecules, and this page does not address combined use."
+      },
+      {
+        "q": "Is AICAR a peptide?",
+        "a": "No. AICAR is a nucleotide intermediate of de novo purine synthesis. It is linked to MOTS-c because the 2015 study reported that MOTS-c raised AICAR levels in cells, which activated AMPK."
+      },
+      {
+        "q": "What does Research Use Only mean for MOTS-c?",
+        "a": "It means this MOTS-c is supplied only for laboratory and scientific research. It is not for human or veterinary use, is not a drug or supplement, and is not intended to diagnose, treat, cure or prevent any disease."
+      }
+    ]
+  },
+  "N_internal_links": {
+    "verified_on": "2026-09-19",
+    "links": [
+      {
+        "anchor": "Mitochondrial & Cellular Energy",
+        "url": "https://veracue-peptides.vercel.app/shop?category=Mitochondrial%20%26%20Cellular%20Energy",
+        "placement": "Hero category label and 'Explore Related Research Peptides' CTA",
+        "purpose": "Places MOTS-c in its existing live category"
+      },
+      {
+        "anchor": "NAD+ (Nicotinamide Adenine Dinucleotide)",
+        "url": "https://veracue-peptides.vercel.app/product/nad-plus",
+        "placement": "Comparison table 1 (NAD+ column header) and 'Also Considered' card",
+        "purpose": "Only live product in the same category; the table clarifies NAD+ is not a peptide"
+      },
+      {
+        "anchor": "AHK-Cu",
+        "url": "https://veracue-peptides.vercel.app/product/ahk-cu",
+        "placement": "Comparison table 3, beside GHK-Cu",
+        "purpose": "The live AHK-Cu page contains the site's GHK-Cu comparison; there is no live GHK-Cu page to link"
+      },
+      {
+        "anchor": "Certificates archive",
+        "url": "https://veracue-peptides.vercel.app/certificates",
+        "placement": "COA section, 'View Product Documentation' CTA, problem module 12",
+        "purpose": "Lot documentation"
+      },
+      {
+        "anchor": "contact page",
+        "url": "https://veracue-peptides.vercel.app/contact-us",
+        "placement": "COA section, 'Contact Veracue' CTA, problem module 12",
+        "purpose": "Requesting the lot COA"
+      },
+      {
+        "anchor": "Help & FAQ",
+        "url": "https://veracue-peptides.vercel.app/faq",
+        "placement": "Below the product FAQ",
+        "purpose": "Site-wide RUO and COA questions"
+      },
+      {
+        "anchor": "About Veracue",
+        "url": "https://veracue-peptides.vercel.app/about-us",
+        "placement": "Compliance Notice",
+        "purpose": "Company and quality context"
+      },
+      {
+        "anchor": "Medical Disclaimer",
+        "url": "https://veracue-peptides.vercel.app/medical-disclaimer",
+        "placement": "Compliance Notice",
+        "purpose": "Reinforces RUO and no-medical-advice position"
+      },
+      {
+        "anchor": "NAD+ and AHK-Cu in Metabolic and Longevity Research",
+        "url": "https://veracue-peptides.vercel.app/nad-plus-ahk-cu-metabolic-longevity-research",
+        "placement": "'Further Reading' block (house template)",
+        "purpose": "Only live article in the metabolic-research topic"
+      }
+    ],
+    "do_not_link": [
+      {
+        "url": "https://veracue-peptides.vercel.app/peptide-calculator",
+        "reason": "Dosing/reconstitution calculator; undermines RUO positioning on this page"
+      },
+      {
+        "url": "https://veracue-peptides.vercel.app/product/retatrutide",
+        "reason": "Returns 'Product Not Found' (noindex) although the homepage links to it. Add the link only after the page is live."
+      },
+      {
+        "url": "https://veracue-peptides.vercel.app/product/ghk-cu, /product/bpc-157",
+        "reason": "Linked from the homepage but not in the live shop catalog; not confirmed as working pages"
+      }
+    ]
+  },
+  "O_image_seo": {
+    "images": [
+      {
+        "role": "Primary product image",
+        "filename": "veracue-mots-c-research-peptide-vial.webp",
+        "alt": "Veracue MOTS-c research peptide vial labeled for research use only",
+        "title": "MOTS-c Research Peptide — Veracue",
+        "caption": "MOTS-c (MRWQEMGYIFYPRKLR), supplied for laboratory research use only.",
+        "note": "Use a real product photograph; do not show a vial size or purity figure until confirmed."
+      },
+      {
+        "role": "Scientific structure / sequence image",
+        "filename": "mots-c-peptide-sequence-mrwqemgyifyprklr.svg",
+        "alt": "MOTS-c peptide sequence MRWQEMGYIFYPRKLR with methionine 1, tryptophan 3 and methionine 6 highlighted",
+        "title": "MOTS-c 16-Amino-Acid Sequence",
+        "caption": "The 16-residue MOTS-c sequence. Highlighted residues are the most oxidation-prone."
+      },
+      {
+        "role": "Mechanism / research graphic",
+        "filename": "mots-c-folate-aicar-ampk-research-pathway-illustrative.svg",
+        "alt": "Illustrative diagram of the folate cycle, AICAR and AMPK pathway reported for MOTS-c in cell studies",
+        "title": "MOTS-c Research Pathway (Illustrative)",
+        "caption": "Illustrative summary of mechanisms reported in cell studies (Lee et al., 2015; Kim et al., 2018). Not evidence of effects in people."
+      },
+      {
+        "role": "Analytical illustration",
+        "filename": "mots-c-calculated-mass-charge-states-illustrative.svg",
+        "alt": "Illustrative table of calculated MOTS-c masses and ESI charge states for identity checking",
+        "title": "MOTS-c Calculated Reference Masses (Illustrative)",
+        "caption": "Calculated reference values for identity checking. Not Veracue lot data and not a chromatogram or spectrum.",
+        "note": "Render as a clean table graphic, not as a mock spectrum, so it cannot be mistaken for a test result."
+      }
+    ]
+  },
+  "P_json_ld": {
+    "notes": [
+      "Product schema has no offers, price, availability, SKU, GTIN, review or rating because none is publicly specified for MOTS-c. Google's product rich result needs offers, review or aggregateRating, so no rich result is expected until real Veracue data are added. The markup still gives search and AI systems clean entity data.",
+      "FAQPage mirrors the 18 visible FAQs word for word. Google limits FAQ rich results to authoritative government and health sites, so treat this as entity markup rather than a rich-result play.",
+      "URLs use the current canonical host (veracue-peptides.vercel.app). Update them if the production domain changes."
+    ],
+    "json_ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "@id": "https://veracue-peptides.vercel.app/product/mots-c#product",
+        "name": "MOTS-c",
+        "alternateName": [
+          "MOTS-c peptide",
+          "MOTS-C",
+          "Mitochondrial open reading frame of the 12S rRNA-c"
+        ],
+        "description": "MOTS-c is a 16-amino-acid peptide (MRWQEMGYIFYPRKLR) encoded within the mitochondrial 12S rRNA gene, listed in reference databases as mitochondrial open reading frame of the 12S rRNA-c. Veracue supplies it as a research material for laboratory work. The most directly relevant published study (Lee et al., 2015) tested MOTS-c in cultured cells and diet-induced obese mice — cell-culture and animal evidence only. A Phase 2a human trial (NCT07505745) is currently recruiting, so this material does not yet establish metabolic, exercise or safety effects in people.",
+        "url": "https://veracue-peptides.vercel.app/product/mots-c",
+        "image": "https://veracue-peptides.vercel.app/veracue-images/veracue-mots-c-research-peptide-vial.webp",
+        "category": "Mitochondrial & Cellular Energy",
+        "brand": {
+          "@type": "Brand",
+          "name": "Veracue"
+        },
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "Peptide sequence",
+            "value": "MRWQEMGYIFYPRKLR"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Peptide length",
+            "value": "16 amino acids"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Molecular formula (free peptide)",
+            "value": "C101H152N28O22S2"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Average molecular weight (free peptide)",
+            "value": "2174.6",
+            "unitText": "g/mol"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "CAS number",
+            "value": "1627580-64-6"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "PubChem CID",
+            "value": "146675088"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Research designation",
+            "value": "Research Use Only — not for human or veterinary use"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://veracue-peptides.vercel.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Shop",
+            "item": "https://veracue-peptides.vercel.app/shop"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "MOTS-c",
+            "item": "https://veracue-peptides.vercel.app/product/mots-c"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": "https://veracue-peptides.vercel.app/product/mots-c#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is MOTS-c?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "MOTS-c is a 16-amino-acid peptide (MRWQEMGYIFYPRKLR) encoded in a short open reading frame of the mitochondrial 12S rRNA gene. It was first described in 2015 and is classed as a mitochondrial-derived peptide."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does MOTS-c stand for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mitochondrial open reading frame of the 12S rRNA-c. The name records where the sequence is found: inside the mitochondrial gene for the small (12S) ribosomal RNA."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does MOTS-c peptide do?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In research, MOTS-c inhibited the folate cycle and purine synthesis in cultured cells, raising AICAR and activating AMPK, and moved into the nucleus under metabolic stress. Metabolic and physical-performance effects were reported in mice. Its effects in people have not been established."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is MOTS-c used for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In the laboratory, MOTS-c is used to study mitochondrial-to-nuclear signaling, AMPK and folate metabolism, stress responses and muscle metabolism in cell and rodent models. This material is for research use only and is not for use in people or animals."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the benefits of MOTS-c peptide?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No human benefit has been established. Reported findings are cell-culture pathway effects and mouse metabolic and performance effects. The evidence table on this page labels each finding by the system it came from and its main limitation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Has MOTS-c been shown to work in humans?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No human effect of administered MOTS-c has been established. The human studies cited here measured the body's own MOTS-c — for example, rising levels during exercise and different plasma and muscle levels with age."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the MOTS-c dosage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Human dosage guidance, including per-day or per-week amounts, is outside the scope of this Research Use Only page, and none is provided. Amounts used in animal studies are specific to species, formulation, route and endpoint, and are not conversions for people."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a MOTS-c dosage chart or dosing protocol?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. A dosage chart or protocol would be human-use guidance for a material not intended for human use. Researchers should consult the methods of the published study that matches their model and confirm their lot's identity and net peptide content."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are MOTS-c side effects?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Human safety and side-effect guidance is outside the scope of this page. Safety observations in the literature belong to specific cell or animal study designs and cannot be applied to people. In the lab, handle MOTS-c as a research chemical under the lot's safety documentation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are MOTS-c tablets or oral forms available?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This listing is a research material, not a tablet, capsule or supplement. Oral products, formulations and routes of administration for people are outside the scope of this page."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the molecular weight of MOTS-c?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For the free peptide (C101H152N28O22S2), the average molecular weight is about 2174.6 g/mol and the calculated monoisotopic mass is 2173.11 Da. Salt forms such as acetate or trifluoroacetate change the weight of the powder, not of the peptide itself."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the CAS number and PubChem ID for MOTS-c?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Reference databases list CAS 1627580-64-6 and PubChem CID 146675088 for MOTS-c. Suppliers do not always state which salt form a CAS number refers to, so check the chemical form on the lot's COA."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is MOTS-c purity tested?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Purity is usually reported from reversed-phase HPLC as the share of detected signal in the main peak under stated conditions. The figure does not confirm identity or net peptide content, so it should be read together with mass spectrometry and the method details."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does mass spectrometry confirm MOTS-c identity?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "MS checks that the observed mass matches MOTS-c: 2173.11 Da monoisotopic for the free acid, often seen as 2+, 3+ and 4+ ions. Intact mass cannot confirm residue order or chirality, so tandem MS or other orthogonal methods add certainty."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is MOTS-c the same as humanin or SS-31?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Humanin is a different mitochondrial-derived peptide, 24 residues long, from the 16S rRNA gene. SS-31 is a synthetic cardiolipin-targeting tetrapeptide and is not encoded by mitochondria."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How are MOTS-c and retatrutide different?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "MOTS-c is a 16-residue mitochondrial-derived peptide studied in intracellular metabolic pathways. Retatrutide is a lipidated 39-residue synthetic agonist at GIP, GLP-1 and glucagon receptors. They are unrelated molecules, and this page does not address combined use."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is AICAR a peptide?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. AICAR is a nucleotide intermediate of de novo purine synthesis. It is linked to MOTS-c because the 2015 study reported that MOTS-c raised AICAR levels in cells, which activated AMPK."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does Research Use Only mean for MOTS-c?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It means this MOTS-c is supplied only for laboratory and scientific research. It is not for human or veterinary use, is not a drug or supplement, and is not intended to diagnose, treat, cure or prevent any disease."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "Q_scientific_references": {
+    "references": [
+      {
+        "id": 1,
+        "citation": "Lee C, Zeng J, Drew BG, Sallam T, Martin-Montalvo A, Wan J, Kim SJ, Mehta H, Hevener AL, de Cabo R, Cohen P. The mitochondrial-derived peptide MOTS-c promotes metabolic homeostasis and reduces obesity and insulin resistance. Cell Metab. 2015;21(3):443–454.",
+        "doi": "10.1016/j.cmet.2015.02.009",
+        "pmid": "25738459",
+        "pmcid": "PMC4350682",
+        "supports": "Discovery, 16-aa length, 12S rRNA origin, folate/purine/AICAR/AMPK mechanism, skeletal muscle target, mouse metabolic findings"
+      },
+      {
+        "id": 2,
+        "citation": "Kim KH, Son JM, Benayoun BA, Lee C. The mitochondrial-encoded peptide MOTS-c translocates to the nucleus to regulate nuclear gene expression in response to metabolic stress. Cell Metab. 2018;28:516–524.e7.",
+        "doi": null,
+        "pmid": "29983246",
+        "pmcid": "PMC6185997",
+        "supports": "AMPK-dependent nuclear translocation, NRF2 interaction, ARE gene regulation",
+        "note": "Issue number reported inconsistently by secondary sources; confirm on PubMed before print."
+      },
+      {
+        "id": 3,
+        "citation": "Reynolds JC, Lai RW, Woodhead JST, Joly JH, Mitchell CJ, Cameron-Smith D, Lu R, Cohen P, Graham NA, Benayoun BA, Merry TL, Lee C. MOTS-c is an exercise-induced mitochondrial-encoded regulator of age-dependent physical decline and muscle homeostasis. Nat Commun. 2021;12:470.",
+        "doi": "10.1038/s41467-020-20790-0",
+        "pmid": "33473109",
+        "pmcid": "PMC7817689",
+        "supports": "Exercise-induced endogenous MOTS-c in human muscle and plasma; physical performance in young, middle-aged and old mice; HSF1-dependent myoblast adaptation"
+      },
+      {
+        "id": 4,
+        "citation": "D'Souza RF, Woodhead JST, Hedges CP, Zeng N, Wan J, Kumagai H, Lee C, Cohen P, Cameron-Smith D, Mitchell CJ, Merry TL. Increased expression of the mitochondrial derived peptide, MOTS-c, in skeletal muscle of healthy aging men is associated with myofiber composition. Aging (Albany NY). 2020;12(6):5244–5258.",
+        "doi": "10.18632/aging.102944",
+        "pmid": "32182209",
+        "pmcid": "PMC7138593",
+        "supports": "Plasma lower / muscle higher with age in men; no ARE-gene association in vivo"
+      },
+      {
+        "id": 5,
+        "citation": "Hashimoto Y, et al. Proc Natl Acad Sci USA. 2001;98:6336–6341.",
+        "doi": null,
+        "pmid": null,
+        "supports": "Humanin discovery, 24 aa, 16S rRNA origin",
+        "note": "Cited via Cobb et al. 2016 and a humanin review; full title not re-checked this session."
+      },
+      {
+        "id": 6,
+        "citation": "Cobb LJ, et al. Naturally occurring mitochondrial-derived peptides are age-dependent regulators of apoptosis, insulin sensitivity, and inflammatory markers. Aging (Albany NY). 2016;8(4):796–809.",
+        "doi": null,
+        "pmid": null,
+        "supports": "mtDNA gene count (37 genes: 13 proteins, 22 tRNAs, 2 rRNAs); SHLPs 1–6 from the 16S rRNA region",
+        "note": "Volume/pages verified; confirm title wording and author list before print."
+      },
+      {
+        "id": 7,
+        "citation": "Humanin length by translation context (24 aa cytoplasmic; 21 aa mitochondrial). Review article, PMC3705736.",
+        "doi": null,
+        "pmid": null,
+        "supports": "Humanin 24/21 aa",
+        "note": "Add full author/title from PMC3705736 before print."
+      },
+      {
+        "id": 8,
+        "citation": "PubChem Compound Summary: Mots-c, CID 146675088. National Center for Biotechnology Information.",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/Mots-c",
+        "supports": "Formula C101H152N28O22S2; identity record"
+      },
+      {
+        "id": 9,
+        "citation": "Coskun T, Urva S, Roell WC, et al. LY3437943, a novel triple glucagon, GIP, and GLP-1 receptor agonist for glycemic control and weight loss: from discovery to clinical proof of concept. Cell Metab. 2022;34(9):1234–1247.e9.",
+        "doi": "10.1016/j.cmet.2022.07.013",
+        "pmid": "35985340",
+        "supports": "Retatrutide mechanism (GCGR/GIPR/GLP-1R triple agonist)"
+      },
+      {
+        "id": 10,
+        "citation": "Wyss JC, Kumar R, Mikulic J, et al. Differential effects of the mitochondria-active tetrapeptide SS-31 (D-Arg-dimethylTyr-Lys-Phe-NH2) and its peptidase-targeted prodrugs in experimental acute kidney injury. Front Pharmacol. 2019;10:1209.",
+        "doi": "10.3389/fphar.2019.01209",
+        "supports": "SS-31 sequence and mitochondria-active identity"
+      },
+      {
+        "id": 11,
+        "citation": "Pickart L, Margolina A. Regenerative and protective actions of the GHK-Cu peptide in the light of the new gene data. Int J Mol Sci. 2018;19(7):1987.",
+        "doi": "10.3390/ijms19071987",
+        "pmid": "29986520",
+        "supports": "GHK-Cu identity; naturally occurring in human plasma"
+      },
+      {
+        "id": 12,
+        "citation": "Sikiric P, et al. Stable gastric pentadecapeptide BPC 157: novel therapy in gastrointestinal tract. Curr Pharm Des. 2011;17(16):1612–1632.",
+        "doi": "10.2174/138161211796196954",
+        "pmid": "21548867",
+        "supports": "BPC-157 sequence GEPPPGKPADDAGLV",
+        "note": "Author list not shown in the PubMed snippet reviewed; confirm before print."
+      },
+      {
+        "id": 13,
+        "citation": "Tesamorelin structure: [trans-3-hexenoyl]hGHRH(1-44) amide, as described in US patent filings (e.g., US 10,946,073).",
+        "doi": null,
+        "supports": "Tesamorelin 44-aa GHRH analog with N-terminal trans-3-hexenoyl group",
+        "note": "Replace with the Egrifta prescribing information or a peer-reviewed source before print if preferred."
+      },
+      {
+        "id": 14,
+        "citation": "Calculated values: monoisotopic/average masses, ESI charge states, oxidation, deamidation and amide-variant masses computed from the sequence with standard IUPAC atomic masses.",
+        "supports": "All calculated mass values on the page; average MW agrees with PubChem-derived 2174.62 g/mol"
+      }
+    ]
+  },
+  "R_claim_verification": {
+    "columns": [
+      "Claim",
+      "Source",
+      "Verified?",
+      "Publish?",
+      "Notes"
+    ],
+    "rows": [
+      [
+        "MOTS-c is a 16-amino-acid peptide",
+        "Ref 1",
+        "Yes",
+        "Yes",
+        "Stated in the abstract"
+      ],
+      [
+        "Sequence MRWQEMGYIFYPRKLR",
+        "Ref 8; PubChem InChI; calculation (Ref 14)",
+        "Yes",
+        "Yes",
+        "Recomputed formula from sequence matches C101H152N28O22S2"
+      ],
+      [
+        "Encoded in a short ORF of the mitochondrial 12S rRNA gene",
+        "Ref 1",
+        "Yes",
+        "Yes",
+        "Gene symbol MT-RNR1 is standard nomenclature"
+      ],
+      [
+        "Formula C101H152N28O22S2",
+        "Ref 8; Ref 14",
+        "Yes",
+        "Yes",
+        "Free peptide, free C-terminal acid"
+      ],
+      [
+        "Average MW ≈2174.6 g/mol; monoisotopic 2173.11 Da",
+        "Ref 14; reference listings 2174.62",
+        "Yes",
+        "Yes",
+        "Small differences between listings reflect atomic-weight conventions"
+      ],
+      [
+        "CAS 1627580-64-6",
+        "Reference database listings",
+        "Yes",
+        "Yes, with form caveat",
+        "One supplier also lists 1627580-64-7; salt form not tied to CAS"
+      ],
+      [
+        "PubChem CID 146675088",
+        "Ref 8",
+        "Yes",
+        "Yes",
+        ""
+      ],
+      [
+        "Mitochondrial-derived peptide class alongside humanin and SHLPs",
+        "Refs 1, 5, 6",
+        "Yes",
+        "Yes",
+        ""
+      ],
+      [
+        "mtDNA has 37 genes (13 proteins, 22 tRNAs, 2 rRNAs)",
+        "Ref 6",
+        "Yes",
+        "Yes",
+        ""
+      ],
+      [
+        "Folate-cycle/purine inhibition, AICAR accumulation, AMPK activation in cells",
+        "Ref 1",
+        "Yes",
+        "Yes",
+        "Framed as the authors' proposed, partial mechanism"
+      ],
+      [
+        "Skeletal muscle appeared to be the main target organ",
+        "Ref 1",
+        "Yes",
+        "Yes",
+        "Wording 'appears' kept"
+      ],
+      [
+        "In mice, prevented diet-induced obesity and diet- and age-dependent insulin resistance",
+        "Ref 1",
+        "Yes",
+        "Yes",
+        "Mouse only; stated as such"
+      ],
+      [
+        "AMPK-dependent nuclear translocation under metabolic stress; NRF2 interaction; ARE genes",
+        "Ref 2",
+        "Yes",
+        "Yes",
+        "Cell culture"
+      ],
+      [
+        "Enhanced physical performance in young, middle-aged and old mice",
+        "Ref 3",
+        "Yes",
+        "Yes",
+        "Mouse doses and schedules deliberately omitted"
+      ],
+      [
+        "Exercise raised endogenous MOTS-c in human muscle and plasma",
+        "Ref 3",
+        "Yes",
+        "Yes",
+        "Young men, single cycling session; fold-changes omitted to avoid outcome framing"
+      ],
+      [
+        "Plasma lower with age; muscle expression higher in middle-aged and older men; no ARE association in vivo",
+        "Ref 4",
+        "Yes",
+        "Yes",
+        ""
+      ],
+      [
+        "No human effect of administered MOTS-c established",
+        "Absence of human efficacy data in Refs 1–4; page wording limited to 'established'",
+        "Yes (as scoped)",
+        "Yes",
+        "Page avoids claiming no human trials exist; registered trials may exist and were not relied on"
+      ],
+      [
+        "Nuclear translocation was reported in 2018, not 2015",
+        "Refs 1, 2",
+        "Yes",
+        "Yes",
+        "Corrects a common online error"
+      ],
+      [
+        "Humanin: 24 aa (cytoplasmic) / 21 aa (mitochondrial), 16S rRNA, 2001",
+        "Refs 5, 7",
+        "Yes",
+        "Yes",
+        ""
+      ],
+      [
+        "SS-31 = D-Arg-Dmt-Lys-Phe-NH2, cardiolipin-targeting, not mtDNA-encoded",
+        "Ref 10; SS-31 literature",
+        "Yes",
+        "Yes",
+        "Approval status of elamipretide deliberately not mentioned"
+      ],
+      [
+        "Retatrutide: 39 aa, GIP backbone, C20 fatty diacid, GIPR/GLP-1R/GCGR agonist",
+        "Ref 9; supplier structure descriptions",
+        "Yes",
+        "Yes",
+        ""
+      ],
+      [
+        "Tesamorelin: 44-aa hGHRH with N-terminal trans-3-hexenoyl group",
+        "Ref 13",
+        "Yes",
+        "Yes",
+        ""
+      ],
+      [
+        "AICAR is a nucleotide intermediate, not a peptide; reagents are commonly the riboside",
+        "Ref 1 figure legend; general biochemistry",
+        "Partly",
+        "Yes",
+        "Riboside note is standard reagent knowledge; no single citation added"
+      ],
+      [
+        "GHK-Cu naturally occurs in human plasma",
+        "Ref 11",
+        "Yes",
+        "Yes",
+        ""
+      ],
+      [
+        "BPC-157 = GEPPPGKPADDAGLV, 15 aa",
+        "Ref 12",
+        "Yes",
+        "Yes",
+        ""
+      ],
+      [
+        "NAD+ is a dinucleotide coenzyme, not a peptide",
+        "General biochemistry; Veracue NAD+ page",
+        "Yes",
+        "Yes",
+        ""
+      ],
+      [
+        "Met oxidation +16/+32 Da; Gln deamidation +0.98 Da; C-terminal amide −0.98 Da",
+        "Ref 14",
+        "Yes",
+        "Yes",
+        "Calculated"
+      ],
+      [
+        "Intact MS cannot distinguish D/L isomers or same-composition sequence scrambles",
+        "Standard MS principles",
+        "Yes",
+        "Yes",
+        "Contradicts the live site's 'zero optical isomers' MS claim — see audit"
+      ],
+      [
+        "Veracue supplies MOTS-c as a research material",
+        "Premise of the commissioned page",
+        "Pending",
+        "Yes",
+        "No MOTS-c record in the live catalog; publish only when the SKU exists"
+      ],
+      [
+        "Veracue MOTS-c vial size, salt form, purity, MS result, lot, lab, storage, price, SKU",
+        "Live site checked 2026-09-19",
+        "No data",
+        "Shown as not specified",
+        "Standard wording used everywhere"
+      ],
+      [
+        "Veracue sitewide HPLC/MS/ISO-7/COA statements apply to MOTS-c",
+        "Live homepage",
+        "Not for MOTS-c",
+        "No",
+        "Deliberately not transferred"
+      ],
+      [
+        "FDA 503A compounding category status of MOTS-c",
+        "FDA 503A pages; 2026 updates",
+        "Status in flux",
+        "No",
+        "Category lists changed in 2026; page makes no compounding-status claim"
+      ],
+      [
+        "A Phase 2a human trial of MOTS-c (NCT07505745, 'MOTS-MET') is currently recruiting",
+        "ClinicalTrials.gov NCT07505745",
+        "Yes",
+        "Yes",
+        "Corrects the earlier AHK-Cu-style phrasing 'no human clinical trial was identified' — for MOTS-c that would be inaccurate, since one registered trial exists though it has not read out"
+      ]
+    ]
+  },
+  "S_final_audit": {
+    "ruo_audit": {
+      "result": "Pass",
+      "checks": [
+        "No human dosage, mg/mcg figures, ranges, per-day/per-week amounts, cycles, protocols or charts — dosage and chart queries are answered with the scope statement only.",
+        "No injection, oral, reconstitution, mixing, dilution or syringe instructions; no link to the peptide calculator.",
+        "Mouse study doses and schedules (present in Reynolds et al.) were deliberately left out.",
+        "No weight-loss, anti-ageing, longevity, athletic-performance, bodybuilding, insulin-sensitivity or disease-treatment claims for people. Mouse and cell findings are always labeled by system.",
+        "No stacking or combined-use content; the retatrutide comparison states the page does not address combined use.",
+        "CTAs are research-oriented only. Compliance Notice ends with RESEARCH USE ONLY — NOT FOR HUMAN OR VETERINARY USE.",
+        "Subtle consumer language removed: no 'your body', 'support', 'boost', 'results' or 'protocol' phrasing."
+      ]
+    },
+    "fabrication_audit": {
+      "result": "Pass",
+      "checks": [
+        "No purity, HPLC, MS, COA number, lot, laboratory, certification, storage temperature, shelf life, vial size, price, stock, rating or review invented.",
+        "Every Veracue-specific field uses: 'Not publicly specified on the current Veracue product information.'",
+        "Calculated masses are labeled as calculated reference values, not lot results."
+      ]
+    },
+    "open_items_before_publishing": [
+      "Veracue product data: vial size, salt/counterion form, C-terminal form, lot number, HPLC purity with method, MS result, testing laboratory and date, storage conditions, SKU, price. Then add offers to the Product schema.",
+      "Publish the MOTS-c lot COA in the Certificates archive (the archive renders '0 Reports Available' today).",
+      "Confirm the issue number for Kim et al. 2018 and fill full bibliographic details for refs 5, 6, 7 and 13.",
+      "If NCT07505745 (MOTS-MET) reads out before this page goes live, revisit the short description and hero copy — a completed trial would change the human-evidence framing."
+    ],
+    "live_site_issues_found": [
+      "No MOTS-c product in the live catalog; the shop lists 3 compounds (Selank, AHK-Cu, NAD+).",
+      "Homepage 'Best-Selling' cards link to /product/retatrutide, which returns 'Product Not Found' (noindex); GHK-Cu, BPC-157, TB-500 and Semaglutide cards are also absent from the shop.",
+      "AHK-Cu page title renders '... | Veracue | Veracue' (duplicate suffix) and no meta description was returned in the fetch.",
+      "Mass tolerance conflict: homepage states ±0.5 Da, Certificates page states ±0.05 Da.",
+      "Homepage says ESI-MS confirms 'zero optical isomers'. Mass spectrometry cannot distinguish D/L isomers; this claim should be reworded or backed by chiral analysis.",
+      "Homepage block 'Exact Milligram Dosing … reconstitution math accurate down to the microgram' uses dosing language that conflicts with RUO positioning.",
+      "Homepage and shop claim ≥99% purity on every batch, while the footer says some items may test below 99%.",
+      "Shop FAQ links to /contact, while the rest of the site uses /contact-us."
+    ],
+    "keyword_decisions": "Workbook values are relative interest, not volumes. 'mots c 40mg', calculator, bac-water, reddit and competitor-brand terms were excluded on RUO or accuracy grounds.",
+    "rulebook_metrics": {
+      "main_copy_words_section_I_prose": 2031,
+      "section_I_table_words": 589,
+      "section_J_words": 1056,
+      "sentences_over_20_words": "16% (limit 22%)",
+      "transition_sentences_approx": "36% (target 35%)",
+      "passive_voice_approx": "0% (limit 8%; regex counts simple be + participle forms only, so treat as a floor)",
+      "longest_paragraph_words": 97,
+      "note": "Measured by script over section I prose and section J approaches; tables and bullet lists excluded from the word target."
+    }
+  }
+}

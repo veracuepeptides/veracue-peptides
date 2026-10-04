@@ -1,6 +1,8 @@
 import { CollectionConfig } from 'payload'
 import { productsAccess } from '../access/products'
 import { productsBeforeChange } from '../hooks/products'
+import { toCleanSlug, validateSlugFormat } from '../lib/slug/validate'
+import { revalidateGeneratedFiles } from '../lib/revalidate'
 
 export const Products: CollectionConfig = {
   slug: 'products',
@@ -11,6 +13,18 @@ export const Products: CollectionConfig = {
   access: productsAccess,
   hooks: {
     beforeChange: [productsBeforeChange],
+    afterChange: [
+      ({ doc }) => {
+        revalidateGeneratedFiles()
+        return doc
+      },
+    ],
+    afterDelete: [
+      ({ doc }) => {
+        revalidateGeneratedFiles()
+        return doc
+      },
+    ],
   },
   fields: [
     {
@@ -54,6 +68,19 @@ export const Products: CollectionConfig = {
       name: 'slug',
       type: 'text',
       unique: true,
+      required: true,
+      validate: validateSlugFormat,
+      hooks: {
+        // Runs before validation so a missing slug is derived from the name instead of failing `required`.
+        beforeValidate: [
+          ({ value, siblingData }) => {
+            if (value) return value
+            const name = siblingData?.name
+            const raw = typeof name === 'string' ? name : name?.en
+            return typeof raw === 'string' && raw ? toCleanSlug(raw) : value
+          },
+        ],
+      },
     },
     {
       name: 'sku',

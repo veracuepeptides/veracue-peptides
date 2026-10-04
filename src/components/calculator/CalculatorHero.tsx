@@ -3,25 +3,24 @@
 import React, { useRef, useState, useEffect } from 'react'
 import Image from 'next/image'
 import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion'
-import { ArrowDown, CheckCircle2, ShieldCheck, Sparkles, Calculator } from 'lucide-react'
 import { HeroButton } from '@/components/ui/hero-button'
 
 const CALCULATOR_HERO_IMAGES = [
   {
     src: '/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp',
-    alt: 'Veracue research peptides collection with batch COA documentation',
+    alt: 'Veracue research peptide vials arranged in a flat lay collection',
     facility: 'Reconstitution Suite',
     label: 'U-100 Calibration',
   },
   {
-    src: '/veracue-images/veracue-research-grade-50mg-gloved-hand.png',
-    alt: 'Solid-phase peptide synthesis and analytical verification',
+    src: '/veracue-images/veracue-research-grade-gloved-hand.webp',
+    alt: 'Gloved hand holding a Veracue research peptide vial',
     facility: 'Solid-Phase Synthesis',
     label: 'Microgram Precision',
   },
   {
     src: '/veracue-images/veracue-klow-50mg-pool-water-ripples.webp',
-    alt: 'Veracue aqueous solution reconstitution verification',
+    alt: 'Veracue research peptide vial resting on rippling pool water',
     facility: 'Aqueous Dilution',
     label: 'BAC Water Metrics',
   },
@@ -34,6 +33,7 @@ export function CalculatorHero() {
 
   // Auto-advance hero slides every 5.5 seconds with smooth crossfade
   useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
     const timer = setInterval(() => {
       setCurrentImageIndex((prev) => (prev + 1) % CALCULATOR_HERO_IMAGES.length)
     }, 5500)
@@ -189,9 +189,9 @@ export function CalculatorHero() {
 
             {/* Bottom-Right Overlay (U-100 & U-40 Calibration) */}
             <div className="absolute bottom-12 xs:bottom-14 sm:bottom-12 md:bottom-14 right-3 sm:right-7 md:right-10 z-20 text-white text-right sm:text-left max-w-[125px] xs:max-w-[160px] sm:max-w-[300px] md:max-w-[360px]">
-              <h3 className="text-xs xs:text-sm sm:text-xl md:text-2xl lg:text-[26px] font-extrabold tracking-tight text-white leading-tight mb-0.5 sm:mb-2 drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] font-heading">
+              <p className="text-xs xs:text-sm sm:text-xl md:text-2xl lg:text-[26px] font-extrabold tracking-tight text-white leading-tight mb-0.5 sm:mb-2 drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] font-heading">
                 Precision<br className="sm:hidden" /> Calibration
-              </h3>
+              </p>
               <p className="hidden xs:block sm:hidden text-[9px] text-white/85 leading-snug line-clamp-2 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
                 Works for any vial size.
               </p>

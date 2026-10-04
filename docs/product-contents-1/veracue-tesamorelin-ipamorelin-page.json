@@ -1,0 +1,470 @@
+{
+  "_implementation_notes": {
+    "purpose": "Implementation-ready content package for /product/tesamorelin-ipamorelin on veracue-peptides.vercel.app. Structured to slot directly into the same component architecture already live on /product/ahk-cu (hero, snapshot, badge row, tabbed Product Details, Research Focus table, Evidence Summary table, Comparison table, Quality & Purity / COA block, Compliance Notice, FAQ accordion, JSON-LD schema).",
+    "site_inspection_findings": [
+      "Live catalog (/shop) currently lists only 3 SKUs: Selank, AHK-Cu, NAD+. No Tesamorelin, Ipamorelin, or Tesamorelin + Ipamorelin product record exists on the live site.",
+      "/certificates currently shows '0 Reports Available' — the COA library is empty site-wide, not just for this product. No lot-specific COA exists to reference for this or any other pending SKU.",
+      "House meta-title pattern confirmed from live AHK-Cu page: '<Compound> Research Peptide (<alt name>) | Veracue'.",
+      "House meta-description pattern confirmed: names what the page covers, not compound benefits, targeting ~150-160 characters.",
+      "House content pattern confirmed from AHK-Cu page: Overview -> Intended Use -> Product Highlights -> Research Focus & Mechanism table -> Molecular Identity table(s) -> 'What the Research Actually Shows' -> primary study walkthrough -> Evidence Summary table -> 'What This Research Does Not Show' -> head-to-head comparison table -> 'Reading a COA' table -> Quick COA Check list -> Storage & Handling -> Compliance Notice -> FAQ."
+    ],
+    "critical_deviation_from_house_pattern": "The live AHK-Cu page displays badges claiming '>=99% Confirmed by independent HPLC assay' as part of its standard Compound Profile block. Because Veracue's COA archive currently has 0 published reports and no lot exists for this product, this page intentionally REPLACES that badge row with a 'COA Pending' status block instead of asserting an unverified purity figure. This is a deliberate, rule-driven deviation, not an oversight -- flag it to the dev/content team so it isn't 'corrected' back to the generic badge set during implementation.",
+    "product_data_intentionally_left_unspecified": [
+      "Tesamorelin:Ipamorelin ratio or per-component mg content in this specific Veracue formulation",
+      "Total peptide content per vial / package size options",
+      "Concentration, reconstitution volume, or vehicle",
+      "Route, excipients, preservative, pH",
+      "Fill volume, actuation volume (if applicable)",
+      "Storage temperature specific to this SKU (beyond general lyophilized-peptide handling guidance)",
+      "SKU code, price, stock status",
+      "Lot number, testing laboratory, COA document",
+      "Purity / assay result specific to this product"
+    ],
+    "unknown_data_placeholder_text": "Not publicly specified in the current Veracue product information.",
+    "scientific_sources_used": [
+      "https://pubchem.ncbi.nlm.nih.gov/compound/16137828 (Tesamorelin identity: CAS 218949-48-5, C221H366N72O67S, MW ~5135.9 g/mol, TH9507/TH-9507 synonym)",
+      "https://pubchem.ncbi.nlm.nih.gov/compound/Ipamorelin (Ipamorelin identity: CAS 170851-70-4, C38H49N9O5, MW 711.9 g/mol, NNC-26-0161 synonym)",
+      "Pyo HK et al., Arch Pharm Res 2007 (cited only in relation to AHK-Cu on the existing site; NOT used for this page)",
+      "EGRIFTA WR (tesamorelin) FDA prescribing information, accessed via Drugs.com package insert mirror, reviewed Aug 2026 -- confirms current FDA-approved indication (reduction of excess abdominal fat in HIV-infected adults with lipodystrophy), subcutaneous injection route, and explicit 'not indicated for weight loss management' limitation",
+      "Theratechnologies / FDA approval history for Egrifta WR (approved March 25, 2025) -- confirms this is a distinct, currently-marketed pharmaceutical product, separate from any Veracue RUO material",
+      "Independent third-party COA search (Sept 2026) found no Veracue-issued or Veracue-attributed certificate for Tesamorelin, Ipamorelin, or a Tesamorelin+Ipamorelin combination. Third-party vendor COAs exist elsewhere in the market for the individual peptides and for various blends, but none originate from Veracue and none were used as a source of product-specific fact for this page.",
+      "No peer-reviewed study of a combined tesamorelin + ipamorelin formulation (co-administration, co-formulation, or fixed combination) was identified in the literature reviewed for this page."
+    ],
+    "keyword_workbook_observations": "Cross-referenced against the uploaded Google-Trends-style export. Strongest combination/entity terms ('tesamorelin and ipamorelin', 'ipamorelin and tesamorelin', 'tesa ipa blend', 'tesamorelin peptide', 'ipamorelin peptide', 'tesamorelin vs ipamorelin') are used naturally in copy and metadata below. Off-topic breakout terms in the workbook (reta, CJC-1295, KLOW, MOTS-c, GHK-Cu, etc.) were excluded except where AHK-Cu / GHK-Cu already exist as internal links, which they do not need to be here.",
+    "schema_types_implemented": ["Product", "WebPage", "BreadcrumbList", "FAQPage"],
+    "route": "/product/tesamorelin-ipamorelin",
+    "internal_links_used": [
+      "/shop",
+      "/certificates",
+      "/contact-us",
+      "/faq"
+    ],
+    "internal_links_intentionally_omitted": "No standalone /product/tesamorelin or /product/ipamorelin page exists on the live site yet, so no link to either was added per the 'do not create broken or invented routes' rule. Add cross-links once those individual pages ship.",
+    "image_policy_note": "No genuine Veracue product photo exists for this SKU yet (it is not in the live catalog or media library). Do not use an EGRIFTA/pharmaceutical injector image. Recommend photographing an actual Veracue vial once produced, in the same style as the existing vial photography (veracue-images/vp-product-vial.jpeg style). Until then, use neutral scientific/lab imagery (e.g. the site's existing cleanroom/chromatography stock imagery) rather than fabricating a dual-peptide bottle mockup."
+  },
+
+  "seo": {
+    "title": "Tesamorelin + Ipamorelin Research Peptide | Veracue",
+    "title_char_count": 51,
+    "meta_description": "Tesamorelin + Ipamorelin, two separate research peptides, for lab research: molecular identity, combination evidence status, comparison, and COA checks.",
+    "meta_description_char_count": 152,
+    "meta_description_pattern_note": "Matched to the confirmed house pattern from the live AHK-Cu page (title 55 chars / description 156 chars, SEO-tool verified): '<Compound>, <brief identity>, for lab research: <topics this page covers>.' Lists what the page covers, not compound benefits.",
+    "slug": "/product/tesamorelin-ipamorelin",
+    "canonical": "https://veracue-peptides.vercel.app/product/tesamorelin-ipamorelin",
+    "og_title": "Tesamorelin + Ipamorelin Research Peptide | Veracue",
+    "og_description": "Tesamorelin + Ipamorelin, two separate research peptides, for lab research: molecular identity, combination evidence status, comparison, and COA checks.",
+    "primary_keyword": "Tesamorelin + Ipamorelin",
+    "supporting_keywords": [
+      "tesamorelin and ipamorelin",
+      "ipamorelin and tesamorelin",
+      "tesa ipa blend",
+      "tesamorelin peptide",
+      "ipamorelin peptide",
+      "tesamorelin vs ipamorelin",
+      "tesamorelin ipamorelin research",
+      "tesamorelin ipamorelin blend"
+    ]
+  },
+
+  "breadcrumb": [
+    { "label": "Home", "href": "/" },
+    { "label": "Shop", "href": "/shop" },
+    { "label": "Tesamorelin + Ipamorelin", "href": "/product/tesamorelin-ipamorelin" }
+  ],
+
+  "hero": {
+    "eyebrow": "RESEARCH USE ONLY",
+    "category": "Growth Hormone Secretagogues",
+    "h1": "Tesamorelin + Ipamorelin",
+    "subtitle": "Dual-Peptide Research Formulation",
+    "price_block": "Not publicly specified in the current Veracue product information.",
+    "short_description_matched_to_ahk_cu_pattern": "Tesamorelin + Ipamorelin combines two independently studied research peptides: tesamorelin, a synthetic analogue of growth hormone-releasing hormone (GHRH), and ipamorelin, a selective growth hormone secretagogue acting on the ghrelin receptor. Veracue supplies this material for laboratory research. Tesamorelin's evidence base comes from an approved pharmaceutical formulation studied in a specific patient population, while ipamorelin's is preclinical and mechanistic -- no direct study of the two administered together was identified, so this material does not establish a combined effect in people.",
+    "short_intro": "Tesamorelin + Ipamorelin combines two structurally and mechanistically distinct research peptides in a single Veracue offering: tesamorelin, a 44-residue GHRH analogue, and ipamorelin, a pentapeptide growth hormone secretagogue acting through the ghrelin (GHS) receptor. This page documents what is independently known about each peptide's molecular identity and research evidence, and is explicit about what has -- and has not -- been established for the combination itself. Supplied for laboratory and research use only."
+  },
+
+  "status_block_replacing_purity_badges": {
+    "heading": "COA Status",
+    "state": "pending",
+    "copy": "This product is not yet listed in the Veracue certificate archive. No batch-specific Certificate of Analysis (COA) is currently published for Tesamorelin + Ipamorelin. Request current lot documentation through Contact Us before ordering.",
+    "cta_label": "Request a Certificate",
+    "cta_href": "/contact-us"
+  },
+
+  "product_snapshot": {
+    "heading": "Product Snapshot",
+    "fields": [
+      { "label": "Product name", "value": "Tesamorelin + Ipamorelin" },
+      { "label": "Research designation", "value": "Two-peptide research combination (RUO)" },
+      { "label": "Peptides included", "value": "Tesamorelin (TH9507); Ipamorelin" },
+      { "label": "Product form", "value": "Not publicly specified in the current Veracue product information." },
+      { "label": "Route", "value": "Not publicly specified in the current Veracue product information. This page provides no administration guidance of any kind." },
+      { "label": "Tesamorelin identity", "value": "CAS 218949-48-5; C221H366N72O67S; 5,136 g/mol; PubChem CID 16137828" },
+      { "label": "Ipamorelin identity", "value": "CAS 170851-70-4; C38H49N9O5; 711.9 g/mol; PubChem CID 9831659" },
+      { "label": "Ratio / concentration", "value": "Not publicly specified in the current Veracue product information." },
+      { "label": "Package size", "value": "Not publicly specified in the current Veracue product information." },
+      { "label": "Storage", "value": "Not publicly specified in the current Veracue product information." },
+      { "label": "COA / documentation", "value": "Pending -- see COA Status above." }
+    ]
+  },
+
+  "sku_meta": {
+    "sku": "Not publicly specified in the current Veracue product information.",
+    "weight": "Not publicly specified in the current Veracue product information.",
+    "category": "Growth Hormone Secretagogues"
+  },
+
+  "sections": [
+    {
+      "id": "what-is-this-combination",
+      "heading": "What Is Tesamorelin + Ipamorelin?",
+      "body": [
+        "Tesamorelin + Ipamorelin is a combination of two separate research peptides sold together as one Veracue offering. It is not a single molecule, and the two components are not chemically related. Tesamorelin is a synthetic analogue of growth hormone-releasing hormone (GHRH), built on the same 44-amino-acid backbone as endogenous human GHRH, with an added stabilizing modification at the N-terminus. Ipamorelin is a synthetic pentapeptide -- five amino acids -- studied as a growth hormone secretagogue that acts through the ghrelin receptor (GHSR).",
+        "Because the two peptides work through different receptor systems, evidence collected on one does not automatically describe the other, and evidence on either peptide alone does not establish anything about how they behave when supplied together. This page treats those as three separate evidence questions: what is known about tesamorelin, what is known about ipamorelin, and what is known about the combination specifically. The last of those has the least available evidence, and this page says so plainly rather than blending the other two into an implied answer.",
+        "A note on naming: this material is referred to in some vendor and forum contexts as a 'tesa ipa blend' or 'stack.' Veracue uses the descriptive name Tesamorelin + Ipamorelin because 'blend' and 'stack' do not communicate a verified ratio or formulation, and because this page does not treat the combination as a validated protocol -- see Terminology, below."
+      ]
+    },
+    {
+      "id": "terminology",
+      "heading": "Terminology: One Combination, Several Names",
+      "body": [
+        "Researchers encounter this combination under several different names across search results, forums, and other vendors' catalogs, which can make it hard to tell whether two pages describe the same thing. The table below maps the common variants to a single reference name."
+      ],
+      "table": {
+        "columns": ["Name variant", "Where it's used", "Status"],
+        "rows": [
+          ["Tesamorelin + Ipamorelin", "This page's reference name", "Preferred -- names both components explicitly"],
+          ["Tesamorelin and Ipamorelin", "Common search phrasing", "Equivalent to the above"],
+          ["Tesa Ipa blend / Tesa/Ipa", "Informal vendor and forum shorthand", "Same two peptides; does not specify a ratio"],
+          ["Tesamorelin Ipamorelin stack", "Bodybuilding/fitness forum usage", "Implies a use protocol this page does not provide or endorse"],
+          ["Tesamorelin+pamorelin", "Typo occasionally seen in listings", "Incorrect -- corrected to Tesamorelin + Ipamorelin throughout this page"]
+        ]
+      }
+    },
+    {
+      "id": "tesamorelin-identity",
+      "heading": "Tesamorelin: Scientific Identity",
+      "body": [
+        "Tesamorelin (research synonym TH9507 / TH-9507) is a synthetic 44-amino-acid peptide built on the sequence of human growth hormone-releasing hormone (hGHRH 1-44), carrying an N-terminal modification (a trans-3-hexenoyl group on the tyrosine residue) that increases resistance to enzymatic breakdown compared with native GHRH. It is studied as a GHRH-receptor agonist. The full residue-by-residue sequence is documented in the PubChem record referenced below rather than reproduced here."
+      ],
+      "table": {
+        "columns": ["Field", "Value"],
+        "rows": [
+          ["Common research name", "Tesamorelin"],
+          ["Synonyms", "TH9507; TH-9507"],
+          ["Backbone", "44-residue GHRH(1-44) analogue with N-terminal hexenoyl modification"],
+          ["Molecular formula", "C221H366N72O67S"],
+          ["Molecular weight", "5,136 g/mol"],
+          ["CAS number", "218949-48-5"],
+          ["PubChem CID", "16137828"],
+          ["Receptor target studied", "GHRH receptor (GHRHR)"]
+        ]
+      },
+      "reference_note": "Identity data sourced from PubChem CID 16137828. Verify against the current PubChem record before publication, as database values are occasionally revised."
+    },
+    {
+      "id": "ipamorelin-identity",
+      "heading": "Ipamorelin: Scientific Identity",
+      "body": [
+        "Ipamorelin (research synonym NNC-26-0161) is a synthetic pentapeptide studied as a selective growth hormone secretagogue, acting at the ghrelin receptor (GHSR-1a). Unlike tesamorelin, it is not a GHRH-pathway molecule; it is a separate class of compound entirely, distinguished in the literature partly by its selectivity for GH release without the broader hormonal effects reported for some older secretagogues."
+      ],
+      "table": {
+        "columns": ["Field", "Value"],
+        "rows": [
+          ["Common research name", "Ipamorelin"],
+          ["Synonyms", "NNC-26-0161"],
+          ["Peptide class", "Pentapeptide (5 residues)"],
+          ["Sequence", "Aib-His-D-2-Nal-D-Phe-Lys-NH2"],
+          ["Molecular formula", "C38H49N9O5"],
+          ["Molecular weight", "711.9 g/mol"],
+          ["CAS number", "170851-70-4"],
+          ["PubChem CID", "9831659"],
+          ["Receptor target studied", "Ghrelin / growth hormone secretagogue receptor (GHSR-1a)"]
+        ]
+      },
+      "reference_note": "Identity data sourced from PubChem CID 9831659. Verify against the current PubChem record before publication."
+    },
+    {
+      "id": "mechanism",
+      "heading": "How Are Tesamorelin and Ipamorelin Studied?",
+      "body": [
+        "Tesamorelin research centers on GHRH-receptor signaling: as a GHRH analogue, it is studied for its ability to bind GHRHR on pituitary somatotrophs and stimulate pulsatile growth hormone release, the same axis targeted by endogenous GHRH.",
+        "Ipamorelin research centers on the separate ghrelin/GHSR pathway: it is studied as a selective GHSR-1a agonist, stimulating GH release through a receptor and signaling cascade distinct from GHRHR.",
+        "Because GHRHR and GHSR-1a are both expressed on pituitary somatotrophs and both pathways converge on GH release, mechanistic literature on growth hormone secretagogues as a class discusses their pathways as biologically distinct at the receptor-biology level. That kind of pathway-level discussion is not the same as evidence that a specific combined formulation produces an added, additive, or synergistic effect in a study -- see Combination Evidence, below. This page does not provide dosage, timing, or co-administration guidance."
+      ]
+    },
+    {
+      "id": "combination-evidence",
+      "heading": "What Is Known About the Tesamorelin + Ipamorelin Combination?",
+      "featured": true,
+      "body": [
+        "No direct combination study was identified in the literature reviewed for this page. Published research on tesamorelin and published research on ipamorelin each exist as separate literatures, studying each peptide independently; no peer-reviewed study of tesamorelin and ipamorelin administered together, co-formulated, or evaluated as a combination product was located.",
+        "This matters because it is common, in market materials for combination peptides generally, to see evidence for each individual component presented as if it supports the combination. It does not. A finding about tesamorelin's effect on GH release says nothing, on its own, about what happens when tesamorelin is present alongside ipamorelin in the same formulation or research protocol. The reverse is equally true for ipamorelin.",
+        "Third-party laboratories and other vendors do issue Certificates of Analysis for 'Tesamorelin + Ipamorelin' or similar blend products, but a COA verifies chemical identity and purity of the material in a given lot -- it is analytical documentation, not biological evidence, and it does not represent a study of combined effect. Vera cue's own COA archive currently has no record for this or any product (see COA Status). No such document is being represented here as evidence of anything beyond what a COA can show."
+      ]
+    },
+    {
+      "id": "evidence-summary",
+      "heading": "Evidence Summary",
+      "table": {
+        "columns": ["Peptide / combination", "Evidence type", "Model / population", "What was studied", "Main finding", "Evidence limitation"],
+        "rows": [
+          ["Tesamorelin", "Molecular / chemical identity", "N/A", "Structural and mass-spectrometric identity of the GHRH(1-44) analogue", "Identity confirmed against PubChem reference record (CID 16137828)", "Identity data only -- not a biological finding"],
+          ["Tesamorelin", "Human clinical", "Adults with HIV-associated lipodystrophy", "GHRH-receptor agonism, reduction of visceral abdominal fat", "Basis for the current FDA-approved indication for the pharmaceutical formulation (Egrifta WR / Egrifta SV)", "Applies to the approved injectable pharmaceutical product and its studied population; does not describe the Veracue RUO research material or any other formulation, dose, or population"],
+          ["Ipamorelin", "Molecular / chemical identity", "N/A", "Structural and mass-spectrometric identity of the pentapeptide", "Identity confirmed against PubChem reference record (CID 9831659)", "Identity data only -- not a biological finding"],
+          ["Ipamorelin", "Mechanistic / preclinical", "In vitro and animal models (general secretagogue literature)", "Selective GHSR-1a agonism and GH-release activity", "Described in the literature as a selective GH secretagogue with a narrower off-target hormonal profile than some earlier secretagogues", "Findings vary by model and assay; not a claim about human outcomes or about the Veracue material specifically"],
+          ["Tesamorelin + Ipamorelin (combination)", "Combination-specific evidence", "N/A", "N/A", "No direct combination study was identified in the literature reviewed for this page", "Absence of a direct study; this row should not be read as evidence of either safety or effect for the combination"]
+        ]
+      }
+    },
+    {
+      "id": "product-details-overview",
+      "heading": "Product Details",
+      "tabs": [
+        {
+          "label": "Overview",
+          "body": [
+            "Tesamorelin + Ipamorelin, as offered by Veracue, packages two independently sourced research peptides together: tesamorelin (TH9507), a 44-residue GHRH analogue, and ipamorelin, a five-residue ghrelin-receptor secretagogue. The two peptides differ in size, sequence, and the receptor pathway they are studied through.",
+            "Because they are different molecular entities, this page separates the documented identity and evidence for each peptide from any claim about the combination. Where the market commonly assumes a combined effect from the presence of two GH-pathway peptides in one product, this page makes clear that assumption is not, at present, supported by a direct study of the combination -- see Combination Evidence, above.",
+            "Composition specifics for this particular Veracue formulation -- ratio, per-vial content, concentration, and route -- are not yet published. Where a field is unconfirmed, this page states that plainly rather than inferring a value from the product name or from how other vendors describe similar 'tesa ipa' products."
+          ]
+        },
+        {
+          "label": "Intended Use",
+          "body": [
+            "This material is offered for in vitro and laboratory research -- for example, receptor-binding assays, GH-secretagogue pathway studies, analytical method development, or comparative peptide chemistry work. It is not a drug, cosmetic, supplement, or food, and it is not intended for administration to humans or animals.",
+            "Nothing on this page provides, or should be read as, dosing, reconstitution-for-administration, injection, or treatment information for either component or for the combination."
+          ]
+        },
+        {
+          "label": "Highlights",
+          "body": [
+            "Combines two independently characterized research peptides: tesamorelin (GHRH analogue) and ipamorelin (GHSR-1a secretagogue)",
+            "Each component's molecular identity (sequence class, formula, molecular weight, CAS number) is independently documented against PubChem reference records",
+            "Combination-specific evidence is explicitly separated from single-peptide evidence throughout this page",
+            "Labelled for laboratory research use only -- not for human or veterinary use",
+            "Formulation specifics (ratio, concentration, package size) pending first-party confirmation -- see Product Snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comparison",
+      "heading": "Tesamorelin vs. Ipamorelin",
+      "body": [
+        "This is a side-by-side identity comparison, not a ranking. The two peptides are studied through different mechanisms and are not interchangeable; neither is presented here as superior, and this page makes no recommendation to combine them at any particular ratio or schedule."
+      ],
+      "table": {
+        "columns": ["Attribute", "Tesamorelin", "Ipamorelin"],
+        "rows": [
+          ["Molecular class", "44-residue GHRH(1-44) analogue", "5-residue (pentapeptide) secretagogue"],
+          ["Molecular formula", "C221H366N72O67S", "C38H49N9O5"],
+          ["Molecular weight", "5,136 g/mol", "711.9 g/mol"],
+          ["CAS number", "218949-48-5", "170851-70-4"],
+          ["Primary receptor / pathway studied", "GHRH receptor (GHRHR)", "Ghrelin / GH secretagogue receptor (GHSR-1a)"],
+          ["Associated pharmaceutical product", "Egrifta WR / Egrifta SV (FDA-approved, HIV-lipodystrophy indication)", "No FDA-approved pharmaceutical product identified"],
+          ["Combination-specific evidence", "No direct combination study identified", "No direct combination study identified"]
+        ]
+      }
+    },
+    {
+      "id": "regulatory-context",
+      "heading": "Regulatory Context: Not the Same as an Approved Pharmaceutical",
+      "body": [
+        "Tesamorelin, under the brand names Egrifta WR and Egrifta SV, is FDA-approved as a subcutaneous injectable for the reduction of excess abdominal fat in HIV-infected adults with lipodystrophy. The current prescribing information explicitly states it is not indicated for weight-loss management. That approval, and the clinical evidence behind it, applies to the specific approved pharmaceutical formulation, dose, and studied population -- it does not apply to the Veracue research material, which is a distinct, non-pharmaceutical RUO product with an unconfirmed formulation.",
+        "No FDA approval for ipamorelin as a pharmaceutical product was identified. Regulatory status for research compounds can change; researchers should verify current status independently rather than relying on supplier claims.",
+        "The Veracue Tesamorelin + Ipamorelin combination product is not FDA approved, is not evaluated by the FDA for safety or efficacy, and should not be assumed to share the formulation, concentration, route, dosing, or safety profile of any approved pharmaceutical product."
+      ]
+    },
+    {
+      "id": "formulation",
+      "heading": "Tesamorelin + Ipamorelin Formulation",
+      "body": [
+        "The fields below are shown only where confirmed by first-party Veracue product information. The product name and market shorthand ('tesa ipa blend') do not, by themselves, establish a ratio, concentration, or route, and none has been inferred for this page."
+      ],
+      "table": {
+        "columns": ["Field", "Status"],
+        "rows": [
+          ["Ratio (tesamorelin : ipamorelin)", "Not publicly specified in the current Veracue product information."],
+          ["Concentration", "Not publicly specified in the current Veracue product information."],
+          ["Route", "Not publicly specified in the current Veracue product information."],
+          ["Vehicle / excipients", "Not publicly specified in the current Veracue product information."],
+          ["pH", "Not publicly specified in the current Veracue product information."],
+          ["Preservative", "Not publicly specified in the current Veracue product information."],
+          ["Fill volume / actuation volume", "Not publicly specified in the current Veracue product information."],
+          ["Package size", "Not publicly specified in the current Veracue product information."],
+          ["Storage", "Not publicly specified in the current Veracue product information."]
+        ]
+      }
+    },
+    {
+      "id": "coa-guidance",
+      "heading": "How to Read a Tesamorelin + Ipamorelin Certificate of Analysis",
+      "body": [
+        "A combination product's COA needs to do more than a single-peptide COA: it should independently confirm the identity of both tesamorelin and ipamorelin in the same lot, not just one of the two. A COA for one component alone does not verify the presence, ratio, or purity of the other.",
+        "When this product's COA becomes available, it should state: identity confirmation for both peptides (by mass spectrometry, matched against each peptide's expected mass), lot/batch number, purity result and the analytical method used, any quantitative result for each component (not just an overall purity percentage), testing laboratory and test date, and the specific formulation the report describes."
+      ],
+      "quick_check_list": [
+        "Lot number on the COA matches the vial label",
+        "Both tesamorelin and ipamorelin identity are independently confirmed, not just one component",
+        "Purity method is named for each component, not just a single blended percentage",
+        "Quantitative result (e.g., mg of each peptide) is reported, not only a purity percentage",
+        "Testing laboratory and date are shown",
+        "The report is matched to this specific formulation, not a generic single-peptide spec sheet"
+      ],
+      "storage_handling": "Store according to the conditions stated on this lot's documentation and label once published. Handle as a laboratory chemical using appropriate personal protective equipment."
+    },
+    {
+      "id": "what-evidence-does-not-establish",
+      "heading": "What the Research Does Not Establish",
+      "list": [
+        "That tesamorelin and ipamorelin, supplied together, produce a combined, additive, or synergistic effect -- no direct combination study was identified",
+        "That evidence for tesamorelin alone describes the effects of the combination",
+        "That evidence for ipamorelin alone describes the effects of the combination",
+        "That the FDA-approved Egrifta WR / Egrifta SV pharmaceutical evidence applies to this unverified Veracue research formulation",
+        "That shared receptor biology (GHRHR and GHSR-1a both acting on somatotrophs) is the same thing as demonstrated synergy",
+        "That this material is safe, effective, or appropriate for any use in humans or animals"
+      ]
+    },
+    {
+      "id": "ruo",
+      "heading": "Research Use Only",
+      "body": [
+        "Tesamorelin + Ipamorelin, as supplied by Veracue, is intended solely for laboratory and research use. It is not a drug, cosmetic, dietary supplement, or food. It is not intended to diagnose, treat, cure, or prevent any disease, and it must not be administered to humans or animals.",
+        "This page is not a weight-loss product page, a bodybuilding or performance product page, or a treatment guide. It contains no dosing, reconstitution-for-administration, injection, or protocol instructions for either component or for the combination, and none should be inferred from anything on this page."
+      ]
+    }
+  ],
+
+  "faq": [
+    {
+      "q": "What is Tesamorelin + Ipamorelin?",
+      "a": "It is a Veracue research offering combining two separate peptides -- tesamorelin, a GHRH analogue, and ipamorelin, a ghrelin-receptor growth hormone secretagogue -- supplied together for laboratory research. It is not a single molecule and not a clinically validated combined product."
+    },
+    {
+      "q": "What is tesamorelin?",
+      "a": "Tesamorelin (TH9507) is a synthetic 44-residue analogue of human growth hormone-releasing hormone (GHRH), studied as a GHRH-receptor agonist. Under the brand names Egrifta WR and Egrifta SV, an approved pharmaceutical formulation is FDA-indicated for reducing excess abdominal fat in HIV-infected adults with lipodystrophy."
+    },
+    {
+      "q": "What is ipamorelin?",
+      "a": "Ipamorelin is a synthetic pentapeptide studied as a selective growth hormone secretagogue that acts at the ghrelin receptor (GHSR-1a), a pathway distinct from GHRH signaling. No FDA-approved pharmaceutical product based on ipamorelin was identified."
+    },
+    {
+      "q": "What is a tesa ipa blend?",
+      "a": "\"Tesa ipa blend\" is informal market shorthand for a tesamorelin-plus-ipamorelin research product. Veracue uses the descriptive name Tesamorelin + Ipamorelin because \"blend\" does not communicate a verified ratio, and this page does not treat any such term as evidence of a validated formulation."
+    },
+    {
+      "q": "Is Tesamorelin + Ipamorelin the same as a tesamorelin pharmaceutical product like Egrifta?",
+      "a": "No. Egrifta WR and Egrifta SV are FDA-approved injectable pharmaceutical products containing tesamorelin alone, for a specific HIV-lipodystrophy indication. The Veracue Tesamorelin + Ipamorelin material is a two-peptide research product, is not FDA approved, and should not be assumed to share formulation, dosing, or safety data with the approved drug."
+    },
+    {
+      "q": "How does tesamorelin work at the receptor level?",
+      "a": "Tesamorelin is studied as an agonist at the GHRH receptor (GHRHR) on pituitary somatotrophs, the same target as endogenous growth hormone-releasing hormone."
+    },
+    {
+      "q": "How does ipamorelin work at the receptor level?",
+      "a": "Ipamorelin is studied as a selective agonist at the ghrelin / growth hormone secretagogue receptor (GHSR-1a), a distinct receptor system from GHRHR."
+    },
+    {
+      "q": "What is the difference between tesamorelin and ipamorelin?",
+      "a": "They are different molecules studied through different receptor pathways: tesamorelin is a 44-residue GHRH analogue acting on GHRHR, while ipamorelin is a 5-residue peptide acting on GHSR-1a. They differ in size, sequence, and mechanism -- they are not variants of the same compound."
+    },
+    {
+      "q": "Is there direct research on the tesamorelin and ipamorelin combination?",
+      "a": "No direct combination study was identified in the literature reviewed for this page. Published research on each peptide exists independently; no study of the two administered or formulated together was located."
+    },
+    {
+      "q": "Does research prove that tesamorelin and ipamorelin are synergistic?",
+      "a": "No. No direct combination study was identified, so no synergy claim is supported. Shared receptor biology at the pituitary level is a mechanistic observation, not evidence of a measured combined effect."
+    },
+    {
+      "q": "What is the tesamorelin peptide sequence?",
+      "a": "Tesamorelin shares the 44-amino-acid sequence of human GHRH(1-44), with an added N-terminal modification (a trans-3-hexenoyl group on the tyrosine residue). The full residue-by-residue sequence is documented in PubChem (CID 16137828)."
+    },
+    {
+      "q": "What is the ipamorelin peptide sequence?",
+      "a": "Ipamorelin's sequence is Aib-His-D-2-Nal-D-Phe-Lys-NH2, a five-residue peptide with a C-terminal amide (PubChem CID 9831659)."
+    },
+    {
+      "q": "What should a Tesamorelin + Ipamorelin COA contain?",
+      "a": "It should independently confirm the identity of both peptides in the tested lot (not just one), report a quantitative result for each component, name the analytical method, and show the lot number, testing laboratory, and test date."
+    },
+    {
+      "q": "What does purity mean for a two-peptide research product?",
+      "a": "Purity describes how much of the detected material, by a stated analytical method, is the intended compound rather than impurities or synthesis byproducts. For a combination product, purity should be reported for each peptide separately, since an overall figure can obscure a shortfall in either component."
+    },
+    {
+      "q": "Is the Veracue Tesamorelin + Ipamorelin product FDA approved?",
+      "a": "No. It is not FDA approved and has not been evaluated by the FDA for safety or efficacy. It is supplied strictly for laboratory research use."
+    },
+    {
+      "q": "What does Research Use Only mean for Tesamorelin + Ipamorelin?",
+      "a": "It means this material is intended strictly for laboratory and scientific research, not for human or veterinary administration, diagnosis, or treatment, and is offered and labelled on that basis."
+    }
+  ],
+
+  "compliance_notice": "Tesamorelin + Ipamorelin supplied by Veracue is intended solely for laboratory research. It is not a drug, cosmetic, dietary supplement, or food, and it is not intended to diagnose, treat, cure, or prevent any disease. It must not be administered to humans or animals. The scientific information on this page describes published identity data and research literature for the individual peptides and is not medical advice or a statement of efficacy or safety for this product or for any combination. Purchasers are responsible for using the material lawfully and within an appropriate research setting.",
+
+  "internal_links": {
+    "primary_cta": { "label": "Explore Research Catalogue", "href": "/shop" },
+    "secondary_ctas": [
+      { "label": "Request a Certificate", "href": "/contact-us" },
+      { "label": "View COA Archive", "href": "/certificates" },
+      { "label": "Help & FAQ", "href": "/faq" }
+    ]
+  },
+
+  "schema": {
+    "json_ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Tesamorelin + Ipamorelin",
+        "description": "Tesamorelin + Ipamorelin is a Research Use Only two-peptide research material combining tesamorelin (a GHRH analogue) and ipamorelin (a GHSR-1a growth hormone secretagogue), supplied by Veracue for laboratory research.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Veracue"
+        },
+        "category": "Growth Hormone Secretagogues",
+        "url": "https://veracue-peptides.vercel.app/product/tesamorelin-ipamorelin"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Tesamorelin + Ipamorelin Research Peptide | Veracue",
+        "description": "Molecular identity, evidence boundaries, formulation status, and COA guidance for Tesamorelin + Ipamorelin, a two-peptide RUO research material.",
+        "url": "https://veracue-peptides.vercel.app/product/tesamorelin-ipamorelin"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://veracue-peptides.vercel.app/" },
+          { "@type": "ListItem", "position": 2, "name": "Shop", "item": "https://veracue-peptides.vercel.app/shop" },
+          { "@type": "ListItem", "position": 3, "name": "Tesamorelin + Ipamorelin", "item": "https://veracue-peptides.vercel.app/product/tesamorelin-ipamorelin" }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "What is Tesamorelin + Ipamorelin?", "acceptedAnswer": { "@type": "Answer", "text": "It is a Veracue research offering combining two separate peptides -- tesamorelin, a GHRH analogue, and ipamorelin, a ghrelin-receptor growth hormone secretagogue -- supplied together for laboratory research. It is not a single molecule and not a clinically validated combined product." } },
+          { "@type": "Question", "name": "What is tesamorelin?", "acceptedAnswer": { "@type": "Answer", "text": "Tesamorelin (TH9507) is a synthetic 44-residue analogue of human growth hormone-releasing hormone (GHRH), studied as a GHRH-receptor agonist. Under the brand names Egrifta WR and Egrifta SV, an approved pharmaceutical formulation is FDA-indicated for reducing excess abdominal fat in HIV-infected adults with lipodystrophy." } },
+          { "@type": "Question", "name": "What is ipamorelin?", "acceptedAnswer": { "@type": "Answer", "text": "Ipamorelin is a synthetic pentapeptide studied as a selective growth hormone secretagogue that acts at the ghrelin receptor (GHSR-1a), a pathway distinct from GHRH signaling. No FDA-approved pharmaceutical product based on ipamorelin was identified." } },
+          { "@type": "Question", "name": "What is a tesa ipa blend?", "acceptedAnswer": { "@type": "Answer", "text": "\"Tesa ipa blend\" is informal market shorthand for a tesamorelin-plus-ipamorelin research product. Veracue uses the descriptive name Tesamorelin + Ipamorelin because \"blend\" does not communicate a verified ratio, and this page does not treat any such term as evidence of a validated formulation." } },
+          { "@type": "Question", "name": "Is Tesamorelin + Ipamorelin the same as a tesamorelin pharmaceutical product like Egrifta?", "acceptedAnswer": { "@type": "Answer", "text": "No. Egrifta WR and Egrifta SV are FDA-approved injectable pharmaceutical products containing tesamorelin alone, for a specific HIV-lipodystrophy indication. The Veracue Tesamorelin + Ipamorelin material is a two-peptide research product, is not FDA approved, and should not be assumed to share formulation, dosing, or safety data with the approved drug." } },
+          { "@type": "Question", "name": "How does tesamorelin work at the receptor level?", "acceptedAnswer": { "@type": "Answer", "text": "Tesamorelin is studied as an agonist at the GHRH receptor (GHRHR) on pituitary somatotrophs, the same target as endogenous growth hormone-releasing hormone." } },
+          { "@type": "Question", "name": "How does ipamorelin work at the receptor level?", "acceptedAnswer": { "@type": "Answer", "text": "Ipamorelin is studied as a selective agonist at the ghrelin / growth hormone secretagogue receptor (GHSR-1a), a distinct receptor system from GHRHR." } },
+          { "@type": "Question", "name": "What is the difference between tesamorelin and ipamorelin?", "acceptedAnswer": { "@type": "Answer", "text": "They are different molecules studied through different receptor pathways: tesamorelin is a 44-residue GHRH analogue acting on GHRHR, while ipamorelin is a 5-residue peptide acting on GHSR-1a. They differ in size, sequence, and mechanism -- they are not variants of the same compound." } },
+          { "@type": "Question", "name": "Is there direct research on the tesamorelin and ipamorelin combination?", "acceptedAnswer": { "@type": "Answer", "text": "No direct combination study was identified in the literature reviewed for this page. Published research on each peptide exists independently; no study of the two administered or formulated together was located." } },
+          { "@type": "Question", "name": "Does research prove that tesamorelin and ipamorelin are synergistic?", "acceptedAnswer": { "@type": "Answer", "text": "No. No direct combination study was identified, so no synergy claim is supported. Shared receptor biology at the pituitary level is a mechanistic observation, not evidence of a measured combined effect." } },
+          { "@type": "Question", "name": "What is the tesamorelin peptide sequence?", "acceptedAnswer": { "@type": "Answer", "text": "Tesamorelin shares the 44-amino-acid sequence of human GHRH(1-44), with an added N-terminal modification (a trans-3-hexenoyl group on the tyrosine residue). The full residue-by-residue sequence is documented in PubChem (CID 16137828)." } },
+          { "@type": "Question", "name": "What is the ipamorelin peptide sequence?", "acceptedAnswer": { "@type": "Answer", "text": "Ipamorelin's sequence is Aib-His-D-2-Nal-D-Phe-Lys-NH2, a five-residue peptide with a C-terminal amide (PubChem CID 9831659)." } },
+          { "@type": "Question", "name": "What should a Tesamorelin + Ipamorelin COA contain?", "acceptedAnswer": { "@type": "Answer", "text": "It should independently confirm the identity of both peptides in the tested lot (not just one), report a quantitative result for each component, name the analytical method, and show the lot number, testing laboratory, and test date." } },
+          { "@type": "Question", "name": "What does purity mean for a two-peptide research product?", "acceptedAnswer": { "@type": "Answer", "text": "Purity describes how much of the detected material, by a stated analytical method, is the intended compound rather than impurities or synthesis byproducts. For a combination product, purity should be reported for each peptide separately, since an overall figure can obscure a shortfall in either component." } },
+          { "@type": "Question", "name": "Is the Veracue Tesamorelin + Ipamorelin product FDA approved?", "acceptedAnswer": { "@type": "Answer", "text": "No. It is not FDA approved and has not been evaluated by the FDA for safety or efficacy. It is supplied strictly for laboratory research use." } },
+          { "@type": "Question", "name": "What does Research Use Only mean for Tesamorelin + Ipamorelin?", "acceptedAnswer": { "@type": "Answer", "text": "It means this material is intended strictly for laboratory and scientific research, not for human or veterinary administration, diagnosis, or treatment, and is offered and labelled on that basis." } }
+        ]
+      }
+    ]
+  }
+}
