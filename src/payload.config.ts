@@ -147,7 +147,11 @@ export default buildConfig({
     push: process.env.NODE_ENV !== 'production',
     pool: {
       connectionString: process.env.DATABASE_URI || process.env.DATABASE_URL || '',
-      max: process.env.NODE_ENV === 'production' ? 10 : 10,
+      // Supabase's session-mode pooler allows only ~15 client connections in total, and every
+      // Vercel instance (and each local dev server) holds its own pool. Keep each process small
+      // so a few concurrent instances can't exhaust the pooler (EMAXCONNSESSION -> "error
+      // initializing Payload"). Use the transaction-mode pooler (port 6543) in production.
+      max: process.env.NODE_ENV === 'production' ? 2 : 3,
       ssl: {
         rejectUnauthorized: false,
       },
