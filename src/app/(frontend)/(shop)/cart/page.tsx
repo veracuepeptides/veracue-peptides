@@ -4,6 +4,7 @@ import { getTranslations, getMessages } from 'next-intl/server'
 import { NextIntlClientProvider } from 'next-intl'
 import { pickMessages } from '@/lib/i18n/pickMessages'
 import { CartClient } from './CartClient'
+import { getVisibleCategories } from '@/app/(frontend)/actions/categories'
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('cartPage')
@@ -16,11 +17,13 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function CartPage() {
   const pageMessages = pickMessages(await getMessages(), ['checkout.cartClient'])
+  // Cached, like the header's list. Used for the category shortcuts when the cart is empty.
+  const categories = await getVisibleCategories().catch(() => [])
   return (
     <div className="bg-[#f0efeb] min-h-screen">
       <div className="pt-24 sm:pt-32 lg:pt-40 pb-20">
         <NextIntlClientProvider messages={pageMessages}>
-          <CartClient />
+          <CartClient categories={categories} />
         </NextIntlClientProvider>
       </div>
     </div>

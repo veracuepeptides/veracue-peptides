@@ -27,6 +27,7 @@ import {
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import { getCategoryDisplayName } from '@/lib/categoryDisplay'
+import { categoryShopHref } from '@/lib/shop/categoryLinks'
 import { useCartStore } from '@/lib/cart/store'
 import { useWishlistStore } from '@/lib/wishlist/store'
 import { useFocusTrap } from '@/lib/useFocusTrap'
@@ -517,7 +518,7 @@ export function MobileMenu({
                     return (
                       <Link
                         key={cat.id}
-                        href={`/shop?category=${encodeURIComponent(cat.name)}`}
+                        href={categoryShopHref(cat.name)}
                         onClick={onClose}
                         className="snap-center shrink-0 w-[230px] sm:w-[260px] aspect-[16/11] rounded-2xl overflow-hidden relative group border border-[#282a21]/10 shadow-[0_4px_16px_rgba(0,0,0,0.06)] active:scale-[0.98] transition-all duration-200"
                       >

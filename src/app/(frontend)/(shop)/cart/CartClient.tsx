@@ -30,8 +30,11 @@ import { getProductsFromAffiliateCart } from '@/app/(frontend)/actions/cart'
 import { usePricingConfig } from '@/lib/pricing/usePricingConfig'
 import { estimateDomesticShipping } from '@/lib/pricing/shipping'
 import { MAX_LINE_QUANTITY } from '@/lib/orders/checkoutLines'
+import { getCategoryDisplayName } from '@/lib/categoryDisplay'
+import { categoryShopHref } from '@/lib/shop/categoryLinks'
 
-export function CartClient() {
+// `categories` are the visible categories from Payload, read by the cart page on the server.
+export function CartClient({ categories = [] }: { categories?: { id?: string | number; name: string; slug?: string }[] }) {
   const t = useTranslations('checkout.cartClient')
   const {
     items,
@@ -398,26 +401,24 @@ export function CartClient() {
           />
 
           {/* Quick Categories */}
+          {categories.length > 0 && (
           <div className="mt-10 pt-8 border-t border-[#eddcd2] w-full max-w-sm mx-auto">
             <span className="text-[10.5px] font-sans font-bold uppercase tracking-[0.16em] text-[#a5a58d] block mb-3">
               Popular Research Areas
             </span>
             <div className="flex flex-wrap justify-center gap-2">
-              {[
-                { name: 'Metabolic', href: '/shop?category=Weight+Loss+%26+Metabolic' },
-                { name: 'Tissue Repair', href: '/shop?category=Cellular+Repair+%26+Healing' },
-                { name: 'Longevity', href: '/shop?category=Longevity+%26+Anti-Aging' },
-              ].map((cat) => (
+              {categories.slice(0, 3).map((cat) => (
                 <Link
-                  key={cat.name}
-                  href={cat.href}
+                  key={cat.id ?? cat.name}
+                  href={categoryShopHref(cat.name)}
                   className="text-xs font-sans font-medium px-3.5 py-1.5 rounded-full bg-[#f0efeb] border border-[#eddcd2] text-neutral-800 hover:border-[#cb997e] hover:text-[#cb997e] hover:bg-white transition-all shadow-2xs"
                 >
-                  {cat.name}
+                  {getCategoryDisplayName(cat.name)}
                 </Link>
               ))}
             </div>
           </div>
+          )}
         </div>
       </Container>
     )

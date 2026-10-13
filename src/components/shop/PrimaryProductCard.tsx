@@ -3,13 +3,11 @@
 import React, { useState, useRef } from 'react'
 import Image from 'next/image'
 import { Link, useRouter } from '@/i18n/navigation'
-import { Heart, ShoppingCart, ChevronRight, Check, Loader2 } from 'lucide-react'
+import { Heart, ShoppingCart, ChevronRight, Loader2 } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useSession } from 'next-auth/react'
 import { useTranslations } from 'next-intl'
 import { useWishlistStore } from '@/lib/wishlist/store'
-import { useCartStore } from '@/lib/cart/store'
-import { trackAddToCart } from '@/lib/analytics/ga'
 import { toast } from 'sonner'
 
 export interface Product {
@@ -23,8 +21,8 @@ export interface Product {
   originalPrice?: string
   discountPercentage?: number
   category: string
-  // True when the product has more than one variant, so quick-add cards must send the
-  // shopper to the PDP to pick one instead of silently adding a "Default" line.
+  // True when the product has more than one variant. Cards no longer add to the cart themselves (the
+  // cart icon opens the product page), so this is kept only for callers that still pass it.
   hasVariants?: boolean
 }
 
@@ -39,28 +37,11 @@ function SlideToAddButton({ product }: { product: Product }) {
   const t = useTranslations('shop.primaryProductCard')
   const router = useRouter()
   const containerRef = useRef<HTMLDivElement>(null)
-  const [isAdded, setIsAdded] = useState(false)
-  const cartStore = useCartStore()
 
+  // Sliding opens the product page where the variant is chosen. Adding from the card put a "Default"
+  // line in the cart, because the card does not know which size the shopper wants.
   const handleAdd = () => {
-    // Multi-variant products can't be added as a single "Default" line — send the shopper
-    // to the PDP to pick a variant first, same as the rest of the shop.
-    if (product.hasVariants) {
-      router.push(`/product/${product.slug}`)
-      return
-    }
-
-    cartStore.addItem(
-      { id: product.id || product.slug, name: product.name, imageUrl: product.image, slug: product.slug },
-      'Default',
-      1,
-      parseFloat(product.priceRange.replace(/[^0-9.]/g, '')) || 0
-    )
-    trackAddToCart({ id: product.id || product.slug, name: product.name, price: parseFloat(product.priceRange.replace(/[^0-9.]/g, '')) || 0, quantity: 1 })
-    setIsAdded(true)
-    // No toast: the drawer opens and confirms the add (a toast would cover its checkout button)
-    cartStore.openCart()
-    setTimeout(() => setIsAdded(false), 2000)
+    router.push(`/product/${product.slug}`)
   }
 
   const handleDragEnd = (event: any, info: any) => {
@@ -102,10 +83,10 @@ function SlideToAddButton({ product }: { product: Product }) {
         onDragEnd={handleDragEnd}
         whileTap={{ scale: 0.98 }}
         className={`absolute left-1 w-[32px] h-[32px] sm:w-[44px] sm:h-[44px] rounded-full flex items-center justify-center cursor-grab active:cursor-grabbing z-10 shadow-sm transition-colors duration-300 ${
-          isAdded ? 'bg-green-600 text-white' : 'bg-[#1A1A1A] text-white'
+          'bg-[#1A1A1A] text-white'
         }`}
       >
-        {isAdded ? <Check size={14} className="sm:w-4 sm:h-4" /> : <ShoppingCart size={14} className="sm:w-4 sm:h-4" />}
+        <ShoppingCart size={14} className="sm:w-4 sm:h-4" />
       </motion.button>
     </div>
   )

@@ -51,6 +51,9 @@ export function AnnouncementBar() {
 
   const [index, setIndex] = useState(0)
   const [paused, setPaused] = useState(false)
+  // The tallest height the bar has had. On a phone the rotating messages wrap to one or two lines;
+  // holding the bar at the tallest keeps the page below it from moving every time the message changes.
+  const [minHeight, setMinHeight] = useState<number | undefined>(undefined)
   const barRef = useRef<HTMLDivElement>(null)
 
   const messages = [
@@ -103,11 +106,21 @@ export function AnnouncementBar() {
   useEffect(() => {
     const el = barRef.current
     if (!el) return
-    const publish = () => document.documentElement.style.setProperty('--announcement-bar-height', `${el.offsetHeight}px`)
+    const publish = () => {
+      const height = el.offsetHeight
+      document.documentElement.style.setProperty('--announcement-bar-height', `${height}px`)
+      setMinHeight((previous) => (previous === undefined || height > previous ? height : previous))
+    }
     publish()
     const observer = new ResizeObserver(publish)
     observer.observe(el)
-    return () => observer.disconnect()
+    // A different screen width wraps the text differently, so measure again from scratch.
+    const remeasure = () => setMinHeight(undefined)
+    window.addEventListener('resize', remeasure)
+    return () => {
+      observer.disconnect()
+      window.removeEventListener('resize', remeasure)
+    }
   }, [])
 
   if (dismissed) return null
@@ -131,8 +144,8 @@ export function AnnouncementBar() {
       initial="visible"
       animate={headerHidden ? 'hidden' : 'visible'}
       transition={{ duration: 0.28, ease: 'easeInOut' }}
-      style={{ pointerEvents: headerHidden ? 'none' : 'auto' }}
-      className="fixed top-0 inset-x-0 z-[60] w-full bg-[#20221c] text-[#fff1e6] print:hidden"
+      style={{ pointerEvents: headerHidden ? 'none' : 'auto', minHeight }}
+      className="fixed top-0 inset-x-0 z-[60] w-full flex flex-col justify-center bg-[#20221c] text-[#fff1e6] print:hidden"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       onFocus={() => setPaused(true)}
@@ -170,5 +183,27 @@ export function AnnouncementBar() {
         </button>
       </div>
     </motion.div>
+  )
+}
+
+/**
+ * Space in the page for the announcement bar. The bar is fixed to the top of the screen and the header is
+ * pushed down to clear it, but pages are laid out from the top of the document, so without this the
+ * header covers the first 40 to 55px of every page. This keeps each page in the same position relative to
+ * the header as it was before the bar existed, and goes away once the bar is dismissed. The bar's height
+ * is published as --announcement-bar-height; the fallbacks cover the moment before it has been measured.
+ */
+export function AnnouncementBarSpacer() {
+  const dismissed = useAnnouncementBarStore((state) => state.dismissed)
+  // The dismissed flag comes from localStorage, which the server cannot see. Waiting until after mount keeps
+  // the first client render identical to the server's.
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => setMounted(true), [])
+  if (mounted && dismissed) return null
+  return (
+    <div
+      aria-hidden="true"
+      className="shrink-0 print:hidden h-[var(--announcement-bar-height,3.5rem)] sm:h-[var(--announcement-bar-height,2.5rem)]"
+    />
   )
 }

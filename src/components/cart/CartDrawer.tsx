@@ -21,8 +21,11 @@ import { MAX_LINE_QUANTITY } from '@/lib/orders/checkoutLines'
 import { usePricingConfig } from '@/lib/pricing/usePricingConfig'
 import { estimateDomesticShipping, getFreeShippingThreshold } from '@/lib/pricing/shipping'
 import { useFocusTrap } from '@/lib/useFocusTrap'
+import { getCategoryDisplayName } from '@/lib/categoryDisplay'
+import { categoryShopHref } from '@/lib/shop/categoryLinks'
 
-export function CartDrawer() {
+// `categories` are the visible categories from Payload (the header passes the same list it shows).
+export function CartDrawer({ categories = [] }: { categories?: { id?: string | number; name: string; slug?: string }[] }) {
   const t = useTranslations('checkout.cartDrawer')
   const { isOpen, closeCart, items, removeItem, updateQuantity } = useCartStore()
 
@@ -161,27 +164,25 @@ export function CartDrawer() {
                 />
 
                 {/* Popular Categories Shortcut */}
+                {categories.length > 0 && (
                 <div className="mt-8 pt-6 border-t border-[#eddcd2] w-full max-w-xs">
                   <span className="text-[10px] font-sans font-bold uppercase tracking-[0.16em] text-[#a5a58d] block mb-2.5">
                     Featured Research Areas
                   </span>
                   <div className="flex flex-wrap justify-center gap-1.5">
-                    {[
-                      { name: 'Metabolic', href: '/shop?category=Weight+Loss+%26+Metabolic' },
-                      { name: 'Tissue Repair', href: '/shop?category=Cellular+Repair+%26+Healing' },
-                      { name: 'Longevity', href: '/shop?category=Longevity+%26+Anti-Aging' },
-                    ].map((cat) => (
+                    {categories.slice(0, 3).map((cat) => (
                       <Link
-                        key={cat.name}
-                        href={cat.href}
+                        key={cat.id ?? cat.name}
+                        href={categoryShopHref(cat.name)}
                         onClick={closeCart}
                         className="text-[11.5px] font-sans font-medium px-3 py-1 rounded-full bg-white border border-[#eddcd2] text-neutral-800 hover:border-[#cb997e] hover:text-[#cb997e] transition-colors shadow-2xs"
                       >
-                        {cat.name}
+                        {getCategoryDisplayName(cat.name)}
                       </Link>
                     ))}
                   </div>
                 </div>
+                )}
               </div>
             ) : (
               /* --- 3. Populated Cart --- */

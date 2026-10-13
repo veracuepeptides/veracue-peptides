@@ -22,6 +22,7 @@ import { useTranslations } from 'next-intl'
 import { Link, useRouter } from '@/i18n/navigation'
 import Image from 'next/image'
 import { getCategoryDisplayName } from '@/lib/categoryDisplay'
+import { categoryShopHref, productInCategory } from '@/lib/shop/categoryLinks'
 import { useLenis } from 'lenis/react'
 
 export interface QuickCategory {
@@ -155,10 +156,7 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
   // Filter results by selected category tab
   const filteredResults = useMemo(() => {
     if (selectedCategory === 'all') return results
-    return results.filter((item) => {
-      if (!item.categories) return false
-      return item.categories.toLowerCase().includes(selectedCategory.toLowerCase())
-    })
+    return results.filter((item) => productInCategory(item, selectedCategory))
   }, [results, selectedCategory])
 
   // Active product for live inspector
@@ -319,10 +317,19 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
                 >
                   All Syntheses
                 </button>
-                {categories.slice(0, 6).map((cat) => (
+                {categories.slice(0, 12).map((cat) => (
                   <button
                     key={cat.id}
-                    onClick={() => setSelectedCategory(selectedCategory === cat.name ? 'all' : cat.name)}
+                    onClick={() => {
+                      // With nothing typed there are no results to narrow, so a category tab opens that
+                      // category in the shop, like the list of categories further down.
+                      if (!query.trim()) {
+                        onClose()
+                        router.push(categoryShopHref(cat.name))
+                        return
+                      }
+                      setSelectedCategory(selectedCategory === cat.name ? 'all' : cat.name)
+                    }}
                     className={`px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider transition-all shrink-0 ${
                       selectedCategory === cat.name
                         ? 'bg-[#20221c] text-[#f0efeb] shadow-sm'
@@ -385,10 +392,10 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
                           </span>
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                          {categories.slice(0, 6).map((cat) => (
+                          {categories.slice(0, 12).map((cat) => (
                             <Link
                               key={cat.id}
-                              href={`/shop?category=${encodeURIComponent(cat.name)}`}
+                              href={categoryShopHref(cat.name)}
                               onClick={onClose}
                               className="group flex items-center justify-between p-3 rounded-xl bg-white/60 hover:bg-white border border-[#20221c]/10 hover:border-[#20221c]/25 hover:shadow-sm transition-all"
                             >

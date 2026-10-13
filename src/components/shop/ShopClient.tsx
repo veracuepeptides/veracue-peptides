@@ -225,6 +225,18 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
 
   // Active filter helper
   const activeCategories = searchParams.getAll('category')
+
+  // A category link in the header ends in #catalog-browser. When the shop is already open the browser does
+  // not always scroll to a hash, so bring the filters and products into view here. The pills and filters on
+  // this page change the URL without the hash, so they never trigger this.
+  useEffect(() => {
+    if (window.location.hash !== '#catalog-browser') return
+    const target = document.getElementById('catalog-browser')
+    if (!target) return
+    const margin = parseFloat(getComputedStyle(target).scrollMarginTop) || 0
+    if (Math.abs(target.getBoundingClientRect().top - margin) < 6) return // already there
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }, [searchParams])
   const isInStockActive = searchParams.get('inStock') === 'true'
   const isOnSaleActive = searchParams.get('onSale') === 'true'
   const currentSort = searchParams.get('sort') || 'newest'
@@ -285,7 +297,7 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
       <ShopHero />
 
       {/* 2. Catalog Anchor & Main Browser Section */}
-      <div id="catalog-browser" className="w-full max-w-[1400px] mx-auto px-3 sm:px-6 md:px-10 pt-10 sm:pt-14 md:pt-18 pb-16 sm:pb-24">
+      <div id="catalog-browser" className="scroll-mt-10 sm:scroll-mt-12 w-full max-w-[1400px] mx-auto px-3 sm:px-6 md:px-10 pt-10 sm:pt-14 md:pt-18 pb-16 sm:pb-24">
         
         {/* Sticky Controls & Filter Capsule */}
         <div

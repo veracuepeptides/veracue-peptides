@@ -7,11 +7,9 @@ import { useRouter } from 'next/navigation'
 import { ShoppingBag } from 'lucide-react'
 import { useSession } from 'next-auth/react'
 import { useWishlistStore } from '@/lib/wishlist/store'
-import { useCartStore } from '@/lib/cart/store'
 import { toast } from 'sonner'
 import { Product } from '@/components/shop/PrimaryProductCard'
 import { AnimatedWishlistHeart } from '@/components/shared/AnimatedWishlistHeart'
-import { trackAddToCart } from '@/lib/analytics/ga'
 
 export interface ProductCardProps {
   product: Product | any
@@ -58,7 +56,6 @@ export function ProductCard({ product, compact = false }: ProductCardProps) {
   const isWishlistedGlobal = useWishlistStore(state => product.id ? state.hasItem(product.id) : false)
   const { status } = useSession()
   const isSignedIn = status === 'authenticated'
-  const cartStore = useCartStore()
   const router = useRouter()
 
   const [inWishlist, setInWishlist] = useState(isWishlistedGlobal)
@@ -109,24 +106,12 @@ export function ProductCard({ product, compact = false }: ProductCardProps) {
     }
   }
 
+  // The cart icon opens the product page instead of adding anything. A card cannot know which variant
+  // (size) the shopper wants, and adding from here put a "Default" line in the cart.
   const handleAddToCart = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault()
     e.stopPropagation()
-
-    if (product.hasVariants) {
-      router.push(`/product/${product.slug}`)
-      return
-    }
-
-    cartStore.addItem(
-      { id: product.id || product.slug, name: product.name, imageUrl: getImageUrl(product), slug: product.slug },
-      'Default',
-      1,
-      priceVal
-    )
-    trackAddToCart({ id: product.id || product.slug, name: product.name, price: priceVal, quantity: 1 })
-    // No toast: the drawer opens and confirms the add (a toast would cover its checkout button)
-    cartStore.openCart()
+    router.push(`/product/${product.slug}`)
   }
 
   return (
@@ -201,7 +186,8 @@ export function ProductCard({ product, compact = false }: ProductCardProps) {
             {/* Cart Button */}
             <button
               onClick={handleAddToCart}
-              aria-label="Add to cart"
+              aria-label="Choose options"
+              title="Choose options"
               className={`${dockButtonSize} sm:w-11 sm:h-11 rounded-[14px] sm:rounded-[18px] bg-[#f0efeb] hover:bg-[#eddcd2] text-neutral-800 hover:text-neutral-950 flex items-center justify-center transition-all duration-300 pointer-events-auto active:scale-90 shadow-sm`}
             >
               <ShoppingBag className="w-4 h-4 sm:w-[18px] sm:h-[18px]" strokeWidth={1.75} />

@@ -3,7 +3,7 @@
 import React, { useEffect } from 'react'
 import { usePathname } from '@/i18n/navigation'
 import { useCartStore } from '@/lib/cart/store'
-import { AnnouncementBar } from './AnnouncementBar'
+import { AnnouncementBar, AnnouncementBarSpacer } from './AnnouncementBar'
 
 const HIDDEN_HEADER_PREFIXES: string[] = []
 
@@ -20,6 +20,8 @@ export function LayoutClientWrapper({
   const couponCode = useCartStore(state => state.couponCode)
   const pathname = usePathname() || ''
   const hideHeader = HIDDEN_HEADER_PREFIXES.some(prefix => pathname.startsWith(prefix))
+  // The home page hero already adds the bar's height to its own top padding.
+  const needsBarSpace = !hideHeader && pathname !== '/'
 
   useEffect(() => {
     // Check if we have an auto_coupon cookie
@@ -44,6 +46,7 @@ export function LayoutClientWrapper({
       </a>
       {!hideHeader && <AnnouncementBar />}
       {!hideHeader && header}
+      {needsBarSpace && <AnnouncementBarSpacer />}
       <main id="main-content" tabIndex={-1} className="flex-1 flex flex-col relative outline-none">
         {children}
       </main>

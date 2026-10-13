@@ -33,6 +33,7 @@ import {
   Truck,
   Lock,
   Layers,
+  Wind,
   CheckCircle2
 } from 'lucide-react'
 import { MobileMenu } from './MobileMenu'
@@ -43,11 +44,26 @@ import dynamic from 'next/dynamic'
 import { useSession } from 'next-auth/react'
 import { SearchOverlay } from './SearchOverlay'
 import { getCategoryDisplayName } from '@/lib/categoryDisplay'
+import { categoryIconKey, categoryShopHref, type CategoryIconKey } from '@/lib/shop/categoryLinks'
 
 const CartDrawer = dynamic(() => import('@/components/cart/CartDrawer').then(mod => mod.CartDrawer), { ssr: false })
 
 interface ClientHeaderProps {
   categories?: any[]
+}
+
+// Payload categories have no icon field, so the icon comes from the wording of the category name.
+const CATEGORY_ICONS: Record<CategoryIconKey, typeof Activity> = {
+  metabolic: Activity,
+  healing: HeartPulse,
+  longevity: Clock,
+  skin: Sparkles,
+  cognitive: Brain,
+  growth: TrendingUp,
+  energy: Zap,
+  spray: Wind,
+  hormonal: Layers,
+  default: FlaskConical,
 }
 
 export function ClientHeader({
@@ -209,6 +225,8 @@ export function ClientHeader({
   // Active section detection
   const isShopActive = pathname === '/shop' || pathname.startsWith('/shop/') || pathname.startsWith('/product/')
   const isCollectionsActive = pathname.includes('category=')
+  // The categories shown in the dropdown: the visible ones saved in Payload, in the order set in the admin.
+  const headerCategories = categoriesData.filter((cat) => cat?.name).slice(0, 12)
   const isPagesActive = ['/about-us', '/blog', '/peptide-calculator', '/faq', '/contact-us'].some(p => pathname.startsWith(p))
   const isFeaturesActive = ['/certificates', '/affiliates', '/shipping-policy', '/refund-policy', '/terms-and-conditions', '/medical-disclaimer', '/privacy-policy'].some(p => pathname.startsWith(p))
 
@@ -314,7 +332,7 @@ export function ClientHeader({
                     </Link>
                   </div>
 
-                  {/* 2. Collections Trigger */}
+                  {/* 2. Categories Trigger */}
                   <div
                     className="relative h-full flex items-center"
                     onMouseEnter={() => handleDropdownEnter('collections')}
@@ -328,7 +346,7 @@ export function ClientHeader({
                         isCollectionsActive || activeDropdown === 'collections' ? 'text-white font-bold' : 'text-white/85 hover:text-white'
                       }`}
                     >
-                      <span>Collections</span>
+                      <span>Categories</span>
                       <ChevronDown
                         size={12}
                         strokeWidth={2.5}
@@ -614,13 +632,13 @@ export function ClientHeader({
                           </div>
                         </motion.div>
 
-                        {/* 2. COLLECTIONS SHELF */}
+                        {/* 2. CATEGORIES SHELF */}
                         <motion.div initial={false} animate={activeDropdown === 'collections' ? { opacity: 1, y: 0 } : { opacity: 0, y: 4 }} transition={{ duration: 0.15, ease: 'easeOut' }} className={activeDropdown === 'collections' ? 'block' : 'hidden'}>
                           <div className="flex items-start gap-8 lg:gap-12">
-                            {/* Left Column: / collections */}
+                            {/* Left Column: / categories */}
                             <div className="w-[190px] lg:w-[230px] shrink-0 pt-0.5">
                               <span className="text-[25px] lg:text-[28px] font-editorial font-bold text-white tracking-[0.02em] block leading-none">
-                                / collections
+                                / categories
                               </span>
                               <span className="text-[10.5px] text-white/80 uppercase tracking-[0.18em] font-sans font-semibold block mt-2.5">
                                 Research Fields
@@ -633,23 +651,14 @@ export function ClientHeader({
                               </div>
                             </div>
 
-                            {/* Right: 8 Categories in 2 Rows x 4 Columns */}
+                            {/* Right: the categories from Payload, four to a row */}
                             <div className="flex-1 grid grid-cols-4 gap-x-6 lg:gap-x-8 gap-y-3.5 lg:gap-y-4">
-                              {[
-                                { name: 'GLP-1 & Metabolic', query: 'GLP-1 & Metabolic', desc: 'Incretin mimetics & GLP-1/GIP agonists', icon: Activity },
-                                { name: 'Healing & Recovery', query: 'Healing & Recovery', desc: 'BPC-157, TB-500 & tissue repair', icon: HeartPulse },
-                                { name: 'Longevity & Aging', query: 'Longevity & Anti-Aging', desc: 'Epithalon, NAD+ & telomeres', icon: Clock },
-                                { name: 'Cosmetic & Skin', query: 'Cosmetic & Skin', desc: 'GHK-Cu & matrix peptides', icon: Sparkles },
-                                { name: 'Cognitive & Focus', query: 'Cognitive & Nootropic', desc: 'Semax, Selank & neurogenesis', icon: Brain },
-                                { name: 'GH Secretagogues', query: 'Growth Hormone Secretagogue', desc: 'CJC-1295, Ipamorelin & GH axis', icon: TrendingUp },
-                                { name: 'Energy & Biogenesis', query: 'Performance & Energy', desc: 'Mitochondrial stamina compounds', icon: Zap },
-                                { name: 'Sexual & Hormonal', query: 'Sexual & Hormonal', desc: 'PT-141 & endocrine signaling', icon: Layers },
-                              ].map((cat) => {
-                                const CatIcon = cat.icon
+                              {headerCategories.map((cat) => {
+                                const CatIcon = CATEGORY_ICONS[categoryIconKey(cat.name)]
                                 return (
                                   <Link
-                                    key={cat.name}
-                                    href={`/shop?category=${encodeURIComponent(cat.query)}`}
+                                    key={cat.id ?? cat.slug ?? cat.name}
+                                    href={categoryShopHref(cat.name)}
                                     onClick={() => setActiveDropdown(null)}
                                     className="group/item p-3 rounded-xl hover:bg-white/[0.15] active:bg-white/25 transition-all duration-200 block cursor-pointer"
                                   >
@@ -659,11 +668,13 @@ export function ClientHeader({
                                       </div>
                                       <div className="min-w-0 flex-1">
                                         <span className="text-[14px] font-editorial font-bold text-white group-hover/item:text-white tracking-[0.02em] block leading-snug truncate">
-                                          {cat.name}
+                                          {getCategoryDisplayName(cat.name)}
                                         </span>
-                                        <p className="text-[12px] text-white/80 group-hover/item:text-white leading-relaxed font-normal mt-0.5 line-clamp-1 transition-colors">
-                                          {cat.desc}
-                                        </p>
+                                        {cat.description && (
+                                          <p className="text-[12px] text-white/80 group-hover/item:text-white leading-relaxed font-normal mt-0.5 line-clamp-2 transition-colors">
+                                            {cat.description}
+                                          </p>
+                                        )}
                                       </div>
                                     </div>
                                   </Link>
@@ -977,7 +988,7 @@ export function ClientHeader({
       />
 
       {/* Cart Drawer */}
-      <CartDrawer />
+      <CartDrawer categories={categoriesData} />
 
       {/* Global Search Overlay */}
       <SearchOverlay

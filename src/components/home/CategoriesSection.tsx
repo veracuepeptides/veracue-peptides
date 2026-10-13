@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { Link } from '@/i18n/navigation'
 import Image from 'next/image'
 import { getCategoryDisplayName } from '@/lib/categoryDisplay'
+import { categoryShopHref } from '@/lib/shop/categoryLinks'
 import { ArrowRight } from 'lucide-react'
 import { HeroButton } from '@/components/ui/hero-button'
 
@@ -139,7 +140,7 @@ export function CategoriesSection({ categories = [] }: CategoriesSectionProps) {
                 viewport={{ once: true }}
               >
                 <Link
-                  href={`/shop?category=${encodeURIComponent(category.name)}`}
+                  href={categoryShopHref(category.name)}
                   className="group relative w-full h-[72px] xs:h-[80px] sm:h-[94px] md:h-[106px] lg:h-[114px] rounded-full overflow-hidden flex items-center justify-between px-3.5 xs:px-4 sm:px-6 md:px-8 border border-neutral-200/80 shadow-[0_4px_16px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_32px_rgba(0,0,0,0.12)] transition-all duration-500 cursor-pointer"
                 >
                   {/* Background Panoramic Macro Image */}

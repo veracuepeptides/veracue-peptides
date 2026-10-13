@@ -72,7 +72,9 @@ export function CheckoutClient() {
   const user = session?.user
   
   // Mobile summary toggle
-  const [mobileSummaryOpen, setMobileSummaryOpen] = useState(true)
+  // Starts collapsed so the contact form is the first thing on a phone; tapping the bar opens the summary
+  // in place and pushes the form down.
+  const [mobileSummaryOpen, setMobileSummaryOpen] = useState(false)
 
   // Dynamic header visibility & sticky scroll tracker
   const [headerHidden, setHeaderHidden] = useState(false)
@@ -845,12 +847,10 @@ export function CheckoutClient() {
           </div>
         </div>
 
-        {/* --- Mobile Order Summary Accordion (Sticky) --- */}
-        <div
-          className={`lg:hidden mb-6 sm:mb-8 sticky z-30 transition-all duration-300 ease-out ${
-            headerHidden ? 'top-3' : 'top-[76px] sm:top-[92px]'
-          }`}
-        >
+        {/* --- Mobile Order Summary Accordion ---
+            An ordinary block in the page, not pinned. It used to be sticky and start open, so on a phone it
+            sat over the contact form and the form scrolled out from behind it. */}
+        <div className="lg:hidden mb-6 sm:mb-8">
           <div className="rounded-3xl bg-white/95 backdrop-blur-md border border-[#eddcd2] shadow-sm overflow-hidden">
             <button
               type="button"
