@@ -10,8 +10,8 @@ import '@/app/globals.css'
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID
 
 export const metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'),
-  title: { default: 'Veracue Peptides', template: '%s | Veracue Peptides' },
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com'),
+  title: { default: 'Veracue Labs', template: '%s | Veracue Labs' },
   description: 'Laboratory Research Peptides & Analytical Standards',
   icons: {
     icon: [
@@ -57,9 +57,9 @@ export default async function AuthLayout({ children }: { children: React.ReactNo
       <body className="min-h-screen lg:h-screen lg:overflow-hidden antialiased bg-[#f0efeb] text-[#20221c]" suppressHydrationWarning>
         <AuthSessionProvider>
           <NextIntlClientProvider messages={messages}>
-            <div className="min-h-screen lg:h-screen lg:overflow-hidden bg-[#f0efeb] text-[#20221c] selection:bg-[#20221c] selection:text-[#f0efeb]">
+            <main id="main-content" className="min-h-screen lg:h-screen lg:overflow-hidden bg-[#f0efeb] text-[#20221c] selection:bg-[#20221c] selection:text-[#f0efeb]">
               {children}
-            </div>
+            </main>
           </NextIntlClientProvider>
         </AuthSessionProvider>
       </body>

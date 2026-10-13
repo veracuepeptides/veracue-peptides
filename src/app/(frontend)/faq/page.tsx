@@ -16,7 +16,7 @@ function toPlainText(html: string): string {
     .replace(/&quot;/g, '"')
     .replace(/&#39;/g, "'")
     .replace(/&amp;/g, '&')
-    .replace(/s+/g, ' ')
+    .replace(/\s+/g, ' ')
     .trim()
 }
 
@@ -40,7 +40,7 @@ export async function generateMetadata(): Promise<Metadata> {
       description,
       type: 'website',
       url: path,
-      siteName: 'Veracue Peptides',
+      siteName: 'Veracue Labs',
       images: [
         {
           url: getOgImageUrl(title, description, undefined, 'FREQUENTLY ASKED QUESTIONS', 'veracue-glow-50mg-water-splash-grey-bg.webp'),
@@ -78,7 +78,7 @@ export default async function FaqPage() {
     }))
   ).slice(0, 50);
 
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com'
   const path = `/${slug}`
   const url = `${baseUrl}${path}`
 

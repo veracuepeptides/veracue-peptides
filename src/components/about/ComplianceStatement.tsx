@@ -80,7 +80,7 @@ export function ComplianceStatement() {
           className="whitespace-nowrap will-change-transform opacity-10"
         >
           <span className="font-heading font-black text-[5.5rem] sm:text-[8rem] md:text-[10rem] lg:text-[12rem] text-white uppercase tracking-tighter leading-none block">
-            VERACUE CHEMICAL SUPPLY • RESEARCH USE ONLY • HPLC TESTED • ZERO CLINICAL CLAIMS •
+            VERACUE LABS • RESEARCH USE ONLY • HPLC TESTED • ZERO CLINICAL CLAIMS •
           </span>
         </motion.div>
       </div>
@@ -177,7 +177,7 @@ export function ComplianceStatement() {
           <div className="inline-flex items-center gap-2.5 bg-black/25 backdrop-blur-md px-5 sm:px-8 py-2.5 sm:py-3 rounded-full border border-white/20 shadow-sm">
             <span className="w-2 h-2 rounded-full bg-[#cb997e] animate-pulse" />
             <p className="text-xs sm:text-[13px] font-sans text-white/90 tracking-wider uppercase font-medium">
-              Veracue Chemical Supply &bull; Regulated Research Distribution &bull; All Lots Serialized
+              Veracue Labs &bull; Regulated Research Distribution &bull; All Lots Serialized
             </p>
           </div>
         </motion.div>

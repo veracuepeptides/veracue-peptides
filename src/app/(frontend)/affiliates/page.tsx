@@ -49,7 +49,7 @@ export async function generateMetadata({
       description,
       type: 'website',
       url: path,
-      siteName: 'Veracue Peptides',
+      siteName: 'Veracue Labs',
       images: [
         {
           url: getOgImageUrl(title, description, undefined, 'PARTNERSHIP PROGRAM', 'veracue-glow-50mg-beach-shore-landscape.webp'),
@@ -87,7 +87,7 @@ export default async function AffiliatesLandingPage({
   }
   const title = t('metaTitle')
   const description = t('metaDescription')
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com'
   const path = true ? `/${slug}` : `/${locale}/${slug}`
   const url = `${baseUrl}${path}`
 

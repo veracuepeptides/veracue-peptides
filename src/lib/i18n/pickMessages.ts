@@ -37,6 +37,7 @@ export function pickMessages(
 /** Namespaces needed by components mounted on every page (header, footer, age gate, etc). */
 export const GLOBAL_MESSAGE_KEYS = [
   'ageGate',
+  'announcementBar',
   'footer',
   'mobileMenu',
   'searchOverlay',

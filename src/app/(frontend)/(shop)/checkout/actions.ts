@@ -9,6 +9,14 @@ import { cookies } from 'next/headers'
 import { reserveStock, releaseStock, reserveCouponUsage, releaseCouponUsage, reservePoints, releasePoints } from '@/lib/orders/reserve'
 import { sendTrackedEmail } from '@/lib/emails/sendTrackedEmail'
 import { escapeHtml } from '@/lib/emails/escapeHtml'
+import { checkRateLimit } from '@/lib/rateLimit'
+import { getClientIp } from '@/lib/requestIp'
+import { getPayloadUser } from '@/lib/auth/getPayloadUser'
+import { orderAccessToken } from '@/lib/orders/accessToken'
+import { isPurchasableProduct, matchPurchasableOption, normalizeCheckoutItems } from '@/lib/orders/checkoutLines'
+import { FALLBACK_SHIPPING_METHODS, resolveShippingCountries } from '@/lib/pricing/shipping'
+import { PAYMENT_METHODS_UNAVAILABLE_MESSAGE } from '@/lib/payments/methods'
+import { isPaymentMethodAvailable } from '@/lib/payments/settings'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || 'sk_test_placeholder_for_build', {
   apiVersion: '2024-04-10' as any,
@@ -25,14 +33,15 @@ export async function getShippingMethods() {
   if (zones.docs.length > 0 && zones.docs[0].methods) {
     return zones.docs[0].methods
   }
-  
-  // Fallback if none exist (no ShippingZones doc currently exists in this project's DB,
-  // so this fallback is what's actually active in production right now)
-  return [
-    { method: 'Standard Shipping', price: 25, estimatedDays: 5 },
-    { method: 'Express Shipping', price: 50, estimatedDays: 2 },
-    { method: 'International Shipping', price: 50, estimatedDays: null, isInternational: true },
-  ]
+
+  // Used only when no ShippingZones document exists. It encodes the same policy as the document:
+  // $25 standard under $300, free standard from $300, express and international never free.
+  return FALLBACK_SHIPPING_METHODS
+}
+
+/** Countries orders can currently ship to (US only unless SHIPPING_COUNTRIES says otherwise). */
+export async function getShippingCountries() {
+  return resolveShippingCountries(process.env.SHIPPING_COUNTRIES)
 }
 
 export async function getActiveProcessingFees() {
@@ -189,16 +198,58 @@ export async function createPaymentIntent(
 }
 
 export async function createPayloadOrder(
-  items: any[],
+  rawItems: any[],
   shippingMethodName: string,
   couponCode: string | undefined,
   isRedeemingPoints: boolean,
   formData: any,
   paymentIntentId: string,
-  userId?: string,
-  paymentMethod: 'stripe' | 'zelle' | 'amex' | 'circoflows' | 'stripe_link' = 'stripe',
+  // Ignored. Callers still pass it, but the buyer is always taken from the session below: trusting
+  // a client-supplied id let anyone attach an order (and burn points) to someone else's account.
+  _clientUserId?: string,
+  paymentMethod: 'stripe' | 'zelle' | 'amex' | 'stripe_link' | 'veracuepay' = 'stripe',
   isNewAddress = false
 ) {
+  // This is a public endpoint that reserves stock and sends email, so throttle before any database
+  // work: per network address, and per email address so one buyer cannot be used as a mail relay.
+  const clientIp = await getClientIp()
+  const emailKey = String(formData?.email || '').trim().toLowerCase().slice(0, 254)
+  const [ipGate, emailGate] = await Promise.all([
+    checkRateLimit(`checkout:ip:${clientIp}`, 12, 600),
+    checkRateLimit(`checkout:email:${emailKey || 'none'}`, 6, 3600),
+  ])
+  if (!ipGate.allowed || !emailGate.allowed) {
+    return { error: 'Too many checkout attempts. Please wait a few minutes and try again.' }
+  }
+
+  // Only a payment method that is switched on in the admin (Payment Methods) can take an order. Checked
+  // here, on the server, so a method that has just been turned off stops taking orders even when a
+  // customer still has an old checkout page open or calls this action directly. Free orders and the
+  // embedded Stripe form use 'stripe' and are not managed by that setting.
+  if (paymentMethod === 'zelle' || paymentMethod === 'stripe_link' || paymentMethod === 'veracuepay') {
+    if (!(await isPaymentMethodAvailable(paymentMethod))) {
+      return { error: PAYMENT_METHODS_UNAVAILABLE_MESSAGE, paymentMethodUnavailable: true as const }
+    }
+  }
+
+  // Orders can only go to countries the store ships to right now (US only at the moment). Checked
+  // on the server because the country is a free-form value in the request.
+  const destinationCountry = String(formData?.country || 'US').trim().toUpperCase()
+  const shipsTo = resolveShippingCountries(process.env.SHIPPING_COUNTRIES)
+  if (!shipsTo.includes(destinationCountry)) {
+    return {
+      error:
+        shipsTo.length === 1 && shipsTo[0] === 'US'
+          ? 'We currently ship within the United States only. Please use a US delivery address.'
+          : 'We do not currently ship to the selected country.',
+    }
+  }
+
+  // Quantities, line count and shapes are validated before anything is priced; see checkoutLines.ts.
+  const normalized = normalizeCheckoutItems(rawItems)
+  if ('error' in normalized) return { error: normalized.error }
+  const items = normalized.items
+
   const payload = await getPayload({ config: configPromise })
 
   // Re-check required fields server-side — client-side `required` attributes only guard the
@@ -207,6 +258,7 @@ export async function createPayloadOrder(
   if (!formData?.email || !formData?.firstName || !formData?.address || !formData?.city || !formData?.state || !formData?.zip || !formData?.phone) {
     return { error: 'Please fill out all required delivery details, including phone number.' }
   }
+  const guestEmail = String(formData.email).trim().toLowerCase()
 
   let subtotal = 0;
   let pricesChanged = false;
@@ -218,7 +270,7 @@ export async function createPayloadOrder(
   for (let i = 0; i < items.length; i++) {
      const item = items[i]
      const liveItem = liveItems[i]
-     
+
      if (item.priceSnapshot !== liveItem.priceSnapshot) {
        pricesChanged = true
      }
@@ -229,9 +281,16 @@ export async function createPayloadOrder(
      } catch (err) {
        return { error: `One or more items in your cart (${item.product?.name || 'Unknown item'}) are no longer available on our site. Please remove them to proceed.` }
      }
-     if (!productRes) {
+     if (!productRes || !isPurchasableProduct(productRes)) {
         return { error: `One or more items in your cart (${item.product?.name || 'Unknown item'}) are no longer available on our site. Please remove them to proceed.` }
      }
+     // The option must be a real variant of this product; the price and the label stored on the
+     // order come from the matched record, never from the request.
+     const optionMatch = matchPurchasableOption(productRes, item.variantSku)
+     if (!optionMatch.ok) {
+        return { error: `The selected option for ${productRes.name || 'an item'} is no longer available. Please remove it from your cart and add it again.` }
+     }
+     if (optionMatch.title) item.variantTitle = optionMatch.title
      productsCache.set(item.productId, productRes)
      if ((productRes.stock || 0) < item.quantity) {
         return { error: `Insufficient stock for ${productRes.name || 'item'}. Only ${productRes.stock} left.` }
@@ -249,13 +308,18 @@ export async function createPayloadOrder(
 
   let discountAmount = 0;
   let freeShipping = false;
+  let couponApplied = false;
 
-  if (couponCode) {
+  if (couponCode && couponCode.trim()) {
     const couponRes = await verifyCoupon(couponCode, subtotal, items)
-    if (couponRes.valid) {
-      discountAmount = couponRes.discount || 0
-      freeShipping = couponRes.freeShipping || false
+    // An invalid coupon used to be dropped silently, so a customer who saw a discount in the cart
+    // was charged full price (and the dropped code still sat on the order). Say so instead.
+    if (!couponRes.valid) {
+      return { error: couponRes.error || 'This coupon could not be applied to your order. Please remove it and try again.' }
     }
+    discountAmount = couponRes.discount || 0
+    freeShipping = couponRes.freeShipping || false
+    couponApplied = true
   }
 
   const methods = await getShippingMethods()
@@ -312,13 +376,14 @@ export async function createPayloadOrder(
   const total = totalBeforePoints - pointsToRedeem
 
   try {
-    // userId is the Payload user's own id (from the NextAuth session), not an external IdP id.
+    // The buyer is the signed-in session user, never an id taken from the request.
     // Guests are never resolved or linked to an existing account by typing an email — that
     // would let anyone attach an order (and, previously, redeem points) to a stranger's
     // account. Guest orders stay unowned; guestEmail is enough for confirmation emails and
     // for the order to show up automatically once they register with the same address
     // (see the retroactive-binding logic in hooks/users.ts).
-    const payloadUserId: number | null = userId ? Number(userId) : null
+    const sessionUser = await getPayloadUser()
+    const payloadUserId: number | null = sessionUser ? Number(sessionUser.id) : null
 
     // Guard against duplicate orders from a double-click or a retried request after a slow
     // response — if an identical pending order for this same buyer was just created, reuse
@@ -328,22 +393,51 @@ export async function createPayloadOrder(
       collection: 'orders',
       where: {
         and: [
-          payloadUserId ? { owner: { equals: payloadUserId } } : { guestEmail: { equals: formData.email } },
+          payloadUserId ? { owner: { equals: payloadUserId } } : { guestEmail: { equals: guestEmail } },
           { status: { equals: 'pending' } },
           { paymentMethod: { equals: paymentMethod } },
           { createdAt: { greater_than: dedupeWindow } },
         ],
       },
       sort: '-createdAt',
-      limit: 1,
+      limit: 10,
       overrideAccess: true,
     })
-    const possibleDuplicate = recentOrders.docs[0]
-    if (
-      possibleDuplicate &&
-      Array.isArray(possibleDuplicate.items) &&
-      possibleDuplicate.items.length === items.length
-    ) {
+    // A duplicate is the same products, variants and quantities at the same subtotal. Comparing
+    // only the item count (as this used to) returned a different order's id for a genuinely new
+    // order that happened to have the same number of lines.
+    const lineSignature = (lines: Array<{ product: unknown; variant?: string | null; quantity: number }>) =>
+      lines
+        .map((line) => {
+          const productRef = typeof line.product === 'object' && line.product !== null
+            ? (line.product as { id?: unknown }).id
+            : line.product
+          return `${String(productRef)}|${line.variant || 'DEFAULT'}|${Number(line.quantity)}`
+        })
+        .sort()
+        .join(';')
+    const requestedSignature = lineSignature(
+      items.map((item) => ({
+        product: item.productId,
+        variant: item.variantSku,
+        quantity: item.quantity,
+      })),
+    )
+    // The signature also covers where it ships, how, and the coupon: a customer who changes the
+    // address, shipping method or coupon and resubmits is placing a different order and must not
+    // be handed the earlier one (and, for hosted card payment, its old total and address).
+    const requestedCoupon = couponApplied && couponCode ? couponCode.trim().toUpperCase() : ''
+    const possibleDuplicate = recentOrders.docs.find((order) =>
+      Array.isArray(order.items) &&
+      lineSignature(order.items as any) === requestedSignature &&
+      Math.abs(Number(order.subtotal || 0) - subtotal) < 0.005 &&
+      Math.abs(Number(order.shippingTotal || 0) - finalShipping) < 0.005 &&
+      String(order.shippingAddress?.line1 || '').trim().toLowerCase() === String(formData.address || '').trim().toLowerCase() &&
+      String(order.shippingAddress?.postalCode || '').trim() === String(formData.zip || '').trim() &&
+      String(order.shippingAddress?.country || 'US') === String(formData.country || 'US') &&
+      String(order.couponCode || '').toUpperCase() === requestedCoupon,
+    )
+    if (possibleDuplicate) {
       return { orderId: String(possibleDuplicate.id) }
     }
 
@@ -364,7 +458,11 @@ export async function createPayloadOrder(
     // usage-limited or store-credit coupon can't be over-redeemed by concurrent checkouts.
     let reservedCouponId: number | null = null
     let reservedCouponIsStoreCredit = false
-    if (couponCode && discountAmount > 0) {
+    // Only a coupon whose usage slot was actually reserved is written to the order. Free-shipping
+    // coupons (discount 0) now reserve a slot too, so their usage limit is enforced; and because the
+    // code is stored only when reserved, cancelling an order can never release a slot it never held.
+    let storedCouponCode = ''
+    if (couponApplied && couponCode) {
       const couponLookup = await payload.find({
         collection: 'coupons',
         where: { code: { equals: couponCode.trim().toUpperCase() } },
@@ -388,6 +486,7 @@ export async function createPayloadOrder(
           })))
           return { error: couponReservation.error }
         }
+        storedCouponCode = couponDoc.code || couponCode.trim().toUpperCase()
       }
     }
 
@@ -430,7 +529,7 @@ export async function createPayloadOrder(
         customerFirstName: formData.firstName,
         customerLastName: formData.lastName,
         customerPhone: formData.phone,
-        guestEmail: formData.email,
+        guestEmail,
         shippingAddress: {
           line1: formData.address,
           line2: formData.apartment || '',
@@ -454,7 +553,7 @@ export async function createPayloadOrder(
         appliedFees,
         total: confirmedTotal,
         shippingMethod: selectedMethod?.method || shippingMethodName,
-        couponCode: couponCode || '',
+        couponCode: storedCouponCode,
         affiliateId: affiliateRef || null,
         clickId: clickCookie || null,
         orderSource: orderSourceCookie || null,
@@ -505,9 +604,9 @@ export async function createPayloadOrder(
                const invoiceHtml = await generateOrderInvoiceHtml(order, payload);
 
                await sendTrackedEmail(payload, {
-                   from: 'Veracue Orders <orders@veracuepeptides.com>',
+                   from: 'Veracue Orders <orders@veracuelabs.com>',
                    to: customerEmail,
-                   bcc: 'support@veracuepeptides.com',
+                   bcc: 'orders@veracuelabs.com',
                    subject: `Order Invoice #${order.orderNumber || order.id}`,
                    html: invoiceHtml,
                })
@@ -557,14 +656,18 @@ export async function createPayloadOrder(
       }
     }
 
-    // Set a cookie to authorize the order confirmation page
-    const authCookieStore = await cookies()
-    authCookieStore.set(`order_auth_${order.id}`, 'true', {
-      maxAge: 60 * 60 * 24 * 7, // 7 days
-      httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
-      sameSite: 'lax'
-    })
+    // Authorize the order confirmation page for this browser. The cookie holds a signed token for
+    // this order id (see lib/orders/accessToken.ts), not a guessable constant.
+    const accessToken = orderAccessToken(order.id)
+    if (accessToken) {
+      const authCookieStore = await cookies()
+      authCookieStore.set(`order_auth_${order.id}`, accessToken, {
+        maxAge: 60 * 60 * 24 * 7, // 7 days
+        httpOnly: true,
+        secure: process.env.NODE_ENV === 'production',
+        sameSite: 'lax'
+      })
+    }
 
     return { orderId: String(order.id) }
   } catch (error: any) {
@@ -596,6 +699,14 @@ export async function syncPaymentStatus(paymentIntentId: string, orderId: string
     const order = await payload.findByID({ collection: 'orders', id: Number(trueOrderId), depth: 0, overrideAccess: true })
     if (!order) return { error: 'Order not found' }
 
+    // Only an order placed as a native card order is settled here. A hosted gateway (VeracuePay
+    // stamps merchantId on every PaymentIntent) has its own verified path, and `orderId` is a generic
+    // key that another payment in the same Stripe account could share.
+    if (order.paymentMethod !== 'stripe' || paymentIntent.metadata?.merchantId) {
+      console.error(`syncPaymentStatus: refusing order ${trueOrderId} (method ${order.paymentMethod}, gateway payment ${!!paymentIntent.metadata?.merchantId})`)
+      return { error: 'Not a card order' }
+    }
+
     const expectedCents = Math.round((order.total || 0) * 100)
     if (paymentIntent.amount !== expectedCents) {
       console.error(`syncPaymentStatus: amount mismatch for order ${trueOrderId} (paid ${paymentIntent.amount}, expected ${expectedCents})`)
@@ -613,8 +724,18 @@ export async function syncPaymentStatus(paymentIntentId: string, orderId: string
 
 export async function notifyAdminFailedPayment(orderId: string, errorMessage: string) {
   try {
+    // Public endpoint that sends mail to the store inbox: cap it per address and per order so it
+    // cannot be used to flood orders@ for any existing order id.
+    const clientIp = await getClientIp()
+    const [ipGate, orderGate] = await Promise.all([
+      checkRateLimit(`failnotify:ip:${clientIp}`, 6, 3600),
+      checkRateLimit(`failnotify:order:${String(orderId).slice(0, 40)}`, 2, 3600),
+    ])
+    if (!ipGate.allowed || !orderGate.allowed) return { success: false }
+    errorMessage = String(errorMessage || '').slice(0, 300)
+
     const payload = await getPayload({ config: configPromise })
-    
+
     const order = await payload.findByID({
       collection: 'orders',
       id: isNaN(Number(orderId)) ? orderId : Number(orderId),
@@ -622,6 +743,8 @@ export async function notifyAdminFailedPayment(orderId: string, errorMessage: st
     })
 
     if (!order) return { success: false }
+    // An order whose payment was captured has nothing to report as failed.
+    if (order.paymentStatus === 'captured') return { success: false }
 
     const orderNumber = order.orderNumber || orderId
     const customerEmail = (typeof order.owner === 'object' && order.owner !== null ? order.owner.email : order.guestEmail) || 'N/A'
@@ -632,8 +755,8 @@ export async function notifyAdminFailedPayment(orderId: string, errorMessage: st
       stripe: 'Card',
       zelle: 'Zelle',
       amex: 'American Express',
-      circoflows: 'Card',
-      stripe_link: 'Stripe Link'
+      stripe_link: 'Stripe Link',
+      veracuepay: 'Card (VeracuePay)'
     }
     const paymentMethod = (order.paymentMethod && paymentMethodLabels[order.paymentMethod]) || order.paymentMethod || 'N/A'
 
@@ -678,8 +801,8 @@ export async function notifyAdminFailedPayment(orderId: string, errorMessage: st
     })
 
     await sendTrackedEmail(payload, {
-      from: 'Veracue Support <support@veracuepeptides.com>',
-      to: 'support@veracuepeptides.com',
+      from: 'Veracue Support <orders@veracuelabs.com>',
+      to: 'orders@veracuelabs.com',
       subject: `⚠️ Payment Failed - Order #${orderNumber}`,
       html: html,
     })

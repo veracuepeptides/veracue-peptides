@@ -22,6 +22,7 @@ export const EmailLogs: CollectionConfig = {
       options: [
         { label: 'Sent', value: 'sent' },
         { label: 'Failed', value: 'failed' },
+        { label: 'Skipped (outbound email disabled)', value: 'skipped' },
       ],
     },
   ],

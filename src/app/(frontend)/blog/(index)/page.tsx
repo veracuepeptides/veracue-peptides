@@ -9,7 +9,7 @@ import { BLOG_FAQS } from '@/lib/blog/blogFaqs'
 import { safeJsonLd } from '@/lib/seo/jsonLd'
 
 const title = 'Research Peptide Blog'
-const description = 'Guides on peptide purity testing, reconstitution, storage, and lab compliance from the Veracue Peptides research team.'
+const description = 'Guides on peptide purity testing, reconstitution, storage, and lab compliance from the Veracue Labs research team.'
 
 export async function generateMetadata(): Promise<Metadata> {
   const path = '/blog'
@@ -24,7 +24,7 @@ export async function generateMetadata(): Promise<Metadata> {
       description,
       type: 'website',
       url: path,
-      siteName: 'Veracue Peptides',
+      siteName: 'Veracue Labs',
       images: [
         {
           url: getOgImageUrl(title, description, undefined, 'RESEARCH BLOG & ARTICLES', 'veracue-klow-50mg-sunlit-water-ripples.webp'),
@@ -42,6 +42,10 @@ export async function generateMetadata(): Promise<Metadata> {
     },
   }
 }
+
+// Cached and refreshed at most every 3600s; saving content in the admin refreshes it sooner
+// (see revalidateStorefrontPages in lib/revalidate.ts). Nothing here depends on the visitor.
+export const revalidate = 3600
 
 export default async function BlogIndexPage() {
   let payloadPosts: BlogIndexPost[] = []
@@ -70,7 +74,7 @@ export default async function BlogIndexPage() {
     console.error('Error fetching blog posts from payload:', err)
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com'
   const path = '/blog'
   const url = `${baseUrl}${path}`
 

@@ -12,7 +12,8 @@ const CRON_SECRET = process.env.CRON_SECRET
 export async function GET(req: Request) {
   try {
     const authHeader = req.headers.get('authorization')
-    if (CRON_SECRET && authHeader !== `Bearer ${CRON_SECRET}`) {
+    // Fail closed: with no secret configured this sends customer emails, so it must not run.
+    if (!CRON_SECRET || authHeader !== `Bearer ${CRON_SECRET}`) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
     }
 
@@ -46,7 +47,7 @@ export async function GET(req: Request) {
           const addressLine = companyAddressLine()
 
           await resend.emails.send({
-            from: process.env.RESEND_FROM_EMAIL || 'Veracue Peptides <support@veracuepeptides.com>',
+            from: process.env.RESEND_FROM_EMAIL || 'Veracue Labs <orders@veracuelabs.com>',
             headers: MARKETING_EMAIL_HEADERS,
             to: user.email,
             subject: 'Did you forget something in your cart?',
@@ -78,8 +79,8 @@ export async function GET(req: Request) {
     <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="container">
       <tr>
         <td class="header">
-          <a href="https://veracuepeptides.com">
-            <img src="https://veracuepeptides.com/veracue-images/logo-header.png" alt="Veracue Peptides" class="logo-img" />
+          <a href="https://veracuelabs.com">
+            <img src="https://veracuelabs.com/veracue-images/logo-header.png" alt="Veracue Labs" class="logo-img" />
           </a>
         </td>
       </tr>
@@ -93,7 +94,7 @@ export async function GET(req: Request) {
           <p>
             Return to the lab to secure your order and resume your research.
           </p>
-          <a href="https://veracuepeptides.com/cart" class="btn">Return to Cart</a>
+          <a href="https://veracuelabs.com/cart" class="btn">Return to Cart</a>
         </td>
       </tr>
       <tr>
@@ -101,7 +102,7 @@ export async function GET(req: Request) {
           <p class="disclaimer">
             <strong>FDA Disclaimer:</strong> These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. All products offered are for laboratory and research use only.<br><br>
             ${MARKETING_OPT_OUT_TEXT}<br><br>
-            ${addressLine ? `${addressLine}<br>` : ''}© ${new Date().getFullYear()} Veracue Peptides. All rights reserved.
+            ${addressLine ? `${addressLine}<br>` : ''}© ${new Date().getFullYear()} Veracue Labs. All rights reserved.
           </p>
         </td>
       </tr>

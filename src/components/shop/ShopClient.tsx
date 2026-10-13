@@ -103,9 +103,18 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
   const isInView = useInView(loadMoreRef, { margin: '400px' })
   const categoriesScrollRef = useRef<HTMLDivElement>(null)
 
-  // Fetch filtered products whenever search params change
+  // Fetch filtered products whenever search params change. On the first load with no filters in the
+  // URL the server-rendered page one is already on screen, so that extra request is skipped.
+  const isFirstFilterRun = useRef(true)
+  const [isFiltering, setIsFiltering] = useState(false)
   useEffect(() => {
+    const hasActiveFilter = ["category", "minPrice", "maxPrice", "inStock", "onSale", "sort"].some((key) => searchParams.has(key))
+    if (isFirstFilterRun.current) {
+      isFirstFilterRun.current = false
+      if (!hasActiveFilter) return
+    }
     const fetchFiltered = async () => {
+      setIsFiltering(true)
       const categoriesParam = searchParams.getAll('category')
       const minP = searchParams.get('minPrice')
       const maxP = searchParams.get('maxPrice')
@@ -125,8 +134,9 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
         setCurrentPage(1)
         setHasMore(res.hasNextPage || false)
       }
+      setIsFiltering(false)
     }
-    fetchFiltered()
+    fetchFiltered().catch(() => setIsFiltering(false))
   }, [searchParams])
 
   // Load more pages
@@ -168,17 +178,50 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
     }
   }, [isInView, hasMore, isLoadingMore, currentPage, searchParams, searchQuery])
 
-  // Client-side search filtering over loaded products
+  // Search runs over the whole catalog (for the current filters), not just the pages scrolled in so far.
+  // The first search fetches every matching product once; until it arrives the loaded ones are searched.
+  const [searchPool, setSearchPool] = useState<Product[] | null>(null)
+  const searchPoolKey = useRef('')
+  useEffect(() => {
+    if (!searchQuery.trim()) return
+    const key = searchParams.toString()
+    if (searchPool && searchPoolKey.current === key) return
+    let cancelled = false
+    ;(async () => {
+      const categoriesParam = searchParams.getAll('category')
+      const minP = searchParams.get('minPrice')
+      const maxP = searchParams.get('maxPrice')
+      const res = await getShopProducts({
+        page: 1,
+        limit: 500,
+        categories: categoriesParam.length > 0 ? categoriesParam : undefined,
+        inStock: searchParams.get('inStock') === 'true',
+        onSale: searchParams.get('onSale') === 'true',
+        minPrice: minP ? parseInt(minP, 10) : undefined,
+        maxPrice: maxP ? parseInt(maxP, 10) : undefined,
+        sort: searchParams.get('sort') || undefined,
+      })
+      if (!cancelled && res.success) {
+        setSearchPool(res.products as Product[])
+        searchPoolKey.current = key
+      }
+    })().catch(() => undefined)
+    return () => {
+      cancelled = true
+    }
+  }, [searchQuery, searchParams, searchPool])
+
   const displayProducts = useMemo(() => {
     if (!searchQuery.trim()) return products
     const q = searchQuery.toLowerCase().trim()
-    return products.filter((p: any) => {
+    const poolIsCurrent = searchPool !== null && searchPoolKey.current === searchParams.toString()
+    return (poolIsCurrent ? searchPool : products).filter((p: any) => {
       const name = (p.name || '').toLowerCase()
       const desc = (p.shortDescription || p.description || '').toLowerCase()
       const sku = (p.sku || p.slug || '').toLowerCase()
       return name.includes(q) || desc.includes(q) || sku.includes(q)
     })
-  }, [products, searchQuery])
+  }, [products, searchQuery, searchPool, searchParams])
 
   // Active filter helper
   const activeCategories = searchParams.getAll('category')
@@ -575,7 +618,7 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
         {/* 3. Products Grid Area */}
         {displayProducts.length > 0 ? (
           <>
-            <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 xs:gap-4 sm:gap-6 xl:gap-7">
+            <div aria-busy={isFiltering} className={`grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6 xl:gap-7 transition-opacity duration-200 ${isFiltering ? "opacity-60" : ""}`}>
               {displayProducts.map((product, index) => (
                 <motion.div
                   key={product.slug || product.id}
@@ -589,7 +632,7 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
                     delay: (index % 8) * 0.04,
                   }}
                 >
-                  <ProductCard product={product} />
+                  <ProductCard product={product} compact />
                 </motion.div>
               ))}
             </div>

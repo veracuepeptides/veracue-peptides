@@ -14,7 +14,7 @@ export function generateContactFormEmail(
   rawSubject: string,
   rawMessage: string,
 ): string {
-  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com'
   const name = escapeHtml(rawName)
   const email = escapeHtml(rawEmail)
   const department = escapeHtml(rawDepartment) || 'General'

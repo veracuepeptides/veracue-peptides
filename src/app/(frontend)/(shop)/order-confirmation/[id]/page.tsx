@@ -96,7 +96,10 @@ export default async function OrderConfirmationPage({ params }: { params: Promis
 
   const { cookies } = await import('next/headers')
   const cookieStore = await cookies()
-  const isCookieAuthorized = cookieStore.get(`order_auth_${id}`)?.value === 'true'
+  // The cookie carries a signed token for this order id (set at checkout). A bare "true" value, or
+  // a token minted for a different order, no longer grants access to anyone's name and address.
+  const { isValidOrderAccessToken } = await import('@/lib/orders/accessToken')
+  const isCookieAuthorized = isValidOrderAccessToken(id, cookieStore.get(`order_auth_${id}`)?.value)
 
   let order;
   try {
@@ -191,7 +194,7 @@ export default async function OrderConfirmationPage({ params }: { params: Promis
     id: order.orderNumber || String(order.id),
     // Real numeric Payload id — distinct from the display `id` above (which prefers the
     // human-facing orderNumber), needed for API calls back to actions keyed by the true id
-    // (e.g. CircoFlows' merchant_transaction_id, which was set to this at order-creation time).
+    // (e.g. the payment status check, which looks the order up by this id).
     orderId: String(order.id),
     customerName: `${order.customerFirstName || ''} ${order.customerLastName || ''}`.trim() || t('defaultCustomerName'),
     email: order.guestEmail || '',
@@ -224,6 +227,7 @@ export default async function OrderConfirmationPage({ params }: { params: Promis
     redeemedPoints: order.redeemedPoints || 0,
     couponCode: order.couponCode || '',
     paymentMethod: order.paymentMethod || 'stripe',
+    paymentStatus: order.paymentStatus || 'unpaid',
   }
 
   return (

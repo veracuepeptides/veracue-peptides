@@ -149,7 +149,7 @@ export const afterAffiliateApplicationChange: CollectionAfterChangeHook = async 
           // Send Welcome Email to Affiliate
           const welcomeHtml = await generateAffiliateWelcomeEmail(newAffiliate, userDoc)
           await sendTrackedEmail(req.payload, {
-            from: 'Veracue Support <support@veracuepeptides.com>',
+            from: 'Veracue Support <orders@veracuelabs.com>',
             to: userDoc.email,
             subject: 'Welcome to the Partner Program! 🎉',
             html: welcomeHtml,
@@ -159,12 +159,12 @@ export const afterAffiliateApplicationChange: CollectionAfterChangeHook = async 
           // Send Notification Email to Admin
           const adminHtml = generateAdminAffiliateNotificationEmail(doc, newAffiliate, userDoc)
           await sendTrackedEmail(req.payload, {
-            from: `"Veracue Support" <support@veracuepeptides.com>`,
-            to: 'support@veracuepeptides.com',
+            from: `"Veracue Support" <orders@veracuelabs.com>`,
+            to: 'orders@veracuelabs.com',
             subject: `New Affiliate Registered: ${newAffiliate.displayName}`,
             html: adminHtml,
           })
-          req.payload.logger.info(`Sent admin notification to support@veracuepeptides.com`)
+          req.payload.logger.info(`Sent admin notification to orders@veracuelabs.com`)
         }
       } catch (emailErr) {
         req.payload.logger.error({ err: emailErr }, 'Error sending affiliate emails')

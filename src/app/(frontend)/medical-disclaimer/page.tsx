@@ -54,8 +54,8 @@ export default function MedicalDisclaimerPage() {
         intro: t('contactIntro'),
         supportLabel: t('supportIssuesLabel'),
         closingText: t('closingText'),
-        supportEmail: 'support@veracuepeptides.com',
-        ordersEmail: 'orders@veracuepeptides.com',
+        supportEmail: 'orders@veracuelabs.com',
+        ordersEmail: 'orders@veracuelabs.com',
       }}
       faqs={faqs}
       faqTitle={t('faqTitle')}
@@ -68,7 +68,7 @@ export default function MedicalDisclaimerPage() {
           <div className="flex items-start gap-2.5">
             <AlertOctagon size={16} className="text-[#cb997e] shrink-0 mt-0.5" />
             <span>
-              All compounds distributed by Veracue Peptides LLC are strictly designated for <strong>in vitro experimentation</strong> and laboratory research purposes only. Under no circumstances are products intended for therapeutic, diagnostic, or clinical administration.
+              All compounds distributed by Veracue Labs LLC are strictly designated for <strong>in vitro experimentation</strong> and laboratory research purposes only. Under no circumstances are products intended for therapeutic, diagnostic, or clinical administration.
             </span>
           </div>
         </LegalCallout>
@@ -104,7 +104,7 @@ export default function MedicalDisclaimerPage() {
             <span>Analytical Purity &amp; Identity Documentation</span>
           </div>
           <p className="text-xs sm:text-[13px] text-[#20221c]/75 leading-relaxed">
-            Every batch distributed by Veracue Peptides LLC ships with a public HPLC and MS analytical report. These reports confirm identity and purity. They don't imply or constitute regulatory authorization for human or veterinary use.
+            Every batch distributed by Veracue Labs LLC ships with a public HPLC and MS analytical report. These reports confirm identity and purity. They don't imply or constitute regulatory authorization for human or veterinary use.
           </p>
         </div>
       </LegalSection>

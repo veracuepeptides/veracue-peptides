@@ -51,10 +51,10 @@ export async function generateMetadata({
       description,
       type: 'website',
       url: path,
-      siteName: 'Veracue Peptides',
+      siteName: 'Veracue Labs',
       images: [
         {
-          url: getOgImageUrl(title, description, undefined, 'ABOUT VERACUE PEPTIDES', 'veracue-glow-50mg-underwater-seabed.webp'),
+          url: getOgImageUrl(title, description, undefined, 'ABOUT VERACUE LABS', 'veracue-glow-50mg-underwater-seabed.webp'),
           width: 1200,
           height: 630,
           alt: title,
@@ -65,7 +65,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title,
       description,
-      images: [getOgImageUrl(title, description, undefined, 'ABOUT VERACUE PEPTIDES', 'veracue-glow-50mg-underwater-seabed.webp')],
+      images: [getOgImageUrl(title, description, undefined, 'ABOUT VERACUE LABS', 'veracue-glow-50mg-underwater-seabed.webp')],
     },
   }
 }
@@ -85,7 +85,7 @@ export default async function AboutPage({
     answer: t(`faqs.${key}.answer`),
   }))
 
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com'
   const path = true ? `/${slug}` : `/${locale}/${slug}`
   const url = `${baseUrl}${path}`
 

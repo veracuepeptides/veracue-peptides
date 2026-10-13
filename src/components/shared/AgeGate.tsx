@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef, useCallback } from 'react'
 import { motion, AnimatePresence, type Variants } from 'framer-motion'
 import Image from 'next/image'
 import { Lock, Check } from 'lucide-react'
@@ -8,6 +8,7 @@ import { useLenis } from 'lenis/react'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import { FluidButton } from '@/components/ui/fluid-button'
+import { useFocusTrap } from '@/lib/useFocusTrap'
 
 // Matches the site's signature "out-quart" easing (tailwind.config.ts) used across
 // hero/section motion, and the curtain-lift exit already established by the homepage
@@ -37,7 +38,36 @@ export function AgeGate() {
   const [isConfirming, setIsConfirming] = useState(false)
 
   const lenis = useLenis()
-  const primaryActionRef = useRef<HTMLDivElement>(null)
+  const primaryActionRef = useRef<HTMLDivElement | null>(null)
+  const dialogRef = useRef<HTMLDivElement>(null)
+  const wasVisibleRef = useRef(false)
+
+  // Keep Tab inside the gate so focus can't reach the header behind it
+  useFocusTrap(dialogRef, isVisible)
+
+  // Re-focus the confirm button whenever the verify pane (re)mounts, e.g. after "go back"
+  // from the denied state, so focus never falls back to <body>.
+  const setPrimaryAction = useCallback((node: HTMLDivElement | null) => {
+    primaryActionRef.current = node
+    node?.querySelector('button')?.focus({ preventScroll: true })
+  }, [])
+
+  // The denied pane replaces the buttons that had focus, so move focus to its only button.
+  const focusOnMount = useCallback((node: HTMLButtonElement | null) => {
+    node?.focus({ preventScroll: true })
+  }, [])
+
+  // After the gate is confirmed, send focus to the start of the page content
+  useEffect(() => {
+    if (isVisible) {
+      wasVisibleRef.current = true
+      return
+    }
+    if (wasVisibleRef.current) {
+      wasVisibleRef.current = false
+      document.getElementById('main-content')?.focus({ preventScroll: true })
+    }
+  }, [isVisible])
 
   useEffect(() => {
     setHasHydrated(true)
@@ -99,6 +129,7 @@ export function AgeGate() {
     <AnimatePresence>
       {isVisible && (
         <motion.div
+          ref={dialogRef}
           role="dialog"
           aria-modal="true"
           aria-labelledby={isDenied ? 'age-gate-denied-title' : 'age-gate-title'}
@@ -180,7 +211,7 @@ export function AgeGate() {
                     <motion.div variants={itemVariants} className="w-12 h-[4px] bg-[#cb997e] mb-8 origin-left" />
 
                     <motion.div variants={itemVariants} className="flex flex-col sm:flex-row w-full gap-4 max-w-lg mb-10">
-                      <div className="flex-1" ref={primaryActionRef}>
+                      <div className="flex-1" ref={setPrimaryAction}>
                         <FluidButton
                           onClick={handleVerify}
                           text={t('confirmButton')}
@@ -245,6 +276,7 @@ export function AgeGate() {
                     </div>
 
                     <button
+                      ref={focusOnMount}
                       onClick={handleGoBack}
                       className="text-sm uppercase tracking-[0.2em] font-bold text-[#20221c]/40 hover:text-[#20221c] transition-colors border-b-2 border-[#20221c]/20 pb-1 hover:border-[#20221c]"
                     >

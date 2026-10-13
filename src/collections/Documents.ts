@@ -1,12 +1,28 @@
 import path from 'path'
 import { fileURLToPath } from 'url'
 import type { CollectionConfig } from 'payload'
+import { revalidateStorefrontPages } from '../lib/revalidate'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
 export const Documents: CollectionConfig = {
   slug: 'documents',
+  hooks: {
+    // The certificates page lists these, and it is cached: show a new or removed report right away.
+    afterChange: [
+      ({ doc }) => {
+        revalidateStorefrontPages()
+        return doc
+      },
+    ],
+    afterDelete: [
+      ({ doc }) => {
+        revalidateStorefrontPages()
+        return doc
+      },
+    ],
+  },
   access: {
     read: () => true,
     create: ({ req: { user } }) => {

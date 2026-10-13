@@ -2,10 +2,10 @@ import { escapeHtml } from './escapeHtml'
 import { BRAND, shellOpen, shellClose, wave, iconBadge } from './emailShell'
 
 export function generateMilitaryRejectionEmail(name: string): string {
-  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com'
   const safeName = escapeHtml(name)
 
-  return `${shellOpen({ title: 'Verification Update | Veracue Peptides', headerColor: BRAND.olive, headerWaveInto: '#ffffff' })}
+  return `${shellOpen({ title: 'Verification Update | Veracue Labs', headerColor: BRAND.olive, headerWaveInto: '#ffffff' })}
           <tr>
             <td style="background-color:#ffffff;padding:8px 24px 8px;text-align:center;">
               ${iconBadge('alert', BRAND.charcoal)}

@@ -2,9 +2,9 @@ import { BRAND, shellOpen, shellClose, pillButton, wave, iconBadge } from './ema
 
 export async function generateForgotPasswordEmail(url: string, user?: any): Promise<string> {
   const name = user?.firstName || 'there'
-  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com'
 
-  return `${shellOpen({ title: 'Reset Your Password | Veracue Peptides', headerColor: BRAND.olive, headerWaveInto: '#ffffff' })}
+  return `${shellOpen({ title: 'Reset Your Password | Veracue Labs', headerColor: BRAND.olive, headerWaveInto: '#ffffff' })}
           <tr>
             <td style="background-color:#ffffff;padding:8px 24px 36px;text-align:center;">
               ${iconBadge('lock')}

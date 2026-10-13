@@ -56,7 +56,12 @@ export function htmlToText(html?: string | null): string {
     .replace(/<script[\s\S]*?<\/script>/gi, '')
     .replace(/<style[\s\S]*?<\/style>/gi, '')
     .replace(/<br\s*\/?>/gi, '\n')
-    .replace(/<\/(p|div|h[1-6]|ul|ol|table|thead|tbody)>/gi, '\n')
+    // Headings inside a description become markdown subheadings, so a page's structure survives.
+    .replace(/<h([1-6])[^>]*>([\s\S]*?)<\/h\1>/gi, (_, _level, inner) => {
+      const label = String(inner).replace(/<[^>]+>/g, '').trim()
+      return label ? `\n\n### ${label}\n\n` : '\n'
+    })
+    .replace(/<\/(p|div|ul|ol|table|thead|tbody)>/gi, '\n')
     .replace(/<li[^>]*>/gi, '- ')
     .replace(/<\/li>/gi, '\n')
     .replace(/<\/tr>/gi, '\n')
@@ -134,6 +139,55 @@ export function ruoSafeBlurb(text: string, categoryName: string): string {
     return `Research compounds in the ${categoryName} category, supplied for laboratory use only.`
   }
   return text
+}
+
+// "10mg" becomes "10 mg" and "5000 IU" stays as it is; labels that are not a plain amount (for example
+// "Pack of 10") are returned unchanged.
+// Blends such as "5mg/5mg" are spaced the same way ("5 mg / 5 mg").
+export function formatOption(label: string): string {
+  const text = oneLine(label)
+  const parts = text.split('/').map((part) => part.trim().match(/^(\d+(?:\.\d+)?)\s*(mg|mcg|g|ml|iu|µg)$/i))
+  if (parts.some((match) => !match)) return text
+  return parts
+    .map((match) => `${match![1]} ${match![2].toLowerCase() === 'iu' ? 'IU' : match![2].toLowerCase()}`)
+    .join(' / ')
+}
+
+// "a", "a and b", "a, b and c".
+export function joinAnd(items: string[]): string {
+  if (items.length <= 1) return items.join('')
+  return `${items.slice(0, -1).join(', ')} and ${items[items.length - 1]}`
+}
+
+// First paragraph of a block of text, cut at the end of a sentence when it is longer than `max`.
+export function firstParagraph(s: string, max: number): string {
+  const text = collapse(s)
+  // Skip a leading heading so the overview is always running text.
+  const paragraph = text.split(/\n{2,}/).find((block) => block && !block.startsWith('#')) ?? ''
+  if (paragraph.length <= max) return paragraph
+  const cut = paragraph.slice(0, max)
+  const end = Math.max(cut.lastIndexOf('. '), cut.lastIndexOf('! '), cut.lastIndexOf('? '))
+  return end > max * 0.5 ? cut.slice(0, end + 1) : cut.slice(0, cut.lastIndexOf(' ')).replace(/[\s,;:.-]+$/, '') + '.'
+}
+
+// Development code names that identify a marketed drug (for example LY1234567). Any sentence that
+// mentions one is dropped from the generated files: the catalog uses neutral research names.
+const CLINICAL_CODE = /\b(?:LY|AM|NN|TAK|MK)[-\s]?\d{3,}\b/
+
+export function hasClinicalCode(text: string): boolean {
+  return CLINICAL_CODE.test(text)
+}
+
+export function dropCodedSentences(text: string): string {
+  return text
+    .split(/\n/)
+    .map((line) =>
+      line
+        .split(/(?<=[.!?])\s+/)
+        .filter((sentence) => !CLINICAL_CODE.test(sentence))
+        .join(' '),
+    )
+    .join('\n')
 }
 
 // Removes clinical development code names (for example "(LY1234567)") that identify a marketed

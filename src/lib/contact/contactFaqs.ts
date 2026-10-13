@@ -11,7 +11,7 @@ export const CONTACT_FAQS = [
   {
     question: 'Can I request lot-specific HPLC chromatograms prior to purchasing?',
     answer:
-      'Yes. Every synthesis batch produced for Veracue is accompanied by third-party RP-HPLC and ESI Mass Spectrometry reports. You can request any lot-specific chromatogram by emailing support@veracuepeptides.com or specifying the compound in the inquiry form.',
+      'Yes. Purity is measured by RP-HPLC and identity by ESI mass spectrometry. Email orders@veracuelabs.com or name the compound in the inquiry form, and we will tell you which lot-specific reports and chromatograms exist before you order.',
   },
   {
     question: 'Do you accommodate university purchase orders (POs) and institutional billing?',
@@ -24,8 +24,8 @@ export const CONTACT_FAQS = [
       'All peptide compounds are packaged as lyophilized powders in vacuum-sealed vials under inert argon gas to eliminate oxidation. Shipments are packed inside custom insulated thermal boxes with refrigerant gel packs to preserve compound structural integrity.',
   },
   {
-    question: 'Are Veracue peptide compounds approved for clinical or diagnostic use?',
+    question: 'Are Veracue Labs peptide compounds approved for clinical or diagnostic use?',
     answer:
-      'No. All compounds offered by Veracue Peptides are supplied strictly for in-vitro laboratory research and analytical chemistry evaluation. Products are strictly labeled Research Use Only (RUO) and may not be used for medical diagnosis, veterinary, or clinical applications.',
+      'No. All compounds offered by Veracue Labs are supplied strictly for in-vitro laboratory research and analytical chemistry evaluation. Products are strictly labeled Research Use Only (RUO) and may not be used for medical diagnosis, veterinary, or clinical applications.',
   },
 ]

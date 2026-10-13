@@ -22,10 +22,10 @@ const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID
 export async function generateMetadata() {
   const t = await getTranslations('common')
   return {
-    metadataBase: new URL(process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'),
+    metadataBase: new URL(process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com'),
     title: {
-      default: 'Veracue Peptides | High-Purity Research Peptides',
-      template: '%s | Veracue Peptides',
+      default: 'Veracue Labs | High-Purity Research Peptides',
+      template: '%s | Veracue Labs',
     },
     description: t('siteTagline'),
     icons: {
@@ -45,23 +45,23 @@ export async function generateMetadata() {
     manifest: '/site.webmanifest',
     openGraph: {
       type: 'website',
-      siteName: 'Veracue Peptides',
-      title: 'Veracue Peptides | High-Purity Research Peptides',
+      siteName: 'Veracue Labs',
+      title: 'Veracue Labs | High-Purity Research Peptides',
       description: t('siteTagline'),
       images: [
         {
-          url: `${process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'}/veracue-images/veracue-home-og.png`,
+          url: `${process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com'}/veracue-images/veracue-home-og.png`,
           width: 1200,
           height: 675,
-          alt: 'Veracue Peptides',
+          alt: 'Veracue Labs',
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'Veracue Peptides | High-Purity Research Peptides',
+      title: 'Veracue Labs | High-Purity Research Peptides',
       description: t('siteTagline'),
-      images: [`${process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'}/veracue-images/veracue-home-og.png`],
+      images: [`${process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com'}/veracue-images/veracue-home-og.png`],
     },
   }
 }

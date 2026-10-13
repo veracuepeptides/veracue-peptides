@@ -302,7 +302,7 @@ export function JourneySection() {
                 href="/shop"
                 className="font-sans tracking-[0.25em] text-xs font-bold uppercase text-[#20221c]/80 hover:text-[#20221c] transition-colors underline decoration-[#20221c]/30 underline-offset-4"
               >
-                VERACUEPEPTIDES.COM
+                VERACUELABS.COM
               </Link>
             </div>
 

@@ -38,9 +38,9 @@ export default function PrivacyPolicyPage() {
         intro: t('contactIntro'),
         supportLabel: t('supportIssuesLabel'),
         orderLabel: t('orderQueriesLabel'),
-        closingText: 'Veracue Peptides LLC applies industry-standard TLS encryption, strict data minimization, and secure tokenization across all transactions.',
-        supportEmail: 'support@veracuepeptides.com',
-        ordersEmail: 'orders@veracuepeptides.com',
+        closingText: 'Veracue Labs LLC applies industry-standard TLS encryption, strict data minimization, and secure tokenization across all transactions.',
+        supportEmail: 'orders@veracuelabs.com',
+        ordersEmail: 'orders@veracuelabs.com',
       }}
     >
       {/* 01. Information We Collect */}
@@ -128,10 +128,10 @@ export default function PrivacyPolicyPage() {
           <p className="text-xs sm:text-[13px] text-[#20221c]/85 font-medium">
             {t('section5EmailLabel')}{' '}
             <a
-              href="mailto:support@veracuepeptides.com"
+              href="mailto:orders@veracuelabs.com"
               className="text-[#cb997e] hover:underline"
             >
-              support@veracuepeptides.com
+              orders@veracuelabs.com
             </a>
           </p>
         </div>

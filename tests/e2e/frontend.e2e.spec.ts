@@ -1,20 +1,12 @@
-import { test, expect, Page } from '@playwright/test'
+import { test, expect } from '@playwright/test'
 
+// Replaces the Payload blank-template check (wrong port, wrong title, wrong heading) with this site's homepage.
 test.describe('Frontend', () => {
-  let page: Page
+  test('the homepage loads with the research peptide hero', async ({ page }) => {
+    await page.context().addCookies([{ name: 'age_verified', value: 'true', url: 'http://localhost:3100' }])
+    await page.goto('/')
 
-  test.beforeAll(async ({ browser }, testInfo) => {
-    const context = await browser.newContext()
-    page = await context.newPage()
-  })
-
-  test('can go on homepage', async ({ page }) => {
-    await page.goto('http://localhost:3000')
-
-    await expect(page).toHaveTitle(/Payload Blank Template/)
-
-    const heading = page.locator('h1').first()
-
-    await expect(heading).toHaveText('Welcome to your new project.')
+    await expect(page).toHaveTitle(/Research Peptides/i)
+    await expect(page.locator('h1').first()).toContainText(/peptides/i)
   })
 })

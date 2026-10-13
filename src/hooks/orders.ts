@@ -4,32 +4,38 @@ import { sql } from '@payloadcms/db-postgres'
 import { validateStatusTransition } from '@/lib/orders/state'
 import { sendTrackedEmail } from '@/lib/emails/sendTrackedEmail'
 import { releaseStock, releaseCouponUsage, releasePoints } from '@/lib/orders/reserve'
+import { getSqlExecutor } from '@/lib/db/transactionSql'
 import { emailLayout } from '@/lib/emails/emailLayout'
 import { escapeHtml } from '@/lib/emails/escapeHtml'
 
 export const beforeOrderChange: CollectionBeforeChangeHook = async ({ operation, originalDoc, data, req }) => {
+  // Everything in this hook runs inside the order's transaction, so each query must use `req`.
+  // A query that reaches for another pool connection waits on the one the transaction holds.
   if (operation === 'create') {
     if (!data.orderNumber) {
-      const db = req.payload.db as any
-      const counterRes: any = await db.drizzle.execute(sql`INSERT INTO "order_counters" ("id", "counter", "created_at", "updated_at") VALUES (1, 1000, now(), now())
+      const db = await getSqlExecutor(req.payload, req)
+      const counterRes: any = await db.execute(sql`INSERT INTO "order_counters" ("id", "counter", "created_at", "updated_at") VALUES (1, 1000, now(), now())
                   ON CONFLICT ("id") DO UPDATE SET "counter" = "order_counters"."counter" + 1, "updated_at" = now()
                   RETURNING "counter"`)
       const counter = (counterRes.rows ? counterRes.rows[0].counter : counterRes[0].counter)
       data.orderNumber = String(counter)
     }
 
-    if (Array.isArray(data.items)) {
-      const snapshotItems = await Promise.all(
-        data.items.map(async (item: any) => {
-          const product = await req.payload.find({
-            collection: 'products',
-            where: { id: { equals: item.product } },
-            depth: 0,
-          })
-          return { ...item, productSnapshot: product?.docs?.[0] ?? null }
-        }),
-      )
-      data.items = snapshotItems
+    if (Array.isArray(data.items) && data.items.length > 0) {
+      // One batched lookup instead of one query per line, so a cart never needs several connections at once.
+      const productIds = [...new Set(data.items.map((item: any) => item.product).filter((id: unknown) => id != null))]
+      const { docs: products } = await req.payload.find({
+        collection: 'products',
+        where: { id: { in: productIds } },
+        depth: 0,
+        pagination: false,
+        req,
+      })
+      const snapshotById = new Map(products.map((product) => [String(product.id), product]))
+      data.items = data.items.map((item: any) => ({
+        ...item,
+        productSnapshot: snapshotById.get(String(item.product)) ?? null,
+      }))
     }
 
     if (data.shippingAddress) data.shippingAddress = { ...data.shippingAddress }
@@ -119,6 +125,7 @@ export const afterOrderChange: CollectionAfterChangeHook = async ({ doc, previou
     // Reverse affiliate conversions if transitioning to a void state (refunded/cancelled)
     if (isNowVoid && !wasVoidBefore) {
       const conversions = await req.payload.find({
+        req,
         collection: 'affiliate-conversions',
         where: { order: { equals: doc.id } },
         overrideAccess: true,
@@ -127,6 +134,7 @@ export const afterOrderChange: CollectionAfterChangeHook = async ({ doc, previou
       for (const conv of conversions.docs) {
         if (conv.status !== 'voided' && conv.status !== 'reversed') {
           await req.payload.update({
+            req,
             collection: 'affiliate-conversions',
             id: conv.id,
             data: {
@@ -139,14 +147,14 @@ export const afterOrderChange: CollectionAfterChangeHook = async ({ doc, previou
         }
       }
 
-      // Refund the used HB Points back to the user
+      // Refund the used VL Points back to the user
       if (doc.redeemedPoints && doc.redeemedPoints > 0 && doc.owner) {
         try {
           const userId = typeof doc.owner === 'object' ? doc.owner.id : doc.owner
-          await releasePoints(req.payload, userId, doc.redeemedPoints)
-          req.payload.logger.info(`Refunded ${doc.redeemedPoints} HB points to user ${userId} for voided order ${doc.id}`)
+          await releasePoints(req.payload, userId, doc.redeemedPoints, req)
+          req.payload.logger.info(`Refunded ${doc.redeemedPoints} VL points to user ${userId} for voided order ${doc.id}`)
         } catch (err) {
-          req.payload.logger.error({ err }, `Failed to refund HB points for order ${doc.id}`)
+          req.payload.logger.error({ err }, `Failed to refund VL points for order ${doc.id}`)
         }
       }
 
@@ -159,6 +167,7 @@ export const afterOrderChange: CollectionAfterChangeHook = async ({ doc, previou
               productId: typeof item.product === 'object' ? item.product?.id : item.product,
               quantity: item.quantity || 1,
             })).filter((i: any) => i.productId),
+            req,
           )
         } catch (err) {
           req.payload.logger.error({ err }, `Failed to release reserved stock for order ${doc.id}`)
@@ -169,6 +178,7 @@ export const afterOrderChange: CollectionAfterChangeHook = async ({ doc, previou
       if (doc.couponCode) {
         try {
           const coupons = await req.payload.find({
+            req,
             collection: 'coupons',
             where: { code: { equals: doc.couponCode } },
             overrideAccess: true,
@@ -176,7 +186,7 @@ export const afterOrderChange: CollectionAfterChangeHook = async ({ doc, previou
           })
           const coupon = coupons.docs[0]
           if (coupon) {
-            await releaseCouponUsage(req.payload, coupon.id, doc.discountTotal || 0, coupon.type === 'store_credit')
+            await releaseCouponUsage(req.payload, coupon.id, doc.discountTotal || 0, coupon.type === 'store_credit', req)
           }
         } catch (err) {
           req.payload.logger.error({ err }, `Failed to release coupon usage for order ${doc.id}`)
@@ -184,14 +194,14 @@ export const afterOrderChange: CollectionAfterChangeHook = async ({ doc, previou
       }
 
       // Notify the customer their order was cancelled/refunded/failed. A payment-failure
-      // auto-cancel (see webhooks/circoflows, webhooks/stripe, checkout/circoflowsActions —
+      // auto-cancel (see webhooks/stripe and lib/orders/veracuepayGateway —
       // they set context.paymentFailed on the triggering payload.update call) reads as
       // "failed" here rather than "cancelled", since the customer never chose to cancel.
       try {
         let customerEmail = doc.guestEmail
         if (!customerEmail && doc.owner) {
           const ownerId = typeof doc.owner === 'object' ? doc.owner.id : doc.owner
-          const user = typeof doc.owner === 'object' ? doc.owner : await req.payload.findByID({ collection: 'users', id: ownerId, depth: 0 })
+          const user = typeof doc.owner === 'object' ? doc.owner : await req.payload.findByID({ collection: 'users', id: ownerId, depth: 0, req })
           customerEmail = user?.email
         }
         if (customerEmail) {
@@ -204,11 +214,11 @@ export const afterOrderChange: CollectionAfterChangeHook = async ({ doc, previou
           const { generateOrderInvoiceHtml } = await import('@/lib/emails/generateOrderEmail')
           const html = await generateOrderInvoiceHtml(doc, req.payload, undefined, label as 'failed' | 'cancelled' | 'refunded')
           await sendTrackedEmail(req.payload, {
-            from: 'Veracue Orders <orders@veracuepeptides.com>',
+            from: 'Veracue Orders <orders@veracuelabs.com>',
             to: customerEmail,
             // On payment failure, admin gets the identical invoice email (same cart/totals)
             // the customer receives, rather than a separate summary-only alert.
-            ...(label === 'failed' ? { bcc: 'support@veracuepeptides.com' } : {}),
+            ...(label === 'failed' ? { bcc: 'orders@veracuelabs.com' } : {}),
             subject,
             html,
           })
@@ -230,6 +240,7 @@ export const afterOrderChange: CollectionAfterChangeHook = async ({ doc, previou
       } else {
         try {
           const user = await req.payload.findByID({
+            req,
             collection: 'users',
             id: typeof doc.owner === 'object' ? doc.owner.id : doc.owner,
             depth: 0,
@@ -252,7 +263,7 @@ export const afterOrderChange: CollectionAfterChangeHook = async ({ doc, previou
           const invoiceHtml = await generateOrderInvoiceHtml(doc, req.payload, customNote)
           
           await sendTrackedEmail(req.payload, {
-            from: 'Veracue Orders <orders@veracuepeptides.com>',
+            from: 'Veracue Orders <orders@veracuelabs.com>',
             to: customerEmail,
             subject: `Update regarding your Order #${doc.orderNumber || doc.id}`,
             html: invoiceHtml,
@@ -276,7 +287,7 @@ export const afterOrderChange: CollectionAfterChangeHook = async ({ doc, previou
         customerEmail = doc.owner.email
       } else {
         try {
-          const user = await req.payload.findByID({ collection: 'users', id: typeof doc.owner === 'object' ? doc.owner.id : doc.owner, depth: 0 })
+          const user = await req.payload.findByID({ collection: 'users', id: typeof doc.owner === 'object' ? doc.owner.id : doc.owner, depth: 0, req })
           if (user && user.email) customerEmail = user.email
         } catch (e) {}
       }
@@ -288,7 +299,7 @@ export const afterOrderChange: CollectionAfterChangeHook = async ({ doc, previou
         const invoiceHtml = await generateOrderInvoiceHtml(doc, req.payload, "Great news! Your order has been shipped. You can track your package using the tracking link below.")
         
         await sendTrackedEmail(req.payload, {
-          from: 'Veracue Orders <orders@veracuepeptides.com>',
+          from: 'Veracue Orders <orders@veracuelabs.com>',
           to: customerEmail,
           subject: `Your Order #${doc.orderNumber || doc.id} has shipped!`,
           html: invoiceHtml,

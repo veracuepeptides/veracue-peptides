@@ -79,7 +79,7 @@ export function AffiliateDifferenceSection() {
         {/* Row 1: Left-to-Right Translation */}
         <motion.div style={{ x: x1 }} className="whitespace-nowrap will-change-transform">
           <span className="font-heading font-black text-[5.5rem] xs:text-[7rem] sm:text-[9.5rem] md:text-[11.5rem] lg:text-[13.5rem] xl:text-[15rem] text-[#fff1e6]/85 uppercase tracking-tighter leading-[0.82] block">
-            RESEARCH STANDARDS • HPLC TESTED • COA PER BATCH • VERACUE PEPTIDES • HIGHER CONVERSION •
+            RESEARCH STANDARDS • HPLC TESTED • COA ON REQUEST • VERACUE LABS • HIGHER CONVERSION •
           </span>
         </motion.div>
 
@@ -93,7 +93,7 @@ export function AffiliateDifferenceSection() {
         {/* Row 3: Left-to-Right Translation */}
         <motion.div style={{ x: x3 }} className="whitespace-nowrap will-change-transform">
           <span className="font-heading font-black text-[5.5rem] xs:text-[7rem] sm:text-[9.5rem] md:text-[11.5rem] lg:text-[13.5rem] xl:text-[15rem] text-[#fff1e6]/85 uppercase tracking-tighter leading-[0.82] block">
-            BUILD LOYALTY • ZERO REFUNDS • 15% RECURRING • VERACUE PEPTIDES • SCALE TOGETHER •
+            BUILD LOYALTY • ZERO REFUNDS • 15% RECURRING • VERACUE LABS • SCALE TOGETHER •
           </span>
         </motion.div>
       </div>

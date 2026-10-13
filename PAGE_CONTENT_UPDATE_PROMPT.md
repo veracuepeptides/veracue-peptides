@@ -16,8 +16,8 @@ copy must fit the space the old copy fit in, not the other way around.
 ## Why this exists
 
 This codebase was cloned from a different, already-published brand's site
-(Helix Bio / Helix Bio Chem) and re-skinned as Veracue Peptides
-(veracuepeptides.com). The visual redesign is done. The **words** on most
+(Helix Bio / Helix Bio Chem) and re-skinned as Veracue Labs
+(veracuelabs.com). The visual redesign is done. The **words** on most
 pages, however, are still close enough to the source project's original
 copy that search engines and AI crawlers could flag this as duplicate or
 near-duplicate content once both sites are indexed — which suppresses
@@ -28,9 +28,9 @@ Every page needs its own, independently-written content pass.
 
 ## Fixed context (same for every page — do not change)
 
-- **Brand:** Veracue Peptides — a U.S. supplier of research-grade
+- **Brand:** Veracue Labs — a U.S. supplier of research-grade
   (≥99% purity) peptides for laboratory and analytical research use.
-- **Domain:** veracuepeptides.com
+- **Domain:** veracuelabs.com
 - **Audience:** researchers, lab professionals, and research institutions
   evaluating or purchasing research compounds — not consumers seeking
   medical or personal-use advice.

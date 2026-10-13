@@ -56,9 +56,7 @@ function SlideToAddButton({ product }: { product: Product }) {
       parseFloat(product.priceRange.replace(/[^0-9.]/g, '')) || 0
     )
     setIsAdded(true)
-    toast.success(t('addedToCart'), {
-      action: { label: t('view'), onClick: cartStore.openCart }
-    })
+    // No toast: the drawer opens and confirms the add (a toast would cover its checkout button)
     cartStore.openCart()
     setTimeout(() => setIsAdded(false), 2000)
   }

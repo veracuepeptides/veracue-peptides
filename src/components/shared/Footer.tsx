@@ -219,14 +219,14 @@ const FooterContent = () => {
                 {/* Direct Contact Details: Email & Phone */}
                 <div className="mt-7 pt-6 border-t border-[#eddcd2]/80 flex flex-wrap items-center gap-y-3 gap-x-6 text-sm text-[#20221c]">
                   <a
-                    href="mailto:support@veracuepeptides.com"
+                    href="mailto:orders@veracuelabs.com"
                     className="flex items-center gap-2 text-[#20221c]/80 hover:text-[#cb997e] transition-colors group font-medium"
                     title="Email Support"
                   >
                     <div className="w-7 h-7 rounded-full bg-[#20221c]/5 flex items-center justify-center text-[#20221c] group-hover:bg-[#cb997e] group-hover:text-white transition-colors shrink-0">
                       <Mail className="w-3.5 h-3.5" />
                     </div>
-                    <span>support@veracuepeptides.com</span>
+                    <span>orders@veracuelabs.com</span>
                   </a>
                   <a
                     href="tel:+18008372283"
@@ -389,7 +389,7 @@ const FooterContent = () => {
           {/* Bottom Copyright & Credits */}
           <div className="flex flex-col sm:flex-row justify-between items-center gap-3 pt-4 border-t border-[#eddcd2]/80 text-[#20221c]/60 text-xs text-center sm:text-left">
             <p className="font-medium">
-              &copy; {new Date().getFullYear()} Veracue Peptides. All rights reserved.
+              &copy; {new Date().getFullYear()} Veracue Labs. All rights reserved.
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">

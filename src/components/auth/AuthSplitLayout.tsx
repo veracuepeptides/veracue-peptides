@@ -22,7 +22,7 @@ const LAB_SLIDES = [
   {
     id: 1,
     tag: "BATCH-LEVEL COA ARCHIVE",
-    title: "Analytical transparency for every batch.",
+    title: "Analytical transparency on request.",
     description: "Certificates of analysis with chromatography and mass spectrometry data are published by lot for research review.",
     image: "/veracue-images/veracue-research-grade-gloved-hand.webp",
     stats: [
@@ -74,7 +74,7 @@ export function AuthSplitLayout({ children, mode }: AuthSplitLayoutProps) {
           <Link href="/" className="inline-block hover:opacity-85 transition-opacity">
             <Image 
               src="/veracue-images/logo-header.webp" 
-              alt="Veracue Peptides" 
+              alt="Veracue Labs"
               width={160} 
               height={38} 
               className="h-7 sm:h-8 w-auto object-contain" 
@@ -276,9 +276,9 @@ export function AuthSplitLayout({ children, mode }: AuthSplitLayoutProps) {
               </div>
 
               {/* Title & Description */}
-              <h3 className="text-xl xl:text-2xl font-serif font-normal text-white leading-snug tracking-tight mb-2">
+              <h2 className="text-xl xl:text-2xl font-serif font-normal text-white leading-snug tracking-tight mb-2">
                 "{LAB_SLIDES[currentSlide].title}"
-              </h3>
+              </h2>
               <p className="text-xs xl:text-[13px] text-white/70 font-light leading-relaxed max-w-xl mb-4">
                 {LAB_SLIDES[currentSlide].description}
               </p>

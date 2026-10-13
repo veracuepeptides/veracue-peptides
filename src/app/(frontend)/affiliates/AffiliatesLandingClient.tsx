@@ -562,8 +562,8 @@ export function AffiliatesLandingClient({
     const ch = channel || activeChannel
     const url =
       ch && ch !== 'default'
-        ? `https://veracuepeptides.com/ref/partner-id?c=${ch}`
-        : 'https://veracuepeptides.com/ref/partner-id'
+        ? `https://veracuelabs.com/ref/partner-id?c=${ch}`
+        : 'https://veracuelabs.com/ref/partner-id'
     navigator.clipboard.writeText(url)
     setCopiedUrl(true)
     setTimeout(() => setCopiedUrl(false), 2000)
@@ -1618,6 +1618,7 @@ export function AffiliatesLandingClient({
                 </div>
                 <input
                   type="range"
+                  aria-label="Monthly referred orders"
                   min={1}
                   max={200}
                   value={monthlyOrders}
@@ -1643,6 +1644,7 @@ export function AffiliatesLandingClient({
                 </div>
                 <input
                   type="range"
+                  aria-label="Average cart value"
                   min={80}
                   max={500}
                   step={10}
@@ -1929,7 +1931,7 @@ export function AffiliatesLandingClient({
                     <div className="flex items-center gap-2 min-w-0 pr-2">
                       <span className="w-2 h-2 rounded-full bg-[#cb997e] shrink-0" />
                       <span className="text-xs font-mono truncate text-neutral-600">
-                        veracuepeptides.com/ref/<span className="font-bold text-neutral-900">partner-id{activeChannel !== 'default' ? `?c=${activeChannel}` : ''}</span>
+                        veracuelabs.com/ref/<span className="font-bold text-neutral-900">partner-id{activeChannel !== 'default' ? `?c=${activeChannel}` : ''}</span>
                       </span>
                     </div>
 
@@ -2003,6 +2005,7 @@ export function AffiliatesLandingClient({
                       <button
                         type="button"
                         onClick={handleCopyCode}
+                        aria-label={copiedCode ? 'Discount code copied' : 'Copy discount code'}
                         className="text-neutral-400 hover:text-[#cb997e] transition-colors text-[11px] font-mono font-semibold flex items-center gap-1 shrink-0"
                       >
                         {copiedCode ? (
@@ -2216,10 +2219,10 @@ export function AffiliatesLandingClient({
               <p className="text-white/60 text-xs sm:text-sm font-medium mb-8 flex flex-wrap items-center gap-1.5 font-heading">
                 <span>{t('finalCtaQuestions')}</span>
                 <a
-                  href="mailto:support@veracuepeptides.com"
+                  href="mailto:orders@veracuelabs.com"
                   className="text-white hover:text-[#cb997e] transition-colors font-bold underline underline-offset-4"
                 >
-                  support@veracuepeptides.com
+                  orders@veracuelabs.com
                 </a>
               </p>
               <div className="w-full sm:w-auto">

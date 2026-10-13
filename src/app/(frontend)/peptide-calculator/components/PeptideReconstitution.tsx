@@ -9,9 +9,10 @@ import { RefreshCw, ChevronDown, Calculator, Sparkles } from 'lucide-react'
 type SyringeVolume = 0.3 | 0.5 | 1.0;
 type MassUnit = 'mg' | 'mcg';
 
-const DynamicInput = ({ value, onChange, minWidth = 2 }: { value: string, onChange: (v: string) => void, minWidth?: number }) => (
+const DynamicInput = ({ value, onChange, label, minWidth = 2 }: { value: string, onChange: (v: string) => void, label: string, minWidth?: number }) => (
   <input 
     type="text" 
+    aria-label={label}
     value={value} 
     onChange={(e) => {
       const val = e.target.value;
@@ -162,9 +163,9 @@ export function PeptideReconstitution() {
           </div>
 
           <div className="text-xl sm:text-2xl md:text-3xl lg:text-[34px] font-heading font-light text-neutral-900 tracking-tight leading-[1.7] md:leading-[1.75]">
-            I have a <DynamicInput value={peptideAmount} onChange={setPeptideAmount} /> mg vial of peptide. 
-            I will reconstitute it using <DynamicInput value={waterMl} onChange={setWaterMl} /> mL of bacteriostatic water. 
-            My desired dose is <DynamicInput value={desiredDose} onChange={setDesiredDose} minWidth={3} />
+            I have a <DynamicInput value={peptideAmount} onChange={setPeptideAmount} label="Peptide vial size in mg" /> mg vial of peptide. 
+            I will reconstitute it using <DynamicInput value={waterMl} onChange={setWaterMl} label="Bacteriostatic water volume in mL" /> mL of bacteriostatic water. 
+            My desired dose is <DynamicInput value={desiredDose} onChange={setDesiredDose} minWidth={3} label="Desired dose" />
             <DynamicSelect 
               value={doseUnit} 
               onChange={(v) => setDoseUnit(v as MassUnit)}

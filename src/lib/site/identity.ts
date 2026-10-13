@@ -64,8 +64,8 @@ export function getSiteIdentity(): SiteIdentity {
   const postalAddress = process.env.COMPANY_POSTAL_ADDRESS?.trim() || undefined
   const telephone = process.env.NEXT_PUBLIC_COMPANY_PHONE?.trim() || undefined
   return {
-    legalName: 'Veracue Peptides LLC',
-    supportEmail: 'support@veracuepeptides.com',
+    legalName: 'Veracue Labs LLC',
+    supportEmail: 'orders@veracuelabs.com',
     ...(postalAddress ? { postalAddress } : {}),
     ...(telephone ? { telephone } : {}),
     sameAs: parseSameAs(process.env.NEXT_PUBLIC_SOCIAL_PROFILES),

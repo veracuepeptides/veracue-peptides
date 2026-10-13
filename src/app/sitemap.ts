@@ -10,7 +10,7 @@ export const revalidate = 3600
 // Regeneration queries the full catalog; the Vercel Hobby default (10s) is tight.
 export const maxDuration = 60
 
-const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+const baseUrl = (process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com').replace(/\/$/, '')
 
 // Grouped by crawl priority rather than alphabetically, so the sitemap's own ordering
 // reflects which pages matter most (highest first) — homepage/shop first, then core
@@ -47,7 +47,28 @@ function entry(
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const entries: MetadataRoute.Sitemap = []
 
+  // Posts are read first because the blog index is listed only once a post is published (it has
+  // nothing to show before that). If the lookup fails the index stays listed, so a database
+  // hiccup never drops it.
+  let posts: { slug?: string | null; updatedAt?: string | null }[] = []
+  let postsLoaded = false
+  try {
+    const payload = await getPayload({ config: configPromise })
+    const result = await payload.find({
+      collection: 'blog-posts',
+      where: { status: { equals: 'published' } },
+      limit: 1000,
+      depth: 0,
+    })
+    posts = result.docs
+    postsLoaded = true
+  } catch (error) {
+    console.error('sitemap: failed to fetch blog posts', error)
+    Sentry.captureException(error, { tags: { route: 'sitemap.xml' } })
+  }
+
   for (const { path, priority, changeFrequency } of STATIC_PATHS) {
+    if (path === '/blog' && postsLoaded && posts.length === 0) continue
     entries.push(entry(path, { priority, changeFrequency }))
   }
 
@@ -70,23 +91,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     Sentry.captureException(error, { tags: { route: 'sitemap.xml' } })
   }
 
-  try {
-    const payload = await getPayload({ config: configPromise })
-    const { docs: posts } = await payload.find({
-      collection: 'blog-posts',
-      where: { status: { equals: 'published' } },
-      limit: 1000,
-      depth: 0,
-    })
-
-    for (const post of posts) {
-      const path = `/blog/${post.slug}`
-      const lastModified = post.updatedAt ? new Date(post.updatedAt) : undefined
-      entries.push(entry(path, { lastModified, priority: 0.6, changeFrequency: 'monthly' }))
-    }
-  } catch (error) {
-    console.error('sitemap: failed to fetch blog posts', error)
-    Sentry.captureException(error, { tags: { route: 'sitemap.xml' } })
+  for (const post of posts) {
+    const path = `/blog/${post.slug}`
+    const lastModified = post.updatedAt ? new Date(post.updatedAt) : undefined
+    entries.push(entry(path, { lastModified, priority: 0.6, changeFrequency: 'monthly' }))
   }
 
   return entries

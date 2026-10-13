@@ -4,7 +4,7 @@ import { BRAND, shellOpen, shellClose, pillButton, wave, iconBadge } from './ema
 export function generateVerifyEmailEmail(firstName: string | null | undefined, verifyUrl: string): string {
   const name = escapeHtml(firstName || 'there')
 
-  return `${shellOpen({ title: 'Verify Your Email | Veracue Peptides', headerColor: BRAND.olive, headerWaveInto: '#ffffff' })}
+  return `${shellOpen({ title: 'Verify Your Email | Veracue Labs', headerColor: BRAND.olive, headerWaveInto: '#ffffff' })}
           <tr>
             <td style="background-color:#ffffff;padding:8px 24px 36px;text-align:center;">
               ${iconBadge('mail')}
@@ -20,5 +20,5 @@ export function generateVerifyEmailEmail(firstName: string | null | undefined, v
               <p style="margin:20px 0 0;font-size:12px;color:rgba(255,241,230,0.8);">This link expires in 48 hours. If you didn't create this account, you can safely ignore this email.</p>
             </td>
           </tr>
-${shellClose({ footerWaveFrom: BRAND.olive, serverUrl: process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com' })}`
+${shellClose({ footerWaveFrom: BRAND.olive, serverUrl: process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com' })}`
 }

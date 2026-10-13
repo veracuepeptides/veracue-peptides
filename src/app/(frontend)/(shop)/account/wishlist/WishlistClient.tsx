@@ -59,7 +59,7 @@ export function WishlistClient({ items: serverItems }: AccountWishlistProps) {
       1,
       parsePrice(item.price)
     )
-    toast.success(t('addToCart'), { action: { label: 'View Cart', onClick: cartStore.openCart } })
+    // No toast: addItem opens the cart drawer, which confirms the add
   }
 
   const moveAllToCart = () => {

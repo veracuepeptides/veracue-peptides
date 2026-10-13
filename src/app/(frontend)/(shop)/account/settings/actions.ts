@@ -54,16 +54,28 @@ export async function updatePreferencesAction(input: {
   const user = await getPayloadUser()
   if (!user) return { success: false, error: t('errorUnauthorized') }
 
+  // Server actions are public POST endpoints and TypeScript types are not enforced at runtime.
+  // This update runs with overrideAccess, so only the three preference keys below may ever reach
+  // the database. Passing `input` straight through let any logged-in user set role, hbPoints or
+  // emailVerified on their own account.
+  const data: { preferredLocale?: 'en' | 'es'; acceptsMarketing?: boolean; orderSmsUpdates?: boolean } = {}
+  if (input && typeof input === 'object') {
+    if (input.preferredLocale === 'en' || input.preferredLocale === 'es') data.preferredLocale = input.preferredLocale
+    if (typeof input.acceptsMarketing === 'boolean') data.acceptsMarketing = input.acceptsMarketing
+    if (typeof input.orderSmsUpdates === 'boolean') data.orderSmsUpdates = input.orderSmsUpdates
+  }
+  if (Object.keys(data).length === 0) return { success: false, error: t('errorUnexpected') }
+
   const payload = await getPayload({ config })
   try {
     await payload.update({
       collection: 'users',
       id: user.id,
-      data: input as any,
+      data: data as any,
       overrideAccess: true,
     })
 
-    if (input.acceptsMarketing !== undefined && process.env.RESEND_API_KEY) {
+    if (data.acceptsMarketing !== undefined && process.env.RESEND_API_KEY) {
       try {
         const { Resend } = await import('resend')
         const resend = new Resend(process.env.RESEND_API_KEY)
@@ -143,16 +155,16 @@ export async function updatePasswordAction(input: {
         <div style="font-family: sans-serif; color: #111827; width: 100%; max-width: 600px; margin: 0 auto; background: #ffffff; padding: 20px; line-height: 1.6;">
           <h2 style="color: #000; border-bottom: 2px solid #e5e7eb; padding-bottom: 10px;">Security Alert: Password Changed</h2>
           <p>Hi ${user.firstName || 'there'},</p>
-          <p>This is a confirmation that the password for your Veracue Peptides account (${user.email}) has been changed.</p>
+          <p>This is a confirmation that the password for your Veracue Labs account (${user.email}) has been changed.</p>
           <p>If you made this change, no further action is required.</p>
           <p><strong>If you did not make this change, please contact our support team immediately.</strong></p>
-          <p style="margin-top: 30px;">Best regards,<br>The Veracue Peptides Team</p>
+          <p style="margin-top: 30px;">Best regards,<br>The Veracue Labs Team</p>
         </div>
 </body>
 </html>
       `
       await sendTrackedEmail(payload, {
-        from: 'Veracue Support <support@veracuepeptides.com>',
+        from: 'Veracue Support <orders@veracuelabs.com>',
         to: user.email,
         subject: 'Your password has been changed',
         html: emailHtml,
@@ -160,8 +172,8 @@ export async function updatePasswordAction(input: {
 
       // Notify admin
       await sendTrackedEmail(payload, {
-        from: 'Veracue Support <support@veracuepeptides.com>',
-        to: 'support@veracuepeptides.com',
+        from: 'Veracue Support <orders@veracuelabs.com>',
+        to: 'orders@veracuelabs.com',
         subject: `Security Alert: User Password Changed`,
         html: `<p>The password for the user <strong>${user.email}</strong> was recently changed.</p>`
       })
@@ -208,7 +220,7 @@ export async function requestEmailChangeAction(newEmail: string) {
     })
 
     await sendTrackedEmail(payload, {
-      from: 'Veracue Support <support@veracuepeptides.com>',
+      from: 'Veracue Support <orders@veracuelabs.com>',
       to: normalizedEmail,
       subject: 'Verify your new email address',
       html: `

@@ -1,11 +1,7 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
-import { toast } from 'sonner'
-import { syncCartToPayload, getAutoAddAccessoryItems } from '@/app/(frontend)/actions/cart'
-
-// Slugs excluded from the "peptide" auto-add-accessories trigger — these ARE the
-// accessories, so adding one shouldn't add another copy of itself alongside it.
-const ACCESSORY_PRODUCT_SLUGS = ['bac-water', '10-needles'] as const
+import { syncCartToPayload } from '@/app/(frontend)/actions/cart'
+import { MAX_LINE_QUANTITY } from '@/lib/orders/checkoutLines'
 
 const CART_STORAGE_KEY = 'veracue-cart-storage'
 
@@ -20,6 +16,14 @@ if (typeof window !== 'undefined') {
   } catch {
     // storage unavailable; ignore
   }
+}
+
+// A line is a whole number from 1 up to the per-line limit the server enforces at checkout, so the
+// cart can never hold a quantity checkout would reject.
+function clampQuantity(quantity: number) {
+  const whole = Math.floor(Number(quantity))
+  if (!Number.isFinite(whole)) return 1
+  return Math.min(MAX_LINE_QUANTITY, Math.max(1, whole))
 }
 
 function generateLineId() {
@@ -69,37 +73,7 @@ interface CartState {
 
 export const useCartStore = create<CartState>()(
   persist(
-    (set, get) => {
-      const maybeAutoAddAccessories = async () => {
-        const state = get()
-        const hasBacWater = state.items.some((i) => i.product?.slug === 'bac-water')
-        const hasNeedles = state.items.some((i) => i.product?.slug === '10-needles')
-        if (hasBacWater && hasNeedles) return
-
-        const { bacWater, needles } = await getAutoAddAccessoryItems()
-        const addedNames: string[] = []
-
-        set((current) => {
-          const newItems = [...current.items]
-          if (!hasBacWater && bacWater) {
-            newItems.push({ ...bacWater, lineId: generateLineId(), quantity: 1 })
-            addedNames.push('BAC Water')
-          }
-          if (!hasNeedles && needles) {
-            newItems.push({ ...needles, lineId: generateLineId(), quantity: 1 })
-            addedNames.push('Needles')
-          }
-          if (addedNames.length === 0) return current
-
-          syncCartToPayload(newItems).catch(console.error)
-          return { items: newItems }
-        })
-
-        if (addedNames.length > 0) {
-          toast.success(`Added ${addedNames.join(' & ')}, required for reconstitution`)
-        }
-      }
-
+    (set) => {
       return {
       items: [],
       couponCode: null,
@@ -114,10 +88,15 @@ export const useCartStore = create<CartState>()(
           )
 
           if (existingItemIndex > -1) {
+            // Copy the line rather than editing the stored object in place.
             const newItems = [...state.items]
-            newItems[existingItemIndex].quantity += quantity
-            newItems[existingItemIndex].priceSnapshot = priceSnapshot
-            if (variantTitle) newItems[existingItemIndex].variantTitle = variantTitle
+            const existing = newItems[existingItemIndex]
+            newItems[existingItemIndex] = {
+              ...existing,
+              quantity: clampQuantity(existing.quantity + quantity),
+              priceSnapshot,
+              ...(variantTitle ? { variantTitle } : {}),
+            }
             syncCartToPayload(newItems).catch(console.error)
             return { items: newItems, isOpen: true }
           }
@@ -129,7 +108,7 @@ export const useCartStore = create<CartState>()(
               productId: product.id,
               variantSku,
               variantTitle: variantTitle || variantSku,
-              quantity,
+              quantity: clampQuantity(quantity),
               priceSnapshot,
               product,
             },
@@ -143,13 +122,6 @@ export const useCartStore = create<CartState>()(
           }
         })
 
-        // Every product except the accessories themselves is a research peptide that needs
-        // reconstituting — silently add BAC water + needles alongside it (capped at one of
-        // each total, regardless of how many peptides/quantity end up in the cart) rather
-        // than requiring the shopper to remember to add them separately.
-        if (!product.slug || !ACCESSORY_PRODUCT_SLUGS.includes(product.slug as any)) {
-          maybeAutoAddAccessories()
-        }
       },
 
       removeItem: (lineId) => {
@@ -163,7 +135,7 @@ export const useCartStore = create<CartState>()(
       updateQuantity: (lineId, quantity) => {
         set((state) => {
           const newItems = state.items.map((item) =>
-            item.lineId === lineId ? { ...item, quantity: Math.max(1, quantity) } : item,
+            item.lineId === lineId ? { ...item, quantity: clampQuantity(quantity) } : item,
           )
           syncCartToPayload(newItems).catch(console.error)
           return { items: newItems }
@@ -184,16 +156,10 @@ export const useCartStore = create<CartState>()(
     },
     {
       name: CART_STORAGE_KEY,
+      // Only the cart is stored. Saving the drawer's open flag reopened the drawer over every page after a reload.
+      partialize: (state) => ({ items: state.items, couponCode: state.couponCode }),
+      // Also ignores an open flag saved by an earlier build, so the drawer always starts closed.
+      merge: (persisted, current) => ({ ...current, ...(persisted as Partial<CartState>), isOpen: false }),
     },
   ),
 )
-
-export const useCartSubtotal = () => {
-  return useCartStore((state) =>
-    state.items.reduce((total, item) => total + item.priceSnapshot * item.quantity, 0),
-  )
-}
-
-export const useCartItemCount = () => {
-  return useCartStore((state) => state.items.reduce((count, item) => count + item.quantity, 0))
-}

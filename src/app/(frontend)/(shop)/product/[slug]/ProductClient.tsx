@@ -61,6 +61,7 @@ interface ProductData {
   description: string
   shortDescription?: string
   images: string[]
+  imageAlts?: string[]
   variants: Variant[]
   coaFile?: string
   tabs: Tab[]
@@ -243,12 +244,16 @@ export function ProductClient({ product }: ProductClientProps) {
 
 
   const selectedVariant = product.variants.find(v => v.id === selectedVariantId) || product.variants[0]
-  const currentStock = selectedVariant?.inStock ? 50 : 0 // Fake stock level for testing
 
   // Each variant shows its own photos. The product-level images (kept for listings, search and
   // wishlist thumbnails) are only used when the selected variant has none of its own.
-  const allImages = selectedVariant?.images?.length ? selectedVariant.images : (product.images || [])
+  const usingVariantImages = !!selectedVariant?.images?.length
+  const allImages = usingVariantImages ? selectedVariant!.images! : (product.images || [])
+  const allImageAlts = usingVariantImages ? (selectedVariant!.imageAlts || []) : (product.imageAlts || [])
   const galleryImages = Array.from(new Set(allImages)).filter(Boolean)
+  // Each image's own alt text (from the media record), falling back to the product name when none is stored
+  const altByUrl = new Map<string, string>()
+  allImages.forEach((url, i) => { if (url && allImageAlts[i] && !altByUrl.has(url)) altByUrl.set(url, allImageAlts[i]) })
 
   useEffect(() => {
     setActiveImageIndex(0)
@@ -259,6 +264,7 @@ export function ProductClient({ product }: ProductClientProps) {
   const nameMatch = product.name.match(/^(.*?)\s*\(([^)]+)\)\s*$/)
   const shortName = nameMatch ? nameMatch[1].trim() : product.name
   const nameSubtitle = nameMatch ? nameMatch[2].trim() : null
+  const activeImageAlt = altByUrl.get(galleryImages[activeImageIndex]) || shortName
 
   const [justAdded, setJustAdded] = useState(false)
   const cartStore = useCartStore()
@@ -386,11 +392,9 @@ export function ProductClient({ product }: ProductClientProps) {
     }
 
     setJustAdded(true)
-    toast.success(t('addedToCart'), {
-      action: { label: t('view'), onClick: cartStore.openCart }
-    })
 
-    // Auto-open drawer as per standard e-com flows, or just rely on pulse
+    // The drawer opens (addItem sets isOpen) and confirms the add, so no toast: it would
+    // sit on top of the drawer's checkout button.
     cartStore.openCart()
 
     setTimeout(() => setJustAdded(false), 1500)
@@ -408,7 +412,7 @@ export function ProductClient({ product }: ProductClientProps) {
             <Image
               key={galleryImages[activeImageIndex]}
               src={galleryImages[activeImageIndex]}
-              alt={shortName}
+              alt={activeImageAlt}
               fill
               priority
               className="object-cover"
@@ -560,6 +564,7 @@ export function ProductClient({ product }: ProductClientProps) {
                       key={variant.id}
                       onClick={() => variant.inStock && setSelectedVariantId(variant.id)}
                       disabled={!variant.inStock}
+                      aria-pressed={variant.id === selectedVariantId}
                       whileTap={variant.inStock ? { scale: 0.94 } : undefined}
                       className={`relative min-w-0 flex flex-col items-center gap-0.5 py-3.5 px-2 rounded-2xl overflow-hidden ${
                         isSelected
@@ -712,7 +717,6 @@ export function ProductClient({ product }: ProductClientProps) {
                       onClick={() => {
                         cartStore.addItem({ id: product.id, name: product.name, imageUrl: product.images[0], slug: product.slug }, bundleVariantSku, 1, salePriceNum || priceNum, bundleVariantTitle)
                         setJustAdded(true)
-                        toast.success(t('addedBundleToCart'), { action: { label: t('view'), onClick: cartStore.openCart } })
                         setTimeout(() => setJustAdded(false), 1500)
                       }}
                       className={`w-full flex items-center justify-between py-3.5 text-left group ${idx < product.bulkBundles!.length - 1 ? 'border-b border-[#b7b7a4]/25' : ''}`}
@@ -789,7 +793,7 @@ export function ProductClient({ product }: ProductClientProps) {
               { value: 'HPLC',    label: t('statVerifiedPurityLabel'),  desc: t('statVerifiedPurityDesc')          },
               { value: t('statLabTestedValue'), label: t('statLabTestedLabel'),       desc: t('statLabTestedDesc')    },
               { value: t('statGradeQualityValue'),  label: t('statGradeQualityLabel'),    desc: t('statGradeQualityDesc')        },
-              { value: 'COA',       label: t('statDocumentedLabel'),       desc: t('statDocumentedDesc')       },
+              { value: 'MS',        label: t('statDocumentedLabel'),       desc: t('statDocumentedDesc')       },
             ].map((stat, i) => (
               <motion.div
                 key={stat.label}
@@ -1027,7 +1031,7 @@ export function ProductClient({ product }: ProductClientProps) {
             >
               <Image
                 src={galleryImages[activeImageIndex]}
-                alt={shortName}
+                alt={activeImageAlt}
                 fill
                 className="object-contain"
                 sizes="100vw"

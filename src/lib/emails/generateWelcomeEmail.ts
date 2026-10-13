@@ -23,7 +23,7 @@ function benefitRow(number: string, title: string, body: string): string {
 
 export async function generateWelcomeEmail(user: any): Promise<string> {
   const name = user.firstName || 'there'
-  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com'
 
   return `${shellOpen({ title: 'Welcome to Veracue', headerColor: BRAND.olive, headerWaveInto: '#ffffff' })}
           <tr>

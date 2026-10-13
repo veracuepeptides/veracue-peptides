@@ -70,7 +70,7 @@ export function DifferenceSection() {
             className="whitespace-nowrap will-change-transform"
           >
             <span className="font-heading font-black text-[5.5rem] xs:text-[7rem] sm:text-[9.5rem] md:text-[11.5rem] lg:text-[13.5rem] xl:text-[15rem] text-[#fff1e6]/85 uppercase tracking-tighter leading-[0.82] block">
-              RESEARCH STANDARDS • HPLC TESTED • COA PER BATCH • VERACUE PEPTIDES • RESEARCH STANDARDS •
+              RESEARCH STANDARDS • HPLC TESTED • COA ON REQUEST • VERACUE LABS • RESEARCH STANDARDS •
             </span>
           </motion.div>
 
@@ -80,7 +80,7 @@ export function DifferenceSection() {
             className="whitespace-nowrap will-change-transform"
           >
             <span className="font-heading font-black text-[5.5rem] xs:text-[7rem] sm:text-[9.5rem] md:text-[11.5rem] lg:text-[13.5rem] xl:text-[15rem] text-[#fff1e6]/85 uppercase tracking-tighter leading-[0.82] block">
-              HPLC TESTED • BATCH COA • LOT LABELED • TRACEABLE • HPLC TESTED •
+              HPLC TESTED • COA ON REQUEST • LOT LABELED • TRACEABLE • HPLC TESTED •
             </span>
           </motion.div>
 
@@ -90,7 +90,7 @@ export function DifferenceSection() {
             className="whitespace-nowrap will-change-transform"
           >
             <span className="font-heading font-black text-[5.5rem] xs:text-[7rem] sm:text-[9.5rem] md:text-[11.5rem] lg:text-[13.5rem] xl:text-[15rem] text-[#fff1e6]/85 uppercase tracking-tighter leading-[0.82] block">
-              RESEARCH STANDARDS • HPLC TESTED • SHIPPED FROM THE USA • VERACUE PEPTIDES • RESEARCH STANDARDS •
+              RESEARCH STANDARDS • HPLC TESTED • SHIPPED FROM THE USA • VERACUE LABS • RESEARCH STANDARDS •
             </span>
           </motion.div>
         </div>

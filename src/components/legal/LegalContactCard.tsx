@@ -18,17 +18,19 @@ export function LegalContactCard({
   intro = 'Our compliance and laboratory support desk is available to assist research institutions and qualified investigators with policy clarifications, lot documentation, and order verification.',
   supportLabel = 'Scientific & Compliance Support',
   orderLabel = 'Order Inquiries & Fulfillment',
-  closingText = 'Veracue Peptides reserves the right to update this policy in accordance with relevant statutory frameworks and laboratory compliance regulations.',
-  supportEmail = 'support@veracuepeptides.com',
-  ordersEmail = 'orders@veracuepeptides.com',
+  closingText = 'Veracue Labs reserves the right to update this policy in accordance with relevant statutory frameworks and laboratory compliance regulations.',
+  supportEmail = 'orders@veracuelabs.com',
+  ordersEmail = 'orders@veracuelabs.com',
 }: LegalContactCardProps) {
-  const [copiedEmail, setCopiedEmail] = useState<string | null>(null)
+  const [copiedCard, setCopiedCard] = useState<'support' | 'orders' | null>(null)
+  // With a single shared mailbox, one card names both topics instead of repeating the address.
+  const singleAddress = supportEmail.trim().toLowerCase() === ordersEmail.trim().toLowerCase()
 
-  const copyToClipboard = (email: string) => {
+  const copyToClipboard = (card: 'support' | 'orders', email: string) => {
     navigator.clipboard.writeText(email)
-    setCopiedEmail(email)
+    setCopiedCard(card)
     setTimeout(() => {
-      setCopiedEmail(null)
+      setCopiedCard(null)
     }, 2000)
   }
 
@@ -66,12 +68,21 @@ export function LegalContactCard({
 
         {/* Contact Channels Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-          {/* Support Email Card */}
-          <div className="bg-white/5 hover:bg-white/10 border border-[#a5a58d]/30 hover:border-[#a5a58d]/60 rounded-2xl p-4 sm:p-5 transition-colors flex flex-col justify-between group">
+          {/* Support Email Card (also covers order topics when one address serves both) */}
+          <div
+            className={`bg-white/5 hover:bg-white/10 border border-[#a5a58d]/30 hover:border-[#a5a58d]/60 rounded-2xl p-4 sm:p-5 transition-colors flex flex-col justify-between group${
+              singleAddress ? ' sm:col-span-2' : ''
+            }`}
+          >
             <div>
               <span className="font-mono text-[10px] uppercase tracking-wider text-[#a5a58d] font-semibold block mb-1">
                 {supportLabel}
               </span>
+              {singleAddress ? (
+                <span className="font-mono text-[10px] uppercase tracking-wider text-[#a5a58d] font-semibold block mb-1">
+                  {orderLabel}
+                </span>
+              ) : null}
               <a
                 href={`mailto:${supportEmail}`}
                 className="text-sm sm:text-base font-medium text-white hover:text-[#cb997e] transition-colors break-all"
@@ -86,11 +97,11 @@ export function LegalContactCard({
               </span>
               <button
                 type="button"
-                onClick={() => copyToClipboard(supportEmail)}
+                onClick={() => copyToClipboard('support', supportEmail)}
                 className="inline-flex items-center gap-1 text-[11px] text-[#fff1e6] hover:text-white px-2.5 py-1 rounded-lg bg-white/15 hover:bg-[#a5a58d] transition-colors cursor-pointer"
                 title="Copy email address"
               >
-                {copiedEmail === supportEmail ? (
+                {copiedCard === 'support' ? (
                   <>
                     <Check size={12} className="text-white" />
                     <span className="text-white font-medium">Copied</span>
@@ -105,7 +116,8 @@ export function LegalContactCard({
             </div>
           </div>
 
-          {/* Orders Email Card */}
+          {/* Orders Email Card (omitted when it would repeat the same address) */}
+          {!singleAddress && (
           <div className="bg-white/5 hover:bg-white/10 border border-[#a5a58d]/30 hover:border-[#a5a58d]/60 rounded-2xl p-4 sm:p-5 transition-colors flex flex-col justify-between group">
             <div>
               <span className="font-mono text-[10px] uppercase tracking-wider text-[#a5a58d] font-semibold block mb-1">
@@ -125,11 +137,11 @@ export function LegalContactCard({
               </span>
               <button
                 type="button"
-                onClick={() => copyToClipboard(ordersEmail)}
+                onClick={() => copyToClipboard('orders', ordersEmail)}
                 className="inline-flex items-center gap-1 text-[11px] text-[#fff1e6] hover:text-white px-2.5 py-1 rounded-lg bg-white/15 hover:bg-[#a5a58d] transition-colors cursor-pointer"
                 title="Copy email address"
               >
-                {copiedEmail === ordersEmail ? (
+                {copiedCard === 'orders' ? (
                   <>
                     <Check size={12} className="text-white" />
                     <span className="text-white font-medium">Copied</span>
@@ -143,6 +155,7 @@ export function LegalContactCard({
               </button>
             </div>
           </div>
+          )}
         </div>
 
         {/* Closing Note */}

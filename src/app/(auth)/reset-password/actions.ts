@@ -27,8 +27,8 @@ export async function resetPassword(token: string, input: ResetPasswordInput) {
     try {
       // Notify admin
       await sendTrackedEmail(payload, {
-        from: 'Veracue Support <support@veracuepeptides.com>',
-        to: process.env.ADMIN_EMAIL || 'support@veracuepeptides.com',
+        from: 'Veracue Support <orders@veracuelabs.com>',
+        to: process.env.ADMIN_EMAIL || 'orders@veracuelabs.com',
         subject: `Security Alert: User Password Reset`,
         html: `<p>The password for the user <strong>${user.email}</strong> was recently changed via the forgot password flow.</p>`
       })

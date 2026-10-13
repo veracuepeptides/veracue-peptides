@@ -140,10 +140,12 @@ export interface Config {
   globals: {
     'affiliate-settings': AffiliateSetting;
     'blog-author-profile': BlogAuthorProfile;
+    'payment-methods': PaymentMethod;
   };
   globalsSelect: {
     'affiliate-settings': AffiliateSettingsSelect<false> | AffiliateSettingsSelect<true>;
     'blog-author-profile': BlogAuthorProfileSelect<false> | BlogAuthorProfileSelect<true>;
+    'payment-methods': PaymentMethodsSelect<false> | PaymentMethodsSelect<true>;
   };
   locale: 'en' | 'es';
   widgets: {
@@ -243,7 +245,7 @@ export interface User {
     | boolean
     | null;
   /**
-   * HB Points ($1 per point). Can be used by users at checkout.
+   * VL Points ($1 per point). Can be used by users at checkout.
    */
   hbPoints?: number | null;
   updatedAt: string;
@@ -763,7 +765,7 @@ export interface Order {
   subtotal?: number | null;
   discountTotal?: number | null;
   /**
-   * HB Points used in this order ($1 per point)
+   * VL Points used in this order ($1 per point)
    */
   redeemedPoints?: number | null;
   shippingTotal?: number | null;
@@ -807,11 +809,11 @@ export interface Order {
   /**
    * Zelle orders require manual payment confirmation before fulfillment.
    */
-  paymentMethod?: ('stripe' | 'zelle' | 'amex' | 'circoflows' | 'stripe_link') | null;
+  paymentMethod?: ('stripe' | 'zelle' | 'amex' | 'stripe_link' | 'veracuepay') | null;
   /**
-   * CircoFlows transaction_id, for support/reconciliation lookups.
+   * PaymentIntent id in the VeracuePay Stripe account, for support/reconciliation lookups.
    */
-  circoflowsTransactionId?: string | null;
+  veracuepayPaymentIntentId?: string | null;
   couponCode?: string | null;
   /**
    * Affiliate ID if referred
@@ -1090,7 +1092,7 @@ export interface EmailLog {
     | boolean
     | null;
   sentAt: string;
-  status?: ('sent' | 'failed') | null;
+  status?: ('sent' | 'failed' | 'skipped') | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -2012,7 +2014,7 @@ export interface OrdersSelect<T extends boolean = true> {
   trackingLink?: T;
   sendTrackingEmail?: T;
   paymentMethod?: T;
-  circoflowsTransactionId?: T;
+  veracuepayPaymentIntentId?: T;
   couponCode?: T;
   affiliateId?: T;
   clickId?: T;
@@ -2477,6 +2479,36 @@ export interface BlogAuthorProfile {
   createdAt?: string | null;
 }
 /**
+ * Turn the payment options on checkout on or off, drag rows to change their order, and edit the text customers see. The first option that is on is the one pre-selected. At least one option must stay on.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payment-methods".
+ */
+export interface PaymentMethod {
+  id: number;
+  /**
+   * This list controls display only (on or off, order and wording). The payment handling itself is built into the site. A method that is switched off stops taking new orders straight away; payments already in progress still complete.
+   */
+  methods: {
+    /**
+     * Which checkout payment path this row controls. The card option also needs the VeracuePay settings in the server environment; without them it stays hidden even when it is on here.
+     */
+    key: 'veracuepay' | 'zelle' | 'stripe_link';
+    enabled?: boolean | null;
+    /**
+     * The option title at checkout, for example "Zelle" or "Credit / Debit Card".
+     */
+    label: string;
+    /**
+     * The small line under the title at checkout.
+     */
+    description: string;
+    id?: string | null;
+  }[];
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "affiliate-settings_select".
  */
@@ -2506,6 +2538,24 @@ export interface BlogAuthorProfileSelect<T extends boolean = true> {
     | {
         platform?: T;
         url?: T;
+        id?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payment-methods_select".
+ */
+export interface PaymentMethodsSelect<T extends boolean = true> {
+  methods?:
+    | T
+    | {
+        key?: T;
+        enabled?: T;
+        label?: T;
+        description?: T;
         id?: T;
       };
   updatedAt?: T;

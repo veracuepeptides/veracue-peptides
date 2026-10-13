@@ -32,11 +32,11 @@ export async function generateMetadata({
   const locale = 'en'
   const t = await getTranslations('home')
   // The root layout's title template does not apply to the page in the same segment, so add the brand here.
-  const title = `${t('metaTitle')} | Veracue Peptides`
+  const title = `${t('metaTitle')} | Veracue Labs`
   const description = t('metaDescription')
   const path = true ? '/' : `/${locale}`
 
-  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com'
   const homeOgImage = `${serverUrl}/veracue-images/veracue-home-og.png`
 
   return {
@@ -61,13 +61,13 @@ export async function generateMetadata({
       description,
       type: 'website',
       url: path,
-      siteName: 'Veracue Peptides',
+      siteName: 'Veracue Labs',
       images: [
         {
           url: homeOgImage,
           width: 1200,
           height: 675,
-          alt: 'Veracue Peptides',
+          alt: 'Veracue Labs',
         },
       ],
     },
@@ -83,11 +83,15 @@ export async function generateMetadata({
 import { getShopProducts } from '@/app/(frontend)/(shop)/actions'
 import { getVisibleCategories } from '@/app/(frontend)/actions/categories'
 
+// Cached and refreshed at most every 600s; saving content in the admin refreshes it sooner
+// (see revalidateStorefrontPages in lib/revalidate.ts). Nothing here depends on the visitor.
+export const revalidate = 600
+
 export default async function Homepage() {
   const t = await getTranslations('home')
   const title = t('metaTitle')
   const description = t('metaDescription')
-  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com'
   // Single source of truth with the on-page FAQ list — pulling from the same FAQ_KEYS/t()
   // pair FaqSection itself uses means the structured data can never drift out of sync with
   // what's actually rendered on the page.
@@ -184,11 +188,11 @@ export default async function Homepage() {
               {
                 '@type': 'Organization',
                 '@id': `${serverUrl}/#organization`,
-                name: 'Veracue Peptides',
-                legalName: 'Veracue Peptides LLC',
+                name: 'Veracue Labs',
+                legalName: 'Veracue Labs LLC',
                 url: serverUrl,
                 description: 'Supplier of research-use-only synthetic peptides for laboratory research.',
-                email: 'support@veracuepeptides.com',
+                email: 'orders@veracuelabs.com',
                 logo: {
                   '@type': 'ImageObject',
                   '@id': `${serverUrl}/#logo`,
@@ -197,7 +201,7 @@ export default async function Homepage() {
                 contactPoint: {
                   '@type': 'ContactPoint',
                   contactType: 'customer support',
-                  email: 'support@veracuepeptides.com',
+                  email: 'orders@veracuelabs.com',
                   availableLanguage: ['English'],
                 },
                 ...getOrganizationIdentityFields(),
@@ -206,7 +210,7 @@ export default async function Homepage() {
                 '@type': 'WebSite',
                 '@id': `${serverUrl}/#website`,
                 url: serverUrl,
-                name: 'Veracue Peptides',
+                name: 'Veracue Labs',
                 inLanguage: 'en',
                 publisher: { '@id': `${serverUrl}/#organization` },
               },

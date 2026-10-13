@@ -1,6 +1,7 @@
 import React from 'react'
 import { ProductClient } from './ProductClient'
 import { getOgImageUrl, encodeImageUrl } from '@/lib/utils'
+import { OG_WIDTH, ogHeightForAspect } from '@/lib/ogSize'
 import { notFound } from 'next/navigation'
 import { getPayload } from 'payload'
 import configPromise from '@payload-config'
@@ -12,7 +13,7 @@ import { getMessages } from 'next-intl/server'
 import { NextIntlClientProvider } from 'next-intl'
 import { pickMessages } from '@/lib/i18n/pickMessages'
 
-const BASE_URL = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+const BASE_URL = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com'
 
 function stripHtml(input: string): string {
   return input
@@ -46,23 +47,37 @@ export async function generateMetadata({
 
   const name = product.name || 'Product'
   // seoTitle may already carry the brand; absolute avoids the root template appending it twice.
-  const title = product.seoTitle || `${name} | Veracue Peptides`
+  // Stored seoTitle values can end with a stale "| Veracue Peptides" suffix, so strip any brand suffix and always append the current one.
+  const baseTitle = (product.seoTitle || '').replace(/\s*\|\s*(Veracue\s+Peptides|Veracue\s+Labs|Veracue)\s*$/i, '').trim()
+  const title = `${baseTitle || name} | Veracue Labs`
   const plainDescription = product.description ? stripHtml(String(product.description)) : ''
   const description =
     product.seoDescription ||
     (plainDescription ? truncateAtWord(plainDescription, 155) : '') ||
-    `${name} research peptide. Batch COA and HPLC purity data. For laboratory research use only.`
+    `${name} research peptide. Analytical documentation available on request. For laboratory research use only.`
 
   // Get primary image for open graph
   let imageUrl = undefined
+  let imageWidth: number | null = null
+  let imageHeight: number | null = null
   if (product.images && product.images.length > 0 && typeof product.images[0].image === 'object' && product.images[0].image?.url) {
     imageUrl = product.images[0].image.url
     if (imageUrl.startsWith('/')) {
       imageUrl = `${BASE_URL}${imageUrl}`
     }
+    imageWidth = product.images[0].image.width ?? null
+    imageHeight = product.images[0].image.height ?? null
   }
 
-  const ogImage = getOgImageUrl(title, description, imageUrl, 'RESEARCH PEPTIDE', 'veracue-ghk-cu-50mg-ice-bed-warm.webp')
+  // The share card is drawn from this product's own photo, at that photo's aspect ratio (the route
+  // computes the same height from the same formula), so the size declared below matches the image.
+  // The generic default background is only used when a product has no usable photo.
+  const firstCategory = Array.isArray(product.categories)
+    ? product.categories.find((c: any) => c && typeof c === 'object' && c.name)
+    : null
+  const ogKicker = firstCategory ? getCategoryDisplayName((firstCategory as any).name).toUpperCase() : 'LABORATORY RESEARCH PRODUCT'
+  const ogImage = getOgImageUrl(title, description, imageUrl, ogKicker)
+  const ogHeight = imageUrl ? ogHeightForAspect(imageWidth, imageHeight) : 630
 
   return {
     title: { absolute: title },
@@ -72,12 +87,12 @@ export async function generateMetadata({
       description,
       type: 'website',
       url: `${BASE_URL}/product/${slug}`,
-      siteName: 'Veracue Peptides',
+      siteName: 'Veracue Labs',
       images: [
         {
           url: ogImage,
-          width: 1200,
-          height: 630,
+          width: OG_WIDTH,
+          height: ogHeight,
           alt: title,
         },
       ],
@@ -90,9 +105,22 @@ export async function generateMetadata({
     },
     alternates: {
       canonical: `/product/${slug}`,
+      types: { 'text/markdown': `/product/${slug}.md` },
     },
   }
 }
+
+// Without generateStaticParams a dynamic route is rendered fresh on every request even with a
+// `revalidate` set. Returning an empty list turns caching on without pre-building every product at
+// deploy time (which would read the whole catalog from the database during the build): each product
+// page is rendered on its first visit and then served from the cache.
+export async function generateStaticParams() {
+  return []
+}
+
+// Cached and refreshed at most every 1800s; saving content in the admin refreshes it sooner
+// (see revalidateStorefrontPages in lib/revalidate.ts). Nothing here depends on the visitor.
+export const revalidate = 1800
 
 export default async function ProductPage({
   params,
@@ -109,13 +137,16 @@ export default async function ProductPage({
     notFound()
   }
 
-  // Map images
-  const mappedImages = rawProduct.images?.map((img: any) => {
-    if (typeof img.image === 'object' && img.image?.url) {
-      return encodeImageUrl(img.image.url)
-    }
-    return ''
-  }).filter(Boolean) || []
+  // Map images, keeping each image's alt text (index-aligned with the URL list) so the gallery can use it
+  const imageEntries = (list?: any[] | null) =>
+    (list || []).flatMap((img: any) =>
+      typeof img.image === 'object' && img.image?.url
+        ? [{ url: encodeImageUrl(img.image.url), alt: typeof img.image.alt === 'string' ? img.image.alt : '' }]
+        : [],
+    )
+  const productImageEntries = imageEntries(rawProduct.images)
+  const mappedImages: string[] = productImageEntries.map((e) => e.url)
+  const mappedImageAlts: string[] = productImageEntries.map((e) => e.alt)
 
   // If no images are uploaded globally, check if variants have images
   if (mappedImages.length === 0) {
@@ -144,12 +175,8 @@ export default async function ProductPage({
   let mappedVariants = []
   if (rawProduct.hasVariants && rawProduct.variants?.length) {
     mappedVariants = rawProduct.variants.map((v: any, index: number) => {
-      const mappedImages = v.images?.map((img: any) => {
-        if (typeof img.image === 'object' && img.image?.url) {
-          return encodeImageUrl(img.image.url)
-        }
-        return ''
-      }).filter(Boolean) || []
+      const variantImageEntries = imageEntries(v.images)
+      const mappedImages = variantImageEntries.map((e) => e.url)
 
       return {
         id: v.sku || `v-${index}`,
@@ -159,6 +186,7 @@ export default async function ProductPage({
         salePrice: v.salePrice ? `$${Number(v.salePrice).toFixed(2)}` : undefined,
         inStock: (v.stock || 0) > 0,
         images: mappedImages,
+        imageAlts: variantImageEntries.map((e) => e.alt),
       }
     })
   } else {
@@ -259,6 +287,7 @@ export default async function ProductPage({
       })) || []
     })) || [],
     images: mappedImages,
+    imageAlts: mappedImageAlts,
     variants: mappedVariants,
     coaFile: coaFileUrl,
     tabs: mappedTabs,
@@ -519,11 +548,11 @@ export default async function ProductPage({
     } : {}),
     brand: {
       '@type': 'Brand',
-      name: 'Veracue Peptides'
+      name: 'Veracue Labs'
     },
     manufacturer: {
       '@type': 'Organization',
-      name: 'Veracue Peptides'
+      name: 'Veracue Labs'
     },
     ...(offers ? { offers } : {}),
     ...(ratingCount > 0 && ratingValue > 0 ? {

@@ -32,7 +32,7 @@ export async function generateMetadata({
       description,
       type: 'website',
       url: path,
-      siteName: 'Veracue Peptides',
+      siteName: 'Veracue Labs',
       images: [
         {
           url: getOgImageUrl(title, description, undefined, 'HPLC LABORATORY PURITY', 'veracue-ghk-cu-50mg-ice-bed-warm.webp'),
@@ -50,6 +50,10 @@ export async function generateMetadata({
     },
   }
 }
+
+// Cached and refreshed at most every 600s; saving content in the admin refreshes it sooner
+// (see revalidateStorefrontPages in lib/revalidate.ts). Nothing here depends on the visitor.
+export const revalidate = 600
 
 export default async function CertificatesPage() {
   const locale = await getLocale()
@@ -103,7 +107,7 @@ export default async function CertificatesPage() {
 
   const coas: VerifiedCOA[] = dbCoas
 
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com'
   const path = `/${slug}`
   const url = `${baseUrl}${path}`
 

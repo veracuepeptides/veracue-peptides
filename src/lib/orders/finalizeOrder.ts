@@ -52,33 +52,53 @@ export async function finalizeOrder(orderId: string | number, paymentIntentMetad
       return true
     }
 
-    // 1. Mark Order as Paid
-    if (order.paymentStatus !== 'captured') {
-      await payload.update({
-        collection: 'orders',
-        id: idToUse,
-        data: {
-          status: 'paid',
-          paymentStatus: 'captured',
-        }
-      })
+    // 1. Mark Order as Paid. Checked on the order's status as well as its payment status: marking
+    // paymentStatus captured in the admin fires this function after the payment is already captured,
+    // and the order must still move from pending to paid.
+    //
+    // This is the one step that must succeed. The claim above was already written, so if the update
+    // fails the claim is released again: otherwise every retry from the payment provider would see
+    // "already finalized" and return, leaving a paid order stuck unpaid with no email.
+    if (order.paymentStatus !== 'captured' || order.status === 'pending') {
+      // An order an admin already moved past "paid" (shipped, fulfilled, completed) only needs its
+      // payment recorded; forcing status back to "paid" is an invalid transition and would throw.
+      const pastPaid = ['paid', 'shipped', 'fulfilled', 'completed'].includes(String(order.status))
+      try {
+        await payload.update({
+          collection: 'orders',
+          id: idToUse,
+          data: pastPaid
+            ? { paymentStatus: 'captured' }
+            : { status: 'paid', paymentStatus: 'captured' },
+        })
+      } catch (updateError) {
+        await db.drizzle.execute(sql`
+          UPDATE "orders" SET "is_finalized" = false
+          WHERE "id" = ${typeof idToUse === 'number' ? idToUse : Number(idToUse)}`)
+        throw updateError
+      }
       // Update in-memory object so subsequent emails don't show unpaid instructions
-      order.status = 'paid';
+      if (!pastPaid) order.status = 'paid';
       order.paymentStatus = 'captured';
     }
 
-    // 2. Clear User Cart
-    if (order.owner) {
-      const userId = typeof order.owner === 'object' ? order.owner.id : order.owner
+    // 2. Clear User Cart. Best effort: the payment is already recorded, so a failure here must not
+    // undo it or block the confirmation email below.
+    try {
+      if (order.owner) {
+        const userId = typeof order.owner === 'object' ? order.owner.id : order.owner
 
-      // Clear user's Payload cart instantly
-      const carts = await payload.find({ collection: 'carts', where: { user: { equals: userId } } });
-      if (carts.docs.length > 0) {
-        await payload.update({ collection: 'carts', id: carts.docs[0].id, data: { items: [] } });
+        // Clear user's Payload cart instantly
+        const carts = await payload.find({ collection: 'carts', where: { user: { equals: userId } } });
+        if (carts.docs.length > 0) {
+          await payload.update({ collection: 'carts', id: carts.docs[0].id, data: { items: [] } });
+        }
+      } else if (paymentIntentMetadata?.cartId) {
+        // Clear Guest Cart using metadata fallback
+        await payload.update({ collection: 'carts', id: paymentIntentMetadata.cartId, data: { items: [] } });
       }
-    } else if (paymentIntentMetadata?.cartId) {
-      // Clear Guest Cart using metadata fallback
-      await payload.update({ collection: 'carts', id: paymentIntentMetadata.cartId, data: { items: [] } });
+    } catch (cartError) {
+      console.error(`finalizeOrder: could not clear the cart for order ${orderId}`, cartError)
     }
 
     // 3. Affiliate Attribution
@@ -101,15 +121,20 @@ export async function finalizeOrder(orderId: string | number, paymentIntentMetad
             const userDoc = typeof order.owner === 'object' ? order.owner : await payload.findByID({ collection: 'users', id: order.owner });
             customerEmail = userDoc.email;
         }
-        if (customerEmail && order.paymentMethod !== 'zelle') {
+        // Every payment method gets a confirmation once the payment is captured. For Zelle this is
+        // the "we received your payment" message; the invoice sent at checkout only asked for it.
+        if (customerEmail) {
             const { generateOrderInvoiceHtml } = await import('@/lib/emails/generateOrderEmail');
             const invoiceHtml = await generateOrderInvoiceHtml(order, payload);
+            const isZelle = order.paymentMethod === 'zelle'
 
             await sendTrackedEmail(payload, {
-                from: 'Veracue Orders <orders@veracuepeptides.com>',
+                from: 'Veracue Orders <orders@veracuelabs.com>',
                 to: customerEmail,
-                bcc: 'support@veracuepeptides.com',
-                subject: `Order Confirmation #${order.orderNumber || order.id}`,
+                bcc: 'orders@veracuelabs.com',
+                subject: isZelle
+                    ? `Payment received for Order #${order.orderNumber || order.id}`
+                    : `Order Confirmation #${order.orderNumber || order.id}`,
                 html: invoiceHtml,
             })
         }

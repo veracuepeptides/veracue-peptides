@@ -1,5 +1,6 @@
 import { sql } from '@payloadcms/db-postgres'
 import type { Payload } from 'payload'
+import { getSqlExecutor } from '@/lib/db/transactionSql'
 
 /**
  * Atomic (single-statement) stock/coupon/points reservation, used at order-creation time
@@ -35,10 +36,10 @@ export async function reserveStock(
   return { success: true }
 }
 
-export async function releaseStock(payload: Payload, items: ReserveItem[]): Promise<void> {
-  const db = payload.db as any
+export async function releaseStock(payload: Payload, items: ReserveItem[], req?: { transactionID?: unknown } | null): Promise<void> {
+  const db = await getSqlExecutor(payload, req)
   for (const item of items) {
-    await db.drizzle.execute(sql`
+    await db.execute(sql`
       UPDATE "products" SET "stock" = "stock" + ${item.quantity}
       WHERE "id" = ${item.productId}`)
   }
@@ -85,13 +86,14 @@ export async function releaseCouponUsage(
   couponId: number,
   discountAmount: number,
   isStoreCredit: boolean,
+  req?: { transactionID?: unknown } | null,
 ): Promise<void> {
-  const db = payload.db as any
-  await db.drizzle.execute(sql`
+  const db = await getSqlExecutor(payload, req)
+  await db.execute(sql`
     UPDATE "coupons" SET "usage_count" = GREATEST(0, COALESCE("usage_count", 0) - 1)
     WHERE "id" = ${couponId}`)
   if (isStoreCredit && discountAmount > 0) {
-    await db.drizzle.execute(sql`
+    await db.execute(sql`
       UPDATE "coupons" SET "remaining_balance" = COALESCE("remaining_balance", 0) + ${discountAmount}
       WHERE "id" = ${couponId}`)
   }
@@ -129,10 +131,10 @@ export async function reservePoints(payload: Payload, userId: number, desired: n
   return fallbackRows && fallbackRows.length > 0 ? available : 0
 }
 
-export async function releasePoints(payload: Payload, userId: number, amount: number): Promise<void> {
+export async function releasePoints(payload: Payload, userId: number, amount: number, req?: { transactionID?: unknown } | null): Promise<void> {
   if (amount <= 0) return
-  const db = payload.db as any
-  await db.drizzle.execute(sql`
+  const db = await getSqlExecutor(payload, req)
+  await db.execute(sql`
     UPDATE "users" SET "hb_points" = "hb_points" + ${amount}
     WHERE "id" = ${userId}`)
 }

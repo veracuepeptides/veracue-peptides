@@ -25,7 +25,7 @@ import { safeJsonLd } from '@/lib/seo/jsonLd'
 // The root layout title template appends the brand, so strip any brand suffix already
 // present in CMS-authored titles.
 function stripBrandSuffix(title: string): string {
-  return title.replace(/\s*\|\s*(Veracue Peptides|Veracue|Helix Bio)\s*$/i, '').trim()
+  return title.replace(/\s*\|\s*(Veracue Peptides|Veracue Labs|Veracue|Helix Bio)\s*$/i, '').trim()
 }
 
 // Cheap word count from Lexical JSON text nodes.
@@ -64,7 +64,7 @@ export async function generateMetadata({
   const title = stripBrandSuffix(post.meta?.title || post.title)
   const description = post.meta?.description || post.excerpt || ''
   const path = `/blog/${slug}`
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com'
   const imageUrl = toAbsoluteUrl(baseUrl, getFeaturedImageUrl(post))
   const authorProfile = await getAuthorProfile()
   const authorName = authorProfile?.name || 'Veracue Research Team'
@@ -80,14 +80,14 @@ export async function generateMetadata({
       ? post.keywords.split(',').map((k: string) => k.trim()).filter(Boolean)
       : undefined,
     authors: [{ name: authorName }],
-    publisher: 'Veracue',
-    alternates: { canonical: path },
+    publisher: 'Veracue Labs',
+    alternates: { canonical: path, types: { 'text/markdown': `${path}.md` } },
     openGraph: {
       title,
       description,
       type: 'article',
       url: path,
-      siteName: 'Veracue Peptides',
+      siteName: 'Veracue Labs',
       section: post.category || undefined,
       tags: post.keywords
         ? post.keywords.split(',').map((k: string) => k.trim()).filter(Boolean)
@@ -112,6 +112,10 @@ export async function generateMetadata({
     },
   }
 }
+
+// Cached and refreshed at most every 3600s; saving content in the admin refreshes it sooner
+// (see revalidateStorefrontPages in lib/revalidate.ts). Nothing here depends on the visitor.
+export const revalidate = 3600
 
 export default async function BlogPostPage({
   params,
@@ -183,7 +187,7 @@ export default async function BlogPostPage({
 
   const { first: introContent, rest: restContent } = splitFirstParagraph(post.content)
 
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com'
   const postUrl = `${baseUrl}/blog/${slug}`
   const isoDate = post.publishedAt ? new Date(post.publishedAt).toISOString() : new Date(post.createdAt).toISOString()
 

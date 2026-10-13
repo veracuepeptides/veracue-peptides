@@ -88,7 +88,7 @@ export function LegalSidebar({
             </p>
           </div>
           <a
-            href="mailto:support@veracuepeptides.com"
+            href="mailto:orders@veracuelabs.com"
             className="inline-flex items-center justify-between w-full px-4 py-2.5 rounded-xl bg-[#a5a58d] hover:bg-[#20221c] text-white text-xs font-semibold tracking-wide transition-colors group shadow-2xs"
           >
             <span className="flex items-center gap-2">

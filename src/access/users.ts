@@ -4,13 +4,15 @@
 /**
  * Access control for the Users collection.
  *
- * - create: public (registration)
+ * - create: admin / staff only. Storefront registration and Google sign-in create users through
+ *   server code with overrideAccess, so no public REST/GraphQL create is needed. Leaving this
+ *   open let anyone POST /api/users with role "admin" or free store credit.
  * - read: own record OR admin / staff
  * - update: own record (limited fields) OR admin (all)
  * - delete: admin only
  */
 export const accessUsers: any = {
-  create: () => true,
+  create: ({ req: { user } }: any) => !!user && ['admin', 'staff'].includes(user?.role),
   admin: ({ req: { user } }: any) => {
     return !!user && ['admin', 'staff'].includes(user?.role)
   },

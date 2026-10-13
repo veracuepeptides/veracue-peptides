@@ -58,7 +58,7 @@ export function DashboardClient({ userName = 'Affiliate', tier = 'standard', sta
 
   // Formatting helpers
   const formatMoney = (dollars: number) => `$${dollars.toFixed(2)}`
-  const [baseUrl, setBaseUrl] = useState('https://veracuepeptides.com')
+  const [baseUrl, setBaseUrl] = useState('https://veracuelabs.com')
 
   React.useEffect(() => {
     setBaseUrl(window.location.origin)

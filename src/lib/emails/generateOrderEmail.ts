@@ -1,5 +1,6 @@
 import { escapeHtml } from './escapeHtml'
 import { ZELLE_RECIPIENT_PHONE } from '@/lib/payments/zelle'
+import { CARD_STATEMENT_NAME } from '@/lib/payments/statement'
 import { BRAND, shellOpen, shellClose, pillButton, wave, statusPill, iconBadge, type IconName } from './emailShell'
 
 const ZELLE_QR_URL = 'https://pub-ac7469377283406ab723756fc506e004.r2.dev/assets/zelle-qr.webp'
@@ -7,7 +8,7 @@ const ZELLE_QR_URL = 'https://pub-ac7469377283406ab723756fc506e004.r2.dev/assets
 export async function generateOrderInvoiceHtml(order: any, payload?: any, customNote?: string, statusContext: 'success' | 'failed' | 'cancelled' | 'refunded' = 'success'): Promise<string> {
   const orderNumber = order.orderNumber || order.id;
   const orderDate = order.createdAt ? new Date(order.createdAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com';
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com';
 
   const formatMoney = (amount: number) => `$${(amount).toFixed(2)}`;
 
@@ -133,8 +134,8 @@ export async function generateOrderInvoiceHtml(order: any, payload?: any, custom
     stripe: 'Card',
     zelle: 'Zelle',
     amex: 'American Express',
-    circoflows: 'Card',
     stripe_link: 'Stripe (Custom Link)',
+    veracuepay: 'Card',
   }
   const paymentMethodLabel = paymentMethodLabels[order.paymentMethod] || 'Card'
   const isUnpaidAction = statusContext === 'success' && order.paymentStatus === 'unpaid' && ['zelle', 'amex', 'stripe_link'].includes(order.paymentMethod)
@@ -230,6 +231,18 @@ export async function generateOrderInvoiceHtml(order: any, payload?: any, custom
             <td style="background-color:${BRAND.linen};padding:34px 24px 34px;text-align:center;">
               <p style="margin:0 0 8px;font-family:-apple-system,sans-serif;font-weight:700;font-size:16px;color:${BRAND.charcoal};">Complete Your Payment</p>
               <p style="margin:0;font-size:13px;line-height:1.6;color:rgba(32,34,28,0.6);">Our team will reach out shortly with a secure, custom Stripe payment link to finalize your order.</p>
+            </td>
+          </tr>`
+    cursor = BRAND.linen
+  } else if (order.paymentMethod === 'veracuepay' && statusContext === 'success') {
+    // Card payments: tell the customer what the charge will be called on their bank statement, so
+    // they recognise it. Not shown for a failed payment, where there is no charge.
+    cursorHtml = `
+          ${wave('#ffffff', BRAND.linen, 44)}
+          <tr>
+            <td style="background-color:${BRAND.linen};padding:34px 24px 34px;text-align:center;">
+              <p style="margin:0 0 8px;font-family:-apple-system,sans-serif;font-weight:700;font-size:16px;color:${BRAND.charcoal};">About This Charge</p>
+              <p style="margin:0;font-size:13px;line-height:1.6;color:rgba(32,34,28,0.6);">This charge will appear on your card statement as <strong style="color:${BRAND.charcoal};">&quot;${escapeHtml(CARD_STATEMENT_NAME)}&quot;</strong>. Card payments are processed by our payment partner, VeracuePay.</p>
             </td>
           </tr>`
     cursor = BRAND.linen

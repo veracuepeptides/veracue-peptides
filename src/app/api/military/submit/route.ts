@@ -32,7 +32,10 @@ export async function POST(req: Request) {
     // IP-based rate limit is a soft extra layer (no-ops if Upstash isn't configured) — the
     // authoritative "once per day" rule below is enforced against the database instead, so it
     // works regardless of whether Redis is set up.
-    const ip = req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || 'unknown'
+    // The platform appends the real client IP, so the last x-forwarded-for entry is trustworthy. The
+    // first entry is client-supplied, so rotating it used to bypass this limit entirely.
+    const forwarded = (req.headers.get('x-forwarded-for') || '').split(',').map((v) => v.trim()).filter(Boolean)
+    const ip = forwarded[forwarded.length - 1] || req.headers.get('x-real-ip') || 'unknown'
     const { allowed } = await checkRateLimit(`military-submit:${ip}`, 5, 24 * 60 * 60)
     if (!allowed) {
       return NextResponse.json({ error: 'Too many requests. Please try again later.' }, { status: 429 });
@@ -86,9 +89,9 @@ export async function POST(req: Request) {
 
     // Send to Support Email with Attachment
     await sendTrackedEmail(payload, {
-      from: `"${name} (Military)" <support@veracuepeptides.com>`,
+      from: `"${name} (Military)" <orders@veracuelabs.com>`,
       replyTo: email,
-      to: 'support@veracuepeptides.com',
+      to: 'orders@veracuelabs.com',
       subject: `[Military Discount] Verification Request: ${name}`,
       html: emailHtml,
       attachments: [

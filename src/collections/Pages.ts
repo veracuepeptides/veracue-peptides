@@ -1,6 +1,7 @@
 import { CollectionConfig } from 'payload'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import { accessContent } from '../access/content'
+import { revalidateStorefrontPages } from '../lib/revalidate'
 
 export const Pages: CollectionConfig = {
   slug: 'pages',
@@ -27,6 +28,13 @@ export const Pages: CollectionConfig = {
           data.slug = data.title.toLowerCase().replace(/\s+/g, '-')
         }
         return data
+      },
+    ],
+    // Cached public pages pick up an edited or published page immediately.
+    afterChange: [
+      ({ doc }) => {
+        revalidateStorefrontPages()
+        return doc
       },
     ],
   },

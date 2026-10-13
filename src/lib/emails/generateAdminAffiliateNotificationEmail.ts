@@ -7,7 +7,7 @@ function field(label: string, value: string): string {
 }
 
 export function generateAdminAffiliateNotificationEmail(application: any, affiliate: any, user: any): string {
-  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com'
   const affiliateName = application.displayName || 'Partner'
   const website = application.websiteUrl || 'N/A'
   const reach = application.estimatedMonthlyReach || 'N/A'

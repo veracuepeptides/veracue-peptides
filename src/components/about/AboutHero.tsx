@@ -99,7 +99,7 @@ export function AboutHero() {
         <div className="flex flex-col items-center text-center shrink-0 w-full max-w-5xl px-3">
           {/* 1. Eyebrow Tagline */}
           <p className="font-serif tracking-[0.16em] sm:tracking-[0.24em] text-[9.5px] sm:text-[11.5px] md:text-[12px] uppercase text-neutral-700 font-normal mb-1.5 sm:mb-2">
-            Shipped From the USA &bull; HPLC Tested &bull; Batch-Specific COA
+            Shipped From the USA &bull; HPLC Tested &bull; COA on Request
           </p>
 
           {/* 2. Main Headline (H1) */}

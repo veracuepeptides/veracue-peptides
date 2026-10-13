@@ -3,7 +3,7 @@ import { BRAND, shellOpen, shellClose, pillButton, wave, logoUrl } from './email
 const HERO_IMAGE = 'https://pub-ac7469377283406ab723756fc506e004.r2.dev/Product%20Images/veracue-nad-plus-10mg-studio.webp'
 
 export async function generateAffiliateWelcomeEmail(affiliate: any, user: any): Promise<string> {
-  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com'
   const affiliateName = affiliate.displayName || user?.firstName || 'Partner'
   const referralLink = `${serverUrl}/ref/${affiliate.referralSlug}`
   const couponCode = affiliate.couponCode || ''

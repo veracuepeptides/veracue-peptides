@@ -7,6 +7,13 @@ import config from '@payload-config'
 import type { User } from '@/payload-types'
 import { checkRateLimit } from '@/lib/rateLimit'
 
+// NextAuth builds its callback URLs from NEXTAUTH_URL. When that is missing on Vercel it falls back
+// to the deployment URL, which breaks the Google sign-in redirect on the real domain. Default it to
+// the site URL so a forgotten variable cannot do that; an explicit NEXTAUTH_URL always wins.
+if (!process.env.NEXTAUTH_URL && process.env.NEXT_PUBLIC_SERVER_URL) {
+  process.env.NEXTAUTH_URL = process.env.NEXT_PUBLIC_SERVER_URL
+}
+
 export const authOptions: NextAuthOptions = {
   secret: process.env.NEXTAUTH_SECRET,
   session: { strategy: 'jwt' },
@@ -99,10 +106,10 @@ export const authOptions: NextAuthOptions = {
         try {
           const { sendTrackedEmail } = await import('@/lib/emails/sendTrackedEmail')
           await sendTrackedEmail(payload, {
-            from: 'Veracue Support <support@veracuepeptides.com>',
+            from: 'Veracue Support <orders@veracuelabs.com>',
             to: linked.email,
             subject: 'A new sign-in method was added to your account',
-            html: `<p>Google sign-in was just linked to your Veracue Peptides account (${linked.email}). If this wasn't you, please contact support immediately.</p>`,
+            html: `<p>Google sign-in was just linked to your Veracue Labs account (${linked.email}). If this wasn't you, please contact support immediately.</p>`,
           })
         } catch (err) {
           console.error('Failed to send Google-link notice email:', err)

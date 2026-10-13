@@ -27,6 +27,9 @@ import { ProductCard } from '@/components/shared/ProductCard'
 import { StaggerChildren, staggerItemVariants } from '@/components/motion/StaggerChildren'
 import { useSearchParams, useRouter } from 'next/navigation'
 import { getProductsFromAffiliateCart } from '@/app/(frontend)/actions/cart'
+import { usePricingConfig } from '@/lib/pricing/usePricingConfig'
+import { estimateDomesticShipping } from '@/lib/pricing/shipping'
+import { MAX_LINE_QUANTITY } from '@/lib/orders/checkoutLines'
 
 export function CartClient() {
   const t = useTranslations('checkout.cartClient')
@@ -42,12 +45,8 @@ export function CartClient() {
   const searchParams = useSearchParams()
   const router = useRouter()
 
-  // Dynamic Data States
-  const [shippingCost, setShippingCost] = useState<number | null>(null)
-  const [freeShippingThreshold, setFreeShippingThreshold] = useState<number | null>(null)
-  const [taxAmount, setTaxAmount] = useState<number>(0)
-  const [feePercentage, setFeePercentage] = useState<number | null>(null)
-  const [isLoadingData, setIsLoadingData] = useState(true)
+  // True while an affiliate-cart link is being turned into cart lines.
+  const [isLoadingData, setIsLoadingData] = useState(false)
 
   // Cart Hydration Guard
   const [hasHydrated, setHasHydrated] = useState(false)
@@ -59,6 +58,11 @@ export function CartClient() {
     }
     return useCartStore.persist.onFinishHydration(() => setHasHydrated(true))
   }, [])
+
+  // Shipping methods and processing fees come from one cached endpoint and the same helpers the
+  // drawer and checkout use, so the three places can no longer quote different fees. The totals
+  // show a spinner until it answers rather than a total with the fees silently left out.
+  const { config: pricingConfig, ready: pricingReady } = usePricingConfig(hasHydrated)
 
   // Coupon States
   const [couponCode, setCouponCode] = useState('')
@@ -125,57 +129,10 @@ export function CartClient() {
     }
   }, [searchParams, router, setItems, items])
 
-  // Fetch Shipping Zones, Processing Fees, and Related Products
+  // Related products: fetched once per visit. This effect used to re-run on every subtotal change,
+  // so each quantity tap re-requested shipping zones, fees and products.
   useEffect(() => {
     if (!hasHydrated) return
-
-    async function fetchCartData() {
-      setIsLoadingData(true)
-      try {
-        const shippingRes = await fetch('/api/shippingzones')
-        const shippingData = await shippingRes.json()
-
-        let estimatedShipping = 15 // Fallback
-        if (shippingData?.docs?.length > 0) {
-          const firstZone = shippingData.docs[0]
-          const methods = firstZone.methods || []
-          if (methods.length > 0) {
-            estimatedShipping = methods[0].price
-            const freeMethod = methods.find((m: any) => m.price === 0 && m.minOrderAmount > 0)
-            if (freeMethod) {
-              setFreeShippingThreshold(freeMethod.minOrderAmount)
-            }
-          }
-        }
-
-        const feesRes = await fetch('/api/processing-fees')
-        const feesData = await feesRes.json()
-
-        let calculatedTax = 0
-        let percentageFee: number | null = null
-        if (feesData?.docs?.length > 0) {
-          feesData.docs.forEach((fee: any) => {
-            if (fee.isActive && !fee.isOptional) {
-              if (fee.type === 'percentage') {
-                calculatedTax += subtotal * (fee.amount / 100)
-                percentageFee = fee.amount
-              } else if (fee.type === 'fixed_amount') {
-                calculatedTax += fee.amount
-              }
-            }
-          })
-        }
-
-        setShippingCost(estimatedShipping)
-        setTaxAmount(calculatedTax)
-        setFeePercentage(percentageFee)
-      } catch (err) {
-        console.error('Error fetching dynamic cart data', err)
-        setShippingCost(15)
-      } finally {
-        setIsLoadingData(false)
-      }
-    }
 
     async function fetchRelatedProducts() {
       try {
@@ -247,9 +204,8 @@ export function CartClient() {
       }
     }
 
-    fetchCartData()
     fetchRelatedProducts()
-  }, [subtotal, hasHydrated, t])
+  }, [hasHydrated, t])
 
   // Handle Coupon Application
   const handleApplyCoupon = async (codeToApply?: string) => {
@@ -385,16 +341,28 @@ export function CartClient() {
     if (activeCoupon.type === 'percentage') {
       discountAmount = eligibleSubtotal * (activeCoupon.value / 100)
     } else if (activeCoupon.type === 'fixed_amount') {
-      discountAmount = Math.min(activeCoupon.value / 100, eligibleSubtotal)
+      // Coupon values are stored in dollars. Dividing by 100 (a leftover from when they were
+      // cents) showed a $10 coupon as $0.10 in the cart while checkout took the full $10 off.
+      discountAmount = Math.min(activeCoupon.value, eligibleSubtotal)
     }
   }
 
-  // Shipping logic
-  const qualifiesForThresholdFreeShipping =
-    freeShippingThreshold !== null && subtotal >= freeShippingThreshold
-  const qualifiesForFreeShipping = isFreeShipping || qualifiesForThresholdFreeShipping
-  const finalShipping = qualifiesForFreeShipping || subtotal === 0 ? 0 : shippingCost || 0
-  const finalTotal = Math.max(0, subtotal - discountAmount + finalShipping + taxAmount)
+  // Shipping and fees follow the same rules checkout applies (see lib/pricing/shipping.ts): the
+  // cheapest method available at this subtotal, free from the configured threshold, and processing
+  // fees on the post-discount subtotal.
+  const subtotalAfterDiscount = Math.max(0, subtotal - discountAmount)
+  const finalShipping =
+    isFreeShipping || subtotal === 0 ? 0 : estimateDomesticShipping(pricingConfig.methods, subtotal)
+  const feePercentage = pricingConfig.fees.find((fee) => fee.type === 'percentage')?.amount ?? null
+  const taxAmount = pricingConfig.fees.reduce((sum, fee) => {
+    const amount =
+      fee.type === 'percentage'
+        ? Math.round(subtotalAfterDiscount * (fee.amount / 100) * 100) / 100
+        : fee.amount
+    return sum + amount
+  }, 0)
+  const finalTotal = Math.max(0, subtotalAfterDiscount + finalShipping + taxAmount)
+  const totalsLoading = isLoadingData || !pricingReady
 
   // Loading / Hydration State
   if (!hasHydrated) {
@@ -560,7 +528,8 @@ export function CartClient() {
                           <button
                             type="button"
                             onClick={() => updateQuantity(item.lineId, item.quantity + 1)}
-                            className="w-7 h-7 rounded-full flex items-center justify-center text-neutral-600 hover:text-neutral-950 hover:bg-white transition-all cursor-pointer"
+                            disabled={item.quantity >= MAX_LINE_QUANTITY}
+                            className="w-7 h-7 rounded-full flex items-center justify-center text-neutral-600 hover:text-neutral-950 hover:bg-white disabled:opacity-25 transition-all cursor-pointer"
                             aria-label="Increase quantity"
                           >
                             <Plus size={12} strokeWidth={2.2} />
@@ -663,7 +632,8 @@ export function CartClient() {
                           <button
                             type="button"
                             onClick={() => updateQuantity(item.lineId, item.quantity + 1)}
-                            className="w-6 h-6 rounded-full flex items-center justify-center text-neutral-600 hover:text-neutral-950"
+                            disabled={item.quantity >= MAX_LINE_QUANTITY}
+                            className="w-6 h-6 rounded-full flex items-center justify-center text-neutral-600 hover:text-neutral-950 disabled:opacity-25"
                             aria-label="Increase quantity"
                           >
                             <Plus size={11} strokeWidth={2.2} />
@@ -727,7 +697,7 @@ export function CartClient() {
                         {activeCoupon.type === 'percentage'
                           ? `-${activeCoupon.value}%`
                           : activeCoupon.type === 'fixed_amount'
-                          ? `-$${(activeCoupon.value / 100).toFixed(2)}`
+                          ? `-$${Number(activeCoupon.value).toFixed(2)}`
                           : 'Free Shipping'}
                       </span>
                     </div>
@@ -827,7 +797,7 @@ export function CartClient() {
               <div className="flex justify-between items-center">
                 <span>Delivery fee</span>
                 <span className="font-price font-medium text-neutral-900">
-                  {isLoadingData ? (
+                  {totalsLoading ? (
                     <Loader2 size={12} className="animate-spin text-neutral-400" />
                   ) : finalShipping === 0 ? (
                     <span className="text-[#55724a] font-semibold flex items-center gap-1">
@@ -869,7 +839,7 @@ export function CartClient() {
             <div className="flex justify-between items-baseline pt-4 pb-6 border-t border-[#eddcd2]">
               <span className="text-base font-sans font-bold text-neutral-900">Total</span>
               <div className="text-right">
-                {isLoadingData ? (
+                {totalsLoading ? (
                   <Loader2 size={20} className="animate-spin text-[#cb997e]" />
                 ) : (
                   <span className="text-2xl sm:text-[26px] font-price font-bold text-neutral-900 tracking-tight">

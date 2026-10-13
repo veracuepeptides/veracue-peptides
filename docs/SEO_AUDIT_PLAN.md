@@ -1,6 +1,8 @@
-# Veracue Peptides: SEO / GEO / AEO Audit and Fix Plan
+# Veracue Labs: SEO / GEO / AEO Audit and Fix Plan
 
-Brand: Veracue Peptides. Domain: https://veracuepeptides.com. Audit date: 2026-09-27.
+> Rebrand (2026-10-09): site renamed Veracue Peptides -> Veracue Labs, domain veracuepeptides.com -> veracuelabs.com, single contact email orders@veracuelabs.com. All names and instructions below use the new brand, domain and email.
+
+Brand: Veracue Labs. Domain: https://veracuelabs.com. Audit date: 2026-09-27.
 
 Method: static code audit only (no running app, no live DB, no Lighthouse). Four parallel read-only reviews covered metadata/schema, product/shop/blog/404, components/performance, and GEO/AEO/brand/compliance. Items marked (verify) need a check on the deployed site or in the CMS.
 
@@ -39,7 +41,7 @@ Verified with `next build` (passes) and a production server: titles, canonicals,
 | 0.3 | Two blog drafts are Helix clones and contain human dosing, weight-loss and treatment content, and they feed FAQPage JSON-LD | `blog-drafts/glp-1-...json`, `blog-drafts/tissue-repair-...json`, `src/data/blog-schemas.ts` | Unpublish or delete them from the CMS. Do not import. Rewrite from scratch later (see Phase 5). Delete `blog-schemas.ts`, `blog-seo.ts`, `blog-seo.es.ts`, `faqs.es.ts` (all dead code) | S |
 | 0.4 | Site-wide default description is "Premium Peptides for Peak Performance" (performance-enhancement claim, used for root meta, OG, Twitter) | `messages/en.json:3` (`common.siteTagline`), `src/app/(frontend)/layout.tsx:29,49,62` | Replace with the RUO copy already used in `home.metaDescription` | S |
 | 0.5 | Zelle phone in the order email is a placeholder `555-010-0199` (TODO in code) while the site shows a different number | `src/lib/emails/generateOrderEmail.ts:4` vs `OrderConfirmationClient.tsx:54` | Use one real number from one shared constant. Also `ZELLE_QR_URL` points at a dev R2 URL | S |
-| 0.6 | Production env must be `https://veracuepeptides.com`. `.env.example` and `.env.local` use localhost, and `metadataBase`, canonicals, OG URLs, sitemap and robots all read `NEXT_PUBLIC_SERVER_URL` | Vercel/host env | Set `NEXT_PUBLIC_SERVER_URL`, `NEXTAUTH_URL`, `PAYLOAD_PUBLIC_SERVER_URL`, `R2_PUBLIC_URL`, `RESEND_FROM_EMAIL` (fallback in `payload.config.ts:218` is `onboarding@resend.dev`). Preview deployments need `X-Robots-Tag: noindex` so they are not indexed (verify) | S |
+| 0.6 | Production env must be `https://veracuelabs.com`. `.env.example` and `.env.local` use localhost, and `metadataBase`, canonicals, OG URLs, sitemap and robots all read `NEXT_PUBLIC_SERVER_URL` | Vercel/host env | Set `NEXT_PUBLIC_SERVER_URL`, `NEXTAUTH_URL`, `PAYLOAD_PUBLIC_SERVER_URL`, `R2_PUBLIC_URL`, `RESEND_FROM_EMAIL` (fallback in `payload.config.ts:218` is `onboarding@resend.dev`). Preview deployments need `X-Robots-Tag: noindex` so they are not indexed (verify) | S |
 | 0.7 | Draft and archived products are served as 200 and indexable | `product/[slug]/page.tsx:19-26, 87-98` use Local API with default `overrideAccess: true`, no `status`/`isVisible` filter | Filter `status=active` and `isVisible=true` in both `generateMetadata` and page, else `notFound()`. Wrap the lookup in `React.cache()` (it currently runs twice per request) | S |
 | 0.8 | Fabricated struck-through prices and "-20%" / "BESTSELLER" badges on every product card | `src/components/shared/ProductCard.tsx:41-48, 220-224, 242` (`compareVal = price * 1.25`, default price 45) | Show a discount only when `salePrice < price` or real `compareAtPrice`. Show BESTSELLER only when the flag is set. This is a deceptive-pricing and Merchant Center risk | S |
 | 0.9 | `/api/search` returns invented products (fake COA purities, batch numbers, "Weight Loss" categories, mg in names) whenever the DB is empty or errors | `src/app/api/search/route.ts:9-130, 198-201` | Delete `FALLBACK_RESEARCH_COMPOUNDS`, return `[]` or 503. Same for hardcoded fallbacks in `BestSellerSection.tsx:10-91` (Semaglutide/Retatrutide/Tirzepatide with mg, invented slugs that 404) | S |
@@ -67,7 +69,7 @@ Verified with `next build` (passes) and a production server: titles, canonicals,
    - Add `@payloadcms/plugin-redirects` or a slug-history field so changing a product or post slug does not 404. Products.ts slug is `unique` but not `required`, has no format validation, and the hook uses `data.name.en` (breaks now that i18n is gone).
    - In the host: one primary host (non-www or www), 301 the other; force HTTPS. HSTS `preload` is set (`next.config.ts`), which commits you to HTTPS on all subdomains, so confirm before submitting to the preload list.
    - If any old domain (Helix, 99Purity, previous Veracue domain) was ever live, 301 it (verify).
-5. **404 status (verify).** Product and blog routes sit under `loading.tsx` Suspense boundaries, so streaming can send 200 before `notFound()` fires (Next then injects noindex, but status stays 200 for non-`htmlLimitedBots` clients). Run `curl -I https://veracuepeptides.com/does-not-exist` and `/product/does-not-exist`. If 200, remove root-level `loading.tsx` from those routes or accept noindex-only. (S)
+5. **404 status (verify).** Product and blog routes sit under `loading.tsx` Suspense boundaries, so streaming can send 200 before `notFound()` fires (Next then injects noindex, but status stays 200 for non-`htmlLimitedBots` clients). Run `curl -I https://veracuelabs.com/does-not-exist` and `/product/does-not-exist`. If 200, remove root-level `loading.tsx` from those routes or accept noindex-only. (S)
 6. **Not-found page.** `not-found.tsx` is `'use client'` so it inherits the homepage title. Make it a server component exporting `title` and `robots: {index:false}`, use an H1 (currently H2), add links to categories and blog. (S)
 7. **`[[...rest]]` on `/login` and `/register`** return 200 for arbitrary subpaths. `notFound()` when `rest` is non-empty. (S)
 8. **`/ref/[slug]`.** Good (307, disallowed, no query params). Add `X-Robots-Tag: noindex, nofollow` to the redirect response, skip bots by user-agent, and return 404 for unknown slugs instead of a 307 to `/`. (S)
@@ -76,10 +78,10 @@ Verified with `next build` (passes) and a production server: titles, canonicals,
 
 ## Phase 2. Titles, metadata, canonicals
 
-1. **Double-branded titles sitewide (High).** Root template `'%s | Veracue'` (`(frontend)/layout.tsx:27`) is applied on top of titles that already end in "| Veracue Peptides", giving e.g. "Privacy Policy | Veracue Peptides | Veracue". Blog posts get "X | Veracue | Veracue". Only the product page uses `{ absolute }`. (M)
-   - Set template to `'%s | Veracue Peptides'`, strip the brand suffix from every `metaTitle` in `messages/en.json`, from `[slug]/page.tsx:60`, and from `payload.config.ts:208` (`generateTitle`). Convention from the project notes: exactly one "| Veracue Peptides".
+1. **Double-branded titles sitewide (High).** Root template `'%s | Veracue'` (`(frontend)/layout.tsx:27`) is applied on top of titles that already end in "| Veracue Labs", giving e.g. "Privacy Policy | Veracue Labs | Veracue". Blog posts get "X | Veracue | Veracue". Only the product page uses `{ absolute }`. (M)
+   - Set template to `'%s | Veracue Labs'`, strip the brand suffix from every `metaTitle` in `messages/en.json`, from `[slug]/page.tsx:60`, and from `payload.config.ts:208` (`generateTitle`). Convention from the project notes: exactly one "| Veracue Labs".
    - Keep titles at or under about 60 characters. Currently over: home (68 final), about (64), shop (63), calculator (77), affiliates (76).
-   - Home suggestion: `Buy Research Peptides USA | 99%+ Purity | Veracue Peptides` as an absolute title, only if the 99% claim is substantiated (Phase 6).
+   - Home suggestion: `Buy Research Peptides USA | 99%+ Purity | Veracue Labs` as an absolute title, only if the 99% claim is substantiated (Phase 6).
    - Shop and blog index titles are hardcoded in the page files while unused copies exist in `en.json`. Keep one source.
 2. **OG/Twitter shallow-merge on legal pages (Medium).** Privacy, refund, shipping, terms, medical-disclaimer layouts define `openGraph`/`twitter` without `images` or `siteName`, which replaces the parent object. Result: no og:image, Twitter `summary_large_image` with no image. Add `siteName` and `images` via a shared `buildMetadata()` helper. (S)
 3. **Product metadata (`product/[slug]/page.tsx:33-74`).** (S)
@@ -93,7 +95,7 @@ Verified with `next build` (passes) and a production server: titles, canonicals,
 8. **Extend the SEO plugin** (`payload.config.ts:204`) to `products` and `categories`, or add length validators to `seoTitle`/`seoDescription`. Currently only `pages` (which has no route) and `blog-posts` use it. (M)
 9. **`keywords` meta** is ignored by Google; drop it, and remove risky terms from keyword fields ("research weight loss peptides", "BPC-157 healing"). (S)
 10. **Search Console and Bing verification.** No `verification` metadata exists. Add via `metadata.verification` or DNS. (S)
-11. **Manifest (`public/site.webmanifest`).** Set `name` to "Veracue Peptides", add `description`, `start_url`, `id`, `lang`, and `purpose: "maskable"` icons. Colors already match the palette. (S)
+11. **Manifest (`public/site.webmanifest`).** Set `name` to "Veracue Labs", add `description`, `start_url`, `id`, `lang`, and `purpose: "maskable"` icons. Colors already match the palette. (S)
 12. **Duplicate icon declarations** in `layout.tsx` (metadata `icons` and manual `<link>` tags). Keep one. (S)
 
 ---
@@ -113,14 +115,14 @@ Verified with `next build` (passes) and a production server: titles, canonicals,
    - COA rows should link to the product page visibly (currently only inside a modal).
    - Homepage blog teaser shows 3 posts max. Link posts to products and categories.
    - Use descriptive anchor text instead of "Contact Us", "Explore", "OPEN COA".
-8. **Footer.** Social links are bare `https://instagram.com` and `https://twitter.com` (`Footer.tsx:377,386`). Use real profile URLs or remove. Add `aria-label` to the three `<nav>` elements. Copyright says "Veracue", use "Veracue Peptides". (S)
+8. **Footer.** Social links are bare `https://instagram.com` and `https://twitter.com` (`Footer.tsx:377,386`). Use real profile URLs or remove. Add `aria-label` to the three `<nav>` elements. Copyright says "Veracue", use "Veracue Labs". (S)
 9. **Revalidation.** No `generateStaticParams`, `revalidate` or `revalidatePath`/`revalidateTag` hooks on products; `/api/revalidate` is empty; `/shop` is `force-dynamic`; the Header queries session plus two Payload calls per request, which forces every page dynamic (no CDN cache, high TTFB). Fix: make the header static and move session/cart/wishlist client-side, cache category queries with `unstable_cache`, add `afterChange` hooks that revalidate `/product/[slug]`, `/shop`, category and blog paths, use ISR for products, shop and blog. Confirm with the `next build` route table. (L)
 
 ---
 
 ## Phase 4. Structured data (JSON-LD)
 
-1. **One Organization and one WebSite, emitted once.** Currently Organization with the same `@id` appears on home, shop, contact, FAQ, certificates, blog index and calculator with conflicting property sets. Emit a single full node in the root layout: `@id`, `name`, `legalName` (Veracue Peptides LLC appears in legal copy), `url`, `logo` (ImageObject), `email`, `telephone`, `address`, `foundingDate`, `sameAs` (real social profiles), `contactPoint` (use `customer support`, not `scientific support`). Elsewhere reference `{ "@id": ".../#organization" }`. Only include phone or address if real. The footer phone `+1 (800) 837-2283` appears nowhere else (verify it is real). (M)
+1. **One Organization and one WebSite, emitted once.** Currently Organization with the same `@id` appears on home, shop, contact, FAQ, certificates, blog index and calculator with conflicting property sets. Emit a single full node in the root layout: `@id`, `name`, `legalName` (Veracue Labs LLC appears in legal copy), `url`, `logo` (ImageObject), `email`, `telephone`, `address`, `foundingDate`, `sameAs` (real social profiles), `contactPoint` (use `customer support`, not `scientific support`). Elsewhere reference `{ "@id": ".../#organization" }`. Only include phone or address if real. The footer phone `+1 (800) 837-2283` appears nowhere else (verify it is real). (M)
 2. **WebSite node** needs `@id`, `name`, `publisher`. Remove the `SearchAction` (points at unsupported `/shop?q=`) unless you implement `?q=` on `/shop`. (S)
 3. **Page nodes.** Add `isPartOf` and `breadcrumb` `@id` links; use `AboutPage`, `ContactPage`, `CollectionPage` types; merge the duplicate WebPage + CollectionPage on shop; add `ItemList` of products on shop and category pages. (M)
 4. **Product schema (`product/[slug]/page.tsx:435-527`).** (M)
@@ -133,7 +135,7 @@ Verified with `next build` (passes) and a production server: titles, canonicals,
 5. **Fake-rating latent risk.** `averageRating || 5.0` (`page.tsx:238`) plus `reviews: []`. Nothing is emitted today because counts default to 0, but if `reviewCount > 0` and rating is 0 it would publish a fabricated 5.0. Remove the fallback and emit `aggregateRating` only with real, visible, verified reviews. (S)
 6. **Blog schema.** (M)
    - `author` is `Person` with a team name. Use `Organization`, or a real named author with `url`, credentials, `sameAs`.
-   - Publisher name is "Veracue"; should be "Veracue Peptides" referencing the Organization `@id`.
+   - Publisher name is "Veracue"; should be "Veracue Labs" referencing the Organization `@id`.
    - Replace embedded full Product nodes in `mentions` with `{ @type, @id, name, url }` references (current ones emit `price "0.00"` and wrong availability for variant products, and compete with the product page).
    - Add `wordCount`, `inLanguage`, `image` array, `citation` from the references field, and truncate headlines over 110 chars.
    - Show a visible "Last updated" date. Note `dateModified` comes from `updatedAt`, so any admin save (including status flips) bumps it.
@@ -148,7 +150,7 @@ Verified with `next build` (passes) and a production server: titles, canonicals,
 
 **Already good:** direct-answer FAQ style, the new product importer (`scripts/product-import/`) with "What is X", at-a-glance spec tables, 6+ FAQs and a compliance guard, the NAD+ draft (cited, hedged, comparison tables), FAQ JSON-LD coverage, `htmlLimitedBots` for Googlebot.
 
-1. **Correct llms.txt and llms-full.txt** (see 0.1). Content: H1 Veracue Peptides, summary blockquote (RUO supplier, testing approach, COA per batch only if true, US shipping, support email, domain); sections Company, Catalog (real categories, sitemap link), Research guides (generated from CMS), Tools, Policies, Optional (`llms-full.txt`); AI-assistant notes (RUO only, no dosing or human-use statements, prices change, English only). No em dashes. No "dosing/reconstitution data" claim for product pages. Do not tell crawlers to ignore other article URLs. (M)
+1. **Correct llms.txt and llms-full.txt** (see 0.1). Content: H1 Veracue Labs, summary blockquote (RUO supplier, testing approach, COA per batch only if true, US shipping, support email, domain); sections Company, Catalog (real categories, sitemap link), Research guides (generated from CMS), Tools, Policies, Optional (`llms-full.txt`); AI-assistant notes (RUO only, no dosing or human-use statements, prices change, English only). No em dashes. No "dosing/reconstitution data" claim for product pages. Do not tell crawlers to ignore other article URLs. (M)
 2. **Category naming.** Live category slug `weight-loss-metabolic` (and the header's "GLP-1 & Metabolic", "Longevity & Aging", "Sexual & Hormonal") carries weight-loss framing. Rename to RUO-neutral names, and reconcile the three inconsistent category sets (7 in `CategoriesSection`, 8 in `ClientHeader`/`seed-categories.ts`, Helix taxonomy in dead `en.json` keys). Update `scripts/product-import/*` `categorySlugs` too (AOD-9604, Cagrilintide, others). (M)
 3. **`src/data/faqs.ts` (live `/faq`, 183 Q&As).** Sections still named Tirzepatide, Semaglutide, Retatrutide, Survodutide, SLU-PP-332, and stems like "Is Retatrutide used in human clinical research by Veracue?". Project rules require GLP-3RTA/GLP-S/GLP-T naming. Rename, drop compounds you do not stock, and reduce the volume of "is it approved for human use" Q&As, which cue human-use associations. Question stems and category skeleton still mirror the Helix corpus (duplicate-content risk even with reworded answers). (L)
 4. **Live copy compliance sweep** (line refs from audit, `messages/en.json` unless noted): `:3` peak performance; `:246-249` "anti-aging", "wound healing", "tissue regeneration", "glycemic control" (used by `BestSellerSection`); `:553-556` "Exact Milligram Dosing / Precision Dosed"; `:665,:717` drug names and "GLP-1 compounds"; `:263` "Clinical Reviews"; `:2291` "The U.S. Authority in Advanced Peptide Research"; `ClientHeader.tsx:603`; `CategoriesSection.tsx`, `MobileMenu.tsx` "Weight Loss & Metabolic"; blog categories in `BlogPosts.ts:41-46` ("Recovery protocols", "Muscle studies", "Growth research", limited to 4 and not matching product categories). Replace with RUO-neutral wording. `glp-3rta.ts` title includes "LY3437943" (a clinical code); consider removing. (M)
@@ -165,7 +167,7 @@ Verified with `next build` (passes) and a production server: titles, canonicals,
    - Category hubs with comparison tables (Phase 3).
    - RUO education: RUO vs pharmaceutical, responsible sourcing (high AEO query set).
 9. **Merchant/Ads note.** Several catalog compounds (PT-141, Melanotan, HCG, Tesamorelin, Kisspeptin) trigger Google Merchant Center and Ads restrictions regardless of copy. Organic search is less affected; do not plan a Shopping feed around them. (info)
-10. **Emails (not SEO, but launch-critical and brand entity consistency).** No unsubscribe link and no physical address in any template, including the abandoned-cart email (`api/cron/abandoned-carts/route.ts`), a marketing-type message: CAN-SPAM and Gmail/Yahoo bulk-sender rules. Add both, plus one-click List-Unsubscribe header. Standardize brand to "Veracue Peptides" in `emailShell.ts` footer and subjects (mixed "Veracue", "Veracue Points" vs UI "Purity Points" at `en.json:823,954`). Contact-form email uses user input as the From display name (spoofing). Logos come from `R2_PUBLIC_URL` and a dev `r2.dev` host. (M)
+10. **Emails (not SEO, but launch-critical and brand entity consistency).** No unsubscribe link and no physical address in any template, including the abandoned-cart email (`api/cron/abandoned-carts/route.ts`), a marketing-type message: CAN-SPAM and Gmail/Yahoo bulk-sender rules. Add both, plus one-click List-Unsubscribe header. Standardize brand to "Veracue Labs" in `emailShell.ts` footer and subjects (mixed "Veracue", "Veracue Points" vs UI "Purity Points" at `en.json:823,954`). Contact-form email uses user input as the From display name (spoofing). Logos come from `R2_PUBLIC_URL` and a dev `r2.dev` host. (M)
 
 ---
 
@@ -227,7 +229,7 @@ Delete or quarantine: `seed-real-products.ts` and `seed-full-products.ts` (about
 
 ## Post-launch checklist
 
-- Verify domain in Google Search Console and Bing Webmaster Tools; submit `https://veracuepeptides.com/sitemap.xml`.
+- Verify domain in Google Search Console and Bing Webmaster Tools; submit `https://veracuelabs.com/sitemap.xml`.
 - `curl -I` for 404 status on bogus product and root slugs; `curl -sI` for host/HTTPS redirects; view-source on home, one product, one post to confirm one canonical, one title, one `<main>`, correct JSON-LD.
 - Confirm no page contains "Helix" (add a CI grep that fails the build on `helix|99purity|globalgen` in `src`, `public`, `messages`).
 - Rich Results Test and Schema validator on key templates.

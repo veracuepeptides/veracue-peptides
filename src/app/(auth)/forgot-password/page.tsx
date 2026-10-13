@@ -35,9 +35,9 @@ export default function ForgotPasswordPage() {
                 <MailCheck size={28} strokeWidth={1.5} />
               </div>
               <div className="space-y-1">
-                <h2 className="text-2xl font-bold text-[#20221c] tracking-tight font-sans">
+                <h1 className="text-2xl font-bold text-[#20221c] tracking-tight font-sans">
                   Check your email
-                </h2>
+                </h1>
                 <p className="text-sm text-[#20221c]/60 max-w-[280px] mx-auto leading-relaxed font-sans">
                   If an account exists for that email, we've sent instructions to reset your password.
                 </p>

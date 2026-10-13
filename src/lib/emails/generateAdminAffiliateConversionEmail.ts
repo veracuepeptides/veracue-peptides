@@ -8,7 +8,7 @@ function dataRow(label: string, value: string, valueColor = BRAND.charcoal): str
 }
 
 export function generateAdminAffiliateConversionEmail(order: any, affiliate: any, commissionAmount: number): string {
-  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com'
   const affiliateName = affiliate.displayName || 'Partner'
   const orderNumber = order.orderNumber || order.id || 'N/A'
   const orderTotal = `$${(order.total || 0).toFixed(2)}`

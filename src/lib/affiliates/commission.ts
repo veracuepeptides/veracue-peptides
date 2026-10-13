@@ -9,6 +9,7 @@ export async function computeCommission(order: Order, affiliateId: string | numb
   const affiliate = await payload.findByID({
     collection: 'affiliates',
     id: affiliateId,
+    overrideAccess: true,
   }) as Affiliate
 
   const settings = await payload.findGlobal({
@@ -42,12 +43,23 @@ export async function attributeOrder(
 ): Promise<void> {
   const payload = await getPayload({ config })
   
+  // Only approved affiliates earn commission. A pending, rejected or suspended affiliate can
+  // still have a coupon or a cookie, so the status is checked on both attribution paths.
+  // The coupon match is an exact, normalised equality. A LIKE match here let a crafted code
+  // containing % or _ resolve to another affiliate's coupon.
   let couponAffiliate: Affiliate | null = null
-  if (couponCode) {
+  const normalizedCoupon = couponCode?.trim().toUpperCase() || null
+  if (normalizedCoupon) {
     const res = await payload.find({
       collection: 'affiliates',
-      where: { couponCode: { like: couponCode } },
+      where: {
+        and: [
+          { couponCode: { equals: normalizedCoupon } },
+          { status: { equals: 'approved' } },
+        ],
+      },
       limit: 1,
+      overrideAccess: true,
     })
     couponAffiliate = res.docs[0] as unknown as Affiliate || null
   }
@@ -55,10 +67,12 @@ export async function attributeOrder(
   let cookieAffiliate: Affiliate | null = null
   if (cookieAffiliateId) {
     try {
-      cookieAffiliate = await payload.findByID({
+      const found = await payload.findByID({
         collection: 'affiliates',
         id: isNaN(Number(cookieAffiliateId)) ? cookieAffiliateId : Number(cookieAffiliateId),
+        overrideAccess: true,
       }) as Affiliate
+      cookieAffiliate = found?.status === 'approved' ? found : null
     } catch (e) {
       console.error('Error finding cookie affiliate:', e)
     }
@@ -66,6 +80,23 @@ export async function attributeOrder(
 
   const affiliate = couponAffiliate ?? cookieAffiliate
   if (!affiliate) return
+
+  // The click cookie is client-supplied, so the click is only credited if it really belongs to
+  // the affiliate being credited. Otherwise a visitor could attach any click to any affiliate.
+  let trustedClickId: number | null = null
+  if (cookieClickId && cookieAffiliate && affiliate.id === cookieAffiliate.id) {
+    const clickNumericId = Number(cookieClickId)
+    if (Number.isInteger(clickNumericId) && clickNumericId > 0) {
+      const click = await payload.findByID({
+        collection: 'affiliate-clicks',
+        id: clickNumericId,
+        depth: 0,
+        overrideAccess: true,
+      }).catch(() => null)
+      const clickAffiliateId = click && (typeof click.affiliate === 'object' ? click.affiliate?.id : click.affiliate)
+      if (click && String(clickAffiliateId) === String(affiliate.id)) trustedClickId = clickNumericId
+    }
+  }
 
   const source = (couponAffiliate && cookieAffiliate && couponAffiliate.id === cookieAffiliate.id)
     ? 'both'
@@ -109,7 +140,7 @@ export async function attributeOrder(
       order: order.id,
       customerEmail,
       attributionSource: source,
-      attributionClick: cookieClickId ? (isNaN(Number(cookieClickId)) ? cookieClickId : Number(cookieClickId)) : undefined,
+      attributionClick: trustedClickId ?? undefined,
       cookieAgeDays: 0, // Should be computed based on click date
       couponCodeUsed: couponCode || '',
       orderSubtotal: order.subtotal || 0,
@@ -131,8 +162,8 @@ export async function attributeOrder(
   try {
     const adminHtml = generateAdminAffiliateConversionEmail(order, affiliate, isVoid ? 0 : commissionAmount)
     await sendTrackedEmail(payload, {
-      from: 'Veracue Support <support@veracuepeptides.com>',
-      to: 'support@veracuepeptides.com',
+      from: 'Veracue Support <orders@veracuelabs.com>',
+      to: 'orders@veracuelabs.com',
       subject: `New Affiliate Sale! ${affiliate.displayName} made a conversion`,
       html: adminHtml,
     })

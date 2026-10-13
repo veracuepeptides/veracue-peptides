@@ -1,4 +1,4 @@
-# Veracue Peptides: Blog Post Content Template
+# Veracue Labs: Blog Post Content Template
 
 This is a fixed content template, not a one-off prompt. Use it with any AI
 tool or source — the output format must be identical every time, because it
@@ -38,7 +38,7 @@ TEMPLATE TO FILL OUT
 =====================================================================
 
 CONTEXT (fixed, do not change)
-- Site: Veracue Peptides, a U.S. supplier of research-use-only (RUO)
+- Site: Veracue Labs, a U.S. supplier of research-use-only (RUO)
   synthetic peptides. Every product page carries an HPLC-tested, per-batch
   Certificate of Analysis; do not assert a specific purity number in blog
   copy (say "see the product's Certificate of Analysis" instead).
@@ -152,7 +152,7 @@ the format rule attached to each key
 
   "metaTitle": "",
   // 45-50 chars, keyword-rich title ONLY. Do not add a brand suffix: the
-  // site's title template appends " | Veracue Peptides" automatically.
+  // site's title template appends " | Veracue Labs" automatically.
 
   "metaDescription": "",
   // 150–160 chars. Distinct from excerpt — snippet-optimized, can end

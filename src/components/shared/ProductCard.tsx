@@ -14,9 +14,12 @@ import { AnimatedWishlistHeart } from '@/components/shared/AnimatedWishlistHeart
 
 export interface ProductCardProps {
   product: Product | any
+  /** Tighter layout below the sm breakpoint, for grids that show two cards per row on phones. */
+  compact?: boolean
 }
 
-export function ProductCard({ product }: ProductCardProps) {
+export function ProductCard({ product, compact = false }: ProductCardProps) {
+  const dockButtonSize = compact ? 'w-8 h-8' : 'w-9 h-9'
   // Use the product's own photo when it has one. Only when there is no image at all do we fall back
   // to the stock lifestyle images, alternating between vp-product-vial.webp and vp-product-vial2.webp.
   const getImageUrl = (prod: any) => {
@@ -91,7 +94,7 @@ export function ProductCard({ product }: ProductCardProps) {
           name: product.name,
           slug: product.slug,
           image: getImageUrl(product),
-          priceRange: String(priceVal),
+          priceRange: priceVal.toFixed(2),
         })
         setInWishlist(true)
         setShowBurst(true)
@@ -120,7 +123,7 @@ export function ProductCard({ product }: ProductCardProps) {
       1,
       priceVal
     )
-    toast.success('Added to cart', { action: { label: 'VIEW CART', onClick: cartStore.openCart } })
+    // No toast: the drawer opens and confirms the add (a toast would cover its checkout button)
     cartStore.openCart()
   }
 
@@ -186,7 +189,7 @@ export function ProductCard({ product }: ProductCardProps) {
               onClick={handleWishlistClick}
               disabled={isPending}
               aria-label={inWishlist ? 'Remove from wishlist' : 'Add to wishlist'}
-              className={`relative overflow-visible w-9 h-9 sm:w-11 sm:h-11 rounded-[14px] sm:rounded-[18px] bg-[#f0efeb] hover:bg-[#eddcd2] flex items-center justify-center transition-all duration-300 pointer-events-auto active:scale-90 ${
+              className={`relative overflow-visible ${dockButtonSize} sm:w-11 sm:h-11 rounded-[14px] sm:rounded-[18px] bg-[#f0efeb] hover:bg-[#eddcd2] flex items-center justify-center transition-all duration-300 pointer-events-auto active:scale-90 ${
                 inWishlist ? 'text-[#cb997e] bg-[#fff1e6]' : 'text-neutral-700 hover:text-[#cb997e]'
               }`}
             >
@@ -197,7 +200,7 @@ export function ProductCard({ product }: ProductCardProps) {
             <button
               onClick={handleAddToCart}
               aria-label="Add to cart"
-              className="w-9 h-9 sm:w-11 sm:h-11 rounded-[14px] sm:rounded-[18px] bg-[#f0efeb] hover:bg-[#eddcd2] text-neutral-800 hover:text-neutral-950 flex items-center justify-center transition-all duration-300 pointer-events-auto active:scale-90 shadow-sm"
+              className={`${dockButtonSize} sm:w-11 sm:h-11 rounded-[14px] sm:rounded-[18px] bg-[#f0efeb] hover:bg-[#eddcd2] text-neutral-800 hover:text-neutral-950 flex items-center justify-center transition-all duration-300 pointer-events-auto active:scale-90 shadow-sm`}
             >
               <ShoppingBag className="w-4 h-4 sm:w-[18px] sm:h-[18px]" strokeWidth={1.75} />
             </button>
@@ -209,26 +212,26 @@ export function ProductCard({ product }: ProductCardProps) {
       {/* Footer Info Block */}
       <div className="pt-3 sm:pt-3.5 px-1 flex flex-col gap-1.5">
         {/* Row 1: Left (Eyebrow & Name) + Right (Pricing) */}
-        <div className="flex items-start justify-between gap-2.5">
+        <div className={`flex justify-between ${compact ? 'flex-col items-stretch gap-1 sm:flex-row sm:items-start sm:gap-2.5' : 'items-start gap-2.5'}`}>
           {/* Left Column: Eyebrow & Name */}
           <div className="min-w-0 flex-1">
             <p className="text-[10px] sm:text-[11px] font-semibold tracking-[0.14em] text-[#a5a58d] uppercase mb-0.5 truncate font-editorial">
               {getCategory(product)}
             </p>
-            <h3 className="text-sm sm:text-base lg:text-lg font-heading font-bold text-neutral-900 tracking-tight line-clamp-1 group-hover:text-[#cb997e] transition-colors">
+            <h3 className={`text-sm sm:text-base lg:text-lg font-heading font-bold text-neutral-900 tracking-tight group-hover:text-[#cb997e] transition-colors ${compact ? 'line-clamp-2 sm:line-clamp-1' : 'line-clamp-1'}`}>
               {product.name}
             </h3>
           </div>
 
           {/* Right Column: Pricing */}
-          <div className="shrink-0 text-right flex flex-col items-end pt-0.5">
+          <div className={`shrink-0 flex flex-col pt-0.5 ${compact ? 'items-start text-left sm:items-end sm:text-right' : 'items-end text-right'}`}>
             {compareVal > 0 && (
               <span className="text-[11px] sm:text-xs text-neutral-400 line-through font-medium leading-none mb-1">
-                ${compareVal}
+                ${compareVal.toFixed(2)}
               </span>
             )}
             <span className="text-base sm:text-lg lg:text-xl font-heading font-bold text-neutral-900 leading-none tracking-tight">
-              ${priceVal}
+              ${priceVal.toFixed(2)}
             </span>
           </div>
         </div>

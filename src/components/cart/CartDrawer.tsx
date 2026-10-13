@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import { Link } from '@/i18n/navigation'
 import { motion, AnimatePresence, Variants } from 'framer-motion'
@@ -8,7 +8,6 @@ import {
   X,
   ShoppingBag,
   Trash2,
-  Truck,
   Check,
   Minus,
   Plus,
@@ -17,11 +16,19 @@ import {
 import { useTranslations } from 'next-intl'
 import { useCartStore } from '@/lib/cart/store'
 import { HeroButton } from '@/components/ui/hero-button'
-import { toast } from 'sonner'
+import { FreeShippingCheckpoint } from '@/components/cart/FreeShippingCheckpoint'
+import { MAX_LINE_QUANTITY } from '@/lib/orders/checkoutLines'
+import { usePricingConfig } from '@/lib/pricing/usePricingConfig'
+import { estimateDomesticShipping, getFreeShippingThreshold } from '@/lib/pricing/shipping'
+import { useFocusTrap } from '@/lib/useFocusTrap'
 
 export function CartDrawer() {
   const t = useTranslations('checkout.cartDrawer')
   const { isOpen, closeCart, items, removeItem, updateQuantity } = useCartStore()
+
+  // Move focus into the drawer when it opens, keep Tab inside it, restore focus on close
+  const dialogRef = useRef<HTMLDivElement>(null)
+  useFocusTrap(dialogRef, isOpen)
 
   // Lock body scroll when drawer is open
   useEffect(() => {
@@ -50,53 +57,12 @@ export function CartDrawer() {
   const subtotal = items.reduce((acc, item) => acc + item.priceSnapshot * item.quantity, 0)
   const totalQuantity = items.reduce((acc, i) => acc + i.quantity, 0)
 
-  const [isReady, setIsReady] = useState(false)
-  const [freeShippingThreshold, setFreeShippingThreshold] = useState<number | null>(null)
-  const previousSubtotal = useRef(subtotal)
-
-  useEffect(() => {
-    const timer = setTimeout(() => setIsReady(true), 400)
-    return () => clearTimeout(timer)
-  }, [])
-
-  useEffect(() => {
-    let active = true
-    fetch('/api/shippingzones')
-      .then((res) => res.json())
-      .then((data) => {
-        if (active && data?.docs?.length > 0) {
-          const methods = data.docs[0].methods || []
-          const freeMethod = methods.find((m: any) => m.price === 0 && m.minOrderAmount > 0)
-          if (freeMethod) {
-            setFreeShippingThreshold(freeMethod.minOrderAmount)
-          }
-        }
-      })
-      .catch((err) => console.error('Error fetching shipping zones for cart drawer', err))
-
-    return () => {
-      active = false
-    }
-  }, [])
-
-  useEffect(() => {
-    if (
-      isReady &&
-      freeShippingThreshold &&
-      subtotal >= freeShippingThreshold &&
-      previousSubtotal.current < freeShippingThreshold
-    ) {
-      toast.success(t('freeShippingUnlockedToast') || 'Free Insulated Shipping Unlocked!')
-    }
-    previousSubtotal.current = subtotal
-  }, [subtotal, isReady, t, freeShippingThreshold])
-
-  const progressToFreeShipping = freeShippingThreshold
-    ? Math.min((subtotal / freeShippingThreshold) * 100, 100)
-    : 0
-  const amountToFreeShipping = freeShippingThreshold
-    ? Math.max(freeShippingThreshold - subtotal, 0)
-    : 0
+  // The drawer is mounted on every page, so it only asks for shipping settings once there is a
+  // cart to price (or the drawer is open), and through the cached endpoint the cart page uses.
+  const { config: pricingConfig, ready: pricingReady } = usePricingConfig(isOpen || items.length > 0)
+  const freeShippingThreshold = pricingReady ? getFreeShippingThreshold(pricingConfig.methods) : null
+  // What standard shipping costs below the free-shipping amount, so the checkpoint can say what is saved.
+  const shippingFeeBelowThreshold = estimateDomesticShipping(pricingConfig.methods, 0)
 
   // Backdrop animation
   const backdropVariants: Variants = {
@@ -141,6 +107,10 @@ export function CartDrawer() {
 
           {/* Minimalist Slide-Over Drawer */}
           <motion.div
+            ref={dialogRef}
+            role="dialog"
+            aria-modal="true"
+            aria-label="Shopping Bag"
             variants={drawerVariants}
             initial="closed"
             animate="open"
@@ -216,43 +186,14 @@ export function CartDrawer() {
             ) : (
               /* --- 3. Populated Cart --- */
               <>
-                {/* Free Shipping Milestone Indicator */}
+                {/* Free shipping checkpoint */}
                 {freeShippingThreshold !== null && (
-                  <div className="px-4 sm:px-6 py-2.5 bg-[#fff1e6]/90 border-b border-[#eddcd2] shrink-0">
-                    <div className="flex items-center justify-between text-xs mb-1.5">
-                      <span className="text-[12px] text-neutral-800 flex items-center gap-1.5 font-sans font-medium">
-                        <Truck size={13} className="text-[#cb997e] shrink-0" />
-                        {amountToFreeShipping > 0 ? (
-                          <span>
-                            Add{' '}
-                            <strong className="text-[#cb997e] font-price font-bold">
-                              ${amountToFreeShipping.toFixed(2)}
-                            </strong>{' '}
-                            more for Free Shipping
-                          </span>
-                        ) : (
-                          <span className="text-[#55724a] font-semibold flex items-center gap-1">
-                            <Check size={13} strokeWidth={2.5} /> Free Insulated Shipping Unlocked!
-                          </span>
-                        )}
-                      </span>
-                      <span className="text-[10.5px] font-sans font-bold text-[#a5a58d]">
-                        {Math.round(progressToFreeShipping)}%
-                      </span>
-                    </div>
-
-                    {/* Progress Bar Track */}
-                    <div className="w-full h-1.5 bg-[#eddcd2] rounded-full overflow-hidden">
-                      <motion.div
-                        className={`h-full rounded-full ${
-                          progressToFreeShipping >= 100 ? 'bg-[#55724a]' : 'bg-[#cb997e]'
-                        }`}
-                        initial={{ width: 0 }}
-                        animate={{ width: `${progressToFreeShipping}%` }}
-                        transition={{ duration: 0.5, ease: 'easeOut' }}
-                      />
-                    </div>
-                  </div>
+                  <FreeShippingCheckpoint
+                    subtotal={subtotal}
+                    threshold={freeShippingThreshold}
+                    shippingFee={shippingFeeBelowThreshold}
+                    onKeepShopping={closeCart}
+                  />
                 )}
 
                 {/* Items List (Natural Organic Spacing, No Stretched Gaps) */}
@@ -335,7 +276,8 @@ export function CartDrawer() {
 
                                 <button
                                   onClick={() => updateQuantity(item.lineId, item.quantity + 1)}
-                                  className="w-6.5 h-6.5 sm:w-7 sm:h-7 flex items-center justify-center rounded text-neutral-600 hover:text-neutral-950 hover:bg-[#f0efeb] transition-all cursor-pointer"
+                                  disabled={item.quantity >= MAX_LINE_QUANTITY}
+                                  className="w-6.5 h-6.5 sm:w-7 sm:h-7 flex items-center justify-center rounded text-neutral-600 hover:text-neutral-950 hover:bg-[#f0efeb] disabled:opacity-25 transition-all cursor-pointer"
                                   aria-label="Increase quantity"
                                 >
                                   <Plus size={11} strokeWidth={2.2} />
@@ -385,8 +327,8 @@ export function CartDrawer() {
                       </span>
                       <span className="text-[12px] sm:text-[12.5px] font-medium text-neutral-900">
                         {freeShippingThreshold && subtotal >= freeShippingThreshold ? (
-                          <span className="text-[#55724a] font-semibold flex items-center gap-1">
-                            <Check size={12} strokeWidth={2.5} /> Free
+                          <span className="text-[#20221c] font-semibold flex items-center gap-1">
+                            <Check size={12} strokeWidth={2.5} className="text-[#cb997e]" /> Free
                           </span>
                         ) : (
                           'Calculated at checkout'

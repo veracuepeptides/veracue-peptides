@@ -54,9 +54,16 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
       {
-        // Current R2 bucket (veracue-media, set via R2_PUBLIC_URL).
+        // Previous R2 bucket — kept in case any already-stored media URLs still point at it.
         protocol: 'https',
         hostname: 'pub-ac7469377283406ab723756fc506e004.r2.dev',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        // Current R2 bucket (veracue-media, set via R2_PUBLIC_URL).
+        protocol: 'https',
+        hostname: 'pub-b51539e3a9aa4483ac83a0e3fbadfdd1.r2.dev',
         port: '',
         pathname: '/**',
       },
@@ -64,6 +71,18 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return []
+  },
+  // Plain-text (markdown) copies of product and article pages live at the page address plus ".md",
+  // the convention described at llmstxt.org. beforeFiles makes these win over the dynamic page routes.
+  async rewrites() {
+    return {
+      beforeFiles: [
+        { source: '/product/:slug.md', destination: '/api/md/product/:slug' },
+        { source: '/blog/:slug.md', destination: '/api/md/blog/:slug' },
+      ],
+      afterFiles: [],
+      fallback: [],
+    }
   },
   async headers() {
     return [
@@ -76,6 +95,13 @@ const nextConfig: NextConfig = {
           { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },
           { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
         ],
+      },
+      {
+        // Points agents at the site-wide llms.txt from page responses (llmstxt.org "describedby"). The
+        // plain-text copies and the llms files are left out: the .md routes send their own Link header
+        // (canonical), and a header set here would replace it.
+        source: '/:path((?!.*\\.md$|llms).*)',
+        headers: [{ key: 'Link', value: '</llms.txt>; rel="describedby"; type="text/plain"' }],
       },
     ]
   },

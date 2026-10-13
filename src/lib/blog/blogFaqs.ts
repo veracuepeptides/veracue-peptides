@@ -13,7 +13,7 @@ export const BLOG_FAQS = [
   },
   {
     question: 'Can I request a topic for a future article?',
-    answer: "Yes. Email support@veracuepeptides.com with what you'd like covered, and if it fits our research scope, we'll consider it for an upcoming article.",
+    answer: "Yes. Email orders@veracuelabs.com with what you'd like covered, and if it fits our research scope, we'll consider it for an upcoming article.",
   },
   {
     question: 'Are the reconstitution guides here specific to Veracue products?',

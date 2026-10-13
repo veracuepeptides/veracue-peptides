@@ -3,13 +3,14 @@
 import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { Printer, Copy, MapPin, Truck, CreditCard, Wallet, ShieldCheck } from 'lucide-react'
+import { Printer, Copy, MapPin, Truck, CreditCard, Wallet, ShieldCheck, Loader2, Clock, AlertTriangle } from 'lucide-react'
 import { FadeUp } from '@/components/motion/FadeUp'
 import { HeroButton } from '@/components/ui/hero-button'
 import { useTranslations } from 'next-intl'
 import { useCartStore } from '@/lib/cart/store'
 import { toast } from 'sonner'
 import { ZELLE_RECIPIENT_PHONE } from '@/lib/payments/zelle'
+import { CARD_STATEMENT_NOTE } from '@/lib/payments/statement'
 
 type OrderItem = {
   id: string
@@ -49,8 +50,21 @@ type OrderData = {
   discountTotal?: number
   redeemedPoints?: number
   couponCode?: string
-  paymentMethod: 'stripe' | 'zelle' | 'amex' | 'circoflows' | 'stripe_link'
+  paymentMethod: 'stripe' | 'zelle' | 'amex' | 'stripe_link' | 'veracuepay'
+  paymentStatus?: 'unpaid' | 'authorized' | 'captured' | 'refunded'
 }
+
+type PaymentCheck = 'verified' | 'confirming' | 'processing' | 'not_completed' | 'needs_review'
+type SyncResult = { success?: boolean; status?: string; error?: string }
+
+// Methods paid through an automated gateway, whose payment is verified against that gateway (as
+// opposed to Zelle / Stripe Link, where "unpaid" is the expected state until a person confirms it).
+const VERIFIABLE_METHODS: string[] = ['veracuepay']
+
+// Gateway statuses meaning "no payment was made" — as opposed to one still in progress.
+const NOT_PAID_STATUSES = ['requires_payment_method', 'requires_action', 'canceled', 'declined', 'failed']
+
+const CHECK_INTERVAL_MS = 2500
 
 
 const CONFETTI_PIECES = [
@@ -101,8 +115,81 @@ export function OrderConfirmationClient({ order }: { order: OrderData }) {
   const isStripeLink = order.paymentMethod === 'stripe_link' || order.paymentMethod === 'amex'
   const isPreview = order.orderId === 'preview'
 
+  // For a gateway-paid order, the `paymentStatus` in the server-rendered props is only a snapshot
+  // from the instant this page rendered. A customer who just paid is redirected here before the
+  // webhook / sync has marked the order captured, and one who pressed "cancel" on the payment page
+  // lands here too having paid nothing. So never decide success or failure from that snapshot:
+  // start as "confirming", ask the gateway directly, and only then pick a state.
+  const isVerifiableMethod = !isPreview && VERIFIABLE_METHODS.includes(order.paymentMethod)
+  const [paymentCheck, setPaymentCheck] = React.useState<PaymentCheck>(
+    !isVerifiableMethod || order.paymentStatus === 'captured' ? 'verified' : 'confirming',
+  )
+  const showPaymentPending = isVerifiableMethod && paymentCheck !== 'verified'
+
+  React.useEffect(() => {
+    if (!isVerifiableMethod || order.paymentStatus === 'captured') return
+    let cancelled = false
+    const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))
+
+    // Stripe's redirect back here carries redirect_status. It is only a hint for how patient to be
+    // (never trusted to mark anything paid — that stays with the gateway check).
+    const redirectSaysPaid = new URLSearchParams(window.location.search).get('redirect_status') === 'succeeded'
+    const maxAttempts = redirectSaysPaid ? 12 : 3
+
+    const runSync = async (): Promise<SyncResult> => {
+      try {
+        return await (await import('../../checkout/veracuepayActions')).syncVeracuepayPaymentStatus(order.orderId)
+      } catch {
+        return { error: 'request failed' }
+      }
+    }
+
+    const verify = async () => {
+      let last: PaymentCheck = 'confirming'
+      for (let attempt = 0; attempt < maxAttempts; attempt++) {
+        const result = await runSync()
+        if (cancelled) return
+
+        if (result.success) {
+          setPaymentCheck('verified')
+          return
+        }
+
+        if (result.error) {
+          last = 'needs_review'
+        } else if (NOT_PAID_STATUSES.includes(result.status ?? '')) {
+          // The gateway says nothing was paid. If we were NOT just redirected back as "succeeded"
+          // that is a definitive answer; if we were, the gateway may simply not have caught up yet.
+          if (!redirectSaysPaid) {
+            setPaymentCheck('not_completed')
+            return
+          }
+          last = 'confirming'
+        } else {
+          last = 'processing'
+        }
+
+        // Transient errors keep showing the calm "confirming" state rather than an alarm.
+        setPaymentCheck(last === 'needs_review' ? 'confirming' : last)
+        if (attempt < maxAttempts - 1) await sleep(CHECK_INTERVAL_MS)
+        if (cancelled) return
+      }
+      // Out of attempts without a definitive answer. Never claim "not paid" here — the customer may
+      // well have paid and the confirmation email / webhook will follow.
+      setPaymentCheck(last === 'confirming' ? 'processing' : last)
+    }
+
+    verify()
+    return () => {
+      cancelled = true
+    }
+  }, [order.orderId, order.paymentStatus, isVerifiableMethod])
+
   React.useEffect(() => {
     if (isPreview) return
+    // Only a confirmed payment counts as a purchase: fire the GA4 event and empty the cart.
+    // (Leaving the cart intact otherwise means an unfinished payment can be picked back up.)
+    if (showPaymentPending) return
 
     // GA4 eCommerce tracking
     if (typeof window !== 'undefined' && !sessionStorage.getItem(`ga_tracked_${order.id}`)) {
@@ -132,14 +219,29 @@ export function OrderConfirmationClient({ order }: { order: OrderData }) {
     }
 
     useCartStore.getState().clear()
-  }, [order, isPreview])
+  }, [order, isPreview, showPaymentPending])
 
-  React.useEffect(() => {
-    if (isPreview) return
-    if (order.paymentMethod === 'circoflows') {
-      import('../../checkout/circoflowsActions').then(m => m.syncCircoFlowsPaymentStatus(order.orderId))
-    }
-  }, [order.paymentMethod, order.orderId, isPreview])
+  // Copy for each not-yet-verified state. Deliberately never asserts "you have not been charged" —
+  // the customer may have paid and we simply haven't been able to confirm it yet.
+  const PENDING_COPY: Record<Exclude<PaymentCheck, 'verified'>, { title: string; body: string }> = {
+    confirming: {
+      title: 'Confirming your payment…',
+      body: "Hang tight — we're confirming your payment. This usually takes a few seconds. Please don't close this page or pay again.",
+    },
+    processing: {
+      title: 'Payment Processing',
+      body: "Your payment is still being processed. You'll receive a confirmation email as soon as it's complete — there's no need to pay again.",
+    },
+    needs_review: {
+      title: "We're Verifying Your Payment",
+      body: "We couldn't confirm your payment automatically yet. If you were charged, please don't pay again — we'll get this sorted for you.",
+    },
+    not_completed: {
+      title: 'Payment Not Completed',
+      body: "We haven't received your payment for this order yet, so it hasn't shipped. Your cart is saved, so you can pick up right where you left off.",
+    },
+  }
+  const pendingCopy = paymentCheck !== 'verified' ? PENDING_COPY[paymentCheck] : null
 
   const handleCopyOrderId = () => {
     navigator.clipboard.writeText(order.id)
@@ -150,8 +252,8 @@ export function OrderConfirmationClient({ order }: { order: OrderData }) {
     stripe: t('paymentMethodCard'),
     zelle: t('paymentMethodZelle'),
     amex: 'American Express',
-    circoflows: t('paymentMethodCard'),
     stripe_link: 'Stripe (Custom Link)',
+    veracuepay: t('paymentMethodCard'),
   }
 
   const renderOrderSummary = () => (
@@ -207,7 +309,7 @@ export function OrderConfirmationClient({ order }: { order: OrderData }) {
           </div>
           {!!order.redeemedPoints && order.redeemedPoints > 0 && (
             <div className="flex justify-between text-[#20221c]/60 pt-1 pb-4 border-b border-[#b7b7a4]/25">
-              <span>HB Points</span>
+              <span>VL Points</span>
               <span className="font-bold text-[#cb997e]">-${order.redeemedPoints.toFixed(2)}</span>
             </div>
           )}
@@ -221,7 +323,7 @@ export function OrderConfirmationClient({ order }: { order: OrderData }) {
       <div className="mt-6 text-center">
         <span className="text-[11px] text-[#20221c]/40 font-medium">
           {t.rich('questionsContactSupport', {
-            link: (chunks) => <a href="mailto:support@veracuepeptides.com" className="text-[#cb997e] hover:text-[#a5a58d] underline transition-colors">{chunks}</a>,
+            link: (chunks) => <a href="mailto:orders@veracuelabs.com" className="text-[#cb997e] hover:text-[#a5a58d] underline transition-colors">{chunks}</a>,
           })}
         </span>
       </div>
@@ -325,7 +427,7 @@ export function OrderConfirmationClient({ order }: { order: OrderData }) {
                 </div>
                 {!!order.redeemedPoints && order.redeemedPoints > 0 && (
                   <div className="flex justify-between text-gray-700 pb-2 border-b border-gray-300">
-                    <span>HB Points</span><span>-${order.redeemedPoints.toFixed(2)}</span>
+                    <span>VL Points</span><span>-${order.redeemedPoints.toFixed(2)}</span>
                   </div>
                 )}
                 <div className="flex justify-between items-baseline pt-2 border-t-2 border-black">
@@ -337,7 +439,7 @@ export function OrderConfirmationClient({ order }: { order: OrderData }) {
 
             <div className="text-center text-xs text-gray-500 pt-6 border-t border-gray-300">
               <p>Thank you for your order.</p>
-              <p className="mt-1">Questions? Contact support@veracuepeptides.com</p>
+              <p className="mt-1">Questions? Contact orders@veracuelabs.com</p>
             </div>
           </div>
 
@@ -349,6 +451,23 @@ export function OrderConfirmationClient({ order }: { order: OrderData }) {
 
               {/* Header Section */}
               <div className="flex flex-col items-center lg:items-start text-center lg:text-left print:hidden">
+                {showPaymentPending ? (
+                  <div
+                    className={`w-16 h-16 md:w-20 md:h-20 rounded-[20px] flex items-center justify-center mb-8 shadow-[0_12px_32px_rgba(32,34,28,0.22)] ${
+                      paymentCheck === 'not_completed' || paymentCheck === 'needs_review'
+                        ? 'bg-amber-500 text-white'
+                        : 'bg-[#20221c] text-[#fff1e6]'
+                    }`}
+                  >
+                    {paymentCheck === 'confirming' ? (
+                      <Loader2 size={32} strokeWidth={2.5} className="animate-spin" />
+                    ) : paymentCheck === 'processing' ? (
+                      <Clock size={32} strokeWidth={2.5} />
+                    ) : (
+                      <AlertTriangle size={32} strokeWidth={2.5} />
+                    )}
+                  </div>
+                ) : (
                 <div className="relative">
                   <ConfettiBurst />
 
@@ -407,14 +526,19 @@ export function OrderConfirmationClient({ order }: { order: OrderData }) {
                     </svg>
                   </motion.div>
                 </div>
+                )}
 
                 <FadeUp delay={0.1}>
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-[#20221c]/40 mb-3">{t('confirmationEmailSent')} {order.email}</p>
+                  {!showPaymentPending && (
+                    <p className="text-[10px] font-bold uppercase tracking-widest text-[#20221c]/40 mb-3">{t('confirmationEmailSent')} {order.email}</p>
+                  )}
                   <h1 className="text-3xl md:text-5xl font-heading font-extrabold text-[#20221c] mb-4 tracking-tight">
-                    {isZelle || isStripeLink ? t('orderPlaced') : t('paymentSuccessful')}
+                    {pendingCopy ? pendingCopy.title : isZelle || isStripeLink ? t('orderPlaced') : t('paymentSuccessful')}
                   </h1>
                   <p className="text-[#20221c]/60 text-sm md:text-base leading-relaxed max-w-lg">
-                    {isZelle
+                    {pendingCopy
+                      ? pendingCopy.body
+                      : isZelle
                       ? t('thankYouZelle', { name: order.customerName })
                       : isStripeLink
                       ? "Thank you for your order! Your items have been successfully reserved."
@@ -422,6 +546,34 @@ export function OrderConfirmationClient({ order }: { order: OrderData }) {
                   </p>
                 </FadeUp>
               </div>
+
+              {paymentCheck === 'not_completed' && (
+                <FadeUp delay={0.15} className="print:hidden">
+                  <div className="bg-amber-50 border border-amber-200 rounded-[24px] p-6 md:p-8 flex flex-col gap-4">
+                    <h2 className="text-lg font-heading font-bold text-[#20221c]">Finish your payment</h2>
+                    <p className="text-sm text-[#20221c]/65 leading-relaxed">
+                      If you went back before completing the payment, return to checkout to try again. If you believe you already paid, please don&apos;t pay again — email{' '}
+                      <a href="mailto:orders@veracuelabs.com" className="underline">orders@veracuelabs.com</a> with order #{order.id} and we&apos;ll sort it out.
+                    </p>
+                    <div>
+                      <HeroButton href="/checkout" variant="olive" text="Return to checkout" className="px-6 py-3 text-sm font-sans font-semibold inline-flex" />
+                    </div>
+                  </div>
+                </FadeUp>
+              )}
+
+              {/* Card payments: how the charge reads on the customer's bank statement. Left out when the
+                  payment was not completed, because then there may be no charge to recognise. */}
+              {order.paymentMethod === 'veracuepay' && paymentCheck !== 'not_completed' && (
+                <FadeUp delay={0.15}>
+                  <div className="bg-[#fff1e6] border border-[#eddcd2] rounded-[24px] px-5 py-4 md:px-6 md:py-5 flex items-start gap-3.5">
+                    <div className="w-9 h-9 rounded-full bg-white border border-[#eddcd2] flex items-center justify-center text-[#cb997e] shrink-0">
+                      <CreditCard size={16} />
+                    </div>
+                    <p className="text-sm text-[#20221c]/75 leading-relaxed pt-1.5">{CARD_STATEMENT_NOTE}</p>
+                  </div>
+                </FadeUp>
+              )}
 
               {/* Dynamic Action Modules (Zelle/Amex) */}
               {isZelle && (

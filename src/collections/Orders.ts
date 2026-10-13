@@ -8,8 +8,10 @@ export const Orders: CollectionConfig = {
   },
   access: {
     read: ({ req }) => {
-      if (req.user?.role === 'admin') return true
-      return { owner: { equals: req.user?.id } }
+      // Anonymous requests get nothing. Filtering on an undefined user id produced an invalid query.
+      if (!req.user) return false
+      if (req.user.role === 'admin') return true
+      return { owner: { equals: req.user.id } }
     },
     create: () => false,
     update: ({ req }) => req.user?.role === 'admin',
@@ -76,7 +78,7 @@ export const Orders: CollectionConfig = {
         { name: 'variantTitle', type: 'text', admin: { description: 'The display title of the variant, e.g. "10mg Single" or "10mg 10 Kit (Best Value)"' } },
         { name: 'variant', type: 'text', admin: { description: 'The variant SKU or bundle code purchased' } },
         { name: 'price', type: 'number', admin: { description: 'Price paid per unit at the time of order' } },
-        { name: 'quantity', type: 'number', required: true },
+        { name: 'quantity', type: 'number', required: true, min: 1 },
         {
           type: 'collapsible',
           label: 'Product Snapshot Data',
@@ -166,7 +168,7 @@ export const Orders: CollectionConfig = {
     },
     { name: 'subtotal', type: 'number', admin: { position: 'sidebar', description: 'Before discounts/shipping/tax' } },
     { name: 'discountTotal', type: 'number', admin: { position: 'sidebar' } },
-    { name: 'redeemedPoints', type: 'number', defaultValue: 0, admin: { position: 'sidebar', description: 'HB Points used in this order ($1 per point)' } },
+    { name: 'redeemedPoints', type: 'number', defaultValue: 0, admin: { position: 'sidebar', description: 'VL Points used in this order ($1 per point)' } },
     { name: 'shippingTotal', type: 'number', admin: { position: 'sidebar' }, defaultValue: 0 },
     {
       name: 'taxTotal',
@@ -226,8 +228,8 @@ export const Orders: CollectionConfig = {
         { label: 'Card (Stripe)', value: 'stripe' },
         { label: 'Zelle', value: 'zelle' },
         { label: 'American Express', value: 'amex' },
-        { label: 'Card (CircoFlows)', value: 'circoflows' },
         { label: 'Stripe (Custom Payment Link)', value: 'stripe_link' },
+        { label: 'Card (via VeracuePay)', value: 'veracuepay' },
       ],
       admin: {
         position: 'sidebar',
@@ -235,13 +237,13 @@ export const Orders: CollectionConfig = {
       },
     },
     {
-      name: 'circoflowsTransactionId',
+      name: 'veracuepayPaymentIntentId',
       type: 'text',
       admin: {
         position: 'sidebar',
         readOnly: true,
-        description: 'CircoFlows transaction_id, for support/reconciliation lookups.',
-        condition: (data) => data?.paymentMethod === 'circoflows',
+        description: 'PaymentIntent id in the VeracuePay Stripe account, for support/reconciliation lookups.',
+        condition: (data) => data?.paymentMethod === 'veracuepay',
       },
     },
     { name: 'couponCode', type: 'text', admin: { position: 'sidebar' } },

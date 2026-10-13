@@ -13,7 +13,7 @@ const AFFILIATE_HERO_IMAGES = [
   },
   {
     src: '/veracue-images/veracue-military-veteran-researcher.webp',
-    alt: 'Veracue Peptides research partner photography',
+    alt: 'Veracue Labs research partner photography',
     topic: 'Partner Network',
   },
   {
@@ -79,7 +79,7 @@ export function AffiliateHero() {
 
         {/* 3. Sub-headline / Supporting Description */}
         <p className="text-neutral-500 text-[11.5px] sm:text-[13px] md:text-[14.5px] max-w-2xl leading-relaxed mb-2.5 sm:mb-4 font-normal px-1 line-clamp-3 sm:line-clamp-none">
-          Share HPLC-tested research peptides, each with a batch COA, and earn 15% on every order, scaling up to 20% at volume, with a 7-day tracking window and payouts every month.
+          Share HPLC-tested research peptides, with a COA available on request, and earn 15% on every order, scaling up to 20% at volume, with a 7-day tracking window and payouts every month.
         </p>
 
         {/* 4. Action HeroButtons */}

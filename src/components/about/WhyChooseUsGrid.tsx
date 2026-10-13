@@ -30,7 +30,7 @@ export function WhyChooseUsGrid() {
       spec: 'Purity Per Batch COA',
       icon: CheckCircle2,
       media: '/veracue-images/veracue-klow-50mg-sunlit-water-ripples.webp',
-      alt: 'HPLC analytical purity certification of Veracue peptides',
+      alt: 'HPLC analytical purity certification of Veracue Labs peptides',
       title: 'HPLC Tested Per Batch',
       description: 'Every batch is analyzed by reverse-phase chromatography, and the chromatogram with the purity result for that batch is reported on its Certificate of Analysis.',
     },

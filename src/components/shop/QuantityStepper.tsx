@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Minus, Plus } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { cn } from '@/lib/utils'
+import { MAX_LINE_QUANTITY } from '@/lib/orders/checkoutLines'
 
 interface QuantityStepperProps {
   value: number
@@ -20,7 +21,7 @@ export function QuantityStepper({
   value,
   onChange,
   min = 1,
-  max = 99,
+  max = MAX_LINE_QUANTITY,
   className,
   theme = 'light',
   size = 'md'

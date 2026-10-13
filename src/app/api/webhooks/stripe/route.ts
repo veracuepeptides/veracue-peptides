@@ -11,6 +11,25 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || 'sk_test_placeholder_
 
 const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET
 
+// This endpoint settles only orders placed as native card orders. `orderId` is a generic metadata
+// key, so a PaymentIntent from anywhere else in the same Stripe account (a hosted gateway such as
+// VeracuePay stamps merchantId on every one) must never mark a Veracue order paid, cancelled or
+// refunded just because the numbers match. Those payments are verified by their own gateway flow.
+async function isNativeCardOrder(orderId: string, metadata: Stripe.Metadata | null | undefined): Promise<boolean> {
+  if (metadata?.merchantId) return false
+  // Another payment source in the same account may use a non-numeric order reference.
+  const numericId = Number(orderId)
+  if (!Number.isInteger(numericId) || numericId <= 0) return false
+  const payload = await getPayload({ config: configPromise })
+  try {
+    const order = await payload.findByID({ collection: 'orders', id: numericId, depth: 0, overrideAccess: true })
+    return order?.paymentMethod === 'stripe'
+  } catch (error: any) {
+    if (error?.status === 404 || error?.name === 'NotFound') return false
+    throw error
+  }
+}
+
 export async function POST(req: Request) {
   try {
     const body = await req.text()
@@ -31,7 +50,7 @@ export async function POST(req: Request) {
       console.log(`PaymentIntent for ${paymentIntent.amount} was successful!`)
 
       const orderId = paymentIntent.metadata?.orderId
-      if (orderId) {
+      if (orderId && await isNativeCardOrder(orderId, paymentIntent.metadata)) {
          try {
             const { finalizeOrder } = await import('@/lib/orders/finalizeOrder')
             const ok = await finalizeOrder(orderId, paymentIntent.metadata)
@@ -50,7 +69,7 @@ export async function POST(req: Request) {
     if (event.type === 'payment_intent.payment_failed') {
       const paymentIntent = event.data.object as Stripe.PaymentIntent
       const orderId = paymentIntent.metadata?.orderId
-      if (orderId) {
+      if (orderId && await isNativeCardOrder(orderId, paymentIntent.metadata)) {
         try {
           const payload = await getPayload({ config: configPromise })
           const order = await payload.findByID({ collection: 'orders', id: Number(orderId), depth: 0 })
@@ -71,7 +90,7 @@ export async function POST(req: Request) {
         try {
           const paymentIntent = await stripe.paymentIntents.retrieve(paymentIntentId)
           const orderId = paymentIntent.metadata?.orderId
-          if (orderId) {
+          if (orderId && await isNativeCardOrder(orderId, paymentIntent.metadata)) {
             const payload = await getPayload({ config: configPromise })
             const order = await payload.findByID({ collection: 'orders', id: Number(orderId), depth: 0 })
             if (order && order.status !== 'refunded') {
@@ -90,8 +109,8 @@ export async function POST(req: Request) {
         const payload = await getPayload({ config: configPromise })
         const { sendTrackedEmail } = await import('@/lib/emails/sendTrackedEmail')
         await sendTrackedEmail(payload, {
-          from: 'Veracue Orders <orders@veracuepeptides.com>',
-          to: 'support@veracuepeptides.com',
+          from: 'Veracue Orders <orders@veracuelabs.com>',
+          to: 'orders@veracuelabs.com',
           subject: `⚠️ Stripe dispute opened — charge ${dispute.charge}`,
           html: `<p>A chargeback/dispute was opened for charge <strong>${dispute.charge}</strong>, amount ${dispute.amount} ${dispute.currency}. Review it in the Stripe dashboard.</p>`,
         })

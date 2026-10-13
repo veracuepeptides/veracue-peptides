@@ -32,7 +32,7 @@ const SHOP_FAQ_KEYS = [
   'fdaApproval',
 ]
 
-// No brand suffix: the root title template appends " | Veracue Peptides".
+// No brand suffix: the root title template appends " | Veracue Labs".
 const title = 'Shop Research Peptides | HPLC Verified'
 const description = 'Browse research peptides for laboratory use only. Product pages show batch Certificate of Analysis details, HPLC purity data, pricing, and stock from a U.S. supplier.'
 
@@ -44,7 +44,7 @@ export async function generateMetadata({
   const locale = 'en'
   const path = true ? '/shop' : `/${locale}/shop`
 
-  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+  const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com'
   const shopOgImage = `${serverUrl}/veracue-images/shop-page-og.png`
 
   return {
@@ -59,13 +59,13 @@ export async function generateMetadata({
       description,
       type: 'website',
       url: path,
-      siteName: 'Veracue Peptides',
+      siteName: 'Veracue Labs',
       images: [
         {
           url: shopOgImage,
           width: 1119,
           height: 630,
-          alt: 'Veracue Research Peptides Catalog',
+          alt: 'Veracue Labs Research Peptides Catalog',
         },
       ],
     },
@@ -78,7 +78,12 @@ export async function generateMetadata({
   }
 }
 
-export const dynamic = 'force-dynamic'
+// The page does not read the URL on the server: filters, sorting and search run in the browser
+// from the query string (ShopClient), so one cached page serves every /shop?... variant. It used to
+// be fully dynamic, which put a database render in front of every visit and crawl.
+// Cached and refreshed at most every 600s; saving content in the admin refreshes it sooner
+// (see revalidateStorefrontPages in lib/revalidate.ts). Nothing here depends on the visitor.
+export const revalidate = 600
 
 export default async function ShopPage() {
   let categories: any[] = []
@@ -109,7 +114,7 @@ export default async function ShopPage() {
   // Fetch initial page of products
   const initialProductsRes = await getShopProducts({ page: 1, limit: 24 })
 
-  const siteUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+  const siteUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com'
 
   const listedProducts: any[] = initialProductsRes.success
     ? ((initialProductsRes.products as any[]) || []).filter((p) => p?.name && p?.slug)

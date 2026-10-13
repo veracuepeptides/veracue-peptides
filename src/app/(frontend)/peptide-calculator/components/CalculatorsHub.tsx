@@ -28,13 +28,19 @@ export function CalculatorsHub() {
       
       <FadeUp className="w-full max-w-5xl mx-auto mb-8 sm:mb-12 flex justify-center px-3 sm:px-6">
         {/* Navigation Tabs - Olive Green & Clean White Design */}
-        <div className="inline-flex flex-wrap items-center justify-center gap-1 sm:gap-2 p-1.5 sm:p-2 bg-white rounded-2xl border border-[#b7b7a4]/60 shadow-[0_4px_20px_rgba(0,0,0,0.04)] relative group z-20">
+        <div role="tablist" aria-label="Calculators" className="inline-flex flex-wrap items-center justify-center gap-1 sm:gap-2 p-1.5 sm:p-2 bg-white rounded-2xl border border-[#b7b7a4]/60 shadow-[0_4px_20px_rgba(0,0,0,0.04)] relative group z-20">
           
           {TABS.map(tab => {
             const isActive = activeTab === tab.id;
             return (
               <button
                 key={tab.id}
+                type="button"
+                role="tab"
+                id={`calculator-tab-${tab.id}`}
+                aria-selected={isActive}
+                aria-controls={`calculator-panel-${tab.id}`}
+                aria-label={tab.label}
                 onClick={() => setActiveTab(tab.id)}
                 className={`relative flex items-center gap-2 sm:gap-2.5 px-3.5 py-2.5 sm:px-5 sm:py-3 rounded-xl text-xs sm:text-[13.5px] font-sans font-bold transition-all duration-300 cursor-pointer ${
                   isActive ? 'text-white' : 'text-neutral-700 hover:text-neutral-950 hover:bg-[#a5a58d]/15'
@@ -90,6 +96,9 @@ export function CalculatorsHub() {
           {activeTab === 'reconstitution' && (
             <motion.div
               key="reconstitution"
+              role="tabpanel"
+              id="calculator-panel-reconstitution"
+              aria-labelledby="calculator-tab-reconstitution"
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -16 }}
@@ -101,6 +110,9 @@ export function CalculatorsHub() {
           {activeTab === 'bmi' && (
             <motion.div
               key="bmi"
+              role="tabpanel"
+              id="calculator-panel-bmi"
+              aria-labelledby="calculator-tab-bmi"
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -16 }}
@@ -112,6 +124,9 @@ export function CalculatorsHub() {
           {activeTab === 'unit' && (
             <motion.div
               key="unit"
+              role="tabpanel"
+              id="calculator-panel-unit"
+              aria-labelledby="calculator-tab-unit"
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -16 }}
@@ -123,6 +138,9 @@ export function CalculatorsHub() {
           {activeTab === 'creatinine' && (
             <motion.div
               key="creatinine"
+              role="tabpanel"
+              id="calculator-panel-creatinine"
+              aria-labelledby="calculator-tab-creatinine"
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -16 }}

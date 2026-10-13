@@ -42,6 +42,9 @@ export const Users: CollectionConfig = {
       index: true,
       access: {
         read: () => false,
+        // Payload only evaluates a field's access function for the matching operation, so
+        // "create" has to be closed explicitly or a create request can set the field freely.
+        create: () => false,
         update: () => false, // Prevent manual editing in admin UI
       },
     },
@@ -54,23 +57,24 @@ export const Users: CollectionConfig = {
         { label: 'Google', value: 'google' },
       ],
       access: {
+        create: staffOnly,
         update: () => false,
       },
     },
     {
       name: 'pendingEmail',
       type: 'text',
-      access: { read: () => false },
+      access: { read: () => false, create: () => false },
     },
     {
       name: 'pendingEmailCodeHash',
       type: 'text',
-      access: { read: () => false },
+      access: { read: () => false, create: () => false },
     },
     {
       name: 'pendingEmailCodeExpiresAt',
       type: 'date',
-      access: { read: () => false },
+      access: { read: () => false, create: () => false },
     },
     {
       name: 'phone',
@@ -91,15 +95,16 @@ export const Users: CollectionConfig = {
         { label: 'Staff', value: 'staff' },
       ],
       // A customer's own update access only lets them PATCH their own record — without this,
-      // that's enough to self-promote to admin. Only admins/staff may change this field.
-      access: { update: staffOnly },
+      // that's enough to self-promote to admin. Only admins/staff may change this field, on
+      // create as well as update (field access is evaluated per operation).
+      access: { create: staffOnly, update: staffOnly },
     },
 
     {
       name: 'emailVerified',
       type: 'checkbox',
       defaultValue: false,
-      access: { update: staffOnly },
+      access: { create: staffOnly, update: staffOnly },
     },
     {
       name: 'acceptsMarketing',
@@ -133,7 +138,7 @@ export const Users: CollectionConfig = {
         readOnly: true,
         condition: ({ user }) => !!user?.role && ['admin', 'staff'].includes(user.role),
       },
-      access: { update: staffOnly },
+      access: { create: staffOnly, update: staffOnly },
     },
     {
       name: 'defaultShippingAddress',
@@ -184,24 +189,24 @@ export const Users: CollectionConfig = {
         readOnly: true,
         condition: ({ user }) => !!user?.role && ['admin', 'staff'].includes(user.role),
       },
-      access: { update: staffOnly },
+      access: { create: staffOnly, update: staffOnly },
     },
     {
       name: 'metadata',
       type: 'json',
-      access: { update: staffOnly },
+      access: { create: staffOnly, update: staffOnly },
     },
     {
       name: 'hbPoints',
-      label: 'HB Points',
+      label: 'VL Points',
       type: 'number',
       defaultValue: 0,
       admin: {
-        description: 'HB Points ($1 per point). Can be used by users at checkout.',
+        description: 'VL Points ($1 per point). Can be used by users at checkout.',
         readOnly: false,
       },// Only server-side code (checkout, refund hooks) using overrideAccess may change this —
-      // never a customer's own PATCH request, or they could mint free store credit for themselves.
-      access: { update: staffOnly },
+      // never a customer's own PATCH or a sign-up request, or they could mint free store credit.
+      access: { create: staffOnly, update: staffOnly },
     },
   ],
   hooks: {

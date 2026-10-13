@@ -30,7 +30,10 @@ export const PayoutRequests: CollectionConfig = {
         return false
       }
     },
-    create: ({ req: { user } }) => !!user,
+    // Requests are created by /api/affiliates/payout-request, which reserves the balance
+    // atomically and writes with overrideAccess. A public create let any logged-in user file
+    // requests (any amount, any status, any affiliate) that bypass that balance check.
+    create: ({ req: { user } }) => !!user?.role && ['admin', 'staff'].includes(user.role as string),
     update: ({ req: { user } }) => !!user?.role && ['admin', 'staff'].includes(user.role as string),
     delete: ({ req: { user } }) => !!user?.role && ['admin', 'staff'].includes(user.role as string),
   },

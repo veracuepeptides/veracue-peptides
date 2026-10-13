@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useLayoutEffect } from 'react'
+import React, { useEffect, useLayoutEffect, useRef } from 'react'
 import Image from 'next/image'
 import { motion, AnimatePresence, Variants } from 'framer-motion'
 import {
@@ -29,6 +29,7 @@ import { Link } from '@/i18n/navigation'
 import { getCategoryDisplayName } from '@/lib/categoryDisplay'
 import { useCartStore } from '@/lib/cart/store'
 import { useWishlistStore } from '@/lib/wishlist/store'
+import { useFocusTrap } from '@/lib/useFocusTrap'
 
 export interface MenuCategory {
   id: string | number
@@ -44,46 +45,51 @@ export interface MobileMenuProps {
   categories?: MenuCategory[]
 }
 
-// Curated 7 High-Resolution Scientific Peptide Visuals matching each research category
+// Curated 8 High-Resolution Scientific Peptide Visuals matching each research category
 const CATEGORY_VISUALS_MAP: Record<string, { image: string; tag: string }> = {
-  'weight-loss-metabolic': {
+  'glp-1-metabolic-research-compounds': {
     image: '/veracue-images/veracue-klow-50mg-sunlit-water-ripples.webp',
     tag: 'METABOLIC & GLP-1',
   },
-  'cellular-repair-healing': {
+  'healing-recovery-research-compounds': {
     image: '/veracue-images/veracue-glow-50mg-beach-shore-landscape.webp',
     tag: 'TISSUE REGENERATION',
   },
-  'longevity-anti-aging': {
+  'longevity-anti-aging-research-compounds': {
     image: '/veracue-images/veracue-epithalon-50mg-water-bamboo.webp',
     tag: 'SENESCENCE & TELOMERES',
   },
-  'cognitive-neuro-protection': {
+  'cognitive-nootropic-research-compounds': {
     image: '/veracue-images/veracue-ghk-cu-50mg-ice-bed-warm.webp',
     tag: 'SYNAPTIC PLASTICITY',
   },
-  'growth-hormone-secretagogues': {
+  'growth-hormone-secretagogue-research-compounds': {
     image: '/veracue-images/veracue-nad-plus-500mg-sunlight-branches.webp',
     tag: 'GHRH & SECRETIN',
   },
-  'immune-modulation': {
+  'sexual-hormonal-research-compounds': {
     image: '/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp',
-    tag: 'ANTIMICROBIAL PEPTIDES',
+    tag: 'HORMONE PATHWAYS',
   },
-  'mitochondrial-cellular-energy': {
+  'cosmetic-skin-research-compounds': {
     image: '/veracue-images/veracue-nad-plus-50mg-water-caustics.webp',
-    tag: 'OXIDATIVE PHOSPHORYLATION',
+    tag: 'FIBROBLAST & MATRIX',
+  },
+  'nasal-sprays': {
+    image: '/veracue-images/veracue-research-grade-dish-leaf-droplets.webp',
+    tag: 'SPRAY FORMATS',
   },
 }
 
 const FALLBACK_CATEGORIES: MenuCategory[] = [
-  { id: '1', name: 'Weight Loss & Metabolic', slug: 'weight-loss-metabolic' },
-  { id: '2', name: 'Cellular Repair & Healing', slug: 'cellular-repair-healing' },
-  { id: '3', name: 'Longevity & Anti-Aging', slug: 'longevity-anti-aging' },
-  { id: '4', name: 'Cognitive & Neuro-Protection', slug: 'cognitive-neuro-protection' },
-  { id: '5', name: 'Growth Hormone Secretagogues', slug: 'growth-hormone-secretagogues' },
-  { id: '6', name: 'Immune Modulation', slug: 'immune-modulation' },
-  { id: '7', name: 'Mitochondrial & Cellular Energy', slug: 'mitochondrial-cellular-energy' },
+  { id: '1', name: 'GLP-1 & Metabolic Research Compounds', slug: 'glp-1-metabolic-research-compounds' },
+  { id: '2', name: 'Healing & Recovery Research Compounds', slug: 'healing-recovery-research-compounds' },
+  { id: '3', name: 'Longevity & Anti-Aging Research Compounds', slug: 'longevity-anti-aging-research-compounds' },
+  { id: '4', name: 'Cognitive & Nootropic Research Compounds', slug: 'cognitive-nootropic-research-compounds' },
+  { id: '5', name: 'Growth Hormone Secretagogue Research Compounds', slug: 'growth-hormone-secretagogue-research-compounds' },
+  { id: '6', name: 'Sexual & Hormonal Research Compounds', slug: 'sexual-hormonal-research-compounds' },
+  { id: '7', name: 'Cosmetic & Skin Research Compounds', slug: 'cosmetic-skin-research-compounds' },
+  { id: '8', name: 'Nasal Sprays', slug: 'nasal-sprays' },
 ]
 
 const FALLBACK_VISUAL_ARRAY = [
@@ -92,8 +98,9 @@ const FALLBACK_VISUAL_ARRAY = [
   { image: '/veracue-images/veracue-epithalon-50mg-water-bamboo.webp', tag: 'SENESCENCE & TELOMERES' },
   { image: '/veracue-images/veracue-ghk-cu-50mg-ice-bed-warm.webp', tag: 'SYNAPTIC PLASTICITY' },
   { image: '/veracue-images/veracue-nad-plus-500mg-sunlight-branches.webp', tag: 'GHRH & SECRETIN' },
-  { image: '/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp', tag: 'ANTIMICROBIAL PEPTIDES' },
-  { image: '/veracue-images/veracue-nad-plus-50mg-water-caustics.webp', tag: 'OXIDATIVE PHOSPHORYLATION' },
+  { image: '/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp', tag: 'HORMONE PATHWAYS' },
+  { image: '/veracue-images/veracue-nad-plus-50mg-water-caustics.webp', tag: 'FIBROBLAST & MATRIX' },
+  { image: '/veracue-images/veracue-research-grade-dish-leaf-droplets.webp', tag: 'SPRAY FORMATS' },
 ]
 
 const PRIMARY_NAV = [
@@ -186,6 +193,16 @@ export function MobileMenu({
 
   const displayCategories = categories && categories.length > 0 ? categories : FALLBACK_CATEGORIES
 
+  const dialogRef = useRef<HTMLDivElement>(null)
+  useFocusTrap(dialogRef, isOpen)
+
+  // Always call the latest onClose from a listener that is subscribed only once per open
+  // state, so a parent re-render mid-keydown can't drop the Escape event.
+  const onCloseRef = useRef(onClose)
+  useEffect(() => {
+    onCloseRef.current = onClose
+  })
+
   useLayoutEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden'
@@ -197,7 +214,7 @@ export function MobileMenu({
       }
 
       const handleEsc = (e: KeyboardEvent) => {
-        if (e.key === 'Escape') onClose()
+        if (e.key === 'Escape') onCloseRef.current()
       }
       window.addEventListener('keydown', handleEsc)
       return () => {
@@ -212,7 +229,7 @@ export function MobileMenu({
         window.removeEventListener('keydown', handleEsc)
       }
     }
-  }, [isOpen, onClose])
+  }, [isOpen])
 
   // Silky drawer animations
   const backdropVariants: Variants = {
@@ -285,6 +302,7 @@ export function MobileMenu({
     <AnimatePresence>
       {isOpen && (
         <div
+          ref={dialogRef}
           role="dialog"
           aria-modal="true"
           aria-label="Navigation menu"

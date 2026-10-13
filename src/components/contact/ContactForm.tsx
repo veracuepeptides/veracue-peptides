@@ -47,7 +47,7 @@ export function ContactForm() {
       }
     } catch (err: any) {
       console.error(err)
-      setErrorMessage(err?.message || 'Something went wrong while sending your message. Please email support@veracuepeptides.com directly.')
+      setErrorMessage(err?.message || 'Something went wrong while sending your message. Please email orders@veracuelabs.com directly.')
     } finally {
       setIsSubmitting(false)
     }

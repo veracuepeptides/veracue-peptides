@@ -4,17 +4,19 @@ import { fileURLToPath } from 'url'
 import sharp from 'sharp'
 import { getPayload, type Payload } from 'payload'
 import configPromise from '../../src/payload.config'
+import { PRICES } from './prices'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 export const DOCS_DIR = path.resolve(__dirname, '../../docs')
 export const CONTENT_DIR = path.join(DOCS_DIR, 'product-contents-1')
 export const IMAGES_DIR = path.join(DOCS_DIR, 'product-images')
 
-export const BRAND = 'Veracue Peptides'
+export const BRAND = 'Veracue Labs'
 
-// Every meta title ends with exactly one "| Veracue Peptides" (source files use "| Veracue").
+// Every meta title ends with exactly one "| Veracue Labs". Source files may end with the old
+// "| Veracue Peptides", the new "| Veracue Labs" or the bare "| Veracue"; all three are stripped first.
 export function brandTitle(t: string): string {
-  const base = t.replace(/\s*\|\s*Veracue(?:\s+Peptides)?\s*$/i, '').trim()
+  const base = t.replace(/\s*\|\s*Veracue(?:\s+(?:Peptides|Labs))?\s*$/i, '').trim()
   const out = `${base} | ${BRAND}`
   if (out.length > 60) console.warn(`  warning: seoTitle is ${out.length} chars (>60): ${out}`)
   return out
@@ -84,12 +86,12 @@ export async function toWebp(srcFile: string, outName: string) {
   return { data, mimetype: 'image/webp', name: outName, size: data.length }
 }
 
-export async function getOrCreateMedia(payload: Payload, srcFile: string, outName: string, alt: string) {
+export async function getOrCreateMedia(payload: Payload, srcFile: string, outName: string, alt: string, caption?: string) {
   const existing = await payload.find({ collection: 'media', where: { filename: { equals: outName } }, limit: 1 })
   if (existing.docs[0]) return existing.docs[0]
   const file = await toWebp(srcFile, outName)
   console.log(`  uploading ${outName} (${Math.round(file.size / 1024)} KB)`)
-  return payload.create({ collection: 'media', data: { alt }, file })
+  return payload.create({ collection: 'media', data: caption ? { alt, caption } : { alt }, file })
 }
 
 // ---------- Guards ----------
@@ -155,8 +157,10 @@ export type ProductDef = {
   categorySlugs: string[] // existing Payload category slugs, or [] when none fits
   skuCode: string // short code, SKU = CODE-STRENGTH e.g. GLP3RTA-10MG
   weightKg?: number
+  optionKey?: string // label of the variant option, default 'Strength' (use 'Volume' for liquids)
+  container?: string // word used in media filenames, default 'spray' for spray listings and 'vial' otherwise (use 'supply' for lab supplies)
   imageLabel: string // label text used for media filenames and alt text, e.g. "GLP-3RTA"
-  variants: { strength: string; image: string; price?: number; sku?: string }[] // image = file in docs/product-images
+  variants: { strength: string; image: string; price?: number; sku?: string; alt?: string; caption?: string }[] // image = file in docs/product-images; alt/caption override the default media text
   seoTitle: string // brand suffix is added or normalised automatically
   seoDescription: string
   description: string // short plain text shown in the page hero
@@ -173,6 +177,11 @@ export function placeholderPrice(slug: string, index: number): number {
   let h = 0
   for (const ch of slug) h = (h * 31 + ch.charCodeAt(0)) % 97
   return 35 + (h % 30) + index * 30
+}
+
+// Real price from prices.ts when one exists for this product and strength, otherwise the placeholder.
+export function variantPrice(slug: string, strength: string, index: number): number {
+  return PRICES[slug]?.[strength] ?? placeholderPrice(slug, index)
 }
 
 export async function runProduct(def: ProductDef) {
@@ -226,11 +235,11 @@ export async function runProduct(def: ProductDef) {
   console.log(`Preparing images for ${def.slug}...`)
   const label = dashed(def.imageLabel)
   // Spray-format listings get spray-labeled media (filename and alt text), vial-format listings keep "vial".
-  const container = /spray/i.test(def.name) || /spray/i.test(def.slug) ? 'spray' : 'vial'
+  const container = def.container ?? (/spray/i.test(def.name) || /spray/i.test(def.slug) ? 'spray' : 'vial')
   const media: any[] = []
   for (const v of def.variants) {
     const pretty = v.strength.replace(/(\d)\s*(mg|iu|ml)\b/i, '$1 $2')
-    media.push(await getOrCreateMedia(payload, v.image, `veracue-${label}-${compact(v.strength)}-${container}.webp`, `Veracue ${def.imageLabel} ${pretty} research ${container}`))
+    media.push(await getOrCreateMedia(payload, v.image, `veracue-${label}-${compact(v.strength)}-${container}.webp`, v.alt ?? `Veracue ${def.imageLabel} ${pretty} research ${container}`, v.caption))
   }
 
   const data: any = {
@@ -241,17 +250,17 @@ export async function runProduct(def: ProductDef) {
     seoDescription: def.seoDescription,
     categories: cats,
     images: [{ image: media[0].id }],
-    price: def.variants[0].price ?? placeholderPrice(def.slug, 0),
-    stock: 100,
+    price: def.variants[0].price ?? variantPrice(def.slug, def.variants[0].strength, 0),
+    stock: 1000,
     weight: def.weightKg ?? 0.05,
     hasVariants: true,
     variants: def.variants.map((v, i) => ({
       sku: v.sku ?? `${def.skuCode}-${v.strength.toUpperCase().replace(/[^A-Z0-9]+/g, '')}`,
       isKit: false,
       images: [{ image: media[i].id }],
-      price: v.price ?? placeholderPrice(def.slug, i),
-      stock: 100,
-      options: [{ key: 'Strength', value: v.strength }],
+      price: v.price ?? variantPrice(def.slug, v.strength, i),
+      stock: 1000,
+      options: [{ key: def.optionKey ?? 'Strength', value: v.strength }],
     })),
     productDetailsTitle: 'Product Details',
     productDetailsDescription: def.tabs.details,

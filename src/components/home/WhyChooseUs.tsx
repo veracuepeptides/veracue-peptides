@@ -23,7 +23,7 @@ const PILLARS_CONFIG: PillarData[] = [
     key: 'hplcPurity',
     number: '01.',
     tag: 'PURITY SPECIFICATION',
-    spec: 'HPLC Tested • Purity Per Batch COA',
+    spec: 'HPLC Tested • COA on Request',
     icon: CheckCircle2,
     media: '/veracue-images/veracue-epithalon-50mg-water-ripples-landscape.webp',
     alt: 'High-Performance Liquid Chromatography analytical purity verification for Veracue research peptides',
@@ -44,7 +44,7 @@ const PILLARS_CONFIG: PillarData[] = [
     spec: 'Lot-Specific COA • Instant Access',
     icon: FileCheck2,
     media: '/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp',
-    alt: 'Batch-specific certificates of analysis publicly published for every Veracue peptide batch',
+    alt: 'Batch-specific certificates of analysis publicly published for every Veracue Labs peptide batch',
   },
 ]
 
@@ -106,7 +106,7 @@ export function WhyChooseUs() {
           {/* Narrative & Quick Access Action */}
           <div className="flex flex-col items-start md:items-end gap-5 max-w-md">
             <p className="text-neutral-600 text-xs sm:text-sm md:text-base leading-relaxed text-left md:text-right font-sans">
-              Each Veracue peptide is HPLC tested, and the Certificate of Analysis for its batch shows the purity result, so you can read the data before you buy.
+              Each Veracue Labs peptide is HPLC tested, and the Certificate of Analysis for its batch shows the purity result, so you can read the data before you buy.
             </p>
 
             {/* Signature Luxury Pill Button */}

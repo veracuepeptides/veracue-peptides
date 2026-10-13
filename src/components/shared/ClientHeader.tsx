@@ -37,31 +37,27 @@ import {
 } from 'lucide-react'
 import { MobileMenu } from './MobileMenu'
 import { useCartStore } from '@/lib/cart/store'
-import { useUiStore } from '@/lib/ui/store'
+import { useUiStore, useAnnouncementBarStore } from '@/lib/ui/store'
 import { useWishlistStore } from '@/lib/wishlist/store'
 import dynamic from 'next/dynamic'
+import { useSession } from 'next-auth/react'
 import { SearchOverlay } from './SearchOverlay'
 import { getCategoryDisplayName } from '@/lib/categoryDisplay'
 
 const CartDrawer = dynamic(() => import('@/components/cart/CartDrawer').then(mod => mod.CartDrawer), { ssr: false })
 
 interface ClientHeaderProps {
-  cartItemCount?: number
-  wishlistItemCount?: number
-  isLoggedIn?: boolean
   categories?: any[]
-  initialWishlistItems?: any[]
-  initialCartItems?: any[]
 }
 
 export function ClientHeader({
-  cartItemCount = 0,
-  wishlistItemCount = 0,
-  isLoggedIn = false,
   categories: initialCategories = [],
-  initialWishlistItems = [],
-  initialCartItems = []
 }: ClientHeaderProps) {
+  // Signed-in state comes from the session in the browser, not from the server render, so the page
+  // itself carries nothing per-visitor and can be cached. Until the session answers (one small
+  // request per page load) the header shows the signed-out state.
+  const { status: sessionStatus } = useSession()
+  const isLoggedIn = sessionStatus === 'authenticated'
   const pathname = usePathname() || '/'
   const cartStore = useCartStore()
   const setCartItems = useCartStore((state) => state.setItems)
@@ -70,6 +66,8 @@ export function ClientHeader({
   
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const setUiMobileMenuOpen = useUiStore((state) => state.setMobileMenuOpen)
+  // Pushes the floating header down to clear the announcement bar above it; snaps back up once dismissed.
+  const announcementDismissed = useAnnouncementBarStore((state) => state.dismissed)
   const [isSearchOpen, setIsSearchOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
   useEffect(() => setMounted(true), [])
@@ -122,33 +120,44 @@ export function ClientHeader({
   const cartHydrated = useRef(false)
   const wishlistHydrated = useRef(false)
 
-  // Sync Cart with Backend
+  // Sync cart and wishlist with the backend once per page load for a signed-in visitor. The saved
+  // lists come from a server action rather than the page render (see actions/headerState.ts). If the
+  // account has saved items they replace the local ones; otherwise local items are pushed up.
   useEffect(() => {
-    if (isLoggedIn && !cartHydrated.current) {
-      const localItems = cartStore.items
-      if (initialCartItems.length > 0) {
-        setCartItems(initialCartItems)
-      } else if (localItems.length > 0) {
-        import('@/app/(frontend)/actions/cart').then(m => m.syncCartToPayload(localItems))
-      }
-      cartHydrated.current = true
-    }
-  }, [isLoggedIn, initialCartItems, cartStore.items, setCartItems])
+    if (!isLoggedIn || (cartHydrated.current && wishlistHydrated.current)) return
+    let cancelled = false
+    import('@/app/(frontend)/actions/headerState')
+      .then((m) => m.getHeaderUserState())
+      .then((saved) => {
+        if (cancelled) return
 
-  // Sync Wishlist with Backend
-  useEffect(() => {
-    if (isLoggedIn && !wishlistHydrated.current) {
-      const localItems = useWishlistStore.getState().items
-      if (initialWishlistItems.length > 0) {
-        setWishlistItems(initialWishlistItems)
-      } else if (localItems.length > 0) {
-        import('@/app/(frontend)/actions/wishlist').then(m => {
-          localItems.forEach(item => m.toggleWishlistInPayload(item.id, true))
-        })
-      }
-      wishlistHydrated.current = true
+        if (!cartHydrated.current) {
+          cartHydrated.current = true
+          const localItems = useCartStore.getState().items
+          if (saved.cartItems.length > 0) {
+            setCartItems(saved.cartItems)
+          } else if (localItems.length > 0) {
+            import('@/app/(frontend)/actions/cart').then(m => m.syncCartToPayload(localItems))
+          }
+        }
+
+        if (!wishlistHydrated.current) {
+          wishlistHydrated.current = true
+          const localItems = useWishlistStore.getState().items
+          if (saved.wishlistItems.length > 0) {
+            setWishlistItems(saved.wishlistItems)
+          } else if (localItems.length > 0) {
+            import('@/app/(frontend)/actions/wishlist').then(m => {
+              localItems.forEach(item => m.toggleWishlistInPayload(item.id, true))
+            })
+          }
+        }
+      })
+      .catch(() => undefined)
+    return () => {
+      cancelled = true
     }
-  }, [isLoggedIn, initialWishlistItems, setWishlistItems])
+  }, [isLoggedIn, setCartItems, setWishlistItems])
 
   // Global Search Shortcut & Custom Event
   useEffect(() => {
@@ -203,7 +212,9 @@ export function ClientHeader({
 
   return (
     <>
-      <header className="fixed top-2.5 sm:top-4 inset-x-0 z-50 px-2 sm:px-6 md:px-10 w-full mx-auto pointer-events-none transition-transform duration-300 print:hidden">
+      <header className={`fixed inset-x-0 z-50 px-2 sm:px-6 md:px-10 w-full mx-auto pointer-events-none transition-[top,transform] duration-300 print:hidden ${
+        announcementDismissed ? 'top-2.5 sm:top-4' : 'top-[3.125rem] sm:top-[3.75rem]'
+      }`}>
         <motion.div
           variants={{
             visible: { y: 0, opacity: 1 },
@@ -608,7 +619,7 @@ export function ClientHeader({
                                 <div className="w-6 h-6 rounded-full bg-white/20 border border-white/30 flex items-center justify-center text-white shrink-0">
                                   <CheckCircle2 size={13} strokeWidth={2.5} />
                                 </div>
-                                <span className="leading-tight">HPLC Tested, COA Per Batch</span>
+                                <span className="leading-tight">HPLC Tested, COA on Request</span>
                               </div>
                             </div>
 
@@ -798,7 +809,7 @@ export function ClientHeader({
                                 <div className="w-6 h-6 rounded-full bg-white/20 border border-white/30 flex items-center justify-center text-white shrink-0">
                                   <ShieldCheck size={13} strokeWidth={2.5} />
                                 </div>
-                                <span className="leading-tight">100% Analytical &amp; Delivery Assurance</span>
+                                <span className="leading-tight">Analytical Documentation on Request</span>
                               </div>
                             </div>
 

@@ -25,6 +25,9 @@ import * as migration_20260710_120000_convert_cents_to_dollars from './20260710_
 import * as migration_20260710_130000_fix_legacy_order_item_prices from './20260710_130000_fix_legacy_order_item_prices';
 import * as migration_20260710_140000_fix_legacy_order_discount_and_tax from './20260710_140000_fix_legacy_order_discount_and_tax';
 import * as migration_20260710_150000_fix_legacy_order_subtotal from './20260710_150000_fix_legacy_order_subtotal';
+import * as migration_20261007_120000_add_veracuepay_payment_method from './20261007_120000_add_veracuepay_payment_method';
+import * as migration_20261013_120000_add_payment_methods_global from './20261013_120000_add_payment_methods_global';
+import * as migration_20261013_130000_remove_circoflows from './20261013_130000_remove_circoflows';
 
 export const migrations = [
   {
@@ -161,5 +164,20 @@ export const migrations = [
     up: migration_20260710_150000_fix_legacy_order_subtotal.up,
     down: migration_20260710_150000_fix_legacy_order_subtotal.down,
     name: '20260710_150000_fix_legacy_order_subtotal',
+  },
+  {
+    up: migration_20261007_120000_add_veracuepay_payment_method.up,
+    down: migration_20261007_120000_add_veracuepay_payment_method.down,
+    name: '20261007_120000_add_veracuepay_payment_method',
+  },
+  {
+    up: migration_20261013_120000_add_payment_methods_global.up,
+    down: migration_20261013_120000_add_payment_methods_global.down,
+    name: '20261013_120000_add_payment_methods_global',
+  },
+  {
+    up: migration_20261013_130000_remove_circoflows.up,
+    down: migration_20261013_130000_remove_circoflows.down,
+    name: '20261013_130000_remove_circoflows',
   },
 ];

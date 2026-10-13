@@ -40,8 +40,8 @@ export default function ShippingPolicyPage() {
         supportLabel: t('supportIssuesLabel'),
         orderLabel: t('orderQueriesLabel'),
         closingText: t('closingText'),
-        supportEmail: 'support@veracuepeptides.com',
-        ordersEmail: 'orders@veracuepeptides.com',
+        supportEmail: 'orders@veracuelabs.com',
+        ordersEmail: 'orders@veracuelabs.com',
       }}
     >
       {/* 01. Order Processing Time */}

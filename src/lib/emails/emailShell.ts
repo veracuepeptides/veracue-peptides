@@ -15,17 +15,17 @@
 import { getSiteIdentity } from '@/lib/site/identity'
 
 export const MARKETING_OPT_OUT_TEXT =
-  'Prefer not to receive these emails? Reply with the word unsubscribe or write to support@veracuepeptides.com and we will remove you.'
+  'Prefer not to receive these emails? Reply with the word unsubscribe or write to orders@veracuelabs.com and we will remove you.'
 
 export const MARKETING_EMAIL_HEADERS = {
-  'List-Unsubscribe': '<mailto:support@veracuepeptides.com?subject=Unsubscribe>',
+  'List-Unsubscribe': '<mailto:orders@veracuelabs.com?subject=Unsubscribe>',
 }
 
 function escapeText(v: string): string {
   return v.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 }
 
-/** "Veracue Peptides LLC, <address>" when COMPANY_POSTAL_ADDRESS is set, otherwise an empty string. */
+/** "Veracue Labs LLC, <address>" when COMPANY_POSTAL_ADDRESS is set, otherwise an empty string. */
 export function companyAddressLine(): string {
   const { legalName, postalAddress } = getSiteIdentity()
   return postalAddress ? `${escapeText(legalName)}, ${escapeText(postalAddress)}` : ''
@@ -226,7 +226,7 @@ export function shellClose({
           <tr>
             <td style="background-color:${BRAND.charcoal};padding:8px 24px 36px;text-align:center;">
               <img src="${logoUrl()}" alt="Veracue" width="150" style="display:inline-block;height:26px;width:auto;border:0;margin:0 0 14px;" />
-              <p style="margin:0 0 16px;font-size:11px;color:rgba(255,241,230,0.5);">&ge;99% HPLC-verified research-grade standards.</p>
+              <p style="margin:0 0 16px;font-size:11px;color:rgba(255,241,230,0.5);">Research-grade standards. Analytical documentation on request.</p>
               <p style="margin:0 0 16px;font-size:11px;">
                 <a href="${serverUrl}/shop" style="color:rgba(255,241,230,0.75);text-decoration:none;margin:0 10px;">Shop</a>
                 <a href="${serverUrl}/account" style="color:rgba(255,241,230,0.75);text-decoration:none;margin:0 10px;">Account</a>
@@ -234,7 +234,7 @@ export function shellClose({
               </p>
               ${marketing ? `<p style="margin:0 0 10px;font-size:10px;color:rgba(255,241,230,0.5);">${MARKETING_OPT_OUT_TEXT}</p>` : ''}
               ${addressLine ? `<p style="margin:0 0 10px;font-size:10px;color:rgba(255,241,230,0.35);">${addressLine}</p>` : ''}
-              <p style="margin:0;font-size:10px;color:rgba(255,241,230,0.35);">&copy; ${new Date().getFullYear()} Veracue Peptides. Research Use Only (RUO).</p>
+              <p style="margin:0;font-size:10px;color:rgba(255,241,230,0.35);">&copy; ${new Date().getFullYear()} Veracue Labs. Research Use Only (RUO).</p>
             </td>
           </tr>
         </table>

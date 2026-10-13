@@ -31,7 +31,7 @@ export async function generateMetadata({
       description,
       type: 'website',
       url: path,
-      siteName: 'Veracue Peptides',
+      siteName: 'Veracue Labs',
       images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
     },
     twitter: {
@@ -54,7 +54,7 @@ export default async function RefundPolicyLayout({
   const t = await getTranslations('legal.refundPolicy')
   const title = t('metaTitle')
   const description = t('metaDescription')
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com'
   const path = true ? '/refund-policy' : `/${locale}/refund-policy`
   const url = `${baseUrl}${path}`
 

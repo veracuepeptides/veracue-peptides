@@ -76,15 +76,20 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
   const inputRef = useRef<HTMLInputElement>(null)
   const resultsContainerRef = useRef<HTMLDivElement>(null)
 
-  // Lock background scroll and pause Lenis while search modal is open
+  // Always call the latest onClose from a listener that is subscribed only once per open
+  // state, so a parent re-render mid-keydown can't drop the Escape event.
+  const onCloseRef = useRef(onClose)
   useEffect(() => {
-    if (isOpen) {
-      lenis?.stop()
-      document.body.style.overflow = 'hidden'
-    } else {
-      lenis?.start()
-      document.body.style.overflow = 'unset'
-    }
+    onCloseRef.current = onClose
+  })
+
+  // Lock background scroll and pause Lenis while search modal is open. Does nothing while
+  // closed: this overlay is always mounted, and touching Lenis/body overflow when closed
+  // would undo the scroll lock of other modals (e.g. the age gate) whenever Lenis mounts.
+  useEffect(() => {
+    if (!isOpen) return
+    lenis?.stop()
+    document.body.style.overflow = 'hidden'
     return () => {
       lenis?.start()
       document.body.style.overflow = 'unset'
@@ -103,32 +108,48 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
     }
   }, [isOpen])
 
-  // Debounced search logic
+  // Debounced search: min 2 chars, per-query session cache, and each new query aborts the
+  // previous in-flight request so a slow stale response can't overwrite newer results.
+  const searchCacheRef = useRef<Map<string, SearchProduct[]>>(new Map())
   useEffect(() => {
-    if (!query.trim()) {
+    const trimmed = query.trim()
+    if (trimmed.length < 2) {
       setResults([])
       setIsLoading(false)
       setSelectedIndex(0)
       return
     }
 
+    const cached = searchCacheRef.current.get(trimmed.toLowerCase())
+    if (cached) {
+      setResults(cached)
+      setSelectedIndex(0)
+      setIsLoading(false)
+      return
+    }
+
+    const controller = new AbortController()
     setIsLoading(true)
     const timeoutId = setTimeout(async () => {
       try {
-        const res = await fetch(`/api/search?q=${encodeURIComponent(query)}`)
+        const res = await fetch(`/api/search?q=${encodeURIComponent(trimmed)}`, { signal: controller.signal })
         if (res.ok) {
           const data: SearchProduct[] = await res.json()
+          searchCacheRef.current.set(trimmed.toLowerCase(), data)
           setResults(data)
           setSelectedIndex(0)
         }
       } catch (error) {
-        console.error('Search error:', error)
+        if ((error as Error).name !== 'AbortError') console.error('Search error:', error)
       } finally {
-        setIsLoading(false)
+        if (!controller.signal.aborted) setIsLoading(false)
       }
-    }, 250) // 250ms debounce for quick responsiveness
+    }, 250)
 
-    return () => clearTimeout(timeoutId)
+    return () => {
+      clearTimeout(timeoutId)
+      controller.abort()
+    }
   }, [query])
 
   // Filter results by selected category tab
@@ -154,17 +175,26 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
     router.push(`/product/${product.slug}`)
   }, [onClose, router])
 
+  // Escape closes the overlay. Subscribed once per open state (see onCloseRef above).
+  useEffect(() => {
+    if (!isOpen) return
+
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        e.preventDefault()
+        onCloseRef.current()
+      }
+    }
+
+    window.addEventListener('keydown', handleEscape)
+    return () => window.removeEventListener('keydown', handleEscape)
+  }, [isOpen])
+
   // Keyboard navigation
   useEffect(() => {
     if (!isOpen) return
 
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        e.preventDefault()
-        onClose()
-        return
-      }
-
       if (filteredResults.length === 0) return
 
       if (e.key === 'ArrowDown') {
@@ -183,7 +213,7 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
 
     window.addEventListener('keydown', handleKeyDown)
     return () => window.removeEventListener('keydown', handleKeyDown)
-  }, [isOpen, filteredResults, activeProduct, handleSelectProduct, onClose])
+  }, [isOpen, filteredResults, activeProduct, handleSelectProduct])
 
   // Scroll active item into view
   useEffect(() => {
@@ -381,7 +411,7 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
                     <div className="p-3.5 rounded-xl bg-[#20221c]/5 border border-[#20221c]/10 flex items-center gap-3">
                       <ShieldCheck className="w-5 h-5 text-[#a5a58d] shrink-0" />
                       <div className="text-[11px] leading-relaxed text-[#20221c]/70">
-                        <strong className="text-[#20221c] font-semibold">HPLC Tested Per Batch:</strong> Every Veracue batch has a Certificate of Analysis showing its purity result.
+                        <strong className="text-[#20221c] font-semibold">HPLC Purity Method:</strong> A Certificate of Analysis for a specific lot is available on request.
                       </div>
                     </div>
                   </div>
@@ -647,7 +677,7 @@ export function SearchOverlay({ isOpen, onClose, categories = [] }: SearchOverla
 
               <div className="flex items-center gap-1.5 text-[10px] font-sans font-medium text-[#20221c]/70">
                 <ShieldCheck className="w-3.5 h-3.5 text-[#a5a58d]" />
-                <span>Veracue Peptides • HPLC Tested Research Grade</span>
+                <span>Veracue Labs • HPLC Tested Research Grade</span>
               </div>
             </div>
           </motion.div>

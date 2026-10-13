@@ -7,7 +7,9 @@ export const AffiliateClicks: CollectionConfig = {
   },
   access: {
     read: ({ req: { user } }) => !!user?.role && ['admin', 'staff'].includes(user.role),
-    create: () => true, // Created by API
+    // Clicks are only written by the /ref route, which uses overrideAccess. A public create let
+    // anyone insert unlimited rows (and each insert re-ran the affiliate stats rollup).
+    create: () => false,
     update: () => false,
     delete: () => false,
   },

@@ -331,7 +331,7 @@ export function OrderDetailClient({ order }: OrderDetailProps) {
               </div>
               {!!order.redeemedPoints && order.redeemedPoints > 0 && (
                 <div className="flex justify-between text-[#55724a] border-b border-[#dce0d6]/70 pb-4 mt-1">
-                  <span>{t('hbPointsRedeemed', { fallback: 'HB Points' })}</span>
+                  <span>{t('hbPointsRedeemed', { fallback: 'VL Points' })}</span>
                   <span>-${order.redeemedPoints.toFixed(2)}</span>
                 </div>
               )}

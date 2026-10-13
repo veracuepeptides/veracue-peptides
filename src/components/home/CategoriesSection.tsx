@@ -19,42 +19,47 @@ export interface CategoriesSectionProps {
   categories?: HomeCategory[]
 }
 
-// Curated 7 High-Resolution Scientific Peptide Visuals matching each research category
+// Curated 8 High-Resolution Scientific Peptide Visuals matching each research category
 const CATEGORY_VISUALS_MAP: Record<string, { image: string; tag: string; count: string }> = {
-  'weight-loss-metabolic': {
+  'glp-1-metabolic-research-compounds': {
     image: '/veracue-images/veracue-klow-50mg-sunlit-water-ripples.webp',
     tag: 'METABOLIC & GLP-1',
     count: '01',
   },
-  'cellular-repair-healing': {
+  'healing-recovery-research-compounds': {
     image: '/veracue-images/veracue-glow-50mg-beach-shore-landscape.webp',
     tag: 'TISSUE REGENERATION',
     count: '02',
   },
-  'longevity-anti-aging': {
+  'longevity-anti-aging-research-compounds': {
     image: '/veracue-images/veracue-epithalon-50mg-water-bamboo.webp',
     tag: 'SENESCENCE & TELOMERES',
     count: '03',
   },
-  'cognitive-neuro-protection': {
+  'cognitive-nootropic-research-compounds': {
     image: '/veracue-images/veracue-ghk-cu-50mg-ice-bed-warm.webp',
     tag: 'SYNAPTIC PLASTICITY',
     count: '04',
   },
-  'growth-hormone-secretagogues': {
+  'growth-hormone-secretagogue-research-compounds': {
     image: '/veracue-images/veracue-nad-plus-500mg-sunlight-branches.webp',
     tag: 'GHRH & SECRETIN',
     count: '05',
   },
-  'immune-modulation': {
+  'sexual-hormonal-research-compounds': {
     image: '/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp',
-    tag: 'ANTIMICROBIAL PEPTIDES',
+    tag: 'HORMONE PATHWAYS',
     count: '06',
   },
-  'mitochondrial-cellular-energy': {
+  'cosmetic-skin-research-compounds': {
     image: '/veracue-images/veracue-nad-plus-50mg-water-caustics.webp',
-    tag: 'OXIDATIVE PHOSPHORYLATION',
+    tag: 'FIBROBLAST & MATRIX',
     count: '07',
+  },
+  'nasal-sprays': {
+    image: '/veracue-images/veracue-research-grade-dish-leaf-droplets.webp',
+    tag: 'SPRAY FORMATS',
+    count: '08',
   },
 }
 
@@ -64,23 +69,25 @@ const FALLBACK_VISUALS = [
   { image: '/veracue-images/veracue-epithalon-50mg-water-bamboo.webp', tag: 'SENESCENCE & TELOMERES', count: '03' },
   { image: '/veracue-images/veracue-ghk-cu-50mg-ice-bed-warm.webp', tag: 'SYNAPTIC PLASTICITY', count: '04' },
   { image: '/veracue-images/veracue-nad-plus-500mg-sunlight-branches.webp', tag: 'GHRH & SECRETIN', count: '05' },
-  { image: '/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp', tag: 'ANTIMICROBIAL PEPTIDES', count: '06' },
-  { image: '/veracue-images/veracue-nad-plus-50mg-water-caustics.webp', tag: 'OXIDATIVE PHOSPHORYLATION', count: '07' },
+  { image: '/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp', tag: 'HORMONE PATHWAYS', count: '06' },
+  { image: '/veracue-images/veracue-nad-plus-50mg-water-caustics.webp', tag: 'FIBROBLAST & MATRIX', count: '07' },
+  { image: '/veracue-images/veracue-research-grade-dish-leaf-droplets.webp', tag: 'SPRAY FORMATS', count: '08' },
 ]
 
-// Default 7 Categories in case Payload is booting or returns empty
+// Default 8 Categories in case Payload is booting or returns empty
 const FALLBACK_CATEGORIES: HomeCategory[] = [
-  { id: '1', name: 'Weight Loss & Metabolic', slug: 'weight-loss-metabolic' },
-  { id: '2', name: 'Cellular Repair & Healing', slug: 'cellular-repair-healing' },
-  { id: '3', name: 'Longevity & Anti-Aging', slug: 'longevity-anti-aging' },
-  { id: '4', name: 'Cognitive & Neuro-Protection', slug: 'cognitive-neuro-protection' },
-  { id: '5', name: 'Growth Hormone Secretagogues', slug: 'growth-hormone-secretagogues' },
-  { id: '6', name: 'Immune Modulation', slug: 'immune-modulation' },
-  { id: '7', name: 'Mitochondrial & Cellular Energy', slug: 'mitochondrial-cellular-energy' },
+  { id: '1', name: 'GLP-1 & Metabolic Research Compounds', slug: 'glp-1-metabolic-research-compounds' },
+  { id: '2', name: 'Healing & Recovery Research Compounds', slug: 'healing-recovery-research-compounds' },
+  { id: '3', name: 'Longevity & Anti-Aging Research Compounds', slug: 'longevity-anti-aging-research-compounds' },
+  { id: '4', name: 'Cognitive & Nootropic Research Compounds', slug: 'cognitive-nootropic-research-compounds' },
+  { id: '5', name: 'Growth Hormone Secretagogue Research Compounds', slug: 'growth-hormone-secretagogue-research-compounds' },
+  { id: '6', name: 'Sexual & Hormonal Research Compounds', slug: 'sexual-hormonal-research-compounds' },
+  { id: '7', name: 'Cosmetic & Skin Research Compounds', slug: 'cosmetic-skin-research-compounds' },
+  { id: '8', name: 'Nasal Sprays', slug: 'nasal-sprays' },
 ]
 
 export function CategoriesSection({ categories = [] }: CategoriesSectionProps) {
-  // Use loaded Payload categories or fallback to the 7 curated categories
+  // Use loaded Payload categories or fallback to the 8 curated categories
   const activeCategories = categories.length > 0 ? categories : FALLBACK_CATEGORIES
 
   return (

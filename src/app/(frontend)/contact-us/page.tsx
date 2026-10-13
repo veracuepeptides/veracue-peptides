@@ -33,7 +33,7 @@ export async function generateMetadata({
       description,
       type: 'website',
       url: path,
-      siteName: 'Veracue Peptides',
+      siteName: 'Veracue Labs',
       images: [
         {
           url: getOgImageUrl(title, description, undefined, 'CONTACT & SCIENTIFIC SUPPORT', 'veracue-glow-50mg-water-splash-grey-bg.webp'),
@@ -61,7 +61,7 @@ export default async function ContactPage({
   const t = await getTranslations({ locale, namespace: 'content.contactPage' })
   const title = t('metaTitle')
   const description = t('metaDescription')
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com'
   const path = true ? `/${slug}` : `/${locale}/${slug}`
   const url = `${baseUrl}${path}`
 

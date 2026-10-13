@@ -1,4 +1,22 @@
 import { Payload } from 'payload'
+import { sql } from '@payloadcms/db-postgres'
+
+/**
+ * Click counters only. A click used to trigger the full rollup below, which loads every click,
+ * conversion and payout row for the affiliate (up to 100k each) and rewrites the record. This is
+ * one aggregate UPDATE on indexed columns, so a burst of clicks costs the pool almost nothing.
+ */
+export async function refreshAffiliateClickStats(affiliateId: string | number, payload: Payload) {
+  const id = Number(affiliateId)
+  if (!Number.isFinite(id)) return
+  const db = payload.db as any
+  await db.drizzle.execute(sql`
+    UPDATE "affiliates"
+    SET "total_clicks" = (SELECT COUNT(*) FROM "affiliate_clicks" WHERE "affiliate_id" = ${id}),
+        "unique_clicks" = (SELECT COUNT(DISTINCT "ip_hash") FROM "affiliate_clicks"
+                           WHERE "affiliate_id" = ${id} AND "ip_hash" IS NOT NULL)
+    WHERE "id" = ${id}`)
+}
 
 export async function updateAffiliateStats(affiliateId: string | number, payload: Payload) {
   const numericId = typeof affiliateId === 'string' && !isNaN(Number(affiliateId)) ? Number(affiliateId) : affiliateId;

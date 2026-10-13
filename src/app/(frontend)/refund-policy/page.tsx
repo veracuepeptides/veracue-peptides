@@ -39,8 +39,8 @@ export default function RefundPolicyPage() {
         supportLabel: t('supportIssuesLabel'),
         orderLabel: t('orderQueriesLabel'),
         closingText: `${t('closingText1')} ${t('closingText2')}`,
-        supportEmail: 'support@veracuepeptides.com',
-        ordersEmail: 'orders@veracuepeptides.com',
+        supportEmail: 'orders@veracuelabs.com',
+        ordersEmail: 'orders@veracuelabs.com',
       }}
     >
       {/* 01. What This Policy Covers */}
@@ -83,7 +83,7 @@ export default function RefundPolicyPage() {
             {t.rich('section4Item1', {
               email: (chunks) => (
                 <a
-                  href="mailto:support@veracuepeptides.com"
+                  href="mailto:orders@veracuelabs.com"
                   className="font-medium text-[#cb997e] hover:underline"
                 >
                   {chunks}
@@ -120,10 +120,10 @@ export default function RefundPolicyPage() {
           <p className="font-sans text-sm text-[#20221c]/80">
             {t('section6OrderQueriesLabel')}{' '}
             <a
-              href="mailto:orders@veracuepeptides.com"
+              href="mailto:orders@veracuelabs.com"
               className="font-medium text-[#cb997e] hover:underline"
             >
-              orders@veracuepeptides.com
+              orders@veracuelabs.com
             </a>
           </p>
           <p className="text-xs sm:text-[13px] text-[#20221c]/70 leading-relaxed">

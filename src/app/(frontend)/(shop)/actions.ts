@@ -7,8 +7,10 @@ import { revalidatePath } from 'next/cache'
 import { cookies } from 'next/headers'
 import { getLocale } from 'next-intl/server'
 import { getCategoryDisplayName } from '@/lib/categoryDisplay'
+import { checkRateLimit } from '@/lib/rateLimit'
+import { getClientIp } from '@/lib/requestIp'
 
-export async function addToCart(productId: string | number, quantity: number = 1, providedVariantSku?: string, providedPriceSnapshot?: number, providedVariantTitle?: string) {
+export async function addToCart(productId: string | number, quantity = 1, providedVariantSku?: string, providedPriceSnapshot?: number, providedVariantTitle?: string) {
   try {
     const user = await getPayloadUser()
     if (!user) return { success: false, error: 'Must be logged in to add to cart' }
@@ -83,91 +85,6 @@ export async function addToCart(productId: string | number, quantity: number = 1
     revalidatePath('/shop')
     revalidatePath('/cart')
     return { success: true, message: 'Added to cart' }
-  } catch (error: any) {
-    return { success: false, error: error.message || 'An unexpected error occurred' }
-  }
-}
-
-export async function addToWishlist(productId: string | number, providedVariantSku?: string, providedPriceSnapshot?: number) {
-  try {
-    const user = await getPayloadUser()
-    if (!user) return { success: false, error: 'Must be logged in to add to wishlist' }
-
-    const payload = await getPayload({ config: configPromise })
-
-    // Fetch product details for SKU and price snapshot
-    const product = await payload.findByID({ collection: 'products', id: productId as any })
-    if (!product) return { success: false, error: 'Product not found' }
-
-    // Normalize the product ID to a number so comparisons never fail due to type mismatch
-    const numericProductId = Number(product.id)
-
-    const variantSku = providedVariantSku || product.sku || (product.variants && product.variants[0]?.sku) || `${product.id}`;
-    const priceSnapshot = providedPriceSnapshot !== undefined ? providedPriceSnapshot : (typeof product.salePrice === 'number' ? product.salePrice : (typeof product.price === 'number' ? product.price : 0));
-
-    // Find existing wishlist — use depth:0 so product fields come back as raw IDs, not populated objects
-    const existingLists = await payload.find({
-      collection: 'wishlists',
-      where: { user: { equals: user.id } },
-      limit: 1,
-      depth: 0,
-      overrideAccess: true,
-    })
-
-    let list = existingLists.docs[0]
-
-    if (!list) {
-      // First wishlist for this user — create it
-      list = await payload.create({
-        collection: 'wishlists',
-        data: {
-          user: user.id,
-          items: [{
-            product: numericProductId as any,
-            variantSku,
-            quantity: 1,
-            priceSnapshot,
-            addedAt: new Date().toISOString(),
-          }],
-        },
-        overrideAccess: true,
-      })
-    } else {
-      const items: Array<{ product: number; variantSku: string; quantity: number; priceSnapshot: number; addedAt: string }> = (list.items || []).map((i: any) => ({
-        product: Number(typeof i.product === 'object' ? i.product.id : i.product),
-        variantSku: String(i.variantSku ?? ''),
-        quantity: Number(i.quantity ?? 1),
-        priceSnapshot: Number(i.priceSnapshot ?? 0),
-        addedAt: i.addedAt ? String(i.addedAt) : new Date().toISOString(),
-      }))
-
-      // Check for duplicate using normalized numeric IDs
-      const alreadyExists = items.some((i) => i.product === numericProductId)
-      if (alreadyExists) {
-        revalidatePath('/shop')
-        revalidatePath('/wishlist')
-        return { success: false, error: 'Product is already in your wishlist' }
-      }
-
-      items.push({
-        product: numericProductId,
-        variantSku,
-        quantity: 1,
-        priceSnapshot,
-        addedAt: new Date().toISOString(),
-      })
-
-      list = await payload.update({
-        collection: 'wishlists',
-        id: list.id,
-        data: { items: items as any },
-        overrideAccess: true,
-      })
-    }
-
-    revalidatePath('/shop')
-    revalidatePath('/wishlist')
-    return { success: true, message: 'Added to wishlist' }
   } catch (error: any) {
     return { success: false, error: error.message || 'An unexpected error occurred' }
   }
@@ -249,7 +166,9 @@ async function calculateCartTotals(cartItems: any[], payload: any, coupon?: any)
   if (coupon) {
     if (eligibleSubtotal > 0 || coupon.type === 'free_shipping') {
       if (coupon.type === 'percentage' && coupon.value) {
-        discount = Math.floor(eligibleSubtotal * (coupon.value / 100));
+        // Round to cents, not whole dollars: flooring turned a 15% coupon on a $48 item into
+        // $7 (14.6%) and on a $19 item into $2 (10.5%).
+        discount = Math.round(eligibleSubtotal * (coupon.value / 100) * 100) / 100;
         description = `${coupon.value}% off eligible items`;
       } else if (coupon.type === 'fixed_amount' && coupon.value) {
         discount = Math.min(coupon.value, eligibleSubtotal);
@@ -281,6 +200,11 @@ export async function verifyCoupon(couponCode: string, subtotal: number, clientC
     const user = await getPayloadUser()
 
     if (!couponCode || !couponCode.trim()) return { valid: false, error: 'Please enter a coupon code' }
+
+    // Public endpoint whose "not found" vs other answers reveal which codes exist, so it is
+    // limited per address (the /api/validate-coupon route used by the UI already has its own limit).
+    const gate = await checkRateLimit(`verify-coupon:${await getClientIp()}`, 60, 600)
+    if (!gate.allowed) return { valid: false, error: 'Too many coupon attempts. Please wait a few minutes and try again.' }
 
     const payload = await getPayload({ config: configPromise })
     const coupons = await payload.find({
@@ -361,7 +285,9 @@ export async function verifyCoupon(couponCode: string, subtotal: number, clientC
     // Check locked emails
     if (coupon.lockedEmails && coupon.lockedEmails.length > 0) {
       if (!user) return { valid: false, error: 'You must log in to use this specific coupon' }
-      const allowed = coupon.lockedEmails.some((e: any) => e.email === user.email)
+      // Case-insensitive: approved emails are stored lowercased, but account emails can be saved with capitals.
+      const userEmail = String(user.email || '').trim().toLowerCase()
+      const allowed = coupon.lockedEmails.some((e: any) => String(e.email || '').trim().toLowerCase() === userEmail)
       if (!allowed) return { valid: false, error: 'This coupon is not available for your account' }
     }
 
@@ -660,7 +586,7 @@ export async function getUserHBPoints() {
 
     return typeof payloadUser?.hbPoints === 'number' ? payloadUser.hbPoints : 0
   } catch (error) {
-    console.error('Error fetching HB points:', error)
+    console.error('Error fetching VL points:', error)
     return 0
   }
 }

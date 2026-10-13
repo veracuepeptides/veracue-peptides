@@ -41,7 +41,7 @@ export default function ShopLoading() {
         </div>
 
         {/* Grid Skeleton */}
-        <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 xs:gap-4 sm:gap-6 xl:gap-7">
+        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6 xl:gap-7">
           {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
             <div key={i} className="flex h-full w-full">
               <ProductCardSkeleton />

@@ -19,7 +19,11 @@ export const AffiliateApplications: CollectionConfig = {
       if (['admin', 'staff'].includes(user.role as string)) return true
       return { user: { equals: user.id } }
     },
-    create: () => true, // Logged in users can apply (or public depending on strategy)
+    // The storefront application form is a server action that creates the record with
+    // overrideAccess, so no public create is needed. An open create let anyone post an
+    // already-"approved" application, which the approval hook turns into a live affiliate
+    // plus a coupon.
+    create: ({ req: { user } }) => !!user?.role && ['admin', 'staff'].includes(user.role as string),
     update: ({ req: { user } }) => !!user?.role && ['admin', 'staff'].includes(user.role as string),
     delete: ({ req: { user } }) => !!user?.role && ['admin', 'staff'].includes(user.role as string),
   },

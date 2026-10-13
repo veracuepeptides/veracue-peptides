@@ -73,7 +73,7 @@ export function BlogIndexClient({ posts }: { posts: BlogIndexPost[] }) {
     const presentInPosts = new Set(posts.map((p) => p.category).filter(Boolean))
     const list = [ALL_LABEL]
     DEFAULT_CATEGORIES.forEach((cat) => {
-      if (presentInPosts.has(cat) || posts.length === 0) {
+      if (presentInPosts.has(cat)) {
         list.push(cat)
       }
     })
@@ -115,6 +115,11 @@ export function BlogIndexClient({ posts }: { posts: BlogIndexPost[] }) {
   // Spotlight post (top post when on All Articles and not searching)
   const spotlightPost = activeCategory === ALL_LABEL && !searchQuery.trim() ? sortedPosts[0] : null
   const gridPosts = spotlightPost ? filteredPosts.slice(1) : filteredPosts
+
+  // Nothing is shown for posts that do not exist: no featured card, filters, counters or grid. When the
+  // only post is already the featured card there is no second list to show either.
+  const hasPosts = posts.length > 0
+  const showGrid = hasPosts && !(spotlightPost && gridPosts.length === 0)
 
   const hasMore = visibleCount < gridPosts.length
 
@@ -170,6 +175,7 @@ export function BlogIndexClient({ posts }: { posts: BlogIndexPost[] }) {
         </section>
 
         {/* 3. Sticky Filter & Live Search Capsule */}
+        {hasPosts && (
         <section
           className={`sticky z-30 transition-all duration-300 mb-8 sm:mb-12 ${
             isScrollingDown ? 'top-3 sm:top-5' : 'top-[76px] sm:top-[88px] md:top-[100px]'
@@ -224,6 +230,7 @@ export function BlogIndexClient({ posts }: { posts: BlogIndexPost[] }) {
                       setVisibleCount(6)
                     }}
                     placeholder="Search articles & protocols..."
+                    aria-label="Search articles & protocols"
                     className="w-full pl-9 pr-7 py-2 sm:py-2.5 text-xs sm:text-[13px] bg-white/90 focus:bg-white border border-[#eddcd2] rounded-full text-[#20221c] placeholder:text-neutral-400 focus:outline-none focus:border-[#cb997e] transition-colors"
                   />
                   {searchQuery && (
@@ -247,6 +254,27 @@ export function BlogIndexClient({ posts }: { posts: BlogIndexPost[] }) {
             </div>
           </div>
         </section>
+        )}
+
+        {/* No posts yet */}
+        {!hasPosts && (
+          <section className="mb-14 sm:mb-20">
+            <FadeUp delay={0.2}>
+              <div className="w-full flex flex-col items-center justify-center py-16 sm:py-20 px-4 text-center bg-white/60 border border-[#eddcd2] rounded-2xl sm:rounded-[22px]">
+                <div className="w-12 h-12 rounded-full bg-[#f0efeb] border border-[#eddcd2] flex items-center justify-center text-neutral-400 mb-4">
+                  <BookOpen className="w-5 h-5" />
+                </div>
+                <h2 className="text-xl sm:text-2xl font-extrabold font-heading text-[#20221c] mb-2">
+                  No articles published yet
+                </h2>
+                <p className="text-sm text-neutral-500 max-w-md mb-6 leading-relaxed">
+                  Research guides and lab notes will appear here once they are published. The FAQ below answers common questions about orders, testing and storage.
+                </p>
+                <HeroButton href="/shop">Browse the Shop</HeroButton>
+              </div>
+            </FadeUp>
+          </section>
+        )}
 
         {/* 4. Featured Spotlight Article Bento Card */}
         {spotlightPost && (
@@ -358,6 +386,7 @@ export function BlogIndexClient({ posts }: { posts: BlogIndexPost[] }) {
         )}
 
         {/* 5. Section Header for Grid */}
+        {showGrid && (
         <div className="mb-6 sm:mb-8 px-1 flex items-center justify-between">
           <div>
             <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold font-heading text-[#20221c] tracking-tight">
@@ -372,8 +401,10 @@ export function BlogIndexClient({ posts }: { posts: BlogIndexPost[] }) {
             </p>
           </div>
         </div>
+        )}
 
         {/* 6. Article Grid */}
+        {showGrid && (
         <section className="mb-14 sm:mb-20">
           {gridPosts.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
@@ -410,6 +441,7 @@ export function BlogIndexClient({ posts }: { posts: BlogIndexPost[] }) {
             </FadeUp>
           )}
         </section>
+        )}
 
         {/* 7. Load More Action */}
         {hasMore && (

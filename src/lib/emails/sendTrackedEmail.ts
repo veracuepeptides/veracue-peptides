@@ -12,6 +12,18 @@ export async function sendTrackedEmail(payload: Payload, args: SendEmailArgs) {
   const to = Array.isArray(args.to) ? args.to.join(', ') : String(args.to || '')
   const subject = String((args as any).subject || '')
 
+  // Test runs set DISABLE_OUTBOUND_EMAIL so no real mail can leave. The attempt is still recorded, marked skipped.
+  if (process.env.DISABLE_OUTBOUND_EMAIL === 'true') {
+    payload
+      .create({
+        collection: 'email-logs',
+        data: { to, subject, body: { html: (args as any).html }, sentAt: new Date().toISOString(), status: 'skipped' },
+        overrideAccess: true,
+      })
+      .catch(() => {})
+    return { skipped: true }
+  }
+
   try {
     const result = await payload.sendEmail(args)
     payload

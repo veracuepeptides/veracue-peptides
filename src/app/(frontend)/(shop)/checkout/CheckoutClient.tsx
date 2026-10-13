@@ -21,15 +21,46 @@ import { useSession } from 'next-auth/react'
 import { loadStripe } from '@stripe/stripe-js'
 import { Elements } from '@stripe/react-stripe-js'
 import { StripeCheckoutForm } from './StripeCheckoutForm'
-import { createPaymentIntent, getShippingMethods } from './actions'
+import { createPaymentIntent, getShippingMethods, getShippingCountries } from './actions'
+import { FALLBACK_SHIPPING_METHODS } from '@/lib/pricing/shipping'
+import { DEFAULT_PAYMENT_METHODS, availablePaymentMethods, type PaymentMethodKey, type PublicPaymentMethod } from '@/lib/payments/methods'
 
 
 // Card payments are temporarily disabled in favor of Zelle. Flip this back to re-enable Stripe —
 // the rest of the Stripe integration below is left intact, just not rendered/called while off.
 const ENABLE_STRIPE = false
 
-// Toggle to enable/disable the CircoFlows hosted-card option without touching Stripe/Zelle/Amex.
-const ENABLE_CIRCOFLOWS = false
+// Which payment options appear is set in the admin (Payment Methods) and read from
+// /api/payment-methods. If that request fails these are shown instead: what checkout offered before
+// the setting existed, with the card option left out where VeracuePay is not configured. The server
+// checks the setting again when an order is placed, so this list only decides what is shown.
+const FALLBACK_PAYMENT_METHODS: PublicPaymentMethod[] = availablePaymentMethods(DEFAULT_PAYMENT_METHODS, {
+  veracuepayConfigured: !!process.env.NEXT_PUBLIC_VERACUEPAY_CHECKOUT_URL,
+}).map(({ key, label, description }) => ({ key, label, description }))
+
+// The icon and badges drawn beside each option's title.
+const PAYMENT_METHOD_VISUALS: Record<PaymentMethodKey, { icon: React.ReactNode; badge?: React.ReactNode }> = {
+  veracuepay: {
+    icon: <CreditCard size={14} className="text-[#a5a58d]" />,
+    badge: (
+      <div className="flex gap-1.5 ml-2">
+        <span className="px-1.5 py-0.5 border border-neutral-200 bg-white rounded shadow-2xs text-[8px] font-black italic text-blue-900 tracking-wider">VISA</span>
+        <span className="px-1.5 py-0.5 border border-neutral-200 bg-white rounded shadow-2xs text-[8px] font-bold text-red-600 tracking-wider">MC</span>
+      </div>
+    ),
+  },
+  zelle: {
+    icon: <Wallet size={14} className="text-purple-600" />,
+    badge: (
+      <span className="px-1.5 py-0.5 border border-[#eddcd2] bg-[#741acb] rounded shadow-2xs text-[8px] font-black text-white tracking-widest ml-1">
+        Z
+      </span>
+    ),
+  },
+  stripe_link: {
+    icon: <CreditCard size={14} className="text-[#cb997e]" />,
+  },
+}
 
 const stripePromise = typeof window !== 'undefined' ? loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY || '') : null
 
@@ -74,7 +105,8 @@ export function CheckoutClient() {
   // Form State
   const [attemptedSubmit, setAttemptedSubmit] = useState(false)
   const [isProcessing, setIsProcessing] = useState(false)
-  const [selectedPaymentMethod, setSelectedPaymentMethod] = useState<'zelle' | 'amex' | 'circoflows' | 'stripe_link'>('zelle')
+  const [paymentMethods, setPaymentMethods] = useState<PublicPaymentMethod[]>(FALLBACK_PAYMENT_METHODS)
+  const [selectedPaymentMethod, setSelectedPaymentMethod] = useState<PaymentMethodKey | null>(FALLBACK_PAYMENT_METHODS[0]?.key ?? null)
   const [formData, setFormData] = useState({
     email: '',
     firstName: '',
@@ -132,6 +164,9 @@ export function CheckoutClient() {
 
   // Shipping State
   const [availableShippingMethods, setAvailableShippingMethods] = useState<any[]>([])
+  // Countries the store currently ships to. Starts at US only so the form is never more permissive
+  // than the server, which enforces the same list when the order is placed.
+  const [shippingCountries, setShippingCountries] = useState<string[]>(['US'])
   const [shippingMethod, setShippingMethod] = useState<string>('')
   const [activeFees, setActiveFees] = useState<any[]>([])
   
@@ -187,24 +222,53 @@ export function CheckoutClient() {
     }
   }
 
+  // Adopt a list of payment options: keep the customer's choice if it is still offered, otherwise
+  // pre-select the first one in the admin's order.
+  const applyPaymentMethods = (list: PublicPaymentMethod[]) => {
+    setPaymentMethods(list)
+    setSelectedPaymentMethod((current) => (current && list.some((m) => m.key === current) ? current : list[0]?.key ?? null))
+  }
+
+  // When the server says a method is no longer available, ask again, skipping the short CDN cache.
+  const refreshPaymentMethods = async () => {
+    try {
+      const res = await fetch(`/api/payment-methods?fresh=${Date.now()}`, { cache: 'no-store' })
+      const data = res.ok ? await res.json() : null
+      if (Array.isArray(data?.methods)) applyPaymentMethods(data.methods)
+    } catch {
+      // Keep the current list. The server enforces the setting either way.
+    }
+  }
+
   // Fetch data
   useEffect(() => {
     Promise.all([
       getShippingMethods(),
-      fetch('/api/processing-fees').then(res => res.json()).catch(() => ({}))
-    ]).then(([methods, data]) => {
-      setAvailableShippingMethods(methods)
-      if (methods.length > 0) {
-        setShippingMethod(methods[0].method)
-      }
+      getShippingCountries(),
+      // One small cached answer (already limited to active, non-optional fees) instead of the
+      // generic Payload REST endpoint.
+      fetch('/api/pricing-config').then(res => res.json()).catch(() => ({})),
+      // The payment options switched on in the admin. A failed request falls back to the defaults.
+      fetch('/api/payment-methods').then(res => (res.ok ? res.json() : null)).catch(() => null),
+    ]).then(([methods, countries, data, paymentData]) => {
+      const usableMethods = Array.isArray(methods) && methods.length > 0 ? methods : FALLBACK_SHIPPING_METHODS
+      setAvailableShippingMethods(usableMethods as any[])
+      setShippingMethod(usableMethods[0].method)
+      if (Array.isArray(countries) && countries.length > 0) setShippingCountries(countries)
       
-      if (data?.docs) {
-        const active = data.docs.filter((f: any) => f.isActive && !f.isOptional)
-        setActiveFees(active)
+      if (Array.isArray(data?.fees)) {
+        setActiveFees(data.fees)
       }
+
+      applyPaymentMethods(Array.isArray(paymentData?.methods) ? paymentData.methods : FALLBACK_PAYMENT_METHODS)
       
       setDataLoaded(true)
     }).catch(() => {
+      // If the lookup fails, fall back to the store's default rules instead of leaving checkout with
+      // no shipping options and a Free shipping line. The server recomputes everything anyway.
+      setAvailableShippingMethods(FALLBACK_SHIPPING_METHODS as any[])
+      setShippingMethod(FALLBACK_SHIPPING_METHODS[0].method)
+      applyPaymentMethods(FALLBACK_PAYMENT_METHODS)
       setDataLoaded(true)
     })
   }, [])
@@ -355,7 +419,8 @@ export function CheckoutClient() {
   let activeFeePercentage: number | null = null
   activeFees.forEach((fee: any) => {
     if (fee.type === 'percentage') {
-      processingFeeAmount += subtotalAfterDiscount * (fee.amount / 100)
+      // Rounded to cents per fee, exactly as the server does when the order is created.
+      processingFeeAmount += Math.round(subtotalAfterDiscount * (fee.amount / 100) * 100) / 100
       activeFeePercentage = fee.amount
     } else if (fee.type === 'fixed_amount') {
       processingFeeAmount += fee.amount
@@ -532,10 +597,18 @@ export function CheckoutClient() {
     toast.info(t('couponRemoved', { fallback: 'Coupon removed' }))
   }
 
+  // After a failed place-order click, move focus to the first field flagged aria-invalid
+  const focusFirstInvalidField = () => {
+    window.setTimeout(() => {
+      document.querySelector<HTMLElement>('input[aria-invalid="true"]')?.focus()
+    }, 0)
+  }
+
   const handleZeroTotalCheckout = async () => {
     setAttemptedSubmit(true)
     if (!formData.email || !formData.firstName || !formData.address || !formData.city || !formData.state || !formData.zip || !formData.phone) {
       toast.error(t('fillRequiredFieldsOrder'))
+      focusFirstInvalidField()
       return
     }
 
@@ -577,6 +650,7 @@ export function CheckoutClient() {
     setAttemptedSubmit(true)
     if (!formData.email || !formData.firstName || !formData.address || !formData.city || !formData.state || !formData.zip || !formData.phone) {
       toast.error(t('fillRequiredFieldsOrder'))
+      focusFirstInvalidField()
       return
     }
 
@@ -595,6 +669,7 @@ export function CheckoutClient() {
 
       if (orderRes.error || !orderRes.orderId) {
         toast.error(orderRes.error || t('freeOrderInitFailed'))
+        if ((orderRes as any).paymentMethodUnavailable) await refreshPaymentMethods()
         if ((orderRes as any).priceChanged && (orderRes as any).updatedItems) {
           useCartStore.getState().setItems((orderRes as any).updatedItems)
         }
@@ -615,6 +690,7 @@ export function CheckoutClient() {
     setAttemptedSubmit(true)
     if (!formData.email || !formData.firstName || !formData.address || !formData.city || !formData.state || !formData.zip || !formData.phone) {
       toast.error(t('fillRequiredFieldsOrder'))
+      focusFirstInvalidField()
       return
     }
 
@@ -633,6 +709,7 @@ export function CheckoutClient() {
 
       if (orderRes.error || !orderRes.orderId) {
         toast.error(orderRes.error || t('freeOrderInitFailed'))
+        if ((orderRes as any).paymentMethodUnavailable) await refreshPaymentMethods()
         if ((orderRes as any).priceChanged && (orderRes as any).updatedItems) {
           useCartStore.getState().setItems((orderRes as any).updatedItems)
         }
@@ -649,18 +726,19 @@ export function CheckoutClient() {
     }
   }
 
-  const handleCircoFlowsPlaceOrder = async () => {
+  const handleVeracuepayPlaceOrder = async () => {
     setAttemptedSubmit(true)
     if (!formData.email || !formData.firstName || !formData.address || !formData.city || !formData.state || !formData.zip || !formData.phone) {
       toast.error(t('fillRequiredFieldsOrder'))
+      focusFirstInvalidField()
       return
     }
 
     setIsProcessing(true)
 
     try {
-      const { createCircoFlowsPayment } = await import('./circoflowsActions')
-      const orderRes = await createCircoFlowsPayment(
+      const { createVeracuepayPayment } = await import('./veracuepayActions')
+      const orderRes = await createVeracuepayPayment(
         items, shippingMethod, appliedCoupon?.code, isRedeemingPoints,
         { ...formData, email: user?.email || formData.email },
         user?.id as string,
@@ -669,6 +747,7 @@ export function CheckoutClient() {
 
       if (orderRes.error || !orderRes.redirectUrl) {
         toast.error(orderRes.error || t('freeOrderInitFailed'))
+        if ((orderRes as any).paymentMethodUnavailable) await refreshPaymentMethods()
         if ((orderRes as any).priceChanged && (orderRes as any).updatedItems) {
           useCartStore.getState().setItems((orderRes as any).updatedItems)
         }
@@ -677,8 +756,8 @@ export function CheckoutClient() {
       }
 
       // Cart is intentionally left intact here — the customer hasn't paid yet, they're only
-      // being redirected to CircoFlows' hosted card page. It's cleared once payment actually
-      // succeeds (see OrderConfirmationClient's sync fallback / the webhook-driven finalize).
+      // being redirected to VeracuePay's hosted card page. It's cleared once payment is verified
+      // (see OrderConfirmationClient's verification / the webhook-driven finalize).
       window.location.href = orderRes.redirectUrl
     } catch (e: any) {
       toast.error(t('unexpectedError'))
@@ -686,11 +765,28 @@ export function CheckoutClient() {
     }
   }
 
+  const placeOrderHandlers: Record<PaymentMethodKey, () => Promise<void>> = {
+    veracuepay: handleVeracuepayPlaceOrder,
+    zelle: handleZellePlaceOrder,
+    stripe_link: handleStripeLinkPlaceOrder,
+  }
+
   useEffect(() => {
     if (storedCouponCode && !isVerifyingCoupon) {
       handleApplyCoupon(undefined, storedCouponCode)
     }
   }, [storedCouponCode, subtotal])
+
+  // A customer who presses Back from the payment page can be handed this page straight from the
+  // browser's back/forward cache, with its state frozen as they left it: still "processing", with
+  // the Place Order button disabled. Clear that so they can choose a payment method again.
+  useEffect(() => {
+    const onPageShow = (event: PageTransitionEvent) => {
+      if (event.persisted) setIsProcessing(false)
+    }
+    window.addEventListener('pageshow', onPageShow)
+    return () => window.removeEventListener('pageshow', onPageShow)
+  }, [])
 
   if (!isReady || (items.length > 0 && !dataLoaded)) {
     return <CheckoutPageSkeleton />
@@ -945,6 +1041,7 @@ export function CheckoutClient() {
                             value={couponCode}
                             onChange={(e) => setCouponCode(e.target.value.toUpperCase())}
                             placeholder={t('discountCodePlaceholder', { fallback: 'Discount coupon' })}
+                            aria-label={t('discountCodePlaceholder', { fallback: 'Discount coupon' })}
                             className="flex-1 min-w-0 h-10 px-4 rounded-full border border-[#eddcd2] bg-white text-xs font-sans text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:border-[#cb997e] transition-colors"
                           />
                           <button
@@ -958,7 +1055,7 @@ export function CheckoutClient() {
                       )}
                     </div>
 
-                    {/* Maxx / HB Points Card */}
+                    {/* VL Points Card */}
                     {availablePoints > 0 && (
                       <div className="p-3.5 rounded-2xl bg-white border border-[#eddcd2] flex items-center justify-between shadow-2xs">
                         <div className="flex items-center gap-2.5">
@@ -967,7 +1064,7 @@ export function CheckoutClient() {
                           </span>
                           <div>
                             <span className="text-xs font-sans font-bold text-neutral-900 block">
-                              HB Rewards Points
+                              VL Rewards Points
                             </span>
                             <span className="text-[10.5px] font-sans text-neutral-500 block">
                               {t('youHavePoints', { points: Number(availablePoints.toFixed(2)) })}
@@ -1080,6 +1177,9 @@ export function CheckoutClient() {
                   value={formData.email}
                   onChange={handleInputChange}
                   placeholder={t('emailAddress')}
+                  aria-label={t('emailAddress')}
+                  aria-invalid={attemptedSubmit && !formData.email}
+                  autoComplete="email"
                   type="email"
                   className={`h-12 sm:h-13 rounded-2xl bg-[#f0efeb]/40 border border-[#eddcd2] focus:border-[#cb997e] focus:bg-white text-sm font-sans text-neutral-900 placeholder:text-neutral-400 transition-all shadow-2xs ${
                     attemptedSubmit && !formData.email ? 'border-red-500 bg-red-50/30' : ''
@@ -1259,6 +1359,9 @@ export function CheckoutClient() {
                         value={formData.firstName}
                         onChange={handleInputChange}
                         placeholder={t('firstName')}
+                        aria-label={t('firstName')}
+                        aria-invalid={attemptedSubmit && (selectedAddressId === 'new' || isEditingAddress) && !formData.firstName}
+                        autoComplete="given-name"
                         className={`h-12 rounded-2xl bg-[#f0efeb]/40 border border-[#eddcd2] focus:border-[#cb997e] focus:bg-white text-sm font-sans text-neutral-900 placeholder:text-neutral-400 transition-all ${
                           attemptedSubmit && (selectedAddressId === 'new' || isEditingAddress) && !formData.firstName ? 'border-red-500 bg-red-50/30' : ''
                         }`}
@@ -1269,6 +1372,9 @@ export function CheckoutClient() {
                         value={formData.lastName}
                         onChange={handleInputChange}
                         placeholder={t('lastName')}
+                        aria-label={t('lastName')}
+                        aria-invalid={attemptedSubmit && (selectedAddressId === 'new' || isEditingAddress) && !formData.lastName}
+                        autoComplete="family-name"
                         className={`h-12 rounded-2xl bg-[#f0efeb]/40 border border-[#eddcd2] focus:border-[#cb997e] focus:bg-white text-sm font-sans text-neutral-900 placeholder:text-neutral-400 transition-all ${
                           attemptedSubmit && (selectedAddressId === 'new' || isEditingAddress) && !formData.lastName ? 'border-red-500 bg-red-50/30' : ''
                         }`}
@@ -1281,6 +1387,9 @@ export function CheckoutClient() {
                       value={formData.address}
                       onChange={handleInputChange}
                       placeholder={t('address')}
+                      aria-label={t('address')}
+                      aria-invalid={attemptedSubmit && (selectedAddressId === 'new' || isEditingAddress) && !formData.address}
+                      autoComplete="address-line1"
                       className={`h-12 rounded-2xl bg-[#f0efeb]/40 border border-[#eddcd2] focus:border-[#cb997e] focus:bg-white text-sm font-sans text-neutral-900 placeholder:text-neutral-400 transition-all ${
                         attemptedSubmit && (selectedAddressId === 'new' || isEditingAddress) && !formData.address ? 'border-red-500 bg-red-50/30' : ''
                       }`}
@@ -1292,6 +1401,8 @@ export function CheckoutClient() {
                       value={formData.apartment}
                       onChange={handleInputChange}
                       placeholder={t('apartmentOptional')}
+                      aria-label={t('apartmentOptional')}
+                      autoComplete="address-line2"
                       className="h-12 rounded-2xl bg-[#f0efeb]/40 border border-[#eddcd2] focus:border-[#cb997e] focus:bg-white text-sm font-sans text-neutral-900 placeholder:text-neutral-400 transition-all"
                     />
 
@@ -1302,6 +1413,9 @@ export function CheckoutClient() {
                           value={formData.city}
                           onChange={handleInputChange}
                           placeholder={t('city')}
+                          aria-label={t('city')}
+                          aria-invalid={attemptedSubmit && (selectedAddressId === 'new' || isEditingAddress) && !formData.city}
+                          autoComplete="address-level2"
                           className={`h-12 rounded-2xl bg-[#f0efeb]/40 border border-[#eddcd2] focus:border-[#cb997e] focus:bg-white text-sm font-sans text-neutral-900 placeholder:text-neutral-400 transition-all ${
                             attemptedSubmit && (selectedAddressId === 'new' || isEditingAddress) && !formData.city ? 'border-red-500 bg-red-50/30' : ''
                           }`}
@@ -1314,6 +1428,9 @@ export function CheckoutClient() {
                           value={formData.state}
                           onChange={handleInputChange}
                           placeholder={t('state')}
+                          aria-label={t('state')}
+                          aria-invalid={attemptedSubmit && (selectedAddressId === 'new' || isEditingAddress) && !formData.state}
+                          autoComplete="address-level1"
                           className={`h-12 rounded-2xl bg-[#f0efeb]/40 border border-[#eddcd2] focus:border-[#cb997e] focus:bg-white text-sm font-sans text-neutral-900 placeholder:text-neutral-400 transition-all ${
                             attemptedSubmit && (selectedAddressId === 'new' || isEditingAddress) && !formData.state ? 'border-red-500 bg-red-50/30' : ''
                           }`}
@@ -1326,6 +1443,9 @@ export function CheckoutClient() {
                           value={formData.zip}
                           onChange={handleInputChange}
                           placeholder={t('zipCode')}
+                          aria-label={t('zipCode')}
+                          aria-invalid={attemptedSubmit && (selectedAddressId === 'new' || isEditingAddress) && !formData.zip}
+                          autoComplete="postal-code"
                           className={`h-12 rounded-2xl bg-[#f0efeb]/40 border border-[#eddcd2] focus:border-[#cb997e] focus:bg-white text-sm font-sans text-neutral-900 placeholder:text-neutral-400 transition-all ${
                             attemptedSubmit && (selectedAddressId === 'new' || isEditingAddress) && !formData.zip ? 'border-red-500 bg-red-50/30' : ''
                           }`}
@@ -1337,8 +1457,9 @@ export function CheckoutClient() {
                     <Select
                       value={formData.country}
                       onValueChange={(value) => setFormData((prev) => ({ ...prev, country: value }))}
+                      autoComplete="country"
                     >
-                      <SelectTrigger className="h-12 rounded-2xl bg-[#f0efeb]/40 border border-[#eddcd2] focus:border-[#cb997e] focus:bg-white text-sm font-sans text-neutral-900 w-full shadow-2xs">
+                      <SelectTrigger aria-label={t('country')} className="h-12 rounded-2xl bg-[#f0efeb]/40 border border-[#eddcd2] focus:border-[#cb997e] focus:bg-white text-sm font-sans text-neutral-900 w-full shadow-2xs">
                         <SelectValue placeholder={t('country')} />
                       </SelectTrigger>
                       <SelectContent
@@ -1346,7 +1467,7 @@ export function CheckoutClient() {
                         sideOffset={8}
                         className="max-h-72 rounded-2xl border border-[#eddcd2] bg-white p-2 shadow-xl"
                       >
-                        {COUNTRIES.map((c) => (
+                        {COUNTRIES.filter((c) => shippingCountries.includes(c.code)).map((c) => (
                           <SelectItem
                             key={c.code}
                             value={c.code}
@@ -1357,7 +1478,21 @@ export function CheckoutClient() {
                         ))}
                       </SelectContent>
                     </Select>
-                    {isInternational && (
+                    {!!formData.country && !shippingCountries.includes(formData.country) ? (
+                      <p className="text-xs text-red-600 font-sans px-1 -mt-1" role="alert">
+                        {shippingCountries.length === 1 && shippingCountries[0] === 'US'
+                          ? 'We currently ship within the United States only. Please use a US delivery address.'
+                          : 'We do not currently ship to the selected country. Please choose a country from the list.'}
+                      </p>
+                    ) : (
+                      shippingCountries.length === 1 &&
+                      shippingCountries[0] === 'US' && (
+                        <p className="text-xs text-neutral-500 font-sans px-1 -mt-1">
+                          We currently ship within the United States only.
+                        </p>
+                      )
+                    )}
+                    {isInternational && shippingCountries.includes(formData.country) && (
                       <p className="text-xs text-neutral-500 font-sans px-1 -mt-1">{t('internationalShippingNotice')}</p>
                     )}
 
@@ -1366,6 +1501,9 @@ export function CheckoutClient() {
                       value={formData.phone}
                       onChange={handleInputChange}
                       placeholder={t('phoneForDelivery')}
+                      aria-label={t('phoneForDelivery')}
+                      aria-invalid={attemptedSubmit && !formData.phone}
+                      autoComplete="tel"
                       type="tel"
                       className={`h-12 rounded-2xl bg-[#f0efeb]/40 border border-[#eddcd2] focus:border-[#cb997e] focus:bg-white text-sm font-sans text-neutral-900 placeholder:text-neutral-400 transition-all ${
                         attemptedSubmit && !formData.phone ? 'border-red-500 bg-red-50/30' : ''
@@ -1418,6 +1556,9 @@ export function CheckoutClient() {
                     value={formData.phone}
                     onChange={handleInputChange}
                     placeholder={t('phoneForDelivery')}
+                    aria-label={t('phoneForDelivery')}
+                    aria-invalid={attemptedSubmit && !formData.phone}
+                    autoComplete="tel"
                     type="tel"
                     className={`h-12 rounded-2xl bg-[#f0efeb]/40 border border-[#eddcd2] focus:border-[#cb997e] focus:bg-white text-sm font-sans text-neutral-900 placeholder:text-neutral-400 transition-all shadow-2xs ${
                       attemptedSubmit && !formData.phone ? 'border-red-500 bg-red-50/30' : ''
@@ -1551,135 +1692,70 @@ export function CheckoutClient() {
                   </Elements>
                 ) : (
                   <div className="flex flex-col gap-4">
-                    <div className="flex flex-col gap-3">
-                      {ENABLE_CIRCOFLOWS && (
-                        <label
-                          className={`relative flex items-center justify-between p-4 sm:p-5 rounded-2xl border transition-all cursor-pointer overflow-hidden ${
-                            selectedPaymentMethod === 'circoflows'
-                              ? 'border-[#a5a58d] bg-[#fff1e6]/40 shadow-xs ring-1 ring-[#a5a58d]'
-                              : 'border-[#eddcd2] bg-white hover:border-[#cb997e]/60'
-                          }`}
-                        >
-                          <div className="flex items-center gap-3.5 relative z-10">
-                            <input
-                              type="radio"
-                              name="paymentMethod"
-                              value="circoflows"
-                              className="sr-only"
-                              checked={selectedPaymentMethod === 'circoflows'}
-                              onChange={() => setSelectedPaymentMethod('circoflows')}
-                            />
-                            <div
-                              className={`w-4 h-4 rounded-full border flex items-center justify-center shrink-0 transition-colors ${
-                                selectedPaymentMethod === 'circoflows' ? 'border-[#a5a58d] bg-[#a5a58d]' : 'border-neutral-300 bg-white'
-                              }`}
-                            >
-                              {selectedPaymentMethod === 'circoflows' && <div className="w-1.5 h-1.5 rounded-full bg-white" />}
-                            </div>
-                            <div className="flex flex-col">
-                              <span className="text-sm font-sans font-bold text-neutral-900 flex items-center gap-2">
-                                <CreditCard size={14} className="text-[#a5a58d]" />
-                                {t('payWithCard')}
-                                <div className="flex gap-1.5 ml-2">
-                                  <span className="px-1.5 py-0.5 border border-neutral-200 bg-white rounded shadow-2xs text-[8px] font-black italic text-blue-900 tracking-wider">VISA</span>
-                                  <span className="px-1.5 py-0.5 border border-neutral-200 bg-white rounded shadow-2xs text-[8px] font-bold text-red-600 tracking-wider">MC</span>
+                    {paymentMethods.length === 0 ? (
+                      <div className="rounded-2xl border border-[#eddcd2] bg-[#fff1e6] p-5 text-sm text-[#20221c]/75 leading-relaxed">
+                        Online payment is not available right now. Please email{' '}
+                        <a href="mailto:orders@veracuelabs.com" className="underline">orders@veracuelabs.com</a>{' '}
+                        and we will help you place your order.
+                      </div>
+                    ) : (
+                      <>
+                        <div className="flex flex-col gap-3">
+                          {paymentMethods.map((method) => {
+                            const visuals = PAYMENT_METHOD_VISUALS[method.key]
+                            const isSelected = selectedPaymentMethod === method.key
+                            return (
+                              <label
+                                key={method.key}
+                                className={`relative flex items-center justify-between p-4 sm:p-5 rounded-2xl border transition-all cursor-pointer overflow-hidden ${
+                                  isSelected
+                                    ? 'border-[#a5a58d] bg-[#fff1e6]/40 shadow-xs ring-1 ring-[#a5a58d]'
+                                    : 'border-[#eddcd2] bg-white hover:border-[#cb997e]/60'
+                                }`}
+                              >
+                                <div className="flex items-center gap-3.5 relative z-10">
+                                  <input
+                                    type="radio"
+                                    name="paymentMethod"
+                                    value={method.key}
+                                    className="sr-only"
+                                    checked={isSelected}
+                                    onChange={() => setSelectedPaymentMethod(method.key)}
+                                  />
+                                  <div
+                                    className={`w-4 h-4 rounded-full border flex items-center justify-center shrink-0 transition-colors ${
+                                      isSelected ? 'border-[#a5a58d] bg-[#a5a58d]' : 'border-neutral-300 bg-white'
+                                    }`}
+                                  >
+                                    {isSelected && <div className="w-1.5 h-1.5 rounded-full bg-white" />}
+                                  </div>
+                                  <div className="flex flex-col">
+                                    <span className="text-sm font-sans font-bold text-neutral-900 flex items-center gap-2">
+                                      {visuals.icon}
+                                      {method.label}
+                                      {visuals.badge}
+                                    </span>
+                                    <span className="text-xs text-neutral-500 font-sans mt-0.5">{method.description}</span>
+                                  </div>
                                 </div>
-                              </span>
-                              <span className="text-xs text-neutral-500 font-sans mt-0.5">{t('circoflowsCheckoutNote')}</span>
-                            </div>
-                          </div>
-                        </label>
-                      )}
-
-                      {/* Zelle Payment Option */}
-                      <label
-                        className={`relative flex items-center justify-between p-4 sm:p-5 rounded-2xl border transition-all cursor-pointer overflow-hidden ${
-                          selectedPaymentMethod === 'zelle'
-                            ? 'border-[#a5a58d] bg-[#fff1e6]/40 shadow-xs ring-1 ring-[#a5a58d]'
-                            : 'border-[#eddcd2] bg-white hover:border-[#cb997e]/60'
-                        }`}
-                      >
-                        <div className="flex items-center gap-3.5 relative z-10">
-                          <input
-                            type="radio"
-                            name="paymentMethod"
-                            value="zelle"
-                            className="sr-only"
-                            checked={selectedPaymentMethod === 'zelle'}
-                            onChange={() => setSelectedPaymentMethod('zelle')}
-                          />
-                          <div
-                            className={`w-4 h-4 rounded-full border flex items-center justify-center shrink-0 transition-colors ${
-                              selectedPaymentMethod === 'zelle' ? 'border-[#a5a58d] bg-[#a5a58d]' : 'border-neutral-300 bg-white'
-                            }`}
-                          >
-                            {selectedPaymentMethod === 'zelle' && <div className="w-1.5 h-1.5 rounded-full bg-white" />}
-                          </div>
-                          <div className="flex flex-col">
-                            <span className="text-sm font-sans font-bold text-neutral-900 flex items-center gap-2">
-                              <Wallet size={14} className="text-purple-600" />
-                              Zelle
-                              <span className="px-1.5 py-0.5 border border-[#eddcd2] bg-[#741acb] rounded shadow-2xs text-[8px] font-black text-white tracking-widest ml-1">
-                                Z
-                              </span>
-                            </span>
-                            <span className="text-xs text-neutral-500 font-sans mt-0.5">{t('zelleCheckoutNote')}</span>
-                          </div>
+                              </label>
+                            )
+                          })}
                         </div>
-                      </label>
 
-                      {/* Stripe Custom Link Option */}
-                      <label
-                        className={`relative flex items-center justify-between p-4 sm:p-5 rounded-2xl border transition-all cursor-pointer overflow-hidden ${
-                          selectedPaymentMethod === 'stripe_link'
-                            ? 'border-[#a5a58d] bg-[#fff1e6]/40 shadow-xs ring-1 ring-[#a5a58d]'
-                            : 'border-[#eddcd2] bg-white hover:border-[#cb997e]/60'
-                        }`}
-                      >
-                        <div className="flex items-center gap-3.5 relative z-10">
-                          <input
-                            type="radio"
-                            name="paymentMethod"
-                            value="stripe_link"
-                            className="sr-only"
-                            checked={selectedPaymentMethod === 'stripe_link'}
-                            onChange={() => setSelectedPaymentMethod('stripe_link')}
+                        {/* Place Order CTA Button */}
+                        <div className="w-full mt-4 sm:mt-6">
+                          <HeroButton
+                            onClick={selectedPaymentMethod ? placeOrderHandlers[selectedPaymentMethod] : undefined}
+                            disabled={isProcessing || !selectedPaymentMethod}
+                            variant="olive"
+                            size="lg"
+                            text={isProcessing ? 'Processing Order...' : t('placeOrder')}
+                            className="w-full justify-between py-3.5 sm:py-4 text-[15px] sm:text-base font-sans font-bold shadow-sm"
                           />
-                          <div
-                            className={`w-4 h-4 rounded-full border flex items-center justify-center shrink-0 transition-colors ${
-                              selectedPaymentMethod === 'stripe_link' ? 'border-[#a5a58d] bg-[#a5a58d]' : 'border-neutral-300 bg-white'
-                            }`}
-                          >
-                            {selectedPaymentMethod === 'stripe_link' && <div className="w-1.5 h-1.5 rounded-full bg-white" />}
-                          </div>
-                          <div className="flex flex-col">
-                            <span className="text-sm font-sans font-bold text-neutral-900 flex items-center gap-2">
-                              <CreditCard size={14} className="text-[#cb997e]" />
-                              Stripe (Custom Payment Link)
-                            </span>
-                            <span className="text-xs text-neutral-500 font-sans mt-0.5">Secure payment via an emailed Stripe link.</span>
-                          </div>
                         </div>
-                      </label>
-                    </div>
-
-                    {/* Place Order CTA Button */}
-                    <div className="w-full mt-4 sm:mt-6">
-                      <HeroButton
-                        onClick={
-                          selectedPaymentMethod === 'circoflows'
-                            ? handleCircoFlowsPlaceOrder
-                            : selectedPaymentMethod === 'zelle'
-                            ? handleZellePlaceOrder
-                            : handleStripeLinkPlaceOrder
-                        }
-                        disabled={isProcessing}
-                        variant="olive"
-                        size="lg"
-                        text={isProcessing ? 'Processing Order...' : t('placeOrder')}
-                        className="w-full justify-between py-3.5 sm:py-4 text-[15px] sm:text-base font-sans font-bold shadow-sm"
-                      />
-                    </div>
+                      </>
+                    )}
                   </div>
                 )}
               </section>
@@ -1844,6 +1920,7 @@ export function CheckoutClient() {
                       value={couponCode}
                       onChange={(e) => setCouponCode(e.target.value.toUpperCase())}
                       placeholder={t('discountCodePlaceholder', { fallback: 'Discount coupon' })}
+                      aria-label={t('discountCodePlaceholder', { fallback: 'Discount coupon' })}
                       className="flex-1 min-w-0 h-10 px-4 rounded-full border border-[#eddcd2] bg-[#f0efeb]/40 text-xs font-sans text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:border-[#cb997e] focus:bg-white transition-colors"
                     />
                     <button
@@ -1857,7 +1934,7 @@ export function CheckoutClient() {
                 )}
               </div>
 
-              {/* Maxx / HB Points Card */}
+              {/* VL Points Card */}
               {availablePoints > 0 && (
                 <div className="p-3.5 rounded-2xl bg-[#fff1e6]/60 border border-[#eddcd2] flex items-center justify-between mb-4 shadow-2xs">
                   <div className="flex items-center gap-2.5">
@@ -1866,7 +1943,7 @@ export function CheckoutClient() {
                     </span>
                     <div>
                       <span className="text-xs font-sans font-bold text-neutral-900 block">
-                        HB Rewards Points
+                        VL Rewards Points
                       </span>
                       <span className="text-[10.5px] font-sans text-neutral-500 block">
                         {t('youHavePointsWithValue', {

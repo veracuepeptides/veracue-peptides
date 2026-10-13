@@ -1,7 +1,13 @@
 import { getPayload } from 'payload'
 import configPromise from '@payload-config'
 import * as Sentry from '@sentry/nextjs'
+import { FALLBACK_SHIPPING_METHODS, getFreeShippingThreshold, resolveShippingCountries } from '@/lib/pricing/shipping'
+import { DEFAULT_PAYMENT_METHODS, availablePaymentMethods, type PaymentMethodKey } from '@/lib/payments/methods'
+import { getAvailablePaymentMethods, isVeracuepayConfigured } from '@/lib/payments/settings'
 import {
+  dropCodedSentences,
+  firstParagraph,
+  hasClinicalCode,
   htmlToText,
   lexicalToText,
   oneLine,
@@ -25,6 +31,8 @@ export type LlmsProduct = {
   salePriceFrom?: number
   options: { label: string; price?: number }[]
   summary: string
+  /** First paragraph of the product description, without development code names. */
+  overview: string
   sections: { title: string; text: string }[]
   coa?: { purity?: number; batch?: string; analyzed?: string; fileUrl?: string }
   faqs: LlmsFaq[]
@@ -43,16 +51,28 @@ export type LlmsPost = {
   references: { citation: string; url: string }[]
 }
 
+/** Shipping and fee facts, read from the store settings so the files never disagree with checkout. */
+export type LlmsCommerce = {
+  shipsTo: string[]
+  standardShipping?: number
+  expressShipping?: number
+  freeShippingFrom?: number
+  processingFeePercent?: number
+  /** Payment options switched on at checkout, in the admin's order. */
+  paymentMethods?: PaymentMethodKey[]
+}
+
 export type LlmsSiteData = {
   baseUrl: string
   generatedOn: string
   authorName: string
+  commerce: LlmsCommerce
   categories: { name: string; description: string; count: number }[]
   products: LlmsProduct[]
   posts: LlmsPost[]
 }
 
-const UNCATEGORIZED = 'Research Compounds'
+const UNCATEGORIZED = 'Supplies and other products'
 
 function abs(baseUrl: string, url?: string | null): string | undefined {
   if (!url) return undefined
@@ -71,7 +91,11 @@ function shortCategory(name?: string | null): string {
   return ruoSafeCategoryName(short)
 }
 
-function toProduct(baseUrl: string, doc: any): LlmsProduct {
+// `full` keeps every section and answer at its real length (used for the single-page markdown files);
+// the default trims them so the two site-wide files stay a readable size.
+export function toProduct(baseUrl: string, doc: any, full = false): LlmsProduct {
+  const sectionLimit = full ? Number.POSITIVE_INFINITY : 1100
+  const answerLimit = full ? Number.POSITIVE_INFINITY : 700
   const cats: string[] = (doc.categories ?? [])
     .map((c: any) => (typeof c === 'object' && c ? shortCategory(c.name) : ''))
     .filter(Boolean)
@@ -100,7 +124,7 @@ function toProduct(baseUrl: string, doc: any): LlmsProduct {
   const sections = sectionDefs
     .map(([title, html]) => ({
       title: oneLine(String(title)),
-      text: truncateBlock(htmlToText(typeof html === 'string' ? html : ''), 1100),
+      text: dropCodedSentences(truncateBlock(htmlToText(typeof html === 'string' ? html : ''), sectionLimit)),
     }))
     .filter((s) => s.text)
 
@@ -123,6 +147,7 @@ function toProduct(baseUrl: string, doc: any): LlmsProduct {
         : undefined,
     options,
     summary: truncate(scrubClinicalCodes(summarySource || ''), 200),
+    overview: firstParagraph(dropCodedSentences(htmlToText(doc.description)), 520),
     sections,
     coa: hasCoa
       ? {
@@ -132,16 +157,19 @@ function toProduct(baseUrl: string, doc: any): LlmsProduct {
           fileUrl: abs(baseUrl, coaFileUrl),
         }
       : undefined,
+    // A question that is about a development code name is dropped whole; the catalog uses neutral names.
     faqs: (doc.faqs ?? [])
-      .filter((f: any) => f?.question && f?.answer)
+      .filter((f: any) => f?.question && f?.answer && !hasClinicalCode(String(f.question)))
       .map((f: any) => ({
         question: oneLine(f.question),
-        answer: truncateBlock(htmlToText(f.answer), 700),
-      })),
+        answer: dropCodedSentences(truncateBlock(htmlToText(f.answer), answerLimit)),
+      }))
+      .filter((f: { answer: string }) => f.answer),
   }
 }
 
-function toPost(baseUrl: string, doc: any): LlmsPost {
+export function toPost(baseUrl: string, doc: any, full = false): LlmsPost {
+  const bodyLimit = full ? Number.POSITIVE_INFINITY : 9000
   return {
     title: oneLine(doc.title),
     url: `${baseUrl}/blog/${doc.slug}`,
@@ -150,7 +178,7 @@ function toPost(baseUrl: string, doc: any): LlmsPost {
     category: doc.category || undefined,
     excerpt: truncate(doc.excerpt || '', 320),
     takeaways: (doc.keyTakeaways ?? []).map((k: any) => oneLine(k?.text || '')).filter(Boolean),
-    body: truncateBlock(lexicalToText(doc.content), 14000),
+    body: truncateBlock(lexicalToText(doc.content), bodyLimit),
     faqs: (doc.faqs ?? [])
       .filter((f: any) => f?.question && f?.answer)
       .map((f: any) => ({
@@ -163,14 +191,93 @@ function toPost(baseUrl: string, doc: any): LlmsPost {
   }
 }
 
+function commerceFromMethods(methods: any[], feePercent?: number, paymentMethods?: PaymentMethodKey[]): LlmsCommerce {
+  const domestic = methods.filter((m) => m && !m.isInternational)
+  const isExpress = (m: any) => /express/i.test(String(m.method))
+  const standard = domestic
+    .filter((m) => !isExpress(m) && !(Number(m.minOrderAmount) > 0))
+    .map((m) => Number(m.price))
+    .filter((n) => Number.isFinite(n))
+  const express = domestic.filter(isExpress).map((m) => Number(m.price)).filter((n) => Number.isFinite(n))
+  return {
+    shipsTo: resolveShippingCountries(process.env.SHIPPING_COUNTRIES),
+    standardShipping: standard.length ? Math.min(...standard) : undefined,
+    expressShipping: express.length ? Math.min(...express) : undefined,
+    freeShippingFrom: getFreeShippingThreshold(methods) ?? undefined,
+    processingFeePercent: feePercent,
+    paymentMethods,
+  }
+}
+
+// The payment options a customer would be offered when the setting cannot be read: the same defaults
+// checkout falls back to.
+function defaultPaymentMethods(): PaymentMethodKey[] {
+  return availablePaymentMethods(DEFAULT_PAYMENT_METHODS, { veracuepayConfigured: isVeracuepayConfigured() }).map((m) => m.key)
+}
+
+// Used when the settings cannot be read: the same rules the store applies when none are configured.
+function defaultCommerce(): LlmsCommerce {
+  return commerceFromMethods(FALLBACK_SHIPPING_METHODS as any[], undefined, defaultPaymentMethods())
+}
+
+async function loadCommerce(payload: Awaited<ReturnType<typeof getPayload>>): Promise<LlmsCommerce> {
+  const zones = await payload.find({ collection: 'shippingzones', limit: 1, depth: 0, overrideAccess: true })
+  const fees = await payload.find({ collection: 'processing-fees', limit: 20, depth: 0, overrideAccess: true })
+  const zoneMethods = (zones.docs[0] as any)?.methods
+  const methods = Array.isArray(zoneMethods) && zoneMethods.length ? zoneMethods : FALLBACK_SHIPPING_METHODS
+  const percent = (fees.docs as any[]).find((f) => f.isActive !== false && !f.isOptional && f.type === 'percentage')
+  const payments = await getAvailablePaymentMethods().then(
+    (rows) => rows.map((m) => m.key),
+    () => defaultPaymentMethods(),
+  )
+  return commerceFromMethods(methods as any[], percent ? Number(percent.amount) : undefined, payments)
+}
+
+// One product or post for its own markdown file, at full length. Returns null when it does not exist
+// or is not published, exactly like the HTML page.
+export function siteBaseUrl(): string {
+  return (process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com').replace(/\/$/, '')
+}
+
+export async function loadLlmsProduct(slug: string): Promise<LlmsProduct | null> {
+  const payload = await getPayload({ config: configPromise })
+  const { docs } = await payload.find({
+    collection: 'products',
+    where: {
+      and: [
+        { slug: { equals: slug } },
+        { status: { equals: 'active' } },
+        { isVisible: { equals: true } },
+      ],
+    },
+    limit: 1,
+    depth: 1,
+    locale: 'en',
+  })
+  return docs[0] ? toProduct(siteBaseUrl(), docs[0], true) : null
+}
+
+export async function loadLlmsPost(slug: string): Promise<LlmsPost | null> {
+  const payload = await getPayload({ config: configPromise })
+  const { docs } = await payload.find({
+    collection: 'blog-posts',
+    where: { and: [{ slug: { equals: slug } }, { status: { equals: 'published' } }] },
+    limit: 1,
+    depth: 0,
+    locale: 'en',
+  })
+  return docs[0] ? toPost(siteBaseUrl(), docs[0], true) : null
+}
+
 // Reads the live catalog, categories and published posts. Each block fails independently so a
 // database hiccup still yields a valid (if shorter) file instead of an error response.
 export async function loadLlmsSiteData(): Promise<LlmsSiteData> {
-  const baseUrl = (process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com').replace(/\/$/, '')
+  const baseUrl = (process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com').replace(/\/$/, '')
   const data: LlmsSiteData = {
     baseUrl,
     generatedOn: new Date().toISOString().slice(0, 10),
     authorName: 'Veracue Research Team',
+    commerce: defaultCommerce(),
     categories: [],
     products: [],
     posts: [],
@@ -234,6 +341,13 @@ export async function loadLlmsSiteData(): Promise<LlmsSiteData> {
     data.posts = docs.map((d: any) => toPost(baseUrl, d))
   } catch (error) {
     console.error('llms: failed to fetch blog posts', error)
+    Sentry.captureException(error, { tags: { route: 'llms.txt' } })
+  }
+
+  try {
+    data.commerce = await loadCommerce(payload)
+  } catch (error) {
+    console.error('llms: failed to read shipping and fee settings', error)
     Sentry.captureException(error, { tags: { route: 'llms.txt' } })
   }
 

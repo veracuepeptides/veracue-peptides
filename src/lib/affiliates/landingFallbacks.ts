@@ -1,7 +1,7 @@
 export const AFFILIATE_FALLBACKS: Record<string, string> = {
-  metaTitle: 'Peptide Affiliate Program | Earn 15% Commission | Veracue Peptides',
+  metaTitle: 'Peptide Affiliate Program | Earn 15% Commission | Veracue Labs',
   metaDescription:
-    'Earn 15% commission promoting Veracue research peptides, plus a 15% customer discount and monthly payouts. Apply to the affiliate program today.',
+    'Earn 15% commission promoting Veracue Labs research peptides, plus a 15% customer discount and monthly payouts. Apply to the affiliate program today.',
   introEyebrow: 'Affiliate Program',
   introTitle: 'Earn Passive Income Promoting Premium Research Peptides',
   introDescription:
@@ -202,5 +202,5 @@ export const AFFILIATE_FALLBACKS: Record<string, string> = {
   footerResearchLabel: 'Research Use Only:',
   footerResearchText:
     'All Veracue products are manufactured and sold exclusively for laboratory research purposes. Not for human consumption, medical treatment, or athletic performance enhancement. This affiliate program is for marketing research compounds only. Affiliates must comply with all applicable laws and regulations.',
-  footerCopyright: '© 2026 Veracue Peptides. All rights reserved.',
+  footerCopyright: '© 2026 Veracue Labs. All rights reserved.',
 }

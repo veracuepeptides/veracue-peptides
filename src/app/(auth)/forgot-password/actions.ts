@@ -36,7 +36,7 @@ export async function requestPasswordReset(input: ForgotPasswordInput) {
 
       if (userDocs.docs.length > 0) {
         const user = userDocs.docs[0]
-        const base = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+        const base = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com'
         const locale = ''
         const url = `${base}${locale}/reset-password/${token}`
         
@@ -44,9 +44,9 @@ export async function requestPasswordReset(input: ForgotPasswordInput) {
         const html = await generateForgotPasswordEmail(url, user)
 
         await sendTrackedEmail(payload, {
-          from: 'Veracue Support <support@veracuepeptides.com>',
+          from: 'Veracue Support <orders@veracuelabs.com>',
           to: parsed.data.email,
-          subject: 'Reset Your Password - Veracue Peptides',
+          subject: 'Reset Your Password - Veracue Labs',
           html,
         })
       }

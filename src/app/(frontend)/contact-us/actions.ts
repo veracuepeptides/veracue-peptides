@@ -11,7 +11,9 @@ import { headers } from 'next/headers'
 export async function submitContactForm(formData: FormData) {
   const t = await getTranslations('content.contactForm')
   try {
-    const ip = (await headers()).get('x-forwarded-for')?.split(',')[0]?.trim() || 'unknown'
+    // The platform appends the real client IP, so the last x-forwarded-for entry is the trustworthy one.
+    const forwarded = ((await headers()).get('x-forwarded-for') || '').split(',').map((v) => v.trim()).filter(Boolean)
+    const ip = forwarded[forwarded.length - 1] || 'unknown'
     const { allowed } = await checkRateLimit(`contact:${ip}`, 5, 60 * 60)
     if (!allowed) {
       return { error: t('errorUnexpected') }
@@ -28,12 +30,19 @@ export async function submitContactForm(formData: FormData) {
     if (!name || !email || !subject || !message) {
       return { error: t('errorRequiredFields') }
     }
+    // Field limits keep the support inbox usable and stop the form being used to send large payloads.
+    if (name.length > 120 || subject.length > 200 || message.length > 5000 || email.length > 254) {
+      return { error: t('errorUnexpected') }
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) {
+      return { error: t('errorUnexpected') }
+    }
 
     const html = generateContactFormEmail(name, email, department, subject, message)
 
     await sendTrackedEmail(payload, {
-      from: 'Veracue Peptides Contact Form <support@veracuepeptides.com>',
-      to: 'support@veracuepeptides.com',
+      from: 'Veracue Labs Contact Form <orders@veracuelabs.com>',
+      to: 'orders@veracuelabs.com',
       replyTo: email,
       subject: `[Veracue Research Inquiry] ${subject}`,
       html: html,

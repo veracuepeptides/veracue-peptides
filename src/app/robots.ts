@@ -14,18 +14,19 @@ const PRIVATE_PATHS = [
   '/reset-password',
 ]
 
-// Internal and non-content paths
+// Internal and non-content paths. Disallow rules match by prefix, so the affiliate redirect is
+// '/ref/' with the slash: plain '/ref' would also block /refund-policy.
 const INTERNAL_PATHS = [
   '/admin',
   '/api',
-  '/ref',
+  '/ref/',
   '/the-upside-down',
   '/monitoring',
   '/email-preview',
 ]
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+  const baseUrl = (process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com').replace(/\/$/, '')
 
   const disallow = [
     ...INTERNAL_PATHS,

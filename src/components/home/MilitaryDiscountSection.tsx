@@ -186,7 +186,7 @@ export function MilitaryDiscountSection() {
               <div className="hidden sm:block relative z-20 my-auto py-4">
                 <div className="inline-block bg-black/40 backdrop-blur-sm px-4 py-2 rounded-2xl border border-white/10 max-w-sm">
                   <div className="text-[11px] font-sans font-bold tracking-widest text-[#fff1e6]/70 uppercase mb-0.5">
-                    VERACUE PEPTIDES
+                    VERACUE LABS
                   </div>
                   <div className="text-xs sm:text-sm font-bold text-[#fff1e6] leading-snug">
                     Standing dedication to active duty military, veterans, and first responders.

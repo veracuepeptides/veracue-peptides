@@ -79,7 +79,7 @@ export const faqData: FaqCategoryType[] = [
         "answer": "<p><span style=\"font-weight: 400;\">Pull the certificate of analysis for that specific batch and check its lot number against the vial in hand.</span></p>\r\n<p><span style=\"font-weight: 400;\"></span></p>\r\n<p><span style=\"font-weight: 400;\">If your lab has HPLC or mass spec access, you can run your own confirmation directly, too.</span></p>"
       },
       {
-        "question": "Is third-party testing available for Veracue peptides?",
+        "question": "Is third-party testing available for Veracue Labs peptides?",
         "answer": "<p><span style=\"font-weight: 400;\">Where it applies, a Veracue batch can carry independent third-party analytical confirmation on top of our internal testing.</span></p>\r\n<p><span style=\"font-weight: 400;\"></span></p>\r\n<p><span style=\"font-weight: 400;\">That's an extra layer of assurance, on top of the in-house COA, not a replacement for it.</span></p>"
       }
     ]
@@ -131,123 +131,77 @@ export const faqData: FaqCategoryType[] = [
     ]
   },
   {
-    "category": "Tirzepatide",
+    "category": "GLP-S",
     "items": [
       {
-        "question": "What is Tirzepatide?",
-        "answer": "<p><span style=\"font-weight: 400;\">A synthetic peptide studied as a dual GIP/GLP-1 receptor agonist in metabolic and incretin-pathway research. The version in our catalog is sold strictly for that purpose.</span></p>"
+        "question": "What is GLP-S?",
+        "answer": "<p><span style=\"font-weight: 400;\">A lipid-modified analog built on the GLP-1(7-37) backbone, supplied as a reagent for laboratory receptor and assay work.</span></p>"
       },
       {
-        "question": "What research models is Tirzepatide commonly studied in?",
-        "answer": "<p><span style=\"font-weight: 400;\">Preclinical and in vitro studies examining incretin receptor signaling and metabolic pathways make up most of the published literature, consistent with its RUO classification here.</span></p>"
+        "question": "How is a GLP-S lot usually characterized in the lab?",
+        "answer": "<p><span style=\"font-weight: 400;\">With HPLC for purity and intact-mass analysis for identity. The attached lipid chain pushes the mass well above that of the bare peptide, so the mass result is the quickest check that the right molecule is in the vial.</span></p>"
       },
       {
-        "question": "Is Tirzepatide intended for human use or sale for consumption?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. It's sold for laboratory research only, and it's not labeled, intended, or approved for human or veterinary consumption in any form.</span></p>"
+        "question": "Is GLP-S sold for human or animal use?",
+        "answer": "<p><span style=\"font-weight: 400;\">No. It is labeled for laboratory research use only and is not intended for human or veterinary use in any form.</span></p>"
       },
       {
-        "question": "Are dosing or administration instructions provided for Tirzepatide?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. We don't provide dosing, administration, or usage guidance for Tirzepatide, or for anything else in the catalog.</span></p>"
+        "question": "Does Veracue provide usage instructions for GLP-S?",
+        "answer": "<p><span style=\"font-weight: 400;\">No. Everything in the catalog ships as a research reagent, without protocols or usage guidance. Storage and handling notes for lyophilized material are in the Storage &amp; Handling tab.</span></p>"
       },
       {
-        "question": "Has Tirzepatide been evaluated by the FDA?",
-        "answer": "<p><span style=\"font-weight: 400;\">No, not for any human or veterinary use.</span></p>"
+        "question": "How do I ask about documentation for a GLP-S lot?",
+        "answer": "<p><span style=\"font-weight: 400;\">Use the contact page and name the product and vial size. We will tell you what analytical documentation is available for that lot before you order.</span></p>"
       }
     ]
   },
   {
-    "category": "Survodutide",
+    "category": "GLP-T",
     "items": [
       {
-        "question": "What is Survodutide studied for in research?",
-        "answer": "<p><span style=\"font-weight: 400;\">A synthetic peptide studied as a dual glucagon/GLP-1 receptor agonist, mostly in metabolic-pathway research looking at energy balance and receptor signaling.</span></p>"
+        "question": "What is GLP-T?",
+        "answer": "<p><span style=\"font-weight: 400;\">A 39-residue peptide carrying a C20 fatty diacid, studied in laboratory systems as a dual GIP and GLP-1 receptor agonist.</span></p>"
       },
       {
-        "question": "Is Survodutide a therapeutic product?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. We sell it strictly as a research compound, not as a treatment or a consumer health product of any kind.</span></p>"
+        "question": "Why can GLP-T be mistaken for related peptides?",
+        "answer": "<p><span style=\"font-weight: 400;\">It looks like plain GIP and like other lipid-modified incretin peptides on a quick read. Mass spectrometry on the specific lot is the dependable way to confirm which molecule you are holding.</span></p>"
       },
       {
-        "question": "How is Survodutide classified for research purposes?",
-        "answer": "<p><span style=\"font-weight: 400;\">Research-use-only, sold for laboratory study of dual-receptor agonist activity, not for any clinical or consumer purpose.</span></p>"
+        "question": "Is GLP-T sold for human or animal use?",
+        "answer": "<p><span style=\"font-weight: 400;\">No. It is sold for laboratory research only and carries no labeling for human or veterinary use.</span></p>"
       },
       {
-        "question": "Are purity levels specified for Survodutide?",
-        "answer": "<p><span style=\"font-weight: 400;\">Yes, every batch is tested, and the purity figure is published on that batch's certificate of analysis, viewable before you order.</span></p>"
+        "question": "Does Veracue provide usage instructions for GLP-T?",
+        "answer": "<p><span style=\"font-weight: 400;\">No. The catalog is supplied for research use only, so there are no protocols, schedules or usage notes for any compound.</span></p>"
       },
       {
-        "question": "Is Survodutide intended for diagnostic or treatment purposes?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. Diagnostic and therapeutic use in humans or animals both fall outside its labeling and approval.</span></p>"
+        "question": "How do I ask about documentation for a GLP-T lot?",
+        "answer": "<p><span style=\"font-weight: 400;\">Send a message through the contact page with the product and size you are considering. We will reply with the documentation that exists for that lot.</span></p>"
       }
     ]
   },
   {
-    "category": "SLU-PP-332",
+    "category": "GLP-3RTA",
     "items": [
       {
-        "question": "What type of compound is SLU-PP-332?",
-        "answer": "<p><span style=\"font-weight: 400;\">A synthetic small molecule studied as a pan-agonist of the estrogen-related receptors (ERRs), a compound of interest in exercise-mimetic and metabolic research.</span></p>"
+        "question": "What is GLP-3RTA?",
+        "answer": "<p><span style=\"font-weight: 400;\">A single 39-residue peptide with a C20 fatty diacid, designed to engage the GIP, GLP-1 and glucagon receptors, and used in laboratory receptor-signaling studies.</span></p>"
       },
       {
-        "question": "What research models have examined SLU-PP-332?",
-        "answer": "<p><span style=\"font-weight: 400;\">Mostly preclinical work so far, looking at its effect on ERR-pathway signaling in cellular and animal models. Human clinical trials aren't part of the picture yet.</span></p>"
+        "question": "Why is GLP-3RTA called a triple agonist?",
+        "answer": "<p><span style=\"font-weight: 400;\">Because one molecule engages three receptors: GIPR, GLP-1R and GCGR. The name describes the receptor profile of a single compound and not a mixture of three.</span></p>"
       },
       {
-        "question": "Is SLU-PP-332 cleared for any use outside research?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. Nothing outside of laboratory research has been evaluated or approved for this compound, and that's the only basis we sell it on.</span></p>"
+        "question": "Is GLP-3RTA sold for human or animal use?",
+        "answer": "<p><span style=\"font-weight: 400;\">No. It is a laboratory research reagent only, and it is not labeled or intended for human or veterinary use.</span></p>"
       },
       {
-        "question": "Is regulatory approval claimed for SLU-PP-332?",
-        "answer": "<p><span style=\"font-weight: 400;\">None. The FDA hasn't evaluated it for safety or efficacy in any human-use context, and we don't claim otherwise.</span></p>"
-      }
-    ]
-  },
-  {
-    "category": "Semaglutide",
-    "items": [
-      {
-        "question": "Why is Semaglutide used in research?",
-        "answer": "<p><span style=\"font-weight: 400;\">A well-characterized GLP-1 receptor agonist, which makes it a common reference compound throughout metabolic and incretin-pathway research literature.</span></p>"
+        "question": "Does Veracue provide usage instructions for GLP-3RTA?",
+        "answer": "<p><span style=\"font-weight: 400;\">No. It ships as a research reagent without protocols or usage guidance of any kind.</span></p>"
       },
       {
-        "question": "Is Semaglutide a widely referenced compound in research literature?",
-        "answer": "<p><span style=\"font-weight: 400;\">Yes, it's among the most extensively studied GLP-1 receptor agonists in published research, which explains why it's such a frequent request.</span></p>"
-      },
-      {
-        "question": "Is Semaglutide sold research use only?",
-        "answer": "<p><span style=\"font-weight: 400;\">Yes. Our Semaglutide carries strict RUO labeling and isn't intended for human or veterinary consumption.</span></p>"
-      },
-      {
-        "question": "Is clinical or dosing guidance provided?",
-        "answer": "<p><span style=\"font-weight: 400;\">No, not for Semaglutide or anything else we carry. No dosing, administration, or clinical guidance.</span></p>"
-      },
-      {
-        "question": "Has Semaglutide been evaluated by the FDA in this research context?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. The version in our research catalog hasn't been evaluated or approved by the FDA for human or veterinary use.</span></p>"
-      }
-    ]
-  },
-  {
-    "category": "Retatrutide",
-    "items": [
-      {
-        "question": "What is Retatrutide studied for in research?",
-        "answer": "<p><span style=\"font-weight: 400;\">A synthetic peptide studied as a triple hormone receptor agonist, acting on GIP, GLP-1, and glucagon receptors, an active area of metabolic research.</span></p>"
-      },
-      {
-        "question": "Is Retatrutide used in human clinical research by Veracue?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. Our Retatrutide sits entirely outside any clinical trial supply chain, distributed for RUO laboratory work only.</span></p>"
-      },
-      {
-        "question": "Are dosing protocols provided?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. Its RUO labeling means it ships without any dosing or administration instructions meant for human use.</span></p>"
-      },
-      {
-        "question": "Is a specific purity percentage guaranteed?",
-        "answer": "<p><span style=\"font-weight: 400;\">Purity gets tested per batch and reported on that batch's certificate of analysis, rather than fixed as one marketing number repeated everywhere.</span></p>"
-      },
-      {
-        "question": "Is Retatrutide intended for animal use?",
-        "answer": "<p><span style=\"font-weight: 400;\">No. It's sold strictly for laboratory research, with no labeling or approval for animal or veterinary use.</span></p>"
+        "question": "How do I ask about documentation for a GLP-3RTA lot?",
+        "answer": "<p><span style=\"font-weight: 400;\">Contact us with the product and vial size. We will tell you which analytical documents are available for that lot before you order.</span></p>"
       }
     ]
   },

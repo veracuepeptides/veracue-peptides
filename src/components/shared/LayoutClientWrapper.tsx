@@ -3,6 +3,7 @@
 import React, { useEffect } from 'react'
 import { usePathname } from '@/i18n/navigation'
 import { useCartStore } from '@/lib/cart/store'
+import { AnnouncementBar } from './AnnouncementBar'
 
 const HIDDEN_HEADER_PREFIXES: string[] = []
 
@@ -41,6 +42,7 @@ export function LayoutClientWrapper({
       >
         Skip to main content
       </a>
+      {!hideHeader && <AnnouncementBar />}
       {!hideHeader && header}
       <main id="main-content" tabIndex={-1} className="flex-1 flex flex-col relative outline-none">
         {children}

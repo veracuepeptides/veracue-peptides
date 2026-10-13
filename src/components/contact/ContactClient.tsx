@@ -42,7 +42,7 @@ const CHANNELS: ContactChannel[] = [
     title: 'Scientific & Technical Support',
     tag: 'ANALYTICAL CHEMISTRY DESK',
     description: 'Direct consultation for lot-specific HPLC chromatograms, mass spectrometry verification, compound handling, and storage guidance.',
-    email: 'support@veracuepeptides.com',
+    email: 'orders@veracuelabs.com',
     status: 'Email Support',
     icon: Microscope,
   },
@@ -52,7 +52,7 @@ const CHANNELS: ContactChannel[] = [
     title: 'Institutional & Bulk Procurement',
     tag: 'VOLUME & CONTRACT ORDERS',
     description: 'Custom gram-scale synthesis quotes, university purchase order (PO) billing, and academic research laboratory tier pricing.',
-    email: 'support@veracuepeptides.com',
+    email: 'orders@veracuelabs.com',
     status: 'Formal Invoices & Quotes',
     icon: Building2,
   },
@@ -62,14 +62,14 @@ const CHANNELS: ContactChannel[] = [
     title: 'Cold-Chain Logistics Desk',
     tag: 'TEMPERATURE-CONTROLLED DISPATCH',
     description: 'Inquiries regarding insulated parcel tracking, cold-pack transit verification, and expedited delivery arrangements.',
-    email: 'orders@veracuepeptides.com',
+    email: 'orders@veracuelabs.com',
     status: 'Daily 2:00 PM EST Cutoff',
     icon: Truck,
   },
 ]
 
 export function ContactClient() {
-  const [copiedEmail, setCopiedEmail] = useState<string | null>(null)
+  const [copiedChannelId, setCopiedChannelId] = useState<string | null>(null)
   const [currentTime, setCurrentTime] = useState<string>('')
 
   // Live US EST Clock
@@ -93,11 +93,11 @@ export function ContactClient() {
     return () => clearInterval(timer)
   }, [])
 
-  const handleCopyEmail = (email: string) => {
+  const handleCopyEmail = (channelId: string, email: string) => {
     if (typeof navigator !== 'undefined' && navigator.clipboard) {
       navigator.clipboard.writeText(email)
-      setCopiedEmail(email)
-      setTimeout(() => setCopiedEmail(null), 2500)
+      setCopiedChannelId(channelId)
+      setTimeout(() => setCopiedChannelId(null), 2500)
     }
   }
 
@@ -140,7 +140,7 @@ export function ContactClient() {
             <div className="lg:w-[62%] xl:w-[65%] grid grid-cols-1 md:grid-cols-3">
               {CHANNELS.map((channel, index) => {
                 const Icon = channel.icon
-                const isCopied = copiedEmail === channel.email
+                const isCopied = copiedChannelId === channel.id
                 const isLastItem = index === CHANNELS.length - 1
 
                 return (
@@ -191,7 +191,7 @@ export function ContactClient() {
 
                       <button
                         type="button"
-                        onClick={() => handleCopyEmail(channel.email)}
+                        onClick={() => handleCopyEmail(channel.id, channel.email)}
                         className="w-7 h-7 rounded-full bg-white hover:bg-[#cb997e] text-neutral-600 hover:text-white flex items-center justify-center transition-colors shrink-0 cursor-pointer shadow-2xs"
                         title="Copy Email Address"
                         aria-label={`Copy email: ${channel.email}`}
@@ -303,7 +303,7 @@ export function ContactClient() {
                 </p>
 
                 <HeroButton
-                  href="mailto:support@veracuepeptides.com"
+                  href="mailto:orders@veracuelabs.com"
                   className="w-full justify-center"
                 >
                   Email Support Directly

@@ -7,9 +7,10 @@ import { RefreshCw, ArrowRight, ChevronDown } from 'lucide-react'
 
 type Unit = 'mg' | 'mcg' | 'mL' | 'IU';
 
-const DynamicInput = ({ value, onChange, minWidth = 2 }: { value: string, onChange: (v: string) => void, minWidth?: number }) => (
+const DynamicInput = ({ value, onChange, label, minWidth = 2 }: { value: string, onChange: (v: string) => void, label: string, minWidth?: number }) => (
   <input 
     type="text" 
+    aria-label={label}
     value={value} 
     onChange={(e) => {
       const val = e.target.value;
@@ -141,7 +142,7 @@ export function UnitConverter() {
           </div>
 
           <div className="text-xl sm:text-2xl md:text-3xl lg:text-[34px] font-heading font-light text-neutral-900 tracking-tight leading-[1.7] md:leading-[1.75] relative z-10">
-            I want to convert <DynamicInput value={val} onChange={setVal} /> 
+            I want to convert <DynamicInput value={val} onChange={setVal} label="Value to convert" /> 
             <DynamicSelect 
               value={fromUnit} 
               onChange={handleFromChange}

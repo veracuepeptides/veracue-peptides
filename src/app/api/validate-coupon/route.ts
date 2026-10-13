@@ -1,14 +1,24 @@
 import { NextResponse } from 'next/server'
 import { getPayload } from 'payload'
 import configPromise from '@payload-config'
+import { checkRateLimit } from '@/lib/rateLimit'
 
 // Public, read-only coupon lookup for cart-page UX validation.
 // The Coupons collection itself is staff-only now (it holds lockedEmails/remainingBalance,
 // which are private), so this route hand-picks only the fields the cart UI needs to preview
 // a discount. The authoritative check still happens server-side in verifyCoupon() at checkout.
 export async function GET(request: Request) {
+  // Limits how fast one client can probe codes. Real checkouts validate once per attempt, far
+  // below this ceiling.
+  const forwarded = (request.headers.get('x-forwarded-for') || '').split(',').map((v) => v.trim()).filter(Boolean)
+  const ip = forwarded[forwarded.length - 1] || request.headers.get('x-real-ip') || 'unknown'
+  const { allowed } = await checkRateLimit(`coupon-lookup:${ip}`, 30, 60)
+  if (!allowed) {
+    return NextResponse.json({ coupon: null, error: 'Too many lookups. Please wait a minute.' }, { status: 429 })
+  }
+
   const { searchParams } = new URL(request.url)
-  const code = (searchParams.get('code') || '').trim().toUpperCase()
+  const code = (searchParams.get('code') || '').trim().toUpperCase().slice(0, 64)
 
   if (!code) {
     return NextResponse.json({ coupon: null })

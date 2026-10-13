@@ -3,8 +3,16 @@ import { getPayload } from 'payload'
 import config from '@payload-config'
 import crypto from 'crypto'
 import { getPayloadUser } from '@/lib/auth/getPayloadUser'
+import { checkRateLimit } from '@/lib/rateLimit'
 
 export async function GET(request: Request, { params }: { params: Promise<{ slug: string }> }) {
+  // Cheap guard before any database work: an unlimited stream of referral hits is otherwise an
+  // easy way to burn the small connection pool.
+  const requestIp = (request.headers.get('x-forwarded-for') || '').split(',').map((v) => v.trim()).filter(Boolean).pop()
+    || request.headers.get('x-real-ip') || 'unknown'
+  const gate = await checkRateLimit(`ref:${requestIp}`, 40, 600)
+  if (!gate.allowed) return NextResponse.redirect(new URL('/', request.url))
+
   const payload = await getPayload({ config })
   const { slug } = await params
 
@@ -29,14 +37,35 @@ export async function GET(request: Request, { params }: { params: Promise<{ slug
     return NextResponse.redirect(new URL('/', request.url))
   }
 
-  // Generate anonymous click ID and IP hash
-  const ip = request.headers.get('x-forwarded-for') || 'unknown'
+  // The platform appends the real client IP to x-forwarded-for, so the last entry is the one a
+  // visitor cannot forge. The first entry is whatever the client sent.
+  const forwarded = (request.headers.get('x-forwarded-for') || '').split(',').map((v) => v.trim()).filter(Boolean)
+  const ip = forwarded[forwarded.length - 1] || request.headers.get('x-real-ip') || 'unknown'
   const ipHash = crypto.createHash('sha256').update(ip).digest('hex')
-  const userAgent = request.headers.get('user-agent') || 'unknown'
-  const referrer = request.headers.get('referer') || ''
-  
-  // Create an AffiliateClick record
-  const click = await payload.create({
+  const userAgent = (request.headers.get('user-agent') || 'unknown').slice(0, 300)
+  const referrer = (request.headers.get('referer') || '').slice(0, 500)
+
+  // One visitor refreshing or re-clicking the link within 30 minutes is one click, not many.
+  // The redirect and attribution cookie are still set, so nothing is lost for the visitor.
+  // Deduped on address alone: keying on the user agent too let a script mint a new click per
+  // request just by changing that header.
+  const dedupeSince = new Date(Date.now() - 30 * 60 * 1000).toISOString()
+  const recent = await payload.find({
+    collection: 'affiliate-clicks',
+    where: {
+      and: [
+        { affiliate: { equals: affiliate.id } },
+        { ipHash: { equals: ipHash } },
+        { clickedAt: { greater_than: dedupeSince } },
+      ],
+    },
+    sort: '-clickedAt',
+    limit: 1,
+    depth: 0,
+    overrideAccess: true,
+  })
+
+  const click = recent.docs[0] ?? await payload.create({
     collection: 'affiliate-clicks',
     data: {
       affiliate: affiliate.id,
@@ -46,8 +75,8 @@ export async function GET(request: Request, { params }: { params: Promise<{ slug
       referrer,
       landingPage: '/',
       clickedAt: new Date().toISOString(),
-      // fraud velocity check could be added here
-    }
+    },
+    overrideAccess: true,
   })
 
   // Set cookies

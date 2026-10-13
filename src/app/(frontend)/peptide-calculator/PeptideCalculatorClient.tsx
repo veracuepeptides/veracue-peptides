@@ -825,6 +825,7 @@ export default function PeptideCalculatorPage() {
 
                   <input 
                     type="range"
+                    aria-label="Test liquid volume in mL"
                     min="0.1"
                     max="1.0"
                     step="0.05"
@@ -1000,7 +1001,7 @@ export default function PeptideCalculatorPage() {
             <strong className="text-neutral-900 uppercase font-bold tracking-wider block mb-1">
               Laboratory Research Disclaimer
             </strong>
-            All calculators, formulas, dilution tables, and educational content on this page are provided strictly for theoretical in-vitro laboratory research and calibration. Compounds supplied by Veracue Peptides are intended exclusively for authorized laboratory and scientific evaluation, and not for human or veterinary therapeutic application.
+            All calculators, formulas, dilution tables, and educational content on this page are provided strictly for theoretical in-vitro laboratory research and calibration. Compounds supplied by Veracue Labs are intended exclusively for authorized laboratory and scientific evaluation, and not for human or veterinary therapeutic application.
           </div>
         </div>
       </div>

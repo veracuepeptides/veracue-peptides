@@ -11,7 +11,7 @@ export function getOgImageUrl(
   category?: string,
   bg?: string
 ) {
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuepeptides.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com'
   const url = new URL('/api/og', baseUrl)
   url.searchParams.set('title', title)
   if (description) {
