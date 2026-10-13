@@ -13,7 +13,7 @@ export const PRICES: Record<string, Record<string, number>> = {
   'aod-9604': { '5mg': 54.99, '10mg': 65.99 },
   'ara-290': { '10mg': 49.49 },
   'epithalon': { '10mg': 49.49, '50mg': 87.99 },
-  'ghk-cu': { '50mg': 54.99 },
+  'ghk-cu': { '50mg': 54.99, '100mg': 88 },
   'kisspeptin': { '10mg': 65.99 },
   'kpv': { '10mg': 65.99 },
   'mots-c': { '10mg': 65.99, '40mg': 98.99 },

@@ -60,7 +60,11 @@ export function Hero() {
     <section 
       ref={containerRef}
       style={{ backgroundColor: '#f0efeb' }}
-      className="w-full pt-[78px] sm:pt-[94px] md:pt-[128px] pb-2.5 sm:pb-4 md:pb-5 font-sans min-h-[100dvh] md:h-screen md:min-h-[620px] flex flex-col items-center justify-between overflow-hidden"
+      // Base padding adds the announcement bar's real measured height (--announcement-bar-height,
+      // published by AnnouncementBar) over the header's own old clearance — on narrow phones the
+      // bar's content can wrap to extra lines, so a fixed guess isn't reliable there. sm/md stay
+      // as fixed estimates since there's enough width at those sizes that it never wraps.
+      className="w-full pt-[calc(var(--announcement-bar-height,2.5rem)+78px)] sm:pt-[138px] md:pt-[172px] pb-2.5 sm:pb-4 md:pb-5 font-sans min-h-[100dvh] md:h-screen md:min-h-[620px] flex flex-col items-center justify-between overflow-hidden"
     >
       
       {/* Top Header & Intro Block */}

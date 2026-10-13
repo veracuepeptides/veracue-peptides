@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState, type MouseEvent } from 'react'
+import { useEffect, useRef, useState, type MouseEvent } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Check, Copy, Percent, ShieldCheck, Truck, X } from 'lucide-react'
 import { toast } from 'sonner'
@@ -33,7 +33,7 @@ function CodePill({ code, label, onCopied }: { code: string; label: string; onCo
       type="button"
       onClick={handleCopy}
       aria-label={label}
-      className={`inline-flex items-center gap-1.5 rounded-full border border-dashed border-[#cb997e]/70 bg-[#cb997e]/10 px-2.5 py-0.5 normal-case tracking-normal font-bold text-[#fff1e6] transition-colors hover:border-[#cb997e] hover:bg-[#cb997e]/20 cursor-pointer ${FOCUS_RING}`}
+      className={`inline-flex items-center gap-1.5 align-middle rounded-full border border-dashed border-[#cb997e]/70 bg-[#cb997e]/10 px-2.5 py-0.5 normal-case tracking-normal font-bold text-[#fff1e6] transition-colors hover:border-[#cb997e] hover:bg-[#cb997e]/20 cursor-pointer ${FOCUS_RING}`}
     >
       <span className="tracking-wider">{code}</span>
       {copied ? <Check className="w-3 h-3" strokeWidth={2.5} /> : <Copy className="w-3 h-3" strokeWidth={2.5} />}
@@ -45,9 +45,13 @@ export function AnnouncementBar() {
   const t = useTranslations('announcementBar')
   const dismissed = useAnnouncementBarStore((state) => state.dismissed)
   const dismiss = useAnnouncementBarStore((state) => state.dismiss)
+  // Driven by ClientHeader's own scroll-direction state, so the bar shows/hides in exact
+  // lockstep with the floating header rather than running its own separate scroll listener.
+  const headerHidden = useAnnouncementBarStore((state) => state.headerHidden)
 
   const [index, setIndex] = useState(0)
   const [paused, setPaused] = useState(false)
+  const barRef = useRef<HTMLDivElement>(null)
 
   const messages = [
     {
@@ -55,8 +59,11 @@ export function AnnouncementBar() {
       icon: Percent,
       href: undefined as string | undefined,
       content: (
-        <span className="inline-flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
-          <span>{t('messages.newCustomer')}</span>
+        // Plain inline flow, not flex: flexbox wraps whole items as boxes, so a short pill
+        // after wrapped text would always drop to its own new line even with room to spare.
+        // Inline flow lets the pill flow like a word and share the text's last line when it fits.
+        <span>
+          {t('messages.newCustomer')}{' '}
           <CodePill
             code={COUPON_CODE}
             label={t('clickToCopy')}
@@ -82,13 +89,26 @@ export function AnnouncementBar() {
   ]
 
   useEffect(() => {
-    if (paused || dismissed) return
+    if (paused || dismissed || headerHidden) return
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
     const id = setInterval(() => setIndex((i) => (i + 1) % messages.length), ROTATE_MS)
     return () => clearInterval(id)
     // messages is rebuilt every render but always has the same length, so this only
-    // needs to react to paused/dismissed changing.
-  }, [paused, dismissed])
+    // needs to react to paused/dismissed/headerHidden changing.
+  }, [paused, dismissed, headerHidden])
+
+  // Publishes the bar's real rendered height as a CSS variable so ClientHeader (and the
+  // homepage hero) can reserve exactly the right amount of space — the content can wrap to
+  // extra lines on very narrow screens, so a fixed guessed height isn't reliable here.
+  useEffect(() => {
+    const el = barRef.current
+    if (!el) return
+    const publish = () => document.documentElement.style.setProperty('--announcement-bar-height', `${el.offsetHeight}px`)
+    publish()
+    const observer = new ResizeObserver(publish)
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [])
 
   if (dismissed) return null
 
@@ -103,9 +123,16 @@ export function AnnouncementBar() {
   )
 
   return (
-    <div
+    <motion.div
+      ref={barRef}
+      layout
       id="site-announcement-bar"
-      className="relative z-[60] h-10 sm:h-11 w-full bg-[#20221c] text-[#fff1e6] print:hidden"
+      variants={{ visible: { y: 0, opacity: 1 }, hidden: { y: '-100%', opacity: 0 } }}
+      initial="visible"
+      animate={headerHidden ? 'hidden' : 'visible'}
+      transition={{ duration: 0.28, ease: 'easeInOut' }}
+      style={{ pointerEvents: headerHidden ? 'none' : 'auto' }}
+      className="fixed top-0 inset-x-0 z-[60] w-full bg-[#20221c] text-[#fff1e6] print:hidden"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       onFocus={() => setPaused(true)}
@@ -113,7 +140,7 @@ export function AnnouncementBar() {
         if (!e.currentTarget.contains(e.relatedTarget as Node)) setPaused(false)
       }}
     >
-      <div className="relative h-full flex items-center justify-center px-9 sm:px-12">
+      <div className="relative flex items-center justify-center py-2 sm:py-2.5 px-9 sm:px-12">
         <AnimatePresence mode="wait">
           <motion.div
             key={active.key}
@@ -142,6 +169,6 @@ export function AnnouncementBar() {
           <X className="w-3.5 h-3.5" strokeWidth={2} />
         </button>
       </div>
-    </div>
+    </motion.div>
   )
 }

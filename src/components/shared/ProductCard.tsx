@@ -11,6 +11,7 @@ import { useCartStore } from '@/lib/cart/store'
 import { toast } from 'sonner'
 import { Product } from '@/components/shop/PrimaryProductCard'
 import { AnimatedWishlistHeart } from '@/components/shared/AnimatedWishlistHeart'
+import { trackAddToCart } from '@/lib/analytics/ga'
 
 export interface ProductCardProps {
   product: Product | any
@@ -123,6 +124,7 @@ export function ProductCard({ product, compact = false }: ProductCardProps) {
       1,
       priceVal
     )
+    trackAddToCart({ id: product.id || product.slug, name: product.name, price: priceVal, quantity: 1 })
     // No toast: the drawer opens and confirms the add (a toast would cover its checkout button)
     cartStore.openCart()
   }

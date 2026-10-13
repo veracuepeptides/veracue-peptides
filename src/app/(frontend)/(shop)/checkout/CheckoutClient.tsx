@@ -23,6 +23,7 @@ import { Elements } from '@stripe/react-stripe-js'
 import { StripeCheckoutForm } from './StripeCheckoutForm'
 import { createPaymentIntent, getShippingMethods, getShippingCountries } from './actions'
 import { FALLBACK_SHIPPING_METHODS } from '@/lib/pricing/shipping'
+import { trackEvent } from '@/lib/analytics/ga'
 import { DEFAULT_PAYMENT_METHODS, availablePaymentMethods, type PaymentMethodKey, type PublicPaymentMethod } from '@/lib/payments/methods'
 
 
@@ -454,23 +455,17 @@ export function CheckoutClient() {
   // GA4 begin_checkout tracking
   useEffect(() => {
     if (typeof window !== 'undefined' && items.length > 0 && !sessionStorage.getItem('ga_begin_checkout')) {
-      const w = window as any;
-      w.dataLayer = w.dataLayer || [];
-      w.dataLayer.push({ ecommerce: null });
-      w.dataLayer.push({
-        event: 'begin_checkout',
-        ecommerce: {
-          currency: 'USD',
-          value: subtotal,
-          items: items.map((item, index) => ({
-            item_id: item.productId,
-            item_name: item.product.name,
-            item_variant: item.variantTitle,
-            price: item.priceSnapshot,
-            quantity: item.quantity,
-            index: index
-          }))
-        }
+      trackEvent('begin_checkout', {
+        currency: 'USD',
+        value: subtotal,
+        items: items.map((item, index) => ({
+          item_id: item.productId,
+          item_name: item.product.name,
+          item_variant: item.variantTitle,
+          price: item.priceSnapshot,
+          quantity: item.quantity,
+          index: index
+        }))
       });
       sessionStorage.setItem('ga_begin_checkout', 'true');
     }

@@ -9,6 +9,7 @@ import { useSession } from 'next-auth/react'
 import { useTranslations } from 'next-intl'
 import { useWishlistStore } from '@/lib/wishlist/store'
 import { useCartStore } from '@/lib/cart/store'
+import { trackAddToCart } from '@/lib/analytics/ga'
 import { toast } from 'sonner'
 
 export interface Product {
@@ -55,6 +56,7 @@ function SlideToAddButton({ product }: { product: Product }) {
       1,
       parseFloat(product.priceRange.replace(/[^0-9.]/g, '')) || 0
     )
+    trackAddToCart({ id: product.id || product.slug, name: product.name, price: parseFloat(product.priceRange.replace(/[^0-9.]/g, '')) || 0, quantity: 1 })
     setIsAdded(true)
     // No toast: the drawer opens and confirms the add (a toast would cover its checkout button)
     cartStore.openCart()

@@ -66,8 +66,10 @@ export function ClientHeader({
   
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const setUiMobileMenuOpen = useUiStore((state) => state.setMobileMenuOpen)
-  // Pushes the floating header down to clear the announcement bar above it; snaps back up once dismissed.
+  // Pushes the floating header down to clear the announcement bar above it; snaps back up once dismissed
+  // or while scrolled-hidden (setHeaderHidden below keeps the bar in sync with this same state).
   const announcementDismissed = useAnnouncementBarStore((state) => state.dismissed)
+  const setAnnouncementHeaderHidden = useAnnouncementBarStore((state) => state.setHeaderHidden)
   const [isSearchOpen, setIsSearchOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
   useEffect(() => setMounted(true), [])
@@ -87,8 +89,10 @@ export function ClientHeader({
     if (Math.abs(difference) > 6) {
       if (difference > 0 && y > 120) {
         setHidden(true)
+        setAnnouncementHeaderHidden(true)
       } else if (difference < 0) {
         setHidden(false)
+        setAnnouncementHeaderHidden(false)
       }
       lastYRef.current = y
     }
@@ -213,7 +217,13 @@ export function ClientHeader({
   return (
     <>
       <header className={`fixed inset-x-0 z-50 px-2 sm:px-6 md:px-10 w-full mx-auto pointer-events-none transition-[top,transform] duration-300 print:hidden ${
-        announcementDismissed ? 'top-2.5 sm:top-4' : 'top-[3.125rem] sm:top-[3.75rem]'
+        // Gap only exists while the bar is actually shown: not dismissed, and not in the same
+        // scrolled-hidden state the capsule itself is in. The gap size comes from the bar's own
+        // live-measured height (--announcement-bar-height, set by AnnouncementBar), not a guess —
+        // the bar's content can wrap to extra lines on very narrow screens.
+        announcementDismissed || hidden
+          ? 'top-2.5 sm:top-4'
+          : 'top-[calc(var(--announcement-bar-height,2.5rem)+0.625rem)] sm:top-[calc(var(--announcement-bar-height,2.5rem)+1rem)]'
       }`}>
         <motion.div
           variants={{

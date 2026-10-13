@@ -30,6 +30,7 @@ import { ProductCard } from '@/components/shared/ProductCard'
 import { SharedFaqSection } from '@/components/shared/SharedFaqSection'
 import { BlogPostCard } from '@/components/editorial/BlogPostCard'
 import { FadeUp } from '@/components/motion/FadeUp'
+import { trackAddToCart, trackEvent } from '@/lib/analytics/ga'
 
 interface ProductData {
   id: string
@@ -336,22 +337,16 @@ export function ProductClient({ product }: ProductClientProps) {
   // GA4 view_item tracking
   React.useEffect(() => {
     if (typeof window !== 'undefined' && selectedVariant && !sessionStorage.getItem(`ga_view_${product.id}_${selectedVariant.id}`)) {
-      const w = window as any;
-      w.dataLayer = w.dataLayer || [];
-      w.dataLayer.push({ ecommerce: null });
-      w.dataLayer.push({
-        event: 'view_item',
-        ecommerce: {
-          currency: 'USD',
-          value: parseFloat((selectedVariant.salePrice || selectedVariant.price).replace(/[^0-9.]/g, '')),
-          items: [{
-            item_id: product.id,
-            item_name: product.name,
-            item_category: product.categories?.[0] || '',
-            item_variant: selectedVariant.title,
-            price: parseFloat((selectedVariant.salePrice || selectedVariant.price).replace(/[^0-9.]/g, ''))
-          }]
-        }
+      trackEvent('view_item', {
+        currency: 'USD',
+        value: parseFloat((selectedVariant.salePrice || selectedVariant.price).replace(/[^0-9.]/g, '')),
+        items: [{
+          item_id: product.id,
+          item_name: product.name,
+          item_category: product.categories?.[0] || '',
+          item_variant: selectedVariant.title,
+          price: parseFloat((selectedVariant.salePrice || selectedVariant.price).replace(/[^0-9.]/g, ''))
+        }]
       });
       sessionStorage.setItem(`ga_view_${product.id}_${selectedVariant.id}`, 'true');
     }
@@ -372,22 +367,12 @@ export function ProductClient({ product }: ProductClientProps) {
 
     // GA4 add_to_cart tracking
     if (typeof window !== 'undefined') {
-      const w = window as any;
-      w.dataLayer = w.dataLayer || [];
-      w.dataLayer.push({ ecommerce: null });
-      w.dataLayer.push({
-        event: 'add_to_cart',
-        ecommerce: {
-          currency: 'USD',
-          value: priceNum * quantity,
-          items: [{
-            item_id: product.id,
-            item_name: product.name,
-            item_variant: selectedVariant.title,
-            price: priceNum,
-            quantity: quantity
-          }]
-        }
+      trackAddToCart({
+        id: product.id,
+        name: product.name,
+        variant: selectedVariant.title,
+        price: priceNum,
+        quantity,
       });
     }
 
@@ -716,6 +701,7 @@ export function ProductClient({ product }: ProductClientProps) {
                       key={bundle.id || idx}
                       onClick={() => {
                         cartStore.addItem({ id: product.id, name: product.name, imageUrl: product.images[0], slug: product.slug }, bundleVariantSku, 1, salePriceNum || priceNum, bundleVariantTitle)
+                        trackAddToCart({ id: product.id, name: product.name, variant: bundleVariantTitle, price: salePriceNum || priceNum, quantity: 1 })
                         setJustAdded(true)
                         setTimeout(() => setJustAdded(false), 1500)
                       }}

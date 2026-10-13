@@ -11,6 +11,7 @@ import { useCartStore } from '@/lib/cart/store'
 import { toast } from 'sonner'
 import { ZELLE_RECIPIENT_PHONE } from '@/lib/payments/zelle'
 import { CARD_STATEMENT_NOTE } from '@/lib/payments/statement'
+import { trackEvent } from '@/lib/analytics/ga'
 
 type OrderItem = {
   id: string
@@ -193,27 +194,21 @@ export function OrderConfirmationClient({ order }: { order: OrderData }) {
 
     // GA4 eCommerce tracking
     if (typeof window !== 'undefined' && !sessionStorage.getItem(`ga_tracked_${order.id}`)) {
-      const w = window as any;
-      w.dataLayer = w.dataLayer || [];
-      w.dataLayer.push({ ecommerce: null }); // Clear previous eCommerce object
-      w.dataLayer.push({
-        event: 'purchase',
-        ecommerce: {
-          transaction_id: order.orderId || order.id,
-          value: order.total,
-          tax: 0,
-          shipping: order.shipping,
-          currency: 'USD',
-          coupon: order.couponCode || '',
-          items: order.items.map((item, index) => ({
-            item_id: item.id,
-            item_name: item.name,
-            item_variant: item.variant,
-            price: item.price,
-            quantity: item.quantity,
-            index: index
-          }))
-        }
+      trackEvent('purchase', {
+        transaction_id: order.orderId || order.id,
+        value: order.total,
+        tax: 0,
+        shipping: order.shipping,
+        currency: 'USD',
+        coupon: order.couponCode || '',
+        items: order.items.map((item, index) => ({
+          item_id: item.id,
+          item_name: item.name,
+          item_variant: item.variant,
+          price: item.price,
+          quantity: item.quantity,
+          index: index
+        }))
       });
       sessionStorage.setItem(`ga_tracked_${order.id}`, 'true');
     }
