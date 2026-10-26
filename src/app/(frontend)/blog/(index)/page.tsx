@@ -43,9 +43,10 @@ export async function generateMetadata(): Promise<Metadata> {
   }
 }
 
-// Cached and refreshed at most every 3600s; saving content in the admin refreshes it sooner
-// (see revalidateStorefrontPages in lib/revalidate.ts). Nothing here depends on the visitor.
-export const revalidate = 3600
+// Cached for one day (86400s; Next.js needs a literal number here, not an expression).
+// Saving any blog post in the admin refreshes this page straight away instead of waiting for this
+// (see revalidateBlogPostPages in lib/revalidate.ts). Nothing here depends on the visitor.
+export const revalidate = 86400
 
 export default async function BlogIndexPage() {
   let payloadPosts: BlogIndexPost[] = []

@@ -36,6 +36,48 @@ export type CartItemForAnalytics = {
   variant?: string | null
 }
 
+export type CheckoutLineForAnalytics = {
+  productId: string | number
+  variantTitle?: string | null
+  priceSnapshot: number
+  quantity: number
+  product: { name: string }
+}
+
+/**
+ * GA4 add_shipping_info and add_payment_info, the two steps between begin_checkout and purchase. Without
+ * them GA4's checkout funnel ("Add delivery", "Add payment") reads zero and shows nothing about where
+ * shoppers leave. The one-page checkout has no separate steps, so add_shipping_info is sent once the
+ * delivery details are filled in and add_payment_info when the shopper presses the pay button with a
+ * valid form.
+ */
+export function trackCheckoutStep(
+  step: 'add_shipping_info' | 'add_payment_info',
+  details: {
+    lines: CheckoutLineForAnalytics[]
+    value: number
+    coupon?: string | null
+    shippingTier?: string
+    paymentType?: string
+  },
+): void {
+  trackEvent(step, {
+    currency: 'USD',
+    value: details.value,
+    ...(details.coupon ? { coupon: details.coupon } : {}),
+    ...(step === 'add_shipping_info' && details.shippingTier ? { shipping_tier: details.shippingTier } : {}),
+    ...(step === 'add_payment_info' && details.paymentType ? { payment_type: details.paymentType } : {}),
+    items: details.lines.map((line, index) => ({
+      item_id: String(line.productId),
+      item_name: line.product.name,
+      ...(line.variantTitle ? { item_variant: line.variantTitle } : {}),
+      price: line.priceSnapshot,
+      quantity: line.quantity,
+      index,
+    })),
+  })
+}
+
 /** GA4 add_to_cart for one line. Used wherever a shopper can add a product. */
 export function trackAddToCart(item: CartItemForAnalytics): void {
   const quantity = item.quantity ?? 1

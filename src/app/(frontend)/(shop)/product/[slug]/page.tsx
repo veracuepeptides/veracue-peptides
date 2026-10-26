@@ -12,6 +12,13 @@ import { getActiveProduct } from '@/lib/products/getActiveProduct'
 import { getMessages } from 'next-intl/server'
 import { NextIntlClientProvider } from 'next-intl'
 import { pickMessages } from '@/lib/i18n/pickMessages'
+import { toShopCardProduct } from '@/lib/shop/cardProduct'
+import {
+  FALLBACK_SHIPPING_METHODS,
+  offerShippingDetails,
+  resolveShippingCountries,
+  type ShippingMethodLike,
+} from '@/lib/pricing/shipping'
 
 const BASE_URL = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com'
 
@@ -118,9 +125,10 @@ export async function generateStaticParams() {
   return []
 }
 
-// Cached and refreshed at most every 1800s; saving content in the admin refreshes it sooner
-// (see revalidateStorefrontPages in lib/revalidate.ts). Nothing here depends on the visitor.
-export const revalidate = 1800
+// Cached for two days (172800s; Next.js needs a literal number here, not an expression).
+// Saving this product in the admin refreshes it straight away instead of waiting for this
+// (see revalidateProductPages in lib/revalidate.ts). Nothing here depends on the visitor.
+export const revalidate = 172800
 
 export default async function ProductPage({
   params,
@@ -332,42 +340,7 @@ export default async function ProductPage({
         depth: 1, // Only need basic info and main image
       })
 
-      productData.relatedProducts = relatedDocs.map((p: any) => {
-        let imageUrl = '/veracue-images/veracue-research-grade-studio-portrait.webp'
-        let hoverImageUrl = undefined
-        if (p.images && p.images.length > 0 && typeof p.images[0].image === 'object' && p.images[0].image?.url) {
-          imageUrl = encodeImageUrl(p.images[0].image.url)
-        }
-        if (p.images && p.images.length > 1 && typeof p.images[1].image === 'object' && p.images[1].image?.url) {
-          hoverImageUrl = encodeImageUrl(p.images[1].image.url)
-        }
-
-        // Fallback to variant images if no global image exists
-        if (imageUrl === '/veracue-images/veracue-research-grade-studio-portrait.webp' && p.hasVariants && p.variants && p.variants.length > 0) {
-          for (const variant of p.variants) {
-            if (variant.images && variant.images.length > 0 && typeof variant.images[0].image === 'object' && variant.images[0].image?.url) {
-              imageUrl = encodeImageUrl(variant.images[0].image.url)
-              if (variant.images.length > 1 && typeof variant.images[1].image === 'object' && variant.images[1].image?.url) {
-                hoverImageUrl = encodeImageUrl(variant.images[1].image.url)
-              }
-              break
-            }
-          }
-        }
-
-        return {
-          id: p.id,
-          name: p.name,
-          slug: p.slug,
-          image: imageUrl,
-          hoverImage: hoverImageUrl,
-          shortDescription: p.seoDescription || 'High-purity research peptide for laboratory use.',
-          category: typeof p.categories?.[0] === 'object' ? p.categories[0].title : '',
-          priceRange: `$${(p.salePrice && p.salePrice < p.price ? p.salePrice : p.price)?.toFixed(2) || '0.00'}`,
-          originalPrice: p.salePrice && p.salePrice < p.price ? `$${p.price.toFixed(2)}` : undefined,
-          isFrom: p.bulkBundles && p.bulkBundles.length > 0,
-        }
-      })
+      productData.relatedProducts = relatedDocs.map(toShopCardProduct)
     }
   }
 
@@ -391,58 +364,40 @@ export default async function ProductPage({
       depth: 1,
     })
 
-    productData.relatedProducts = recentDocs.map((p: any) => {
-      let imageUrl = '/veracue-images/veracue-research-grade-studio-portrait.webp'
-      let hoverImageUrl = undefined
-      if (p.images && p.images.length > 0 && typeof p.images[0].image === 'object' && p.images[0].image?.url) {
-        imageUrl = encodeImageUrl(p.images[0].image.url)
-      }
-      if (p.images && p.images.length > 1 && typeof p.images[1].image === 'object' && p.images[1].image?.url) {
-        hoverImageUrl = encodeImageUrl(p.images[1].image.url)
-      }
-
-      // Fallback to variant images if no global image exists
-      if (imageUrl === '/veracue-images/veracue-research-grade-studio-portrait.webp' && p.hasVariants && p.variants && p.variants.length > 0) {
-        for (const variant of p.variants) {
-          if (variant.images && variant.images.length > 0 && typeof variant.images[0].image === 'object' && variant.images[0].image?.url) {
-            imageUrl = encodeImageUrl(variant.images[0].image.url)
-            if (variant.images.length > 1 && typeof variant.images[1].image === 'object' && variant.images[1].image?.url) {
-              hoverImageUrl = encodeImageUrl(variant.images[1].image.url)
-            }
-            break
-          }
-        }
-      }
-
-      return {
-        id: p.id,
-        name: p.name,
-        slug: p.slug,
-        image: imageUrl,
-        hoverImage: hoverImageUrl,
-        shortDescription: p.seoDescription || 'High-purity research peptide for laboratory use.',
-        category: typeof p.categories?.[0] === 'object' ? p.categories[0].title : '',
-        priceRange: `$${(p.salePrice && p.salePrice < p.price ? p.salePrice : p.price)?.toFixed(2) || '0.00'}`,
-        originalPrice: p.salePrice && p.salePrice < p.price ? `$${p.price.toFixed(2)}` : undefined,
-        isFrom: p.bulkBundles && p.bulkBundles.length > 0,
-      }
-    })
+    productData.relatedProducts = recentDocs.map(toShopCardProduct)
   }
 
   // Generate JSON-LD Schemas
   
-  // Fetch Suggested Blogs
-  const { docs: blogDocs } = await payload.find({
+  // Suggested blogs: the published posts that list this product in their Related Products field come
+  // first, newest first. Any spots left (the section shows three) are filled with the newest other posts.
+  const SUGGESTED_BLOG_COUNT = 3
+  const { docs: relatedBlogDocs } = await payload.find({
     collection: 'blog-posts',
     where: {
-      status: {
-        equals: 'published'
-      }
+      and: [{ status: { equals: 'published' } }, { relatedProducts: { equals: rawProduct.id } }],
     },
     sort: '-publishedAt',
-    limit: 3,
+    limit: SUGGESTED_BLOG_COUNT,
     depth: 1,
   })
+
+  let blogDocs = relatedBlogDocs
+  if (blogDocs.length < SUGGESTED_BLOG_COUNT) {
+    const { docs: recentBlogDocs } = await payload.find({
+      collection: 'blog-posts',
+      where: {
+        and: [
+          { status: { equals: 'published' } },
+          ...(relatedBlogDocs.length > 0 ? [{ id: { not_in: relatedBlogDocs.map((post: any) => post.id) } }] : []),
+        ],
+      },
+      sort: '-publishedAt',
+      limit: SUGGESTED_BLOG_COUNT - blogDocs.length,
+      depth: 1,
+    })
+    blogDocs = [...blogDocs, ...recentBlogDocs]
+  }
 
   const mappedBlogs = blogDocs.map((post: any) => {
     let imageUrl = '/veracue-images/veracue-peptides-multi-vials-collection-flatlay.webp'
@@ -476,6 +431,19 @@ export default async function ProductPage({
     returnPolicyCategory: 'https://schema.org/MerchantReturnNotPermitted',
   }
 
+  // The shipping terms in each offer come from the live shipping settings, the same ones checkout uses.
+  let shippingMethods: ShippingMethodLike[] = FALLBACK_SHIPPING_METHODS
+  try {
+    const zones = await payload.find({ collection: 'shippingzones', limit: 1, depth: 0, overrideAccess: true })
+    const zoneMethods = (zones.docs[0] as any)?.methods
+    if (Array.isArray(zoneMethods) && zoneMethods.length > 0) shippingMethods = zoneMethods
+  } catch {
+    // The store's default shipping rules are right when the settings cannot be read.
+  }
+  const shippingCountries = resolveShippingCountries(process.env.SHIPPING_COUNTRIES)
+  // Offers are valid from the day this page version is generated.
+  const validFrom = new Date().toISOString().slice(0, 10)
+
   const toPrice = (v: { salePrice?: string; price: string }) =>
     Number((v.salePrice || v.price || '').replace(/[^0-9.]/g, ''))
 
@@ -488,12 +456,14 @@ export default async function ProductPage({
       url: productUrl,
       priceCurrency: 'USD',
       price: price.toFixed(2),
+      validFrom,
       priceValidUntil,
       availability: v.inStock ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
       itemCondition: 'https://schema.org/NewCondition',
       sku: v.sku || productData.sku || productData.id,
       seller: { '@id': `${baseUrl}/#organization` },
       hasMerchantReturnPolicy: merchantReturnPolicy,
+      shippingDetails: offerShippingDetails(shippingMethods, price, shippingCountries),
     }))
 
   const offerPrices = offerNodes.map((o) => Number(o.price))

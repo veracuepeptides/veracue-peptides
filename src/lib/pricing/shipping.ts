@@ -67,3 +67,37 @@ export function estimateDomesticShipping(methods: ShippingMethodLike[], subtotal
   if (visible.length === 0) return 0
   return Math.min(...visible.map((method) => method.price))
 }
+
+// The timings the Shipping Policy page states: a 1 to 3 business day review before an order ships, then
+// 3 to 7 business days in transit within the US.
+export const HANDLING_DAYS = { min: 1, max: 3 }
+export const TRANSIT_DAYS = { min: 3, max: 7 }
+
+const days = (range: { min: number; max: number }) => ({
+  '@type': 'QuantitativeValue',
+  minValue: range.min,
+  maxValue: range.max,
+  unitCode: 'DAY',
+})
+
+/**
+ * The shipping terms of one offer as schema.org OfferShippingDetails, which Google's merchant listings
+ * read for the shipping cost and delivery estimate. The rate is what checkout would charge for an order
+ * of just this item, so a price at or above the free-shipping threshold is listed as free.
+ */
+export function offerShippingDetails(methods: ShippingMethodLike[], offerPrice: number, countries: string[]) {
+  return {
+    '@type': 'OfferShippingDetails',
+    shippingRate: {
+      '@type': 'MonetaryAmount',
+      value: estimateDomesticShipping(methods, offerPrice).toFixed(2),
+      currency: 'USD',
+    },
+    shippingDestination: countries.map((country) => ({ '@type': 'DefinedRegion', addressCountry: country })),
+    deliveryTime: {
+      '@type': 'ShippingDeliveryTime',
+      handlingTime: days(HANDLING_DAYS),
+      transitTime: days(TRANSIT_DAYS),
+    },
+  }
+}

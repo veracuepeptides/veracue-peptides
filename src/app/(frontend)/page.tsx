@@ -83,9 +83,10 @@ export async function generateMetadata({
 import { getShopProducts } from '@/app/(frontend)/(shop)/actions'
 import { getVisibleCategories } from '@/app/(frontend)/actions/categories'
 
-// Cached and refreshed at most every 600s; saving content in the admin refreshes it sooner
-// (see revalidateStorefrontPages in lib/revalidate.ts). Nothing here depends on the visitor.
-export const revalidate = 600
+// Cached for two days (172800s; Next.js needs a literal number here, not an expression).
+// Saving content in the admin refreshes the affected pages straight away instead of waiting for this
+// (see lib/revalidate.ts). Nothing here depends on the visitor.
+export const revalidate = 172800
 
 export default async function Homepage() {
   const t = await getTranslations('home')

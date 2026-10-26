@@ -9,6 +9,10 @@ import { safeJsonLd } from '@/lib/seo/jsonLd'
 const breadcrumbName = 'Medical Disclaimer'
 const slug = 'medical-disclaimer'
 
+// Cached for two days (172800s; Next.js needs a literal number here, not an expression). The page itself is a
+// client component, which can't export this setting, so it lives on the layout. Nothing here depends on the visitor or the CMS.
+export const revalidate = 172800
+
 export async function generateMetadata({
   params,
 }: {

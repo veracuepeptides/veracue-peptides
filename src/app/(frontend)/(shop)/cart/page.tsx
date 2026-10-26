@@ -6,6 +6,10 @@ import { pickMessages } from '@/lib/i18n/pickMessages'
 import { CartClient } from './CartClient'
 import { getVisibleCategories } from '@/app/(frontend)/actions/categories'
 
+// Never cached: the cart is per visitor and must always reflect their latest items and prices. Without
+// this, the page would inherit the long lifetime of the shared header cache (see actions/categories.ts).
+export const dynamic = 'force-dynamic'
+
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('cartPage')
   return {

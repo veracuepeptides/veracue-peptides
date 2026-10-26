@@ -5,7 +5,8 @@ import { useRouter, useSearchParams, usePathname } from 'next/navigation'
 import { ShopHero } from '@/components/shop/ShopHero'
 import { ProductCard } from '@/components/shared/ProductCard'
 import { Product } from '@/components/shop/PrimaryProductCard'
-import { motion, useInView, useScroll, useMotionValueEvent, AnimatePresence } from 'framer-motion'
+import { motion, useInView, AnimatePresence } from 'framer-motion'
+import { useAnnouncementBarStore } from '@/lib/ui/store'
 import {
   Search,
   SlidersHorizontal,
@@ -63,13 +64,7 @@ interface ShopClientProps {
   categories: Category[]
 }
 
-function ShopClientInner({ initialProducts, totalPages, categories }: ShopClientProps) {
-  const t = useTranslations('shop.shopClient')
-  const shopFaqs = SHOP_FAQ_KEYS.map((key) => ({
-    question: t(`faqs.${key}.question`),
-    answer: t(`faqs.${key}.answer`),
-  }))
-
+function ShopCatalog({ initialProducts, totalPages, categories }: ShopClientProps) {
   const router = useRouter()
   const pathname = usePathname()
   const searchParams = useSearchParams()
@@ -78,26 +73,14 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
   const [currentPage, setCurrentPage] = useState(1)
   const [isLoadingMore, setIsLoadingMore] = useState(false)
   const [hasMore, setHasMore] = useState(totalPages > 1)
-  const [isScrollingDown, setIsScrollingDown] = useState(false)
+  // Same scroll-hidden state ClientHeader itself uses, not a second independent listener —
+  // two separately-tuned scroll listeners can drift apart, which is exactly what let this
+  // bar's "header is visible" offset fall out of sync with the header's actual position.
+  const isScrollingDown = useAnnouncementBarStore((state) => state.headerHidden)
   const [searchQuery, setSearchQuery] = useState('')
   const [showFiltersDrawer, setShowFiltersDrawer] = useState(false)
   const [showMobileSearch, setShowMobileSearch] = useState(false)
   const mobileSearchInputRef = useRef<HTMLInputElement>(null)
-  const lastScrollYRef = useRef(0)
-
-  const { scrollY } = useScroll()
-
-  useMotionValueEvent(scrollY, 'change', (latest) => {
-    if (typeof window !== 'undefined') {
-      const currentScrollY = latest
-      if (currentScrollY > lastScrollYRef.current && currentScrollY > 120) {
-        if (!isScrollingDown) setIsScrollingDown(true)
-      } else if (currentScrollY < lastScrollYRef.current) {
-        if (isScrollingDown) setIsScrollingDown(false)
-      }
-      lastScrollYRef.current = currentScrollY
-    }
-  })
 
   const loadMoreRef = useRef<HTMLDivElement>(null)
   const isInView = useInView(loadMoreRef, { margin: '400px' })
@@ -292,19 +275,19 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
   }
 
   return (
-    <div style={{ backgroundColor: '#f0efeb' }} className="w-full text-[#20221c] min-h-screen font-sans">
-      {/* 1. Hero Section matching Homepage architecture */}
-      <ShopHero />
-
+    <>
       {/* 2. Catalog Anchor & Main Browser Section */}
       <div id="catalog-browser" className="scroll-mt-10 sm:scroll-mt-12 w-full max-w-[1400px] mx-auto px-3 sm:px-6 md:px-10 pt-10 sm:pt-14 md:pt-18 pb-16 sm:pb-24">
         
-        {/* Sticky Controls & Filter Capsule */}
+        {/* Sticky Controls & Filter Capsule. The "header visible" offset adds the announcement
+            bar's live-measured height (--announcement-bar-height) on top of its old fixed value,
+            same as the header's own offset — a hardcoded guess here fell out of sync once the
+            bar existed and let this capsule sit partly behind the header. */}
         <div
           className={`sticky z-30 transition-all duration-300 mb-6 sm:mb-8 ${
             isScrollingDown
               ? 'top-3 sm:top-5'
-              : 'top-[76px] sm:top-[88px] md:top-[100px]'
+              : 'top-[calc(var(--announcement-bar-height,2.5rem)+76px)] sm:top-[calc(var(--announcement-bar-height,2.5rem)+88px)] md:top-[calc(var(--announcement-bar-height,2.5rem)+100px)]'
           }`}
         >
           <div className="bg-[#f0efeb]/90 backdrop-blur-2xl border border-[#eddcd2] rounded-2xl sm:rounded-[22px] p-2 sm:p-2.5 shadow-[0_8px_30px_rgba(32,34,28,0.06)] flex flex-col gap-2">
@@ -765,28 +748,49 @@ function ShopClientInner({ initialProducts, totalPages, categories }: ShopClient
         </div>
 
       </div>
+    </>
+  )
+}
 
-      {/* 5. Shared FAQ Section */}
-      <div className="-mt-10 sm:-mt-14 relative z-20">
-        <SharedFaqSection
-          title={
-            <>
-              Research<br />Catalog FAQs
-            </>
-          }
-          subtitle="Support & Documentation"
-          description="Common technical questions regarding our synthetic peptides, storage, COA verification, and laboratory supply standards."
-          faqs={shopFaqs}
-        />
-      </div>
+// Rendered outside the catalog's Suspense boundary so its questions are in the server HTML.
+function ShopFaq() {
+  const t = useTranslations('shop.shopClient')
+  const shopFaqs = SHOP_FAQ_KEYS.map((key) => ({
+    question: t(`faqs.${key}.question`),
+    answer: t(`faqs.${key}.answer`),
+  }))
+
+  return (
+    <div className="-mt-10 sm:-mt-14 relative z-20">
+      <SharedFaqSection
+        title={
+          <>
+            Research<br />Catalog FAQs
+          </>
+        }
+        subtitle="Support & Documentation"
+        description="Common technical questions regarding our synthetic peptides, storage, COA verification, and laboratory supply standards."
+        faqs={shopFaqs}
+      />
     </div>
   )
 }
 
+// The catalog reads the query string (filters, search, sort), which makes everything under its Suspense
+// boundary render in the browser only. The hero (the page's H1) and the FAQ stay outside it, so they are
+// part of the HTML a crawler receives; the product links are in the directory the page renders below.
 export function ShopClient(props: ShopClientProps) {
   return (
-    <Suspense fallback={<div style={{ backgroundColor: '#f0efeb' }} className="min-h-screen w-full" />}>
-      <ShopClientInner {...props} />
-    </Suspense>
+    <div style={{ backgroundColor: '#f0efeb' }} className="w-full text-[#20221c] min-h-screen font-sans">
+      {/* 1. Hero Section matching Homepage architecture */}
+      <ShopHero />
+
+      <Suspense fallback={<div className="min-h-screen w-full" />}>
+        <ShopCatalog {...props} />
+      </Suspense>
+
+      {/* 5. Shared FAQ Section */}
+      <ShopFaq />
+    </div>
   )
 }

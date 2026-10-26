@@ -26,15 +26,49 @@ export function revalidateStorefrontPages() {
   })
 }
 
-// Files generated from the CMS on an hourly cache: refresh them right away when content changes.
-// Also refreshes the cached storefront pages, since the same edits change what they show.
-export function revalidateGeneratedFiles() {
+// Files generated from the CMS on an hourly cache. Kept separate so a single product or post save can
+// refresh just these without also purging every product and blog page.
+function revalidateFeeds() {
   safely(() => {
     revalidatePath('/sitemap.xml')
     revalidatePath('/llms.txt')
     revalidatePath('/llms-full.txt')
   })
+}
+
+// Files generated from the CMS on an hourly cache: refresh them right away when content changes.
+// Also refreshes the cached storefront pages, since the same edits change what they show.
+export function revalidateGeneratedFiles() {
+  revalidateFeeds()
   revalidateStorefrontPages()
+}
+
+// Saving or deleting one product refreshes only that product's page (and its old address when the slug was
+// changed, so the old page doesn't linger), the shop listing, and the homepage. The homepage is included
+// because it renders best-seller cards and has a two day cache, so an edited price or name would otherwise
+// stay stale there next to the fresh product page. Other product pages are left alone.
+export function revalidateProductPages(slug?: string | null, previousSlug?: string | null) {
+  safely(() => {
+    for (const value of new Set([slug, previousSlug])) {
+      if (value) revalidatePath(`/product/${value}`)
+    }
+    revalidatePath('/shop')
+    revalidatePath('/')
+  })
+  revalidateFeeds()
+}
+
+// Saving or deleting one blog post refreshes only that post's page (and its old address when the slug was
+// changed), the /blog listing, and the homepage, which shows the latest posts. Other posts are left alone.
+export function revalidateBlogPostPages(slug?: string | null, previousSlug?: string | null) {
+  safely(() => {
+    for (const value of new Set([slug, previousSlug])) {
+      if (value) revalidatePath(`/blog/${value}`)
+    }
+    revalidatePath('/blog')
+    revalidatePath('/')
+  })
+  revalidateFeeds()
 }
 
 // The checkout reads the payment options through a tagged cache, and the generated llms files

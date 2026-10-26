@@ -56,7 +56,7 @@ function findImageFile(jsonPath: string, explicitImagePath?: string): string | n
 }
 
 // Static, non-CMS routes that are real pages but not Payload documents (kept in
-// sync with the STATIC_PATHS list in src/app/sitemap.ts) — link-checked as always valid.
+// sync with the STATIC_PATHS list in src/lib/sitemap/build.ts) — link-checked as always valid.
 const STATIC_ROUTES = new Set([
   '', 'shop', 'blog', 'peptide-calculator', 'certificates', 'about-us', 'faq',
   'affiliates', 'contact-us', 'privacy-policy', 'terms-and-conditions',

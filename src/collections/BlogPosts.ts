@@ -3,7 +3,7 @@ import { lexicalEditor, EXPERIMENTAL_TableFeature, BlocksFeature } from '@payloa
 import { accessContent } from '../access/content'
 import { CalloutBox } from '../blocks/CalloutBox'
 import { toCleanSlug, validateBlogSlug } from '../lib/slug/validate'
-import { revalidateGeneratedFiles } from '../lib/revalidate'
+import { revalidateBlogPostPages } from '../lib/revalidate'
 
 export const BlogPosts: CollectionConfig = {
   slug: 'blog-posts',
@@ -122,14 +122,15 @@ export const BlogPosts: CollectionConfig = {
       },
     ],
     afterChange: [
-      ({ doc }) => {
-        revalidateGeneratedFiles()
+      ({ doc, previousDoc }) => {
+        // That post's page and the /blog listing (previousDoc covers a changed slug).
+        revalidateBlogPostPages(doc?.slug, previousDoc?.slug)
         return doc
       },
     ],
     afterDelete: [
       ({ doc }) => {
-        revalidateGeneratedFiles()
+        revalidateBlogPostPages(doc?.slug)
         return doc
       },
     ],

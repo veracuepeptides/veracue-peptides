@@ -28,6 +28,10 @@ const ABOUT_FAQ_KEYS = [
 
 const slug = 'about-us'
 
+// Cached for two days (172800s; Next.js needs a literal number here, not an expression).
+// Nothing here depends on the visitor or the CMS, so this page only changes with a deploy.
+export const revalidate = 172800
+
 export async function generateMetadata({
   params,
 }: {

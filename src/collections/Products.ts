@@ -2,7 +2,7 @@ import { CollectionConfig } from 'payload'
 import { productsAccess } from '../access/products'
 import { productsBeforeChange } from '../hooks/products'
 import { toCleanSlug, validateSlugFormat } from '../lib/slug/validate'
-import { revalidateGeneratedFiles } from '../lib/revalidate'
+import { revalidateProductPages } from '../lib/revalidate'
 
 export const Products: CollectionConfig = {
   slug: 'products',
@@ -14,14 +14,15 @@ export const Products: CollectionConfig = {
   hooks: {
     beforeChange: [productsBeforeChange],
     afterChange: [
-      ({ doc }) => {
-        revalidateGeneratedFiles()
+      ({ doc, previousDoc }) => {
+        // That product's page and the shop listing (previousDoc covers a changed slug).
+        revalidateProductPages(doc?.slug, previousDoc?.slug)
         return doc
       },
     ],
     afterDelete: [
       ({ doc }) => {
-        revalidateGeneratedFiles()
+        revalidateProductPages(doc?.slug)
         return doc
       },
     ],

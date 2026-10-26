@@ -5,6 +5,10 @@ import { NextIntlClientProvider } from 'next-intl'
 import { pickMessages } from '@/lib/i18n/pickMessages'
 import { CheckoutClient } from './CheckoutClient'
 
+// Never cached: checkout is per visitor and must always render fresh. Without this, the page would
+// inherit the long lifetime of the shared header cache (see actions/categories.ts).
+export const dynamic = 'force-dynamic'
+
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('checkout')
   return {

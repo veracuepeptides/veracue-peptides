@@ -1,21 +1,22 @@
-import type { MetadataRoute } from 'next'
 import { getPayload } from 'payload'
 import configPromise from '@payload-config'
 import * as Sentry from '@sentry/nextjs'
 
-// Without this, Next.js treats sitemap.xml as fully static (no dynamic APIs are used
-// inside it) and freezes it at build time — new products/posts silently stop appearing
-// in the sitemap until the next deploy. Regenerate hourly instead.
-export const revalidate = 3600
-// Regeneration queries the full catalog; the Vercel Hobby default (10s) is tight.
-export const maxDuration = 60
+type ChangeFrequency = 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never'
 
-const baseUrl = (process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com').replace(/\/$/, '')
+export type SitemapEntry = {
+  url: string
+  lastModified?: Date
+  changeFrequency?: ChangeFrequency
+  priority?: number
+}
+
+const baseUrl = () => (process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com').replace(/\/$/, '')
 
 // Grouped by crawl priority rather than alphabetically, so the sitemap's own ordering
 // reflects which pages matter most (highest first) — homepage/shop first, then core
 // conversion-adjacent pages, then supporting/legal pages.
-const STATIC_PATHS: { path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency'] }[] = [
+const STATIC_PATHS: { path: string; priority: number; changeFrequency: ChangeFrequency }[] = [
   { path: '', priority: 1.0, changeFrequency: 'daily' },
   { path: '/shop', priority: 0.9, changeFrequency: 'daily' },
   { path: '/blog', priority: 0.8, changeFrequency: 'daily' },
@@ -34,18 +35,18 @@ const STATIC_PATHS: { path: string; priority: number; changeFrequency: MetadataR
 
 function entry(
   path: string,
-  opts?: { lastModified?: Date; priority?: number; changeFrequency?: MetadataRoute.Sitemap[number]['changeFrequency'] },
-) {
+  opts?: { lastModified?: Date; priority?: number; changeFrequency?: ChangeFrequency },
+): SitemapEntry {
   return {
-    url: `${baseUrl}${path}`,
+    url: `${baseUrl()}${path}`,
     ...(opts?.lastModified ? { lastModified: opts.lastModified } : {}),
     ...(opts?.priority !== undefined ? { priority: opts.priority } : {}),
     ...(opts?.changeFrequency ? { changeFrequency: opts.changeFrequency } : {}),
   }
 }
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const entries: MetadataRoute.Sitemap = []
+export async function loadSitemapEntries(): Promise<SitemapEntry[]> {
+  const entries: SitemapEntry[] = []
 
   // Posts are read first because the blog index is listed only once a post is published (it has
   // nothing to show before that). If the lookup fails the index stays listed, so a database
@@ -98,4 +99,23 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }
 
   return entries
+}
+
+const escapeXml = (value: string) =>
+  value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;')
+
+export function renderSitemapXml(entries: SitemapEntry[]): string {
+  const urls = entries.map((item) => {
+    const lines = [`<loc>${escapeXml(item.url)}</loc>`]
+    if (item.lastModified) lines.push(`<lastmod>${item.lastModified.toISOString()}</lastmod>`)
+    if (item.changeFrequency) lines.push(`<changefreq>${item.changeFrequency}</changefreq>`)
+    if (item.priority !== undefined) lines.push(`<priority>${item.priority}</priority>`)
+    return `<url>${lines.join('')}</url>`
+  })
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.join('')}</urlset>\n`
 }

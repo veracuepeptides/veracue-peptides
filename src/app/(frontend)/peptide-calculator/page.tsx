@@ -9,6 +9,10 @@ import { safeJsonLd } from '@/lib/seo/jsonLd'
 const slug = 'peptide-calculator'
 const FAQ_KEYS = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8', 'q9', 'q10'] as const
 
+// Cached for two days (172800s; Next.js needs a literal number here, not an expression).
+// Nothing here depends on the visitor or the CMS, so this page only changes with a deploy.
+export const revalidate = 172800
+
 export async function generateMetadata({
   params,
 }: {

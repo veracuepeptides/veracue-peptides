@@ -3,7 +3,7 @@
 import React, { useState, useRef, useMemo } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { motion, useScroll, useMotionValueEvent } from 'framer-motion'
+import { useAnnouncementBarStore } from '@/lib/ui/store'
 import { FadeUp } from '@/components/motion/FadeUp'
 import { BlogPostCard } from '@/components/editorial/BlogPostCard'
 import { BlogHero } from '@/components/blog/BlogHero'
@@ -50,23 +50,12 @@ export function BlogIndexClient({ posts }: { posts: BlogIndexPost[] }) {
   const [searchQuery, setSearchQuery] = useState('')
   const [visibleCount, setVisibleCount] = useState(6)
   const [isCopied, setIsCopied] = useState(false)
-  const [isScrollingDown, setIsScrollingDown] = useState(false)
+  // Same scroll-hidden state ClientHeader itself uses, not a second independent listener (this
+  // one was tuned to a different threshold, 140 vs the header's 120 — exactly the kind of drift
+  // that let this bar's "header is visible" offset fall out of sync with the header's position).
+  const isScrollingDown = useAnnouncementBarStore((state) => state.headerHidden)
 
   const categoriesScrollRef = useRef<HTMLDivElement>(null)
-  const lastScrollYRef = useRef(0)
-  const { scrollY } = useScroll()
-
-  useMotionValueEvent(scrollY, 'change', (latest) => {
-    if (typeof window !== 'undefined') {
-      const currentScrollY = latest
-      if (currentScrollY > lastScrollYRef.current && currentScrollY > 140) {
-        if (!isScrollingDown) setIsScrollingDown(true)
-      } else if (currentScrollY < lastScrollYRef.current) {
-        if (isScrollingDown) setIsScrollingDown(false)
-      }
-      lastScrollYRef.current = currentScrollY
-    }
-  })
 
   // Assemble unique categories
   const categories = useMemo(() => {
@@ -174,11 +163,15 @@ export function BlogIndexClient({ posts }: { posts: BlogIndexPost[] }) {
           </FadeUp>
         </section>
 
-        {/* 3. Sticky Filter & Live Search Capsule */}
+        {/* 3. Sticky Filter & Live Search Capsule. The "header visible" offset adds the
+            announcement bar's live-measured height on top of its old fixed value — see
+            ShopClient's identical capsule for why a hardcoded guess doesn't hold up here. */}
         {hasPosts && (
         <section
           className={`sticky z-30 transition-all duration-300 mb-8 sm:mb-12 ${
-            isScrollingDown ? 'top-3 sm:top-5' : 'top-[76px] sm:top-[88px] md:top-[100px]'
+            isScrollingDown
+              ? 'top-3 sm:top-5'
+              : 'top-[calc(var(--announcement-bar-height,2.5rem)+76px)] sm:top-[calc(var(--announcement-bar-height,2.5rem)+88px)] md:top-[calc(var(--announcement-bar-height,2.5rem)+100px)]'
           }`}
         >
           <div className="bg-[#f0efeb]/90 backdrop-blur-2xl border border-[#eddcd2] rounded-2xl sm:rounded-[22px] p-2 sm:p-2.5 shadow-[0_8px_30px_rgba(32,34,28,0.06)] flex flex-col gap-2">

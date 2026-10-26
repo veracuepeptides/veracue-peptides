@@ -8,6 +8,8 @@ import { NextIntlClientProvider } from 'next-intl'
 import { pickMessages } from '@/lib/i18n/pickMessages'
 import { getShopProducts } from '../(shop)/actions'
 import { safeJsonLd } from '@/lib/seo/jsonLd'
+import { ShopDirectory } from '@/components/shop/ShopDirectory'
+import { groupProductsForDirectory, type DirectoryGroup } from '@/lib/shop/directory'
 
 const SHOP_FAQ_KEYS = [
   'availablePeptides',
@@ -81,9 +83,10 @@ export async function generateMetadata({
 // The page does not read the URL on the server: filters, sorting and search run in the browser
 // from the query string (ShopClient), so one cached page serves every /shop?... variant. It used to
 // be fully dynamic, which put a database render in front of every visit and crawl.
-// Cached and refreshed at most every 600s; saving content in the admin refreshes it sooner
-// (see revalidateStorefrontPages in lib/revalidate.ts). Nothing here depends on the visitor.
-export const revalidate = 600
+// Cached for one day (86400s; Next.js needs a literal number here, not an expression).
+// Saving any product in the admin refreshes this page straight away instead of waiting for this
+// (see revalidateProductPages in lib/revalidate.ts). Nothing here depends on the visitor.
+export const revalidate = 86400
 
 export default async function ShopPage() {
   let categories: any[] = []
@@ -114,6 +117,25 @@ export default async function ShopPage() {
   // Fetch initial page of products
   const initialProductsRes = await getShopProducts({ page: 1, limit: 24 })
 
+  // Every active product for the link directory under the shop. The page is useful without it, so a
+  // failure here leaves the directory out instead of failing the page.
+  let directoryGroups: DirectoryGroup[] = []
+  try {
+    const payload = await getPayload({ config: configPromise })
+    const all = await payload.find({
+      collection: 'products',
+      where: { and: [{ isVisible: { equals: true } }, { status: { equals: 'active' } }] },
+      select: { name: true, slug: true, categories: true },
+      limit: 1000,
+      depth: 1,
+      overrideAccess: true,
+      locale: 'en',
+    })
+    directoryGroups = groupProductsForDirectory(all.docs as any[])
+  } catch (error) {
+    console.error('Shop directory could not be built:', error)
+  }
+
   const siteUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://veracuelabs.com'
 
   const listedProducts: any[] = initialProductsRes.success
@@ -137,6 +159,8 @@ export default async function ShopPage() {
         categories={categories}
       />
       </NextIntlClientProvider>
+
+      <ShopDirectory groups={directoryGroups} />
 
       <script
         type="application/ld+json"

@@ -18,7 +18,8 @@ import { AuthorCard } from '@/components/blog/AuthorCard'
 import { RelatedProductsSlider } from '@/components/blog/RelatedProductsSlider'
 import { estimateReadingTime } from '@/lib/blog/readingTime'
 import { splitFirstParagraph } from '@/lib/blog/splitContent'
-import { getFeaturedImageUrl, formatPostDate, FALLBACK_BLOG_IMAGE as FALLBACK_IMAGE } from '@/lib/blog/postDisplay'
+import { getFeaturedImageUrl, formatPostDate } from '@/lib/blog/postDisplay'
+import { toShopCardProduct } from '@/lib/shop/cardProduct'
 import { encodeImageUrl, getOgImageUrl, toAbsoluteUrl } from '@/lib/utils'
 import { safeJsonLd } from '@/lib/seo/jsonLd'
 
@@ -113,9 +114,10 @@ export async function generateMetadata({
   }
 }
 
-// Cached and refreshed at most every 3600s; saving content in the admin refreshes it sooner
-// (see revalidateStorefrontPages in lib/revalidate.ts). Nothing here depends on the visitor.
-export const revalidate = 3600
+// Cached for two days (172800s; Next.js needs a literal number here, not an expression).
+// Saving this post in the admin refreshes it straight away instead of waiting for this
+// (see revalidateBlogPostPages in lib/revalidate.ts). Nothing here depends on the visitor.
+export const revalidate = 172800
 
 export default async function BlogPostPage({
   params,
@@ -167,23 +169,8 @@ export default async function BlogPostPage({
     (p: any) => typeof p === 'object',
   )
 
-  // Products don't always have top-level images — many only have per-variant images
-  // (e.g. BAC Water's 3mL/10mL/30mL variants), so fall back to the first variant image.
-  function getProductImageUrl(product: any): string {
-    const direct = product.images?.[0]?.image
-    const variantImage = product.variants?.find((v: any) => v.images?.length > 0)?.images?.[0]?.image
-    const image = (direct && typeof direct === 'object' ? direct : null) || (variantImage && typeof variantImage === 'object' ? variantImage : null)
-    return image?.url ? encodeImageUrl(image.url) : FALLBACK_IMAGE
-  }
-
-  const sliderProducts = relatedProducts.slice(0, 6).map((product: any) => ({
-    id: product.id,
-    name: product.name,
-    slug: product.slug,
-    image: getProductImageUrl(product),
-    category: typeof product.categories?.[0] === 'object' ? product.categories[0].title : '',
-    price: Number(product.price || 0).toFixed(2),
-  }))
+  // The same card data the shop grid uses, so these cards match the shop's (category label, pricing, image).
+  const sliderProducts = relatedProducts.slice(0, 6).map(toShopCardProduct)
 
   const { first: introContent, rest: restContent } = splitFirstParagraph(post.content)
 
@@ -191,11 +178,13 @@ export default async function BlogPostPage({
   const postUrl = `${baseUrl}/blog/${slug}`
   const isoDate = post.publishedAt ? new Date(post.publishedAt).toISOString() : new Date(post.createdAt).toISOString()
 
-  // Lean references only; the full Product node (price, availability) lives on the product page.
+  // Lean references only; the full Product node (price, availability) lives on the product page. These are
+  // typed Thing on purpose: a Product node must carry offers, a review or a rating, and Search Console
+  // reports a critical Product snippets error for every blog post that mentions one without them.
   const productMentions = relatedProducts.map((product: any) => {
     const productUrl = `${baseUrl}/product/${product.slug}`
     return {
-      '@type': 'Product',
+      '@type': 'Thing',
       '@id': `${productUrl}#product`,
       name: product.name,
       url: productUrl,

@@ -23,6 +23,10 @@ function toPlainText(html: string): string {
 const slug = 'faq'
 const locale = 'en'
 
+// Cached for two days (172800s; Next.js needs a literal number here, not an expression).
+// Nothing here depends on the visitor or the CMS, so this page only changes with a deploy.
+export const revalidate = 172800
+
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('content.faqPage')
   const title = t('metaTitle')

@@ -23,7 +23,7 @@ import { Elements } from '@stripe/react-stripe-js'
 import { StripeCheckoutForm } from './StripeCheckoutForm'
 import { createPaymentIntent, getShippingMethods, getShippingCountries } from './actions'
 import { FALLBACK_SHIPPING_METHODS } from '@/lib/pricing/shipping'
-import { trackEvent } from '@/lib/analytics/ga'
+import { trackEvent, trackCheckoutStep } from '@/lib/analytics/ga'
 import { DEFAULT_PAYMENT_METHODS, availablePaymentMethods, type PaymentMethodKey, type PublicPaymentMethod } from '@/lib/payments/methods'
 
 
@@ -473,6 +473,22 @@ export function CheckoutClient() {
     }
   }, [items, subtotal])
 
+  // GA4 add_shipping_info: sent once per visit when every delivery field the order needs is filled in
+  // (see trackCheckoutStep).
+  const shippingInfoTracked = useRef(false)
+  useEffect(() => {
+    if (shippingInfoTracked.current || items.length === 0 || !shippingMethod) return
+    const email = user?.email || formData.email
+    if (!email || !formData.firstName || !formData.address || !formData.city || !formData.state || !formData.zip || !formData.phone) return
+    shippingInfoTracked.current = true
+    trackCheckoutStep('add_shipping_info', {
+      lines: items,
+      value: subtotal,
+      coupon: appliedCoupon?.code,
+      shippingTier: shippingMethod,
+    })
+  }, [items, subtotal, shippingMethod, formData, user?.email, appliedCoupon?.code])
+
   // Handlers
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value, type, checked } = e.target
@@ -609,6 +625,7 @@ export function CheckoutClient() {
       return
     }
 
+    trackCheckoutStep('add_payment_info', { lines: items, value: total, coupon: appliedCoupon?.code, paymentType: 'free_order' })
     setIsProcessing(true)
 
     try {
@@ -651,6 +668,7 @@ export function CheckoutClient() {
       return
     }
 
+    trackCheckoutStep('add_payment_info', { lines: items, value: total, coupon: appliedCoupon?.code, paymentType: 'zelle' })
     setIsProcessing(true)
 
     try {
@@ -691,6 +709,7 @@ export function CheckoutClient() {
       return
     }
 
+    trackCheckoutStep('add_payment_info', { lines: items, value: total, coupon: appliedCoupon?.code, paymentType: 'stripe_link' })
     setIsProcessing(true)
 
     try {
@@ -731,6 +750,7 @@ export function CheckoutClient() {
       return
     }
 
+    trackCheckoutStep('add_payment_info', { lines: items, value: total, coupon: appliedCoupon?.code, paymentType: 'veracuepay' })
     setIsProcessing(true)
 
     try {
